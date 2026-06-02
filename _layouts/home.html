@@ -21,6 +21,10 @@
     <div class="my-6">
       {% include thoughts.html %}
     </div>
+
+    <div class="my-6">
+      {% include kofi_embed.html %}
+    </div>
   </div>
 {% else %}
   <div class="d-md-flex min-height-full {% unless site.style == 'dark' %}border-md-bottom{% endunless %}">
@@ -43,6 +47,8 @@
         {% endif %}
 
         {% include thoughts.html %}
+
+        {% include kofi_embed.html %}
       </div>
     </div>
   </div>
