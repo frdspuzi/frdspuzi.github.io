@@ -10,7 +10,7 @@
 <script>
 (function () {
   var MEDIUM_RSS = 'https://medium.com/feed/@frdspuzi';
-  var API_URL = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(MEDIUM_RSS) + '&count=6';
+  var API_URL = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(MEDIUM_RSS);
   var container = document.getElementById('medium-posts');
 
   function stripHtml(html) {
@@ -51,7 +51,8 @@
         container.innerHTML = '<p class="text-gray">No articles found.</p>';
         return;
       }
-      data.items.forEach(function (item) {
+      var items = data.items.slice(0, 6);
+      items.forEach(function (item) {
         container.appendChild(buildCard(item));
       });
     })
