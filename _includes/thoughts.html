@@ -1,9 +1,90 @@
-<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Thoughts</h2>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Articles I've written.</p>
-<div class="d-sm-flex flex-wrap gutter-condensed mb-4">
-  {% for post in site.posts limit: 6 %}
-    <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
-      {% include post-card.html %}
-    </div>
-  {% endfor %}
+<h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Writing</h2>
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Articles I've published on Medium.</p>
+
+<div id="medium-posts" class="d-sm-flex flex-wrap gutter-condensed mb-4">
+  <div class="col-12 text-center py-4 text-gray" id="medium-loading">
+    Loading articles&hellip;
+  </div>
 </div>
+
+<script>
+(function () {
+  var MEDIUM_RSS = 'https://medium.com/feed/@frdspuzi';
+  var API_URL = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(MEDIUM_RSS) + '&count=6';
+  var container = document.getElementById('medium-posts');
+
+  function stripHtml(html) {
+    var tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    return tmp.textContent || tmp.innerText || '';
+  }
+
+  function formatDate(dateStr) {
+    var d = new Date(dateStr);
+    return d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
+  }
+
+  function buildCard(item) {
+    var excerpt = stripHtml(item.description).replace(/\s+/g, ' ').trim().slice(0, 140);
+    if (excerpt.length === 140) excerpt += '…';
+
+    var card = document.createElement('div');
+    card.className = 'col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3';
+    card.innerHTML =
+      '<a href="' + item.link + '" target="_blank" rel="noopener noreferrer" ' +
+        'style="text-decoration:none; display:block; height:100%;">' +
+        '<div class="Box box-shadow-medium p-4 height-full medium-card">' +
+          '<p class="f6 text-gray mb-2 medium-date">' + formatDate(item.pubDate) + '</p>' +
+          '<h3 class="f4 lh-condensed mb-2 medium-title">' + item.title + '</h3>' +
+          '<p class="f5 text-gray medium-excerpt">' + excerpt + '</p>' +
+          '<span class="f6 medium-read-more">Read on Medium &rarr;</span>' +
+        '</div>' +
+      '</a>';
+    return card;
+  }
+
+  fetch(API_URL)
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      container.innerHTML = '';
+      if (!data.items || data.items.length === 0) {
+        container.innerHTML = '<p class="text-gray">No articles found.</p>';
+        return;
+      }
+      data.items.forEach(function (item) {
+        container.appendChild(buildCard(item));
+      });
+    })
+    .catch(function () {
+      container.innerHTML =
+        '<p class="text-gray">Could not load articles. ' +
+        '<a href="https://medium.com/@frdspuzi" target="_blank" rel="noopener noreferrer">Read on Medium &rarr;</a></p>';
+    });
+})();
+</script>
+
+<style>
+  .medium-card {
+    border-radius: 8px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+    border: 1px solid #e1e4e8;
+  }
+  .medium-card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.12) !important;
+    transform: translateY(-2px);
+  }
+  .medium-title {
+    color: #24292e;
+  }
+  .medium-excerpt {
+    color: #6a737d;
+    line-height: 1.5;
+  }
+  .medium-date {
+    color: #959da5;
+  }
+  .medium-read-more {
+    color: #0366d6;
+    font-weight: 500;
+  }
+</style>
