@@ -19,14 +19,44 @@
     return tmp.textContent || tmp.innerText || '';
   }
 
+  function extractSummary(html) {
+    var tmp = document.createElement('div');
+    tmp.innerHTML = html;
+    
+    var paragraphs = tmp.querySelectorAll('p');
+    for (var i = 0; i < paragraphs.length; i++) {
+      var text = (paragraphs[i].textContent || '').trim();
+      var lower = text.toLowerCase();
+      if (lower.indexOf('tldr;') === 0 || lower.indexOf('tldr:') === 0) {
+        return text.substring(5).trim();
+      } else if (lower.indexOf('problem statement:') === 0) {
+        return text.substring(18).trim();
+      }
+    }
+    
+    var blockquote = tmp.querySelector('blockquote');
+    if (blockquote) {
+      var bqText = (blockquote.textContent || '').replace(/\s+/g, ' ').trim();
+      if (bqText.length > 20) return bqText;
+    }
+    
+    for (var i = 0; i < paragraphs.length; i++) {
+      var text = (paragraphs[i].textContent || '').replace(/\s+/g, ' ').trim();
+      if (text.length > 80) return text;
+    }
+    
+    var fallback = (tmp.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 140);
+    if (fallback.length === 140) fallback += '…';
+    return fallback;
+  }
+
   function formatDate(dateStr) {
     var d = new Date(dateStr);
     return d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
   }
 
   function buildCard(item) {
-    var excerpt = stripHtml(item.description).replace(/\s+/g, ' ').trim().slice(0, 140);
-    if (excerpt.length === 140) excerpt += '…';
+    var excerpt = extractSummary(item.content);
 
     var imageUrl = null;
     var imgRegex = /<img[^>]+src="([^">]+)"/g;
@@ -98,6 +128,10 @@
   .medium-excerpt {
     color: #6a737d;
     line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   .medium-date {
     color: #959da5;
