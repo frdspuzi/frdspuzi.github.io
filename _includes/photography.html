@@ -1,0 +1,135 @@
+<h2 {% if site.style == 'dark' %}class="text-white"{% endif %} id="photography">Photography</h2>
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Shots I've captured and shared on <a href="https://unsplash.com/@frdspuzi" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+
+{% if site.data.unsplash and site.data.unsplash.size > 0 %}
+<div class="photography-carousel-wrapper">
+  <div class="carousel-track">
+    {% for photo in site.data.unsplash %}
+    <div class="carousel-slide box-shadow-medium">
+      <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
+        <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
+        <div class="slide-overlay">
+          <span class="slide-likes">❤️ {{ photo.likes }}</span>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% else %}
+<div class="blankslate">
+  <h3 class="mb-1">Gallery syncing...</h3>
+  <p>The photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
+</div>
+{% endif %}
+
+<style>
+  .photography-carousel-wrapper {
+    width: 100%;
+    margin-bottom: 32px;
+    position: relative;
+  }
+  .carousel-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 16px; /* Space for scrollbar */
+    padding-top: 8px; /* Space for shadow */
+  }
+  
+  /* Stylish Scrollbar */
+  .carousel-track::-webkit-scrollbar {
+    height: 8px;
+  }
+  .carousel-track::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  .carousel-track::-webkit-scrollbar-thumb {
+    background: #d1d5da; 
+    border-radius: 4px;
+  }
+  .carousel-track::-webkit-scrollbar-thumb:hover {
+    background: #959da5;
+  }
+
+  .carousel-slide {
+    flex: 0 0 85%; /* Show 85% of slide to hint at next one on mobile */
+    scroll-snap-align: center;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f6f8fa;
+    border: 1px solid #e1e4e8;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Desktop sizing */
+  @media (min-width: 768px) {
+    .carousel-slide {
+      flex: 0 0 45%;
+      scroll-snap-align: start;
+    }
+  }
+  @media (min-width: 1024px) {
+    .carousel-slide {
+      flex: 0 0 31%; /* 3 per row on large screens */
+      scroll-snap-align: start;
+    }
+  }
+
+  .slide-link {
+    display: block;
+    width: 100%;
+    height: 350px;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden; /* Contains the image zoom */
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.4s ease;
+  }
+  
+  .slide-link:hover .slide-image {
+    transform: scale(1.05); /* Smooth zoom effect on hover */
+  }
+  
+  .slide-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px 16px 16px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    color: white;
+    opacity: 0; /* Hidden by default on desktop */
+    transition: opacity 0.3s ease;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Always show overlay on mobile devices since there's no hover */
+  @media (hover: none) {
+    .slide-overlay {
+      opacity: 1;
+    }
+  }
+  
+  /* Show overlay on hover for desktops */
+  .slide-link:hover .slide-overlay {
+    opacity: 1;
+  }
+  
+  .slide-likes {
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  }
+</style>
