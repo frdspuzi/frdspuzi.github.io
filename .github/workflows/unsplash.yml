@@ -17,7 +17,7 @@ jobs:
 
       - name: Fetch photos from Unsplash
         env:
-          UNSPLASH_ACCESS_KEY: {% raw %}${{ secrets.UNSPLASH_ACCESS_KEY }}{% endraw %}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: |
           mkdir -p _data
           curl -s -H "Authorization: Client-ID $UNSPLASH_ACCESS_KEY" \
