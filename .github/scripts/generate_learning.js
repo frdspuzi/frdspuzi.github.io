@@ -43,15 +43,15 @@ Rules:
 1. The "learning" must be a highly valuable, standalone fact, concept, or insight from the text (1-2 sentences).
 2. The "question" must test the user on that exact learning.
 3. CRITICAL: The "question" must be phrased as general standalone trivia. DO NOT use phrases like "According to the text", "Based on the article", or "As mentioned".
-4. Provide 4 "options" (strings). One must be correct, 3 must be plausible but incorrect.
-5. "correctIndex" is the integer index (0-3) of the correct option.
+4. Provide the exact correct answer as a string in "correctOption".
+5. Provide 3 plausible but incorrect answers as an array of strings in "incorrectOptions".
 6. CRITICAL: Only refer to the provided body text. Do not add outside knowledge.
 
 Output a strictly valid JSON object matching this schema:
 {
   "question": "The question string",
-  "options": ["Option A", "Option B", "Option C", "Option D"],
-  "correctIndex": 0,
+  "correctOption": "The correct answer",
+  "incorrectOptions": ["Wrong A", "Wrong B", "Wrong C"],
   "learning": "The extracted insight string"
 }
 
@@ -99,10 +99,21 @@ ${cleanContent.substring(0, 15000)}`;
 
         console.log(`Extracted Question: ${parsedData.question}`);
 
+        // Manually shuffle the options to guarantee true randomness
+        let allOptions = [parsedData.correctOption, ...(parsedData.incorrectOptions || [])];
+        
+        // Fisher-Yates shuffle
+        for (let i = allOptions.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [allOptions[i], allOptions[j]] = [allOptions[j], allOptions[i]];
+        }
+
+        const actualCorrectIndex = allOptions.indexOf(parsedData.correctOption);
+
         generatedLearnings.push({
           question: parsedData.question,
-          options: parsedData.options,
-          correctIndex: parsedData.correctIndex,
+          options: allOptions,
+          correctIndex: actualCorrectIndex,
           learning: parsedData.learning,
           articleTitle: article.title,
           articleUrl: article.link
