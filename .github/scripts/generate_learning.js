@@ -30,7 +30,7 @@ async function generateLearning() {
     console.log("Asking Gemini to extract a learning...");
     const prompt = `You are an expert editor. Read the following text from an article and extract the single most valuable, inspiring, and punchy key learning from it. Make it exactly one sentence long. Do not use quotes around it. Make it sound profound but conversational. \n\nText:\n${cleanContent.substring(0, 15000)}`;
 
-    const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
+    const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash-latest:generateContent?key=${GEMINI_API_KEY}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
