@@ -20,12 +20,24 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: |
           mkdir -p _data
+          
+          echo "Fetching Latest photos..."
           curl -s -H "Authorization: Client-ID $UNSPLASH_ACCESS_KEY" \
                "https://api.unsplash.com/users/frdspuzi/photos?per_page=12&order_by=latest" \
-               > _data/unsplash.json
+               > _data/unsplash_latest.json
+               
+          echo "Fetching Popular photos..."
+          curl -s -H "Authorization: Client-ID $UNSPLASH_ACCESS_KEY" \
+               "https://api.unsplash.com/users/frdspuzi/photos?per_page=12&order_by=popular" \
+               > _data/unsplash_popular.json
+               
+          echo "Fetching Favourites collection (NMPJIZguCfY)..."
+          curl -s -H "Authorization: Client-ID $UNSPLASH_ACCESS_KEY" \
+               "https://api.unsplash.com/collections/NMPJIZguCfY/photos?per_page=12" \
+               > _data/unsplash_favourites.json
           
-          if ! jq -e . _data/unsplash.json > /dev/null 2>&1; then
-            echo "Failed to fetch valid JSON from Unsplash API."
+          if ! jq -e . _data/unsplash_latest.json > /dev/null 2>&1; then
+            echo "Failed to fetch valid JSON for latest photos."
             exit 1
           fi
 
@@ -33,10 +45,14 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add _data/unsplash.json
+          git add _data/unsplash_latest.json _data/unsplash_popular.json _data/unsplash_favourites.json
+          if [ -f _data/unsplash.json ]; then
+            git rm _data/unsplash.json || true
+          fi
+          
           if git diff-index --quiet HEAD; then
             echo "No new photos."
           else
-            git commit -m "chore: Update Unsplash photos data [skip ci]"
+            git commit -m "chore: Update Unsplash photos data (Latest, Popular, Favourites) [skip ci]"
             git push
           fi
