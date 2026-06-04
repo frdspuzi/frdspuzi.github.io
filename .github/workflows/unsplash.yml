@@ -21,25 +21,8 @@ jobs:
         run: |
           mkdir -p _data
           
-          echo "Fetching Latest photos..."
-          curl -s -H "Authorization: Client-ID $UNSPLASH_ACCESS_KEY" \
-               "https://api.unsplash.com/users/frdspuzi/photos?per_page=12&order_by=latest" \
-               > _data/unsplash_latest.json
-               
-          echo "Fetching Popular photos..."
-          curl -s -H "Authorization: Client-ID $UNSPLASH_ACCESS_KEY" \
-               "https://api.unsplash.com/users/frdspuzi/photos?per_page=12&order_by=popular" \
-               > _data/unsplash_popular.json
-               
-          echo "Fetching Favourites collection (NMPJIZguCfY)..."
-          curl -s -H "Authorization: Client-ID $UNSPLASH_ACCESS_KEY" \
-               "https://api.unsplash.com/collections/NMPJIZguCfY/photos?per_page=12" \
-               > _data/unsplash_favourites.json
-          
-          if ! jq -e . _data/unsplash_latest.json > /dev/null 2>&1; then
-            echo "Failed to fetch valid JSON for latest photos."
-            exit 1
-          fi
+          echo "Running fetch_unsplash.js..."
+          node .github/scripts/fetch_unsplash.js
 
       - name: Commit and push changes
         run: |
