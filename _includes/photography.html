@@ -1,10 +1,17 @@
 <h2 {% if site.style == 'dark' %}class="text-white"{% endif %} id="photography">Photography</h2>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Shots I've captured and shared on <a href="https://unsplash.com/@frdspuzi" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+<p class="f4 mb-3 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Shots I've captured and shared on <a href="https://unsplash.com/@frdspuzi" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
 
-{% if site.data.unsplash and site.data.unsplash.size > 0 %}
-<div class="photography-carousel-wrapper">
+<div class="mb-4" id="photography-tabs">
+  <button class="photography-tab-btn active" data-target="unsplash-latest">Latest</button>
+  <button class="photography-tab-btn" data-target="unsplash-popular">Most Viewed</button>
+  <button class="photography-tab-btn" data-target="unsplash-favourites">Favourites</button>
+</div>
+
+<!-- LATEST CAROUSEL -->
+{% if site.data.unsplash_latest and site.data.unsplash_latest.size > 0 %}
+<div class="photography-carousel-wrapper" id="unsplash-latest">
   <div class="carousel-track">
-    {% for photo in site.data.unsplash %}
+    {% for photo in site.data.unsplash_latest %}
     <div class="carousel-slide box-shadow-medium">
       <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
         <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
@@ -17,13 +24,115 @@
   </div>
 </div>
 {% else %}
-<div class="blankslate">
+<div class="blankslate photography-carousel-wrapper" id="unsplash-latest">
   <h3 class="mb-1">Gallery syncing...</h3>
-  <p>The photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
+  <p>The latest photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
 </div>
 {% endif %}
 
+<!-- POPULAR CAROUSEL -->
+{% if site.data.unsplash_popular and site.data.unsplash_popular.size > 0 %}
+<div class="photography-carousel-wrapper" id="unsplash-popular" style="display: none;">
+  <div class="carousel-track">
+    {% for photo in site.data.unsplash_popular %}
+    <div class="carousel-slide box-shadow-medium">
+      <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
+        <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
+        <div class="slide-overlay">
+          <span class="slide-likes">❤️ {{ photo.likes }}</span>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% else %}
+<div class="blankslate photography-carousel-wrapper" id="unsplash-popular" style="display: none;">
+  <h3 class="mb-1">Gallery syncing...</h3>
+  <p>The popular photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
+</div>
+{% endif %}
+
+<!-- FAVOURITES CAROUSEL -->
+{% if site.data.unsplash_favourites and site.data.unsplash_favourites.size > 0 %}
+<div class="photography-carousel-wrapper" id="unsplash-favourites" style="display: none;">
+  <div class="carousel-track">
+    {% for photo in site.data.unsplash_favourites %}
+    <div class="carousel-slide box-shadow-medium">
+      <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
+        <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
+        <div class="slide-overlay">
+          <span class="slide-likes">❤️ {{ photo.likes }}</span>
+        </div>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% else %}
+<div class="blankslate photography-carousel-wrapper" id="unsplash-favourites" style="display: none;">
+  <h3 class="mb-1">Gallery syncing...</h3>
+  <p>The favourites photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
+</div>
+{% endif %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var tabs = document.querySelectorAll('.photography-tab-btn');
+    var wrappers = document.querySelectorAll('.photography-carousel-wrapper');
+    
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        // Remove active class from all tabs
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        // Add active class to clicked tab
+        this.classList.add('active');
+        
+        var targetId = this.getAttribute('data-target');
+        
+        // Hide all carousels, show target
+        wrappers.forEach(function(wrapper) {
+          if (wrapper.id === targetId) {
+            wrapper.style.display = 'block';
+          } else {
+            wrapper.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>
+
 <style>
+  /* Tab styles */
+  #photography-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .photography-tab-btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid #e1e4e8;
+    background: white;
+    color: #586069;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .photography-tab-btn:hover {
+    border-color: #0366d6;
+    color: #0366d6;
+  }
+  .photography-tab-btn.active {
+    background: #0366d6;
+    border-color: #0366d6;
+    color: white;
+  }
+
+  /* Carousel styles */
   .photography-carousel-wrapper {
     width: 100%;
     margin-bottom: 32px;
