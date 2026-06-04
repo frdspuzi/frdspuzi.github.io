@@ -2,29 +2,26 @@
 <p class="f4 mb-3 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Shots I've captured and shared on <a href="https://unsplash.com/@frdspuzi" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
 
 <div class="mb-4" id="photography-tabs">
-  <button class="photography-tab-btn active" data-target="unsplash-latest">Latest</button>
-  <button class="photography-tab-btn" data-target="unsplash-popular">Most Viewed</button>
+  <button class="photography-tab-btn active" data-target="unsplash-popular">Most Viewed</button>
   <button class="photography-tab-btn" data-target="unsplash-favourites">Favourites</button>
+  <button class="photography-tab-btn" data-target="unsplash-latest">Latest</button>
 </div>
 
 <!-- LATEST CAROUSEL -->
 {% if site.data.unsplash_latest and site.data.unsplash_latest.size > 0 %}
-<div class="photography-carousel-wrapper" id="unsplash-latest">
+<div class="photography-carousel-wrapper" id="unsplash-latest" style="display: none;">
   <div class="carousel-track">
     {% for photo in site.data.unsplash_latest %}
     <div class="carousel-slide box-shadow-medium">
       <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
         <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
-        <div class="slide-overlay">
-          <span class="slide-likes">❤️ {{ photo.likes }}</span>
-        </div>
       </a>
     </div>
     {% endfor %}
   </div>
 </div>
 {% else %}
-<div class="blankslate photography-carousel-wrapper" id="unsplash-latest">
+<div class="blankslate photography-carousel-wrapper" id="unsplash-latest" style="display: none;">
   <h3 class="mb-1">Gallery syncing...</h3>
   <p>The latest photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
 </div>
@@ -32,14 +29,14 @@
 
 <!-- POPULAR CAROUSEL -->
 {% if site.data.unsplash_popular and site.data.unsplash_popular.size > 0 %}
-<div class="photography-carousel-wrapper" id="unsplash-popular" style="display: none;">
+<div class="photography-carousel-wrapper" id="unsplash-popular">
   <div class="carousel-track">
     {% for photo in site.data.unsplash_popular %}
     <div class="carousel-slide box-shadow-medium">
       <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
         <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
         <div class="slide-overlay">
-          <span class="slide-likes">❤️ {{ photo.likes }}</span>
+          <span class="slide-likes">👁️ {{ photo.views }} Views</span>
         </div>
       </a>
     </div>
@@ -47,7 +44,7 @@
   </div>
 </div>
 {% else %}
-<div class="blankslate photography-carousel-wrapper" id="unsplash-popular" style="display: none;">
+<div class="blankslate photography-carousel-wrapper" id="unsplash-popular">
   <h3 class="mb-1">Gallery syncing...</h3>
   <p>The popular photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
 </div>
@@ -61,9 +58,6 @@
     <div class="carousel-slide box-shadow-medium">
       <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
         <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
-        <div class="slide-overlay">
-          <span class="slide-likes">❤️ {{ photo.likes }}</span>
-        </div>
       </a>
     </div>
     {% endfor %}
