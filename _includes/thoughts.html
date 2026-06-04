@@ -154,7 +154,7 @@
       }
 
       var seenCategories = [];
-      var items = data.items.slice(0, 9);
+      var items = data.items.slice(0, 6);
 
       items.forEach(function (item) {
         var category = (item.categories && item.categories.length > 0)
@@ -183,9 +183,39 @@
 })();
 </script>
 
+<div class="text-center mt-2 mb-4">
+  <a href="https://medium.com/@frdspuzi" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View all on Medium &rarr;</a>
+</div>
+
 <style>
   .medium-card-wrapper {
     transition: opacity 0.2s ease;
+  }
+
+  /* Mobile Carousel Styles */
+  @media (max-width: 543px) {
+    #medium-posts {
+      display: flex !important;
+      flex-wrap: nowrap !important;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 8px; /* Slight breathing room */
+      
+      /* Hide scrollbar for a cleaner app-like look */
+      scrollbar-width: none; 
+    }
+    #medium-posts::-webkit-scrollbar {
+      display: none;
+    }
+    .medium-card-wrapper {
+      /* Force cards to be 85% width on mobile so the next card peeks in */
+      flex: 0 0 85% !important;
+      max-width: 85% !important;
+      scroll-snap-align: start;
+      margin-bottom: 0 !important;
+      padding-right: 16px;
+    }
   }
   .medium-card {
     border-radius: 8px;
