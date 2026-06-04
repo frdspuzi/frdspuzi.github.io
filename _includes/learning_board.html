@@ -1,0 +1,36 @@
+{% if site.data.learning and site.data.learning.learning %}
+<div class="learning-board box-shadow-large mb-6 p-5 p-md-6 border rounded-2 {% if site.style == 'dark' %}bg-gray-dark border-gray-dark{% else %}bg-white border-gray-light{% endif %} position-relative overflow-hidden">
+  
+  <!-- Subtle decorative background element -->
+  <div class="position-absolute" style="top: -20px; right: -20px; opacity: 0.05; font-size: 150px; line-height: 1; pointer-events: none; user-select: none;">
+    💡
+  </div>
+
+  <div class="position-relative z-1 text-center text-md-left">
+    <h3 class="f5 text-uppercase text-gray-light mb-3 tracking-wide" style="letter-spacing: 2px;">AI Insight of the Day</h3>
+    <p class="f2 text-italic mb-4" style="line-height: 1.4; font-weight: 300; {% if site.style == 'dark' %}color: #e1e4e8;{% else %}color: #24292e;{% endif %}">
+      "{{ site.data.learning.learning }}"
+    </p>
+    
+    <div class="d-md-flex flex-items-center justify-content-between border-top pt-4 {% if site.style == 'dark' %}border-gray-dark{% else %}border-gray-light{% endif %}">
+      <div class="f5 text-gray mb-3 mb-md-0 text-left">
+        From the article: <strong class="d-block d-md-inline">{{ site.data.learning.articleTitle }}</strong>
+      </div>
+      <a href="{{ site.data.learning.articleUrl }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+        Read Article
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  .learning-board {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: linear-gradient(145deg, {% if site.style == 'dark' %}#24292e, #2f363d{% else %}#ffffff, #f6f8fa{% endif %});
+  }
+  .learning-board:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12) !important;
+  }
+</style>
+{% endif %}
