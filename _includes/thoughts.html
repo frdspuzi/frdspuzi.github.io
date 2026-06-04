@@ -1,6 +1,10 @@
 <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Writing</h2>
 <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Articles I've published on Medium.</p>
 
+<div id="medium-filters" class="mb-4" style="display:none;">
+  <button class="medium-filter-btn active" data-filter="all">All</button>
+</div>
+
 <div id="medium-posts" class="d-sm-flex flex-wrap gutter-condensed mb-4">
   <div class="col-12 text-center py-4 text-gray" id="medium-loading">
     Loading articles&hellip;
@@ -12,6 +16,8 @@
   var MEDIUM_RSS = 'https://medium.com/feed/@frdspuzi';
   var API_URL = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(MEDIUM_RSS);
   var container = document.getElementById('medium-posts');
+  var filtersBar = document.getElementById('medium-filters');
+  var activeFilter = 'all';
 
   function stripHtml(html) {
     var tmp = document.createElement('div');
@@ -22,7 +28,7 @@
   function extractSummary(html) {
     var tmp = document.createElement('div');
     tmp.innerHTML = html;
-    
+
     var paragraphs = tmp.querySelectorAll('p');
     for (var i = 0; i < paragraphs.length; i++) {
       var text = (paragraphs[i].textContent || '').trim();
@@ -33,18 +39,18 @@
         return text.substring(18).trim();
       }
     }
-    
+
     var blockquote = tmp.querySelector('blockquote');
     if (blockquote) {
       var bqText = (blockquote.textContent || '').replace(/\s+/g, ' ').trim();
       if (bqText.length > 20) return bqText;
     }
-    
+
     for (var i = 0; i < paragraphs.length; i++) {
       var text = (paragraphs[i].textContent || '').replace(/\s+/g, ' ').trim();
       if (text.length > 80) return text;
     }
-    
+
     var fallback = (tmp.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 140);
     if (fallback.length === 140) fallback += '…';
     return fallback;
@@ -55,7 +61,7 @@
     return d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
   }
 
-  function buildCard(item) {
+  function buildCard(item, category) {
     var excerpt = extractSummary(item.content);
 
     var imageUrl = null;
@@ -74,14 +80,18 @@
     }
 
     var card = document.createElement('div');
-    card.className = 'col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3';
+    card.className = 'col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3 medium-card-wrapper';
+    card.setAttribute('data-category', category);
     card.innerHTML =
       '<a href="' + item.link + '" target="_blank" rel="noopener noreferrer" ' +
         'style="text-decoration:none; display:flex; flex-direction:column; height:100%;">' +
         '<div class="Box box-shadow-medium height-full medium-card overflow-hidden d-flex flex-column">' +
           imageHtml +
           '<div class="p-4 d-flex flex-column flex-auto">' +
-            '<p class="f6 text-gray mb-2 medium-date">' + formatDate(item.pubDate) + '</p>' +
+            '<div class="d-flex flex-items-center mb-2" style="gap:8px;">' +
+              '<p class="f6 text-gray medium-date mb-0">' + formatDate(item.pubDate) + '</p>' +
+              (category !== 'uncategorized' ? '<span class="medium-tag">' + category + '</span>' : '') +
+            '</div>' +
             '<h3 class="f4 lh-condensed mb-2 medium-title">' + item.title + '</h3>' +
             '<p class="f5 text-gray medium-excerpt flex-auto">' + excerpt + '</p>' +
             '<span class="f6 medium-read-more mt-2">Read on Medium &rarr;</span>' +
@@ -89,6 +99,49 @@
         '</div>' +
       '</a>';
     return card;
+  }
+
+  function applyFilter(filter) {
+    activeFilter = filter;
+    var cards = container.querySelectorAll('.medium-card-wrapper');
+    cards.forEach(function(card) {
+      var cat = card.getAttribute('data-category');
+      if (filter === 'all' || cat === filter) {
+        card.style.opacity = '0';
+        card.style.display = '';
+        setTimeout(function(c) { return function() { c.style.opacity = '1'; }; }(card), 10);
+      } else {
+        card.style.opacity = '0';
+        setTimeout(function(c) { return function() { c.style.display = 'none'; }; }(card), 200);
+      }
+    });
+
+    var btns = filtersBar.querySelectorAll('.medium-filter-btn');
+    btns.forEach(function(btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-filter') === filter);
+    });
+  }
+
+  function buildFilters(categories) {
+    filtersBar.innerHTML = '';
+    var allBtn = document.createElement('button');
+    allBtn.className = 'medium-filter-btn active';
+    allBtn.setAttribute('data-filter', 'all');
+    allBtn.textContent = 'All';
+    allBtn.addEventListener('click', function() { applyFilter('all'); });
+    filtersBar.appendChild(allBtn);
+
+    categories.forEach(function(cat) {
+      if (cat === 'uncategorized') return;
+      var btn = document.createElement('button');
+      btn.className = 'medium-filter-btn';
+      btn.setAttribute('data-filter', cat);
+      btn.textContent = cat;
+      btn.addEventListener('click', function() { applyFilter(cat); });
+      filtersBar.appendChild(btn);
+    });
+
+    filtersBar.style.display = 'flex';
   }
 
   fetch(API_URL)
@@ -99,10 +152,28 @@
         container.innerHTML = '<p class="text-gray">No articles found.</p>';
         return;
       }
-      var items = data.items.slice(0, 6);
+
+      var seenCategories = [];
+      var items = data.items.slice(0, 9);
+
       items.forEach(function (item) {
-        container.appendChild(buildCard(item));
+        var category = (item.categories && item.categories.length > 0)
+          ? item.categories[0]
+          : 'uncategorized';
+
+        if (seenCategories.indexOf(category) === -1 && category !== 'uncategorized') {
+          seenCategories.push(category);
+        }
+
+        var card = buildCard(item, category);
+        card.style.opacity = '0';
+        container.appendChild(card);
+        setTimeout(function(c) { return function() { c.style.opacity = '1'; }; }(card), 10);
       });
+
+      if (seenCategories.length > 1) {
+        buildFilters(seenCategories);
+      }
     })
     .catch(function () {
       container.innerHTML =
@@ -113,6 +184,9 @@
 </script>
 
 <style>
+  .medium-card-wrapper {
+    transition: opacity 0.2s ease;
+  }
   .medium-card {
     border-radius: 8px;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -146,5 +220,42 @@
   .medium-read-more {
     color: #0366d6;
     font-weight: 500;
+  }
+  .medium-tag {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background-color: #f1f8ff;
+    color: #0366d6;
+    border: 1px solid #c8e1ff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  #medium-filters {
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+  .medium-filter-btn {
+    padding: 6px 16px;
+    border-radius: 20px;
+    border: 1px solid #e1e4e8;
+    background: white;
+    color: #586069;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .medium-filter-btn:hover {
+    border-color: #0366d6;
+    color: #0366d6;
+  }
+  .medium-filter-btn.active {
+    background: #0366d6;
+    border-color: #0366d6;
+    color: white;
   }
 </style>
