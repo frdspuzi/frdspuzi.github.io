@@ -1,30 +1,44 @@
 {
   "learnings": [
     {
-      "learning": "PCIe power management states allow a device to efficiently manage energy consumption by trading off power savings against the time required to resume activity. These states range from the fully operational L0 state to the deeply powered-down L2 state, which offers the highest power savings but requires the longest wake-up time",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2"
+      "question": "Which Scrum artifact consists of selected user stories and represents the team's commitment for the duration of the Sprint?",
+      "options": [
+        "Product Backlog",
+        "Sprint Backlog",
+        "Burndown Chart",
+        "Sprint Planning"
+      ],
+      "correctIndex": 1,
+      "learning": "The Sprint Backlog is a key Scrum artifact consisting of user stories selected for the current Sprint, representing the team's commitment for that Sprint's duration.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2"
     },
     {
-      "learning": "In Islamic belief, Qada’ represents the actual unfolding of life events that can be altered through sincere supplication and action. However, any such change is already fully known to Allah and preordained within His complete, eternal plan of Qadr",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2"
-    },
-    {
-      "learning": "In Islamic beliefs, the purpose of human life revolves around worshiping Allah, serving as stewards of the Earth to preserve faith and unity, and preparing for the eternal Hereafter. This framework teaches that earthly life is a temporary test of conduct where every action carries personal accountability and shapes one's eternal outcome",
+      "question": "According to Quran 67:2, what is the purpose behind the creation of death and life?",
+      "options": [
+        "To test who among mankind is best in deed",
+        "To allow mankind to accumulate material wealth",
+        "To establish a permanent earthly kingdom",
+        "To eliminate the need for accountability and free will"
+      ],
+      "correctIndex": 0,
+      "learning": "According to Quran 67:2, life and death were created as a divine test to determine which of mankind is best in deed.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2"
     },
     {
-      "learning": "A data analysis of the Quran reveals that its top 20 most repeated words account for approximately 20.83% of the text, meaning they do not satisfy the Pareto 80/20 principle. Despite this, mastering these specific words remains the recommended starting point for beginners trying to learn Quranic Arabic",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2"
-    },
-    {
-      "learning": "Scrum is an agile approach that breaks the development process into iterative cycles called Sprints to allow for greater flexibility and quicker adjustments. It relies on three specific roles, three artifacts to ensure transparency, and three structured ceremonies to keep the team aligned and continuously improving",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2"
+      "question": "According to the text, what is the key distinction between Qada' and Qadr?",
+      "options": [
+        "Qada' is the actual occurrence of events in our lives which can be altered, while Qadr is Allah's complete, preordained plan and eternal knowledge.",
+        "Qada' is Allah's unchangeable and eternal plan, while Qadr is the temporary occurrence of events that cannot be influenced by human actions.",
+        "Qada' refers to the protection provided by successive angels, while Qadr represents the act of making a sincere supplication (Dua).",
+        "Qada' is the physical manifestation of disasters on earth, while Qadr is the financial success achieved through starting a business."
+      ],
+      "correctIndex": 0,
+      "learning": "Qada' represents the actual occurrence and unfolding of events in our lives which can be influenced by our actions and Dua, whereas Qadr is Allah's complete, preordained plan and eternal knowledge of everything that will ever happen.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2"
     }
   ],
-  "fetchedAt": "2026-06-04T18:20:36.710Z"
+  "fetchedAt": "2026-06-04T19:21:10.409Z"
 }
