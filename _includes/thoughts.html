@@ -1,6 +1,8 @@
 <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Writing</h2>
 <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Articles I've published on Medium.</p>
 
+{% include learning_board.html %}
+
 <div id="medium-filters" class="mb-4" style="display:none;">
   <button class="medium-filter-btn active" data-filter="all">All</button>
 </div>
