@@ -1,0 +1,42 @@
+name: Fetch Unsplash Photos
+
+on:
+  schedule:
+    - cron: '0 0,12 * * *' # Run twice a day
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  fetch-photos:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write 
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch photos from Unsplash
+        env:
+          UNSPLASH_ACCESS_KEY: {% raw %}${{ secrets.UNSPLASH_ACCESS_KEY }}{% endraw %}
+        run: |
+          mkdir -p _data
+          curl -s -H "Authorization: Client-ID $UNSPLASH_ACCESS_KEY" \
+               "https://api.unsplash.com/users/frdspuzi/photos?per_page=12&order_by=latest" \
+               > _data/unsplash.json
+          
+          if ! jq -e . _data/unsplash.json > /dev/null 2>&1; then
+            echo "Failed to fetch valid JSON from Unsplash API."
+            exit 1
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add _data/unsplash.json
+          if git diff-index --quiet HEAD; then
+            echo "No new photos."
+          else
+            git commit -m "chore: Update Unsplash photos data [skip ci]"
+            git push
+          fi
