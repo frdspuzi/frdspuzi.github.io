@@ -24,7 +24,7 @@
       <!-- Skip and Hint Buttons -->
       <div id="trivia-helpers" class="d-flex flex-justify-between flex-items-center mb-4">
         <a id="trivia-hint-link" href="#" class="f6 text-gray text-underline" target="_blank" rel="noopener noreferrer">Not sure? Read the article</a>
-        <button id="btn-skip" class="btn btn-invisible text-gray text-italic f6 p-0">Skip Question &rarr;</button>
+        <button id="btn-skip" class="btn btn-invisible text-gray text-italic f6">Skip Question &rarr;</button>
       </div>
 
       <!-- Reveal Area (Hidden by default) -->
@@ -98,7 +98,7 @@
       
       currentItem.options.forEach((optText, index) => {
         const btn = document.createElement('button');
-        btn.className = 'btn text-left p-3 text-normal f4 trivia-btn';
+        btn.className = 'btn text-left p-2 text-normal f5 trivia-btn';
         btn.style.width = '100%';
         btn.style.whiteSpace = 'normal';
         btn.innerText = optText;
