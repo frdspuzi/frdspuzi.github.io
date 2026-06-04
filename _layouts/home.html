@@ -17,6 +17,7 @@
     {% include thoughts.html %}
   </div>
 
+  {% comment %}
   <div class="my-6">
     {% include projects.html %}
   </div>
@@ -26,6 +27,7 @@
     {% include interests.html %}
   </div>
   {% endif %}
+  {% endcomment %}
 
 </div>
 {% else %}
@@ -47,6 +49,7 @@
       {% include learning_board.html %}
       {% include thoughts.html %}
 
+      {% comment %}
       <div class="mt-6">
         {% include projects.html %}
       </div>
@@ -56,6 +59,7 @@
         {% include interests.html %}
       </div>
       {% endif %}
+      {% endcomment %}
 
       <div class="mt-6">
         {% include photography.html %}
