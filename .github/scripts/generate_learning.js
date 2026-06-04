@@ -42,9 +42,10 @@ async function generateLearning() {
 Rules:
 1. The "learning" must be a highly valuable, standalone fact, concept, or insight from the text (1-2 sentences).
 2. The "question" must test the user on that exact learning.
-3. Provide 4 "options" (strings). One must be correct, 3 must be plausible but incorrect.
-4. "correctIndex" is the integer index (0-3) of the correct option.
-5. CRITICAL: Only refer to the provided body text. Do not add outside knowledge.
+3. CRITICAL: The "question" must be phrased as general standalone trivia. DO NOT use phrases like "According to the text", "Based on the article", or "As mentioned".
+4. Provide 4 "options" (strings). One must be correct, 3 must be plausible but incorrect.
+5. "correctIndex" is the integer index (0-3) of the correct option.
+6. CRITICAL: Only refer to the provided body text. Do not add outside knowledge.
 
 Output a strictly valid JSON object matching this schema:
 {
