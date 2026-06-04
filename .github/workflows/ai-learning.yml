@@ -1,0 +1,39 @@
+name: Generate AI Learning Board
+
+on:
+  schedule:
+    - cron: '30 0 * * *' 
+  workflow_dispatch: 
+
+jobs:
+  generate-learning:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write 
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate Random Learning via Gemini
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: node .github/scripts/generate_learning.js
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add _data/learning.json
+          
+          if git diff-index --quiet HEAD; then
+            echo "No new learning generated."
+          else
+            git commit -m "chore: Update AI Random Learning [skip ci]"
+            git push
+          fi
