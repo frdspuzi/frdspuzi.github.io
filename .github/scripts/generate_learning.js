@@ -28,8 +28,15 @@ async function generateLearning() {
     const cleanContent = randomArticle.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 
     console.log("Asking Gemini to extract a learning...");
-    const prompt = `You are an expert editor. Read the following text from an article and extract the single most valuable, inspiring, and punchy key learning from it. Make it exactly one sentence long. 
-CRITICAL: Do not use quotes around it. Do not use asterisks, prefixes, or bullet points. Output ONLY the raw sentence itself. Make it sound profound but conversational.
+    const prompt = `You are an expert technical writer. Read the following article and extract a single "nugget of knowledge" from it. It should be a highly valuable, standalone fact, concept, or insight.
+
+Rules:
+1. Output exactly 1 to 2 short sentences.
+2. The nugget must make complete sense on its own. Explicitly mention the main subject of the article (e.g., PCIe, Scrum) so the context is clear.
+3. Make it informative, clear, and insightful. Do not sound like a clickbait teaser.
+4. CRITICAL: Do not use quotes around it. Do not use asterisks, prefixes, or bullet points. Output ONLY the raw text itself.
+
+Article Title: ${randomArticle.title}
 
 Text:
 ${cleanContent.substring(0, 15000)}`;
