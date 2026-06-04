@@ -12,11 +12,11 @@
       "{{ site.data.learning.learning }}"
     </p>
     
-    <div class="d-md-flex flex-items-center justify-content-between border-top pt-4 {% if site.style == 'dark' %}border-gray-dark{% else %}border-gray-light{% endif %}">
-      <div class="f5 text-gray mb-3 mb-md-0 text-left">
+    <div class="d-flex flex-column flex-md-row flex-items-center flex-justify-between border-top pt-4 {% if site.style == 'dark' %}border-gray-dark{% else %}border-gray-light{% endif %}" style="width: 100%;">
+      <div class="f5 text-gray mb-3 mb-md-0 text-left mr-md-4">
         From the article: <strong class="d-block d-md-inline">{{ site.data.learning.articleTitle }}</strong>
       </div>
-      <a href="{{ site.data.learning.articleUrl }}" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+      <a href="{{ site.data.learning.articleUrl }}" class="btn btn-primary flex-shrink-0" target="_blank" rel="noopener noreferrer">
         Read Article
       </a>
     </div>
