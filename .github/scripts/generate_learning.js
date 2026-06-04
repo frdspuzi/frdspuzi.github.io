@@ -15,7 +15,7 @@ async function generateLearning() {
     console.log("Fetching latest articles from Medium...");
     const rssRes = await fetch(MEDIUM_RSS_URL);
     const rssData = await rssRes.json();
-    
+
     if (rssData.status !== 'ok' || !rssData.items || rssData.items.length === 0) {
       throw new Error("Failed to fetch articles or no articles found.");
     }
@@ -28,7 +28,11 @@ async function generateLearning() {
     const cleanContent = randomArticle.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 
     console.log("Asking Gemini to extract a learning...");
-    const prompt = `You are an expert editor. Read the following text from an article and extract the single most valuable, inspiring, and punchy key learning from it. Make it exactly one sentence long. Do not use quotes around it. Make it sound profound but conversational. \n\nText:\n${cleanContent.substring(0, 15000)}`;
+    const prompt = `You are an expert editor. Read the following text from an article and extract the single most valuable, inspiring, and punchy key learning from it. Make it exactly one sentence long. 
+CRITICAL: Do not use quotes around it. Do not use asterisks, prefixes, or bullet points. Output ONLY the raw sentence itself. Make it sound profound but conversational.
+
+Text:
+${cleanContent.substring(0, 15000)}`;
 
     const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-3.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
       method: 'POST',
@@ -47,13 +51,15 @@ async function generateLearning() {
     });
 
     const geminiData = await geminiRes.json();
-    
+
     if (!geminiData.candidates || geminiData.candidates.length === 0) {
       console.error(JSON.stringify(geminiData, null, 2));
       throw new Error("Gemini API did not return a candidate.");
     }
 
-    const learningText = geminiData.candidates[0].content.parts[0].text.trim();
+    let learningText = geminiData.candidates[0].content.parts[0].text.trim();
+    // Strip leading/trailing quotes, asterisks, dots, or dashes that Gemini sometimes adds
+    learningText = learningText.replace(/^["'\.\*\-\s]+|["'\.\*\-\s]+$/g, '');
     console.log(`Extracted Learning: ${learningText}`);
 
     const finalOutput = {
