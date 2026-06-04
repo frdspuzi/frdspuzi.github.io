@@ -52,7 +52,7 @@ ${cleanContent.substring(0, 15000)}`;
         }],
         generationConfig: {
           temperature: 0.7,
-          maxOutputTokens: 100,
+          maxOutputTokens: 1024,
         }
       })
     });
@@ -65,6 +65,8 @@ ${cleanContent.substring(0, 15000)}`;
     }
 
     let learningText = geminiData.candidates[0].content.parts[0].text.trim();
+    // Strip any thinking blocks if Gemini 3.5 uses explicit thinking
+    learningText = learningText.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
     // Strip leading/trailing quotes, asterisks, dots, or dashes that Gemini sometimes adds
     learningText = learningText.replace(/^["'\.\*\-\s]+|["'\.\*\-\s]+$/g, '');
     console.log(`Extracted Learning: ${learningText}`);
