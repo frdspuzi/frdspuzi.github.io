@@ -37,14 +37,22 @@ async function generateLearning() {
         // Basic HTML stripping
         const cleanContent = article.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 
-        const prompt = `You are an expert technical writer. Read the following article and extract a single "nugget of knowledge" from it. It should be a highly valuable, standalone fact, concept, or insight.
+        const prompt = `You are an expert technical writer and quiz master. Read the following article and extract a single "nugget of knowledge" from it. Then, generate a multiple-choice trivia question based on that insight.
 
 Rules:
-1. Output exactly 1 to 2 short sentences.
-2. The nugget must make complete sense on its own. Explicitly mention the main subject of the article (e.g., PCIe, Scrum) so the context is clear.
-3. Make it informative, clear, and insightful. Do not sound like a clickbait teaser.
-4. CRITICAL: Only refer to the provided body text. Do not add any outside knowledge.
-5. CRITICAL: Do not use quotes around it. Do not use asterisks, prefixes, or bullet points. Output ONLY the raw text itself.
+1. The "learning" must be a highly valuable, standalone fact, concept, or insight from the text (1-2 sentences).
+2. The "question" must test the user on that exact learning.
+3. Provide 4 "options" (strings). One must be correct, 3 must be plausible but incorrect.
+4. "correctIndex" is the integer index (0-3) of the correct option.
+5. CRITICAL: Only refer to the provided body text. Do not add outside knowledge.
+
+Output a strictly valid JSON object matching this schema:
+{
+  "question": "The question string",
+  "options": ["Option A", "Option B", "Option C", "Option D"],
+  "correctIndex": 0,
+  "learning": "The extracted insight string"
+}
 
 Article Title: ${article.title}
 
@@ -63,6 +71,7 @@ ${cleanContent.substring(0, 15000)}`;
             generationConfig: {
               temperature: 0.7,
               maxOutputTokens: 8192,
+              responseMimeType: "application/json"
             }
           })
         });
@@ -77,12 +86,22 @@ ${cleanContent.substring(0, 15000)}`;
         let learningText = geminiData.candidates[0].content.parts[0].text.trim();
         // Strip any thinking blocks if Gemini 3.5 uses explicit thinking
         learningText = learningText.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
-        // Strip leading/trailing quotes, asterisks, dots, or dashes that Gemini sometimes adds
-        learningText = learningText.replace(/^["'\.\*\-\s]+|["'\.\*\-\s]+$/g, '');
-        console.log(`Extracted Learning: ${learningText}`);
+        
+        let parsedData;
+        try {
+          parsedData = JSON.parse(learningText);
+        } catch (e) {
+          console.error("Failed to parse Gemini JSON output for", article.title, ":", learningText);
+          continue;
+        }
+
+        console.log(`Extracted Question: ${parsedData.question}`);
 
         generatedLearnings.push({
-          learning: learningText,
+          question: parsedData.question,
+          options: parsedData.options,
+          correctIndex: parsedData.correctIndex,
+          learning: parsedData.learning,
           articleTitle: article.title,
           articleUrl: article.link
         });
