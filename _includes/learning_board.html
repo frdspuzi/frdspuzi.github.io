@@ -17,8 +17,14 @@
       </h2>
       
       <!-- Options -->
-      <div id="trivia-options" class="d-flex flex-column" style="gap: 12px; margin-bottom: 24px;">
+      <div id="trivia-options" class="d-flex flex-column" style="gap: 12px; margin-bottom: 16px;">
         <!-- Buttons injected by JS -->
+      </div>
+
+      <!-- Skip and Hint Buttons -->
+      <div id="trivia-helpers" class="d-flex flex-justify-between flex-items-center mb-4">
+        <a id="trivia-hint-link" href="#" class="f6 text-gray text-underline" target="_blank" rel="noopener noreferrer">Not sure? Read the article</a>
+        <button id="btn-skip" class="btn btn-invisible text-gray text-italic f6 p-0">Skip Question &rarr;</button>
       </div>
 
       <!-- Reveal Area (Hidden by default) -->
@@ -66,15 +72,29 @@
     const titleEl = document.getElementById('learning-title');
     const linkEl = document.getElementById('learning-link');
     const nextBtn = document.getElementById('btn-next-question');
+    const skipBtn = document.getElementById('btn-skip');
+    const hintLink = document.getElementById('trivia-hint-link');
+    const helpersContainer = document.getElementById('trivia-helpers');
 
     let currentItem = null;
 
     function loadRandomQuestion() {
       revealEl.style.display = 'none';
+      helpersContainer.style.display = 'flex';
       optionsEl.innerHTML = '';
       
-      currentItem = learnings[Math.floor(Math.random() * learnings.length)];
+      let nextItem;
+      if (learnings.length > 1) {
+        do {
+          nextItem = learnings[Math.floor(Math.random() * learnings.length)];
+        } while (currentItem && nextItem.question === currentItem.question);
+      } else {
+        nextItem = learnings[0];
+      }
+      currentItem = nextItem;
+      
       questionEl.innerText = currentItem.question;
+      hintLink.href = currentItem.articleUrl;
       
       currentItem.options.forEach((optText, index) => {
         const btn = document.createElement('button');
@@ -89,6 +109,8 @@
     }
 
     function handleAnswer(selectedIndex, clickedBtn) {
+      helpersContainer.style.display = 'none'; // Hide helpers after answer
+      
       const buttons = optionsEl.querySelectorAll('button');
       buttons.forEach((b, i) => {
         b.disabled = true;
@@ -97,7 +119,7 @@
         }
       });
 
-      if (selectedIndex !== currentItem.correctIndex) {
+      if (clickedBtn && selectedIndex !== currentItem.correctIndex) {
         clickedBtn.classList.add('trivia-wrong', 'shake-anim');
       }
 
@@ -108,6 +130,7 @@
     }
 
     nextBtn.onclick = loadRandomQuestion;
+    skipBtn.onclick = loadRandomQuestion;
 
     loadRandomQuestion();
   });
