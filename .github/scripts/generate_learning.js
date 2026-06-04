@@ -70,8 +70,7 @@ ${cleanContent.substring(0, 15000)}`;
             }],
             generationConfig: {
               temperature: 0.7,
-              maxOutputTokens: 8192,
-              responseMimeType: "application/json"
+              maxOutputTokens: 8192
             }
           })
         });
@@ -79,13 +78,15 @@ ${cleanContent.substring(0, 15000)}`;
         const geminiData = await geminiRes.json();
 
         if (!geminiData.candidates || geminiData.candidates.length === 0) {
-          console.error("Gemini API did not return a candidate for", article.title);
+          console.error("Gemini API Error for", article.title, ":", JSON.stringify(geminiData, null, 2));
           continue;
         }
 
         let learningText = geminiData.candidates[0].content.parts[0].text.trim();
-        // Strip any thinking blocks if Gemini 3.5 uses explicit thinking
+        // Strip any thinking blocks if Gemini uses explicit thinking
         learningText = learningText.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
+        // Strip markdown JSON code blocks if present
+        learningText = learningText.replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
         
         let parsedData;
         try {
