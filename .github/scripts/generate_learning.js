@@ -20,61 +20,86 @@ async function generateLearning() {
       throw new Error("Failed to fetch articles or no articles found.");
     }
 
-    // Pick a random article
-    const randomArticle = rssData.items[Math.floor(Math.random() * rssData.items.length)];
-    console.log(`Selected article: ${randomArticle.title}`);
+    // Pick up to 5 random articles
+    const shuffledItems = rssData.items.sort(() => 0.5 - Math.random());
+    const selectedArticles = shuffledItems.slice(0, 5);
+    console.log(`Selected ${selectedArticles.length} articles.`);
 
-    // Basic HTML stripping to save tokens (Gemini can handle HTML, but this is cleaner)
-    const cleanContent = randomArticle.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+    const generatedLearnings = [];
 
-    console.log("Asking Gemini to extract a learning...");
-    const prompt = `You are an expert technical writer. Read the following article and extract a single "nugget of knowledge" from it. It should be a highly valuable, standalone fact, concept, or insight.
+    // Helper to sleep and avoid hitting rate limits too quickly
+    const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+    for (const article of selectedArticles) {
+      try {
+        console.log(`Asking Gemini to extract a learning for: ${article.title}`);
+
+        // Basic HTML stripping
+        const cleanContent = article.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+
+        const prompt = `You are an expert technical writer. Read the following article and extract a single "nugget of knowledge" from it. It should be a highly valuable, standalone fact, concept, or insight.
 
 Rules:
 1. Output exactly 1 to 2 short sentences.
 2. The nugget must make complete sense on its own. Explicitly mention the main subject of the article (e.g., PCIe, Scrum) so the context is clear.
 3. Make it informative, clear, and insightful. Do not sound like a clickbait teaser.
-4. CRITICAL: Do not use quotes around it. Do not use asterisks, prefixes, or bullet points. Output ONLY the raw text itself.
+4. CRITICAL: Only refer to the provided body text. Do not add any outside knowledge.
+5. CRITICAL: Do not use quotes around it. Do not use asterisks, prefixes, or bullet points. Output ONLY the raw text itself.
 
-Article Title: ${randomArticle.title}
+Article Title: ${article.title}
 
 Text:
 ${cleanContent.substring(0, 15000)}`;
 
-    const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-3.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        contents: [{
-          parts: [{ text: prompt }]
-        }],
-        generationConfig: {
-          temperature: 0.7,
-          maxOutputTokens: 1024,
+        const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1/models/gemini-3.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            contents: [{
+              parts: [{ text: prompt }]
+            }],
+            generationConfig: {
+              temperature: 0.7,
+              maxOutputTokens: 1024,
+            }
+          })
+        });
+
+        const geminiData = await geminiRes.json();
+
+        if (!geminiData.candidates || geminiData.candidates.length === 0) {
+          console.error("Gemini API did not return a candidate for", article.title);
+          continue;
         }
-      })
-    });
 
-    const geminiData = await geminiRes.json();
+        let learningText = geminiData.candidates[0].content.parts[0].text.trim();
+        // Strip any thinking blocks if Gemini 3.5 uses explicit thinking
+        learningText = learningText.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
+        // Strip leading/trailing quotes, asterisks, dots, or dashes that Gemini sometimes adds
+        learningText = learningText.replace(/^["'\.\*\-\s]+|["'\.\*\-\s]+$/g, '');
+        console.log(`Extracted Learning: ${learningText}`);
 
-    if (!geminiData.candidates || geminiData.candidates.length === 0) {
-      console.error(JSON.stringify(geminiData, null, 2));
-      throw new Error("Gemini API did not return a candidate.");
+        generatedLearnings.push({
+          learning: learningText,
+          articleTitle: article.title,
+          articleUrl: article.link
+        });
+
+        // Delay 2 seconds between requests
+        await sleep(2000);
+      } catch (err) {
+        console.error("Error processing article", article.title, err.message);
+      }
     }
 
-    let learningText = geminiData.candidates[0].content.parts[0].text.trim();
-    // Strip any thinking blocks if Gemini 3.5 uses explicit thinking
-    learningText = learningText.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
-    // Strip leading/trailing quotes, asterisks, dots, or dashes that Gemini sometimes adds
-    learningText = learningText.replace(/^["'\.\*\-\s]+|["'\.\*\-\s]+$/g, '');
-    console.log(`Extracted Learning: ${learningText}`);
+    if (generatedLearnings.length === 0) {
+      throw new Error("Failed to generate any learnings.");
+    }
 
     const finalOutput = {
-      learning: learningText,
-      articleTitle: randomArticle.title,
-      articleUrl: randomArticle.link,
+      learnings: generatedLearnings,
       fetchedAt: new Date().toISOString()
     };
 

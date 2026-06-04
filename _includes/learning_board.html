@@ -1,4 +1,4 @@
-{% if site.data.learning and site.data.learning.learning %}
+{% if site.data.learning and site.data.learning.learnings %}
 <div class="learning-board box-shadow-large mb-6 p-5 p-md-6 border rounded-2 {% if site.style == 'dark' %}bg-gray-dark border-gray-dark{% else %}bg-white border-gray-light{% endif %} position-relative overflow-hidden">
   
   <!-- Subtle decorative background element -->
@@ -8,20 +8,35 @@
 
   <div class="position-relative z-1 text-center text-md-left">
     <h3 class="f5 text-uppercase text-gray-light mb-3 tracking-wide" style="letter-spacing: 2px;">AI Insight of the Day</h3>
-    <p class="f2 text-italic mb-4" style="line-height: 1.4; font-weight: 300; {% if site.style == 'dark' %}color: #e1e4e8;{% else %}color: #24292e;{% endif %}">
-      "{{ site.data.learning.learning }}"
+    <p id="learning-text" class="f2 text-italic mb-4" style="line-height: 1.4; font-weight: 300; {% if site.style == 'dark' %}color: #e1e4e8;{% else %}color: #24292e;{% endif %}">
+      "{{ site.data.learning.learnings[0].learning }}"
     </p>
     
     <div class="d-flex flex-column flex-md-row flex-items-center flex-justify-between border-top pt-4 {% if site.style == 'dark' %}border-gray-dark{% else %}border-gray-light{% endif %}" style="width: 100%;">
       <div class="f5 text-gray mb-3 mb-md-0 text-left mr-md-4">
-        From the article: <strong class="d-block d-md-inline">{{ site.data.learning.articleTitle }}</strong>
+        From the article: <strong id="learning-title" class="d-block d-md-inline">{{ site.data.learning.learnings[0].articleTitle }}</strong>
       </div>
-      <a href="{{ site.data.learning.articleUrl }}" class="btn btn-primary flex-shrink-0" target="_blank" rel="noopener noreferrer">
+      <a id="learning-link" href="{{ site.data.learning.learnings[0].articleUrl }}" class="btn btn-primary flex-shrink-0" target="_blank" rel="noopener noreferrer">
         Read Article
       </a>
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const learnings = {{ site.data.learning.learnings | jsonify }};
+    if (learnings && learnings.length > 0) {
+      // Pick a random learning
+      const randomLearning = learnings[Math.floor(Math.random() * learnings.length)];
+      
+      // Update DOM
+      document.getElementById("learning-text").innerText = '"' + randomLearning.learning + '"';
+      document.getElementById("learning-title").innerText = randomLearning.articleTitle;
+      document.getElementById("learning-link").href = randomLearning.articleUrl;
+    }
+  });
+</script>
 
 <style>
   .learning-board {
