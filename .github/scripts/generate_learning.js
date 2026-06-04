@@ -84,10 +84,11 @@ ${cleanContent.substring(0, 15000)}`;
         }
 
         let learningText = geminiData.candidates[0].content.parts[0].text.trim();
-        // Strip any thinking blocks if Gemini uses explicit thinking
-        learningText = learningText.replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
-        // Strip markdown JSON code blocks if present
-        learningText = learningText.replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
+        // Extract strictly the JSON object to ignore conversational filler or markdown
+        let jsonMatch = learningText.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+          learningText = jsonMatch[0];
+        }
         
         let parsedData;
         try {
