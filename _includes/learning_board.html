@@ -24,7 +24,7 @@
       <!-- Skip and Hint Buttons -->
       <div id="trivia-helpers" class="d-flex flex-justify-between flex-items-center mb-4">
         <a id="trivia-hint-link" href="#" class="f6 text-gray text-underline" target="_blank" rel="noopener noreferrer">Not sure? Read the article</a>
-        <button id="btn-skip" class="btn btn-invisible text-gray text-italic f6">Skip Question &rarr;</button>
+        <button id="btn-skip" type="button" class="btn btn-invisible text-gray text-italic f6">Skip Question &rarr;</button>
       </div>
 
       <!-- Reveal Area (Hidden by default) -->
@@ -43,7 +43,7 @@
             <a id="learning-link" href="#" class="btn flex-shrink-0 text-center" target="_blank" rel="noopener noreferrer">
               Read Article
             </a>
-            <button id="btn-next-question" class="btn btn-primary flex-shrink-0 text-center">
+            <button id="btn-next-question" type="button" class="btn btn-primary flex-shrink-0 text-center">
               Next Question &rarr;
             </button>
           </div>
@@ -78,7 +78,11 @@
 
     let currentItem = null;
 
-    function loadRandomQuestion() {
+    function loadRandomQuestion(event) {
+      if (event && event.preventDefault) {
+        event.preventDefault();
+      }
+      
       revealEl.style.display = 'none';
       helpersContainer.style.display = 'flex';
       optionsEl.innerHTML = '';
@@ -98,6 +102,7 @@
       
       currentItem.options.forEach((optText, index) => {
         const btn = document.createElement('button');
+        btn.type = 'button';
         btn.className = 'btn text-left p-2 text-normal f5 trivia-btn';
         btn.style.width = '100%';
         btn.style.whiteSpace = 'normal';
