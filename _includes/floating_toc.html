@@ -1,0 +1,154 @@
+<!-- Floating Table of Contents -->
+<nav id="floating-toc" aria-label="Page navigation">
+  <div id="floating-toc-tab">☰</div>
+  <div id="floating-toc-panel">
+    <p id="floating-toc-label">On this page</p>
+    <ul>
+      <li><a href="#about" class="toc-link">About</a></li>
+      <li><a href="#my-writing" class="toc-link">My Writing</a></li>
+      <li><a href="#photography" class="toc-link">Photography</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  #floating-toc {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    /* Hide on mobile — not enough room */
+  }
+
+  @media (max-width: 767px) {
+    #floating-toc { display: none; }
+  }
+
+  /* The collapsed tab — always visible */
+  #floating-toc-tab {
+    width: 36px;
+    height: 64px;
+    background: #0366d6;
+    color: white;
+    border-radius: 8px 0 0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: -2px 2px 8px rgba(0,0,0,0.15);
+    transition: background 0.2s ease, width 0.2s ease;
+    flex-shrink: 0;
+    user-select: none;
+  }
+
+  #floating-toc:hover #floating-toc-tab {
+    background: #0256b9;
+    border-radius: 0;
+  }
+
+  /* The expanded panel — hidden by default, slides in on hover */
+  #floating-toc-panel {
+    background: white;
+    border: 1px solid #e1e4e8;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    padding: 16px 18px;
+    box-shadow: -4px 2px 16px rgba(0,0,0,0.1);
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: width 0.25s ease, opacity 0.25s ease, padding 0.25s ease;
+    padding-left: 0;
+    padding-right: 0;
+    white-space: nowrap;
+  }
+
+  #floating-toc:hover #floating-toc-panel {
+    width: 160px;
+    opacity: 1;
+    padding: 16px 18px;
+  }
+
+  #floating-toc-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #959da5;
+    margin: 0 0 10px 0;
+  }
+
+  #floating-toc-panel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .toc-link {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #24292e;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: background 0.15s ease, color 0.15s ease;
+    border-left: 2px solid transparent;
+  }
+
+  .toc-link:hover {
+    background: #f1f8ff;
+    color: #0366d6;
+  }
+
+  .toc-link.toc-active {
+    color: #0366d6;
+    border-left-color: #0366d6;
+    background: #f1f8ff;
+  }
+</style>
+
+<script>
+  (function () {
+    var sections = [
+      { id: 'about', label: 'About' },
+      { id: 'my-writing', label: 'My Writing' },
+      { id: 'photography', label: 'Photography' }
+    ];
+
+    function updateActiveLink() {
+      var scrollY = window.scrollY || window.pageYOffset;
+      var windowH = window.innerHeight;
+      var activeId = null;
+
+      // Find the section whose top is closest to (but above) the middle of viewport
+      for (var i = sections.length - 1; i >= 0; i--) {
+        var el = document.getElementById(sections[i].id);
+        if (el && el.getBoundingClientRect().top <= windowH * 0.4) {
+          activeId = sections[i].id;
+          break;
+        }
+      }
+
+      // Default to first section if none qualify
+      if (!activeId) activeId = sections[0].id;
+
+      document.querySelectorAll('.toc-link').forEach(function (link) {
+        var href = link.getAttribute('href').replace('#', '');
+        link.classList.toggle('toc-active', href === activeId);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      updateActiveLink();
+      window.addEventListener('scroll', updateActiveLink, { passive: true });
+    });
+  })();
+</script>
