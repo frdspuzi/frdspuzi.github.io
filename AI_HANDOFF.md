@@ -30,6 +30,13 @@ A custom 3-tab gallery showcasing Firdaus's photography directly from Unsplash.
 - **The UI:** Clean, grid-based layout. We removed the "likes/stats overlay" on hover for a cleaner, distraction-free aesthetic, but kept the raw view counts visible under the "Most Viewed" tab.
 - **Automation:** Refreshed twice daily via `.github/workflows/unsplash.yml`.
 
+### 3. Floating Table of Contents (`_includes/floating_toc.html`)
+A hover-reveal sticky navigation tab fixed to the right edge of the screen (desktop only).
+- **Collapsed state:** A small blue `☰` tab always visible at mid-screen right.
+- **Expanded state:** Hovering slides open a panel with links to About, My Writing, and Photography.
+- **Active tracking:** JS watches scroll position and highlights the current section link.
+- **Anchor IDs:** `#about` (index.html), `#my-writing` (thoughts.html), `#photography` (photography.html).
+
 ---
 
 ## 🎨 Design Philosophy & UX Layout
