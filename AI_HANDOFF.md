@@ -18,7 +18,7 @@ We transformed a static "AI Insight" quote block into an interactive, gamified t
 - **How it works:** A Node.js script (`.github/scripts/generate_learning.js`) fetches Firdaus's latest Medium articles via RSS. It then uses the **Gemini 3.5 Flash API** (`v1beta` endpoint) to extract a core concept and generate a 4-option multiple-choice trivia question in strict JSON format. 
 - **The UI:** The front-end reads this JSON and builds an interactive quiz. It features:
   - Green/Red validation states with CSS shake animations for wrong answers.
-  - An endless loop "Skip Question" / "Next Question" button that ensures no duplicate questions are shown consecutively.
+  - An endless loop "Skip Question" / "Next Question" button. A **shuffled queue** cycles through all questions in random order before any repeats, so the same question is never shown twice in a row.
   - A "Not sure? Read the article" hint link that opens the source article.
 - **Automation:** The data is refreshed via a cron job in `.github/workflows/ai-learning.yml`.
 
