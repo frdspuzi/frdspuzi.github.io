@@ -1,12 +1,12 @@
 <!-- Floating Table of Contents -->
 <nav id="floating-toc" aria-label="Page navigation">
-  <div id="floating-toc-tab">☰</div>
+  <div id="floating-toc-tab" title="Navigation">☰</div>
   <div id="floating-toc-panel">
     <p id="floating-toc-label">On this page</p>
     <ul>
-      <li><a href="#about" class="toc-link">About</a></li>
-      <li><a href="#my-writing" class="toc-link">My Writing</a></li>
-      <li><a href="#photography" class="toc-link">Photography</a></li>
+      <li><button class="toc-link" data-target="about">About</button></li>
+      <li><button class="toc-link" data-target="my-writing">My Writing</button></li>
+      <li><button class="toc-link" data-target="photography">Photography</button></li>
     </ul>
   </div>
 </nav>
@@ -14,13 +14,11 @@
 <style>
   #floating-toc {
     position: fixed;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    left: 0;
+    top: 24px;
     z-index: 1000;
     display: flex;
-    align-items: center;
-    /* Hide on mobile — not enough room */
+    align-items: flex-start;
   }
 
   @media (max-width: 767px) {
@@ -30,19 +28,20 @@
   /* The collapsed tab — always visible */
   #floating-toc-tab {
     width: 36px;
-    height: 64px;
+    height: 56px;
     background: #0366d6;
     color: white;
-    border-radius: 8px 0 0 8px;
+    border-radius: 0 8px 8px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: -2px 2px 8px rgba(0,0,0,0.15);
-    transition: background 0.2s ease, width 0.2s ease;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+    transition: background 0.2s ease;
     flex-shrink: 0;
     user-select: none;
+    order: 1;
   }
 
   #floating-toc:hover #floating-toc-tab {
@@ -50,27 +49,31 @@
     border-radius: 0;
   }
 
-  /* The expanded panel — hidden by default, slides in on hover */
+  /* The expanded panel — slides out to the right on hover */
   #floating-toc-panel {
     background: white;
     border: 1px solid #e1e4e8;
-    border-right: none;
-    border-radius: 8px 0 0 8px;
-    padding: 16px 18px;
-    box-shadow: -4px 2px 16px rgba(0,0,0,0.1);
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 4px 2px 16px rgba(0,0,0,0.1);
     width: 0;
     overflow: hidden;
     opacity: 0;
-    transition: width 0.25s ease, opacity 0.25s ease, padding 0.25s ease;
-    padding-left: 0;
-    padding-right: 0;
+    transition: width 0.25s ease, opacity 0.2s ease;
     white-space: nowrap;
+    order: 2;
+    /* Vertically align content */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   #floating-toc:hover #floating-toc-panel {
     width: 160px;
     opacity: 1;
-    padding: 16px 18px;
+    padding: 14px 16px;
   }
 
   #floating-toc-label {
@@ -79,7 +82,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #959da5;
-    margin: 0 0 10px 0;
+    margin: 0 0 8px 0;
   }
 
   #floating-toc-panel ul {
@@ -88,17 +91,22 @@
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
   }
 
   .toc-link {
     display: block;
+    width: 100%;
+    text-align: left;
     font-size: 13px;
     font-weight: 500;
     color: #24292e;
     text-decoration: none;
     padding: 4px 8px;
     border-radius: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
     transition: background 0.15s ease, color 0.15s ease;
     border-left: 2px solid transparent;
   }
@@ -118,17 +126,22 @@
 <script>
   (function () {
     var sections = [
-      { id: 'about', label: 'About' },
-      { id: 'my-writing', label: 'My Writing' },
-      { id: 'photography', label: 'Photography' }
+      { id: 'about' },
+      { id: 'my-writing' },
+      { id: 'photography' }
     ];
 
-    function updateActiveLink() {
-      var scrollY = window.scrollY || window.pageYOffset;
-      var windowH = window.innerHeight;
-      var activeId = null;
+    // Scroll to a section reliably every time, regardless of current hash
+    function scrollToSection(id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 
-      // Find the section whose top is closest to (but above) the middle of viewport
+    function updateActiveLink() {
+      var windowH = window.innerHeight;
+      var activeId = sections[0].id;
+
       for (var i = sections.length - 1; i >= 0; i--) {
         var el = document.getElementById(sections[i].id);
         if (el && el.getBoundingClientRect().top <= windowH * 0.4) {
@@ -137,16 +150,19 @@
         }
       }
 
-      // Default to first section if none qualify
-      if (!activeId) activeId = sections[0].id;
-
-      document.querySelectorAll('.toc-link').forEach(function (link) {
-        var href = link.getAttribute('href').replace('#', '');
-        link.classList.toggle('toc-active', href === activeId);
+      document.querySelectorAll('.toc-link').forEach(function (btn) {
+        btn.classList.toggle('toc-active', btn.getAttribute('data-target') === activeId);
       });
     }
 
     document.addEventListener('DOMContentLoaded', function () {
+      // Wire up click handlers — use scrollIntoView so every click works
+      document.querySelectorAll('.toc-link').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          scrollToSection(btn.getAttribute('data-target'));
+        });
+      });
+
       updateActiveLink();
       window.addEventListener('scroll', updateActiveLink, { passive: true });
     });
