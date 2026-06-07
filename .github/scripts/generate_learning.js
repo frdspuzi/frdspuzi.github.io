@@ -4,6 +4,44 @@ const path = require('path');
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const MEDIUM_RSS_URL = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@frdspuzi';
 const OUTPUT_FILE = path.join(__dirname, '..', '..', '_data', 'learning.json');
+const GEMINI_MODEL = 'gemini-3.5-flash';
+const MAX_RETRIES = 3;
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function callGemini(prompt) {
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: { temperature: 0.7, maxOutputTokens: 8192 }
+        })
+      }
+    );
+
+    const data = await res.json();
+
+    if (res.status === 429) {
+      const waitMs = Math.pow(2, attempt) * 5000; // 10s, 20s, 40s
+      console.warn(`Rate limited (429). Attempt ${attempt}/${MAX_RETRIES}. Retrying in ${waitMs / 1000}s...`);
+      await sleep(waitMs);
+      continue;
+    }
+
+    if (!res.ok || !data.candidates || data.candidates.length === 0) {
+      console.error(`Gemini API Error (HTTP ${res.status}):`, JSON.stringify(data, null, 2));
+      return null;
+    }
+
+    return data;
+  }
+  console.error(`Gemini failed after ${MAX_RETRIES} retries (rate limit).`);
+  return null;
+}
 
 async function generateLearning() {
   if (!GEMINI_API_KEY) {
@@ -27,15 +65,17 @@ async function generateLearning() {
 
     const generatedLearnings = [];
 
-    // Helper to sleep and avoid hitting rate limits too quickly
-    const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-
     for (const article of selectedArticles) {
       try {
         console.log(`Asking Gemini to extract a learning for: ${article.title}`);
 
         // Basic HTML stripping
         const cleanContent = article.content.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+
+        if (cleanContent.length < 100) {
+          console.warn(`Skipping "${article.title}" — content too short after stripping (${cleanContent.length} chars).`);
+          continue;
+        }
 
         const prompt = `You are an expert technical writer and quiz master. Read the following article and extract a single "nugget of knowledge" from it. Then, generate a multiple-choice trivia question based on that insight.
 
@@ -60,26 +100,9 @@ Article Title: ${article.title}
 Text:
 ${cleanContent.substring(0, 15000)}`;
 
-        const geminiRes = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            contents: [{
-              parts: [{ text: prompt }]
-            }],
-            generationConfig: {
-              temperature: 0.7,
-              maxOutputTokens: 8192
-            }
-          })
-        });
-
-        const geminiData = await geminiRes.json();
-
-        if (!geminiData.candidates || geminiData.candidates.length === 0) {
-          console.error("Gemini API Error for", article.title, ":", JSON.stringify(geminiData, null, 2));
+        const geminiData = await callGemini(prompt);
+        if (!geminiData) {
+          console.warn(`Skipping "${article.title}" — Gemini returned no valid response.`);
           continue;
         }
 
@@ -89,7 +112,7 @@ ${cleanContent.substring(0, 15000)}`;
         if (jsonMatch) {
           learningText = jsonMatch[0];
         }
-        
+
         let parsedData;
         try {
           parsedData = JSON.parse(learningText);
@@ -102,11 +125,11 @@ ${cleanContent.substring(0, 15000)}`;
 
         // Manually shuffle the options to guarantee true randomness
         let allOptions = [parsedData.correctOption, ...(parsedData.incorrectOptions || [])];
-        
+
         // Fisher-Yates shuffle
         for (let i = allOptions.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [allOptions[i], allOptions[j]] = [allOptions[j], allOptions[i]];
+          const j = Math.floor(Math.random() * (i + 1));
+          [allOptions[i], allOptions[j]] = [allOptions[j], allOptions[i]];
         }
 
         const actualCorrectIndex = allOptions.indexOf(parsedData.correctOption);
@@ -120,8 +143,8 @@ ${cleanContent.substring(0, 15000)}`;
           articleUrl: article.link
         });
 
-        // Delay 2 seconds between requests
-        await sleep(2000);
+        // Delay 5 seconds between requests to stay within rate limits
+        await sleep(5000);
       } catch (err) {
         console.error("Error processing article", article.title, err.message);
       }
@@ -143,7 +166,7 @@ ${cleanContent.substring(0, 15000)}`;
     }
 
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalOutput, null, 2));
-    console.log(`Successfully wrote learning to ${OUTPUT_FILE}`);
+    console.log(`Successfully wrote ${generatedLearnings.length} learning(s) to ${OUTPUT_FILE}`);
 
   } catch (err) {
     console.error("Script failed:", err.message);
