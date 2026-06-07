@@ -77,29 +77,41 @@
     const helpersContainer = document.getElementById('trivia-helpers');
 
     let currentItem = null;
+    let queue = [];
+
+    function buildShuffledQueue() {
+      // Fisher-Yates shuffle of all available questions
+      const shuffled = [...learnings];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      // If the first item of the new queue matches the last shown question, rotate it to avoid back-to-back repeat
+      if (currentItem && shuffled.length > 1 && shuffled[0].question === currentItem.question) {
+        shuffled.push(shuffled.shift());
+      }
+      return shuffled;
+    }
 
     function loadRandomQuestion(event) {
       if (event && event.preventDefault) {
         event.preventDefault();
       }
-      
+
       revealEl.style.display = 'none';
       helpersContainer.style.display = 'flex';
       optionsEl.innerHTML = '';
-      
-      let nextItem;
-      if (learnings.length > 1) {
-        do {
-          nextItem = learnings[Math.floor(Math.random() * learnings.length)];
-        } while (currentItem && nextItem.question === currentItem.question);
-      } else {
-        nextItem = learnings[0];
+
+      // Refill the queue when empty
+      if (queue.length === 0) {
+        queue = buildShuffledQueue();
       }
-      currentItem = nextItem;
-      
+
+      currentItem = queue.shift();
+
       questionEl.innerText = currentItem.question;
       hintLink.href = currentItem.articleUrl;
-      
+
       currentItem.options.forEach((optText, index) => {
         const btn = document.createElement('button');
         btn.type = 'button';
@@ -107,11 +119,12 @@
         btn.style.width = '100%';
         btn.style.whiteSpace = 'normal';
         btn.innerText = optText;
-        
+
         btn.onclick = () => handleAnswer(index, btn);
         optionsEl.appendChild(btn);
       });
     }
+
 
     function handleAnswer(selectedIndex, clickedBtn) {
       helpersContainer.style.display = 'none'; // Hide helpers after answer
