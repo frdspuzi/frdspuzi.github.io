@@ -1,15 +1,15 @@
 <h2 id="my-writing" {% if site.style == 'dark' %}class="text-white"{% endif %}>My Writing</h2>
 <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Articles I've published on Medium.</p>
 
-<div class="d-flex flex-column flex-lg-row" style="gap: 32px;">
+<div class="d-flex flex-column flex-lg-row" style="gap: 32px; align-items: stretch;">
   
   <!-- Left Column: Insights / Trivia -->
-  <div class="col-12 col-lg-5 col-xl-4 flex-shrink-0">
+  <div class="col-12 col-lg-5 col-xl-4 flex-shrink-0 d-flex flex-column">
     {% include learning_board.html %}
   </div>
 
   <!-- Right Column: My Writing -->
-  <div class="col-12 col-lg-7 col-xl-8 flex-auto overflow-hidden" style="min-width: 0;">
+  <div class="col-12 col-lg-7 col-xl-8 flex-auto d-flex flex-column" style="min-width: 0;">
     <div class="d-flex flex-justify-between flex-items-center mb-3">
       <div id="medium-filters" style="display:none;">
         <button class="medium-filter-btn active" data-filter="all">All</button>
@@ -17,7 +17,7 @@
       <a href="https://medium.com/@frdspuzi" class="f6 text-underline" style="color: #0366d6; white-space: nowrap;" target="_blank" rel="noopener noreferrer">View all &rarr;</a>
     </div>
 
-    <div id="medium-posts" class="mb-4">
+    <div id="medium-posts" class="d-flex flex-column flex-auto" style="gap: 12px;">
       <div class="col-12 text-center py-4 text-gray" id="medium-loading">
         Loading articles&hellip;
       </div>
@@ -91,25 +91,24 @@
 
     var imageHtml = '';
     if (imageUrl) {
-      imageHtml = '<div class="medium-image" style="background-image: url(\'' + imageUrl + '\');"></div>';
+      imageHtml = '<div class="medium-image flex-shrink-0" style="background-image: url(\'' + imageUrl + '\'); width: 140px; border-right: 1px solid #e1e4e8;"></div>';
     }
 
     var card = document.createElement('div');
-    card.className = 'medium-card-wrapper';
+    card.className = 'medium-card-wrapper w-100';
     card.setAttribute('data-category', category);
     card.innerHTML =
       '<a href="' + item.link + '" target="_blank" rel="noopener noreferrer" ' +
-        'style="text-decoration:none; display:flex; flex-direction:column; height:100%;">' +
-        '<div class="Box box-shadow-medium height-full medium-card overflow-hidden d-flex flex-column">' +
+        'style="text-decoration:none; display:block; height:100%;">' +
+        '<div class="Box box-shadow-small medium-card overflow-hidden d-flex flex-row" style="min-height: 100px;">' +
           imageHtml +
-          '<div class="p-4 d-flex flex-column flex-auto">' +
-            '<div class="d-flex flex-items-center mb-2" style="gap:8px;">' +
-              '<p class="f6 text-gray medium-date mb-0">' + formatDate(item.pubDate) + '</p>' +
+          '<div class="p-3 d-flex flex-column flex-auto flex-justify-center" style="min-width: 0;">' +
+            '<h3 class="f5 lh-condensed mb-1 medium-title text-truncate">' + item.title + '</h3>' +
+            '<p class="f6 text-gray medium-excerpt flex-auto mb-2" style="-webkit-line-clamp: 2;">' + excerpt + '</p>' +
+            '<div class="d-flex flex-items-center" style="gap:8px;">' +
+              '<span class="f6 text-gray medium-date mb-0">' + formatDate(item.pubDate) + '</span>' +
               (category !== 'uncategorized' ? '<span class="medium-tag">' + category + '</span>' : '') +
             '</div>' +
-            '<h3 class="f4 lh-condensed mb-2 medium-title">' + item.title + '</h3>' +
-            '<p class="f5 text-gray medium-excerpt flex-auto">' + excerpt + '</p>' +
-            '<span class="f6 medium-read-more mt-2">Read on Medium &rarr;</span>' +
           '</div>' +
         '</div>' +
       '</a>';
@@ -169,7 +168,7 @@
       }
 
       var seenCategories = [];
-      var items = data.items.slice(0, 6);
+      var items = data.items.slice(0, 3); /* 3 items stacked vertically looks perfectly balanced */
 
       items.forEach(function (item) {
         var category = (item.categories && item.categories.length > 0)
@@ -203,54 +202,10 @@
     transition: opacity 0.2s ease;
   }
 
-  #medium-posts {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    gap: 16px;
-    padding-bottom: 16px; /* Space for scrollbar */
-    padding-top: 8px; /* Space for shadow */
-  }
-
-  /* Stylish Scrollbar */
-  #medium-posts::-webkit-scrollbar {
-    height: 8px;
-  }
-  #medium-posts::-webkit-scrollbar-track {
-    background: transparent; 
-  }
-  #medium-posts::-webkit-scrollbar-thumb {
-    background: #d1d5da; 
-    border-radius: 4px;
-  }
-  #medium-posts::-webkit-scrollbar-thumb:hover {
-    background: #959da5;
-  }
-
   .medium-card-wrapper {
-    flex: 0 0 85%; /* Show 85% of slide to hint at next one on mobile */
-    scroll-snap-align: center;
-    position: relative;
-    border-radius: 8px;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition: opacity 0.2s ease;
   }
-  
-  /* Desktop sizing */
-  @media (min-width: 768px) {
-    .medium-card-wrapper {
-      flex: 0 0 45%;
-      scroll-snap-align: start;
-    }
-  }
-  @media (min-width: 1024px) {
-    .medium-card-wrapper {
-      flex: 0 0 280px; /* Fixed width works better since it shares space with the insights column */
-      max-width: 280px;
-      scroll-snap-align: start;
-    }
-  }
+
   .medium-card {
     border-radius: 8px;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -275,11 +230,8 @@
     color: #959da5;
   }
   .medium-image {
-    width: 100%;
-    height: 160px;
     background-size: cover;
     background-position: center;
-    border-bottom: 1px solid #e1e4e8;
   }
   .medium-read-more {
     color: #0366d6;
