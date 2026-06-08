@@ -3,42 +3,55 @@ const path = require('path');
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const OUTPUT_FILE = path.join(__dirname, '..', '..', '_data', 'gratitude.json');
-const GEMINI_MODEL = 'gemini-3.5-flash';
+const GEMINI_MODELS = [
+  'gemini-3.5-flash',
+  'gemini-2.5-flash',
+  'gemini-3.1-flash-lite',
+  'gemini-2.5-flash-lite'
+];
 const MAX_RETRIES = 3;
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function callGemini(prompt) {
-  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { temperature: 0.8, maxOutputTokens: 2048 }
-        })
+  for (const model of GEMINI_MODELS) {
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: { temperature: 0.8, maxOutputTokens: 2048 }
+          })
+        }
+      );
+
+      const data = await res.json();
+
+      if (res.status === 429 || res.status === 503) {
+        const waitMs = Math.pow(2, attempt) * 5000;
+        console.warn(`API Error (${res.status}) on ${model}. Attempt ${attempt}/${MAX_RETRIES}. Retrying in ${waitMs / 1000}s...`);
+        
+        if (attempt === MAX_RETRIES) {
+            console.warn(`Max retries reached for ${model}. Falling back to next model...`);
+            break; 
+        }
+        await sleep(waitMs);
+        continue;
       }
-    );
 
-    const data = await res.json();
+      if (!res.ok || !data.candidates || data.candidates.length === 0) {
+        console.error(`Gemini API Error (HTTP ${res.status}) on ${model}:`, JSON.stringify(data, null, 2));
+        break; 
+      }
 
-    if (res.status === 429 || res.status === 503) {
-      const waitMs = Math.pow(2, attempt) * 5000;
-      console.warn(`API Error (${res.status}). Attempt ${attempt}/${MAX_RETRIES}. Retrying in ${waitMs / 1000}s...`);
-      await sleep(waitMs);
-      continue;
+      return data;
     }
-
-    if (!res.ok || !data.candidates || data.candidates.length === 0) {
-      console.error(`Gemini API Error (HTTP ${res.status}):`, JSON.stringify(data, null, 2));
-      return null;
-    }
-
-    return data;
   }
-  console.error(`Gemini failed after ${MAX_RETRIES} retries.`);
+  
+  console.error(`All Gemini models failed.`);
   return null;
 }
 
