@@ -9,17 +9,22 @@
   </div>
 
   <!-- Right Column: My Writing -->
-  <div class="col-12 col-lg-7 col-xl-8 flex-auto d-flex flex-column" style="min-width: 0;">
-    <div class="d-flex flex-justify-between flex-items-center mb-3">
-      <div id="medium-filters" style="display:none;">
-        <button class="medium-filter-btn active" data-filter="all">All</button>
+  <div class="col-12 col-lg-7 col-xl-8 right-column-container" style="min-width: 0;">
+    <div class="right-column-content d-flex flex-column w-100 h-100">
+      <div class="d-flex flex-justify-between flex-items-center mb-3 flex-shrink-0">
+        <div id="medium-filters" style="display:none;">
+          <button class="medium-filter-btn active" data-filter="all">All</button>
+        </div>
       </div>
-      <a href="https://medium.com/@frdspuzi" class="f6 text-underline" style="color: #0366d6; white-space: nowrap;" target="_blank" rel="noopener noreferrer">View all &rarr;</a>
-    </div>
 
-    <div id="medium-posts" class="d-flex flex-column flex-auto height-full" style="gap: 12px;">
-      <div class="col-12 text-center py-4 text-gray" id="medium-loading">
-        Loading articles&hellip;
+      <div id="medium-posts" class="d-flex flex-column flex-auto custom-scrollbar" style="gap: 12px; overflow-y: auto; min-height: 0; padding-right: 8px;">
+        <div class="col-12 text-center py-4 text-gray" id="medium-loading">
+          Loading articles&hellip;
+        </div>
+      </div>
+      
+      <div class="text-center mt-3 pt-2 flex-shrink-0 border-top" style="border-color: #e1e4e8 !important;">
+        <a href="https://medium.com/@frdspuzi" class="f6 text-gray text-underline" target="_blank" rel="noopener noreferrer">View all on Medium &rarr;</a>
       </div>
     </div>
   </div>
@@ -170,7 +175,7 @@
       }
 
       var seenCategories = [];
-      var items = data.items.slice(0, 5); /* Show 5 items to naturally fill the tall space alongside the AI Insight card */
+      var items = data.items.slice(0, 10); /* Fetch more items since the container is now scrollable */
 
       items.forEach(function (item) {
         var category = (item.categories && item.categories.length > 0)
@@ -200,6 +205,31 @@
 </script>
 
 <style>
+  /* Scrollable Container Styling */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #d1d5da; 
+    border-radius: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #959da5;
+  }
+
+  @media (min-width: 1012px) {
+    .right-column-container {
+      position: relative;
+    }
+    .right-column-content {
+      position: absolute;
+      top: 0; bottom: 0; left: 0; right: 0;
+    }
+  }
+
   .medium-card-wrapper {
     transition: opacity 0.2s ease;
   }
