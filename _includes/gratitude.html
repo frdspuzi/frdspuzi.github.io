@@ -1,18 +1,18 @@
-<details class="details-reset animated-details Box box-shadow-small mb-5" open>
-  <summary class="Box-header d-flex flex-justify-between flex-items-center" style="cursor: pointer; user-select: none;">
+<details class="details-reset animated-details mb-5" style="background: {% if site.style == 'dark' %}rgba(255,255,255,0.02){% else %}rgba(0,0,0,0.02){% endif %}; border: 1px solid {% if site.style == 'dark' %}rgba(255,255,255,0.1){% else %}rgba(0,0,0,0.06){% endif %}; border-radius: 12px;" open>
+  <summary class="p-4 d-flex flex-justify-between flex-items-center" style="cursor: pointer; user-select: none; border-bottom: 1px solid {% if site.style == 'dark' %}rgba(255,255,255,0.05){% else %}rgba(0,0,0,0.04){% endif %};">
     <h2 id="gratitude" class="f2 fw-bold {% if site.style == 'dark' %}text-white{% else %}text-gray-dark{% endif %}" style="margin-bottom: 0 !important; border-bottom: none;">Gratitude</h2>
     <svg class="collapse-arrow text-gray flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
       <path d="M12.78 6.22a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L3.22 7.28a.75.75 0 0 1 1.06-1.06L8 9.94l3.72-3.72a.75.75 0 0 1 1.06 0Z"></path>
     </svg>
   </summary>
 
-  <div class="Box-body p-4">
+  <div class="p-4">
     <div class="Box Box--condensed p-4 mb-4" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06);">
       <p class="f4 mb-2">Take a moment to reflect on what you're grateful for today. <br><span class="text-gray f6">(Your
           thoughts are private and stay only on your device)</span></p>
 
-      <blockquote class="mb-4 text-gray-dark"
-        style="border-left: 4px solid #0366d6; padding-left: 16px; font-style: italic;">
+      <blockquote class="mb-4 p-4"
+        style="background: rgba(3, 102, 214, 0.05); border-left: 4px solid #0366d6; border-radius: 0 8px 8px 0; color: {% if site.style == 'dark' %}#c9d1d9{% else %}#24292e{% endif %}; font-style: italic; font-size: 1.05em; line-height: 1.6;">
         "And ˹remember˺ when your Lord proclaimed, 'If you are grateful, I will certainly give you more...'" <br>
         <small class="text-gray">— Surah Ibrahim (14:7)</small>
       </blockquote>
