@@ -1,70 +1,44 @@
 {
   "learnings": [
     {
-      "question": "Which Scrum artifact is specifically used to visualize the progress of a Sprint and show the remaining work?",
+      "question": "Which Islamic term refers to the actual unfolding and occurrence of events in a person's life, which can be influenced or altered by their actions and supplications?",
       "options": [
-        "Product Backlog",
-        "Burndown Chart",
-        "Sprint Review",
-        "Sprint Backlog"
-      ],
-      "correctIndex": 1,
-      "learning": "In Scrum, the Burndown Chart is the visual artifact used to track the progress of a Sprint and display the amount of work remaining.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2"
-    },
-    {
-      "question": "In Islamic theology, what is the sole purpose for which God created jinn and mankind?",
-      "options": [
-        "To eliminate all physical suffering",
-        "To accumulate worldly wealth",
-        "To rule over the physical universe",
-        "To worship God"
-      ],
-      "correctIndex": 3,
-      "learning": "In Islamic theology, the Quran states that the sole purpose for the creation of both jinn and mankind is to worship God.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2"
-    },
-    {
-      "question": "Which PCIe power management state represents the deepest sleep mode, where the device is almost completely powered down to achieve the highest power savings and the longest wake-up time?",
-      "options": [
-        "L0s",
-        "L1.2",
-        "L2",
-        "L1.0"
-      ],
-      "correctIndex": 2,
-      "learning": "In PCIe power management, the L2 state is the deepest sleep state where the device is almost completely powered down, resulting in the maximum power savings and the longest wake-up time.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2"
-    },
-    {
-      "question": "Which term refers to the actual occurrence and unfolding of events in a person's life that can be influenced or altered by their actions and supplications?",
-      "options": [
+        "Qadr",
         "Al-Alim",
         "Qada’",
-        "Dua",
-        "Qadr"
+        "Dua"
       ],
-      "correctIndex": 1,
-      "learning": "Qada’ refers to the actual unfolding of events in our lives which can be altered by our actions and supplications, whereas Qadr represents Allah's complete, preordained plan and eternal knowledge of everything that will ever happen.",
+      "correctIndex": 2,
+      "learning": "In Islamic theology, Qada’ represents the actual unfolding of events in our lives which can be altered through actions and supplications, while Qadr is Allah's complete, preordained plan and eternal knowledge.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2"
     },
     {
-      "question": "What is the approximate ratio of distinct Arabic words to English words found in the Oxford English Dictionary?",
+      "question": "In Islamic theology, for what specific purpose does the Quran state that life and death were created?",
       "options": [
-        "20:1",
-        "170:1",
-        "71:1",
-        "12:1"
+        "To eliminate the concept of free will",
+        "To establish a hierarchy of worldly wealth",
+        "To allow humans to achieve physical immortality",
+        "To test humanity as to who is best in deed"
       ],
-      "correctIndex": 2,
-      "learning": "There are approximately 12 million distinct Arabic words compared to only 170,000 English words in the Oxford English Dictionary, resulting in an approximate 71:1 ratio of Arabic to English words.",
+      "correctIndex": 3,
+      "learning": "In Islamic theology, the Quran states that life and death were created for the specific purpose of testing humanity to see who is best in their deeds.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2"
+    },
+    {
+      "question": "What is the approximate ratio of distinct Arabic words to English words in the Oxford English Dictionary?",
+      "options": [
+        "35:1",
+        "71:1",
+        "120:1",
+        "15:1"
+      ],
+      "correctIndex": 1,
+      "learning": "There are approximately 12 million distinct Arabic words compared to only 170,000 English words in the Oxford English Dictionary, resulting in an estimated 71:1 ratio of Arabic to English words.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2"
     }
   ],
-  "fetchedAt": "2026-06-08T05:14:18.531Z"
+  "fetchedAt": "2026-06-08T18:04:37.694Z"
 }
