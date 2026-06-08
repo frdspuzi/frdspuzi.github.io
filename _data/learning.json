@@ -1,18 +1,57 @@
 {
   "learnings": [
     {
-      "question": "In Islamic theology, when a person's actions or supplications alter the actual occurrence of events in their life (Qada'), how does this outcome interact with Allah's preordained plan (Qadr)?",
+      "question": "When performing data analysis on Arabic text, what is the primary drawback of omitting 'Tashkeel' (the pronunciation/vowel markings) to make the dataset simpler and more uniform?",
       "options": [
-        "The change temporarily overrides and rewrites the preordained plan in Qadr.",
-        "The change permanently voids the original written plan, requiring a new destiny to be drafted.",
-        "The change and the decision to seek it were already known to Allah and are fully encompassed within Qadr.",
-        "The change operates completely outside of Qadr due to the exercise of human free will."
+        "It dramatically increases the dataset size and computational processing time by duplicating words.",
+        "It prevents APIs from returning the text string in a readable format.",
+        "It sacrifices analytical precision because different Arabic words can share the exact same spelling without these markings.",
+        "It forces the data analysis tools to automatically reverse the text alignment from right-to-left to left-to-right."
       ],
       "correctIndex": 2,
-      "learning": "While a person can alter the actual unfolding of events in their life (Qada') through actions and supplications, this change does not bypass divine destiny; both the action and the outcome were already known to Allah and are part of His complete plan (Qadr).",
+      "learning": "Analyzing Arabic text without Tashkeel simplifies the data and makes it more uniform, but it introduces the challenge of losing precision because different words can share the identical spelling when their vowel markings are removed.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2"
+    },
+    {
+      "question": "According to Surah Ar-Ra’d (13:11), under what condition does Allah change the status or condition of a people?",
+      "options": [
+        "Until they experience a disaster upon the earth",
+        "Until they change what is in themselves",
+        "Until they sever their ties of kinship",
+        "Until they completely stop making supplications"
+      ],
+      "correctIndex": 1,
+      "learning": "As stated in Surah Ar-Ra’d 13:11, a key spiritual and moral lesson is that Allah does not change the condition of a people until they first take the responsibility to change what is in themselves.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2"
+    },
+    {
+      "question": "In PCIe power management, which specific substate of L1 achieves greater power savings by powering down the electrical circuits of the main link?",
+      "options": [
+        "L1.1",
+        "L1.0",
+        "L1.2",
+        "L0s"
+      ],
+      "correctIndex": 0,
+      "learning": "The PCIe L1.1 substate specifically powers down the electrical circuits of the main link to save more energy than the L1.0 state, resulting in an increased wake-up time.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2"
+    },
+    {
+      "question": "In Islamic belief, what three primary roles define a person's life purpose and balance of devotion and responsibility?",
+      "options": [
+        "Adhering to strict isolation, pursuing intellectual superiority, and avoiding societal engagement",
+        "Worshiping Allah, serving as caretakers of the Earth, and preparing for the eternal Hereafter",
+        "Rejecting physical creation, pursuing complete self-reliance, and focusing solely on worldly legacy",
+        "Seeking absolute wealth, establishing political dominance, and prioritizing physical pleasure"
+      ],
+      "correctIndex": 1,
+      "learning": "In Islamic belief, life is a purposeful journey balanced by three core roles: worshiping Allah, serving as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2"
     }
   ],
-  "fetchedAt": "2026-06-08T18:27:34.050Z"
+  "fetchedAt": "2026-06-08T18:40:21.305Z"
 }
