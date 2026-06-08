@@ -4,42 +4,56 @@ const path = require('path');
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const MEDIUM_RSS_URL = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@frdspuzi';
 const OUTPUT_FILE = path.join(__dirname, '..', '..', '_data', 'learning.json');
-const GEMINI_MODEL = 'gemini-3.5-flash';
+const GEMINI_MODELS = [
+  'gemini-3.5-flash',
+  'gemini-2.5-flash',
+  'gemini-3.1-flash-lite',
+  'gemini-2.5-flash-lite'
+];
 const MAX_RETRIES = 3;
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 async function callGemini(prompt) {
-  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`,
-      {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { temperature: 1.1, maxOutputTokens: 8192 }
-        })
+  for (const model of GEMINI_MODELS) {
+    for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: { temperature: 1.1, maxOutputTokens: 8192 }
+          })
+        }
+      );
+
+      const data = await res.json();
+
+      if (res.status === 429 || res.status === 503) {
+        const waitMs = Math.pow(2, attempt) * 5000; // 10s, 20s, 40s
+        console.warn(`API Error (${res.status}) on ${model}. Attempt ${attempt}/${MAX_RETRIES}. Retrying in ${waitMs / 1000}s...`);
+        
+        // If we hit MAX_RETRIES on a 429, it's likely a hard daily limit, so we break the inner loop and move to the next model.
+        if (attempt === MAX_RETRIES) {
+            console.warn(`Max retries reached for ${model}. Falling back to next model...`);
+            break; 
+        }
+        await sleep(waitMs);
+        continue;
       }
-    );
 
-    const data = await res.json();
+      if (!res.ok || !data.candidates || data.candidates.length === 0) {
+        console.error(`Gemini API Error (HTTP ${res.status}) on ${model}:`, JSON.stringify(data, null, 2));
+        break; // Hard error (like 400 Bad Request), skip retries and move to next model
+      }
 
-    if (res.status === 429 || res.status === 503) {
-      const waitMs = Math.pow(2, attempt) * 5000; // 10s, 20s, 40s
-      console.warn(`API Error (${res.status}). Attempt ${attempt}/${MAX_RETRIES}. Retrying in ${waitMs / 1000}s...`);
-      await sleep(waitMs);
-      continue;
+      return data;
     }
-
-    if (!res.ok || !data.candidates || data.candidates.length === 0) {
-      console.error(`Gemini API Error (HTTP ${res.status}):`, JSON.stringify(data, null, 2));
-      return null;
-    }
-
-    return data;
   }
-  console.error(`Gemini failed after ${MAX_RETRIES} retries (rate limit).`);
+  
+  console.error(`All Gemini models failed.`);
   return null;
 }
 
