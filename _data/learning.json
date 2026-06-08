@@ -1,57 +1,70 @@
 {
   "learnings": [
     {
-      "question": "When performing data analysis on Arabic text, what is the primary drawback of omitting 'Tashkeel' (the pronunciation/vowel markings) to make the dataset simpler and more uniform?",
+      "question": "Which of the following roles is NOT recognized as one of the three official key roles in the Scrum framework?",
       "options": [
-        "It dramatically increases the dataset size and computational processing time by duplicating words.",
-        "It prevents APIs from returning the text string in a readable format.",
-        "It sacrifices analytical precision because different Arabic words can share the exact same spelling without these markings.",
-        "It forces the data analysis tools to automatically reverse the text alignment from right-to-left to left-to-right."
-      ],
-      "correctIndex": 2,
-      "learning": "Analyzing Arabic text without Tashkeel simplifies the data and makes it more uniform, but it introduces the challenge of losing precision because different words can share the identical spelling when their vowel markings are removed.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2"
-    },
-    {
-      "question": "According to Surah Ar-Ra’d (13:11), under what condition does Allah change the status or condition of a people?",
-      "options": [
-        "Until they experience a disaster upon the earth",
-        "Until they change what is in themselves",
-        "Until they sever their ties of kinship",
-        "Until they completely stop making supplications"
-      ],
-      "correctIndex": 1,
-      "learning": "As stated in Surah Ar-Ra’d 13:11, a key spiritual and moral lesson is that Allah does not change the condition of a people until they first take the responsibility to change what is in themselves.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2"
-    },
-    {
-      "question": "In PCIe power management, which specific substate of L1 achieves greater power savings by powering down the electrical circuits of the main link?",
-      "options": [
-        "L1.1",
-        "L1.0",
-        "L1.2",
-        "L0s"
+        "Project Manager",
+        "Product Owner",
+        "Scrum Master",
+        "Developers"
       ],
       "correctIndex": 0,
-      "learning": "The PCIe L1.1 substate specifically powers down the electrical circuits of the main link to save more energy than the L1.0 state, resulting in an increased wake-up time.",
+      "learning": "The Scrum framework recognizes only three key roles: the Product Owner, the Scrum Master, and the Developers. A traditional Project Manager is not one of the official roles.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2"
+    },
+    {
+      "question": "In Islamic belief, what term denotes an awareness of God's presence that cultivates self-restraint and purifies one's intentions?",
+      "options": [
+        "Sovereignty",
+        "Khalifah",
+        "Taqwa",
+        "Gratitude"
+      ],
+      "correctIndex": 2,
+      "learning": "Worship in Islam fosters \"taqwa,\" which is defined as an awareness of God's presence that builds self-restraint and purifies intentions, guiding individuals towards their best selves.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2"
+    },
+    {
+      "question": "What is the fundamental purpose of employing a range of power management states within a device?",
+      "options": [
+        "To ensure maximum data transmission rates are maintained at all times regardless of activity.",
+        "To standardize device wake-up times for predictable system operation across all power states.",
+        "To efficiently balance power consumption with responsiveness based on activity, extending device lifespan and improving overall system performance.",
+        "To universally achieve the lowest possible power consumption by shutting down all components whenever idle."
+      ],
+      "correctIndex": 2,
+      "learning": "PCIe power management states enable a device to dynamically adjust its power consumption based on activity, providing a balance between energy efficiency and responsiveness, thereby enhancing system performance and extending device longevity.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2"
     },
     {
-      "question": "In Islamic belief, what three primary roles define a person's life purpose and balance of devotion and responsibility?",
+      "question": "In Arabic script, what are the small markings placed above or below letters to indicate pronunciation and vowel sounds?",
       "options": [
-        "Adhering to strict isolation, pursuing intellectual superiority, and avoiding societal engagement",
-        "Worshiping Allah, serving as caretakers of the Earth, and preparing for the eternal Hereafter",
-        "Rejecting physical creation, pursuing complete self-reliance, and focusing solely on worldly legacy",
-        "Seeking absolute wealth, establishing political dominance, and prioritizing physical pleasure"
+        "Punctuation marks",
+        "Calligraphic flourishes",
+        "Root letters",
+        "Tashkeel"
       ],
-      "correctIndex": 1,
-      "learning": "In Islamic belief, life is a purposeful journey balanced by three core roles: worshiping Allah, serving as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2"
+      "correctIndex": 3,
+      "learning": "Tashkeel are small markings in Arabic script placed above or below letters to indicate how they should be pronounced, specifically which vowel sound to use. Without these marks, reading Arabic can be tricky because the letters alone don’t always convey the precise sound.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2"
+    },
+    {
+      "question": "Which term refers to the actual unfolding and occurrence of events in a person's life that can be altered or influenced by their own decisions, actions, and supplications?",
+      "options": [
+        "Ar-Ra'd",
+        "Al-Alim",
+        "Qada'",
+        "Qadr"
+      ],
+      "correctIndex": 2,
+      "learning": "Although Allah's complete plan (Qadr) is preordained, individuals hold ultimate responsibility for their own unfolding life events (Qada'), which they can actively alter through their personal choices, actions, and supplications.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2"
     }
   ],
-  "fetchedAt": "2026-06-08T18:40:21.305Z"
+  "fetchedAt": "2026-06-08T18:51:47.103Z"
 }
