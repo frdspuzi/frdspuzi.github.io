@@ -82,7 +82,7 @@
     }
 
     var card = document.createElement('div');
-    card.className = 'col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3 medium-card-wrapper';
+    card.className = 'col-4 mb-3 medium-card-wrapper';
     card.setAttribute('data-category', category);
     card.innerHTML =
       '<a href="' + item.link + '" target="_blank" rel="noopener noreferrer" ' +
@@ -211,9 +211,9 @@
       display: none;
     }
     .medium-card-wrapper {
-      /* Force cards to be 85% width on mobile so the next card peeks in */
-      flex: 0 0 85% !important;
-      max-width: 85% !important;
+      /* Show 3 cards at a time on mobile */
+      flex: 0 0 33.333% !important;
+      max-width: 33.333% !important;
       scroll-snap-align: start;
       margin-bottom: 0 !important;
       padding-right: 16px;
