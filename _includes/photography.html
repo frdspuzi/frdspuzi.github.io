@@ -1,74 +1,82 @@
-<h2 {% if site.style == 'dark' %}class="text-white"{% endif %} id="photography">Photography</h2>
-<p class="f4 mb-3 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Shots I've captured and shared on <a href="https://unsplash.com/@frdspuzi" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
+<details open>
+  <summary style="cursor: pointer; display: inline-flex; align-items: center; gap: 8px; user-select: none;">
+    <h2 {% if site.style == 'dark' %}class="text-white"{% endif %} id="photography" style="margin-bottom: 0 !important;">Photography</h2>
+    <span class="text-gray f6">(Click to collapse)</span>
+  </summary>
 
-<div class="mb-4" id="photography-tabs">
-  <button class="photography-tab-btn active" data-target="unsplash-popular">Most Viewed</button>
-  <button class="photography-tab-btn" data-target="unsplash-favourites">Favourites</button>
-  <button class="photography-tab-btn" data-target="unsplash-latest">Latest</button>
-</div>
+  <div class="mt-3">
+    <p class="f4 mb-3 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Shots I've captured and shared on <a href="https://unsplash.com/@frdspuzi" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
 
-<!-- LATEST CAROUSEL -->
-{% if site.data.unsplash_latest and site.data.unsplash_latest.size > 0 %}
-<div class="photography-carousel-wrapper" id="unsplash-latest" style="display: none;">
-  <div class="carousel-track">
-    {% for photo in site.data.unsplash_latest %}
-    <div class="carousel-slide box-shadow-medium">
-      <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
-        <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
-      </a>
+    <div class="mb-4" id="photography-tabs">
+      <button class="photography-tab-btn active" data-target="unsplash-popular">Most Viewed</button>
+      <button class="photography-tab-btn" data-target="unsplash-favourites">Favourites</button>
+      <button class="photography-tab-btn" data-target="unsplash-latest">Latest</button>
     </div>
-    {% endfor %}
-  </div>
-</div>
-{% else %}
-<div class="blankslate photography-carousel-wrapper" id="unsplash-latest" style="display: none;">
-  <h3 class="mb-1">Gallery syncing...</h3>
-  <p>The latest photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
-</div>
-{% endif %}
 
-<!-- POPULAR CAROUSEL -->
-{% if site.data.unsplash_popular and site.data.unsplash_popular.size > 0 %}
-<div class="photography-carousel-wrapper" id="unsplash-popular">
-  <div class="carousel-track">
-    {% for photo in site.data.unsplash_popular %}
-    <div class="carousel-slide box-shadow-medium">
-      <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
-        <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
-        <div class="slide-overlay">
-          <span class="slide-likes">👁️ {{ photo.views }} Views</span>
+    <!-- LATEST CAROUSEL -->
+    {% if site.data.unsplash_latest and site.data.unsplash_latest.size > 0 %}
+    <div class="photography-carousel-wrapper" id="unsplash-latest" style="display: none;">
+      <div class="carousel-track">
+        {% for photo in site.data.unsplash_latest %}
+        <div class="carousel-slide box-shadow-medium">
+          <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
+            <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
+          </a>
         </div>
-      </a>
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
-  </div>
-</div>
-{% else %}
-<div class="blankslate photography-carousel-wrapper" id="unsplash-popular">
-  <h3 class="mb-1">Gallery syncing...</h3>
-  <p>The popular photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
-</div>
-{% endif %}
+    {% else %}
+    <div class="blankslate photography-carousel-wrapper" id="unsplash-latest" style="display: none;">
+      <h3 class="mb-1">Gallery syncing...</h3>
+      <p>The latest photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
+    </div>
+    {% endif %}
 
-<!-- FAVOURITES CAROUSEL -->
-{% if site.data.unsplash_favourites and site.data.unsplash_favourites.size > 0 %}
-<div class="photography-carousel-wrapper" id="unsplash-favourites" style="display: none;">
-  <div class="carousel-track">
-    {% for photo in site.data.unsplash_favourites %}
-    <div class="carousel-slide box-shadow-medium">
-      <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
-        <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
-      </a>
+    <!-- POPULAR CAROUSEL -->
+    {% if site.data.unsplash_popular and site.data.unsplash_popular.size > 0 %}
+    <div class="photography-carousel-wrapper" id="unsplash-popular">
+      <div class="carousel-track">
+        {% for photo in site.data.unsplash_popular %}
+        <div class="carousel-slide box-shadow-medium">
+          <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
+            <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
+            <div class="slide-overlay">
+              <span class="slide-likes">👁️ {{ photo.views }} Views</span>
+            </div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
     </div>
-    {% endfor %}
+    {% else %}
+    <div class="blankslate photography-carousel-wrapper" id="unsplash-popular">
+      <h3 class="mb-1">Gallery syncing...</h3>
+      <p>The popular photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
+    </div>
+    {% endif %}
+
+    <!-- FAVOURITES CAROUSEL -->
+    {% if site.data.unsplash_favourites and site.data.unsplash_favourites.size > 0 %}
+    <div class="photography-carousel-wrapper" id="unsplash-favourites" style="display: none;">
+      <div class="carousel-track">
+        {% for photo in site.data.unsplash_favourites %}
+        <div class="carousel-slide box-shadow-medium">
+          <a href="{{ photo.links.html }}" target="_blank" rel="noopener noreferrer" class="slide-link">
+            <div class="slide-image" style="background-image: url('{{ photo.urls.regular }}');"></div>
+          </a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% else %}
+    <div class="blankslate photography-carousel-wrapper" id="unsplash-favourites" style="display: none;">
+      <h3 class="mb-1">Gallery syncing...</h3>
+      <p>The favourites photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
+    </div>
+    {% endif %}
   </div>
-</div>
-{% else %}
-<div class="blankslate photography-carousel-wrapper" id="unsplash-favourites" style="display: none;">
-  <h3 class="mb-1">Gallery syncing...</h3>
-  <p>The favourites photography gallery is currently syncing with Unsplash. Check back in a few minutes!</p>
-</div>
-{% endif %}
+</details>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {

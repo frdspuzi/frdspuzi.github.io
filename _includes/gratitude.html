@@ -1,49 +1,76 @@
-<h2 id="gratitude" class="f2 fw-bold mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray-dark{% endif %}">
-  Gratitude</h2>
+<details open>
+  <summary style="cursor: pointer; display: inline-flex; align-items: center; gap: 8px; user-select: none;">
+    <h2 id="gratitude" class="f2 fw-bold mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray-dark{% endif %}" style="margin-bottom: 0 !important;">Gratitude</h2>
+    <span class="text-gray f6">(Click to collapse)</span>
+  </summary>
 
-<div class="Box Box--condensed p-4 mb-4" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <p class="f4 mb-2">Take a moment to reflect on what you're grateful for today. <br><span class="text-gray f6">(Your
-      thoughts are private and stay only on your device)</span></p>
+  <div class="mt-3">
+    <div class="Box Box--condensed p-4 mb-4" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+      <p class="f4 mb-2">Take a moment to reflect on what you're grateful for today. <br><span class="text-gray f6">(Your
+          thoughts are private and stay only on your device)</span></p>
 
-  <blockquote class="mb-4 text-gray-dark"
-    style="border-left: 4px solid #0366d6; padding-left: 16px; font-style: italic;">
-    "And ˹remember˺ when your Lord proclaimed, 'If you are grateful, I will certainly give you more...'" <br>
-    <small class="text-gray">— Surah Ibrahim (14:7)</small>
-  </blockquote>
+      <blockquote class="mb-4 text-gray-dark"
+        style="border-left: 4px solid #0366d6; padding-left: 16px; font-style: italic;">
+        "And ˹remember˺ when your Lord proclaimed, 'If you are grateful, I will certainly give you more...'" <br>
+        <small class="text-gray">— Surah Ibrahim (14:7)</small>
+      </blockquote>
 
-  <textarea id="gratitude-text" class="form-control width-full mb-3" rows="4" placeholder="I am grateful for..."
-    style="resize: vertical; font-size: 16px;"></textarea>
+      <textarea id="gratitude-text" class="form-control width-full mb-3" rows="4" placeholder="I am grateful for..."
+        style="resize: vertical; font-size: 16px;"></textarea>
 
-  <div class="d-flex flex-justify-between flex-items-center">
-    <button id="ai-suggest-btn" class="btn btn-outline" type="button">
-      <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-        <path fill-rule="evenodd"
-          d="M7.53 1.282a.75.75 0 011.06 0l2.25 2.25a.75.75 0 01-1.06 1.06L8.5 3.311V11.5a.75.75 0 01-1.5 0V3.311L5.72 4.592a.75.75 0 01-1.06-1.06l2.25-2.25zM2.75 14A1.75 1.75 0 011 12.25v-2.5a.75.75 0 011.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25v-2.5a.75.75 0 011.5 0v2.5A1.75 1.75 0 0113.25 14H2.75z">
-        </path>
-      </svg>
-      AI Suggestion
-    </button>
-    <button id="clear-gratitude-btn" class="btn btn-sm btn-invisible text-gray" type="button">Clear</button>
+      <div class="d-flex flex-justify-between flex-items-center">
+        <button id="ai-suggest-btn" class="btn btn-outline d-inline-flex flex-items-center" style="gap: 6px;" type="button">
+          <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+            <path fill-rule="evenodd" d="M7.525 1.15c.2-.56.93-.56 1.13 0l1.178 3.284a2 2 0 0 0 1.258 1.258l3.284 1.178c.56.2.56.93 0 1.13l-3.284 1.178a2 2 0 0 0-1.258 1.258l-1.178 3.284c-.2.56-.93.56-1.13 0l-1.178-3.284a2 2 0 0 0-1.258-1.258L1.605 8.565c-.56-.2-.56-.93 0-1.13l3.284-1.178a2 2 0 0 0 1.258-1.258l1.178-3.284Z"></path>
+          </svg>
+          AI Suggestion
+        </button>
+        <button id="clear-gratitude-btn" class="btn btn-sm btn-invisible text-gray" type="button">Clear</button>
+      </div>
+    </div>
   </div>
-</div>
+</details>
 
 <script>
   (function() {
-    // Attempt to load dynamically generated suggestions, fallback if they haven't been generated yet
-    let suggestions = {{ site.data.gratitude.suggestions | jsonify }};
-    if (!suggestions || suggestions.length === 0) {
-      suggestions = [
-        "I'm grateful for a smooth deployment to production today, alhamdulillah.",
-        "I'm thankful for a good cup of teh tarik and a bug-free day.",
-        "I'm grateful for the rain that cooled down the weather.",
-        "I'm thankful for the opportunity to learn a new framework today.",
-        "I'm grateful for my health, which allows me to code, travel, and pray.",
-        "I'm grateful for the peaceful moments before Fajr to clear my mind.",
-        "I'm thankful for the supportive teammates who helped me squash that tricky bug.",
-        "I'm grateful for the rezeki of a stable job in tech.",
-        "I'm thankful for the delicious nasi lemak breakfast this morning.",
-        "I'm grateful for the time to spend with family this weekend."
-      ];
+    // Load AI suggestions from data file, fallback to empty array
+    const aiSuggestions = {{ site.data.gratitude.suggestions | jsonify }} || [];
+    
+    // Readily available fallback suggestions
+    const defaultSuggestions = [
+      "I'm grateful for a smooth deployment to production today, alhamdulillah.",
+      "I'm thankful for a good cup of teh tarik and a bug-free day.",
+      "I'm grateful for the rain that cooled down the weather.",
+      "I'm thankful for the opportunity to learn a new framework today.",
+      "I'm grateful for my health, which allows me to code, travel, and pray.",
+      "I'm grateful for the peaceful moments before Fajr to clear my mind.",
+      "I'm thankful for the supportive teammates who helped me squash that tricky bug.",
+      "I'm grateful for the rezeki of a stable job in tech.",
+      "I'm thankful for the delicious nasi lemak breakfast this morning.",
+      "I'm grateful for the time to spend with family this weekend."
+    ];
+
+    // Helper function to shuffle an array
+    function shuffle(array) {
+      let currentIndex = array.length, randomIndex;
+      while (currentIndex !== 0) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+      }
+      return array;
+    }
+
+    // We maintain a queue of suggestions. 
+    // We prioritize AI suggestions by placing them at the front of the queue!
+    let suggestionQueue = [];
+
+    function getNextSuggestion() {
+      if (suggestionQueue.length === 0) {
+        // Refill queue: Shuffled AI suggestions first, followed by shuffled default suggestions
+        suggestionQueue = shuffle([...aiSuggestions]).concat(shuffle([...defaultSuggestions]));
+      }
+      return suggestionQueue.shift();
     }
 
     const suggestBtn = document.getElementById('ai-suggest-btn');
@@ -59,8 +86,8 @@
       if (typeWriterTimeout) clearTimeout(typeWriterTimeout);
       if (apiDelayTimeout) clearTimeout(apiDelayTimeout);
 
-      // Pick a random suggestion
-      const randomSuggestion = suggestions[Math.floor(Math.random() * suggestions.length)];
+      // Get the next prioritized suggestion
+      const nextSuggestion = getNextSuggestion();
 
       // Clear existing text
       textArea.value = "";
@@ -80,8 +107,8 @@
         textArea.focus();
 
         function typeWriter() {
-          if (i < randomSuggestion.length) {
-            textArea.value += randomSuggestion.charAt(i);
+          if (i < nextSuggestion.length) {
+            textArea.value += nextSuggestion.charAt(i);
             i++;
             typeWriterTimeout = setTimeout(typeWriter, speed);
           }
