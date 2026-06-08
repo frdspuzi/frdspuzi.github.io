@@ -18,7 +18,7 @@ async function callGemini(prompt) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           contents: [{ parts: [{ text: prompt }] }],
-          generationConfig: { temperature: 0.7, maxOutputTokens: 8192 }
+          generationConfig: { temperature: 1.1, maxOutputTokens: 8192 }
         })
       }
     );
@@ -77,7 +77,20 @@ async function generateLearning() {
           continue;
         }
 
+        const promptAngles = [
+          "Focus on a surprising, lesser-known detail, or specific fact mentioned.",
+          "Focus on the core underlying philosophy, main argument, or thesis.",
+          "Focus on the historical context, background story, or primary motivation behind the topic.",
+          "Focus on a specific quote, lesson, or moral takeaway.",
+          "Focus on a common misconception, pitfall, or challenge described.",
+          "Focus on a specific term, definition, or core concept introduced.",
+          "Focus on the conclusion or the final actionable takeaway of the piece."
+        ];
+        const randomAngle = promptAngles[Math.floor(Math.random() * promptAngles.length)];
+
         const prompt = `You are an expert technical writer and quiz master. Read the following article and extract a single "nugget of knowledge" from it. Then, generate a multiple-choice trivia question based on that insight.
+        
+CRITICAL INSTRUCTION: ${randomAngle}
 
 Rules:
 1. The "learning" must be a highly valuable, standalone fact, concept, or insight from the text (1-2 sentences).
