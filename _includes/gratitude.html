@@ -49,8 +49,16 @@
     const suggestBtn = document.getElementById('ai-suggest-btn');
     const clearBtn = document.getElementById('clear-gratitude-btn');
     const textArea = document.getElementById('gratitude-text');
+    const originalBtnHtml = suggestBtn.innerHTML;
+    
+    let typeWriterTimeout;
+    let apiDelayTimeout;
 
     suggestBtn.addEventListener('click', function () {
+      // Clear any existing timeouts to prevent overlapping typewriter effects
+      if (typeWriterTimeout) clearTimeout(typeWriterTimeout);
+      if (apiDelayTimeout) clearTimeout(apiDelayTimeout);
+
       // Pick a random suggestion
       const randomSuggestion = suggestions[Math.floor(Math.random() * suggestions.length)];
 
@@ -62,8 +70,8 @@
       suggestBtn.innerHTML = 'Thinking...';
 
       // Simulate API delay
-      setTimeout(() => {
-        suggestBtn.innerHTML = '<svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 8.5l-6-2-2-6-2 6-6 2 6 2 2 6 2-6 6-2z"></path></svg> Suggest Another';
+      apiDelayTimeout = setTimeout(() => {
+        suggestBtn.innerHTML = originalBtnHtml; // Restore original button HTML
         suggestBtn.disabled = false;
 
         // Typewriter effect
@@ -75,7 +83,7 @@
           if (i < randomSuggestion.length) {
             textArea.value += randomSuggestion.charAt(i);
             i++;
-            setTimeout(typeWriter, speed);
+            typeWriterTimeout = setTimeout(typeWriter, speed);
           }
         }
         typeWriter();
@@ -84,7 +92,15 @@
     });
 
     clearBtn.addEventListener('click', function () {
+      // Cancel any ongoing typing if they clear it
+      if (typeWriterTimeout) clearTimeout(typeWriterTimeout);
+      if (apiDelayTimeout) clearTimeout(apiDelayTimeout);
+      
       textArea.value = '';
+      
+      // Reset button state just in case
+      suggestBtn.innerHTML = originalBtnHtml;
+      suggestBtn.disabled = false;
     });
   })();
 </script>
