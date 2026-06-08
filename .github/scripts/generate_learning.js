@@ -25,9 +25,9 @@ async function callGemini(prompt) {
 
     const data = await res.json();
 
-    if (res.status === 429) {
+    if (res.status === 429 || res.status === 503) {
       const waitMs = Math.pow(2, attempt) * 5000; // 10s, 20s, 40s
-      console.warn(`Rate limited (429). Attempt ${attempt}/${MAX_RETRIES}. Retrying in ${waitMs / 1000}s...`);
+      console.warn(`API Error (${res.status}). Attempt ${attempt}/${MAX_RETRIES}. Retrying in ${waitMs / 1000}s...`);
       await sleep(waitMs);
       continue;
     }
