@@ -7,7 +7,7 @@
   <button class="medium-filter-btn active" data-filter="all">All</button>
 </div>
 
-<div id="medium-posts" class="d-sm-flex flex-wrap gutter-condensed mb-4">
+<div id="medium-posts" class="mb-4">
   <div class="col-12 text-center py-4 text-gray" id="medium-loading">
     Loading articles&hellip;
   </div>
@@ -82,7 +82,7 @@
     }
 
     var card = document.createElement('div');
-    card.className = 'col-4 mb-3 medium-card-wrapper';
+    card.className = 'medium-card-wrapper';
     card.setAttribute('data-category', category);
     card.innerHTML =
       '<a href="' + item.link + '" target="_blank" rel="noopener noreferrer" ' +
@@ -194,29 +194,51 @@
     transition: opacity 0.2s ease;
   }
 
-  /* Mobile Carousel Styles */
-  @media (max-width: 543px) {
-    #medium-posts {
-      display: flex !important;
-      flex-wrap: nowrap !important;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      padding-bottom: 8px; /* Slight breathing room */
-      
-      /* Hide scrollbar for a cleaner app-like look */
-      scrollbar-width: none; 
-    }
-    #medium-posts::-webkit-scrollbar {
-      display: none;
-    }
+  #medium-posts {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 16px; /* Space for scrollbar */
+    padding-top: 8px; /* Space for shadow */
+  }
+
+  /* Stylish Scrollbar */
+  #medium-posts::-webkit-scrollbar {
+    height: 8px;
+  }
+  #medium-posts::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+  #medium-posts::-webkit-scrollbar-thumb {
+    background: #d1d5da; 
+    border-radius: 4px;
+  }
+  #medium-posts::-webkit-scrollbar-thumb:hover {
+    background: #959da5;
+  }
+
+  .medium-card-wrapper {
+    flex: 0 0 85%; /* Show 85% of slide to hint at next one on mobile */
+    scroll-snap-align: center;
+    position: relative;
+    border-radius: 8px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  /* Desktop sizing */
+  @media (min-width: 768px) {
     .medium-card-wrapper {
-      /* Show 3 cards at a time on mobile */
-      flex: 0 0 33.333% !important;
-      max-width: 33.333% !important;
+      flex: 0 0 45%;
       scroll-snap-align: start;
-      margin-bottom: 0 !important;
-      padding-right: 16px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .medium-card-wrapper {
+      flex: 0 0 31%; /* 3 per row on large screens */
+      scroll-snap-align: start;
     }
   }
   .medium-card {
