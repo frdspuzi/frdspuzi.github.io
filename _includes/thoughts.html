@@ -1,16 +1,29 @@
 <h2 id="my-writing" {% if site.style == 'dark' %}class="text-white"{% endif %}>My Writing</h2>
 <p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Articles I've published on Medium.</p>
 
-{% include learning_board.html %}
-
-<div id="medium-filters" class="mb-4" style="display:none;">
-  <button class="medium-filter-btn active" data-filter="all">All</button>
-</div>
-
-<div id="medium-posts" class="mb-4">
-  <div class="col-12 text-center py-4 text-gray" id="medium-loading">
-    Loading articles&hellip;
+<div class="d-flex flex-column flex-lg-row" style="gap: 32px;">
+  
+  <!-- Left Column: Insights / Trivia -->
+  <div class="col-12 col-lg-5 col-xl-4 flex-shrink-0">
+    {% include learning_board.html %}
   </div>
+
+  <!-- Right Column: My Writing -->
+  <div class="col-12 col-lg-7 col-xl-8 flex-auto overflow-hidden" style="min-width: 0;">
+    <div class="d-flex flex-justify-between flex-items-center mb-3">
+      <div id="medium-filters" style="display:none;">
+        <button class="medium-filter-btn active" data-filter="all">All</button>
+      </div>
+      <a href="https://medium.com/@frdspuzi" class="f6 text-underline" style="color: #0366d6; white-space: nowrap;" target="_blank" rel="noopener noreferrer">View all &rarr;</a>
+    </div>
+
+    <div id="medium-posts" class="mb-4">
+      <div class="col-12 text-center py-4 text-gray" id="medium-loading">
+        Loading articles&hellip;
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <script>
@@ -185,10 +198,6 @@
 })();
 </script>
 
-<div class="text-center mt-2 mb-4">
-  <a href="https://medium.com/@frdspuzi" class="btn btn-outline" target="_blank" rel="noopener noreferrer">View all on Medium &rarr;</a>
-</div>
-
 <style>
   .medium-card-wrapper {
     transition: opacity 0.2s ease;
@@ -237,7 +246,8 @@
   }
   @media (min-width: 1024px) {
     .medium-card-wrapper {
-      flex: 0 0 31%; /* 3 per row on large screens */
+      flex: 0 0 280px; /* Fixed width works better since it shares space with the insights column */
+      max-width: 280px;
       scroll-snap-align: start;
     }
   }
