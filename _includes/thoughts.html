@@ -95,12 +95,12 @@
     }
 
     var card = document.createElement('div');
-    card.className = 'medium-card-wrapper w-100 flex-auto';
+    card.className = 'medium-card-wrapper w-100';
     card.setAttribute('data-category', category);
     card.innerHTML =
       '<a href="' + item.link + '" target="_blank" rel="noopener noreferrer" ' +
-        'style="text-decoration:none; display:block; height:100%;">' +
-        '<div class="Box box-shadow-small medium-card overflow-hidden d-flex flex-row height-full text-left" style="min-height: 120px;">' +
+        'style="text-decoration:none; display:block;">' +
+        '<div class="Box box-shadow-small medium-card overflow-hidden d-flex flex-row text-left" style="min-height: 120px;">' +
           imageHtml +
           '<div class="p-3 d-flex flex-column flex-auto flex-justify-between" style="min-width: 0;">' +
             '<div>' +
@@ -170,7 +170,7 @@
       }
 
       var seenCategories = [];
-      var items = data.items.slice(0, 3); /* 3 items stacked vertically looks perfectly balanced */
+      var items = data.items.slice(0, 5); /* Show 5 items to naturally fill the tall space alongside the AI Insight card */
 
       items.forEach(function (item) {
         var category = (item.categories && item.categories.length > 0)
