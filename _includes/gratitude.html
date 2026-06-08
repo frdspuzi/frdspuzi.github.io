@@ -1,0 +1,90 @@
+<h2 id="gratitude" class="f2 fw-bold mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray-dark{% endif %}">
+  Gratitude</h2>
+
+<div class="Box Box--condensed p-4 mb-4" style="border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <p class="f4 mb-2">Take a moment to reflect on what you're grateful for today. <br><span class="text-gray f6">(Your
+      thoughts are private and stay only on your device)</span></p>
+
+  <blockquote class="mb-4 text-gray-dark"
+    style="border-left: 4px solid #0366d6; padding-left: 16px; font-style: italic;">
+    "And ˹remember˺ when your Lord proclaimed, 'If you are grateful, I will certainly give you more...'" <br>
+    <small class="text-gray">— Surah Ibrahim (14:7)</small>
+  </blockquote>
+
+  <textarea id="gratitude-text" class="form-control width-full mb-3" rows="4" placeholder="I am grateful for..."
+    style="resize: vertical; font-size: 16px;"></textarea>
+
+  <div class="d-flex flex-justify-between flex-items-center">
+    <button id="ai-suggest-btn" class="btn btn-outline" type="button">
+      <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+        <path fill-rule="evenodd"
+          d="M7.53 1.282a.75.75 0 011.06 0l2.25 2.25a.75.75 0 01-1.06 1.06L8.5 3.311V11.5a.75.75 0 01-1.5 0V3.311L5.72 4.592a.75.75 0 01-1.06-1.06l2.25-2.25zM2.75 14A1.75 1.75 0 011 12.25v-2.5a.75.75 0 011.5 0v2.5c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25v-2.5a.75.75 0 011.5 0v2.5A1.75 1.75 0 0113.25 14H2.75z">
+        </path>
+      </svg>
+      AI Suggestion
+    </button>
+    <button id="clear-gratitude-btn" class="btn btn-sm btn-invisible text-gray" type="button">Clear</button>
+  </div>
+</div>
+
+<script>
+  (function() {
+    // Attempt to load dynamically generated suggestions, fallback if they haven't been generated yet
+    let suggestions = {{ site.data.gratitude.suggestions | jsonify }};
+    if (!suggestions || suggestions.length === 0) {
+      suggestions = [
+        "I'm grateful for a smooth deployment to production today, alhamdulillah.",
+        "I'm thankful for a good cup of teh tarik and a bug-free day.",
+        "I'm grateful for the rain that cooled down the weather.",
+        "I'm thankful for the opportunity to learn a new framework today.",
+        "I'm grateful for my health, which allows me to code, travel, and pray.",
+        "I'm grateful for the peaceful moments before Fajr to clear my mind.",
+        "I'm thankful for the supportive teammates who helped me squash that tricky bug.",
+        "I'm grateful for the rezeki of a stable job in tech.",
+        "I'm thankful for the delicious nasi lemak breakfast this morning.",
+        "I'm grateful for the time to spend with family this weekend."
+      ];
+    }
+
+    const suggestBtn = document.getElementById('ai-suggest-btn');
+    const clearBtn = document.getElementById('clear-gratitude-btn');
+    const textArea = document.getElementById('gratitude-text');
+
+    suggestBtn.addEventListener('click', function () {
+      // Pick a random suggestion
+      const randomSuggestion = suggestions[Math.floor(Math.random() * suggestions.length)];
+
+      // Clear existing text
+      textArea.value = "";
+
+      // Disable button during typing
+      suggestBtn.disabled = true;
+      suggestBtn.innerHTML = 'Thinking...';
+
+      // Simulate API delay
+      setTimeout(() => {
+        suggestBtn.innerHTML = '<svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M16 8.5l-6-2-2-6-2 6-6 2 6 2 2 6 2-6 6-2z"></path></svg> Suggest Another';
+        suggestBtn.disabled = false;
+
+        // Typewriter effect
+        let i = 0;
+        const speed = 30; // ms per char
+        textArea.focus();
+
+        function typeWriter() {
+          if (i < randomSuggestion.length) {
+            textArea.value += randomSuggestion.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          }
+        }
+        typeWriter();
+
+      }, 600); // 600ms fake delay
+    });
+
+    clearBtn.addEventListener('click', function () {
+      textArea.value = '';
+    });
+  })();
+</script>
