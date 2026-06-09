@@ -6,7 +6,7 @@
     </svg>
   </summary>
 
-  <div class="p-4">
+  <div class="p-4 text-left">
     <p class="f4 mb-3 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">Shots I've captured and shared on <a href="https://unsplash.com/@frdspuzi" target="_blank" rel="noopener noreferrer">Unsplash</a>.</p>
 
     <div class="mb-4" id="photography-tabs">
@@ -153,19 +153,13 @@
     padding-top: 8px; /* Space for shadow */
   }
   
-  /* Stylish Scrollbar */
+  /* Hidden Scrollbar */
+  .carousel-track {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
   .carousel-track::-webkit-scrollbar {
-    height: 8px;
-  }
-  .carousel-track::-webkit-scrollbar-track {
-    background: transparent; 
-  }
-  .carousel-track::-webkit-scrollbar-thumb {
-    background: #d1d5da; 
-    border-radius: 4px;
-  }
-  .carousel-track::-webkit-scrollbar-thumb:hover {
-    background: #959da5;
+    display: none; /* Chrome, Safari and Opera */
   }
 
   .carousel-slide {
