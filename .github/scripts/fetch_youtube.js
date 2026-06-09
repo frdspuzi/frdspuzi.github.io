@@ -55,7 +55,7 @@ async function resolveChannelId(url) {
   }
   try {
     const html = await fetchHtml(url);
-    const match = html.match(/"channelId":"(UC[a-zA-Z0-9_-]+)"/);
+    const match = html.match(/<meta itemprop="identifier" content="(UC[a-zA-Z0-9_-]+)">/);
     if (match) return match[1];
   } catch (err) {
     console.error(`Failed to resolve channel ID for ${url}`, err);
