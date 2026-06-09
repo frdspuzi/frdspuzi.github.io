@@ -11,12 +11,7 @@
 
     <div class="d-flex flex-column flex-lg-row" style="gap: 32px; align-items: stretch;">
       
-      <!-- Left Column: Insights / Trivia -->
-      <div class="col-12 col-lg-6 flex-shrink-0 d-flex flex-column">
-        {% include learning_board.html %}
-      </div>
-
-      <!-- Right Column: My Writing -->
+      <!-- Left Column: My Writing -->
       <div class="col-12 col-lg-6 right-column-container" style="min-width: 0;">
         <div class="right-column-content d-flex flex-column w-100 h-100">
           <div class="d-flex flex-justify-between flex-items-center mb-3 flex-shrink-0">
@@ -41,6 +36,11 @@
             <a href="https://medium.com/@frdspuzi" class="f6 text-gray text-underline" target="_blank" rel="noopener noreferrer">View all &rarr;</a>
           </div>
         </div>
+      </div>
+
+      <!-- Right Column: Insights / Trivia -->
+      <div class="col-12 col-lg-6 flex-shrink-0 d-flex flex-column">
+        {% include learning_board.html %}
       </div>
 
     </div>
@@ -172,6 +172,10 @@
     btns.forEach(function(btn) {
       btn.classList.toggle('active', btn.getAttribute('data-filter') === filter);
     });
+
+    if (typeof window.filterTrivia === 'function') {
+      window.filterTrivia(filter);
+    }
   }
 
   function buildFilters(categories) {

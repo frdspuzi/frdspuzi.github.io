@@ -161,13 +161,18 @@ ${cleanContent.substring(0, 15000)}`;
 
         const actualCorrectIndex = allOptions.indexOf(parsedData.correctOption);
 
+        const category = (article.categories && article.categories.length > 0)
+          ? article.categories[0]
+          : 'uncategorized';
+
         generatedLearnings.push({
           question: parsedData.question,
           options: allOptions,
           correctIndex: actualCorrectIndex,
           learning: parsedData.learning,
           articleTitle: article.title,
-          articleUrl: article.link
+          articleUrl: article.link,
+          category: category
         });
 
         // Delay 5 seconds between requests to stay within rate limits

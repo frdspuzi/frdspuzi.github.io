@@ -61,9 +61,10 @@
   document.addEventListener("DOMContentLoaded", function() {
     // We filter to only items with a question to avoid breaking the UI for older cached data
     const rawLearnings = {{ site.data.learning.learnings | jsonify }};
-    const learnings = rawLearnings ? rawLearnings.filter(l => l.question && l.options) : [];
+    const allLearnings = rawLearnings ? rawLearnings.filter(l => l.question && l.options) : [];
+    let currentLearnings = [...allLearnings];
     
-    if (!learnings || learnings.length === 0) {
+    if (!allLearnings || allLearnings.length === 0) {
       document.getElementById('trivia-question').innerText = "Oops! My AI is currently studying for the next quiz. Check back tomorrow!";
       document.getElementById('trivia-options').style.display = 'none';
       return;
@@ -81,9 +82,26 @@
     let currentItem = null;
     let queue = [];
 
+    window.filterTrivia = function(category) {
+      if (!allLearnings || allLearnings.length === 0) return;
+      
+      if (category === 'all') {
+        currentLearnings = [...allLearnings];
+      } else {
+        currentLearnings = allLearnings.filter(l => l.category && l.category.toLowerCase() === category.toLowerCase());
+        if (currentLearnings.length === 0) {
+          // Fallback to all if no trivia exists for this category
+          currentLearnings = [...allLearnings];
+        }
+      }
+      
+      queue = []; // Force rebuild queue with new subset
+      loadRandomQuestion();
+    };
+
     function buildShuffledQueue() {
-      // Fisher-Yates shuffle of all available questions
-      const shuffled = [...learnings];
+      // Fisher-Yates shuffle of available filtered questions
+      const shuffled = [...currentLearnings];
       for (let i = shuffled.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
