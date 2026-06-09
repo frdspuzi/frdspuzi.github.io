@@ -86,6 +86,18 @@
       channelNameEl.innerText = v.channel;
       summaryEl.innerText = v.summary;
       linkEl.href = v.url;
+
+      // Dynamically handle aspect ratio for YouTube Shorts vs Normal Videos
+      const videoContainer = playerEl.parentElement;
+      if (v.url.includes('/shorts/')) {
+        videoContainer.style.aspectRatio = '9/16';
+        videoContainer.style.maxWidth = '320px'; // Prevent it from taking over the screen
+        videoContainer.style.margin = '0 auto';  // Center it in the flex column
+      } else {
+        videoContainer.style.aspectRatio = '16/9';
+        videoContainer.style.maxWidth = 'none';
+        videoContainer.style.margin = '0';
+      }
     }
 
     nextBtn.addEventListener('click', function() {
