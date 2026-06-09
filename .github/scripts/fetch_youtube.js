@@ -187,10 +187,10 @@ Video Title: "${video.title}"
 Channel: ${video.author}
 Category: ${category}
 
-CRITICAL:
-1. Does this video seem genuinely valuable for self-improvement or professional/spiritual growth for the target demographic? (Yes/No)
-2. If No, just output exactly: {"valuable": false}
-3. If Yes, generate a detailed but layman-friendly summary (2-3 sentences) explaining *why* it's worth their time and how they can improve from it. Write it to hook the viewer!
+  CRITICAL:
+  1. Does this video seem genuinely valuable for self-improvement or professional/spiritual growth for the target demographic? Be extremely lenient—if it provides ANY solid advice, motivation, or interesting perspective, mark it as Yes. Do not be overly rigid.
+  2. If No, just output exactly: {"valuable": false}
+  3. If Yes, generate a detailed but layman-friendly summary (2-3 sentences) explaining *why* it's worth their time and how they can improve from it. Write it to hook the viewer!
 
 Output STRICTLY valid JSON:
 {
