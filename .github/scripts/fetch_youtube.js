@@ -139,7 +139,7 @@ async function callGemini(prompt) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
               contents: [{ parts: [{ text: prompt }] }],
-              generationConfig: { temperature: 1.1, maxOutputTokens: 1024 }
+              generationConfig: { temperature: 1.1, maxOutputTokens: 8192 }
             })
           }
         );
@@ -188,14 +188,25 @@ ${JSON.stringify(videoCandidates, null, 2)}
 
 CRITICAL INSTRUCTIONS:
 1. Review the titles, channels, publish dates, and descriptions.
-2. Select EXACTLY the top 5 most genuinely valuable videos from the entire list.
-3. For each selected video, write a layman-friendly summary (2-3 sentences) explaining WHY it's worth their time. Make it intriguing and hook the viewer, but keep the tone natural and authentic—do not sound like an over-the-top marketer.
-4. Return ONLY valid JSON in the exact format below, with nothing else:
+2. Provide a brief verdict ("reasoning") for EVERY SINGLE VIDEO on whether it is valuable or fluff.
+3. Mark EXACTLY the top 5 most genuinely valuable videos as "selected": true. The rest must be false.
+4. For the 5 selected videos ONLY, write a layman-friendly "summary" (2-3 sentences) explaining WHY it's worth their time. Make it intriguing and hook the viewer, but keep the tone natural and authentic.
+5. Return ONLY valid JSON in the exact format below, with nothing else:
 {
-  "selected_videos": [
+  "evaluations": [
     {
       "videoId": "the_videoId_here",
-      "summary": "Your detailed hook summary here."
+      "title": "The exact video title here",
+      "selected": false,
+      "reasoning": "This video is a generic vlog and provides no actionable advice.",
+      "summary": ""
+    },
+    {
+      "videoId": "another_videoId_here",
+      "title": "The exact video title here",
+      "selected": true,
+      "reasoning": "Highly actionable breakdown of business scaling math.",
+      "summary": "For a junior dev looking to level up their career, understanding the mechanics of a $100K business is eye-opening. It demystifies how value is created and scaled."
     }
   ]
 }`;
@@ -207,7 +218,7 @@ CRITICAL INSTRUCTIONS:
     const jsonMatch = responseText.match(/\{[\s\S]*\}/);
     if (jsonMatch) {
       const parsed = JSON.parse(jsonMatch[0]);
-      return parsed.selected_videos || [];
+      return parsed.evaluations || [];
     }
   } catch (err) {
     console.error("Failed to parse Gemini response", responseText);
@@ -280,12 +291,21 @@ async function main() {
     return;
   }
 
-  const selectedVideos = await evaluateBulk(videoCandidates);
+  const evaluations = await evaluateBulk(videoCandidates);
   const curatedVideos = [];
 
-  for (const selected of selectedVideos) {
+  // Write the entire evaluation log for transparency
+  if (evaluations.length > 0) {
+    const evalLogFile = path.join(__dirname, '..', '..', '_data', 'youtube_eval_log.json');
+    fs.writeFileSync(evalLogFile, JSON.stringify(evaluations, null, 2));
+    console.log(`Successfully wrote ${evaluations.length} evaluation logs to ${evalLogFile}`);
+  }
+
+  for (const evalItem of evaluations) {
+    if (!evalItem.selected) continue;
+    
     // Match the selected ID back to our original candidate list
-    const candidate = videoCandidates.find(v => v.videoId === selected.videoId);
+    const candidate = videoCandidates.find(v => v.videoId === evalItem.videoId);
     if (candidate) {
       curatedVideos.push({
         title: candidate.title,
@@ -293,7 +313,7 @@ async function main() {
         videoId: candidate.videoId,
         channel: candidate.channel,
         category: candidate.category,
-        summary: selected.summary,
+        summary: evalItem.summary,
         dateAdded: new Date().toISOString()
       });
       console.log(`Added Winner: ${candidate.title}`);
@@ -329,7 +349,7 @@ async function main() {
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalOutput, null, 2));
     console.log(`Successfully wrote ${finalVideos.length} videos to ${OUTPUT_FILE}`);
   } else {
-    console.log("Gemini did not return any valid selections today.");
+    console.log("Gemini did not select any valid videos today.");
   }
 }
 
