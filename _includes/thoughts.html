@@ -64,32 +64,47 @@
   function extractSummary(html) {
     var tmp = document.createElement('div');
     tmp.innerHTML = html;
+    var result = '';
 
     var paragraphs = tmp.querySelectorAll('p');
     for (var i = 0; i < paragraphs.length; i++) {
       var text = (paragraphs[i].textContent || '').trim();
       var lower = text.toLowerCase();
-      if (lower.indexOf('tldr;') === 0 || lower.indexOf('tldr:') === 0) {
-        return text.substring(5).trim();
-      } else if (lower.indexOf('problem statement:') === 0) {
-        return text.substring(18).trim();
+      if (lower.indexOf('tldr') === 0 || lower.indexOf('tl;dr') === 0 || lower.indexOf('problem statement') === 0) {
+        result = text;
+        break;
       }
     }
 
-    var blockquote = tmp.querySelector('blockquote');
-    if (blockquote) {
-      var bqText = (blockquote.textContent || '').replace(/\s+/g, ' ').trim();
-      if (bqText.length > 20) return bqText;
+    if (!result) {
+      var blockquote = tmp.querySelector('blockquote');
+      if (blockquote) {
+        var bqText = (blockquote.textContent || '').replace(/\s+/g, ' ').trim();
+        if (bqText.length > 20) result = bqText;
+      }
     }
 
-    for (var i = 0; i < paragraphs.length; i++) {
-      var text = (paragraphs[i].textContent || '').replace(/\s+/g, ' ').trim();
-      if (text.length > 80) return text;
+    if (!result) {
+      for (var i = 0; i < paragraphs.length; i++) {
+        var text = (paragraphs[i].textContent || '').replace(/\s+/g, ' ').trim();
+        if (text.length > 80) {
+          result = text;
+          break;
+        }
+      }
     }
 
-    var fallback = (tmp.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 140);
-    if (fallback.length === 140) fallback += '…';
-    return fallback;
+    if (!result) {
+      result = (tmp.textContent || '').replace(/\s+/g, ' ').trim();
+    }
+
+    // Strip "TLDR;", "TL;DR:", "Problem Statement:" from the very beginning
+    result = result.replace(/^(TL;?DR|Problem Statement)[\s;:.,-]+/i, '').trim();
+
+    if (result.length > 140) {
+      result = result.slice(0, 140).trim() + '…';
+    }
+    return result;
   }
 
   function formatDate(dateStr) {
