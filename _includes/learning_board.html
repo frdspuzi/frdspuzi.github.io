@@ -26,9 +26,15 @@
         <!-- Buttons injected by JS -->
       </div>
 
-      <!-- Skip Button -->
-      <div id="trivia-helpers" class="d-flex flex-justify-end flex-items-center mb-4">
-        <button id="btn-skip" type="button" class="btn btn-invisible text-gray text-italic f6">Skip Question &rarr;</button>
+      <!-- Pagination -->
+      <div id="trivia-helpers" class="d-flex flex-justify-between flex-items-center mb-4">
+        <button id="btn-prev" type="button" class="btn btn-invisible p-2 text-gray" aria-label="Previous">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"></path></svg>
+        </button>
+        <div id="trivia-dots" class="d-flex flex-items-center" style="gap: 8px;"></div>
+        <button id="btn-next" type="button" class="btn btn-invisible p-2 text-gray" aria-label="Next">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"></path></svg>
+        </button>
       </div>
 
       <!-- Reveal Area (Hidden by default) -->
@@ -80,7 +86,7 @@
     const helpersContainer = document.getElementById('trivia-helpers');
 
     let currentItem = null;
-    let queue = [];
+    let currentIndex = 0;
 
     window.filterTrivia = function(category) {
       if (!allLearnings || allLearnings.length === 0) return;
@@ -95,39 +101,41 @@
         }
       }
       
-      queue = []; // Force rebuild queue with new subset
-      loadRandomQuestion();
+      currentIndex = 0;
+      loadQuestion(currentIndex);
     };
 
-    function buildShuffledQueue() {
-      // Fisher-Yates shuffle of available filtered questions
-      const shuffled = [...currentLearnings];
-      for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-      }
-      // If the first item of the new queue matches the last shown question, rotate it to avoid back-to-back repeat
-      if (currentItem && shuffled.length > 1 && shuffled[0].question === currentItem.question) {
-        shuffled.push(shuffled.shift());
-      }
-      return shuffled;
+    function updatePagination() {
+      const dotsContainer = document.getElementById('trivia-dots');
+      dotsContainer.innerHTML = '';
+      currentLearnings.forEach((_, idx) => {
+        const dot = document.createElement('div');
+        dot.className = 'trivia-dot' + (idx === currentIndex ? ' active' : '');
+        dotsContainer.appendChild(dot);
+      });
+      
+      const prevBtn = document.getElementById('btn-prev');
+      const nextBtn = document.getElementById('btn-next');
+      
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex === currentLearnings.length - 1;
+      
+      prevBtn.style.opacity = currentIndex === 0 ? '0.3' : '1';
+      prevBtn.style.cursor = currentIndex === 0 ? 'default' : 'pointer';
+      
+      nextBtn.style.opacity = currentIndex === currentLearnings.length - 1 ? '0.3' : '1';
+      nextBtn.style.cursor = currentIndex === currentLearnings.length - 1 ? 'default' : 'pointer';
     }
 
-    function loadRandomQuestion(event) {
-      if (event && event.preventDefault) {
-        event.preventDefault();
-      }
+    function loadQuestion(index) {
+      if (index < 0 || index >= currentLearnings.length) return;
+      
+      currentIndex = index;
+      currentItem = currentLearnings[currentIndex];
 
       revealEl.style.display = 'none';
       helpersContainer.style.display = 'flex';
       optionsEl.innerHTML = '';
-
-      // Refill the queue when empty
-      if (queue.length === 0) {
-        queue = buildShuffledQueue();
-      }
-
-      currentItem = queue.shift();
 
       questionEl.innerText = currentItem.question;
 
@@ -143,11 +151,12 @@
         btn.style.whiteSpace = 'normal';
         btn.innerText = optText;
 
-        btn.onclick = () => handleAnswer(index, btn);
+        btn.onclick = () => handleAnswer(optIndex, btn);
         optionsEl.appendChild(btn);
       });
-    }
 
+      updatePagination();
+    }
 
     function handleAnswer(selectedIndex, clickedBtn) {
       helpersContainer.style.display = 'none'; // Hide helpers after answer
@@ -170,10 +179,28 @@
       revealEl.style.display = 'block';
     }
 
-    nextBtn.onclick = loadRandomQuestion;
-    document.getElementById('btn-skip').onclick = loadRandomQuestion;
+    document.getElementById('btn-prev').onclick = () => {
+      if (currentIndex > 0) loadQuestion(currentIndex - 1);
+    };
+    
+    document.getElementById('btn-next').onclick = () => {
+      if (currentIndex < currentLearnings.length - 1) loadQuestion(currentIndex + 1);
+    };
 
-    loadRandomQuestion();
+    nextBtn.onclick = () => {
+      let nextIdx = currentIndex + 1;
+      if (nextIdx >= currentLearnings.length) nextIdx = 0;
+      loadQuestion(nextIdx);
+    };
+
+    // Initial shuffle of allLearnings so they don't always appear in the same order on fresh load
+    for (let i = allLearnings.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [allLearnings[i], allLearnings[j]] = [allLearnings[j], allLearnings[i]];
+    }
+    currentLearnings = [...allLearnings];
+
+    loadQuestion(0);
   });
 </script>
 
@@ -206,6 +233,18 @@
     background-color: #cb2431 !important;
     border-color: #cb2431 !important;
     color: #ffffff !important;
+  }
+  
+  .trivia-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: {% if site.style == 'dark' %}#444d56{% else %}#d1d5da{% endif %};
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  .trivia-dot.active {
+    background-color: {% if site.style == 'dark' %}#c9d1d9{% else %}#24292e{% endif %};
+    transform: scale(1.4);
   }
   
   @keyframes shake {
