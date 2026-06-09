@@ -14,15 +14,15 @@
 
     <div id="trivia-container" class="d-flex flex-column flex-auto" style="min-height: 0;">
       
-      <!-- Content Area (Scrolls only if strictly necessary) -->
-      <div class="flex-auto pr-3 pb-2 custom-scrollbar" style="overflow-y: auto; min-height: 0;">
+      <!-- Content Area -->
+      <div class="flex-auto pr-3 pb-2 custom-scrollbar" style="min-height: 0;">
         <!-- Question -->
-        <h2 id="trivia-question" class="f3 mb-3" style="line-height: 1.4; font-weight: 500; {% if site.style == 'dark' %}color: #e1e4e8;{% else %}color: #24292e;{% endif %}">
+        <h2 id="trivia-question" class="f4 mb-3" style="line-height: 1.4; font-weight: 500; {% if site.style == 'dark' %}color: #e1e4e8;{% else %}color: #24292e;{% endif %}">
           Loading question...
         </h2>
 
         <!-- Article source attribution / hint -->
-        <p id="trivia-source" class="f6 mb-4" style="{% if site.style == 'dark' %}color: #8b949e;{% else %}color: #6a737d;{% endif %}">
+        <p id="trivia-source" class="d-none f6 mb-4" style="{% if site.style == 'dark' %}color: #8b949e;{% else %}color: #6a737d;{% endif %}">
           <span>Not sure? Read: </span><a id="trivia-source-link" href="#" class="text-underline" style="{% if site.style == 'dark' %}color: #8b949e;{% else %}color: #6a737d;{% endif %}" target="_blank" rel="noopener noreferrer"></a>
         </p>
 
@@ -157,7 +157,7 @@
       currentItem.options.forEach((optText, index) => {
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = 'btn text-left p-2 text-normal f5 trivia-btn';
+        btn.className = 'btn text-left p-2 text-normal f6 trivia-btn';
         btn.style.width = '100%';
         btn.style.whiteSpace = 'normal';
         btn.innerText = optText;
