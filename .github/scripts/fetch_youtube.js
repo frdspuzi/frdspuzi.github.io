@@ -125,8 +125,11 @@ async function scrapeDiscoveryVideos(query) {
 }
 
 // Call Gemini API (Fallback queue)
+let currentModelIndex = 0;
+
 async function callGemini(prompt) {
-  for (const model of GEMINI_MODELS) {
+  while (currentModelIndex < GEMINI_MODELS.length) {
+    const model = GEMINI_MODELS[currentModelIndex];
     for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
       try {
         const res = await fetch(
@@ -144,19 +147,25 @@ async function callGemini(prompt) {
         const data = await res.json();
 
         if (res.status === 429 || res.status === 503) {
-          const waitMs = Math.pow(2, attempt) * 5000;
-          console.warn(`API Error (${res.status}) on ${model}. Attempt ${attempt}. Retrying...`);
-          if (attempt === MAX_RETRIES) break;
+          const waitMs = attempt * 3000;
+          console.warn(`API Error (${res.status}) on ${model}. Attempt ${attempt}/${MAX_RETRIES}. Retrying in ${waitMs / 1000}s...`);
+          if (attempt === MAX_RETRIES) {
+              console.warn(`Max retries reached for ${model}. Permanently falling back to next model...`);
+              currentModelIndex++;
+              break;
+          }
           await sleep(waitMs);
           continue;
         }
 
         if (!res.ok || !data.candidates || data.candidates.length === 0) {
+          currentModelIndex++;
           break; // Hard error
         }
         return data.candidates[0].content.parts[0].text.trim();
       } catch (err) {
         console.error(`Fetch error on ${model}: ${err.message}`);
+        currentModelIndex++;
         break;
       }
     }

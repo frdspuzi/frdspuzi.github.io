@@ -13,8 +13,11 @@ const MAX_RETRIES = 3;
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+let currentModelIndex = 0;
+
 async function callGemini(prompt) {
-  for (const model of GEMINI_MODELS) {
+  while (currentModelIndex < GEMINI_MODELS.length) {
+    const model = GEMINI_MODELS[currentModelIndex];
     for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
       const res = await fetch(
         `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
@@ -31,11 +34,12 @@ async function callGemini(prompt) {
       const data = await res.json();
 
       if (res.status === 429 || res.status === 503) {
-        const waitMs = Math.pow(2, attempt) * 5000;
+        const waitMs = attempt * 3000;
         console.warn(`API Error (${res.status}) on ${model}. Attempt ${attempt}/${MAX_RETRIES}. Retrying in ${waitMs / 1000}s...`);
         
         if (attempt === MAX_RETRIES) {
-            console.warn(`Max retries reached for ${model}. Falling back to next model...`);
+            console.warn(`Max retries reached for ${model}. Permanently falling back to next model...`);
+            currentModelIndex++;
             break; 
         }
         await sleep(waitMs);
@@ -44,6 +48,7 @@ async function callGemini(prompt) {
 
       if (!res.ok || !data.candidates || data.candidates.length === 0) {
         console.error(`Gemini API Error (HTTP ${res.status}) on ${model}:`, JSON.stringify(data, null, 2));
+        currentModelIndex++;
         break; 
       }
 
