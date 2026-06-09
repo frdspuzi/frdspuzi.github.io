@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Which study method is most effective for long-term retention according to the principles of cognitive science?",
+      "question": "If a person changes their life circumstances through sincere action and supplication, how does this relate to Qadr (Allah’s divine plan)?",
       "options": [
-        "Writing ideas down in a static notebook",
-        "Storing information in a digital filing cabinet",
-        "Active recall through quizzing",
-        "Passive re-reading of notes"
+        "The change indicates that the initial Qadr was incorrect and required human intervention.",
+        "The change occurs outside of Allah’s knowledge and divine decree.",
+        "The change successfully overrides and deletes the original Qadr.",
+        "The change was already known to Allah and included in His eternal plan."
+      ],
+      "correctIndex": 3,
+      "learning": "While human actions and supplications can alter the actual unfolding of life events (Qada’), this change does not happen outside of God's knowledge; it is already encompassed within His eternal and preordained plan (Qadr).",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What is the term for the psychological phenomenon where the brain perceives saving information externally as permission to forget it?",
+      "options": [
+        "The Ebbinghaus Effect",
+        "Spaced Repetition",
+        "The Performance Paradox of Cognitive Offloading",
+        "Digital Amnesia"
       ],
       "correctIndex": 2,
-      "learning": "Because our brains tend to hit 'delete' on information once it is recorded elsewhere, re-reading is insufficient for retention; one must actively force memory retrieval through techniques like spaced repetition or quizzing to combat the brain's tendency to forget.",
+      "learning": "The 'Performance Paradox' of Cognitive Offloading describes the tendency for the brain to delete information from memory once it has been recorded or stored in an external device.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "Which of the following is specifically identified as the primary purpose of the Daily Scrum meeting?",
+      "question": "What is the primary function of utilizing short, iterative cycles known as Sprints in the Scrum framework?",
       "options": [
-        "To demonstrate completed work to stakeholders",
-        "To discuss progress, plans, and any blockers",
-        "To plan the entire project timeline from start to finish",
-        "To define the features needed for the product and prioritize the backlog"
+        "To eliminate the need for project documentation and planning.",
+        "To decrease the total number of personnel required for a project.",
+        "To maximize the total duration of the development timeline.",
+        "To allow for greater flexibility and enable faster adjustments to the project."
       ],
-      "correctIndex": 1,
-      "learning": "The Daily Scrum, or Daily Stand-up, is a short meeting designed specifically for the team to coordinate their efforts by discussing daily progress, future plans, and identifying any blockers hindering their work.",
+      "correctIndex": 3,
+      "learning": "Scrum is an agile methodology that organizes development into smaller, iterative cycles called Sprints to provide teams with increased flexibility and the capacity for rapid adjustments.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "What is considered the primary purpose of life according to the Islamic perspective described in the Quran?",
+      "question": "When applying the Pareto Principle to the vocabulary of the Quran, what percentage of the total text do the 20 most frequently used words represent?",
       "options": [
-        "To achieve material wealth and worldly influence to demonstrate favor.",
-        "To attain enlightenment through complete detachment from earthly responsibilities.",
-        "To spread individual philosophies and challenge existing societal structures.",
-        "To worship Allah, serve as stewards of the Earth, and prepare for the hereafter through righteous conduct."
+        "Exactly 80%",
+        "Approximately 50%",
+        "Approximately 5%",
+        "Approximately 20.83%"
       ],
       "correctIndex": 3,
-      "learning": "In Islam, life is a purposeful journey defined by three core roles: worshiping Allah, acting as a steward (khalifah) of the Earth, and conducting one's life as a test of faith in preparation for the eternal hereafter.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "learning": "While the Pareto Principle suggests that 20% of effort often yields 80% of results, in the case of the Quran, the top 20 most frequent words only account for approximately 20.83% of the total text.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which PCIe power management state is characterized as the deepest level of power savings, resulting in the longest delay when resuming activity?",
+      "question": "Which PCIe power management state is characterized as the deepest level of power savings, requiring the longest wake-up time because the device is almost completely powered down?",
       "options": [
+        "L0s",
+        "L1.0",
         "L2",
-        "L1.2",
-        "L1.1",
-        "L0s"
+        "L1.2"
       ],
-      "correctIndex": 0,
-      "learning": "The L2 state represents the deepest PCIe power-saving mode where the device is almost entirely powered down, providing maximum energy efficiency at the cost of the longest wake-up time.",
+      "correctIndex": 2,
+      "learning": "The PCIe power management spectrum ranges from the fully active L0 state to the L2 state, which acts as the deepest power-saving mode where the device is almost completely shut down, resulting in the maximum energy savings but the longest time required to resume activity.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
-    },
-    {
-      "question": "Which of the following best describes the relationship between human actions, Qada’, and Qadr?",
-      "options": [
-        "Making Dua is ineffective because all outcomes are predetermined and cannot be influenced by human behavior.",
-        "Qada’ is a fixed, unchangeable script that overrides all human efforts and prayers.",
-        "Qadr represents the events that occur in our daily lives, while Qada’ refers to Allah’s prewritten plan.",
-        "Human actions and supplications can alter Qada’, yet both the action and the resulting change are already encompassed within Allah’s eternal Qadr."
-      ],
-      "correctIndex": 3,
-      "learning": "While Qada’ represents the unfolding of events in our lives that can be influenced by our actions and Dua, this entire process—including our decisions and the subsequent changes—is already encompassed within Allah’s eternal knowledge and perfect plan known as Qadr.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-06-09T15:59:53.488Z"
+  "fetchedAt": "2026-06-09T16:36:43.527Z"
 }
