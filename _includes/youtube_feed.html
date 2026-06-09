@@ -89,14 +89,10 @@
 
       // Dynamically handle aspect ratio for YouTube Shorts vs Normal Videos
       const videoContainer = playerEl.parentElement;
-      if (v.url.includes('/shorts/')) {
-        videoContainer.style.aspectRatio = '9/16';
-        videoContainer.style.maxWidth = '320px'; // Prevent it from taking over the screen
-        videoContainer.style.margin = '0 auto';  // Center it in the flex column
+      if (v.url && v.url.includes('/shorts/')) {
+        videoContainer.style.cssText = "aspect-ratio: 9/16 !important; max-width: 320px !important; margin: 0 auto !important; width: 100%; border-radius: 8px; overflow: hidden;";
       } else {
-        videoContainer.style.aspectRatio = '16/9';
-        videoContainer.style.maxWidth = 'none';
-        videoContainer.style.margin = '0';
+        videoContainer.style.cssText = "aspect-ratio: 16/9 !important; max-width: none !important; margin: 0 !important; width: 100%; border-radius: 8px; overflow: hidden;";
       }
     }
 
