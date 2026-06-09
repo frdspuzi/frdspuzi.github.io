@@ -173,43 +173,46 @@ async function callGemini(prompt) {
   return null;
 }
 
-// Evaluate Video via Gemini
-async function evaluateVideo(video, category) {
-  const prompt = `You are an expert content curator acting as a filter against algorithm bloat.
-Evaluate the following YouTube video to see if it is highly valuable for self-improvement for one of these demographics:
+// Evaluate Bulk Videos via Gemini
+async function evaluateBulk(videoCandidates) {
+  const prompt = `You are an expert content curator. You have been given a massive list of ${videoCandidates.length} recent YouTube videos.
+Your job is to act like a brutal talent scout and pick the absolute best 5 videos from this list that provide the highest value for our target demographic:
 - A Muslim
 - A Malaysian
 - A Junior Fullstack Software Engineer
 - Someone early in their career seeking advice
 - An Islamic financial advocate
 
-Video Title: "${video.title}"
-Channel: ${video.author}
-Category: ${category}
+Here are the video candidates (in JSON format):
+${JSON.stringify(videoCandidates, null, 2)}
 
-  CRITICAL:
-  1. Does this video seem genuinely valuable for self-improvement or professional/spiritual growth for the target demographic? Be extremely lenient—if it provides ANY solid advice, motivation, or interesting perspective, mark it as Yes. Do not be overly rigid.
-  2. If No, just output exactly: {"valuable": false}
-  3. If Yes, generate a detailed but layman-friendly summary (2-3 sentences) explaining *why* it's worth their time and how they can improve from it. Write it to hook the viewer!
-
-Output STRICTLY valid JSON:
+CRITICAL INSTRUCTIONS:
+1. Review the titles, channels, publish dates, and descriptions.
+2. Select EXACTLY the top 5 most genuinely valuable videos from the entire list.
+3. For each selected video, write a layman-friendly summary (2-3 sentences) explaining WHY it's worth their time. Make it intriguing and hook the viewer, but keep the tone natural and authentic—do not sound like an over-the-top marketer.
+4. Return ONLY valid JSON in the exact format below, with nothing else:
 {
-  "valuable": true,
-  "summary": "Your detailed self-improvement summary here."
+  "selected_videos": [
+    {
+      "videoId": "the_videoId_here",
+      "summary": "Your detailed hook summary here."
+    }
+  ]
 }`;
 
   const responseText = await callGemini(prompt);
-  if (!responseText) return null;
+  if (!responseText) return [];
 
   try {
     const jsonMatch = responseText.match(/\{[\s\S]*\}/);
     if (jsonMatch) {
-      return JSON.parse(jsonMatch[0]);
+      const parsed = JSON.parse(jsonMatch[0]);
+      return parsed.selected_videos || [];
     }
   } catch (err) {
     console.error("Failed to parse Gemini response", responseText);
   }
-  return null;
+  return [];
 }
 
 async function main() {
@@ -218,8 +221,7 @@ async function main() {
     process.exit(1);
   }
 
-  const curatedVideos = [];
-  const MAX_VIDEOS = 10;
+  const videoCandidates = [];
 
   // 1. Roll for Discovery (20% chance)
   const roll = Math.random();
@@ -229,72 +231,77 @@ async function main() {
     console.log(`Searching YouTube for: ${query}`);
     const discoveryVids = await scrapeDiscoveryVideos(query);
     
-    // Evaluate top 3 discovery videos until we find a good one
     for (const vid of discoveryVids.slice(0, 3)) {
-      console.log(`Evaluating Discovery video: ${vid.title}`);
-      const evalResult = await evaluateVideo(vid, "Discovery");
-      if (evalResult && evalResult.valuable) {
-        curatedVideos.push({
-          title: vid.title,
-          url: vid.link,
-          thumbnail: vid.link.replace("watch?v=", "embed/").split("&")[0], // Just keeping standard videoId
-          videoId: vid.link.split('v=')[1].split('&')[0],
-          channel: vid.author,
-          category: "Discovery 🌍",
-          summary: evalResult.summary,
-          dateAdded: new Date().toISOString()
-        });
-        console.log(`Added Discovery Video: ${vid.title}`);
-        break; // Only take one discovery video
-      }
-      await sleep(5000);
+      videoCandidates.push({
+        videoId: vid.link.split('v=')[1].split('&')[0],
+        title: vid.title,
+        channel: vid.author,
+        category: "Discovery 🌍",
+        publishDate: new Date().toISOString(),
+        description: "A highly relevant video discovered via search.",
+        url: vid.link
+      });
     }
   }
 
-  // 2. Fetch from Explicit Channels
-  console.log("Fetching from explicit channels...");
-  // Shuffle channels to get variety daily
-  const shuffledChannels = CHANNELS.sort(() => 0.5 - Math.random()).slice(0, 5); // Pick 5 random channels to check
-
-  for (const channel of shuffledChannels) {
-    if (curatedVideos.length >= MAX_VIDEOS) break;
-
+  // 2. Fetch from ALL Channels
+  console.log("Fetching latest videos from ALL channels...");
+  for (const channel of CHANNELS) {
     const channelId = await resolveChannelId(channel.url);
     if (!channelId) continue;
 
     const videos = await fetchRss(channelId);
-    if (videos.length === 0) continue;
+    await sleep(1500); // Prevent hitting rss2json rate limits
 
-    // Evaluate the most recent video
-    const vid = videos[0];
-    console.log(`Evaluating: ${vid.title} from ${channel.url}`);
-    
-    const evalResult = await evaluateVideo({
-      title: vid.title,
-      author: vid.author || channel.category // fallback
-    }, channel.category);
-
-    if (evalResult && evalResult.valuable) {
+    // Take top 3 recent videos per channel
+    for (const vid of videos.slice(0, 3)) {
       const videoIdMatch = vid.link.match(/v=([a-zA-Z0-9_-]+)/);
       const videoId = videoIdMatch ? videoIdMatch[1] : vid.link.split('/').pop();
       
-      curatedVideos.push({
-        title: vid.title,
-        url: vid.link,
+      // Clean HTML tags from description and truncate to save tokens
+      let cleanDesc = (vid.description || "").replace(/<[^>]*>?/gm, '').substring(0, 400).trim();
+
+      videoCandidates.push({
         videoId: videoId,
-        channel: vid.author || "YouTube Creator",
+        title: vid.title,
+        channel: vid.author || channel.category,
         category: channel.category,
-        summary: evalResult.summary,
+        publishDate: vid.pubDate,
+        description: cleanDesc,
+        url: vid.link
+      });
+    }
+  }
+
+  console.log(`Collected ${videoCandidates.length} total video candidates. Sending to Gemini for bulk evaluation...`);
+  
+  if (videoCandidates.length === 0) {
+    console.log("No candidates found to evaluate.");
+    return;
+  }
+
+  const selectedVideos = await evaluateBulk(videoCandidates);
+  const curatedVideos = [];
+
+  for (const selected of selectedVideos) {
+    // Match the selected ID back to our original candidate list
+    const candidate = videoCandidates.find(v => v.videoId === selected.videoId);
+    if (candidate) {
+      curatedVideos.push({
+        title: candidate.title,
+        url: candidate.url,
+        videoId: candidate.videoId,
+        channel: candidate.channel,
+        category: candidate.category,
+        summary: selected.summary,
         dateAdded: new Date().toISOString()
       });
-      console.log(`Added: ${vid.title}`);
+      console.log(`Added Winner: ${candidate.title}`);
     }
-    await sleep(5000); // Rate limit
   }
 
   // Save to _data/youtube.json
   if (curatedVideos.length > 0) {
-    // Merge with existing so we don't lose old curated videos if today's batch is small
     let existingVideos = [];
     if (fs.existsSync(OUTPUT_FILE)) {
       try {
@@ -304,7 +311,6 @@ async function main() {
       } catch (e) {}
     }
 
-    // Prepend new videos, ensuring uniqueness by videoId
     const newVideoIds = new Set(curatedVideos.map(v => v.videoId));
     const filteredExisting = existingVideos.filter(v => !newVideoIds.has(v.videoId));
     
@@ -323,7 +329,7 @@ async function main() {
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalOutput, null, 2));
     console.log(`Successfully wrote ${finalVideos.length} videos to ${OUTPUT_FILE}`);
   } else {
-    console.log("No valuable videos found today.");
+    console.log("Gemini did not return any valid selections today.");
   }
 }
 
