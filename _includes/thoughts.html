@@ -12,7 +12,7 @@
     <div class="d-flex flex-column flex-lg-row" style="gap: 32px; align-items: flex-start;">
       
       <!-- Left Column: My Writing -->
-      <div class="col-12 col-lg-6 right-column-container" style="min-width: 0; height: 648px;">
+      <div class="col-12 col-lg-6 right-column-container d-flex flex-column" style="min-width: 0;">
         <div class="right-column-content d-flex flex-column w-100 h-100">
           <div class="d-flex flex-justify-between flex-items-center mb-3 flex-shrink-0">
             <div id="medium-filters" style="display:none;">
@@ -255,8 +255,16 @@
     background: #959da5;
   }
 
+  @media (max-width: 1011px) {
+    .right-column-container {
+      height: 450px;
+      overflow: hidden;
+    }
+  }
+
   @media (min-width: 1012px) {
     .right-column-container {
+      height: 648px;
       position: relative;
     }
     .right-column-content {
