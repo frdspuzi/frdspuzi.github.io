@@ -45,6 +45,7 @@ jobs:
           git add _data/learning.json
           git add _data/gratitude.json
           git add _data/youtube.json
+          git add _data/youtube_eval_log.json || true
           
           if git diff-index --quiet HEAD; then
             echo "No new AI content generated."
