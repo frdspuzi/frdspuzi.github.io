@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "If a person changes their life circumstances through sincere action and supplication, how does this relate to Qadr (Allah’s divine plan)?",
+      "question": "Which PCIe power management state specifically powers down the electrical circuits of the main link to achieve deeper power savings than L1.0 at the cost of an increased wake-up time?",
       "options": [
-        "The change indicates that the initial Qadr was incorrect and required human intervention.",
-        "The change occurs outside of Allah’s knowledge and divine decree.",
-        "The change successfully overrides and deletes the original Qadr.",
-        "The change was already known to Allah and included in His eternal plan."
+        "L1.2",
+        "L0s",
+        "L1.1",
+        "L2"
       ],
-      "correctIndex": 3,
-      "learning": "While human actions and supplications can alter the actual unfolding of life events (Qada’), this change does not happen outside of God's knowledge; it is already encompassed within His eternal and preordained plan (Qadr).",
+      "correctIndex": 2,
+      "learning": "In PCIe power management, the L1.1 substate achieves deeper energy savings than L1.0 by powering down the electrical circuits of the main link, which consequently increases its wake-up time.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
+    },
+    {
+      "question": "In Islamic theology, which term refers to the actual occurrence and unfolding of events in a person's life that can be altered or influenced by actions and supplications?",
+      "options": [
+        "Dua",
+        "Al-Alim",
+        "Qada’",
+        "Qadr"
+      ],
+      "correctIndex": 2,
+      "learning": "In Islamic theology, Qada’ represents the actual unfolding of events in a person's life that can be altered by actions and supplications, while Qadr is God's complete, preordained plan that encompasses all of these occurrences and changes.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "What is the term for the psychological phenomenon where the brain perceives saving information externally as permission to forget it?",
+      "question": "What psychological phenomenon occurs when the brain interprets writing information down or storing it externally as permission to forget it?",
       "options": [
-        "The Ebbinghaus Effect",
-        "Spaced Repetition",
-        "The Performance Paradox of Cognitive Offloading",
-        "Digital Amnesia"
+        "Performance Paradox of Cognitive Offloading",
+        "Google Effect",
+        "Digital Amnesia",
+        "Spaced Repetition"
       ],
-      "correctIndex": 2,
-      "learning": "The 'Performance Paradox' of Cognitive Offloading describes the tendency for the brain to delete information from memory once it has been recorded or stored in an external device.",
+      "correctIndex": 0,
+      "learning": "The 'Performance Paradox' of Cognitive Offloading is a term psychologists use to describe when the brain interprets the act of writing something down or storing it externally as permission to forget that information.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "What is the primary function of utilizing short, iterative cycles known as Sprints in the Scrum framework?",
+      "question": "What is the primary benefit of breaking a development process into smaller, iterative cycles, often called Sprints?",
       "options": [
-        "To eliminate the need for project documentation and planning.",
-        "To decrease the total number of personnel required for a project.",
-        "To maximize the total duration of the development timeline.",
-        "To allow for greater flexibility and enable faster adjustments to the project."
+        "To increase the overall project duration",
+        "To strictly adhere to a pre-defined, unchanging plan",
+        "To reduce the number of team members required for development",
+        "To allow for more flexibility and quicker adjustments"
       ],
       "correctIndex": 3,
-      "learning": "Scrum is an agile methodology that organizes development into smaller, iterative cycles called Sprints to provide teams with increased flexibility and the capacity for rapid adjustments.",
+      "learning": "Scrum employs smaller, iterative cycles called Sprints as an agile approach to development, primarily to enable greater flexibility and quicker adjustments throughout the project.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "When applying the Pareto Principle to the vocabulary of the Quran, what percentage of the total text do the 20 most frequently used words represent?",
+      "question": "In Islamic belief, what form of leadership was prophesied to succeed Prophet Muhammad, with the understanding that no further prophets would emerge?",
       "options": [
-        "Exactly 80%",
-        "Approximately 50%",
-        "Approximately 5%",
-        "Approximately 20.83%"
+        "New Prophets",
+        "Caliphs",
+        "Imams",
+        "Saints"
       ],
-      "correctIndex": 3,
-      "learning": "While the Pareto Principle suggests that 20% of effort often yields 80% of results, in the case of the Quran, the top 20 most frequent words only account for approximately 20.83% of the total text.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "correctIndex": 1,
+      "learning": "An important aspect of Islamic belief regarding leadership after Prophet Muhammad states that while no new prophets would emerge, 'caliphs' would succeed him to preserve the faith and maintain unity within the community. This highlights the concept of successive authority beyond prophethood.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
-    },
-    {
-      "question": "Which PCIe power management state is characterized as the deepest level of power savings, requiring the longest wake-up time because the device is almost completely powered down?",
-      "options": [
-        "L0s",
-        "L1.0",
-        "L2",
-        "L1.2"
-      ],
-      "correctIndex": 2,
-      "learning": "The PCIe power management spectrum ranges from the fully active L0 state to the L2 state, which acts as the deepest power-saving mode where the device is almost completely shut down, resulting in the maximum energy savings but the longest time required to resume activity.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
     }
   ],
-  "fetchedAt": "2026-06-09T16:36:43.527Z"
+  "fetchedAt": "2026-06-10T04:55:27.676Z"
 }
