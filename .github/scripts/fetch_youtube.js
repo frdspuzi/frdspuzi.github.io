@@ -260,13 +260,20 @@ async function enrichWithVideoSummary(video) {
                 mimeType: 'video/mp4'
               }
             },
-            { text: `You are an expert analyst. Watch this video and write a layman-friendly, highly engaging summary (2-3 sentences) explaining WHY this video is worth the viewer's time and what the core takeaway is. After the summary, provide 2-3 key bullet points with exact timestamps for the most valuable moments (e.g., * **[02:15]** Topic). 
+            { text: `You are an expert analyst. Watch this video and write a layman-friendly, highly engaging summary (2-3 sentences) explaining WHY this video is worth the viewer's time and what the core takeaway is. Also extract 2-3 of the most valuable moments with exact timestamps in seconds.
 
 CRITICAL GUARDRAILS:
 1. Be highly skeptical. If the video contains obvious misinformation, scams, or questionable claims, flag it explicitly in your summary.
 2. If the video touches on theology or philosophy, ensure your summary and highlighted takeaways do not promote anything that goes against core Islamic values.
 
-Be specific. Make it natural.` }
+You MUST return ONLY a valid JSON object in the exact format below, with nothing else:
+{
+  "summary": "Your engaging 2-3 sentence summary...",
+  "timestamps": [
+    { "time": 135, "topic": "Explanation of the core concept" },
+    { "time": 252, "topic": "Why this approach is a trap" }
+  ]
+}` }
           ]
         }
       ]
@@ -274,12 +281,20 @@ Be specific. Make it natural.` }
 
     if (response && response.text) {
       console.log(`✓ Deep summary generated.`);
-      return response.text.trim();
+      try {
+        const jsonMatch = response.text.match(/\{[\s\S]*\}/);
+        if (jsonMatch) {
+          const parsed = JSON.parse(jsonMatch[0]);
+          return parsed;
+        }
+      } catch(e) {
+        console.error("Failed to parse Vertex AI JSON:", e.message);
+      }
     }
   } catch (err) {
     console.error(`Failed to enrich video ${video.url} with Vertex AI:`, err.message);
   }
-  return video.summary; // Fallback
+  return { summary: video.summary, timestamps: [] }; // Fallback
 }
 
 async function main() {
@@ -382,7 +397,14 @@ async function main() {
   if (curatedVideos.length > 0 && GCP_PROJECT_ID) {
     console.log(`\n--- Starting Vertex AI Deep Summarization for ${curatedVideos.length} videos ---`);
     for (let i = 0; i < curatedVideos.length; i++) {
-      curatedVideos[i].summary = await enrichWithVideoSummary(curatedVideos[i]);
+      const enriched = await enrichWithVideoSummary(curatedVideos[i]);
+      if (typeof enriched === 'object' && enriched !== null) {
+        curatedVideos[i].summary = enriched.summary || curatedVideos[i].summary;
+        curatedVideos[i].timestamps = enriched.timestamps || [];
+      } else {
+        curatedVideos[i].summary = enriched;
+        curatedVideos[i].timestamps = [];
+      }
     }
   }
 
