@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Which PCIe power management state specifically powers down the electrical circuits of the main link to achieve deeper power savings than L1.0 at the cost of an increased wake-up time?",
+      "question": "With approximately 12 million distinct words compared to the 170,000 words in the Oxford English Dictionary, what is the approximate ratio of Arabic words to English words?",
       "options": [
-        "L1.2",
-        "L0s",
-        "L1.1",
-        "L2"
+        "150:1",
+        "12:1",
+        "25:1",
+        "71:1"
       ],
-      "correctIndex": 2,
-      "learning": "In PCIe power management, the L1.1 substate achieves deeper energy savings than L1.0 by powering down the electrical circuits of the main link, which consequently increases its wake-up time.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "In Islamic theology, which term refers to the actual occurrence and unfolding of events in a person's life that can be altered or influenced by actions and supplications?",
-      "options": [
-        "Dua",
-        "Al-Alim",
-        "Qada’",
-        "Qadr"
-      ],
-      "correctIndex": 2,
-      "learning": "In Islamic theology, Qada’ represents the actual unfolding of events in a person's life that can be altered by actions and supplications, while Qadr is God's complete, preordained plan that encompasses all of these occurrences and changes.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "correctIndex": 3,
+      "learning": "The Arabic language contains roughly 12 million distinct words compared to only 170,000 in the Oxford English Dictionary, resulting in an approximate 71:1 ratio of Arabic words to English.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "What psychological phenomenon occurs when the brain interprets writing information down or storing it externally as permission to forget it?",
+      "question": "What is a core benefit of breaking the development process into smaller, iterative cycles in an agile framework like Scrum?",
       "options": [
-        "Performance Paradox of Cognitive Offloading",
-        "Google Effect",
-        "Digital Amnesia",
-        "Spaced Repetition"
+        "It primarily focuses on eliminating the need for formal review meetings.",
+        "It extends the overall project duration to accommodate more features.",
+        "It allows for more flexibility and quicker adjustments.",
+        "It aims to make the project entirely self-managing without external input."
       ],
-      "correctIndex": 0,
-      "learning": "The 'Performance Paradox' of Cognitive Offloading is a term psychologists use to describe when the brain interprets the act of writing something down or storing it externally as permission to forget that information.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "What is the primary benefit of breaking a development process into smaller, iterative cycles, often called Sprints?",
-      "options": [
-        "To increase the overall project duration",
-        "To strictly adhere to a pre-defined, unchanging plan",
-        "To reduce the number of team members required for development",
-        "To allow for more flexibility and quicker adjustments"
-      ],
-      "correctIndex": 3,
-      "learning": "Scrum employs smaller, iterative cycles called Sprints as an agile approach to development, primarily to enable greater flexibility and quicker adjustments throughout the project.",
+      "correctIndex": 2,
+      "learning": "Scrum employs an agile approach, breaking the development process into smaller, iterative cycles known as Sprints, with the main goal of increasing flexibility and enabling quicker adjustments.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "In Islamic belief, what form of leadership was prophesied to succeed Prophet Muhammad, with the understanding that no further prophets would emerge?",
+      "question": "Which power management state is the deepest power-saving state within L1, characterized by maximizing power savings at the cost of the longest delay in resuming activity?",
       "options": [
-        "New Prophets",
-        "Caliphs",
-        "Imams",
-        "Saints"
+        "L0s",
+        "L1.0",
+        "L1.2",
+        "L1.1"
       ],
-      "correctIndex": 1,
-      "learning": "An important aspect of Islamic belief regarding leadership after Prophet Muhammad states that while no new prophets would emerge, 'caliphs' would succeed him to preserve the faith and maintain unity within the community. This highlights the concept of successive authority beyond prophethood.",
+      "correctIndex": 2,
+      "learning": "L1.2 is the deepest power-saving state within L1, maximizing power savings by turning off even more components, but at the cost of the longest delay in resuming activity.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
+    },
+    {
+      "question": "What is the fundamental requirement for a people's condition to change?",
+      "options": [
+        "They must change what is in themselves.",
+        "Merely by making frequent supplications.",
+        "Only a divine intervention.",
+        "An overwhelming external event."
+      ],
+      "correctIndex": 0,
+      "learning": "The article concludes that people have the ability and responsibility to make changes in their lives through their choices and actions, influencing their destiny and altering their Qada', even though these changes are within Allah's ultimate knowledge.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What are considered the three primary roles or purposes of human life in Islam?",
+      "options": [
+        "Worshiping Allah, serving as caretakers of the Earth, and preparing for the eternal Hereafter.",
+        "Performing daily rituals, expanding the community, and engaging in philosophical debate.",
+        "Accumulating wealth, seeking personal pleasure, and establishing political power.",
+        "Building grand monuments, writing scriptures, and leading armies."
+      ],
+      "correctIndex": 0,
+      "learning": "In Islam, human life is viewed as a purposeful journey with three primary roles: worshipping Allah, serving as stewards (khalifah) of the Earth, and preparing for the eternal Hereafter through conscious choices and accountability.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     }
   ],
-  "fetchedAt": "2026-06-10T04:55:27.676Z"
+  "fetchedAt": "2026-06-11T05:07:01.250Z"
 }
