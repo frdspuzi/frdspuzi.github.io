@@ -1,0 +1,9 @@
+{
+  "name": "ai-daily-content",
+  "version": "1.0.0",
+  "description": "Daily AI scripts for Github Actions",
+  "main": "fetch_youtube.js",
+  "dependencies": {
+    "@google/genai": "^0.1.2"
+  }
+}
