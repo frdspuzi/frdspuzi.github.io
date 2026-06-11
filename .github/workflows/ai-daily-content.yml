@@ -6,27 +6,17 @@ on:
   workflow_dispatch: 
 
 jobs:
-  require-approval:
-    name: Waiting for User Approval
-    runs-on: ubuntu-latest
-    environment: production
-    steps:
-      - run: echo "User approved the daily AI content generation run."
-
   youtube:
     name: Run YouTube Curator
-    needs: require-approval
     uses: ./.github/workflows/ai-youtube.yml
     secrets: inherit
 
   gratitude:
     name: Run Gratitude Generator
-    needs: require-approval
     uses: ./.github/workflows/ai-gratitude.yml
     secrets: inherit
 
   learning:
     name: Run Learning Trivia
-    needs: require-approval
     uses: ./.github/workflows/ai-learning.yml
     secrets: inherit
