@@ -6,64 +6,27 @@ on:
   workflow_dispatch: 
 
 jobs:
-  generate-ai-content:
+  require-approval:
+    name: Waiting for User Approval
     runs-on: ubuntu-latest
-    permissions:
-      contents: write 
-      id-token: write
-
+    environment: production
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - run: echo "User approved the daily AI content generation run."
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+  youtube:
+    name: Run YouTube Curator
+    needs: require-approval
+    uses: ./.github/workflows/ai-youtube.yml
+    secrets: inherit
 
-      - name: Install Node Dependencies
-        working-directory: .github/scripts
-        run: npm install
+  gratitude:
+    name: Run Gratitude Generator
+    needs: require-approval
+    uses: ./.github/workflows/ai-gratitude.yml
+    secrets: inherit
 
-      - id: auth
-        name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v2
-        with:
-          workload_identity_provider: '${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}'
-          service_account: 'github-actions-bot@${{ secrets.GCP_PROJECT_ID }}.iam.gserviceaccount.com'
-
-      - name: Generate Random Learning via Gemini
-        continue-on-error: true
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node .github/scripts/generate_learning.js
-
-      - name: Generate Gratitude Suggestions via Gemini
-        continue-on-error: true
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: node .github/scripts/generate_gratitude.js
-
-      - name: Fetch Curated YouTube Videos via Gemini
-        continue-on-error: true
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
-        run: node .github/scripts/fetch_youtube.js
-
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add _data/learning.json
-          git add _data/gratitude.json
-          git add _data/youtube.json
-          git add _data/youtube_eval_log.json || true
-          
-          if git diff-index --quiet HEAD; then
-            echo "No new AI content generated."
-          else
-            git commit -m "chore: Update Daily AI Content [skip ci]"
-            git pull --rebase
-            git push
-          fi
+  learning:
+    name: Run Learning Trivia
+    needs: require-approval
+    uses: ./.github/workflows/ai-learning.yml
+    secrets: inherit
