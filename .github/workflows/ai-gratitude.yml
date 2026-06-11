@@ -38,6 +38,6 @@ jobs:
             echo "No new Gratitude content generated."
           else
             git commit -m "chore: Update AI Gratitude [skip ci]"
-            git pull --rebase
+            git pull --rebase -X theirs
             git push
           fi
