@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write 
+      id-token: write
 
     steps:
       - name: Checkout repository
@@ -19,6 +20,17 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+
+      - name: Install Node Dependencies
+        working-directory: .github/scripts
+        run: npm install
+
+      - id: auth
+        name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: '${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}'
+          service_account: 'github-actions-bot@${{ secrets.GCP_PROJECT_ID }}.iam.gserviceaccount.com'
 
       - name: Generate Random Learning via Gemini
         continue-on-error: true
@@ -36,6 +48,7 @@ jobs:
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
         run: node .github/scripts/fetch_youtube.js
 
       - name: Commit and push changes

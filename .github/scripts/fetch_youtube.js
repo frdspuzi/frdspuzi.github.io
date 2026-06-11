@@ -1,8 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
+const { GoogleGenAI } = require('@google/genai');
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+const GCP_PROJECT_ID = process.env.GCP_PROJECT_ID;
 const OUTPUT_FILE = path.join(__dirname, '..', '..', '_data', 'youtube.json');
 
 const GEMINI_MODELS = [
@@ -19,13 +21,16 @@ const CHANNELS = [
   { url: "https://www.youtube.com/@RyanLPeterman", category: "Tech & Career" },
   { url: "https://www.youtube.com/@aliabdaal", category: "Productivity" },
   { url: "https://www.youtube.com/@GoogleDevelopers", category: "Tech & Engineering" },
-  { url: "https://www.youtube.com/channel/UCSYUI0C0gG-Kp03GBaO2G9Q", category: "Finance & Malaysia" },
-  { url: "https://www.youtube.com/channel/UCYkfgq8LmajU50WadNGGxtA", category: "Finance & Malaysia" },
+  { url: "https://www.youtube.com/channel/UCSYUI0C0gG-Kp03GBaO2G9Q", category: "Finance" },
+  { url: "https://www.youtube.com/channel/UCYkfgq8LmajU50WadNGGxtA", category: "Finance" },
   { url: "https://www.youtube.com/@TheGameOfImpossible", category: "Productivity" },
-  { url: "https://www.youtube.com/@bfmradiomy", category: "Finance & Malaysia" },
+  { url: "https://www.youtube.com/@bfmradiomy", category: "Finance" },
   { url: "https://www.youtube.com/@TEDx", category: "General Ideas" },
   { url: "https://www.youtube.com/@yaqeeninstituteofficial", category: "Islamic Studies" },
-  { url: "https://www.youtube.com/@shabdullahoduro", category: "Islamic Studies" }
+  { url: "https://www.youtube.com/@shabdullahoduro", category: "Islamic Studies" },
+  { url: "https://www.youtube.com/@pragmaticengineer", category: "Tech & Engineering" },
+  { url: "https://www.youtube.com/channel/UCdMz6KKEDW_1Qqas-ya7S6w", category: "Tech & Engineering" },
+  { url: "https://www.youtube.com/@keluarsekejap", category: "Finance" }
 ];
 
 const DISCOVERY_QUERIES = [
@@ -92,7 +97,7 @@ async function scrapeDiscoveryVideos(query) {
     while ((match = regex.exec(html)) !== null) {
       videoIds.add(match[1]);
     }
-    
+
     const results = [];
     for (const vid of videoIds) {
       // Very basic metadata extraction from the search HTML is complex due to minified state.
@@ -150,9 +155,9 @@ async function callGemini(prompt) {
           const waitMs = attempt * 3000;
           console.warn(`API Error (${res.status}) on ${model}. Attempt ${attempt}/${MAX_RETRIES}. Retrying in ${waitMs / 1000}s...`);
           if (attempt === MAX_RETRIES) {
-              console.warn(`Max retries reached for ${model}. Permanently falling back to next model...`);
-              currentModelIndex++;
-              break;
+            console.warn(`Max retries reached for ${model}. Permanently falling back to next model...`);
+            currentModelIndex++;
+            break;
           }
           await sleep(waitMs);
           continue;
@@ -226,6 +231,57 @@ CRITICAL INSTRUCTIONS:
   return [];
 }
 
+// New function to enrich a video with an actual video summary from Vertex AI
+async function enrichWithVideoSummary(video) {
+  if (!GCP_PROJECT_ID) {
+    console.warn("GCP_PROJECT_ID not set, skipping Vertex AI video summary enrichment.");
+    return video.summary; // Fallback to the short description-based summary
+  }
+
+  try {
+    const ai = new GoogleGenAI({
+      vertexai: {
+        project: GCP_PROJECT_ID,
+        location: 'us-central1'
+      }
+    });
+
+    console.log(`\nWatching video via Vertex AI: ${video.title} (${video.url})`);
+
+    const response = await ai.models.generateContent({
+      model: 'gemini-3.5-flash',
+      contents: [
+        {
+          role: 'user',
+          parts: [
+            {
+              fileData: {
+                fileUri: video.url,
+                mimeType: 'video/mp4'
+              }
+            },
+            { text: `You are an expert analyst. Watch this video and write a layman-friendly, highly engaging summary (2-3 sentences) explaining WHY this video is worth the viewer's time and what the core takeaway is. After the summary, provide 2-3 key bullet points with exact timestamps for the most valuable moments (e.g., * **[02:15]** Topic). 
+
+CRITICAL GUARDRAILS:
+1. Be highly skeptical. If the video contains obvious misinformation, scams, or questionable claims, flag it explicitly in your summary.
+2. If the video touches on theology or philosophy, ensure your summary and highlighted takeaways do not promote anything that goes against core Islamic values.
+
+Be specific. Make it natural.` }
+          ]
+        }
+      ]
+    });
+
+    if (response && response.text) {
+      console.log(`✓ Deep summary generated.`);
+      return response.text.trim();
+    }
+  } catch (err) {
+    console.error(`Failed to enrich video ${video.url} with Vertex AI:`, err.message);
+  }
+  return video.summary; // Fallback
+}
+
 async function main() {
   if (!GEMINI_API_KEY) {
     console.error("GEMINI_API_KEY is not set.");
@@ -241,7 +297,7 @@ async function main() {
     const query = DISCOVERY_QUERIES[Math.floor(Math.random() * DISCOVERY_QUERIES.length)];
     console.log(`Searching YouTube for: ${query}`);
     const discoveryVids = await scrapeDiscoveryVideos(query);
-    
+
     for (const vid of discoveryVids.slice(0, 3)) {
       videoCandidates.push({
         videoId: vid.link.split('v=')[1].split('&')[0],
@@ -268,7 +324,7 @@ async function main() {
     for (const vid of videos.slice(0, 3)) {
       const videoIdMatch = vid.link.match(/v=([a-zA-Z0-9_-]+)/);
       const videoId = videoIdMatch ? videoIdMatch[1] : vid.link.split('/').pop();
-      
+
       // Clean HTML tags from description and truncate to save tokens
       let cleanDesc = (vid.description || "").replace(/<[^>]*>?/gm, '').substring(0, 400).trim();
 
@@ -285,7 +341,7 @@ async function main() {
   }
 
   console.log(`Collected ${videoCandidates.length} total video candidates. Sending to Gemini for bulk evaluation...`);
-  
+
   if (videoCandidates.length === 0) {
     console.log("No candidates found to evaluate.");
     return;
@@ -303,7 +359,7 @@ async function main() {
 
   for (const evalItem of evaluations) {
     if (!evalItem.selected) continue;
-    
+
     // Match the selected ID back to our original candidate list
     const candidate = videoCandidates.find(v => v.videoId === evalItem.videoId);
     if (candidate) {
@@ -320,6 +376,16 @@ async function main() {
     }
   }
 
+  // --------------------------------------------------------
+  // NEW: Deep Summarization using Vertex AI
+  // --------------------------------------------------------
+  if (curatedVideos.length > 0 && GCP_PROJECT_ID) {
+    console.log(`\n--- Starting Vertex AI Deep Summarization for ${curatedVideos.length} videos ---`);
+    for (let i = 0; i < curatedVideos.length; i++) {
+      curatedVideos[i].summary = await enrichWithVideoSummary(curatedVideos[i]);
+    }
+  }
+
   // Save to _data/youtube.json
   if (curatedVideos.length > 0) {
     let existingVideos = [];
@@ -328,12 +394,12 @@ async function main() {
         const raw = fs.readFileSync(OUTPUT_FILE);
         const data = JSON.parse(raw);
         existingVideos = data.videos || [];
-      } catch (e) {}
+      } catch (e) { }
     }
 
     const newVideoIds = new Set(curatedVideos.map(v => v.videoId));
     const filteredExisting = existingVideos.filter(v => !newVideoIds.has(v.videoId));
-    
+
     const finalVideos = [...curatedVideos, ...filteredExisting].slice(0, 15); // Keep up to 15 in the feed
 
     const finalOutput = {
