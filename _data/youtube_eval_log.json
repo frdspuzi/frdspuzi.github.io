@@ -1,44 +1,212 @@
 [
   {
+    "videoId": "YGW0HBNK5e0",
+    "title": "40 Harsh Life Lessons I Wish I Knew in My 20s",
+    "selected": false,
+    "reasoning": "Generic self-improvement video with common tropes. It lacks targeted, actionable steps for technical or local Malaysian professionals.",
+    "summary": ""
+  },
+  {
+    "videoId": "uMZ7uZNuK3A",
+    "title": "5 Life Lessons I Wish I Knew in My 20s That Changed EVERYTHING",
+    "selected": false,
+    "reasoning": "Standard lifestyle advice with low professional utility for a software engineer or financial advocate.",
+    "summary": ""
+  },
+  {
+    "videoId": "4bTl3XV55EU",
+    "title": "How to make the BEST of your 20's | simple life advice I wish I had sooner",
+    "selected": false,
+    "reasoning": "Mainly focused on personal lifestyle routines; fails to deliver specialized career or financial substance.",
+    "summary": ""
+  },
+  {
+    "videoId": "iUWwcG-C8OU",
+    "title": "Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS",
+    "selected": false,
+    "reasoning": "Very specific corporate alignment content. Highly-focused B2B discussion that provides low practical utility for an early-stage junior dev.",
+    "summary": ""
+  },
+  {
+    "videoId": "ghJmWQCIHRM",
+    "title": "The agent-ready web: Simplify user actions with WebMCP — Tara Agyemang, Google",
+    "selected": true,
+    "reasoning": "Exceptional cutting-edge technical content for a junior fullstack engineer looking to future-proof their web development skills for the AI era.",
+    "summary": "Are you ready for the next evolution of fullstack development? This session by Google's Tara Agyemang demystifies WebMCP, a protocol that enables AI agents to seamlessly interact with web applications. Learn how to design agent-friendly web apps and position yourself at the absolute forefront of modern development."
+  },
+  {
+    "videoId": "so9l_MwS2yg",
+    "title": "How to Keep Shipping When You Walk Away from Your Desk — Zack Proser, WorkOS",
+    "selected": false,
+    "reasoning": "Niche deployment workflow discussion that has limited value for general career development compared to higher-priority architectural shifts.",
+    "summary": ""
+  },
+  {
+    "videoId": "yNoyVZCYnEE",
+    "title": "Why Rust is so much better than C",
+    "selected": false,
+    "reasoning": "A short format video which barely skims the surface of systems languages. Not highly useful for fullstack developers.",
+    "summary": ""
+  },
+  {
+    "videoId": "eML4A1JcDP4",
+    "title": "Haskell is talked about more than it is used",
+    "selected": false,
+    "reasoning": "A highly specific, 1-minute tech hot-take with zero constructive utility for a junior engineer's daily tasks.",
+    "summary": ""
+  },
+  {
+    "videoId": "23puMkSX-8U",
+    "title": "Why statically typed languages are great for LLMs",
+    "selected": false,
+    "reasoning": "An interesting technical point, but too short to provide actionable engineering context.",
+    "summary": ""
+  },
+  {
+    "videoId": "0j3SW7R40SU",
+    "title": "How to Quit Your Job (and Find Work You Actually Love)",
+    "selected": true,
+    "reasoning": "Provides clear, systematic advice from a prominent Muslim creator on how to make intentional, smart career pivots, perfect for someone early in their career.",
+    "summary": "Struggling to navigate the starting blocks of your professional life? Renowned creator Ali Abdaal breaks down practical frameworks to evaluate your career trajectory and safely transition to more fulfilling work. Avoid early-career burnout with these structured, actionable strategies."
+  },
+  {
+    "videoId": "XnPkUxg__zk",
+    "title": "3 ways to financial freedom",
+    "selected": false,
+    "reasoning": "Extremely brief financial advice short that lacks the deep local or ethical details required by our target audience.",
+    "summary": ""
+  },
+  {
+    "videoId": "nW3VObYzcI8",
+    "title": "My favourite walking desk gadget",
+    "selected": false,
+    "reasoning": "Irrelevant desk setup/gear video.",
+    "summary": ""
+  },
+  {
+    "videoId": "soY0UdjNOog",
+    "title": "3 rules to keeping your code healthy!",
+    "selected": false,
+    "reasoning": "A rapid short on basic clean code practices. Practical, but too brief to be truly impactful compared to a dedicated technical presentation.",
+    "summary": ""
+  },
+  {
+    "videoId": "BXxVBxASvkw",
+    "title": "Stop applying AI to the old ways of working!",
+    "selected": false,
+    "reasoning": "An abstract take on AI workflows that lacks concrete, implementable engineering steps.",
+    "summary": ""
+  },
+  {
+    "videoId": "q8BrZoEU1xo",
+    "title": "Well, that’s a hot take on light mode for sure!",
+    "selected": false,
+    "reasoning": "A standard casual short discussing IDE themes. Pure entertainment, zero educational value.",
+    "summary": ""
+  },
+  {
+    "videoId": "m89pgFDRD1U",
+    "title": "Saham Astro menjunam 98%",
+    "selected": false,
+    "reasoning": "A brief short about Astro's stock decline; the full-length video is a much better choice for structured financial analysis.",
+    "summary": ""
+  },
+  {
+    "videoId": "uPyRbVtaqNM",
+    "title": "Astro gagal siar World Cup, tanda kejatuhan gergasi TV Malaysia?",
+    "selected": true,
+    "reasoning": "An outstanding full-length case study on a major corporate development in Malaysia. Crucial local financial market intelligence.",
+    "summary": "Unpack the shocking, strategic missteps behind the downfall of Malaysian media giant Astro with Financial Faiz. This essential local case study serves as a masterclass in market disruption, corporate finance, and evaluating investment risks within the Malaysian economic landscape."
+  },
+  {
+    "videoId": "oE_sjupJP4Y",
+    "title": "Influencer pun perlukan didikan?",
+    "selected": false,
+    "reasoning": "A casual short about influencer culture; has very little professional value for a software developer or financial specialist.",
+    "summary": ""
+  },
+  {
+    "videoId": "jLqt5bKKyyY",
+    "title": "Saham patuh syariah selamat?",
+    "selected": true,
+    "reasoning": "Directly targets the Islamic financial advocate perspective within a Malaysian regulatory framework.",
+    "summary": "Are Shariah-compliant investments inherently safe, or are you missing critical market vulnerabilities? Get a sharp, direct analysis of how Islamic investing principles match up against actual risk in the Malaysian market, custom-tailored for the ethical advocate."
+  },
+  {
+    "videoId": "01xcXqIAQKk",
+    "title": "Labur dengan hutang boleh bankrupt?",
+    "selected": false,
+    "reasoning": "A short warning about margin trading, but lacks the deep industry-wide context needed for an Islamic finance specialist.",
+    "summary": ""
+  },
+  {
+    "videoId": "lL7WbQTsWT8",
+    "title": "Emosi punca pelabur rugi?",
+    "selected": false,
+    "reasoning": "Short focusing on standard investor psychology. Useful, but too brief to provide high-level systemic value.",
+    "summary": ""
+  },
+  {
     "videoId": "5wAJ5-bYrT0",
     "title": "#105 | Building Malaysia's Largest Stroke Rehab Network (Janet Yeo)",
-    "selected": true,
-    "reasoning": "Highly valuable. Offers practical entrepreneurial and leadership insights from a Malaysian context, relevant for career growth and understanding impact, and aligns with the target's Malaysian identity.",
-    "summary": "Ever wondered what it truly takes to build a significant, impactful venture from the ground up right here in Malaysia? This episode dives deep into Janet Yeo's journey, offering invaluable lessons on entrepreneurship, resilience, and scaling a network that truly serves a critical need in our community. Get ready to be inspired and learn practical strategies for making your mark."
+    "selected": false,
+    "reasoning": "Niche medical-entrepreneurship podcast; doesn't align closely enough with the software engineering or financial focus.",
+    "summary": ""
   },
   {
     "videoId": "4FRnji7Oe6g",
     "title": "#104 | Is The Unity Government Working? | Idris &amp; Leon Jala",
     "selected": true,
-    "reasoning": "Highly valuable. Provides critical insights into Malaysia's political and economic landscape, essential for an Islamic financial advocate and informed career decisions, strongly aligning with the Malaysian and financial advocate personas.",
-    "summary": "As a Malaysian, understanding the pulse of our nation's leadership is key to navigating both your career and financial future. Join Idris and Leon Jala for a candid discussion on the performance and challenges of Malaysia's Unity Government, offering crucial insights for any informed citizen and aspiring financial advocate. This is essential listening to grasp the economic and political currents shaping our country."
+    "reasoning": "Offers immense macroeconomic clarity on Malaysia's current political-economic realities under the Unity Government, helping early-career professionals make strategic long-term decisions.",
+    "summary": "Gain critical economic foresight with corporate turnaround expert Idris Jala as he dissects Malaysia's current governance performance. Understanding these national policies is vital for young professionals navigating local market opportunities and evaluating the trajectory of the country's business landscape."
   },
   {
     "videoId": "tQ48nFgKc2o",
     "title": "#103 | Malaysia's RM300K EV Policy | Idris &amp; Leon Jala",
-    "selected": true,
-    "reasoning": "Highly valuable. Discusses a significant Malaysian economic policy with financial implications and future tech trends, directly relevant for an Islamic financial advocate, a junior software engineer interested in policy impact, and the Malaysian identity.",
-    "summary": "How will Malaysia's significant EV policy impact your financial planning, investment opportunities, and even the future of technology in our country? This discussion with Idris and Leon Jala breaks down the economic implications of the RM300K EV policy, offering insights vital for an Islamic financial advocate and any forward-thinking professional. Don't miss this deep dive into a policy set to reshape our automotive and economic landscape."
-  },
-  {
-    "videoId": "82aHpiKvznM",
-    "title": "What rural LGBTQ+ pride teaches us about courage #shorts #tedx",
     "selected": false,
-    "reasoning": "Low value. While general courage is a good trait, the specific topic of LGBTQ+ pride is highly sensitive and potentially misaligned with the cultural and religious values of a Muslim Malaysian and an Islamic financial advocate, making it unsuitable for this specific demographic.",
+    "reasoning": "Focused specifically on electric vehicle policy, which is less universally impactful than general economic health analysis.",
     "summary": ""
   },
   {
-    "videoId": "P-E_hW7pc4o",
-    "title": "The not-so-rare world of rare diseases | Zhenghong Gao | TEDxApex",
-    "selected": true,
-    "reasoning": "Moderately valuable. Offers a perspective on tackling complex, overlooked problems, which can inspire problem-solving, empathy, and a broad understanding of societal challenges – skills beneficial for any professional, including a junior engineer.",
-    "summary": "Dive into the overlooked yet surprisingly common world of rare diseases and discover the profound impact of dedicated advocacy and scientific pursuit. This talk encourages a mindset of empathy and persistent problem-solving, skills invaluable for a junior engineer looking to tackle complex challenges or anyone seeking to make a difference in niche, critical areas. It's a reminder that even the 'rare' can hold universal lessons."
+    "videoId": "K76lNxWmiNE",
+    "title": "“Vote for you out of love, not out of fear.” - Co-founder of Bersama Nik Nazmi | In The Studio",
+    "selected": false,
+    "reasoning": "A political and sociological interview. While interesting, it does not provide direct guidance for technical skills or finance.",
+    "summary": ""
   },
   {
-    "videoId": "N-UNriIqehM",
-    "title": "How to Find Clarity When the World Feels Loud | Mikaya Thurmond | TEDxNCState",
-    "selected": true,
-    "reasoning": "Highly valuable. Provides direct, actionable advice on achieving mental clarity, crucial for anyone early in their career navigating complexity, information overload, and seeking focus, directly addressing the 'early career advice' persona.",
-    "summary": "Feeling overwhelmed by decisions, distractions, and the constant noise of the modern world, especially early in your career? Mikaya Thurmond offers powerful strategies to cut through the clutter and cultivate profound mental clarity. This is essential viewing for any junior professional or aspiring leader looking to sharpen their focus, make better choices, and navigate their path with confidence."
+    "videoId": "CIJbINdPENQ",
+    "title": "Most replayed: Why Malaysian Football Will Never Go Far | In The Studio",
+    "selected": false,
+    "reasoning": "A localized cultural and sports discussion. Lacks professional utility.",
+    "summary": ""
+  },
+  {
+    "videoId": "9iID8OwGCb0",
+    "title": "Budaya Senior Buli Junior Di Asrama",
+    "selected": false,
+    "reasoning": "Social and cultural critique on boarding school culture. Not aligned with career, finance, or engineering goals.",
+    "summary": ""
+  },
+  {
+    "videoId": "_MVY3ItdkZk",
+    "title": "Shaping the future of cancer care | Rodrigo Toledo | TEDxIESEBarcelona",
+    "selected": false,
+    "reasoning": "An inspiring talk about healthcare technology, but of very low relevance to the day-to-day of a fullstack engineer or a Malaysian financial advocate.",
+    "summary": ""
+  },
+  {
+    "videoId": "bhh8_4hsz2M",
+    "title": "You're Not Broken: You're Running Outdated Software | Sean Finter | TEDxIESEBarcelona",
+    "selected": false,
+    "reasoning": "Metaphorical TEDx speech about lifestyle paradigms. Decent inspiration, but too generic and lacks actionable advice.",
+    "summary": ""
+  },
+  {
+    "videoId": "KrD_Stlwh7k",
+    "title": "Soul Matters | Verne Harnish | TEDxIESEBarcelona",
+    "selected": false,
+    "reasoning": "An entrepreneurial mindset TEDx talk. Provides low direct utility for early-career growth in technical and local market sectors.",
+    "summary": ""
   }
 ]
