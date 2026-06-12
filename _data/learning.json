@@ -1,61 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In his 1880s research on memory retention, Hermann Ebbinghaus demonstrated that humans forget approximately what percentage of newly learned information within 24 hours unless they actively recall it?",
+      "question": "In PCIe power management, which state represents the deepest sleep mode, offering the highest power savings but requiring the longest wake-up time?",
       "options": [
-        "95%",
-        "50%",
-        "80%",
-        "30%"
+        "L1.2",
+        "L0s",
+        "L2",
+        "L0"
       ],
       "correctIndex": 2,
-      "learning": "In the 1880s, Hermann Ebbinghaus proved that humans forget approximately 80% of what they learn within 24 hours unless they actively force themselves to recall it.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "What is the primary motivation for breaking the development process into smaller, iterative cycles known as Sprints in the Scrum framework?",
-      "options": [
-        "To allow for more flexibility and quicker adjustments",
-        "To reduce the number of active team members needed",
-        "To eliminate the need for user stories and documentation",
-        "To increase the overall duration of the project"
-      ],
-      "correctIndex": 0,
-      "learning": "The primary motivation behind breaking the development process into smaller, iterative cycles called Sprints in Scrum is to allow for greater flexibility and quicker adjustments.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "What primary benefits are achieved through effective power management states in system components?",
-      "options": [
-        "Accelerated device boot times across all states.",
-        "Optimized energy consumption, prolonged device lifespan, and enhanced system performance.",
-        "Reduced complexity in hardware design.",
-        "Standardized data bus widths."
-      ],
-      "correctIndex": 1,
-      "learning": "PCIe power management states are crucial for optimizing energy consumption, extending the lifespan of devices, and improving overall system performance, particularly where power usage is a significant concern.",
+      "learning": "The PCIe power management framework balances energy efficiency with responsiveness across a spectrum of states, ranging from the fully active L0 state to the deepest sleep L2 state, which provides the maximum power savings but requires the longest wake-up latency.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "What is the relationship between personal actions, Qada’, and Qadr?",
+      "question": "Approximately what percentage of the Quran is made up of its top 20 most frequently repeated words?",
       "options": [
-        "Qadr is a fixed outcome that cannot be influenced or altered by human decision-making or supplication.",
-        "Qada’ represents Allah’s written plan, while Qadr represents the physical unfolding of events in daily life.",
-        "Personal actions and Dua can alter Qada’, yet both the action and the resulting change are already encompassed within Allah’s eternal Qadr.",
-        "Human beings have no responsibility for their life events because Qada’ is entirely independent of personal choice."
+        "80.00%",
+        "12.00%",
+        "20.83%",
+        "71.00%"
       ],
       "correctIndex": 2,
-      "learning": "While Qada’ (the unfolding of life events) can be influenced by human actions and Dua, these choices and their outcomes are already contained within Qadr (Allah’s eternal, preordained knowledge).",
+      "learning": "While one might expect the Pareto Principle (80/20 rule) to apply to word frequency, the top 20 most repeated words in the Quran actually only accumulate to approximately 20.83% of the total text.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which term represents the actual unfolding and occurrence of events in a person's life that can be altered or influenced by their actions and supplications?",
+      "options": [
+        "Dua",
+        "Al-Alim",
+        "Qada'",
+        "Qadr"
+      ],
+      "correctIndex": 2,
+      "learning": "While a person's actions and supplications can alter the actual unfolding of events in their life (Qada'), any such change is already fully known and written as part of the complete divine plan (Qadr).",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "What is the term for the cognitive phenomenon where writing down or digitally storing information causes the brain to immediately forget it?",
+      "options": [
+        "The Performance Paradox of Cognitive Offloading",
+        "The Ebbinghaus Retrieval Loop",
+        "The Static Board Fallacy",
+        "The Active Memory Deficit"
+      ],
+      "correctIndex": 0,
+      "learning": "The 'Performance Paradox' of Cognitive Offloading, also known as Digital Amnesia, explains that writing down or digitally saving information gives the brain unconscious permission to forget it.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "In Islamic belief, what three primary roles define the fundamental purpose of human existence?",
+      "options": [
+        "Acquiring material wealth, establishing political dominance, and seeking physical immortality",
+        "Worshiping Allah, serving as caretakers of the Earth, and preparing for the Hereafter",
+        "Isolating from society, performing only physical rituals, and establishing absolute human sovereignty",
+        "Renouncing all worldly actions, achieving reincarnation, and eliminating personal free will"
+      ],
+      "correctIndex": 1,
+      "learning": "In Islamic teachings, the purpose of human life is defined by three core roles: worshiping Allah, acting as caretakers (khalifah) of the Earth, and treating worldly life as a test to prepare for the eternal Hereafter.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-06-11T18:48:47.639Z"
+  "fetchedAt": "2026-06-12T06:54:01.440Z"
 }
