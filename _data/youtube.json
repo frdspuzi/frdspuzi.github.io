@@ -1,25 +1,109 @@
 {
   "videos": [
     {
+      "title": "Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS",
+      "url": "https://www.youtube.com/watch?v=iUWwcG-C8OU",
+      "videoId": "iUWwcG-C8OU",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This talk introduces WorkOS Studio, an AI-powered internal workspace that lets non-technical teams query databases and build custom dashboards using natural language. It demonstrates how to bypass traditional engineering bottlenecks by letting AI safely write and validate database queries on the fly. It is a highly practical case study on leveraging LLMs to dramatically boost internal company productivity.",
+      "dateAdded": "2026-06-12T06:53:41.264Z",
+      "timestamps": [
+        {
+          "time": 105,
+          "topic": "The friction in traditional data querying workflows"
+        },
+        {
+          "time": 252,
+          "topic": "Architectural breakdown of the AI-powered Studio tool"
+        },
+        {
+          "time": 600,
+          "topic": "Key design patterns for making database LLM agents reliable"
+        }
+      ]
+    },
+    {
       "title": "The agent-ready web: Simplify user actions with WebMCP — Tara Agyemang, Google",
       "url": "https://www.youtube.com/watch?v=ghJmWQCIHRM",
       "videoId": "ghJmWQCIHRM",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "This video introduces WebMCP, a proposed web standard that enables AI agents to interact with websites using structured tools rather than fragile scraping. It is a must-watch for developers wanting to prepare their sites for the upcoming era of autonomous AI assistants.",
-      "dateAdded": "2026-06-11T19:22:53.315Z",
+      "summary": "This video introduces WebMCP, a proposed web standard designed to make websites 'agent-ready' so AI assistants can navigate them smoothly without inefficient screen scraping. By defining site capabilities as structured tools, developers can dramatically improve how AI agents interact with complex web flows. This presentation offers a forward-looking view of how the next generation of the web is being optimized for both humans and AI agents.",
+      "dateAdded": "2026-06-12T06:53:41.265Z",
       "timestamps": [
         {
           "time": 233,
-          "topic": "Introduction of WebMCP as a new standard"
+          "topic": "Introduction to WebMCP and its core capabilities"
         },
         {
           "time": 287,
-          "topic": "Interactive Maze Escape demo using AI agents"
+          "topic": "Live demonstration of WebMCP using a maze game"
+        }
+      ]
+    },
+    {
+      "title": "Saham patuh syariah selamat?",
+      "url": "https://www.youtube.com/shorts/jLqt5bKKyyY",
+      "videoId": "jLqt5bKKyyY",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "This insightful discussion clarifies the complexities of Shariah-compliant investing, highlighting how a company's products don't always align with its stock's Shariah status. Viewers will learn why major global tech giants actively seek Shariah compliance and how to make informed, value-aligned investment decisions.",
+      "dateAdded": "2026-06-12T06:53:41.265Z",
+      "timestamps": [
+        {
+          "time": 43,
+          "topic": "Shariah-compliant companies based in Tel Aviv"
         },
         {
-          "time": 756,
-          "topic": "Declarative versus Imperative API approaches"
+          "time": 56,
+          "topic": "The paradox of Maybank's Shariah stock status"
+        },
+        {
+          "time": 91,
+          "topic": "Why tech giants align with Shariah standards"
+        }
+      ]
+    },
+    {
+      "title": "Secret to Consistent Worship | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/073rFWzKCy8",
+      "videoId": "073rFWzKCy8",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "This video highlights the balance between discipline and motivation in faith, using a prophetic supplication to show how to maintain spiritual consistency. It provides actionable insight into staying committed to worship even when personal motivation is low.",
+      "dateAdded": "2026-06-12T06:53:41.265Z",
+      "timestamps": [
+        {
+          "time": 0,
+          "topic": "Discipline vs. motivation in spiritual consistency"
+        },
+        {
+          "time": 22,
+          "topic": "The Prophet's supplication for firmness and guidance"
+        },
+        {
+          "time": 55,
+          "topic": "Balancing steadfastness with the pursuit of higher goals"
+        }
+      ]
+    },
+    {
+      "title": "Malaysia ada logo halal paling dicari di dunia. MAMEE ada impian yang sama",
+      "url": "https://www.youtube.com/shorts/mnQuCSzVpBI",
+      "videoId": "mnQuCSzVpBI",
+      "channel": "Keluar Sekejap",
+      "category": "Finance",
+      "summary": "This video explores how Malaysian businesses can bypass rigid global corporate structures to make agile, community-focused decisions. It highlights an ambitious vision to leverage Malaysia's respected JAKIM halal certification to build a world-leading food brand.",
+      "dateAdded": "2026-06-12T06:53:41.265Z",
+      "timestamps": [
+        {
+          "time": 21,
+          "topic": "The vision of a global halal food leader from Malaysia"
+        },
+        {
+          "time": 35,
+          "topic": "Leveraging the JAKIM Halal certification as a competitive edge"
         }
       ]
     },
@@ -66,29 +150,6 @@
         {
           "time": 1104,
           "topic": "Redefining safety through financial confidence instead of security"
-        }
-      ]
-    },
-    {
-      "title": "Saham patuh syariah selamat?",
-      "url": "https://www.youtube.com/shorts/jLqt5bKKyyY",
-      "videoId": "jLqt5bKKyyY",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This video clarifies the nuances of Shariah-compliant stock investing, using real-world examples like Maybank and global tech giants. It explains why major companies adapt to Shariah standards to attract Middle Eastern capital, helping viewers navigate ethical investing. The core takeaway is that thorough investor diligence is essential beyond just looking at compliance labels.",
-      "dateAdded": "2026-06-11T19:22:53.315Z",
-      "timestamps": [
-        {
-          "time": 0,
-          "topic": "The paradox of Maybank's Shariah compliance status"
-        },
-        {
-          "time": 43,
-          "topic": "Geographic complexities of Shariah-compliant companies"
-        },
-        {
-          "time": 91,
-          "topic": "Why global tech giants aim for Shariah compliance"
         }
       ]
     },
@@ -177,34 +238,7 @@
       "category": "Productivity",
       "summary": "This video challenges you to define your ideal lifestyle before diving into the grind of a junior dev role. It’s essential viewing for aligning your career path with your personal principles and long-term well-being.",
       "dateAdded": "2026-06-10T04:56:32.507Z"
-    },
-    {
-      "title": "From prompt to a fully working real-time voice app in seconds. 🎙️✨",
-      "url": "https://www.youtube.com/shorts/rEcRuQkOOQo",
-      "videoId": "rEcRuQkOOQo",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "See how to move from a simple prompt to a functional, real-time voice application in mere seconds. This is a must-watch for any dev wanting to integrate cutting-edge AI features into their stack quickly.",
-      "dateAdded": "2026-06-10T04:56:32.507Z"
-    },
-    {
-      "title": "Introducing Gemini 3.5 Live Translate",
-      "url": "https://www.youtube.com/watch?v=TNwKs39uSVk",
-      "videoId": "TNwKs39uSVk",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Discover the latest in real-time translation tech that could break down language barriers in your collaborative projects. Staying ahead of these tools is critical for any developer aiming to stay competitive in the global market.",
-      "dateAdded": "2026-06-10T04:56:32.507Z"
-    },
-    {
-      "title": "The Math Behind Every $100K Business",
-      "url": "https://www.youtube.com/watch?v=6KYBq9fLU8o",
-      "videoId": "6KYBq9fLU8o",
-      "channel": "Ali Abdaal – Lifestyle Business Academy",
-      "category": "Productivity",
-      "summary": "This video is a goldmine for junior developers and early-career professionals looking to transition from trading time for money to building scalable income streams. By breaking down the specific math required to reach a $100K milestone, Ali provides a clear, actionable roadmap that helps you demystify business growth and start treating your side projects or freelancing gigs as a serious, strategic business.",
-      "dateAdded": "2026-06-09T16:01:14.647Z"
     }
   ],
-  "lastUpdated": "2026-06-11T19:27:12.553Z"
+  "lastUpdated": "2026-06-12T06:55:22.663Z"
 }
