@@ -5,6 +5,10 @@ on:
     - cron: '30 0 * * *' 
   workflow_dispatch: 
 
+permissions:
+  contents: write
+  id-token: write
+
 jobs:
   youtube:
     name: Run YouTube Curator
