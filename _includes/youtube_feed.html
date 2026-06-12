@@ -110,9 +110,9 @@
         v.timestamps.forEach(ts => {
           const btn = document.createElement('button');
           btn.type = 'button';
-          btn.className = "btn-link text-left d-block f6 mb-1";
-          btn.style.cssText = "color: {% if site.style == 'dark' %}#58a6ff{% else %}#0969da{% endif %}; text-decoration: none;";
-          btn.innerHTML = `▶ <span style="font-family: monospace; opacity: 0.8;">[${formatTime(ts.time)}]</span> ${ts.topic}`;
+          btn.className = "btn-link text-left d-block f6 mb-2";
+          btn.style.cssText = "color: {% if site.style == 'dark' %}#58a6ff{% else %}#0969da{% endif %}; text-decoration: none; white-space: normal; word-break: break-word; line-height: 1.4; width: 100%; padding: 0;";
+          btn.innerHTML = `<span style="display: flex; gap: 6px;"><span style="flex-shrink: 0;">▶</span> <span style="font-family: monospace; opacity: 0.8; flex-shrink: 0;">[${formatTime(ts.time)}]</span> <span>${ts.topic}</span></span>`;
           btn.onclick = function() {
             if (window.ytPlayer && window.ytPlayer.seekTo) {
               window.ytPlayer.seekTo(ts.time, true);
