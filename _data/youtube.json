@@ -1,6 +1,117 @@
 {
   "videos": [
     {
+      "title": "The agent-ready web: Simplify user actions with WebMCP — Tara Agyemang, Google",
+      "url": "https://www.youtube.com/watch?v=ghJmWQCIHRM",
+      "videoId": "ghJmWQCIHRM",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This video introduces WebMCP, a proposed web standard that transforms websites into clean, high-performance APIs for AI agents, replacing clunky screen-scraping. It shows developers how to make websites 'agent-ready' with practical demos of AI navigating sites and completing tasks. This is essential viewing for anyone building web applications for the future of AI-driven browsing.",
+      "dateAdded": "2026-06-13T04:57:33.582Z",
+      "timestamps": [
+        {
+          "time": 233,
+          "topic": "Introduction to the WebMCP protocol"
+        },
+        {
+          "time": 683,
+          "topic": "Practical use cases for WebMCP"
+        },
+        {
+          "time": 755,
+          "topic": "Declarative vs Imperative APIs"
+        }
+      ]
+    },
+    {
+      "title": "How to Quit Your Job (and Find Work You Actually Love)",
+      "url": "https://www.youtube.com/watch?v=0j3SW7R40SU",
+      "videoId": "0j3SW7R40SU",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "This video offers a grounded guide on transitioning from a traditional, high-prestige career to a self-directed path without needing a flawless blueprint. By exploring the concept of the 'pathless path,' the speakers provide practical steps to align your daily work with personal energy rather than societal expectations. It is a valuable watch for anyone feeling unfulfilled in a corporate role and seeking a realistic, step-by-step roadmap to make a change.",
+      "dateAdded": "2026-06-13T04:57:33.583Z",
+      "timestamps": [
+        {
+          "time": 47,
+          "topic": "Understanding the 'prestige game' trap in career choices"
+        },
+        {
+          "time": 327,
+          "topic": "Analyzing the shift from learning to merely earning"
+        },
+        {
+          "time": 744,
+          "topic": "How to pragmatically run your financial numbers before taking a leap"
+        }
+      ]
+    },
+    {
+      "title": "Kaedah baru bayar zakat?",
+      "url": "https://www.youtube.com/shorts/rr7poQZO7Vk",
+      "videoId": "rr7poQZO7Vk",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "This video introduces a new automated way for ASNB investors to pay zakat directly from their dividends using the myASNB app's 'Zakat Khultah' feature. It simplifies the Al-Mustaghallat calculation method, explaining how you can seamlessly fulfill your religious obligations while keeping your investment compounding. It is a highly practical guide for Malaysian Muslim investors seeking to automate their wealth management.",
+      "dateAdded": "2026-06-13T04:57:33.583Z",
+      "timestamps": [
+        {
+          "time": 34,
+          "topic": "Explanation of Class A vs Class B zakat options"
+        },
+        {
+          "time": 72,
+          "topic": "How net dividend is calculated after zakat deduction"
+        },
+        {
+          "time": 137,
+          "topic": "Step-by-step activation of Zakat Khultah in the myASNB app"
+        }
+      ]
+    },
+    {
+      "title": "Saham patuh syariah selamat?",
+      "url": "https://www.youtube.com/shorts/jLqt5bKKyyY",
+      "videoId": "jLqt5bKKyyY",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "This video offers eye-opening insights into the complexities of Shariah-compliant investing, revealing why popular brands like Apple or Maybank might surprise you with their compliance status. It teaches viewers that a 'Shariah-compliant' label isn't always straightforward, making it an essential watch for anyone wanting to align their financial portfolio with their ethical values.",
+      "dateAdded": "2026-06-13T04:57:33.583Z",
+      "timestamps": [
+        {
+          "time": 43,
+          "topic": "Shariah-compliant companies based in Tel Aviv"
+        },
+        {
+          "time": 57,
+          "topic": "The paradox of Maybank's Shariah compliance status"
+        },
+        {
+          "time": 91,
+          "topic": "Why global tech giants aim for Shariah compliance"
+        }
+      ]
+    },
+    {
+      "title": "How To Make Du’a For Your Critics | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/6f_6pd9r-78",
+      "videoId": "6f_6pd9r-78",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "This video highlights the profound humility of Umar ibn al-Khattab, who welcomed correction and feared Allah deeply, contrasting his attitude with our modern reluctance to accept advice. It serves as a powerful reminder of the spiritual benefit of embracing sincere counsel and self-improvement.",
+      "dateAdded": "2026-06-13T04:57:33.583Z",
+      "timestamps": [
+        {
+          "time": 5,
+          "topic": "Umar's appreciation for those who pointed out his faults"
+        },
+        {
+          "time": 27,
+          "topic": "How Umar reacted with humility when told to fear Allah"
+        }
+      ]
+    },
+    {
       "title": "Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS",
       "url": "https://www.youtube.com/watch?v=iUWwcG-C8OU",
       "videoId": "iUWwcG-C8OU",
@@ -20,48 +131,6 @@
         {
           "time": 600,
           "topic": "Key design patterns for making database LLM agents reliable"
-        }
-      ]
-    },
-    {
-      "title": "The agent-ready web: Simplify user actions with WebMCP — Tara Agyemang, Google",
-      "url": "https://www.youtube.com/watch?v=ghJmWQCIHRM",
-      "videoId": "ghJmWQCIHRM",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This video introduces WebMCP, a proposed web standard designed to make websites 'agent-ready' so AI assistants can navigate them smoothly without inefficient screen scraping. By defining site capabilities as structured tools, developers can dramatically improve how AI agents interact with complex web flows. This presentation offers a forward-looking view of how the next generation of the web is being optimized for both humans and AI agents.",
-      "dateAdded": "2026-06-12T06:53:41.265Z",
-      "timestamps": [
-        {
-          "time": 233,
-          "topic": "Introduction to WebMCP and its core capabilities"
-        },
-        {
-          "time": 287,
-          "topic": "Live demonstration of WebMCP using a maze game"
-        }
-      ]
-    },
-    {
-      "title": "Saham patuh syariah selamat?",
-      "url": "https://www.youtube.com/shorts/jLqt5bKKyyY",
-      "videoId": "jLqt5bKKyyY",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This insightful discussion clarifies the complexities of Shariah-compliant investing, highlighting how a company's products don't always align with its stock's Shariah status. Viewers will learn why major global tech giants actively seek Shariah compliance and how to make informed, value-aligned investment decisions.",
-      "dateAdded": "2026-06-12T06:53:41.265Z",
-      "timestamps": [
-        {
-          "time": 43,
-          "topic": "Shariah-compliant companies based in Tel Aviv"
-        },
-        {
-          "time": 56,
-          "topic": "The paradox of Maybank's Shariah stock status"
-        },
-        {
-          "time": 91,
-          "topic": "Why tech giants align with Shariah standards"
         }
       ]
     },
@@ -127,29 +196,6 @@
         {
           "time": 495,
           "topic": "The 'shower principle' and remote control workflow"
-        }
-      ]
-    },
-    {
-      "title": "How to Quit Your Job (and Find Work You Actually Love)",
-      "url": "https://www.youtube.com/watch?v=0j3SW7R40SU",
-      "videoId": "0j3SW7R40SU",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "If you are feeling stuck on a prestigious but unfulfilling career track, this video provides a comforting yet realistic guide to transitioning toward self-directed work. Through a conversational roadmap, the hosts explain how letting go of societal expectations, managing financial fear, and focusing on 'financial confidence' can help you design a more purposeful life.",
-      "dateAdded": "2026-06-11T19:22:53.315Z",
-      "timestamps": [
-        {
-          "time": 327,
-          "topic": "The restlessness zone and the inversion of learning vs earning"
-        },
-        {
-          "time": 555,
-          "topic": "The concept of the industrially necessary egg and work-related shame"
-        },
-        {
-          "time": 1104,
-          "topic": "Redefining safety through financial confidence instead of security"
         }
       ]
     },
@@ -220,25 +266,7 @@
       "category": "General Ideas",
       "summary": "Dive into the overlooked yet surprisingly common world of rare diseases and discover the profound impact of dedicated advocacy and scientific pursuit. This talk encourages a mindset of empathy and persistent problem-solving, skills invaluable for a junior engineer looking to tackle complex challenges or anyone seeking to make a difference in niche, critical areas. It's a reminder that even the 'rare' can hold universal lessons.",
       "dateAdded": "2026-06-11T05:09:06.244Z"
-    },
-    {
-      "title": "How to Find Clarity When the World Feels Loud | Mikaya Thurmond | TEDxNCState",
-      "url": "https://www.youtube.com/watch?v=N-UNriIqehM",
-      "videoId": "N-UNriIqehM",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "Feeling overwhelmed by decisions, distractions, and the constant noise of the modern world, especially early in your career? Mikaya Thurmond offers powerful strategies to cut through the clutter and cultivate profound mental clarity. This is essential viewing for any junior professional or aspiring leader looking to sharpen their focus, make better choices, and navigate their path with confidence.",
-      "dateAdded": "2026-06-11T05:09:06.244Z"
-    },
-    {
-      "title": "Start with the lifestyle you want - from Professor @CalNewportMedia",
-      "url": "https://www.youtube.com/shorts/9MoI57125pk",
-      "videoId": "9MoI57125pk",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "This video challenges you to define your ideal lifestyle before diving into the grind of a junior dev role. It’s essential viewing for aligning your career path with your personal principles and long-term well-being.",
-      "dateAdded": "2026-06-10T04:56:32.507Z"
     }
   ],
-  "lastUpdated": "2026-06-12T06:55:22.663Z"
+  "lastUpdated": "2026-06-13T05:01:19.116Z"
 }

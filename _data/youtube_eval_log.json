@@ -2,127 +2,211 @@
   {
     "videoId": "iUWwcG-C8OU",
     "title": "Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS",
-    "selected": true,
-    "reasoning": "Incredible career advice for a junior developer to bridge the gap between engineering and business outcomes—the fastest way to secure a promotion.",
-    "summary": "To stand out early in your software engineering career, you must understand the business value of your code. This talk from WorkOS reveals how to shift your mindset from a simple task-completer to a strategic asset who understands how engineering directly drives company revenue."
+    "selected": false,
+    "reasoning": "While this video offers decent context on aligning engineering with business goals, it leans a bit too corporate and senior for a junior developer.",
+    "summary": ""
   },
   {
     "videoId": "ghJmWQCIHRM",
     "title": "The agent-ready web: Simplify user actions with WebMCP — Tara Agyemang, Google",
     "selected": true,
-    "reasoning": "Highly relevant technical foresight for a junior fullstack engineer looking to build AI-ready web applications.",
-    "summary": "As AI agents reshape the internet, fullstack engineers need to build web architectures that LLMs can easily interact with. This presentation from Google introduces WebMCP, a game-changing standard that will give you a massive technical edge as a modern web developer."
+    "reasoning": "Extremely valuable technical trend analysis for modern web developers, detailing how AI agents interact with web architectures.",
+    "summary": "As a junior fullstack engineer, understanding how AI and web applications interact is crucial. This Google presentation on WebMCP simplifies how you can prepare your web architectures for AI agents, keeping you at the absolute cutting edge of the industry."
   },
   {
     "videoId": "so9l_MwS2yg",
     "title": "How to Keep Shipping When You Walk Away from Your Desk — Zack Proser, WorkOS",
     "selected": false,
-    "reasoning": "While CI/CD and automation are valuable, the other selected tech videos offer higher high-level leverage for career progression and technical differentiation.",
+    "reasoning": "A highly specific automation workflow that, while interesting, leans too much on proprietary WorkOS integrations rather than general fullstack career growth.",
+    "summary": ""
+  },
+  {
+    "videoId": "6t_W3iEvA5M",
+    "title": "From the Co-Creator of Haskell",
+    "selected": false,
+    "reasoning": "This short-form video offers interesting programming history but does not provide actionable technical or career-advancement value.",
     "summary": ""
   },
   {
     "videoId": "yNoyVZCYnEE",
     "title": "Why Rust is so much better than C",
     "selected": false,
-    "reasoning": "A short, system-level language comparison that is less directly relevant to a junior fullstack developer's immediate daily work.",
+    "reasoning": "A brief overview comparing Rust to C; too high-level to serve as an educational tool for a fullstack developer.",
     "summary": ""
   },
   {
     "videoId": "eML4A1JcDP4",
     "title": "Haskell is talked about more than it is used",
     "selected": false,
-    "reasoning": "A brief opinion piece on Haskell's limited industry adoption, providing very little actionable career or technical value.",
+    "reasoning": "An entertaining short-form observation on language popularity, but lacks developmental value for junior engineer day-to-day work.",
     "summary": ""
   },
   {
-    "videoId": "23puMkSX-8U",
-    "title": "Why statically typed languages are great for LLMs",
+    "videoId": "VODVJ-0oLCw",
+    "title": "The Double Dipping Effect",
     "selected": false,
-    "reasoning": "An interesting technical concept, but too short to provide deep, practical implementation advice for a junior developer.",
+    "reasoning": "A basic productivity concept wrapped in a short video, lacking the actionable depth required for someone seeking career advice.",
+    "summary": ""
+  },
+  {
+    "videoId": "0j3SW7R40SU",
+    "title": "How to Quit Your Job (and Find Work You Actually Love)",
+    "selected": true,
+    "reasoning": "Incredible career-building and transition advice that provides systematic thinking for anyone early in their career who is planning their next professional steps.",
+    "summary": "Early in your career, it is easy to feel stuck or unsure of your professional trajectory. Ali Abdaal delivers a structured, practical blueprint on navigating job satisfaction and identifying work that truly aligns with your long-term goals."
+  },
+  {
+    "videoId": "XnPkUxg__zk",
+    "title": "3 ways to financial freedom",
+    "selected": false,
+    "reasoning": "Generic financial freedom tropes that lack the specialized Islamic and Malaysian regional targeting required by this persona.",
+    "summary": ""
+  },
+  {
+    "videoId": "PquqdRi8I18",
+    "title": "Inspect and live-edit 3D WebGL elements",
+    "selected": false,
+    "reasoning": "A useful short-form trick for WebGL developers, but too narrow in scope for a general fullstack development roadmap.",
+    "summary": ""
+  },
+  {
+    "videoId": "xQcbwGS6Ahc",
+    "title": "AIventure: Vibe Coding Journey",
+    "selected": false,
+    "reasoning": "Fun watch on AI-assisted coding trends, but lacks the formal fullstack integration insights of WebMCP.",
+    "summary": ""
+  },
+  {
+    "videoId": "_C9Hq3Msd84",
+    "title": "See how Gemma  can explore, plan, and scale!",
+    "selected": false,
+    "reasoning": "A brief marketing teaser for Google's Gemma LLM; lacks hands-on engineering execution details.",
+    "summary": ""
+  },
+  {
+    "videoId": "uyH2943iZSg",
+    "title": "Minima simpanan RM15,000",
+    "selected": false,
+    "reasoning": "Provides simple Malaysian savings baseline recommendations, but is too basic compared to specialized Shariah financial content.",
+    "summary": ""
+  },
+  {
+    "videoId": "rr7poQZO7Vk",
+    "title": "Kaedah baru bayar zakat?",
+    "selected": true,
+    "reasoning": "Highly relevant to Malaysian Muslims, directly addressing contemporary zakat distribution, calculation, and payment frameworks.",
+    "summary": "This video provides essential updates on modern zakat systems and payment avenues specifically tailored for Malaysian Muslims. It is a must-watch for refining your wealth-purification strategies under current Islamic financial frameworks."
+  },
+  {
+    "videoId": "uPyRbVtaqNM",
+    "title": "Saham jatuh sehingga 98%, rakyat Malaysia makin rasa Astro tidak lagi berbaloi",
+    "selected": false,
+    "reasoning": "An interesting news commentary on Malaysian corporate giants, but functions more as economic gossip rather than direct personal finance advice.",
+    "summary": ""
+  },
+  {
+    "videoId": "ZzcMg9fp12U",
+    "title": "Trump manipulasi pasaran saham?",
+    "selected": false,
+    "reasoning": "Discusses US-centric geopolitical impact on global stocks, which is less actionable for localized Islamic personal finance in Malaysia.",
+    "summary": ""
+  },
+  {
+    "videoId": "r-Ys7HJOmDc",
+    "title": "Pasaran bursa di Malaysia kecil?",
+    "selected": false,
+    "reasoning": "A high-level discussion on Malaysian bourse size, but lacks direct relevance to active portfolio management for Shariah-compliant investors.",
     "summary": ""
   },
   {
     "videoId": "jLqt5bKKyyY",
     "title": "Saham patuh syariah selamat?",
     "selected": true,
-    "reasoning": "Directly targets the intersection of Malaysian finance, Islamic finance principles, and general investing safety.",
-    "summary": "This highly targeted short explores the safety and mechanics of investing in Shariah-compliant stocks in Malaysia. It is an essential watch for any Islamic financial advocate looking to make informed, halal investment decisions with peace of mind."
+    "reasoning": "Bullseye match for an Islamic financial advocate based in Malaysia, directly breaking down the mechanics and safety profile of Shariah-compliant equities.",
+    "summary": "Navigating the stock market as an Islamic financial advocate can be confusing with varying risk parameters. This episode breaks down the safety and robustness of Shariah-compliant equities on Bursa Malaysia, helping you make informed, halal investment decisions."
   },
   {
-    "videoId": "01xcXqIAQKk",
-    "title": "Labur dengan hutang boleh bankrupt?",
+    "videoId": "jN92B2b9_SA",
+    "title": "#106 | Negeri Sembilan's Crisis, Johor's Gamble &amp; Who'll Really Win (Idris &amp; Leon Jala)",
     "selected": false,
-    "reasoning": "A good finance safety warning, but a bit generic compared to the specific Shariah stock safety discussion.",
+    "reasoning": "Excellent geopolitical and macro discussion of Malaysian states, but is a bit too broad for software engineering or direct personal finance advocacy.",
     "summary": ""
   },
   {
-    "videoId": "lL7WbQTsWT8",
-    "title": "Emosi punca pelabur rugi?",
+    "videoId": "5wAJ5-bYrT0",
+    "title": "#105 | Building Malaysia's Largest Stroke Rehab Network (Janet Yeo)",
     "selected": false,
-    "reasoning": "A standard investing psychology short that does not offer the unique Islamic finance or technical growth angle of the top selections.",
+    "reasoning": "Inspirational entrepreneurship story, but lacks immediate relevance to the specialized engineering, career planning, or Islamic finance profiles.",
     "summary": ""
   },
   {
-    "videoId": "RjEXDRW867M",
-    "title": "Why kids don’t play outside anymore (and it’s not what you think) | Jasper Schipperijn | TEDxOdense",
+    "videoId": "4FRnji7Oe6g",
+    "title": "#104 | Is The Unity Government Working? | Idris &amp; Leon Jala",
     "selected": false,
-    "reasoning": "Entirely irrelevant to the target demographic's professional, financial, or spiritual goals.",
+    "reasoning": "Heavy discussion on Malaysian political structures, which doesn't directly serve career or tech engineering progression.",
     "summary": ""
   },
   {
-    "videoId": "_MVY3ItdkZk",
-    "title": "Shaping the future of cancer care | Rodrigo Toledo | TEDxIESEBarcelona",
+    "videoId": "Wub32lNjU64",
+    "title": "Medicine Supply Shortage | Dr Dzulkefly",
     "selected": false,
-    "reasoning": "An inspiring medical talk, but outside the professional scope of a fullstack engineer or financial advocate.",
+    "reasoning": "A localized short about public health issues; outside the scope of software engineering or financial advice.",
     "summary": ""
   },
   {
-    "videoId": "bhh8_4hsz2M",
-    "title": "You're Not Broken: You're Running Outdated Software | Sean Finter | TEDxIESEBarcelona",
+    "videoId": "K76lNxWmiNE",
+    "title": "“Vote out of love, not out of fear.” - Co-founder of Bersama Nik Nazmi | In The Studio",
     "selected": false,
-    "reasoning": "A generic self-help talk using a software metaphor; doesn't offer actual technical or structural career advice.",
+    "reasoning": "A politically charged discussion that is not directly helpful for an early-career engineer or Islamic financial practitioner.",
+    "summary": ""
+  },
+  {
+    "videoId": "CIJbINdPENQ",
+    "title": "Most replayed: Why Malaysian Football Will Never Go Far | In The Studio",
+    "selected": false,
+    "reasoning": "A purely cultural sports discussion with no practical professional or religious financial utility.",
+    "summary": ""
+  },
+  {
+    "videoId": "zLf-2LtAqys",
+    "title": "Why we need to stop ranking our grief | Kelly Cervantes | TEDxNortheasternU",
+    "selected": false,
+    "reasoning": "A moving general interest speech about emotional processing, but is too general for the career-driven and technical profile of our user.",
+    "summary": ""
+  },
+  {
+    "videoId": "dWV5Xbs-WCs",
+    "title": "Why The Grass Isn't Always Greener | Luis Antonio Salvador | TEDxUofTScarborough",
+    "selected": false,
+    "reasoning": "Decent life perspective on comparison, but does not provide the concrete professional milestones found in targeted career development resources.",
+    "summary": ""
+  },
+  {
+    "videoId": "SsBAm-w_pII",
+    "title": "Living Life in the Stretch Zone | Abigail Lee | TEDxQueensU",
+    "selected": false,
+    "reasoning": "Typical motivational framework on expanding personal boundaries, but lacks specific applications for developer-focused or Islamic-focused life paths.",
+    "summary": ""
+  },
+  {
+    "videoId": "6f_6pd9r-78",
+    "title": "How To Make Du’a For Your Critics | Dr. Omar Suleiman",
+    "selected": true,
+    "reasoning": "Bridges the gap between personal resilience in an early professional career and Islamic spirituality, teaching healthy coping mechanisms.",
+    "summary": "Dealing with harsh criticism and office politics is one of the toughest parts of starting your engineering career. Dr. Omar Suleiman provides a powerful spiritual framework on transforming external negativity into personal and spiritual growth."
+  },
+  {
+    "videoId": "9kEXaYOvsf0",
+    "title": "5 Ways to Have A Good Ending | LATEST Khutbah by Dr. Omar Suleiman",
+    "selected": false,
+    "reasoning": "An excellent spiritual khutbah, but less directly targeted to the day-to-day work-life balancing challenges of a junior professional compared to handling critics.",
     "summary": ""
   },
   {
     "videoId": "073rFWzKCy8",
     "title": "Secret to Consistent Worship | Dr. Omar Suleiman",
-    "selected": true,
-    "reasoning": "Provides critical, practical spiritual advice for a young Muslim professional struggling to maintain consistent faith habits under career pressure.",
-    "summary": "Balancing a demanding tech career with consistent daily worship can be incredibly difficult. Dr. Omar Suleiman shares a practical and profound spiritual strategy to help you build unbreakable, steady habits of devotion that fit into a busy lifestyle."
-  },
-  {
-    "videoId": "S8-l2uOzlPU",
-    "title": "Why the Salaf Hid Their Worship | Imam Tom Facchine",
     "selected": false,
-    "reasoning": "An interesting historical lesson on spiritual sincerity, but less immediately actionable for a young professional building daily habits.",
-    "summary": ""
-  },
-  {
-    "videoId": "EDOp5fJxUtM",
-    "title": "Why Most People Don’t Reject God",
-    "selected": false,
-    "reasoning": "A high-level theological discussion that does not directly impact daily productivity, career growth, or financial ethics.",
-    "summary": ""
-  },
-  {
-    "videoId": "mnQuCSzVpBI",
-    "title": "Malaysia ada logo halal paling dicari di dunia. MAMEE ada impian yang sama",
-    "selected": true,
-    "reasoning": "Directly speaks to a Malaysian Muslim interested in how global halal standards empower Malaysian businesses like MAMEE to scale globally.",
-    "summary": "Explore how Malaysia's world-class Halal standard acts as a massive global economic driver. This short analyzes how legendary Malaysian brand MAMEE leverages Halal trust to conquer international markets, offering key insights for Islamic business and financial advocates."
-  },
-  {
-    "videoId": "MmsyrhBmTO8",
-    "title": "EP10 #SembangKS | Krisis Negeri Sembilan, Duduk Semeja dan Penceraian Pembangkang",
-    "selected": false,
-    "reasoning": "Focuses heavily on Malaysian local political dramas rather than career, finance, or actionable professional insights.",
-    "summary": ""
-  },
-  {
-    "videoId": "HNUZ-nIkack",
-    "title": "Institusi Raja Melayu bergantung pada penghormatan rakyat — bukan sekadar peruntukan perlembagaan.",
-    "selected": false,
-    "reasoning": "A constitutional and cultural discussion about the Malaysian monarchy that doesn't align with immediate tech, career, or financial objectives.",
+    "reasoning": "Spiritual short offering consistency advice; highly inspiring, but too brief to compete with the highly detailed career-growth videos.",
     "summary": ""
   }
 ]
