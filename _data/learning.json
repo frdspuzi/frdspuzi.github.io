@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Based on research conducted by Hermann Ebbinghaus in the 1880s, what percentage of newly learned information do people typically forget within 24 hours unless they actively force themselves to recall it?",
+      "question": "What psychological phenomenon describes the brain's tendency to forget information once it has been written down or digitally saved?",
       "options": [
-        "20%",
-        "50%",
-        "80%",
-        "95%"
+        "The Retention Deficit Illusion",
+        "The Passive Storage Fallacy",
+        "The External Memory Bias",
+        "The \"Performance Paradox\" of Cognitive Offloading"
       ],
-      "correctIndex": 2,
-      "learning": "Research conducted by Hermann Ebbinghaus in the 1880s demonstrated that humans forget approximately 80% of what they learn within 24 hours unless they actively practice recall.",
+      "correctIndex": 3,
+      "learning": "The \"Performance Paradox\" of Cognitive Offloading is a psychological phenomenon where the brain treats the act of writing down or digitally saving information as permission to forget it.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "When comparing the estimated 12 million distinct Arabic words to the 170,000 English words in the Oxford English Dictionary, what is the approximate ratio of Arabic words to English words?",
+      "question": "What is the standard template format used to write a User Story within a Scrum Product Backlog?",
       "options": [
-        "71:1",
-        "12:1",
-        "150:1",
-        "45:1"
+        "I want [feature] because [reason]",
+        "As a [role], I need [feature], so that [reason]",
+        "[Feature] should be implemented by [date]",
+        "To [goal], we must build [feature] for [user]"
       ],
-      "correctIndex": 0,
-      "learning": "The Arabic language features approximately 12 million distinct words compared to 170,000 in the Oxford English Dictionary, which yields an approximate 71:1 ratio.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which of the following is NOT one of the three official roles defined within the Scrum framework?",
-      "options": [
-        "Developers",
-        "Product Owner",
-        "Scrum Master",
-        "Project Manager"
-      ],
-      "correctIndex": 3,
-      "learning": "A common misconception is that a Project Manager is a standard role within Scrum. In reality, the Scrum framework only recognizes three distinct roles: the Product Owner, the Scrum Master, and the Developers.",
+      "correctIndex": 1,
+      "learning": "In Scrum, User Stories in the Product Backlog are structured using a specific three-part format: 'As a [role], I need [feature], so that [reason]'.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "Which term refers to the actual occurrence and unfolding of events in a person's life that can be influenced or altered by their decisions and supplications?",
+      "question": "In Islamic theology, which three primary roles represent the foundational purpose of human existence?",
       "options": [
-        "Dua",
-        "Al-Alim",
-        "Qadr",
-        "Qada’"
+        "Worshiping Allah, serving as caretakers of the Earth, and preparing for the Hereafter",
+        "Achieving spiritual isolation, avoiding free will, and pursuing worldly perfection",
+        "Acquiring material wealth, conquering nature, and seeking temporal power",
+        "Abolishing worldly leadership, living without rules, and rejecting social unity"
+      ],
+      "correctIndex": 0,
+      "learning": "In Islamic teachings, the fundamental purpose of human existence is structured around three primary roles: worshiping Allah to develop mindfulness, serving as caretakers (khalifah) of the Earth to preserve faith and unity, and viewing life as a temporary test to prepare for the Hereafter.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Under the spiritual concepts of fate and self-determination, what is the primary requirement for a people's overall condition to be changed?",
+      "options": [
+        "They must completely avoid making any personal supplications",
+        "They must erase the pre-written register of worldly events",
+        "They must wait passively for their preordained destiny to unfold",
+        "They must change what is within themselves"
       ],
       "correctIndex": 3,
-      "learning": "In Islamic theology, Qada’ represents the actual unfolding of events in a person's life that can be altered by actions and supplications, whereas Qadr is Allah's complete, preordained plan that already encompasses those changes.",
+      "learning": "The concepts of Qada’ and Qadr emphasize that while everything is within divine knowledge, individuals have the agency and responsibility to initiate change, as their condition will not be altered unless they first change what is within themselves.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which term is used in Islamic teachings to describe the role of humans as caretakers or successive authorities of the Earth?",
+      "question": "Which PCIe power management state represents the deepest sleep mode, where the device is almost completely powered down, offering the highest power savings but requiring the longest wake-up time?",
       "options": [
-        "Taqwa",
-        "Jinn",
-        "Hadith",
-        "Khalifah"
+        "L2",
+        "L0s",
+        "L1.0",
+        "L1.2"
       ],
-      "correctIndex": 3,
-      "learning": "In Islamic teachings, the term 'khalifah' represents the role of human beings serving as caretakers or successive authorities of the Earth.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
+      "correctIndex": 0,
+      "learning": "The L2 state is the deepest PCIe power management state, where the device is almost completely powered down to maximize power savings during the longest periods of inactivity, resulting in the longest wake-up time.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     }
   ],
-  "fetchedAt": "2026-06-13T04:57:31.293Z"
+  "fetchedAt": "2026-06-14T05:14:39.529Z"
 }
