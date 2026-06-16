@@ -1,212 +1,107 @@
 [
   {
+    "videoId": "c-2eEv2ou7Y",
+    "title": "Why MCP and ChatGPT Apps Use Double Iframes — Frédéric Barthelet, Alpic",
+    "selected": false,
+    "reasoning": "While technically sound, this is an incredibly niche browser security architecture video. A junior dev has far bigger fish to fry before worrying about double iframe sandboxing.",
+    "summary": ""
+  },
+  {
     "videoId": "iUWwcG-C8OU",
     "title": "Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS",
-    "selected": false,
-    "reasoning": "Good corporate/business-alignment advice, but less tailored to junior technical execution or early career milestones.",
-    "summary": ""
+    "selected": true,
+    "reasoning": "Highly crucial bridge for early-career developers. To fast-track promotion, you must understand how code ties to business outcomes, which is also a key foundation for financial advocacy.",
+    "summary": "To level up fast as an early-career engineer, you must stop thinking of yourself as just a coder. This video demystifies how software drives business value, showing you exactly how to align your technical skills with business strategy to gain massive leverage at work."
   },
   {
     "videoId": "ghJmWQCIHRM",
     "title": "The agent-ready web: Simplify user actions with WebMCP — Tara Agyemang, Google",
     "selected": true,
-    "reasoning": "Highly valuable tech deep-dive for a Junior Fullstack developer learning how AI agents interact with modern web applications.",
-    "summary": "As a fullstack developer, staying ahead of AI integration is crucial. This talk introduces Google's WebMCP, showing you how to build web frontends that seamlessly cooperate with AI agents—a skill that will soon be a massive competitive edge."
+    "reasoning": "Extremely valuable. WebMCP is an emerging standard in AI integration, giving a junior fullstack developer a massive technical edge on their resume.",
+    "summary": "AI agents are redefining fullstack web engineering. This video introduces WebMCP, teaching you how to architect websites that seamlessly communicate with AI models—an in-demand skill that will make your resume instantly stand out."
   },
   {
-    "videoId": "so9l_MwS2yg",
-    "title": "Your Attention Is the Bottleneck, Not Your Agents — Zack Proser, WorkOS",
+    "videoId": "e6EQb-rYIig",
+    "title": "Public Speaking Practice: Excellence vs Perfection",
     "selected": false,
-    "reasoning": "Intriguing concept about developer attention bottlenecks, but too specialized compared to fundamental fullstack tech skills.",
-    "summary": ""
-  },
-  {
-    "videoId": "1ZK2jvyr4-E",
-    "title": "Advice for his younger self",
-    "selected": true,
-    "reasoning": "Direct career mentorship from an experienced software engineering lead, matching the junior engineer and early career persona.",
-    "summary": "Navigating the early stages of a tech career can feel overwhelming. This video packs critical, field-tested advice from an engineering leader on what to prioritize to scale your career and avoid common junior-dev pitfalls."
-  },
-  {
-    "videoId": "DpT10ohUwP0",
-    "title": "How AI will impact software engineering",
-    "selected": false,
-    "reasoning": "A solid career outlook short, but outperformed by the more practical, developer-ready WebMCP integration guide.",
-    "summary": ""
-  },
-  {
-    "videoId": "6t_W3iEvA5M",
-    "title": "From the Co-Creator of Haskell",
-    "selected": false,
-    "reasoning": "Historical and academic programming perspective, which is interesting but lacks immediate utility for a junior-level career push.",
+    "reasoning": "Generic productivity short. Good advice on mindset, but lacks the high-impact technical or career-advancing insights our profile demands.",
     "summary": ""
   },
   {
     "videoId": "Vtz0HwGgCkI",
     "title": "Public Speaking Practice: Morning Routines",
     "selected": false,
-    "reasoning": "Generic lifestyle and self-improvement advice that lacks targeted technical, financial, or cultural value.",
+    "reasoning": "A basic public speaking vlog. Contains almost zero actionable content for a software developer or a financial advocate.",
     "summary": ""
   },
   {
     "videoId": "Wpktv0iUlAo",
     "title": "The biggest myth in your career path",
+    "selected": true,
+    "reasoning": "Highly relevant for an early-career professional. It tackles linear path anxieties with practical, calming career philosophy.",
+    "summary": "Feeling anxious about picking the 'perfect' career trajectory? Ali Abdaal breaks down the paralyzing myth of the linear career path, offering reassurance and practical mindsets to help early-career professionals build an authentic, non-linear journey to success."
+  },
+  {
+    "videoId": "o2rUT2GloV0",
+    "title": "Run Gemma on the edge with the Coral Board",
     "selected": false,
-    "reasoning": "Excellent broad career advice, but outperformed by Ryan Peterman’s engineering-specific mentorship for software engineers.",
+    "reasoning": "Too hardware/IoT focused. Junior fullstack devs should focus on core web services and cloud deployment before diving into edge computing hardware.",
     "summary": ""
   },
   {
-    "videoId": "VODVJ-0oLCw",
-    "title": "The Double Dipping Effect",
-    "selected": false,
-    "reasoning": "General productivity hack with minimal alignment to the direct technical and financial needs of the persona.",
-    "summary": ""
+    "videoId": "eaUd3iYkj_w",
+    "title": "In production, which file actually gets loaded?",
+    "selected": true,
+    "reasoning": "Highly practical, day-to-day web development tip. Understanding production build behavior is a common weak spot for junior fullstack devs.",
+    "summary": "This highly practical short solves a common headache for junior fullstack developers. You'll learn exactly how to inspect your production builds using DevTools to confidently trace and debug exactly which files are executing live."
   },
   {
     "videoId": "PquqdRi8I18",
     "title": "Inspect and live-edit 3D WebGL elements",
     "selected": false,
-    "reasoning": "Niche frontend tool demonstration; not as crucial as foundational fullstack AI patterns or financial growth.",
+    "reasoning": "Too niche. WebGL/3D debugging tools are irrelevant to the vast majority of standard fullstack software engineering roles.",
     "summary": ""
   },
   {
-    "videoId": "xQcbwGS6Ahc",
-    "title": "AIventure: Vibe Coding Journey",
+    "videoId": "oT_1qlY8BO8",
+    "title": "The power of surrender in leadership | Dr. Jessica Kriegel | TEDxSouthlake",
     "selected": false,
-    "reasoning": "A highly casual promotional video rather than a source of actionable engineering or career growth.",
+    "reasoning": "While the philosophical concept of surrender matches spiritual mindsets, the actual corporate leadership focus is too broad and abstract for an early-career junior dev.",
     "summary": ""
   },
   {
-    "videoId": "_C9Hq3Msd84",
-    "title": "See how Gemma  can explore, plan, and scale!",
+    "videoId": "GiaQ5qX7F6s",
+    "title": "Beyond the AI Hype | Yehya Lazgin | TEDxNishtiman",
     "selected": false,
-    "reasoning": "A short marketing teaser for Google's Gemma model that lacks deep technical substance.",
+    "reasoning": "Too high-level and philosophical. Early-career developers need practical technical skills or concrete career planning rather than general AI predictions.",
     "summary": ""
   },
   {
-    "videoId": "EaFkAQjkke8",
-    "title": "Apa itu sinking fund?",
-    "selected": false,
-    "reasoning": "Decent introduction to savings concepts in Malay, but overshadowed by Faiz's deeper, policy-focused financial content.",
-    "summary": ""
-  },
-  {
-    "videoId": "uyH2943iZSg",
-    "title": "Minima simpanan RM15,000",
-    "selected": false,
-    "reasoning": "A basic savings tip short; the full-length podcast content on Islamic banking and local subsidies provides much deeper value.",
-    "summary": ""
-  },
-  {
-    "videoId": "rr7poQZO7Vk",
-    "title": "Kaedah baru bayar zakat?",
+    "videoId": "m09vFP8JOTk",
+    "title": "Designing Trustworthy AI in the Financial Landscape | Gopichand  | TEDxVishnu Institute",
     "selected": true,
-    "reasoning": "Perfect cross-section of Malaysian context, Muslim identity, and practical Islamic financial advocacy.",
-    "summary": "For a Malaysian Muslim passionate about optimizing personal finance, this breakdown explores modern zakat payment methodologies. It provides highly relevant information that integrates religious duties with modern financial planning."
+    "reasoning": "Incredible overlap of target themes. Explores AI, trust, and ethics in fintech, which mirrors the fundamental pillars of Islamic finance (ethical risk sharing, transparency).",
+    "summary": "As a developer with an interest in Islamic finance, this is a must-watch. It explores the ethics and design patterns needed to build trustworthy, transparent AI in fintech—core components that perfectly align with Islamic financial principles of fairness and transparency."
   },
   {
-    "videoId": "Gvhn8LuevoA",
-    "title": "[S01:E11] Subsidi bukan untuk golongan T20 - Dr. Mohd Afzanizam, Chief Economist Bank Muamalat",
-    "selected": true,
-    "reasoning": "High-level local fiscal discussion from an Islamic banking executive, perfectly matching the target's Malaysian and Islamic financial advocacy needs.",
-    "summary": "Get an inside look at Malaysian economic policy from the Chief Economist of Bank Muamalat. This in-depth discussion on T20 subsidies provides invaluable context for any local Islamic financial advocate looking to understand state fiscal planning."
-  },
-  {
-    "videoId": "N1M6zFduOUE",
-    "title": "Kerajaan berjimat untuk subsidi petrol",
+    "videoId": "tYQkg-RI5io",
+    "title": "“Watch what Claude's going to do when you give it the AWS console”",
     "selected": false,
-    "reasoning": "A short highlight of the broader economic discussion already covered in-depth in the main Bank Muamalat episode.",
+    "reasoning": "Interesting teaser of AI cloud interaction, but too brief to teach anything substantial. It's essentially entertainment fluff.",
     "summary": ""
   },
   {
-    "videoId": "ZzcMg9fp12U",
-    "title": "Trump manipulasi pasaran saham?",
+    "videoId": "FBsLWL2CWW8",
+    "title": "You automated everyone else away — don't be surprised",
     "selected": false,
-    "reasoning": "Focuses on global stock market news rather than localized Malaysian economy or Islamic banking perspectives.",
+    "reasoning": "A short warning on AI's impact on career security. Good high-level context, but not detailed enough to serve as actionable guidance.",
     "summary": ""
   },
   {
-    "videoId": "jN92B2b9_SA",
-    "title": "#106 | Negeri Sembilan's Crisis, Johor's Gamble &amp; Who'll Really Win (Idris &amp; Leon Jala)",
+    "videoId": "RS3PFeMB5BU",
+    "title": "“Zero token architecture”",
     "selected": false,
-    "reasoning": "Interesting local socio-economic commentary, but less targeted toward junior engineering career advice or direct Islamic financial advocacy.",
+    "reasoning": "Too short to explain a complex engineering architecture effectively. It functions more as buzzword bait.",
     "summary": ""
-  },
-  {
-    "videoId": "5wAJ5-bYrT0",
-    "title": "#105 | Building Malaysia's Largest Stroke Rehab Network (Janet Yeo)",
-    "selected": false,
-    "reasoning": "An inspiring local community healthcare story, but unrelated to software engineering or fintech career growth.",
-    "summary": ""
-  },
-  {
-    "videoId": "4FRnji7Oe6g",
-    "title": "#104 | Is The Unity Government Working? | Idris &amp; Leon Jala",
-    "selected": false,
-    "reasoning": "Broad political commentary; doesn't deliver the targeted professional or financial utility of other local selections.",
-    "summary": ""
-  },
-  {
-    "videoId": "Wub32lNjU64",
-    "title": "Medicine Supply Shortage | Dr Dzulkefly",
-    "selected": false,
-    "reasoning": "A hyper-specific medical logistics short; irrelevant to software engineering or personal finance.",
-    "summary": ""
-  },
-  {
-    "videoId": "K76lNxWmiNE",
-    "title": "“Vote out of love, not out of fear.” - Co-founder of Bersama Nik Nazmi | In The Studio",
-    "selected": false,
-    "reasoning": "High-level political interview with Nik Nazmi; while local, it lacks direct application to career execution or finance.",
-    "summary": ""
-  },
-  {
-    "videoId": "CIJbINdPENQ",
-    "title": "Most replayed: Why Malaysian Football Will Never Go Far | In The Studio",
-    "selected": false,
-    "reasoning": "Local sports culture discussion; entertaining but provides no professional or financial development value.",
-    "summary": ""
-  },
-  {
-    "videoId": "rEIWcW__Mb8",
-    "title": "Why leaders hesitate to act—and what it costs | Darin Detwiler | TEDxNortheasternU",
-    "selected": false,
-    "reasoning": "Generic corporate leadership lecture that lacks industry specificity for a junior developer or regional financial relevance.",
-    "summary": ""
-  },
-  {
-    "videoId": "gZcFbIHWNFY",
-    "title": "What wolf packs can teach us about leadership | Oliver Starr | TEDxSHSU",
-    "selected": false,
-    "reasoning": "An abstract, metaphorical leadership talk with no concrete applicability to fullstack engineering or personal finance.",
-    "summary": ""
-  },
-  {
-    "videoId": "zLf-2LtAqys",
-    "title": "Why we need to stop ranking our grief | Kelly Cervantes | TEDxNortheasternU",
-    "selected": false,
-    "reasoning": "Mental health and emotional intelligence topic; lacks specific relevance to the targets' tech and finance objectives.",
-    "summary": ""
-  },
-  {
-    "videoId": "hryqPlSaees",
-    "title": "The Best Teams Don’t Always Win. You Can. | Dr. Omar Suleiman",
-    "selected": false,
-    "reasoning": "Inspiring Islamic spiritual short, but the video on dealing with critics offers more direct utility for workplace navigation.",
-    "summary": ""
-  },
-  {
-    "videoId": "wIeiykyCqcM",
-    "title": "The One Who Stays Before the Victory Comes",
-    "selected": false,
-    "reasoning": "A spiritual short about persistence; valuable but slightly less practical for day-to-day office challenges than the selected spiritual short.",
-    "summary": ""
-  },
-  {
-    "videoId": "6f_6pd9r-78",
-    "title": "How To Make Du’a For Your Critics | Dr. Omar Suleiman",
-    "selected": true,
-    "reasoning": "Invaluable practical spiritual toolkit for a junior developer navigating constructive and destructive workplace feedback early in their career.",
-    "summary": "Handling tough code reviews and office politics can test your resolve. Dr. Omar Suleiman shares a beautiful Islamic approach to processing criticism gracefully, helping you build mental resilience and professional character."
   }
 ]
