@@ -260,7 +260,7 @@ async function enrichWithVideoSummary(video) {
                 mimeType: 'video/mp4'
               }
             },
-            { text: `You are an expert analyst. Watch this video and write a layman-friendly, highly engaging summary (2-3 sentences) explaining WHY this video is worth the viewer's time and what the core takeaway is. Also extract 2-3 of the most valuable moments with exact timestamps in seconds.
+            { text: `You are an expert analyst. Watch this video and write a layman-friendly, highly engaging summary (2-3 sentences) explaining WHY this video is worth the viewer's time and what the core takeaway is. Also extract 2-3 of the most valuable, cohesive segments (highlights) with an exact start time and end time in seconds.
 
 CRITICAL GUARDRAILS:
 1. Be highly skeptical. If the video contains obvious misinformation, scams, or questionable claims, flag it explicitly in your summary.
@@ -270,8 +270,8 @@ You MUST return ONLY a valid JSON object in the exact format below, with nothing
 {
   "summary": "Your engaging 2-3 sentence summary...",
   "timestamps": [
-    { "time": 135, "topic": "Explanation of the core concept" },
-    { "time": 252, "topic": "Why this approach is a trap" }
+    { "startTime": 135, "endTime": 180, "topic": "Explanation of the core concept" },
+    { "startTime": 252, "endTime": 310, "topic": "Why this approach is a trap" }
   ]
 }` }
           ]

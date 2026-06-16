@@ -13,11 +13,14 @@
     </p>
 
     <div class="Box box-shadow-large p-4 {% if site.style == 'dark' %}bg-gray-dark border-gray-dark{% else %}bg-white border-gray-light{% endif %}" style="border-radius: 12px;">
-      <div class="d-flex flex-column flex-lg-row flex-items-start" style="gap: 32px;">
+      <div class="d-flex flex-column flex-lg-row flex-items-center" style="gap: 32px;">
         
         <!-- Left: Embedded Video -->
-        <div class="col-12 col-lg-6 flex-shrink-0" style="aspect-ratio: 16/9; overflow: hidden; border-radius: 8px;">
+        <div class="col-12 col-lg-6 flex-shrink-0" style="aspect-ratio: 16/9; overflow: hidden; border-radius: 8px; position: relative;">
           <iframe id="yt-player" class="rounded-2 box-shadow-medium" style="width: 100%; height: 100%; border: 1px solid {% if site.style == 'dark' %}#444d56{% else %}#e1e4e8{% endif %};" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div id="yt-transition-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #000; opacity: 0; pointer-events: none; transition: opacity 0.4s ease-in-out; display: flex; align-items: center; justify-content: center;">
+             <span id="yt-transition-text" style="color: white; font-weight: bold; opacity: 0; transition: opacity 0.2s; font-family: monospace;">Loading...</span>
+          </div>
         </div>
 
         <!-- Right: AI Analysis & Info -->
@@ -40,7 +43,11 @@
             <p id="yt-summary" class="f5 mb-0" style="line-height: 1.6; {% if site.style == 'dark' %}color: #c9d1d9;{% else %}color: #24292e;{% endif %}">
               AI Summary goes here.
             </p>
-            <div id="yt-timestamps" class="mt-3" style="display: none;"></div>
+            <div id="yt-timestamps-header" class="mt-3 d-flex flex-justify-between flex-items-center" style="display: none;">
+               <strong class='f6 text-gray-light'>Key Moments:</strong>
+               <button id="btn-play-reel" type="button" class="btn btn-sm btn-invisible p-0 text-bold" style="color: {% if site.style == 'dark' %}#58a6ff{% else %}#0969da{% endif %}; display: none;">▶ Play Reel</button>
+            </div>
+            <div id="yt-timestamps" class="mt-2" style="display: none;"></div>
           </div>
 
           <div class="d-flex flex-justify-between flex-items-center">
@@ -61,10 +68,78 @@
 <script src="https://www.youtube.com/iframe_api"></script>
 <script>
   var ytPlayer;
+  var currentHighlights = [];
+  var isPlayingReel = false;
+  var highlightIndex = -1;
+  var highlightCheckInterval;
+
   function onYouTubeIframeAPIReady() {
     ytPlayer = new YT.Player('yt-player', {
-      events: {}
+      events: {
+        'onStateChange': onPlayerStateChange
+      }
     });
+  }
+
+  function onPlayerStateChange(event) {
+    if (event.data === YT.PlayerState.PLAYING) {
+       // Hide overlay if it was shown
+       const overlay = document.getElementById('yt-transition-overlay');
+       const overlayText = document.getElementById('yt-transition-text');
+       if (overlay && overlay.style.opacity == '1') {
+          overlayText.style.opacity = '0';
+          setTimeout(() => {
+             overlay.style.opacity = '0';
+          }, 300); // fade out
+       }
+    }
+  }
+
+  function checkHighlightEnd() {
+    if (!ytPlayer || typeof ytPlayer.getCurrentTime !== 'function') return;
+    if (highlightIndex >= 0 && highlightIndex < currentHighlights.length) {
+       const hl = currentHighlights[highlightIndex];
+       const currentTime = ytPlayer.getCurrentTime();
+       if (hl.endTime && currentTime >= hl.endTime) {
+          // Highlight ended!
+          if (isPlayingReel) {
+             playNextHighlight();
+          } else {
+             ytPlayer.pauseVideo();
+             highlightIndex = -1; // stop tracking
+          }
+       }
+    }
+  }
+
+  function playNextHighlight() {
+     highlightIndex++;
+     if (highlightIndex < currentHighlights.length) {
+        const hl = currentHighlights[highlightIndex];
+        triggerCinematicSeek(hl);
+     } else {
+        // Reel finished
+        isPlayingReel = false;
+        highlightIndex = -1;
+        ytPlayer.pauseVideo();
+     }
+  }
+
+  function triggerCinematicSeek(hl) {
+     const overlay = document.getElementById('yt-transition-overlay');
+     const overlayText = document.getElementById('yt-transition-text');
+     if (overlay) {
+        overlayText.innerText = "Stitching...";
+        overlay.style.opacity = '1';
+        overlayText.style.opacity = '1';
+        setTimeout(() => {
+           ytPlayer.seekTo(hl.startTime || hl.time, true);
+           ytPlayer.playVideo();
+        }, 400); // Wait for fade to black before seeking
+     } else {
+        ytPlayer.seekTo(hl.startTime || hl.time, true);
+        ytPlayer.playVideo();
+     }
   }
 
   document.addEventListener("DOMContentLoaded", function() {
@@ -82,8 +157,21 @@
     const summaryEl = document.getElementById('yt-summary');
     const linkEl = document.getElementById('yt-link');
     const nextBtn = document.getElementById('btn-next-yt');
-
+    
+    const timestampsHeaderEl = document.getElementById('yt-timestamps-header');
     const timestampsEl = document.getElementById('yt-timestamps');
+    const btnPlayReel = document.getElementById('btn-play-reel');
+
+    // Start interval to check video time
+    highlightCheckInterval = setInterval(checkHighlightEnd, 500);
+
+    btnPlayReel.addEventListener('click', function() {
+       if (currentHighlights.length > 0) {
+          isPlayingReel = true;
+          highlightIndex = -1; // resets
+          playNextHighlight();
+       }
+    });
 
     function formatTime(seconds) {
       const m = Math.floor(seconds / 60);
@@ -97,6 +185,11 @@
       
       const v = videos[currentIndex];
       
+      // Reset state
+      isPlayingReel = false;
+      highlightIndex = -1;
+      currentHighlights = v.timestamps || [];
+      
       playerEl.src = "https://www.youtube.com/embed/" + v.videoId + "?rel=0&enablejsapi=1";
       categoryEl.innerText = v.category;
       titleEl.innerText = v.title;
@@ -104,24 +197,40 @@
       summaryEl.innerText = v.summary;
       linkEl.href = v.url;
 
-      if (v.timestamps && v.timestamps.length > 0) {
+      if (currentHighlights.length > 0) {
+        timestampsHeaderEl.style.display = "flex";
         timestampsEl.style.display = "block";
-        timestampsEl.innerHTML = "<strong class='f6 text-gray-light d-block mb-2'>Key Moments:</strong>";
-        v.timestamps.forEach(ts => {
+        timestampsEl.innerHTML = "";
+        
+        // Show Reel button only if there's more than 1 highlight and they have end times
+        const canStitch = currentHighlights.length > 1 && currentHighlights[0].endTime;
+        if (canStitch) {
+           btnPlayReel.style.display = "block";
+        } else {
+           btnPlayReel.style.display = "none";
+        }
+
+        currentHighlights.forEach((ts, idx) => {
           const btn = document.createElement('button');
           btn.type = 'button';
           btn.className = "btn-link text-left d-block f6 mb-2";
           btn.style.cssText = "color: {% if site.style == 'dark' %}#58a6ff{% else %}#0969da{% endif %}; text-decoration: none; white-space: normal; word-break: break-word; line-height: 1.4; width: 100%; padding: 0;";
-          btn.innerHTML = `<span style="display: flex; gap: 6px;"><span style="flex-shrink: 0;">▶</span> <span style="font-family: monospace; opacity: 0.8; flex-shrink: 0;">[${formatTime(ts.time)}]</span> <span>${ts.topic}</span></span>`;
+          
+          let timeLabel = `[${formatTime(ts.startTime || ts.time)}]`;
+          if (ts.endTime) {
+             timeLabel = `[${formatTime(ts.startTime)} - ${formatTime(ts.endTime)}]`;
+          }
+
+          btn.innerHTML = `<span style="display: flex; gap: 6px;"><span style="flex-shrink: 0;">▶</span> <span style="font-family: monospace; opacity: 0.8; flex-shrink: 0;">${timeLabel}</span> <span>${ts.topic}</span></span>`;
           btn.onclick = function() {
-            if (window.ytPlayer && window.ytPlayer.seekTo) {
-              window.ytPlayer.seekTo(ts.time, true);
-              window.ytPlayer.playVideo();
-            }
+            isPlayingReel = false; // Playing individually cancels reel mode
+            highlightIndex = idx;
+            triggerCinematicSeek(ts);
           };
           timestampsEl.appendChild(btn);
         });
       } else {
+        timestampsHeaderEl.style.display = "none";
         timestampsEl.style.display = "none";
         timestampsEl.innerHTML = "";
       }
@@ -129,9 +238,9 @@
       // Dynamically handle aspect ratio for YouTube Shorts vs Normal Videos
       const videoContainer = playerEl.parentElement;
       if (v.url && v.url.includes('/shorts/')) {
-        videoContainer.style.cssText = "aspect-ratio: 9/16 !important; max-width: 320px !important; margin: 0 auto !important; border-radius: 8px; overflow: hidden;";
+        videoContainer.style.cssText = "aspect-ratio: 9/16 !important; max-width: 320px !important; margin: 0 auto !important; border-radius: 8px; overflow: hidden; position: relative;";
       } else {
-        videoContainer.style.cssText = "aspect-ratio: 16/9 !important; max-width: 100% !important; margin: 0 !important; border-radius: 8px; overflow: hidden;";
+        videoContainer.style.cssText = "aspect-ratio: 16/9 !important; max-width: 100% !important; margin: 0 !important; border-radius: 8px; overflow: hidden; position: relative;";
       }
     }
 
