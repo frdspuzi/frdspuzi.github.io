@@ -1,25 +1,109 @@
 {
   "videos": [
     {
+      "title": "Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS",
+      "url": "https://www.youtube.com/watch?v=iUWwcG-C8OU",
+      "videoId": "iUWwcG-C8OU",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Discover how WorkOS built 'Studio,' an innovative internal tool that empowers non-technical teams to instantly query databases and build customized dashboards using natural language. This video is a must-watch for anyone interested in how LLMs can automate data analytics, bypass rigid dashboards, and boost team productivity. The core takeaway lies in their practical architecture and the reliability patterns—Sequencing, Layering, and Validation—needed to make AI database querying safe and useful.",
+      "dateAdded": "2026-06-16T05:42:18.538Z",
+      "timestamps": [
+        {
+          "time": 251,
+          "topic": "Overview of the Studio AI architecture"
+        },
+        {
+          "time": 601,
+          "topic": "Key guidance patterns for reliable AI agent behavior"
+        }
+      ]
+    },
+    {
       "title": "The agent-ready web: Simplify user actions with WebMCP — Tara Agyemang, Google",
       "url": "https://www.youtube.com/watch?v=ghJmWQCIHRM",
       "videoId": "ghJmWQCIHRM",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "This video introduces WebMCP, a proposed web standard that simplifies how AI agents interact with websites by replacing fragile screen scraping with structured tool menus. It is essential for developers looking to prepare their sites for the future of automated user journeys. The main takeaway is that building clean web foundations combined with WebMCP enables seamless, high-performance agent integrations.",
-      "dateAdded": "2026-06-15T05:34:21.195Z",
+      "summary": "This video introduces WebMCP, a proposed standard designed to make websites easily navigable by AI agents rather than relying on inefficient screen-scraping. Viewers will learn how to turn standard web pages into high-performance APIs, creating a seamless interface for both human users and AI assistants.",
+      "dateAdded": "2026-06-16T05:42:18.538Z",
       "timestamps": [
         {
-          "time": 233,
-          "topic": "Introduction to WebMCP and how it acts as a protocol for AI agents"
+          "time": 234,
+          "topic": "Introduction and explanation of WebMCP"
         },
         {
           "time": 287,
-          "topic": "Live demonstration of WebMCP tools in an interactive game environment"
+          "topic": "Demonstration of WebMCP in a maze escape game"
         },
         {
-          "time": 755,
-          "topic": "Comparison of declarative and imperative APIs for implementing WebMCP"
+          "time": 836,
+          "topic": "Overview of declarative and imperative APIs"
+        }
+      ]
+    },
+    {
+      "title": "The biggest myth in your career path",
+      "url": "https://www.youtube.com/shorts/Wpktv0iUlAo",
+      "videoId": "Wpktv0iUlAo",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "This video offers a balanced perspective on the common dilemma of whether to start working immediately after university or take time to travel. The speaker suggests that instead of making it an 'either-or' choice, you can travel while simultaneously learning digital skills to build independent income. This approach provides financial security and personal growth, making it a valuable watch for recent graduates.",
+      "dateAdded": "2026-06-16T05:42:18.538Z",
+      "timestamps": [
+        {
+          "time": 11,
+          "topic": "Assessing your immediate financial needs and security"
+        },
+        {
+          "time": 32,
+          "topic": "Learning independent income-generating skills while traveling"
+        },
+        {
+          "time": 65,
+          "topic": "How to structure your week to balance work and travel"
+        }
+      ]
+    },
+    {
+      "title": "In production, which file actually gets loaded?",
+      "url": "https://www.youtube.com/shorts/eaUd3iYkj_w",
+      "videoId": "eaUd3iYkj_w",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Test your coding skills with this quick developer puzzle about package exports and tricky deployment bugs. You'll learn how export conditions can cause different behaviors in production versus local environments, helping you avoid common deployment mishaps.",
+      "dateAdded": "2026-06-16T05:42:18.538Z",
+      "timestamps": [
+        {
+          "time": 8,
+          "topic": "Introducing the package.json export conditions"
+        },
+        {
+          "time": 20,
+          "topic": "The production import question and multiple-choice options"
+        }
+      ]
+    },
+    {
+      "title": "Designing Trustworthy AI in the Financial Landscape | Gopichand  | TEDxVishnu Institute",
+      "url": "https://www.youtube.com/watch?v=m09vFP8JOTk",
+      "videoId": "m09vFP8JOTk",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This video demystifies how AI makes high-stakes decisions in finance, shifting focus from flashy models to the hidden infrastructure supporting them. The key takeaway is that true trust in AI is built on the entire system—including data quality, monitoring, and human governance—not just the model itself.",
+      "dateAdded": "2026-06-16T05:42:18.538Z",
+      "timestamps": [
+        {
+          "time": 120,
+          "topic": "Why trust cannot rely on the AI model alone"
+        },
+        {
+          "time": 272,
+          "topic": "Understanding model drift as a major risk"
+        },
+        {
+          "time": 396,
+          "topic": "The collaborative future of human judgment and AI"
         }
       ]
     },
@@ -208,29 +292,6 @@
       ]
     },
     {
-      "title": "Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS",
-      "url": "https://www.youtube.com/watch?v=iUWwcG-C8OU",
-      "videoId": "iUWwcG-C8OU",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This talk introduces WorkOS Studio, an AI-powered internal workspace that lets non-technical teams query databases and build custom dashboards using natural language. It demonstrates how to bypass traditional engineering bottlenecks by letting AI safely write and validate database queries on the fly. It is a highly practical case study on leveraging LLMs to dramatically boost internal company productivity.",
-      "dateAdded": "2026-06-12T06:53:41.264Z",
-      "timestamps": [
-        {
-          "time": 105,
-          "topic": "The friction in traditional data querying workflows"
-        },
-        {
-          "time": 252,
-          "topic": "Architectural breakdown of the AI-powered Studio tool"
-        },
-        {
-          "time": 600,
-          "topic": "Key design patterns for making database LLM agents reliable"
-        }
-      ]
-    },
-    {
       "title": "Secret to Consistent Worship | Dr. Omar Suleiman",
       "url": "https://www.youtube.com/shorts/073rFWzKCy8",
       "videoId": "073rFWzKCy8",
@@ -271,62 +332,7 @@
           "topic": "Leveraging the JAKIM Halal certification as a competitive edge"
         }
       ]
-    },
-    {
-      "title": "How to Keep Shipping When You Walk Away from Your Desk — Zack Proser, WorkOS",
-      "url": "https://www.youtube.com/watch?v=so9l_MwS2yg",
-      "videoId": "so9l_MwS2yg",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This presentation is a must-watch for developers feeling overwhelmed by the rapid influx of powerful AI coding tools, offering a fresh perspective on avoiding burnout. The core takeaway is that the developer's attention—not the AI agent—is the ultimate bottleneck, and we must build smart verification gates and asynchronous workflows to sustain our productivity.",
-      "dateAdded": "2026-06-11T19:22:53.315Z",
-      "timestamps": [
-        {
-          "time": 185,
-          "topic": "The trap of stacking too many AI agents"
-        },
-        {
-          "time": 312,
-          "topic": "The enabling stack for developer balance"
-        },
-        {
-          "time": 495,
-          "topic": "The 'shower principle' and remote control workflow"
-        }
-      ]
-    },
-    {
-      "title": "Are You Sincere? | Snapshots with Imam Tom Facchine",
-      "url": "https://www.youtube.com/watch?v=ymVJRR8KJl8",
-      "videoId": "ymVJRR8KJl8",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This video provides practical guidance on measuring personal sincerity in faith through self-reflection. Viewers will learn key indicators of sincerity, such as performing secret acts of worship and handling criticism constructively, to focus on the spiritual quality of their actions.",
-      "dateAdded": "2026-06-11T19:22:53.315Z",
-      "timestamps": [
-        {
-          "time": 32,
-          "topic": "The value of secret acts of worship"
-        },
-        {
-          "time": 101,
-          "topic": "Analyzing your response to praise and criticism"
-        },
-        {
-          "time": 318,
-          "topic": "Prioritizing the quality of deeds over quantity"
-        }
-      ]
-    },
-    {
-      "title": "Astro gagal siar World Cup, tanda kejatuhan gergasi TV Malaysia?",
-      "url": "https://www.youtube.com/watch?v=uPyRbVtaqNM",
-      "videoId": "uPyRbVtaqNM",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Learn from the strategic missteps of a Malaysian entertainment giant. This detailed business and financial breakdown of Astro offers invaluable, real-world lessons on market disruption, changing consumer behavior, and the critical importance of digital adaptability.",
-      "dateAdded": "2026-06-11T19:05:43.029Z"
     }
   ],
-  "lastUpdated": "2026-06-15T05:37:14.186Z"
+  "lastUpdated": "2026-06-16T05:44:23.085Z"
 }
