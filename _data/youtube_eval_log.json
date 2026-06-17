@@ -1,107 +1,65 @@
 [
   {
+    "videoId": "gHs5ZiY80PM",
+    "title": "You Might Not Need 50 Diffusion Steps — Ziv Ilan, Nvidia",
+    "selected": false,
+    "reasoning": "While technically interesting, optimizing diffusion steps for image generation models is too specialized and out-of-scope for a junior fullstack engineer's typical career roadmap.",
+    "summary": ""
+  },
+  {
     "videoId": "c-2eEv2ou7Y",
     "title": "Why MCP and ChatGPT Apps Use Double Iframes — Frédéric Barthelet, Alpic",
-    "selected": false,
-    "reasoning": "While technically sound, this is an incredibly niche browser security architecture video. A junior dev has far bigger fish to fry before worrying about double iframe sandboxing.",
-    "summary": ""
+    "selected": true,
+    "reasoning": "Extremely relevant for a fullstack engineer working in the current AI-integrated landscape, offering insights into web security architectures.",
+    "summary": "If you want to master modern fullstack security, understanding sandbox environments is a must. This video breaks down how industry leaders use double iframes to protect data in LLM apps, giving you a competitive edge in your code architectures."
   },
   {
     "videoId": "iUWwcG-C8OU",
     "title": "Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS",
     "selected": true,
-    "reasoning": "Highly crucial bridge for early-career developers. To fast-track promotion, you must understand how code ties to business outcomes, which is also a key foundation for financial advocacy.",
-    "summary": "To level up fast as an early-career engineer, you must stop thinking of yourself as just a coder. This video demystifies how software drives business value, showing you exactly how to align your technical skills with business strategy to gain massive leverage at work."
+    "reasoning": "Crucial for an early-career engineer looking to build business acumen, which is the fastest way to stand out and fast-track promotions.",
+    "summary": "Junior developers often get stuck writing code without understanding the 'why' behind the business. This talk teaches you how to connect technical tasks to company goals, transforming you from a task-taker into a high-value strategic engineer."
   },
   {
-    "videoId": "ghJmWQCIHRM",
-    "title": "The agent-ready web: Simplify user actions with WebMCP — Tara Agyemang, Google",
-    "selected": true,
-    "reasoning": "Extremely valuable. WebMCP is an emerging standard in AI integration, giving a junior fullstack developer a massive technical edge on their resume.",
-    "summary": "AI agents are redefining fullstack web engineering. This video introduces WebMCP, teaching you how to architect websites that seamlessly communicate with AI models—an in-demand skill that will make your resume instantly stand out."
+    "videoId": "YBSws7AyG7w",
+    "title": "Public Speaking Practice: The Birthday Wish",
+    "selected": false,
+    "reasoning": "A generic public speaking practice prompt that does not offer concrete career-building advice or technical value for a junior engineer.",
+    "summary": ""
   },
   {
     "videoId": "e6EQb-rYIig",
     "title": "Public Speaking Practice: Excellence vs Perfection",
-    "selected": false,
-    "reasoning": "Generic productivity short. Good advice on mindset, but lacks the high-impact technical or career-advancing insights our profile demands.",
-    "summary": ""
+    "selected": true,
+    "reasoning": "Highly applicable mindset advice for a junior developer and early-career professional struggling with imposter syndrome or delivery paralysis.",
+    "summary": "Perfectionism is the ultimate progress-killer when you are starting your software engineering career. Learn how shifting your focus to 'practical excellence' will help you ship clean code faster and build momentum without burning out."
   },
   {
     "videoId": "Vtz0HwGgCkI",
     "title": "Public Speaking Practice: Morning Routines",
     "selected": false,
-    "reasoning": "A basic public speaking vlog. Contains almost zero actionable content for a software developer or a financial advocate.",
+    "reasoning": "Standard productivity content that lacks the specific career growth or engineering value needed for this targeted persona.",
     "summary": ""
-  },
-  {
-    "videoId": "Wpktv0iUlAo",
-    "title": "The biggest myth in your career path",
-    "selected": true,
-    "reasoning": "Highly relevant for an early-career professional. It tackles linear path anxieties with practical, calming career philosophy.",
-    "summary": "Feeling anxious about picking the 'perfect' career trajectory? Ali Abdaal breaks down the paralyzing myth of the linear career path, offering reassurance and practical mindsets to help early-career professionals build an authentic, non-linear journey to success."
   },
   {
     "videoId": "o2rUT2GloV0",
     "title": "Run Gemma on the edge with the Coral Board",
     "selected": false,
-    "reasoning": "Too hardware/IoT focused. Junior fullstack devs should focus on core web services and cloud deployment before diving into edge computing hardware.",
+    "reasoning": "Niche hardware-focused tutorial that is less practical for a general junior fullstack software developer.",
     "summary": ""
   },
   {
     "videoId": "eaUd3iYkj_w",
     "title": "In production, which file actually gets loaded?",
     "selected": true,
-    "reasoning": "Highly practical, day-to-day web development tip. Understanding production build behavior is a common weak spot for junior fullstack devs.",
-    "summary": "This highly practical short solves a common headache for junior fullstack developers. You'll learn exactly how to inspect your production builds using DevTools to confidently trace and debug exactly which files are executing live."
+    "reasoning": "Directly tackles a fundamental, everyday fullstack concept that junior developers frequently struggle with: build tool outputs.",
+    "summary": "Have you ever wondered exactly which files land in production after running your build scripts? This quick tutorial demystifies source mapping and asset loading so you can debug production bugs like a seasoned pro."
   },
   {
     "videoId": "PquqdRi8I18",
     "title": "Inspect and live-edit 3D WebGL elements",
-    "selected": false,
-    "reasoning": "Too niche. WebGL/3D debugging tools are irrelevant to the vast majority of standard fullstack software engineering roles.",
-    "summary": ""
-  },
-  {
-    "videoId": "oT_1qlY8BO8",
-    "title": "The power of surrender in leadership | Dr. Jessica Kriegel | TEDxSouthlake",
-    "selected": false,
-    "reasoning": "While the philosophical concept of surrender matches spiritual mindsets, the actual corporate leadership focus is too broad and abstract for an early-career junior dev.",
-    "summary": ""
-  },
-  {
-    "videoId": "GiaQ5qX7F6s",
-    "title": "Beyond the AI Hype | Yehya Lazgin | TEDxNishtiman",
-    "selected": false,
-    "reasoning": "Too high-level and philosophical. Early-career developers need practical technical skills or concrete career planning rather than general AI predictions.",
-    "summary": ""
-  },
-  {
-    "videoId": "m09vFP8JOTk",
-    "title": "Designing Trustworthy AI in the Financial Landscape | Gopichand  | TEDxVishnu Institute",
     "selected": true,
-    "reasoning": "Incredible overlap of target themes. Explores AI, trust, and ethics in fintech, which mirrors the fundamental pillars of Islamic finance (ethical risk sharing, transparency).",
-    "summary": "As a developer with an interest in Islamic finance, this is a must-watch. It explores the ethics and design patterns needed to build trustworthy, transparent AI in fintech—core components that perfectly align with Islamic financial principles of fairness and transparency."
-  },
-  {
-    "videoId": "tYQkg-RI5io",
-    "title": "“Watch what Claude's going to do when you give it the AWS console”",
-    "selected": false,
-    "reasoning": "Interesting teaser of AI cloud interaction, but too brief to teach anything substantial. It's essentially entertainment fluff.",
-    "summary": ""
-  },
-  {
-    "videoId": "FBsLWL2CWW8",
-    "title": "You automated everyone else away — don't be surprised",
-    "selected": false,
-    "reasoning": "A short warning on AI's impact on career security. Good high-level context, but not detailed enough to serve as actionable guidance.",
-    "summary": ""
-  },
-  {
-    "videoId": "RS3PFeMB5BU",
-    "title": "“Zero token architecture”",
-    "selected": false,
-    "reasoning": "Too short to explain a complex engineering architecture effectively. It functions more as buzzword bait.",
-    "summary": ""
+    "reasoning": "Highly practical Chrome DevTools tip that empowers web developers to build, inspect, and fine-tune complex frontend layouts easily.",
+    "summary": "Level up your browser debugging skills with this handy guide. Discover how to inspect and manipulate interactive 3D canvas elements live, giving you a highly sought-after tool in the frontend engineering ecosystem."
   }
 ]

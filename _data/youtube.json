@@ -1,21 +1,117 @@
 {
   "videos": [
     {
+      "title": "Why MCP and ChatGPT Apps Use Double Iframes — Frédéric Barthelet, Alpic",
+      "url": "https://www.youtube.com/watch?v=c-2eEv2ou7Y",
+      "videoId": "c-2eEv2ou7Y",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This presentation demystifies the complex 'double iframe' security architecture used by platforms like ChatGPT and Claude to safely render third-party applications. By understanding these sandbox mechanisms, developers can build more secure, compliant, and functional AI-powered widgets without compromising user data.",
+      "dateAdded": "2026-06-17T05:22:22.948Z",
+      "timestamps": [
+        {
+          "startTime": 122,
+          "endTime": 211,
+          "topic": "How MCP and ChatGPT Apps work under the hood"
+        },
+        {
+          "startTime": 381,
+          "endTime": 502,
+          "topic": "The security limits of single-iframe approaches"
+        },
+        {
+          "startTime": 810,
+          "endTime": 900,
+          "topic": "Demonstration of the Skybridge CSP Inspector tool"
+        }
+      ]
+    },
+    {
       "title": "Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS",
       "url": "https://www.youtube.com/watch?v=iUWwcG-C8OU",
       "videoId": "iUWwcG-C8OU",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Discover how WorkOS built 'Studio,' an innovative internal tool that empowers non-technical teams to instantly query databases and build customized dashboards using natural language. This video is a must-watch for anyone interested in how LLMs can automate data analytics, bypass rigid dashboards, and boost team productivity. The core takeaway lies in their practical architecture and the reliability patterns—Sequencing, Layering, and Validation—needed to make AI database querying safe and useful.",
-      "dateAdded": "2026-06-16T05:42:18.538Z",
+      "summary": "This presentation demonstrates how WorkOS built an internal AI assistant, 'Studio,' to eliminate the bottleneck of manually querying databases for business insights. Viewers will learn how LLM agents can safely and dynamically build reusable dashboards for non-technical teams, boosting operational efficiency. It offers a practical blueprint for unlocking self-serve data analytics using modern AI design patterns.",
+      "dateAdded": "2026-06-17T05:22:22.948Z",
       "timestamps": [
         {
-          "time": 251,
-          "topic": "Overview of the Studio AI architecture"
+          "startTime": 103,
+          "endTime": 144,
+          "topic": "The Problem: The Tedious Workflow of Internal Data Queries"
         },
         {
-          "time": 601,
-          "topic": "Key guidance patterns for reliable AI agent behavior"
+          "startTime": 345,
+          "endTime": 455,
+          "topic": "Building Reusable Data Widgets with AI"
+        },
+        {
+          "startTime": 600,
+          "endTime": 745,
+          "topic": "Designing Reliable LLM Database Agents"
+        }
+      ]
+    },
+    {
+      "title": "Public Speaking Practice: Excellence vs Perfection",
+      "url": "https://www.youtube.com/shorts/e6EQb-rYIig",
+      "videoId": "e6EQb-rYIig",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "Struggling to balance high-quality work with the paralyzing grip of perfectionism? In this quick exercise, productivity expert Ali Abdaal shares a simple, practical strategy of adjusting your 'quality bar' to keep making progress. It is a must-watch for creators and professionals looking to overcome creative blocks and maintain consistency.",
+      "dateAdded": "2026-06-17T05:22:22.948Z",
+      "timestamps": [
+        {
+          "startTime": 14,
+          "endTime": 41,
+          "topic": "The tension between excellence and perfectionism"
+        },
+        {
+          "startTime": 51,
+          "endTime": 114,
+          "topic": "Overcoming perfectionism by adjusting your quality bar"
+        }
+      ]
+    },
+    {
+      "title": "In production, which file actually gets loaded?",
+      "url": "https://www.youtube.com/shorts/eaUd3iYkj_w",
+      "videoId": "eaUd3iYkj_w",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Test your web development skills with this quick package management challenge addressing a common headache: bugs that only pop up after deployment. Learn how conditional exports in package.json resolve differently between development and production, helping you avoid unexpected environment mismatches.",
+      "dateAdded": "2026-06-17T05:22:22.948Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 8,
+          "topic": "Introduction to the post-deployment bug challenge"
+        },
+        {
+          "startTime": 8,
+          "endTime": 33,
+          "topic": "Analyzing the exports configuration and the core question"
+        }
+      ]
+    },
+    {
+      "title": "Inspect and live-edit 3D WebGL elements",
+      "url": "https://www.youtube.com/shorts/PquqdRi8I18",
+      "videoId": "PquqdRi8I18",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This video showcases a powerful technique for rendering fully interactive HTML-based user interfaces inside a 3D WebGL canvas. It demonstrates how developers can seamlessly manipulate 3D UI elements in real-time using standard browser developer tools, offering a glimpse into the future of interactive web graphics.",
+      "dateAdded": "2026-06-17T05:22:22.948Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 14,
+          "topic": "Demonstrating interactive UI controls inside WebGL"
+        },
+        {
+          "startTime": 14,
+          "endTime": 32,
+          "topic": "Real-time UI manipulation using browser DevTools"
         }
       ]
     },
@@ -62,25 +158,6 @@
         {
           "time": 65,
           "topic": "How to structure your week to balance work and travel"
-        }
-      ]
-    },
-    {
-      "title": "In production, which file actually gets loaded?",
-      "url": "https://www.youtube.com/shorts/eaUd3iYkj_w",
-      "videoId": "eaUd3iYkj_w",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Test your coding skills with this quick developer puzzle about package exports and tricky deployment bugs. You'll learn how export conditions can cause different behaviors in production versus local environments, helping you avoid common deployment mishaps.",
-      "dateAdded": "2026-06-16T05:42:18.538Z",
-      "timestamps": [
-        {
-          "time": 8,
-          "topic": "Introducing the package.json export conditions"
-        },
-        {
-          "time": 20,
-          "topic": "The production import question and multiple-choice options"
         }
       ]
     },
@@ -267,72 +344,7 @@
           "topic": "Why how you live dictates how you will die"
         }
       ]
-    },
-    {
-      "title": "How to Quit Your Job (and Find Work You Actually Love)",
-      "url": "https://www.youtube.com/watch?v=0j3SW7R40SU",
-      "videoId": "0j3SW7R40SU",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "This video offers a grounded guide on transitioning from a traditional, high-prestige career to a self-directed path without needing a flawless blueprint. By exploring the concept of the 'pathless path,' the speakers provide practical steps to align your daily work with personal energy rather than societal expectations. It is a valuable watch for anyone feeling unfulfilled in a corporate role and seeking a realistic, step-by-step roadmap to make a change.",
-      "dateAdded": "2026-06-13T04:57:33.583Z",
-      "timestamps": [
-        {
-          "time": 47,
-          "topic": "Understanding the 'prestige game' trap in career choices"
-        },
-        {
-          "time": 327,
-          "topic": "Analyzing the shift from learning to merely earning"
-        },
-        {
-          "time": 744,
-          "topic": "How to pragmatically run your financial numbers before taking a leap"
-        }
-      ]
-    },
-    {
-      "title": "Secret to Consistent Worship | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/073rFWzKCy8",
-      "videoId": "073rFWzKCy8",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This video highlights the balance between discipline and motivation in faith, using a prophetic supplication to show how to maintain spiritual consistency. It provides actionable insight into staying committed to worship even when personal motivation is low.",
-      "dateAdded": "2026-06-12T06:53:41.265Z",
-      "timestamps": [
-        {
-          "time": 0,
-          "topic": "Discipline vs. motivation in spiritual consistency"
-        },
-        {
-          "time": 22,
-          "topic": "The Prophet's supplication for firmness and guidance"
-        },
-        {
-          "time": 55,
-          "topic": "Balancing steadfastness with the pursuit of higher goals"
-        }
-      ]
-    },
-    {
-      "title": "Malaysia ada logo halal paling dicari di dunia. MAMEE ada impian yang sama",
-      "url": "https://www.youtube.com/shorts/mnQuCSzVpBI",
-      "videoId": "mnQuCSzVpBI",
-      "channel": "Keluar Sekejap",
-      "category": "Finance",
-      "summary": "This video explores how Malaysian businesses can bypass rigid global corporate structures to make agile, community-focused decisions. It highlights an ambitious vision to leverage Malaysia's respected JAKIM halal certification to build a world-leading food brand.",
-      "dateAdded": "2026-06-12T06:53:41.265Z",
-      "timestamps": [
-        {
-          "time": 21,
-          "topic": "The vision of a global halal food leader from Malaysia"
-        },
-        {
-          "time": 35,
-          "topic": "Leveraging the JAKIM Halal certification as a competitive edge"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-16T05:44:23.085Z"
+  "lastUpdated": "2026-06-17T05:24:01.650Z"
 }
