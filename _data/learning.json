@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In PCIe power management, which specific substate achieves deeper power savings than L1.0 by powering down the electrical circuits of the main link?",
+      "question": "What is the primary motivation for implementing PCIe Power Management States in systems where power consumption is a significant concern?",
       "options": [
-        "L1.0",
-        "L0s",
-        "L1.1",
-        "L1.2"
+        "To increase maximum data transfer speeds, reduce manufacturing costs, and simplify driver installation.",
+        "To ensure efficient energy use, extend device longevity, and enhance system performance.",
+        "To automate device firmware updates, expand physical bandwidth, and minimize system memory usage.",
+        "To maximize thermal output, enable automatic overclocking, and eliminate network latency."
       ],
-      "correctIndex": 2,
-      "learning": "In the PCIe L1.1 substate, the electrical circuits of the main link are powered down, which provides greater power savings than L1.0 but increases the device's wake-up time.",
+      "correctIndex": 1,
+      "learning": "The primary motivation behind implementing PCIe Power Management States is to enable the efficient use of energy, extend the physical longevity of the device, and enhance overall system performance in environments where power consumption is a concern.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "According to the historical research of Hermann Ebbinghaus, approximately what percentage of newly learned information do humans forget within 24 hours unless they actively force themselves to recall it?",
+      "question": "To prevent your brain from dropping ideas, what final step is recommended alongside writing them down and building a system to remind yourself?",
       "options": [
-        "50%",
-        "30%",
-        "95%",
-        "80%"
+        "Sharing them publicly",
+        "Filing them away in a static archive",
+        "Re-reading them daily",
+        "Keeping them strictly private"
       ],
-      "correctIndex": 3,
-      "learning": "In the 1880s, Hermann Ebbinghaus demonstrated that humans forget approximately 80% of newly acquired knowledge within 24 hours unless they actively engage in recall.",
+      "correctIndex": 0,
+      "learning": "To combat forgetfulness and avoid hoarding beneficial knowledge, you must stop relying on your memory, write your thoughts down, build an active recall system to remind yourself, and share your lessons publicly.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "Which of the following professional roles is NOT recognized as one of the three official, key roles within the Scrum framework?",
+      "question": "In the context of destiny and divine plan, which concept refers specifically to the actual occurrence and unfolding of events in a person's life, which can be influenced or altered by their actions and supplications?",
       "options": [
-        "Product Owner",
-        "Scrum Master",
-        "Project Manager",
-        "Developer"
+        "Al-Alim",
+        "Ubadah",
+        "Qada’",
+        "Qadr"
       ],
       "correctIndex": 2,
-      "learning": "A common misconception is that traditional project management roles exist in Scrum; however, the framework officially recognizes only three distinct roles: the Product Owner, the Scrum Master, and the Developers.",
+      "learning": "While Qadr represents Allah's complete and eternally preordained plan, Qada’ is the actual unfolding of life events, which humans can actively influence and alter through their actions and sincere supplications (Dua).",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What is the standard template format used for a User Story in a Product Backlog?",
+      "options": [
+        "As a [role], I need [feature], so that [reason]",
+        "As a [role], I want [feature] by [date]",
+        "[Feature] should be implemented by [date]",
+        "I want [feature] because [reason]"
+      ],
+      "correctIndex": 0,
+      "learning": "In Scrum, a User Story within the Product Backlog is written in a specific structured format: 'As a [role], I need [feature], so that [reason]'.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "When comparing vocabulary complexity, what is the approximate ratio of distinct Arabic words to English words found in the Oxford English Dictionary?",
+      "question": "What is the approximate ratio of distinct Arabic words to English words found in the Oxford English Dictionary?",
       "options": [
-        "15 to 1",
-        "45 to 1",
-        "110 to 1",
-        "71 to 1"
+        "300:1",
+        "150:1",
+        "12:1",
+        "71:1"
       ],
       "correctIndex": 3,
-      "learning": "In terms of vocabulary complexity, there are roughly 12 million distinct Arabic words compared to 170,000 English words in the Oxford English Dictionary, creating an approximate 71:1 ratio.",
+      "learning": "When analyzing textual data like the Quran, the original Arabic is preferred over English translations due to its vast complexity, as demonstrated by an approximate 71:1 ratio of distinct Arabic words (12 million) to English words (170,000).",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
-    },
-    {
-      "question": "Which theological concept refers to the actual occurrence and unfolding of events in a person's life, which they have the free will and responsibility to alter through their own actions and supplications?",
-      "options": [
-        "Qadr",
-        "Dua",
-        "Al-Alim",
-        "Qada’"
-      ],
-      "correctIndex": 3,
-      "learning": "While everything is ultimately written in Allah's preordained plan (Qadr), individuals have the free will and responsibility to actively change their own condition and alter the actual occurrence of events in their lives (Qada’).",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-06-16T05:42:20.047Z"
+  "fetchedAt": "2026-06-17T05:22:44.379Z"
 }
