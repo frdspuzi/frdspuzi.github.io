@@ -265,6 +265,7 @@ async function enrichWithVideoSummary(video) {
 CRITICAL GUARDRAILS:
 1. Be highly skeptical. If the video contains obvious misinformation, scams, or questionable claims, flag it explicitly in your summary.
 2. If the video touches on theology or philosophy, ensure your summary and highlighted takeaways do not promote anything that goes against core Islamic values.
+3. ABSOLUTELY DO NOT hallucinate timestamps that exceed the actual length of the video. If it is a Short, all timestamps must be under 60 seconds.
 
 You MUST return ONLY a valid JSON object in the exact format below, with nothing else:
 {
