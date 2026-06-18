@@ -5,9 +5,9 @@
     <p id="floating-toc-label">On this page</p>
     <ul>
       <li><button class="toc-link" data-target="about">About</button></li>
-      <li><button class="toc-link" data-target="my-writing">Insights & Writing</button></li>
       <li><button class="toc-link" data-target="gratitude">Gratitude</button></li>
       <li><button class="toc-link" data-target="reclaiming-algo">Reclaiming the Algo</button></li>
+      <li><button class="toc-link" data-target="my-writing">Insights & Writing</button></li>
       <li><button class="toc-link" data-target="photography">Photography</button></li>
     </ul>
   </div>
@@ -23,8 +23,41 @@
     align-items: flex-start;
   }
 
+  /* Mobile Styles: Bottom Right FAB */
   @media (max-width: 767px) {
-    #floating-toc { display: none; }
+    #floating-toc {
+      top: auto;
+      left: auto;
+      bottom: 24px;
+      right: 24px;
+      flex-direction: column-reverse;
+      align-items: flex-end;
+    }
+    #floating-toc-tab {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+    #floating-toc-panel {
+      border: 1px solid #e1e4e8;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      width: 160px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
+    }
+    #floating-toc.mobile-open #floating-toc-tab {
+      background: #0256b9;
+    }
+    #floating-toc.mobile-open #floating-toc-panel {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+      padding: 14px 16px;
+    }
   }
 
   /* The collapsed tab — always visible */
@@ -129,9 +162,9 @@
   (function () {
     var sections = [
       { id: 'about' },
-      { id: 'my-writing' },
       { id: 'gratitude' },
       { id: 'reclaiming-algo' },
+      { id: 'my-writing' },
       { id: 'photography' }
     ];
 
@@ -174,7 +207,25 @@
       document.querySelectorAll('.toc-link').forEach(function (btn) {
         btn.addEventListener('click', function () {
           scrollToSection(btn.getAttribute('data-target'));
+          // Close mobile FAB after navigation
+          document.getElementById('floating-toc').classList.remove('mobile-open');
         });
+      });
+
+      // Mobile FAB: toggle panel on tab click
+      var tocTab = document.getElementById('floating-toc-tab');
+      var toc = document.getElementById('floating-toc');
+      tocTab.addEventListener('click', function (e) {
+        if (window.innerWidth <= 767) {
+          toc.classList.toggle('mobile-open');
+          e.stopPropagation();
+        }
+      });
+      // Close when tapping outside
+      document.addEventListener('click', function () {
+        if (window.innerWidth <= 767) {
+          toc.classList.remove('mobile-open');
+        }
       });
 
       updateActiveLink();
