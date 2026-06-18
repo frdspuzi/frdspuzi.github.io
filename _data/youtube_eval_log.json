@@ -1,65 +1,128 @@
 [
   {
+    "videoId": "0pxaf6EhpRM",
+    "title": "Why Malaysian Tech Startup Companies Failed (and What’s Changing Now)?",
+    "selected": true,
+    "reasoning": "Highly valuable. Provides crucial insights into the local Malaysian tech industry, startup ecosystem, and economic landscape, directly relevant for a Malaysian junior engineer planning their career.",
+    "summary": "Dive into the real challenges and promising shifts within Malaysia's tech startup scene. As a junior engineer, understanding why local companies succeed or fail is invaluable for navigating your career path and even exploring future entrepreneurial ventures right here at home."
+  },
+  {
+    "videoId": "1inz_Qafpuc",
+    "title": "How I got my Startup in the Silicon Valley of Malaysia",
+    "selected": true,
+    "reasoning": "Highly valuable. Offers a personal, inspiring journey of building a startup within Malaysia's tech hub, providing practical context and motivation for aspiring engineers and entrepreneurs.",
+    "summary": "Ever wondered what it takes to launch a successful tech startup in Malaysia's burgeoning 'Silicon Valley'? This video gives you an insider's look, offering a compelling story and practical takeaways for a junior engineer eyeing innovation and entrepreneurship in their own country."
+  },
+  {
+    "videoId": "MC17iTk_ETI",
+    "title": "Startup Pitch - Tapway Malaysia",
+    "selected": false,
+    "reasoning": "Valuable for understanding pitches, but less actionable or broad than other Malaysian-specific content or general career advice for a junior engineer.",
+    "summary": ""
+  },
+  {
+    "videoId": "btxGmN8RvNU",
+    "title": "Your Agent's Biggest Lie: &quot;I Searched the Web&quot; — Rafael Levi, Bright Data",
+    "selected": false,
+    "reasoning": "Too niche and technically specific to AI agents for a general junior fullstack software engineer seeking broad career and technical advice.",
+    "summary": ""
+  },
+  {
     "videoId": "gHs5ZiY80PM",
     "title": "You Might Not Need 50 Diffusion Steps — Ziv Ilan, Nvidia",
     "selected": false,
-    "reasoning": "While technically interesting, optimizing diffusion steps for image generation models is too specialized and out-of-scope for a junior fullstack engineer's typical career roadmap.",
+    "reasoning": "Too niche and technically specific to advanced AI (diffusion models) for a general junior fullstack software engineer.",
     "summary": ""
   },
   {
     "videoId": "c-2eEv2ou7Y",
     "title": "Why MCP and ChatGPT Apps Use Double Iframes — Frédéric Barthelet, Alpic",
-    "selected": true,
-    "reasoning": "Extremely relevant for a fullstack engineer working in the current AI-integrated landscape, offering insights into web security architectures.",
-    "summary": "If you want to master modern fullstack security, understanding sandbox environments is a must. This video breaks down how industry leaders use double iframes to protect data in LLM apps, giving you a competitive edge in your code architectures."
+    "selected": false,
+    "reasoning": "While technical, it's a very specific architectural detail rather than a broadly applicable skill or career insight for a junior fullstack engineer.",
+    "summary": ""
   },
   {
-    "videoId": "iUWwcG-C8OU",
-    "title": "Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS",
+    "videoId": "g-MIUNhb9cY",
+    "title": "Advice to a 22-year-old",
     "selected": true,
-    "reasoning": "Crucial for an early-career engineer looking to build business acumen, which is the fastest way to stand out and fast-track promotions.",
-    "summary": "Junior developers often get stuck writing code without understanding the 'why' behind the business. This talk teaches you how to connect technical tasks to company goals, transforming you from a task-taker into a high-value strategic engineer."
+    "reasoning": "Highly valuable. Directly addresses the core need for career and life advice for someone early in their journey, irrespective of their specific tech role.",
+    "summary": "Imagine getting priceless wisdom directly from someone who's walked the path you're on. This video distills essential advice for navigating your early twenties, covering crucial career and life lessons that every junior professional needs to hear."
   },
   {
     "videoId": "YBSws7AyG7w",
     "title": "Public Speaking Practice: The Birthday Wish",
     "selected": false,
-    "reasoning": "A generic public speaking practice prompt that does not offer concrete career-building advice or technical value for a junior engineer.",
+    "reasoning": "Valuable for soft skills, but other videos offer more foundational technical or broader career strategy advice. Can't pick all good ones.",
     "summary": ""
   },
   {
     "videoId": "e6EQb-rYIig",
     "title": "Public Speaking Practice: Excellence vs Perfection",
-    "selected": true,
-    "reasoning": "Highly applicable mindset advice for a junior developer and early-career professional struggling with imposter syndrome or delivery paralysis.",
-    "summary": "Perfectionism is the ultimate progress-killer when you are starting your software engineering career. Learn how shifting your focus to 'practical excellence' will help you ship clean code faster and build momentum without burning out."
+    "selected": false,
+    "reasoning": "Similar to the previous public speaking video, valuable for soft skills but not as high priority as other selections given the strict limit of 5.",
+    "summary": ""
   },
   {
-    "videoId": "Vtz0HwGgCkI",
-    "title": "Public Speaking Practice: Morning Routines",
+    "videoId": "gNq28OTqHZ0",
+    "title": "POV: A new feature enters the chat. 🕺✨",
     "selected": false,
-    "reasoning": "Standard productivity content that lacks the specific career growth or engineering value needed for this targeted persona.",
+    "reasoning": "Likely a short, promotional, or humorous clip. Lacks deep technical or career substance.",
     "summary": ""
   },
   {
     "videoId": "o2rUT2GloV0",
     "title": "Run Gemma on the edge with the Coral Board",
     "selected": false,
-    "reasoning": "Niche hardware-focused tutorial that is less practical for a general junior fullstack software developer.",
+    "reasoning": "Too niche, focusing on embedded AI/ML hardware (Gemma, Coral Board) rather than core fullstack engineering or career advice.",
     "summary": ""
   },
   {
     "videoId": "eaUd3iYkj_w",
     "title": "In production, which file actually gets loaded?",
-    "selected": true,
-    "reasoning": "Directly tackles a fundamental, everyday fullstack concept that junior developers frequently struggle with: build tool outputs.",
-    "summary": "Have you ever wondered exactly which files land in production after running your build scripts? This quick tutorial demystifies source mapping and asset loading so you can debug production bugs like a seasoned pro."
+    "selected": false,
+    "reasoning": "Good technical insight, but CI/CD offers a more impactful and broader process-level understanding for a junior fullstack engineer.",
+    "summary": ""
   },
   {
-    "videoId": "PquqdRi8I18",
-    "title": "Inspect and live-edit 3D WebGL elements",
+    "videoId": "Zx1xYXbFK90",
+    "title": "How to make a good first impression #shorts #tedx",
+    "selected": false,
+    "reasoning": "Valuable soft skill, but the 'Advice to a 22-year-old' covers broader career readiness, and there are more critical tech/industry videos to prioritize.",
+    "summary": ""
+  },
+  {
+    "videoId": "mXuv7yoNxo8",
+    "title": "Why our climate needs a soft revolution | Valerie Huber | TEDxDonauinsel",
+    "selected": false,
+    "reasoning": "A general interest topic. While important, it's not directly relevant to the specific career, local, or financial needs of the target demographic.",
+    "summary": ""
+  },
+  {
+    "videoId": "qX9wcobNkK0",
+    "title": "How to train your coral: lessons from an AI-driven aquaculture farm | Gator Halpern | TEDxBoston",
+    "selected": false,
+    "reasoning": "Too niche and general (aquaculture, AI application) to be a top pick for a junior fullstack software engineer or career advice seeker.",
+    "summary": ""
+  },
+  {
+    "videoId": "2x0eq5oDOJY",
+    "title": "CI/CD with Robert Erez",
     "selected": true,
-    "reasoning": "Highly practical Chrome DevTools tip that empowers web developers to build, inspect, and fine-tune complex frontend layouts easily.",
-    "summary": "Level up your browser debugging skills with this handy guide. Discover how to inspect and manipulate interactive 3D canvas elements live, giving you a highly sought-after tool in the frontend engineering ecosystem."
+    "reasoning": "Highly valuable. CI/CD is a fundamental, essential skill and concept for any fullstack software engineer, crucial for understanding modern development workflows and deployment.",
+    "summary": "Mastering CI/CD is non-negotiable for a modern fullstack engineer. This deep dive into Continuous Integration and Continuous Delivery will demystify essential deployment pipelines, helping you build faster, more reliably, and become an indispensable part of any dev team."
+  },
+  {
+    "videoId": "tYQkg-RI5io",
+    "title": "“Watch what Claude's going to do when you give it the AWS console”",
+    "selected": false,
+    "reasoning": "Likely a short demonstration or 'wow factor' clip. Lacks the in-depth technical or strategic value required for a top pick.",
+    "summary": ""
+  },
+  {
+    "videoId": "FBsLWL2CWW8",
+    "title": "You automated everyone else away — don't be surprised",
+    "selected": true,
+    "reasoning": "Highly valuable. Provides critical insight into the impact of automation on the tech industry and future job market, essential for long-term career planning as a software engineer.",
+    "summary": "In an increasingly automated world, how do you future-proof your career as a software engineer? This thought-provoking video challenges you to think strategically about your role and skills, ensuring you're not left behind as technology advances."
   }
 ]
