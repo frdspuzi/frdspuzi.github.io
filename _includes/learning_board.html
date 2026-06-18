@@ -60,7 +60,7 @@
               <a id="learning-link" href="#" class="btn flex-1 text-center" target="_blank" rel="noopener noreferrer">
                 Read Article
               </a>
-              <button id="btn-next-question" type="button" class="btn btn-primary flex-1 text-center">
+              <button id="btn-next-question" type="button" class="btn btn-blue flex-1 text-center">
                 Next Question &rarr;
               </button>
             </div>
@@ -264,6 +264,15 @@
   }
   .shake-anim {
     animation: shake 0.3s ease-in-out;
+  }
+  
+  .btn-blue {
+    background-color: {% if site.style == 'dark' %}#1f6feb{% else %}#0969da{% endif %} !important;
+    color: #ffffff !important;
+    border-color: rgba(27, 31, 36, 0.15) !important;
+  }
+  .btn-blue:hover {
+    background-color: {% if site.style == 'dark' %}#388bfd{% else %}#035fc7{% endif %} !important;
   }
 </style>
 {% endif %}
