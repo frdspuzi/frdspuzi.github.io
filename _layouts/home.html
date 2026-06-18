@@ -8,16 +8,16 @@
     {{ content }}
   </div>
 
-  <div class="my-6">
-    {% include thoughts.html %}
-  </div>
-
-  <div class="my-6">
+  <div id="gratitude" class="mb-5 text-left">
     {% include gratitude.html %}
   </div>
 
   <div class="my-6">
     {% include youtube_feed.html %}
+  </div>
+
+  <div class="my-6">
+    {% include thoughts.html %}
   </div>
 
   <div class="my-6">
@@ -55,15 +55,15 @@
       </div>
       {% endunless %}
 
-      {% include thoughts.html %}
-
-      <div class="mt-6">
+      <div id="gratitude" class="mb-5 text-left">
         {% include gratitude.html %}
       </div>
 
       <div class="mt-6">
         {% include youtube_feed.html %}
       </div>
+
+      {% include thoughts.html %}
 
       {% comment %}
       <div class="mt-6">
