@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What is a primary collective benefit of utilizing power management states for hardware components?",
+      "question": "What percentage of learned information did Hermann Ebbinghaus prove is forgotten within 24 hours unless there is an active effort to recall it?",
       "options": [
-        "Maximizing energy efficiency, extending component lifespan, and improving system performance.",
-        "Enabling faster data transfer rates and reducing processing time.",
-        "Simplifying driver development and ensuring universal hardware compatibility.",
-        "Providing advanced security protocols and data encryption capabilities."
-      ],
-      "correctIndex": 0,
-      "learning": "PCIe Power Management States are essential for efficient energy utilization, prolonging device lifespan, and boosting overall system performance. They allow PCIe devices to dynamically manage power based on activity, thus saving energy while maintaining necessary responsiveness.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "What is the primary benefit of breaking a development process into smaller, iterative cycles within an agile approach?",
-      "options": [
-        "To increase the overall length of the project",
-        "To define all product features upfront before any development begins",
-        "To reduce the total number of team members required",
-        "To allow for more flexibility and quicker adjustments"
-      ],
-      "correctIndex": 3,
-      "learning": "Scrum is an agile approach that breaks down the development process into smaller, iterative cycles called Sprints. This methodology primarily aims to provide increased flexibility and enable quicker adjustments throughout a project.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "What approximate percentage of the Quran's total word count is represented by its 20 most frequently occurring Arabic words?",
-      "options": [
-        "Approximately 20.83%",
-        "Around 80%",
-        "Less than 5%",
-        "Over 50%"
-      ],
-      "correctIndex": 0,
-      "learning": "An analysis of the Quran's vocabulary revealed that its 20 most frequently occurring Arabic words comprise approximately 20.83% of the total text, despite an initial consideration of the Paretto Principle suggesting they might account for 80%.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What is the primary psychological reason why recording information or offloading it to a device frequently results in poor long-term retention?",
-      "options": [
-        "Spaced repetition systems provide too much data, causing the brain to intentionally filter out relevant insights.",
-        "The brain lacks the necessary neuroplasticity to store information after the age of twenty-five.",
-        "The brain interprets the act of externalizing information as permission to discard the original memory.",
-        "External storage systems override the natural neural pathways needed for sensory information processing."
+        "50%",
+        "95%",
+        "80%",
+        "20%"
       ],
       "correctIndex": 2,
-      "learning": "The 'Performance Paradox' of cognitive offloading suggests that once we write information down or save it to a device, our brains essentially hit 'delete' because they no longer prioritize retaining that data.",
+      "learning": "Hermann Ebbinghaus demonstrated that we forget approximately 80% of what we learn within 24 hours unless we actively force ourselves to recall it.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "What is the relationship between personal actions, Qada’, and Qadr?",
+      "question": "In Islamic teachings, who shares the collective responsibility of preserving the faith and maintaining community unity under the role of a caretaker (khalifah)?",
       "options": [
-        "Qadr refers to the daily life events we experience, while Qada’ is the unchangeable book written by Allah.",
-        "Making Dua is the only way to bypass the preordained knowledge of Qadr entirely.",
-        "Qada’ represents the fixed fate that cannot be changed, while Qadr is the path one chooses through free will.",
-        "Personal actions and Dua can alter Qada’, yet both the action and the resulting change are already encompassed within Allah’s eternal plan of Qadr."
+        "Only appointed leaders",
+        "Every individual",
+        "Only prophets",
+        "Only future generations"
+      ],
+      "correctIndex": 1,
+      "learning": "While it is a common misconception that only appointed leaders are responsible for safeguarding the faith, Islamic teachings dictate that every individual shares the collective duty of a caretaker (khalifah) to preserve faith and maintain unity.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What is a foundational principle regarding the alteration of a people's condition?",
+      "options": [
+        "It changes based on external environmental factors alone.",
+        "It changes solely through divine will, irrespective of human action.",
+        "It changes randomly, without any discernible cause.",
+        "It changes only when the people themselves initiate change."
       ],
       "correctIndex": 3,
-      "learning": "While human actions and sincere Dua can influence the unfolding events of one's life (Qada’), both the choice to act and the outcome remain within the scope of Allah’s eternal knowledge and preordained plan (Qadr).",
+      "learning": "A core principle states that the divine does not change the condition of a people until they first change what is in themselves, highlighting human agency and responsibility for self-improvement and influencing life's events.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "Which Scrum artifact provides a visual representation of progress during a Sprint by displaying the amount of work that remains to be completed?",
+      "options": [
+        "Sprint Backlog",
+        "Burndown Chart",
+        "User Story",
+        "Product Backlog"
+      ],
+      "correctIndex": 1,
+      "learning": "A Burndown Chart is a Scrum artifact used to visualize the progress of a Sprint by showing the remaining work, helping the team track if they are on schedule.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "Which PCIe power management state is characterized as the deepest state of inactivity, offering maximum power savings but requiring the longest time to restart?",
+      "options": [
+        "L2",
+        "L1.1",
+        "L1.2",
+        "L0s"
+      ],
+      "correctIndex": 0,
+      "learning": "PCIe power management uses a spectrum of states ranging from L0 (fully active) to L2 (fully shut down), where deeper power-saving states offer greater energy efficiency but require progressively longer wake-up times.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     }
   ],
-  "fetchedAt": "2026-06-18T05:12:35.188Z"
+  "fetchedAt": "2026-06-19T05:33:40.123Z"
 }
