@@ -1,30 +1,118 @@
 {
   "videos": [
     {
+      "title": "The Production AI Playbook: Deploying Agents at Enterprise Scale — Sandipan Bhaumik, Databricks",
+      "url": "https://www.youtube.com/watch?v=ObTPqBGsEbA",
+      "videoId": "ObTPqBGsEbA",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This video outlines a practical framework for deploying AI agents in enterprise environments, helping teams move successfully from simple demos to robust production systems. It addresses the common pitfalls of AI deployments and details five key pillars—evaluation, observability, data foundation, orchestration, and governance—critical for building reliable enterprise AI.",
+      "dateAdded": "2026-06-20T04:49:06.855Z",
+      "timestamps": [
+        {
+          "startTime": 113,
+          "endTime": 194,
+          "topic": "The common pitfalls of deploying AI"
+        },
+        {
+          "startTime": 282,
+          "endTime": 452,
+          "topic": "The five pillars of production AI"
+        },
+        {
+          "startTime": 1203,
+          "endTime": 1344,
+          "topic": "Multi-agent orchestration patterns"
+        }
+      ]
+    },
+    {
       "title": "The 3 Skills I'd Learn In the Age of AI",
       "url": "https://www.youtube.com/watch?v=7IeFVWJXp7E",
       "videoId": "7IeFVWJXp7E",
       "channel": "Ali Abdaal",
       "category": "Productivity",
-      "summary": "As artificial intelligence reshapes the job market, Ali Abdaal offers a practical roadmap to help you secure your career. By mastering AI tools, positioning yourself close to revenue generation, and building a strong personal brand, you can transition from easily automated tasks to highly valued, indispensable roles.",
-      "dateAdded": "2026-06-19T05:32:53.925Z",
+      "summary": "This video outlines three career-saving pillars—AI literacy, revenue connection, and personal branding—to survive the AI transition. The core takeaway is that shifting toward revenue-generating and highly visible roles is the ultimate way to stay irreplaceable.",
+      "dateAdded": "2026-06-20T04:49:06.855Z",
       "timestamps": [
         {
           "startTime": 67,
           "endTime": 156,
-          "topic": "Staying close to revenue generation"
+          "topic": "Connecting your work to revenue generation"
         },
         {
           "startTime": 325,
-          "endTime": 407,
-          "topic": "The power of building a personal brand"
+          "endTime": 402,
+          "topic": "Developing a personal brand to build authority"
         },
         {
-          "startTime": 704,
-          "endTime": 810,
-          "topic": "Why sales is the ultimate survival skill"
+          "startTime": 685,
+          "endTime": 765,
+          "topic": "The crucial role of sales skills in any career"
         }
       ]
+    },
+    {
+      "title": "Being T20 in Malaysia Doesn’t Actually Mean You’re Rich | In The Studio",
+      "url": "https://www.youtube.com/watch?v=Ane7U3mRS8w",
+      "videoId": "Ane7U3mRS8w",
+      "channel": "BFM 89.9",
+      "category": "Finance",
+      "summary": "This video breaks down the complexities of Malaysia's 'T20' income category, challenging the assumption that all high earners are wealthy. By exploring factors like family size, location, and financial obligations, the guests reveal why blanket policies using T20 as a benchmark can be deeply flawed.",
+      "dateAdded": "2026-06-20T04:49:06.855Z",
+      "timestamps": [
+        {
+          "startTime": 61,
+          "endTime": 110,
+          "topic": "Statistical definition of T20"
+        },
+        {
+          "startTime": 247,
+          "endTime": 310,
+          "topic": "Income versus economic vulnerability"
+        },
+        {
+          "startTime": 310,
+          "endTime": 374,
+          "topic": "The complexities of tax structures for high earners"
+        }
+      ]
+    },
+    {
+      "title": "How cryptocurrency creates risks for everyone | Tonantzin Carmona | TEDxMidAtlantic",
+      "url": "https://www.youtube.com/watch?v=IEe-Nt7peIw",
+      "videoId": "IEe-Nt7peIw",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This thought-provoking talk draws powerful parallels between the 2008 financial crisis and the rise of cryptocurrency, warning that history is repeating itself. The core takeaway is that crypto's integration into mainstream finance poses systemic risks to everyday citizens, even those who choose not to invest in it.",
+      "dateAdded": "2026-06-20T04:49:06.855Z",
+      "timestamps": [
+        {
+          "startTime": 49,
+          "endTime": 148,
+          "topic": "Systemic flaws of the 2008 crisis and how blame shifted to victims"
+        },
+        {
+          "startTime": 148,
+          "endTime": 244,
+          "topic": "How crypto mimics subprime dynamics through predatory inclusion"
+        },
+        {
+          "startTime": 314,
+          "endTime": 349,
+          "topic": "The hidden integration of crypto into public pension funds"
+        }
+      ]
+    },
+    {
+      "title": "Only Allah Knows What You Went Through | LATEST Khutbah by Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=hEygwMaMDyU",
+      "videoId": "hEygwMaMDyU",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Navigating the high-pressure tech industry early in your career can easily lead to silent burnout, imposter syndrome, and stress. In this moving khutbah, Dr. Omar Suleiman provides profound spiritual solace to help you rebuild your emotional resilience through faith. It is the perfect anchor to keep your mental health and spiritual purpose aligned amid demanding corporate life.",
+      "dateAdded": "2026-06-20T04:49:06.855Z",
+      "timestamps": []
     },
     {
       "title": "Advice to a 22-year-old",
@@ -44,58 +132,6 @@
           "startTime": 86,
           "endTime": 112,
           "topic": "The reality of 'following your passion'"
-        }
-      ]
-    },
-    {
-      "title": "Being T20 in Malaysia Doesn’t Actually Mean You’re Rich | In The Studio",
-      "url": "https://www.youtube.com/watch?v=Ane7U3mRS8w",
-      "videoId": "Ane7U3mRS8w",
-      "channel": "BFM 89.9",
-      "category": "Finance",
-      "summary": "This video demystifies Malaysia's 'T20' income bracket, showing how a single statistical label masks diverse financial realities and vulnerabilities. Experts discuss why blanket policies fail to account for household dependencies, location, and the distinction between income and actual wealth.",
-      "dateAdded": "2026-06-19T05:32:53.925Z",
-      "timestamps": [
-        {
-          "startTime": 61,
-          "endTime": 138,
-          "topic": "Demystifying the T20 statistical definition"
-        },
-        {
-          "startTime": 247,
-          "endTime": 310,
-          "topic": "Financial vulnerabilities within the T20 bracket"
-        },
-        {
-          "startTime": 506,
-          "endTime": 530,
-          "topic": "How cheap fuel distorts public transport and urban planning"
-        }
-      ]
-    },
-    {
-      "title": "How cryptocurrency creates risks for everyone | Tonantzin Carmona | TEDxMidAtlantic",
-      "url": "https://www.youtube.com/watch?v=IEe-Nt7peIw",
-      "videoId": "IEe-Nt7peIw",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "This insightful presentation draws alarming parallels between the 2008 subprime mortgage crisis and the rise of cryptocurrency. The speaker argues that digital currencies represent a system of 'predatory inclusion' that poses systemic risks to everyone, even those who have never bought digital assets.",
-      "dateAdded": "2026-06-19T05:32:53.925Z",
-      "timestamps": [
-        {
-          "startTime": 108,
-          "endTime": 172,
-          "topic": "Predatory Inclusion in the Crypto Market"
-        },
-        {
-          "startTime": 315,
-          "endTime": 415,
-          "topic": "How Crypto Quietly Affects Non-Investors"
-        },
-        {
-          "startTime": 598,
-          "endTime": 737,
-          "topic": "The Systemic Threat of Stablecoins"
         }
       ]
     },
@@ -307,51 +343,7 @@
           "topic": "Analyzing the exports configuration and the core question"
         }
       ]
-    },
-    {
-      "title": "Inspect and live-edit 3D WebGL elements",
-      "url": "https://www.youtube.com/shorts/PquqdRi8I18",
-      "videoId": "PquqdRi8I18",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "This video showcases a powerful technique for rendering fully interactive HTML-based user interfaces inside a 3D WebGL canvas. It demonstrates how developers can seamlessly manipulate 3D UI elements in real-time using standard browser developer tools, offering a glimpse into the future of interactive web graphics.",
-      "dateAdded": "2026-06-17T05:22:22.948Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 14,
-          "topic": "Demonstrating interactive UI controls inside WebGL"
-        },
-        {
-          "startTime": 14,
-          "endTime": 32,
-          "topic": "Real-time UI manipulation using browser DevTools"
-        }
-      ]
-    },
-    {
-      "title": "The agent-ready web: Simplify user actions with WebMCP — Tara Agyemang, Google",
-      "url": "https://www.youtube.com/watch?v=ghJmWQCIHRM",
-      "videoId": "ghJmWQCIHRM",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This video introduces WebMCP, a proposed standard designed to make websites easily navigable by AI agents rather than relying on inefficient screen-scraping. Viewers will learn how to turn standard web pages into high-performance APIs, creating a seamless interface for both human users and AI assistants.",
-      "dateAdded": "2026-06-16T05:42:18.538Z",
-      "timestamps": [
-        {
-          "time": 234,
-          "topic": "Introduction and explanation of WebMCP"
-        },
-        {
-          "time": 287,
-          "topic": "Demonstration of WebMCP in a maze escape game"
-        },
-        {
-          "time": 836,
-          "topic": "Overview of declarative and imperative APIs"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-19T05:37:08.282Z"
+  "lastUpdated": "2026-06-20T04:54:38.551Z"
 }
