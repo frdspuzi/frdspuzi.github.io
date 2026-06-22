@@ -6,23 +6,112 @@
       "videoId": "ObTPqBGsEbA",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "This presentation is a must-watch for anyone struggling to move AI prototypes into production, offering a battle-tested roadmap to avoid common, costly failures. The core takeaway is that successful deployment relies not on choosing the 'best' model first, but on establishing robust frameworks for evaluation, observability, and data foundation.",
-      "dateAdded": "2026-06-21T05:24:09.428Z",
+      "summary": "Deploying AI in production often fails when teams focus on selecting models instead of establishing reliable evaluation and monitoring. This talk introduces a practical five-pillar framework to help you build observable, measurable, and highly scalable enterprise AI systems.",
+      "dateAdded": "2026-06-22T05:38:29.355Z",
       "timestamps": [
         {
           "startTime": 113,
           "endTime": 193,
-          "topic": "The flawed cycle of model-first AI development"
+          "topic": "The common trap of AI deployment"
         },
         {
-          "startTime": 193,
-          "endTime": 280,
-          "topic": "The three major gaps in enterprise AI deployment"
+          "startTime": 283,
+          "endTime": 310,
+          "topic": "The five pillars of production AI"
         },
         {
-          "startTime": 280,
-          "endTime": 411,
-          "topic": "Establishing the five pillars of production-ready AI"
+          "startTime": 366,
+          "endTime": 465,
+          "topic": "Reorganizing the build order: Case study"
+        }
+      ]
+    },
+    {
+      "title": "Gemma 4 and the AI Edge Gallery: On-Device AI Gets an Upgrade",
+      "url": "https://www.youtube.com/watch?v=O6499i4TFYA",
+      "videoId": "O6499i4TFYA",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This video showcases how Google's Gemma models run entirely on-device and offline via the AI Edge Gallery app. Discover how features like Agent Skills and MCP tool integration make local AI incredibly powerful and accessible without an internet connection.",
+      "dateAdded": "2026-06-22T05:38:29.355Z",
+      "timestamps": [
+        {
+          "startTime": 79,
+          "endTime": 175,
+          "topic": "Overview of AI Edge Gallery and On-Device Inference"
+        },
+        {
+          "startTime": 225,
+          "endTime": 365,
+          "topic": "Agent Skills and MCP Tool Integration Demo"
+        }
+      ]
+    },
+    {
+      "title": "Being T20 in Malaysia Doesn’t Actually Mean You’re Rich | In The Studio",
+      "url": "https://www.youtube.com/watch?v=Ane7U3mRS8w",
+      "videoId": "Ane7U3mRS8w",
+      "channel": "BFM 89.9",
+      "category": "Finance",
+      "summary": "This video dissects the misconception that Malaysia's 'T20' demographic represents absolute wealth, explaining how living costs and financial vulnerability affect this group. The core takeaway is that T20 is a relative statistical division rather than a measure of financial security, making it a flawed tool for targeted policy-making.",
+      "dateAdded": "2026-06-22T05:38:29.355Z",
+      "timestamps": [
+        {
+          "startTime": 60,
+          "endTime": 138,
+          "topic": "Defining the T20 demographic statistically"
+        },
+        {
+          "startTime": 660,
+          "endTime": 725,
+          "topic": "Evaluating financial vulnerability within the high-income bracket"
+        }
+      ]
+    },
+    {
+      "title": "How to actually change your habits | Kim Foster | TEDxSurrey",
+      "url": "https://www.youtube.com/watch?v=F9P_ixAEV0M",
+      "videoId": "F9P_ixAEV0M",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This insightful TEDx talk reveals that the true obstacle to lasting personal change is not a lack of willpower, but rather a clash with our established identity. By shifting our focus from what we 'do' to who we believe we 'are', we can easily align our habits with our desired future self.",
+      "dateAdded": "2026-06-22T05:38:29.355Z",
+      "timestamps": [
+        {
+          "startTime": 187,
+          "endTime": 254,
+          "topic": "The voting study: shifting from doing to being"
+        },
+        {
+          "startTime": 310,
+          "endTime": 376,
+          "topic": "The OS metaphor: why new habits fail on an old identity"
+        }
+      ]
+    },
+    {
+      "title": "Why ALLAH Made the Nafs the Hardest Battle of Your Life",
+      "url": "https://www.youtube.com/watch?v=eBzgNfvJODE",
+      "videoId": "eBzgNfvJODE",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "This video offers a crucial spiritual perspective on why standard self-help and productivity systems fail, tracing the root cause to an undisciplined inner self (nafs). By understanding the psychological traps of desires and heedlessness, viewers will learn a simple 10-minute nightly reflection practice to regain self-control and live more intentionally.",
+      "dateAdded": "2026-06-22T05:38:29.355Z",
+      "timestamps": [
+        {
+          "startTime": 174,
+          "endTime": 264,
+          "topic": "The three inner weapons of the nafs: desire, heedlessness, and whispers"
+        },
+        {
+          "startTime": 390,
+          "endTime": 515,
+          "topic": "Why external productivity tools fail without purifying the heart first"
+        },
+        {
+          "startTime": 579,
+          "endTime": 680,
+          "topic": "The 10-minute nightly self-accounting practice (Muhasaba) for daily progress"
         }
       ]
     },
@@ -75,27 +164,6 @@
           "startTime": 678,
           "endTime": 695,
           "topic": "Why car prices are high and how long loans benefit the state"
-        }
-      ]
-    },
-    {
-      "title": "Being T20 in Malaysia Doesn’t Actually Mean You’re Rich | In The Studio",
-      "url": "https://www.youtube.com/watch?v=Ane7U3mRS8w",
-      "videoId": "Ane7U3mRS8w",
-      "channel": "BFM 89.9",
-      "category": "Finance",
-      "summary": "This video unpacks the complexities of the 'T20' income classification in Malaysia, challenging the assumption that all high earners are wealthy. The guests highlight how geographic location, family size, and tax structures impact financial vulnerability, even among statistical top earners. It is a crucial watch for understanding why blanket economic grouping fails in effective policy-making.",
-      "dateAdded": "2026-06-21T05:24:09.428Z",
-      "timestamps": [
-        {
-          "startTime": 61,
-          "endTime": 138,
-          "topic": "Defining 'T20' and its statistical limitations"
-        },
-        {
-          "startTime": 247,
-          "endTime": 310,
-          "topic": "The diversity and financial vulnerability within the T20 bracket"
         }
       ]
     },
@@ -286,80 +354,7 @@
           "topic": "Why AI and hardware companies champion automation"
         }
       ]
-    },
-    {
-      "title": "Why MCP and ChatGPT Apps Use Double Iframes — Frédéric Barthelet, Alpic",
-      "url": "https://www.youtube.com/watch?v=c-2eEv2ou7Y",
-      "videoId": "c-2eEv2ou7Y",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This presentation demystifies the complex 'double iframe' security architecture used by platforms like ChatGPT and Claude to safely render third-party applications. By understanding these sandbox mechanisms, developers can build more secure, compliant, and functional AI-powered widgets without compromising user data.",
-      "dateAdded": "2026-06-17T05:22:22.948Z",
-      "timestamps": [
-        {
-          "startTime": 122,
-          "endTime": 211,
-          "topic": "How MCP and ChatGPT Apps work under the hood"
-        },
-        {
-          "startTime": 381,
-          "endTime": 502,
-          "topic": "The security limits of single-iframe approaches"
-        },
-        {
-          "startTime": 810,
-          "endTime": 900,
-          "topic": "Demonstration of the Skybridge CSP Inspector tool"
-        }
-      ]
-    },
-    {
-      "title": "Why Can't Anyone Answer Questions About the Business? — Garrett Galow, WorkOS",
-      "url": "https://www.youtube.com/watch?v=iUWwcG-C8OU",
-      "videoId": "iUWwcG-C8OU",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This presentation demonstrates how WorkOS built an internal AI assistant, 'Studio,' to eliminate the bottleneck of manually querying databases for business insights. Viewers will learn how LLM agents can safely and dynamically build reusable dashboards for non-technical teams, boosting operational efficiency. It offers a practical blueprint for unlocking self-serve data analytics using modern AI design patterns.",
-      "dateAdded": "2026-06-17T05:22:22.948Z",
-      "timestamps": [
-        {
-          "startTime": 103,
-          "endTime": 144,
-          "topic": "The Problem: The Tedious Workflow of Internal Data Queries"
-        },
-        {
-          "startTime": 345,
-          "endTime": 455,
-          "topic": "Building Reusable Data Widgets with AI"
-        },
-        {
-          "startTime": 600,
-          "endTime": 745,
-          "topic": "Designing Reliable LLM Database Agents"
-        }
-      ]
-    },
-    {
-      "title": "Public Speaking Practice: Excellence vs Perfection",
-      "url": "https://www.youtube.com/shorts/e6EQb-rYIig",
-      "videoId": "e6EQb-rYIig",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "Struggling to balance high-quality work with the paralyzing grip of perfectionism? In this quick exercise, productivity expert Ali Abdaal shares a simple, practical strategy of adjusting your 'quality bar' to keep making progress. It is a must-watch for creators and professionals looking to overcome creative blocks and maintain consistency.",
-      "dateAdded": "2026-06-17T05:22:22.948Z",
-      "timestamps": [
-        {
-          "startTime": 14,
-          "endTime": 41,
-          "topic": "The tension between excellence and perfectionism"
-        },
-        {
-          "startTime": 51,
-          "endTime": 114,
-          "topic": "Overcoming perfectionism by adjusting your quality bar"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-21T05:28:23.611Z"
+  "lastUpdated": "2026-06-22T05:42:16.418Z"
 }
