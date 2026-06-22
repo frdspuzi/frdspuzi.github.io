@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In a vocabulary frequency analysis of the Quran's Arabic text, approximately what percentage of the total text is composed of its top 20 most repeated words?",
+      "question": "What is the standard format used to structure a User Story in a Scrum Product Backlog?",
       "options": [
-        "80.00%",
-        "50.50%",
-        "20.83%",
-        "12.00%"
+        "As a [role], I need [feature], so that [reason]",
+        "I want [feature] because [reason]",
+        "Build [feature] for [role] by [date]",
+        "[Feature] should be implemented by [date]"
       ],
-      "correctIndex": 2,
-      "learning": "While one might expect the Pareto Principle (80/20 rule) to apply, a data analysis reveals that the top 20 most repeated words in the Quran only accumulate to approximately 20.83% of the total text.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Under the Islamic concept of stewardship (khalifah), who shares the collective responsibility of preserving the faith and maintaining unity?",
-      "options": [
-        "Only appointed leaders",
-        "Only prophets",
-        "Only future generations",
-        "Every individual"
-      ],
-      "correctIndex": 3,
-      "learning": "Although it is a common misconception that only appointed leaders are responsible for preserving faith and unity, Islamic stewardship (khalifah) is actually a collective responsibility shared by every individual.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which Scrum role is specifically responsible for protecting the development team from distractions and helping to resolve issues?",
-      "options": [
-        "Product Owner",
-        "Developer",
-        "Scrum Master",
-        "Project Manager"
-      ],
-      "correctIndex": 2,
-      "learning": "In the Scrum framework, the Scrum Master is tasked with facilitating the Scrum process, resolving issues, and protecting the team from distractions so they can focus on their work.",
+      "correctIndex": 0,
+      "learning": "In Scrum, User Stories within the Product Backlog are written using a specific template: 'As a [role], I need [feature], so that [reason].'",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "Which concept represents the actual unfolding and occurrence of events in a person's life, which can be altered by their actions and supplications?",
+      "question": "Which substate of the PCIe L1 power management state shuts down the most components to maximize energy savings, resulting in the longest delay to resume activity?",
       "options": [
-        "Al-Alim",
-        "Al-Hadid",
-        "Qada’",
-        "Qadr"
+        "L1.1",
+        "L1.2",
+        "L0s",
+        "L1.0"
       ],
-      "correctIndex": 2,
-      "learning": "While Qadr represents Allah's complete and eternally written plan, Qada' refers to the actual unfolding of events in our lives, which can be influenced and altered through our actions and supplications.",
+      "correctIndex": 1,
+      "learning": "Within the PCIe L1 power-saving state, the L1.2 substate turns off the most components to maximize power savings, resulting in the longest wake-up delay among the L1 substates.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
+    },
+    {
+      "question": "What is the approximate ratio of distinct Arabic words to English words in the Oxford English Dictionary, illustrating the linguistic complexity when choosing to analyze the Quran in its original language?",
+      "options": [
+        "35:1",
+        "150:1",
+        "10:1",
+        "71:1"
+      ],
+      "correctIndex": 3,
+      "learning": "When preparing Quranic data for analysis, the original Arabic is favored over English translations due to linguistic complexity, highlighted by a roughly 71:1 ratio of distinct Arabic words (12 million) to English words (170,000).",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In Islamic tradition, a believer's supplication (Dua) is promised to be granted or used to ward off an equivalent evil, provided they do not ask for something sinful or for which other specific occurrence?",
+      "options": [
+        "The severing of the ties of kinship",
+        "The physical harm of an enemy",
+        "The delay of their preordained destiny",
+        "The acquisition of worldly wealth"
+      ],
+      "correctIndex": 0,
+      "learning": "In Islamic teachings, every sincere supplication (Dua) made by a Muslim is answered by Allah—either by granting it or by warding off an equivalent evil—as long as the person does not pray for a sin or the severing of family ties.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "What is the psychological term for the phenomenon where saving information externally, such as writing it down or putting it in a phone, signals the brain to immediately forget it?",
+      "question": "In Islamic tradition, which three primary roles define a person's purposeful journey of life and responsibility?",
       "options": [
-        "The Spaced Repetition Fallacy",
-        "The Performance Paradox of Cognitive Offloading",
-        "The Ebbinghaus Static Memory Trap",
-        "The Digital Garden Illusion"
+        "Acquiring material wealth, establishing physical dominance, and avoiding community duties",
+        "Achieving physical immortality, pursuing complete isolation, and rejecting all moral accountability",
+        "Skeptical questioning of existence, prioritizing personal desires, and ignoring future generations",
+        "Worshiping Allah, serving as caretakers of the Earth, and preparing for the Hereafter"
       ],
-      "correctIndex": 1,
-      "learning": "The 'Performance Paradox' of Cognitive Offloading describes how writing down or digitally saving information prompts our brains to immediately forget it, as the brain treats external storage as permission to delete the memory.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
+      "correctIndex": 3,
+      "learning": "The ultimate purpose of life in Islamic teachings is defined by three core roles: worshiping Allah, acting as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter through conscious, accountable actions.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-06-21T05:24:28.528Z"
+  "fetchedAt": "2026-06-22T05:38:37.448Z"
 }
