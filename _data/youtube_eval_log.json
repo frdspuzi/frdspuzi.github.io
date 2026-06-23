@@ -1,170 +1,23 @@
 [
   {
-    "videoId": "0S8xe9ftGTM",
-    "title": "6 Things to Know about AIE World's Fair 2026",
-    "selected": false,
-    "reasoning": "This is a brief promotional hype-video for an upcoming event, offering little immediate technical or practical value for a junior engineer's daily workflow.",
-    "summary": ""
-  },
-  {
-    "videoId": "ObTPqBGsEbA",
-    "title": "The Production AI Playbook: Deploying Agents at Enterprise Scale — Sandipan Bhaumik, Databricks",
+    "videoId": "va-T1gX9iNk",
+    "title": "How to speak powerfully in the age of AI | Louise Beale | TEDxNorthampton",
     "selected": true,
-    "reasoning": "Outstanding technical value for a junior fullstack developer trying to understand enterprise-grade system design and agentic architecture.",
-    "summary": "As a junior fullstack developer, transitioning from simple API integrations to production-grade AI deployment can be daunting. This playbook demystifies how giants like Databricks deploy scalable agents, giving you the architectural foresight needed to stand out early in your engineering career."
+    "reasoning": "As a junior fullstack engineer, technical skills are only half the battle. This talk offers essential communication frameworks to help you articulate your value and stand out in an industry increasingly dominated by AI automation.",
+    "summary": "In an era where AI can generate code, your human ability to communicate with impact is your ultimate competitive edge. Learn how to speak with authority, make your ideas heard, and command influence as an early-career professional."
   },
   {
-    "videoId": "btxGmN8RvNU",
-    "title": "Your Agent's Biggest Lie: &quot;I Searched the Web&quot; — Rafael Levi, Bright Data",
+    "videoId": "73cDYak-wXc",
+    "title": "Evil Is Not Loud  / Kötülük Gürültülü Değil | Kevser Çimenli | TEDxAlsancak Salon",
     "selected": false,
-    "reasoning": "While technically interesting, this focuses on a niche data-scraping and agent verification problem that is less urgent for a junior developer's broad skillset.",
+    "reasoning": "This talk is highly philosophical and largely targeted at a regional Turkish audience, offering little to no actionable advice for software engineering, career growth, or Islamic finance.",
     "summary": ""
   },
   {
-    "videoId": "mNcFdy9kJXM",
-    "title": "The AI Tools I'd Actually Spend Money On",
+    "videoId": "3yWFXXWgCEk",
+    "title": "The Era of the Noise / Gürültü Çağı | F.Kaan Bayhan | TEDxAlsancak Salon",
     "selected": false,
-    "reasoning": "A surface-level productivity short. While engaging, it lacks the depth required to assist a developer or financial advocate in making structured decisions.",
-    "summary": ""
-  },
-  {
-    "videoId": "kV2HSEUypzM",
-    "title": "How to Trick Your Brain Into Spending Less",
-    "selected": false,
-    "reasoning": "Good basic personal finance tips, but the short format restricts it from delivering highly detailed financial strategies.",
-    "summary": ""
-  },
-  {
-    "videoId": "ZGOljd36T50",
-    "title": "A hot take about necessity",
-    "selected": false,
-    "reasoning": "A very brief motivational clip. While thought-provoking, it does not offer actionable advice for career or spiritual development.",
-    "summary": ""
-  },
-  {
-    "videoId": "O6499i4TFYA",
-    "title": "Gemma 4 and the AI Edge Gallery: On-Device AI Gets an Upgrade",
-    "selected": true,
-    "reasoning": "Highly aligned with a fullstack developer's domain, showcasing on-device, low-latency AI optimization which is a highly sought-after industry skill.",
-    "summary": "Step up your fullstack game by mastering the deployment of lightweight, high-performance models directly on the client side. This breakdown of Google's Gemma 4 shows you how to integrate edge AI without blowing up your server costs, a major win for budget-conscious development."
-  },
-  {
-    "videoId": "XkwQwBZ_Q8w",
-    "title": "Gemma Playground: AI Edge Gallery",
-    "selected": false,
-    "reasoning": "Similar to the selected Gemma 4 overview, but is more of a demo walkthrough rather than a structural technological update.",
-    "summary": ""
-  },
-  {
-    "videoId": "bjd98N1-Hwc",
-    "title": "3 takeaways on Software Ecology™️",
-    "selected": false,
-    "reasoning": "A short teaser clip that touches on system design metaphors but lacks concrete implementation pathways.",
-    "summary": ""
-  },
-  {
-    "videoId": "PQv95PZx6OI",
-    "title": "[S01:E13] Rupiah jatuh teruk, kenapa Prabowo masih tenang? - Dr. Aimi, Economist",
-    "selected": false,
-    "reasoning": "While a quality financial podcast, the core focus is regional Indonesian macroeconomic policy, making it slightly less directly relevant to Malaysian personal finance goals.",
-    "summary": ""
-  },
-  {
-    "videoId": "EbNXxRq9IL4",
-    "title": "Rupiah jatuh, salah Prabowo?",
-    "selected": false,
-    "reasoning": "An Indonesian-centric macroeconomic short that does not offer direct value to a Malaysian junior professional.",
-    "summary": ""
-  },
-  {
-    "videoId": "Xdx8VQcaCIM",
-    "title": "Proton punca kereta mahal",
-    "selected": false,
-    "reasoning": "An interesting local financial short about Malaysian automotive tariff protectionism, but too brief to act as high-impact career or financial advice.",
-    "summary": ""
-  },
-  {
-    "videoId": "Ane7U3mRS8w",
-    "title": "Being T20 in Malaysia Doesn’t Actually Mean You’re Rich | In The Studio",
-    "selected": true,
-    "reasoning": "Exceptional economic and social relevance for an early-career Malaysian, aligning perfectly with Islamic principles of realistic wealth management and financial prudence.",
-    "summary": "As an early-career professional climbing the ladder in Malaysia, targeting the coveted 'T20' income bracket is common, but this eye-opening panel reveals the financial pitfalls of lifestyle inflation. It offers invaluable perspective on true financial freedom and asset management within the Malaysian macroeconomic context."
-  },
-  {
-    "videoId": "Wub32lNjU64",
-    "title": "Medicine Supply Shortage | Dr Dzulkefly, Health Minister | In The Studio",
-    "selected": false,
-    "reasoning": "A policy-heavy interview discussing healthcare logistics, which falls outside the tech, personal growth, and financial advisory domains.",
-    "summary": ""
-  },
-  {
-    "videoId": "K76lNxWmiNE",
-    "title": "“Vote out of love, not out of fear.” - Co-founder of Bersama Nik Nazmi | In The Studio",
-    "selected": false,
-    "reasoning": "Centered primarily on political advocacy and civic duty, which deviates from professional growth and technical mastery.",
-    "summary": ""
-  },
-  {
-    "videoId": "jjGJn3fAfbk",
-    "title": "What I learned from writing movies like 'Braveheart' | Randall Wallace | TEDxNashville",
-    "selected": false,
-    "reasoning": "An inspirational storytelling talk, but lacks applicability to software engineering or structured financial advice.",
-    "summary": ""
-  },
-  {
-    "videoId": "4XbyMwOx-H0",
-    "title": "Should female athletes be cycle tracking? | Jennifer Bunn | TEDxSHSU",
-    "selected": false,
-    "reasoning": "Irrelevant to the specific tech, career, and Islamic financial persona specified.",
-    "summary": ""
-  },
-  {
-    "videoId": "F9P_ixAEV0M",
-    "title": "How to actually change your habits | Kim Foster | TEDxSurrey",
-    "selected": true,
-    "reasoning": "Highly valuable self-development framework that teaches behavioral engineering, essential for a junior engineer looking to build long-term career momentum.",
-    "summary": "Success in a rigorous field like fullstack engineering isn't built on sporadic bursts of motivation, but on systemized daily habits. Learn the science of sustainable habit formation to automate your self-study routines, build clean coding practices, and scale your career without burning out."
-  },
-  {
-    "videoId": "eBzgNfvJODE",
-    "title": "Why ALLAH Made the Nafs the Hardest Battle of Your Life",
-    "selected": true,
-    "reasoning": "A critical spiritual resource for a Muslim trying to balance ambition, financial discipline, and ethical living in a fast-paced tech career.",
-    "summary": "Early career ambition can sometimes lead to spiritual distraction and unethical shortcuts in wealth building. This profound discussion on conquering the 'Nafs' (ego/desire) provides the spiritual grounding necessary to anchor your technical pursuits, align your financial practices with Islamic integrity, and master self-discipline."
-  },
-  {
-    "videoId": "-rlNnCqVCek",
-    "title": "Why Your Business Is Costing You Your Marriage",
-    "selected": false,
-    "reasoning": "Geared more towards mature entrepreneurs balancing family life, which is less urgent for an early-career junior professional.",
-    "summary": ""
-  },
-  {
-    "videoId": "x9cQ30EDj9s",
-    "title": "How to Stop Saying Things You Regret to Your Wife",
-    "selected": false,
-    "reasoning": "Primarily focused on marriage counsel rather than early-stage career growth or software/finance development.",
-    "summary": ""
-  },
-  {
-    "videoId": "38qHuDGZOuA",
-    "title": "Kubernetes clusters out at open sea",
-    "selected": false,
-    "reasoning": "An entertaining tech short, but provides novelty trivia rather than actionable architectural wisdom.",
-    "summary": ""
-  },
-  {
-    "videoId": "NrPCIKYc4Dw",
-    "title": "New Zealand the “secret” canary country",
-    "selected": false,
-    "reasoning": "A geographic tech-deployment strategy short. While interesting, it does not offer foundational value for a junior developer's core skill progression.",
-    "summary": ""
-  },
-  {
-    "videoId": "dIWwoFEiQmM",
-    "title": "Rollbacks are a lie",
-    "selected": false,
-    "reasoning": "A highly punchy tech short on database migrations, but too brief to compete with full-length tutorials or strategic planning.",
+    "reasoning": "While conceptually interesting, this philosophical discussion on 'noise' lacks the practical career frameworks or industry relevance required to benefit a junior fullstack developer.",
     "summary": ""
   }
 ]
