@@ -1,6 +1,27 @@
 {
   "videos": [
     {
+      "title": "How to speak powerfully in the age of AI | Louise Beale | TEDxNorthampton",
+      "url": "https://www.youtube.com/watch?v=va-T1gX9iNk",
+      "videoId": "va-T1gX9iNk",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This engaging talk explores how to maintain powerful communication skills in the rapidly advancing era of artificial intelligence. Through personal anecdotes from a television reporter, it highlights why human empathy, nuance, and authentic connection remain irreplaceable by technology.",
+      "dateAdded": "2026-06-23T04:37:49.182Z",
+      "timestamps": [
+        {
+          "startTime": 80,
+          "endTime": 160,
+          "topic": "The value of human connection over AI facts"
+        },
+        {
+          "startTime": 335,
+          "endTime": 365,
+          "topic": "The 'A SMILE' preparation framework"
+        }
+      ]
+    },
+    {
       "title": "The Production AI Playbook: Deploying Agents at Enterprise Scale — Sandipan Bhaumik, Databricks",
       "url": "https://www.youtube.com/watch?v=ObTPqBGsEbA",
       "videoId": "ObTPqBGsEbA",
@@ -333,28 +354,7 @@
           "topic": "Why database schema changes make rollbacks incredibly difficult"
         }
       ]
-    },
-    {
-      "title": "You automated everyone else away — don't be surprised",
-      "url": "https://www.youtube.com/shorts/FBsLWL2CWW8",
-      "videoId": "FBsLWL2CWW8",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Kelsey Hightower discusses the irony of software developers facing automation from AI after decades of automating other industries. He explains that tech disruption is cyclical, which is why companies building AI tools are eager to embrace this future.",
-      "dateAdded": "2026-06-18T05:12:39.771Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 20,
-          "topic": "The irony of software developers automating other industries"
-        },
-        {
-          "startTime": 20,
-          "endTime": 36,
-          "topic": "Why AI and hardware companies champion automation"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-22T05:42:16.418Z"
+  "lastUpdated": "2026-06-23T04:38:33.369Z"
 }
