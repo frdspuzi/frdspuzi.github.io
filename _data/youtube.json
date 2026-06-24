@@ -1,6 +1,115 @@
 {
   "videos": [
     {
+      "title": "40 Harsh Life Lessons I Wish I Knew in My 20s",
+      "url": "https://www.youtube.com/watch?v=YGW0HBNK5e0",
+      "videoId": "YGW0HBNK5e0",
+      "channel": "Jesse Itzler",
+      "category": "Discovery 🌍",
+      "summary": "This video offers a wealth of practical life advice from a 56-year-old entrepreneur reflecting on the crucial lessons he wishes he had known in his twenties. Spanning personal finance, health, relationship building, and career growth, his insights provide a useful roadmap to avoid common youthful pitfalls. It serves as a high-impact guide for anyone looking to build better habits and secure a stronger future.",
+      "dateAdded": "2026-06-24T04:45:15.612Z",
+      "timestamps": [
+        {
+          "startTime": 8,
+          "endTime": 113,
+          "topic": "Essential habits for personal growth, time management, and health"
+        },
+        {
+          "startTime": 113,
+          "endTime": 199,
+          "topic": "Practical advice on managing personal finance and building relationships"
+        },
+        {
+          "startTime": 813,
+          "endTime": 902,
+          "topic": "Developing a daily habit of learning and staying informed"
+        }
+      ]
+    },
+    {
+      "title": "Gemma Playground: Parallel Agents in Action",
+      "url": "https://www.youtube.com/watch?v=bfvS1UeAkN0",
+      "videoId": "bfvS1UeAkN0",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This video showcases Gemma 4's multi-agent capabilities, demonstrating how an orchestrator agent can spawn ten independent sub-agents to generate SVG art simultaneously on a local machine. It highlights the impressive speed of parallel processing, showing how local, high-performance AI can streamline complex tasks from creative art generation to enterprise workflows.",
+      "dateAdded": "2026-06-24T04:45:15.612Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 33,
+          "topic": "Introducing Gemma 4's parallel agent capabilities"
+        },
+        {
+          "startTime": 33,
+          "endTime": 58,
+          "topic": "Parallel execution and local model benchmarking"
+        },
+        {
+          "startTime": 58,
+          "endTime": 131,
+          "topic": "Scaling multi-agent workflows to enterprise tasks"
+        }
+      ]
+    },
+    {
+      "title": "What caused this React app to crash?",
+      "url": "https://www.youtube.com/shorts/qnl8-PBJNu4",
+      "videoId": "qnl8-PBJNu4",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This video presents a quick challenge for developers, focusing on a CI pipeline bug that occurred after upgrading React. It is a great test of debugging skills, prompting viewers to identify why a faster build led to a production crash.",
+      "dateAdded": "2026-06-24T04:45:15.612Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 15,
+          "topic": "The React upgrade and production crash scenario"
+        },
+        {
+          "startTime": 15,
+          "endTime": 30,
+          "topic": "Evaluating potential causes of the build failure"
+        }
+      ]
+    },
+    {
+      "title": "Gemma 4 and the AI Edge Gallery: On-Device AI Gets an Upgrade",
+      "url": "https://www.youtube.com/watch?v=O6499i4TFYA",
+      "videoId": "O6499i4TFYA",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This video offers an inside look at Gemma 4 and the AI Edge Gallery, showcasing how powerful language models can now run completely offline on your smartphone. Discover how features like \"Agent Skills\" and multimodal inputs enable on-device translation, summarization, and task automation. It's a must-watch for anyone interested in the future of private, fast, and local artificial intelligence.",
+      "dateAdded": "2026-06-24T04:45:15.612Z",
+      "timestamps": [
+        {
+          "startTime": 21,
+          "endTime": 117,
+          "topic": "Overview of Gemma 4's launch and model sizes"
+        },
+        {
+          "startTime": 225,
+          "endTime": 364,
+          "topic": "Expanding capabilities with Agent Skills and MCP"
+        },
+        {
+          "startTime": 474,
+          "endTime": 556,
+          "topic": "Real-world on-device multimodal use cases"
+        }
+      ]
+    },
+    {
+      "title": "What to teach when AI writes the code | Rainer Stropek | TEDxLinz",
+      "url": "https://www.youtube.com/watch?v=yhGzXULZkEw",
+      "videoId": "yhGzXULZkEw",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "If you are worried about AI writing code faster than you can, this talk is your survival guide. Learn why code syntax is no longer your primary leverage point and discover the high-value systems-thinking skills you must master to remain irreplaceable.",
+      "dateAdded": "2026-06-24T04:45:15.612Z",
+      "timestamps": []
+    },
+    {
       "title": "How to speak powerfully in the age of AI | Louise Beale | TEDxNorthampton",
       "url": "https://www.youtube.com/watch?v=va-T1gX9iNk",
       "videoId": "va-T1gX9iNk",
@@ -44,27 +153,6 @@
           "startTime": 366,
           "endTime": 465,
           "topic": "Reorganizing the build order: Case study"
-        }
-      ]
-    },
-    {
-      "title": "Gemma 4 and the AI Edge Gallery: On-Device AI Gets an Upgrade",
-      "url": "https://www.youtube.com/watch?v=O6499i4TFYA",
-      "videoId": "O6499i4TFYA",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "This video showcases how Google's Gemma models run entirely on-device and offline via the AI Edge Gallery app. Discover how features like Agent Skills and MCP tool integration make local AI incredibly powerful and accessible without an internet connection.",
-      "dateAdded": "2026-06-22T05:38:29.355Z",
-      "timestamps": [
-        {
-          "startTime": 79,
-          "endTime": 175,
-          "topic": "Overview of AI Edge Gallery and On-Device Inference"
-        },
-        {
-          "startTime": 225,
-          "endTime": 365,
-          "topic": "Agent Skills and MCP Tool Integration Demo"
         }
       ]
     },
@@ -260,101 +348,7 @@
           "topic": "The reality of 'following your passion'"
         }
       ]
-    },
-    {
-      "title": "The Real Reason You’ve Lost Your Spiritual Drive | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/LC_hpZVX9I0",
-      "videoId": "LC_hpZVX9I0",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This video explores why spiritual motivation wanes over time, highlighting setbacks and lack of clear religious goals as key factors. By understanding these obstacles, viewers can realign their priorities and re-energize their commitment to faith.",
-      "dateAdded": "2026-06-19T05:32:53.925Z",
-      "timestamps": [
-        {
-          "startTime": 10,
-          "endTime": 36,
-          "topic": "Two reasons for losing motivation"
-        },
-        {
-          "startTime": 45,
-          "endTime": 74,
-          "topic": "Setting goals for your faith"
-        }
-      ]
-    },
-    {
-      "title": "Why Malaysian Tech Startup Companies Failed (and What’s Changing Now)?",
-      "url": "https://www.youtube.com/watch?v=0pxaf6EhpRM",
-      "videoId": "0pxaf6EhpRM",
-      "channel": "EDUCATION & TECHNOLOGY",
-      "category": "Discovery 🌍",
-      "summary": "This video diagnostic explores why Malaysia's initial tech startup boom in the 2010s faltered due to risk aversion, grant dependency, and limited global vision. It highlights how a resilient new generation of founders is leveraging these lessons to build a mature, collaborative, and regionally competitive tech ecosystem.",
-      "dateAdded": "2026-06-18T05:12:39.770Z",
-      "timestamps": [
-        {
-          "startTime": 81,
-          "endTime": 141,
-          "topic": "The pitfalls of copycat business models"
-        },
-        {
-          "startTime": 142,
-          "endTime": 205,
-          "topic": "How government grant dependency stunts market validation"
-        },
-        {
-          "startTime": 354,
-          "endTime": 408,
-          "topic": "The transition toward globally-focused regional players"
-        }
-      ]
-    },
-    {
-      "title": "How I got my Startup in the Silicon Valley of Malaysia",
-      "url": "https://www.youtube.com/watch?v=1inz_Qafpuc",
-      "videoId": "1inz_Qafpuc",
-      "channel": "The Pamela Mejia",
-      "category": "Discovery 🌍",
-      "summary": "This engaging vlog follows a startup founder's journey through the prestigious MaGIC Global Accelerator Program in Malaysia, offering a behind-the-scenes look at the entrepreneurial grind. Aspiring business owners will find immense value in her practical advice on goal-setting, networking, and trusting the journey of scaling a business.",
-      "dateAdded": "2026-06-18T05:12:39.771Z",
-      "timestamps": [
-        {
-          "startTime": 214,
-          "endTime": 269,
-          "topic": "The Global Accelerator Program Launch and selection process"
-        },
-        {
-          "startTime": 548,
-          "endTime": 618,
-          "topic": "Key takeaways on goal-setting and using vision boards"
-        }
-      ]
-    },
-    {
-      "title": "CI/CD with Robert Erez",
-      "url": "https://www.youtube.com/watch?v=2x0eq5oDOJY",
-      "videoId": "2x0eq5oDOJY",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This video features an insightful discussion on the practical realities of modern software deployment, cutting through the hype of buzzwords like GitOps and Kubernetes. Industry veteran Rob Erez shares real-world lessons on progressive delivery, explaining why rolling forward is often safer than rolling back and how platform teams can simplify developer workflows. It is a must-watch for anyone looking to understand how engineering teams actually ship reliable software at scale.",
-      "dateAdded": "2026-06-18T05:12:39.771Z",
-      "timestamps": [
-        {
-          "startTime": 485,
-          "endTime": 533,
-          "topic": "The four stages of deployment maturity: YOLO, CI, CD, and Continuous Deployment"
-        },
-        {
-          "startTime": 1145,
-          "endTime": 1215,
-          "topic": "The pillars of GitOps and why the 'everything in Git' mindset is a trap"
-        },
-        {
-          "startTime": 2473,
-          "endTime": 2555,
-          "topic": "Why database schema changes make rollbacks incredibly difficult"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-23T04:38:33.369Z"
+  "lastUpdated": "2026-06-24T04:47:29.483Z"
 }
