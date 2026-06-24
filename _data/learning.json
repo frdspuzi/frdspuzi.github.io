@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What is the primary benefit of having a spectrum of power management states for devices like those in PCIe?",
+      "question": "In PCIe power management, which L1 substate is characterized specifically by the powering down of the main link's electrical circuits to achieve greater power savings?",
       "options": [
-        "They enable efficient power management based on activity, saving energy while remaining responsive.",
-        "They prioritize maximum performance over energy efficiency in all scenarios.",
-        "They allow devices to remain fully operational without any power consumption.",
-        "They standardize power delivery mechanisms across all hardware components."
+        "L1.0",
+        "L2",
+        "L1.1",
+        "L1.2"
       ],
-      "correctIndex": 0,
-      "learning": "PCIe power management states provide a spectrum of options that allow devices to efficiently manage power based on their activity, thereby saving energy while ensuring responsiveness when required.",
+      "correctIndex": 2,
+      "learning": "Within the PCIe L1 state, the L1.1 substate achieves deeper power savings than L1.0 by specifically powering down the electrical circuits of the main link, which consequently increases the device's wake-up time.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "What is the fundamental reason for breaking down a development process into smaller, iterative cycles within the Scrum framework?",
+      "question": "In Islamic teachings, which three primary roles define the fundamental purpose and journey of human life?",
       "options": [
-        "To designate specific roles for protecting the team from distractions and resolving issues",
-        "To ensure the entire product backlog is defined and prioritized at the project's start",
-        "To facilitate the visualization of overall project progress with detailed tracking charts",
-        "To allow for more flexibility and quicker adjustments"
+        "Conquering nature, establishing political dominance, and performing ritualistic isolation",
+        "Sustaining worldly desires, rejecting societal responsibility, and pursuing spiritual reincarnation",
+        "Worshiping Allah, serving as caretakers of the Earth, and preparing for the Hereafter",
+        "Amassing earthly wealth, avoiding physical suffering, and seeking absolute personal freedom"
       ],
-      "correctIndex": 3,
-      "learning": "Scrum, an agile approach, employs smaller, iterative cycles called Sprints primarily to enable greater flexibility and quicker adjustments during a project's development.",
+      "correctIndex": 2,
+      "learning": "In Islamic teachings, human life is a purposeful journey balanced across three primary roles: worshiping Allah, acting as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In Scrum, what is the standard format used to structure a User Story in the Product Backlog?",
+      "options": [
+        "I want [feature] because [reason]",
+        "As a [role], I need [feature], so that [reason]",
+        "Given [context], when [action], then [outcome]",
+        "[Feature] should be implemented by [date]"
+      ],
+      "correctIndex": 1,
+      "learning": "In Scrum, a User Story in the Product Backlog is written using a specific three-part template: 'As a [role], I need [feature], so that [reason]'.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "What significant finding about memory retention did Hermann Ebbinghaus establish in the 1880s?",
+      "question": "Which concept in Islamic theology refers to the actual occurrence of events in a person's life, which they have the free will and responsibility to influence through their own choices and actions?",
       "options": [
-        "Repetitive re-reading is the most effective method for cementing information into long-term memory.",
-        "The brain's memory capacity is significantly increased through sleep consolidation.",
-        "People forget about 80% of what they learn within 24 hours unless actively forced to recall it, and quizzing is essential for this.",
-        "Emotional context primarily determines the longevity of a memory."
+        "Dua",
+        "Qadr",
+        "Al-Alim",
+        "Qada'"
       ],
-      "correctIndex": 2,
-      "learning": "In the 1880s, Hermann Ebbinghaus proved that individuals forget about 80% of what they learn within 24 hours unless they actively force themselves to recall it, and that re-reading is not effective for this purpose; quizzing is required.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "What is considered a prerequisite for a people's condition to be changed by a divine power?",
-      "options": [
-        "They must first change what is in themselves.",
-        "They must gather external resources and seek help from others.",
-        "They must wait patiently for an appointed time without any effort.",
-        "They must exclusively rely on the divine power's preordained plan."
-      ],
-      "correctIndex": 0,
-      "learning": "The core principle stated is that a divine power will not change the condition of a people until they themselves initiate change from within, emphasizing human responsibility and agency.",
+      "correctIndex": 3,
+      "learning": "While Qadr represents Allah's complete and preordained plan, individuals are granted free will and are ultimately responsible for influencing Qada', which refers to the actual occurrence of events in their lives shaped by their own actions.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "According to Islamic teachings, what is identified in the Quran as the foundational reason for the creation of jinn and humankind?",
+      "question": "What term do psychologists use for the paradox where writing down or digitally saving an idea actually prompts the brain to forget it?",
       "options": [
-        "To serve as stewards (khalifah) of the Earth",
-        "To foster unity and preserve religious teachings",
-        "To prepare for the eternal Hereafter",
-        "To worship Allah"
+        "The Ebbinghaus Memory Drift",
+        "The Performance Paradox of Cognitive Offloading",
+        "The Spaced Repetition Trap",
+        "The Digital Garden Fallacy"
       ],
-      "correctIndex": 3,
-      "learning": "In Islamic belief, the foundational purpose for which jinn and humankind were created, as clarified by the Quran, is to worship Allah. This worship encompasses recognizing divine sovereignty, expressing gratitude, and developing mindfulness.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
+      "correctIndex": 1,
+      "learning": "The 'Performance Paradox' of Cognitive Offloading occurs when writing down or saving information prompts the brain to immediately 'delete' it from memory, relying entirely on the external storage.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     }
   ],
-  "fetchedAt": "2026-06-23T04:39:15.029Z"
+  "fetchedAt": "2026-06-24T04:50:06.319Z"
 }
