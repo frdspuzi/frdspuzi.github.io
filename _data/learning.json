@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In PCIe power management, which L1 substate is characterized specifically by the powering down of the main link's electrical circuits to achieve greater power savings?",
+      "question": "What phenomenon describes the brain's tendency to forget information when it is written down or stored externally, interpreting these actions as permission to discard internal memory?",
       "options": [
-        "L1.0",
-        "L2",
-        "L1.1",
-        "L1.2"
+        "The Performance Paradox of Cognitive Offloading",
+        "The Ebbinghaus Forgetting Curve",
+        "Digital Memory Overload Syndrome",
+        "Passive Storage Complication"
       ],
-      "correctIndex": 2,
-      "learning": "Within the PCIe L1 state, the L1.1 substate achieves deeper power savings than L1.0 by specifically powering down the electrical circuits of the main link, which consequently increases the device's wake-up time.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
+      "correctIndex": 0,
+      "learning": "Merely writing down information or storing it digitally often leads to the 'Performance Paradox of Cognitive Offloading,' where the brain takes these actions as permission to forget. For effective long-term retention, active recall methods, such as quizzing, are necessary.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     },
     {
-      "question": "In Islamic teachings, which three primary roles define the fundamental purpose and journey of human life?",
+      "question": "What is the primary benefit achieved by breaking a development process into smaller, iterative cycles?",
       "options": [
-        "Conquering nature, establishing political dominance, and performing ritualistic isolation",
-        "Sustaining worldly desires, rejecting societal responsibility, and pursuing spiritual reincarnation",
-        "Worshiping Allah, serving as caretakers of the Earth, and preparing for the Hereafter",
-        "Amassing earthly wealth, avoiding physical suffering, and seeking absolute personal freedom"
+        "To increase the length of the overall project",
+        "To define all features upfront with strict adherence",
+        "To allow for more flexibility and quicker adjustments",
+        "To reduce the number of team members needed"
       ],
       "correctIndex": 2,
-      "learning": "In Islamic teachings, human life is a purposeful journey balanced across three primary roles: worshiping Allah, acting as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In Scrum, what is the standard format used to structure a User Story in the Product Backlog?",
-      "options": [
-        "I want [feature] because [reason]",
-        "As a [role], I need [feature], so that [reason]",
-        "Given [context], when [action], then [outcome]",
-        "[Feature] should be implemented by [date]"
-      ],
-      "correctIndex": 1,
-      "learning": "In Scrum, a User Story in the Product Backlog is written using a specific three-part template: 'As a [role], I need [feature], so that [reason]'.",
+      "learning": "The main purpose of breaking a development process into smaller, iterative cycles (such as Sprints in Scrum) is to enable greater flexibility and facilitate quicker adjustments throughout the project.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "Which concept in Islamic theology refers to the actual occurrence of events in a person's life, which they have the free will and responsibility to influence through their own choices and actions?",
+      "question": "What are the three primary roles that define the purpose of life in Islamic understanding?",
       "options": [
-        "Dua",
-        "Qadr",
-        "Al-Alim",
-        "Qada'"
+        "Recognizing divine sovereignty, showing gratitude for blessings, and developing self-restraint.",
+        "Preserving religion and unity, engaging in personal accountability, and striving for character development.",
+        "Attaining spiritual enlightenment, accumulating worldly knowledge, and fostering global peace.",
+        "Worshiping Allah, serving as stewards (khalifah) of the Earth, and preparing for the eternal Hereafter."
       ],
       "correctIndex": 3,
-      "learning": "While Qadr represents Allah's complete and preordained plan, individuals are granted free will and are ultimately responsible for influencing Qada', which refers to the actual occurrence of events in their lives shaped by their own actions.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "learning": "In Islamic belief, the purpose of life revolves around three primary roles: worshiping Allah, serving as stewards (khalifah) of the Earth, and preparing for the eternal Hereafter through conscious choices and accountability.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "What term do psychologists use for the paradox where writing down or digitally saving an idea actually prompts the brain to forget it?",
+      "question": "What core benefits are offered by PCIe Power Management States?",
       "options": [
-        "The Ebbinghaus Memory Drift",
-        "The Performance Paradox of Cognitive Offloading",
-        "The Spaced Repetition Trap",
-        "The Digital Garden Fallacy"
+        "Reduced electromagnetic interference.",
+        "Continuous maximum data throughput.",
+        "Standardized physical card dimensions.",
+        "Optimized energy consumption, longer device lifespans, and improved system performance."
       ],
-      "correctIndex": 1,
-      "learning": "The 'Performance Paradox' of Cognitive Offloading occurs when writing down or saving information prompts the brain to immediately 'delete' it from memory, relying entirely on the external storage.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
+      "correctIndex": 3,
+      "learning": "PCIe Power Management States are essential for the efficient use of energy, extending device longevity, and enhancing system performance, particularly in environments where power consumption is a significant concern.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
+    },
+    {
+      "question": "What term refers to Allah's complete and eternal knowledge, encompassing everything He has planned and written for our lives, including all events that will ever happen?",
+      "options": [
+        "Dua",
+        "Al-Alim",
+        "Qadr",
+        "Qada’"
+      ],
+      "correctIndex": 2,
+      "learning": "Qadr is defined as Allah's complete and eternal knowledge, encompassing everything He has planned and written for our lives, including all events, big or small, that will ever happen.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-06-24T04:50:06.319Z"
+  "fetchedAt": "2026-06-25T04:40:31.619Z"
 }
