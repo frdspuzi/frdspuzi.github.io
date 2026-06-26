@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What phenomenon describes the brain's tendency to forget information when it is written down or stored externally, interpreting these actions as permission to discard internal memory?",
+      "question": "What is a counterintuitive consequence that can occur when people write down information or store it digitally?",
       "options": [
-        "The Performance Paradox of Cognitive Offloading",
-        "The Ebbinghaus Forgetting Curve",
-        "Digital Memory Overload Syndrome",
-        "Passive Storage Complication"
+        "The brain may interpret this as permission to forget the information.",
+        "It primarily enhances the brain's capacity for generating novel concepts.",
+        "It guarantees perfect recall due to external storage.",
+        "It only applies to very short-term memories, not profound realizations."
       ],
       "correctIndex": 0,
-      "learning": "Merely writing down information or storing it digitally often leads to the 'Performance Paradox of Cognitive Offloading,' where the brain takes these actions as permission to forget. For effective long-term retention, active recall methods, such as quizzing, are necessary.",
+      "learning": "Writing information down or offloading it digitally can paradoxically lead to forgetting, as the brain may interpret its external storage as permission to delete it from active memory. This phenomenon is known as the 'Performance Paradox' of Cognitive Offloading or Digital Amnesia.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "What is the primary benefit achieved by breaking a development process into smaller, iterative cycles?",
+      "question": "What is a key advantage of structuring projects into smaller, iterative cycles known as Sprints within an agile framework like Scrum?",
       "options": [
-        "To increase the length of the overall project",
-        "To define all features upfront with strict adherence",
-        "To allow for more flexibility and quicker adjustments",
-        "To reduce the number of team members needed"
+        "To solely define and prioritize the product's feature list.",
+        "To increase the overall project length for thoroughness.",
+        "To facilitate daily team meetings for progress updates.",
+        "To allow for more flexibility and quicker adjustments."
       ],
-      "correctIndex": 2,
-      "learning": "The main purpose of breaking a development process into smaller, iterative cycles (such as Sprints in Scrum) is to enable greater flexibility and facilitate quicker adjustments throughout the project.",
+      "correctIndex": 3,
+      "learning": "Scrum is an agile approach that breaks the development process into smaller, iterative cycles called Sprints, primarily to allow for more flexibility and quicker adjustments throughout a project.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "What are the three primary roles that define the purpose of life in Islamic understanding?",
+      "question": "What are the small markings placed above or below Arabic letters that are crucial for indicating vowel sounds and correct pronunciation?",
       "options": [
-        "Recognizing divine sovereignty, showing gratitude for blessings, and developing self-restraint.",
-        "Preserving religion and unity, engaging in personal accountability, and striving for character development.",
-        "Attaining spiritual enlightenment, accumulating worldly knowledge, and fostering global peace.",
-        "Worshiping Allah, serving as stewards (khalifah) of the Earth, and preparing for the eternal Hereafter."
+        "Spelling guides",
+        "Tashkeel",
+        "Pronunciation accents",
+        "Vowel indicators"
       ],
-      "correctIndex": 3,
-      "learning": "In Islamic belief, the purpose of life revolves around three primary roles: worshiping Allah, serving as stewards (khalifah) of the Earth, and preparing for the eternal Hereafter through conscious choices and accountability.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "correctIndex": 1,
+      "learning": "Tashkeel are small markings used in Arabic script to indicate how letters should be pronounced, specifically which vowel sound to use. Without these marks, reading Arabic can be tricky because the letters alone don’t always convey their sound, presenting a key background complexity in text analysis.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "What core benefits are offered by PCIe Power Management States?",
+      "question": "Which PCIe power management state is characterized by the device being almost completely powered down, offering the highest power savings but also the longest wake-up time?",
       "options": [
-        "Reduced electromagnetic interference.",
-        "Continuous maximum data throughput.",
-        "Standardized physical card dimensions.",
-        "Optimized energy consumption, longer device lifespans, and improved system performance."
+        "L0",
+        "L1.0",
+        "L0s",
+        "L2"
       ],
       "correctIndex": 3,
-      "learning": "PCIe Power Management States are essential for the efficient use of energy, extending device longevity, and enhancing system performance, particularly in environments where power consumption is a significant concern.",
+      "learning": "The L2 power management state for a PCIe device involves the device being almost completely powered down, resulting in the highest power savings and the longest wake-up time, ideal for the longest periods of inactivity.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "What term refers to Allah's complete and eternal knowledge, encompassing everything He has planned and written for our lives, including all events that will ever happen?",
+      "question": "What must first occur for the condition of a people to be changed by divine will?",
       "options": [
-        "Dua",
-        "Al-Alim",
-        "Qadr",
-        "Qada’"
+        "They must rely solely on external circumstances to shift.",
+        "They must change what is in themselves.",
+        "They must simply wait for divine intervention.",
+        "They must accept that their condition is predetermined and unalterable."
       ],
-      "correctIndex": 2,
-      "learning": "Qadr is defined as Allah's complete and eternal knowledge, encompassing everything He has planned and written for our lives, including all events, big or small, that will ever happen.",
+      "correctIndex": 1,
+      "learning": "The principle states: 'Indeed, Allah does not change the condition of a people until they change what is in themselves.'",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     }
   ],
-  "fetchedAt": "2026-06-25T04:40:31.619Z"
+  "fetchedAt": "2026-06-26T04:48:58.811Z"
 }
