@@ -1,6 +1,116 @@
 {
   "videos": [
     {
+      "title": "How AI generated code impacts open source",
+      "url": "https://www.youtube.com/shorts/vPeYNJiqMaw",
+      "videoId": "vPeYNJiqMaw",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Career",
+      "summary": "This video explores how AI-generated code affects open-source projects. It highlights how the low cost of creating pull requests clashes with the high cost of reviewing them, creating a bottleneck for maintainers.",
+      "dateAdded": "2026-06-26T04:48:40.820Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 10,
+          "topic": "Asymmetric costs in PR creation vs. review"
+        },
+        {
+          "startTime": 10,
+          "endTime": 24,
+          "topic": "The challenge of vetting complex PRs"
+        },
+        {
+          "startTime": 24,
+          "endTime": 37,
+          "topic": "Impact on open-source dynamics"
+        }
+      ]
+    },
+    {
+      "title": "[S01:E14] Harga minyak Diesel turun jadi isu politik? - Dr. Aimi, Economist",
+      "url": "https://www.youtube.com/watch?v=QiL3oEV6mAs",
+      "videoId": "QiL3oEV6mAs",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "This video offers a concise analysis of Malaysia's fiscal policies, focusing on the targeted Budi Diesel subsidies and the economic dynamics of Johor. It provides crucial insights into how these policies aim to curb smuggling while addressing regional wage disparities and brain drain to Singapore.",
+      "dateAdded": "2026-06-26T04:48:40.820Z",
+      "timestamps": [
+        {
+          "startTime": 180,
+          "endTime": 270,
+          "topic": "Targeted Budi Diesel Subsidies"
+        },
+        {
+          "startTime": 480,
+          "endTime": 555,
+          "topic": "Johor Wages and Brain Drain"
+        }
+      ]
+    },
+    {
+      "title": "Being T20 in Malaysia Doesn’t Actually Mean You’re Rich | In The Studio",
+      "url": "https://www.youtube.com/watch?v=Ane7U3mRS8w",
+      "videoId": "Ane7U3mRS8w",
+      "channel": "BFM 89.9",
+      "category": "Finance",
+      "summary": "This discussion debunks the misconception that all T20 earners in Malaysia are wealthy, highlighting the vast disparities and financial vulnerabilities within this bracket. It offers a crucial reality check on how location, family size, and asset structures impact actual disposable income, making it essential viewing for understanding modern economic policy.",
+      "dateAdded": "2026-06-26T04:48:40.820Z",
+      "timestamps": [
+        {
+          "startTime": 54,
+          "endTime": 138,
+          "topic": "The statistical definition and relative nature of T20"
+        },
+        {
+          "startTime": 246,
+          "endTime": 310,
+          "topic": "How household demographics create vastly different financial realities within the same bracket"
+        }
+      ]
+    },
+    {
+      "title": "How to Get Hired When 120,000 Engineers Got Laid Off",
+      "url": "https://www.youtube.com/watch?v=u9pVRdtNsQo",
+      "videoId": "u9pVRdtNsQo",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "This video offers a realistic yet empowering look at the current tech job market, explaining how AI is reshaping hiring and layoffs. It provides actionable strategies on how to stand out by treating LinkedIn as a dynamic portfolio rather than a static resume. Viewers will walk away with practical tips on personal branding and networking to future-proof their careers.",
+      "dateAdded": "2026-06-26T04:48:40.820Z",
+      "timestamps": [
+        {
+          "startTime": 41,
+          "endTime": 155,
+          "topic": "The State of the Tech Job Market & AI Layoffs"
+        },
+        {
+          "startTime": 253,
+          "endTime": 350,
+          "topic": "Transforming LinkedIn from a CV into a Portfolio"
+        }
+      ]
+    },
+    {
+      "title": "Own your engineering career, no one else will",
+      "url": "https://www.youtube.com/shorts/beVpr8f2LAs",
+      "videoId": "beVpr8f2LAs",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "This video highlights the importance of adaptability, soft skills, and personal ownership in driving long-term career growth. It challenges conventional views of success, emphasizing that thriving in a changing workplace requires resilience and proactive feedback.",
+      "dateAdded": "2026-06-26T04:48:40.820Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 16,
+          "topic": "Hard skills vs. adaptability"
+        },
+        {
+          "startTime": 24,
+          "endTime": 41,
+          "topic": "Taking ownership of your career growth"
+        }
+      ]
+    },
+    {
       "title": "40 Harsh Life Lessons I Wish I Knew in My 20s",
       "url": "https://www.youtube.com/watch?v=YGW0HBNK5e0",
       "videoId": "YGW0HBNK5e0",
@@ -157,27 +267,6 @@
       ]
     },
     {
-      "title": "Being T20 in Malaysia Doesn’t Actually Mean You’re Rich | In The Studio",
-      "url": "https://www.youtube.com/watch?v=Ane7U3mRS8w",
-      "videoId": "Ane7U3mRS8w",
-      "channel": "BFM 89.9",
-      "category": "Finance",
-      "summary": "This video dissects the misconception that Malaysia's 'T20' demographic represents absolute wealth, explaining how living costs and financial vulnerability affect this group. The core takeaway is that T20 is a relative statistical division rather than a measure of financial security, making it a flawed tool for targeted policy-making.",
-      "dateAdded": "2026-06-22T05:38:29.355Z",
-      "timestamps": [
-        {
-          "startTime": 60,
-          "endTime": 138,
-          "topic": "Defining the T20 demographic statistically"
-        },
-        {
-          "startTime": 660,
-          "endTime": 725,
-          "topic": "Evaluating financial vulnerability within the high-income bracket"
-        }
-      ]
-    },
-    {
       "title": "How to actually change your habits | Kim Foster | TEDxSurrey",
       "url": "https://www.youtube.com/watch?v=F9P_ixAEV0M",
       "videoId": "F9P_ixAEV0M",
@@ -249,106 +338,7 @@
           "topic": "Understanding the difference between cost centers and profit centers"
         }
       ]
-    },
-    {
-      "title": "[S01:E12] Proton dilindungi terlalu lama, rakyat terpaksa bayar kereta mahal - Hezeri Samsuri Careta",
-      "url": "https://www.youtube.com/watch?v=KIDIjEdOd6E",
-      "videoId": "KIDIjEdOd6E",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This insightful podcast episode breaks down the complexities of Malaysia's automotive policies and the true cost of electric vehicles. Viewers will gain a clear understanding of why local car prices remain high, how tax incentives shape the EV market, and the future of regional automotive manufacturing.",
-      "dateAdded": "2026-06-21T05:24:09.428Z",
-      "timestamps": [
-        {
-          "startTime": 167,
-          "endTime": 202,
-          "topic": "The reality of EV pricing and tax incentives"
-        },
-        {
-          "startTime": 293,
-          "endTime": 345,
-          "topic": "Proton's development compared to Hyundai"
-        },
-        {
-          "startTime": 678,
-          "endTime": 695,
-          "topic": "Why car prices are high and how long loans benefit the state"
-        }
-      ]
-    },
-    {
-      "title": "Only Allah Knows What You Went Through | LATEST Khutbah by Dr. Omar Suleiman in San Diego",
-      "url": "https://www.youtube.com/watch?v=hEygwMaMDyU",
-      "videoId": "hEygwMaMDyU",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This video offers a moving reflection on communal tragedy, trauma, and spiritual healing. By drawing parallels between modern grief and the experiences of the Prophet's companions, it provides comfort and perspective on handling deep loss. The core takeaway is that while personal pain is difficult to convey, faith connects our struggles to a larger divine narrative of resilience.",
-      "dateAdded": "2026-06-21T05:24:09.428Z",
-      "timestamps": [
-        {
-          "startTime": 26,
-          "endTime": 83,
-          "topic": "Unity of the Ummah through shared grief"
-        },
-        {
-          "startTime": 124,
-          "endTime": 223,
-          "topic": "Communicating the sensory reality of trauma"
-        },
-        {
-          "startTime": 223,
-          "endTime": 305,
-          "topic": "Historical parallels with the Prophet's companions"
-        }
-      ]
-    },
-    {
-      "title": "How cryptocurrency creates risks for everyone | Tonantzin Carmona | TEDxMidAtlantic",
-      "url": "https://www.youtube.com/watch?v=IEe-Nt7peIw",
-      "videoId": "IEe-Nt7peIw",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "This thought-provoking talk draws powerful parallels between the 2008 financial crisis and the rise of cryptocurrency, warning that history is repeating itself. The core takeaway is that crypto's integration into mainstream finance poses systemic risks to everyday citizens, even those who choose not to invest in it.",
-      "dateAdded": "2026-06-20T04:49:06.855Z",
-      "timestamps": [
-        {
-          "startTime": 49,
-          "endTime": 148,
-          "topic": "Systemic flaws of the 2008 crisis and how blame shifted to victims"
-        },
-        {
-          "startTime": 148,
-          "endTime": 244,
-          "topic": "How crypto mimics subprime dynamics through predatory inclusion"
-        },
-        {
-          "startTime": 314,
-          "endTime": 349,
-          "topic": "The hidden integration of crypto into public pension funds"
-        }
-      ]
-    },
-    {
-      "title": "Advice to a 22-year-old",
-      "url": "https://www.youtube.com/shorts/g-MIUNhb9cY",
-      "videoId": "g-MIUNhb9cY",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "This video offers valuable, practical career advice for young adults navigating their early twenties, focusing on action over passive consumption. The core takeaway is to shift from consuming content to actively producing, experimenting with diverse projects to discover what truly energizes you.",
-      "dateAdded": "2026-06-19T05:32:53.925Z",
-      "timestamps": [
-        {
-          "startTime": 41,
-          "endTime": 69,
-          "topic": "Shift from consuming to creating"
-        },
-        {
-          "startTime": 86,
-          "endTime": 112,
-          "topic": "The reality of 'following your passion'"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-24T04:47:29.483Z"
+  "lastUpdated": "2026-06-26T04:53:13.953Z"
 }

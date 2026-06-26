@@ -1,65 +1,170 @@
 [
   {
-    "videoId": "YGW0HBNK5e0",
-    "title": "40 Harsh Life Lessons I Wish I Knew in My 20s",
-    "selected": true,
-    "reasoning": "A raw, high-impact collection of pragmatic advice from an ultra-successful entrepreneur. It completely avoids superficial self-help tropes, focusing instead on financial discipline, relationship building, and personal accountability.",
-    "summary": "Skip the generic self-help fluff and absorb these 40 raw, unfiltered lessons from a seasoned entrepreneur. This video is the ultimate mindset blueprint to help you make high-conviction decisions in your career, finance, and personal growth during your critical 20s."
-  },
-  {
-    "videoId": "uMZ7uZNuK3A",
-    "title": "5 Life Lessons I Wish I Knew in My 20s That Changed EVERYTHING",
+    "videoId": "jVjt-2g8NMY",
+    "title": "A Genius With Amnesia - Victor Savkin, Nx",
     "selected": false,
-    "reasoning": "While well-produced, this video leans heavily into generic lifestyle vlog territory, offering minimal tactical value for an ambitious, technical professional.",
+    "reasoning": "This video is likely a niche technical presentation on the Nx build system. While relevant for a fullstack engineer, its specific nature might not offer broad 'early career advice' or 'highest value' compared to other options.",
     "summary": ""
   },
   {
-    "videoId": "4bTl3XV55EU",
-    "title": "How to make the BEST of your 20's | simple life advice I wish I had sooner",
+    "videoId": "UPwGaM2MKHY",
+    "title": "The Log Is The Agent - Ishaan Sehgal, Omnara",
     "selected": false,
-    "reasoning": "The advice here is too elementary and aesthetic-focused to provide any real, actionable leverage for an early-career engineer looking to build financial and professional security.",
+    "reasoning": "A highly technical discussion on AI agent architecture. While interesting for an engineer, it's likely too specialized for the 'early career advice' aspect and doesn't directly address immediate career or financial advocacy needs.",
+    "summary": ""
+  },
+  {
+    "videoId": "3hXJI2q0Jz8",
+    "title": "Recursive Coding Agents - Raymond Weitekamp, OpenProse",
+    "selected": false,
+    "reasoning": "Another deep dive into AI agent development. This is more of an advanced technical topic than general career guidance or broad industry insight for a junior fullstack engineer or financial advocate.",
+    "summary": ""
+  },
+  {
+    "videoId": "1BmEhKqwExc",
+    "title": "Rust build tooling vs C and C++",
+    "selected": false,
+    "reasoning": "A tech comparison, likely a short. While learning about tooling is useful, a short won't provide in-depth understanding, and it's less critical for overall career growth or financial advocacy than other options.",
+    "summary": ""
+  },
+  {
+    "videoId": "vPeYNJiqMaw",
+    "title": "How AI generated code impacts open source",
+    "selected": true,
+    "reasoning": "Critically valuable for a junior engineer to understand current and future industry trends, specifically the impact of AI on open-source development and potentially their own career trajectory. Addresses early career advice and tech relevance.",
+    "summary": "AI is changing everything, even the open-source world you'll contribute to. This video is crucial for any junior engineer to grasp how AI-generated code will reshape collaboration and impact their career, offering a glimpse into future work dynamics."
+  },
+  {
+    "videoId": "k5MUuJ1-fXU",
+    "title": "AI generated code can lower the quality bar",
+    "selected": false,
+    "reasoning": "This video touches on an important aspect of AI's impact on coding quality, which is relevant. However, other videos offer more holistic career advice or broader insights into AI's impact on the industry.",
+    "summary": ""
+  },
+  {
+    "videoId": "UlbokBsjMRY",
+    "title": "Gemini 3.5 Live Translate, Gemini in Xcode, and more! - Google Developer News June 2026",
+    "selected": false,
+    "reasoning": "A news update about Google's developer tools. While useful for staying current, it offers less actionable career advice or deep financial insight compared to other selections.",
+    "summary": ""
+  },
+  {
+    "videoId": "rU1za1SJSgE",
+    "title": "Stop writing longer prompts. Do this instead! 🧠",
+    "selected": false,
+    "reasoning": "A practical tip for prompt engineering, which is valuable. However, as a short, it likely provides a quick hack rather than a foundational skill or critical career strategy needed by the target demographic.",
     "summary": ""
   },
   {
     "videoId": "bfvS1UeAkN0",
     "title": "Gemma Playground: Parallel Agents in Action",
-    "selected": true,
-    "reasoning": "AI orchestration is the next frontier for fullstack developers. Understanding how to build and manage parallel AI agents using Gemma is highly relevant technical knowledge that sets a junior engineer apart.",
-    "summary": "Multi-agent systems are reshaping software development. This guide shows you how to leverage Google's Gemma to orchestrate parallel AI agents, giving you a competitive technical edge that is highly sought after in modern fullstack roles."
-  },
-  {
-    "videoId": "qnl8-PBJNu4",
-    "title": "What caused this React app to crash?",
-    "selected": true,
-    "reasoning": "Directly targets the daily workflow of a Junior Fullstack Developer. Debugging production crashes in React is an essential technical skill that builds professional competence fast.",
-    "summary": "Nothing hurts production confidence like an unexpected UI crash. This highly practical, bite-sized breakdown from Google engineers walks you through identifying and fixing critical React bugs so you can ship robust frontends with confidence."
-  },
-  {
-    "videoId": "O6499i4TFYA",
-    "title": "Gemma 4 and the AI Edge Gallery: On-Device AI Gets an Upgrade",
-    "selected": true,
-    "reasoning": "On-device AI is crucial for optimizing cloud costs and reducing latency in fullstack apps. As a junior engineer, understanding AI edge deployment makes you an incredibly valuable asset to forward-thinking tech teams.",
-    "summary": "Cloud bills can ruin project margins, which is why on-device AI is the future. Learn how to deploy optimized AI models directly to client devices using Gemma 4, saving processing costs and ensuring maximum privacy for your users."
-  },
-  {
-    "videoId": "yhGzXULZkEw",
-    "title": "What to teach when AI writes the code | Rainer Stropek | TEDxLinz",
-    "selected": true,
-    "reasoning": "Directly addresses the existential anxiety of a junior developer in the AI era. It redefines what skills actually hold value when syntax and boilerplate are automated, aligning perfectly with early career progression.",
-    "summary": "If you are worried about AI writing code faster than you can, this talk is your survival guide. Learn why code syntax is no longer your primary leverage point and discover the high-value systems-thinking skills you must master to remain irreplaceable."
-  },
-  {
-    "videoId": "-8yam5Wcj-A",
-    "title": "Role Models &amp; Identity | Sergey Portnov | TEDxTrinity Private School Youth",
     "selected": false,
-    "reasoning": "This talk is structured for private school youth and lacks the technical context or the mature professional depth required by a junior software engineer.",
+    "reasoning": "This appears to be a specific technical demonstration of an AI framework. While relevant for some engineers, it's too narrow for the broad career advice and financial advocacy needs of the target audience.",
     "summary": ""
   },
   {
-    "videoId": "RwYfKEBdgo4",
-    "title": "Starting Again Is the Bravest Win of All | Jovana Knezevic | TEDxTrinity Private School Youth",
+    "videoId": "QiL3oEV6mAs",
+    "title": "[S01:E14] Harga minyak Diesel turun jadi isu politik? - Dr. Aimi, Economist",
+    "selected": true,
+    "reasoning": "Highly relevant for the Malaysian demographic and Islamic financial advocate. It directly addresses a current, significant Malaysian economic and political issue, providing critical local context for financial understanding.",
+    "summary": "As a Malaysian and an aspiring Islamic financial advocate, understanding local economic issues like the diesel subsidy debate is absolutely vital. This video provides expert insight into how politics and economics intersect in Malaysia, equipping you with crucial context for your advocacy and financial planning."
+  },
+  {
+    "videoId": "N-mFDxaljiU",
+    "title": "Harga diesel mainan politik?",
     "selected": false,
-    "reasoning": "Although inspiring, this narrative-heavy presentation target school-aged students and doesn't offer the concrete, strategic career guidance needed for a tech professional.",
+    "reasoning": "This short covers a similar topic to the longer Financial Faiz Podcast episode selected. The longer format offers a deeper dive and more nuanced discussion, making it the higher value choice.",
     "summary": ""
+  },
+  {
+    "videoId": "atFKaQOI0jg",
+    "title": "Indonesia hilang tarikan pelabur asing",
+    "selected": false,
+    "reasoning": "While relevant for regional economic awareness, its primary focus on Indonesia makes it less directly impactful than videos focusing specifically on Malaysian issues for a Malaysian financial advocate.",
+    "summary": ""
+  },
+  {
+    "videoId": "R5oCjemxEIk",
+    "title": "Penantian 44 Tahun | Perjuangan Bersejarah Komuniti Taman Rimba Kiara",
+    "selected": false,
+    "reasoning": "Covers an important local social justice and property rights issue in Malaysia. While valuable for contextual understanding, it is less directly applicable to the immediate career or financial advocacy advice than other selections.",
+    "summary": ""
+  },
+  {
+    "videoId": "pNPDfF7Qhfo",
+    "title": "An Indian lady applied to 300 property listings and was denied from all – Jason Wee | In The Studio",
+    "selected": false,
+    "reasoning": "Highlights social discrimination with financial implications, which is important. However, other Malaysian-focused finance videos provide broader economic understanding more directly relevant to an 'Islamic financial advocate' role.",
+    "summary": ""
+  },
+  {
+    "videoId": "Ane7U3mRS8w",
+    "title": "Being T20 in Malaysia Doesn’t Actually Mean You’re Rich | In The Studio",
+    "selected": true,
+    "reasoning": "Directly addresses a crucial aspect of financial literacy and economic reality within Malaysia, dispelling common misconceptions about wealth and income brackets. Highly valuable for a Malaysian and an Islamic financial advocate.",
+    "summary": "Think you know what 'rich' means in Malaysia? This video brilliantly unpacks the reality of being in the T20 income bracket, revealing why it might not mean what you think. Essential viewing for any Malaysian building their financial future, especially an advocate seeking to understand local economic truths."
+  },
+  {
+    "videoId": "FBw92Q6bxbE",
+    "title": "Three tips for becoming a homeowner | Morgan Browne | TEDxWest Vancouver Women",
+    "selected": false,
+    "reasoning": "Offers general advice on homeownership. While important, the advice may not be specific to the Malaysian context, and other selections provide more direct career or locally relevant financial insights.",
+    "summary": ""
+  },
+  {
+    "videoId": "Azls-nNKwjA",
+    "title": "From Know Your Customer to Know Your Reality in the Age of AI | Mr. Smarak Swain | TEDxKPRCAS",
+    "selected": false,
+    "reasoning": "An interesting TEDx talk on AI's impact on business and customer understanding. While relevant, it's more conceptual and less actionable for a junior engineer or directly relevant to local Malaysian finance compared to the selected videos.",
+    "summary": ""
+  },
+  {
+    "videoId": "BB-ZfpaQfro",
+    "title": "Madurai Roots, Bold Ideas, Lasting Impact | Venkatesh Rajendran (CRV) | TEDxKharadi Salon",
+    "selected": false,
+    "reasoning": "The title suggests a personal story of impact, but without a detailed description, its specific relevance to the target demographic's needs (tech, finance, Malaysian, Muslim, early career) is too vague to be considered high value.",
+    "summary": ""
+  },
+  {
+    "videoId": "sWIuWd3MMd8",
+    "title": "What You Can't Miss About Venezuela &amp; Japan Earthquakes | Signs of the Hour",
+    "selected": false,
+    "reasoning": "This is an Islamic studies short focused on eschatology. While relevant for a Muslim, it does not provide direct career advice, financial advocacy insight, or fullstack engineering knowledge, making it less aligned with the core criteria.",
+    "summary": ""
+  },
+  {
+    "videoId": "lEv4U-MEPaM",
+    "title": "Why the Nation of Islam Terrified America | Focal Point with Imam Tom Facchine",
+    "selected": false,
+    "reasoning": "An interesting historical and sociological topic within Islamic studies. While valuable for general knowledge for a Muslim, it does not directly contribute to the career, financial advocacy, or Malaysian context needs as strongly as other choices.",
+    "summary": ""
+  },
+  {
+    "videoId": "50QPWueqYnQ",
+    "title": "The Sunni Position on Yazid",
+    "selected": false,
+    "reasoning": "A highly specific theological/historical discussion within Islamic studies. It provides deep religious knowledge but offers no direct value for career advice, financial advocacy, or fullstack engineering skills.",
+    "summary": ""
+  },
+  {
+    "videoId": "u9pVRdtNsQo",
+    "title": "How to Get Hired When 120,000 Engineers Got Laid Off",
+    "selected": true,
+    "reasoning": "Extremely high value for a junior fullstack software engineer and someone early in their career seeking advice. Addresses a critical and timely concern (layoffs) with actionable strategies for job seeking.",
+    "summary": "Facing a challenging job market? This video is a survival guide for junior engineers, offering vital strategies on how to stand out and get hired even when layoffs are rampant. It's the essential career advice you need right now to navigate your early career with confidence."
+  },
+  {
+    "videoId": "j17U8f3g5to",
+    "title": "The &quot;55x faster coding&quot; claim misses the whole point",
+    "selected": false,
+    "reasoning": "Discusses a critical perspective on exaggerated tech claims. While good for developing critical thinking, it offers less direct, actionable career growth advice than other videos focusing on job searching or career ownership.",
+    "summary": ""
+  },
+  {
+    "videoId": "beVpr8f2LAs",
+    "title": "Own your engineering career, no one else will",
+    "selected": true,
+    "reasoning": "Offers fundamental, empowering career advice crucial for any engineer, especially a junior one, to take control of their professional development and growth. Directly targets 'early in career seeking advice' and 'junior fullstack software engineer'.",
+    "summary": "Your career is your responsibility, and this video delivers a powerful message about taking ownership of your professional journey as an engineer. For those early in their careers, this is a wake-up call and a guide to proactively shaping your path, rather than waiting for opportunities to come to you."
   }
 ]
