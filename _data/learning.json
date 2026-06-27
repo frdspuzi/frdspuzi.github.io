@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What is a counterintuitive consequence that can occur when people write down information or store it digitally?",
+      "question": "Which PCIe power management state is characterized by almost completely powering down the device to achieve the highest power savings, resulting in the longest wake-up time?",
       "options": [
-        "The brain may interpret this as permission to forget the information.",
-        "It primarily enhances the brain's capacity for generating novel concepts.",
-        "It guarantees perfect recall due to external storage.",
-        "It only applies to very short-term memories, not profound realizations."
-      ],
-      "correctIndex": 0,
-      "learning": "Writing information down or offloading it digitally can paradoxically lead to forgetting, as the brain may interpret its external storage as permission to delete it from active memory. This phenomenon is known as the 'Performance Paradox' of Cognitive Offloading or Digital Amnesia.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "What is a key advantage of structuring projects into smaller, iterative cycles known as Sprints within an agile framework like Scrum?",
-      "options": [
-        "To solely define and prioritize the product's feature list.",
-        "To increase the overall project length for thoroughness.",
-        "To facilitate daily team meetings for progress updates.",
-        "To allow for more flexibility and quicker adjustments."
-      ],
-      "correctIndex": 3,
-      "learning": "Scrum is an agile approach that breaks the development process into smaller, iterative cycles called Sprints, primarily to allow for more flexibility and quicker adjustments throughout a project.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "What are the small markings placed above or below Arabic letters that are crucial for indicating vowel sounds and correct pronunciation?",
-      "options": [
-        "Spelling guides",
-        "Tashkeel",
-        "Pronunciation accents",
-        "Vowel indicators"
-      ],
-      "correctIndex": 1,
-      "learning": "Tashkeel are small markings used in Arabic script to indicate how letters should be pronounced, specifically which vowel sound to use. Without these marks, reading Arabic can be tricky because the letters alone don’t always convey their sound, presenting a key background complexity in text analysis.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which PCIe power management state is characterized by the device being almost completely powered down, offering the highest power savings but also the longest wake-up time?",
-      "options": [
-        "L0",
-        "L1.0",
         "L0s",
-        "L2"
+        "L1.0",
+        "L2",
+        "L1.2"
       ],
-      "correctIndex": 3,
-      "learning": "The L2 power management state for a PCIe device involves the device being almost completely powered down, resulting in the highest power savings and the longest wake-up time, ideal for the longest periods of inactivity.",
+      "correctIndex": 2,
+      "learning": "The L2 state is the deepest PCIe power management state, where the device is almost completely powered down during long periods of inactivity to maximize energy savings, which consequently requires the longest wake-up time to restart.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "What must first occur for the condition of a people to be changed by divine will?",
+      "question": "Under Islamic teachings, which three primary roles define a person's ultimate purpose in life?",
       "options": [
-        "They must rely solely on external circumstances to shift.",
-        "They must change what is in themselves.",
-        "They must simply wait for divine intervention.",
-        "They must accept that their condition is predetermined and unalterable."
+        "Worshiping Allah, serving as stewards of the Earth, and preparing for the eternal Hereafter",
+        "Sustaining ancestral traditions, establishing sovereign nations, and prioritizing material success",
+        "Accumulating worldly wealth, pursuing personal happiness, and achieving physical immortality",
+        "Withdrawing from society, performing exclusive silent meditation, and rejecting all worldly duties"
       ],
-      "correctIndex": 1,
-      "learning": "The principle states: 'Indeed, Allah does not change the condition of a people until they change what is in themselves.'",
+      "correctIndex": 0,
+      "learning": "In Islamic teachings, human life is structured around three primary purposes: worshiping Allah, acting as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter through personal accountability.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which aspect of destiny refers to the actual occurrence of events in a person's life that they have the free will and responsibility to alter through personal change and supplication?",
+      "options": [
+        "Qadr",
+        "Ar-Ra'd",
+        "Al-Alim",
+        "Qada'"
+      ],
+      "correctIndex": 3,
+      "learning": "While the overall divine plan (Qadr) is already completely written and known, individuals are given the free will and responsibility to actively alter the actual occurrences in their lives (Qada') by changing their own condition and making supplications.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "What is the standard format of a User Story in a Scrum Product Backlog?",
+      "options": [
+        "I want [feature] because [reason]",
+        "As a [developer], I will build [feature] for [stakeholder]",
+        "As a [role], I need [feature], so that [reason]",
+        "[Feature] should be implemented by [date]"
+      ],
+      "correctIndex": 2,
+      "learning": "In Scrum, a User Story within the Product Backlog follows a specific structured format: 'As a [role], I need [feature], so that [reason]'.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "In a word frequency analysis of the Quran, what cumulative percentage of the text is represented by the top 20 most repeated words?",
+      "options": [
+        "Approximately 50.00%",
+        "Approximately 5.50%",
+        "Approximately 20.83%",
+        "Approximately 80.00%"
+      ],
+      "correctIndex": 2,
+      "learning": "While one might assume the 80/20 Pareto Principle applies to vocabulary frequency, the top 20 most frequently repeated words in the Quran actually only make up approximately 20.83% of the total text.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-06-26T04:48:58.811Z"
+  "fetchedAt": "2026-06-27T04:33:50.267Z"
 }
