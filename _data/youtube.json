@@ -1,6 +1,121 @@
 {
   "videos": [
     {
+      "title": "Agents in Production: How OpenGov Built and Scaled OG Assist - Gabe De Mesa, OpenGov",
+      "url": "https://www.youtube.com/watch?v=4uFVSLgD2Q4",
+      "videoId": "4uFVSLgD2Q4",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This presentation offers a practical guide on scaling AI agents in production, using OpenGov's 'OG Assist' as a real-world case study. It details key architectural decisions, such as using the 'Effect' TypeScript library and the Agent-to-Agent (A2A) protocol, to build robust enterprise tools. It is a must-watch for engineers looking to transition AI experiments into reliable, production-ready software.",
+      "dateAdded": "2026-06-27T04:32:01.816Z",
+      "timestamps": [
+        {
+          "startTime": 127,
+          "endTime": 205,
+          "topic": "Demonstration of OG Assist in action"
+        },
+        {
+          "startTime": 349,
+          "endTime": 465,
+          "topic": "Rebuilding the agent loop using the Effect library"
+        }
+      ]
+    },
+    {
+      "title": "Pure technical merit isn't enough",
+      "url": "https://www.youtube.com/shorts/Ugc1bUp7EPc",
+      "videoId": "Ugc1bUp7EPc",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Career",
+      "summary": "This clip explains why great technical projects often go unnoticed due to a lack of marketing. The founder of Astral shares how capturing a visitor's attention within the first 10 seconds is crucial in today's fast-paced attention economy.",
+      "dateAdded": "2026-06-27T04:32:01.816Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 16,
+          "topic": "Why great GitHub projects go unnoticed"
+        },
+        {
+          "startTime": 16,
+          "endTime": 38,
+          "topic": "The 10-second rule for capturing attention"
+        }
+      ]
+    },
+    {
+      "title": "Nak mula melabur dalam saham US? Ini antara apps terbaik yang korang boleh cuba - Review Moomoo",
+      "url": "https://www.youtube.com/watch?v=gaS7VgVwzTY",
+      "videoId": "gaS7VgVwzTY",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "This video provides a practical guide on using the Moomoo Malaysia investment platform, showing how beginners can easily navigate the app to trade global stocks and ETFs. Viewers will learn how to leverage features like fractional shares, Dollar Cost Averaging, and Shariah-compliant cash management to build a diversified portfolio. It is a valuable watch for anyone looking to kickstart their investing journey with a licensed and regulated broker.",
+      "dateAdded": "2026-06-27T04:32:01.816Z",
+      "timestamps": [
+        {
+          "startTime": 191,
+          "endTime": 250,
+          "topic": "Account registration and global trading options"
+        },
+        {
+          "startTime": 313,
+          "endTime": 407,
+          "topic": "How to buy US stocks using fractional shares"
+        },
+        {
+          "startTime": 744,
+          "endTime": 831,
+          "topic": "Earning returns on idle cash with Shariah-compliant Cash Plus"
+        }
+      ]
+    },
+    {
+      "title": "Being T20 in Malaysia Doesn’t Actually Mean You’re Rich | In The Studio",
+      "url": "https://www.youtube.com/watch?v=Ane7U3mRS8w",
+      "videoId": "Ane7U3mRS8w",
+      "channel": "BFM 89.9",
+      "category": "Finance",
+      "summary": "This video explores the statistical realities of Malaysia's T20 income bracket, debunking the myth that everyone in this group is wealthy. It explains how diverse household dynamics, location, and economic vulnerabilities make T20 an ineffective tool for targeting subsidies.",
+      "dateAdded": "2026-06-27T04:32:01.816Z",
+      "timestamps": [
+        {
+          "startTime": 60,
+          "endTime": 150,
+          "topic": "Statistical definition and misconceptions of T20"
+        },
+        {
+          "startTime": 247,
+          "endTime": 310,
+          "topic": "Diverse realities and vulnerabilities within the T20 bracket"
+        },
+        {
+          "startTime": 415,
+          "endTime": 480,
+          "topic": "Comparing Malaysia's public services and healthcare to regional neighbors"
+        }
+      ]
+    },
+    {
+      "title": "Don't Talk To People Like You Talk to ChatGPT | LATEST Khutbah by Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=KwW9snXWE0g",
+      "videoId": "KwW9snXWE0g",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "This video explores how modern technology and AI are subtly shifting us toward an impatient 'command culture' in our daily lives. Drawing on the exemplary character of the Prophet Muhammad, it provides a powerful reminder of the vital importance of gentleness, patience, and kindness in human relationships.",
+      "dateAdded": "2026-06-27T04:32:01.816Z",
+      "timestamps": [
+        {
+          "startTime": 25,
+          "endTime": 128,
+          "topic": "AI, Command Culture, and the Erosion of Human Connection"
+        },
+        {
+          "startTime": 347,
+          "endTime": 510,
+          "topic": "Prophetic Gentleness: Navigating Authority Without Cruelty"
+        }
+      ]
+    },
+    {
       "title": "How AI generated code impacts open source",
       "url": "https://www.youtube.com/shorts/vPeYNJiqMaw",
       "videoId": "vPeYNJiqMaw",
@@ -44,27 +159,6 @@
           "startTime": 480,
           "endTime": 555,
           "topic": "Johor Wages and Brain Drain"
-        }
-      ]
-    },
-    {
-      "title": "Being T20 in Malaysia Doesn’t Actually Mean You’re Rich | In The Studio",
-      "url": "https://www.youtube.com/watch?v=Ane7U3mRS8w",
-      "videoId": "Ane7U3mRS8w",
-      "channel": "BFM 89.9",
-      "category": "Finance",
-      "summary": "This discussion debunks the misconception that all T20 earners in Malaysia are wealthy, highlighting the vast disparities and financial vulnerabilities within this bracket. It offers a crucial reality check on how location, family size, and asset structures impact actual disposable income, making it essential viewing for understanding modern economic policy.",
-      "dateAdded": "2026-06-26T04:48:40.820Z",
-      "timestamps": [
-        {
-          "startTime": 54,
-          "endTime": 138,
-          "topic": "The statistical definition and relative nature of T20"
-        },
-        {
-          "startTime": 246,
-          "endTime": 310,
-          "topic": "How household demographics create vastly different financial realities within the same bracket"
         }
       ]
     },
@@ -239,106 +333,7 @@
           "topic": "The 'A SMILE' preparation framework"
         }
       ]
-    },
-    {
-      "title": "The Production AI Playbook: Deploying Agents at Enterprise Scale — Sandipan Bhaumik, Databricks",
-      "url": "https://www.youtube.com/watch?v=ObTPqBGsEbA",
-      "videoId": "ObTPqBGsEbA",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Deploying AI in production often fails when teams focus on selecting models instead of establishing reliable evaluation and monitoring. This talk introduces a practical five-pillar framework to help you build observable, measurable, and highly scalable enterprise AI systems.",
-      "dateAdded": "2026-06-22T05:38:29.355Z",
-      "timestamps": [
-        {
-          "startTime": 113,
-          "endTime": 193,
-          "topic": "The common trap of AI deployment"
-        },
-        {
-          "startTime": 283,
-          "endTime": 310,
-          "topic": "The five pillars of production AI"
-        },
-        {
-          "startTime": 366,
-          "endTime": 465,
-          "topic": "Reorganizing the build order: Case study"
-        }
-      ]
-    },
-    {
-      "title": "How to actually change your habits | Kim Foster | TEDxSurrey",
-      "url": "https://www.youtube.com/watch?v=F9P_ixAEV0M",
-      "videoId": "F9P_ixAEV0M",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "This insightful TEDx talk reveals that the true obstacle to lasting personal change is not a lack of willpower, but rather a clash with our established identity. By shifting our focus from what we 'do' to who we believe we 'are', we can easily align our habits with our desired future self.",
-      "dateAdded": "2026-06-22T05:38:29.355Z",
-      "timestamps": [
-        {
-          "startTime": 187,
-          "endTime": 254,
-          "topic": "The voting study: shifting from doing to being"
-        },
-        {
-          "startTime": 310,
-          "endTime": 376,
-          "topic": "The OS metaphor: why new habits fail on an old identity"
-        }
-      ]
-    },
-    {
-      "title": "Why ALLAH Made the Nafs the Hardest Battle of Your Life",
-      "url": "https://www.youtube.com/watch?v=eBzgNfvJODE",
-      "videoId": "eBzgNfvJODE",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "This video offers a crucial spiritual perspective on why standard self-help and productivity systems fail, tracing the root cause to an undisciplined inner self (nafs). By understanding the psychological traps of desires and heedlessness, viewers will learn a simple 10-minute nightly reflection practice to regain self-control and live more intentionally.",
-      "dateAdded": "2026-06-22T05:38:29.355Z",
-      "timestamps": [
-        {
-          "startTime": 174,
-          "endTime": 264,
-          "topic": "The three inner weapons of the nafs: desire, heedlessness, and whispers"
-        },
-        {
-          "startTime": 390,
-          "endTime": 515,
-          "topic": "Why external productivity tools fail without purifying the heart first"
-        },
-        {
-          "startTime": 579,
-          "endTime": 680,
-          "topic": "The 10-minute nightly self-accounting practice (Muhasaba) for daily progress"
-        }
-      ]
-    },
-    {
-      "title": "The 3 Skills I'd Learn In the Age of AI",
-      "url": "https://www.youtube.com/watch?v=7IeFVWJXp7E",
-      "videoId": "7IeFVWJXp7E",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "This video outlines the essential skills needed to remain highly valuable and competitive as artificial intelligence continues to automate traditional job roles. The speaker explains how shifting your focus toward AI integration, direct revenue generation, and personal branding can future-proof your career. The core takeaway is that professionals who actively drive business growth and establish authority in their niche will remain indispensable in an AI-driven economy.",
-      "dateAdded": "2026-06-21T05:24:09.428Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 67,
-          "topic": "Mastering AI tools and staying on the cutting edge"
-        },
-        {
-          "startTime": 67,
-          "endTime": 156,
-          "topic": "Why staying close to revenue generation secures your career"
-        },
-        {
-          "startTime": 156,
-          "endTime": 242,
-          "topic": "Understanding the difference between cost centers and profit centers"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-26T04:53:13.953Z"
+  "lastUpdated": "2026-06-27T04:35:05.980Z"
 }
