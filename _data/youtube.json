@@ -6,18 +6,23 @@
       "videoId": "4uFVSLgD2Q4",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "This presentation offers a practical guide on scaling AI agents in production, using OpenGov's 'OG Assist' as a real-world case study. It details key architectural decisions, such as using the 'Effect' TypeScript library and the Agent-to-Agent (A2A) protocol, to build robust enterprise tools. It is a must-watch for engineers looking to transition AI experiments into reliable, production-ready software.",
-      "dateAdded": "2026-06-27T04:32:01.816Z",
+      "summary": "This video offers a rare, behind-the-scenes look at how OpenGov successfully built and scaled their production-grade AI assistant, OG Assist. By sharing key architectural decisions, such as transitioning from LangGraph to a custom, type-safe 'Effect'-native framework, the presenter delivers highly actionable insights for deploying robust agents. The core takeaway is that scaling real-world AI requires robust type safety, end-to-end observability, and absolute control over the agent loop.",
+      "dateAdded": "2026-06-28T04:59:23.272Z",
       "timestamps": [
         {
           "startTime": 127,
           "endTime": 205,
-          "topic": "Demonstration of OG Assist in action"
+          "topic": "Introduction and Demo of OG Assist"
+        },
+        {
+          "startTime": 274,
+          "endTime": 349,
+          "topic": "Why OpenGov Adopted the 'Effect' Library"
         },
         {
           "startTime": 349,
           "endTime": 465,
-          "topic": "Rebuilding the agent loop using the Effect library"
+          "topic": "Rebuilding the Agent Loop for Production Scale"
         }
       ]
     },
@@ -27,18 +32,18 @@
       "videoId": "Ugc1bUp7EPc",
       "channel": "Ryan Peterman",
       "category": "Tech & Career",
-      "summary": "This clip explains why great technical projects often go unnoticed due to a lack of marketing. The founder of Astral shares how capturing a visitor's attention within the first 10 seconds is crucial in today's fast-paced attention economy.",
-      "dateAdded": "2026-06-27T04:32:01.816Z",
+      "summary": "This video explains why great technical projects often go unnoticed without proper marketing. The speaker shares that capturing a visitor's interest in the first 10 seconds is crucial for success in the modern attention economy.",
+      "dateAdded": "2026-06-28T04:59:23.272Z",
       "timestamps": [
         {
           "startTime": 0,
-          "endTime": 16,
-          "topic": "Why great GitHub projects go unnoticed"
+          "endTime": 15,
+          "topic": "The marketing gap in technical projects"
         },
         {
           "startTime": 16,
           "endTime": 38,
-          "topic": "The 10-second rule for capturing attention"
+          "topic": "Capturing interest in the attention economy"
         }
       ]
     },
@@ -48,23 +53,23 @@
       "videoId": "gaS7VgVwzTY",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "This video provides a practical guide on using the Moomoo Malaysia investment platform, showing how beginners can easily navigate the app to trade global stocks and ETFs. Viewers will learn how to leverage features like fractional shares, Dollar Cost Averaging, and Shariah-compliant cash management to build a diversified portfolio. It is a valuable watch for anyone looking to kickstart their investing journey with a licensed and regulated broker.",
-      "dateAdded": "2026-06-27T04:32:01.816Z",
+      "summary": "This video provides a practical walkthrough of the Moomoo Malaysia trading platform, highlighting its features for both beginners and seasoned investors. The core takeaway is how to leverage tools like fractional shares, Shariah-compliant money market funds, and automated investing to build a diversified portfolio. While Moomoo is a licensed and award-winning broker in Malaysia, viewers should remain cautious as all market investments carry risk.",
+      "dateAdded": "2026-06-28T04:59:23.272Z",
       "timestamps": [
         {
-          "startTime": 191,
-          "endTime": 250,
-          "topic": "Account registration and global trading options"
+          "startTime": 193,
+          "endTime": 247,
+          "topic": "Step-by-step guide to purchasing fractional shares in the US market"
         },
         {
-          "startTime": 313,
-          "endTime": 407,
-          "topic": "How to buy US stocks using fractional shares"
+          "startTime": 263,
+          "endTime": 390,
+          "topic": "How to subscribe to Malaysian IPOs, trade ETFs, and set up a Regular Savings Plan"
         },
         {
-          "startTime": 744,
-          "endTime": 831,
-          "topic": "Earning returns on idle cash with Shariah-compliant Cash Plus"
+          "startTime": 464,
+          "endTime": 511,
+          "topic": "Generating passive returns with Shariah-compliant Cash Plus money market funds"
         }
       ]
     },
@@ -74,23 +79,23 @@
       "videoId": "Ane7U3mRS8w",
       "channel": "BFM 89.9",
       "category": "Finance",
-      "summary": "This video explores the statistical realities of Malaysia's T20 income bracket, debunking the myth that everyone in this group is wealthy. It explains how diverse household dynamics, location, and economic vulnerabilities make T20 an ineffective tool for targeting subsidies.",
-      "dateAdded": "2026-06-27T04:32:01.816Z",
+      "summary": "This discussion dissects Malaysia's 'T20' income group, debunking the myth that all top earners are wealthy. Experts explain how high living costs and family obligations leave many seemingly rich households financially vulnerable. The key takeaway is that policymakers must look beyond simplistic income brackets to design fair and effective subsidy reforms.",
+      "dateAdded": "2026-06-28T04:59:23.272Z",
       "timestamps": [
         {
-          "startTime": 60,
-          "endTime": 150,
-          "topic": "Statistical definition and misconceptions of T20"
+          "startTime": 61,
+          "endTime": 138,
+          "topic": "What T20 actually means statistically"
         },
         {
           "startTime": 247,
           "endTime": 310,
-          "topic": "Diverse realities and vulnerabilities within the T20 bracket"
+          "topic": "Vulnerability and diversity within the T20 group"
         },
         {
-          "startTime": 415,
-          "endTime": 480,
-          "topic": "Comparing Malaysia's public services and healthcare to regional neighbors"
+          "startTime": 390,
+          "endTime": 476,
+          "topic": "The birth lottery and the struggles of lower-bound T20"
         }
       ]
     },
@@ -100,18 +105,18 @@
       "videoId": "KwW9snXWE0g",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "This video explores how modern technology and AI are subtly shifting us toward an impatient 'command culture' in our daily lives. Drawing on the exemplary character of the Prophet Muhammad, it provides a powerful reminder of the vital importance of gentleness, patience, and kindness in human relationships.",
-      "dateAdded": "2026-06-27T04:32:01.816Z",
+      "summary": "This sermon explores how modern AI interactions are fostering an impatient 'command culture' that damages human relationships. By contrasting this with the gentle communication style of the Prophet Muhammad, it offers a guide to restoring empathy and respect in our daily lives.",
+      "dateAdded": "2026-06-28T04:59:23.272Z",
       "timestamps": [
         {
           "startTime": 25,
           "endTime": 128,
-          "topic": "AI, Command Culture, and the Erosion of Human Connection"
+          "topic": "The rise of AI and its impact on human communication"
         },
         {
-          "startTime": 347,
-          "endTime": 510,
-          "topic": "Prophetic Gentleness: Navigating Authority Without Cruelty"
+          "startTime": 406,
+          "endTime": 537,
+          "topic": "Contrasting command culture with prophetic gentleness"
         }
       ]
     },
@@ -335,5 +340,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-06-27T04:35:05.980Z"
+  "lastUpdated": "2026-06-28T05:02:28.131Z"
 }
