@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What is the psychological term for the brain's tendency to discard information once it has been written down or otherwise externally stored?",
+      "question": "To effectively combat the natural tendency of the human brain to forget information quickly, what is a recommended strategy?",
       "options": [
-        "The Google Effect",
-        "The Performance Paradox of Cognitive Offloading",
-        "Spaced Repetition",
-        "Digital Amnesia"
+        "Building external systems for consistent recall and sharing beneficial knowledge.",
+        "Constantly re-reading notes to reinforce memory.",
+        "Relying on the brain's natural ability to retain profound realizations.",
+        "Storing ideas privately in a personal digital garden."
       ],
-      "correctIndex": 1,
-      "learning": "Psychologists refer to the phenomenon where the brain effectively deletes information once it has been written down or stored digitally as the “Performance Paradox” of Cognitive Offloading.",
+      "correctIndex": 0,
+      "learning": "Human memory is prone to forgetting information rapidly, making it crucial to establish external systems for consistent recall and to share beneficial knowledge, rather than depending solely on internal mental storage.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "What is the approximate ratio of distinct words in the Arabic language compared to those found in the Oxford English Dictionary for English?",
+      "question": "Which Scrum artifact provides a visual representation of a Sprint's progress and indicates the amount of work still remaining?",
       "options": [
-        "1:71",
-        "20:1",
-        "71:1",
-        "10:1"
+        "Sprint Backlog",
+        "Daily Scrum",
+        "Product Backlog",
+        "Burndown Chart"
       ],
-      "correctIndex": 2,
-      "learning": "The Arabic language possesses a remarkably vast vocabulary, with approximately 12 million distinct words, which is significantly higher than the 170,000 English words listed in the Oxford English Dictionary, leading to an approximate 71:1 ratio.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What is the primary motivation for Scrum's use of smaller, iterative cycles known as Sprints?",
-      "options": [
-        "To allow for more flexibility and quicker adjustments",
-        "To increase the length of the project",
-        "To reduce the number of team members needed",
-        "To define the features needed for the product and prioritize the product backlog"
-      ],
-      "correctIndex": 0,
-      "learning": "Scrum utilizes an agile approach that breaks the development process into smaller, iterative cycles called Sprints. This structure is primarily motivated by the need to allow for more flexibility and quicker adjustments during project execution.",
+      "correctIndex": 3,
+      "learning": "The Burndown Chart is a Scrum artifact that visualizes the progress of a Sprint and shows remaining work, helping to track if the team is on schedule.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "How do personal actions and sincere supplications relate to the actual occurrences in one's life and an overarching divine plan?",
+      "question": "What term describes individuals who are considered caretakers of creation, with a responsibility to preserve faith and foster unity within the community?",
       "options": [
-        "The actual occurrences in life are entirely fixed by the divine plan, with no influence from personal actions or supplications.",
-        "Personal actions and supplications solely determine the actual occurrences in life, independent of any divine plan.",
-        "The divine plan is a separate concept that does not interact with or account for personal actions, supplications, or the actual occurrences in life.",
-        "Personal actions and supplications can alter the actual occurrences in life, but these changes are always encompassed within the divine plan."
+        "Taqwa",
+        "Imam",
+        "Mu'min",
+        "Khalifah"
       ],
       "correctIndex": 3,
-      "learning": "While the actual occurrence of events (Qada’) in one's life can be influenced and altered by sincere supplication (Dua) and actions, these changes, and the decisions to make them, are always known to and part of the complete, eternal divine plan (Qadr).",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In a specific theological understanding, what three primary roles encompass the purpose of human existence?",
-      "options": [
-        "Spreading justice, building strong communities, and engaging in deep spiritual reflection.",
-        "Seeking enlightenment, achieving material prosperity, and maintaining social harmony.",
-        "Cultivating personal virtues, mastering a profession, and creating artistic works.",
-        "Worshiping Allah, serving as stewards (khalifah) of the Earth, and preparing for the eternal Hereafter through accountability."
-      ],
-      "correctIndex": 3,
-      "learning": "In Islam, life's purpose revolves around three primary roles: worshiping Allah, serving as stewards (khalifah) of the Earth, and preparing for the eternal Hereafter through a life of conscious choices and accountability.",
+      "learning": "As Muslims, individuals are understood to be 'khalifah'—caretakers of Allah’s creation. This role involves responsibilities such as preserving faith and fostering unity within the community.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "What is the approximate ratio of distinct Arabic words to English words, based on comparisons to dictionaries like the Oxford English Dictionary?",
+      "options": [
+        "71:1",
+        "50:1",
+        "10:1",
+        "1:71"
+      ],
+      "correctIndex": 0,
+      "learning": "Arabic vocabulary is significantly larger than English, possessing approximately 12 million distinct words compared to 170,000 English words in the Oxford English Dictionary, leading to an approximate 71:1 ratio.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which PCIe power management state is characterized by the device being almost completely powered down, offering the highest power savings and requiring the longest wake-up time?",
+      "options": [
+        "L0s",
+        "L1.2",
+        "L1.0",
+        "L2"
+      ],
+      "correctIndex": 3,
+      "learning": "The L2 power management state for a PCIe device involves the device being almost completely powered down. This state offers the highest power savings and requires the longest wake-up time, making it suitable for the longest periods of inactivity.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     }
   ],
-  "fetchedAt": "2026-06-28T04:58:51.232Z"
+  "fetchedAt": "2026-06-29T05:08:56.853Z"
 }
