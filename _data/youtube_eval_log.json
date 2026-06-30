@@ -1,212 +1,107 @@
 [
   {
-    "videoId": "ij-AU9dpJjc",
-    "title": "Stop Writing Tone Instructions. Layer Them. - Isadora Martin-Dye, Isadora &amp; Co",
-    "selected": false,
-    "reasoning": "While prompt engineering is useful, this video focuses on a very specific copywriting niche rather than core fullstack engineering or career progression.",
-    "summary": ""
-  },
-  {
-    "videoId": "ZRM_TfEZcIo",
-    "title": "Turn 10,994 Notes Into Memory - Paul Iusztin, Decoding AI &amp; Louis-François Bouchard, Towards AI",
-    "selected": false,
-    "reasoning": "A highly specialized talk on AI database integration. Interesting, but too niche for a junior-level developer's broader career and financial needs.",
-    "summary": ""
-  },
-  {
-    "videoId": "4uFVSLgD2Q4",
-    "title": "Agents in Production: How OpenGov Built and Scaled OG Assist - Gabe De Mesa, OpenGov",
+    "videoId": "UNzCG3lw6O0",
+    "title": "Building Great Agent Skills: The Missing Manual",
     "selected": true,
-    "reasoning": "High-value architectural case study for a junior fullstack dev. Demonstrates real-world system scaling of AI-driven fullstack features, bridging the gap between basic coding and enterprise architecture.",
-    "summary": "Bridging the gap between code tutorials and real-world system design is the hardest hurdle for junior engineers. This video goes under the hood of a real production-scale AI agent, teaching you backend scaling patterns and architectural practices that will instantly level up your engineering credentials."
+    "reasoning": "Highly actionable technical manual for developers looking to understand production-grade AI agent engineering.",
+    "summary": "As a junior fullstack engineer, knowing how to build and orchestrate production-grade AI agents is the ultimate career cheat code right now. This video bypasses the high-level AI hype to give you a concrete, engineering-first manual for building reliable agent workflows that scale."
   },
   {
-    "videoId": "yfwjErVupFA",
-    "title": "Tokenmaxxing and correlations",
+    "videoId": "fWXJM-J0ZB8",
+    "title": "Frontier results, on device - RL Nabors, Arize",
     "selected": false,
-    "reasoning": "A very short clip on a niche concept that lacks deep, actionable career advice.",
+    "reasoning": "While technically sound, this is highly niche and lacks the broader architectural value of the other AI-related videos.",
     "summary": ""
   },
   {
-    "videoId": "Ugc1bUp7EPc",
-    "title": "Pure technical merit isn't enough",
+    "videoId": "spNAUEgq_A8",
+    "title": "The Future Is Domain-Specific Agents - Justin Schroeder, StandardAgents",
     "selected": true,
-    "reasoning": "Brutally honest career advice specifically targeted at early-career software developers, correcting the common junior misconception that coding is the only thing that matters.",
-    "summary": "If you want to accelerate your growth from junior to mid-level engineer, you must realize that raw coding ability is only half the battle. This blunt career advice teaches you how to measure and demonstrate your actual business impact, communication skill, and organizational value."
+    "reasoning": "Incredibly strategic forward-looking analysis of where software architecture is moving, crucial for early-career fullstack devs.",
+    "summary": "The software development landscape is rapidly shifting from writing basic boilerplate to orchestrating specialized AI architectures. This talk explains why domain-specific agents are the future, equipping you with the architectural foresight to future-proof your engineering stack and stand out in the job market."
   },
   {
-    "videoId": "1BmEhKqwExc",
-    "title": "Rust build tooling vs C and C++",
+    "videoId": "3yKTcwhDTks",
+    "title": "Why SAT solvers work in practice",
     "selected": false,
-    "reasoning": "A comparison of languages that is too specialized and of low relevance to general fullstack engineering and career growth.",
+    "reasoning": "This is a quick YouTube short that oversimplifies a complex computer science topic; the long-form professor interview is far more valuable.",
     "summary": ""
   },
   {
-    "videoId": "9_mA8B9NlSI",
-    "title": "The biggest myth in money &amp; business",
-    "selected": false,
-    "reasoning": "A generic, ultra-short productivity clip. Doesn't offer deep enough local context or technical depth.",
-    "summary": ""
-  },
-  {
-    "videoId": "Pb7Q1cUZfmc",
-    "title": "The biggest myth in sales",
-    "selected": false,
-    "reasoning": "A short video focusing on sales metrics, which is outside the main professional scope of a junior developer.",
-    "summary": ""
-  },
-  {
-    "videoId": "Bvotry5mfEY",
-    "title": "The Idea Combination Lock",
-    "selected": false,
-    "reasoning": "A broad productivity video that is too generic for our targeted tech and financial persona.",
-    "summary": ""
-  },
-  {
-    "videoId": "cL7uFe5RqHY",
-    "title": "AI tools for human creativity",
-    "selected": false,
-    "reasoning": "A general marketing/dev promo video from Google that lacks concrete coding implementation steps or deep value.",
-    "summary": ""
-  },
-  {
-    "videoId": "KPx3nRwbldE",
-    "title": "Run Gemma on Reachy Mini, an open source robot",
-    "selected": false,
-    "reasoning": "Fascinating use of robotics, but irrelevant to a web-focused junior fullstack developer.",
-    "summary": ""
-  },
-  {
-    "videoId": "UlbokBsjMRY",
-    "title": "Gemini 3.5 Live Translate, Gemini in Xcode, and more! - Google Developer News June 2026",
-    "selected": false,
-    "reasoning": "A quick news roundup. While useful to stay updated, it is less impactful than concrete career growth or financial advice.",
-    "summary": ""
-  },
-  {
-    "videoId": "ffqITw40_eU",
-    "title": "Perlu beli rumah kalau gaji besar?",
-    "selected": false,
-    "reasoning": "A short teaser video. The longer finance discussions provide much more structured value.",
-    "summary": ""
-  },
-  {
-    "videoId": "gaS7VgVwzTY",
-    "title": "Nak mula melabur dalam saham US? Ini antara apps terbaik yang korang boleh cuba - Review Moomoo",
+    "videoId": "AaK1SL2i_4Y",
+    "title": "MIT Professor: Leetcode, P vs NP, SAT Solvers | Ryan Williams",
     "selected": true,
-    "reasoning": "Directly targets the Malaysian perspective on entering global financial markets, utilizing Shariah-friendly brokerage setups locally. Perfect for early-career developers looking to grow their savings.",
-    "summary": "As your income grows in your tech career, figuring out how to ethically build and manage wealth is crucial. This step-by-step review breaks down how Malaysian investors can access global markets safely, keeping local financial regulations and Shariah-compliant alternatives in mind."
+    "reasoning": "Phenomenal academic and practical breakdown of interview prep, computer science theory, and problem-solving, perfect for leveling up an early-career engineer.",
+    "summary": "Ready to conquer FAANG-style interviews and upgrade your computer science fundamentals? This deep-dive interview with an MIT professor demystifies Leetcode and complex algorithmic thinking, helping you transition from writing functional code to designing truly optimized systems."
   },
   {
-    "videoId": "br62bCT8cP0",
-    "title": "Melabur saham dengan Moomoo",
+    "videoId": "WDSIDJ3f-io",
+    "title": "Rust is his favorite language",
     "selected": false,
-    "reasoning": "A short version of the main review. The full-length review provides far more practical value.",
+    "reasoning": "This is an entertaining short but provides no deep technical insight or career growth value.",
     "summary": ""
   },
   {
-    "videoId": "QiL3oEV6mAs",
-    "title": "[S01:E14] Harga minyak Diesel turun jadi isu politik? - Dr. Aimi, Economist",
-    "selected": false,
-    "reasoning": "An interesting macroeconomic analysis of fuel pricing in Malaysia, but slightly too politically-focused compared to personal financial growth.",
-    "summary": ""
-  },
-  {
-    "videoId": "N-mFDxaljiU",
-    "title": "Harga diesel mainan politik?",
-    "selected": false,
-    "reasoning": "A short excerpt from the diesel economics video. Lacks long-term career or financial actionable points.",
-    "summary": ""
-  },
-  {
-    "videoId": "atFKaQOI0jg",
-    "title": "Indonesia hilang tarikan pelabur asing",
-    "selected": false,
-    "reasoning": "Geopolitically interesting, but does not provide direct actionable advice for a Malaysian software developer.",
-    "summary": ""
-  },
-  {
-    "videoId": "19nzZo1EF80",
-    "title": "#108 | The Economics of The World Cup",
-    "selected": false,
-    "reasoning": "An entertaining economics documentary, but it provides no professional or religious development value for the target demographic.",
-    "summary": ""
-  },
-  {
-    "videoId": "QUoodW9c9pg",
-    "title": "#107 | What New CEOs Must Do",
-    "selected": false,
-    "reasoning": "Too executive-focused. Our target persona is a junior software engineer early in their career.",
-    "summary": ""
-  },
-  {
-    "videoId": "jN92B2b9_SA",
-    "title": "#106 | Negeri Sembilan's Crisis, Johor's Gamble &amp; Who'll Really Win (Idris &amp; Leon Jala)",
-    "selected": false,
-    "reasoning": "Focuses heavily on Malaysian local political-economic drama. Though interesting, it is less critical for personal professional development.",
-    "summary": ""
-  },
-  {
-    "videoId": "R5oCjemxEIk",
-    "title": "Penantian 44 Tahun | Perjuangan Bersejarah Komuniti Taman Rimba Kiara",
-    "selected": false,
-    "reasoning": "A local public interest news short. Does not offer career, tech, or financial strategic guidance.",
-    "summary": ""
-  },
-  {
-    "videoId": "pNPDfF7Qhfo",
-    "title": "An Indian lady applied to 300 property listings and was denied from all – Jason Wee | In The Studio",
-    "selected": false,
-    "reasoning": "Highlights a critical local societal issue (housing discrimination) but is less focused on practical career and financial planning strategies.",
-    "summary": ""
-  },
-  {
-    "videoId": "Ane7U3mRS8w",
-    "title": "Being T20 in Malaysia Doesn’t Actually Mean You’re Rich | In The Studio",
+    "videoId": "Ig2zcKJQWig",
+    "title": "The Dark Side Of Getting Rich On Youtube w/ @mattdavella",
     "selected": true,
-    "reasoning": "Provides a crucial financial reality check on the actual cost of living and bracket system in Malaysia, which is highly relevant for a junior dev whose salary is starting to scale.",
-    "summary": "As a junior software engineer in Malaysia, your earning potential is high, but stepping into the 'T20' bracket isn't what it used to be. This eye-opening breakdown of local household economics will help you avoid lifestyle creep, manage your cash flow, and build real, lasting generational wealth."
+    "reasoning": "Crucial, grounding discussion on career burn-out, lifestyle design, and mental health for early-career high achievers.",
+    "summary": "When you are early in your tech career, it is easy to burn out chasing status, money, and fast-paced metrics. This candid discussion on the pitfalls of material success offers a vital perspective on building a sustainable, values-aligned career that respects your mental and spiritual well-being."
   },
   {
-    "videoId": "o8VcCoOcEmg",
-    "title": "Rethinking DEI for Europe | Laurent Muzellec &amp; Olamide Obadina | TEDxTrinityCollegeDublin",
+    "videoId": "0akWiY5F8H4",
+    "title": "The truth about transitional phases",
     "selected": false,
-    "reasoning": "While DEI is an important corporate topic, this video focuses entirely on European legislative structures, making it irrelevant to a Malaysian context.",
+    "reasoning": "A solid motivational short, but too brief to offer the deep, actionable career advice found in the longer podcasts.",
     "summary": ""
   },
   {
-    "videoId": "X1_mMthVdoI",
-    "title": "How Conformity Drives Social Trends | Kaleda Denton | TEDxNewEngland",
+    "videoId": "II9Oq4bEXLo",
+    "title": "I can type at 156 words per minute 🤯",
     "selected": false,
-    "reasoning": "A high-level sociological TEDx talk with general appeal but lacks specific utility for a developer or Islamic finance advocate.",
+    "reasoning": "This is a productivity vanity metric showcase and offers zero career, technical, or economic value.",
     "summary": ""
   },
   {
-    "videoId": "_-XpM2qTGOM",
-    "title": "The life-saving act nobody sees | Kate Fisher | TEDxBrisbane",
+    "videoId": "QEAaCF1Oc2U",
+    "title": "What butler training teaches organisations about hospitality | Vincent Vermeulen | TEDxUHasselt",
     "selected": false,
-    "reasoning": "An inspirational humanitarian speech, but it does not align with our specific targeted career or financial requirements.",
+    "reasoning": "Fascinating concepts regarding hospitality, but irrelevant to a software engineer or an Islamic financial advocate.",
     "summary": ""
   },
   {
-    "videoId": "IBDwl1Vu8I8",
-    "title": "Dangerous Intentions | Dr. Omar Suleiman",
+    "videoId": "eas1D4HPN2g",
+    "title": "The price of feeling wanted | Dr. Rita Renee | TEDxRobinson Road",
     "selected": false,
-    "reasoning": "A short video about spiritual intentions. Important, but the longer lecture format on ethical interaction offers much higher contextual value.",
+    "reasoning": "A generic relationship/psychology talk with no alignment to tech, finance, or Malaysian professional context.",
     "summary": ""
   },
   {
-    "videoId": "z6zaAkURcLA",
-    "title": "Stop “Admiring” Forgiveness | The Firsts",
+    "videoId": "zx8WT7WnLts",
+    "title": "Your Permission to Create Art Again | Esther Conter &amp; Veda Bartringer | TEDxLuxembourgCity",
     "selected": false,
-    "reasoning": "A highly spiritual short video, but not as directly aligned with tech culture and modern daily interactions as the full khutbah.",
+    "reasoning": "An artistic/creative motivation talk that lacks relevance to our technical, professional, or financial persona.",
     "summary": ""
   },
   {
-    "videoId": "KwW9snXWE0g",
-    "title": "Don't Talk To People Like You Talk to ChatGPT | LATEST Khutbah by Dr. Omar Suleiman",
+    "videoId": "0-Dk2aFA_s8",
+    "title": "EP12 #SembangKS | TTMM, PN, Calon MB, Muda, Trump dan Kulat Zombi",
     "selected": true,
-    "reasoning": "Directly bridges tech culture (interacting with LLMs) with core Islamic values and human relations. Perfect for a Muslim tech professional spending long hours coding and using AI.",
-    "summary": "In an era where software engineers spend all day commanding machines and prompting LLMs, our offline human manners can suffer. This powerful sermon connects modern developer habits with Islamic communication ethics, reminding us how to preserve empathy, patience, and character in a tech-driven world."
+    "reasoning": "An outstanding full-length Malaysian socio-political and economic analysis, vital for anyone advocating for Islamic finance in Malaysia.",
+    "summary": "To advocate effectively for Islamic finance, you must intimately understand Malaysian socio-political movements and economic policies. This comprehensive breakdown of local leadership shifts and political currents gives you the critical localized intelligence you need to navigate the Malaysian financial landscape."
+  },
+  {
+    "videoId": "-QQJUpX0ZZE",
+    "title": "PAS kini parti Melayu dengan kerusi Parlimen terbesar, mengapa masih perlu parti lain?",
+    "selected": false,
+    "reasoning": "While highly relevant to Malaysian politics, this is a short. The full-length SembangKS episodes offer much more economic depth.",
+    "summary": ""
+  },
+  {
+    "videoId": "JK9Zn2tmJb0",
+    "title": "Shahril berkongsi realiti di sebalik naik turun views KS, dari era “novelty factor” sehingga kini.",
+    "selected": false,
+    "reasoning": "A short focused on the meta-analytics of running a YouTube talk show, which is too niche for a junior developer and finance advocate.",
+    "summary": ""
   }
 ]

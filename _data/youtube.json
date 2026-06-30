@@ -1,6 +1,105 @@
 {
   "videos": [
     {
+      "title": "Building Great Agent Skills: The Missing Manual",
+      "url": "https://www.youtube.com/watch?v=UNzCG3lw6O0",
+      "videoId": "UNzCG3lw6O0",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "As a junior fullstack engineer, knowing how to build and orchestrate production-grade AI agents is the ultimate career cheat code right now. This video bypasses the high-level AI hype to give you a concrete, engineering-first manual for building reliable agent workflows that scale.",
+      "dateAdded": "2026-06-30T04:41:15.961Z",
+      "timestamps": []
+    },
+    {
+      "title": "The Future Is Domain-Specific Agents - Justin Schroeder, StandardAgents",
+      "url": "https://www.youtube.com/watch?v=spNAUEgq_A8",
+      "videoId": "spNAUEgq_A8",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This video demystifies why large, do-it-all AI agents fail and introduces the shift toward 'domain-specific agents.' The core takeaway is that orchestrating networks of small, specialized AI agents using composition rather than bloated context windows is the key to creating cost-effective and highly reliable AI systems.",
+      "dateAdded": "2026-06-30T04:41:15.961Z",
+      "timestamps": [
+        {
+          "startTime": 114,
+          "endTime": 164,
+          "topic": "Defining the true nature of an AI agent"
+        },
+        {
+          "startTime": 315,
+          "endTime": 365,
+          "topic": "The hidden engineering hurdles of custom agents"
+        },
+        {
+          "startTime": 533,
+          "endTime": 607,
+          "topic": "How domain-specific agents solve the integration crisis"
+        }
+      ]
+    },
+    {
+      "title": "MIT Professor: Leetcode, P vs NP, SAT Solvers | Ryan Williams",
+      "url": "https://www.youtube.com/watch?v=AaK1SL2i_4Y",
+      "videoId": "AaK1SL2i_4Y",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Career",
+      "summary": "This interview with MIT professor Ryan Williams demystifies complex theoretical computer science, showcasing elegant algorithm designs that challenge traditional limits. Viewers will gain a simplified understanding of core concepts like fine-grained complexity and how researchers find clever shortcuts to solve seemingly impossible computational problems.",
+      "dateAdded": "2026-06-30T04:41:15.961Z",
+      "timestamps": [
+        {
+          "startTime": 250,
+          "endTime": 368,
+          "topic": "Improving the 3Sum algorithm beyond quadratic time"
+        },
+        {
+          "startTime": 725,
+          "endTime": 800,
+          "topic": "The Meet-in-the-Middle approach for Subset Sum"
+        }
+      ]
+    },
+    {
+      "title": "The Dark Side Of Getting Rich On Youtube w/ @mattdavella",
+      "url": "https://www.youtube.com/watch?v=Ig2zcKJQWig",
+      "videoId": "Ig2zcKJQWig",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "Discover why your standard study habits might be secretly failing you and how to unlock actual, long-term retention using brain-backed learning strategies. This video breaks down the psychological trap of the 'illusion of competence' and offers a simple, actionable shift to active recall that will save you hours of wasted effort. It is a must-watch for anyone looking to master new skills faster and study smarter, not harder.",
+      "dateAdded": "2026-06-30T04:41:15.961Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 42,
+          "topic": "Why rereading notes creates a false sense of mastery"
+        },
+        {
+          "startTime": 43,
+          "endTime": 88,
+          "topic": "How to implement active recall to double your memory retention"
+        }
+      ]
+    },
+    {
+      "title": "EP12 #SembangKS | TTMM, PN, Calon MB, Muda, Trump dan Kulat Zombi",
+      "url": "https://www.youtube.com/watch?v=0-Dk2aFA_s8",
+      "videoId": "0-Dk2aFA_s8",
+      "channel": "Keluar Sekejap",
+      "category": "Finance",
+      "summary": "This highly engaging episode of \"Sembang KS\" offers a witty and sharp breakdown of Malaysia's fast-moving political landscape, focusing on the latest developments in Perikatan Nasional and MUDA. Host Zaidel Baharuddin balances political analysis with humor, making complex topics like party leadership struggles and state election strategies accessible to the everyday viewer.",
+      "dateAdded": "2026-06-30T04:41:15.961Z",
+      "timestamps": [
+        {
+          "startTime": 102,
+          "endTime": 169,
+          "topic": "Analysis of leadership changes and internal dynamics within Perikatan Nasional"
+        },
+        {
+          "startTime": 230,
+          "endTime": 285,
+          "topic": "Discussion on MUDA's election candidates and humorous local political commentary"
+        }
+      ]
+    },
+    {
       "title": "Agents in Production: How OpenGov Built and Scaled OG Assist - Gabe De Mesa, OpenGov",
       "url": "https://www.youtube.com/watch?v=4uFVSLgD2Q4",
       "videoId": "4uFVSLgD2Q4",
@@ -234,111 +333,7 @@
           "topic": "Developing a daily habit of learning and staying informed"
         }
       ]
-    },
-    {
-      "title": "Gemma Playground: Parallel Agents in Action",
-      "url": "https://www.youtube.com/watch?v=bfvS1UeAkN0",
-      "videoId": "bfvS1UeAkN0",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "This video showcases Gemma 4's multi-agent capabilities, demonstrating how an orchestrator agent can spawn ten independent sub-agents to generate SVG art simultaneously on a local machine. It highlights the impressive speed of parallel processing, showing how local, high-performance AI can streamline complex tasks from creative art generation to enterprise workflows.",
-      "dateAdded": "2026-06-24T04:45:15.612Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 33,
-          "topic": "Introducing Gemma 4's parallel agent capabilities"
-        },
-        {
-          "startTime": 33,
-          "endTime": 58,
-          "topic": "Parallel execution and local model benchmarking"
-        },
-        {
-          "startTime": 58,
-          "endTime": 131,
-          "topic": "Scaling multi-agent workflows to enterprise tasks"
-        }
-      ]
-    },
-    {
-      "title": "What caused this React app to crash?",
-      "url": "https://www.youtube.com/shorts/qnl8-PBJNu4",
-      "videoId": "qnl8-PBJNu4",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "This video presents a quick challenge for developers, focusing on a CI pipeline bug that occurred after upgrading React. It is a great test of debugging skills, prompting viewers to identify why a faster build led to a production crash.",
-      "dateAdded": "2026-06-24T04:45:15.612Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 15,
-          "topic": "The React upgrade and production crash scenario"
-        },
-        {
-          "startTime": 15,
-          "endTime": 30,
-          "topic": "Evaluating potential causes of the build failure"
-        }
-      ]
-    },
-    {
-      "title": "Gemma 4 and the AI Edge Gallery: On-Device AI Gets an Upgrade",
-      "url": "https://www.youtube.com/watch?v=O6499i4TFYA",
-      "videoId": "O6499i4TFYA",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "This video offers an inside look at Gemma 4 and the AI Edge Gallery, showcasing how powerful language models can now run completely offline on your smartphone. Discover how features like \"Agent Skills\" and multimodal inputs enable on-device translation, summarization, and task automation. It's a must-watch for anyone interested in the future of private, fast, and local artificial intelligence.",
-      "dateAdded": "2026-06-24T04:45:15.612Z",
-      "timestamps": [
-        {
-          "startTime": 21,
-          "endTime": 117,
-          "topic": "Overview of Gemma 4's launch and model sizes"
-        },
-        {
-          "startTime": 225,
-          "endTime": 364,
-          "topic": "Expanding capabilities with Agent Skills and MCP"
-        },
-        {
-          "startTime": 474,
-          "endTime": 556,
-          "topic": "Real-world on-device multimodal use cases"
-        }
-      ]
-    },
-    {
-      "title": "What to teach when AI writes the code | Rainer Stropek | TEDxLinz",
-      "url": "https://www.youtube.com/watch?v=yhGzXULZkEw",
-      "videoId": "yhGzXULZkEw",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "If you are worried about AI writing code faster than you can, this talk is your survival guide. Learn why code syntax is no longer your primary leverage point and discover the high-value systems-thinking skills you must master to remain irreplaceable.",
-      "dateAdded": "2026-06-24T04:45:15.612Z",
-      "timestamps": []
-    },
-    {
-      "title": "How to speak powerfully in the age of AI | Louise Beale | TEDxNorthampton",
-      "url": "https://www.youtube.com/watch?v=va-T1gX9iNk",
-      "videoId": "va-T1gX9iNk",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "This engaging talk explores how to maintain powerful communication skills in the rapidly advancing era of artificial intelligence. Through personal anecdotes from a television reporter, it highlights why human empathy, nuance, and authentic connection remain irreplaceable by technology.",
-      "dateAdded": "2026-06-23T04:37:49.182Z",
-      "timestamps": [
-        {
-          "startTime": 80,
-          "endTime": 160,
-          "topic": "The value of human connection over AI facts"
-        },
-        {
-          "startTime": 335,
-          "endTime": 365,
-          "topic": "The 'A SMILE' preparation framework"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-28T05:02:28.131Z"
+  "lastUpdated": "2026-06-30T04:50:44.512Z"
 }
