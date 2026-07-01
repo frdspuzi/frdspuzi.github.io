@@ -1,107 +1,170 @@
 [
   {
+    "videoId": "htM02KMNZnk",
+    "title": "AI Engineer World's Fair 2026 Day 1: Software Factories &amp; Keynotes",
+    "selected": true,
+    "reasoning": "Highly relevant industry foresight for a junior fullstack developer trying to understand the future architecture of AI-driven software development.",
+    "summary": "The future of development is shifting from manual coding to building and managing 'software factories'. This keynote provides a crucial macro view of how AI is transforming the fullstack engineering workflow, helping you position your skills ahead of the curve."
+  },
+  {
     "videoId": "UNzCG3lw6O0",
     "title": "Building Great Agent Skills: The Missing Manual",
     "selected": true,
-    "reasoning": "Highly actionable technical manual for developers looking to understand production-grade AI agent engineering.",
-    "summary": "As a junior fullstack engineer, knowing how to build and orchestrate production-grade AI agents is the ultimate career cheat code right now. This video bypasses the high-level AI hype to give you a concrete, engineering-first manual for building reliable agent workflows that scale."
+    "reasoning": "Provides direct, technical engineering guidance on building reliable AI agent workflows, bridging the gap between basic fullstack development and next-gen AI engineering.",
+    "summary": "AI agents are becoming standard components of modern web applications. This masterclass cuts through the theoretical fluff to deliver an actionable, technical guide on how to program and orchestrate robust AI capabilities directly into your fullstack projects."
   },
   {
     "videoId": "fWXJM-J0ZB8",
     "title": "Frontier results, on device - RL Nabors, Arize",
     "selected": false,
-    "reasoning": "While technically sound, this is highly niche and lacks the broader architectural value of the other AI-related videos.",
+    "reasoning": "This video targets a very niche audience of edge machine learning engineers and is too specialized for a junior generalist fullstack developer.",
     "summary": ""
   },
   {
-    "videoId": "spNAUEgq_A8",
-    "title": "The Future Is Domain-Specific Agents - Justin Schroeder, StandardAgents",
-    "selected": true,
-    "reasoning": "Incredibly strategic forward-looking analysis of where software architecture is moving, crucial for early-career fullstack devs.",
-    "summary": "The software development landscape is rapidly shifting from writing basic boilerplate to orchestrating specialized AI architectures. This talk explains why domain-specific agents are the future, equipping you with the architectural foresight to future-proof your engineering stack and stand out in the job market."
+    "videoId": "EEeAPi38o1Y",
+    "title": "His contrarian opinion on P vs NP",
+    "selected": false,
+    "reasoning": "This is a quick YouTube short that oversimplifies a complex theoretical computer science problem, providing zero actionable value for career progression.",
+    "summary": ""
   },
   {
     "videoId": "3yKTcwhDTks",
     "title": "Why SAT solvers work in practice",
     "selected": false,
-    "reasoning": "This is a quick YouTube short that oversimplifies a complex computer science topic; the long-form professor interview is far more valuable.",
+    "reasoning": "A highly condensed short format that cannot provide the depth needed to truly master complex backend computing topics.",
     "summary": ""
   },
   {
     "videoId": "AaK1SL2i_4Y",
     "title": "MIT Professor: Leetcode, P vs NP, SAT Solvers | Ryan Williams",
     "selected": true,
-    "reasoning": "Phenomenal academic and practical breakdown of interview prep, computer science theory, and problem-solving, perfect for leveling up an early-career engineer.",
-    "summary": "Ready to conquer FAANG-style interviews and upgrade your computer science fundamentals? This deep-dive interview with an MIT professor demystifies Leetcode and complex algorithmic thinking, helping you transition from writing functional code to designing truly optimized systems."
+    "reasoning": "Directly addresses how deep computer science fundamentals intersect with interview preparation (Leetcode), making it highly valuable for an early-career junior engineer.",
+    "summary": "Struggling to see the point of algorithmic grinds? This interview with an MIT Professor brilliantly bridges theoretical computer science with the practical realities of passing technical interviews, offering invaluable insights for leveling up your engineering career."
   },
   {
-    "videoId": "WDSIDJ3f-io",
-    "title": "Rust is his favorite language",
+    "videoId": "-1aJc_1YALo",
+    "title": "My worst business failures",
     "selected": false,
-    "reasoning": "This is an entertaining short but provides no deep technical insight or career growth value.",
+    "reasoning": "A generic short detailing personal creator-focused business hurdles, lacking structured career or technical software engineering advice.",
     "summary": ""
   },
   {
     "videoId": "Ig2zcKJQWig",
     "title": "The Dark Side Of Getting Rich On Youtube w/ @mattdavella",
-    "selected": true,
-    "reasoning": "Crucial, grounding discussion on career burn-out, lifestyle design, and mental health for early-career high achievers.",
-    "summary": "When you are early in your tech career, it is easy to burn out chasing status, money, and fast-paced metrics. This candid discussion on the pitfalls of material success offers a vital perspective on building a sustainable, values-aligned career that respects your mental and spiritual well-being."
+    "selected": false,
+    "reasoning": "Focuses on content creator monetization and lifestyle architecture, which does not match the professional track of a junior software developer or financial advocate.",
+    "summary": ""
   },
   {
     "videoId": "0akWiY5F8H4",
     "title": "The truth about transitional phases",
     "selected": false,
-    "reasoning": "A solid motivational short, but too brief to offer the deep, actionable career advice found in the longer podcasts.",
+    "reasoning": "A generic motivational short containing standard advice that lacks technical substance or targeted financial utility.",
     "summary": ""
   },
   {
-    "videoId": "II9Oq4bEXLo",
-    "title": "I can type at 156 words per minute 🤯",
+    "videoId": "DjbUslfRLQw",
+    "title": "Describe what you do in 3 emojis",
     "selected": false,
-    "reasoning": "This is a productivity vanity metric showcase and offers zero career, technical, or economic value.",
+    "reasoning": "Low-effort promotional content aimed at general developer engagement rather than educational growth.",
     "summary": ""
   },
   {
-    "videoId": "QEAaCF1Oc2U",
-    "title": "What butler training teaches organisations about hospitality | Vincent Vermeulen | TEDxUHasselt",
+    "videoId": "YvVsdZL2ogY",
+    "title": "Sameer Samat on Android 17 and the Future of Intelligent Computing",
     "selected": false,
-    "reasoning": "Fascinating concepts regarding hospitality, but irrelevant to a software engineer or an Islamic financial advocate.",
+    "reasoning": "Focuses heavily on OS ecosystem developments rather than immediate fullstack application architecture or career advancement.",
     "summary": ""
   },
   {
-    "videoId": "eas1D4HPN2g",
-    "title": "The price of feeling wanted | Dr. Rita Renee | TEDxRobinson Road",
+    "videoId": "HcwMTu1xQDw",
+    "title": "Gemma 4 in Action: Bringing Frontier AI to the Edge",
     "selected": false,
-    "reasoning": "A generic relationship/psychology talk with no alignment to tech, finance, or Malaysian professional context.",
+    "reasoning": "A highly promotional, high-level corporate demonstration that lacks deep codebase implementation details for fullstack learning.",
     "summary": ""
   },
   {
-    "videoId": "zx8WT7WnLts",
-    "title": "Your Permission to Create Art Again | Esther Conter &amp; Veda Bartringer | TEDxLuxembourgCity",
+    "videoId": "rE8fQLpCDCY",
+    "title": "Buat income ketika masih student?",
     "selected": false,
-    "reasoning": "An artistic/creative motivation talk that lacks relevance to our technical, professional, or financial persona.",
+    "reasoning": "Targeted explicitly at university students looking for side income, whereas the target user is already an early-career software engineer.",
     "summary": ""
   },
   {
-    "videoId": "0-Dk2aFA_s8",
-    "title": "EP12 #SembangKS | TTMM, PN, Calon MB, Muda, Trump dan Kulat Zombi",
+    "videoId": "EtMW7NoBw88",
+    "title": "Simpan RM100 boleh jadi jutawan?",
     "selected": true,
-    "reasoning": "An outstanding full-length Malaysian socio-political and economic analysis, vital for anyone advocating for Islamic finance in Malaysia.",
-    "summary": "To advocate effectively for Islamic finance, you must intimately understand Malaysian socio-political movements and economic policies. This comprehensive breakdown of local leadership shifts and political currents gives you the critical localized intelligence you need to navigate the Malaysian financial landscape."
+    "reasoning": "Directly tackles financial compounding and savings disciplines in a localized Malaysian currency context, directly aligning with the financial advocate persona.",
+    "summary": "Building wealth starts with a solid foundation. In this highly engaging breakdown, Financial Faiz demystifies compound interest and demonstrates how minor, consistent local savings of RM100 can build substantial wealth within the Malaysian financial ecosystem."
   },
   {
-    "videoId": "-QQJUpX0ZZE",
-    "title": "PAS kini parti Melayu dengan kerusi Parlimen terbesar, mengapa masih perlu parti lain?",
+    "videoId": "6yXj_yBBI-0",
+    "title": "Kadar pengangguran Malaysia meningkat",
     "selected": false,
-    "reasoning": "While highly relevant to Malaysian politics, this is a short. The full-length SembangKS episodes offer much more economic depth.",
+    "reasoning": "Though regionally relevant, this short highlights macroeconomic bad news rather than providing proactive, actionable financial or career tactics.",
     "summary": ""
   },
   {
-    "videoId": "JK9Zn2tmJb0",
-    "title": "Shahril berkongsi realiti di sebalik naik turun views KS, dari era “novelty factor” sehingga kini.",
+    "videoId": "iFXrQGgzB8o",
+    "title": "What happens to environmental goals when ministers swap ministries? | Arthur Joseph Kurup",
     "selected": false,
-    "reasoning": "A short focused on the meta-analytics of running a YouTube talk show, which is too niche for a junior developer and finance advocate.",
+    "reasoning": "An interview centering on local environmental policy and public administration with no relevance to software development or personal finance.",
+    "summary": ""
+  },
+  {
+    "videoId": "R5oCjemxEIk",
+    "title": "Penantian 44 Tahun | Perjuangan Bersejarah Komuniti Taman Rimba Kiara",
+    "selected": false,
+    "reasoning": "A highly specific local community and property land rights update that lacks application to professional or economic advancement.",
+    "summary": ""
+  },
+  {
+    "videoId": "pNPDfF7Qhfo",
+    "title": "An Indian lady applied to 300 property listings and was denied from all – Jason Wee | In The Studio",
+    "selected": false,
+    "reasoning": "Deals with systemic societal housing discrimination issues in Malaysia. While socially important, it does not fit the career or technical framework of our curation.",
+    "summary": ""
+  },
+  {
+    "videoId": "R5lyLNacM_c",
+    "title": "Why you need to understand the justice system | Peter Tragos | TEDxNaples",
+    "selected": false,
+    "reasoning": "Geared entirely toward US-centric legal structures and public justice awareness, carrying zero practical value for a Malaysian developer.",
+    "summary": ""
+  },
+  {
+    "videoId": "iGwk8V2pwB4",
+    "title": "Humans Plus AI Coaches to Close the Student Counseling Gap | John Branam | TEDxPortland",
+    "selected": false,
+    "reasoning": "Highlights educational policy changes and student counseling frameworks, which are too broad to directly help a working junior developer.",
+    "summary": ""
+  },
+  {
+    "videoId": "KAJZ2m6o7YY",
+    "title": "The search for belonging in adolescence | Deniz Erdemir | TEDxVLO Youth",
+    "selected": false,
+    "reasoning": "Focuses entirely on teenage/adolescent psychology, which is developmentally misaligned with an early-career professional adult.",
+    "summary": ""
+  },
+  {
+    "videoId": "eBzgNfvJODE",
+    "title": "Why Your Nafs Owns You (And the 10-Minute Practice That Takes It Back)",
+    "selected": true,
+    "reasoning": "Directly targets the spiritual growth, mental discipline, and self-restraint (Nafs) of a Muslim trying to balance ambition, ethics, and focus early in their career.",
+    "summary": "Success in a fast-paced tech career requires deep inner focus and control. Sh. Abdullah Oduro offers a highly practical, 10-minute daily practice to discipline your inner self (Nafs), building the spiritual strength needed to handle both career pressure and ethical financial advocacy."
+  },
+  {
+    "videoId": "-rlNnCqVCek",
+    "title": "Why Your Business Is Costing You Your Marriage",
+    "selected": false,
+    "reasoning": "Focuses on balancing marital life with running an intense business, which is too advanced and misaligned for someone early in their corporate junior-dev career.",
+    "summary": ""
+  },
+  {
+    "videoId": "x9cQ30EDj9s",
+    "title": "How to Stop Saying Things You Regret to Your Wife",
+    "selected": false,
+    "reasoning": "Highly specific marital counseling context rather than general personal discipline, career growth, or financial advancement.",
     "summary": ""
   }
 ]

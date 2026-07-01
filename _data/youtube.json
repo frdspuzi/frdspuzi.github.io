@@ -1,14 +1,102 @@
 {
   "videos": [
     {
+      "title": "AI Engineer World's Fair 2026 Day 1: Software Factories &amp; Keynotes",
+      "url": "https://www.youtube.com/watch?v=htM02KMNZnk",
+      "videoId": "htM02KMNZnk",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "The future of development is shifting from manual coding to building and managing 'software factories'. This keynote provides a crucial macro view of how AI is transforming the fullstack engineering workflow, helping you position your skills ahead of the curve.",
+      "dateAdded": "2026-07-01T05:00:20.177Z",
+      "timestamps": []
+    },
+    {
       "title": "Building Great Agent Skills: The Missing Manual",
       "url": "https://www.youtube.com/watch?v=UNzCG3lw6O0",
       "videoId": "UNzCG3lw6O0",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "As a junior fullstack engineer, knowing how to build and orchestrate production-grade AI agents is the ultimate career cheat code right now. This video bypasses the high-level AI hype to give you a concrete, engineering-first manual for building reliable agent workflows that scale.",
-      "dateAdded": "2026-06-30T04:41:15.961Z",
+      "summary": "This video offers a practical framework for developers to escape 'skill hell' and write high-quality AI engineering skills. It delivers a four-part checklist—covering triggers, structure, steering, and pruning—to help you build efficient and predictable AI agents.",
+      "dateAdded": "2026-07-01T05:00:20.177Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 110,
+          "topic": "The Problem of Skill Hell"
+        },
+        {
+          "startTime": 110,
+          "endTime": 194,
+          "topic": "User-Invoked vs. Model-Invoked Skills"
+        },
+        {
+          "startTime": 194,
+          "endTime": 283,
+          "topic": "Structuring and Steering AI Skills"
+        }
+      ]
+    },
+    {
+      "title": "MIT Professor: Leetcode, P vs NP, SAT Solvers | Ryan Williams",
+      "url": "https://www.youtube.com/watch?v=AaK1SL2i_4Y",
+      "videoId": "AaK1SL2i_4Y",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Career",
+      "summary": "Dive into the mind-bending world of computer science with Gödel Prize-winning MIT Professor Ryan Williams as he unpacks how classic algorithms can be pushed past their assumed limits. He explains why popular beliefs like the Strong Exponential Time Hypothesis might actually be false, revealing a fascinating hidden landscape of time-space tradeoffs in computation. Ultimately, this video is a masterclass in challenging conventional wisdom to uncover revolutionary, counter-intuitive shortcuts in algorithm design.",
+      "dateAdded": "2026-07-01T05:00:20.178Z",
+      "timestamps": [
+        {
+          "startTime": 250,
+          "endTime": 487,
+          "topic": "Beating Quadratic Time on the 3Sum Problem"
+        },
+        {
+          "startTime": 520,
+          "endTime": 830,
+          "topic": "Fine-Grained Complexity: Connecting P and NP Problems"
+        },
+        {
+          "startTime": 1319,
+          "endTime": 1554,
+          "topic": "Simulating Time with Square Root Space"
+        }
+      ]
+    },
+    {
+      "title": "Simpan RM100 boleh jadi jutawan?",
+      "url": "https://www.youtube.com/shorts/EtMW7NoBw88",
+      "videoId": "EtMW7NoBw88",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Building wealth starts with a solid foundation. In this highly engaging breakdown, Financial Faiz demystifies compound interest and demonstrates how minor, consistent local savings of RM100 can build substantial wealth within the Malaysian financial ecosystem.",
+      "dateAdded": "2026-07-01T05:00:20.178Z",
       "timestamps": []
+    },
+    {
+      "title": "Why Your Nafs Owns You (And the 10-Minute Practice That Takes It Back)",
+      "url": "https://www.youtube.com/watch?v=eBzgNfvJODE",
+      "videoId": "eBzgNfvJODE",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "This video reveals why standard productivity tools fail if you ignore the inner battle with your nafs (impulsive soul). It introduces muhasabah (daily self-accounting) as a simple 10-minute nightly habit to conquer bad routines and build true self-discipline.",
+      "dateAdded": "2026-07-01T05:00:20.178Z",
+      "timestamps": [
+        {
+          "startTime": 35,
+          "endTime": 106,
+          "topic": "Understanding the Nafs and the Struggle of High Performers"
+        },
+        {
+          "startTime": 107,
+          "endTime": 151,
+          "topic": "The Three Weapons of the Soul: Desire, Heedlessness, and Whispers"
+        },
+        {
+          "startTime": 152,
+          "endTime": 208,
+          "topic": "Why External Fixes Fail and the Power of 10-Minute Muhasabah"
+        }
+      ]
     },
     {
       "title": "The Future Is Domain-Specific Agents - Justin Schroeder, StandardAgents",
@@ -33,27 +121,6 @@
           "startTime": 533,
           "endTime": 607,
           "topic": "How domain-specific agents solve the integration crisis"
-        }
-      ]
-    },
-    {
-      "title": "MIT Professor: Leetcode, P vs NP, SAT Solvers | Ryan Williams",
-      "url": "https://www.youtube.com/watch?v=AaK1SL2i_4Y",
-      "videoId": "AaK1SL2i_4Y",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Career",
-      "summary": "This interview with MIT professor Ryan Williams demystifies complex theoretical computer science, showcasing elegant algorithm designs that challenge traditional limits. Viewers will gain a simplified understanding of core concepts like fine-grained complexity and how researchers find clever shortcuts to solve seemingly impossible computational problems.",
-      "dateAdded": "2026-06-30T04:41:15.961Z",
-      "timestamps": [
-        {
-          "startTime": 250,
-          "endTime": 368,
-          "topic": "Improving the 3Sum algorithm beyond quadratic time"
-        },
-        {
-          "startTime": 725,
-          "endTime": 800,
-          "topic": "The Meet-in-the-Middle approach for Subset Sum"
         }
       ]
     },
@@ -265,75 +332,7 @@
           "topic": "Johor Wages and Brain Drain"
         }
       ]
-    },
-    {
-      "title": "How to Get Hired When 120,000 Engineers Got Laid Off",
-      "url": "https://www.youtube.com/watch?v=u9pVRdtNsQo",
-      "videoId": "u9pVRdtNsQo",
-      "channel": "Beyond Coding",
-      "category": "Tech & Engineering",
-      "summary": "This video offers a realistic yet empowering look at the current tech job market, explaining how AI is reshaping hiring and layoffs. It provides actionable strategies on how to stand out by treating LinkedIn as a dynamic portfolio rather than a static resume. Viewers will walk away with practical tips on personal branding and networking to future-proof their careers.",
-      "dateAdded": "2026-06-26T04:48:40.820Z",
-      "timestamps": [
-        {
-          "startTime": 41,
-          "endTime": 155,
-          "topic": "The State of the Tech Job Market & AI Layoffs"
-        },
-        {
-          "startTime": 253,
-          "endTime": 350,
-          "topic": "Transforming LinkedIn from a CV into a Portfolio"
-        }
-      ]
-    },
-    {
-      "title": "Own your engineering career, no one else will",
-      "url": "https://www.youtube.com/shorts/beVpr8f2LAs",
-      "videoId": "beVpr8f2LAs",
-      "channel": "Beyond Coding",
-      "category": "Tech & Engineering",
-      "summary": "This video highlights the importance of adaptability, soft skills, and personal ownership in driving long-term career growth. It challenges conventional views of success, emphasizing that thriving in a changing workplace requires resilience and proactive feedback.",
-      "dateAdded": "2026-06-26T04:48:40.820Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 16,
-          "topic": "Hard skills vs. adaptability"
-        },
-        {
-          "startTime": 24,
-          "endTime": 41,
-          "topic": "Taking ownership of your career growth"
-        }
-      ]
-    },
-    {
-      "title": "40 Harsh Life Lessons I Wish I Knew in My 20s",
-      "url": "https://www.youtube.com/watch?v=YGW0HBNK5e0",
-      "videoId": "YGW0HBNK5e0",
-      "channel": "Jesse Itzler",
-      "category": "Discovery 🌍",
-      "summary": "This video offers a wealth of practical life advice from a 56-year-old entrepreneur reflecting on the crucial lessons he wishes he had known in his twenties. Spanning personal finance, health, relationship building, and career growth, his insights provide a useful roadmap to avoid common youthful pitfalls. It serves as a high-impact guide for anyone looking to build better habits and secure a stronger future.",
-      "dateAdded": "2026-06-24T04:45:15.612Z",
-      "timestamps": [
-        {
-          "startTime": 8,
-          "endTime": 113,
-          "topic": "Essential habits for personal growth, time management, and health"
-        },
-        {
-          "startTime": 113,
-          "endTime": 199,
-          "topic": "Practical advice on managing personal finance and building relationships"
-        },
-        {
-          "startTime": 813,
-          "endTime": 902,
-          "topic": "Developing a daily habit of learning and staying informed"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-06-30T04:50:44.512Z"
+  "lastUpdated": "2026-07-01T05:07:18.254Z"
 }
