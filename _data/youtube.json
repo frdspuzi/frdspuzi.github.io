@@ -1,14 +1,30 @@
 {
   "videos": [
     {
-      "title": "WF26: Harness Engineering &amp; Startup Battlefield ft. Garry Tan, Mike Krieger, @t3dotgg , DSPy",
-      "url": "https://www.youtube.com/watch?v=I2cbIws9j10",
-      "videoId": "I2cbIws9j10",
+      "title": "MCP Apps: Primitives, discovery, and the Future of Software - Pietro Zullo, Manufact, Inc",
+      "url": "https://www.youtube.com/watch?v=sAOBXCDiDOs",
+      "videoId": "sAOBXCDiDOs",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Step into the minds of elite tech leaders and startup gurus. As a junior developer, this gives you a front-row seat to the future of software engineering, toolchains like DSPy, and how to build high-impact applications that investors actually care about.",
-      "dateAdded": "2026-07-04T04:08:56.177Z",
-      "timestamps": []
+      "summary": "This video introduces Model Context Protocol (MCP) Apps, explaining how they return interactive UI widgets instead of raw JSON to enable richer agentic workflows. By exploring key interaction primitives and real-world examples, the speaker demonstrates how MCP apps are reshaping software distribution through AI platforms.",
+      "dateAdded": "2026-07-05T04:37:50.274Z",
+      "timestamps": [
+        {
+          "startTime": 33,
+          "endTime": 136,
+          "topic": "Understanding MCP Apps versus standard MCP servers"
+        },
+        {
+          "startTime": 303,
+          "endTime": 445,
+          "topic": "Timeline and evolution of MCP-UI into MCP Apps"
+        },
+        {
+          "startTime": 608,
+          "endTime": 710,
+          "topic": "Architectural overview of how MCP Apps render sandboxed widgets"
+        }
+      ]
     },
     {
       "title": "[S01:E15] Founder Supercube jana RM20 Juta dalam masa setahun? - Hayfa Amira, Founder Supercube",
@@ -16,23 +32,18 @@
       "videoId": "FtqH_R8Z-Kk",
       "channel": "Financial Faiz Podcast",
       "category": "Finance",
-      "summary": "This interview features Hayfa Amira, the founder of Supercube International, sharing her transition from being a corporate engineer to a full-time entrepreneur. She discusses how her engineering background helped her make data-driven business decisions and scale her artisanal tea brand globally, reaching over RM 20 million in sales during its first year. This video is highly valuable for anyone looking to build a sustainable, structured business with a clear long-term exit strategy.",
-      "dateAdded": "2026-07-04T04:08:56.177Z",
+      "summary": "This video features an insightful interview with Hayfa Amira, the founder of Supercube International, as she shares her journey from being a corporate engineer to a successful entrepreneur. She discusses the strategic decisions behind building her brand without relying on bank loans, emphasizing the importance of organic growth and strong personal branding. Viewers will gain valuable takeaways on the transition from a traditional career to business ownership and the power of customer-centric marketing.",
+      "dateAdded": "2026-07-05T04:37:50.274Z",
       "timestamps": [
         {
-          "startTime": 111,
-          "endTime": 152,
-          "topic": "Introducing Hayfa Amira and her journey with Supercube"
+          "startTime": 229,
+          "endTime": 298,
+          "topic": "Transitioning from corporate engineering to entrepreneurship and building Supercube"
         },
         {
-          "startTime": 395,
-          "endTime": 443,
-          "topic": "How her corporate engineering background shaped her business mindset"
-        },
-        {
-          "startTime": 709,
-          "endTime": 765,
-          "topic": "How Supercube scaled organically to RM 20 million in its first year"
+          "startTime": 438,
+          "endTime": 515,
+          "topic": "The strategy of growing a business without bank loans and the importance of financial discipline"
         }
       ]
     },
@@ -42,23 +53,23 @@
       "videoId": "aUQ3dZAcVqA",
       "channel": "BFM 89.9",
       "category": "Finance",
-      "summary": "This interview features the co-founders of Foodie Media, a digital media empire that grew from a side hustle earning less than 1 Ringgit a day to a public company raising 75 million Ringgit. The founders share valuable insights on scaling a business, leveraging personal branding and AI, and navigating the complexities of co-founding a company with a partner.",
-      "dateAdded": "2026-07-04T04:08:56.177Z",
+      "summary": "This video offers an insightful behind-the-scenes look at the entrepreneurial journey of Foodie Media, a digital media company that evolved from a side hustle making less than 1 Ringgit a day to a publicly listed enterprise raising 75 million Ringgit. Co-founders Nicholas Lim Pinn Yang and Ang Rui Mei share key strategic takeaways on personal branding, navigating business partnerships as a couple, and the transition from a private startup to a public entity.",
+      "dateAdded": "2026-07-05T04:37:50.274Z",
       "timestamps": [
         {
-          "startTime": 39,
-          "endTime": 107,
-          "topic": "The inspiring origin story of Foodie Media's growth from a side hustle to an IPO"
+          "startTime": 149,
+          "endTime": 238,
+          "topic": "The pivotal moment of realizing the business's potential"
         },
         {
-          "startTime": 495,
-          "endTime": 549,
-          "topic": "The importance of personal branding and authenticity in the era of AI"
+          "startTime": 239,
+          "endTime": 347,
+          "topic": "The early days of Foodie Media and SEO growth hacking"
         },
         {
-          "startTime": 898,
-          "endTime": 940,
-          "topic": "How to structure different business pillars (content, creator, commerce, community) for growth"
+          "startTime": 1214,
+          "endTime": 1339,
+          "topic": "How the co-founder learned the art of selling from his father"
         }
       ]
     },
@@ -68,21 +79,21 @@
       "videoId": "UDTHN31kK4A",
       "channel": "TEDx Talks",
       "category": "General Ideas",
-      "summary": "This engaging TEDx talk explores the transformative power of receiving tough feedback from loved ones and colleagues, revealing how constructive criticism is vital for personal growth. Speaker Chris Wheatley introduces 'TACT,' a practical framework designed to help you process feedback with grace, build deeper trust, and foster stronger relationships. It's a must-watch for anyone looking to turn difficult conversations into opportunities for self-improvement and connection.",
-      "dateAdded": "2026-07-04T04:08:56.177Z",
+      "summary": "This engaging talk by Chris Wheatley reveals how embracing tough feedback can spark profound personal and professional transformation, even in our closest relationships. Through humorous personal stories and a practical framework called TACT, Wheatley explains how we can make it safer and easier for others to share the hard truths we need to hear. It is a must-watch for anyone looking to build deeper trust, improve communication, and overcome the barriers of defensiveness.",
+      "dateAdded": "2026-07-05T04:37:50.274Z",
       "timestamps": [
         {
-          "startTime": 17,
-          "endTime": 154,
-          "topic": "The value of feedback and the story of Christy"
-        },
-        {
-          "startTime": 242,
+          "startTime": 328,
           "endTime": 414,
-          "topic": "The speaker's personal flaws and the 'you're doing your thing' feedback cue"
+          "topic": "How 'You're Doing Your Thing' transformed a friendship and marriage"
         },
         {
-          "startTime": 950,
+          "startTime": 593,
+          "endTime": 640,
+          "topic": "How titles and power dynamics create barriers to honest feedback"
+        },
+        {
+          "startTime": 997,
           "endTime": 1142,
           "topic": "Introducing the TACT framework for receiving feedback"
         }
@@ -94,25 +105,35 @@
       "videoId": "ZV4c3c3Y4ns",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "This inspiring lecture explores the comforting Islamic concept that no good deed or effort is ever wasted in the eyes of Allah, even if we do not see immediate results in this life. Drawing from Quranic verses, prophetic history, and moving real-life stories from humanitarian work, the speaker reminds us to anchor our hope and devotion solely in the Divine. It's a must-watch for anyone seeking spiritual reassurance, motivation in their daily struggles, and a deeper understanding of Allah's appreciation for His creation.",
-      "dateAdded": "2026-07-04T04:08:56.177Z",
+      "summary": "This video explores the profound Islamic concept that no good deed or effort is ever wasted in the sight of Allah, drawing from Quranic verses and the story of Prophet Yusuf (Joseph). The speaker delivers a powerful reminder that while worldly recognition is never guaranteed, true fulfillment and divine reward are assured for those who persevere with piety and patience. It is an inspiring message for anyone seeking motivation to continue doing good, even when their efforts go unnoticed by others.",
+      "dateAdded": "2026-07-05T04:37:50.274Z",
       "timestamps": [
         {
-          "startTime": 142,
-          "endTime": 254,
-          "topic": "The Promise of Divine Reward for the Patient and Piety-Minded"
+          "startTime": 141,
+          "endTime": 257,
+          "topic": "Understanding that Allah never wastes the reward of the righteous"
         },
         {
-          "startTime": 305,
-          "endTime": 601,
-          "topic": "Miracles in the Field: Lessons of Faith and Perseverance in Africa"
-        },
-        {
-          "startTime": 736,
+          "startTime": 732,
           "endTime": 838,
-          "topic": "The Unwavering Justice of Allah: Your Efforts Will Never Be Denied"
+          "topic": "The assurance that Allah always appreciates your efforts"
+        },
+        {
+          "startTime": 1127,
+          "endTime": 1256,
+          "topic": "How every small act of patience and fatigue is recorded for reward"
         }
       ]
+    },
+    {
+      "title": "WF26: Harness Engineering &amp; Startup Battlefield ft. Garry Tan, Mike Krieger, @t3dotgg , DSPy",
+      "url": "https://www.youtube.com/watch?v=I2cbIws9j10",
+      "videoId": "I2cbIws9j10",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Step into the minds of elite tech leaders and startup gurus. As a junior developer, this gives you a front-row seat to the future of software engineering, toolchains like DSPy, and how to build high-impact applications that investors actually care about.",
+      "dateAdded": "2026-07-04T04:08:56.177Z",
+      "timestamps": []
     },
     {
       "title": "AI Engineer World's Fair 2026 Day 1: Software Factories &amp; Keynotes",
@@ -305,28 +326,7 @@
           "topic": "Rebuilding the Agent Loop for Production Scale"
         }
       ]
-    },
-    {
-      "title": "Pure technical merit isn't enough",
-      "url": "https://www.youtube.com/shorts/Ugc1bUp7EPc",
-      "videoId": "Ugc1bUp7EPc",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Career",
-      "summary": "This video explains why great technical projects often go unnoticed without proper marketing. The speaker shares that capturing a visitor's interest in the first 10 seconds is crucial for success in the modern attention economy.",
-      "dateAdded": "2026-06-28T04:59:23.272Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 15,
-          "topic": "The marketing gap in technical projects"
-        },
-        {
-          "startTime": 16,
-          "endTime": 38,
-          "topic": "Capturing interest in the attention economy"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-04T04:18:59.472Z"
+  "lastUpdated": "2026-07-05T04:42:51.662Z"
 }
