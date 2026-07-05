@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In Surah Ar-Ra’d 13:11, what is stated as the requirement for Allah to change the condition of a people?",
+      "question": "What percentage of newly learned information did Hermann Ebbinghaus prove people forget within 24 hours unless they actively force themselves to recall it?",
       "options": [
-        "They must stop the angels from protecting them",
-        "They must prevent all natural disasters",
-        "They must start a successful business",
-        "They must change what is in themselves"
+        "50%",
+        "30%",
+        "95%",
+        "80%"
       ],
       "correctIndex": 3,
-      "learning": "Surah Ar-Ra’d 13:11 teaches the moral lesson of personal responsibility, emphasizing that Allah does not change the condition of a people until they take the initiative to change what is within themselves.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
+      "learning": "In the 1880s, researcher Hermann Ebbinghaus proved that humans forget approximately 80% of what they learn within 24 hours unless they actively force themselves to recall it.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     },
     {
-      "question": "Which PCIe power management state represents the deepest sleep level, where the device is almost completely powered down to achieve the maximum power savings at the cost of the longest wake-up time?",
-      "options": [
-        "L1.2",
-        "L0s",
-        "L1.0",
-        "L2"
-      ],
-      "correctIndex": 3,
-      "learning": "In PCIe power management, the L2 state is the deepest sleep state where a device is almost completely powered down, providing the highest power savings for long periods of inactivity but requiring the longest wake-up time.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "In the Hadith recorded in Sahih Bukhari, what specific role did the Prophet Muhammad state would follow him, asserting that there would be no further prophets?",
-      "options": [
-        "Apostles",
-        "Caliphs",
-        "Priests",
-        "Sultans"
-      ],
-      "correctIndex": 1,
-      "learning": "According to the Hadith in Sahih Bukhari, the Prophet Muhammad stated that there would be no prophets after him, and that they would instead be succeeded by caliphs.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which Scrum artifact is used to visualize the progress of a Sprint and display the remaining work?",
+      "question": "Which Scrum ceremony involves the team demonstrating completed work to the Product Owner and reflecting on the completed cycle to discuss improvements for future cycles?",
       "options": [
         "Sprint Backlog",
+        "Sprint Review",
         "Sprint Planning",
-        "Burndown Chart",
-        "Product Backlog"
+        "Daily Scrum"
       ],
-      "correctIndex": 2,
-      "learning": "The Burndown Chart is a key Scrum artifact that visualizes the progress of a Sprint, showing the remaining work to help the team track if they are on schedule.",
+      "correctIndex": 1,
+      "learning": "During the Sprint Review ceremony, the Scrum team demonstrates their completed work to the Product Owner, reflects on the Sprint, and discusses improvements for future Sprints.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "What approximate cumulative percentage of the Quran is made up of its top 20 most frequently repeated words?",
+      "question": "What is the approximate ratio of distinct Arabic words to English words found in the Oxford English Dictionary, illustrating the linguistic complexity of Arabic?",
       "options": [
-        "20.83%",
-        "80.00%",
-        "5.50%",
-        "50.00%"
+        "12:1",
+        "45:1",
+        "71:1",
+        "150:1"
       ],
-      "correctIndex": 0,
-      "learning": "While some might assume the Pareto Principle (80/20 rule) applies to vocabulary frequency, data analysis shows that the top 20 most frequent words in the Quran only account for approximately 20.83% of the total text.",
+      "correctIndex": 2,
+      "learning": "Arabic features a vast vocabulary with approximately 12 million distinct words compared to only 170,000 words in the Oxford English Dictionary, creating an approximate ratio of 71:1.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "Which concept refers to the actual unfolding and occurrence of events in a person's life that can be actively altered and influenced by their actions and supplications?",
+      "options": [
+        "Qada’",
+        "Qadr",
+        "Ghafir",
+        "Al-Alim"
+      ],
+      "correctIndex": 0,
+      "learning": "A common misunderstanding is that destiny is completely fixed and unaffected by human effort; however, while the overarching divine plan (Qadr) is eternal and absolute, the actual occurrence of events in daily life (Qada’) can be altered through sincere actions and supplications.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In Islamic tradition, who did the Prophet Muhammad state would follow him to lead the community, given that there would be no more prophets after him?",
+      "options": [
+        "Priests",
+        "Sultans",
+        "Kings",
+        "Caliphs"
+      ],
+      "correctIndex": 3,
+      "learning": "According to the teachings of the Prophet Muhammad, there would be no prophets after him; instead, successive authority and leadership would be carried on by caliphs.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-07-04T04:09:13.563Z"
+  "fetchedAt": "2026-07-05T04:38:02.357Z"
 }
