@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What cumulative percentage of the Quran do its top 20 most frequently repeated words account for?",
+      "question": "What psychological term is used to describe the phenomenon where writing information down or storing it in a device prompts the brain to immediately dismiss it from memory?",
       "options": [
-        "Approximately 80.00%",
-        "Approximately 20.83%",
-        "Approximately 50.00%",
-        "Approximately 12.50%"
+        "The Cognitive Satiation Trap",
+        "The \"Performance Paradox\" of Cognitive Offloading",
+        "The Retroactive Interference Effect",
+        "The Mnemonic Decay Syndrome"
       ],
       "correctIndex": 1,
-      "learning": "Despite the Pareto Principle (80/20 rule) predicting that a small subset of words might cover the vast majority of a text, a statistical analysis reveals that the top 20 most frequent words in the Quran accumulate to only about 20.83% of its total content.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What is the psychological term for the paradox where writing down or digitally saving information prompts the brain to immediately forget it?",
-      "options": [
-        "The Performance Paradox of Cognitive Offloading",
-        "The Static Memory Illusion",
-        "The Active Recall Fallacy",
-        "The Ebbinghaus Processing Deficit"
-      ],
-      "correctIndex": 0,
-      "learning": "The 'Performance Paradox' of Cognitive Offloading (associated with Digital Amnesia) is the cognitive pitfall where writing down or digitally storing information prompts the brain to immediately discard it from memory.",
+      "learning": "Psychologists refer to the brain's tendency to immediately forget information once it has been written down or saved digitally as the 'Performance Paradox' of Cognitive Offloading.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "Which of the following roles is NOT one of the three official key roles defined within the Scrum framework?",
+      "question": "What is the standard format of a User Story in a Scrum Product Backlog?",
       "options": [
-        "Scrum Master",
-        "Developers",
-        "Project Manager",
-        "Product Owner"
+        "I want [feature] because [reason]",
+        "As a [role], I need [feature], so that [reason]",
+        "I need [feature] as a [role] by [date]",
+        "[Feature] should be implemented by [date]"
       ],
-      "correctIndex": 2,
-      "learning": "A common point of confusion when adopting Scrum is the assumption that traditional management roles carry over; however, a 'Project Manager' is not an official role in Scrum, which instead divides responsibilities among the Product Owner, Scrum Master, and Developers.",
+      "correctIndex": 1,
+      "learning": "In Scrum, a User Story within the Product Backlog follows a specific template: 'As a [role], I need [feature], so that [reason]'.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "In PCIe power management, what is the direct consequence of powering down the main link's electrical circuits in the L1.1 substate?",
+      "question": "What is the approximate ratio of distinct Arabic words to English words found in the Oxford English Dictionary?",
       "options": [
-        "A complete device shutdown equivalent to the L2 state",
-        "Continuous data transmission at a reduced bandwidth",
-        "Greater power savings at the cost of an increased wake-up time",
-        "Instantaneous wake-up times with slightly higher power consumption"
+        "50:1",
+        "120:1",
+        "71:1",
+        "15:1"
       ],
       "correctIndex": 2,
-      "learning": "The challenge of transitioning to deeper PCIe power-saving states, such as L1.1, is the inherent trade-off where powering down physical electrical circuits yields greater energy savings but significantly increases the time required for the link to wake up.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
+      "learning": "The Arabic language is highly complex and contains approximately 12 million distinct words compared to only 170,000 English words in the Oxford English Dictionary, leading to an approximate 71:1 ratio.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
     },
     {
-      "question": "Which of these is a common misconception regarding the scope of worship in Islam, which in reality extends to recognizing divine sovereignty, expressing gratitude, and developing mindfulness?",
+      "question": "According to Quranic verse 51:56, which two groups of beings were created solely for the purpose of worship?",
       "options": [
-        "That it is restricted solely to appointed leaders",
-        "That it must only be performed in the hereafter",
-        "That it requires the complete rejection of free will",
-        "That it consists solely of performing rituals"
+        "Mankind and animals",
+        "Jinn and mankind",
+        "Angels and mankind",
+        "Jinn and angels"
       ],
-      "correctIndex": 3,
-      "learning": "A common misconception is that worship in Islam is restricted to performing rituals, whereas it is actually a broader practice of recognizing divine sovereignty, showing gratitude, and developing mindfulness (taqwa).",
+      "correctIndex": 1,
+      "learning": "In Islamic scripture, Quran 51:56 specifies that the sole purpose for the creation of both jinn and mankind is to worship Allah.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "Which specific concept of destiny refers to the actual unfolding and occurrence of events in a person's life that can be altered or influenced by their actions and supplications?",
+      "options": [
+        "Al-Alim",
+        "Qada'",
+        "Qadr",
+        "Dua"
+      ],
+      "correctIndex": 1,
+      "learning": "While a person's actions and supplications can alter Qada' (the actual occurrence of events), this change does not alter or conflict with Qadr (Allah's complete preordained plan), as the change itself was already known and accounted for in His eternal knowledge.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-07-06T04:48:52.479Z"
+  "fetchedAt": "2026-07-07T04:30:41.144Z"
 }
