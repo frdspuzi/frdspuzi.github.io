@@ -1,191 +1,86 @@
 [
   {
-    "videoId": "bRnoEpoK5m4",
-    "title": "The Pipeline Is Dead - Iris ten Teije, Sky Valley Ambient Computing",
+    "videoId": "G6IlDzj8OjA",
+    "title": "GTM Is You - Victoria Melnikova, Evil Martians",
+    "selected": true,
+    "reasoning": "Teaches junior engineers how to look past just writing code and understand how products actually reach users, which is essential career-accelerating business acumen.",
+    "summary": "Code is useless if it never reaches the user. This talk bridges the gap between engineering and Go-To-Market (GTM) strategy, showing you how to build with distribution in mind. It's the ultimate guide to converting your technical skills into tangible business value and elevating your career trajectory."
+  },
+  {
+    "videoId": "qdZzND79mcg",
+    "title": "Beyond the Harness: A Journey Towards Adaptative Engineering - Rajiv Chandegra, Annicha Labs",
     "selected": false,
-    "reasoning": "While interesting for advanced AI architects, this niche talk on ambient computing pipelines offers little immediate, practical value to a junior fullstack developer's day-to-day workflow.",
+    "reasoning": "Too abstract and niche for a junior fullstack developer; early-career engineers need foundational architecture and delivery skills before tackling highly specialized adaptive setups.",
     "summary": ""
   },
   {
-    "videoId": "UcYoMg-8-L8",
-    "title": "500 people vibe-coded for 30 days. I was one of them. - Sanja Grbic, Automattic",
-    "selected": true,
-    "reasoning": "Extremely relevant to junior fullstack devs trying to navigate the shift to AI-assisted coding and how large tech companies are experimenting with 'vibe-coding'.",
-    "summary": "As a junior dev, you need to know how AI is rewriting the rules of software development. This fascinating inside look at how 500 developers 'vibe-coded' for a month at Automattic will show you how to leverage AI tools to build products faster without losing engineering discipline."
-  },
-  {
-    "videoId": "Rx8f05JI_WA",
-    "title": "SWE-Marathon: Evaluating Coding Agents at Billion-Token Scale - Rishi Desai, Abundant AI",
+    "videoId": "1IdzkRVmWAA",
+    "title": "How we taught agents to use good retrieval - Hanna Lichtenberg, Mixedbread AI",
     "selected": false,
-    "reasoning": "Focuses on high-scale benchmark evaluation metrics for AI coding agents, which is too academic and abstract for a junior engineer looking for practical career growth.",
+    "reasoning": "While technically interesting, advanced AI agent retrieval methodologies are overly specialized for a junior generalist developer who needs to master core fullstack engineering paradigms first.",
     "summary": ""
   },
   {
     "videoId": "L7vrYf-Mgdg",
     "title": "Time-Saving Habits",
     "selected": false,
-    "reasoning": "A highly generic productivity short from Ali Abdaal that recycles standard time-management tips without deep, career-specific value.",
+    "reasoning": "Standard, generic productivity advice wrapped in a short-form video; lacks the depth needed for professional career development.",
     "summary": ""
   },
   {
     "videoId": "6LZMamuYjjs",
     "title": "The Surprising Truth About Money and Luck",
     "selected": false,
-    "reasoning": "A brief, philosophical short about wealth mindset. While mildly inspiring, it lacks concrete career strategies or financial advice tailored to Malaysian or Islamic finance contexts.",
+    "reasoning": "A 60-second productivity short cannot offer the deep financial systems or ethical frameworks expected by an Islamic financial advocate.",
     "summary": ""
   },
   {
     "videoId": "hJfJMT-yfr0",
     "title": "Top 3 in the world for typing 🤯",
     "selected": false,
-    "reasoning": "Pure entertainment fluff showcasing typing speeds with no actionable career, financial, or engineering takeaways.",
+    "reasoning": "Pure entertainment fluff about typing speed that offers zero practical value to a developer's real-world career or technical skills.",
     "summary": ""
+  },
+  {
+    "videoId": "5MFWcubNvtM",
+    "title": "POV: You’re at I/O Connect Berlin",
+    "selected": false,
+    "reasoning": "A superficial, vlog-style short of a tech conference with absolutely zero educational or professional development value.",
+    "summary": ""
+  },
+  {
+    "videoId": "KwJwYIqDMLY",
+    "title": "Building an Android app in AI Studio",
+    "selected": true,
+    "reasoning": "Highly practical, hands-on demonstration of Google's AI Studio. It gives a junior fullstack dev modern tools to rapidly build and ship prototypes.",
+    "summary": "Demystify generative AI development by watching Google engineers build a live app from scratch. This practical guide gives you the exact blueprint to integrate Google's AI Studio into your fullstack development toolkit. It's highly actionable, immediate portfolio-building gold."
   },
   {
     "videoId": "KIp8PAU3oAI",
     "title": "Create agent skills for on-device generative AI (I/O Connect ‘26)",
-    "selected": false,
-    "reasoning": "Too specific to Android-specific Google I/O Connect developer workflows, making it less useful for general fullstack software engineers.",
-    "summary": ""
-  },
-  {
-    "videoId": "WZvd1tUreTY",
-    "title": "Dynamic Callbacks on Android for Google Pay",
-    "selected": false,
-    "reasoning": "Extremely narrow integration-focused tutorial for Android developers using Google Pay, offering no general career value.",
-    "summary": ""
-  },
-  {
-    "videoId": "nRLZqaNOrwQ",
-    "title": "Build creative apps with the GenMedia suite (I/O Connect ‘26)",
-    "selected": false,
-    "reasoning": "A specialized presentation on Google's GenMedia creative suite tools, which is too niche for junior fullstack development goals.",
-    "summary": ""
-  },
-  {
-    "videoId": "njrW3ez-Ps0",
-    "title": "Ambil credit card untuk credit score?",
     "selected": true,
-    "reasoning": "Directly addresses a massive, highly debated financial dilemma for early-career Malaysian Muslims trying to build Shariah-compliant credit profiles.",
-    "summary": "Struggling to build a credit score in Malaysia without falling into interest-bearing debt traps? This quick, hyper-localized guide breaks down whether taking a credit card is actually necessary for your financial future. Perfect for young Malaysian Muslims seeking to establish strong financial foundations early."
+    "reasoning": "On-device AI is the next frontier of software architecture; mastering local agent execution is a powerful differentiator for a junior dev looking to stand out.",
+    "summary": "Stand out from other junior engineers by mastering on-device generative AI agents. This session breaks down how to construct local agent skills, a crucial skill set as the industry shifts away from heavy cloud API reliance. Learn how to build privacy-first, highly responsive user experiences."
   },
   {
-    "videoId": "zBidv58ynXc",
-    "title": "Semak Kasih mudahkan tuntutan waris",
-    "selected": false,
-    "reasoning": "A localized financial short focusing on estate claiming systems in Malaysia; useful, but too specific compared to broader career-building content.",
-    "summary": ""
-  },
-  {
-    "videoId": "bT6L5N7ufCI",
-    "title": "Rebat RM200 barangan elektrik",
-    "selected": false,
-    "reasoning": "A transactional short sharing a local appliance rebate; lacks long-term strategic or educational value for young professionals.",
-    "summary": ""
-  },
-  {
-    "videoId": "akLACb9YMA4",
-    "title": "Tersalah beli fake Supercube",
-    "selected": false,
-    "reasoning": "A teaser short warning about counterfeit products that serves as promo material rather than providing structured financial or business insights.",
-    "summary": ""
-  },
-  {
-    "videoId": "4D2vjJxeV6Y",
-    "title": "Minum coffee pagi bahaya?",
-    "selected": false,
-    "reasoning": "An off-topic lifestyle hook discussing caffeine health myths, entirely unrelated to finance, engineering, or career growth.",
-    "summary": ""
-  },
-  {
-    "videoId": "FtqH_R8Z-Kk",
-    "title": "[S01:E15] Founder Supercube jana RM20 Juta dalam masa setahun? - Hayfa Amira, Founder Supercube",
+    "videoId": "5BAzkYfuwNU",
+    "title": "The hidden cost of apologizing too much at work | Teresa Caro | TEDxBuckheadAve",
     "selected": true,
-    "reasoning": "An incredible deep-dive case study of a Malaysian Muslim founder scaling a business, providing rich lessons in local finance, marketing, and entrepreneurship.",
-    "summary": "Discover how a local Malaysian entrepreneur scaled Supercube to RM20 million in just one year. This deep-dive interview offers invaluable business, marketing, and ethical financial insights tailored specifically to the Malaysian market, making it a must-watch for aspiring creators and early-career professionals alike."
+    "reasoning": "Directly targets a massive blind spot for junior engineers and early-career professionals: corporate communication dynamics and self-sabotaging speech patterns.",
+    "summary": "Over-apologizing at work is silently killing your professional credibility and making you look less competent than you are. This career-defining talk teaches you how to swap default apologies for authoritative, confident communication. Learn how to command respect in sprint reviews and design discussions."
   },
   {
-    "videoId": "r5aBemkkWM0",
-    "title": "Is AI making us boring? | Sandra Matz | TEDxNewEngland",
+    "videoId": "wCRGTf-ydO0",
+    "title": "Why I take my college students to prison | Ann Frost | TEDxUofW",
     "selected": false,
-    "reasoning": "A philosophical TEDx talk discussing the sociological impact of AI algorithms. Too abstract and academic for career-focused development.",
+    "reasoning": "Although socially conscious, this talk has zero technical, career, or financial applicability to our target demographic.",
     "summary": ""
   },
   {
-    "videoId": "JtaNXk1HcTo",
-    "title": "Competencias: nacen cerca y transforman el mundo | Carlos Julio González Muñoz | TEDxCIS SFP Youth",
-    "selected": false,
-    "reasoning": "A non-English youth-focused TEDx talk that does not align with our English/Malay target demographic's professional needs.",
-    "summary": ""
-  },
-  {
-    "videoId": "3BTgzwguJVQ",
-    "title": "Algarve Folk Dance Performance | Rancho Folclórico e Etnográfico de Odiáxere | TEDxPraça Gil Eanes",
-    "selected": false,
-    "reasoning": "A cultural folk dance performance that offers zero professional, technical, or financial value.",
-    "summary": ""
-  },
-  {
-    "videoId": "VdlyuCKTNu4",
-    "title": "Why Kent Beck named it “Extreme Programming”",
-    "selected": false,
-    "reasoning": "An interesting historical tidbit about software development, but too short and trivial to provide actionable career value.",
-    "summary": ""
-  },
-  {
-    "videoId": "PwUDbTGrhIE",
-    "title": "Kent Beck pairing with Ward Cunningham",
-    "selected": false,
-    "reasoning": "A retrospective short about software engineering pioneers that lacks modern, hands-on advice for junior developers.",
-    "summary": ""
-  },
-  {
-    "videoId": "WUqA6eCDxIE",
-    "title": "Kent Beck: Why TDD got less popular",
-    "selected": false,
-    "reasoning": "A great historical commentary on Test Driven Development, but too brief to compete with full-length skill-building tutorials or deep-dives.",
-    "summary": ""
-  },
-  {
-    "videoId": "_eO9fy7wFp8",
-    "title": "Career advice every software engineer needs to hear",
-    "selected": false,
-    "reasoning": "A highly abbreviated short offering surface-level engineering career advice; lacks the depth of full-length career guides.",
-    "summary": ""
-  },
-  {
-    "videoId": "w8XOaMrLFmE",
-    "title": "The rarest engineering skill, according to an AI cloud CTO",
-    "selected": false,
-    "reasoning": "A snippet from an interview on cloud engineering. Good hook, but fails to deliver actionable substance due to its short-form nature.",
-    "summary": ""
-  },
-  {
-    "videoId": "zTenuG5b4Eo",
-    "title": "Only Hundreds of Engineers Have This Skill (Nebius CTO)",
+    "videoId": "5kRHC9o88i0",
+    "title": "The Power of Inclusive Design | Nandita Gupta | TEDxUofW",
     "selected": true,
-    "reasoning": "A brilliant, full-length expert discussion identifying high-leverage technical skills that can set a junior engineer apart in a crowded market.",
-    "summary": "Want to stand out from thousands of other entry-level developers? This eye-opening interview with the CTO of Nebius reveals the highly specialized skills that only a few hundred engineers globally possess. It's the ultimate roadmap for a junior fullstack dev looking to build a high-income, recession-proof technical niche."
-  },
-  {
-    "videoId": "IXzEJUBjHsk",
-    "title": "EP204 | Analisis Kempen PRN Johor 2026, Future Speaks",
-    "selected": true,
-    "reasoning": "Crucial local political and economic commentary that helps young Malaysian professionals understand policy impacts, market shifts, and regional development.",
-    "summary": "Stay ahead of the curve by understanding the socio-political and economic shifts shaping Malaysia. This analytical breakdown dissects regional developments, providing crucial context for any young professional who wants to make informed local financial and career decisions based on policy direction."
-  },
-  {
-    "videoId": "0-Dk2aFA_s8",
-    "title": "EP12 #SembangKS | TTMM, PN, Calon MB, Muda, Trump dan Kulat Zombi",
-    "selected": false,
-    "reasoning": "While highly engaging, this general chat episode covers a broad variety of older political/pop culture topics and lacks the focused career/financial utility of current-affairs deep dives.",
-    "summary": ""
-  },
-  {
-    "videoId": "-QQJUpX0ZZE",
-    "title": "PAS kini parti Melayu dengan kerusi Parlimen terbesar, mengapa masih perlu parti lain?",
-    "selected": false,
-    "reasoning": "A short-form political snippet that lacks the comprehensive policy and economic analysis needed to make informed financial decisions.",
-    "summary": ""
+    "reasoning": "Excellent intersection of high-value frontend engineering skills (accessibility) and ethical alignment, which resonates deeply with Islamic values of social equity.",
+    "summary": "True fullstack engineering isn't just about databases and APIs; it's about ensuring your interfaces are accessible to absolutely everyone. This talk highlights how inclusive design drives better UX and code quality. It is the perfect intersection of technical frontend excellence and ethical engineering practice."
   }
 ]
