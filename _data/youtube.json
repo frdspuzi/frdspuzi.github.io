@@ -1,6 +1,120 @@
 {
   "videos": [
     {
+      "title": "GTM Is You - Victoria Melnikova, Evil Martians",
+      "url": "https://www.youtube.com/watch?v=G6IlDzj8OjA",
+      "videoId": "G6IlDzj8OjA",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This video explores why a founder's personal brand is the ultimate go-to-market strategy for developer tools in 2026 and beyond. By analyzing successful devtool startups and featuring insights from industry leaders, it provides a practical roadmap for leveraging authenticity and physical presence to cut through the noise of AI-generated content. If you're a technical founder looking to build trust and scale your audience, this presentation offers the essential playbook for turning your unique traits into a competitive moat.",
+      "dateAdded": "2026-07-08T03:52:18.860Z",
+      "timestamps": [
+        {
+          "startTime": 204,
+          "endTime": 258,
+          "topic": "Introducing the PMF Compass and why 90% of early-stage startups struggle with distribution"
+        },
+        {
+          "startTime": 329,
+          "endTime": 437,
+          "topic": "The 6-step basic GTM hygiene framework for devtool founders"
+        },
+        {
+          "startTime": 948,
+          "endTime": 1122,
+          "topic": "Why being unapologetically yourself and building a personal brand is your ultimate competitive moat"
+        }
+      ]
+    },
+    {
+      "title": "Building an Android app in AI Studio",
+      "url": "https://www.youtube.com/watch?v=KwJwYIqDMLY",
+      "videoId": "KwJwYIqDMLY",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This video is a game-changer for anyone who has ever wanted to build their own Android app but lacked the coding skills to do so. In just a few minutes, you'll learn how to use Google AI Studio to turn a simple text prompt into a fully functional, personalized Android app and seamlessly install it directly onto your phone. It's an incredibly empowering look at the future of app development, showing that the only limit to creating your own tools is your imagination.",
+      "dateAdded": "2026-07-08T03:52:18.860Z",
+      "timestamps": [
+        {
+          "startTime": 17,
+          "endTime": 52,
+          "topic": "How to prompt Google AI Studio to design your custom Android app"
+        },
+        {
+          "startTime": 57,
+          "endTime": 115,
+          "topic": "Previewing and selecting your app's visual theme"
+        },
+        {
+          "startTime": 126,
+          "endTime": 204,
+          "topic": "Step-by-step guide to enabling developer settings and installing the app on your phone"
+        }
+      ]
+    },
+    {
+      "title": "Create agent skills for on-device generative AI (I/O Connect ‘26)",
+      "url": "https://www.youtube.com/watch?v=KIp8PAU3oAI",
+      "videoId": "KIp8PAU3oAI",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This video is a must-watch for developers looking to unlock the potential of on-device generative AI, showcasing how to build custom \"Agent Skills\" using Google's LiteRT-LM framework. Viewers will learn how to bypass the limitations of cloud-dependent models to create faster, more private, and offline-capable AI applications. The core takeaway is a practical guide on integrating modular, structured skills—such as task planning and timing—directly into edge devices using Google AI Edge tools.",
+      "dateAdded": "2026-07-08T03:52:18.860Z",
+      "timestamps": [
+        {
+          "startTime": 100,
+          "endTime": 154,
+          "topic": "The benefits of running AI on the Edge"
+        },
+        {
+          "startTime": 195,
+          "endTime": 255,
+          "topic": "Overview of the Google AI Edge end-to-end pipeline"
+        },
+        {
+          "startTime": 343,
+          "endTime": 432,
+          "topic": "Deep dive into LiteRT-LM for generative AI on-device"
+        }
+      ]
+    },
+    {
+      "title": "The hidden cost of apologizing too much at work | Teresa Caro | TEDxBuckheadAve",
+      "url": "https://www.youtube.com/watch?v=5BAzkYfuwNU",
+      "videoId": "5BAzkYfuwNU",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This highly engaging TEDx talk dives into the psychology of over-apologizing and how constantly saying 'I'm sorry' can subtly erode your authority and leadership. Speaker Teresa Caro introduces 'Unapologetic Prioritization,' a powerful framework designed to help you set clear boundaries, vocalize your needs, and lead with confidence without unnecessary guilt.",
+      "dateAdded": "2026-07-08T03:52:18.860Z",
+      "timestamps": [
+        {
+          "startTime": 115,
+          "endTime": 201,
+          "topic": "How 'I'm sorry' signals perceived failure and erodes authority"
+        },
+        {
+          "startTime": 231,
+          "endTime": 294,
+          "topic": "Introducing the concept of Unapologetic Prioritization"
+        },
+        {
+          "startTime": 345,
+          "endTime": 403,
+          "topic": "Protecting what is essential to preserve your values and leadership"
+        }
+      ]
+    },
+    {
+      "title": "The Power of Inclusive Design | Nandita Gupta | TEDxUofW",
+      "url": "https://www.youtube.com/watch?v=5kRHC9o88i0",
+      "videoId": "5kRHC9o88i0",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "True fullstack engineering isn't just about databases and APIs; it's about ensuring your interfaces are accessible to absolutely everyone. This talk highlights how inclusive design drives better UX and code quality. It is the perfect intersection of technical frontend excellence and ethical engineering practice.",
+      "dateAdded": "2026-07-08T03:52:18.860Z",
+      "timestamps": []
+    },
+    {
       "title": "500 people vibe-coded for 30 days. I was one of them. - Sanja Grbic, Automattic",
       "url": "https://www.youtube.com/watch?v=UcYoMg-8-L8",
       "videoId": "UcYoMg-8-L8",
@@ -254,105 +368,7 @@
           "topic": "Architectural overview of how MCP Apps render sandboxed widgets"
         }
       ]
-    },
-    {
-      "title": "How to get tough feedback from someone who cares about you | Chris Wheatley | TEDxSpokane",
-      "url": "https://www.youtube.com/watch?v=UDTHN31kK4A",
-      "videoId": "UDTHN31kK4A",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "This engaging talk by Chris Wheatley reveals how embracing tough feedback can spark profound personal and professional transformation, even in our closest relationships. Through humorous personal stories and a practical framework called TACT, Wheatley explains how we can make it safer and easier for others to share the hard truths we need to hear. It is a must-watch for anyone looking to build deeper trust, improve communication, and overcome the barriers of defensiveness.",
-      "dateAdded": "2026-07-05T04:37:50.274Z",
-      "timestamps": [
-        {
-          "startTime": 328,
-          "endTime": 414,
-          "topic": "How 'You're Doing Your Thing' transformed a friendship and marriage"
-        },
-        {
-          "startTime": 593,
-          "endTime": 640,
-          "topic": "How titles and power dynamics create barriers to honest feedback"
-        },
-        {
-          "startTime": 997,
-          "endTime": 1142,
-          "topic": "Introducing the TACT framework for receiving feedback"
-        }
-      ]
-    },
-    {
-      "title": "The Reward of Your “Invisible” Work | LATEST Khutbah by Sh. Mohammad Elshinawy",
-      "url": "https://www.youtube.com/watch?v=ZV4c3c3Y4ns",
-      "videoId": "ZV4c3c3Y4ns",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This video explores the profound Islamic concept that no good deed or effort is ever wasted in the sight of Allah, drawing from Quranic verses and the story of Prophet Yusuf (Joseph). The speaker delivers a powerful reminder that while worldly recognition is never guaranteed, true fulfillment and divine reward are assured for those who persevere with piety and patience. It is an inspiring message for anyone seeking motivation to continue doing good, even when their efforts go unnoticed by others.",
-      "dateAdded": "2026-07-05T04:37:50.274Z",
-      "timestamps": [
-        {
-          "startTime": 141,
-          "endTime": 257,
-          "topic": "Understanding that Allah never wastes the reward of the righteous"
-        },
-        {
-          "startTime": 732,
-          "endTime": 838,
-          "topic": "The assurance that Allah always appreciates your efforts"
-        },
-        {
-          "startTime": 1127,
-          "endTime": 1256,
-          "topic": "How every small act of patience and fatigue is recorded for reward"
-        }
-      ]
-    },
-    {
-      "title": "WF26: Harness Engineering &amp; Startup Battlefield ft. Garry Tan, Mike Krieger, @t3dotgg , DSPy",
-      "url": "https://www.youtube.com/watch?v=I2cbIws9j10",
-      "videoId": "I2cbIws9j10",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Step into the minds of elite tech leaders and startup gurus. As a junior developer, this gives you a front-row seat to the future of software engineering, toolchains like DSPy, and how to build high-impact applications that investors actually care about.",
-      "dateAdded": "2026-07-04T04:08:56.177Z",
-      "timestamps": []
-    },
-    {
-      "title": "AI Engineer World's Fair 2026 Day 1: Software Factories &amp; Keynotes",
-      "url": "https://www.youtube.com/watch?v=htM02KMNZnk",
-      "videoId": "htM02KMNZnk",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "The future of development is shifting from manual coding to building and managing 'software factories'. This keynote provides a crucial macro view of how AI is transforming the fullstack engineering workflow, helping you position your skills ahead of the curve.",
-      "dateAdded": "2026-07-01T05:00:20.177Z",
-      "timestamps": []
-    },
-    {
-      "title": "Building Great Agent Skills: The Missing Manual",
-      "url": "https://www.youtube.com/watch?v=UNzCG3lw6O0",
-      "videoId": "UNzCG3lw6O0",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This video offers a practical framework for developers to escape 'skill hell' and write high-quality AI engineering skills. It delivers a four-part checklist—covering triggers, structure, steering, and pruning—to help you build efficient and predictable AI agents.",
-      "dateAdded": "2026-07-01T05:00:20.177Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 110,
-          "topic": "The Problem of Skill Hell"
-        },
-        {
-          "startTime": 110,
-          "endTime": 194,
-          "topic": "User-Invoked vs. Model-Invoked Skills"
-        },
-        {
-          "startTime": 194,
-          "endTime": 283,
-          "topic": "Structuring and Steering AI Skills"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-07T04:36:32.530Z"
+  "lastUpdated": "2026-07-08T03:58:59.731Z"
 }
