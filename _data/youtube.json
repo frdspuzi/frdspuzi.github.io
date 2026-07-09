@@ -1,6 +1,131 @@
 {
   "videos": [
     {
+      "title": "What do we build now? — Theo Browne, @t3dotgg",
+      "url": "https://www.youtube.com/watch?v=xUnRQ9vLXxo",
+      "videoId": "xUnRQ9vLXxo",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This thought-provoking keynote by Theo Browne explores the rapid evolution of AI models and how they are shifting the boundaries of what is possible in software development. Browne challenges developers to overcome their traditional mindsets, embrace the power of orchestration, and start thinking 'wider' rather than just 'bigger' when building new products. It is a must-watch for anyone looking to understand how the role of the software engineer is being redefined in the age of AI.",
+      "dateAdded": "2026-07-09T04:27:19.084Z",
+      "timestamps": [
+        {
+          "startTime": 55,
+          "endTime": 157,
+          "topic": "The Evolution of AI Models from Sonnet 3.5 to Opus 4.5"
+        },
+        {
+          "startTime": 204,
+          "endTime": 303,
+          "topic": "Understanding the Eras of AI: Tool Calls, Long-Running Work, and Orchestration"
+        },
+        {
+          "startTime": 335,
+          "endTime": 409,
+          "topic": "Why Developers Need to Get Over Their Skeuomorphic Mindsets"
+        }
+      ]
+    },
+    {
+      "title": "Think You Can Build a Game with AI? Think Again! - Danielle An &amp; David Hoe, Meta",
+      "url": "https://www.youtube.com/watch?v=grdoOC1BT1s",
+      "videoId": "grdoOC1BT1s",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This engaging presentation explores how generative AI is transforming the landscape of game development, moving from simple prompt-based creations to sophisticated, dynamic, and personalized gaming experiences. The speakers from Meta share valuable insights on utilizing key art as a creative anchor and integrating runtime LLMs to build games that feel truly personal. It's a must-watch for anyone curious about the future of AI-driven game design and the shift from linear development to highly iterative, parallel processes.",
+      "dateAdded": "2026-07-09T04:27:19.085Z",
+      "timestamps": [
+        {
+          "startTime": 114,
+          "endTime": 216,
+          "topic": "Introduction to AI-driven gaming creation and personal journeys"
+        },
+        {
+          "startTime": 303,
+          "endTime": 420,
+          "topic": "The evolution from 'vibe-coding' to more sophisticated AI game development"
+        },
+        {
+          "startTime": 601,
+          "endTime": 732,
+          "topic": "Using key art as inspiration and an anchor for AI game design"
+        }
+      ]
+    },
+    {
+      "title": "Time-Saving Habits",
+      "url": "https://www.youtube.com/shorts/L7vrYf-Mgdg",
+      "videoId": "L7vrYf-Mgdg",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "Want to consume information faster and reclaim hours of your week? This video reveals a simple but game-changing habit: training your brain to listen to audiobooks, podcasts, and lectures at speed multiples. By starting small and gradually increasing the playback speed, you can easily double or even triple your learning efficiency without losing comprehension.",
+      "dateAdded": "2026-07-09T04:27:19.085Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 13,
+          "topic": "The concept of listening to content at speed multiples"
+        },
+        {
+          "startTime": 14,
+          "endTime": 26,
+          "topic": "How to gradually train your brain to handle 2x and 3x speeds"
+        }
+      ]
+    },
+    {
+      "title": "The Surprising Truth About Money and Luck",
+      "url": "https://www.youtube.com/shorts/6LZMamuYjjs",
+      "videoId": "6LZMamuYjjs",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "This video breaks down a refreshing take on wealth creation, distinguishing between 'wild outlier success' (which relies heavily on luck) and 'mild success' (which is driven by skill). If your goal is to build a highly profitable lifestyle business that gives you freedom and flexibility, you don't need extraordinary luck—just the right skills. It's an encouraging and practical watch for anyone looking to achieve financial freedom on their own terms.",
+      "dateAdded": "2026-07-09T04:27:19.085Z",
+      "timestamps": [
+        {
+          "startTime": 8,
+          "endTime": 18,
+          "topic": "Wild success vs. mild success"
+        },
+        {
+          "startTime": 33,
+          "endTime": 46,
+          "topic": "The reality of a lifestyle business"
+        },
+        {
+          "startTime": 100,
+          "endTime": 114,
+          "topic": "Why mild success is about skill, not luck"
+        }
+      ]
+    },
+    {
+      "title": "Create clean LLM service interfaces with wrapper classes!",
+      "url": "https://www.youtube.com/shorts/Q4l3D0fI5dY",
+      "videoId": "Q4l3D0fI5dY",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Directly calling LLM APIs within your core application code is a ticking maintenance time bomb. This quick video explains why you should wrap your AI services into a clean interface instead, saving you from refactoring headaches and significantly lowering token costs for AI coding agents. Learn how a simple separation of concerns can make your codebase future-proof and agent-friendly.",
+      "dateAdded": "2026-07-09T04:27:19.085Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 20,
+          "topic": "The problem with direct AI API calls"
+        },
+        {
+          "startTime": 20,
+          "endTime": 40,
+          "topic": "The 'Agent Tax' and why separation of concerns is the fix"
+        },
+        {
+          "startTime": 40,
+          "endTime": 58,
+          "topic": "How wrappers optimize token costs and help agentic workflows"
+        }
+      ]
+    },
+    {
       "title": "GTM Is You - Victoria Melnikova, Evil Martians",
       "url": "https://www.youtube.com/watch?v=G6IlDzj8OjA",
       "videoId": "G6IlDzj8OjA",
@@ -243,132 +368,7 @@
           "topic": "The strategic trap of trying to claim credit for opponents' successes rather than offering a distinct alternative"
         }
       ]
-    },
-    {
-      "title": "Why Malaysian Tech Startup Companies Failed (and What’s Changing Now)?",
-      "url": "https://www.youtube.com/watch?v=0pxaf6EhpRM",
-      "videoId": "0pxaf6EhpRM",
-      "channel": "EDUCATION & TECHNOLOGY",
-      "category": "Discovery 🌍",
-      "summary": "This video takes an insightful and honest look at why Malaysia's initial tech startup boom in the 2010s faltered, examining critical errors like risk aversion, grant dependency, and talent drain. It then transitions into an encouraging exploration of how a new, battle-tested generation of entrepreneurs is spearheading a second tech wave, building resilient, globally minded companies. It's a must-watch for anyone interested in the realities of building businesses in emerging markets.",
-      "dateAdded": "2026-07-06T04:48:45.348Z",
-      "timestamps": [
-        {
-          "startTime": 121,
-          "endTime": 156,
-          "topic": "The risk aversion trap: why cloning existing business models limited innovation in Malaysia."
-        },
-        {
-          "startTime": 222,
-          "endTime": 304,
-          "topic": "Grant dependency and 'grantpreneurs': how seeking funding over customer acquisition stymied growth."
-        },
-        {
-          "startTime": 325,
-          "endTime": 357,
-          "topic": "Talent drain: why Malaysia's top developers and data scientists often leave for international markets."
-        }
-      ]
-    },
-    {
-      "title": "Draining Johor's Water? Inside Malaysia's Push To Build AI Factories | Insight",
-      "url": "https://www.youtube.com/watch?v=H39gck73WCQ",
-      "videoId": "H39gck73WCQ",
-      "channel": "CNA Insider",
-      "category": "Discovery 🌍",
-      "summary": "This video is a must-watch for anyone interested in the future of technology and global economics, as it explores Malaysia's ambitious bid to become Southeast Asia's next AI powerhouse. Viewers will learn about the rapid expansion of massive, state-of-the-art data centers in Johor and the development of localized AI models designed for Malaysian language and culture. The core takeaway is that while Malaysia’s AI boom presents immense economic opportunities, it faces critical hurdles like severe strains on local water and power resources, as well as a pressing talent shortage.",
-      "dateAdded": "2026-07-06T04:48:45.348Z",
-      "timestamps": [
-        {
-          "startTime": 111,
-          "endTime": 216,
-          "topic": "Developing localized AI models for Malaysian culture"
-        },
-        {
-          "startTime": 337,
-          "endTime": 433,
-          "topic": "How AI data centers operate and their massive resource demands"
-        },
-        {
-          "startTime": 450,
-          "endTime": 544,
-          "topic": "Why Johor, Malaysia is uniquely positioned as a regional tech hub"
-        }
-      ]
-    },
-    {
-      "title": "“Don’t start a company just because you want to IPO” - Pinn Yang, Foodie Media CEO | In The Studio",
-      "url": "https://www.youtube.com/watch?v=aUQ3dZAcVqA",
-      "videoId": "aUQ3dZAcVqA",
-      "channel": "BFM 89.9",
-      "category": "Finance",
-      "summary": "This video features an insightful interview with the co-founders of Foodie Media, tracing their remarkable journey from a tiny 1-ringgit-a-day side hustle in 2016 to a powerhouse digital media company that raised 75 million ringgit in its recent IPO. It is an excellent watch for aspiring entrepreneurs because it breaks down the \"4C\" business model (Content, Creator, Commerce, Community) and reveals how they leveraged personal branding and authentic storytelling to scale across Southeast Asia. The core takeaway is that sustainable growth comes from obsessing over audience trust, adapting to new content formats, and building structured internal systems rather than chasing an IPO as a starting goal.",
-      "dateAdded": "2026-07-06T04:48:45.348Z",
-      "timestamps": [
-        {
-          "startTime": 125,
-          "endTime": 238,
-          "topic": "The evolution from a minor blog to a major 75 million ringgit IPO"
-        },
-        {
-          "startTime": 697,
-          "endTime": 857,
-          "topic": "Deep dive into Foodie Media's 4C business model (Content, Creator, Commerce, Community)"
-        },
-        {
-          "startTime": 1447,
-          "endTime": 1599,
-          "topic": "How old-school selling philosophies and personal IP drive modern digital commerce"
-        }
-      ]
-    },
-    {
-      "title": "How AI Affects Islamic Knowledge | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/1vOH363WVEE",
-      "videoId": "1vOH363WVEE",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This thought-provoking video explores the chilling reality of how Artificial Intelligence could quietly degrade the depth of spiritual leadership. It challenges viewers to consider a future where imams and scholars rely on automated prompts rather than rigorous personal study, ultimately diluting the authenticity of community guidance. The core takeaway is a call to protect genuine scholarship and value the demanding journey of acquiring true, heart-led knowledge.",
-      "dateAdded": "2026-07-06T04:48:45.348Z",
-      "timestamps": [
-        {
-          "startTime": 12,
-          "endTime": 36,
-          "topic": "How AI could subtly replace the role of an Imam"
-        },
-        {
-          "startTime": 46,
-          "endTime": 103,
-          "topic": "The contrast between modern convenience and the rigorous study of past scholars"
-        }
-      ]
-    },
-    {
-      "title": "MCP Apps: Primitives, discovery, and the Future of Software - Pietro Zullo, Manufact, Inc",
-      "url": "https://www.youtube.com/watch?v=sAOBXCDiDOs",
-      "videoId": "sAOBXCDiDOs",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This video introduces Model Context Protocol (MCP) Apps, explaining how they return interactive UI widgets instead of raw JSON to enable richer agentic workflows. By exploring key interaction primitives and real-world examples, the speaker demonstrates how MCP apps are reshaping software distribution through AI platforms.",
-      "dateAdded": "2026-07-05T04:37:50.274Z",
-      "timestamps": [
-        {
-          "startTime": 33,
-          "endTime": 136,
-          "topic": "Understanding MCP Apps versus standard MCP servers"
-        },
-        {
-          "startTime": 303,
-          "endTime": 445,
-          "topic": "Timeline and evolution of MCP-UI into MCP Apps"
-        },
-        {
-          "startTime": 608,
-          "endTime": 710,
-          "topic": "Architectural overview of how MCP Apps render sandboxed widgets"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-08T03:58:59.731Z"
+  "lastUpdated": "2026-07-09T04:28:45.950Z"
 }
