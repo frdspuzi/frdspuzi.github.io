@@ -1,86 +1,86 @@
 [
   {
-    "videoId": "G6IlDzj8OjA",
-    "title": "GTM Is You - Victoria Melnikova, Evil Martians",
+    "videoId": "xUnRQ9vLXxo",
+    "title": "What do we build now? — Theo Browne, @t3dotgg",
     "selected": true,
-    "reasoning": "Teaches junior engineers how to look past just writing code and understand how products actually reach users, which is essential career-accelerating business acumen.",
-    "summary": "Code is useless if it never reaches the user. This talk bridges the gap between engineering and Go-To-Market (GTM) strategy, showing you how to build with distribution in mind. It's the ultimate guide to converting your technical skills into tangible business value and elevating your career trajectory."
+    "reasoning": "Excellent strategic roadmap for a junior fullstack engineer looking to build high-value products in the current AI transition era.",
+    "summary": "As a junior fullstack developer, navigating the shift toward AI can feel overwhelming. Tech industry authority Theo Browne breaks down exactly what developers should be building right now to stay indispensable. This is your playbook for identifying profitable, high-impact project ideas early in your career."
   },
   {
-    "videoId": "qdZzND79mcg",
-    "title": "Beyond the Harness: A Journey Towards Adaptative Engineering - Rajiv Chandegra, Annicha Labs",
-    "selected": false,
-    "reasoning": "Too abstract and niche for a junior fullstack developer; early-career engineers need foundational architecture and delivery skills before tackling highly specialized adaptive setups.",
-    "summary": ""
+    "videoId": "grdoOC1BT1s",
+    "title": "Think You Can Build a Game with AI? Think Again! - Danielle An &amp; David Hoe, Meta",
+    "selected": true,
+    "reasoning": "Features high-level engineering insights from Meta leaders, including David Hoe (providing great Southeast Asian/Malaysian representation), focusing on actual software architecture rather than AI hype.",
+    "summary": "Get a reality check on AI development from top-tier Meta engineers, including regional talent David Hoe. This talk strips away the marketing hype to show you how complex systems are actually built and managed. It is an essential watch for any junior developer wanting to understand enterprise-level software engineering."
   },
   {
-    "videoId": "1IdzkRVmWAA",
-    "title": "How we taught agents to use good retrieval - Hanna Lichtenberg, Mixedbread AI",
+    "videoId": "iRcX54EO5g8",
+    "title": "Your agent is blindfolded — Johan Lajili, Poolside AI",
     "selected": false,
-    "reasoning": "While technically interesting, advanced AI agent retrieval methodologies are overly specialized for a junior generalist developer who needs to master core fullstack engineering paradigms first.",
+    "reasoning": "This video is highly niche and theoretical, focusing heavily on specific AI agent infrastructure rather than broad, actionable advice for a junior fullstack engineer.",
     "summary": ""
   },
   {
     "videoId": "L7vrYf-Mgdg",
     "title": "Time-Saving Habits",
-    "selected": false,
-    "reasoning": "Standard, generic productivity advice wrapped in a short-form video; lacks the depth needed for professional career development.",
-    "summary": ""
+    "selected": true,
+    "reasoning": "Highly practical productivity advice from a prominent Muslim-heritage creator (Ali Abdaal), highly applicable to early-career developers looking to optimize their workflow.",
+    "summary": "Balancing coding, learning, and life as a junior developer requires top-tier time management. In this video, productivity expert Ali Abdaal shares simple, science-backed habits to help you reclaim your time. Learn how to work smarter, prevent burnout, and accelerate your career progression."
   },
   {
     "videoId": "6LZMamuYjjs",
     "title": "The Surprising Truth About Money and Luck",
-    "selected": false,
-    "reasoning": "A 60-second productivity short cannot offer the deep financial systems or ethical frameworks expected by an Islamic financial advocate.",
-    "summary": ""
+    "selected": true,
+    "reasoning": "Directly targets early-career wealth mindset, aligning well with the concepts of Rizq (provision) and luck, of interest to an Islamic financial advocate.",
+    "summary": "For anyone early in their career, understanding the relationship between effort, luck, and financial success is vital. Ali Abdaal reframes 'luck' in a way that aligns beautifully with ethical wealth creation and preparation. This quick video offers a refreshing, grounded perspective on building long-term financial security."
   },
   {
     "videoId": "hJfJMT-yfr0",
     "title": "Top 3 in the world for typing 🤯",
     "selected": false,
-    "reasoning": "Pure entertainment fluff about typing speed that offers zero practical value to a developer's real-world career or technical skills.",
+    "reasoning": "While entertaining, a short about competitive typing speeds is ultimate fluff and does not offer genuine career or technical value.",
+    "summary": ""
+  },
+  {
+    "videoId": "Q4l3D0fI5dY",
+    "title": "Create clean LLM service interfaces with wrapper classes!",
+    "selected": true,
+    "reasoning": "Provides highly actionable, clean code architecture practices specifically for junior fullstack developers working with modern AI APIs.",
+    "summary": "Level up your codebase with this quick, practical tutorial from Google on using wrapper classes for AI integrations. Learning to design clean, modular interfaces like this is exactly how you prove to your senior developers that you are ready for promotion. It is a bite-sized masterclass in writing clean, professional fullstack code."
+  },
+  {
+    "videoId": "xDAn3tic3GI",
+    "title": "Any bug can be fixed… in a couple of days….",
+    "selected": false,
+    "reasoning": "This is a brief, comedic developer meme video that lacks educational depth or actionable advice.",
     "summary": ""
   },
   {
     "videoId": "5MFWcubNvtM",
     "title": "POV: You’re at I/O Connect Berlin",
     "selected": false,
-    "reasoning": "A superficial, vlog-style short of a tech conference with absolutely zero educational or professional development value.",
+    "reasoning": "This is a lifestyle event vlog aimed at developer relations hype, offering zero educational or career development value.",
     "summary": ""
   },
   {
-    "videoId": "KwJwYIqDMLY",
-    "title": "Building an Android app in AI Studio",
-    "selected": true,
-    "reasoning": "Highly practical, hands-on demonstration of Google's AI Studio. It gives a junior fullstack dev modern tools to rapidly build and ship prototypes.",
-    "summary": "Demystify generative AI development by watching Google engineers build a live app from scratch. This practical guide gives you the exact blueprint to integrate Google's AI Studio into your fullstack development toolkit. It's highly actionable, immediate portfolio-building gold."
-  },
-  {
-    "videoId": "KIp8PAU3oAI",
-    "title": "Create agent skills for on-device generative AI (I/O Connect ‘26)",
-    "selected": true,
-    "reasoning": "On-device AI is the next frontier of software architecture; mastering local agent execution is a powerful differentiator for a junior dev looking to stand out.",
-    "summary": "Stand out from other junior engineers by mastering on-device generative AI agents. This session breaks down how to construct local agent skills, a crucial skill set as the industry shifts away from heavy cloud API reliance. Learn how to build privacy-first, highly responsive user experiences."
-  },
-  {
-    "videoId": "5BAzkYfuwNU",
-    "title": "The hidden cost of apologizing too much at work | Teresa Caro | TEDxBuckheadAve",
-    "selected": true,
-    "reasoning": "Directly targets a massive blind spot for junior engineers and early-career professionals: corporate communication dynamics and self-sabotaging speech patterns.",
-    "summary": "Over-apologizing at work is silently killing your professional credibility and making you look less competent than you are. This career-defining talk teaches you how to swap default apologies for authoritative, confident communication. Learn how to command respect in sprint reviews and design discussions."
-  },
-  {
-    "videoId": "wCRGTf-ydO0",
-    "title": "Why I take my college students to prison | Ann Frost | TEDxUofW",
+    "videoId": "go3nwfyQ79c",
+    "title": "Are cats and their parasites taking over the world? #shorts #tedx",
     "selected": false,
-    "reasoning": "Although socially conscious, this talk has zero technical, career, or financial applicability to our target demographic.",
+    "reasoning": "An interesting biology trivia piece, but entirely irrelevant to software engineering, career growth, or finance.",
     "summary": ""
   },
   {
-    "videoId": "5kRHC9o88i0",
-    "title": "The Power of Inclusive Design | Nandita Gupta | TEDxUofW",
-    "selected": true,
-    "reasoning": "Excellent intersection of high-value frontend engineering skills (accessibility) and ethical alignment, which resonates deeply with Islamic values of social equity.",
-    "summary": "True fullstack engineering isn't just about databases and APIs; it's about ensuring your interfaces are accessible to absolutely everyone. This talk highlights how inclusive design drives better UX and code quality. It is the perfect intersection of technical frontend excellence and ethical engineering practice."
+    "videoId": "KpMSGApoLKE",
+    "title": "How I redeemed 35 years of regret | Tricia Rose Burt | TEDxPortsmouth",
+    "selected": false,
+    "reasoning": "This talk is geared toward late-stage life regrets and artistic transitions, which does not match the needs of a junior engineer early in their career.",
+    "summary": ""
+  },
+  {
+    "videoId": "SwCOnwaR2UE",
+    "title": "Framing a manic mind | Keith Wasserman | TEDxPortsmouth",
+    "selected": false,
+    "reasoning": "A powerful personal narrative on mental health and US real estate, but too tangential for our specific target persona's professional and cultural alignment.",
+    "summary": ""
   }
 ]
