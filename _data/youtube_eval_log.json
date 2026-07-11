@@ -1,65 +1,212 @@
 [
   {
+    "videoId": "YZQsWVeN3rE",
+    "title": "How Juries and Librarians Can Solve GTM's AI Trust Problem — Alex Bauer, Upside.tech",
+    "selected": false,
+    "reasoning": "While AI trust is an interesting concept, the focus on GTM (Go-To-Market) strategies is too specialized for a junior developer.",
+    "summary": ""
+  },
+  {
+    "videoId": "WkBPX-oDMnA",
+    "title": "Understanding is the new bottleneck — Geoffrey Litt, Notion",
+    "selected": true,
+    "reasoning": "Brilliant talk for a fullstack developer looking to understand how the role of human programming changes as AI bottlenecks shift.",
+    "summary": "As AI handles more syntax and boilerplate code, your real value lies in system comprehension. This brilliant talk by Notion's Geoffrey Litt explains why 'understanding' is the premium skill for junior engineers looking to level up and stand out in the automated future."
+  },
+  {
+    "videoId": "ZpK5PWX2YRM",
+    "title": "Should AI Engineers Still Read Code in 2026? The Z/L Continuum — Alex Volkov, ThursdAI",
+    "selected": true,
+    "reasoning": "Directly addresses the core career path and skill development questions of junior engineers in the current AI landscape.",
+    "summary": "Struggling to figure out your professional worth in the age of generative AI? This video explores the 'Z/L Continuum' and answers the critical question of whether reading and writing code is still a vital skill for career growth and technical autonomy."
+  },
+  {
+    "videoId": "2lVopmsIC0g",
+    "title": "The first crypto war",
+    "selected": false,
+    "reasoning": "A generic short on crypto history that lacks structural depth or actionable advice for developer careers.",
+    "summary": ""
+  },
+  {
+    "videoId": "k8guLCJxf4c",
+    "title": "The NSA tried recruiting him and jailing him",
+    "selected": false,
+    "reasoning": "A brief, entertaining historical short about the NSA that offers no direct professional or technical value.",
+    "summary": ""
+  },
+  {
+    "videoId": "qOe4eW7CPVM",
+    "title": "Cryptography in World War 2",
+    "selected": false,
+    "reasoning": "An interesting historical snippet on cryptology that lacks practical relevance for career advancement.",
+    "summary": ""
+  },
+  {
+    "videoId": "FktgMN390Xo",
+    "title": "Stop typing out your AI prompts...(see description)",
+    "selected": false,
+    "reasoning": "A generic productivity short that, while neat, does not provide long-form actionable depth for building a software career.",
+    "summary": ""
+  },
+  {
+    "videoId": "gUblhLMhc94",
+    "title": "i am begging you to try harry potter fan fiction",
+    "selected": false,
+    "reasoning": "Highly off-topic video discussing casual reading and fiction, offering zero professional, technical, or financial utility.",
+    "summary": ""
+  },
+  {
     "videoId": "L7vrYf-Mgdg",
     "title": "Time-Saving Habits",
-    "selected": true,
-    "reasoning": "High-impact productivity advice that is immediately actionable for an early-career professional trying to balance development skills and lifestyle.",
-    "summary": "As an early-career developer, your time is your most valuable asset. This video breaks down practical habits to optimize your daily routine, helping you avoid burnout while carving out time to upskill."
-  },
-  {
-    "videoId": "6LZMamuYjjs",
-    "title": "The Surprising Truth About Money and Luck",
-    "selected": true,
-    "reasoning": "Important psychological framework about wealth generation that aligns perfectly with a financial advocate's interest in realistic money management.",
-    "summary": "Gain a healthier perspective on financial success by understanding the distinct roles that effort and luck play in wealth. It's an essential reality check for anyone early in their career aiming for financial independence."
-  },
-  {
-    "videoId": "hJfJMT-yfr0",
-    "title": "Top 3 in the world for typing 🤯",
     "selected": false,
-    "reasoning": "This video is pure entertainment and typing trivia, offering no real career advice or technical depth for a junior developer.",
+    "reasoning": "Standard, generic productivity advice delivered in a rapid short format with no deep-dive value.",
+    "summary": ""
+  },
+  {
+    "videoId": "8ZCeXQyavog",
+    "title": "Whats your go-to prompting hack?",
+    "selected": false,
+    "reasoning": "A brief prompt-engineering short that is too shallow to be highly educational for a fullstack developer.",
+    "summary": ""
+  },
+  {
+    "videoId": "yGHi5V4sVkc",
+    "title": "Build With AI 2026 Recap",
+    "selected": false,
+    "reasoning": "A corporate event recap that focuses more on high-level product marketing rather than deep technical skill-building.",
     "summary": ""
   },
   {
     "videoId": "ObomOeoP47Y",
     "title": "How to vibe code Android apps",
-    "selected": true,
-    "reasoning": "Highlights modern, AI-assisted development workflows which are crucial for junior fullstack engineers to stay competitive.",
-    "summary": "Artificial intelligence is changing the nature of software engineering, and 'vibe coding' is the latest paradigm shift. Learn how to work alongside AI tools to build and deploy Android apps faster than ever before."
-  },
-  {
-    "videoId": "Q4l3D0fI5dY",
-    "title": "Create clean LLM service interfaces with wrapper classes!",
-    "selected": true,
-    "reasoning": "Highly practical technical tutorial that teaches clean code and architectural patterns for modern AI integrations, perfect for a junior fullstack dev.",
-    "summary": "Level up your codebase by learning how to write clean, maintainable wrapper classes for LLM services. This concrete architectural pattern will help you write production-grade code that stands out to senior engineers."
-  },
-  {
-    "videoId": "xDAn3tic3GI",
-    "title": "Any bug can be fixed… in a couple of days….",
     "selected": false,
-    "reasoning": "Though comforting for junior developer imposter syndrome, it is too brief and lacks the concrete value found in the other technical selections.",
+    "reasoning": "A short format video on 'vibe coding' which is too shallow to act as structured, reliable software engineering advice.",
+    "summary": ""
+  },
+  {
+    "videoId": "EBq8Qas8DIM",
+    "title": "Financial freedom disalah faham?",
+    "selected": false,
+    "reasoning": "An interesting Malaysian financial concept discussed briefly, but the short format prevents a comprehensive breakdown of the economics involved.",
+    "summary": ""
+  },
+  {
+    "videoId": "px2rjEfA4Z4",
+    "title": "Kerajaan U-turn Lindung 24 Jam, rakyat menang atau rugi?",
+    "selected": false,
+    "reasoning": "A solid breakdown of the PERKESO U-turn policy, but the dedicated podcast format featuring an economist on the same channel offers much more structured debate and macro-insights.",
+    "summary": ""
+  },
+  {
+    "videoId": "--kHFJgDZSE",
+    "title": "PERKESO buat U-turn",
+    "selected": false,
+    "reasoning": "A short teaser on the PERKESO U-turn that lacks the comprehensive debate format of full-length analyses.",
+    "summary": ""
+  },
+  {
+    "videoId": "LlY1uhRkh2o",
+    "title": "PERKESO cover 24 jam?",
+    "selected": false,
+    "reasoning": "Another short summarizing the PERKESO policy, lacking the analytical depth required by a professional or financial advocate.",
     "summary": ""
   },
   {
     "videoId": "l8H7QDvK43Y",
     "title": "[S01:E16] PERKESO wajibkan Skim Lindung 24 Jam, ramai pekerja terbeban? - Dr. Aimi, Economist",
     "selected": true,
-    "reasoning": "In-depth Malaysian economic and financial discussion highly relevant to the local workforce and a financial advocate's worldview.",
-    "summary": "Stay informed on critical Malaysian labor policies with this expert breakdown of the mandatory 24-hour PERKESO scheme. Understand the economic impact on your paycheck and how it shapes local employee benefits."
+    "reasoning": "Outstanding local debate on labor policy, highly relevant for a Malaysian worker and financial advocate assessing systemic burdens.",
+    "summary": "Get a sharp, analytical breakdown of Malaysia's controversial PERKESO policy change from an economist's perspective. This podcast featuring Dr. Aimi is essential listening for any local financial advocate wanting to understand how government safety nets affect the real-world cash flow of early-career workers."
   },
   {
     "videoId": "xWPsEzvKPHo",
     "title": "PERKESO 24 jam: Baik atau beban?",
     "selected": false,
-    "reasoning": "This is a short-form teaser of the full podcast episode which we have already selected for its superior depth and educational value.",
+    "reasoning": "A short clip of the PERKESO debate which is better consumed in its rich, full-length podcast counterpart.",
     "summary": ""
   },
   {
-    "videoId": "e39eI7LWCSk",
-    "title": "Business owner perlu FOMO?",
+    "videoId": "-aJtCPD95jw",
+    "title": "#110 | The Power of Positive Thinking",
     "selected": false,
-    "reasoning": "Targeted primarily at business owners and entrepreneurs rather than an early-career software engineer.",
+    "reasoning": "Generic mindset and self-help advice that is not tailored to the unique professional demands of a developer or finance advocate.",
+    "summary": ""
+  },
+  {
+    "videoId": "FJoQR0Z0hLk",
+    "title": "#109 | How To Lead With Integrity",
+    "selected": false,
+    "reasoning": "High-level personal development vlog with broad leadership ideas that don't address the day-to-day coding and engineering challenges of a junior dev.",
+    "summary": ""
+  },
+  {
+    "videoId": "19nzZo1EF80",
+    "title": "#108 | The Economics of The World Cup",
+    "selected": false,
+    "reasoning": "An economics breakdown of a global sporting event; interesting, but irrelevant to local Malaysian financial context or software engineering.",
+    "summary": ""
+  },
+  {
+    "videoId": "fGDDolKBj-A",
+    "title": "“No Prime Minister would limit their power to just 10 years but…” - Azalina Othman, Law Minister",
+    "selected": false,
+    "reasoning": "Mainly political and legislative talk; has less direct relevance to early-career planning or financial advocacy compared to macroeconomic reviews.",
+    "summary": ""
+  },
+  {
+    "videoId": "2UhJRuKKQmw",
+    "title": "Most Replayed: Mangsa Buli Diselamatkan Oleh Kakak | In The Studio",
+    "selected": false,
+    "reasoning": "An inspiring local human-interest story, but does not offer professional, financial, or engineering guidance.",
+    "summary": ""
+  },
+  {
+    "videoId": "Ed5HVCkGJxc",
+    "title": "“The Malaysian government might be doing its job too well…” - World Bank Lead Economist",
+    "selected": true,
+    "reasoning": "A top-tier macroeconomic overview of Malaysia by the World Bank Lead Economist, crucial for early-career financial strategizing.",
+    "summary": "Understand the macroeconomic landscape you are building your career in. This BFM interview with the World Bank's Lead Economist dissects Malaysia's structural reforms and fiscal health, giving you the analytical foresight needed for long-term career planning and smart financial advocacy."
+  },
+  {
+    "videoId": "pYjBpREhzw4",
+    "title": "We don’t buy digital products: We live in them | Bruno Giussani & Katerina Biliouri | TEDxBerlin",
+    "selected": false,
+    "reasoning": "An interesting philosophical TEDx talk on digital product UI/UX, but less actionable for immediate fullstack developer career steps.",
+    "summary": ""
+  },
+  {
+    "videoId": "iHH-2EaX5o4",
+    "title": "Why AI forces us to rethink leadership and organizations | Florian Bankoley | TEDxBerlin",
+    "selected": false,
+    "reasoning": "Focuses on high-level corporate organizational structures, which is too advanced and detached from a junior engineer's daily needs.",
+    "summary": ""
+  },
+  {
+    "videoId": "bzjQ8WTQA5o",
+    "title": "Why Europe was never behind in AI | Alexander Woellwarth-Lauterburg | TEDxBerlin",
+    "selected": false,
+    "reasoning": "An AI policy and geopolitical talk centered entirely on European progress, offering little direct value to a Malaysian-based developer.",
+    "summary": ""
+  },
+  {
+    "videoId": "BSDshQqStk8",
+    "title": "Bosnia’s Muslim Genocide | Dr. Omar Suleiman",
+    "selected": false,
+    "reasoning": "A highly condensed short on history; the full-length video on this topic is much more educational, impactful, and rewarding.",
+    "summary": ""
+  },
+  {
+    "videoId": "dsrkp1KhXG8",
+    "title": "Bosnia's Genocide, Up Close and Personal | Dr. Omar Suleiman",
+    "selected": true,
+    "reasoning": "Deeply moving and intellectually rigorous discussion of history and resilience from a prominent Islamic perspective, vital for a Muslim's global awareness.",
+    "summary": "Connect deeply with global history through this profound exploration of the Bosnian genocide by Dr. Omar Suleiman. It is a vital, eye-opening watch that strengthens historical awareness and provides deep spiritual and ethical reflection for the modern Muslim."
+  },
+  {
+    "videoId": "Us5FhK__E5E",
+    "title": "Allah Sees Your Parenting | Sh. Elshinawy",
+    "selected": false,
+    "reasoning": "An Islamic short focused entirely on parenting, which does not align closely with the target demographic's current early-career and financial professional focus.",
     "summary": ""
   }
 ]
