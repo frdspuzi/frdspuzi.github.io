@@ -1,6 +1,109 @@
 {
   "videos": [
     {
+      "title": "Understanding is the new bottleneck — Geoffrey Litt, Notion",
+      "url": "https://www.youtube.com/watch?v=WkBPX-oDMnA",
+      "videoId": "WkBPX-oDMnA",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "As AI handles more syntax and boilerplate code, your real value lies in system comprehension. This brilliant talk by Notion's Geoffrey Litt explains why 'understanding' is the premium skill for junior engineers looking to level up and stand out in the automated future.",
+      "dateAdded": "2026-07-11T03:50:09.355Z",
+      "timestamps": []
+    },
+    {
+      "title": "Should AI Engineers Still Read Code in 2026? The Z/L Continuum — Alex Volkov, ThursdAI",
+      "url": "https://www.youtube.com/watch?v=ZpK5PWX2YRM",
+      "videoId": "ZpK5PWX2YRM",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Struggling to figure out your professional worth in the age of generative AI? This video explores the 'Z/L Continuum' and answers the critical question of whether reading and writing code is still a vital skill for career growth and technical autonomy.",
+      "dateAdded": "2026-07-11T03:50:09.355Z",
+      "timestamps": []
+    },
+    {
+      "title": "[S01:E16] PERKESO wajibkan Skim Lindung 24 Jam, ramai pekerja terbeban? - Dr. Aimi, Economist",
+      "url": "https://www.youtube.com/watch?v=l8H7QDvK43Y",
+      "videoId": "l8H7QDvK43Y",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "This video features an insightful discussion with Dr. Aimi Zulhazmi on the implementation of a 24-hour safety net for workers in Malaysia and the introduction of the Semak Kasih portal. They explore whether mandatory salary deductions are burdensome for different income groups and address why many insurance policies remain unclaimed by heirs. The core takeaway is that both policy adjustments and financial literacy are crucial for ensuring practical and effective social safety nets.",
+      "dateAdded": "2026-07-11T03:50:09.356Z",
+      "timestamps": [
+        {
+          "startTime": 129,
+          "endTime": 158,
+          "topic": "Introduction to the 24-hour social safety net and worker sentiments"
+        },
+        {
+          "startTime": 216,
+          "endTime": 257,
+          "topic": "Understanding the wage deduction structure and its impact on workers"
+        },
+        {
+          "startTime": 399,
+          "endTime": 445,
+          "topic": "Introduction and benefits of the Semak Kasih portal for insurance claims"
+        }
+      ]
+    },
+    {
+      "title": "“The Malaysian government might be doing its job too well…” - World Bank Lead Economist",
+      "url": "https://www.youtube.com/watch?v=Ed5HVCkGJxc",
+      "videoId": "Ed5HVCkGJxc",
+      "channel": "BFM 89.9",
+      "category": "Finance",
+      "summary": "This video features Dr. Apurva Sanghi, Lead Economist for the World Bank Group in Malaysia, discussing the country's economic outlook amidst global supply-side crises and geopolitical tensions. He highlights how Malaysia's trade openness, particularly in semiconductors, can build resilience while addressing critical issues like fuel subsidies and productivity-driven wage growth. It is a must-watch for anyone interested in understanding the practical economic challenges and strategic policy decisions facing Malaysia in a volatile global market.",
+      "dateAdded": "2026-07-11T03:50:09.356Z",
+      "timestamps": [
+        {
+          "startTime": 115,
+          "endTime": 202,
+          "topic": "Global Economic Outlook & Middle East Crisis Impact"
+        },
+        {
+          "startTime": 524,
+          "endTime": 623,
+          "topic": "Understanding the Supply-Side Crisis in Malaysia"
+        },
+        {
+          "startTime": 738,
+          "endTime": 820,
+          "topic": "Addressing the Fuel Subsidy Dilemma"
+        },
+        {
+          "startTime": 905,
+          "endTime": 1005,
+          "topic": "The Real Link Between Productivity and Wages"
+        }
+      ]
+    },
+    {
+      "title": "Bosnia's Genocide, Up Close and Personal | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=dsrkp1KhXG8",
+      "videoId": "dsrkp1KhXG8",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "This deeply moving video follows Imam Omar Suleiman as he visits the Srebrenica Memorial Center in Bosnia, honoring the victims of the 1995 genocide. Through archival footage, personal testimonies, and the haunting preservation of victims' personal items, the video serves as a powerful reminder of the horrors of hatred and the resilience of faith. It urges viewers to never forget the tragedy of Srebrenica and to actively stand against injustice and violence in all forms.",
+      "dateAdded": "2026-07-11T03:50:09.356Z",
+      "timestamps": [
+        {
+          "startTime": 30,
+          "endTime": 101,
+          "topic": "The tragedy of Srebrenica and the weight of memory"
+        },
+        {
+          "startTime": 126,
+          "endTime": 231,
+          "topic": "Archival footage: A father's heartbreaking call to his son"
+        },
+        {
+          "startTime": 741,
+          "endTime": 835,
+          "topic": "A survivor's emotional testimony on grief and remembrance"
+        }
+      ]
+    },
+    {
       "title": "Time-Saving Habits",
       "url": "https://www.youtube.com/shorts/L7vrYf-Mgdg",
       "videoId": "L7vrYf-Mgdg",
@@ -55,32 +158,6 @@
       "summary": "Level up your codebase by learning how to write clean, maintainable wrapper classes for LLM services. This concrete architectural pattern will help you write production-grade code that stands out to senior engineers.",
       "dateAdded": "2026-07-10T04:30:38.675Z",
       "timestamps": []
-    },
-    {
-      "title": "[S01:E16] PERKESO wajibkan Skim Lindung 24 Jam, ramai pekerja terbeban? - Dr. Aimi, Economist",
-      "url": "https://www.youtube.com/watch?v=l8H7QDvK43Y",
-      "videoId": "l8H7QDvK43Y",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This video features an insightful discussion with economic analyst Dr. Aimi Zulhazmi on the real-world impact of the PERKESO 24-hour social safety net and the newly launched 'Semak Kasih' portal by Bank Negara Malaysia. It breaks down how compulsory salary deductions affect different income groups in Malaysia and why understanding your insurance and estate planning is crucial for long-term financial security.",
-      "dateAdded": "2026-07-10T04:30:38.675Z",
-      "timestamps": [
-        {
-          "startTime": 129,
-          "endTime": 305,
-          "topic": "Overview of PERKESO 24-Hour Coverage and Public Concerns"
-        },
-        {
-          "startTime": 434,
-          "endTime": 548,
-          "topic": "Key Differences: Workplace vs. 24-Hour Protection"
-        },
-        {
-          "startTime": 1110,
-          "endTime": 1220,
-          "topic": "Why Social Safety Nets are Essential for Malaysia's Aging Population"
-        }
-      ]
     },
     {
       "title": "What do we build now? — Theo Browne, @t3dotgg",
@@ -237,95 +314,7 @@
           "topic": "Protecting what is essential to preserve your values and leadership"
         }
       ]
-    },
-    {
-      "title": "The Power of Inclusive Design | Nandita Gupta | TEDxUofW",
-      "url": "https://www.youtube.com/watch?v=5kRHC9o88i0",
-      "videoId": "5kRHC9o88i0",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "True fullstack engineering isn't just about databases and APIs; it's about ensuring your interfaces are accessible to absolutely everyone. This talk highlights how inclusive design drives better UX and code quality. It is the perfect intersection of technical frontend excellence and ethical engineering practice.",
-      "dateAdded": "2026-07-08T03:52:18.860Z",
-      "timestamps": []
-    },
-    {
-      "title": "500 people vibe-coded for 30 days. I was one of them. - Sanja Grbic, Automattic",
-      "url": "https://www.youtube.com/watch?v=UcYoMg-8-L8",
-      "videoId": "UcYoMg-8-L8",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This video offers a fascinating insider look at how a 1,400-person tech company successfully upskilled over 500 employees to use AI coding tools in just 30 days. It is a must-watch for anyone interested in organizational agility, showing how AI can transform designers into design engineers and shift the role of traditional software engineers from builders to strategic enablers.",
-      "dateAdded": "2026-07-07T04:30:47.062Z",
-      "timestamps": [
-        {
-          "startTime": 306,
-          "endTime": 420,
-          "topic": "How Automattic structured AI enablement for non-technical employees"
-        },
-        {
-          "startTime": 716,
-          "endTime": 843,
-          "topic": "The shift from engineer-as-builder to engineer-as-enabler"
-        },
-        {
-          "startTime": 1234,
-          "endTime": 1320,
-          "topic": "Transitioning from traditional design processes to AI-driven design engineering"
-        }
-      ]
-    },
-    {
-      "title": "Ambil credit card untuk credit score?",
-      "url": "https://www.youtube.com/shorts/njrW3ez-Ps0",
-      "videoId": "njrW3ez-Ps0",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "This video breaks down the practical realities of building a credit score in Malaysia, helping young professionals understand how banks view creditworthiness. Instead of just getting a credit card blindly, the speaker explains alternative ways to build credit and how to maximize card benefits wisely.",
-      "dateAdded": "2026-07-07T04:30:47.062Z",
-      "timestamps": [
-        {
-          "startTime": 15,
-          "endTime": 32,
-          "topic": "What a credit score actually means to banks"
-        },
-        {
-          "startTime": 37,
-          "endTime": 54,
-          "topic": "The true cost of owning a credit card if you don't use it"
-        },
-        {
-          "startTime": 109,
-          "endTime": 125,
-          "topic": "Three everyday ways to build your credit score besides credit cards"
-        }
-      ]
-    },
-    {
-      "title": "[S01:E15] Founder Supercube jana RM20 Juta dalam masa setahun? - Hayfa Amira, Founder Supercube",
-      "url": "https://www.youtube.com/watch?v=FtqH_R8Z-Kk",
-      "videoId": "FtqH_R8Z-Kk",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This video features an insightful interview with Hayfa Amira, the founder of Supercube International, as she shares her journey of building a successful wellness brand from scratch. Aspiring entrepreneurs will learn valuable lessons on navigating business challenges, such as dealing with counterfeit products and the strategic transition from an agent-based model to affiliate marketing. It's a must-watch for anyone looking to build a sustainable, value-driven business with a clear long-term vision.",
-      "dateAdded": "2026-07-07T04:30:47.062Z",
-      "timestamps": [
-        {
-          "startTime": 335,
-          "endTime": 444,
-          "topic": "Transitioning from Engineering to Business"
-        },
-        {
-          "startTime": 502,
-          "endTime": 646,
-          "topic": "How the Founder's Engineering Background Aids Decision-Making in Business"
-        },
-        {
-          "startTime": 732,
-          "endTime": 846,
-          "topic": "Building Supercube and Educating the Market on Artisan Functional Tea"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-10T04:44:45.639Z"
+  "lastUpdated": "2026-07-11T03:54:28.492Z"
 }
