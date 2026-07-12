@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What is the psychological term for the phenomenon where writing down information or saving it on a device prompts the brain to treat it as permission to forget or 'delete' the memory?",
+      "question": "In Islamic tradition, which three primary roles define a person's purposeful journey in life?",
       "options": [
-        "Active Recall",
-        "Spaced Repetition",
-        "Digital Gardening",
-        "The Performance Paradox of Cognitive Offloading"
+        "Memorizing historical narratives, seeking absolute physical perfection, and avoiding community leadership",
+        "Amassing material wealth, establishing physical dominance, and rejecting all forms of free will",
+        "Isolating from society, performing miracles, and eliminating all forms of personal accountability",
+        "Worshiping Allah, serving as caretakers of the Earth, and living as a test of faith and conduct"
       ],
       "correctIndex": 3,
-      "learning": "The 'Performance Paradox' of Cognitive Offloading (also known as Digital Amnesia) occurs when writing down or saving information causes our brains to treat it as permission to hit 'delete' and forget it.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "What is the standard template format for a User Story in a Scrum Product Backlog?",
-      "options": [
-        "[Feature] should be implemented by [date]",
-        "Develop [feature] for [role] by [date]",
-        "I want [feature] because [reason]",
-        "As a [role], I need [feature], so that [reason]"
-      ],
-      "correctIndex": 3,
-      "learning": "In Scrum, User Stories within the Product Backlog follow a specific, structured template: 'As a [role], I need [feature], so that [reason]'.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "Compared to the approximately 170,000 English words in the Oxford English Dictionary, how many distinct words are estimated to exist in the Arabic language?",
-      "options": [
-        "5 million",
-        "25 million",
-        "1.2 million",
-        "12 million"
-      ],
-      "correctIndex": 3,
-      "learning": "The Arabic language features an incredibly high level of complexity, with approximately 12 million distinct words compared to only 170,000 in the Oxford English Dictionary, establishing a ratio of about 71 to 1.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In the Quran, what specific minimum weight of good or evil is stated to be seen and accounted for by the person who performed it?",
-      "options": [
-        "A drop's weight",
-        "A feather's weight",
-        "An atom's weight",
-        "A grain's weight"
-      ],
-      "correctIndex": 2,
-      "learning": "According to the Quran (99:7-8), divine justice is so precise that even an atom's weight of good or evil will be seen and accounted for.",
+      "learning": "In Islamic teachings, life is a purposeful journey defined by three primary roles: worshiping Allah to build mindfulness, serving as caretakers (khalifah) of the Earth to preserve unity, and living life as a test of conduct to prepare for the eternal hereafter.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Within PCIe power management, what is the primary operational trade-off when a device transitions to deeper power-saving states?",
+      "question": "Which PCIe power management substate specifically powers down the electrical circuits of the main link to achieve deeper energy savings than L1.0?",
       "options": [
-        "It achieves greater energy savings but requires a longer wake-up time to resume active operation",
-        "It increases active data transmission speed but consumes significantly more standby power",
-        "It shuts down fewer electrical components but decreases the overall operational lifespan of the device",
-        "It reduces energy savings but allows the device to wake up instantly to handle tasks"
+        "L1.2",
+        "L2",
+        "L1.1",
+        "L0s"
       ],
-      "correctIndex": 0,
-      "learning": "PCIe power management relies on a spectrum of states (L0 to L2) that balance energy consumption against responsiveness, where transitioning to deeper power-saving states yields higher energy savings but results in longer wake-up delays.",
+      "correctIndex": 2,
+      "learning": "In PCIe power management, the L1.1 substate achieves greater energy savings than L1.0 by powering down the electrical circuits of the main link, which also results in an increased wake-up time.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
+    },
+    {
+      "question": "What cumulative percentage of the Quran is made up of its top 20 most frequently occurring words?",
+      "options": [
+        "20.83%",
+        "50.50%",
+        "12.45%",
+        "80.00%"
+      ],
+      "correctIndex": 0,
+      "learning": "While the Pareto Principle (80/20 rule) is often assumed to apply to language learning, data analysis reveals that the top 20 most frequent words in the Quran account for only about 20.83% of the total text.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What percentage of newly learned information did psychologist Hermann Ebbinghaus prove is forgotten within 24 hours unless there is an active effort to recall it?",
+      "options": [
+        "95%",
+        "50%",
+        "30%",
+        "80%"
+      ],
+      "correctIndex": 3,
+      "learning": "In the 1880s, researcher Hermann Ebbinghaus demonstrated that humans forget approximately 80% of what they learn within 24 hours unless they actively force themselves to recall the information.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "What term represents the actual occurrence and unfolding of events in a person's life, which can be influenced or altered by their actions and supplications?",
+      "options": [
+        "Dua",
+        "Al-Alim",
+        "Qadr",
+        "Qada’"
+      ],
+      "correctIndex": 3,
+      "learning": "While Qadr represents the complete and eternally preordained plan of God, Qada’ refers to the actual unfolding of life events, which can be dynamically influenced and altered by a person's actions and supplications.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-07-11T03:50:10.440Z"
+  "fetchedAt": "2026-07-12T04:06:32.245Z"
 }
