@@ -1,233 +1,44 @@
 [
   {
-    "videoId": "vvzuWN_sFMQ",
-    "title": "4 things I’ve learned as a junior software engineer",
+    "videoId": "Q3ryjp64wK8",
+    "title": "What’s going wrong with this Kotlin code?",
     "selected": true,
-    "reasoning": "Direct, unfiltered insights from someone who actually survived the junior dev phase. No corporate jargon, just pure, relatable early-career advice.",
-    "summary": "As a junior dev, you are likely overwhelmed by the technical firehose. This video shares four grounding, practical lessons learned in the trenches that will help you pace yourself, build confidence, and manage expectations. It's the perfect sanity check for anyone navigating their first engineering role."
-  },
-  {
-    "videoId": "JoU_CZWOoo0",
-    "title": "How To Grow As a Junior Developer To Senior | 5 Tips",
-    "selected": true,
-    "reasoning": "Excellent actionable tips on shifting from a ticket-taker to an independent problem solver, essential for any junior software engineer looking to level up quickly.",
-    "summary": "Ready to shed the 'junior' title and accelerate your engineering career? This roadmap delivers five strategic mental shifts and habit changes you must adopt to gain independence and authority in your codebase. It's the ultimate career blueprint you won't find in standard programming tutorials."
-  },
-  {
-    "videoId": "iHlyXfFLQgA",
-    "title": "The RIDICULOUS Expectations For Junior Devs...",
-    "selected": false,
-    "reasoning": "Great validation for early-career imposter syndrome, but falls short of offering concrete growth paths compared to the selected engineering career videos.",
-    "summary": ""
-  },
-  {
-    "videoId": "8oyalrfwgjw",
-    "title": "RLM: Recursive Language Models for Large Codebases - Shashi, Superagentic AI",
-    "selected": false,
-    "reasoning": "Too academic and niche for a junior fullstack developer focused on building solid fundamentals and mastering daily engineering tasks.",
-    "summary": ""
-  },
-  {
-    "videoId": "7JgIS42mz7U",
-    "title": "The AI bugpocalypse is here. Now what? - Jack Cable, Corridor",
-    "selected": false,
-    "reasoning": "Speculative tech news that is highly interesting but ultimately distracts from core fullstack skill-building and career progression.",
-    "summary": ""
-  },
-  {
-    "videoId": "EUsPvBeIx70",
-    "title": "Semantic Blindness: 500,000 Sensors Confused an LLM - Raahul Singh &amp; Vanč Levstik, Phaidra",
-    "selected": false,
-    "reasoning": "Extremely niche LLM edge-case talk; has little direct career relevance for an early-stage fullstack engineer.",
-    "summary": ""
-  },
-  {
-    "videoId": "n0kzLbHr8LE",
-    "title": "How it works explained by its inventor",
-    "selected": false,
-    "reasoning": "Short-form content that lacks the depth and actionable strategies required for full-scale professional growth.",
-    "summary": ""
-  },
-  {
-    "videoId": "ynGiaPES4Cs",
-    "title": "Everyone told him not to work in cryptography",
-    "selected": false,
-    "reasoning": "An interesting historical snippet, but fails to deliver actionable career advice for a fullstack developer.",
-    "summary": ""
-  },
-  {
-    "videoId": "2lVopmsIC0g",
-    "title": "The first crypto war",
-    "selected": false,
-    "reasoning": "Another cryptographic history short; provides zero practical utility for immediate career or financial advancement.",
-    "summary": ""
-  },
-  {
-    "videoId": "FktgMN390Xo",
-    "title": "Stop typing out your AI prompts...(see description)",
-    "selected": false,
-    "reasoning": "A fast-paced productivity short that doesn't provide enough long-term value compared to fully-fledged career deep dives.",
-    "summary": ""
-  },
-  {
-    "videoId": "gUblhLMhc94",
-    "title": "i am begging you to try harry potter fan fiction",
-    "selected": false,
-    "reasoning": "Highly irrelevant lifestyle and entertainment video; provides zero value to our target demographic's professional or spiritual goals.",
-    "summary": ""
-  },
-  {
-    "videoId": "L7vrYf-Mgdg",
-    "title": "Time-Saving Habits",
-    "selected": false,
-    "reasoning": "Basic productivity short that offers generic, overdone time-management advice instead of targeted career insights.",
-    "summary": ""
+    "reasoning": "This short video offers a quick, practical debugging challenge that directly helps a junior fullstack engineer sharpen their JVM/Kotlin coding skills.",
+    "summary": "Every junior developer needs to catch bugs before they hit production. This quick, practical breakdown of common Kotlin pitfalls will sharpen your debugging instincts and help you write cleaner, safer backend code."
   },
   {
     "videoId": "8ZCeXQyavog",
     "title": "Whats your go-to prompting hack?",
-    "selected": false,
-    "reasoning": "A generic developer-focused short with superficial AI tips; not substantial enough to make the cut.",
-    "summary": ""
+    "selected": true,
+    "reasoning": "Prompt engineering is a must-have modern skill for any software engineer looking to maximize productivity and write code faster.",
+    "summary": "AI assistant tools are only as good as the instructions you feed them. Discover a practical, high-impact prompting hack that will instantly supercharge your daily coding workflow and make AI your ultimate co-pilot."
   },
   {
     "videoId": "yGHi5V4sVkc",
     "title": "Build With AI 2026 Recap",
-    "selected": false,
-    "reasoning": "A broad event recap video that reads more like a promotional marketing reel rather than educational tech content.",
-    "summary": ""
-  },
-  {
-    "videoId": "ObomOeoP47Y",
-    "title": "How to vibe code Android apps",
-    "selected": false,
-    "reasoning": "An entertaining tech buzzword clip, but lacks practical execution details in its short format.",
-    "summary": ""
-  },
-  {
-    "videoId": "EBq8Qas8DIM",
-    "title": "Financial freedom disalah faham?",
-    "selected": false,
-    "reasoning": "A financial short that barely scratches the surface of financial freedom, skipping crucial details that an advocate would seek.",
-    "summary": ""
-  },
-  {
-    "videoId": "px2rjEfA4Z4",
-    "title": "Kerajaan U-turn Lindung 24 Jam, rakyat menang atau rugi?",
     "selected": true,
-    "reasoning": "Essential viewing for a Malaysian professional. Analyzes local social security (PERKESO) policies with massive financial and employee-right implications.",
-    "summary": "As an early-career employee in Malaysia, understanding your labor rights and social security net is crucial. This video unpacks the recent national U-turn on PERKESO's 24-hour protection plan, helping you understand the real-world impact on your wallet and work-life balance. It's a masterclass in local policy analysis for any aspiring financial advocate."
+    "reasoning": "Essential high-level summary of AI engineering trends, crucial for a junior dev looking to future-proof their career.",
+    "summary": "Get a front-row seat to how the tech landscape is shifting. This recap reveals how AI is changing modern development, giving you the career-focused foresight you need to build next-generation applications and stay ahead of the curve."
   },
   {
-    "videoId": "--kHFJgDZSE",
-    "title": "PERKESO buat U-turn",
-    "selected": false,
-    "reasoning": "A bite-sized clip of the PERKESO debate; the full-length video is much more comprehensive and valuable.",
-    "summary": ""
-  },
-  {
-    "videoId": "LlY1uhRkh2o",
-    "title": "PERKESO cover 24 jam?",
-    "selected": false,
-    "reasoning": "A short-form teaser of the PERKESO discussion that lacks the necessary context and hard data.",
-    "summary": ""
-  },
-  {
-    "videoId": "l8H7QDvK43Y",
-    "title": "[S01:E16] PERKESO Lindung 24 Jam: Baik atau beban kepada pekerja? - Dr. Aimi, Economist",
-    "selected": false,
-    "reasoning": "Excellent detailed policy discussion, but Financial Faiz's main channel video delivers a more condensed, punchy, and visual breakdown of the policy for everyday viewers.",
-    "summary": ""
-  },
-  {
-    "videoId": "xWPsEzvKPHo",
-    "title": "PERKESO 24 jam: Baik atau beban?",
-    "selected": false,
-    "reasoning": "Too brief to offer any real substance on a nuanced national economic policy change.",
-    "summary": ""
-  },
-  {
-    "videoId": "-aJtCPD95jw",
-    "title": "#110 | The Power of Positive Thinking",
-    "selected": false,
-    "reasoning": "Generic, pseudo-motivational self-help content that offers no real industry utility or targeted career guidance.",
-    "summary": ""
-  },
-  {
-    "videoId": "FJoQR0Z0hLk",
-    "title": "#109 | How To Lead With Integrity",
-    "selected": false,
-    "reasoning": "Fluffy corporate leadership concepts that have little immediate relevance to hands-on, early-stage engineering execution.",
-    "summary": ""
-  },
-  {
-    "videoId": "19nzZo1EF80",
-    "title": "#108 | The Economics of The World Cup",
-    "selected": false,
-    "reasoning": "Fun business and sports trivia, but offers nothing to help with local personal finance or coding career progression.",
-    "summary": ""
-  },
-  {
-    "videoId": "fGDDolKBj-A",
-    "title": "“No Prime Minister would limit their power to just 10 years but…” - Azalina Othman, Law Minister",
-    "selected": false,
-    "reasoning": "Heavy focus on local political structures; interesting, but less directly aligned with economic and financial advocacy.",
-    "summary": ""
-  },
-  {
-    "videoId": "2UhJRuKKQmw",
-    "title": "Most Replayed: Mangsa Buli Diselamatkan Oleh Kakak | In The Studio",
-    "selected": false,
-    "reasoning": "A general interest social story with zero career, economic, or technical value for this demographic.",
-    "summary": ""
-  },
-  {
-    "videoId": "Ed5HVCkGJxc",
-    "title": "“The Malaysian government might be doing its job too well…” - World Bank Lead Economist",
+    "videoId": "qHVKAt-SVjo",
+    "title": "AI is shaping war—what about peace? | Branka Panic | TEDxCalle Aldama",
     "selected": true,
-    "reasoning": "High-level macroeconomic overview of Malaysia's fiscal policy. Essential for an advocate seeking to understand structural economic challenges in Malaysia.",
-    "summary": "To advocate effectively for ethical and Islamic finance, you must master the economic realities of your home market. This brilliant interview with the World Bank’s Lead Economist dissects Malaysia's structural growth traps and policy decisions. It provides the deep macroeconomic literacy required to make informed financial and career choices."
+    "reasoning": "Connects AI technology with ethics and global humanitarian impact, highly relevant to a values-driven Muslim professional in the tech sector.",
+    "summary": "As a software engineer, the systems you build carry deep ethical responsibility. This thought-provoking talk challenges the tech industry to pivot AI toward peace-building, offering a deeply inspiring perspective on using technology for global social good."
   },
   {
-    "videoId": "8SlR_lYniSQ",
-    "title": "Why renters feel powerless—and how to change it | Peter Fousek | TEDxProspect Hill",
-    "selected": false,
-    "reasoning": "An American-focused housing/rental talk that lacks direct relevance to the Malaysian economic framework and Islamic financial models.",
-    "summary": ""
-  },
-  {
-    "videoId": "bL22vStv5W4",
-    "title": "Can nuclear power keep our moon bases alive? | Tyler Bernstein | TEDxPaloAlto",
-    "selected": false,
-    "reasoning": "Niche space exploration technology content that provides zero professional, financial, or spiritual leverage.",
-    "summary": ""
-  },
-  {
-    "videoId": "pYjBpREhzw4",
-    "title": "We don’t buy digital products: We live in them | Bruno Giussani &amp; Katerina Biliouri | TEDxBerlin",
-    "selected": false,
-    "reasoning": "Broad tech-culture commentary; too philosophical to help an early-career developer practically build skills and advance.",
-    "summary": ""
-  },
-  {
-    "videoId": "XcGgNdizPuM",
-    "title": "Praying Janazah 30 Years Later | Dr. Omar Suleiman",
-    "selected": false,
-    "reasoning": "Poignant historical narrative, but lacks the immediate daily spiritual utility of the selected Islamic reminder.",
-    "summary": ""
-  },
-  {
-    "videoId": "0-o76rJ2XNs",
-    "title": "What Happens When You Say “Astaghfirullah”",
+    "videoId": "xWQiy5VdwY0",
+    "title": "The next generation of voting reform | Sara Wolk | TEDxMtHood",
     "selected": true,
-    "reasoning": "A crucial daily spiritual reminder that addresses seeking forgiveness (Istighfar), which is vital for maintaining spiritual and ethical focus in a high-stress industry.",
-    "summary": "In the high-intensity environments of software engineering and finance, keeping your heart grounded is a superpower. This short but impactful video explains how the simple daily practice of Istighfar unlocks immense mental clarity, spiritual relief, and unexpected sustenance. It is the perfect reminder to anchor your ambitious career goals with faith and barakah."
+    "reasoning": "Explores structural system design and equity, appealing to an Islamic financial advocate interested in systemic reform and ethical governance.",
+    "summary": "Systemic fairness is at the heart of both ethical governance and fair finance. This presentation dives into structural reform models, offering great inspiration for those passionate about building more equitable, transparent, and balanced societal frameworks."
   },
   {
-    "videoId": "BSDshQqStk8",
-    "title": "Bosnia’s Muslim Genocide | Dr. Omar Suleiman",
+    "videoId": "Jc6bbwYDmho",
+    "title": "Johann Sebastian Bach: Sarabande &amp; Tagell: Flamenco | S'celo Chris Njapha | TEDxDonauinsel Salon",
     "selected": false,
-    "reasoning": "Crucial historical education, but lacks the direct daily spiritual and practical application needed for a career-focused routine.",
+    "reasoning": "While artistically enriching, a musical performance provides no professional, technical, or financial value to our targeted audience.",
     "summary": ""
   }
 ]
