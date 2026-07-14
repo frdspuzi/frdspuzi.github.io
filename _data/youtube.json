@@ -1,6 +1,141 @@
 {
   "videos": [
     {
+      "title": "What’s going wrong with this Kotlin code?",
+      "url": "https://www.youtube.com/shorts/Q3ryjp64wK8",
+      "videoId": "Q3ryjp64wK8",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This quick Kotlin developer challenge presents a real-world coding puzzle: despite two strings looking identical and matching in logs, a duplicate check fails, letting duplicate requests through. Watch as the presenter explains the code setup and challenges viewers to identify the subtle bug in the comments.",
+      "dateAdded": "2026-07-14T03:43:30.232Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 8,
+          "topic": "Introduction to the Kotlin duplicate ID challenge"
+        },
+        {
+          "startTime": 8,
+          "endTime": 16,
+          "topic": "Reviewing the code and identifying the failing check"
+        }
+      ]
+    },
+    {
+      "title": "Whats your go-to prompting hack?",
+      "url": "https://www.youtube.com/shorts/8ZCeXQyavog",
+      "videoId": "8ZCeXQyavog",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This video is a goldmine for anyone looking to master prompt engineering, featuring five quick, practical tips from experts on how to get the best results from AI. From breaking down complex tasks to treating the AI like a human coworker, these actionable strategies will immediately improve your productivity and save you time. The core takeaway is that effective prompting isn't about complex code, but about clear communication and strategic planning.",
+      "dateAdded": "2026-07-14T03:43:30.232Z",
+      "timestamps": [
+        {
+          "startTime": 12,
+          "endTime": 24,
+          "topic": "Using LLMs to help craft and refine your prompts"
+        },
+        {
+          "startTime": 28,
+          "endTime": 36,
+          "topic": "Breaking large prompts down into smaller, manageable tasks"
+        }
+      ]
+    },
+    {
+      "title": "Build With AI 2026 Recap",
+      "url": "https://www.youtube.com/watch?v=yGHi5V4sVkc",
+      "videoId": "yGHi5V4sVkc",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This video highlights Google’s 'Build with AI' global events, showcasing how developers and tech enthusiasts worldwide are coming together to learn and build future-proof solutions. It is an inspiring look at the power of community-driven innovation and how AI tools can be harnessed to solve real-world problems. The core takeaway is that anyone, from beginners to experts, can join developer groups and start shaping the future of AI technology.",
+      "dateAdded": "2026-07-14T03:43:30.232Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 15,
+          "topic": "The excitement of seeing what people will build with AI"
+        },
+        {
+          "startTime": 15,
+          "endTime": 33,
+          "topic": "How the events empower developers of all skill levels with AI tools"
+        },
+        {
+          "startTime": 33,
+          "endTime": 53,
+          "topic": "The massive global impact: 200k+ developers trained across 114 countries"
+        }
+      ]
+    },
+    {
+      "title": "AI is shaping war—what about peace? | Branka Panic | TEDxCalle Aldama",
+      "url": "https://www.youtube.com/watch?v=qHVKAt-SVjo",
+      "videoId": "qHVKAt-SVjo",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This thought-provoking TEDx talk challenges the doom-and-gloom narrative surrounding artificial intelligence by exploring how it can be actively harnessed for peacebuilding, justice, and humanitarian aid. Through gripping real-world examples from Syria to Gaza, the speaker demonstrates that the future of AI is not a foregone conclusion but a reflection of human intention. It is a must-watch for anyone wanting to understand how cutting-edge technology can be designed ethically to prevent conflicts and protect human rights.",
+      "dateAdded": "2026-07-14T03:43:30.233Z",
+      "timestamps": [
+        {
+          "startTime": 125,
+          "endTime": 156,
+          "topic": "The human element behind AI's destructive use in warfare"
+        },
+        {
+          "startTime": 317,
+          "endTime": 356,
+          "topic": "A personal journey from war survivor to active peacebuilder"
+        },
+        {
+          "startTime": 618,
+          "endTime": 655,
+          "topic": "Using AI as digital witnesses to document war crimes"
+        },
+        {
+          "startTime": 909,
+          "endTime": 948,
+          "topic": "How AI can facilitate anonymous dialogues in deeply divided conflict zones"
+        }
+      ]
+    },
+    {
+      "title": "The next generation of voting reform | Sara Wolk | TEDxMtHood",
+      "url": "https://www.youtube.com/watch?v=xWQiy5VdwY0",
+      "videoId": "xWQiy5VdwY0",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This engaging TEDx talk explores the systemic flaws of traditional voting and why popular reforms like Ranked Choice Voting often fall short of their promises. Speaker Sara Wolk presents a compelling case for STAR Voting (Score-Then-Automatic-Runoff), a modern, highly accurate alternative designed to eliminate vote-splitting and empower voters to express their true preferences. By understanding the mathematics behind how we cast ballots, viewers will learn how a simple change in ballot design can radically improve democratic representation and accountability.",
+      "dateAdded": "2026-07-14T03:43:30.233Z",
+      "timestamps": [
+        {
+          "startTime": 117,
+          "endTime": 231,
+          "topic": "The limits of activism and the necessity of voting reform"
+        },
+        {
+          "startTime": 301,
+          "endTime": 347,
+          "topic": "The problem of vote-splitting in choose-one voting systems"
+        },
+        {
+          "startTime": 551,
+          "endTime": 612,
+          "topic": "How Ranked Choice Voting works and its hidden flaws"
+        },
+        {
+          "startTime": 745,
+          "endTime": 800,
+          "topic": "Comparing voting method accuracy and why STAR Voting tops the charts"
+        },
+        {
+          "startTime": 1215,
+          "endTime": 1321,
+          "topic": "An explanation of STAR Voting: Score-Then-Automatic-Runoff"
+        }
+      ]
+    },
+    {
       "title": "4 things I’ve learned as a junior software engineer",
       "url": "https://www.youtube.com/watch?v=vvzuWN_sFMQ",
       "videoId": "vvzuWN_sFMQ",
@@ -227,105 +362,7 @@
       "summary": "Struggling to figure out your professional worth in the age of generative AI? This video explores the 'Z/L Continuum' and answers the critical question of whether reading and writing code is still a vital skill for career growth and technical autonomy.",
       "dateAdded": "2026-07-11T03:50:09.355Z",
       "timestamps": []
-    },
-    {
-      "title": "[S01:E16] PERKESO wajibkan Skim Lindung 24 Jam, ramai pekerja terbeban? - Dr. Aimi, Economist",
-      "url": "https://www.youtube.com/watch?v=l8H7QDvK43Y",
-      "videoId": "l8H7QDvK43Y",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This video features an insightful discussion with Dr. Aimi Zulhazmi on the implementation of a 24-hour safety net for workers in Malaysia and the introduction of the Semak Kasih portal. They explore whether mandatory salary deductions are burdensome for different income groups and address why many insurance policies remain unclaimed by heirs. The core takeaway is that both policy adjustments and financial literacy are crucial for ensuring practical and effective social safety nets.",
-      "dateAdded": "2026-07-11T03:50:09.356Z",
-      "timestamps": [
-        {
-          "startTime": 129,
-          "endTime": 158,
-          "topic": "Introduction to the 24-hour social safety net and worker sentiments"
-        },
-        {
-          "startTime": 216,
-          "endTime": 257,
-          "topic": "Understanding the wage deduction structure and its impact on workers"
-        },
-        {
-          "startTime": 399,
-          "endTime": 445,
-          "topic": "Introduction and benefits of the Semak Kasih portal for insurance claims"
-        }
-      ]
-    },
-    {
-      "title": "Bosnia's Genocide, Up Close and Personal | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=dsrkp1KhXG8",
-      "videoId": "dsrkp1KhXG8",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This deeply moving video follows Imam Omar Suleiman as he visits the Srebrenica Memorial Center in Bosnia, honoring the victims of the 1995 genocide. Through archival footage, personal testimonies, and the haunting preservation of victims' personal items, the video serves as a powerful reminder of the horrors of hatred and the resilience of faith. It urges viewers to never forget the tragedy of Srebrenica and to actively stand against injustice and violence in all forms.",
-      "dateAdded": "2026-07-11T03:50:09.356Z",
-      "timestamps": [
-        {
-          "startTime": 30,
-          "endTime": 101,
-          "topic": "The tragedy of Srebrenica and the weight of memory"
-        },
-        {
-          "startTime": 126,
-          "endTime": 231,
-          "topic": "Archival footage: A father's heartbreaking call to his son"
-        },
-        {
-          "startTime": 741,
-          "endTime": 835,
-          "topic": "A survivor's emotional testimony on grief and remembrance"
-        }
-      ]
-    },
-    {
-      "title": "Time-Saving Habits",
-      "url": "https://www.youtube.com/shorts/L7vrYf-Mgdg",
-      "videoId": "L7vrYf-Mgdg",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "Struggling to keep up with endless podcasts, audiobooks, and lectures? This video reveals a game-changing time-saving habit: training your brain to listen to audio at faster speeds. By gradually increasing playback speed, you can absorb more information in half the time, making it a must-watch for anyone looking to boost their productivity.",
-      "dateAdded": "2026-07-10T04:30:38.675Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 13,
-          "topic": "The concept of speed listening for information absorption"
-        },
-        {
-          "startTime": 13,
-          "endTime": 26,
-          "topic": "How to gradually train your brain to listen at higher speeds"
-        },
-        {
-          "startTime": 26,
-          "endTime": 39,
-          "topic": "Why speed listening is a game-changer for study and work"
-        }
-      ]
-    },
-    {
-      "title": "The Surprising Truth About Money and Luck",
-      "url": "https://www.youtube.com/shorts/6LZMamuYjjs",
-      "videoId": "6LZMamuYjjs",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "Gain a healthier perspective on financial success by understanding the distinct roles that effort and luck play in wealth. It's an essential reality check for anyone early in their career aiming for financial independence.",
-      "dateAdded": "2026-07-10T04:30:38.675Z",
-      "timestamps": []
-    },
-    {
-      "title": "How to vibe code Android apps",
-      "url": "https://www.youtube.com/shorts/ObomOeoP47Y",
-      "videoId": "ObomOeoP47Y",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Artificial intelligence is changing the nature of software engineering, and 'vibe coding' is the latest paradigm shift. Learn how to work alongside AI tools to build and deploy Android apps faster than ever before.",
-      "dateAdded": "2026-07-10T04:30:38.675Z",
-      "timestamps": []
     }
   ],
-  "lastUpdated": "2026-07-13T04:09:12.396Z"
+  "lastUpdated": "2026-07-14T03:44:36.841Z"
 }
