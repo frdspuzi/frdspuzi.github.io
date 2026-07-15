@@ -1,6 +1,141 @@
 {
   "videos": [
     {
+      "title": "WTF Is the Context Layer? The Missing Infrastructure for Production Agents — Prukalpa Sankar",
+      "url": "https://www.youtube.com/watch?v=8G_1-3IO4ZQ",
+      "videoId": "8G_1-3IO4ZQ",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This video explores the concept of the 'context layer' in AI, explaining why cognitive intelligence alone doesn't guarantee real-world effectiveness and how businesses can help AI build crucial context. By tracing the journey of a data analyst, the speaker highlights the importance of knowledge, expertise, and norms in decision-making, offering valuable insights into engineering the future of AI. It's a must-watch for anyone looking to understand how to make AI systems more useful, secure, and sustainable in enterprise environments.",
+      "dateAdded": "2026-07-15T03:42:47.498Z",
+      "timestamps": [
+        {
+          "startTime": 149,
+          "endTime": 235,
+          "topic": "Why AI models are getting smarter but not more useful"
+        },
+        {
+          "startTime": 310,
+          "endTime": 334,
+          "topic": "The formula for real-world performance: Intelligence vs. Context"
+        },
+        {
+          "startTime": 426,
+          "endTime": 535,
+          "topic": "How humans use knowledge, expertise, and norms to solve problems"
+        }
+      ]
+    },
+    {
+      "title": "Don't Ship Skills Without Evals — Philipp Schmid, Google DeepMind",
+      "url": "https://www.youtube.com/watch?v=0vphxNt4wyk",
+      "videoId": "0vphxNt4wyk",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This video is a must-watch for AI developers and engineers looking to build highly reliable agent capabilities without falling into the trap of untested 'skills'. The speaker, Philipp Schmid, a Staff Engineer at Google DeepMind, reveals why 'vibe checks' fail in production and provides actionable best practices for creating, testing, and evaluating AI skills. The core takeaway is that developers must implement structured evals and ablation testing to ensure their agents actually improve performance rather than quietly corrupting outputs.",
+      "dateAdded": "2026-07-15T03:42:47.499Z",
+      "timestamps": [
+        {
+          "startTime": 121,
+          "endTime": 226,
+          "topic": "Agents We Use vs. Agents We Build: The Reliability Gap"
+        },
+        {
+          "startTime": 307,
+          "endTime": 414,
+          "topic": "Capability vs. Preference Skills & Knowing When to Retire Them"
+        },
+        {
+          "startTime": 487,
+          "endTime": 534,
+          "topic": "Why Self-Generated and Bloated Skills Fail"
+        }
+      ]
+    },
+    {
+      "title": "Forward Deployed Engineering at Cursor — Pauline Brunet",
+      "url": "https://www.youtube.com/watch?v=APqXGyCoGW4",
+      "videoId": "APqXGyCoGW4",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This talk by Pauline Brunet, Head of Forward Deployed Engineering (FDE) at Cursor, provides a masterful blueprint for scaling enterprise AI deployments through specialized engineering. It is a must-watch for tech leaders looking to bridge the gap between complex AI products and real-world business value, demonstrating how to align custom engineering with client maturity to maximize return on investment.",
+      "dateAdded": "2026-07-15T03:42:47.499Z",
+      "timestamps": [
+        {
+          "startTime": 128,
+          "endTime": 402,
+          "topic": "Determining FDE fit based on client digital maturity and product customization"
+        },
+        {
+          "startTime": 519,
+          "endTime": 713,
+          "topic": "Anatomy of a Forward Deployed Engineer: technical depth meets high EQ"
+        },
+        {
+          "startTime": 743,
+          "endTime": 938,
+          "topic": "How Cursor structures project-based, high-impact FDE engagements"
+        }
+      ]
+    },
+    {
+      "title": "A hostage negotiator's guide to being conflict-ready | Ryan Dunlap | TEDxPortland",
+      "url": "https://www.youtube.com/watch?v=3v8-ZoZdI6w",
+      "videoId": "3v8-ZoZdI6w",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This engaging talk by former hostage negotiator Ryan Dunlap challenges the common notion of \"healthy conflict,\" arguing instead that conflict is a neutral mirror reflecting the health of the individuals involved. Dunlap shares practical lessons from law enforcement and personal life to help viewers build their capacity to navigate pressure and resolve conflicts effectively. It is a must-watch for anyone looking to improve their communication skills and emotional resilience in difficult conversations.",
+      "dateAdded": "2026-07-15T03:42:47.499Z",
+      "timestamps": [
+        {
+          "startTime": 139,
+          "endTime": 204,
+          "topic": "Conflict is a Neutral Mirror"
+        },
+        {
+          "startTime": 218,
+          "endTime": 315,
+          "topic": "Negotiation at Work vs. at Home"
+        },
+        {
+          "startTime": 1026,
+          "endTime": 1142,
+          "topic": "Three Lessons Learned for Conflict Capacity"
+        }
+      ]
+    },
+    {
+      "title": "AI is shaping war—what about peace? | Branka Panic | TEDxCalle Aldama",
+      "url": "https://www.youtube.com/watch?v=qHVKAt-SVjo",
+      "videoId": "qHVKAt-SVjo",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This thought-provoking TEDx talk by Branka Panic explores the dual nature of artificial intelligence in global conflicts, shifting the focus from fear of rogue machines to the human decisions behind them. By sharing compelling real-world examples, she demonstrates how AI can either be weaponized to accelerate devastation or utilized by peacebuilders to prevent violence, document war crimes, and foster reconciliation. It is an essential watch for anyone interested in how we can actively steer emerging technology to protect human rights and build a more peaceful future.",
+      "dateAdded": "2026-07-15T03:42:47.499Z",
+      "timestamps": [
+        {
+          "startTime": 125,
+          "endTime": 155,
+          "topic": "How AI is currently weaponized in conflict and why it is fundamentally a human problem"
+        },
+        {
+          "startTime": 212,
+          "endTime": 310,
+          "topic": "Branka's personal story of growing up amidst war in the Balkans and becoming a peacebuilder"
+        },
+        {
+          "startTime": 439,
+          "endTime": 490,
+          "topic": "The potential for AI to act as an ally for peace and human rights documentation"
+        },
+        {
+          "startTime": 909,
+          "endTime": 1034,
+          "topic": "How AI is facilitating anonymous dialogues and inclusive peace processes in conflict zones"
+        }
+      ]
+    },
+    {
       "title": "What’s going wrong with this Kotlin code?",
       "url": "https://www.youtube.com/shorts/Q3ryjp64wK8",
       "videoId": "Q3ryjp64wK8",
@@ -65,37 +200,6 @@
           "startTime": 33,
           "endTime": 53,
           "topic": "The massive global impact: 200k+ developers trained across 114 countries"
-        }
-      ]
-    },
-    {
-      "title": "AI is shaping war—what about peace? | Branka Panic | TEDxCalle Aldama",
-      "url": "https://www.youtube.com/watch?v=qHVKAt-SVjo",
-      "videoId": "qHVKAt-SVjo",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "This thought-provoking TEDx talk challenges the doom-and-gloom narrative surrounding artificial intelligence by exploring how it can be actively harnessed for peacebuilding, justice, and humanitarian aid. Through gripping real-world examples from Syria to Gaza, the speaker demonstrates that the future of AI is not a foregone conclusion but a reflection of human intention. It is a must-watch for anyone wanting to understand how cutting-edge technology can be designed ethically to prevent conflicts and protect human rights.",
-      "dateAdded": "2026-07-14T03:43:30.233Z",
-      "timestamps": [
-        {
-          "startTime": 125,
-          "endTime": 156,
-          "topic": "The human element behind AI's destructive use in warfare"
-        },
-        {
-          "startTime": 317,
-          "endTime": 356,
-          "topic": "A personal journey from war survivor to active peacebuilder"
-        },
-        {
-          "startTime": 618,
-          "endTime": 655,
-          "topic": "Using AI as digital witnesses to document war crimes"
-        },
-        {
-          "startTime": 909,
-          "endTime": 948,
-          "topic": "How AI can facilitate anonymous dialogues in deeply divided conflict zones"
         }
       ]
     },
@@ -290,79 +394,7 @@
           "topic": "The Benefits of Intermittent Fasting (OMAD)"
         }
       ]
-    },
-    {
-      "title": "7 Ways To Increase Baraka In Your Time  | Khutbah by Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=4YTfDUqGlZs",
-      "videoId": "4YTfDUqGlZs",
-      "channel": "Yaqeen Institute",
-      "category": "Discovery 🌍",
-      "summary": "This video explores the prophetic concept of 'Barakah' (blessing) in time, offering practical strategies to make our days more productive and fulfilling. By examining Islamic teachings, the speaker provides seven actionable steps, such as prioritizing morning hours and strengthening family ties, to combat the modern feeling that time is slipping away too quickly.",
-      "dateAdded": "2026-07-12T04:05:40.022Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 105,
-          "topic": "Understanding the 'Shrinking of Time'"
-        },
-        {
-          "startTime": 448,
-          "endTime": 615,
-          "topic": "Strategy 1: Leveraging the Blessing of Morning Hours"
-        },
-        {
-          "startTime": 938,
-          "endTime": 1139,
-          "topic": "Strategy 3: Finding Blessings in Family and Kinship Ties"
-        }
-      ]
-    },
-    {
-      "title": "Stop AI Agent Hallucinations: 5 Techniques + Production Patterns - Elizabeth Fuentes, AWS",
-      "url": "https://www.youtube.com/watch?v=vJukHCIv7Ck",
-      "videoId": "vJukHCIv7Ck",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This video is highly valuable for developers and tech enthusiasts looking to improve the reliability of AI agents by addressing hallucination issues through code changes rather than prompt engineering. The presenter introduces five practical code-based techniques to reduce token waste, enhance query accuracy, and catch failures before they reach the user, making it a must-watch for building robust AI systems. The core takeaway is that structural code modifications and architectural patterns, such as Semantic Tool Selection and Graph-RAG, are far more effective at preventing AI hallucinations than simply tweaking prompts.",
-      "dateAdded": "2026-07-12T04:05:40.022Z",
-      "timestamps": [
-        {
-          "startTime": 108,
-          "endTime": 255,
-          "topic": "Overview of the Five Code-Based Techniques"
-        },
-        {
-          "startTime": 332,
-          "endTime": 604,
-          "topic": "Deep Dive into Semantic Tool Selection and Token Efficiency"
-        },
-        {
-          "startTime": 811,
-          "endTime": 922,
-          "topic": "Understanding Graph-RAG and Structured Graph Queries"
-        }
-      ]
-    },
-    {
-      "title": "Understanding is the new bottleneck — Geoffrey Litt, Notion",
-      "url": "https://www.youtube.com/watch?v=WkBPX-oDMnA",
-      "videoId": "WkBPX-oDMnA",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "As AI handles more syntax and boilerplate code, your real value lies in system comprehension. This brilliant talk by Notion's Geoffrey Litt explains why 'understanding' is the premium skill for junior engineers looking to level up and stand out in the automated future.",
-      "dateAdded": "2026-07-11T03:50:09.355Z",
-      "timestamps": []
-    },
-    {
-      "title": "Should AI Engineers Still Read Code in 2026? The Z/L Continuum — Alex Volkov, ThursdAI",
-      "url": "https://www.youtube.com/watch?v=ZpK5PWX2YRM",
-      "videoId": "ZpK5PWX2YRM",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Struggling to figure out your professional worth in the age of generative AI? This video explores the 'Z/L Continuum' and answers the critical question of whether reading and writing code is still a vital skill for career growth and technical autonomy.",
-      "dateAdded": "2026-07-11T03:50:09.355Z",
-      "timestamps": []
     }
   ],
-  "lastUpdated": "2026-07-14T03:44:36.841Z"
+  "lastUpdated": "2026-07-15T03:46:07.758Z"
 }
