@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In the Scrum framework, what is the primary motivation behind breaking the development process down into smaller, iterative cycles called Sprints?",
+      "question": "In PCIe power management, which specific substate is characterized by powering down the electrical circuits of the main link to achieve deeper energy savings?",
       "options": [
-        "To increase the overall duration of the project",
-        "To minimize the number of developers needed on a team",
-        "To allow for more flexibility and quicker adjustments",
-        "To eliminate the requirement for defining product features"
-      ],
-      "correctIndex": 2,
-      "learning": "The primary purpose of dividing a project into smaller, iterative cycles called Sprints in Scrum is to provide the team with greater flexibility and the ability to make quicker adjustments throughout the development process.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "What is the approximate ratio of distinct Arabic words to English words, reflecting the comparison of 12 million Arabic words to the 170,000 words in the Oxford English Dictionary?",
-      "options": [
-        "71:1",
-        "12:1",
-        "150:1",
-        "7:1"
+        "L1.1",
+        "L0",
+        "L0s",
+        "L1.0"
       ],
       "correctIndex": 0,
-      "learning": "There are approximately 12 million distinct Arabic words compared to 170,000 English words in the Oxford English Dictionary, resulting in an approximate 71:1 ratio of Arabic words to English.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
+      "learning": "In PCIe power management, the L1.1 substate achieves greater energy savings than L1.0 by specifically powering down the electrical circuits of the main link, which also increases its wake-up time.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     },
     {
-      "question": "Based on research conducted by Hermann Ebbinghaus in the 1880s, approximately what percentage of newly learned information is forgotten within 24 hours without active recall?",
+      "question": "In Islamic theology, what is defined as the foundational purpose for the creation of both jinn and mankind?",
       "options": [
-        "50%",
-        "30%",
-        "80%",
-        "95%"
+        "To avoid experiencing any trials",
+        "To rule over all other creations",
+        "To accumulate material wealth",
+        "To worship Allah"
       ],
-      "correctIndex": 2,
-      "learning": "In the 1880s, researcher Hermann Ebbinghaus proved that humans forget approximately 80% of what they learn within 24 hours unless they actively force themselves to recall it.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "Which term is used in Islamic teachings to describe the role of humans as caretakers or stewards of the Earth?",
-      "options": [
-        "Khalifah",
-        "Hadith",
-        "Jinn",
-        "Taqwa"
-      ],
-      "correctIndex": 0,
-      "learning": "In Islamic teachings, one of the primary roles of humans is to act as 'Khalifah,' which represents their responsibility to serve as caretakers and stewards of the Earth.",
+      "correctIndex": 3,
+      "learning": "In Islamic theology, the foundational purpose for the creation of both jinn and mankind is to worship Allah. This concept of worship extends beyond mere rituals to include recognizing divine sovereignty, practicing gratitude, and developing mindfulness.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "According to the Quranic verse Surah Ar-Ra'd 13:11, what must a people do before Allah changes their condition?",
+      "question": "What is the approximate ratio of distinct Arabic words to English words in the Oxford English Dictionary?",
       "options": [
-        "They must stop making personal supplications",
-        "They must change what is in themselves",
-        "They must wait passively for external intervention",
-        "They must achieve complete financial wealth"
+        "10:1",
+        "71:1",
+        "5:1",
+        "150:1"
       ],
       "correctIndex": 1,
-      "learning": "Surah Ar-Ra’d 13:11 highlights the moral lesson of personal responsibility, establishing that Allah does not change the condition of a people until they take the initiative to change what is in themselves.",
+      "learning": "The primary motivation for analyzing the original Arabic text of the Quran instead of an English translation is the massive vocabulary difference, with Arabic having approximately 12 million distinct words compared to English's 170,000, creating a ratio of roughly 71:1.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What is the standard template format used to structure a User Story in a Product Backlog?",
+      "options": [
+        "As a [role], I need [feature], so that [reason]",
+        "[Feature] should be implemented by [date]",
+        "As a [developer], I will build [feature] for [user]",
+        "I want [feature] because [reason]"
+      ],
+      "correctIndex": 0,
+      "learning": "In Scrum, a User Story within the Product Backlog is structured using a specific template: 'As a [role], I need [feature], so that [reason]'.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "Which term in Islamic theology refers to the actual unfolding and occurrence of events in a person's life, which can be influenced by their actions and supplications?",
+      "options": [
+        "Al-Alim",
+        "Dua",
+        "Qadr",
+        "Qada’"
+      ],
+      "correctIndex": 3,
+      "learning": "In Islamic theology, Qada’ represents the actual unfolding and occurrence of events in a person's life which can be influenced by actions and prayers, while Qadr represents the preordained, eternal plan and knowledge of Allah.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     }
   ],
-  "fetchedAt": "2026-07-15T03:43:46.092Z"
+  "fetchedAt": "2026-07-20T04:12:51.673Z"
 }
