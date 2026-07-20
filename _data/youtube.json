@@ -1,6 +1,110 @@
 {
   "videos": [
     {
+      "title": "You Didn't Ship a Bug. You Just Wrote It for a Human. - Ravi Madabhushi, Scalekit",
+      "url": "https://www.youtube.com/watch?v=lMCxVorb9wM",
+      "videoId": "lMCxVorb9wM",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "As AI agents increasingly interact with our APIs, traditional security architectures built for human users are showing serious cracks. This video explains why treating AI agents like standard users or broad service accounts leads to dangerous security loopholes and database strains. The core takeaway is a blueprint for building robust, first-class \"on-behalf-of\" authentication layers tailored specifically for non-deterministic AI workflows.",
+      "dateAdded": "2026-07-20T04:12:52.657Z",
+      "timestamps": [
+        {
+          "startTime": 199,
+          "endTime": 255,
+          "topic": "The flaw of forcing AI agents into human or service account roles"
+        },
+        {
+          "startTime": 391,
+          "endTime": 455,
+          "topic": "How non-deterministic AI agents break traditional authorization"
+        },
+        {
+          "startTime": 550,
+          "endTime": 665,
+          "topic": "Designing a first-class 'on-behalf-of' security layer for AI"
+        }
+      ]
+    },
+    {
+      "title": "Get started with the Interactions API",
+      "url": "https://www.youtube.com/watch?v=iOK1-b_9Dlg",
+      "videoId": "iOK1-b_9Dlg",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Discover how Google's newly available Interactions API simplifies AI development by providing a single, unified interface for all Gemini models and agents. This video walks you through the API's powerful features—including stateful memory and multi-modal capabilities—by building a smart photo editor from scratch. It is a must-watch for developers wanting to streamline their workflow and build highly context-aware, interactive AI applications.",
+      "dateAdded": "2026-07-20T04:12:52.657Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 94,
+          "topic": "Introducing the Interactions API and Key Features"
+        },
+        {
+          "startTime": 94,
+          "endTime": 324,
+          "topic": "Building a Photo Editor App Using the API"
+        },
+        {
+          "startTime": 324,
+          "endTime": 503,
+          "topic": "Stateful Image Editing Demonstration"
+        }
+      ]
+    },
+    {
+      "title": "[S01:E17] Dipaksa buat personal loan, akhirnya tanggung hutang seorang diri.",
+      "url": "https://www.youtube.com/watch?v=3vGBG2dR4gI",
+      "videoId": "3vGBG2dR4gI",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "This video is a highly engaging and practical guide for young graduates and first-time homebuyers looking to step into the Malaysian property market. Featuring property and financial experts, it outlines the critical steps needed to prepare a solid financial profile, set realistic budgets, and make informed decisions. Watching this will equip you with the essential checklists to avoid common homebuying traps and set yourself up for long-term financial security.",
+      "dateAdded": "2026-07-20T04:12:52.657Z",
+      "timestamps": [
+        {
+          "startTime": 193,
+          "endTime": 288,
+          "topic": "Introducing the first-home purchase checklist for young graduates"
+        },
+        {
+          "startTime": 288,
+          "endTime": 371,
+          "topic": "Understanding and preparing your financial profile and budget"
+        }
+      ]
+    },
+    {
+      "title": "“Either you were conned or your staff must be stupid” – Upin Ipin creator on theme park deal",
+      "url": "https://www.youtube.com/watch?v=tPw1N5VwFhc",
+      "videoId": "tPw1N5VwFhc",
+      "channel": "BFM 89.9",
+      "category": "Finance",
+      "summary": "This video is a brutal masterclass in professional self-defense using the real-world business battles of Malaysia's iconic Upin & Ipin creators. It exposes how naive founders and early-career professionals can be exploited in unfair joint ventures. Learn the crucial importance of due diligence, ironclad contracts, and safeguarding your intellectual property.",
+      "dateAdded": "2026-07-20T04:12:52.657Z",
+      "timestamps": []
+    },
+    {
+      "title": "Ask Allah To Change YOU Instead | LATEST Khutbah by Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=Qy2Kv5RNMpY",
+      "videoId": "Qy2Kv5RNMpY",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "In this inspiring sermon, Dr. Omar Suleiman calls for a profound paradigm shift in our supplications, urging believers to focus on asking Allah to change their inner hearts rather than just their outer circumstances. By highlighting powerful prophetic prayers, he demonstrates how true contentment is achieved when we align our personal desires with the Divine will. This video is a must-watch for anyone seeking to elevate their spiritual practice and find genuine peace in life's ups and downs.",
+      "dateAdded": "2026-07-20T04:12:52.657Z",
+      "timestamps": [
+        {
+          "startTime": 489,
+          "endTime": 595,
+          "topic": "The Difference Between Asking for Firmness and Asking for Divine Direction"
+        },
+        {
+          "startTime": 920,
+          "endTime": 1162,
+          "topic": "A Prophetic Dua for Aligning Your Desires with Allah's Will"
+        }
+      ]
+    },
+    {
       "title": "WTF Is the Context Layer? The Missing Infrastructure for Production Agents — Prukalpa Sankar",
       "url": "https://www.youtube.com/watch?v=8G_1-3IO4ZQ",
       "videoId": "8G_1-3IO4ZQ",
@@ -264,137 +368,7 @@
           "topic": "The importance of soft skills and building team relationships"
         }
       ]
-    },
-    {
-      "title": "How To Grow As a Junior Developer To Senior | 5 Tips",
-      "url": "https://www.youtube.com/watch?v=JoU_CZWOoo0",
-      "videoId": "JoU_CZWOoo0",
-      "channel": "Travis Media",
-      "category": "Discovery 🌍",
-      "summary": "This video breaks down the five essential steps required to transition from a junior developer to a mid- or senior-level role, focusing on the often-overlooked balance between technical prowess and interpersonal growth. The core takeaway is that advancing your career isn't just about coding faster; it's about developing soft skills, learning the broader tech ecosystem, and actively stepping up as a confident decision-maker within your team.",
-      "dateAdded": "2026-07-13T04:07:44.418Z",
-      "timestamps": [
-        {
-          "startTime": 293,
-          "endTime": 351,
-          "topic": "Why soft skills are crucial for seniority"
-        },
-        {
-          "startTime": 542,
-          "endTime": 601,
-          "topic": "Speaking solutions instead of presenting problems"
-        },
-        {
-          "startTime": 707,
-          "endTime": 750,
-          "topic": "Expanding your view of the developer ecosystem"
-        }
-      ]
-    },
-    {
-      "title": "Kerajaan U-turn Lindung 24 Jam, rakyat menang atau rugi?",
-      "url": "https://www.youtube.com/watch?v=px2rjEfA4Z4",
-      "videoId": "px2rjEfA4Z4",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "This video breaks down the controversial 'Lindung 24 Jam' PERKESO insurance scheme, explaining why the Malaysian government initially made it mandatory before making a sudden U-turn due to public backlash. It offers valuable insights into how public pressure can influence government policy and provides a clear explanation of how the scheme actually benefits workers who lack personal medical insurance. The core takeaway is that while the scheme offers important safety nets, better public education and transparent communication are essential before implementing such policies.",
-      "dateAdded": "2026-07-13T04:07:44.418Z",
-      "timestamps": [
-        {
-          "startTime": 120,
-          "endTime": 202,
-          "topic": "How the 'Lindung 24 Jam' scheme differs from existing PERKESO coverages"
-        },
-        {
-          "startTime": 344,
-          "endTime": 446,
-          "topic": "Why the scheme is highly beneficial for workers without private medical cards"
-        },
-        {
-          "startTime": 511,
-          "endTime": 598,
-          "topic": "The government's critical failure to educate and engage the public before implementation"
-        }
-      ]
-    },
-    {
-      "title": "“The Malaysian government might be doing its job too well…” - World Bank Lead Economist",
-      "url": "https://www.youtube.com/watch?v=Ed5HVCkGJxc",
-      "videoId": "Ed5HVCkGJxc",
-      "channel": "BFM 89.9",
-      "category": "Finance",
-      "summary": "In this engaging episode of BFM's Breakfast Grille, Dr. Apurva Sanghi, Lead Economist for the World Bank Group in Malaysia, breaks down how recent geopolitical conflicts and supply chain crises are reshaping both the global and Malaysian economies. He offers crucial insights on why the current crisis differs from the oil shocks of the 1970s and explores the balance between trade openness and economic vulnerability. This discussion is a must-watch for anyone wanting to understand the real-world impact of global disruptions on local markets and living standards.",
-      "dateAdded": "2026-07-13T04:07:44.418Z",
-      "timestamps": [
-        {
-          "startTime": 115,
-          "endTime": 234,
-          "topic": "How the Middle East conflict has shaped global growth forecasts and why it differs from the 1970s oil shocks"
-        },
-        {
-          "startTime": 525,
-          "endTime": 624,
-          "topic": "The reality of a supply-side crisis and Malaysia's deep dependency on Gulf-state commodities beyond oil"
-        },
-        {
-          "startTime": 906,
-          "endTime": 1065,
-          "topic": "The economic impact of fuel subsidies and the trade-off between present-day public relief and future fiscal health"
-        }
-      ]
-    },
-    {
-      "title": "What Happens When You Say “Astaghfirullah”",
-      "url": "https://www.youtube.com/shorts/0-o76rJ2XNs",
-      "videoId": "0-o76rJ2XNs",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This video delves into the beautiful linguistic roots of the Arabic word 'maghfirah' (forgiveness), explaining that it means both to cover and protect, much like armor. It offers a comforting and profound Islamic perspective on how God's forgiveness shields believers in both this life and the next, transforming past mistakes into a source of protection. This is a must-watch for anyone seeking a deeper, more hopeful understanding of divine mercy and the layers of forgiveness in Islam.",
-      "dateAdded": "2026-07-13T04:07:44.418Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 16,
-          "topic": "The root meaning of maghfirah (forgiveness)"
-        },
-        {
-          "startTime": 27,
-          "endTime": 44,
-          "topic": "How forgiveness acts as protective armor"
-        },
-        {
-          "startTime": 113,
-          "endTime": 147,
-          "topic": "The layers of divine forgiveness: Al-Ghaafir and Al-Ghaffar"
-        }
-      ]
-    },
-    {
-      "title": "The Best Routine (Explained by a 23yo Muslim CEO)",
-      "url": "https://www.youtube.com/watch?v=uiC3mhmh8AQ",
-      "videoId": "uiC3mhmh8AQ",
-      "channel": "Thom J. Défilet – Halal Business",
-      "category": "Discovery 🌍",
-      "summary": "This video offers a fascinating behind-the-scenes look at how a productive Muslim CEO structures his daily routine around the five obligatory prayers while managing three companies. By focusing on sleep quality, prioritizing deep work in the early mornings, and practicing intermittent fasting (OMAD), he provides a practical blueprint for balancing worldly success with spiritual devotion. It is a must-watch for anyone looking to optimize their daily schedule using a values-driven approach to time management.",
-      "dateAdded": "2026-07-12T04:05:40.021Z",
-      "timestamps": [
-        {
-          "startTime": 406,
-          "endTime": 491,
-          "topic": "The 3-2-1 Rule for Better Sleep"
-        },
-        {
-          "startTime": 1205,
-          "endTime": 1295,
-          "topic": "The Importance of Distraction-Free Deep Work"
-        },
-        {
-          "startTime": 1836,
-          "endTime": 1928,
-          "topic": "The Benefits of Intermittent Fasting (OMAD)"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-15T03:46:07.758Z"
+  "lastUpdated": "2026-07-20T04:16:48.227Z"
 }

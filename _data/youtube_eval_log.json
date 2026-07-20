@@ -1,44 +1,212 @@
 [
   {
-    "videoId": "8G_1-3IO4ZQ",
-    "title": "WTF Is the Context Layer? The Missing Infrastructure for Production Agents — Prukalpa Sankar",
-    "selected": true,
-    "reasoning": "This video targets key tech stack architectures that a junior fullstack developer needs to understand to build modern, production-grade AI agents.",
-    "summary": "As a junior developer, staying ahead of the AI curve is crucial for your career. This talk breaks down the 'context layer'—the critical, often missing infrastructure needed to build reliable AI agents—giving you the architectural insights to build smarter, production-ready applications."
-  },
-  {
-    "videoId": "0vphxNt4wyk",
-    "title": "Don't Ship Skills Without Evals — Philipp Schmid, Google DeepMind",
-    "selected": true,
-    "reasoning": "Teaches essential software engineering discipline and best practices from a Google DeepMind expert, directly helping a junior dev improve their code quality.",
-    "summary": "Step up your engineering game by learning how the best in the industry deploy software. A Google DeepMind engineer explains why rigorous evaluation frameworks are non-negotiable, helping you build more reliable applications and cultivate a high-standard engineering mindset early in your career."
-  },
-  {
-    "videoId": "APqXGyCoGW4",
-    "title": "Forward Deployed Engineering at Cursor — Pauline Brunet",
-    "selected": true,
-    "reasoning": "Provides brilliant career-pathway exploration for early-career developers by showcasing high-impact engineering roles at top-tier startups.",
-    "summary": "Discover how the team behind Cursor—the AI-powered code editor taking the developer world by storm—approaches forward-deployed engineering. This is a must-watch for any junior dev looking to understand unique career paths that bridge the gap between hard engineering and customer problem-solving."
-  },
-  {
-    "videoId": "cIhXCT0C6-E",
-    "title": "Why every chemo ward needs an artroom | Prachi Kulkarni | TEDxCCOEW",
+    "videoId": "-561cZmir5Q",
+    "title": "From Tokens to Cells: Foundation Models for Single-Cell Biology - Akram Baharlouei, Altos Labs",
     "selected": false,
-    "reasoning": "While heartwarming, this healthcare-focused talk has zero relevance to software engineering, career growth in tech, or Islamic financial advocacy.",
+    "reasoning": "This video is highly specialized in biological research and computational medicine. It holds virtually zero practical value for a junior fullstack web developer.",
     "summary": ""
   },
   {
-    "videoId": "3v8-ZoZdI6w",
-    "title": "A hostage negotiator's guide to being conflict-ready | Ryan Dunlap | TEDxPortland",
+    "videoId": "lMCxVorb9wM",
+    "title": "You Didn't Ship a Bug. You Just Wrote It for a Human. - Ravi Madabhushi, Scalekit",
     "selected": true,
-    "reasoning": "Invaluable soft-skills and career advice for an early-career professional navigating workplace dynamics, code reviews, and project alignments.",
-    "summary": "Technical skills get you the job, but communication skills get you promoted. Learn how to handle workplace conflicts, tough code reviews, and high-stakes salary negotiations using battle-tested tactics from a former hostage negotiator."
+    "reasoning": "Highly relevant software development advice that addresses the psychology of debugging, system design, and building for the end-user.",
+    "summary": "For a junior engineer, code isn't just about logic; it's about human usability. This video flips the script on how you approach bugs, reframing them as human-centric translation issues so you can write cleaner, highly resilient fullstack applications. It’s the perfect mindset shift to transition from a coder to a production-ready software engineer."
   },
   {
-    "videoId": "qHVKAt-SVjo",
-    "title": "AI is shaping war—what about peace? | Branka Panic | TEDxCalle Aldama",
+    "videoId": "JJGbw4ggaFs",
+    "title": "From Blind Spots to Merged PRs: Continuous Agentic Performance Optimization - May Walter, Hud",
+    "selected": false,
+    "reasoning": "Focuses on highly complex agentic performance optimizations in DevOps pipeline architectures. This is far too advanced and niche for a junior engineer focused on foundational fullstack skills.",
+    "summary": ""
+  },
+  {
+    "videoId": "T1mGdodRFCE",
+    "title": "A personal story from his life",
+    "selected": false,
+    "reasoning": "A brief YouTube short that lacks the actionable depth and comprehensive career frameworks required for meaningful guidance.",
+    "summary": ""
+  },
+  {
+    "videoId": "3mNmuSG27RU",
+    "title": "What's life all about?",
+    "selected": false,
+    "reasoning": "A high-level philosophical YouTube Short. While interesting, it does not offer the targeted tactical tech or financial advice our user needs.",
+    "summary": ""
+  },
+  {
+    "videoId": "bf15lo3msI4",
+    "title": "Is Moore's law slowing down?",
+    "selected": false,
+    "reasoning": "This is a quick, generalized trivia short on physical chip limitations rather than practical software engineering or career advice.",
+    "summary": ""
+  },
+  {
+    "videoId": "FktgMN390Xo",
+    "title": "Stop typing out your AI prompts...(see description)",
+    "selected": false,
+    "reasoning": "A short-form AI prompt hack. It offers a quick trick but does not provide deep career development or engineering fundamentals.",
+    "summary": ""
+  },
+  {
+    "videoId": "gUblhLMhc94",
+    "title": "i am begging you to try harry potter fan fiction",
+    "selected": false,
+    "reasoning": "Completely irrelevant content focused on pop-culture entertainment.",
+    "summary": ""
+  },
+  {
+    "videoId": "L7vrYf-Mgdg",
+    "title": "Time-Saving Habits",
+    "selected": false,
+    "reasoning": "A generic productivity YouTube short. It offers standard advice without specialized value for the target audience.",
+    "summary": ""
+  },
+  {
+    "videoId": "iOK1-b_9Dlg",
+    "title": "Get started with the Interactions API",
     "selected": true,
-    "reasoning": "Provides a brilliant ethical framework on AI that aligns strongly with Islamic principles of peace, ethics, and social responsibility in tech.",
-    "summary": "As a Muslim and a tech professional, ethical alignment in your work is vital. This compelling talk challenges you to think beyond just writing code and explore how AI can be intentionally designed to foster global peace and social harmony."
+    "reasoning": "Directly targets front-end performance, a critical component of fullstack engineering and highly actionable for junior devs looking to level up.",
+    "summary": "Mastering web performance is what separates amateur coders from stellar fullstack engineers. This practical dive into the Interactions API teaches you how to measure and optimize real-user responsiveness directly in the browser. It's a crucial, CV-boosting skill that will immediately improve the quality of your web applications."
+  },
+  {
+    "videoId": "8I7wr2hYFec",
+    "title": "Antigravity Arcade: From prompt to game in minutes",
+    "selected": false,
+    "reasoning": "A gimmicky video demonstrating AI-generated games. Fun to watch, but does not teach real engineering principles or career skills.",
+    "summary": ""
+  },
+  {
+    "videoId": "mgoNUC-tCAo",
+    "title": "Wait, what are we launching?",
+    "selected": false,
+    "reasoning": "A brief, promotional YouTube Short with zero educational content.",
+    "summary": ""
+  },
+  {
+    "videoId": "zfLuL8C5-XE",
+    "title": "Budgeting guna kad kredit?",
+    "selected": false,
+    "reasoning": "While relevant, this is a very short-form video that doesn't explore the depth of Islamic/halal finance principles that a financial advocate requires.",
+    "summary": ""
+  },
+  {
+    "videoId": "QGXUZhC00-4",
+    "title": "KWAP kena scam",
+    "selected": false,
+    "reasoning": "A brief news commentary on a local pension fund scam. Informative, but lacks practical financial strategy or career frameworks.",
+    "summary": ""
+  },
+  {
+    "videoId": "8cGQBzSXT7o",
+    "title": "Ramai nak tangguh kahwin",
+    "selected": false,
+    "reasoning": "A YouTube Short discussing marriage delays due to finance. Interesting Malaysian cultural commentary, but not highly actionable.",
+    "summary": ""
+  },
+  {
+    "videoId": "3vGBG2dR4gI",
+    "title": "[S01:E17] Dipaksa buat personal loan, akhirnya tanggung hutang seorang diri.",
+    "selected": true,
+    "reasoning": "Excellent local content in Malay focusing on personal debt, a topic vital for both early-career professionals and Islamic financial advocates advocating against usury/interest traps.",
+    "summary": "As a young Malaysian professional, understanding the devastating reality of debt traps is vital. This deep-dive episode details the dark side of local personal loans and familial financial pressure, offering crucial warnings. It equips you with the raw, practical knowledge needed to protect your wealth and advocate for ethical, interest-free financial choices."
+  },
+  {
+    "videoId": "mNYTXwUDphQ",
+    "title": "Personal loan untuk mak ayah?",
+    "selected": false,
+    "reasoning": "A brief YouTube Short highlighting personal loans for parents. Good point made, but too short-form to compete with long-form financial wisdom.",
+    "summary": ""
+  },
+  {
+    "videoId": "53W9n5mytEY",
+    "title": "PERKESO bukan jalan terbaik?",
+    "selected": false,
+    "reasoning": "A highly specific, short-form piece on local social security. Lacks broad financial planning utility.",
+    "summary": ""
+  },
+  {
+    "videoId": "-aJtCPD95jw",
+    "title": "#110 | The Power of Positive Thinking",
+    "selected": false,
+    "reasoning": "A generic self-improvement video filled with clichés on positive thinking. Not specialized enough.",
+    "summary": ""
+  },
+  {
+    "videoId": "FJoQR0Z0hLk",
+    "title": "#109 | How To Lead With Integrity",
+    "selected": false,
+    "reasoning": "While integrity is a great virtue, the generic leadership format doesn't provide the concrete technical or financial application our audience needs.",
+    "summary": ""
+  },
+  {
+    "videoId": "19nzZo1EF80",
+    "title": "#108 | The Economics of The World Cup",
+    "selected": false,
+    "reasoning": "A pop-economics documentary on sports events. Unrelated to software development, early career steps, or Islamic finance.",
+    "summary": ""
+  },
+  {
+    "videoId": "tPw1N5VwFhc",
+    "title": "“Either you were conned or your staff must be stupid” – Upin Ipin creator on theme park deal",
+    "selected": true,
+    "reasoning": "Highly relevant for a Malaysian. Focuses on due diligence, corporate contracts, legal integrity, and critical business mistakes with an iconic Malaysian brand.",
+    "summary": "This video is a brutal masterclass in professional self-defense using the real-world business battles of Malaysia's iconic Upin & Ipin creators. It exposes how naive founders and early-career professionals can be exploited in unfair joint ventures. Learn the crucial importance of due diligence, ironclad contracts, and safeguarding your intellectual property."
+  },
+  {
+    "videoId": "pEjETW5vD58",
+    "title": "PH supporters scolded us – Elizabeth Wong, PKR | In The Studio",
+    "selected": false,
+    "reasoning": "Local partisan political discourse. Does not offer actionable career, engineering, or ethical finance strategies.",
+    "summary": ""
+  },
+  {
+    "videoId": "fGDDolKBj-A",
+    "title": "“No Prime Minister would limit their power to just 10 years but…” - Azalina Othman, Law Minister",
+    "selected": false,
+    "reasoning": "Focuses on Malaysian constitutional law reform. Irrelevant to fullstack programming, personal career advice, or financial planning.",
+    "summary": ""
+  },
+  {
+    "videoId": "MaedjfC273Q",
+    "title": "A James Bond director on success in Hollywood | Martin Campbell | TEDxVitosha",
+    "selected": false,
+    "reasoning": "An entertaining talk on filmmaking and Hollywood, but offers zero professional guidance for software engineering or personal finance.",
+    "summary": ""
+  },
+  {
+    "videoId": "isGr1nQFnZ0",
+    "title": "We need more nurses. Here's how to train them. | Blake Halladay | TEDxNightingale College",
+    "selected": false,
+    "reasoning": "Niche healthcare educational advocacy. Completely unrelated to the target demographic.",
+    "summary": ""
+  },
+  {
+    "videoId": "XVi2Bd3YbUY",
+    "title": "How Title IX changed women's sports | Carol Hutchins | TEDxUofM",
+    "selected": false,
+    "reasoning": "US-centric history of collegiate athletic policy. Absolutely no relevance to a Malaysian software developer.",
+    "summary": ""
+  },
+  {
+    "videoId": "KH2miEPzXWM",
+    "title": "Why Small Good Deeds Matter",
+    "selected": false,
+    "reasoning": "A high-level Islamic reminder in a Short format. Helpful spiritually, but we need deeper, long-form substance.",
+    "summary": ""
+  },
+  {
+    "videoId": "-GYvhXKC-vk",
+    "title": "Try Not to Laugh | Dr. Omar Suleiman",
+    "selected": false,
+    "reasoning": "Lighthearted comedy/entertainment clip. It offers no educational value for career progress or financial advocacy.",
+    "summary": ""
+  },
+  {
+    "videoId": "Qy2Kv5RNMpY",
+    "title": "Ask Allah To Change YOU Instead | LATEST Khutbah by Dr. Omar Suleiman",
+    "selected": true,
+    "reasoning": "Perfect alignment with the Muslim identity, focusing on self-accountability, resilience, and personal growth during early career trials.",
+    "summary": "Building a successful tech career requires deep spiritual grounding and emotional intelligence. Dr. Omar Suleiman delivers an incredible, modern Khutbah on mastering self-accountability and shifting your internal mindset before expecting external ease. This provides the ultimate Islamic blueprint for navigating the intense pressures and imposter syndrome of a young professional."
   }
 ]
