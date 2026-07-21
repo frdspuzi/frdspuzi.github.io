@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In PCIe power management, which specific substate is characterized by powering down the electrical circuits of the main link to achieve deeper energy savings?",
+      "question": "What is the primary trade-off when a PCIe device transitions to deeper L1 substates, such as L1.1 and L1.2, compared to the L1.0 substate?",
       "options": [
-        "L1.1",
-        "L0",
-        "L0s",
-        "L1.0"
+        "They decrease wake-up latency but consume more active power.",
+        "They maintain fully active main link electrical circuits while reducing screen power.",
+        "They achieve greater power savings but suffer from increased wake-up times to resume activity.",
+        "They allow the device to instantly transmit data without any resume delay."
       ],
-      "correctIndex": 0,
-      "learning": "In PCIe power management, the L1.1 substate achieves greater energy savings than L1.0 by specifically powering down the electrical circuits of the main link, which also increases its wake-up time.",
+      "correctIndex": 2,
+      "learning": "In PCIe power management, deeper sleep substates like L1.1 and L1.2 maximize energy savings by powering down additional electrical circuits and components, but this comes at the cost of longer wake-up delays to resume active data transmission.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "In Islamic theology, what is defined as the foundational purpose for the creation of both jinn and mankind?",
+      "question": "According to the Sahih Muslim Hadith 1631, which of the following is one of the only three deeds that continue to benefit a person after their death?",
       "options": [
-        "To avoid experiencing any trials",
-        "To rule over all other creations",
-        "To accumulate material wealth",
-        "To worship Allah"
+        "A successful career",
+        "Beneficial knowledge",
+        "Perfect physical health",
+        "Accumulated financial wealth"
       ],
-      "correctIndex": 3,
-      "learning": "In Islamic theology, the foundational purpose for the creation of both jinn and mankind is to worship Allah. This concept of worship extends beyond mere rituals to include recognizing divine sovereignty, practicing gratitude, and developing mindfulness.",
+      "correctIndex": 1,
+      "learning": "According to Sahih Muslim 1631, when a human being dies, all of their deeds come to an end except for three: ongoing charity, beneficial knowledge, or a righteous child who prays for them.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "Which theological concept refers specifically to the actual occurrence and unfolding of events in a person's life, rather than the complete, preordained divine plan?",
+      "options": [
+        "Dua",
+        "Qada'",
+        "Al-Alim",
+        "Qadr"
+      ],
+      "correctIndex": 1,
+      "learning": "While Qadr represents the complete, preordained plan and eternal knowledge of Allah, Qada' refers to the actual occurrence and unfolding of events as they happen in our lives, which can be influenced by actions and supplications.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In the Islamic teachings of Sahih Bukhari, who did the Prophet Muhammad state would succeed him since there would be no prophet after him?",
+      "options": [
+        "Sultans",
+        "Priests",
+        "Caliphs",
+        "Messengers"
+      ],
+      "correctIndex": 2,
+      "learning": "According to Islamic tradition recorded in Sahih Bukhari, the Prophet Muhammad stated that there would be no prophet after him, and that they would instead be succeeded by caliphs.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "What is the approximate ratio of distinct Arabic words to English words in the Oxford English Dictionary?",
+      "question": "Which of the following is not one of the three official roles defined in the Scrum framework?",
       "options": [
-        "10:1",
-        "71:1",
-        "5:1",
-        "150:1"
+        "Developers",
+        "Product Owner",
+        "Project Manager",
+        "Scrum Master"
       ],
-      "correctIndex": 1,
-      "learning": "The primary motivation for analyzing the original Arabic text of the Quran instead of an English translation is the massive vocabulary difference, with Arabic having approximately 12 million distinct words compared to English's 170,000, creating a ratio of roughly 71:1.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What is the standard template format used to structure a User Story in a Product Backlog?",
-      "options": [
-        "As a [role], I need [feature], so that [reason]",
-        "[Feature] should be implemented by [date]",
-        "As a [developer], I will build [feature] for [user]",
-        "I want [feature] because [reason]"
-      ],
-      "correctIndex": 0,
-      "learning": "In Scrum, a User Story within the Product Backlog is structured using a specific template: 'As a [role], I need [feature], so that [reason]'.",
+      "correctIndex": 2,
+      "learning": "While many traditional projects utilize a project manager, the Scrum framework explicitly defines only three official roles: the Product Owner, the Scrum Master, and the Developers.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
-    },
-    {
-      "question": "Which term in Islamic theology refers to the actual unfolding and occurrence of events in a person's life, which can be influenced by their actions and supplications?",
-      "options": [
-        "Al-Alim",
-        "Dua",
-        "Qadr",
-        "Qada’"
-      ],
-      "correctIndex": 3,
-      "learning": "In Islamic theology, Qada’ represents the actual unfolding and occurrence of events in a person's life which can be influenced by actions and prayers, while Qadr represents the preordained, eternal plan and knowledge of Allah.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-07-20T04:12:51.673Z"
+  "fetchedAt": "2026-07-21T03:53:47.704Z"
 }
