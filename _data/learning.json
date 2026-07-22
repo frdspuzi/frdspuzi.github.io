@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What is the primary trade-off when a PCIe device transitions to deeper L1 substates, such as L1.1 and L1.2, compared to the L1.0 substate?",
+      "question": "Which PCIe power management state results in a device being almost completely powered down, offering the maximum power savings but requiring the longest time to wake up?",
       "options": [
-        "They decrease wake-up latency but consume more active power.",
-        "They maintain fully active main link electrical circuits while reducing screen power.",
-        "They achieve greater power savings but suffer from increased wake-up times to resume activity.",
-        "They allow the device to instantly transmit data without any resume delay."
+        "L0",
+        "L1.0",
+        "L2",
+        "L0s"
       ],
       "correctIndex": 2,
-      "learning": "In PCIe power management, deeper sleep substates like L1.1 and L1.2 maximize energy savings by powering down additional electrical circuits and components, but this comes at the cost of longer wake-up delays to resume active data transmission.",
+      "learning": "The L2 state is the deepest sleep mode in PCIe power management, where the device is almost completely powered down to achieve the highest power savings at the cost of the longest wake-up time.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "According to the Sahih Muslim Hadith 1631, which of the following is one of the only three deeds that continue to benefit a person after their death?",
+      "question": "Which of the following roles is commonly mistaken as a key position in Scrum but is actually not one of the three official roles defined by the framework?",
       "options": [
-        "A successful career",
-        "Beneficial knowledge",
-        "Perfect physical health",
-        "Accumulated financial wealth"
+        "Project Manager",
+        "Developers",
+        "Product Owner",
+        "Scrum Master"
       ],
-      "correctIndex": 1,
-      "learning": "According to Sahih Muslim 1631, when a human being dies, all of their deeds come to an end except for three: ongoing charity, beneficial knowledge, or a righteous child who prays for them.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
+      "correctIndex": 0,
+      "learning": "A common structural pitfall is assuming traditional project management roles exist in Scrum; however, the framework officially defines only three key roles: the Product Owner, the Scrum Master, and the Developers.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
     },
     {
-      "question": "Which theological concept refers specifically to the actual occurrence and unfolding of events in a person's life, rather than the complete, preordained divine plan?",
+      "question": "In Surah Ar-Ra'd, what requirement is stated for Allah to change the condition of a people?",
       "options": [
-        "Dua",
-        "Qada'",
-        "Al-Alim",
-        "Qadr"
+        "They must change what is in themselves",
+        "They must commit a sin or sever kinship ties",
+        "They must start a food business",
+        "They must experience a disaster"
       ],
-      "correctIndex": 1,
-      "learning": "While Qadr represents the complete, preordained plan and eternal knowledge of Allah, Qada' refers to the actual occurrence and unfolding of events as they happen in our lives, which can be influenced by actions and supplications.",
+      "correctIndex": 0,
+      "learning": "A central moral lesson from Surah Ar-Ra'd (13:11) is that personal responsibility is key to change, as Allah does not alter the condition of a people until they first change what is within themselves.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In the Islamic teachings of Sahih Bukhari, who did the Prophet Muhammad state would succeed him since there would be no prophet after him?",
+      "question": "In Islamic theology, which three primary roles define the core purpose of human existence?",
       "options": [
-        "Sultans",
-        "Priests",
-        "Caliphs",
-        "Messengers"
+        "Worshiping Allah, serving as caretakers of the Earth, and preparing for the Hereafter",
+        "Renouncing all earthly desires, living in complete isolation, and rejecting free will",
+        "Achieving physical immortality, seeking political dominance, and eliminating moral accountability",
+        "Amassing material wealth, pursuing personal fame, and avoiding societal responsibilities"
       ],
-      "correctIndex": 2,
-      "learning": "According to Islamic tradition recorded in Sahih Bukhari, the Prophet Muhammad stated that there would be no prophet after him, and that they would instead be succeeded by caliphs.",
+      "correctIndex": 0,
+      "learning": "In Islamic theology, human life is defined by three fundamental purposes: worshiping Allah, acting as caretakers (khalifah) of the Earth, and navigating earthly life as a test of conduct to prepare for the Hereafter.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which of the following is not one of the three official roles defined in the Scrum framework?",
+      "question": "Which cognitive method is required to actively force recall and prevent forgetting roughly 80% of what is learned within 24 hours?",
       "options": [
-        "Developers",
-        "Product Owner",
-        "Project Manager",
-        "Scrum Master"
+        "Storing notes on a static digital board",
+        "Passively re-reading the material",
+        "Taking interactive quizzes",
+        "Simply writing ideas down without a reminder system"
       ],
       "correctIndex": 2,
-      "learning": "While many traditional projects utilize a project manager, the Scrum framework explicitly defines only three official roles: the Product Owner, the Scrum Master, and the Developers.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
+      "learning": "To successfully retain information and combat forgetfulness, passive re-reading and note-dumping are insufficient; you must implement an active recall system, such as interactive quizzing, to force memory retrieval.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     }
   ],
-  "fetchedAt": "2026-07-21T03:53:47.704Z"
+  "fetchedAt": "2026-07-22T03:54:26.647Z"
 }
