@@ -1,191 +1,212 @@
 [
   {
+    "videoId": "JvKO40CFq-s",
+    "title": "Better Agent Auth — Bereket Habtemeskel &amp; Paola Estefania, Better Auth",
+    "selected": false,
+    "reasoning": "While relevant to fullstack engineering, this niche conference talk on agent auth is less essential for a junior dev than fundamental career books and API integrations.",
+    "summary": ""
+  },
+  {
+    "videoId": "8qWIPUia2O8",
+    "title": "Every Harness Will Become A Claw — Sam Bhagwat, Mastra",
+    "selected": false,
+    "reasoning": "This is a specialized talk on AI framework design that is too abstract and advanced for a junior fullstack developer's day-to-day workflow.",
+    "summary": ""
+  },
+  {
+    "videoId": "Cz4v1WHVyZc",
+    "title": "HTML Is All Agents Need — James Russo, HeyGen",
+    "selected": false,
+    "reasoning": "An interesting technical concept, but not as practically urgent or foundational as direct API integration tutorials or structured career advice.",
+    "summary": ""
+  },
+  {
+    "videoId": "aTDjKuBXZ_Y",
+    "title": "Comparing Javascript and OCaml",
+    "selected": false,
+    "reasoning": "An interesting language comparison, but too brief (YouTube Short) and academic to provide deep, actionable career value for a junior engineer.",
+    "summary": ""
+  },
+  {
+    "videoId": "_mwS31g7rUg",
+    "title": "What will happen if LLMs make migrating languages easy",
+    "selected": false,
+    "reasoning": "A high-level speculative short. While fascinating, it does not provide concrete career guidance or actionable technical training.",
+    "summary": ""
+  },
+  {
+    "videoId": "-_piq6wcNwY",
+    "title": "His top book recs for SWEs in 2026",
+    "selected": true,
+    "reasoning": "High-value career accelerator. This short directly answers the need for early-career guidance by pointing a junior developer to the most impactful reading material to accelerate their trajectory.",
+    "summary": "As a junior dev, picking the right learning materials is critical to fast-tracking your career. This video distills the absolute best books you should read in 2026 to elevate your code quality, architecture skills, and engineering mindset."
+  },
+  {
     "videoId": "FktgMN390Xo",
     "title": "Stop typing out your AI prompts...(see description)",
     "selected": false,
-    "reasoning": "This is a generic productivity short about AI tool usage. While interesting, it lacks the depth of a full educational video for a software engineer.",
+    "reasoning": "A generic productivity short that lacks the deep professional utility required for engineering and finance professionals.",
     "summary": ""
   },
   {
     "videoId": "gUblhLMhc94",
     "title": "i am begging you to try harry potter fan fiction",
     "selected": false,
-    "reasoning": "The topic of Harry Potter fanfiction is completely irrelevant to the target audience's professional, cultural, or religious needs.",
+    "reasoning": "Irrelevant fluff focusing on fictional books, offering zero professional, technical, or spiritual value to our target persona.",
     "summary": ""
   },
   {
     "videoId": "L7vrYf-Mgdg",
     "title": "Time-Saving Habits",
     "selected": false,
-    "reasoning": "A short and generic listicle on time-saving habits that doesn't offer specialized advice for an engineering or financial career.",
+    "reasoning": "Too brief and generic to stand out against highly tailored, industry-specific, and culturally relevant content.",
     "summary": ""
   },
   {
     "videoId": "iK-JE0ZbCfg",
     "title": "Access all Gemini models with the Interactions API",
     "selected": false,
-    "reasoning": "A highly specific, 1-minute YouTube short from Google. While relevant to devs, it is too brief to provide comprehensive value compared to longer-form career videos.",
+    "reasoning": "A short version of Gemini API documentation. The full-length implementation video from the same channel is much higher in educational value for a developer.",
     "summary": ""
   },
   {
     "videoId": "AaWdVp_py4Y",
     "title": "What’s going wrong with this Kotlin code?",
     "selected": false,
-    "reasoning": "Kotlin debugging challenge. Too niche for a general fullstack career trajectory and presented in a very brief 'Short' format.",
+    "reasoning": "Focuses on Kotlin bug-hunting. Since the user is a junior fullstack developer (typically working with JS/TS/Python ecosystems), this is less generally useful than full-scale API training.",
     "summary": ""
   },
   {
     "videoId": "iOK1-b_9Dlg",
     "title": "Get started with the Interactions API",
+    "selected": true,
+    "reasoning": "Essential hands-on tech tutorial. It gives a junior fullstack developer practical, step-by-step guidance on how to integrate state-of-the-art Google Gemini models into their apps.",
+    "summary": "Every fullstack engineer in 2026 needs to be comfortable building with AI. This practical, developer-focused tutorial walks you through using the Interactions API to connect your applications directly to Google's powerful Gemini models."
+  },
+  {
+    "videoId": "JMxnjiWQDVE",
+    "title": "Beli emas dengan Pos ArRahnu Gold-i",
+    "selected": true,
+    "reasoning": "A perfect intersection of Malaysian culture, gold investment, and shariah-compliant financial systems (Ar-Rahnu), directly appealing to an Islamic financial advocate.",
+    "summary": "If you are advocating for ethical, Islamic financial solutions in Malaysia, understanding the mechanics of ArRahnu is vital. This concise breakdown explains how to leverage gold-backed savings through Pos Malaysia's shariah-compliant pawnbroking services."
+  },
+  {
+    "videoId": "dIvBsyMMraY",
+    "title": "Lebih RM20 bilion duit pencarum KWSP dikeluarkan?",
     "selected": false,
-    "reasoning": "A solid developer tutorial, but basic API walk-throughs are easily found in official docs. It lacks the long-term career strategy required for a top spot.",
+    "reasoning": "A good policy-focused short, but lacks the personal, actionable personal-finance framework found in the selected podcast episode on debt.",
     "summary": ""
+  },
+  {
+    "videoId": "zfLuL8C5-XE",
+    "title": "Budgeting guna kad kredit?",
+    "selected": false,
+    "reasoning": "A short discussing credit cards. While helpful, it doesn't carry the weight of a deep-dive podcast discussion on preventing personal debt traps.",
+    "summary": ""
+  },
+  {
+    "videoId": "aBLL38qNwSc",
+    "title": "Dihalau dari rumah sendiri?",
+    "selected": false,
+    "reasoning": "A high-drama financial podcast clip that focuses on extreme housing disputes rather than career or broad financial literacy.",
+    "summary": ""
+  },
+  {
+    "videoId": "3NncdglawlM",
+    "title": "Rahsiakan gaji daripada ibu bapa?",
+    "selected": false,
+    "reasoning": "While relatable for early-career Malaysians, this short is too brief to offer the deep educational value of a full podcast episode.",
+    "summary": ""
+  },
+  {
+    "videoId": "3vGBG2dR4gI",
+    "title": "[S01:E17] Dipaksa buat personal loan, akhirnya tanggung hutang seorang diri.",
+    "selected": true,
+    "reasoning": "Outstanding warning on debt management. Crucial for early-career Malaysians navigating peer pressure, and directly addresses the shariah concern of avoiding debt traps, satisfying the Islamic finance persona.",
+    "summary": "As a young Malaysian starting your career, managing debt is one of the most critical skills you'll need. This eye-opening podcast episode dissects real-life financial traps like personal loans, giving you the knowledge to protect your financial future."
   },
   {
     "videoId": "-aJtCPD95jw",
     "title": "#110 | The Power of Positive Thinking",
     "selected": false,
-    "reasoning": "Standard, generic motivational content about positive thinking that lacks actionable career guidance or specialized financial/Islamic context.",
+    "reasoning": "A generic self-help topic that does not address the highly specific cultural, spiritual, or technical needs of the persona.",
     "summary": ""
   },
   {
     "videoId": "FJoQR0Z0hLk",
     "title": "#109 | How To Lead With Integrity",
     "selected": false,
-    "reasoning": "Discusses leadership and integrity in a broad sense, but does not provide the culturally specific or technically focused insights our target demographic needs.",
+    "reasoning": "Generic professional development talk; while good, it doesn't connect as directly with the user's specific developer and Islamic backgrounds as other selections.",
     "summary": ""
   },
   {
     "videoId": "19nzZo1EF80",
     "title": "#108 | The Economics of The World Cup",
     "selected": false,
-    "reasoning": "An interesting general economics topic, but does not align with the professional development or regional priorities of our persona.",
+    "reasoning": "An interesting economic deep-dive, but acts as sports entertainment rather than actionable career, tech, or personal finance content.",
+    "summary": ""
+  },
+  {
+    "videoId": "_7FQBb8sTio",
+    "title": "📍🟡 Ini cara simpan durian supaya dia fresh masa makan nanti 😬",
+    "selected": false,
+    "reasoning": "Malaysian context, but completely irrelevant food preservation content with zero career, tech, or financial value.",
     "summary": ""
   },
   {
     "videoId": "Jgl0XS8D4g0",
     "title": "“The boogeyman in Malaysian politics is DAP not PAS.” - Anthony Loke | In The Studio",
     "selected": false,
-    "reasoning": "Highly relevant to a Malaysian, but it is a politically heavy talk-show segment that offers less direct professional or financial utility compared to the post-match policy analysis of Keluar Sekejap.",
+    "reasoning": "Heavy political commentary that lacks educational or professional development utility for a software engineer or financial advocate.",
     "summary": ""
   },
   {
     "videoId": "tPw1N5VwFhc",
     "title": "“Either you were conned or your staff must be stupid” – Upin Ipin creator on theme park deal",
+    "selected": false,
+    "reasoning": "Entertainment-business gossip about a local theme park deal; highly engaging for Malaysians but lacks solid, structured professional development value.",
+    "summary": ""
+  },
+  {
+    "videoId": "JN65MOHHNr8",
+    "title": "The one thing every great speaker does (and no one teaches) | Samara Bay | TEDxCulverCity",
+    "selected": false,
+    "reasoning": "General public speaking advice; good for any career, but less high-priority than dedicated technical development or direct Islamic financial concepts.",
+    "summary": ""
+  },
+  {
+    "videoId": "ggVW1cUL7CE",
+    "title": "The Ghanians we refuse to hear | Dr. Naa Adzoa Adzeley Boi-Dsane | TEDxUniversityofCapeCoast",
+    "selected": false,
+    "reasoning": "Geographically and culturally disconnected from our targeted focus on Malaysian, Islamic, and tech-career topics.",
+    "summary": ""
+  },
+  {
+    "videoId": "GJwCIGXZ2E0",
+    "title": "Why innovation is a team sport | Anahit Budaghyan | TEDxDebet",
+    "selected": false,
+    "reasoning": "Standard presentation on collaborative innovation; lacks the specialized tech or financial insight our niche user is searching for.",
+    "summary": ""
+  },
+  {
+    "videoId": "01xUx_b5C4g",
+    "title": "Intelligence vs. Wisdom in Islam (And What Iblis Teaches Us) | Snapshots with Imam Tom Facchine",
     "selected": true,
-    "reasoning": "This video breaks down a real-world intellectual property and contract failure involving Malaysia's biggest animation IP. It provides brutal, high-value business lessons for early-career professionals.",
-    "summary": "Using the cautionary tale of Malaysia's premier animation export, this interview reveals crucial lessons in IP protection, commercial contracts, and business negotiation. It is a vital reality check on how young professionals and creators must secure their financial and legal interests when dealing with corporate giants."
+    "reasoning": "Provides vital spiritual and professional guidance for young, highly analytical developers. It warns against relying purely on raw technical logic (intelligence) without ethical context (wisdom).",
+    "summary": "As an analytical software engineer, it is easy to over-index on raw intelligence. This compelling Islamic lecture teaches you how to temper intellectual drive with divine wisdom—essential guidance for making ethical and sustainable decisions early in your career."
   },
   {
-    "videoId": "pEjETW5vD58",
-    "title": "PH supporters scolded us – Elizabeth Wong, PKR | In The Studio",
+    "videoId": "Da2sxkL0wV0",
+    "title": "The “Approval” Idol | Signs of the Hour Ep. 12 | Dr. Omar Suleiman",
     "selected": false,
-    "reasoning": "Focuses on partisan political gossip and internal party dynamics in Malaysia. Provides minimal value for early-career or software engineering advice.",
+    "reasoning": "An excellent spiritual talk, but the 'Intelligence vs Wisdom' lecture is highly tailored to the high-IQ trap common among young tech professionals.",
     "summary": ""
-  },
-  {
-    "videoId": "zdQCYGIbUB0",
-    "title": "Five Minutes to Find Alzheimer's | Casey Vanderlip | TEDxUC Irvine",
-    "selected": false,
-    "reasoning": "A medical-themed TEDx talk. Completely irrelevant to software development, Islamic finance, or Malaysian current affairs.",
-    "summary": ""
-  },
-  {
-    "videoId": "_3N8xUL_7h8",
-    "title": "The Hospital Harm We Know How to Prevent—but Still Don’t | Martin Burns | TEDxUCLA",
-    "selected": false,
-    "reasoning": "Deals with hospital administration and patient safety. Lacks any alignment with the target developer, financial, or religious profile.",
-    "summary": ""
-  },
-  {
-    "videoId": "IqLsMRrjMZ4",
-    "title": "How one financial choice can reshape a bloodline | Reni Eniola | TEDxMississauga",
-    "selected": true,
-    "reasoning": "Directly tackles wealth generation, legacy planning, and early-career financial discipline. Highly relevant for someone building their early-career financial blueprint and an advocate for ethical wealth preservation.",
-    "summary": "This highly engaging TEDx talk lays out the profound ripple effects that a single financial decision can have across generations. It provides an exceptional mental framework for early-career professionals seeking to establish long-term financial security and build lasting legacy wealth."
   },
   {
     "videoId": "HuXEX4OtlhQ",
     "title": "A Fool with a Platform | Dr. Omar Suleiman",
     "selected": false,
-    "reasoning": "A very brief YouTube short on a spiritual topic. Highly relevant as a reminder for Muslims, but lacks the depth of a full-length video.",
-    "summary": ""
-  },
-  {
-    "videoId": "BQqpDGT-AAc",
-    "title": "‘The Du’a That Changed My Entire Life’ | Iman Cave with Sh. Abdullah Oduro",
-    "selected": false,
-    "reasoning": "A beautiful short on supplication, but its short format doesn't provide the comprehensive professional or career direction we are looking to curate.",
-    "summary": ""
-  },
-  {
-    "videoId": "Ps6x8hXZbWQ",
-    "title": "Murarah (ra) and Hilal (ra): The Companions Who Waited Too Long | The Firsts | Dr. Omar Suleiman",
-    "selected": false,
-    "reasoning": "A great theological lecture from Yaqeen Institute, but strictly historical and lacks practical career integration for a junior developer/financial advocate.",
-    "summary": ""
-  },
-  {
-    "videoId": "ZnXPGmuF2Rw",
-    "title": "Why You Keep Repeating the Same Sin (even after Tawbah)",
-    "selected": false,
-    "reasoning": "An excellent spiritual reflection, but has a purely religious focus without the career or financial intersection needed for a holistic career-seeker.",
-    "summary": ""
-  },
-  {
-    "videoId": "qgMRnWvO-HA",
-    "title": "if you lost it all who would you be",
-    "selected": false,
-    "reasoning": "An introspective look at identity, but does not provide actionable technical, national, or career-building advice.",
-    "summary": ""
-  },
-  {
-    "videoId": "r2SbSGOdMIc",
-    "title": "Why Building a Business Is Quietly Destroying Your Iman as a Muslim Man",
-    "selected": true,
-    "reasoning": "Brilliantly addresses the intersection of ambitious business pursuits, career scaling, and preserving Muslim integrity. Essential for a Muslim career-builder and Islamic financial advocate.",
-    "summary": "This crucial discourse directly tackles the invisible spiritual pitfalls of chasing corporate and business success. It offers a balanced ethical perspective on how to aggressively build your career and wealth without sacrificing your core Islamic values and peace of mind."
-  },
-  {
-    "videoId": "HfFoZZhAzEM",
-    "title": "Why you can write the code in a day but ship in a month",
-    "selected": false,
-    "reasoning": "A quick short explaining product deployment loops. While accurate, the full-length video on senior developer mindsets provides significantly more value.",
-    "summary": ""
-  },
-  {
-    "videoId": "WsBWRnKLYiI",
-    "title": "What senior engineers do differently, according to Vercel's VP",
-    "selected": false,
-    "reasoning": "A 1-minute clip of the longer interview. We have selected the full-length video instead as it offers much deeper, comprehensive technical career advice.",
-    "summary": ""
-  },
-  {
-    "videoId": "mlvbbqYtUz0",
-    "title": "What Senior Engineers do Differently (Vercel VP)",
-    "selected": true,
-    "reasoning": "An incredible resource for a Junior Fullstack Engineer. Hearing from the VP of Vercel—the core platform driving modern fullstack web development—provides peerless technical career guidance.",
-    "summary": "Gain insider knowledge from the VP of Vercel on the exact habits, communication strategies, and technical decision-making skills that distinguish senior engineers. It’s the ultimate roadmap for a junior fullstack developer aiming to accelerate their career and understand how software is scaled globally."
-  },
-  {
-    "videoId": "0ioWXsG5FvA",
-    "title": "EP14 #SembangKS | Piala Dunia, Letak Jawatan dan Pilihanraya Tong Sampah",
-    "selected": false,
-    "reasoning": "A great casual talk show, but the dedicated state election analysis episode has higher density policy and regional context.",
-    "summary": ""
-  },
-  {
-    "videoId": "myxa88bGBLg",
-    "title": "EP205 | PRN Johor 2026: Post-Match Analysis",
-    "selected": true,
-    "reasoning": "Keluar Sekejap is Malaysia's premier political-economic podcast. This analysis provides a deep understanding of local policy direction, which is crucial for any corporate professional or financial advocate in Malaysia.",
-    "summary": "To thrive as a professional in Malaysia, you must understand the policy and economic landscape. This post-match analysis of the Johor state election breaks down the changing socio-political climate, preparing you to anticipate economic trends and structural shifts in the country."
-  },
-  {
-    "videoId": "qjYlLchTH6E",
-    "title": "Dokumentari PRN Johor 2026: Kembara Selatan",
-    "selected": false,
-    "reasoning": "A documentary format that is entertaining but less analytical and business-focused than Keluar Sekejap's post-match analysis discussion.",
+    "reasoning": "A spiritual short on social media behavior; good message, but lacks the depth and tailored relevance of the full Wisdom vs. Intelligence lecture.",
     "summary": ""
   }
 ]
