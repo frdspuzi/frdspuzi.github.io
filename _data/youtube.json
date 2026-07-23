@@ -1,6 +1,131 @@
 {
   "videos": [
     {
+      "title": "Expose your site's actions to AI agents using WebMCP",
+      "url": "https://www.youtube.com/shorts/eiRlCVtzlm4",
+      "videoId": "eiRlCVtzlm4",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Tired of AI agents failing when trying to navigate complex website interfaces? This video introduces WebMCP, a game-changing tool that lets websites explicitly share their capabilities with AI agents using plain JavaScript or HTML, eliminating the guesswork of scraping. Learn how to bridge the gap between web applications and AI agents for seamless, error-free automation.",
+      "dateAdded": "2026-07-23T03:52:07.482Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 18,
+          "topic": "The problem with AI agents navigating website UIs"
+        },
+        {
+          "startTime": 18,
+          "endTime": 43,
+          "topic": "Introducing WebMCP and registering tools with JavaScript"
+        },
+        {
+          "startTime": 65,
+          "endTime": 88,
+          "topic": "How WebMCP shifts from scraping to explicit capabilities"
+        }
+      ]
+    },
+    {
+      "title": "How are large language models trained?",
+      "url": "https://www.youtube.com/watch?v=JRArFxEfyQU",
+      "videoId": "JRArFxEfyQU",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Demystify the complex world of artificial intelligence with this engaging guide on how large language models (LLMs) are trained. From raw data ingestion during pre-training to behavioral alignment in post-training, this video breaks down the technical engineering and evaluation processes that turn next-token predictors into helpful, safe assistants. It's an essential watch for anyone looking to understand the mechanics behind modern AI tools without getting lost in dense academic jargon.",
+      "dateAdded": "2026-07-23T03:52:07.482Z",
+      "timestamps": [
+        {
+          "startTime": 34,
+          "endTime": 145,
+          "topic": "The mechanics and scaling challenges of LLM pre-training"
+        },
+        {
+          "startTime": 170,
+          "endTime": 358,
+          "topic": "Comparing Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL)"
+        },
+        {
+          "startTime": 385,
+          "endTime": 553,
+          "topic": "How to measure LLM success and use an 'Autorater' for evaluation"
+        }
+      ]
+    },
+    {
+      "title": "“The boogeyman in Malaysian politics is DAP not PAS.” - Anthony Loke | In The Studio",
+      "url": "https://www.youtube.com/watch?v=Jgl0XS8D4g0",
+      "videoId": "Jgl0XS8D4g0",
+      "channel": "BFM 89.9",
+      "category": "Finance",
+      "summary": "This video features an insightful interview with Malaysia's Minister of Transport, Anthony Loke, discussing the country's complex domestic political landscape and international diplomatic strategies. Viewers will gain a clear understanding of how Malaysia navigates relations with major global powers like the US, Europe, and Russia while prioritizing its own national interests. The core takeaway is the critical role of pragmatic, multipolar diplomacy and resilient coalition governance in maintaining stability.",
+      "dateAdded": "2026-07-23T03:52:07.482Z",
+      "timestamps": [
+        {
+          "startTime": 140,
+          "endTime": 215,
+          "topic": "PM Anwar Ibrahim's International Relations and Diplomatic Strengths"
+        },
+        {
+          "startTime": 215,
+          "endTime": 311,
+          "topic": "Pragmatic Diplomacy and Balancing Relationships with Global Powers"
+        }
+      ]
+    },
+    {
+      "title": "“Either you were conned or your staff must be stupid” – Upin Ipin creator on theme park deal",
+      "url": "https://www.youtube.com/watch?v=tPw1N5VwFhc",
+      "videoId": "tPw1N5VwFhc",
+      "channel": "BFM 89.9",
+      "category": "Finance",
+      "summary": "Step into the studio with Hj Burhanuddin Md Radzi, the visionary founder of Les' Copaque Production, as he shares the fascinating journey of creating Malaysia's iconic animation franchise, \"Upin & Ipin.\" This interview offers a masterclass in creative entrepreneurship, explaining how to build a sustainable global brand using Disney's business model while prioritizing creative control over quick financial exits.",
+      "dateAdded": "2026-07-23T03:52:07.482Z",
+      "timestamps": [
+        {
+          "startTime": 135,
+          "endTime": 215,
+          "topic": "Transitioning from Oil & Gas to Cartoon Animation"
+        },
+        {
+          "startTime": 365,
+          "endTime": 461,
+          "topic": "Why Creative Companies Should Avoid an IPO"
+        },
+        {
+          "startTime": 463,
+          "endTime": 550,
+          "topic": "Applying the Disney Business Model to Animation"
+        }
+      ]
+    },
+    {
+      "title": "EP205 | PRN Johor 2026: Post-Match Analysis",
+      "url": "https://www.youtube.com/watch?v=myxa88bGBLg",
+      "videoId": "myxa88bGBLg",
+      "channel": "Keluar Sekejap",
+      "category": "Finance",
+      "summary": "This episode of the 'Keluar Sekejap' podcast offers a masterclass in political analysis, dissecting Barisan Nasional's landslide victory in the Johor State Elections. By breaking down complex voter turnout data and ethnic voting patterns, the hosts reveal the core strategic blunders of Pakatan Harapan and how turnout disparity became BN's ultimate weapon. It is a must-watch for anyone wanting to understand the real, data-driven mechanics behind Malaysian electoral shifts.",
+      "dateAdded": "2026-07-23T03:52:07.482Z",
+      "timestamps": [
+        {
+          "startTime": 80,
+          "endTime": 162,
+          "topic": "Overview of the Johor Election Results"
+        },
+        {
+          "startTime": 320,
+          "endTime": 435,
+          "topic": "Voter Turnout and Support Analysis"
+        },
+        {
+          "startTime": 648,
+          "endTime": 686,
+          "topic": "The Oracle: Ken Ming's Accurate Election Prediction"
+        }
+      ]
+    },
+    {
       "title": "His top book recs for SWEs in 2026",
       "url": "https://www.youtube.com/shorts/-_piq6wcNwY",
       "videoId": "-_piq6wcNwY",
@@ -100,32 +225,6 @@
       "timestamps": []
     },
     {
-      "title": "“Either you were conned or your staff must be stupid” – Upin Ipin creator on theme park deal",
-      "url": "https://www.youtube.com/watch?v=tPw1N5VwFhc",
-      "videoId": "tPw1N5VwFhc",
-      "channel": "BFM 89.9",
-      "category": "Finance",
-      "summary": "This interview with Hj Burhanuddin Md Radzi, the mastermind behind Malaysia's hit animation Upin & Ipin, offers an inspiring look into transitioning from a corporate oil-and-gas career to building a highly successful creative empire. Viewers will gain valuable business insights into leveraging intellectual property (IP), navigating market challenges, and scaling a local brand into a household name across Southeast Asia.",
-      "dateAdded": "2026-07-21T03:53:42.169Z",
-      "timestamps": [
-        {
-          "startTime": 50,
-          "endTime": 216,
-          "topic": "Transitioning from Oil and Gas to Animation"
-        },
-        {
-          "startTime": 390,
-          "endTime": 451,
-          "topic": "How Upin & Ipin Were Created"
-        },
-        {
-          "startTime": 463,
-          "endTime": 550,
-          "topic": "Emulating Disney's IP Business Model"
-        }
-      ]
-    },
-    {
       "title": "How one financial choice can reshape a bloodline | Reni Eniola | TEDxMississauga",
       "url": "https://www.youtube.com/watch?v=IqLsMRrjMZ4",
       "videoId": "IqLsMRrjMZ4",
@@ -188,16 +287,6 @@
       "timestamps": []
     },
     {
-      "title": "EP205 | PRN Johor 2026: Post-Match Analysis",
-      "url": "https://www.youtube.com/watch?v=myxa88bGBLg",
-      "videoId": "myxa88bGBLg",
-      "channel": "Keluar Sekejap",
-      "category": "Finance",
-      "summary": "To thrive as a professional in Malaysia, you must understand the policy and economic landscape. This post-match analysis of the Johor state election breaks down the changing socio-political climate, preparing you to anticipate economic trends and structural shifts in the country.",
-      "dateAdded": "2026-07-21T03:53:42.169Z",
-      "timestamps": []
-    },
-    {
       "title": "You Didn't Ship a Bug. You Just Wrote It for a Human. - Ravi Madabhushi, Scalekit",
       "url": "https://www.youtube.com/watch?v=lMCxVorb9wM",
       "videoId": "lMCxVorb9wM",
@@ -243,85 +332,7 @@
           "topic": "A Prophetic Dua for Aligning Your Desires with Allah's Will"
         }
       ]
-    },
-    {
-      "title": "WTF Is the Context Layer? The Missing Infrastructure for Production Agents — Prukalpa Sankar",
-      "url": "https://www.youtube.com/watch?v=8G_1-3IO4ZQ",
-      "videoId": "8G_1-3IO4ZQ",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This video explores the concept of the 'context layer' in AI, explaining why cognitive intelligence alone doesn't guarantee real-world effectiveness and how businesses can help AI build crucial context. By tracing the journey of a data analyst, the speaker highlights the importance of knowledge, expertise, and norms in decision-making, offering valuable insights into engineering the future of AI. It's a must-watch for anyone looking to understand how to make AI systems more useful, secure, and sustainable in enterprise environments.",
-      "dateAdded": "2026-07-15T03:42:47.498Z",
-      "timestamps": [
-        {
-          "startTime": 149,
-          "endTime": 235,
-          "topic": "Why AI models are getting smarter but not more useful"
-        },
-        {
-          "startTime": 310,
-          "endTime": 334,
-          "topic": "The formula for real-world performance: Intelligence vs. Context"
-        },
-        {
-          "startTime": 426,
-          "endTime": 535,
-          "topic": "How humans use knowledge, expertise, and norms to solve problems"
-        }
-      ]
-    },
-    {
-      "title": "Don't Ship Skills Without Evals — Philipp Schmid, Google DeepMind",
-      "url": "https://www.youtube.com/watch?v=0vphxNt4wyk",
-      "videoId": "0vphxNt4wyk",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This video is a must-watch for AI developers and engineers looking to build highly reliable agent capabilities without falling into the trap of untested 'skills'. The speaker, Philipp Schmid, a Staff Engineer at Google DeepMind, reveals why 'vibe checks' fail in production and provides actionable best practices for creating, testing, and evaluating AI skills. The core takeaway is that developers must implement structured evals and ablation testing to ensure their agents actually improve performance rather than quietly corrupting outputs.",
-      "dateAdded": "2026-07-15T03:42:47.499Z",
-      "timestamps": [
-        {
-          "startTime": 121,
-          "endTime": 226,
-          "topic": "Agents We Use vs. Agents We Build: The Reliability Gap"
-        },
-        {
-          "startTime": 307,
-          "endTime": 414,
-          "topic": "Capability vs. Preference Skills & Knowing When to Retire Them"
-        },
-        {
-          "startTime": 487,
-          "endTime": 534,
-          "topic": "Why Self-Generated and Bloated Skills Fail"
-        }
-      ]
-    },
-    {
-      "title": "Forward Deployed Engineering at Cursor — Pauline Brunet",
-      "url": "https://www.youtube.com/watch?v=APqXGyCoGW4",
-      "videoId": "APqXGyCoGW4",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This talk by Pauline Brunet, Head of Forward Deployed Engineering (FDE) at Cursor, provides a masterful blueprint for scaling enterprise AI deployments through specialized engineering. It is a must-watch for tech leaders looking to bridge the gap between complex AI products and real-world business value, demonstrating how to align custom engineering with client maturity to maximize return on investment.",
-      "dateAdded": "2026-07-15T03:42:47.499Z",
-      "timestamps": [
-        {
-          "startTime": 128,
-          "endTime": 402,
-          "topic": "Determining FDE fit based on client digital maturity and product customization"
-        },
-        {
-          "startTime": 519,
-          "endTime": 713,
-          "topic": "Anatomy of a Forward Deployed Engineer: technical depth meets high EQ"
-        },
-        {
-          "startTime": 743,
-          "endTime": 938,
-          "topic": "How Cursor structures project-based, high-impact FDE engagements"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-22T03:56:24.255Z"
+  "lastUpdated": "2026-07-23T03:55:12.395Z"
 }
