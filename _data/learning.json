@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Which PCIe power management state results in a device being almost completely powered down, offering the maximum power savings but requiring the longest time to wake up?",
+      "question": "What psychological concept describes the phenomenon where writing down or digitally saving an idea signals the brain that it has permission to forget it?",
       "options": [
-        "L0",
-        "L1.0",
-        "L2",
-        "L0s"
-      ],
-      "correctIndex": 2,
-      "learning": "The L2 state is the deepest sleep mode in PCIe power management, where the device is almost completely powered down to achieve the highest power savings at the cost of the longest wake-up time.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "Which of the following roles is commonly mistaken as a key position in Scrum but is actually not one of the three official roles defined by the framework?",
-      "options": [
-        "Project Manager",
-        "Developers",
-        "Product Owner",
-        "Scrum Master"
+        "The Performance Paradox of Cognitive Offloading",
+        "The Static Recall Paradox",
+        "The Digital Hoarding Bias",
+        "The Ebbinghaus Amnesia Effect"
       ],
       "correctIndex": 0,
-      "learning": "A common structural pitfall is assuming traditional project management roles exist in Scrum; however, the framework officially defines only three key roles: the Product Owner, the Scrum Master, and the Developers.",
+      "learning": "Writing down or digitally saving information triggers a psychological phenomenon known as the 'Performance Paradox' of Cognitive Offloading, where the brain actively forgets the recorded information because it treats the external storage as permission to delete it.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "When analyzing the frequency of words in the Quran, approximately what percentage of the text do the top 20 most repeated words actually accumulate to?",
+      "options": [
+        "Approximately 20.83%",
+        "Approximately 71.00%",
+        "Approximately 80.00%",
+        "Approximately 50.00%"
+      ],
+      "correctIndex": 0,
+      "learning": "While the Pareto Principle (80/20 rule) suggests that 20% of effort yields 80% of results, word frequency analysis of the Quran reveals that its top 20 most repeated words actually account for only about 20.83% of the total text.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What is the standard format of a User Story in a Scrum Product Backlog?",
+      "options": [
+        "Plan -> Build -> Test -> Review",
+        "[Feature] should be implemented by [date]",
+        "I want [feature] because [reason]",
+        "As a [role], I need [feature], so that [reason]"
+      ],
+      "correctIndex": 3,
+      "learning": "In Scrum, a User Story within the Product Backlog follows a specific structured format: 'As a [role], I need [feature], so that [reason]'.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "In Surah Ar-Ra'd, what requirement is stated for Allah to change the condition of a people?",
+      "question": "Which concept refers to the actual unfolding of events in a person's life that can be actively influenced or altered by their decisions and supplications?",
       "options": [
-        "They must change what is in themselves",
-        "They must commit a sin or sever kinship ties",
-        "They must start a food business",
-        "They must experience a disaster"
+        "Qada'",
+        "Qadr",
+        "Al-Alim",
+        "Dua"
       ],
       "correctIndex": 0,
-      "learning": "A central moral lesson from Surah Ar-Ra'd (13:11) is that personal responsibility is key to change, as Allah does not alter the condition of a people until they first change what is within themselves.",
+      "learning": "In Islamic theology, Qada' refers to the actual unfolding and occurrence of events in a person's life which can be altered through actions and supplication, whereas Qadr represents the complete, preordained plan eternally known to God.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In Islamic theology, which three primary roles define the core purpose of human existence?",
+      "question": "Within the PCIe power management framework, what is the primary trade-off when a device transitions to deeper power-saving states like L1.2 or L2?",
       "options": [
-        "Worshiping Allah, serving as caretakers of the Earth, and preparing for the Hereafter",
-        "Renouncing all earthly desires, living in complete isolation, and rejecting free will",
-        "Achieving physical immortality, seeking political dominance, and eliminating moral accountability",
-        "Amassing material wealth, pursuing personal fame, and avoiding societal responsibilities"
+        "Wake-up latency is completely eliminated by keeping the electrical circuits fully powered.",
+        "Greater energy savings are achieved at the cost of a longer wake-up time to resume activity.",
+        "Faster wake-up times are achieved at the cost of higher active power consumption.",
+        "Higher data transmission rates are maintained while shutting down the main link."
       ],
-      "correctIndex": 0,
-      "learning": "In Islamic theology, human life is defined by three fundamental purposes: worshiping Allah, acting as caretakers (khalifah) of the Earth, and navigating earthly life as a test of conduct to prepare for the Hereafter.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which cognitive method is required to actively force recall and prevent forgetting roughly 80% of what is learned within 24 hours?",
-      "options": [
-        "Storing notes on a static digital board",
-        "Passively re-reading the material",
-        "Taking interactive quizzes",
-        "Simply writing ideas down without a reminder system"
-      ],
-      "correctIndex": 2,
-      "learning": "To successfully retain information and combat forgetfulness, passive re-reading and note-dumping are insufficient; you must implement an active recall system, such as interactive quizzing, to force memory retrieval.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
+      "correctIndex": 1,
+      "learning": "PCIe power management utilizes a spectrum of states (from L0 to L2) that trade off power consumption for responsiveness, meaning deeper power-saving states yield maximum energy savings but require the longest wake-up latencies to resume activity.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     }
   ],
-  "fetchedAt": "2026-07-22T03:54:26.647Z"
+  "fetchedAt": "2026-07-23T03:52:22.330Z"
 }
