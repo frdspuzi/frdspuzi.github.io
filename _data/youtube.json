@@ -1,18 +1,70 @@
 {
   "videos": [
     {
+      "title": "Why You’re Not Financially Free (Yet)",
+      "url": "https://www.youtube.com/watch?v=EIk395a-tds",
+      "videoId": "EIk395a-tds",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "This video is highly worth your time as it reframes the lack of financial freedom as a simple, addressable 'skill issue' rather than an innate limitation. The core takeaway is that with modern tools like AI and YouTube, anyone can quickly learn complex business skills—from marketing to operations—without needing a formal university degree.",
+      "dateAdded": "2026-07-24T03:51:36.965Z",
+      "timestamps": [
+        {
+          "startTime": 124,
+          "endTime": 153,
+          "topic": "The Teddy Roosevelt Method for starting a business"
+        },
+        {
+          "startTime": 176,
+          "endTime": 205,
+          "topic": "Debunking the myth of needing a degree to learn skills"
+        },
+        {
+          "startTime": 494,
+          "endTime": 565,
+          "topic": "Real-world examples of how medical professionals use YouTube to learn"
+        }
+      ]
+    },
+    {
+      "title": "PM vs. Eng",
+      "url": "https://www.youtube.com/shorts/NIDrPjeZ-jQ",
+      "videoId": "NIDrPjeZ-jQ",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This hilarious short perfectly captures the classic, chaotic dynamic between a Product Manager (PM) and a Software Engineer. Watch as the PM casually requests seemingly simple, user-friendly features—like desktop windowing and AI-generated haiku notification summaries—while the engineer slowly loses his mind over the massive underlying technical complexity. It's a must-watch for anyone in tech who has ever felt the pain of translating \"simple\" design ideas into actual code.",
+      "dateAdded": "2026-07-24T03:51:36.965Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 21,
+          "topic": "Dynamic Color & Physics-Based Motion"
+        },
+        {
+          "startTime": 22,
+          "endTime": 43,
+          "topic": "Desktop Windowing & Private Space"
+        },
+        {
+          "startTime": 44,
+          "endTime": 65,
+          "topic": "Interactive Widgets & The AI Haiku Breakdown"
+        }
+      ]
+    },
+    {
       "title": "Expose your site's actions to AI agents using WebMCP",
       "url": "https://www.youtube.com/shorts/eiRlCVtzlm4",
       "videoId": "eiRlCVtzlm4",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Tired of AI agents failing when trying to navigate complex website interfaces? This video introduces WebMCP, a game-changing tool that lets websites explicitly share their capabilities with AI agents using plain JavaScript or HTML, eliminating the guesswork of scraping. Learn how to bridge the gap between web applications and AI agents for seamless, error-free automation.",
-      "dateAdded": "2026-07-23T03:52:07.482Z",
+      "summary": "Discover how WebMCP is revolutionizing how AI agents interact with websites by moving away from error-prone page scraping to structured, schema-defined actions. This video is a must-watch for web developers wanting to build AI-friendly sites that seamlessly expose capabilities using plain JavaScript or HTML forms. Ultimately, you'll learn how to replace fragile UI-clicking with a reliable, direct interface designed specifically for AI.",
+      "dateAdded": "2026-07-24T03:51:36.965Z",
       "timestamps": [
         {
           "startTime": 0,
           "endTime": 18,
-          "topic": "The problem with AI agents navigating website UIs"
+          "topic": "The problem with AI agents guessing web interfaces"
         },
         {
           "startTime": 18,
@@ -20,9 +72,56 @@
           "topic": "Introducing WebMCP and registering tools with JavaScript"
         },
         {
-          "startTime": 65,
-          "endTime": 88,
-          "topic": "How WebMCP shifts from scraping to explicit capabilities"
+          "startTime": 43,
+          "endTime": 105,
+          "topic": "How WebMCP enables direct action execution over UI clicking"
+        }
+      ]
+    },
+    {
+      "title": "Majikan cari apa pada graduan?",
+      "url": "https://www.youtube.com/shorts/P6DCBYasHgI",
+      "videoId": "P6DCBYasHgI",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Standing out in a crowded job market requires more than just a degree; it takes proactive, real-world initiative. This video reveals how graduates can secure employment by building a compelling digital portfolio and leveraging internships as long-form interviews to showcase their skills. It offers practical advice on how to differentiate yourself from thousands of other graduates by demonstrating value beyond the classroom.",
+      "dateAdded": "2026-07-24T03:51:36.965Z",
+      "timestamps": [
+        {
+          "startTime": 19,
+          "endTime": 127,
+          "topic": "How showing initiative and leveraging internships can secure your next job"
+        },
+        {
+          "startTime": 128,
+          "endTime": 146,
+          "topic": "Why building a digital portfolio is crucial to standing out as a graduate"
+        }
+      ]
+    },
+    {
+      "title": "Beli emas dengan Pos ArRahnu Gold-i",
+      "url": "https://www.youtube.com/shorts/JMxnjiWQDVE",
+      "videoId": "JMxnjiWQDVE",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "This video is a great guide for beginners looking to invest in gold, weighing the pros and cons of physical versus digital gold. It introduces the Pos ArRahnu Gold-i platform, a secure and affordable way to start investing in gold with as little as RM10. The core takeaway is that you can now easily build a Shariah-compliant gold portfolio backed by physical gold, with the flexibility of cashing out or converting it to physical gold.",
+      "dateAdded": "2026-07-24T03:51:36.965Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 36,
+          "topic": "Physical vs. Digital Gold: Finding the Right Fit for You"
+        },
+        {
+          "startTime": 36,
+          "endTime": 79,
+          "topic": "Key Benefits of Pos ArRahnu Gold-i (RM10 Minimum & Low Spread)"
+        },
+        {
+          "startTime": 79,
+          "endTime": 112,
+          "topic": "Flexibility and Trust in Gold Investment"
         }
       ]
     },
@@ -168,32 +267,6 @@
       ]
     },
     {
-      "title": "Beli emas dengan Pos ArRahnu Gold-i",
-      "url": "https://www.youtube.com/shorts/JMxnjiWQDVE",
-      "videoId": "JMxnjiWQDVE",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Whether you prefer the tangible feel of physical gold or the convenience of digital savings, this video breaks down how Pos ArRahnu Gold-i offers the best of both worlds with low entry barriers and secure backing. Discover how you can start investing with as little as RM10 on a trusted, Shariah-compliant platform backed by Pos Malaysia's extensive network.",
-      "dateAdded": "2026-07-22T03:54:09.619Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 36,
-          "topic": "Physical vs. Digital Gold: Understanding Your Preferences"
-        },
-        {
-          "startTime": 47,
-          "endTime": 79,
-          "topic": "Key Benefits of Pos ArRahnu Gold-i"
-        },
-        {
-          "startTime": 80,
-          "endTime": 112,
-          "topic": "Flexibility and Trustworthiness of the Platform"
-        }
-      ]
-    },
-    {
       "title": "[S01:E17] Dipaksa buat personal loan, akhirnya tanggung hutang seorang diri.",
       "url": "https://www.youtube.com/watch?v=3vGBG2dR4gI",
       "videoId": "3vGBG2dR4gI",
@@ -275,64 +348,7 @@
           "topic": "The Danger of Rushed Prayers and Heart Hardening"
         }
       ]
-    },
-    {
-      "title": "What Senior Engineers do Differently (Vercel VP)",
-      "url": "https://www.youtube.com/watch?v=mlvbbqYtUz0",
-      "videoId": "mlvbbqYtUz0",
-      "channel": "Beyond Coding",
-      "category": "Tech & Engineering",
-      "summary": "Gain insider knowledge from the VP of Vercel on the exact habits, communication strategies, and technical decision-making skills that distinguish senior engineers. It’s the ultimate roadmap for a junior fullstack developer aiming to accelerate their career and understand how software is scaled globally.",
-      "dateAdded": "2026-07-21T03:53:42.169Z",
-      "timestamps": []
-    },
-    {
-      "title": "You Didn't Ship a Bug. You Just Wrote It for a Human. - Ravi Madabhushi, Scalekit",
-      "url": "https://www.youtube.com/watch?v=lMCxVorb9wM",
-      "videoId": "lMCxVorb9wM",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "As AI agents increasingly interact with our APIs, traditional security architectures built for human users are showing serious cracks. This video explains why treating AI agents like standard users or broad service accounts leads to dangerous security loopholes and database strains. The core takeaway is a blueprint for building robust, first-class \"on-behalf-of\" authentication layers tailored specifically for non-deterministic AI workflows.",
-      "dateAdded": "2026-07-20T04:12:52.657Z",
-      "timestamps": [
-        {
-          "startTime": 199,
-          "endTime": 255,
-          "topic": "The flaw of forcing AI agents into human or service account roles"
-        },
-        {
-          "startTime": 391,
-          "endTime": 455,
-          "topic": "How non-deterministic AI agents break traditional authorization"
-        },
-        {
-          "startTime": 550,
-          "endTime": 665,
-          "topic": "Designing a first-class 'on-behalf-of' security layer for AI"
-        }
-      ]
-    },
-    {
-      "title": "Ask Allah To Change YOU Instead | LATEST Khutbah by Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=Qy2Kv5RNMpY",
-      "videoId": "Qy2Kv5RNMpY",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "In this inspiring sermon, Dr. Omar Suleiman calls for a profound paradigm shift in our supplications, urging believers to focus on asking Allah to change their inner hearts rather than just their outer circumstances. By highlighting powerful prophetic prayers, he demonstrates how true contentment is achieved when we align our personal desires with the Divine will. This video is a must-watch for anyone seeking to elevate their spiritual practice and find genuine peace in life's ups and downs.",
-      "dateAdded": "2026-07-20T04:12:52.657Z",
-      "timestamps": [
-        {
-          "startTime": 489,
-          "endTime": 595,
-          "topic": "The Difference Between Asking for Firmness and Asking for Divine Direction"
-        },
-        {
-          "startTime": 920,
-          "endTime": 1162,
-          "topic": "A Prophetic Dua for Aligning Your Desires with Allah's Will"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-23T03:55:12.395Z"
+  "lastUpdated": "2026-07-24T03:52:57.031Z"
 }
