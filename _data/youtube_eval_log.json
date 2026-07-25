@@ -1,86 +1,212 @@
 [
   {
-    "videoId": "GgLQ02aO-hs",
-    "title": "The Unreasonable Effectiveness of Separating the Task from the Model — Maxime Rivest &amp; Isaac Miller",
+    "videoId": "Ib5t2RLtxvM",
+    "title": "From Agent Traces to Agent Simulations — Rustem Feyzkhanov, Snorkel AI",
     "selected": false,
-    "reasoning": "While technically interesting, this highly specialized AI design pattern talk is too niche and theoretical for a junior fullstack developer's immediate daily needs.",
+    "reasoning": "Too niche and research-oriented for a junior fullstack developer; lacks immediate practical career ROI.",
     "summary": ""
   },
   {
-    "videoId": "-I5W5QVAT8E",
-    "title": "Notion's Token Town — Sarah Sachs, Notion",
+    "videoId": "b_PmGocP4rc",
+    "title": "Evaling Video Slop — Maor Bril, Character.ai",
     "selected": false,
-    "reasoning": "This video details Notion-specific AI architecture which does not offer broad, actionable career advice or core fullstack concepts for a junior engineer.",
+    "reasoning": "Video evaluation infrastructure in generative AI is too specialized for a junior generalist fullstack engineer right now.",
     "summary": ""
   },
   {
-    "videoId": "Ib5GBkD555M",
-    "title": "Harness Engineering is not Enough: Why Software Factories Fail — Dex Horthy, HumanLayer",
+    "videoId": "31GUkCBD-Uc",
+    "title": "Building Closed-Loop Evals for a Multimodal Agent at Scale — Soumya Gupta &amp; Jai Chopra, Uber",
     "selected": false,
-    "reasoning": "The concept of enterprise software factories is too high-level and management-focused for an early-career developer trying to build core skills.",
+    "reasoning": "Highly complex, enterprise-scale testing architecture that is overkill for a junior-level developer's current workflow.",
+    "summary": ""
+  },
+  {
+    "videoId": "DY-1qlpJiFk",
+    "title": "What is formal verification?",
+    "selected": false,
+    "reasoning": "The short format is too brief to properly explain a concept as dense as formal verification, rendering it superficial infotainment.",
+    "summary": ""
+  },
+  {
+    "videoId": "RTY2vhey-zI",
+    "title": "Why C Is a Dangerous Language | Simon Peyton Jones",
+    "selected": false,
+    "reasoning": "While intellectually stimulating, low-level discussions on C's safety are irrelevant for a junior web developer building fullstack JS/TS/Python apps.",
+    "summary": ""
+  },
+  {
+    "videoId": "J51YlBNbYlY",
+    "title": "Hiring at Google vs Jane Street",
+    "selected": false,
+    "reasoning": "Generic high-tier tech comparisons offer little actionable career advice for an early-career engineer in the local Malaysian market.",
     "summary": ""
   },
   {
     "videoId": "EIk395a-tds",
     "title": "Why You’re Not Financially Free (Yet)",
     "selected": true,
-    "reasoning": "Directly targets the early-career and financial advocate personas by analyzing practical steps toward long-term wealth building.",
-    "summary": "This video breaks down the psychological and practical barriers preventing you from reaching financial independence. Learn how to shift your mindset and build sustainable wealth early in your career."
+    "reasoning": "A world-class strategic breakdown of productivity, leverage, and wealth creation, highly applicable to early-career developers looking to maximize their earning potential.",
+    "summary": "Are you working hard but still feel financially stuck? This masterclass reveals the hidden bottlenecks that keep professionals from achieving true financial freedom and offers actionable strategies to transition from trading time for money to building scalable systems."
   },
   {
     "videoId": "FktgMN390Xo",
     "title": "Stop typing out your AI prompts...(see description)",
     "selected": false,
-    "reasoning": "This short is a minor productivity tip that lacks the depth and value of full-length career, finance, or engineering videos.",
+    "reasoning": "A quick productivity hack video that lacks the depth needed to significantly advance a developer's career or technical skills.",
     "summary": ""
   },
   {
     "videoId": "gUblhLMhc94",
     "title": "i am begging you to try harry potter fan fiction",
     "selected": false,
-    "reasoning": "This is a purely recreational recommendation that does not align with the career, tech, or financial goals of the target persona.",
+    "reasoning": "Completely irrelevant to career advice, technology, Islamic finance, or professional development.",
     "summary": ""
   },
   {
     "videoId": "NIDrPjeZ-jQ",
     "title": "PM vs. Eng",
-    "selected": true,
-    "reasoning": "Highly valuable for junior engineers trying to understand cross-functional collaboration and career dynamics in the tech industry.",
-    "summary": "Navigating team dynamics can be tricky when starting your engineering career. This quick watch demystifies the relationship between PMs and Engineers, giving you the communication edge you need to shine."
+    "selected": false,
+    "reasoning": "A generic, comedic short that offers zero practical value or deep insight into real-world collaboration.",
+    "summary": ""
   },
   {
     "videoId": "eiRlCVtzlm4",
     "title": "Expose your site's actions to AI agents using WebMCP",
     "selected": true,
-    "reasoning": "Provides direct, modern technical value to a junior fullstack engineer looking to integrate cutting-edge AI technologies into web projects.",
-    "summary": "Stay ahead of the technical curve by learning how to expose your web application's actions to AI agents. It's a crucial, cutting-edge fullstack skill that will make your projects stand out to employers."
+    "reasoning": "A highly practical and modern fullstack engineering update teaching developers how to interface web apps with AI agents using the newly popular WebMCP protocol.",
+    "summary": "Stay ahead of the curve as a fullstack engineer by learning how to expose your web application's actions directly to AI agents. Utilizing Google's WebMCP, this guide shows you how to build the robust APIs that the agentic systems of the future will rely on."
   },
   {
     "videoId": "JRArFxEfyQU",
     "title": "How are large language models trained?",
     "selected": false,
-    "reasoning": "While educational, this high-level explanation of LLM training is less directly applicable to a junior fullstack developer's practical workflow than WebMCP.",
+    "reasoning": "A high-level introductory video that lacks the hands-on engineering applicability a junior fullstack developer needs.",
     "summary": ""
   },
   {
     "videoId": "LOGFnUHQmXc",
     "title": "Data peribadi influencer terdedah",
     "selected": false,
-    "reasoning": "Though local and privacy-oriented, this short focuses too narrowly on influencer news rather than practical career growth or personal finance.",
+    "reasoning": "A short-form reaction to local influencer news rather than a foundational piece of tech or financial advice.",
     "summary": ""
   },
   {
     "videoId": "P6DCBYasHgI",
     "title": "Majikan cari apa pada graduan?",
-    "selected": true,
-    "reasoning": "Directly targets the Malaysian early-career graduate persona by addressing what local employers expect in job applicants.",
-    "summary": "Delivered in Malay, this video addresses exactly what local Malaysian hiring managers look for in graduates. Master these soft skills and traits to ace your next tech interview and fast-track your career."
+    "selected": false,
+    "reasoning": "An important topic, but its short-form format limits the depth of career advice compared to more comprehensive videos.",
+    "summary": ""
   },
   {
     "videoId": "JMxnjiWQDVE",
     "title": "Beli emas dengan Pos ArRahnu Gold-i",
     "selected": true,
-    "reasoning": "Perfectly hits the Muslim, Malaysian, and Islamic financial advocate personas by exploring local Shariah-compliant savings options.",
-    "summary": "Explore Shariah-compliant wealth preservation right here in Malaysia through Pos ArRahnu. This guide explains how to leverage Islamic pawn-broking and gold saving tools securely to grow your financial resilience."
+    "reasoning": "Directly tackles a localized, Shariah-compliant microfinance and gold investment tool in Malaysia, perfect for an Islamic financial advocate.",
+    "summary": "Curious about diversifying your assets the halal way? This practical guide introduces Pos ArRahnu Gold-i, demonstrating how Malaysian Muslims can leverage gold and Shariah-compliant micro-financing safely and efficiently."
+  },
+  {
+    "videoId": "u_tHCsaFabA",
+    "title": "Melabur ikut kawan makan diri?",
+    "selected": false,
+    "reasoning": "A highly simplified short-form warning on peer pressure in investing that lacks a detailed, structural alternative path.",
+    "summary": ""
+  },
+  {
+    "videoId": "R6WP-iHDC1U",
+    "title": "Joint loan menyusahkan anak?",
+    "selected": false,
+    "reasoning": "While a useful warning on joint property loans in Malaysia, it is too niche compared to broader wealth-building strategies.",
+    "summary": ""
+  },
+  {
+    "videoId": "8HDmE8GJHok",
+    "title": "[S01:E18] Sampai bila nak menyimpan? bila waktu kena melabur",
+    "selected": true,
+    "reasoning": "A comprehensive, long-form discussion on the optimal transition point from saving cash to investing in Malaysia, providing high utility for early-career wealth building.",
+    "summary": "Stop blindly saving your cash only to watch inflation eat it away. This localized episode breaks down the exact milestones Malaysian young professionals need to reach before transitioning from conservative savings to smart investments."
+  },
+  {
+    "videoId": "FgBL2T7CUw4",
+    "title": "#111 | Your Test Can Be Your Testimony",
+    "selected": false,
+    "reasoning": "Highly generic motivational video that lacks the concrete, structured guidance of targeted Islamic or technical content.",
+    "summary": ""
+  },
+  {
+    "videoId": "-aJtCPD95jw",
+    "title": "#110 | The Power of Positive Thinking",
+    "selected": false,
+    "reasoning": "Basic self-help concepts that do not specifically cater to either software engineering, local finance, or Islamic principles.",
+    "summary": ""
+  },
+  {
+    "videoId": "FJoQR0Z0hLk",
+    "title": "#109 | How To Lead With Integrity",
+    "selected": false,
+    "reasoning": "General leadership concepts that are premature and less impactful for an individual contributor at the junior developer level.",
+    "summary": ""
+  },
+  {
+    "videoId": "Xa_Meqgwa18",
+    "title": "PUSPAKOM CEO responds to the end of their monopoly in vehicle inspection | In The Studio",
+    "selected": false,
+    "reasoning": "Corporate macroeconomic news that has minimal direct bearing on personal finance, tech career pathing, or Islamic practices.",
+    "summary": ""
+  },
+  {
+    "videoId": "_7FQBb8sTio",
+    "title": "📍🟡 Ini cara simpan durian supaya dia fresh masa makan nanti 😬",
+    "selected": false,
+    "reasoning": "Lifestyle-focused food preservation short with absolutely zero professional or educational value for this demographic.",
+    "summary": ""
+  },
+  {
+    "videoId": "Jgl0XS8D4g0",
+    "title": "“The boogeyman in Malaysian politics is DAP not PAS.” - Anthony Loke | In The Studio",
+    "selected": false,
+    "reasoning": "Politicized national commentary that doesn't advance professional engineering skills, spiritual growth, or financial literacy.",
+    "summary": ""
+  },
+  {
+    "videoId": "j2vzt1HNHpU",
+    "title": "What autism can teach us about leadership | Syreeta Brown | TEDxRichmond",
+    "selected": false,
+    "reasoning": "Interesting paradigm shift, but too far removed from the core practical challenges faced by a junior software engineer.",
+    "summary": ""
+  },
+  {
+    "videoId": "ke0hdEYDcn0",
+    "title": "What a late ADHD diagnosis taught me about my gifts | Ieasha James | TEDxRoxbury",
+    "selected": false,
+    "reasoning": "A deeply personal anecdote about ADHD that lacks structured career growth advice or industry-specific relevance.",
+    "summary": ""
+  },
+  {
+    "videoId": "4SN__NW0wJI",
+    "title": "How To Read Anyone In 6 Seconds | Kostya Kimlat | TEDxSarasota",
+    "selected": false,
+    "reasoning": "Entertainment-heavy body language tricks that offer no real utility to engineering metrics or ethical wealth management.",
+    "summary": ""
+  },
+  {
+    "videoId": "G5mX8kJwYjs",
+    "title": "The Sin of a Muslim Hero | Dr. Omar Suleiman",
+    "selected": false,
+    "reasoning": "Excellent spiritual lesson, but the extremely brief short-form format lacks the depth and educational value of Yaqeen's full-length lectures.",
+    "summary": ""
+  },
+  {
+    "videoId": "pR-AfRwiLlM",
+    "title": "The Fastest &quot;Yes&quot; in Islamic History | Khutbah by Sh. Ibrahim Hindy",
+    "selected": true,
+    "reasoning": "A full-length, high-quality Khutbah offering robust moral guidance and historical Islamic context, perfect for grounding a young Muslim professional's worldview.",
+    "summary": "In the fast-paced corporate world, keeping your spiritual compass aligned is crucial. This deep-dive lecture explores a pivotal moment in Islamic history, illustrating how decisiveness, faith, and immediate commitment to righteousness can positively shape your character and career."
+  },
+  {
+    "videoId": "gmvyQqpnczg",
+    "title": "O Allah, Grant Me Your Love | Dr. Omar Suleiman",
+    "selected": false,
+    "reasoning": "A beautiful short supplication, but lacks the comprehensive educational and moral-building substance of a complete lecture.",
+    "summary": ""
   }
 ]
