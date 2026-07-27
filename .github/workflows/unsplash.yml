@@ -28,14 +28,20 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add _data/unsplash_latest.json _data/unsplash_popular.json _data/unsplash_favourites.json
+          git add _data/unsplash_all.json _data/unsplash_favourites.json _data/unsplash_meta.json
           if [ -f _data/unsplash.json ]; then
             git rm _data/unsplash.json || true
           fi
-          
+          if [ -f _data/unsplash_latest.json ]; then
+            git rm _data/unsplash_latest.json || true
+          fi
+          if [ -f _data/unsplash_popular.json ]; then
+            git rm _data/unsplash_popular.json || true
+          fi
+
           if git diff-index --quiet HEAD; then
             echo "No new photos."
           else
-            git commit -m "chore: Update Unsplash photos data (Latest, Popular, Favourites) [skip ci]"
+            git commit -m "chore: Update Unsplash photos data (All Photos, Favourites) [skip ci]"
             git push
           fi
