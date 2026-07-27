@@ -1,6 +1,12 @@
 layout: stacked
 style: light
 
+# Internal AI/agent-facing docs — not site content. Excluded so Jekyll doesn't try to
+# Liquid-render or publish them as live pages (they contain literal {% %} example syntax).
+exclude:
+  - CLAUDE.md
+  - DESIGN.md
+
 plugins:
   - jekyll-octicons
   - jekyll-github-metadata

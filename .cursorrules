@@ -3,11 +3,11 @@
 You are assisting with Mohammad Firdaus bin Mohd Puzi's personal Jekyll portfolio website.
 
 ## Critical Handoff Rule
-There is an `AI_HANDOFF.md` document in the root of this repository. It acts as the "brain" for the architecture, custom scripts, and design decisions of this website.
+There are two documents in `.ai/` that act as the "brain" for this website: `.ai/architecture.md` (persistent architectural rules — tech stack, design system, data pipeline) and `.ai/handoff.md` (current feature state, quirks, and future direction). `CLAUDE.md` at the repo root points here too, for Claude Code sessions.
 
-Whenever you make any structural, design, or logic changes to this codebase, you **MUST** update `AI_HANDOFF.md` with a summary of your work before ending the session. This ensures the document remains the single source of truth for the next AI session. 
+Whenever you make any structural, design, or logic changes to this codebase, you **MUST** update `.ai/handoff.md` with a summary of your work before ending the session. This ensures the document remains the single source of truth for the next AI session.
 
-**CRITICAL CONSTRAINT**: You must only keep `AI_HANDOFF.md` locally. Do NOT commit and push it to GitHub under any circumstances.
+(The old root-level `AI_HANDOFF.md` has been retired and its content migrated into `.ai/handoff.md` — do not recreate it.)
 
 ## Development Lessons & Pitfalls (Token Saving)
 To save AI tokens and prevent repeated mistakes, strictly adhere to the following:
