@@ -1,172 +1,156 @@
-<!-- Floating Table of Contents -->
+<!-- Floating page navigation: Preview Rail, all viewport widths -->
 <nav id="floating-toc" aria-label="Page navigation">
-  <div id="floating-toc-tab" title="Navigation">☰</div>
-  <div id="floating-toc-panel">
-    <p id="floating-toc-label">On this page</p>
-    <ul>
-      <li><button class="toc-link" data-target="about">About</button></li>
-      <li><button class="toc-link" data-target="gratitude">Gratitude</button></li>
-      <li><button class="toc-link" data-target="reclaiming-algo">Reclaiming the Algo</button></li>
-      <li><button class="toc-link" data-target="my-writing">Insights & Writing</button></li>
-      <li><button class="toc-link" data-target="photography">Photography</button></li>
-    </ul>
+  <div id="preview-rail">
+    <button class="rail-tick" data-target="about" aria-label="About"><span class="tick-mark"></span></button>
+    <button class="rail-tick" data-target="gratitude" aria-label="Gratitude"><span class="tick-mark"></span></button>
+    <button class="rail-tick" data-target="reclaiming-algo" aria-label="Reclaiming the Algo"><span class="tick-mark"></span></button>
+    <button class="rail-tick" data-target="my-writing" aria-label="Insights &amp; Writing"><span class="tick-mark"></span></button>
+    <button class="rail-tick" data-target="photography" aria-label="Photography"><span class="tick-mark"></span></button>
+    <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M9.598 1.591a.75.75 0 0 1 .785-.175 7 7 0 1 1-8.967 8.967.75.75 0 0 1 .961-.96 5.5 5.5 0 0 0 7.046-7.046.75.75 0 0 1 .175-.786Z"></path>
+      </svg>
+      <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM8 0a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0V.75A.75.75 0 0 1 8 0ZM8 13a.75.75 0 0 1 .75.75v1.5a.75.75 0 0 1-1.5 0v-1.5A.75.75 0 0 1 8 13ZM2.343 2.343a.75.75 0 0 1 1.061 0l1.06 1.061a.75.75 0 0 1-1.06 1.06l-1.06-1.06a.75.75 0 0 1 0-1.06ZM11.536 11.536a.75.75 0 0 1 1.06 0l1.061 1.06a.75.75 0 0 1-1.06 1.061l-1.061-1.06a.75.75 0 0 1 0-1.061ZM16 8a.75.75 0 0 1-.75.75h-1.5a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 16 8ZM3 8a.75.75 0 0 1-.75.75H.75a.75.75 0 0 1 0-1.5h1.5A.75.75 0 0 1 3 8ZM12.657 4.464a.75.75 0 0 1 0-1.06l1.06-1.061a.75.75 0 1 1 1.061 1.06l-1.06 1.061a.75.75 0 0 1-1.061 0ZM3.464 12.657a.75.75 0 0 1 0-1.06l1.06-1.061a.75.75 0 1 1 1.061 1.06l-1.06 1.061a.75.75 0 0 1-1.061 0Z"></path>
+      </svg>
+    </button>
+  </div>
+  <div id="rail-preview">
+    <p id="rail-preview-label"></p>
+    <p id="rail-preview-desc"></p>
   </div>
 </nav>
 
 <style>
-  #floating-toc {
+  /* Primer doesn't set a global `box-sizing: border-box` reset, so under the browser default
+     (content-box) `.rail-tick`/`#theme-toggle`'s own `width: 100%` + `padding` would add up to
+     MORE than the rail's actual 48px — the button's real box overflows the rail, and centering
+     content *within that overflowing box* doesn't land at the rail's own visual center. Scoping
+     border-box to just this component (not a page-wide reset) keeps `width: 100%` meaning "the
+     whole rendered button, padding included, is exactly 48px" for every element in here. */
+  #preview-rail, #preview-rail * {
+    box-sizing: border-box;
+  }
+
+  #preview-rail {
     position: fixed;
-    left: 0;
     top: 24px;
+    left: 0;
     z-index: 1000;
+    width: 48px;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-  }
-
-  /* Mobile Styles: Bottom Right FAB */
-  @media (max-width: 767px) {
-    #floating-toc {
-      top: auto;
-      left: auto;
-      bottom: 24px;
-      right: 24px;
-      flex-direction: column-reverse;
-      align-items: flex-end;
-    }
-    #floating-toc-tab {
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-    }
-    #floating-toc-panel {
-      border: 1px solid #e1e4e8;
-      border-radius: 12px;
-      margin-bottom: 12px;
-      width: 160px;
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(10px);
-      transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s;
-    }
-    #floating-toc.mobile-open #floating-toc-tab {
-      background: #0256b9;
-    }
-    #floating-toc.mobile-open #floating-toc-panel {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-      padding: 14px 16px;
-    }
-  }
-
-  /* The collapsed tab — always visible */
-  #floating-toc-tab {
-    width: 36px;
-    height: 56px;
-    background: #0366d6;
-    color: white;
-    border-radius: 0 8px 8px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
-    transition: background 0.2s ease;
-    flex-shrink: 0;
-    user-select: none;
-    order: 1;
-  }
-
-  #floating-toc:hover #floating-toc-tab {
-    background: #0256b9;
-    border-radius: 0;
-  }
-
-  /* The expanded panel — slides out to the right on hover */
-  #floating-toc-panel {
-    background: white;
-    border: 1px solid #e1e4e8;
+    gap: 14px;
+    padding: 12px 0;
+    background: var(--surface);
+    border: 1px solid var(--border);
     border-left: none;
-    border-radius: 0 8px 8px 0;
-    box-shadow: 4px 2px 16px rgba(0,0,0,0.1);
-    width: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: width 0.25s ease, opacity 0.2s ease;
-    white-space: nowrap;
-    order: 2;
-    /* Vertically align content */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 0;
-    padding-bottom: 0;
+    border-radius: 0 12px 12px 0;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
   }
 
-  #floating-toc:hover #floating-toc-panel {
-    width: 160px;
-    opacity: 1;
-    padding: 14px 16px;
-  }
-
-  #floating-toc-label {
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #959da5;
-    margin: 0 0 8px 0;
-  }
-
-  #floating-toc-panel ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .toc-link {
-    display: block;
-    width: 100%;
-    text-align: left;
-    font-size: 13px;
-    font-weight: 500;
-    color: #24292e;
-    text-decoration: none;
-    padding: 4px 8px;
-    border-radius: 4px;
+  .rail-tick {
     border: none;
     background: none;
     cursor: pointer;
-    transition: background 0.15s ease, color 0.15s ease;
-    border-left: 2px solid transparent;
+    padding: 6px 12px;
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 
-  .toc-link:hover {
-    background: #f1f8ff;
-    color: #0366d6;
+  .rail-tick .tick-mark {
+    display: block;
+    width: 24px;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--border);
+    transform: scale(1);
+    transform-origin: left center;
+    transition: transform 0.4s cubic-bezier(0.22, 1.4, 0.36, 1), background-color 0.2s ease;
   }
 
-  .toc-link.toc-active {
-    color: #0366d6;
-    border-left-color: #0366d6;
-    background: #f1f8ff;
+  .rail-tick:hover .tick-mark,
+  .rail-tick:focus-visible .tick-mark,
+  .rail-tick.toc-active .tick-mark {
+    background: var(--accent);
+  }
+
+  #rail-preview {
+    position: fixed;
+    top: 24px;
+    left: 56px;
+    z-index: 1000;
+    min-width: 180px;
+    max-width: 220px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 4px 4px 16px rgba(0,0,0,0.12);
+    padding: 10px 14px;
+    opacity: 0;
+    visibility: hidden;
+    filter: blur(4px);
+    transform: translateX(-6px);
+    transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.22, 1.4, 0.36, 1), filter 0.2s ease, visibility 0.2s;
+    pointer-events: none;
+  }
+
+  #rail-preview.visible {
+    opacity: 1;
+    visibility: visible;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+  #rail-preview-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--fg);
+    margin: 0 0 4px 0;
+  }
+
+  #rail-preview-desc {
+    font-size: 12px;
+    color: var(--fg-muted);
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  @media (max-width: 767px) {
+    /* Tick-only nav on narrow screens — no room for the preview panel beside it. */
+    #rail-preview {
+      display: none;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .rail-tick .tick-mark {
+      transition: background-color 0.2s ease;
+    }
+    #rail-preview {
+      transition: opacity 0.15s ease, visibility 0.15s;
+      filter: none !important;
+      transform: none !important;
+    }
   }
 </style>
 
 <script>
   (function () {
     var sections = [
-      { id: 'about' },
-      { id: 'gratitude' },
-      { id: 'reclaiming-algo' },
-      { id: 'my-writing' },
-      { id: 'photography' }
+      { id: 'about', label: 'About', desc: 'Bio & background' },
+      { id: 'gratitude', label: 'Gratitude', desc: 'A mindful pause' },
+      { id: 'reclaiming-algo', label: 'Reclaiming the Algo', desc: 'Curated, mindful YouTube picks' },
+      { id: 'my-writing', label: 'Insights & Writing', desc: 'Articles + AI trivia' },
+      { id: 'photography', label: 'Photography', desc: 'Shots from Unsplash' }
     ];
+
+    var SCALE_BY_DISTANCE = [1, 0.68, 0.44, 0.25];
+    function scaleForDistance(d) {
+      return SCALE_BY_DISTANCE[Math.min(d, SCALE_BY_DISTANCE.length - 1)];
+    }
 
     // Scroll to a section reliably every time, regardless of current hash
     function scrollToSection(id) {
@@ -197,39 +181,96 @@
         }
       }
 
-      document.querySelectorAll('.toc-link').forEach(function (btn) {
-        btn.classList.toggle('toc-active', btn.getAttribute('data-target') === activeId);
+      document.querySelectorAll('.rail-tick').forEach(function (btn) {
+        var isActive = btn.getAttribute('data-target') === activeId;
+        btn.classList.toggle('toc-active', isActive);
+        btn.setAttribute('aria-current', isActive ? 'true' : 'false');
       });
     }
 
+    function setTheme(theme) {
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var apply = function () {
+        document.documentElement.setAttribute('data-theme', theme);
+        try { localStorage.setItem('theme', theme); } catch (e) {}
+      };
+      if (!reduceMotion && document.startViewTransition) {
+        document.startViewTransition(apply);
+      } else {
+        apply();
+      }
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
-      // Wire up click handlers — use scrollIntoView so every click works
-      document.querySelectorAll('.toc-link').forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          scrollToSection(btn.getAttribute('data-target'));
-          // Close mobile FAB after navigation
-          document.getElementById('floating-toc').classList.remove('mobile-open');
+      var rail = document.getElementById('preview-rail');
+      var preview = document.getElementById('rail-preview');
+      var themeToggle = document.getElementById('theme-toggle');
+
+      themeToggle.addEventListener('click', function () {
+        var current = document.documentElement.getAttribute('data-theme');
+        setTheme(current === 'dark' ? 'light' : 'dark');
+      });
+      var previewLabel = document.getElementById('rail-preview-label');
+      var previewDesc = document.getElementById('rail-preview-desc');
+      var ticks = Array.prototype.slice.call(rail.querySelectorAll('.rail-tick'));
+
+      function applyProximity(activeIndex) {
+        ticks.forEach(function (tick, i) {
+          var scale;
+          if (activeIndex === null) {
+            scale = tick.classList.contains('toc-active') ? 1 : 0.8;
+          } else {
+            scale = scaleForDistance(Math.abs(i - activeIndex));
+          }
+          var mark = tick.querySelector('.tick-mark');
+          if (mark) mark.style.transform = 'scale(' + scale + ')';
+        });
+      }
+
+      function showPreview(index) {
+        var section = sections[index];
+        var tickRect = ticks[index].getBoundingClientRect();
+        previewLabel.textContent = section.label;
+        previewDesc.textContent = section.desc;
+        preview.style.top = Math.max(12, tickRect.top + tickRect.height / 2 - 20) + 'px';
+        preview.classList.add('visible');
+      }
+
+      function hidePreview() {
+        preview.classList.remove('visible');
+      }
+
+      ticks.forEach(function (tick, i) {
+        tick.addEventListener('mouseenter', function () {
+          applyProximity(i);
+          showPreview(i);
+        });
+        tick.addEventListener('focus', function () {
+          applyProximity(i);
+          showPreview(i);
+        });
+        tick.addEventListener('click', function () {
+          scrollToSection(tick.getAttribute('data-target'));
         });
       });
 
-      // Mobile FAB: toggle panel on tab click
-      var tocTab = document.getElementById('floating-toc-tab');
-      var toc = document.getElementById('floating-toc');
-      tocTab.addEventListener('click', function (e) {
-        if (window.innerWidth <= 767) {
-          toc.classList.toggle('mobile-open');
-          e.stopPropagation();
-        }
+      rail.addEventListener('mouseleave', function () {
+        applyProximity(null);
+        hidePreview();
       });
-      // Close when tapping outside
-      document.addEventListener('click', function () {
-        if (window.innerWidth <= 767) {
-          toc.classList.remove('mobile-open');
+      rail.addEventListener('focusout', function (e) {
+        if (!rail.contains(e.relatedTarget)) {
+          applyProximity(null);
+          hidePreview();
         }
       });
 
       updateActiveLink();
-      window.addEventListener('scroll', updateActiveLink, { passive: true });
+      applyProximity(null);
+      window.addEventListener('scroll', function () {
+        updateActiveLink();
+        applyProximity(null);
+      }, { passive: true });
     });
   })();
 </script>

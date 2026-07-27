@@ -3,6 +3,443 @@
 @import url('https://unpkg.com/primer/build/build.css');
 @import 'highlight-syntax';
 
+// Site-wide font: Fira Sans, loaded via Google Fonts in header.html's <head> (weights
+// 400/500/600/700 — the actual set of weights used anywhere on the site, checked before picking
+// which to load rather than requesting every weight by default). Overrides Primer's own
+// `body { font-family: -apple-system, ... }` — same specificity (element selector), wins on
+// source order since this comes after Primer's @import above. System stack kept as the fallback
+// chain, not dropped, in case the web font fails to load for any reason. `.github-component`
+// (repo-card.html/topic-card.html) deliberately keeps the old system stack instead of inheriting
+// this — it exists specifically to stop a custom font from bleeding into elements meant to look
+// like authentic GitHub UI, see its own comment further down this file.
+body {
+  font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+// Design tokens (see DESIGN.md). Both themes' values ship to the browser always; a
+// `data-theme="dark"` attribute on <html> (set by Liquid at build time from `site.style`,
+// overridable at runtime by the theme toggle in floating_toc.html) picks which applies.
+:root {
+  --fg: #24292e;
+  --fg-muted: #586069;
+  --fg-faint: #959da5;
+  --border: #e1e4e8;
+  --surface: #ffffff;
+  --surface-alt: #f6f8fa;
+  --surface-page: #f6f8fa;
+  --surface-raised: #ffffff;
+  --accent: #0969da;
+  --accent-bg: #ddf4ff;
+  --accent-border: #b6e3ff;
+  --success-bg: #dcffe4;
+  --success-fg: #176f2c;
+  --danger: #cb2431;
+  --btn-primary: #2ea44f;
+  // Solid-fill button blue — distinct from --accent, whose dark value (#58a6ff) is meant
+  // for text/icons and reads too washed-out as a filled button background.
+  --accent-solid: #0969da;
+  --accent-solid-hover: #035fc7;
+  // Whisper-subtle "just barely visible" outline used by the collapsible section wrappers
+  // (youtube_feed/thoughts/photography.html) — tinted opposite the theme's own background.
+  --overlay-bg: rgba(0,0,0,0.01);
+  --overlay-border: rgba(0,0,0,0.04);
+}
+
+[data-theme="dark"] {
+  // Near-black, Material-dark-inspired — deliberately darker and less blue-tinted than
+  // GitHub's own dark theme grays this block used before. Elevation order preserved
+  // (surface-alt darkest → surface → surface-raised → surface-page lightest).
+  --fg: #c9d1d9;
+  --fg-muted: #8b949e;
+  --border: #2a2a2a;
+  --surface: #121212;
+  --surface-alt: #0a0a0a;
+  --surface-page: #1e1e1e;
+  --surface-raised: #1a1a1a;
+  --accent: #58a6ff;
+  --accent-bg: rgba(31,111,235,0.2);
+  --accent-border: rgba(56,139,253,0.4);
+  // Translucent, not solid — a flat #34d058 measured at 1.3:1 contrast against --success-fg
+  // text (near-unreadable). A dark-tinted overlay keeps the "green alert" feel while giving
+  // the bright green text something dark enough to read against (~10:1).
+  --success-bg: rgba(46,160,67,0.15);
+  --success-fg: #7ee787;
+  --accent-solid: #1f6feb;
+  --accent-solid-hover: #388bfd;
+  --overlay-bg: rgba(255,255,255,0.01);
+  --overlay-border: rgba(255,255,255,0.05);
+  // --danger, --btn-primary, --fg-faint intentionally unchanged — already theme-invariant.
+}
+
+// Utility classes replacing the old per-element {% if site.style == 'dark' %}CLASS-A{% else %}CLASS-B{% endif %}
+// pattern in _layouts/*.html, masthead.html, interests.html, projects.html — one static class each,
+// themed via the tokens above instead of picking a fixed Primer class at build time.
+.theme-fg {
+  color: var(--fg);
+}
+.theme-fg-muted {
+  color: var(--fg-muted);
+}
+.theme-surface {
+  background: var(--surface);
+}
+.theme-surface-page {
+  background: var(--surface-page);
+  border-color: var(--border);
+}
+.theme-border {
+  border-color: var(--border);
+}
+// One-off: youtube_feed.html's "flash" notice panel used a translucent white tint in dark
+// mode instead of a solid surface, so it isn't a plain token swap — scoped override instead.
+.yt-flash {
+  background: var(--surface-alt);
+}
+[data-theme="dark"] .yt-flash {
+  background: rgba(255,255,255,0.03);
+}
+
+// Primer's own stock button/text classes (.btn, .btn-outline, .btn-invisible, .text-gray)
+// have their own fixed light-mode colors baked into the imported Primer CSS bundle — never
+// themed at all before. Scoped dark-mode overrides here, since these are Primer's classes,
+// not ours to redefine in :root. (.btn-blue already has its own override, further below.)
+//
+// `background-image: none` matters here: classic Primer buttons paint a light gradient via
+// `background-image`, layered *on top of* `background-color` — overriding only the color
+// (as an earlier pass here did) leaves the light gradient visibly showing through. Also
+// using `!important` throughout this block: Primer's own button rules turned out to have
+// enough internal specificity/gradient layering that plain `[data-theme="dark"] .btn { }`
+// wasn't reliably winning — confirmed by screenshots showing several buttons still light.
+[data-theme="dark"] .btn {
+  color: var(--fg) !important;
+  background-color: var(--surface-raised) !important;
+  background-image: none !important;
+  border-color: var(--border) !important;
+}
+[data-theme="dark"] .btn:hover {
+  background-color: var(--surface) !important;
+  background-image: none !important;
+}
+[data-theme="dark"] .btn-outline {
+  color: var(--accent) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: var(--accent) !important;
+}
+[data-theme="dark"] .btn-outline:hover {
+  color: #ffffff !important;
+  background-color: var(--accent-solid) !important;
+  background-image: none !important;
+  border-color: var(--accent-solid) !important;
+}
+[data-theme="dark"] .btn-invisible {
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  color: var(--fg-muted) !important;
+}
+[data-theme="dark"] .btn-invisible:hover {
+  background-color: var(--surface-alt) !important;
+  background-image: none !important;
+  color: var(--fg) !important;
+}
+// .trivia-btn (learning_board.html) also carries Primer's bare .btn class — same gradient
+// issue, same fix.
+[data-theme="dark"] .trivia-btn {
+  background-image: none !important;
+  color: var(--fg) !important;
+}
+// Primer's .Box component (article cards in thoughts.html, YouTube's video-info box) and
+// .form-control (the gratitude textarea) — both solid white by default, never themed at all.
+[data-theme="dark"] .Box {
+  background-color: var(--surface) !important;
+  border-color: var(--border) !important;
+  color: var(--fg) !important;
+}
+[data-theme="dark"] .form-control {
+  background-color: var(--surface-raised) !important;
+  border-color: var(--border) !important;
+  color: var(--fg) !important;
+}
+[data-theme="dark"] .form-control::placeholder {
+  color: var(--fg-muted);
+}
+[data-theme="dark"] .text-gray {
+  color: var(--fg-muted);
+}
+[data-theme="dark"] .link-gray {
+  color: var(--fg-muted);
+}
+[data-theme="dark"] .link-gray:hover {
+  color: var(--fg);
+}
+[data-theme="dark"] .text-gray-light {
+  color: var(--fg-muted);
+}
+[data-theme="dark"] .text-gray-dark {
+  color: var(--fg);
+}
+
+// Shared accordion primitive (drives .details-reset <details> sections across the site).
+// See assets/js/accordion.js for the bounce open/close behavior this pairs with.
+.animated-details > summary {
+  list-style: none;
+}
+.animated-details > summary::-webkit-details-marker {
+  display: none;
+}
+.collapse-arrow {
+  transition: transform 0.42s cubic-bezier(0.34, 1.4, 0.64, 1);
+  transform: rotate(-90deg);
+}
+// `.is-open` (JS-managed, accordion.js), not the native `[open]` attribute — `[open]` is
+// deliberately NOT removed until the close animation's `anim.onfinish`, ~460ms after the
+// close actually starts, so the content stays laid out while it visually shrinks. Anything
+// tied to `[open]` directly (this used to be `.animated-details[open]`) stayed in its "open"
+// look for that entire 460ms, then jumped to "closed" in one abrupt step right at the end —
+// the chevron stayed pointed open and the header divider stayed visible the whole time content
+// was shrinking, then both snapped at once. accordion.js removes `.is-open` at the *start* of
+// close() instead (same moment as the `accordion:willclose` event), so these transition in
+// sync with the content instead of trailing behind it. accordion.js also keeps `.is-open`
+// correct on load and on every native `toggle` unconditionally (not just for the animated
+// path), so reduced-motion users get the right chevron/divider state too — never rely on
+// `[open]` here again without re-adding that sync.
+.animated-details.is-open .collapse-arrow {
+  transform: rotate(0deg);
+}
+// Header/content divider — only meaningful (and only rendered) while there's content below it
+// to divide from. Used to be an unconditional inline style on <summary>, which meant a CLOSED
+// section still showed it immediately above the <details>'s own outer border — two adjacent
+// 1px lines instead of one.
+.animated-details.is-open > summary {
+  border-bottom: 1px solid var(--overlay-border);
+}
+
+// Aurora Text — animated rainbow gradient clipped to text. Deliberately not built from the
+// --accent tokens above; this one flourish uses its own fixed rainbow palette on purpose.
+//
+// `aurora-shift` is the ambient continuous shimmer (always on). The on-load reveal sweep is
+// driven separately by assets/js/aurora-reveal.js via an animated `mask-image` — a ported
+// adaptation of the real https://magicui.design/docs/components/dia-text-reveal algorithm
+// (a soft-edged band sweeping left-to-right, revealed region already-visible behind it,
+// unrevealed region hidden ahead of it), NOT a plain hard-edge wipe. It's JS-driven rather
+// than a CSS @keyframes because the reference's easing computes a *moving band position* each
+// frame, not two fixed endpoints — not reducible to a simple linear/cubic-bezier keyframe.
+// `display: inline-block` matters here: mask-image on a plain `inline` span is unreliable
+// across browsers.
+.aurora-text {
+  display: inline-block;
+  background: linear-gradient(90deg, #FF0080, #7928CA, #0070F3, #38bdf8, #FF0080);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: aurora-shift 6s linear infinite;
+}
+
+@keyframes aurora-shift {
+  to {
+    background-position: 300% center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-text {
+    animation: none;
+    background-position: 0% center;
+  }
+}
+
+// Highlighter underline — a self-drawing SVG underline stroke beneath a specific inline
+// phrase, reference: https://magicui.design/docs/components/highlighter (its "underline"
+// action). The real component delegates to the rough-notation library for a hand-sketched
+// look; reimplemented here with a plain SVG path + the standard pathLength-normalized
+// stroke-dasharray/stroke-dashoffset "line draw" CSS technique instead of adding a new
+// dependency (consistent with every other reference component this session). No JS needed —
+// a pure CSS keyframe, unlike aurora-reveal which genuinely required per-frame computation.
+// Scoped to one specific phrase (index.html's Hadith quote), not a generic site-wide rule.
+.highlight-underline {
+  position: relative;
+  display: inline-block;
+}
+.highlight-underline-svg {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 10px;
+  overflow: visible;
+  pointer-events: none;
+}
+.highlight-underline-svg path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: highlight-draw 700ms ease-out 300ms forwards;
+}
+@keyframes highlight-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .highlight-underline-svg path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+
+// Typing-animation cursor, used by assets/js/quote-typing.js while a blockquote is mid-type.
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  margin-left: 2px;
+  background: currentColor;
+  animation: cursor-blink 0.8s step-end infinite;
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+// Rectangle theme toggle (_includes/floating_toc.html) — reference:
+// https://beui.dev/components/motion/theme-toggle
+// Lives as the last flex item inside #preview-rail (not its own fixed position), so it
+// always sits directly below the nav ticks regardless of how many there are.
+#theme-toggle {
+  width: 100%;
+  // Top/bottom of the divider line (border-top, below) are deliberately balanced: the rail's own
+  // flex `gap: 14px` is the only space above the line (no extra margin-top), and padding-top
+  // matches it at 14px, so the line sits equidistant between the last tick above and the icon
+  // below — previously `margin-top: 4px` stacked on top of the 14px gap (18px total above) while
+  // `padding-top` was only 8px, visibly closer to the icon than to the tick above it.
+  padding: 14px 12px 4px;
+  margin-top: 0;
+  border: none;
+  border-top: 1px solid var(--border);
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--fg-muted);
+}
+
+#theme-toggle:hover {
+  color: var(--accent);
+}
+
+#theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+#theme-toggle .icon-moon {
+  display: block;
+}
+#theme-toggle .icon-sun {
+  display: none;
+}
+[data-theme="dark"] #theme-toggle .icon-moon {
+  display: none;
+}
+[data-theme="dark"] #theme-toggle .icon-sun {
+  display: block;
+}
+
+// Rectangular bottom-up reveal wipe, driven by document.startViewTransition() in
+// floating_toc.html — "400ms + ease-out mirrors native OS mode-switch timing."
+::view-transition-old(root) {
+  animation: none;
+}
+::view-transition-new(root) {
+  animation: theme-reveal 400ms ease-out;
+}
+@keyframes theme-reveal {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
+
+// Bouncy-accordion "joined list" grouping — the part the first accordion pass was missing.
+// Reference: https://beui.dev/components/motion/bouncy-accordion (ROW_TRANSITION spring,
+// duration 0.55/bounce 0.38, animates border-radius/spacing based on startsGroup/endsGroup).
+// Applies to the 3 main homepage sections only (assets/js/accordion-grouping.js computes
+// which modifier classes apply); reuses the accordion-open bounce curve above instead of a
+// 5th easing curve — its 580ms/strong-overshoot spec is already close to the reference's own
+// row-transition timing.
+// Default (and no-JS/pre-JS fallback) is rounded + spaced — matches the original always-open
+// appearance safely. JS only ever *adds* the flush "joined" treatment for the specific case
+// of two adjacent closed sections; it never has to add rounding/spacing back on top of a
+// broken flush default, so a script failure degrades to "always separated," not "always
+// joined with no rounding" (which would look broken, not just less fancy).
+.js-accordion-group {
+  margin-top: 32px;
+  border: 1px solid var(--overlay-border);
+  border-radius: 12px;
+  transition: margin-top 0.58s cubic-bezier(0.34, 1.56, 0.64, 1),
+    border-radius 0.58s cubic-bezier(0.34, 1.56, 0.64, 1),
+    border-top-color 0.58s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.js-accordion-group:first-child {
+  margin-top: 0;
+}
+.js-accordion-group.group-joined-top {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  // The item directly above already contributes a border-bottom at this exact seam — without
+  // this, two adjacent 1px borders stack into a visibly thicker line right where they join.
+  // Fades the color to transparent rather than `border-top: none` — border-style isn't
+  // animatable, so a hard style switch happens instantly while margin-top is still smoothly
+  // shrinking over the next 460ms, leaving a visible borderless gap for that whole stretch
+  // before it "snaps" flush. border-top-color IS animatable, so this fades in sync instead.
+  border-top-color: transparent;
+}
+.js-accordion-group.group-joined-bottom {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .js-accordion-group {
+    transition: none;
+  }
+}
+
+// Optical padding: each of the 3 main sections' content wrapper ends in a row of bordered/solid
+// elements (buttons, carousels) that sit close to this element's own bottom edge — a bit of
+// extra space compensates for that visual weight. NOT a `padding-bottom` override: this exact
+// element (`summary + div`) is `accordion.js`'s `content`, whose open()/close() animates
+// `paddingBottom` via WAAPI. A `padding-bottom: ... !important` override was tried first — it
+// survived close/reopen (fixed a real bug where an *inline* version of the same idea got wiped
+// by the animation's own cleanup), but broke differently: `!important` declarations always beat
+// Web Animations API values in the cascade regardless of `fill` mode, so the override was
+// fighting the WAAPI keyframes for the same property on every open/close, and lost the padding
+// after the animation rather than before it. A `::after` spacer sidesteps the conflict entirely
+// — it doesn't touch `padding-bottom` at all, so there's nothing for the animation and a
+// stylesheet rule to contend over. It's still ordinary content inside `content`'s own box, so it
+// gets clipped correctly by the same height/overflow animation as everything else during
+// open/close — no special-casing needed, same as any other static child.
+.accordion-content::after {
+  content: '';
+  display: block;
+  height: 24px;
+}
 
 // If a user adds a custom font, this component will stop it from bleeding into GitHub components:
 .github-component {
