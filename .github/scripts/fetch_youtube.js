@@ -8,7 +8,7 @@ const GCP_PROJECT_ID = process.env.GCP_PROJECT_ID;
 const OUTPUT_FILE = path.join(__dirname, '..', '..', '_data', 'youtube.json');
 
 const GEMINI_MODELS = [
-  'gemini-3.5-flash',
+  'gemini-3.6-flash',
   'gemini-2.5-flash',
   'gemini-3.1-flash-lite',
   'gemini-2.5-flash-lite'
@@ -249,7 +249,7 @@ async function enrichWithVideoSummary(video) {
     console.log(`\nWatching video via Vertex AI: ${video.title} (${video.url})`);
 
     const response = await ai.models.generateContent({
-      model: 'gemini-3.5-flash',
+      model: 'gemini-3.6-flash',
       contents: [
         {
           role: 'user',
