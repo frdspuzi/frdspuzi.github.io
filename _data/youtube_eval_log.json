@@ -1,212 +1,86 @@
 [
   {
-    "videoId": "Ib5t2RLtxvM",
-    "title": "From Agent Traces to Agent Simulations — Rustem Feyzkhanov, Snorkel AI",
+    "videoId": "UUozyqDNRGg",
+    "title": "Does this install succeed? If it does, which three versions end up in your lockfile?",
     "selected": false,
-    "reasoning": "Too niche and research-oriented for a junior fullstack developer; lacks immediate practical career ROI.",
-    "summary": ""
-  },
-  {
-    "videoId": "b_PmGocP4rc",
-    "title": "Evaling Video Slop — Maor Bril, Character.ai",
-    "selected": false,
-    "reasoning": "Video evaluation infrastructure in generative AI is too specialized for a junior generalist fullstack engineer right now.",
-    "summary": ""
-  },
-  {
-    "videoId": "31GUkCBD-Uc",
-    "title": "Building Closed-Loop Evals for a Multimodal Agent at Scale — Soumya Gupta &amp; Jai Chopra, Uber",
-    "selected": false,
-    "reasoning": "Highly complex, enterprise-scale testing architecture that is overkill for a junior-level developer's current workflow.",
-    "summary": ""
-  },
-  {
-    "videoId": "DY-1qlpJiFk",
-    "title": "What is formal verification?",
-    "selected": false,
-    "reasoning": "The short format is too brief to properly explain a concept as dense as formal verification, rendering it superficial infotainment.",
-    "summary": ""
-  },
-  {
-    "videoId": "RTY2vhey-zI",
-    "title": "Why C Is a Dangerous Language | Simon Peyton Jones",
-    "selected": false,
-    "reasoning": "While intellectually stimulating, low-level discussions on C's safety are irrelevant for a junior web developer building fullstack JS/TS/Python apps.",
-    "summary": ""
-  },
-  {
-    "videoId": "J51YlBNbYlY",
-    "title": "Hiring at Google vs Jane Street",
-    "selected": false,
-    "reasoning": "Generic high-tier tech comparisons offer little actionable career advice for an early-career engineer in the local Malaysian market.",
-    "summary": ""
-  },
-  {
-    "videoId": "EIk395a-tds",
-    "title": "Why You’re Not Financially Free (Yet)",
-    "selected": true,
-    "reasoning": "A world-class strategic breakdown of productivity, leverage, and wealth creation, highly applicable to early-career developers looking to maximize their earning potential.",
-    "summary": "Are you working hard but still feel financially stuck? This masterclass reveals the hidden bottlenecks that keep professionals from achieving true financial freedom and offers actionable strategies to transition from trading time for money to building scalable systems."
-  },
-  {
-    "videoId": "FktgMN390Xo",
-    "title": "Stop typing out your AI prompts...(see description)",
-    "selected": false,
-    "reasoning": "A quick productivity hack video that lacks the depth needed to significantly advance a developer's career or technical skills.",
-    "summary": ""
-  },
-  {
-    "videoId": "gUblhLMhc94",
-    "title": "i am begging you to try harry potter fan fiction",
-    "selected": false,
-    "reasoning": "Completely irrelevant to career advice, technology, Islamic finance, or professional development.",
+    "reasoning": "A hyper-specific dependency resolution quiz short that offers minimal strategic value or career insight.",
     "summary": ""
   },
   {
     "videoId": "NIDrPjeZ-jQ",
     "title": "PM vs. Eng",
     "selected": false,
-    "reasoning": "A generic, comedic short that offers zero practical value or deep insight into real-world collaboration.",
+    "reasoning": "Surface-level comparison clip about product managers and engineers without actionable depth.",
     "summary": ""
   },
   {
     "videoId": "eiRlCVtzlm4",
     "title": "Expose your site's actions to AI agents using WebMCP",
     "selected": true,
-    "reasoning": "A highly practical and modern fullstack engineering update teaching developers how to interface web apps with AI agents using the newly popular WebMCP protocol.",
-    "summary": "Stay ahead of the curve as a fullstack engineer by learning how to expose your web application's actions directly to AI agents. Utilizing Google's WebMCP, this guide shows you how to build the robust APIs that the agentic systems of the future will rely on."
-  },
-  {
-    "videoId": "JRArFxEfyQU",
-    "title": "How are large language models trained?",
-    "selected": false,
-    "reasoning": "A high-level introductory video that lacks the hands-on engineering applicability a junior fullstack developer needs.",
-    "summary": ""
-  },
-  {
-    "videoId": "LOGFnUHQmXc",
-    "title": "Data peribadi influencer terdedah",
-    "selected": false,
-    "reasoning": "A short-form reaction to local influencer news rather than a foundational piece of tech or financial advice.",
-    "summary": ""
-  },
-  {
-    "videoId": "P6DCBYasHgI",
-    "title": "Majikan cari apa pada graduan?",
-    "selected": false,
-    "reasoning": "An important topic, but its short-form format limits the depth of career advice compared to more comprehensive videos.",
-    "summary": ""
-  },
-  {
-    "videoId": "JMxnjiWQDVE",
-    "title": "Beli emas dengan Pos ArRahnu Gold-i",
-    "selected": true,
-    "reasoning": "Directly tackles a localized, Shariah-compliant microfinance and gold investment tool in Malaysia, perfect for an Islamic financial advocate.",
-    "summary": "Curious about diversifying your assets the halal way? This practical guide introduces Pos ArRahnu Gold-i, demonstrating how Malaysian Muslims can leverage gold and Shariah-compliant micro-financing safely and efficiently."
-  },
-  {
-    "videoId": "u_tHCsaFabA",
-    "title": "Melabur ikut kawan makan diri?",
-    "selected": false,
-    "reasoning": "A highly simplified short-form warning on peer pressure in investing that lacks a detailed, structural alternative path.",
-    "summary": ""
-  },
-  {
-    "videoId": "R6WP-iHDC1U",
-    "title": "Joint loan menyusahkan anak?",
-    "selected": false,
-    "reasoning": "While a useful warning on joint property loans in Malaysia, it is too niche compared to broader wealth-building strategies.",
-    "summary": ""
-  },
-  {
-    "videoId": "8HDmE8GJHok",
-    "title": "[S01:E18] Sampai bila nak menyimpan? bila waktu kena melabur",
-    "selected": true,
-    "reasoning": "A comprehensive, long-form discussion on the optimal transition point from saving cash to investing in Malaysia, providing high utility for early-career wealth building.",
-    "summary": "Stop blindly saving your cash only to watch inflation eat it away. This localized episode breaks down the exact milestones Malaysian young professionals need to reach before transitioning from conservative savings to smart investments."
+    "reasoning": "Directly relevant to fullstack engineers building modern web applications that interact with AI agents.",
+    "summary": "AI agents are transforming how users interact with modern web applications. This concise breakdown shows web developers how to structure actions using WebMCP so AI tools can interact directly with fullstack products."
   },
   {
     "videoId": "FgBL2T7CUw4",
     "title": "#111 | Your Test Can Be Your Testimony",
     "selected": false,
-    "reasoning": "Highly generic motivational video that lacks the concrete, structured guidance of targeted Islamic or technical content.",
+    "reasoning": "Generic motivational self-help content framed around Christian religious terminology.",
     "summary": ""
   },
   {
     "videoId": "-aJtCPD95jw",
     "title": "#110 | The Power of Positive Thinking",
     "selected": false,
-    "reasoning": "Basic self-help concepts that do not specifically cater to either software engineering, local finance, or Islamic principles.",
+    "reasoning": "Standard self-help clichés with zero specific value for software engineering or career advancement.",
     "summary": ""
   },
   {
     "videoId": "FJoQR0Z0hLk",
     "title": "#109 | How To Lead With Integrity",
     "selected": false,
-    "reasoning": "General leadership concepts that are premature and less impactful for an individual contributor at the junior developer level.",
+    "reasoning": "Broad discussion on leadership that lacks practical engineering management context.",
     "summary": ""
   },
   {
-    "videoId": "Xa_Meqgwa18",
-    "title": "PUSPAKOM CEO responds to the end of their monopoly in vehicle inspection | In The Studio",
-    "selected": false,
-    "reasoning": "Corporate macroeconomic news that has minimal direct bearing on personal finance, tech career pathing, or Islamic practices.",
-    "summary": ""
-  },
-  {
-    "videoId": "_7FQBb8sTio",
-    "title": "📍🟡 Ini cara simpan durian supaya dia fresh masa makan nanti 😬",
-    "selected": false,
-    "reasoning": "Lifestyle-focused food preservation short with absolutely zero professional or educational value for this demographic.",
-    "summary": ""
-  },
-  {
-    "videoId": "Jgl0XS8D4g0",
-    "title": "“The boogeyman in Malaysian politics is DAP not PAS.” - Anthony Loke | In The Studio",
-    "selected": false,
-    "reasoning": "Politicized national commentary that doesn't advance professional engineering skills, spiritual growth, or financial literacy.",
-    "summary": ""
-  },
-  {
-    "videoId": "j2vzt1HNHpU",
-    "title": "What autism can teach us about leadership | Syreeta Brown | TEDxRichmond",
-    "selected": false,
-    "reasoning": "Interesting paradigm shift, but too far removed from the core practical challenges faced by a junior software engineer.",
-    "summary": ""
-  },
-  {
-    "videoId": "ke0hdEYDcn0",
-    "title": "What a late ADHD diagnosis taught me about my gifts | Ieasha James | TEDxRoxbury",
-    "selected": false,
-    "reasoning": "A deeply personal anecdote about ADHD that lacks structured career growth advice or industry-specific relevance.",
-    "summary": ""
-  },
-  {
-    "videoId": "4SN__NW0wJI",
-    "title": "How To Read Anyone In 6 Seconds | Kostya Kimlat | TEDxSarasota",
-    "selected": false,
-    "reasoning": "Entertainment-heavy body language tricks that offer no real utility to engineering metrics or ethical wealth management.",
-    "summary": ""
-  },
-  {
-    "videoId": "G5mX8kJwYjs",
-    "title": "The Sin of a Muslim Hero | Dr. Omar Suleiman",
-    "selected": false,
-    "reasoning": "Excellent spiritual lesson, but the extremely brief short-form format lacks the depth and educational value of Yaqeen's full-length lectures.",
-    "summary": ""
-  },
-  {
-    "videoId": "pR-AfRwiLlM",
-    "title": "The Fastest &quot;Yes&quot; in Islamic History | Khutbah by Sh. Ibrahim Hindy",
+    "videoId": "cbiyPOn-__M",
+    "title": "How you can learn in a world of information overload | Tania Lombrozo | TEDxNewEngland",
     "selected": true,
-    "reasoning": "A full-length, high-quality Khutbah offering robust moral guidance and historical Islamic context, perfect for grounding a young Muslim professional's worldview.",
-    "summary": "In the fast-paced corporate world, keeping your spiritual compass aligned is crucial. This deep-dive lecture explores a pivotal moment in Islamic history, illustrating how decisiveness, faith, and immediate commitment to righteousness can positively shape your character and career."
+    "reasoning": "Essential cognitive framework for junior developers trying to navigate the firehose of tech updates.",
+    "summary": "Junior engineers face an overwhelming influx of new frameworks, languages, and tools every day. Cognition researcher Tania Lombrozo reveals how to filter noise and retain high-value knowledge so you can learn faster without burning out."
   },
   {
-    "videoId": "gmvyQqpnczg",
-    "title": "O Allah, Grant Me Your Love | Dr. Omar Suleiman",
+    "videoId": "4KZp25ONpbo",
+    "title": "What calligraphy has taught me about life  | Razwan Ul-Haq | TEDxHeaton",
+    "selected": true,
+    "reasoning": "Combines Islamic art heritage with mindfulness, discipline, and intentional craft relevant to modern work.",
+    "summary": "Islamic calligrapher Razwan Ul-Haq shares how the patience and precision of traditional Arabic calligraphy shape a purposeful life. It offers a refreshing, soulful perspective on mastery, deliberate practice, and craftsmanship for professionals."
+  },
+  {
+    "videoId": "WHatGqlW_WA",
+    "title": "A black belt mindset for lifelong learning | Raj Soren | TEDxHeaton",
     "selected": false,
-    "reasoning": "A beautiful short supplication, but lacks the comprehensive educational and moral-building substance of a complete lecture.",
+    "reasoning": "Rehashes familiar martial arts metaphors for personal growth without unique insights.",
     "summary": ""
+  },
+  {
+    "videoId": "qsuR0g4Gy_s",
+    "title": "Engineers “cash in” on AI time savings",
+    "selected": true,
+    "reasoning": "Crucial career guidance from Pragmatic Engineer on leveraging AI tools for career growth.",
+    "summary": "AI tools are giving developers hours back every week, but how should early-career engineers spend that saved time? This video breaks down how top developers use AI efficiency gains to upskill and accelerate their career trajectory."
+  },
+  {
+    "videoId": "ApzGW6gdFyc",
+    "title": "&quot;You're absolutely right&quot; is your cue to start over",
+    "selected": false,
+    "reasoning": "Interesting tip on stakeholder communication, but too short to provide deep utility over other selections.",
+    "summary": ""
+  },
+  {
+    "videoId": "h8TBLKyo7Rs",
+    "title": "From &quot;napkin math&quot; to turbopuffer",
+    "selected": true,
+    "reasoning": "Masterclass in fullstack/systems estimation, scaling engineering products, and technical reasoning.",
+    "summary": "Moving from junior developer to senior engineer requires mastering system estimation before writing a single line of code. This breakdown illustrates how back-of-the-envelope calculations shape real-world, high-performance database infrastructure."
   }
 ]
