@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What three-part action plan is recommended to overcome memory limitations and prevent the hoarding of beneficial knowledge?",
+      "question": "What term refers to the small markings placed above or below Arabic letters to indicate vowel sounds and guide pronunciation?",
       "options": [
-        "Rely on cognitive offloading, build static databases, and delete older entries",
-        "Re-read daily notes, organize them in private files, and memorize key summaries",
-        "Store ideas mentally, review them through passive reading, and keep databases private",
-        "Write ideas down, build a system to remind yourself, and share them publicly"
+        "Uthmani",
+        "Proportion",
+        "Pareto",
+        "Tashkeel"
       ],
       "correctIndex": 3,
-      "learning": "To combat forgetfulness and avoid hoarding beneficial knowledge, the ultimate solution is to stop trusting your memory, write your ideas down, build an active reminder system, and share your lessons publicly.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "Which specific PCIe power management substate achieves greater power savings than L1.0 by powering down the electrical circuits of the main link, resulting in an increased wake-up time?",
-      "options": [
-        "L1.1",
-        "L0s",
-        "L2",
-        "L1.2"
-      ],
-      "correctIndex": 0,
-      "learning": "In the PCIe L1.1 power management substate, the electrical circuits of the main link are powered down to achieve greater power savings, which in turn increases the device's wake-up time.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "When comparing linguistic complexity, what is the approximate ratio of distinct Arabic words to English words found in the Oxford English Dictionary?",
-      "options": [
-        "35:1",
-        "12:1",
-        "71:1",
-        "120:1"
-      ],
-      "correctIndex": 2,
-      "learning": "The Arabic language possesses immense complexity, featuring approximately 12 million distinct words compared to only 170,000 English words in the Oxford English Dictionary, which creates an approximate 71:1 ratio of Arabic to English words.",
+      "learning": "Tashkeel refers to the small markings placed above or below Arabic letters to indicate how they should be pronounced, specifically specifying which vowel sound to use.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In Islamic theology, which concept refers to the actual unfolding of daily life events that can be altered or influenced by a person's choices and supplications?",
+      "question": "Which of the following is NOT one of the core roles defined within the Scrum framework?",
       "options": [
-        "Qadr",
-        "Mueaqqibat",
-        "Al-Alim",
-        "Qada’"
+        "Project Manager",
+        "Product Owner",
+        "Scrum Master",
+        "Developers"
       ],
-      "correctIndex": 3,
-      "learning": "While Qadr represents Allah's absolute and preordained plan, the actual unfolding of life events (Qada’) is dynamic and can be altered through sincere actions and supplication.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What is the primary purpose of breaking a development process into smaller, iterative cycles called Sprints?",
-      "options": [
-        "To completely eliminate the need for product testing",
-        "To increase the overall length of the project",
-        "To reduce the number of team members needed",
-        "To allow for more flexibility and quicker adjustments"
-      ],
-      "correctIndex": 3,
-      "learning": "Scrum is an agile framework that breaks the development process into smaller, iterative cycles called Sprints, which is designed to allow for greater flexibility and quicker adjustments.",
+      "correctIndex": 0,
+      "learning": "The Scrum framework specifies exactly three core roles required for project execution: Product Owner, Scrum Master, and Developers. A traditional Project Manager is not one of the recognized roles in Scrum.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
+    },
+    {
+      "question": "What psychological concept describes the phenomenon where writing down or digitally storing information prompts the brain to immediately forget it?",
+      "options": [
+        "Active Recall Failure",
+        "The Digital Garden Fallacy",
+        "The Ebbinghaus Curve Paradox",
+        "The Performance Paradox of Cognitive Offloading"
+      ],
+      "correctIndex": 3,
+      "learning": "Known as the Performance Paradox of Cognitive Offloading, the act of writing information down or storing it on a device gives the brain permission to delete it from memory.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "In Islamic theology, what three primary roles define the core purpose of human existence?",
+      "options": [
+        "Renouncing all worldly actions, living in physical isolation, and avoiding community life",
+        "Establishing secular governance, maximizing physical comforts, and pursuing personal autonomy",
+        "Accumulating material wealth, conquering foreign territories, and achieving individual fame",
+        "Worshiping Allah, serving as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter"
+      ],
+      "correctIndex": 3,
+      "learning": "In Islamic theology, human life's overarching purpose is defined by three primary roles: worshiping Allah, serving as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter through a test of faith and accountability.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "If a Muslim makes a supplication that does not involve sin or severing kinship ties and it is not granted directly, what alternative action is taken according to Hadith literature?",
+      "options": [
+        "Their personal responsibility for choices is removed",
+        "Their preordained financial sustenance is delayed",
+        "They are granted immediate success in business",
+        "An equivalent amount of evil is turned away from them"
+      ],
+      "correctIndex": 3,
+      "learning": "According to Hadith tradition (Jami at-Tirmidhi 3573), when a Muslim makes a supplication that is free from sin or severing family ties, Allah either grants the request directly or turns away an equivalent amount of evil.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-07-25T03:45:43.068Z"
+  "fetchedAt": "2026-07-28T03:44:36.153Z"
 }
