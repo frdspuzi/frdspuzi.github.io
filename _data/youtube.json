@@ -1,28 +1,132 @@
 {
   "videos": [
     {
+      "title": "How Forward Deployed Engineering is done at Factory — Eno Reyes",
+      "url": "https://www.youtube.com/watch?v=wpOA-UXynoM",
+      "videoId": "wpOA-UXynoM",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "In this insightful presentation from the AI Engineer World's Fair, Factory co-founder and CTO Eno Reyes redefines the role of Forward Deployed Engineers in the age of AI. Instead of working as traditional software consultants, Reyes explains how deployed engineers install autonomous 'software factory' systems and prepare enterprise codebases to be 'agent-ready.' It's a must-watch for engineering leaders seeking to move beyond simple AI coding assistants toward fully autonomous engineering workflows.",
+      "dateAdded": "2026-07-29T03:48:03.123Z",
+      "timestamps": [
+        {
+          "startTime": 162,
+          "endTime": 300,
+          "topic": "Reframing Deployed Engineering: Software Factories vs. Services"
+        },
+        {
+          "startTime": 723,
+          "endTime": 835,
+          "topic": "Making Enterprise Codebases 'Agent-Ready'"
+        },
+        {
+          "startTime": 959,
+          "endTime": 1090,
+          "topic": "Why AI Models Compound Value While Services Scale Linearly"
+        }
+      ]
+    },
+    {
+      "title": "How Forward Deployed Engineering is done at Cognition — Jia Wu",
+      "url": "https://www.youtube.com/watch?v=RVxym6mmIns",
+      "videoId": "RVxym6mmIns",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Discover how Cognition transforms AI coding hype into real-world enterprise impact by leveraging Forward Deployed Engineers (FDEs) to deeply embed their AI software engineer, Devin, into complex software development lifecycles. Featuring real-world case studies from major banks and fintechs, this talk demonstrates how aligning AI capabilities directly with customer problems slashes development cycle times by over 80% and delivers massive productivity gains.",
+      "dateAdded": "2026-07-29T03:48:03.123Z",
+      "timestamps": [
+        {
+          "startTime": 161,
+          "endTime": 222,
+          "topic": "Maximizing Product-Market Fit with Forward Deployed Engineering"
+        },
+        {
+          "startTime": 626,
+          "endTime": 701,
+          "topic": "The Shift from Tokenmaxing to Measurable Enterprise Delivery"
+        },
+        {
+          "startTime": 855,
+          "endTime": 941,
+          "topic": "Enterprise Case Studies: Proving AI Impact at Scale"
+        }
+      ]
+    },
+    {
+      "title": "PM vs. Eng",
+      "url": "https://www.youtube.com/shorts/NIDrPjeZ-jQ",
+      "videoId": "NIDrPjeZ-jQ",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This hilarious skit perfectly captures the eternal tension between ambitious Product Managers dreaming up futuristic features and the stressed-out Engineers tasked with building them. Watching the PM casually propose complex operating system updates while the engineer slowly unravels under technical debt makes for a relatable and entertaining look into tech development.",
+      "dateAdded": "2026-07-29T03:48:03.123Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 22,
+          "topic": "Dynamic Color & Physics Motion Features"
+        },
+        {
+          "startTime": 22,
+          "endTime": 42,
+          "topic": "Desktop Windowing & Private Space Features"
+        },
+        {
+          "startTime": 53,
+          "endTime": 65,
+          "topic": "AI Notification Summaries & The Engineer's Breaking Point"
+        }
+      ]
+    },
+    {
       "title": "Expose your site's actions to AI agents using WebMCP",
       "url": "https://www.youtube.com/shorts/eiRlCVtzlm4",
       "videoId": "eiRlCVtzlm4",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "This video introduces WebMCP, a groundbreaking web capability that lets websites expose structured actions directly to AI agents instead of forcing them to guess and click UI buttons. Discover how simple JavaScript schemas allow web apps to provide a reliable, agent-friendly interface, bridging the gap between AI agents and modern web applications.",
-      "dateAdded": "2026-07-28T03:44:02.155Z",
+      "summary": "Tired of AI agents misinterpreting web interfaces and clicking the wrong buttons? This video introduces WebMCP, a new web standard allowing websites to explicitly define and expose their capabilities directly to AI agents using simple schemas. Watch to learn how this shift from visual guessing to structured action makes web automation reliable and robust.",
+      "dateAdded": "2026-07-29T03:48:03.123Z",
       "timestamps": [
         {
-          "startTime": 15,
+          "startTime": 18,
           "endTime": 43,
-          "topic": "How to register WebMCP tools using JavaScript and schemas"
+          "topic": "Registering Tools using WebMCP and JavaScript Schemas"
         },
         {
-          "startTime": 44,
+          "startTime": 43,
           "endTime": 58,
-          "topic": "Direct agent interaction vs. visual button clicking"
+          "topic": "How AI Agents Discover and Call WebMCP Actions Directly"
         },
         {
-          "startTime": 66,
-          "endTime": 88,
-          "topic": "The shift toward structured agent capabilities in Chrome"
+          "startTime": 65,
+          "endTime": 89,
+          "topic": "Shifting to Schema-Based Web Automation with Chrome 149"
+        }
+      ]
+    },
+    {
+      "title": "EP207 | BN-PN Tidak Serasi?, Laporan RCI Tabung Haji, F1 Kembali Ke Sepang, Perjanjian MA63",
+      "url": "https://www.youtube.com/watch?v=FKGY4wDdrXc",
+      "videoId": "FKGY4wDdrXc",
+      "channel": "Keluar Sekejap",
+      "category": "Finance",
+      "summary": "In this episode of Keluar Sekejap, hosts Khairy Jamaluddin and Shahril Hamdan break down pressing political developments before diving into Malaysia's federalism and legal tensions over petroleum rights with constitutional law expert Encik Hafiz Hassan. The discussion offers an insightful look at the historical context of the Malaysia Agreement 1963 (MA63), the Petroleum Development Act 1974, and the delicate balance of power between Putrajaya and the Borneo states.",
+      "dateAdded": "2026-07-29T03:48:03.123Z",
+      "timestamps": [
+        {
+          "startTime": 460,
+          "endTime": 615,
+          "topic": "Analysis of Sanusi's remarks and non-Malay voter sentiment"
+        },
+        {
+          "startTime": 1240,
+          "endTime": 1350,
+          "topic": "Formula 1's unexpected return to Sepang Circuit"
+        },
+        {
+          "startTime": 1860,
+          "endTime": 2100,
+          "topic": "Legal deep dive into MA63, the Petroleum Development Act, and federalism"
         }
       ]
     },
@@ -225,32 +329,6 @@
       ]
     },
     {
-      "title": "PM vs. Eng",
-      "url": "https://www.youtube.com/shorts/NIDrPjeZ-jQ",
-      "videoId": "NIDrPjeZ-jQ",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "This hilarious short perfectly captures the classic, chaotic dynamic between a Product Manager (PM) and a Software Engineer. Watch as the PM casually requests seemingly simple, user-friendly features—like desktop windowing and AI-generated haiku notification summaries—while the engineer slowly loses his mind over the massive underlying technical complexity. It's a must-watch for anyone in tech who has ever felt the pain of translating \"simple\" design ideas into actual code.",
-      "dateAdded": "2026-07-24T03:51:36.965Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 21,
-          "topic": "Dynamic Color & Physics-Based Motion"
-        },
-        {
-          "startTime": 22,
-          "endTime": 43,
-          "topic": "Desktop Windowing & Private Space"
-        },
-        {
-          "startTime": 44,
-          "endTime": 65,
-          "topic": "Interactive Widgets & The AI Haiku Breakdown"
-        }
-      ]
-    },
-    {
       "title": "Majikan cari apa pada graduan?",
       "url": "https://www.youtube.com/shorts/P6DCBYasHgI",
       "videoId": "P6DCBYasHgI",
@@ -296,80 +374,7 @@
           "topic": "How to measure LLM success and use an 'Autorater' for evaluation"
         }
       ]
-    },
-    {
-      "title": "“The boogeyman in Malaysian politics is DAP not PAS.” - Anthony Loke | In The Studio",
-      "url": "https://www.youtube.com/watch?v=Jgl0XS8D4g0",
-      "videoId": "Jgl0XS8D4g0",
-      "channel": "BFM 89.9",
-      "category": "Finance",
-      "summary": "This video features an insightful interview with Malaysia's Minister of Transport, Anthony Loke, discussing the country's complex domestic political landscape and international diplomatic strategies. Viewers will gain a clear understanding of how Malaysia navigates relations with major global powers like the US, Europe, and Russia while prioritizing its own national interests. The core takeaway is the critical role of pragmatic, multipolar diplomacy and resilient coalition governance in maintaining stability.",
-      "dateAdded": "2026-07-23T03:52:07.482Z",
-      "timestamps": [
-        {
-          "startTime": 140,
-          "endTime": 215,
-          "topic": "PM Anwar Ibrahim's International Relations and Diplomatic Strengths"
-        },
-        {
-          "startTime": 215,
-          "endTime": 311,
-          "topic": "Pragmatic Diplomacy and Balancing Relationships with Global Powers"
-        }
-      ]
-    },
-    {
-      "title": "“Either you were conned or your staff must be stupid” – Upin Ipin creator on theme park deal",
-      "url": "https://www.youtube.com/watch?v=tPw1N5VwFhc",
-      "videoId": "tPw1N5VwFhc",
-      "channel": "BFM 89.9",
-      "category": "Finance",
-      "summary": "Step into the studio with Hj Burhanuddin Md Radzi, the visionary founder of Les' Copaque Production, as he shares the fascinating journey of creating Malaysia's iconic animation franchise, \"Upin & Ipin.\" This interview offers a masterclass in creative entrepreneurship, explaining how to build a sustainable global brand using Disney's business model while prioritizing creative control over quick financial exits.",
-      "dateAdded": "2026-07-23T03:52:07.482Z",
-      "timestamps": [
-        {
-          "startTime": 135,
-          "endTime": 215,
-          "topic": "Transitioning from Oil & Gas to Cartoon Animation"
-        },
-        {
-          "startTime": 365,
-          "endTime": 461,
-          "topic": "Why Creative Companies Should Avoid an IPO"
-        },
-        {
-          "startTime": 463,
-          "endTime": 550,
-          "topic": "Applying the Disney Business Model to Animation"
-        }
-      ]
-    },
-    {
-      "title": "EP205 | PRN Johor 2026: Post-Match Analysis",
-      "url": "https://www.youtube.com/watch?v=myxa88bGBLg",
-      "videoId": "myxa88bGBLg",
-      "channel": "Keluar Sekejap",
-      "category": "Finance",
-      "summary": "This episode of the 'Keluar Sekejap' podcast offers a masterclass in political analysis, dissecting Barisan Nasional's landslide victory in the Johor State Elections. By breaking down complex voter turnout data and ethnic voting patterns, the hosts reveal the core strategic blunders of Pakatan Harapan and how turnout disparity became BN's ultimate weapon. It is a must-watch for anyone wanting to understand the real, data-driven mechanics behind Malaysian electoral shifts.",
-      "dateAdded": "2026-07-23T03:52:07.482Z",
-      "timestamps": [
-        {
-          "startTime": 80,
-          "endTime": 162,
-          "topic": "Overview of the Johor Election Results"
-        },
-        {
-          "startTime": 320,
-          "endTime": 435,
-          "topic": "Voter Turnout and Support Analysis"
-        },
-        {
-          "startTime": 648,
-          "endTime": 686,
-          "topic": "The Oracle: Ken Ming's Accurate Election Prediction"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-28T03:45:51.545Z"
+  "lastUpdated": "2026-07-29T03:51:29.974Z"
 }
