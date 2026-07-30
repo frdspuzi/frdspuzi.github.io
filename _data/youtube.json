@@ -1,6 +1,131 @@
 {
   "videos": [
     {
+      "title": "Build for the Memo, Not the Demo — Shawn Chan, China Resources Holdings",
+      "url": "https://www.youtube.com/watch?v=tJFjeMBKbIY",
+      "videoId": "tJFjeMBKbIY",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "AI tools often excel at shallow, impressive demos but crumble when subjected to the high-stakes, skeptical scrutiny of real investment committees. Drawing from 15 years in cross-border finance and over 200 investment committees, Shawn Chan outlines how to bridge the gap between catchy AI demos and rigorous 'memo-ready' systems that earn actual investor trust.",
+      "dateAdded": "2026-07-30T03:39:38.347Z",
+      "timestamps": [
+        {
+          "startTime": 345,
+          "endTime": 436,
+          "topic": "The Demo vs. The Memo: Two Different AI Machines"
+        },
+        {
+          "startTime": 549,
+          "endTime": 678,
+          "topic": "Six Ways Trust Quietly Breaks in AI Financial Products"
+        },
+        {
+          "startTime": 1254,
+          "endTime": 1391,
+          "topic": "The Fix: 5 Essential Rules to Build Trustworthy AI Systems"
+        }
+      ]
+    },
+    {
+      "title": "Let's integrate AI Agents in Event-Sourced Systems — Divakar Kumar, FlyersSoft",
+      "url": "https://www.youtube.com/watch?v=o6U_2vd967Y",
+      "videoId": "o6U_2vd967Y",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This talk demonstrates how combining AI agents with event-sourced architectures can solve complex, real-time fraud detection challenges where traditional rule-based and standard ML models fall short. By leveraging materialized view projections across separate bounded domains, multi-agent systems can gather full contextual data to make intelligent decisions on edge-case transactions in sub-500ms response times.",
+      "dateAdded": "2026-07-30T03:39:38.347Z",
+      "timestamps": [
+        {
+          "startTime": 307,
+          "endTime": 343,
+          "topic": "The Hybrid Tier-1 vs Tier-2 Fraud Detection Strategy"
+        },
+        {
+          "startTime": 668,
+          "endTime": 705,
+          "topic": "Building a Materialized Semantic Layer Across Bounded Contexts"
+        },
+        {
+          "startTime": 846,
+          "endTime": 948,
+          "topic": "Multi-Agent Fan-Out Orchestration and Consensus Voting"
+        }
+      ]
+    },
+    {
+      "title": "Wearing the Agent: From Group Chats to Glasses — Sai Krishna Rallabandi",
+      "url": "https://www.youtube.com/watch?v=s67bE2Ur3bY",
+      "videoId": "s67bE2Ur3bY",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Discover how AI is evolving beyond 1-on-1 personal assistants into shared group chat participants and wearable devices like smart glasses. This talk breaks down the essential engineering harness required—focusing on runtime security, intelligent long-term memory, and context-aware privacy routing—to build reliable multi-user AI agents. It's a must-watch for developers looking to build the next generation of ambient, collaborative artificial intelligence.",
+      "dateAdded": "2026-07-30T03:39:38.347Z",
+      "timestamps": [
+        {
+          "startTime": 118,
+          "endTime": 316,
+          "topic": "The Shift from Single-Person to Group-Based AI Agents"
+        },
+        {
+          "startTime": 356,
+          "endTime": 552,
+          "topic": "Securing AI Agents Against Indirect Prompt Injections"
+        },
+        {
+          "startTime": 732,
+          "endTime": 946,
+          "topic": "Managing Long-Term Memory and Context in Shared AI Systems"
+        }
+      ]
+    },
+    {
+      "title": "How to turn your worst fears into advantages #shorts #tedx",
+      "url": "https://www.youtube.com/shorts/MtsF23pdcg4",
+      "videoId": "MtsF23pdcg4",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This inspiring talk introduces the 'pre-mortem' strategy—a powerful technique borrowed from business to face your worst-case scenarios head-on. By intentionally imagining failure in advance and mapping out a comeback, you can demystify fear and gain the mental clarity needed to make bold life choices.",
+      "dateAdded": "2026-07-30T03:39:38.348Z",
+      "timestamps": [
+        {
+          "startTime": 22,
+          "endTime": 33,
+          "topic": "The 'Pre-Mortem' Method Explained"
+        },
+        {
+          "startTime": 49,
+          "endTime": 66,
+          "topic": "How Facing Your Worst Fear Neutralizes Anxiety"
+        }
+      ]
+    },
+    {
+      "title": "Back to Black Roxbury: Creating a Cycle of Generational Wealth | Dianne Wilkerson | TEDxRoxbury",
+      "url": "https://www.youtube.com/watch?v=1Uj6tsq7CkI",
+      "videoId": "1Uj6tsq7CkI",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "Dianne Wilkerson highlights the critical issue of declining Black homeownership and gentrification in Boston's historic Roxbury neighborhood. She shares powerful stories of past displacement and outlines an innovative strategic plan to preserve community wealth by empowering local seniors and young homebuyers.",
+      "dateAdded": "2026-07-30T03:39:38.348Z",
+      "timestamps": [
+        {
+          "startTime": 135,
+          "endTime": 205,
+          "topic": "The Historical Impact of Infrastructure Projects on Roxbury"
+        },
+        {
+          "startTime": 438,
+          "endTime": 510,
+          "topic": "The Modern Housing Crisis and Lack of Affordable Listings"
+        },
+        {
+          "startTime": 690,
+          "endTime": 765,
+          "topic": "A Strategic Vision to Build Generational Wealth and Stop Gentrification"
+        }
+      ]
+    },
+    {
       "title": "How Forward Deployed Engineering is done at Factory — Eno Reyes",
       "url": "https://www.youtube.com/watch?v=wpOA-UXynoM",
       "videoId": "wpOA-UXynoM",
@@ -254,127 +379,7 @@
           "topic": "The ultimate proof: How doctors and surgeons use YouTube to master their craft"
         }
       ]
-    },
-    {
-      "title": "Beli emas dengan Pos ArRahnu Gold-i",
-      "url": "https://www.youtube.com/shorts/JMxnjiWQDVE",
-      "videoId": "JMxnjiWQDVE",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "This engaging video breaks down the differences between physical and digital gold investment, introducing 'Pos ArRahnu Gold-i' as a highly accessible and flexible Shariah-compliant option. Viewers will discover how they can start investing with as little as RM10, benefit from low buy-sell spreads, and easily convert their digital gold into physical bars. Backed by the trusted Pos Malaysia network, this is a must-watch for anyone looking to secure their wealth in gold without high entry barriers.",
-      "dateAdded": "2026-07-25T03:45:41.225Z",
-      "timestamps": [
-        {
-          "startTime": 48,
-          "endTime": 73,
-          "topic": "Low Entry Barrier & Shariah-Compliant Gold Investment"
-        },
-        {
-          "startTime": 74,
-          "endTime": 94,
-          "topic": "Purity Standards & Flexibility to Convert to Physical Gold"
-        }
-      ]
-    },
-    {
-      "title": "[S01:E18] Sampai bila nak menyimpan? bila waktu kena melabur",
-      "url": "https://www.youtube.com/watch?v=8HDmE8GJHok",
-      "videoId": "8HDmE8GJHok",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This engaging panel discussion features financial experts breaking down smart wealth-building strategies specifically tailored for young adults and beginners. By dispelling the myth of quick riches, the speakers highlight the critical differences between smart investing and gambling, while explaining how to leverage tools like ASB financing and ETFs safely. The core takeaway is to prioritize financial literacy, avoid peer-pressure-driven investment traps, and protect your credit score from modern pitfalls like Buy Now Pay Later.",
-      "dateAdded": "2026-07-25T03:45:41.225Z",
-      "timestamps": [
-        {
-          "startTime": 689,
-          "endTime": 782,
-          "topic": "The danger of blindly following peer investment trends"
-        },
-        {
-          "startTime": 1200,
-          "endTime": 1324,
-          "topic": "How ASB Financing works as a leverage tool"
-        },
-        {
-          "startTime": 1735,
-          "endTime": 1832,
-          "topic": "The hidden dangers of Buy Now Pay Later (BNPL) on your credit score"
-        }
-      ]
-    },
-    {
-      "title": "The Fastest &quot;Yes&quot; in Islamic History | Khutbah by Sh. Ibrahim Hindy",
-      "url": "https://www.youtube.com/watch?v=pR-AfRwiLlM",
-      "videoId": "pR-AfRwiLlM",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This inspiring sermon explores the profound legacy of Abu Bakr Al-Siddiq (ra), the closest companion of the Prophet Muhammad (pbuh), detailing his unwavering faith, early rejection of idol worship, and immense sacrifices for Islam. Viewers will gain deep insights into his exemplary character, from using his vast wealth to free oppressed slaves to his unmatched humility even after becoming the Caliph. The core takeaway is the power of sincere, selfless devotion to God, showing how true faith transforms one's actions, character, and relationship with others.",
-      "dateAdded": "2026-07-25T03:45:41.225Z",
-      "timestamps": [
-        {
-          "startTime": 253,
-          "endTime": 330,
-          "topic": "Abu Bakr's early rejection of idol worship during childhood"
-        },
-        {
-          "startTime": 425,
-          "endTime": 515,
-          "topic": "Using wealth selflessly to free the weak and oppressed slaves"
-        },
-        {
-          "startTime": 696,
-          "endTime": 772,
-          "topic": "The competition in charity between Omar (ra) and Abu Bakr (ra)"
-        }
-      ]
-    },
-    {
-      "title": "Majikan cari apa pada graduan?",
-      "url": "https://www.youtube.com/shorts/P6DCBYasHgI",
-      "videoId": "P6DCBYasHgI",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Standing out in a crowded job market requires more than just a degree; it takes proactive, real-world initiative. This video reveals how graduates can secure employment by building a compelling digital portfolio and leveraging internships as long-form interviews to showcase their skills. It offers practical advice on how to differentiate yourself from thousands of other graduates by demonstrating value beyond the classroom.",
-      "dateAdded": "2026-07-24T03:51:36.965Z",
-      "timestamps": [
-        {
-          "startTime": 19,
-          "endTime": 127,
-          "topic": "How showing initiative and leveraging internships can secure your next job"
-        },
-        {
-          "startTime": 128,
-          "endTime": 146,
-          "topic": "Why building a digital portfolio is crucial to standing out as a graduate"
-        }
-      ]
-    },
-    {
-      "title": "How are large language models trained?",
-      "url": "https://www.youtube.com/watch?v=JRArFxEfyQU",
-      "videoId": "JRArFxEfyQU",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Demystify the complex world of artificial intelligence with this engaging guide on how large language models (LLMs) are trained. From raw data ingestion during pre-training to behavioral alignment in post-training, this video breaks down the technical engineering and evaluation processes that turn next-token predictors into helpful, safe assistants. It's an essential watch for anyone looking to understand the mechanics behind modern AI tools without getting lost in dense academic jargon.",
-      "dateAdded": "2026-07-23T03:52:07.482Z",
-      "timestamps": [
-        {
-          "startTime": 34,
-          "endTime": 145,
-          "topic": "The mechanics and scaling challenges of LLM pre-training"
-        },
-        {
-          "startTime": 170,
-          "endTime": 358,
-          "topic": "Comparing Supervised Fine-Tuning (SFT) and Reinforcement Learning (RL)"
-        },
-        {
-          "startTime": 385,
-          "endTime": 553,
-          "topic": "How to measure LLM success and use an 'Autorater' for evaluation"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-29T03:51:29.974Z"
+  "lastUpdated": "2026-07-30T03:43:09.406Z"
 }
