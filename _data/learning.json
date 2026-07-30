@@ -1,63 +1,49 @@
 {
   "learnings": [
     {
-      "question": "Which PCIe power management state is designed for the longest periods of inactivity, offering the highest power savings but requiring the longest wake-up time?",
+      "question": "In Islamic theology, how does altering the actual occurrence of life events (Qada') through supplication (Dua) interact with divine preordination (Qadr)?",
       "options": [
-        "L1.2",
-        "L1.1",
-        "L2",
-        "L0s"
+        "Altering life events occurs entirely outside of divine knowledge and permission.",
+        "The supplication and the resulting change were already fully known and encompassed within the preordained plan.",
+        "Making a supplication permanently erases and rewrites the preordained plan.",
+        "Supplications can alter physical actions, but cannot change the unfolding of preordained events."
       ],
-      "correctIndex": 2,
-      "learning": "The L2 PCIe power management state is used for the longest periods of inactivity, where the device is almost completely powered down to maximize energy savings at the cost of having the longest wake-up delay.",
+      "correctIndex": 1,
+      "learning": "While human supplications and actions can alter Qada' (the actual occurrence of events in life), this change does not disrupt Qadr (God's complete plan), as both the decision to make a supplication and the altered outcome were already known and preordained.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In PCI Express (PCIe) power management, what is the primary trade-off associated with transitioning a device into deeper power-saving states?",
+      "options": [
+        "Greater energy savings at the expense of longer wake-up delays",
+        "Lower energy consumption with zero wake-up latency",
+        "A permanent reduction in link bandwidth after waking up",
+        "Increased data transmission speeds upon returning to active state"
+      ],
+      "correctIndex": 0,
+      "learning": "PCIe power management balances energy conservation and system responsiveness through a spectrum of power states where deeper power savings directly correlate with longer wake-up times to resume active operation.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "What is the approximate ratio of distinct Arabic words compared to English words listed in the Oxford English Dictionary?",
+      "question": "Compared to the approximately 170,000 words in the Oxford English Dictionary, what is the estimated ratio of distinct Arabic words to English words?",
       "options": [
-        "40:1",
-        "15:1",
-        "120:1",
-        "71:1"
+        "35:1",
+        "71:1",
+        "150:1",
+        "12:1"
       ],
-      "correctIndex": 3,
-      "learning": "There are approximately 12 million distinct Arabic words compared to 170,000 English words in the Oxford English Dictionary, yielding a ratio of roughly 71 to 1.",
+      "correctIndex": 1,
+      "learning": "There are approximately 12 million distinct Arabic words compared to 170,000 English words in the Oxford English Dictionary, creating a ratio of roughly 71 to 1.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In Islamic belief, what three primary roles define the core purpose of human existence?",
-      "options": [
-        "Living in monastic isolation, seeking physical immortality, and rejecting social duty",
-        "Accumulating material wealth, achieving social fame, and conquering foreign territories",
-        "Establishing political dominion, studying natural sciences, and avoiding community engagement",
-        "Worshiping Allah, serving as stewards (khalifah) of the Earth, and preparing for the eternal Hereafter"
-      ],
-      "correctIndex": 3,
-      "learning": "In Islamic belief, human existence centers on three primary divine purposes: worshiping Allah, acting as caretakers or stewards (khalifah) of the Earth, and navigating life as a test of faith and conduct to prepare for the eternal Hereafter.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which traditional organizational role is omitted from the three defined core roles of the Scrum framework?",
-      "options": [
-        "Scrum Master",
-        "Developer",
-        "Product Owner",
-        "Project Manager"
-      ],
-      "correctIndex": 3,
-      "learning": "Unlike traditional software project frameworks, Scrum does not include a Project Manager role; project responsibilities are instead divided strictly among the Product Owner, Scrum Master, and Developers.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "In 1880s memory research by Hermann Ebbinghaus, approximately what percentage of newly learned information is forgotten within 24 hours without active recall?",
+      "question": "In the 1880s, researcher Hermann Ebbinghaus demonstrated that without active recall, people forget approximately what percentage of newly learned information within 24 hours?",
       "options": [
         "20%",
         "50%",
@@ -65,11 +51,25 @@
         "95%"
       ],
       "correctIndex": 2,
-      "learning": "In the 1880s, Hermann Ebbinghaus demonstrated that individuals forget about 80% of what they learn within 24 hours unless they actively force themselves to recall the information.",
+      "learning": "In the 1880s, Hermann Ebbinghaus proved that people forget approximately 80% of what they learn within 24 hours unless they actively force themselves to recall it.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
+    },
+    {
+      "question": "In the Scrum framework, what does the Sprint Backlog specifically represent?",
+      "options": [
+        "A visual representation of the project's overall timeline",
+        "The team’s commitment for the Sprint duration",
+        "A complete list of all work finished in previous Sprints",
+        "A list of all possible features for the product"
+      ],
+      "correctIndex": 1,
+      "learning": "In Scrum methodology, the Sprint Backlog is more than just a task list; it explicitly represents the development team's commitment for the duration of the Sprint.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
     }
   ],
-  "fetchedAt": "2026-07-29T03:48:18.045Z"
+  "fetchedAt": "2026-07-30T03:40:01.728Z"
 }
