@@ -1,6 +1,136 @@
 {
   "videos": [
     {
+      "title": "Android Studio Quail 2, the Build with Gemini XPRIZE, and more! - Google Developer News July 2026",
+      "url": "https://www.youtube.com/watch?v=BXzFk5kK5_Q",
+      "videoId": "BXzFk5kK5_Q",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This edition of Google Developer News highlights key updates including the stable release of Android Studio Quail 2, benchmark improvements in Android Bench, and the launch of the $2M Build with Gemini XPRIZE competition. It's essential viewing for developers eager to streamline their AI-driven app development and compete for major cash prizes.",
+      "dateAdded": "2026-07-31T03:58:46.874Z",
+      "timestamps": [
+        {
+          "startTime": 31,
+          "endTime": 116,
+          "topic": "New Features in Android Studio Quail 2"
+        },
+        {
+          "startTime": 116,
+          "endTime": 176,
+          "topic": "Android Bench Model Evaluation Updates"
+        },
+        {
+          "startTime": 234,
+          "endTime": 297,
+          "topic": "Build with Gemini XPRIZE Hackathon Details"
+        }
+      ]
+    },
+    {
+      "title": "Building the ultimate morning dashboard with Gemini 3.6 Flash and Nano Banana",
+      "url": "https://www.youtube.com/shorts/cBBWorSU0P4",
+      "videoId": "cBBWorSU0P4",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Discover how a creative technologist built Glanceboard, an innovative e-ink digital calendar powered by Gemini that converts daily family schedules into custom-illustrated visual guides for kids. Learn how this open-source project combines Google Calendar events, weather forecasts, and AI image generation to foster independence in children and streamline morning routines.",
+      "dateAdded": "2026-07-31T03:58:46.874Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 16,
+          "topic": "Overview of the AI-powered illustrated e-ink calendar for kids"
+        },
+        {
+          "startTime": 17,
+          "endTime": 35,
+          "topic": "How the Gemini pipeline generates custom visual schedule prompts"
+        },
+        {
+          "startTime": 48,
+          "endTime": 67,
+          "topic": "Email scanning feature and building open-source tools with AI"
+        }
+      ]
+    },
+    {
+      "title": "Does this install succeed? If it does, which three versions end up in your lockfile?",
+      "url": "https://www.youtube.com/shorts/UUozyqDNRGg",
+      "videoId": "UUozyqDNRGg",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This engaging developer challenge tests your software engineering logic by walking through a classic dependency resolution puzzle with competing package constraints. Watch to test your problem-solving skills and learn the theoretical computer science class behind package version solvers.",
+      "dateAdded": "2026-07-31T03:58:46.874Z",
+      "timestamps": [
+        {
+          "startTime": 8,
+          "endTime": 36,
+          "topic": "App requirements and package registry rules"
+        },
+        {
+          "startTime": 37,
+          "endTime": 57,
+          "topic": "Dependency resolution rules and the challenge question"
+        }
+      ]
+    },
+    {
+      "title": "The high cost of cheap intelligence | David Ajibade | TEDxFUHSO",
+      "url": "https://www.youtube.com/watch?v=aA31v5O4X2Q",
+      "videoId": "aA31v5O4X2Q",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This thought-provoking TEDx talk explores how relying on cheap artificial intelligence can unknowingly erode human critical thinking, confidence, and genuine expertise. Speaker David Ajibade breaks down the 'Expensive Human' framework, explaining why human taste, judgment, and accountability are essential traits that AI can never replace.",
+      "dateAdded": "2026-07-31T03:58:46.874Z",
+      "timestamps": [
+        {
+          "startTime": 74,
+          "endTime": 160,
+          "topic": "The Three Superpowers of Artificial Intelligence"
+        },
+        {
+          "startTime": 215,
+          "endTime": 310,
+          "topic": "Why External Intelligence Weakens Human Confidence"
+        },
+        {
+          "startTime": 361,
+          "endTime": 528,
+          "topic": "The Critical Difference Between Intelligence, Wisdom, and Confidence"
+        },
+        {
+          "startTime": 361,
+          "endTime": 528,
+          "topic": "The 'Expensive Human' Framework: Taste, Judgement, and Accountability"
+        }
+      ]
+    },
+    {
+      "title": "From Fracking to AI: How to Share the Next Boom | Daniel Ketyer | TEDxDuke",
+      "url": "https://www.youtube.com/watch?v=cNK0B8NvBDA",
+      "videoId": "cNK0B8NvBDA",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "In this compelling TEDx talk, energy investor Daniel Ketyer draws lessons from the Appalachian fracking boom to navigate the massive economic and infrastructure surge driven by AI data centers. He outlines how high capital investment often fails to create local wealth and proposes actionable solutions—such as streamlined clean energy permitting and community equity models—to ensure local communities share in AI's prosperity.",
+      "dateAdded": "2026-07-31T03:58:46.874Z",
+      "timestamps": [
+        {
+          "startTime": 100,
+          "endTime": 178,
+          "topic": "The Hidden Costs of Technological Booms"
+        },
+        {
+          "startTime": 201,
+          "endTime": 299,
+          "topic": "Comparing Fracking to the AI Data Center Expansion"
+        },
+        {
+          "startTime": 345,
+          "endTime": 445,
+          "topic": "Two Solutions for Equity in the AI Era"
+        }
+      ]
+    },
+    {
       "title": "Build for the Memo, Not the Demo — Shawn Chan, China Resources Holdings",
       "url": "https://www.youtube.com/watch?v=tJFjeMBKbIY",
       "videoId": "tJFjeMBKbIY",
@@ -254,132 +384,7 @@
           "topic": "Legal deep dive into MA63, the Petroleum Development Act, and federalism"
         }
       ]
-    },
-    {
-      "title": "How you can learn in a world of information overload | Tania Lombrozo | TEDxNewEngland",
-      "url": "https://www.youtube.com/watch?v=cbiyPOn-__M",
-      "videoId": "cbiyPOn-__M",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "In an era of relentless information overload, constantly looking outside ourselves for answers often hinders deep understanding rather than helping it. Cognitive scientist Tania Lombrozo introduces 'learning by thinking' through self-explanation—demonstrating how talking through concepts activates hidden knowledge and reveals precise learning gaps, making us far more effective and discerning learners.",
-      "dateAdded": "2026-07-28T03:44:02.155Z",
-      "timestamps": [
-        {
-          "startTime": 12,
-          "endTime": 65,
-          "topic": "Rubber Ducking and the Concept of Learning by Thinking"
-        },
-        {
-          "startTime": 483,
-          "endTime": 530,
-          "topic": "The Self-Explanation Effect in Learning"
-        },
-        {
-          "startTime": 700,
-          "endTime": 770,
-          "topic": "Uncovering Gaps with the Illusion of Explanatory Depth"
-        }
-      ]
-    },
-    {
-      "title": "What calligraphy has taught me about life  | Razwan Ul-Haq | TEDxHeaton",
-      "url": "https://www.youtube.com/watch?v=4KZp25ONpbo",
-      "videoId": "4KZp25ONpbo",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "In this reflective TEDx talk, calligrapher Razwan Ul-Haq shares powerful life lessons distilled from the ancient art of calligraphy, showing how design, deep observation, and embracing personal imperfections shape our perception of the world. He connects artistic discipline with real-world perseverance, illustrating how moving through life's inevitable hardships ultimately reveals underlying harmony and purpose.",
-      "dateAdded": "2026-07-28T03:44:02.155Z",
-      "timestamps": [
-        {
-          "startTime": 84,
-          "endTime": 215,
-          "topic": "How Aesthetics and Typography Shape Mindset"
-        },
-        {
-          "startTime": 216,
-          "endTime": 364,
-          "topic": "Modelling the Master and Learning Deep Observation"
-        },
-        {
-          "startTime": 535,
-          "endTime": 560,
-          "topic": "Finding Ease Through Hardship in Life and Art"
-        }
-      ]
-    },
-    {
-      "title": "Engineers “cash in” on AI time savings",
-      "url": "https://www.youtube.com/shorts/qsuR0g4Gy_s",
-      "videoId": "qsuR0g4Gy_s",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This candid discussion exposes the reality behind AI productivity hype in software engineering. Rather than dramatically improving software quality, AI tools often lead average developers to finish their work faster without pushing for quality, overwhelming top engineers with low-effort code and causing burnout.",
-      "dateAdded": "2026-07-28T03:44:02.155Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 30,
-          "topic": "Why AI productivity hype doesn't equal better software"
-        },
-        {
-          "startTime": 30,
-          "endTime": 58,
-          "topic": "How AI-generated code slop burns out top engineers"
-        }
-      ]
-    },
-    {
-      "title": "From &quot;napkin math&quot; to turbopuffer",
-      "url": "https://www.youtube.com/watch?v=h8TBLKyo7Rs",
-      "videoId": "h8TBLKyo7Rs",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "In this fascinating conversation, Turbopuffer founder Simon Eskildsen shares his journey from a self-taught teenager to scaling Shopify's infrastructure and building a low-cost, high-performance vector database. Watch to learn how Turbopuffer slashed AI coding assistant Cursor's database bill by 95%, hear a hilarious story about meeting Nvidia CEO Jensen Huang, and gain a refreshing perspective on venture capital and engineering craft. It is a must-watch for developers and founders who value first-principles thinking and software simplicity over tech industry hype.",
-      "dateAdded": "2026-07-28T03:44:02.155Z",
-      "timestamps": [
-        {
-          "startTime": 1680,
-          "endTime": 2010,
-          "topic": "How Cursor became Turbopuffer's first customer and slashed its database bill by 95%"
-        },
-        {
-          "startTime": 2090,
-          "endTime": 2280,
-          "topic": "Simon's hilarious encounter with Nvidia CEO Jensen Huang and his obsession with CPUs"
-        },
-        {
-          "startTime": 2920,
-          "endTime": 3055,
-          "topic": "A founder's honest breakdown of the 6 reasons to raise venture capital"
-        }
-      ]
-    },
-    {
-      "title": "Why You’re Not Financially Free (Yet)",
-      "url": "https://www.youtube.com/watch?v=EIk395a-tds",
-      "videoId": "EIk395a-tds",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "Are you holding yourself back from starting a business because you think you lack the 'right' skills? This video completely dismantles that fear by showing how even the most complex expertise—from digital marketing to cardiovascular surgery—is actually learned on the fly through free online resources. By adopting the 'Teddy Roosevelt Method' of saying yes first and figuring out how later, you'll unlock a powerful mindset shift that turns any barrier to wealth into a simple, solvable skill issue.",
-      "dateAdded": "2026-07-25T03:45:41.225Z",
-      "timestamps": [
-        {
-          "startTime": 123,
-          "endTime": 153,
-          "topic": "The 'Teddy Roosevelt Method' of saying yes and figuring it out later"
-        },
-        {
-          "startTime": 315,
-          "endTime": 414,
-          "topic": "How anyone can learn a high-income skill like Instagram Ads in a weekend"
-        },
-        {
-          "startTime": 494,
-          "endTime": 608,
-          "topic": "The ultimate proof: How doctors and surgeons use YouTube to master their craft"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-30T03:43:09.406Z"
+  "lastUpdated": "2026-07-31T03:59:56.916Z"
 }
