@@ -51,40 +51,53 @@ async function fetchUnsplash() {
   };
 
   try {
-    // Two cheap requests (single-object responses, not paginated photo lists) to check whether
-    // anything has actually changed since the last run, before doing the expensive full fetch.
-    // This site's photo count changes rarely (uploads are occasional, not constant), and this
-    // script runs on a fixed twice-daily schedule regardless — most runs would otherwise re-fetch
-    // identical data for no reason, burning Unsplash's free-tier rate limit (50 req/hr) on
-    // nothing. `total_photos` is Unsplash's own documented field on both the user and collection
-    // objects, updated whenever a photo is added or removed.
+    // Three cheap requests to check whether anything has actually changed since the last run,
+    // before doing the expensive full paginated fetch. This site's photo count changes rarely
+    // (uploads are occasional, not constant), and this script runs on a fixed twice-daily
+    // schedule regardless — most runs would otherwise re-fetch identical data for no reason,
+    // burning Unsplash's free-tier rate limit (50 req/hr) on nothing.
+    //
+    // total_photos alone isn't enough: it catches pure additions/deletions, but misses a
+    // delete-one-then-upload-one edit, since the net count stays identical even though the
+    // actual photo set changed. Also checking the single most recent photo's `id` (a 1-item
+    // `order_by=latest` fetch, still cheap — not the full pagination) catches that case too: a
+    // freshly reuploaded photo becomes a *different* "latest" photo even when total_photos is
+    // unchanged. Together: count changing catches add/remove, latest-id changing catches
+    // same-count replacement. (A metadata-only edit to an older, non-latest photo — no add/
+    // remove, no new upload — is the one thing neither cheap check can catch without fetching
+    // everything, which would defeat the point of checking cheaply at all; not addressed here.)
     console.log('Checking for changes...');
-    const [userRes, collectionRes] = await Promise.all([
+    const [userRes, collectionRes, latestPhotoRes] = await Promise.all([
       fetch(`https://api.unsplash.com/users/${USERNAME}`, { headers }),
-      fetch(`https://api.unsplash.com/collections/${FAVOURITES_COLLECTION_ID}`, { headers })
+      fetch(`https://api.unsplash.com/collections/${FAVOURITES_COLLECTION_ID}`, { headers }),
+      fetch(`https://api.unsplash.com/users/${USERNAME}/photos?order_by=latest&per_page=1`, { headers })
     ]);
     const userData = await userRes.json();
     const collectionData = await collectionRes.json();
+    const latestPhotoData = await latestPhotoRes.json();
 
     const currentUserTotal = userData && typeof userData.total_photos === 'number' ? userData.total_photos : null;
     const currentCollectionTotal = collectionData && typeof collectionData.total_photos === 'number' ? collectionData.total_photos : null;
+    const currentLatestPhotoId = Array.isArray(latestPhotoData) && latestPhotoData[0] ? latestPhotoData[0].id : null;
 
     const previous = readPreviousMeta();
     const unchanged =
       previous &&
       currentUserTotal !== null &&
       currentCollectionTotal !== null &&
+      currentLatestPhotoId !== null &&
       previous.userTotalPhotos === currentUserTotal &&
-      previous.favouritesTotalPhotos === currentCollectionTotal;
+      previous.favouritesTotalPhotos === currentCollectionTotal &&
+      previous.latestPhotoId === currentLatestPhotoId;
 
     if (unchanged) {
-      console.log(`No changes (still ${currentUserTotal} profile photos, ${currentCollectionTotal} in Favourites) — skipping full fetch.`);
+      console.log(`No changes (still ${currentUserTotal} profile photos, ${currentCollectionTotal} in Favourites, latest photo unchanged) — skipping full fetch.`);
       return;
     }
 
     console.log(
       previous
-        ? `Change detected (profile ${previous.userTotalPhotos} -> ${currentUserTotal}, favourites ${previous.favouritesTotalPhotos} -> ${currentCollectionTotal}). Fetching...`
+        ? `Change detected (profile ${previous.userTotalPhotos} -> ${currentUserTotal}, favourites ${previous.favouritesTotalPhotos} -> ${currentCollectionTotal}, latest photo ${previous.latestPhotoId} -> ${currentLatestPhotoId}). Fetching...`
         : 'No previous run found. Fetching...'
     );
 
@@ -104,6 +117,7 @@ async function fetchUnsplash() {
         {
           userTotalPhotos: currentUserTotal,
           favouritesTotalPhotos: currentCollectionTotal,
+          latestPhotoId: currentLatestPhotoId,
           lastFetched: new Date().toISOString()
         },
         null,
