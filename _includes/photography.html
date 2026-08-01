@@ -16,7 +16,7 @@
 
     {% if has_photos %}
     <div class="infinite-image-field-frame">
-      <canvas id="photography-canvas" role="img" aria-label="A continuously panning bento grid of my photography, drifting in response to cursor movement — click any photo to view it on Unsplash"></canvas>
+      <canvas id="photography-canvas" role="img" aria-label="A draggable bento grid of my photography — drag or swipe to pan around, click any photo to view it on Unsplash"></canvas>
     </div>
     {% else %}
     <div class="blankslate">
@@ -58,13 +58,9 @@
 
     var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    // Radius matches DESIGN.md's border-radius scale (8px for images/cards). maxSpeed/smoothing
-    // control how far the camera drifts toward the cursor and how quickly it eases there —
-    // unchanged from the reference, already a gentle, non-jarring feel.
+    // Radius matches DESIGN.md's border-radius scale (8px for images/cards).
     var UNIT = 140;
     var GAP = 20;
-    var MAX_SPEED = 5;
-    var SMOOTHING = 0.07;
     var RADIUS = 8;
 
     // Mixed bento layout: a repeating 4x4-unit block containing 8 fixed regions of 3 different
@@ -104,12 +100,30 @@
       return img;
     });
 
+    // Google-Maps-style interaction: the camera only ever moves in direct response to a drag
+    // (mouse or touch), never on its own from ambient hover — plus a brief momentum "glide" that
+    // decelerates after release, matching how Maps itself feels. No zoom (explicitly out of
+    // scope). This replaced an earlier cursor-position-relative-to-center ambient drift system
+    // entirely — that system doesn't map onto this interaction model at all, not just needed a
+    // tweak, so it's gone rather than coexisting with drag.
     var dims = { w: 0, h: 0 };
     var cam = { x: 0, y: 0 };
-    var vel = { x: 0, y: 0 };
-    var mouse = { x: 0.5, y: 0.5 };
-    var isInside = false;
+    var dragging = false;
+    var lastPointer = { x: 0, y: 0 };
+    // Smoothed camera velocity, updated continuously while dragging (exponential moving average
+    // of each move's delta, so a brief pause or single jittery sample right before release
+    // doesn't produce a wild momentum flick) and left in place as the starting speed for the
+    // post-release glide.
+    var dragVel = { x: 0, y: 0 };
+    var dragDistance = 0; // total movement this gesture — see the click handler for why
+    var momentumActive = false;
+    var loopRunning = false;
     var rafId = 0;
+
+    var FRICTION = 0.92; // per-frame velocity decay during the momentum glide
+    var MIN_VELOCITY = 0.03; // below this the glide is imperceptible — stop animating
+    var DRAG_VEL_SMOOTHING = 0.35;
+    var CLICK_DRAG_THRESHOLD = 8; // px of total movement — below this, treat as a tap/click, not a drag
 
     function drawRoundedRect(x, y, w, h, r) {
       var rr = Math.min(r, w / 2, h / 2);
@@ -145,7 +159,7 @@
     }
 
     // Every visible tile's screen rect + which photo it shows, for the current camera position.
-    // Shared by draw() and the click handler so hit-testing always matches exactly what's on
+    // Shared by render() and the click handler so hit-testing always matches exactly what's on
     // screen — no separately-maintained geometry that could drift out of sync with the drawing.
     function getVisibleTiles() {
       var W = dims.w;
@@ -184,24 +198,12 @@
       return tiles;
     }
 
-    function draw() {
-      if (dims.w === 0 || dims.h === 0) {
-        if (!reduceMotion) rafId = requestAnimationFrame(draw);
-        return;
-      }
-
-      // Reduced-motion: camera never moves (target offset stays 0, velocity smoothing settles
-      // at 0), so this becomes a single static tiled grid — draw() is still called once on load
-      // and again whenever an image finishes loading, but there's no continuous RAF loop and no
-      // cursor-driven drift.
-      var tx = (!reduceMotion && isInside) ? (mouse.x - 0.5) * 2 * MAX_SPEED : 0;
-      var ty = (!reduceMotion && isInside) ? (mouse.y - 0.5) * 2 * MAX_SPEED : 0;
-
-      vel.x += (tx - vel.x) * SMOOTHING;
-      vel.y += (ty - vel.y) * SMOOTHING;
-      cam.x += vel.x;
-      cam.y += vel.y;
-
+    // Pure drawing — reads cam/dims, never mutates camera state itself. Called directly
+    // (event-driven) on every drag move, and once per frame from loop() while momentum is
+    // decaying. No ambient/continuous redraw loop otherwise — nothing to redraw if nothing's
+    // moving, unlike the old hover-drift version which redrew unconditionally forever.
+    function render() {
+      if (dims.w === 0 || dims.h === 0) return;
       ctx.clearRect(0, 0, dims.w, dims.h);
 
       var tiles = getVisibleTiles();
@@ -226,8 +228,34 @@
         ctx.stroke();
         ctx.restore();
       });
+    }
 
-      if (!reduceMotion) rafId = requestAnimationFrame(draw);
+    // Momentum glide only — decays dragVel by FRICTION each frame and keeps re-scheduling itself
+    // while there's still enough speed to be visible, then stops (loopRunning = false) rather
+    // than running forever. Never active outside a momentum glide: dragging itself calls
+    // render() directly per move event, no RAF loop needed just to track a pointer.
+    function loop() {
+      cam.x += dragVel.x;
+      cam.y += dragVel.y;
+      dragVel.x *= FRICTION;
+      dragVel.y *= FRICTION;
+      if (Math.abs(dragVel.x) < MIN_VELOCITY && Math.abs(dragVel.y) < MIN_VELOCITY) {
+        dragVel.x = 0;
+        dragVel.y = 0;
+        momentumActive = false;
+      }
+      render();
+      if (momentumActive) {
+        rafId = requestAnimationFrame(loop);
+      } else {
+        loopRunning = false;
+      }
+    }
+
+    function ensureLoopRunning() {
+      if (loopRunning) return;
+      loopRunning = true;
+      rafId = requestAnimationFrame(loop);
     }
 
     function resize() {
@@ -237,7 +265,7 @@
       canvas.width = rect.width * dpr;
       canvas.height = rect.height * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      draw(); // immediate redraw — the only redraw reduced-motion users get outside image loads
+      render(); // immediate redraw — nothing else triggers a first paint otherwise
     }
 
     resize();
@@ -247,7 +275,12 @@
 
     // Click-through to the real Unsplash page for whichever photo was clicked — reuses
     // getVisibleTiles() so the hit-test rect is always identical to what's actually drawn there.
+    // Suppressed if this gesture actually dragged (dragDistance exceeds the threshold): without
+    // this, releasing a drag over a tile would *also* fire a click and unexpectedly pop open an
+    // Unsplash tab, since browsers fire click after any mouseup/touchend on the same element
+    // regardless of how much the pointer moved in between.
     canvas.addEventListener('click', function (e) {
+      if (dragDistance > CLICK_DRAG_THRESHOLD) return;
       var rect = canvas.getBoundingClientRect();
       var clickX = e.clientX - rect.left;
       var clickY = e.clientY - rect.top;
@@ -262,27 +295,97 @@
       }
     });
 
-    if (!reduceMotion) {
-      canvas.addEventListener('mousemove', function (e) {
-        var rect = canvas.getBoundingClientRect();
-        mouse.x = (e.clientX - rect.left) / rect.width;
-        mouse.y = (e.clientY - rect.top) / rect.height;
-      });
-      canvas.addEventListener('mouseenter', function () {
-        isInside = true;
-      });
-      canvas.addEventListener('mouseleave', function () {
-        isInside = false;
-      });
-
-      rafId = requestAnimationFrame(draw);
+    // Google-Maps-style drag-to-pan, shared logic for mouse and touch — both wired up as
+    // first-class inputs (not one emulating the other), since a desktop user with a mouse should
+    // be able to drag too, not just touch users. The camera tracks the pointer 1:1 while
+    // dragging, then glides briefly with decaying momentum on release (loop()/ensureLoopRunning()
+    // above). Registered unconditionally, including under prefers-reduced-motion, for the initial
+    // drag-follow itself — a direct, user-initiated drag isn't the ambient/automatic motion that
+    // preference exists to suppress (same reasoning the click handler above already follows) —
+    // but the momentum *glide* specifically is skipped under reduced motion (see endDrag()),
+    // since continuing to move after the user's input has already stopped is exactly the kind of
+    // automatic motion that preference does ask to avoid.
+    function startDrag(x, y) {
+      dragging = true;
+      momentumActive = false; // grabbing mid-glide interrupts it, doesn't fight it
+      dragVel.x = 0;
+      dragVel.y = 0;
+      dragDistance = 0;
+      lastPointer.x = x;
+      lastPointer.y = y;
+      canvas.style.cursor = 'grabbing';
     }
 
-    // Under reduced motion there's no running RAF loop to naturally pick up an image finishing
-    // its load (placeholder -> real photo) — redraw once per image as it arrives instead.
+    function moveDrag(x, y) {
+      if (!dragging) return;
+      var dx = x - lastPointer.x;
+      var dy = y - lastPointer.y;
+      dragDistance += Math.abs(dx) + Math.abs(dy);
+      // cam moves opposite the raw delta so content follows the pointer, not away from it —
+      // same sign convention as getVisibleTiles()' `x = ... - cam.x + ...`: decreasing cam.x
+      // shifts tiles rightward on screen, matching a rightward drag.
+      cam.x -= dx;
+      cam.y -= dy;
+      // Smoothed toward the latest delta rather than snapping straight to it, so momentum on
+      // release reflects the recent overall motion, not just whatever the very last pixel-level
+      // sample happened to be.
+      dragVel.x += (-dx - dragVel.x) * DRAG_VEL_SMOOTHING;
+      dragVel.y += (-dy - dragVel.y) * DRAG_VEL_SMOOTHING;
+      lastPointer.x = x;
+      lastPointer.y = y;
+      render();
+    }
+
+    function endDrag() {
+      if (!dragging) return;
+      dragging = false;
+      canvas.style.cursor = 'grab';
+      if (!reduceMotion && (Math.abs(dragVel.x) > MIN_VELOCITY || Math.abs(dragVel.y) > MIN_VELOCITY)) {
+        momentumActive = true;
+        ensureLoopRunning();
+      } else {
+        dragVel.x = 0;
+        dragVel.y = 0;
+      }
+    }
+
+    canvas.addEventListener('mousedown', function (e) {
+      startDrag(e.clientX, e.clientY);
+    });
+    // mousemove/mouseup listen on window, not canvas — a fast drag can carry the pointer outside
+    // the canvas bounds mid-gesture, and a canvas-scoped listener would stop firing right when
+    // that happens, making the drag feel like it "lets go" at the edge. moveDrag()/endDrag() are
+    // no-ops when not already dragging, so this is harmless the rest of the time.
+    window.addEventListener('mousemove', function (e) {
+      moveDrag(e.clientX, e.clientY);
+    });
+    window.addEventListener('mouseup', endDrag);
+
+    canvas.addEventListener(
+      'touchstart',
+      function (e) {
+        if (e.touches.length !== 1) return; // leaves 2+ fingers alone, doesn't guess at intent
+        startDrag(e.touches[0].clientX, e.touches[0].clientY);
+      },
+      { passive: true }
+    );
+    canvas.addEventListener(
+      'touchmove',
+      function (e) {
+        if (!dragging || e.touches.length !== 1) return;
+        moveDrag(e.touches[0].clientX, e.touches[0].clientY);
+        e.preventDefault(); // don't let the page scroll while panning the canvas
+      },
+      { passive: false }
+    );
+    canvas.addEventListener('touchend', endDrag);
+    canvas.addEventListener('touchcancel', endDrag);
+
+    // No ambient loop runs continuously anymore, so a late-loading image (placeholder -> real
+    // photo) needs its own explicit redraw to ever appear — nothing else would trigger one.
     loadedImages.forEach(function (img) {
       img.addEventListener('load', function () {
-        if (reduceMotion) draw();
+        render();
       });
     });
   });
@@ -308,6 +411,12 @@
     display: block;
     width: 100%;
     height: 100%;
-    cursor: pointer;
+    /* Grab hand by default, like Google Maps — JS switches to 'grabbing' during an active drag
+       and back to 'grab' on release (see startDrag()/endDrag()). */
+    cursor: grab;
+    /* Stops the browser's own touch handling (page scroll, pinch-zoom) from competing with the
+       JS drag-to-pan gesture inside the canvas — lets touchmove's preventDefault() work cleanly
+       instead of racing a passive-by-default native scroll. */
+    touch-action: none;
   }
 </style>
