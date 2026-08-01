@@ -1,6 +1,10 @@
-<script src="{{ '/assets/js/accordion.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/quote-typing.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/aurora-reveal.js' | relative_url }}" defer></script>
-<script src="{{ '/assets/js/accordion-grouping.js' | relative_url }}" defer></script>
+<!-- `?v=` cache-busts on every Jekyll build (site.time changes each build) — same fix and same
+     reasoning as styles.css in header.html: without it, a visitor's browser can keep serving a
+     stale cached copy of one of these indefinitely after a JS change ships, since the URL itself
+     never changes otherwise. -->
+<script src="{{ '/assets/js/accordion.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/assets/js/quote-typing.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/assets/js/aurora-reveal.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ '/assets/js/accordion-grouping.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </body>
 </html>
