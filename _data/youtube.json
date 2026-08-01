@@ -1,6 +1,131 @@
 {
   "videos": [
     {
+      "title": "How to pick what to work on",
+      "url": "https://www.youtube.com/shorts/4Gt7KquIAIc",
+      "videoId": "4Gt7KquIAIc",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Career",
+      "summary": "Turing Award winner Judea Pearl shares a powerful framework for deciding which problems are truly worth your time and effort. By pairing a deeply personal curiosity about unsolved puzzles with your unique set of tools, you can maximize your potential to create meaningful breakthroughs.",
+      "dateAdded": "2026-08-01T03:58:53.889Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 22,
+          "topic": "Evaluating whether a problem is a true puzzle"
+        },
+        {
+          "startTime": 22,
+          "endTime": 55,
+          "topic": "Matching your unique toolkit to the problem"
+        }
+      ]
+    },
+    {
+      "title": "Why You’re Not Financially Free (Yet)",
+      "url": "https://www.youtube.com/watch?v=EIk395a-tds",
+      "videoId": "EIk395a-tds",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "This video demystifies the path to financial freedom by showing that high-value skills like marketing, sales, and operations don't require formal degrees and can be self-taught in days using free online resources and AI. By adopting the 'Teddy Roosevelt Method' and shifting your mindset from 'I can't do this' to 'I haven't learned this yet,' you can systematically overcome any skill barrier holding back your success.",
+      "dateAdded": "2026-08-01T03:58:53.889Z",
+      "timestamps": [
+        {
+          "startTime": 123,
+          "endTime": 154,
+          "topic": "The Teddy Roosevelt Method: Saying yes before you know how"
+        },
+        {
+          "startTime": 495,
+          "endTime": 565,
+          "topic": "Why doctors and professionals learn more from YouTube than university"
+        },
+        {
+          "startTime": 608,
+          "endTime": 634,
+          "topic": "The 'Yet' Mindset: Reframing your skill limitations"
+        }
+      ]
+    },
+    {
+      "title": "Voice Agent observability with LangSmith",
+      "url": "https://www.youtube.com/watch?v=z6l5nyE_6-I",
+      "videoId": "z6l5nyE_6-I",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Discover how to build and optimize real-time speech-to-speech AI assistants by integrating Google's Gemini Live model with LangSmith tracing. This video offers a practical, step-by-step walkthrough for developers to gain full observability—tracking conversation audio, tool calls, user interruptions, and token costs—so you can safely deploy voice agents to production.",
+      "dateAdded": "2026-08-01T03:58:53.889Z",
+      "timestamps": [
+        {
+          "startTime": 13,
+          "endTime": 90,
+          "topic": "Overview of Gemini Live speech-to-speech and LangSmith observability"
+        },
+        {
+          "startTime": 187,
+          "endTime": 320,
+          "topic": "Configuring the LangSmith Google ADK plugin and audio capture in code"
+        },
+        {
+          "startTime": 364,
+          "endTime": 435,
+          "topic": "Analyzing real-time conversation traces, tool calls, and token usage in LangSmith"
+        }
+      ]
+    },
+    {
+      "title": "Berbaloi ke ASB Financing?",
+      "url": "https://www.youtube.com/shorts/H4q55uZlcdo",
+      "videoId": "H4q55uZlcdo",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "This video breaks down whether ASB Financing is truly worth it for beginners compared to simply saving money monthly into ASB. Financial expert Faiz Azmi explains how leveraging a bank-financed lump sum (like RM200,000) lets you maximize compound dividend growth right from day one, outperforming standard monthly savings.",
+      "dateAdded": "2026-08-01T03:58:53.889Z",
+      "timestamps": [
+        {
+          "startTime": 11,
+          "endTime": 26,
+          "topic": "Audience Question: Is ASB financing recommended for beginners?"
+        },
+        {
+          "startTime": 26,
+          "endTime": 44,
+          "topic": "Understanding ASB Loan vs. ASB Financing-i"
+        },
+        {
+          "startTime": 108,
+          "endTime": 154,
+          "topic": "Why upfront capital leveraging yields higher dividend returns"
+        }
+      ]
+    },
+    {
+      "title": "When Your Sin Reaches The Land and Sea | LATEST Khutbah by Sh. Ibrahim Hindy",
+      "url": "https://www.youtube.com/watch?v=mI74jF7oM1k",
+      "videoId": "mI74jF7oM1k",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "This insightful sermon explores the profound and often overlooked consequences that sins have on a person's heart, decisions, and overall life blessings. By drawing from Quranic verses and classical Islamic history, the speaker highlights how unrepented missteps lead to spiritual numbing and hardship while offering Istighfar (seeking forgiveness) as the ultimate remedy for inner renewal.",
+      "dateAdded": "2026-08-01T03:58:53.890Z",
+      "timestamps": [
+        {
+          "startTime": 260,
+          "endTime": 400,
+          "topic": "The Spiritual Effect of Sin on the Heart"
+        },
+        {
+          "startTime": 505,
+          "endTime": 615,
+          "topic": "How One Sin Cascades into More Sins"
+        },
+        {
+          "startTime": 1380,
+          "endTime": 1455,
+          "topic": "Istighfar as the Universal Remedy for Hardship"
+        }
+      ]
+    },
+    {
       "title": "Android Studio Quail 2, the Build with Gemini XPRIZE, and more! - Google Developer News July 2026",
       "url": "https://www.youtube.com/watch?v=BXzFk5kK5_Q",
       "videoId": "BXzFk5kK5_Q",
@@ -254,137 +379,7 @@
           "topic": "A Strategic Vision to Build Generational Wealth and Stop Gentrification"
         }
       ]
-    },
-    {
-      "title": "How Forward Deployed Engineering is done at Factory — Eno Reyes",
-      "url": "https://www.youtube.com/watch?v=wpOA-UXynoM",
-      "videoId": "wpOA-UXynoM",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "In this insightful presentation from the AI Engineer World's Fair, Factory co-founder and CTO Eno Reyes redefines the role of Forward Deployed Engineers in the age of AI. Instead of working as traditional software consultants, Reyes explains how deployed engineers install autonomous 'software factory' systems and prepare enterprise codebases to be 'agent-ready.' It's a must-watch for engineering leaders seeking to move beyond simple AI coding assistants toward fully autonomous engineering workflows.",
-      "dateAdded": "2026-07-29T03:48:03.123Z",
-      "timestamps": [
-        {
-          "startTime": 162,
-          "endTime": 300,
-          "topic": "Reframing Deployed Engineering: Software Factories vs. Services"
-        },
-        {
-          "startTime": 723,
-          "endTime": 835,
-          "topic": "Making Enterprise Codebases 'Agent-Ready'"
-        },
-        {
-          "startTime": 959,
-          "endTime": 1090,
-          "topic": "Why AI Models Compound Value While Services Scale Linearly"
-        }
-      ]
-    },
-    {
-      "title": "How Forward Deployed Engineering is done at Cognition — Jia Wu",
-      "url": "https://www.youtube.com/watch?v=RVxym6mmIns",
-      "videoId": "RVxym6mmIns",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Discover how Cognition transforms AI coding hype into real-world enterprise impact by leveraging Forward Deployed Engineers (FDEs) to deeply embed their AI software engineer, Devin, into complex software development lifecycles. Featuring real-world case studies from major banks and fintechs, this talk demonstrates how aligning AI capabilities directly with customer problems slashes development cycle times by over 80% and delivers massive productivity gains.",
-      "dateAdded": "2026-07-29T03:48:03.123Z",
-      "timestamps": [
-        {
-          "startTime": 161,
-          "endTime": 222,
-          "topic": "Maximizing Product-Market Fit with Forward Deployed Engineering"
-        },
-        {
-          "startTime": 626,
-          "endTime": 701,
-          "topic": "The Shift from Tokenmaxing to Measurable Enterprise Delivery"
-        },
-        {
-          "startTime": 855,
-          "endTime": 941,
-          "topic": "Enterprise Case Studies: Proving AI Impact at Scale"
-        }
-      ]
-    },
-    {
-      "title": "PM vs. Eng",
-      "url": "https://www.youtube.com/shorts/NIDrPjeZ-jQ",
-      "videoId": "NIDrPjeZ-jQ",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "This hilarious skit perfectly captures the eternal tension between ambitious Product Managers dreaming up futuristic features and the stressed-out Engineers tasked with building them. Watching the PM casually propose complex operating system updates while the engineer slowly unravels under technical debt makes for a relatable and entertaining look into tech development.",
-      "dateAdded": "2026-07-29T03:48:03.123Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 22,
-          "topic": "Dynamic Color & Physics Motion Features"
-        },
-        {
-          "startTime": 22,
-          "endTime": 42,
-          "topic": "Desktop Windowing & Private Space Features"
-        },
-        {
-          "startTime": 53,
-          "endTime": 65,
-          "topic": "AI Notification Summaries & The Engineer's Breaking Point"
-        }
-      ]
-    },
-    {
-      "title": "Expose your site's actions to AI agents using WebMCP",
-      "url": "https://www.youtube.com/shorts/eiRlCVtzlm4",
-      "videoId": "eiRlCVtzlm4",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Tired of AI agents misinterpreting web interfaces and clicking the wrong buttons? This video introduces WebMCP, a new web standard allowing websites to explicitly define and expose their capabilities directly to AI agents using simple schemas. Watch to learn how this shift from visual guessing to structured action makes web automation reliable and robust.",
-      "dateAdded": "2026-07-29T03:48:03.123Z",
-      "timestamps": [
-        {
-          "startTime": 18,
-          "endTime": 43,
-          "topic": "Registering Tools using WebMCP and JavaScript Schemas"
-        },
-        {
-          "startTime": 43,
-          "endTime": 58,
-          "topic": "How AI Agents Discover and Call WebMCP Actions Directly"
-        },
-        {
-          "startTime": 65,
-          "endTime": 89,
-          "topic": "Shifting to Schema-Based Web Automation with Chrome 149"
-        }
-      ]
-    },
-    {
-      "title": "EP207 | BN-PN Tidak Serasi?, Laporan RCI Tabung Haji, F1 Kembali Ke Sepang, Perjanjian MA63",
-      "url": "https://www.youtube.com/watch?v=FKGY4wDdrXc",
-      "videoId": "FKGY4wDdrXc",
-      "channel": "Keluar Sekejap",
-      "category": "Finance",
-      "summary": "In this episode of Keluar Sekejap, hosts Khairy Jamaluddin and Shahril Hamdan break down pressing political developments before diving into Malaysia's federalism and legal tensions over petroleum rights with constitutional law expert Encik Hafiz Hassan. The discussion offers an insightful look at the historical context of the Malaysia Agreement 1963 (MA63), the Petroleum Development Act 1974, and the delicate balance of power between Putrajaya and the Borneo states.",
-      "dateAdded": "2026-07-29T03:48:03.123Z",
-      "timestamps": [
-        {
-          "startTime": 460,
-          "endTime": 615,
-          "topic": "Analysis of Sanusi's remarks and non-Malay voter sentiment"
-        },
-        {
-          "startTime": 1240,
-          "endTime": 1350,
-          "topic": "Formula 1's unexpected return to Sepang Circuit"
-        },
-        {
-          "startTime": 1860,
-          "endTime": 2100,
-          "topic": "Legal deep dive into MA63, the Petroleum Development Act, and federalism"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-07-31T03:59:56.916Z"
+  "lastUpdated": "2026-08-01T04:00:13.142Z"
 }

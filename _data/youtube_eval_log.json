@@ -1,65 +1,212 @@
 [
   {
-    "videoId": "AMiyLItEtLA",
-    "title": "fighting slop with slop — Vaibhav Gupta, Boundary",
+    "videoId": "ZFxh7sqbUZo",
+    "title": "Teaching AI to Find Real Vulnerabilities — David Brumley, Bugcrowd",
     "selected": false,
-    "reasoning": "A niche technical talk on AI noise filtering that offers limited practical value compared to broader fullstack development and career strategy content.",
+    "reasoning": "Too specialized in offensive security and AI vulnerability research for a junior fullstack engineer looking for broad career growth.",
     "summary": ""
   },
   {
-    "videoId": "pWXUkLP9uWM",
-    "title": "First Steps Toward Automated AI Research — Richard Socher, CEO Recursive AI",
+    "videoId": "2aS7aKoXn64",
+    "title": "Rethinking Environments for Long-Horizon Work — Rayan Garg, Theta Software",
     "selected": false,
-    "reasoning": "Focuses on high-level AI research automation rather than actionable skills or financial insights for a junior developer.",
+    "reasoning": "Focuses on high-level AI research environments rather than actionable fullstack or early-career development skills.",
     "summary": ""
   },
   {
-    "videoId": "jWq-aZIU0kM",
-    "title": "Benchmarks: The Good, the Bad, and the Ugly — Ali Khial, G2i",
+    "videoId": "cJ0EOzey--o",
+    "title": "What's Next After RLHF? — Diogo Almeida, TypeSafe AI",
     "selected": false,
-    "reasoning": "Focuses specifically on AI benchmarking mechanics, which is less relevant to day-to-day fullstack architecture and early-career growth.",
+    "reasoning": "Niche deep-dive into machine learning alignment research; not immediately applicable to junior fullstack development.",
     "summary": ""
   },
   {
-    "videoId": "BXzFk5kK5_Q",
-    "title": "Android Studio Quail 2, the Build with Gemini XPRIZE, and more! - Google Developer News July 2026",
+    "videoId": "4Gt7KquIAIc",
+    "title": "How to pick what to work on",
     "selected": true,
-    "reasoning": "Provides vital industry updates on modern developer tooling, Android IDE advancements, and AI hackathon opportunities for junior software engineers.",
-    "summary": "Stay ahead of the curve with Google's latest tool updates, IDE enhancements, and developer competitions. As a junior engineer, knowing what tools are rolling out gives you a sharp edge in project prototyping and career growth."
+    "reasoning": "Direct, high-impact career guidance specifically aimed at tech professionals deciding how to maximize their leverage and growth.",
+    "summary": "As a junior engineer, working hard on the wrong tasks will stall your career faster than anything else. This concise breakdown teaches you how to identify high-impact engineering projects that get you recognized and promoted."
   },
   {
-    "videoId": "cBBWorSU0P4",
-    "title": "Building the ultimate morning dashboard with Gemini 3.6 Flash and Nano Banana",
-    "selected": true,
-    "reasoning": "Direct hands-on project building featuring lightweight Gemini AI models, perfectly aligned with fullstack developer practical application.",
-    "summary": "Learn how to practicalize lightweight AI models by building a functional fullstack morning dashboard. It offers actionable, real-world inspiration for building modern web applications integrated with fast AI endpoints."
-  },
-  {
-    "videoId": "UUozyqDNRGg",
-    "title": "Does this install succeed? If it does, which three versions end up in your lockfile?",
-    "selected": true,
-    "reasoning": "Tests core dependency management and package manager resolution mechanics essential for modern fullstack web developers.",
-    "summary": "Dependency management pitfalls can easily break fullstack web applications and CI/CD pipelines. This quick walkthrough tests your mastery of lockfiles and package resolution mechanics to help you prevent production build errors."
-  },
-  {
-    "videoId": "mvZCoLRRsEk",
-    "title": "How to set foolproof fitness goals | Amitis Nate | TEDxWest Vancouver Women",
+    "videoId": "SHT3himqWHo",
+    "title": "Turing Award &amp; Abel Prize Winner Explains P vs. NP | Avi Wigderson",
     "selected": false,
-    "reasoning": "Generic health and goal-setting talk that lacks targeted value for software engineering, career progression, or financial principles.",
+    "reasoning": "Theoretical computer science concept; fascinating academically, but offers low practical value for daily software engineering or financial goals.",
     "summary": ""
   },
   {
-    "videoId": "aA31v5O4X2Q",
-    "title": "The high cost of cheap intelligence | David Ajibade | TEDxFUHSO",
-    "selected": true,
-    "reasoning": "Explores the underlying socio-economic costs and trade-offs of low-cost AI, relevant to both tech practitioners and value-conscious financial advocates.",
-    "summary": "While cheap AI automation promises quick wins, it carries hidden economic and technical trade-offs. This talk challenges software professionals and financial thinkers to critically evaluate the true cost of automated intelligence."
+    "videoId": "5I8dylk17Gg",
+    "title": "Superhuman AI timelines from 60 years ago",
+    "selected": false,
+    "reasoning": "A brief historical trivia short; offers no practical career, technical, or financial advice.",
+    "summary": ""
   },
   {
-    "videoId": "cNK0B8NvBDA",
-    "title": "From Fracking to AI: How to Share the Next Boom | Daniel Ketyer | TEDxDuke",
+    "videoId": "6XONgUfvoBo",
+    "title": "Meet the team member we never talk about",
+    "selected": false,
+    "reasoning": "Behind-the-scenes channel fluff with no educational substance for the target audience.",
+    "summary": ""
+  },
+  {
+    "videoId": "VFCfvlJ2g3c",
+    "title": "Making money online basically comes down to two things...",
+    "selected": false,
+    "reasoning": "Overly simplified generic business advice short with little depth.",
+    "summary": ""
+  },
+  {
+    "videoId": "EIk395a-tds",
+    "title": "Why You’re Not Financially Free (Yet)",
     "selected": true,
-    "reasoning": "Discusses wealth creation and equitable distribution during major economic booms, appealing strongly to financial advocates and early-career tech professionals.",
-    "summary": "As AI creates massive economic shifts, understanding how wealth and opportunity are distributed is key for any forward-thinking professional. This talk bridges economic history and technology to offer actionable perspectives on navigating the next financial boom."
+    "reasoning": "Offers a structured, beginner-friendly framework for early-career professionals trying to understand wealth accumulation and financial independence.",
+    "summary": "Building wealth in your early career requires moving past basic saving and understanding the core levers of financial freedom. This breakdown simplifies complex money concepts into an actionable roadmap you can apply alongside your tech salary."
+  },
+  {
+    "videoId": "-rYFDefcq3k",
+    "title": "Introducing Gemini Robotics 2",
+    "selected": false,
+    "reasoning": "A promotional tech announcement without practical software development walkthroughs.",
+    "summary": ""
+  },
+  {
+    "videoId": "z6l5nyE_6-I",
+    "title": "Voice Agent observability with LangSmith",
+    "selected": true,
+    "reasoning": "Highly practical technical content showing modern fullstack developers how to build and monitor AI voice applications using popular tools like LangSmith.",
+    "summary": "AI agents are rapidly becoming standard in fullstack development, but debugging them remains a huge challenge. Learn how to implement end-to-end observability in voice applications using LangSmith to level up your modern AI stack skills."
+  },
+  {
+    "videoId": "8uncdjpygSU",
+    "title": "The documentary all devs would watch tbh…",
+    "selected": false,
+    "reasoning": "Short meme/skit content made for entertainment rather than educational growth.",
+    "summary": ""
+  },
+  {
+    "videoId": "PIedbmemp1s",
+    "title": "KWAP terpedaya dengan audit palsu?",
+    "selected": false,
+    "reasoning": "Surface-level news commentary short; lacks actionable financial advice.",
+    "summary": ""
+  },
+  {
+    "videoId": "PuQ6moD4WrY",
+    "title": "Tak takut mati, takut tinggal masalah",
+    "selected": false,
+    "reasoning": "A short snippet on estate planning that lacks deep, practical walkthroughs.",
+    "summary": ""
+  },
+  {
+    "videoId": "mn0wxNMfFUM",
+    "title": "RCI dedah isu Tabung Haji?",
+    "selected": false,
+    "reasoning": "Brief commentary clip on Tabung Haji news; too short to provide actionable Islamic financial planning.",
+    "summary": ""
+  },
+  {
+    "videoId": "H4q55uZlcdo",
+    "title": "Berbaloi ke ASB Financing?",
+    "selected": true,
+    "reasoning": "Directly tackles a primary wealth-building tool for young Malaysian Muslims, evaluating the math and risk of ASB financing.",
+    "summary": "ASB Financing is one of the most debated financial instruments for young professionals in Malaysia. This breakdown cuts through the hype to analyze whether taking leverage for ASB actually makes economic sense for your personal situation."
+  },
+  {
+    "videoId": "7NTS9BuWZNs",
+    "title": "Pelaburan bantu CCRIS?",
+    "selected": false,
+    "reasoning": "Short clip on credit health; useful but too brief compared to full-length financial evaluations.",
+    "summary": ""
+  },
+  {
+    "videoId": "mJkl1SZlrGg",
+    "title": "Saham USD8 juta",
+    "selected": false,
+    "reasoning": "Short anecdote with limited practical investment takeaway.",
+    "summary": ""
+  },
+  {
+    "videoId": "FgBL2T7CUw4",
+    "title": "#111 | Your Test Can Be Your Testimony",
+    "selected": false,
+    "reasoning": "Generic motivational podcast content without technical or tailored financial focus.",
+    "summary": ""
+  },
+  {
+    "videoId": "-aJtCPD95jw",
+    "title": "#110 | The Power of Positive Thinking",
+    "selected": false,
+    "reasoning": "Standard self-help talk lacking targeted insights for our demographic.",
+    "summary": ""
+  },
+  {
+    "videoId": "FJoQR0Z0hLk",
+    "title": "#109 | How To Lead With Integrity",
+    "selected": false,
+    "reasoning": "General leadership advice not specific enough for early-career software engineering or Islamic finance goals.",
+    "summary": ""
+  },
+  {
+    "videoId": "2kGVKdhHUkE",
+    "title": "“Wawasan is definitely not just a Malay Bumiputera Muslim party” - Saifuddin Abdullah",
+    "selected": false,
+    "reasoning": "Local political interview; low utility for software career or financial growth.",
+    "summary": ""
+  },
+  {
+    "videoId": "1Zz_kd6Q4Qo",
+    "title": "Lindung 24 Jam: Tak sangka orang guna perkataan kesat untuk kritik Perkeso | In The Studio",
+    "selected": false,
+    "reasoning": "Discussion on public reaction to national social security issues; limited personal development value.",
+    "summary": ""
+  },
+  {
+    "videoId": "Xa_Meqgwa18",
+    "title": "PUSPAKOM CEO responds to the end of their monopoly in vehicle inspection | In The Studio",
+    "selected": false,
+    "reasoning": "Corporate news interview irrelevant to the target demographic's immediate focus.",
+    "summary": ""
+  },
+  {
+    "videoId": "VGHi8_8E3Rg",
+    "title": "Is your phone really dirtier than a toilet seat? | Lotti Tajouri | TEDxBrisbane",
+    "selected": false,
+    "reasoning": "General science trivia with no practical value for engineering or career advancement.",
+    "summary": ""
+  },
+  {
+    "videoId": "84qsbJr6AW4",
+    "title": "Making it theirs: a girl dad's jiu jitsu journey | Eddie Wang | TEDxHiba Shanghai Youth",
+    "selected": false,
+    "reasoning": "Personal story narrative with no alignment to tech, Islamic finance, or career strategy.",
+    "summary": ""
+  },
+  {
+    "videoId": "dixNmCPnk50",
+    "title": "The ripple effect of joy | Stella Jaffe | TEDxRiverdale",
+    "selected": false,
+    "reasoning": "Generic inspirational talk with no concrete skill-building content.",
+    "summary": ""
+  },
+  {
+    "videoId": "mI74jF7oM1k",
+    "title": "When Your Sin Reaches The Land and Sea | LATEST Khutbah by Sh. Ibrahim Hindy",
+    "selected": true,
+    "reasoning": "Provides essential spiritual grounding, moral clarity, and an Islamic perspective on navigating modern ethical challenges.",
+    "summary": "In the middle of grinding through code and career goals, keeping your faith centered is essential. This impactful Khutbah offers a timely reflection on personal accountability, ethics, and preserving your spiritual compass in today's fast-paced world."
+  },
+  {
+    "videoId": "25YEKsTlUog",
+    "title": "The Greatest Companion | Sh. Ibrahim Hindy",
+    "selected": false,
+    "reasoning": "A short spiritual clip; while good, the full Khutbah provides deeper spiritual value.",
+    "summary": ""
+  },
+  {
+    "videoId": "a83HgUMSc9g",
+    "title": "A Muslim Mindset We’re Losing | Imam Tom Facchine",
+    "selected": false,
+    "reasoning": "A strong short clip on mindset, but superseded by full-length spiritual and career content.",
+    "summary": ""
   }
 ]
