@@ -36,19 +36,57 @@
   </div>
   {% endif %}
   {% if site.social_media %}
-  <div class="d-flex flex-wrap flex-items-start {% if site.layout == 'stacked' %}flex-justify-center mt-3{% endif %}">
+  <ul class="social-icon-list {% if site.layout == 'stacked' %}flex-justify-center{% endif %} mt-3">
     {% for account in site.social_media %}
-    <div class="{% unless forloop.last == true %}mr-3{% endunless %} mb-3">
-      {% assign service_shortname = account[0] %}
-      {% assign service = site.data.social_media[service_shortname] %}
-      <a href="{{ service.profile_url_prefix }}{{ account[1] }}" class="tooltipped tooltipped-se"
+    {% assign service_shortname = account[0] %}
+    {% assign service = site.data.social_media[service_shortname] %}
+    <li class="social-icon-item">
+      <a href="{{ service.profile_url_prefix }}{{ account[1] }}" data-social="{{ service_shortname }}"
         aria-label="{{ service.name }}: {{ account[1] }}">
-        {{ service.icon_svg }}<span class="d-none">{{ service.name }}</span>
+        <div class="social-icon-fill"></div>
+        {{ service.icon_svg }}
       </a>
-    </div>
+      <div class="social-icon-tooltip" aria-hidden="true">{{ service.name }}</div>
+    </li>
     {% endfor %}
-  </div>
+  </ul>
   {% endif %}
 
 </div>
+
+<script>
+  // Touch devices have no real hover, so the social icons' fill/tooltip animation (driven by
+  // :hover / .is-active — see the .social-icon-* rules in assets/styles.scss) would otherwise
+  // never be seen at all: a tap navigates away instantly, before the 0.3s CSS transition has any
+  // chance to play. On a touch-primary device (`hover: none`), intercept the tap, manually add
+  // `.is-active` to trigger the exact same CSS the hover state would, then hold navigation until
+  // the animation has visibly finished *plus* an extra pause, so the effect is actually seen
+  // rather than glimpsed. Left alone entirely on devices that can hover (mouse/trackpad) — there,
+  // the user has already seen the animation play out during hover, before they ever click, so
+  // delaying navigation further would only be an annoying, pointless wait.
+  document.addEventListener('DOMContentLoaded', function () {
+    var isTouch = window.matchMedia('(hover: none)').matches;
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!isTouch || reduceMotion) return; // reduced-motion: the transition is instant/off anyway, nothing to wait for
+
+    var FILL_TRANSITION_MS = 300; // matches .social-icon-fill/.social-icon-tooltip's own CSS transition duration
+    var HOLD_MS = 1000; // extra pause once finished, so it's actually seen, not just completed
+
+    document.querySelectorAll('.social-icon-item').forEach(function (item) {
+      var link = item.querySelector('a');
+      if (!link) return;
+      var navigating = false;
+      link.addEventListener('click', function (e) {
+        if (navigating) return; // a second tap while already waiting just lets the pending navigation proceed normally
+        e.preventDefault();
+        navigating = true;
+        item.classList.add('is-active');
+        var href = link.href;
+        setTimeout(function () {
+          window.location.href = href;
+        }, FILL_TRANSITION_MS + HOLD_MS);
+      });
+    });
+  });
+</script>
 {% endif %}

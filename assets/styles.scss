@@ -441,6 +441,129 @@ body {
   height: 24px;
 }
 
+// Social icons (masthead.html) — reference: https://uiverse.io/wilsondesouza/brave-earwig-75.
+// uiverse.io blocks automated fetching (WebFetch/curl both got 403s across three different
+// component URLs), so this was reimplemented from the raw CSS the user copied via the site's own
+// "copy code" button and pasted directly, rather than a live fetch — same faithful-port approach
+// as every other reference component this session, just a different source of the original code.
+// Circular icon buttons with a brand-colored fill that rises from the bottom, plus a tooltip that
+// fades/slides up — both on hover, or on `.is-active` (see the touch/tap handling in
+// masthead.html's own script, since `:hover` doesn't meaningfully exist on a touchscreen and
+// `.is-active` is what a tap toggles instead, driving the exact same CSS). Rest-state color/
+// background switched from the reference's hardcoded light-mode values (#fff bg, #4d4d4d icon)
+// to this site's own design tokens, so it correctly adapts to dark mode — the brand fill colors
+// specifically stay constant regardless of theme, same convention as every other brand-color
+// usage on this site (e.g. .btn-blue).
+.social-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+.social-icon-item {
+  position: relative;
+}
+.social-icon-tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background: var(--accent-solid);
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.social-icon-item:hover .social-icon-tooltip,
+.social-icon-item.is-active .social-icon-tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -46px;
+}
+.social-icon-item a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: var(--fg-muted);
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease-in-out;
+}
+.social-icon-item:hover a,
+.social-icon-item.is-active a {
+  color: #fff;
+  box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
+}
+// SVG fill forced to currentColor (not just inherited) since social_media.yml's icons carry
+// their own hardcoded fill="#959da5"/similar presentation attributes — a plain `fill: currentColor`
+// without !important would still lose to those on some of the icons that set fill on individual
+// child paths/circles rather than just the root <svg>, so every descendant is targeted directly.
+.social-icon-item a svg,
+.social-icon-item a svg * {
+  position: relative;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  fill: currentColor !important;
+}
+.social-icon-fill {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  // Generic fallback for any configured service without a specific brand color below —
+  // deliberately not hand-picking a brand color for every one of social_media.yml's ~14
+  // services when only github/linkedin are actually configured in _config.yml right now.
+  background-color: var(--accent-solid);
+  transition: all 0.3s ease-in-out;
+}
+.social-icon-item:hover .social-icon-fill,
+.social-icon-item.is-active .social-icon-fill {
+  height: 100%;
+}
+
+// Real per-service brand colors, only for services actually configured (github, linkedin) plus
+// the two others the reference component itself already had colors for (instagram, youtube), in
+// case those get added to _config.yml later. Everything else uses the generic fallback above.
+.social-icon-item a[data-social="linkedin"] ~ .social-icon-tooltip,
+.social-icon-item a[data-social="linkedin"] .social-icon-fill {
+  background-color: #0274b3;
+}
+.social-icon-item a[data-social="github"] ~ .social-icon-tooltip,
+.social-icon-item a[data-social="github"] .social-icon-fill {
+  background-color: #24262a;
+}
+.social-icon-item a[data-social="instagram"] ~ .social-icon-tooltip,
+.social-icon-item a[data-social="instagram"] .social-icon-fill {
+  background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+}
+.social-icon-item a[data-social="youtube"] ~ .social-icon-tooltip,
+.social-icon-item a[data-social="youtube"] .social-icon-fill {
+  background-color: #ff0000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-icon-tooltip,
+  .social-icon-item a,
+  .social-icon-fill {
+    transition: none;
+  }
+}
+
 // If a user adds a custom font, this component will stop it from bleeding into GitHub components:
 .github-component {
   font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol !important;
