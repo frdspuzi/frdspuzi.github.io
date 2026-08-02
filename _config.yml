@@ -1,6 +1,17 @@
 layout: stacked
 style: light
 
+# Cache-busting version for the shared assets linked in header.html/footer.html (styles.css,
+# accordion.js, quote-typing.js, aurora-reveal.js, accordion-grouping.js). Bump this by hand
+# ONLY when you actually change one of those specific files — not on every commit. This site
+# rebuilds many times a day from bot commits (Unsplash/AI content) that never touch these
+# assets; tying cache-busting to the build timestamp instead of this number meant EVERY deploy,
+# related or not, forced every visitor's next page load to fully re-fetch styles.css (which
+# blocks execution of any script after it in the document, even inline ones) instead of using
+# its cache — a real, measurable delay, not just extra bandwidth. Bumping only here means the
+# cache is only busted when there's actually something new to fetch.
+asset_version: 1
+
 # Internal AI/agent-facing docs — not site content. Excluded so Jekyll doesn't try to
 # Liquid-render or publish them as live pages (they contain literal {% %} example syntax).
 exclude:
