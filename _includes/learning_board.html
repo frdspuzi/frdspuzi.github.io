@@ -30,7 +30,12 @@
       <!-- Skeleton placeholder, shaped like the real content below (2-line question, source
            line, 3 option bars) — shown until loadQuestion()'s first run swaps it out for
            #trivia-content. See assets/styles.scss's .skeleton comment for the animation choice. -->
-      <div id="trivia-skeleton" class="d-flex flex-column" style="gap: 12px;">
+      <!-- Plain inline flex styles, not Primer's d-flex/flex-column classes: Primer declares
+           `.d-flex { display: flex !important; }`, and a stylesheet !important beats a plain
+           inline style.display set later from JS — loadQuestion()'s `skeletonEl.style.display =
+           'none'` was silently losing to it, leaving the skeleton visibly stuck on top of the
+           real content underneath. A same-origin (inline) style has no such conflict. -->
+      <div id="trivia-skeleton" style="display: flex; flex-direction: column; gap: 12px;">
         <span class="skeleton" style="width: 100%; height: 22px;"></span>
         <span class="skeleton" style="width: 70%; height: 22px;"></span>
         <span class="skeleton" style="width: 160px; height: 16px; margin-top: 4px;"></span>
