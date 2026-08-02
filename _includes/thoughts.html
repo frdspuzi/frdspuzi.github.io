@@ -245,7 +245,7 @@
     width: 6px;
   }
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: transparent; 
+    background: transparent;
   }
   .custom-scrollbar::-webkit-scrollbar-thumb {
     background: var(--border);
@@ -253,6 +253,41 @@
   }
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: var(--fg-faint);
+  }
+  /* #medium-posts sits inside .right-column-container (a fixed-height, overflow:hidden box on
+     mobile — see below), so this is a scroll region nested inside the page's own scroll — two
+     things it needs to actually feel scrollable with touch, not just technically have
+     overflow-y: auto set:
+     - -webkit-overflow-scrolling: touch — iOS Safari's default scrolling for a *nested* overflow
+       region is the janky, non-momentum kind unless this is set explicitly; without it, a swipe
+       here can feel like it's not responding at all rather than just scrolling abruptly.
+     - overscroll-behavior: contain — stops the swipe from "leaking" into the outer page scroll
+       once the list hits its own top/bottom edge, which otherwise reads as the list capturing the
+       gesture inconsistently (scrolls the list sometimes, scrolls the whole page other times).
+     - touch-action: pan-y — the actual fix for "swipe does nothing at all" (as opposed to
+       "scrolls but feels janky", which the two properties above address). #medium-posts is itself
+       `display:flex` AND every direct child is a full-width, full-height `<a>` card — without an
+       explicit `touch-action`, some mobile browsers don't reliably recognize a vertical swipe that
+       starts on a flex-laid-out anchor as "this element's own scroll gesture" and the touch is
+       dropped instead of falling through to native scrolling. Declaring `pan-y` up front removes
+       the ambiguity: this element scrolls vertically on touch, full stop. */
+  .custom-scrollbar {
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+
+  /* The actual root cause of "swipe does nothing at all": #medium-posts is flex: 1 1 auto inside
+     .right-column-content, but a flex item's automatic minimum size defaults to its content's
+     natural (unclamped) height, not 0 — #medium-posts already overrides this on itself, but
+     .right-column-content (one level up) didn't, so IT was growing to fit every article card
+     regardless of the 450px/648px cap below, dragging #medium-posts's height along with it. The
+     result: .right-column-container's own `overflow: hidden` was doing 100% of the visual
+     clipping (which is why a card looked cut off), while #medium-posts — the element with
+     `overflow-y: auto` — never actually had content taller than itself to scroll. Capping this
+     here is what actually makes #medium-posts a bounded, genuinely-overflowing scroll container. */
+  .right-column-content {
+    min-height: 0;
   }
 
   @media (max-width: 1011px) {
