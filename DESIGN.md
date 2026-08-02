@@ -3,7 +3,7 @@
 This site now has a CSS custom-property (token) layer, defined once in `assets/styles.scss` and consumed via `var(--token-name)` everywhere else. Reuse the tokens below instead of hardcoding a new hex value; if you introduce a genuinely new value, add it as a token there and document it here.
 
 ## Foundation: GitHub Primer
-The base is [Primer](https://styleguide.github.com/primer/), loaded via CDN (`@import url('https://unpkg.com/primer/build/build.css')` in `assets/styles.scss`). Layout, type scale, and most spacing come from Primer utility classes (`f1`–`f6`, `d-flex`, `p-3`/`p-4`/`p-5`, `mb-4`/`mb-5`/`mb-6`, `Box`, `box-shadow-small/medium/large`, `rounded-1`/`rounded-2`, `btn`, `flash`, etc.) — reach for a Primer class first before writing new CSS.
+The base is [Primer](https://styleguide.github.com/primer/), self-hosted as `assets/vendor/primer.css` (pinned to v11.0.0, linked in `header.html` — see `.ai/architecture.md` for why this moved off a live unpkg.com `@import` on 2026-08-03). Layout, type scale, and most spacing come from Primer utility classes (`f1`–`f6`, `d-flex`, `p-3`/`p-4`/`p-5`, `mb-4`/`mb-5`/`mb-6`, `Box`, `box-shadow-small/medium/large`, `rounded-1`/`rounded-2`, `btn`, `flash`, etc.) — reach for a Primer class first before writing new CSS.
 
 Every token value below is, not coincidentally, one of **GitHub's own Primer light/dark primitives**.
 

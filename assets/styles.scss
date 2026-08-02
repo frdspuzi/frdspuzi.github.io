@@ -1,6 +1,9 @@
 ---
 ---
-@import url('https://unpkg.com/primer/build/build.css');
+// Primer is self-hosted (assets/vendor/primer.css, linked in header.html's <head>) rather than
+// imported from unpkg.com — see the comment there for why. Not a CSS @import here either way:
+// an @import can only be discovered after this file itself is downloaded and parsed, so it can't
+// load in parallel with it regardless of where the CSS actually comes from.
 @import 'highlight-syntax';
 
 // Site-wide font: Fira Sans, loaded via Google Fonts in header.html's <head> (weights
