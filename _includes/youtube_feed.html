@@ -27,7 +27,12 @@
                title, channel line, summary block) — shown until loadVideo()'s first run swaps
                it out for #yt-info. See assets/styles.scss's .skeleton comment for why this is a
                plain opacity pulse, not a shimmer sweep. -->
-          <div id="yt-skeleton" class="d-flex flex-column" style="gap: 12px;">
+          <!-- Plain inline flex styles, not Primer's d-flex/flex-column classes: Primer declares
+               `.d-flex { display: flex !important; }`, and a stylesheet !important beats a plain
+               inline style.display set later from JS — loadVideo()'s `skeletonEl.style.display =
+               'none'` was silently losing to it, leaving the skeleton visibly stuck on top of the
+               real content underneath. A same-origin (inline) style has no such conflict. -->
+          <div id="yt-skeleton" style="display: flex; flex-direction: column; gap: 12px;">
             <span class="skeleton" style="width: 90px; height: 22px; border-radius: 20px;"></span>
             <span class="skeleton" style="width: 95%; height: 22px;"></span>
             <span class="skeleton" style="width: 55%; height: 22px;"></span>
