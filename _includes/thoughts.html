@@ -21,8 +21,36 @@
           </div>
 
           <div id="medium-posts" class="d-flex flex-column flex-auto custom-scrollbar" style="gap: 12px; overflow-y: auto; min-height: 0; padding-right: 8px;">
-            <div class="col-12 text-center py-4 text-gray" id="medium-loading">
-              Loading articles&hellip;
+            <!-- Skeleton cards, shaped like .medium-card below (160px image block + title/
+                 excerpt/date lines) — replaced entirely (container.innerHTML = '') once the
+                 fetch below resolves, whether it succeeds or fails, so no JS toggle logic is
+                 needed here unlike the YouTube/Trivia skeletons. See assets/styles.scss's
+                 .skeleton comment for the animation choice. -->
+            <div id="medium-loading" class="d-flex flex-column" style="gap: 12px;">
+              <div class="d-flex flex-row" style="border: 1px solid var(--border); border-radius: 8px; overflow: hidden; min-height: 120px;">
+                <span class="skeleton" style="width: 160px; flex-shrink: 0; border-radius: 0;"></span>
+                <div class="d-flex flex-column flex-auto p-3" style="gap: 8px;">
+                  <span class="skeleton" style="width: 90%; height: 18px;"></span>
+                  <span class="skeleton" style="width: 60%; height: 14px;"></span>
+                  <span class="skeleton" style="width: 40%; height: 12px; margin-top: auto;"></span>
+                </div>
+              </div>
+              <div class="d-flex flex-row" style="border: 1px solid var(--border); border-radius: 8px; overflow: hidden; min-height: 120px;">
+                <span class="skeleton" style="width: 160px; flex-shrink: 0; border-radius: 0;"></span>
+                <div class="d-flex flex-column flex-auto p-3" style="gap: 8px;">
+                  <span class="skeleton" style="width: 80%; height: 18px;"></span>
+                  <span class="skeleton" style="width: 50%; height: 14px;"></span>
+                  <span class="skeleton" style="width: 40%; height: 12px; margin-top: auto;"></span>
+                </div>
+              </div>
+              <div class="d-flex flex-row" style="border: 1px solid var(--border); border-radius: 8px; overflow: hidden; min-height: 120px;">
+                <span class="skeleton" style="width: 160px; flex-shrink: 0; border-radius: 0;"></span>
+                <div class="d-flex flex-column flex-auto p-3" style="gap: 8px;">
+                  <span class="skeleton" style="width: 95%; height: 18px;"></span>
+                  <span class="skeleton" style="width: 65%; height: 14px;"></span>
+                  <span class="skeleton" style="width: 40%; height: 12px; margin-top: auto;"></span>
+                </div>
+              </div>
             </div>
           </div>
           
