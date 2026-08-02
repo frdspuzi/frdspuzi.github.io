@@ -93,12 +93,23 @@
     var blockPitchH = BLOCK_ROWS * cellPitchH;
 
     var ctx = canvas.getContext('2d');
-    var loadedImages = photos.map(function (p) {
+    // `.src` is deliberately NOT set here — with the profile now pulling every photo (see the
+    // comment on rawPhotos above), eagerly fetching all of them on page load meant ~45 concurrent
+    // image downloads before a visitor ever pans, most for tiles nowhere near the viewport. Each
+    // Image object is created up front (cheap, no network) but only gets its `.src` assigned
+    // in requestImage() below, the first time getVisibleTiles() actually needs that photo for a
+    // tile near the current camera position — see render()'s tile loop.
+    var loadedImages = photos.map(function () {
       var img = new Image();
       img.crossOrigin = 'anonymous';
-      img.src = p.url;
       return img;
     });
+
+    function requestImage(idx) {
+      var img = loadedImages[idx];
+      if (img.src) return; // already requested (loading or loaded)
+      img.src = photos[idx].url;
+    }
 
     // Google-Maps-style interaction: the camera only ever moves in direct response to a drag
     // (mouse or touch), never on its own from ambient hover — plus a brief momentum "glide" that
@@ -208,6 +219,7 @@
 
       var tiles = getVisibleTiles();
       tiles.forEach(function (tile) {
+        requestImage(tile.imgIdx);
         var img = loadedImages[tile.imgIdx];
 
         ctx.save();
