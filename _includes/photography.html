@@ -42,9 +42,16 @@
     // embedded in `urls.small` can differ even for the exact same photo — comparing full URL
     // strings would miss real duplicates that `id` catches. `link` (photo.links.html, the real
     // Unsplash page) travels alongside the image so a click can open the correct photo.
+    //
+    // `url` points at a local copy (assets/photography/<id>.jpg) rather than hotlinking
+    // images.unsplash.com directly — fetch_unsplash.js downloads every photo into the repo at
+    // build time (see .ai/architecture.md), so a visitor's browser fetches it from GitHub Pages
+    // like every other asset instead of depending on Unsplash's own CDN response time on every
+    // single view. `links.html` (the click-through target) still points at the real Unsplash
+    // page regardless — only the *displayed* image moved local.
     var rawPhotos = [
-      {% for photo in site.data.unsplash_all %}{ id: "{{ photo.id }}", url: "{{ photo.urls.small }}", link: "{{ photo.links.html }}" },{% endfor %}
-      {% for photo in site.data.unsplash_favourites %}{ id: "{{ photo.id }}", url: "{{ photo.urls.small }}", link: "{{ photo.links.html }}" },{% endfor %}
+      {% for photo in site.data.unsplash_all %}{ id: "{{ photo.id }}", url: "{{ "/assets/photography/" | append: photo.id | append: ".jpg" | relative_url }}", link: "{{ photo.links.html }}" },{% endfor %}
+      {% for photo in site.data.unsplash_favourites %}{ id: "{{ photo.id }}", url: "{{ "/assets/photography/" | append: photo.id | append: ".jpg" | relative_url }}", link: "{{ photo.links.html }}" },{% endfor %}
     ];
     var seenIds = {};
     var photos = [];

@@ -20,7 +20,11 @@ jobs:
           UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: |
           mkdir -p _data
-          
+          # Created here too (not just inside fetch_unsplash.js's syncLocalImages()) so the
+          # `git add -A -- assets/photography` step below always has a real path to operate on,
+          # even on a run where the change-detection short-circuit skips syncLocalImages entirely.
+          mkdir -p assets/photography
+
           echo "Running fetch_unsplash.js..."
           node .github/scripts/fetch_unsplash.js
 
@@ -29,6 +33,10 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add _data/unsplash_all.json _data/unsplash_favourites.json _data/unsplash_meta.json
+          # -A (not just `git add`) so deletions are staged too — fetch_unsplash.js removes local
+          # copies of any photo no longer on the profile/Favourites, and a plain `git add` on a
+          # path only stages additions/modifications, not files that were deleted from disk.
+          git add -A -- assets/photography
           if [ -f _data/unsplash.json ]; then
             git rm _data/unsplash.json || true
           fi
