@@ -112,6 +112,22 @@
     return d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
   }
 
+  // Medium's own CDN embeds a target width directly in the image URL (miro.medium.com's
+  // "resize:fit:NNNN" segment, or the older cdn-images-1.medium.com "/max/NNNN/" style) — the
+  // RSS feed's <img> src is sized for full-article display (often 1000px+), but this card only
+  // shows it in a 160px-wide box (.medium-image). Requesting a smaller size directly from
+  // Medium's CDN avoids downloading pixels that get immediately downscaled and discarded —
+  // verified against a real feed image: the same photo was 63KB at max/1024 vs 12.7KB at
+  // max/320, an 80% cut, for identical on-screen output. 320 = 2x the 160px box, generous
+  // headroom for retina displays. Falls back to the untouched original URL if neither known
+  // Medium CDN pattern matches (both `.replace()` calls are no-ops on a non-matching string),
+  // rather than guessing at an unfamiliar URL shape.
+  function shrinkMediumImage(url) {
+    return url
+      .replace(/resize:fit:\d+/, 'resize:fit:320')
+      .replace(/\/max\/\d+\//, '/max/320/');
+  }
+
   function buildCard(item, category) {
     var excerpt = extractSummary(item.content);
 
@@ -120,7 +136,7 @@
     var match;
     while ((match = imgRegex.exec(item.content)) !== null) {
       if (match[1].indexOf('stat?event') === -1) {
-        imageUrl = match[1];
+        imageUrl = shrinkMediumImage(match[1]);
         break;
       }
     }
