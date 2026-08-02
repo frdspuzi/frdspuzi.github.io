@@ -6,18 +6,122 @@
       "videoId": "4Gt7KquIAIc",
       "channel": "Ryan Peterman",
       "category": "Tech & Career",
-      "summary": "Turing Award winner Judea Pearl shares a powerful framework for deciding which problems are truly worth your time and effort. By pairing a deeply personal curiosity about unsolved puzzles with your unique set of tools, you can maximize your potential to create meaningful breakthroughs.",
-      "dateAdded": "2026-08-01T03:58:53.889Z",
+      "summary": "Turing Award winner Judea Pearl shares a simple yet profound framework for deciding which problems to tackle in research and work. He emphasizes choosing puzzles that bother you deeply and assessing whether you possess unique tools or techniques to make a meaningful contribution.",
+      "dateAdded": "2026-08-02T04:02:26.850Z",
       "timestamps": [
         {
           "startTime": 0,
           "endTime": 22,
-          "topic": "Evaluating whether a problem is a true puzzle"
+          "topic": "The two key questions for picking a problem"
         },
         {
-          "startTime": 22,
-          "endTime": 55,
-          "topic": "Matching your unique toolkit to the problem"
+          "startTime": 28,
+          "endTime": 53,
+          "topic": "Taking puzzles personally and matching them to your tools"
+        }
+      ]
+    },
+    {
+      "title": "Voice Agent observability with LangSmith",
+      "url": "https://www.youtube.com/watch?v=z6l5nyE_6-I",
+      "videoId": "z6l5nyE_6-I",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This video provides a practical, step-by-step walkthrough on how to make real-time AI voice agents production-ready using Google's Gemini Live model and LangSmith observability. Viewers will learn how to set up tracing to seamlessly monitor audio interactions, tool calls, user interruptions, and token usage costs. It's a must-watch for developers looking to gain full visibility and control over their conversational AI applications.",
+      "dateAdded": "2026-08-02T04:02:26.850Z",
+      "timestamps": [
+        {
+          "startTime": 23,
+          "endTime": 90,
+          "topic": "Why Gemini Live and LangSmith are Crucial for Voice AI"
+        },
+        {
+          "startTime": 187,
+          "endTime": 318,
+          "topic": "Setting Up LangSmith Tracing and Audio Callbacks in Code"
+        },
+        {
+          "startTime": 363,
+          "endTime": 435,
+          "topic": "Analyzing Conversational Traces, Interruptions, and Token Costs"
+        }
+      ]
+    },
+    {
+      "title": "RCI dedah isu Tabung Haji?",
+      "url": "https://www.youtube.com/shorts/mn0wxNMfFUM",
+      "videoId": "mn0wxNMfFUM",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Dive into the critical financial revelations from the Tabung Haji Royal Commission of Inquiry (RCI) report, which details how dividend payouts were historically distributed despite deficit conditions. This video breaks down complex audit disclosures into clear, layman-friendly concepts to explain asset-liability gaps and how Tabung Haji's governance has been recovering since 2018.",
+      "dateAdded": "2026-08-02T04:02:26.850Z",
+      "timestamps": [
+        {
+          "startTime": 25,
+          "endTime": 58,
+          "topic": "RCI Findings: Tabung Haji Deficits and Hibah Payouts (2014–2017)"
+        },
+        {
+          "startTime": 74,
+          "endTime": 117,
+          "topic": "Understanding Assets vs. Liabilities in Tabung Haji"
+        },
+        {
+          "startTime": 118,
+          "endTime": 157,
+          "topic": "Impact of Deficit Dividend Distributions and Path to Recovery"
+        }
+      ]
+    },
+    {
+      "title": "Berbaloi ke ASB Financing?",
+      "url": "https://www.youtube.com/shorts/H4q55uZlcdo",
+      "videoId": "H4q55uZlcdo",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Ever wondered if taking an ASB Financing loan is actually more profitable than saving monthly on your own? Financial expert Faiz Azmi breaks down the math showing how leveraging a larger initial capital from day one allows you to maximize dividend payouts and compound growth far faster than traditional monthly savings. Watch this quick breakdown to understand how smart financing can supercharge your long-term wealth building!",
+      "dateAdded": "2026-08-02T04:02:26.850Z",
+      "timestamps": [
+        {
+          "startTime": 11,
+          "endTime": 26,
+          "topic": "Is ASB Financing suitable for beginner investors?"
+        },
+        {
+          "startTime": 48,
+          "endTime": 81,
+          "topic": "Why upfront capital leveraging yields higher returns"
+        },
+        {
+          "startTime": 100,
+          "endTime": 122,
+          "topic": "The dividend & compounding math: RM200k financing vs RM800/month saving"
+        }
+      ]
+    },
+    {
+      "title": "When Your Sin Reaches The Land and Sea | LATEST Khutbah by Sh. Ibrahim Hindy",
+      "url": "https://www.youtube.com/watch?v=mI74jF7oM1k",
+      "videoId": "mI74jF7oM1k",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "This enlightening sermon explores the hidden, compounding consequences of sin—from numbing the spiritual heart and eroding sacred knowledge to stripping away everyday peace and joy. Through compelling historical anecdotes and prophetic teachings, it offers a hopeful roadmap to spiritual and worldly renewal through sincere repentance (Istighfar).",
+      "dateAdded": "2026-08-02T04:02:26.850Z",
+      "timestamps": [
+        {
+          "startTime": 260,
+          "endTime": 335,
+          "topic": "The Impact of Sin on the Spiritual Heart"
+        },
+        {
+          "startTime": 705,
+          "endTime": 820,
+          "topic": "How Sin Erases Knowledge and Spiritual Light"
+        },
+        {
+          "startTime": 1380,
+          "endTime": 1455,
+          "topic": "Istighfar as the Ultimate Remedy for Hardship"
         }
       ]
     },
@@ -44,84 +148,6 @@
           "startTime": 608,
           "endTime": 634,
           "topic": "The 'Yet' Mindset: Reframing your skill limitations"
-        }
-      ]
-    },
-    {
-      "title": "Voice Agent observability with LangSmith",
-      "url": "https://www.youtube.com/watch?v=z6l5nyE_6-I",
-      "videoId": "z6l5nyE_6-I",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Discover how to build and optimize real-time speech-to-speech AI assistants by integrating Google's Gemini Live model with LangSmith tracing. This video offers a practical, step-by-step walkthrough for developers to gain full observability—tracking conversation audio, tool calls, user interruptions, and token costs—so you can safely deploy voice agents to production.",
-      "dateAdded": "2026-08-01T03:58:53.889Z",
-      "timestamps": [
-        {
-          "startTime": 13,
-          "endTime": 90,
-          "topic": "Overview of Gemini Live speech-to-speech and LangSmith observability"
-        },
-        {
-          "startTime": 187,
-          "endTime": 320,
-          "topic": "Configuring the LangSmith Google ADK plugin and audio capture in code"
-        },
-        {
-          "startTime": 364,
-          "endTime": 435,
-          "topic": "Analyzing real-time conversation traces, tool calls, and token usage in LangSmith"
-        }
-      ]
-    },
-    {
-      "title": "Berbaloi ke ASB Financing?",
-      "url": "https://www.youtube.com/shorts/H4q55uZlcdo",
-      "videoId": "H4q55uZlcdo",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This video breaks down whether ASB Financing is truly worth it for beginners compared to simply saving money monthly into ASB. Financial expert Faiz Azmi explains how leveraging a bank-financed lump sum (like RM200,000) lets you maximize compound dividend growth right from day one, outperforming standard monthly savings.",
-      "dateAdded": "2026-08-01T03:58:53.889Z",
-      "timestamps": [
-        {
-          "startTime": 11,
-          "endTime": 26,
-          "topic": "Audience Question: Is ASB financing recommended for beginners?"
-        },
-        {
-          "startTime": 26,
-          "endTime": 44,
-          "topic": "Understanding ASB Loan vs. ASB Financing-i"
-        },
-        {
-          "startTime": 108,
-          "endTime": 154,
-          "topic": "Why upfront capital leveraging yields higher dividend returns"
-        }
-      ]
-    },
-    {
-      "title": "When Your Sin Reaches The Land and Sea | LATEST Khutbah by Sh. Ibrahim Hindy",
-      "url": "https://www.youtube.com/watch?v=mI74jF7oM1k",
-      "videoId": "mI74jF7oM1k",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This insightful sermon explores the profound and often overlooked consequences that sins have on a person's heart, decisions, and overall life blessings. By drawing from Quranic verses and classical Islamic history, the speaker highlights how unrepented missteps lead to spiritual numbing and hardship while offering Istighfar (seeking forgiveness) as the ultimate remedy for inner renewal.",
-      "dateAdded": "2026-08-01T03:58:53.890Z",
-      "timestamps": [
-        {
-          "startTime": 260,
-          "endTime": 400,
-          "topic": "The Spiritual Effect of Sin on the Heart"
-        },
-        {
-          "startTime": 505,
-          "endTime": 615,
-          "topic": "How One Sin Cascades into More Sins"
-        },
-        {
-          "startTime": 1380,
-          "endTime": 1455,
-          "topic": "Istighfar as the Universal Remedy for Hardship"
         }
       ]
     },
@@ -353,33 +379,7 @@
           "topic": "How Facing Your Worst Fear Neutralizes Anxiety"
         }
       ]
-    },
-    {
-      "title": "Back to Black Roxbury: Creating a Cycle of Generational Wealth | Dianne Wilkerson | TEDxRoxbury",
-      "url": "https://www.youtube.com/watch?v=1Uj6tsq7CkI",
-      "videoId": "1Uj6tsq7CkI",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "Dianne Wilkerson highlights the critical issue of declining Black homeownership and gentrification in Boston's historic Roxbury neighborhood. She shares powerful stories of past displacement and outlines an innovative strategic plan to preserve community wealth by empowering local seniors and young homebuyers.",
-      "dateAdded": "2026-07-30T03:39:38.348Z",
-      "timestamps": [
-        {
-          "startTime": 135,
-          "endTime": 205,
-          "topic": "The Historical Impact of Infrastructure Projects on Roxbury"
-        },
-        {
-          "startTime": 438,
-          "endTime": 510,
-          "topic": "The Modern Housing Crisis and Lack of Affordable Listings"
-        },
-        {
-          "startTime": 690,
-          "endTime": 765,
-          "topic": "A Strategic Vision to Build Generational Wealth and Stop Gentrification"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-08-01T04:00:13.142Z"
+  "lastUpdated": "2026-08-02T04:03:47.828Z"
 }
