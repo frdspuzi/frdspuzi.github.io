@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What three-step strategy effectively prevents the loss of valuable personal insights and counteracts natural forgetfulness?",
+      "question": "In Scrum methodology, which artifact specifically represents the team's commitment for the duration of a Sprint?",
       "options": [
-        "Practicing rote memorization, keeping notes strictly private, and avoiding technology",
-        "Re-reading written notes daily, taking mental snapshots, and hiding personal journals",
-        "Archiving files in static digital folders, relying on raw memory, and deleting old entries",
-        "Writing thoughts down, building a reminder system, and sharing the knowledge"
-      ],
-      "correctIndex": 3,
-      "learning": "To overcome natural forgetfulness and prevent losing personal insights, individuals should avoid relying solely on memory and instead write down their thoughts, establish a system for recall and reminders, and share their knowledge publicly.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In PCIe power management, what is the fundamental trade-off when a device enters deeper low-power states such as L1.2 or L2?",
-      "options": [
-        "Higher active bandwidth in exchange for increased operating temperatures",
-        "Greater power savings in exchange for a longer wake-up time to resume full operation",
-        "Reduced electromagnetic interference in exchange for lower clock frequencies",
-        "Lower data transmission error rates in exchange for higher memory usage"
+        "Product Backlog",
+        "Sprint Backlog",
+        "User Story",
+        "Burndown Chart"
       ],
       "correctIndex": 1,
-      "learning": "PCIe power management balances energy efficiency and system responsiveness across a spectrum of states, where deeper sleep states achieve greater power savings at the cost of longer wake-up delays.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "What is the primary purpose of dividing a development process into smaller, iterative cycles known as Sprints within the Scrum framework?",
-      "options": [
-        "To extend the overall timeline of the project",
-        "To reduce the total number of team members required",
-        "To eliminate the need for continuous stakeholder feedback",
-        "To allow for greater flexibility and quicker adjustments"
-      ],
-      "correctIndex": 3,
-      "learning": "In the Scrum framework, breaking the development process into smaller, iterative cycles called Sprints is primarily motivated by the need to allow teams greater flexibility and enable quicker adjustments throughout a project.",
+      "learning": "In the Scrum framework, the Sprint Backlog is a selected list of user stories for the active Sprint that represents the team's formal commitment for that Sprint's duration.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "What term refers to the small markings placed above or below Arabic letters to indicate their specific vowel sounds and pronunciation?",
+      "question": "In Islamic belief, what are the three primary roles that define the fundamental purpose of human existence?",
       "options": [
-        "Tashkeel",
-        "Uthmani",
-        "DataFrame",
-        "Pareto"
+        "Worshiping God, serving as caretakers of the Earth, and preparing for the Hereafter",
+        "Observing worldly events passively, avoiding personal accountability, and seeking material luxury",
+        "Accumulating wealth, seeking physical immortality, and ruling nations",
+        "Conquering nature, isolating from society, and acquiring personal power"
       ],
       "correctIndex": 0,
-      "learning": "Tashkeel refers to the small markings placed above or below Arabic letters to indicate their vowel sounds and correct pronunciation.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In Islamic theology, what is the foundational purpose for the creation of mankind and jinn?",
-      "options": [
-        "To worship God and recognize His supreme sovereignty",
-        "To achieve complete mastery over the natural world",
-        "To accumulate material wealth and physical power",
-        "To build permanent and everlasting earthly kingdoms"
-      ],
-      "correctIndex": 0,
-      "learning": "In Islamic teachings, the foundational motivation behind creating mankind and jinn is for them to worship God and recognize His supreme sovereignty. Furthermore, earthly life and death were specifically created as a test of conduct to prepare individuals for the eternal Hereafter.",
+      "learning": "In Islamic teachings, the purpose of human life revolves around three primary roles: worshiping God, serving as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter through conscious choices and accountability.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "When a person's supplication (Dua) or actions alter the unfolding of events in their life (Qada’), how does this interaction relate to divine decree (Qadr)?",
+      "options": [
+        "The alteration retroactively erases divine preordained knowledge",
+        "The alteration was already known and encompassed within the eternal preordained plan",
+        "The alteration permanently revokes human free will for future choices",
+        "The alteration occurs entirely outside of divine permission and control"
+      ],
+      "correctIndex": 1,
+      "learning": "Although sincere supplications and personal actions can influence and alter Qada’ (the actual occurrence of events in life), any such change is already fully known to Allah and encompassed within Qadr (His complete preordained plan).",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In psychological research conducted by Hermann Ebbinghaus in the 1880s, approximately what percentage of newly learned information is forgotten within 24 hours without active recall?",
+      "options": [
+        "30%",
+        "50%",
+        "80%",
+        "95%"
+      ],
+      "correctIndex": 2,
+      "learning": "Research by Hermann Ebbinghaus demonstrated that people forget about 80% of what they learn within 24 hours unless they actively force themselves to recall it through quizzing rather than passive re-reading.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "In PCIe power management, which substate specifically powers down the electrical circuits of the main link to achieve greater power savings than the standard L1.0 state?",
+      "options": [
+        "L1.1",
+        "L1.2",
+        "L2",
+        "L0s"
+      ],
+      "correctIndex": 0,
+      "learning": "In PCIe power management, the L1.1 substate specifically powers down the electrical circuits of the main link to achieve deeper energy savings than the basic L1.0 state.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     }
   ],
-  "fetchedAt": "2026-08-01T03:58:56.860Z"
+  "fetchedAt": "2026-08-02T04:02:48.809Z"
 }
