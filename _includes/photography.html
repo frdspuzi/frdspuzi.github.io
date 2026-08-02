@@ -105,10 +105,20 @@
       return img;
     });
 
-    function requestImage(idx) {
+    function requestImage(idx, highPriority) {
       var img = loadedImages[idx];
       if (img.src) return; // already requested (loading or loaded)
+      // fetchPriority is a real browser hint (Chromium; a harmless no-op elsewhere), not just
+      // request-order guesswork — set before `.src` so it applies to the fetch it triggers.
+      if (highPriority && 'fetchPriority' in img) img.fetchPriority = 'high';
       img.src = photos[idx].url;
+    }
+
+    // getVisibleTiles() pads its block range by 1 in every direction so panning doesn't reveal
+    // blank tiles at the edge — but that buffer isn't actually on screen yet. Used to tell
+    // render() which tiles are genuinely visible right now vs just held in reserve for panning.
+    function tileOnScreen(tile) {
+      return tile.x + tile.w > 0 && tile.x < dims.w && tile.y + tile.h > 0 && tile.y < dims.h;
     }
 
     // Google-Maps-style interaction: the camera only ever moves in direct response to a drag
@@ -218,8 +228,18 @@
       ctx.clearRect(0, 0, dims.w, dims.h);
 
       var tiles = getVisibleTiles();
+
+      // Request on-screen tiles' images first (and at high fetch priority) — the 1-block buffer
+      // getVisibleTiles() also returns exists so panning doesn't reveal blank tiles, but nothing
+      // in it is actually seen yet, so it shouldn't compete with what's genuinely on screen.
       tiles.forEach(function (tile) {
-        requestImage(tile.imgIdx);
+        if (tileOnScreen(tile)) requestImage(tile.imgIdx, true);
+      });
+      tiles.forEach(function (tile) {
+        if (!tileOnScreen(tile)) requestImage(tile.imgIdx, false);
+      });
+
+      tiles.forEach(function (tile) {
         var img = loadedImages[tile.imgIdx];
 
         ctx.save();
@@ -280,10 +300,62 @@
       render(); // immediate redraw — nothing else triggers a first paint otherwise
     }
 
-    resize();
+    function initCanvasSizing() {
+      resize();
+      var ro = new ResizeObserver(resize);
+      ro.observe(canvas);
+    }
 
-    var ro = new ResizeObserver(resize);
-    ro.observe(canvas);
+    // Photography sits near the bottom of the page — defer sizing/rendering (and therefore every
+    // image request; nothing calls requestImage() before the first render()) until the visitor
+    // actually scrolls near it, rather than fetching ~45 photos on every page load regardless of
+    // whether this section is ever seen. `rootMargin` starts it a bit before the frame physically
+    // enters the viewport (roughly one scroll's worth) so images have a head start and are
+    // already loaded, or close to it, by the time the section is actually visible, instead of
+    // popping in empty right as it scrolls into view. Falls back to loading immediately if
+    // IntersectionObserver isn't supported — unlike quote-typing.js's purely decorative effect
+    // (which just skips itself in that case), skipping this entirely would leave the whole
+    // gallery blank forever, not just less polished.
+    var frameEl = canvas.closest('.infinite-image-field-frame') || canvas;
+
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              io.unobserve(entry.target);
+              initCanvasSizing();
+            }
+          });
+        },
+        { rootMargin: '400px 0px' }
+      );
+      io.observe(frameEl);
+    } else {
+      initCanvasSizing();
+    }
+
+    // Separate observer, deliberately not sharing the one above: that one fires ~400px early on
+    // purpose so images have a head start (see its own comment) — reusing it here would mean the
+    // reveal animation finishes well before the section is actually on screen, defeating the
+    // point of a scroll-triggered entrance. This one uses the real viewport (no rootMargin), so
+    // the fade/slide-in is genuinely seen as the section scrolls into view, not before. Skipped
+    // under prefers-reduced-motion via the CSS `transition: none` override below — .is-revealed
+    // still gets added either way so the section doesn't stay invisible for reduced-motion users,
+    // it just snaps to its final state instantly rather than animating there.
+    if ('IntersectionObserver' in window) {
+      var revealIo = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            revealIo.unobserve(entry.target);
+            frameEl.classList.add('is-revealed');
+          }
+        });
+      });
+      revealIo.observe(frameEl);
+    } else {
+      frameEl.classList.add('is-revealed');
+    }
 
     // Click-through to the real Unsplash page for whichever photo was clicked — reuses
     // getVisibleTiles() so the hit-test rect is always identical to what's actually drawn there.
@@ -413,6 +485,22 @@
     border-radius: 12px;
     background: var(--surface-alt);
     border: 1px solid var(--border);
+    /* Entrance reveal, toggled by the separate "reveal" IntersectionObserver in the script above
+       (deliberately not the image-preload one, which fires early on purpose — see its comment).
+       0.4s ease matches DESIGN.md's existing "larger transforms" convention rather than one of
+       the bounce/spring curves — this is a one-shot entrance, not a spring-loaded interaction. */
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+  .infinite-image-field-frame.is-revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .infinite-image-field-frame {
+      transition: none;
+    }
   }
   @media (min-width: 768px) {
     .infinite-image-field-frame {
