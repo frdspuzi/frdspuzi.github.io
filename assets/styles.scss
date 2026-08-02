@@ -612,6 +612,30 @@ body {
   }
 }
 
+// Skeleton loading placeholders (YouTube card, AI Trivia, Medium article list) — shadcn/ui's
+// actual Skeleton component (ui.shadcn.com/docs/components/base/skeleton), confirmed by fetching
+// its real source rather than assuming from the name: a plain opacity pulse via Tailwind's
+// `animate-pulse` (`2s cubic-bezier(0.4, 0, 0.6, 1) infinite`, keyframe `50% { opacity: .5 }`),
+// not a moving left-to-right gradient sweep/shimmer — that's a different, unrelated pattern the
+// user considered and explicitly didn't want. `var(--border)` reused as the fill color rather
+// than introducing a new token — already a light-enough neutral gray in both themes to read as
+// "placeholder," not an actual UI element.
+.skeleton {
+  display: block;
+  background: var(--border);
+  border-radius: 6px;
+  animation: skeleton-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes skeleton-pulse {
+  50% { opacity: 0.5; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: none;
+    opacity: 0.7;
+  }
+}
+
 .min-height-full {
   min-height: 100vh;
 }

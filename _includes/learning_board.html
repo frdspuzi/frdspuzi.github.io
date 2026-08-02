@@ -26,9 +26,21 @@
     </div>
 
     <div id="trivia-container" class="d-flex flex-column flex-auto" style="min-height: 0;">
-      
+
+      <!-- Skeleton placeholder, shaped like the real content below (2-line question, source
+           line, 3 option bars) — shown until loadQuestion()'s first run swaps it out for
+           #trivia-content. See assets/styles.scss's .skeleton comment for the animation choice. -->
+      <div id="trivia-skeleton" class="d-flex flex-column" style="gap: 12px;">
+        <span class="skeleton" style="width: 100%; height: 22px;"></span>
+        <span class="skeleton" style="width: 70%; height: 22px;"></span>
+        <span class="skeleton" style="width: 160px; height: 16px; margin-top: 4px;"></span>
+        <span class="skeleton" style="width: 100%; height: 40px; margin-top: 8px;"></span>
+        <span class="skeleton" style="width: 100%; height: 40px;"></span>
+        <span class="skeleton" style="width: 100%; height: 40px;"></span>
+      </div>
+
       <!-- Content Area -->
-      <div class="flex-auto pr-3 pb-2 custom-scrollbar" style="min-height: 0;">
+      <div id="trivia-content" class="flex-auto pr-3 pb-2 custom-scrollbar" style="min-height: 0; display: none;">
         <!-- Question -->
         <h2 id="trivia-question" class="f4 mb-3" style="line-height: 1.4; font-weight: 500; color: var(--fg);">
           Loading question...
@@ -78,9 +90,14 @@
     const allLearnings = rawLearnings ? rawLearnings.filter(l => l.question && l.options) : [];
     let currentLearnings = [...allLearnings];
     
+    const skeletonEl = document.getElementById('trivia-skeleton');
+    const contentEl = document.getElementById('trivia-content');
+
     if (!allLearnings || allLearnings.length === 0) {
       document.getElementById('trivia-question').innerText = "Oops! My AI is currently studying for the next quiz. Check back tomorrow!";
       document.getElementById('trivia-options').style.display = 'none';
+      skeletonEl.style.display = 'none';
+      contentEl.style.display = '';
       return;
     }
 
@@ -168,6 +185,11 @@
       });
 
       updatePagination();
+
+      // Idempotent, same as youtube_feed.html's equivalent swap — harmless to set on every
+      // question change, not just the first.
+      skeletonEl.style.display = 'none';
+      contentEl.style.display = '';
     }
 
     function handleAnswer(selectedIndex, clickedBtn) {

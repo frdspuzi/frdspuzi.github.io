@@ -23,41 +23,55 @@
 
         <!-- Right: AI Analysis & Info -->
         <div class="col-12 col-lg-6 d-flex flex-column flex-justify-center text-left">
-          <div class="mb-2">
-            <span id="yt-category" class="d-inline-block text-uppercase text-bold f6" style="padding: 4px 12px; border-radius: 20px; background-color: var(--accent-bg); color: var(--accent); border: 1px solid var(--accent-border); letter-spacing: 0.5px;">
-              Loading&hellip;
-            </span>
+          <!-- Skeleton placeholder, shaped like the real content below (category pill, 2-line
+               title, channel line, summary block) — shown until loadVideo()'s first run swaps
+               it out for #yt-info. See assets/styles.scss's .skeleton comment for why this is a
+               plain opacity pulse, not a shimmer sweep. -->
+          <div id="yt-skeleton" class="d-flex flex-column" style="gap: 12px;">
+            <span class="skeleton" style="width: 90px; height: 22px; border-radius: 20px;"></span>
+            <span class="skeleton" style="width: 95%; height: 22px;"></span>
+            <span class="skeleton" style="width: 55%; height: 22px;"></span>
+            <span class="skeleton" style="width: 140px; height: 16px; margin-top: 4px;"></span>
+            <span class="skeleton" style="width: 100%; height: 76px; margin-top: 8px;"></span>
           </div>
 
-          <h3 id="yt-title" class="f3 mb-2 lh-condensed theme-fg" style="font-weight: 600;">
-            Loading today's pick&hellip;
-          </h3>
-
-          <p id="yt-channel" class="f5 mb-3 text-gray">
-            By <strong id="yt-channel-name">&hellip;</strong>
-          </p>
-
-          <div class="flash yt-flash mb-4" style="border-color: var(--border); border-radius: 8px;">
-            <p id="yt-summary" class="f5 mb-0" style="line-height: 1.6; color: var(--fg);">
-              &nbsp;
-            </p>
-            <div id="yt-timestamps-header" class="mt-3" style="display: none;">
-               <strong class='f6 text-gray-light'>Key Moments:</strong>
+          <div id="yt-info" style="display: none;">
+            <div class="mb-2">
+              <span id="yt-category" class="d-inline-block text-uppercase text-bold f6" style="padding: 4px 12px; border-radius: 20px; background-color: var(--accent-bg); color: var(--accent); border: 1px solid var(--accent-border); letter-spacing: 0.5px;">
+                Loading&hellip;
+              </span>
             </div>
-            <div id="yt-timestamps" class="mt-2" style="display: none;"></div>
-          </div>
 
-          <div class="d-flex flex-justify-between flex-items-center">
-            <a id="yt-link" href="#" target="_blank" rel="noopener noreferrer" class="text-underline text-gray f6">
-              Watch on YouTube &nearr;
-            </a>
-            <div class="d-flex" style="gap: 8px;">
-              <button id="btn-prev-yt" type="button" class="btn">
-                &larr; Prev
-              </button>
-              <button id="btn-next-yt" type="button" class="btn btn-blue">
-                Next &rarr;
-              </button>
+            <h3 id="yt-title" class="f3 mb-2 lh-condensed theme-fg" style="font-weight: 600;">
+              Loading today's pick&hellip;
+            </h3>
+
+            <p id="yt-channel" class="f5 mb-3 text-gray">
+              By <strong id="yt-channel-name">&hellip;</strong>
+            </p>
+
+            <div class="flash yt-flash mb-4" style="border-color: var(--border); border-radius: 8px;">
+              <p id="yt-summary" class="f5 mb-0" style="line-height: 1.6; color: var(--fg);">
+                &nbsp;
+              </p>
+              <div id="yt-timestamps-header" class="mt-3" style="display: none;">
+                 <strong class='f6 text-gray-light'>Key Moments:</strong>
+              </div>
+              <div id="yt-timestamps" class="mt-2" style="display: none;"></div>
+            </div>
+
+            <div class="d-flex flex-justify-between flex-items-center">
+              <a id="yt-link" href="#" target="_blank" rel="noopener noreferrer" class="text-underline text-gray f6">
+                Watch on YouTube &nearr;
+              </a>
+              <div class="d-flex" style="gap: 8px;">
+                <button id="btn-prev-yt" type="button" class="btn">
+                  &larr; Prev
+                </button>
+                <button id="btn-next-yt" type="button" class="btn btn-blue">
+                  Next &rarr;
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -225,6 +239,8 @@
     const linkEl = document.getElementById('yt-link');
     const prevBtn = document.getElementById('btn-prev-yt');
     const nextBtn = document.getElementById('btn-next-yt');
+    const skeletonEl = document.getElementById('yt-skeleton');
+    const infoEl = document.getElementById('yt-info');
 
     function loadVideo(index) {
       if (index >= videos.length) index = 0;
@@ -243,6 +259,12 @@
       channelNameEl.innerText = v.channel;
       summaryEl.innerText = v.summary;
       linkEl.href = v.url;
+
+      // Real content is populated above this line, so only reveal it now — idempotent (harmless
+      // to set on every loadVideo() call, including Prev/Next swaps after the first), simpler
+      // than guarding it to run once.
+      skeletonEl.style.display = 'none';
+      infoEl.style.display = '';
 
       currentVideoTimestamps = timestamps;
       hasFilteredByDuration = false;
