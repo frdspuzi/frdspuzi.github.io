@@ -83,15 +83,24 @@
   var filtersBar = document.getElementById('medium-filters');
   var activeFilter = 'all';
 
+  // `document.createElement('div'); div.innerHTML = html;` parses the HTML as part of the live
+  // document, which means the browser starts fetching every <img> it finds — even though the div
+  // is never attached to the page and only .textContent/.querySelector() are ever read from it.
+  // With up to 10 full Medium article bodies (not just the one cover image actually shown per
+  // card) parsed this way on every page load, that's every inline image in every article,
+  // downloaded and immediately discarded — the dominant chunk of a ~5MB+ wasted payload found via
+  // PageSpeed Insights. `DOMParser` creates a fully separate, disconnected Document; nothing in
+  // it triggers real resource fetches, and .textContent/.querySelectorAll() behave identically.
+  function parseHtmlSafely(html) {
+    return new DOMParser().parseFromString(html, 'text/html').body;
+  }
+
   function stripHtml(html) {
-    var tmp = document.createElement('div');
-    tmp.innerHTML = html;
-    return tmp.textContent || tmp.innerText || '';
+    return parseHtmlSafely(html).textContent || '';
   }
 
   function extractSummary(html) {
-    var tmp = document.createElement('div');
-    tmp.innerHTML = html;
+    var tmp = parseHtmlSafely(html);
     var result = '';
 
     var paragraphs = tmp.querySelectorAll('p');

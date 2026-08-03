@@ -1,7 +1,12 @@
 {% include header.html %}
 
 {% if site.layout == 'stacked' %}
-<div class="container-lg py-6 p-responsive text-center">
+<!-- <main>, not <div>: PageSpeed Insights' accessibility audit flagged the page as having no
+     main landmark (2026-08-03) — screen reader users rely on landmarks to skip straight to the
+     primary content instead of tabbing through everything. floating_toc.html's <nav> ends up
+     nested inside this, which is valid HTML and still satisfies the audit; only the sidebar
+     layout branch below is untouched, since it's not the layout _config.yml actually uses. -->
+<main class="container-lg py-6 p-responsive text-center">
   {% include masthead.html metadata=true %}
 
   <div class="theme-fg">
@@ -32,7 +37,7 @@
 
   {% include floating_toc.html %}
 
-</div>
+</main>
 {% else %}
 <div class="d-md-flex min-height-full border-md-bottom theme-border">
   <div
