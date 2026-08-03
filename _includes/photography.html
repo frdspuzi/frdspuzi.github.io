@@ -172,6 +172,9 @@
     // skeleton pulse (see skeletonPulseOpacity()) keeps ticking for exactly as long as it's
     // actually needed and no longer.
     var hasUnloadedVisibleTiles = false;
+    // Populated by render()'s full redraw, reused by renderPulseOnly() so a stationary-camera
+    // pulse frame doesn't need to recompute tile positions via getVisibleTiles() every tick.
+    var lastTiles = [];
 
     var FRICTION = 0.92; // per-frame velocity decay during the momentum glide
     var MIN_VELOCITY = 0.03; // below this the glide is imperceptible — stop animating
@@ -255,11 +258,50 @@
     // (event-driven) on every drag move, and once per frame from loop() while momentum is
     // decaying. No ambient/continuous redraw loop otherwise — nothing to redraw if nothing's
     // moving, unlike the old hover-drift version which redrew unconditionally forever.
+    //
+    // Reused by both render() (full) and renderPulseOnly() (partial) below. Draws one tile's
+    // image-or-skeleton-fill plus its border stroke; doesn't touch anything outside `tile`'s own
+    // rect, which is what makes the partial-redraw path safe — tiles never overlap (GAP already
+    // subtracted from every tile's w/h), so clearing and redrawing one tile can't clip into a
+    // neighbor's already-correct pixels.
+    function drawTile(tile, pulseOpacity) {
+      var img = loadedImages[tile.imgIdx];
+      var isLoaded = !!(img && img.complete && img.naturalWidth > 0);
+
+      ctx.save();
+      drawRoundedRect(tile.x, tile.y, tile.w, tile.h, RADIUS);
+      ctx.clip();
+      if (isLoaded) {
+        drawImageCover(img, tile.x, tile.y, tile.w, tile.h);
+      } else {
+        ctx.globalAlpha = pulseOpacity;
+        ctx.fillStyle = SKELETON_FILL;
+        ctx.fillRect(tile.x, tile.y, tile.w, tile.h);
+        ctx.globalAlpha = 1;
+      }
+      ctx.restore();
+
+      ctx.save();
+      drawRoundedRect(tile.x, tile.y, tile.w, tile.h, RADIUS);
+      ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+      ctx.restore();
+
+      return isLoaded;
+    }
+
+    // Full redraw: the camera moved (drag/momentum) or the canvas resized, so every tile's
+    // screen position may have changed — everything has to be recomputed and redrawn from
+    // scratch. Caches its tile list in `lastTiles` for renderPulseOnly() below to reuse on
+    // frames where the camera hasn't moved, instead of recomputing the same positions from
+    // getVisibleTiles() 60 times a second for nothing.
     function render() {
       if (dims.w === 0 || dims.h === 0) return;
       ctx.clearRect(0, 0, dims.w, dims.h);
 
       var tiles = getVisibleTiles();
+      lastTiles = tiles;
 
       // Request on-screen tiles' images first (and at high fetch priority) — the 1-block buffer
       // getVisibleTiles() also returns exists so panning doesn't reveal blank tiles, but nothing
@@ -278,28 +320,8 @@
       hasUnloadedVisibleTiles = false;
 
       tiles.forEach(function (tile) {
-        var img = loadedImages[tile.imgIdx];
-
-        ctx.save();
-        drawRoundedRect(tile.x, tile.y, tile.w, tile.h, RADIUS);
-        ctx.clip();
-        if (img && img.complete && img.naturalWidth > 0) {
-          drawImageCover(img, tile.x, tile.y, tile.w, tile.h);
-        } else {
-          if (tileOnScreen(tile)) hasUnloadedVisibleTiles = true;
-          ctx.globalAlpha = pulseOpacity;
-          ctx.fillStyle = SKELETON_FILL;
-          ctx.fillRect(tile.x, tile.y, tile.w, tile.h);
-          ctx.globalAlpha = 1;
-        }
-        ctx.restore();
-
-        ctx.save();
-        drawRoundedRect(tile.x, tile.y, tile.w, tile.h, RADIUS);
-        ctx.strokeStyle = 'rgba(255,255,255,0.08)';
-        ctx.lineWidth = 1;
-        ctx.stroke();
-        ctx.restore();
+        var isLoaded = drawTile(tile, pulseOpacity);
+        if (!isLoaded && tileOnScreen(tile)) hasUnloadedVisibleTiles = true;
       });
 
       // Keeps itself pulsing for exactly as long as there's an unloaded tile actually on screen —
@@ -310,23 +332,59 @@
       }
     }
 
+    // Partial redraw: the camera hasn't moved since the last full render() (no drag/momentum
+    // active this frame — see loop() below), so `lastTiles`' positions are still accurate.
+    // Clears and redraws only tiles that haven't been settled yet; tiles already painted with
+    // their final loaded image are left completely untouched (no clearRect, no redraw) instead
+    // of the full-canvas clear-and-redraw render() does. This is the actual fix for the pulse
+    // animation making panning/scrolling choppy — redrawing every loaded photo 60 times a second
+    // just to animate a handful of skeleton placeholders was the real cost, not the pulse itself.
+    //
+    // Checks `tile.settled` rather than `img.complete` directly — img.complete can flip to true
+    // in between two pulse ticks, and without a settled flag this would skip drawing that tile's
+    // now-loaded image forever (the tile would stay frozen on its last skeleton frame). Marking
+    // `tile.settled = true` only once drawTile() has actually painted the loaded image guarantees
+    // every tile gets its one real paint before it's left alone. `lastTiles` is a fresh array of
+    // fresh objects every full render(), so this flag can't leak stale state across camera moves.
+    function renderPulseOnly() {
+      var pulseOpacity = skeletonPulseOpacity(performance.now());
+      hasUnloadedVisibleTiles = false;
+
+      lastTiles.forEach(function (tile) {
+        if (tile.settled) return; // untouched — already painted with its final loaded image
+
+        ctx.clearRect(tile.x, tile.y, tile.w, tile.h);
+        var isLoaded = drawTile(tile, pulseOpacity);
+        if (isLoaded) {
+          tile.settled = true;
+        } else if (tileOnScreen(tile)) {
+          hasUnloadedVisibleTiles = true;
+        }
+      });
+    }
+
     // Drives two independent, unrelated things off one shared RAF loop rather than running two
-    // competing loops that'd each call render() every frame: the momentum glide (dragVel decay)
-    // and the skeleton pulse animation (hasUnloadedVisibleTiles, set by render() itself every
-    // time it runs). Either one alone is enough to keep the loop going; dragVel is already {0,0}
-    // whenever momentum isn't active, so the decay math is a harmless no-op on frames where only
-    // the pulse is what's keeping this running.
+    // competing loops that'd each redraw every frame: the momentum glide (dragVel decay, needs
+    // the full render() since the camera itself is moving) and the skeleton pulse animation
+    // (hasUnloadedVisibleTiles, set by whichever render function ran — needs only the cheap
+    // renderPulseOnly() once the camera's settled). dragVel is already {0,0} whenever momentum
+    // isn't active, so the decay math is a harmless no-op on frames where only the pulse is what's
+    // keeping this running.
     function loop() {
-      cam.x += dragVel.x;
-      cam.y += dragVel.y;
-      dragVel.x *= FRICTION;
-      dragVel.y *= FRICTION;
-      if (Math.abs(dragVel.x) < MIN_VELOCITY && Math.abs(dragVel.y) < MIN_VELOCITY) {
-        dragVel.x = 0;
-        dragVel.y = 0;
-        momentumActive = false;
+      if (momentumActive) {
+        cam.x += dragVel.x;
+        cam.y += dragVel.y;
+        dragVel.x *= FRICTION;
+        dragVel.y *= FRICTION;
+        if (Math.abs(dragVel.x) < MIN_VELOCITY && Math.abs(dragVel.y) < MIN_VELOCITY) {
+          dragVel.x = 0;
+          dragVel.y = 0;
+          momentumActive = false;
+        }
+        render(); // camera moved (or just settled) this tick — needs the full redraw
+      } else {
+        renderPulseOnly(); // camera stationary — only the still-unloaded tiles need touching
       }
-      render();
       if (momentumActive || (!reduceMotion && hasUnloadedVisibleTiles)) {
         rafId = requestAnimationFrame(loop);
       } else {
