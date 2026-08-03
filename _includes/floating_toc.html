@@ -69,9 +69,9 @@
        add a third instance of that same category of jank risk. */
     transition: transform 0.3s ease;
   }
-  html.rail-pref-hidden #preview-rail {
-    transform: translateX(-100%);
-  }
+  /* html.rail-pref-hidden #preview-rail's actual transform rule lives inside the
+     max-width:767px block below, not here — see #rail-collapse-btn's own comment for why the
+     whole collapse feature is mobile-only. */
 
   .rail-tick,
   #rail-collapse-btn {
@@ -82,6 +82,16 @@
     width: 100%;
     display: flex;
     align-items: center;
+  }
+
+  /* Mobile-only feature (requested for phone specifically, not desktop — see .ai/handoff.md)
+     — hidden here unconditionally, re-enabled only inside the max-width:767px block below.
+     Desktop never sees this button at all, and (since the max-width scoping also applies to
+     html.rail-pref-hidden #preview-rail's transform rule) a `railHidden` preference saved on
+     mobile has zero effect if the same browser is later used at a desktop width — the rail
+     always shows there regardless of what was chosen on a phone. */
+  #rail-collapse-btn {
+    display: none;
   }
 
   /* Own color/hover treatment, not shared with .rail-tick — this button isn't part of the
@@ -160,7 +170,10 @@
 
   /* Same opacity/visibility show-hide convention as #rail-preview above, for consistency —
      hidden and non-interactive by default, only ever shown while html.rail-pref-hidden is set
-     (i.e. only once the rail itself has actually finished sliding away). */
+     (i.e. only once the rail itself has actually finished sliding away). `display: none` here is
+     a separate, viewport-based gate on top of that — see #rail-collapse-btn's comment above for
+     why this whole feature is mobile-only; the max-width:767px block below is what turns this
+     `display` into `flex`, only at mobile widths. */
   #rail-handle {
     position: fixed;
     top: 24px;
@@ -168,7 +181,7 @@
     z-index: 1000;
     width: 22px;
     height: 48px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     padding: 0;
@@ -198,6 +211,20 @@
     /* Tick-only nav on narrow screens — no room for the preview panel beside it. */
     #rail-preview {
       display: none;
+    }
+
+    /* The collapse feature (button, handle, and the rule that actually slides the rail away)
+       is scoped entirely to this block — requested for phone specifically, not desktop, so
+       desktop never shows the button at all and a `railHidden` preference saved on mobile has
+       zero effect if the same browser is later used at a desktop width. */
+    #rail-collapse-btn {
+      display: flex;
+    }
+    #rail-handle {
+      display: flex;
+    }
+    html.rail-pref-hidden #preview-rail {
+      transform: translateX(-100%);
     }
   }
 
@@ -310,7 +337,14 @@
       // paint specifically to avoid a flash of the rail before JS here gets a chance to hide it).
       // This call doesn't re-trigger the slide animation; it only sets the (non-animated) `inert`
       // property to match a state that's already visually correct by the time this runs.
-      rail.inert = document.documentElement.classList.contains('rail-pref-hidden');
+      //
+      // Gated on the same max-width:767px breakpoint the CSS collapse rules use — without this,
+      // a `railHidden` preference saved during an earlier mobile visit would make the rail
+      // visible-but-uninteractive on desktop (the CSS transform that actually hides it is
+      // mobile-only, but `inert` isn't a CSS concept, so nothing would otherwise stop it from
+      // being applied regardless of viewport).
+      rail.inert = window.matchMedia('(max-width: 767px)').matches &&
+        document.documentElement.classList.contains('rail-pref-hidden');
 
       collapseBtn.addEventListener('click', function () {
         setRailHidden(true, rail);
