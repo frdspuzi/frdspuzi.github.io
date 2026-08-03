@@ -1,7 +1,14 @@
 /*! Vendored from https://unpkg.com/primer@11.0.0/build/build.css on 2026-08-03 — self-hosted
  * instead of loaded live from unpkg.com so the site's core styling doesn't depend on a
- * third-party CDN's response time (same reasoning as Photography's local photo storage). To pull
- * in a newer Primer release, re-run:
+ * third-party CDN's response time (same reasoning as Photography's local photo storage).
+ * Linked as its own <link> in header.html, not merged into styles.css via a Sass @import — that
+ * was tried the same day and reverted: Jekyll's Sass toolchain (jekyll-sass-converter 1.5.2, an
+ * old, effectively unmaintained gem) has a real bug processing this file that way, inserting two
+ * large blocks of pure whitespace (104KB and 16KB) right at the boundaries between this file's
+ * own internally-concatenated license comments (Primer-core/Primer-product/Primer-marketing,
+ * confirmed absent from this source file — genuinely introduced by the compiler). Not worth the
+ * risk for what was already the smaller of two wins that day. To pull in a newer Primer release,
+ * re-run:
  *   curl -sL -o assets/vendor/primer.css https://unpkg.com/primer@<version>/build/build.css
  * then re-add this header comment (curl overwrites the whole file) and bump the version above. */
 /*!

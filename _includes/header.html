@@ -42,20 +42,12 @@
     <meta property="og:image" content="{{ user.avatar_url }}" />
     <meta property="og:description" content="{{ meta_description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Self-hosted (assets/vendor/primer.css, pinned to v11.0.0) instead of loaded live from
-         unpkg.com's @import inside styles.scss — that @import cost every page load an extra
-         network round-trip (unpkg's unversioned URL 302-redirected to the pinned one), couldn't
-         load in parallel with our own CSS (an @import is only discovered after the importing
-         stylesheet is downloaded and parsed), and made the site's core layout/styling depend on
-         a third-party CDN's response time for no reason — same logic as why Photography's images
-         are now served locally instead of hotlinked from Unsplash. A real <link> here, placed
-         before styles.css so cascade order is unchanged (Primer's rules still lose ties to our
-         own overrides, which come later in document order), lets both load side-by-side instead
-         of serially. See assets/vendor/primer.css's own header comment for how to pull in a
-         newer Primer release later. -->
+    <!-- Fira Sans used to be a separate Google Fonts request here (plus preconnect hints for
+         fonts.googleapis.com/fonts.gstatic.com) — now self-hosted via @font-face rules in
+         styles.css instead (see assets/styles.scss's own comment), removing both cross-origin
+         hops entirely. Primer stays a separate <link> (see assets/vendor/primer.css's own
+         comment for why a Sass build-time merge was tried and reverted the same day) — placed
+         before styles.css so cascade order is unchanged, letting both load in parallel. -->
     <link href="{{ "/assets/vendor/primer.css" | relative_url }}" rel="stylesheet" type="text/css">
     <link href="{{ "/assets/styles.css" | relative_url }}" rel="stylesheet" type="text/css">
   </head>
