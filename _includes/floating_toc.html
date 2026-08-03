@@ -86,8 +86,13 @@
 
   /* Own color/hover treatment, not shared with .rail-tick — this button isn't part of the
      section-proximity-scaling system (see its own HTML comment for why it can't be
-     class="rail-tick"), so it gets a plain, static hover state instead of a tick-mark scale. */
+     class="rail-tick"), so it gets a plain, static hover state instead of a tick-mark scale.
+     justify-content: center overrides .rail-tick's shared base rule specifically because this
+     button holds a centered icon (like #theme-toggle below it), not a left-aligned tick-mark bar
+     — without this, the icon sits flush-left instead of lining up in the same column as the
+     theme toggle's icon. */
   #rail-collapse-btn {
+    justify-content: center;
     color: var(--fg-muted);
   }
   #rail-collapse-btn:hover,
