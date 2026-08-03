@@ -33,6 +33,14 @@
           if (stored === 'light' || stored === 'dark') {
             document.documentElement.setAttribute('data-theme', stored);
           }
+          // Applied here (before first paint), not just in floating_toc.html's own script —
+          // same reasoning as the theme read above: without this, a visitor who previously hid
+          // the Preview Rail would see it flash visible for a moment before floating_toc.html's
+          // own (much later-running, since that include renders last) script catches up and
+          // hides it again.
+          if (localStorage.getItem('railHidden') === 'true') {
+            document.documentElement.classList.add('rail-pref-hidden');
+          }
         } catch (e) {}
       })();
     </script>
