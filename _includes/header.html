@@ -10,12 +10,20 @@
   {% assign page_title = page.title %}
   {% assign meta_description = page.content | strip_html | strip_newlines | xml_escape | truncate: 300 %}
 {% else %}
-  {% assign page_title = user.name %}
+  <!-- user.name/user.bio come from the jekyll-github-metadata plugin, sourced from the GitHub
+       profile's own "Name"/"Bio" fields — both are optional on GitHub, and were blank, so the
+       site was shipping an empty <title> and empty meta description on every non-post page
+       (caught by PageSpeed Insights' SEO audit, 2026-08-03). Falls back to user.login (the
+       GitHub username, always present) / a static description, rather than leaving either blank. -->
+  {% assign page_title = user.name | default: user.login %}
   {% assign meta_description = user.bio | strip_html | strip_newlines | xml_escape | truncate: 300 %}
+  {% if meta_description == blank %}
+    {% assign meta_description = "Software engineer's personal portfolio and blog — thoughts, technical explorations, and reflections." %}
+  {% endif %}
 {% endif %}
 
 <!doctype html>
-<html class="min-height-full" data-theme="{{ site.style }}">
+<html class="min-height-full" lang="en" data-theme="{{ site.style }}">
   <head>
     <meta charset="utf-8">
     <script>
@@ -30,7 +38,7 @@
     </script>
     <title>{{ page_title }}</title>
     <meta name="description" content="{{ meta_description }}" />
-    <meta property="og:title" content="{{ user.name }}" />
+    <meta property="og:title" content="{{ user.name | default: user.login }}" />
     <meta property="og:image" content="{{ user.avatar_url }}" />
     <meta property="og:description" content="{{ meta_description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

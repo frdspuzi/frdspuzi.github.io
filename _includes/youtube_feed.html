@@ -165,7 +165,10 @@
       btn.style.cssText = "color: var(--accent); text-decoration: none; white-space: normal; word-break: break-word; line-height: 1.4; width: 100%; padding: 0;";
 
       const timeLabel = "[" + formatTime(t) + "]";
-      btn.innerHTML = `<span style="display: flex; gap: 6px;"><span style="flex-shrink: 0;">▶</span> <span style="font-family: monospace; opacity: 0.8; flex-shrink: 0;">${timeLabel}</span> <span>${ts.topic}</span></span>`;
+      // No opacity reduction on the time label — it was dimming var(--accent) enough to fail
+      // PageSpeed Insights' contrast audit (2026-08-03). var(--accent) alone already meets
+      // contrast requirements everywhere else it's used for text/links on this site.
+      btn.innerHTML = `<span style="display: flex; gap: 6px;"><span style="flex-shrink: 0;">▶</span> <span style="font-family: monospace; flex-shrink: 0;">${timeLabel}</span> <span>${ts.topic}</span></span>`;
 
       btn.onclick = function() {
         if (ytPlayer && ytPlayer.seekTo) {

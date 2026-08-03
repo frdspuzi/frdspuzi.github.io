@@ -4,7 +4,7 @@
 {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {% endif %}
 
-<img src="/assets/img/avatar.png" class="mb-3" style="max-width: 150px;">
+<img src="/assets/img/avatar.png" class="mb-3" style="max-width: 150px;" alt="{{ user.name | default: user.login }}">
 <h1 class="theme-fg mb-2 lh-condensed">{% if user.name %}{{ user.name }}{%
   else %}<span class="aurora-text">{{ user.login }}</span>{% endif %}</h1>
 <p class="mb-3 f4 theme-fg-muted">
