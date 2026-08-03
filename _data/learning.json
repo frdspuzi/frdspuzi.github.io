@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In Scrum methodology, which artifact specifically represents the team's commitment for the duration of a Sprint?",
+      "question": "What primary three-step strategy is recommended to combat the brain's natural tendency to forget valuable ideas?",
       "options": [
-        "Product Backlog",
-        "Sprint Backlog",
-        "User Story",
-        "Burndown Chart"
+        "Memorizing concepts immediately, avoiding external notes, and practicing silent reflection",
+        "Storing notes in static digital folders, reviewing them monthly, and keeping them strictly confidential",
+        "Rereading notes regularly, keeping thoughts private, and relying on passive recall",
+        "Writing ideas down, establishing a system for active reminders, and sharing the knowledge publicly"
       ],
-      "correctIndex": 1,
-      "learning": "In the Scrum framework, the Sprint Backlog is a selected list of user stories for the active Sprint that represents the team's formal commitment for that Sprint's duration.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "In Islamic belief, what are the three primary roles that define the fundamental purpose of human existence?",
-      "options": [
-        "Worshiping God, serving as caretakers of the Earth, and preparing for the Hereafter",
-        "Observing worldly events passively, avoiding personal accountability, and seeking material luxury",
-        "Accumulating wealth, seeking physical immortality, and ruling nations",
-        "Conquering nature, isolating from society, and acquiring personal power"
-      ],
-      "correctIndex": 0,
-      "learning": "In Islamic teachings, the purpose of human life revolves around three primary roles: worshiping God, serving as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter through conscious choices and accountability.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "When a person's supplication (Dua) or actions alter the unfolding of events in their life (Qada’), how does this interaction relate to divine decree (Qadr)?",
-      "options": [
-        "The alteration retroactively erases divine preordained knowledge",
-        "The alteration was already known and encompassed within the eternal preordained plan",
-        "The alteration permanently revokes human free will for future choices",
-        "The alteration occurs entirely outside of divine permission and control"
-      ],
-      "correctIndex": 1,
-      "learning": "Although sincere supplications and personal actions can influence and alter Qada’ (the actual occurrence of events in life), any such change is already fully known to Allah and encompassed within Qadr (His complete preordained plan).",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In psychological research conducted by Hermann Ebbinghaus in the 1880s, approximately what percentage of newly learned information is forgotten within 24 hours without active recall?",
-      "options": [
-        "30%",
-        "50%",
-        "80%",
-        "95%"
-      ],
-      "correctIndex": 2,
-      "learning": "Research by Hermann Ebbinghaus demonstrated that people forget about 80% of what they learn within 24 hours unless they actively force themselves to recall it through quizzing rather than passive re-reading.",
+      "correctIndex": 3,
+      "learning": "To effectively retain insights and overcome natural forgetfulness, you must write ideas down, build an active system to remind yourself of them, and share that knowledge publicly.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "In PCIe power management, which substate specifically powers down the electrical circuits of the main link to achieve greater power savings than the standard L1.0 state?",
+      "question": "Which Scrum artifact visualizes the progress of a Sprint by displaying the remaining work to track if the team is on schedule?",
       "options": [
-        "L1.1",
-        "L1.2",
-        "L2",
-        "L0s"
+        "Sprint Backlog",
+        "Product Backlog",
+        "User Story",
+        "Burndown Chart"
+      ],
+      "correctIndex": 3,
+      "learning": "A Burndown Chart is a Scrum artifact that visualizes the progress of a Sprint by showing the remaining work to help track if the team is on schedule.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "In PCIe power management, what specific components are turned off during the L1.1 substate to achieve deeper energy savings than L1.0?",
+      "options": [
+        "The electrical circuits of the main link",
+        "The system host memory bus",
+        "The main device configuration registers",
+        "The main power controller"
       ],
       "correctIndex": 0,
-      "learning": "In PCIe power management, the L1.1 substate specifically powers down the electrical circuits of the main link to achieve deeper energy savings than the basic L1.0 state.",
+      "learning": "In PCIe power management, the L1.1 substate achieves greater energy savings than L1.0 specifically by powering down the electrical circuits of the main link, which in turn increases the system's wake-up time.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
+    },
+    {
+      "question": "How does altering a life outcome through supplication (Dua) impact Qadr (divine preordination)?",
+      "options": [
+        "It overwrites Qadr, proving that human free will acts entirely outside of divine knowledge.",
+        "It has no effect on Qada', because supplication cannot change the actual occurrence of events.",
+        "It alters Qada' (the unfolding event), but the action and change were already known and written in Qadr.",
+        "It invalidates Qadr, causing divine preordination to cease applying to that individual."
+      ],
+      "correctIndex": 2,
+      "learning": "While supplication (Dua) and human actions can alter Qada’ (the actual unfolding events of life), these changes do not rewrite Qadr (Allah's preordained plan), because Allah's eternal knowledge already encompasses both the decision to act and the resulting outcome.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What percentage of the text in the Quran is made up of its top 20 most frequently repeated words?",
+      "options": [
+        "Approximately 20.83%",
+        "Approximately 33.33%",
+        "Approximately 80.00%",
+        "Approximately 50.00%"
+      ],
+      "correctIndex": 0,
+      "learning": "An analysis of Quranic vocabulary demonstrates that the Pareto Principle (80/20 rule) does not strictly apply to word frequency, as the top 20 most repeated words account for only about 20.83% of the total text.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-08-02T04:02:48.809Z"
+  "fetchedAt": "2026-08-03T04:04:45.294Z"
 }
