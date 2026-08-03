@@ -8,8 +8,14 @@
      from an original 977x1104 PNG after PageSpeed Insights flagged it as far larger than its
      displayed size and PNG as a less efficient format than necessary for this artwork. width/
      height attributes set (matching intrinsic aspect ratio) so the browser can reserve the right
-     space before the image loads, preventing a layout shift. -->
-<img src="/assets/img/avatar.webp" class="mb-3" style="max-width: 150px;" width="300" height="339" alt="{{ user.name | default: user.login }}">
+     space before the image loads, preventing a layout shift.
+     `height: auto` is required alongside `max-width` here, not optional: the width/height
+     attributes also map to legacy CSS width:300px/height:339px at low (UA-stylesheet) priority.
+     max-width:150px correctly caps the width, but with nothing touching height, height stayed
+     pinned at the full 339px attribute value — width shrank, height didn't, so the image rendered
+     visibly stretched vertically. Explicit `height: auto` overrides that legacy mapping so the
+     browser derives height proportionally from the (constrained) width instead. -->
+<img src="/assets/img/avatar.webp" class="mb-3" style="max-width: 150px; height: auto;" width="300" height="339" alt="{{ user.name | default: user.login }}">
 <h1 class="theme-fg mb-2 lh-condensed">{% if user.name %}{{ user.name }}{%
   else %}<span class="aurora-text">{{ user.login }}</span>{% endif %}</h1>
 <p class="mb-3 f4 theme-fg-muted">
