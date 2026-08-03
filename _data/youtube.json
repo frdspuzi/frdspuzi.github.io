@@ -6,18 +6,18 @@
       "videoId": "4Gt7KquIAIc",
       "channel": "Ryan Peterman",
       "category": "Tech & Career",
-      "summary": "Turing Award winner Judea Pearl shares a simple yet profound framework for deciding which problems to tackle in research and work. He emphasizes choosing puzzles that bother you deeply and assessing whether you possess unique tools or techniques to make a meaningful contribution.",
-      "dateAdded": "2026-08-02T04:02:26.850Z",
+      "summary": "Turing Award winner Judea Pearl shares his practical framework for choosing which problems are worth tackling in research and problem-solving. He explains that meaningful work happens at the intersection of a deeply personal puzzle and having unique tools or insights that give you an advantage.",
+      "dateAdded": "2026-08-03T04:04:42.900Z",
       "timestamps": [
         {
           "startTime": 0,
           "endTime": 22,
-          "topic": "The two key questions for picking a problem"
+          "topic": "The two key questions for evaluating a problem"
         },
         {
-          "startTime": 28,
+          "startTime": 23,
           "endTime": 53,
-          "topic": "Taking puzzles personally and matching them to your tools"
+          "topic": "Matching personal obsession with unique tools"
         }
       ]
     },
@@ -27,23 +27,23 @@
       "videoId": "z6l5nyE_6-I",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "This video provides a practical, step-by-step walkthrough on how to make real-time AI voice agents production-ready using Google's Gemini Live model and LangSmith observability. Viewers will learn how to set up tracing to seamlessly monitor audio interactions, tool calls, user interruptions, and token usage costs. It's a must-watch for developers looking to gain full visibility and control over their conversational AI applications.",
-      "dateAdded": "2026-08-02T04:02:26.850Z",
+      "summary": "Discover how to unlock full observability for real-time voice AI by integrating LangSmith tracing into Google's Gemini Live model. This practical guide walks you through setting up code plugins, handling audio streams during user interruptions, and analyzing detailed trace logs—including tool calls, transcriptions, and precise token costs—to ensure your voice agents are production-ready.",
+      "dateAdded": "2026-08-03T04:04:42.900Z",
       "timestamps": [
         {
-          "startTime": 23,
-          "endTime": 90,
-          "topic": "Why Gemini Live and LangSmith are Crucial for Voice AI"
-        },
-        {
           "startTime": 187,
-          "endTime": 318,
-          "topic": "Setting Up LangSmith Tracing and Audio Callbacks in Code"
+          "endTime": 322,
+          "topic": "Configuring the LangSmith Tracing Plugin & Audio Capture"
         },
         {
-          "startTime": 363,
-          "endTime": 435,
-          "topic": "Analyzing Conversational Traces, Interruptions, and Token Costs"
+          "startTime": 323,
+          "endTime": 363,
+          "topic": "Live Terminal Interaction & Interruption Demo"
+        },
+        {
+          "startTime": 364,
+          "endTime": 453,
+          "topic": "Inspecting Voice Traces, Tool Calls, and Token Costs in LangSmith"
         }
       ]
     },
@@ -53,23 +53,23 @@
       "videoId": "mn0wxNMfFUM",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Dive into the critical financial revelations from the Tabung Haji Royal Commission of Inquiry (RCI) report, which details how dividend payouts were historically distributed despite deficit conditions. This video breaks down complex audit disclosures into clear, layman-friendly concepts to explain asset-liability gaps and how Tabung Haji's governance has been recovering since 2018.",
-      "dateAdded": "2026-08-02T04:02:26.850Z",
+      "summary": "This video breaks down the key findings from the Royal Commission of Inquiry (RCI) report on Tabung Haji, explaining the financial missteps where dividends were paid despite assets falling short of liabilities. It offers depositors an insightful, non-political explanation of past deficits and highlights the organization's recovery since 2018.",
+      "dateAdded": "2026-08-03T04:04:42.900Z",
       "timestamps": [
         {
-          "startTime": 25,
+          "startTime": 28,
           "endTime": 58,
-          "topic": "RCI Findings: Tabung Haji Deficits and Hibah Payouts (2014–2017)"
+          "topic": "Financial deficit revealed in the RCI Tabung Haji report (2014-2017)"
         },
         {
-          "startTime": 74,
+          "startTime": 58,
+          "endTime": 92,
+          "topic": "Violation of the Tabung Haji Act regarding hibah distribution"
+        },
+        {
+          "startTime": 92,
           "endTime": 117,
-          "topic": "Understanding Assets vs. Liabilities in Tabung Haji"
-        },
-        {
-          "startTime": 118,
-          "endTime": 157,
-          "topic": "Impact of Deficit Dividend Distributions and Path to Recovery"
+          "topic": "Analogy illustrating the asset-liability deficit gap"
         }
       ]
     },
@@ -79,23 +79,44 @@
       "videoId": "H4q55uZlcdo",
       "channel": "Financial Faiz Podcast",
       "category": "Finance",
-      "summary": "Ever wondered if taking an ASB Financing loan is actually more profitable than saving monthly on your own? Financial expert Faiz Azmi breaks down the math showing how leveraging a larger initial capital from day one allows you to maximize dividend payouts and compound growth far faster than traditional monthly savings. Watch this quick breakdown to understand how smart financing can supercharge your long-term wealth building!",
-      "dateAdded": "2026-08-02T04:02:26.850Z",
+      "summary": "Discover whether ASB Financing is actually worth taking up compared to simply saving cash every month. Financial expert Faiz Azmi breaks down the math behind leveraging bank capital from day one to maximize compounding dividends over time.",
+      "dateAdded": "2026-08-03T04:04:42.900Z",
       "timestamps": [
         {
           "startTime": 11,
           "endTime": 26,
-          "topic": "Is ASB Financing suitable for beginner investors?"
+          "topic": "Is ASB Financing recommended for beginner investors?"
         },
         {
           "startTime": 48,
           "endTime": 81,
-          "topic": "Why upfront capital leveraging yields higher returns"
+          "topic": "The power of leveraging large initial capital from day one"
         },
         {
-          "startTime": 100,
-          "endTime": 122,
-          "topic": "The dividend & compounding math: RM200k financing vs RM800/month saving"
+          "startTime": 99,
+          "endTime": 123,
+          "topic": "How dividend compounding works with RM200,000 financing"
+        }
+      ]
+    },
+    {
+      "title": "When Scholars Disappear | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/hEgbunC4gAk",
+      "videoId": "hEgbunC4gAk",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "In this thought-provoking message, Dr. Omar Suleiman addresses a subtle yet critical warning: the quiet disappearance of authentic Islamic scholars and traditional sacred knowledge. He highlights the dangers of replacing deep human scholarship with surface-level digital shortcuts and encourages viewers to actively preserve learning in their communities. Watching this video provides a powerful reminder to value, support, and engage with genuine knowledge before it is lost.",
+      "dateAdded": "2026-08-03T04:04:42.900Z",
+      "timestamps": [
+        {
+          "startTime": 8,
+          "endTime": 23,
+          "topic": "The quietest sign of the end times: the loss of scholars"
+        },
+        {
+          "startTime": 37,
+          "endTime": 54,
+          "topic": "AI-dependence in learning and the call to preserve true scholarship"
         }
       ]
     },
@@ -358,28 +379,7 @@
           "topic": "Managing Long-Term Memory and Context in Shared AI Systems"
         }
       ]
-    },
-    {
-      "title": "How to turn your worst fears into advantages #shorts #tedx",
-      "url": "https://www.youtube.com/shorts/MtsF23pdcg4",
-      "videoId": "MtsF23pdcg4",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "This inspiring talk introduces the 'pre-mortem' strategy—a powerful technique borrowed from business to face your worst-case scenarios head-on. By intentionally imagining failure in advance and mapping out a comeback, you can demystify fear and gain the mental clarity needed to make bold life choices.",
-      "dateAdded": "2026-07-30T03:39:38.348Z",
-      "timestamps": [
-        {
-          "startTime": 22,
-          "endTime": 33,
-          "topic": "The 'Pre-Mortem' Method Explained"
-        },
-        {
-          "startTime": 49,
-          "endTime": 66,
-          "topic": "How Facing Your Worst Fear Neutralizes Anxiety"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-08-02T04:03:47.828Z"
+  "lastUpdated": "2026-08-03T04:05:38.556Z"
 }
