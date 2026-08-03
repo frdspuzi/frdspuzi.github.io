@@ -19,6 +19,18 @@
         <div id="yt-player-container" class="col-12 col-lg-6 flex-shrink-0" style="aspect-ratio: 16/9; overflow: hidden; border-radius: 8px; position: relative;">
           <!-- IFrame API replaces this div -->
           <div id="yt-player" style="width: 100%; height: 100%;"></div>
+          <!-- Facade: a static thumbnail + play button instead of a live embed, so YouTube's own
+               player app (~1MB, ~700ms of main-thread time, per PageSpeed Insights) only loads
+               once someone actually signals intent to watch — clicking here, or a timestamp
+               below — instead of unconditionally on every page view. See loadRealPlayer()'s own
+               comment in the script below for the full mechanism, including why clicking a
+               timestamp before this is dismissed still works correctly. -->
+          <button type="button" id="yt-facade" class="yt-facade" aria-label="Play video">
+            <img id="yt-facade-thumb" class="yt-facade-thumb" alt="" />
+            <span class="yt-facade-play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5v14l11-7z" fill="#fff"></path></svg>
+            </span>
+          </button>
         </div>
 
         <!-- Right: AI Analysis & Info -->
@@ -89,7 +101,9 @@
 <script>
   var ytPlayer;
   var ytReady = false;
-  var initialVideoId = null;
+  var ytApiRequested = false; // has the iframe_api script been injected yet?
+  var currentVideoId = null; // kept in sync by loadVideo() below, read by onYouTubeIframeAPIReady()
+  var pendingSeekTime = null; // seek target to apply once the player becomes ready, if any
   var currentVideoTimestamps = [];
   var hasFilteredByDuration = false;
   // Queried here (top level, not inside DOMContentLoaded below) because renderTimestamps() —
@@ -97,22 +111,32 @@
   // tag runs after the HTML above it in the same file, so these elements already exist by now.
   var timestampsHeaderEl = document.getElementById('yt-timestamps-header');
   var timestampsEl = document.getElementById('yt-timestamps');
+  var facadeEl = document.getElementById('yt-facade');
+  var facadeThumbEl = document.getElementById('yt-facade-thumb');
 
-  // This is called by the YouTube IFrame API when it's fully loaded
+  // This is called by YouTube's own iframe_api script once IT finishes loading — a global
+  // callback by name (YouTube's script looks for window.onYouTubeIframeAPIReady specifically),
+  // so it can't be scoped inside the DOMContentLoaded closure below the way most of this file is.
   function onYouTubeIframeAPIReady() {
-    if (initialVideoId) {
-      createPlayer(initialVideoId);
-    }
+    createPlayer(currentVideoId);
   }
 
   function createPlayer(videoId) {
     if (ytPlayer) return; // already created
     ytPlayer = new YT.Player('yt-player', {
       videoId: videoId,
-      playerVars: { rel: 0, modestbranding: 1, enablejsapi: 1 },
+      // autoplay:1 (not a separate .playVideo() call in onReady) so the play-permission from the
+      // click that led here is preserved — by the time onReady fires, creating the player has
+      // gone through enough async steps that a *later* .playVideo() call risks no longer being
+      // treated as tied to the original user gesture by the browser's autoplay policy.
+      playerVars: { rel: 0, modestbranding: 1, enablejsapi: 1, autoplay: 1 },
       events: {
         onReady: function() {
           ytReady = true;
+          if (pendingSeekTime !== null) {
+            ytPlayer.seekTo(pendingSeekTime, true);
+            pendingSeekTime = null;
+          }
         },
         onStateChange: function(event) {
           // 5 is CUED, 1 is PLAYING
@@ -127,6 +151,45 @@
       }
     });
   }
+
+  // The actual fix this whole facade exists for: none of YouTube's player application (base.js,
+  // ~465KB; the player's own stylesheet; ad-serving infrastructure — ~1MB and ~700ms of
+  // main-thread time total, per PageSpeed Insights) loads until this runs, instead of
+  // unconditionally on every page view. Called from two places — clicking the facade's play
+  // button (seekTime omitted) or clicking a timestamp (seekTime = that moment, see
+  // renderTimestamps() below) — either one is a clear, explicit "yes, I want to watch this"
+  // signal, unlike merely having the section visible/scrolled-to.
+  function loadRealPlayer(seekTime) {
+    facadeEl.style.display = 'none';
+
+    if (ytReady && ytPlayer) {
+      // Player already loaded from an earlier click — just seek if asked, nothing new to fetch.
+      if (seekTime !== undefined) {
+        ytPlayer.seekTo(seekTime, true);
+        ytPlayer.playVideo();
+      }
+      return;
+    }
+
+    pendingSeekTime = seekTime !== undefined ? seekTime : null;
+
+    if (!ytApiRequested) {
+      ytApiRequested = true;
+      var tag = document.createElement('script');
+      tag.src = 'https://www.youtube.com/iframe_api';
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    } else if (window.YT && window.YT.Player) {
+      // iframe_api already finished loading from an earlier click (e.g. the API loaded but
+      // createPlayer() hasn't run yet for some reason) — create directly instead of waiting on
+      // onYouTubeIframeAPIReady, which YouTube only ever calls once per page.
+      createPlayer(currentVideoId);
+    }
+  }
+
+  facadeEl.addEventListener('click', function () {
+    loadRealPlayer();
+  });
 
   function formatTime(seconds) {
     const m = Math.floor(seconds / 60);
@@ -170,11 +233,13 @@
       // contrast requirements everywhere else it's used for text/links on this site.
       btn.innerHTML = `<span style="display: flex; gap: 6px;"><span style="flex-shrink: 0;">▶</span> <span style="font-family: monospace; flex-shrink: 0;">${timeLabel}</span> <span>${ts.topic}</span></span>`;
 
+      // loadRealPlayer(t) handles both cases: if the real player already exists (an earlier
+      // click already dismissed the facade), it just seeks; if not, it loads the player for the
+      // first time *and* seeks — a timestamp click is just as clear a "play this" signal as the
+      // facade's own play button, so it shouldn't silently do nothing just because the facade is
+      // still showing.
       btn.onclick = function() {
-        if (ytPlayer && ytPlayer.seekTo) {
-          ytPlayer.seekTo(t, true);
-          ytPlayer.playVideo();
-        }
+        loadRealPlayer(t);
       };
       timestampsEl.appendChild(btn);
     });
@@ -195,18 +260,9 @@
     const videos = [...rawVideos].sort(() => 0.5 - Math.random());
     let currentIndex = 0;
 
-    initialVideoId = videos[0].videoId;
-
-    // Load the IFrame API asynchronously now that we have the video ID
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // If API is somehow already loaded, init directly
-    if (window.YT && window.YT.Player) {
-      createPlayer(initialVideoId);
-    }
+    // Deliberately NOT loading the iframe_api script here anymore — that's the whole point of
+    // the facade. It's only requested from inside loadRealPlayer(), triggered by an actual click
+    // on the facade or a timestamp. See loadRealPlayer()'s own comment above for the full reasoning.
 
     // `accordionDetails`/`accordionContent` are accordion.js's own `details`/`content` elements
     // for this section — referenced directly here (not just inside the ResizeObserver block
@@ -257,9 +313,18 @@
       const v = videos[currentIndex];
       const timestamps = v.timestamps || [];
 
-      // Use IFrame API to swap video if ready, else it will load initially via createPlayer
+      currentVideoId = v.videoId;
+
+      // If the real player is already loaded (an earlier click dismissed the facade), keep it in
+      // sync with Prev/Next too — cueVideoById is cheap once YouTube's player app is already
+      // loaded, unlike the first-ever load the facade exists to defer. If the player hasn't
+      // loaded yet, just update the facade's own thumbnail instead — browsing with Prev/Next
+      // alone still shouldn't be the thing that triggers YouTube's player app to load.
       if (ytReady && ytPlayer && ytPlayer.cueVideoById) {
         ytPlayer.cueVideoById(v.videoId);
+      } else {
+        facadeThumbEl.src = 'https://i.ytimg.com/vi/' + v.videoId + '/hqdefault.jpg';
+        facadeThumbEl.alt = v.title;
       }
 
       categoryEl.innerText = v.category;
@@ -310,8 +375,9 @@
       loadVideo(currentIndex + 1);
     });
 
-    // Don't call loadVideo(0) on first load since createPlayer handles the first video
-    loadVideo(0); 
+    // Populates the text content and the facade's thumbnail for the first video — the real
+    // player is never created here at all now, only once the facade or a timestamp is clicked.
+    loadVideo(0);
   });
 </script>
 
@@ -323,6 +389,53 @@
   }
   .btn-blue:hover {
     background-color: var(--accent-solid-hover) !important;
+  }
+
+  .yt-facade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    background: #000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .yt-facade-thumb {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .yt-facade-play {
+    position: relative;
+    z-index: 1;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  .yt-facade:hover .yt-facade-play,
+  .yt-facade:focus-visible .yt-facade-play {
+    background: rgba(255, 0, 0, 0.85);
+    transform: scale(1.08);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .yt-facade-play {
+      transition: none;
+    }
+    .yt-facade:hover .yt-facade-play,
+    .yt-facade:focus-visible .yt-facade-play {
+      transform: none;
+    }
   }
 </style>
 {% endif %}
