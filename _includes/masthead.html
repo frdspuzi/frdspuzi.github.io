@@ -4,7 +4,12 @@
 {% assign metadata_styles = 'd-flex flex-items-center mb-3' %}
 {% endif %}
 
-<img src="/assets/img/avatar.png" class="mb-3" style="max-width: 150px;" alt="{{ user.name | default: user.login }}">
+<!-- 300x339 (2x the 150px CSS display width, standard retina headroom) WebP — resized/converted
+     from an original 977x1104 PNG after PageSpeed Insights flagged it as far larger than its
+     displayed size and PNG as a less efficient format than necessary for this artwork. width/
+     height attributes set (matching intrinsic aspect ratio) so the browser can reserve the right
+     space before the image loads, preventing a layout shift. -->
+<img src="/assets/img/avatar.webp" class="mb-3" style="max-width: 150px;" width="300" height="339" alt="{{ user.name | default: user.login }}">
 <h1 class="theme-fg mb-2 lh-condensed">{% if user.name %}{{ user.name }}{%
   else %}<span class="aurora-text">{{ user.login }}</span>{% endif %}</h1>
 <p class="mb-3 f4 theme-fg-muted">

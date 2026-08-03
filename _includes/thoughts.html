@@ -77,8 +77,6 @@
 
 <script>
 (function () {
-  var MEDIUM_RSS = 'https://medium.com/feed/@frdspuzi';
-  var API_URL = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(MEDIUM_RSS);
   var container = document.getElementById('medium-posts');
   var filtersBar = document.getElementById('medium-filters');
   var activeFilter = 'all';
@@ -253,42 +251,40 @@
     filtersBar.style.display = 'flex';
   }
 
-  fetch(API_URL)
-    .then(function (res) { return res.json(); })
-    .then(function (data) {
-      container.innerHTML = '';
-      if (!data.items || data.items.length === 0) {
-        container.innerHTML = '<p class="text-gray">No articles found.</p>';
-        return;
+  // Fetched at build time (.github/scripts/fetch_medium.js -> _data/medium.json) instead of live
+  // in the browser on every page view — rss2json's own response time (834ms observed via
+  // PageSpeed Insights' network dependency chain) was sitting directly in every visitor's
+  // critical path for no reason. Same embedded-data pattern already used by
+  // youtube_feed.html/learning_board.html. `items` is `null` if medium.json hasn't been generated
+  // yet (workflow hasn't run) — handled the same as a genuinely empty feed, not a separate error
+  // state, since there's no network call left to fail differently.
+  var items = {{ site.data.medium | jsonify }};
+
+  container.innerHTML = '';
+  if (!items || items.length === 0) {
+    container.innerHTML = '<p class="text-gray">No articles found.</p>';
+  } else {
+    var seenCategories = [];
+
+    items.forEach(function (item) {
+      var category = (item.categories && item.categories.length > 0)
+        ? item.categories[0]
+        : 'uncategorized';
+
+      if (seenCategories.indexOf(category) === -1 && category !== 'uncategorized') {
+        seenCategories.push(category);
       }
 
-      var seenCategories = [];
-      var items = data.items.slice(0, 10); /* Fetch more items since the container is now scrollable */
-
-      items.forEach(function (item) {
-        var category = (item.categories && item.categories.length > 0)
-          ? item.categories[0]
-          : 'uncategorized';
-
-        if (seenCategories.indexOf(category) === -1 && category !== 'uncategorized') {
-          seenCategories.push(category);
-        }
-
-        var card = buildCard(item, category);
-        card.style.opacity = '0';
-        container.appendChild(card);
-        setTimeout(function(c) { return function() { c.style.opacity = '1'; }; }(card), 10);
-      });
-
-      if (seenCategories.length > 1) {
-        buildFilters(seenCategories);
-      }
-    })
-    .catch(function () {
-      container.innerHTML =
-        '<p class="text-gray">Could not load articles. ' +
-        '<a href="https://medium.com/@frdspuzi" target="_blank" rel="noopener noreferrer">Read on Medium &rarr;</a></p>';
+      var card = buildCard(item, category);
+      card.style.opacity = '0';
+      container.appendChild(card);
+      setTimeout(function(c) { return function() { c.style.opacity = '1'; }; }(card), 10);
     });
+
+    if (seenCategories.length > 1) {
+      buildFilters(seenCategories);
+    }
+  }
 })();
 </script>
 
