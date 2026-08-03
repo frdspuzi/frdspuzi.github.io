@@ -1,6 +1,14 @@
 <!-- Floating page navigation: Preview Rail, all viewport widths -->
 <nav id="floating-toc" aria-label="Page navigation">
   <div id="preview-rail">
+    <!-- Not class="rail-tick" — that class is what the JS below queries to build the
+         ticks[]/sections[] proximity-scaling array; giving this button the same class would
+         insert it into that array and misalign every tick with its section by one. -->
+    <button id="rail-collapse-btn" type="button" aria-label="Hide navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true">
+        <path d="M9.78 12.78a.75.75 0 0 1-1.06 0L4.47 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042L6.06 8l3.72 3.72a.75.75 0 0 1 0 1.06Z"></path>
+      </svg>
+    </button>
     <button class="rail-tick" data-target="about" aria-label="About"><span class="tick-mark"></span></button>
     <button class="rail-tick" data-target="gratitude" aria-label="Gratitude"><span class="tick-mark"></span></button>
     <button class="rail-tick" data-target="reclaiming-algo" aria-label="Reclaiming the Algo"><span class="tick-mark"></span></button>
@@ -19,6 +27,13 @@
     <p id="rail-preview-label"></p>
     <p id="rail-preview-desc"></p>
   </div>
+  <!-- Only ever visible while the rail itself is collapsed (see the CSS below) — a small
+       persistent tab at the same position so the rail can be brought back. -->
+  <button id="rail-handle" type="button" aria-label="Show navigation">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true">
+      <path d="M6.22 3.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L9.94 8 6.22 4.28a.75.75 0 0 1 0-1.06Z"></path>
+    </svg>
+  </button>
 </nav>
 
 <style>
@@ -48,9 +63,18 @@
     border-left: none;
     border-radius: 0 12px 12px 0;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+    /* transform (not left/width) so this stays a compositor-only animation, not one of the
+       "non-composited animation" properties PageSpeed Insights already flagged elsewhere on this
+       site (aurora-text's background-position, the underline's stroke-dashoffset) — no reason to
+       add a third instance of that same category of jank risk. */
+    transition: transform 0.3s ease;
+  }
+  html.rail-pref-hidden #preview-rail {
+    transform: translateX(-100%);
   }
 
-  .rail-tick {
+  .rail-tick,
+  #rail-collapse-btn {
     border: none;
     background: none;
     cursor: pointer;
@@ -58,6 +82,17 @@
     width: 100%;
     display: flex;
     align-items: center;
+  }
+
+  /* Own color/hover treatment, not shared with .rail-tick — this button isn't part of the
+     section-proximity-scaling system (see its own HTML comment for why it can't be
+     class="rail-tick"), so it gets a plain, static hover state instead of a tick-mark scale. */
+  #rail-collapse-btn {
+    color: var(--fg-muted);
+  }
+  #rail-collapse-btn:hover,
+  #rail-collapse-btn:focus-visible {
+    color: var(--accent);
   }
 
   .rail-tick .tick-mark {
@@ -118,6 +153,42 @@
     line-height: 1.4;
   }
 
+  /* Same opacity/visibility show-hide convention as #rail-preview above, for consistency —
+     hidden and non-interactive by default, only ever shown while html.rail-pref-hidden is set
+     (i.e. only once the rail itself has actually finished sliding away). */
+  #rail-handle {
+    position: fixed;
+    top: 24px;
+    left: 0;
+    z-index: 1000;
+    width: 22px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-left: none;
+    border-radius: 0 8px 8px 0;
+    background: var(--surface);
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.08);
+    color: var(--fg-muted);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s, color 0.2s ease;
+    pointer-events: none;
+  }
+  html.rail-pref-hidden #rail-handle {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  #rail-handle:hover,
+  #rail-handle:focus-visible {
+    color: var(--accent);
+  }
+
   @media (max-width: 767px) {
     /* Tick-only nav on narrow screens — no room for the preview panel beside it. */
     #rail-preview {
@@ -133,6 +204,12 @@
       transition: opacity 0.15s ease, visibility 0.15s;
       filter: none !important;
       transform: none !important;
+    }
+    #preview-rail {
+      transition: none;
+    }
+    #rail-handle {
+      transition: color 0.2s ease;
     }
   }
 </style>
@@ -201,14 +278,40 @@
       }
     }
 
+    // `rail` param avoids re-querying #preview-rail here — DOMContentLoaded below already has it.
+    // `inert` (not just the CSS transform) is what actually makes the collapsed rail's buttons
+    // unreachable by Tab/screen readers while it's slid off-screen — transform alone only moves
+    // it visually, the buttons underneath would still be in the normal focus order otherwise.
+    function setRailHidden(hidden, rail) {
+      document.documentElement.classList.toggle('rail-pref-hidden', hidden);
+      rail.inert = hidden;
+      try { localStorage.setItem('railHidden', hidden ? 'true' : 'false'); } catch (e) {}
+    }
+
     document.addEventListener('DOMContentLoaded', function () {
       var rail = document.getElementById('preview-rail');
       var preview = document.getElementById('rail-preview');
       var themeToggle = document.getElementById('theme-toggle');
+      var collapseBtn = document.getElementById('rail-collapse-btn');
+      var handle = document.getElementById('rail-handle');
 
       themeToggle.addEventListener('click', function () {
         var current = document.documentElement.getAttribute('data-theme');
         setTheme(current === 'dark' ? 'light' : 'dark');
+      });
+
+      // Sync `inert` with whatever header.html's early inline script already applied to <html>
+      // before this ran (see that script's own comment — it reads localStorage before first
+      // paint specifically to avoid a flash of the rail before JS here gets a chance to hide it).
+      // This call doesn't re-trigger the slide animation; it only sets the (non-animated) `inert`
+      // property to match a state that's already visually correct by the time this runs.
+      rail.inert = document.documentElement.classList.contains('rail-pref-hidden');
+
+      collapseBtn.addEventListener('click', function () {
+        setRailHidden(true, rail);
+      });
+      handle.addEventListener('click', function () {
+        setRailHidden(false, rail);
       });
       var previewLabel = document.getElementById('rail-preview-label');
       var previewDesc = document.getElementById('rail-preview-desc');
