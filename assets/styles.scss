@@ -4,17 +4,101 @@
 // imported from unpkg.com — see the comment there for why. Not a CSS @import here either way:
 // an @import can only be discovered after this file itself is downloaded and parsed, so it can't
 // load in parallel with it regardless of where the CSS actually comes from.
+//
+// A Sass build-time @import (merging primer.css into this file, one request instead of two) was
+// tried and reverted same day: Jekyll's Sass toolchain (jekyll-sass-converter 1.5.2 / the legacy
+// Ruby `sass` gem, effectively unmaintained) has a real bug processing Primer's file this way —
+// it inserted two huge blocks of pure whitespace (104KB and 16KB, confirmed absent from the
+// source file, so genuinely introduced by the compiler) right at the boundaries between Primer's
+// own internally-concatenated license comments (Primer-core/Primer-product/Primer-marketing).
+// Not worth the risk for what was already the smaller of two wins that day (self-hosting Fira
+// Sans, done separately, was the bigger one) — reverted to the known-correct separate <link>
+// approach rather than ship CSS with an unpredictable compiler bug in it.
 @import 'highlight-syntax';
 
-// Site-wide font: Fira Sans, loaded via Google Fonts in header.html's <head> (weights
-// 400/500/600/700 — the actual set of weights used anywhere on the site, checked before picking
-// which to load rather than requesting every weight by default). Overrides Primer's own
-// `body { font-family: -apple-system, ... }` — same specificity (element selector), wins on
-// source order since this comes after Primer's @import above. System stack kept as the fallback
-// chain, not dropped, in case the web font fails to load for any reason. `.github-component`
-// (repo-card.html/topic-card.html) deliberately keeps the old system stack instead of inheriting
-// this — it exists specifically to stop a custom font from bleeding into elements meant to look
-// like authentic GitHub UI, see its own comment further down this file.
+// Site-wide font: Fira Sans, self-hosted (assets/fonts/, weights 400/500/600/700 — the actual
+// set of weights used anywhere on the site) instead of loaded live from Google Fonts, 2026-08-03.
+// Google Fonts cost two chained cross-origin requests on every page load: fetch CSS from
+// fonts.googleapis.com, which then points at font files on fonts.gstatic.com — a second origin,
+// a second round-trip, neither loadable in parallel with the first. Self-hosting removes both;
+// the @font-face rules below are just more of the CSS the browser is already fetching. Only the
+// `latin`/`latin-ext` Unicode subsets were downloaded (not Google's other 5: cyrillic, cyrillic-
+// ext, greek, greek-ext, vietnamese) — this site has no content in those scripts, so shipping
+// those subsets would be pure waste. If that ever changes, re-fetch the full set from
+// `https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap` with a
+// real Chrome User-Agent (a generic one gets served .ttf, not .woff2 — content negotiation keys
+// off recognizing the UA specifically) and add the missing subsets' files + @font-face rules.
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-500-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-600-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-600-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-700-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-700-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+// Overrides Primer's own `body { font-family: -apple-system, ... }` — same specificity (element
+// selector), wins on source order since this comes after Primer's @import above. System stack
+// kept as the fallback chain, not dropped, in case the web font fails to load for any reason.
+// `.github-component` (repo-card.html/topic-card.html) deliberately keeps the old system stack
+// instead of inheriting this — it exists specifically to stop a custom font from bleeding into
+// elements meant to look like authentic GitHub UI, see its own comment further down this file.
 body {
   font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";

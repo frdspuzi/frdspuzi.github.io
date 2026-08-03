@@ -1,6 +1,15 @@
 layout: stacked
 style: light
 
+# Found needing this the hard way, 2026-08-03: while briefly testing a (later reverted — see
+# assets/vendor/primer.css's own comment) Sass @import of Primer's CSS, compiled styles.css came
+# out fully expanded/unminified — whatever implicit default kept output compact before that
+# stopped applying once a second file's worth of content was being merged in. Kept explicit even
+# after reverting that change, since it's a correct, harmless safety net either way: forces
+# compressed output regardless of whatever implicit default Jekyll/Sass would otherwise pick.
+sass:
+  style: compressed
+
 # Internal AI/agent-facing docs — not site content. Excluded so Jekyll doesn't try to
 # Liquid-render or publish them as live pages (they contain literal {% %} example syntax).
 exclude:
