@@ -99,6 +99,26 @@
     var blockPitchW = BLOCK_COLS * cellPitchW;
     var blockPitchH = BLOCK_ROWS * cellPitchH;
 
+    // Same fill color as assets/styles.scss's .skeleton class (`background: var(--border)`) —
+    // canvas can't reference a CSS custom property directly, so it's read once here via
+    // getComputedStyle. Read once, not on every frame/theme toggle: the tile stroke color a few
+    // lines below is already a hardcoded rgba() with the same level of (non-)theme-reactivity, so
+    // this matches what's already there rather than introducing a new, more-reactive standard
+    // just for this one fill.
+    var SKELETON_FILL = getComputedStyle(document.documentElement).getPropertyValue('--border').trim() || 'rgba(255,255,255,0.06)';
+
+    // Matches .skeleton's `2s cubic-bezier(0.4, 0, 0.6, 1) infinite` / `50% { opacity: .5 }` in
+    // *feel* (a smooth ramp down to 0.5 opacity at the midpoint and back), not the literal same
+    // easing curve — canvas has no CSS animation-timing-function equivalent, and implementing a
+    // full cubic-bezier evaluator for one fill color isn't worth it when a sine wave is visually
+    // indistinguishable at this scale. `prefers-reduced-motion` returns a flat 0.7, matching
+    // .skeleton's own reduced-motion override exactly (a static opacity, not a slower animation).
+    function skeletonPulseOpacity(now) {
+      if (reduceMotion) return 0.7;
+      var t = (now % 2000) / 2000;
+      return 1 - Math.sin(t * Math.PI) * 0.5;
+    }
+
     var ctx = canvas.getContext('2d');
     // `.src` is deliberately NOT set here — with the profile now pulling every photo (see the
     // comment on rawPhotos above), eagerly fetching all of them on page load meant ~45 concurrent
@@ -147,6 +167,11 @@
     var momentumActive = false;
     var loopRunning = false;
     var rafId = 0;
+    // Set by render() every time it runs, read by loop() to decide whether to keep animating —
+    // true whenever at least one on-screen tile's image hasn't finished loading yet, so the
+    // skeleton pulse (see skeletonPulseOpacity()) keeps ticking for exactly as long as it's
+    // actually needed and no longer.
+    var hasUnloadedVisibleTiles = false;
 
     var FRICTION = 0.92; // per-frame velocity decay during the momentum glide
     var MIN_VELOCITY = 0.03; // below this the glide is imperceptible — stop animating
@@ -246,6 +271,12 @@
         if (!tileOnScreen(tile)) requestImage(tile.imgIdx, false);
       });
 
+      // Set once per render() call, not per tile — every not-yet-loaded tile pulses in sync
+      // rather than each starting its own independent cycle, same as how a page full of real
+      // .skeleton elements all share one CSS animation timeline.
+      var pulseOpacity = skeletonPulseOpacity(performance.now());
+      hasUnloadedVisibleTiles = false;
+
       tiles.forEach(function (tile) {
         var img = loadedImages[tile.imgIdx];
 
@@ -255,8 +286,11 @@
         if (img && img.complete && img.naturalWidth > 0) {
           drawImageCover(img, tile.x, tile.y, tile.w, tile.h);
         } else {
-          ctx.fillStyle = 'rgba(255,255,255,0.06)';
+          if (tileOnScreen(tile)) hasUnloadedVisibleTiles = true;
+          ctx.globalAlpha = pulseOpacity;
+          ctx.fillStyle = SKELETON_FILL;
           ctx.fillRect(tile.x, tile.y, tile.w, tile.h);
+          ctx.globalAlpha = 1;
         }
         ctx.restore();
 
@@ -267,12 +301,21 @@
         ctx.stroke();
         ctx.restore();
       });
+
+      // Keeps itself pulsing for exactly as long as there's an unloaded tile actually on screen —
+      // bounded and self-stopping, same discipline as the momentum loop() below, not a return to
+      // the old unconditional-forever ambient loop this component deliberately moved away from.
+      if (!reduceMotion && hasUnloadedVisibleTiles) {
+        ensureLoopRunning();
+      }
     }
 
-    // Momentum glide only — decays dragVel by FRICTION each frame and keeps re-scheduling itself
-    // while there's still enough speed to be visible, then stops (loopRunning = false) rather
-    // than running forever. Never active outside a momentum glide: dragging itself calls
-    // render() directly per move event, no RAF loop needed just to track a pointer.
+    // Drives two independent, unrelated things off one shared RAF loop rather than running two
+    // competing loops that'd each call render() every frame: the momentum glide (dragVel decay)
+    // and the skeleton pulse animation (hasUnloadedVisibleTiles, set by render() itself every
+    // time it runs). Either one alone is enough to keep the loop going; dragVel is already {0,0}
+    // whenever momentum isn't active, so the decay math is a harmless no-op on frames where only
+    // the pulse is what's keeping this running.
     function loop() {
       cam.x += dragVel.x;
       cam.y += dragVel.y;
@@ -284,7 +327,7 @@
         momentumActive = false;
       }
       render();
-      if (momentumActive) {
+      if (momentumActive || (!reduceMotion && hasUnloadedVisibleTiles)) {
         rafId = requestAnimationFrame(loop);
       } else {
         loopRunning = false;
