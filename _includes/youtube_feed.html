@@ -403,6 +403,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* This button is sized to the entire 16:9 video box, not a small icon — the browser's
+       default focus outline traces that whole rectangle, reading as a stray full-frame border
+       rather than a subtle focus ring (reported by the user against a screenshot, 2026-08-04).
+       Safe to suppress: .yt-facade-play already turns solid red and scales up on :focus-visible
+       (below), a clearly visible focus indicator in its own right. */
+    outline: none;
   }
   .yt-facade-thumb {
     position: absolute;
