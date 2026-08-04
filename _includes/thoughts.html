@@ -153,14 +153,23 @@
   // shows it in a 160px-wide box (.medium-image). Requesting a smaller size directly from
   // Medium's CDN avoids downloading pixels that get immediately downscaled and discarded —
   // verified against a real feed image: the same photo was 63KB at max/1024 vs 12.7KB at
-  // max/320, an 80% cut, for identical on-screen output. 320 = 2x the 160px box, generous
-  // headroom for retina displays. Falls back to the untouched original URL if neither known
-  // Medium CDN pattern matches (both `.replace()` calls are no-ops on a non-matching string),
-  // rather than guessing at an unfamiliar URL shape.
+  // max/320 (still PNG), an 80% cut, for identical on-screen output. 320 = 2x the 160px box,
+  // generous headroom for retina displays.
+  //
+  // Also requests format:webp — Medium's resize proxy (the same one the size segment above
+  // already targets) accepts an extra `/format:webp/` path segment and serves real WebP for
+  // both .png and .jpg sources, no extra redirect hop (confirmed directly against the CDN,
+  // 2026-08-04): the 12.7KB PNG above became 2.7KB as WebP (-78%), a same-size JPEG sample
+  // went from 7.9KB to 3.7KB (-53%). PNG compresses poorly for photographic/screenshot content
+  // next to a modern format, so this is most of what PageSpeed's "Improve image delivery"
+  // finding was actually about — the size-only optimization above wasn't enough on its own.
+  // Falls back to the untouched original URL if neither known Medium CDN pattern matches (both
+  // `.replace()` calls are no-ops on a non-matching string), rather than guessing at an
+  // unfamiliar URL shape.
   function shrinkMediumImage(url) {
     return url
-      .replace(/resize:fit:\d+/, 'resize:fit:320')
-      .replace(/\/max\/\d+\//, '/max/320/');
+      .replace(/resize:fit:\d+(\/format:\w+)?/, 'resize:fit:320/format:webp')
+      .replace(/\/max\/\d+\//, '/v2/resize:fit:320/format:webp/');
   }
 
   function buildCard(item, category) {
