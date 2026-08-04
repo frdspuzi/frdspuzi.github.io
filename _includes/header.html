@@ -50,6 +50,12 @@
     <meta property="og:image" content="{{ user.avatar_url }}" />
     <meta property="og:description" content="{{ meta_description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- youtube_feed.html's facade thumbnail (hqdefault.jpg) always loads from i.ytimg.com on
+         every page view, unconditionally — unlike the real YT player, which only loads after a
+         click. Preconnecting here lets the browser open that connection during the render-blocking
+         CSS/font wait below instead of only starting once the facade's own <img> is discovered,
+         which PageSpeed Insights measured as ~200ms of real LCP savings (2026-08-04). -->
+    <link rel="preconnect" href="https://i.ytimg.com">
     <!-- Fira Sans used to be a separate Google Fonts request here (plus preconnect hints for
          fonts.googleapis.com/fonts.gstatic.com) — now self-hosted via @font-face rules in
          styles.css instead (see assets/styles.scss's own comment), removing both cross-origin
