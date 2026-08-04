@@ -1,6 +1,141 @@
 {
   "videos": [
     {
+      "title": "Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)",
+      "url": "https://www.youtube.com/watch?v=jQDXzEVHMSE",
+      "videoId": "jQDXzEVHMSE",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This engaging conversation with Turbopuffer founder Simon Eskildsen explores how deep technical curiosity and first-principles thinking led him from self-taught teenager to building high-scale infrastructure for Shopify and Cursor. He shares how Turbopuffer slashed vector search costs by 95% by rethinking database architecture around cloud storage, alongside hilarious anecdotes from meeting tech leaders like Jensen Huang. It's a masterclass in pragmatic software engineering, system performance, and a refreshingly honest perspective on raising venture capital.",
+      "dateAdded": "2026-08-04T03:45:44.097Z",
+      "timestamps": [
+        {
+          "startTime": 718,
+          "endTime": 755,
+          "topic": "Creating Toxiproxy to simulate real-world database failures"
+        },
+        {
+          "startTime": 1766,
+          "endTime": 1850,
+          "topic": "How Cursor became Turbopuffer's first customer and cut costs by 95%"
+        },
+        {
+          "startTime": 2955,
+          "endTime": 3080,
+          "topic": "The 6 real reasons a startup should raise venture capital"
+        }
+      ]
+    },
+    {
+      "title": "MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal",
+      "url": "https://www.youtube.com/watch?v=s4r6nk5WsZw",
+      "videoId": "s4r6nk5WsZw",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Ever wondered why AI agents struggle to handle complex, multi-step tasks that take hours or days to complete? Cornelia Davis breaks down the engineering hurdles behind Model Context Protocol (MCP) tasks and explains how moving from stateful sessions to a durable, stateless architecture enables AI agents to execute long-running background workflows without losing progress during system crashes.",
+      "dateAdded": "2026-08-04T03:45:44.097Z",
+      "timestamps": [
+        {
+          "startTime": 143,
+          "endTime": 256,
+          "topic": "Real-World Example: Why AI Agents Need Asynchronous MCP Tasks"
+        },
+        {
+          "startTime": 293,
+          "endTime": 385,
+          "topic": "The Reliability Problem: Handling Infrastructure Failures and Durability"
+        },
+        {
+          "startTime": 973,
+          "endTime": 1067,
+          "topic": "MCP Tasks v2: Transitioning to a Stateless, Scalable Protocol"
+        }
+      ]
+    },
+    {
+      "title": "Which version of core ends up in your lockfile?",
+      "url": "https://www.youtube.com/shorts/qwUM4Sk1_nE",
+      "videoId": "qwUM4Sk1_nE",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "This quick developer logic challenge presents a mind-bending dependency resolution puzzle where three packages need the same core library. Test your problem-solving skills to discover why combining all three requirements creates a fascinating paradox where no single version can satisfy the entire system!",
+      "dateAdded": "2026-08-04T03:45:44.097Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 22,
+          "topic": "Introducing the dependency challenge"
+        },
+        {
+          "startTime": 23,
+          "endTime": 42,
+          "topic": "Breakdown of package requirements for core"
+        },
+        {
+          "startTime": 43,
+          "endTime": 63,
+          "topic": "Puzzle rules and the paradoxical twist"
+        }
+      ]
+    },
+    {
+      "title": "Think Like a Networking Architect | Diane Darling | TEDxSoards Road",
+      "url": "https://www.youtube.com/watch?v=Adp8_u4HW88",
+      "videoId": "Adp8_u4HW88",
+      "channel": "TEDx Talks",
+      "category": "General Ideas",
+      "summary": "This engaging TEDx talk redefines networking by approaching event design and human connection from an architectural perspective. You'll learn simple, game-changing tips—from where to place your name tag to structuring event breaks—that make meeting new people feel natural and enjoyable rather than awkward. It's a must-watch for event organizers, professionals, and anyone looking to master the art of effortless connection.",
+      "dateAdded": "2026-08-04T03:45:44.097Z",
+      "timestamps": [
+        {
+          "startTime": 124,
+          "endTime": 152,
+          "topic": "Why traditional conference breaks fail and how to redesign them"
+        },
+        {
+          "startTime": 160,
+          "endTime": 213,
+          "topic": "The 'four corners' birth-month icebreaker for events"
+        },
+        {
+          "startTime": 239,
+          "endTime": 328,
+          "topic": "Smart name tag placement and using conversation starters"
+        },
+        {
+          "startTime": 397,
+          "endTime": 418,
+          "topic": "Why networking is a structured process, not a random toss"
+        }
+      ]
+    },
+    {
+      "title": "EP207 | BN-PN Tidak Serasi?, Laporan RCI Tabung Haji, F1 Kembali Ke Sepang, Perjanjian MA63",
+      "url": "https://www.youtube.com/watch?v=FKGY4wDdrXc",
+      "videoId": "FKGY4wDdrXc",
+      "channel": "Keluar Sekejap",
+      "category": "Finance",
+      "summary": "This episode of Keluar Sekejap provides an insightful analysis of pressing Malaysian political and economic issues, including state election dynamics, Tabung Haji governance, and the unexpected return of Formula 1 to Sepang. The central discussion features law lecturer Encik Muhammad Hafiz Hassan, who breaks down the constitutional complexities of Federalism, MA63, and the legal dispute between Petronas and Sarawak over petroleum jurisdiction.",
+      "dateAdded": "2026-08-04T03:45:44.097Z",
+      "timestamps": [
+        {
+          "startTime": 1220,
+          "endTime": 1350,
+          "topic": "Surprise Return of Formula 1 to Sepang Sponsored by Bahrain"
+        },
+        {
+          "startTime": 1860,
+          "endTime": 2100,
+          "topic": "Historical Context and Legal Foundation of the Malaysia Agreement 1963 (MA63)"
+        },
+        {
+          "startTime": 3720,
+          "endTime": 3900,
+          "topic": "Petronas vs. Sarawak: Legal Tug-of-War Between PDA 1974 and State Gas Ordinances"
+        }
+      ]
+    },
+    {
       "title": "How to pick what to work on",
       "url": "https://www.youtube.com/shorts/4Gt7KquIAIc",
       "videoId": "4Gt7KquIAIc",
@@ -244,142 +379,7 @@
           "topic": "Dependency resolution rules and the challenge question"
         }
       ]
-    },
-    {
-      "title": "The high cost of cheap intelligence | David Ajibade | TEDxFUHSO",
-      "url": "https://www.youtube.com/watch?v=aA31v5O4X2Q",
-      "videoId": "aA31v5O4X2Q",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "This thought-provoking TEDx talk explores how relying on cheap artificial intelligence can unknowingly erode human critical thinking, confidence, and genuine expertise. Speaker David Ajibade breaks down the 'Expensive Human' framework, explaining why human taste, judgment, and accountability are essential traits that AI can never replace.",
-      "dateAdded": "2026-07-31T03:58:46.874Z",
-      "timestamps": [
-        {
-          "startTime": 74,
-          "endTime": 160,
-          "topic": "The Three Superpowers of Artificial Intelligence"
-        },
-        {
-          "startTime": 215,
-          "endTime": 310,
-          "topic": "Why External Intelligence Weakens Human Confidence"
-        },
-        {
-          "startTime": 361,
-          "endTime": 528,
-          "topic": "The Critical Difference Between Intelligence, Wisdom, and Confidence"
-        },
-        {
-          "startTime": 361,
-          "endTime": 528,
-          "topic": "The 'Expensive Human' Framework: Taste, Judgement, and Accountability"
-        }
-      ]
-    },
-    {
-      "title": "From Fracking to AI: How to Share the Next Boom | Daniel Ketyer | TEDxDuke",
-      "url": "https://www.youtube.com/watch?v=cNK0B8NvBDA",
-      "videoId": "cNK0B8NvBDA",
-      "channel": "TEDx Talks",
-      "category": "General Ideas",
-      "summary": "In this compelling TEDx talk, energy investor Daniel Ketyer draws lessons from the Appalachian fracking boom to navigate the massive economic and infrastructure surge driven by AI data centers. He outlines how high capital investment often fails to create local wealth and proposes actionable solutions—such as streamlined clean energy permitting and community equity models—to ensure local communities share in AI's prosperity.",
-      "dateAdded": "2026-07-31T03:58:46.874Z",
-      "timestamps": [
-        {
-          "startTime": 100,
-          "endTime": 178,
-          "topic": "The Hidden Costs of Technological Booms"
-        },
-        {
-          "startTime": 201,
-          "endTime": 299,
-          "topic": "Comparing Fracking to the AI Data Center Expansion"
-        },
-        {
-          "startTime": 345,
-          "endTime": 445,
-          "topic": "Two Solutions for Equity in the AI Era"
-        }
-      ]
-    },
-    {
-      "title": "Build for the Memo, Not the Demo — Shawn Chan, China Resources Holdings",
-      "url": "https://www.youtube.com/watch?v=tJFjeMBKbIY",
-      "videoId": "tJFjeMBKbIY",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "AI tools often excel at shallow, impressive demos but crumble when subjected to the high-stakes, skeptical scrutiny of real investment committees. Drawing from 15 years in cross-border finance and over 200 investment committees, Shawn Chan outlines how to bridge the gap between catchy AI demos and rigorous 'memo-ready' systems that earn actual investor trust.",
-      "dateAdded": "2026-07-30T03:39:38.347Z",
-      "timestamps": [
-        {
-          "startTime": 345,
-          "endTime": 436,
-          "topic": "The Demo vs. The Memo: Two Different AI Machines"
-        },
-        {
-          "startTime": 549,
-          "endTime": 678,
-          "topic": "Six Ways Trust Quietly Breaks in AI Financial Products"
-        },
-        {
-          "startTime": 1254,
-          "endTime": 1391,
-          "topic": "The Fix: 5 Essential Rules to Build Trustworthy AI Systems"
-        }
-      ]
-    },
-    {
-      "title": "Let's integrate AI Agents in Event-Sourced Systems — Divakar Kumar, FlyersSoft",
-      "url": "https://www.youtube.com/watch?v=o6U_2vd967Y",
-      "videoId": "o6U_2vd967Y",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "This talk demonstrates how combining AI agents with event-sourced architectures can solve complex, real-time fraud detection challenges where traditional rule-based and standard ML models fall short. By leveraging materialized view projections across separate bounded domains, multi-agent systems can gather full contextual data to make intelligent decisions on edge-case transactions in sub-500ms response times.",
-      "dateAdded": "2026-07-30T03:39:38.347Z",
-      "timestamps": [
-        {
-          "startTime": 307,
-          "endTime": 343,
-          "topic": "The Hybrid Tier-1 vs Tier-2 Fraud Detection Strategy"
-        },
-        {
-          "startTime": 668,
-          "endTime": 705,
-          "topic": "Building a Materialized Semantic Layer Across Bounded Contexts"
-        },
-        {
-          "startTime": 846,
-          "endTime": 948,
-          "topic": "Multi-Agent Fan-Out Orchestration and Consensus Voting"
-        }
-      ]
-    },
-    {
-      "title": "Wearing the Agent: From Group Chats to Glasses — Sai Krishna Rallabandi",
-      "url": "https://www.youtube.com/watch?v=s67bE2Ur3bY",
-      "videoId": "s67bE2Ur3bY",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Discover how AI is evolving beyond 1-on-1 personal assistants into shared group chat participants and wearable devices like smart glasses. This talk breaks down the essential engineering harness required—focusing on runtime security, intelligent long-term memory, and context-aware privacy routing—to build reliable multi-user AI agents. It's a must-watch for developers looking to build the next generation of ambient, collaborative artificial intelligence.",
-      "dateAdded": "2026-07-30T03:39:38.347Z",
-      "timestamps": [
-        {
-          "startTime": 118,
-          "endTime": 316,
-          "topic": "The Shift from Single-Person to Group-Based AI Agents"
-        },
-        {
-          "startTime": 356,
-          "endTime": 552,
-          "topic": "Securing AI Agents Against Indirect Prompt Injections"
-        },
-        {
-          "startTime": 732,
-          "endTime": 946,
-          "topic": "Managing Long-Term Memory and Context in Shared AI Systems"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-08-03T04:05:38.556Z"
+  "lastUpdated": "2026-08-04T03:49:46.746Z"
 }
