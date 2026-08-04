@@ -281,12 +281,17 @@
       }
       ctx.restore();
 
-      ctx.save();
-      drawRoundedRect(tile.x, tile.y, tile.w, tile.h, RADIUS);
-      ctx.strokeStyle = 'rgba(255,255,255,0.08)';
-      ctx.lineWidth = 1;
-      ctx.stroke();
-      ctx.restore();
+      // Border only drawn for loaded tiles — on a skeleton-fill tile it just outlines the pulse
+      // rectangle, which reads as an unwanted frame around a loading placeholder rather than a
+      // photo edge (reported by the user, 2026-08-04).
+      if (isLoaded) {
+        ctx.save();
+        drawRoundedRect(tile.x, tile.y, tile.w, tile.h, RADIUS);
+        ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+        ctx.lineWidth = 1;
+        ctx.stroke();
+        ctx.restore();
+      }
 
       return isLoaded;
     }
