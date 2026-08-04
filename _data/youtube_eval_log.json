@@ -1,212 +1,86 @@
 [
   {
+    "videoId": "jQDXzEVHMSE",
+    "title": "Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)",
+    "selected": true,
+    "reasoning": "Features Gergely Orosz (The Pragmatic Engineer), offering invaluable real-world insights into software architecture, engineering culture, and career progression for fullstack developers.",
+    "summary": "Step inside a high-level conversation with the founder of The Pragmatic Engineer as he dissects how modern, performance-critical cloud systems are built from scratch. If you are a junior engineer looking to understand high-scale backend trade-offs and elevate your technical career, this masterclass is required watching."
+  },
+  {
     "videoId": "-jY2T2PiJBE",
     "title": "MCP Apps: Extending the Frontier — Ido Salomon &amp; Liad Yosef",
     "selected": false,
-    "reasoning": "Hyper-niche conference talk on Model Context Protocol specs without immediate actionable career advice for a junior fullstack developer.",
+    "reasoning": "Niche conference talk with hyper-specific application context; lacks broader software engineering career or financial value.",
     "summary": ""
   },
   {
     "videoId": "s4r6nk5WsZw",
     "title": "MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal",
-    "selected": false,
-    "reasoning": "Deeply granular architectural topic on async agent tasks; too theoretical for early-career software engineering priorities.",
-    "summary": ""
-  },
-  {
-    "videoId": "-npY6XjM8CQ",
-    "title": "When Will The Benchmaxxing Plague End? — Nick Heiner, Surge AI",
-    "selected": false,
-    "reasoning": "Discussion on AI benchmark gaming; interesting industry meta-commentary but low practical value for fullstack development or finance.",
-    "summary": ""
-  },
-  {
-    "videoId": "39YOiwLmKy4",
-    "title": "LLMs faking intelligence",
-    "selected": false,
-    "reasoning": "A brief short snippet on LLM limitations; lacks the depth needed for actionable career or technical growth.",
-    "summary": ""
-  },
-  {
-    "videoId": "6heFRJmtHYs",
-    "title": "Intuition greater than data",
-    "selected": false,
-    "reasoning": "Generic opinion piece on intuition versus data with minimal concrete engineering context.",
-    "summary": ""
-  },
-  {
-    "videoId": "4Gt7KquIAIc",
-    "title": "How to pick what to work on",
     "selected": true,
-    "reasoning": "Direct, actionable engineering advice from an ex-Meta Staff Engineer on prioritizing high-impact projects early in your tech career.",
-    "summary": "As a junior engineer, picking the wrong tasks can severely plateau your early career growth. This quick guide breaks down how to strategically select software engineering projects that deliver maximum business impact and accelerate your promotion trajectory."
+    "reasoning": "Covers asynchronous task workflows and Temporal architecture, which are essential topics for junior fullstack engineers scaling backend systems.",
+    "summary": "Asynchronous workflows and background task orchestration are critical skills when moving from junior to senior developer. Learn why agentic AI systems struggle with async tasks and how tools like Temporal solve distributed system state management."
   },
   {
-    "videoId": "6XONgUfvoBo",
-    "title": "Meet the team member we never talk about",
-    "selected": false,
-    "reasoning": "Generic productivity channel behind-the-scenes content that offers no real technical or financial insight.",
-    "summary": ""
-  },
-  {
-    "videoId": "VFCfvlJ2g3c",
-    "title": "Making money online basically comes down to two things...",
-    "selected": false,
-    "reasoning": "Overly broad YouTube short on side hustles that lacks specific Islamic finance or software career utility.",
-    "summary": ""
-  },
-  {
-    "videoId": "EIk395a-tds",
-    "title": "Why You’re Not Financially Free (Yet)",
-    "selected": false,
-    "reasoning": "Generic wealth creation advice without local Malaysian financial context or Shariah-compliant investment guidelines.",
-    "summary": ""
+    "videoId": "qwUM4Sk1_nE",
+    "title": "Which version of core ends up in your lockfile?",
+    "selected": true,
+    "reasoning": "Provides practical, foundational knowledge on package management and dependency resolution for modern web developers.",
+    "summary": "Dependency hell and package resolution quirks bite fullstack engineers every day. This concise tip breaks down how package lockfiles resolve core versions, saving you hours of frustrating debugging during project builds."
   },
   {
     "videoId": "-rYFDefcq3k",
     "title": "Introducing Gemini Robotics 2",
     "selected": false,
-    "reasoning": "Hardware robotics tech showcase detached from fullstack web development and early-career software guidance.",
+    "reasoning": "A high-level corporate promotional video for robotics hardware/AI with low practical utility for fullstack web development.",
     "summary": ""
   },
   {
     "videoId": "z6l5nyE_6-I",
     "title": "Voice Agent observability with LangSmith",
+    "selected": false,
+    "reasoning": "Too narrow in scope (voice AI observability tooling) for general fullstack software development or career growth.",
+    "summary": ""
+  },
+  {
+    "videoId": "uEa1uZtWdKA",
+    "title": "Are you susceptible to extremism? Take this cognitive test. | Leor Zmigrod | TEDxNewEngland",
+    "selected": false,
+    "reasoning": "Generic cognitive psychology presentation that offers no direct alignment with tech, finance, or career advancement.",
+    "summary": ""
+  },
+  {
+    "videoId": "Adp8_u4HW88",
+    "title": "Think Like a Networking Architect | Diane Darling | TEDxSoards Road",
     "selected": true,
-    "reasoning": "High-value practical technical content on LLM observability and fullstack AI instrumentation, essential skills for modern developers.",
-    "summary": "Building production-ready AI features is fast becoming a core requirement for fullstack engineers. This walk-through shows you how to instrument, debug, and monitor AI voice agents using LangSmith so you can deliver reliable AI web applications."
+    "reasoning": "Provides essential early-career guidance on strategic professional networking and relationship building.",
+    "summary": "Hard coding skills only get you through the door—career trajectory depends on how effectively you build professional relationships. Learn how to structure and engineer your personal network systematically, even if you are an introvert."
   },
   {
-    "videoId": "8uncdjpygSU",
-    "title": "The documentary all devs would watch tbh…",
+    "videoId": "tz2FKl7wPrM",
+    "title": "Сахилга бат бол амжилтын түлхүүр | Badamgerel Khurelbaatar | TEDxGMIT",
     "selected": false,
-    "reasoning": "Promotional short with zero engineering substance or educational value.",
+    "reasoning": "Foreign language video (Mongolian) with no applicability or accessibility for the target demographic.",
     "summary": ""
   },
   {
-    "videoId": "PIedbmemp1s",
-    "title": "KWAP terpedaya dengan audit palsu?",
+    "videoId": "edrruA9R-1I",
+    "title": "Dokumentari PRN Negeri Sembilan 2026: Antara Adat &amp; Mandat",
     "selected": false,
-    "reasoning": "Brief commentary on corporate audit fraud; informative but secondary to core Islamic financial frameworks like ASB or Tabung Haji.",
+    "reasoning": "Localized political documentary with lower overall actionable insight compared to macro financial and institutional discussions.",
     "summary": ""
   },
   {
-    "videoId": "PuQ6moD4WrY",
-    "title": "Tak takut mati, takut tinggal masalah",
+    "videoId": "NVaVZF8F9ng",
+    "title": "EP16 #SembangKS | Nurul Zahid Masuk AJL? Ucapan Sanusi dan Geopolitik Dunia",
     "selected": false,
-    "reasoning": "Short clip on Islamic estate planning; insightful concept but lacks thorough practical breakdown due to format.",
+    "reasoning": "Lightweight political commentary podcast without focused coverage on tech or Islamic finance.",
     "summary": ""
   },
   {
-    "videoId": "mn0wxNMfFUM",
-    "title": "RCI dedah isu Tabung Haji?",
+    "videoId": "FKGY4wDdrXc",
+    "title": "EP207 | BN-PN Tidak Serasi?, Laporan RCI Tabung Haji, F1 Kembali Ke Sepang, Perjanjian MA63",
     "selected": true,
-    "reasoning": "Crucial update on Tabung Haji governance, directly relevant to Malaysian Islamic finance advocates keeping tabs on institutional integrity.",
-    "summary": "Tabung Haji is the cornerstone of Islamic personal finance in Malaysia. This video exposes key findings from the Royal Commission of Inquiry, providing essential knowledge on governance, accountability, and protecting pilgrim funds."
-  },
-  {
-    "videoId": "grKzHRoIxyk",
-    "title": "[S01:E19] Bisnes nasi lemak kekal laris 15 tahun? - Rizal Isa, COO Nasi Lemak Saleha",
-    "selected": false,
-    "reasoning": "Interview on traditional F&B operations; interesting local context but irrelevant to software engineering or personal Islamic finance.",
-    "summary": ""
-  },
-  {
-    "videoId": "uPY9ruQjpUc",
-    "title": "Bukti nasi lemak tahan 12 jam",
-    "selected": false,
-    "reasoning": "Promotional short clip about food preservation with no relevance to tech or finance.",
-    "summary": ""
-  },
-  {
-    "videoId": "H4q55uZlcdo",
-    "title": "Berbaloi ke ASB Financing?",
-    "selected": true,
-    "reasoning": "Directly addresses the fundamental Malaysian investment debate on leverage, returns, and Shariah considerations regarding ASB Financing.",
-    "summary": "ASB Financing is one of the most popular yet misunderstood wealth tools for Muslim Malaysians. Financial Faiz breaks down the math, leverage risks, and realistic returns so you can decide if taking on debt financing aligns with your financial strategy."
-  },
-  {
-    "videoId": "FgBL2T7CUw4",
-    "title": "#111 | Your Test Can Be Your Testimony",
-    "selected": false,
-    "reasoning": "Generic motivational talk lacking domain-specific engineering or financial substance.",
-    "summary": ""
-  },
-  {
-    "videoId": "-aJtCPD95jw",
-    "title": "#110 | The Power of Positive Thinking",
-    "selected": false,
-    "reasoning": "Broad self-help topic that doesn't offer concrete technical or career frameworks.",
-    "summary": ""
-  },
-  {
-    "videoId": "FJoQR0Z0hLk",
-    "title": "#109 | How To Lead With Integrity",
-    "selected": false,
-    "reasoning": "Abstract leadership talk less applicable to an early-career junior developer needing technical execution advice.",
-    "summary": ""
-  },
-  {
-    "videoId": "2kGVKdhHUkE",
-    "title": "“Wawasan is definitely not just a Malay Bumiputera Muslim party” - Saifuddin Abdullah",
-    "selected": false,
-    "reasoning": "Local political discussion with no actionable career, tech, or personal finance takeaway.",
-    "summary": ""
-  },
-  {
-    "videoId": "1Zz_kd6Q4Qo",
-    "title": "Lindung 24 Jam: Tak sangka orang guna perkataan kesat untuk kritik Perkeso | In The Studio",
-    "selected": false,
-    "reasoning": "Discussion on public welfare agency social media backlash; low relevance to developer or personal finance priorities.",
-    "summary": ""
-  },
-  {
-    "videoId": "Xa_Meqgwa18",
-    "title": "PUSPAKOM CEO responds to the end of their monopoly in vehicle inspection | In The Studio",
-    "selected": false,
-    "reasoning": "Corporate interview regarding vehicle testing monopolies; non-actionable niche news.",
-    "summary": ""
-  },
-  {
-    "videoId": "HaRaPbEA1wM",
-    "title": "What a child who can't move teaches us about happiness | Jennifer and Kennedy Swann | TEDxTemecula",
-    "selected": false,
-    "reasoning": "Heartwarming personal story, but lacks tangible value for software developers or Islamic finance advocates.",
-    "summary": ""
-  },
-  {
-    "videoId": "VGHi8_8E3Rg",
-    "title": "Your phone is dirtier than a toilet—seriously | Lotti Tajouri | TEDxBrisbane",
-    "selected": false,
-    "reasoning": "Hygiene trivia presentation; complete fluff relative to career and financial growth.",
-    "summary": ""
-  },
-  {
-    "videoId": "84qsbJr6AW4",
-    "title": "Making it theirs: a girl dad's jiu jitsu journey | Eddie Wang | TEDxHiba Shanghai Youth",
-    "selected": false,
-    "reasoning": "Personal parenting vlog-style TEDx talk without professional or financial ROI.",
-    "summary": ""
-  },
-  {
-    "videoId": "hEgbunC4gAk",
-    "title": "When Scholars Disappear | Dr. Omar Suleiman",
-    "selected": true,
-    "reasoning": "Vital spiritual and intellectual grounding for a young Muslim, reminding them of the imperative of seeking authentic knowledge.",
-    "summary": "In an era saturated with online opinions and quick fixes, maintaining strong spiritual clarity is crucial for young Muslim professionals. Dr. Omar Suleiman delivers a powerful reflection on the value of authentic Islamic scholarship and preserving knowledge in changing times."
-  },
-  {
-    "videoId": "tCK-1Q2L2kU",
-    "title": "Before the Answer",
-    "selected": false,
-    "reasoning": "Short spiritual snippet; good message but less foundational than Dr. Omar Suleiman's longer reflection.",
-    "summary": ""
-  },
-  {
-    "videoId": "mI74jF7oM1k",
-    "title": "When Your Sin Reaches The Land and Sea | LATEST Khutbah by Sh. Ibrahim Hindy",
-    "selected": false,
-    "reasoning": "General Friday sermon; meaningful spiritual message but less targeted than the specific selected Islamic and career topics.",
-    "summary": ""
+    "reasoning": "Directly addresses the Tabung Haji Royal Commission of Inquiry (RCI) report, making it highly valuable for a Malaysian Muslim interested in Islamic finance and public institutions.",
+    "summary": "Tabung Haji is the cornerstone Islamic financial institution in Malaysia. This episode breaks down the critical findings of the Royal Commission of Inquiry (RCI) report, giving you a deep analysis of institutional governance, financial integrity, and national policy."
   }
 ]
