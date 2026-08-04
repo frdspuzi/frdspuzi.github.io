@@ -252,6 +252,16 @@ body {
 [data-theme="dark"] .form-control::placeholder {
   color: var(--fg-muted);
 }
+// Primer's bare .border/.border-top utilities (learning-board, topic/repo/post-card,
+// the Insights & Writing card's own bottom divider) bake in `!important` on a light-mode-only
+// #e1e4e8, the same "never themed at all" issue as .Box/.form-control above — .theme-border's own
+// border-color: var(--border) (no !important) was already applied alongside these on every one of
+// those elements, but was silently losing the cascade to Primer's !important. Found via the light
+// outline still showing on the "AI Insight of the Day" card in dark mode (2026-08-04).
+[data-theme="dark"] .border,
+[data-theme="dark"] .border-top {
+  border-color: var(--border) !important;
+}
 [data-theme="dark"] .text-gray {
   color: var(--fg-muted);
 }
