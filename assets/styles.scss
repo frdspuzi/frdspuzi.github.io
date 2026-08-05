@@ -312,6 +312,38 @@ body {
 .animated-details.is-open > summary {
   border-bottom: 1px solid var(--overlay-border);
 }
+// Mobile: cap the open section's content to roughly the remaining viewport height, with
+// internal scroll for anything taller — so the whole section fits on screen without the page
+// scroll running past its own bottom edge (user request, 2026-08-04: "try to fit everything
+// into the screen"). Companion to accordion-mobile-single-open.js's scrollIntoView, which
+// already puts this section's <summary> at the top of the viewport — the 70px subtracted here
+// (was 90px) is an approximate allowance for that summary bar's own height (p-4 padding +
+// heading + chevron), not a measured exact value; reduced after a follow-up screenshot showed
+// "Insights & Writing" still cutting off the trivia card's last answer option even with the
+// article list already shrunk to a phone-only story tray — 90px was leaving less usable room
+// than the summary bar (plus the small margins the whole content block picks up) actually
+// takes, so this remains a CSS-only approximation, just a closer one, not worth adding JS to
+// compute pixel-perfect. `100dvh` (dynamic viewport height) is declared second so it wins over
+// `100vh` in browsers that support it — accounts for a mobile browser's address bar
+// collapsing/expanding as the visitor scrolls, so this doesn't undercount the actually-visible
+// area. Doesn't fight accordion.js's own inline height-driven animation: CSS max-height always
+// caps the rendered box regardless of what inline `height` accordion.js or youtube_feed.html's
+// own ResizeObserver set, so this only ever visibly kicks in once the open animation has
+// already settled. Same nested-scroll-region touch properties as #medium-posts' .custom-scrollbar
+// (thoughts.html) and for the same reason — this is also a scroll region nested inside the
+// page's own scroll, and iOS Safari's default touch handling for a *nested* overflow region
+// does nothing at all on swipe without `-webkit-overflow-scrolling: touch` explicitly set
+// (already diagnosed once this session for that other region).
+@media (max-width: 767px) {
+  .animated-details.is-open > .accordion-content {
+    max-height: calc(100vh - 70px);
+    max-height: calc(100dvh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+}
 
 // Aurora Text — animated rainbow gradient clipped to text. Deliberately not built from the
 // --accent tokens above; this one flourish uses its own fixed rainbow palette on purpose.
@@ -732,4 +764,168 @@ body {
 
 .min-height-full {
   min-height: 100vh;
+}
+
+// (i) popover replacing each of the 3 main sections' one-line description paragraph — reference:
+// https://beui.dev/components/motion/popover's "Gooey Popover". Reimplemented in vanilla CSS/JS
+// rather than adopting React/Motion/shadcn (this site has none of that toolchain), same approach
+// as every other beui.dev/magicui reference this session — port the look, not the framework.
+// Desktop reveals via plain :hover/:focus-within below (zero JS); touch press-and-hold is the
+// one thing CSS can't do reliably, handled by assets/js/goo-popover.js toggling `.is-open`.
+.goo-popover {
+  position: relative;
+  display: inline-flex;
+}
+// Summary-row placement (youtube_feed.html/thoughts.html/photography.html, 2026-08-05) — only
+// shown while its section is actually open, reusing the exact `.is-open` class accordion.js
+// already keeps in sync (same class already driving the chevron rotation and header divider
+// just above this in the file) rather than adding a second, separately-timed mechanism. This
+// matters for more than just tidiness: `.is-open` is removed at the *start* of closing (on
+// `accordion:willclose`), not after the ~460ms close animation finishes, so the icon disappears
+// right as the section starts collapsing instead of lingering through the whole close.
+.goo-popover-summary {
+  display: none;
+}
+.animated-details.is-open .goo-popover-summary {
+  display: inline-flex;
+}
+.goo-popover-trigger {
+  // Primer's own base reset sets `button { -webkit-appearance: button; }` on every bare
+  // <button> — on some browsers that draws native OS button chrome that can paint over custom
+  // background/text styling entirely, which is what was actually hiding the "i" (reported by
+  // the user as "the button is there but the i is not there": the circular border still showed
+  // — border/box-shadow generally survive native appearance — but the glyph itself didn't).
+  // `appearance: none` fully suppresses that native rendering before any of the custom styling
+  // below is applied.
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg-muted);
+  padding: 0;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px; // matches the trigger's own fixed height — a block-level span centers more
+                     // reliably this way than relying on flex-centering a bare text node, which
+                     // has known cross-browser edge cases with anonymous flex items.
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.goo-popover-trigger:hover,
+.goo-popover-trigger:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent-border);
+}
+
+// The blurred blob group — dot (coincident with the trigger) + panel-shape (inset:0 over the
+// same box .goo-popover-content occupies) — both live inside the goo filter together, so as
+// panel-shape scales up from the trigger's corner their blurred edges bridge into one merged
+// blob with a soft connecting neck, instead of two separate blurry circles. Deliberately
+// `transform: scale()`, not an animated width/height — CSS can't transition to `height: auto` at
+// all (the same limitation accordion.js works around with WAAPI + a measured scrollHeight rather
+// than a plain CSS transition), and scale is compositor-friendly besides.
+.goo-popover-blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  filter: url(#goo-popover-filter);
+  pointer-events: none;
+  z-index: 1;
+}
+.goo-popover-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--surface);
+  transform: scale(0);
+  transition: transform 0.4s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+.goo-popover-panel-shape {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 180px;
+  max-width: 240px;
+  width: max-content;
+  height: 64px; // approximate — the real, auto-sized box is .goo-popover-content below; this
+                // blob shape only needs to visually cover roughly the same footprint while
+                // merging with the dot, not pixel-match the final text height exactly.
+  border-radius: 8px;
+  background: var(--surface);
+  transform-origin: top left;
+  transform: scale(0);
+  transition: transform 0.4s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+// Crisp content — never inside the filter, so it never blurs. Opacity-only, delayed slightly so
+// it fades in once the blob has mostly finished merging ("crisp content fading in on top," per
+// the reference's own description).
+.goo-popover-content {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  z-index: 2;
+  min-width: 180px;
+  max-width: 240px;
+  // Same floating-info-panel visual language as #rail-preview (floating_toc.html) — one shared
+  // look for "a small panel of text hovering near the thing it describes," not a second one.
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.12);
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--fg-muted);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  transition-delay: 0s;
+}
+.goo-popover-content a {
+  color: var(--accent);
+}
+
+.goo-popover:hover .goo-popover-dot,
+.goo-popover:focus-within .goo-popover-dot,
+.goo-popover.is-open .goo-popover-dot,
+.goo-popover:hover .goo-popover-panel-shape,
+.goo-popover:focus-within .goo-popover-panel-shape,
+.goo-popover.is-open .goo-popover-panel-shape {
+  transform: scale(1);
+}
+.goo-popover:hover .goo-popover-content,
+.goo-popover:focus-within .goo-popover-content,
+.goo-popover.is-open .goo-popover-content {
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0.18s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .goo-popover-blob {
+    display: none;
+  }
+  .goo-popover-content {
+    transition: none;
+  }
+  .goo-popover:hover .goo-popover-content,
+  .goo-popover:focus-within .goo-popover-content,
+  .goo-popover.is-open .goo-popover-content {
+    transition-delay: 0s;
+  }
 }

@@ -22,6 +22,18 @@
     {% include thoughts.html %}
     {% include photography.html %}
   </div>
+  <script>
+    // Runs synchronously during parse, right after these 3 <details> exist — before the browser
+    // paints anything — so a mobile visitor never sees the hardcoded `open` attribute flash open
+    // before this corrects it. Desktop is untouched (still relies purely on the raw `open`
+    // attribute, no JS needed for that case). Direct `.open = false` (no animation) is correct
+    // here — this is an initial-state correction, not a user-triggered close.
+    if (window.matchMedia('(max-width: 767px)').matches) {
+      document.querySelectorAll('#accordion-group > details').forEach(function (d) {
+        d.open = false;
+      });
+    }
+  </script>
 
   {% comment %}
   <div class="my-6">
