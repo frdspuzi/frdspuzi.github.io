@@ -1,13 +1,22 @@
 <details class="details-reset animated-details js-accordion-group" style="background: var(--overlay-bg);" open>
   <summary class="p-4 d-flex flex-justify-between flex-items-center" style="cursor: pointer; user-select: none;">
-    <h2 id="my-writing" class="f2 fw-bold theme-fg" style="margin-bottom: 0 !important; border-bottom: none;">Insights & Writing</h2>
+    <div class="d-flex flex-items-center" style="gap: 8px;">
+      <h2 id="my-writing" class="f2 fw-bold theme-fg" style="margin-bottom: 0 !important; border-bottom: none;">Insights & Writing</h2>
+      <div class="goo-popover goo-popover-summary">
+        <button type="button" class="goo-popover-trigger" aria-label="About this section" aria-describedby="my-writing-desc"><span aria-hidden="true">i</span></button>
+        <span class="goo-popover-blob" aria-hidden="true">
+          <span class="goo-popover-dot"></span>
+          <span class="goo-popover-panel-shape"></span>
+        </span>
+        <div id="my-writing-desc" role="tooltip" class="goo-popover-content">Articles I've published on Medium.</div>
+      </div>
+    </div>
     <svg class="collapse-arrow text-gray flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
       <path d="M12.78 6.22a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L3.22 7.28a.75.75 0 0 1 1.06-1.06L8 9.94l3.72-3.72a.75.75 0 0 1 1.06 0Z"></path>
     </svg>
   </summary>
 
   <div class="p-4 text-left accordion-content">
-    <p class="f4 mb-4 theme-fg-muted">Articles I've published on Medium.</p>
 
     <div class="d-flex flex-column flex-lg-row" style="gap: 32px; align-items: flex-start;">
       
@@ -20,13 +29,20 @@
             </div>
           </div>
 
-          <div id="medium-posts" class="d-flex flex-column flex-auto custom-scrollbar" style="gap: 12px; overflow-y: auto; min-height: 0; padding-right: 8px;">
-            <!-- Skeleton cards, shaped like .medium-card below (160px image block + title/
-                 excerpt/date lines) — replaced entirely (container.innerHTML = '') once the
+          <!-- Vertical stacked list on tablet/desktop (unchanged from before this session's
+               mobile work), a horizontal "story tray" on phone only (≤767px) — see
+               assets/styles.scss's #medium-posts/.custom-scrollbar rules for the breakpoint
+               switch, and buildCard()/buildRowCard()/buildStoryCard() below for the two markup
+               shapes. Explicitly NOT a universal redesign — user: "this is strictly only for
+               mobile, i didnt want the arrangement changed for desktop" (2026-08-04), after an
+               earlier pass wrongly applied the story-tray format at every width. -->
+          <div id="medium-posts" class="custom-scrollbar">
+            <!-- Two skeleton shapes, CSS-toggled by the same breakpoint the real cards use
+                 (assets/styles.scss) — replaced entirely (container.innerHTML = '') once the
                  fetch below resolves, whether it succeeds or fails, so no JS toggle logic is
                  needed here unlike the YouTube/Trivia skeletons. See assets/styles.scss's
                  .skeleton comment for the animation choice. -->
-            <div id="medium-loading" class="d-flex flex-column" style="gap: 12px;">
+            <div id="medium-loading" class="d-flex flex-column medium-skeleton-row" style="gap: 12px;">
               <div class="d-flex flex-row" style="border: 1px solid var(--border); border-radius: 8px; overflow: hidden; min-height: 120px;">
                 <span class="skeleton" style="width: 160px; flex-shrink: 0; border-radius: 0;"></span>
                 <div class="d-flex flex-column flex-auto p-3" style="gap: 8px;">
@@ -52,8 +68,14 @@
                 </div>
               </div>
             </div>
+            <div class="d-flex flex-row medium-skeleton-story" style="gap: 10px;">
+              <span class="skeleton medium-story-skeleton"></span>
+              <span class="skeleton medium-story-skeleton"></span>
+              <span class="skeleton medium-story-skeleton"></span>
+              <span class="skeleton medium-story-skeleton"></span>
+            </div>
           </div>
-          
+
           <div class="d-flex flex-justify-between flex-items-center mt-3 pt-3 flex-shrink-0 border-top" style="border-color: rgba(149, 157, 165, 0.15) !important;">
             <a href="https://medium.com/@frdspuzi/subscribe" class="btn btn-sm btn-invisible text-gray d-inline-flex flex-items-center" style="gap: 6px;" target="_blank" rel="noopener noreferrer">
               <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16" fill="currentColor">
@@ -147,43 +169,58 @@
     return d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
   }
 
+  // Checked once, at card-build time — not reactive to a later resize, same "initial-state
+  // only" convention already used elsewhere on this site for phone-scoped behavior (e.g. the
+  // accordion default-closed correction in _layouts/home.html). Desktop/tablet render the
+  // original stacked row-cards; phone (≤767px) renders the smaller horizontal "story tray"
+  // cards instead — this is a display-format switch, not a data difference, so both builders
+  // below share extractSummary()/shrinkMediumImage() and just lay the same fields out
+  // differently. User: "this is strictly only for mobile, i didnt want the arrangement changed
+  // for desktop" (2026-08-04) — an earlier pass applied the story-tray format everywhere.
+  var isMobile = window.matchMedia('(max-width: 767px)').matches;
+
   // Medium's own CDN embeds a target width directly in the image URL (miro.medium.com's
   // "resize:fit:NNNN" segment, or the older cdn-images-1.medium.com "/max/NNNN/" style) — the
   // RSS feed's <img> src is sized for full-article display (often 1000px+), but this card only
-  // shows it in a 160px-wide box (.medium-image). Requesting a smaller size directly from
-  // Medium's CDN avoids downloading pixels that get immediately downscaled and discarded —
-  // verified against a real feed image: the same photo was 63KB at max/1024 vs 12.7KB at
-  // max/320 (still PNG), an 80% cut, for identical on-screen output. 320 = 2x the 160px box,
-  // generous headroom for retina displays.
+  // shows it in a `targetWidth`-wide box (160px for the row-card's .medium-image, 120px for the
+  // story-card). Requesting a smaller size directly from Medium's CDN avoids downloading pixels
+  // that get immediately downscaled and discarded. `targetWidth * 2` = retina headroom;
+  // verified directly against the CDN for both sizes (2026-08-04): the same photo was 2.7KB as
+  // WebP at resize:fit:320 (2x the row-card's 160px) vs 1.7KB at resize:fit:240 (2x the
+  // story-card's 120px) — smaller request for a smaller box, as expected either way.
   //
   // Also requests format:webp — Medium's resize proxy (the same one the size segment above
   // already targets) accepts an extra `/format:webp/` path segment and serves real WebP for
   // both .png and .jpg sources, no extra redirect hop (confirmed directly against the CDN,
-  // 2026-08-04): the 12.7KB PNG above became 2.7KB as WebP (-78%), a same-size JPEG sample
-  // went from 7.9KB to 3.7KB (-53%). PNG compresses poorly for photographic/screenshot content
-  // next to a modern format, so this is most of what PageSpeed's "Improve image delivery"
-  // finding was actually about — the size-only optimization above wasn't enough on its own.
-  // Falls back to the untouched original URL if neither known Medium CDN pattern matches (both
-  // `.replace()` calls are no-ops on a non-matching string), rather than guessing at an
-  // unfamiliar URL shape.
-  function shrinkMediumImage(url) {
+  // 2026-08-04): a same-size PNG sample went from 12.7KB to 2.7KB as WebP (-78%), a same-size
+  // JPEG sample went from 7.9KB to 3.7KB (-53%). PNG compresses poorly for photographic/
+  // screenshot content next to a modern format, so this is most of what PageSpeed's "Improve
+  // image delivery" finding was actually about — the size-only optimization above wasn't enough
+  // on its own. Falls back to the untouched original URL if neither known Medium CDN pattern
+  // matches (both `.replace()` calls are no-ops on a non-matching string), rather than guessing
+  // at an unfamiliar URL shape.
+  function shrinkMediumImage(url, targetWidth) {
     return url
-      .replace(/resize:fit:\d+(\/format:\w+)?/, 'resize:fit:320/format:webp')
-      .replace(/\/max\/\d+\//, '/v2/resize:fit:320/format:webp/');
+      .replace(/resize:fit:\d+(\/format:\w+)?/, 'resize:fit:' + targetWidth + '/format:webp')
+      .replace(/\/max\/\d+\//, '/v2/resize:fit:' + targetWidth + '/format:webp/');
   }
 
-  function buildCard(item, category) {
-    var excerpt = extractSummary(item.content);
-
-    var imageUrl = null;
+  function findImageUrl(item, targetWidth) {
     var imgRegex = /<img[^>]+src="([^">]+)"/g;
     var match;
     while ((match = imgRegex.exec(item.content)) !== null) {
       if (match[1].indexOf('stat?event') === -1) {
-        imageUrl = shrinkMediumImage(match[1]);
-        break;
+        return shrinkMediumImage(match[1], targetWidth);
       }
     }
+    return null;
+  }
+
+  // Original stacked row-card: 160px thumbnail + title/excerpt/date — unchanged from before
+  // this session's mobile work, still used on tablet/desktop.
+  function buildRowCard(item, category) {
+    var excerpt = extractSummary(item.content);
+    var imageUrl = findImageUrl(item, 320);
 
     var imageHtml = '';
     if (imageUrl) {
@@ -211,6 +248,32 @@
         '</div>' +
       '</a>';
     return card;
+  }
+
+  // Smaller "story tray" card: 120x160px, image background + gradient + overlaid title — phone
+  // only. No room for a date/excerpt at this size; the excerpt extractSummary() already
+  // computes moves to the link's aria-label instead of being dropped outright.
+  function buildStoryCard(item, category) {
+    var excerpt = extractSummary(item.content);
+    var imageUrl = findImageUrl(item, 240);
+    var imageStyle = imageUrl ? "background-image: url('" + imageUrl + "');" : '';
+
+    var card = document.createElement('div');
+    card.className = 'medium-card-wrapper flex-shrink-0';
+    card.setAttribute('data-category', category);
+    card.innerHTML =
+      '<a href="' + item.link + '" target="_blank" rel="noopener noreferrer" ' +
+        'class="medium-story-card" aria-label="' + item.title + ' — ' + excerpt + '" style="' + imageStyle + '">' +
+        '<span class="medium-story-overlay"></span>' +
+        '<span class="medium-story-overlay-top"></span>' +
+        (category !== 'uncategorized' ? '<span class="medium-tag medium-story-tag">' + category + '</span>' : '') +
+        '<span class="medium-story-title">' + item.title + '</span>' +
+      '</a>';
+    return card;
+  }
+
+  function buildCard(item, category) {
+    return isMobile ? buildStoryCard(item, category) : buildRowCard(item, category);
   }
 
   function applyFilter(filter) {
@@ -298,7 +361,20 @@
 </script>
 
 <style>
-  /* Scrollable Container Styling */
+  /* #medium-posts: vertical stacked list (tablet/desktop, unchanged from before this session's
+     mobile work) vs. horizontal "story tray" (phone only, ≤767px) — same breakpoint the JS
+     above uses to pick buildRowCard() vs buildStoryCard(), so the container's scroll axis
+     always matches whichever card shape actually rendered. Moved out of an inline `style`
+     attribute into these rules specifically so the mobile override below can win via normal
+     media-query cascade instead of needing `!important` to beat inline-style specificity. */
+  #medium-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    min-height: 0;
+    padding-right: 8px;
+  }
   .custom-scrollbar::-webkit-scrollbar {
     width: 6px;
   }
@@ -312,57 +388,36 @@
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: var(--fg-faint);
   }
-  /* #medium-posts sits inside .right-column-container (a fixed-height, overflow:hidden box on
-     mobile — see below), so this is a scroll region nested inside the page's own scroll — two
-     things it needs to actually feel scrollable with touch, not just technically have
-     overflow-y: auto set:
-     - -webkit-overflow-scrolling: touch — iOS Safari's default scrolling for a *nested* overflow
-       region is the janky, non-momentum kind unless this is set explicitly; without it, a swipe
-       here can feel like it's not responding at all rather than just scrolling abruptly.
-     - overscroll-behavior: contain — stops the swipe from "leaking" into the outer page scroll
-       once the list hits its own top/bottom edge, which otherwise reads as the list capturing the
-       gesture inconsistently (scrolls the list sometimes, scrolls the whole page other times).
-     - touch-action: pan-y — the actual fix for "swipe does nothing at all" (as opposed to
-       "scrolls but feels janky", which the two properties above address). #medium-posts is itself
-       `display:flex` AND every direct child is a full-width, full-height `<a>` card — without an
-       explicit `touch-action`, some mobile browsers don't reliably recognize a vertical swipe that
-       starts on a flex-laid-out anchor as "this element's own scroll gesture" and the touch is
-       dropped instead of falling through to native scrolling. Declaring `pan-y` up front removes
-       the ambiguity: this element scrolls vertically on touch, full stop. */
+  /* Nested-scroll-region touch properties — iOS Safari's default touch handling for a scroll
+     region nested inside the page's own scroll does nothing at all without these set
+     explicitly. pan-y here (tablet/desktop, vertical); the mobile override below switches to
+     pan-x once the scroll axis flips. */
   .custom-scrollbar {
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
     touch-action: pan-y;
   }
 
-  /* The actual root cause of "swipe does nothing at all": #medium-posts is flex: 1 1 auto inside
-     .right-column-content, but a flex item's automatic minimum size defaults to its content's
-     natural (unclamped) height, not 0 — #medium-posts already overrides this on itself, but
-     .right-column-content (one level up) didn't, so IT was growing to fit every article card
-     regardless of the 450px/648px cap below, dragging #medium-posts's height along with it. The
-     result: .right-column-container's own `overflow: hidden` was doing 100% of the visual
-     clipping (which is why a card looked cut off), while #medium-posts — the element with
-     `overflow-y: auto` — never actually had content taller than itself to scroll. Capping this
-     here is what actually makes #medium-posts a bounded, genuinely-overflowing scroll container. */
-  .right-column-content {
-    min-height: 0;
-  }
-
-  @media (max-width: 1011px) {
-    .right-column-container {
-      height: 450px;
-      overflow: hidden;
+  @media (max-width: 767px) {
+    #medium-posts {
+      flex-direction: row;
+      overflow-y: visible;
+      overflow-x: auto;
+      min-height: auto;
+      padding-right: 0;
+      gap: 10px;
     }
-  }
-
-  @media (min-width: 1012px) {
-    .right-column-container {
-      height: 648px;
-      position: relative;
+    /* Scrollbar hidden entirely on the story tray — matches both the reference "Stories" tray
+       this format is based on and Instagram's own convention; snap-scrolling (scroll-snap-type
+       below, per-card scroll-snap-align) makes an always-visible scrollbar redundant as a
+       position indicator anyway. */
+    .custom-scrollbar {
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      touch-action: pan-x;
     }
-    .right-column-content {
-      position: absolute;
-      top: 0; bottom: 0; left: 0; right: 0;
+    .custom-scrollbar::-webkit-scrollbar {
+      display: none;
     }
   }
 
@@ -370,10 +425,7 @@
     transition: opacity 0.2s ease;
   }
 
-  .medium-card-wrapper {
-    transition: opacity 0.2s ease;
-  }
-
+  /* Tablet/desktop row-card (unchanged) */
   .medium-card {
     border-radius: 8px;
     transition: box-shadow 0.2s ease, transform 0.2s ease;
@@ -401,14 +453,159 @@
     background-size: cover;
     background-position: center;
   }
-  .medium-read-more {
-    color: var(--accent);
-    font-weight: 500;
+
+  /* Phone-only "story tray" card — background image + bottom gradient + overlaid title.
+     Smaller than the reference component this is based on (200x267px) per explicit request
+     ("but smaller"): 120x160px, still a 3:4 ratio. No date/excerpt on the card face at this
+     size — extractSummary()'s computed excerpt moved to the link's aria-label instead of being
+     dropped outright. Only ever rendered by buildStoryCard() on phone, so these rules don't
+     need their own media-query gate — the class simply won't exist in the DOM otherwise. */
+  .medium-story-card {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--surface-alt);
+    background-size: cover;
+    background-position: center;
+    text-decoration: none;
+    scroll-snap-align: start;
+    transition: transform 0.2s ease;
   }
+  .medium-story-card:hover {
+    transform: translateY(-2px) scale(1.02);
+  }
+  .medium-story-overlay {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 65%;
+    background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+    pointer-events: none;
+  }
+  /* Bottom overlay alone left the tag's own corner with no scrim at all — readable against a
+     dark photo, unreadable against a light one (reported by the user against a screenshot,
+     "What is Scrum?"'s pale cover specifically). A top scrim guarantees contrast for the tag
+     regardless of what the underlying photo looks like up there, the same way the bottom one
+     already does for the title. */
+  .medium-story-overlay-top {
+    position: absolute;
+    left: 0; right: 0; top: 0;
+    height: 40%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0));
+    pointer-events: none;
+  }
+  /* Own background, not just the shared .medium-story-overlay below — that overlay's height/
+     gradient was tuned for a short, 1-line title, so a long title's top line landed above where
+     the overlay was already dark, in its faded-to-transparent region, with little to no scrim
+     under it. This element isn't height-constrained (only clamped to a max line count), so its
+     own background naturally grows to cover however many lines actually render — contrast is
+     guaranteed regardless of title length, not tuned for one case.
+
+     line-clamp raised 3 -> 5 (2026-08-06): 3 lines was cutting off mid-word on realistically-
+     long article titles ("Doesnt show full title"). At this font-size/line-height, 5 lines is
+     still comfortably within the card's 65%-height bottom overlay zone (.medium-story-overlay,
+     104px of the 160px card) — the title's own background (which grows with it) stays within
+     that region rather than pushing past the card's own edge. */
+  .medium-story-title {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.35));
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  }
+  /* Deliberately not .medium-tag's own theme-token colors (var(--accent-bg)/var(--accent)) —
+     those are tuned to sit on a plain surface background, not an arbitrary photo. A badge
+     overlaid on unpredictable photo content needs guaranteed contrast regardless of theme or
+     what's underneath, not theme-consistent-but-variable contrast — solid dark scrim + white
+     text always reads, on any photo, in any theme. */
+  .medium-story-tag {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    background-color: rgba(0, 0, 0, 0.55) !important;
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    /* .medium-tag's base padding (2px 8px) reads as visually uneven on this pill shape — bumped
+       vertical padding up so it's more balanced relative to the horizontal, scoped to the story
+       card specifically (not the shared .medium-tag base, which the tablet/desktop row-card also
+       uses and wasn't flagged). */
+    padding: 4px 10px !important;
+  }
+  .medium-story-skeleton {
+    width: 120px;
+    height: 160px;
+    flex-shrink: 0;
+    border-radius: 10px;
+  }
+
+  /* Skeleton shape toggle — mirrors the same breakpoint the real cards switch on. */
+  .medium-skeleton-story {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    .medium-skeleton-row {
+      display: none;
+    }
+    .medium-skeleton-story {
+      display: flex;
+    }
+  }
+
+  /* .right-column-container height-clamping — unchanged on tablet (≤1011px, 450px) and desktop
+     (≥1012px, 648px + absolute-fill, so the "My Writing" and trivia columns match height) from
+     before this session's mobile work. Reset to natural/auto height on phone specifically
+     (≤767px, declared after the 1011px rule so it wins at the narrower range): the story tray
+     is a single short row, not a tall stacked list, so it doesn't need bounding the way the
+     original list did — clamping it here would just leave dead space or clip nothing. */
+  .right-column-content {
+    min-height: 0;
+  }
+  @media (max-width: 1011px) {
+    .right-column-container {
+      height: 450px;
+      overflow: hidden;
+    }
+  }
+  @media (max-width: 767px) {
+    .right-column-container {
+      height: auto;
+      overflow: visible;
+    }
+  }
+  @media (min-width: 1012px) {
+    .right-column-container {
+      height: 648px;
+      position: relative;
+    }
+    .right-column-content {
+      position: absolute;
+      top: 0; bottom: 0; left: 0; right: 0;
+    }
+  }
+
   .medium-tag {
     display: inline-block;
     font-size: 11px;
     font-weight: 600;
+    /* No line-height was ever set here, so it inherited the page's default (~1.5) — at 11px
+       that's a ~16.5px line-box around text whose actual glyph height is much smaller, and a
+       font's ascent/descent metrics aren't symmetric around that box's center, so uppercase text
+       (no real descenders in use) tends to sit visibly above center. That's what made equal
+       top/bottom padding (2px 8px, and .medium-story-tag's 4px 10px) still look uneven —
+       collapsing line-height to 1 removes the extra slack so the padding is the only thing left
+       controlling vertical space, top and bottom, actually even now. */
+    line-height: 1;
     padding: 2px 8px;
     border-radius: 12px;
     background-color: var(--accent-bg);

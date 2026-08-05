@@ -1,13 +1,22 @@
 <details class="details-reset animated-details js-accordion-group" style="background: var(--overlay-bg);" open>
   <summary class="p-4 d-flex flex-justify-between flex-items-center" style="cursor: pointer; user-select: none;">
-    <h2 id="photography" class="f2 fw-bold theme-fg" style="margin-bottom: 0 !important; border-bottom: none;">Photography</h2>
+    <div class="d-flex flex-items-center" style="gap: 8px;">
+      <h2 id="photography" class="f2 fw-bold theme-fg" style="margin-bottom: 0 !important; border-bottom: none;">Photography</h2>
+      <div class="goo-popover goo-popover-summary">
+        <button type="button" class="goo-popover-trigger" aria-label="About this section" aria-describedby="photography-desc"><span aria-hidden="true">i</span></button>
+        <span class="goo-popover-blob" aria-hidden="true">
+          <span class="goo-popover-dot"></span>
+          <span class="goo-popover-panel-shape"></span>
+        </span>
+        <div id="photography-desc" role="tooltip" class="goo-popover-content">Shots I've captured and shared on <a href="https://unsplash.com/@frdspuzi" target="_blank" rel="noopener noreferrer" class="text-underline">Unsplash</a>.</div>
+      </div>
+    </div>
     <svg class="collapse-arrow text-gray flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="24" height="24" fill="currentColor">
       <path d="M12.78 6.22a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L3.22 7.28a.75.75 0 0 1 1.06-1.06L8 9.94l3.72-3.72a.75.75 0 0 1 1.06 0Z"></path>
     </svg>
   </summary>
 
   <div class="p-4 text-left accordion-content">
-    <p class="f4 mb-3 theme-fg-muted">Shots I've captured and shared on <a href="https://unsplash.com/@frdspuzi" target="_blank" rel="noopener noreferrer" class="text-underline">Unsplash</a>.</p>
 
     {% assign has_photos = false %}
     {% if site.data.unsplash_all.size > 0 or site.data.unsplash_favourites.size > 0 %}
