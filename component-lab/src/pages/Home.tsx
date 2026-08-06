@@ -2,6 +2,7 @@ import { AccordionGroupProvider } from "@/hooks/useAccordionGroup";
 import { Accordion } from "@/components/Accordion";
 import { Masthead } from "@/components/Masthead";
 import { Gratitude } from "@/components/Gratitude";
+import { YoutubeFeed } from "@/components/YoutubeFeed";
 
 // Homepage — mirrors _layouts/home.html's stacked layout. Sections are added here one at a
 // time as they're ported (masthead → gratitude → YouTube feed → Insights & Writing →
@@ -25,15 +26,7 @@ export default function Home() {
         </div>
 
         <div id="accordion-group" className="my-6">
-          <Accordion
-            id="test-a"
-            groupable
-            defaultOpen
-            title={<h2 className="f2 fw-bold theme-fg mb-0">Section A</h2>}
-            description="Test description for the goo-popover, section A."
-          >
-            <p className="theme-fg-muted">Accordion smoke test — section A content.</p>
-          </Accordion>
+          <YoutubeFeed />
           <Accordion
             id="test-b"
             groupable
