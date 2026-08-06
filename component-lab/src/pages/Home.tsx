@@ -1,5 +1,6 @@
 import { AccordionGroupProvider } from "@/hooks/useAccordionGroup";
 import { Accordion } from "@/components/Accordion";
+import { Masthead } from "@/components/Masthead";
 
 // Homepage — mirrors _layouts/home.html's stacked layout. Sections are added here one at a
 // time as they're ported (masthead → gratitude → YouTube feed → Insights & Writing →
@@ -11,6 +12,8 @@ import { Accordion } from "@/components/Accordion";
 export default function Home() {
   return (
     <main className="container-lg py-6 p-responsive text-center">
+      <Masthead />
+
       <AccordionGroupProvider>
         <div id="accordion-group" className="my-6">
           <Accordion
