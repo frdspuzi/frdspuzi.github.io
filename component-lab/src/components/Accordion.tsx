@@ -1,28 +1,14 @@
 import { useEffect, useRef, type ReactNode } from "react";
 import { useAccordionGroup } from "@/hooks/useAccordionGroup";
+import { useAnimatedDisclosure } from "@/hooks/useAnimatedDisclosure";
 
-// React port of accordion.js's bounce open/close (Web Animations API, same curves/durations —
-// see DESIGN.md's Motion section for why these specific cubic-beziers). The vanilla version
-// drove this imperatively from a click handler; here the *state* (open/closed, via
-// useAccordionGroup) is the source of truth and this effect *reacts* to it changing — more
-// idiomatic for React, same visual result. `fill: 'forwards'` reasoning, the settle()/guardId
-// staleness guard, and the close-animates-padding-too fix are all carried over unchanged from
-// the original — see its own comments for why each exists.
-// Plain numeric constants (not read back off OPEN.duration/CLOSE.duration below) since WAAPI's
-// own KeyframeAnimationOptions['duration'] type allows string/CSSNumericValue too — arithmetic
-// on that union needs a definite number, which these already are by construction.
-const OPEN_DURATION = 580;
-const CLOSE_DURATION = 460;
-const OPEN: KeyframeAnimationOptions = {
-  duration: OPEN_DURATION,
-  easing: "cubic-bezier(0.34, 1.56, 0.64, 1)",
-  fill: "forwards",
-};
-const CLOSE: KeyframeAnimationOptions = {
-  duration: CLOSE_DURATION,
-  easing: "cubic-bezier(0.4, 0, 1, 1)",
-  fill: "forwards",
-};
+// React port of accordion.js's bounce open/close. The vanilla version drove this imperatively
+// from a click handler; here the *state* (open/closed, via useAccordionGroup) is the source of
+// truth and useAnimatedDisclosure *reacts* to it changing — more idiomatic for React, same
+// visual result. The animation mechanic itself (WAAPI, settle()/guardId staleness guard, the
+// close-animates-padding-too fix) lives in that shared hook — see its own comments for why each
+// exists — since Gratitude.tsx's plain disclosure needs the identical mechanic under different
+// header markup.
 
 type AccordionProps = {
   id: string;
@@ -44,13 +30,7 @@ export function Accordion({
   const { isOpen, toggle, register, isJoinedTop, isJoinedBottom, scrollIntoViewIfMobile } =
     useAccordionGroup();
   const detailsRef = useRef<HTMLDivElement>(null);
-  const contentRef = useRef<HTMLDivElement>(null);
-  const animRef = useRef<Animation | null>(null);
-  const guardId = useRef(0);
   const hasMountedOpen = useRef(false);
-
-  const reduceMotion =
-    typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   useEffect(() => {
     register(id, groupable, detailsRef.current);
@@ -62,69 +42,7 @@ export function Accordion({
   }, []);
 
   const open = isOpen(id);
-
-  useEffect(() => {
-    const content = contentRef.current;
-    if (!content) return;
-
-    if (reduceMotion) {
-      // No WAAPI at all for reduced motion — native instant show/hide, matching accordion.js's
-      // own "never attaches its own click handler" fallback.
-      content.style.display = open ? "" : "none";
-      if (open) scrollIntoViewIfMobile(id);
-      return;
-    }
-
-    const thisGuard = ++guardId.current;
-    function settle(isClose: boolean) {
-      if (thisGuard !== guardId.current) return; // superseded by a newer toggle
-      animRef.current?.cancel();
-      content!.style.height = "";
-      content!.style.paddingTop = "";
-      content!.style.paddingBottom = "";
-      content!.style.overflow = "";
-      if (isClose) content!.style.display = "none";
-    }
-
-    if (open) {
-      content.style.display = "";
-      const target = content.scrollHeight;
-      const computed = getComputedStyle(content);
-      const padTop = computed.paddingTop;
-      const padBottom = computed.paddingBottom;
-      content.style.overflow = "hidden";
-      const anim = content.animate(
-        [
-          { height: "0px", opacity: 0, paddingTop: "0px", paddingBottom: "0px" },
-          { height: `${target}px`, opacity: 1, paddingTop: padTop, paddingBottom: padBottom },
-        ],
-        OPEN,
-      );
-      animRef.current = anim;
-      anim.onfinish = () => settle(false);
-      anim.oncancel = () => settle(false);
-      window.setTimeout(() => settle(false), OPEN_DURATION + 400);
-      scrollIntoViewIfMobile(id);
-    } else if (content.style.display !== "none") {
-      const current = content.scrollHeight;
-      const computed = getComputedStyle(content);
-      const padTop = computed.paddingTop;
-      const padBottom = computed.paddingBottom;
-      content.style.overflow = "hidden";
-      const anim = content.animate(
-        [
-          { height: `${current}px`, opacity: 1, paddingTop: padTop, paddingBottom: padBottom },
-          { height: "0px", opacity: 0, paddingTop: "0px", paddingBottom: "0px" },
-        ],
-        CLOSE,
-      );
-      animRef.current = anim;
-      anim.onfinish = () => settle(true);
-      anim.oncancel = () => settle(true);
-      window.setTimeout(() => settle(true), CLOSE_DURATION + 400);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [open]);
+  const contentRef = useAnimatedDisclosure(open, () => scrollIntoViewIfMobile(id));
 
   const joinedTop = isJoinedTop(id);
   const joinedBottom = isJoinedBottom(id);

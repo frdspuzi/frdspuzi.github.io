@@ -1,10 +1,15 @@
 import { AccordionGroupProvider } from "@/hooks/useAccordionGroup";
 import { Accordion } from "@/components/Accordion";
 import { Masthead } from "@/components/Masthead";
+import { Gratitude } from "@/components/Gratitude";
 
 // Homepage — mirrors _layouts/home.html's stacked layout. Sections are added here one at a
 // time as they're ported (masthead → gratitude → YouTube feed → Insights & Writing →
 // Photography → Preview Rail), matching the build order in the approved plan.
+//
+// AccordionGroupProvider wraps both #gratitude and #accordion-group (kept as separate divs,
+// matching the original DOM) since accordion-mobile-single-open.js's mobile single-open
+// coordination targets every details.animated-details site-wide, not scoped to one container.
 //
 // Temporary smoke test below (2 placeholder accordions) — confirms the AccordionGroup system
 // (open/close bounce, joined borders, goo-popover) actually works end-to-end before porting the
@@ -15,6 +20,10 @@ export default function Home() {
       <Masthead />
 
       <AccordionGroupProvider>
+        <div id="gratitude" className="mb-5 text-left">
+          <Gratitude />
+        </div>
+
         <div id="accordion-group" className="my-6">
           <Accordion
             id="test-a"

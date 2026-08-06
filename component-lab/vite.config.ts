@@ -11,4 +11,12 @@ export default defineConfig({
       "@": path.resolve(import.meta.dirname, "./src"),
     },
   },
+  server: {
+    fs: {
+      // Sections import ../_data/*.json directly (one source of truth with the live Jekyll
+      // site, which GitHub Actions regenerates twice daily) instead of duplicating those files
+      // into component-lab — needs the dev server allowed to read outside its own root.
+      allow: [path.resolve(import.meta.dirname, ".."), import.meta.dirname],
+    },
+  },
 })
