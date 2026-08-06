@@ -42,7 +42,7 @@ export function Gratitude() {
   const detailsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    register(id, false, detailsRef.current);
+    register(id, false, false, detailsRef.current);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -111,7 +111,7 @@ export function Gratitude() {
         </svg>
         Before you scroll, try this...
       </div>
-      <div ref={contentRef} className="pt-3" style={{ display: "none" }}>
+      <div ref={contentRef} className="pt-3">
         <div className="mb-3">
           <blockquote
             className="mb-3 p-3"

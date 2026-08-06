@@ -22,9 +22,16 @@ import {
 const OPEN_MS = 580; // matches accordion.js's own OPEN.duration exactly
 
 type AccordionGroupState = {
-  isOpen: (id: string) => boolean;
-  toggle: (id: string) => void;
-  register: (id: string, groupable: boolean, el: HTMLElement | null) => void;
+  // `defaultOpen` is a fallback for ids never explicitly toggled yet — the caller (<Accordion>)
+  // always knows its own defaultOpen prop synchronously and passes it directly, so this is
+  // correct from the very first render. Previously the initial state was seeded by a mount
+  // effect calling toggle() a render late, which made `open` visibly lag true by one render for
+  // every defaultOpen accordion — the root cause of this session's whole run of accordion bugs
+  // (a spurious close-then-reopen flash, a stale animation clobbering that fix, then React's own
+  // reactive display style racing the imperative animation). Removing the lag removes all of it.
+  isOpen: (id: string, defaultOpen?: boolean) => boolean;
+  toggle: (id: string, defaultOpen?: boolean) => void;
+  register: (id: string, groupable: boolean, defaultOpen: boolean, el: HTMLElement | null) => void;
   isJoinedTop: (id: string) => boolean;
   isJoinedBottom: (id: string) => boolean;
   // Called by <Accordion>'s own effect once it observes itself transitioning to open — state
@@ -41,19 +48,31 @@ export function AccordionGroupProvider({ children }: { children: ReactNode }) {
   // immediate neighbor) — same as accordion-grouping.js's own "one contiguous list" assumption.
   const orderRef = useRef<string[]>([]);
   const groupableRef = useRef<Record<string, boolean>>({});
+  // Only read by isJoinedTop/Bottom below, for a *different* id than the one asking — that case
+  // can't take defaultOpen as a direct call argument the way isOpen/toggle do, since it doesn't
+  // have access to the neighbor's own prop value.
+  const defaultOpenRef = useRef<Record<string, boolean>>({});
   const elRef = useRef<Record<string, HTMLElement | null>>({});
 
-  const register = useCallback((id: string, groupable: boolean, el: HTMLElement | null) => {
-    if (!orderRef.current.includes(id)) orderRef.current.push(id);
-    groupableRef.current[id] = groupable;
-    elRef.current[id] = el;
-  }, []);
+  const register = useCallback(
+    (id: string, groupable: boolean, defaultOpen: boolean, el: HTMLElement | null) => {
+      if (!orderRef.current.includes(id)) orderRef.current.push(id);
+      groupableRef.current[id] = groupable;
+      defaultOpenRef.current[id] = defaultOpen;
+      elRef.current[id] = el;
+    },
+    [],
+  );
 
-  const isOpen = useCallback((id: string) => !!openMap[id], [openMap]);
+  const isOpen = useCallback(
+    (id: string, defaultOpen = false) => (id in openMap ? openMap[id] : defaultOpen),
+    [openMap],
+  );
 
-  const toggle = useCallback((id: string) => {
+  const toggle = useCallback((id: string, defaultOpen = false) => {
     setOpenMap((prev) => {
-      const opening = !prev[id];
+      const currentlyOpen = id in prev ? prev[id] : defaultOpen;
+      const opening = !currentlyOpen;
       const next = { ...prev, [id]: opening };
 
       // Mobile-only: opening one closes every other currently-open accordion (regardless of
@@ -86,24 +105,29 @@ export function AccordionGroupProvider({ children }: { children: ReactNode }) {
     );
   }, []);
 
+  const effectiveOpenById = useCallback(
+    (id: string) => (id in openMap ? openMap[id] : !!defaultOpenRef.current[id]),
+    [openMap],
+  );
+
   const isJoinedTop = useCallback(
     (id: string) => {
-      if (!groupableRef.current[id] || openMap[id]) return false;
+      if (!groupableRef.current[id] || effectiveOpenById(id)) return false;
       const idx = orderRef.current.indexOf(id);
       const prevId = idx > 0 ? orderRef.current[idx - 1] : null;
-      return !!prevId && groupableRef.current[prevId] === true && !openMap[prevId];
+      return !!prevId && groupableRef.current[prevId] === true && !effectiveOpenById(prevId);
     },
-    [openMap],
+    [effectiveOpenById],
   );
 
   const isJoinedBottom = useCallback(
     (id: string) => {
-      if (!groupableRef.current[id] || openMap[id]) return false;
+      if (!groupableRef.current[id] || effectiveOpenById(id)) return false;
       const idx = orderRef.current.indexOf(id);
       const nextId = idx < orderRef.current.length - 1 ? orderRef.current[idx + 1] : null;
-      return !!nextId && groupableRef.current[nextId] === true && !openMap[nextId];
+      return !!nextId && groupableRef.current[nextId] === true && !effectiveOpenById(nextId);
     },
-    [openMap],
+    [effectiveOpenById],
   );
 
   const value = useMemo(

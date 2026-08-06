@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 import youtubeData from "../../../_data/youtube.json";
 import type { YoutubeVideo, YTPlayer } from "@/data/youtube_types";
 
@@ -130,7 +130,12 @@ export function YoutubeCarousel() {
   const timestampsHeaderRef = useRef<HTMLDivElement>(null);
   const timestampsRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
+  // useLayoutEffect (not useEffect): this populates real content over the skeleton placeholder.
+  // Accordion's own open-state effect (also useLayoutEffect) runs in the same pre-paint pass, so
+  // this must too, or the very first paint after opening would show the skeleton — visibly
+  // shorter than the real card — with real content swapping in only on the *next* paint, reading
+  // as a layout jump ("opens a bit, then opens to full") rather than the true single-shot open.
+  useLayoutEffect(() => {
     if (videosRef.current.length === 0) return;
     const videos = videosRef.current;
 
@@ -275,7 +280,17 @@ export function YoutubeCarousel() {
       const ytCardEl = infoEl.closest(".Box") as HTMLElement | null;
       if (ytCardEl) {
         resizeObserver = new ResizeObserver(() => {
-          viewportEl.style.height = ytCardEl.offsetHeight + "px";
+          // Guard against 0: fires while the accordion is closed too (a hidden ancestor makes
+          // this report 0, not a real collapse), which would otherwise leave viewportEl pinned
+          // to height:0 until the observer's next (async, not synchronous with reopening) fire —
+          // and the accordion's open animation reads content.scrollHeight, which includes this
+          // stale 0, immediately on reopening, well before that correction lands. Animates to a
+          // too-small target, then snaps to the real size once the observer catches up — the
+          // same "opens a bit, then opens to full" symptom. Skipping the 0 leaves viewportEl at
+          // its last known-good height instead, which the reopen's own measurement can trust.
+          if (ytCardEl.offsetHeight > 0) {
+            viewportEl.style.height = ytCardEl.offsetHeight + "px";
+          }
         });
         resizeObserver.observe(ytCardEl);
       }

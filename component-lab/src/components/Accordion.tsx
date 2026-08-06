@@ -9,6 +9,13 @@ import { useAnimatedDisclosure } from "@/hooks/useAnimatedDisclosure";
 // close-animates-padding-too fix) lives in that shared hook — see its own comments for why each
 // exists — since Gratitude.tsx's plain disclosure needs the identical mechanic under different
 // header markup.
+//
+// `isOpen(id, defaultOpen)`/`toggle(id, defaultOpen)` pass this accordion's own defaultOpen prop
+// straight through on every call, rather than seeding it via a mount-effect toggle() — that used
+// to make `open` lag true by one render for every defaultOpen accordion, which was the root cause
+// of a whole run of bugs (open-then-forced-shut on mobile, a stale animation re-closing content
+// after the fix, React's own reactive display style racing the imperative animation). The content
+// div below must never set its own `display` style — useAnimatedDisclosure owns that exclusively.
 
 type AccordionProps = {
   id: string;
@@ -30,19 +37,14 @@ export function Accordion({
   const { isOpen, toggle, register, isJoinedTop, isJoinedBottom, scrollIntoViewIfMobile } =
     useAccordionGroup();
   const detailsRef = useRef<HTMLDivElement>(null);
-  const hasMountedOpen = useRef(false);
 
   useEffect(() => {
-    register(id, groupable, detailsRef.current);
-    if (defaultOpen && !hasMountedOpen.current) {
-      hasMountedOpen.current = true;
-      toggle(id);
-    }
+    register(id, groupable, defaultOpen, detailsRef.current);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const open = isOpen(id);
-  const contentRef = useAnimatedDisclosure(open, () => scrollIntoViewIfMobile(id), defaultOpen);
+  const open = isOpen(id, defaultOpen);
+  const contentRef = useAnimatedDisclosure(open, () => scrollIntoViewIfMobile(id));
 
   const joinedTop = isJoinedTop(id);
   const joinedBottom = isJoinedBottom(id);
@@ -62,7 +64,7 @@ export function Accordion({
       <div
         className="p-4 d-flex flex-justify-between flex-items-center"
         style={{ cursor: "pointer", userSelect: "none" }}
-        onClick={() => toggle(id)}
+        onClick={() => toggle(id, defaultOpen)}
       >
         <div className="d-flex flex-items-center" style={{ gap: 8 }}>
           {title}
@@ -98,11 +100,7 @@ export function Accordion({
           <path d="M12.78 6.22a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L3.22 7.28a.75.75 0 0 1 1.06-1.06L8 9.94l3.72-3.72a.75.75 0 0 1 1.06 0Z"></path>
         </svg>
       </div>
-      <div
-        ref={contentRef}
-        className="p-4 text-left accordion-content"
-        style={{ display: defaultOpen ? "" : "none" }}
-      >
+      <div ref={contentRef} className="p-4 text-left accordion-content">
         {children}
       </div>
     </div>

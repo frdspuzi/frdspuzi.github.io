@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import learningData from "../../../_data/learning.json";
 import type { LearningItem } from "@/data/insights_types";
 
@@ -73,7 +73,11 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
 
   const allLearnings = (learningData.learnings as LearningItem[]).filter((l) => l.question && l.options);
 
-  useEffect(() => {
+  // useLayoutEffect (not useEffect) for the same reason as YoutubeCarousel's mount effect: this
+  // populates real content over the skeleton, and must run in the same pre-paint pass as
+  // Accordion's own open-state effect, or the skeleton→real swap reads as a second, separate
+  // "opening."
+  useLayoutEffect(() => {
     if (allLearnings.length === 0) return;
 
     const viewportEl = viewportRef.current!;
@@ -100,7 +104,13 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
     let resizeObserver: ResizeObserver | undefined;
     if (window.ResizeObserver) {
       resizeObserver = new ResizeObserver(() => {
-        viewportEl.style.height = triviaContainerEl.offsetHeight + "px";
+        // Guard against 0: fires while the accordion is closed too (a hidden ancestor reports 0,
+        // not a real collapse) — see YoutubeCarousel's identical guard for the full reasoning.
+        // Left unguarded, reopening would animate to a stale too-small height, then snap once
+        // this observer's next (async) fire corrects it — "opens a bit, then opens to full."
+        if (triviaContainerEl.offsetHeight > 0) {
+          viewportEl.style.height = triviaContainerEl.offsetHeight + "px";
+        }
       });
       resizeObserver.observe(triviaContainerEl);
     }
