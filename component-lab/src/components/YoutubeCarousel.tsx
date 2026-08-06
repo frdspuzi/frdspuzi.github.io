@@ -76,8 +76,11 @@ function buildPreviewSlideHtml(video: YoutubeVideo): string {
       "</div>";
   }
 
+  // No p-4 class here either — matches the real card's own reasoning (see its style comment):
+  // avoids relying on a stylesheet !important fight (p-4 is `padding: 24px !important`) at all,
+  // rather than leaning on this string's own inline !important still correctly beating it.
   return (
-    '<div class="Box box-shadow-large p-4 theme-surface theme-border" style="border-radius: 12px; padding-bottom: 36px !important; height: 100%; box-sizing: border-box;">' +
+    '<div class="Box box-shadow-large theme-surface theme-border" style="border-radius: 12px; padding: 24px 24px 36px; height: 100%; box-sizing: border-box;">' +
     '<div class="d-flex flex-column flex-lg-row flex-items-center" style="gap: 32px; height: 100%; box-sizing: border-box;">' +
     '<div class="col-12 col-lg-6 flex-shrink-0" style="' +
     thumbStyle +
@@ -498,8 +501,8 @@ export function YoutubeCarousel() {
         {videosRef.current.map((v, i) => (
           <div
             key={i}
-            className="Box box-shadow-large p-4 theme-surface theme-border"
-            style={{ borderRadius: 12, paddingBottom: 36, boxSizing: "border-box" }}
+            className="Box box-shadow-large theme-surface theme-border"
+            style={{ borderRadius: 12, padding: "24px 24px 36px", boxSizing: "border-box" }}
           >
             <div className="d-flex flex-column flex-lg-row" style={{ gap: 32 }}>
               <div
@@ -555,8 +558,21 @@ export function YoutubeCarousel() {
 
         <div
           id="yt-slide-current"
-          className="Box box-shadow-large p-4 theme-surface theme-border"
-          style={{ flex: "0 0 100%", borderRadius: 12, paddingBottom: "36px", boxSizing: "border-box" }}
+          className="Box box-shadow-large theme-surface theme-border"
+          style={{
+            flex: "0 0 100%",
+            borderRadius: 12,
+            // Not the p-4 class + a paddingBottom override — p-4 is `padding: 24px !important` in
+            // Primer's stylesheet, which beats a *non*-important inline style regardless of
+            // specificity (React's style object doesn't reliably express `!important`, unlike the
+            // preview slides below, which are raw HTML strings that can and do embed it
+            // literally). That silently made the real "current" card ~12px shorter on its bottom
+            // edge than every preview slide for the exact same video — a real, visible height
+            // mismatch right at the moment a preview becomes current. Setting the full padding
+            // directly avoids the conflict entirely — nothing left to lose to.
+            padding: "24px 24px 36px",
+            boxSizing: "border-box",
+          }}
         >
           <div
             className="d-flex flex-column flex-lg-row flex-items-center"
