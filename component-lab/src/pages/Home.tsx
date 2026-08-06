@@ -17,11 +17,11 @@ export default function Home() {
       <Masthead />
 
       <AccordionGroupProvider>
-        <div id="gratitude" className="mb-5 text-left">
+        <div id="gratitude" className="mb-3 text-left">
           <Gratitude />
         </div>
 
-        <div id="accordion-group" className="my-6">
+        <div id="accordion-group" className="mt-3 mb-6">
           <YoutubeFeed />
           <InsightsWriting />
         </div>
