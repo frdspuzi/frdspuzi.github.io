@@ -7,7 +7,8 @@ import { ShaderBackground } from "@/components/motion/shader-background";
 
 // React port of masthead.html, `stacked` layout branch only (the only branch _config.yml's
 // `layout:` actually uses — see home.html's own comment on why the sidebar branch is dead code
-// there too). metadata is always rendered here since home.html always passes `metadata=true`.
+// there too). `metadata` mirrors the include's own `metadata=true|false` param — home.html always
+// passes true, post.html passes false (just avatar/name/bio there, no contact info/social icons).
 const METADATA_ROW = "d-md-inline-block mx-3 mb-1 mb-md-0";
 
 // Touch devices have no real hover, so the social icons' fill/tooltip animation (:hover /
@@ -80,7 +81,7 @@ const SCRIM_COLOR = "rgba(0, 0, 0, 0.35)";
 const HERO_TEXT_COLOR = "#ffffff";
 const HERO_TEXT_MUTED_COLOR = "rgba(255, 255, 255, 0.75)";
 
-export function Masthead() {
+export function Masthead({ metadata = true }: { metadata?: boolean }) {
   useTouchSocialIconReveal();
 
   return (
@@ -126,6 +127,7 @@ export function Masthead() {
         </h1>
         <p className="mb-3 f4" style={{ color: HERO_TEXT_MUTED_COLOR }}>{user.bio}</p>
 
+        {metadata && (
         <div className="f4 mb-6">
           {user.name && (
             <div className={METADATA_ROW} style={{ color: HERO_TEXT_COLOR }}>
@@ -175,6 +177,7 @@ export function Masthead() {
             </ul>
           )}
         </div>
+        )}
       </div>
     </div>
   );
