@@ -36,6 +36,16 @@ const CLICK_DRAG_THRESHOLD = 8;
 const SWIPE_COMMIT_THRESHOLD = 50;
 const SWIPE_AXIS_LOCK_THRESHOLD = 10;
 const SWIPE_SETTLE_MS = 250;
+// Horizontal inset applied inside every slide slot (not a track-level `gap`, which would push
+// each slide's flex-basis past the 100% the drag/transform math above assumes). Since each slide
+// is still exactly 100% of the track's width, box-sizing: border-box padding on the *inside* of a
+// slide keeps its outer edges flush with its neighbors while insetting the actual card - so two
+// adjacent cards' padding combines into a visible gap between them, with no transform math to
+// adjust. Without this, adjacent cards touched with zero space between them, so the current
+// card's own rounded corners had nothing behind them but the next card's square edge - reading as
+// an unrounded gray smudge rather than a corner. This exposes the page's own background there
+// instead.
+const SLIDE_GAP_PX = 10;
 
 // Module-scoped singleton loader for the YouTube IFrame API script - shared across every
 // VideoCard instance (only ever one at a time actually creates a player, but which instance that
@@ -445,7 +455,17 @@ export function YoutubeCarousel() {
       <div
         ref={measureContainerRef}
         aria-hidden="true"
-        style={{ position: "absolute", visibility: "hidden", pointerEvents: "none", top: 0, left: 0, width: "100%", zIndex: -1 }}
+        style={{
+          position: "absolute",
+          visibility: "hidden",
+          pointerEvents: "none",
+          top: 0,
+          left: 0,
+          width: "100%",
+          zIndex: -1,
+          padding: `0 ${SLIDE_GAP_PX}px`,
+          boxSizing: "border-box",
+        }}
       >
         {videos.map((v) => (
           <VideoCard key={v.videoId} video={v} isActive={false} dragDistanceRef={dragDistanceRef} onNavigate={() => {}} />
@@ -453,13 +473,22 @@ export function YoutubeCarousel() {
       </div>
 
       <div id="yt-carousel-track" ref={trackRef} style={{ display: "flex", height: "100%", transform: "translateX(-100%)" }}>
-        <div key={videos[prevIndex].videoId} style={{ flex: "0 0 100%" }}>
+        <div
+          key={videos[prevIndex].videoId}
+          style={{ flex: "0 0 100%", padding: `0 ${SLIDE_GAP_PX}px`, boxSizing: "border-box" }}
+        >
           <VideoCard video={videos[prevIndex]} isActive={false} dragDistanceRef={dragDistanceRef} onNavigate={navigate} />
         </div>
-        <div key={videos[currentIndex].videoId} style={{ flex: "0 0 100%" }}>
+        <div
+          key={videos[currentIndex].videoId}
+          style={{ flex: "0 0 100%", padding: `0 ${SLIDE_GAP_PX}px`, boxSizing: "border-box" }}
+        >
           <VideoCard video={videos[currentIndex]} isActive dragDistanceRef={dragDistanceRef} onNavigate={navigate} />
         </div>
-        <div key={videos[nextIndex].videoId} style={{ flex: "0 0 100%" }}>
+        <div
+          key={videos[nextIndex].videoId}
+          style={{ flex: "0 0 100%", padding: `0 ${SLIDE_GAP_PX}px`, boxSizing: "border-box" }}
+        >
           <VideoCard video={videos[nextIndex]} isActive={false} dragDistanceRef={dragDistanceRef} onNavigate={navigate} />
         </div>
       </div>
