@@ -40,4 +40,5 @@ export type YTPlayer = {
   playVideo: () => void;
   cueVideoById: (videoId: string) => void;
   getDuration: () => number;
+  destroy?: () => void;
 };
