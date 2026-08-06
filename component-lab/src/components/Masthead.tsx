@@ -66,6 +66,19 @@ function useTouchSocialIconReveal() {
 // (and adding it back into the height) reaches y=0 regardless of that padding.
 const SHADER_BLEED_PX = 18;
 const MAIN_PADDING_TOP_PX = 40;
+// Same pattern as .medium-story-tag elsewhere on this site ("solid dark scrim + white text
+// always reads, on any photo, in any theme") — --fg/--fg-muted were tuned for contrast against
+// a plain surface background, not a moving, colorful gradient, and the shader doesn't react to
+// the light/dark toggle the way the surface it replaced did. A scrim between the shader and the
+// text guarantees readability regardless of theme or where the gradient currently is.
+const SCRIM_COLOR = "rgba(0, 0, 0, 0.35)";
+// theme-fg/theme-fg-muted are tuned for a plain surface background and don't work here either —
+// in light mode --fg resolves near-black, which the scrim above makes *less* readable, not more
+// (a darker background needs lighter text, not theme-correct dark text). Fixed, not theme-
+// reactive, for the same reason the scrim isn't: the shader behind this text doesn't respond to
+// the toggle, so text color tied to the toggle will always drift in or out of contrast with it.
+const HERO_TEXT_COLOR = "#ffffff";
+const HERO_TEXT_MUTED_COLOR = "rgba(255, 255, 255, 0.75)";
 
 export function Masthead() {
   useTouchSocialIconReveal();
@@ -94,6 +107,7 @@ export function Masthead() {
           swirl={0.5}
           speed={0.3}
         />
+        <div style={{ position: "absolute", inset: 0, background: SCRIM_COLOR }}></div>
       </div>
       <div style={{ position: "relative", zIndex: 1 }}>
         <img
@@ -107,30 +121,30 @@ export function Masthead() {
           height={339}
           alt={user.name || user.login}
         />
-        <h1 className="theme-fg mb-2 lh-condensed">
+        <h1 className="mb-2 lh-condensed" style={{ color: HERO_TEXT_COLOR }}>
           {user.name || <span className="aurora-text">{user.login}</span>}
         </h1>
-        <p className="mb-3 f4 theme-fg-muted">{user.bio}</p>
+        <p className="mb-3 f4" style={{ color: HERO_TEXT_MUTED_COLOR }}>{user.bio}</p>
 
         <div className="f4 mb-6">
           {user.name && (
-            <div className={METADATA_ROW}>
+            <div className={METADATA_ROW} style={{ color: HERO_TEXT_COLOR }}>
               <Octicon name="mark-github" className="mr-2 v-align-middle" ariaLabel="GitHub" />
-              <a href={`https://github.com/${user.login}`} className="theme-fg">
+              <a href={`https://github.com/${user.login}`} style={{ color: HERO_TEXT_COLOR }}>
                 <span className="aurora-text">@{user.login}</span>
               </a>
             </div>
           )}
           {user.email && (
-            <div className={METADATA_ROW}>
+            <div className={METADATA_ROW} style={{ color: HERO_TEXT_COLOR }}>
               <Octicon name="mail" className="mr-2 v-align-middle" ariaLabel="email" />
-              <a href={`mailto:${user.email}`} className="theme-fg">
+              <a href={`mailto:${user.email}`} style={{ color: HERO_TEXT_COLOR }}>
                 {user.email}
               </a>
             </div>
           )}
           {user.location && (
-            <div className={`${METADATA_ROW} theme-fg`}>
+            <div className={METADATA_ROW} style={{ color: HERO_TEXT_COLOR }}>
               <Octicon name="location" className="mr-2 v-align-middle" ariaLabel="Location" />
               {user.location}
             </div>
