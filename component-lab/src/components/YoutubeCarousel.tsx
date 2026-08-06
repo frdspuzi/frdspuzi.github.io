@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import youtubeData from "../../../_data/youtube.json";
 import type { YoutubeVideo, YTPlayer } from "@/data/youtube_types";
 
@@ -78,7 +78,7 @@ function buildPreviewSlideHtml(video: YoutubeVideo): string {
 
   return (
     '<div class="Box box-shadow-large p-4 theme-surface theme-border" style="border-radius: 12px; padding-bottom: 36px !important; height: 100%; box-sizing: border-box;">' +
-    '<div class="d-flex flex-column flex-lg-row flex-items-center" style="gap: 32px;">' +
+    '<div class="d-flex flex-column flex-lg-row flex-items-center" style="gap: 32px; height: 100%; box-sizing: border-box;">' +
     '<div class="col-12 col-lg-6 flex-shrink-0" style="' +
     thumbStyle +
     '"></div>' +
@@ -112,6 +112,25 @@ const SWIPE_SETTLE_MS = 250;
 
 export function YoutubeCarousel() {
   const videosRef = useRef<YoutubeVideo[]>(shuffle(youtubeData.videos as YoutubeVideo[]));
+
+  // Fixed viewport height, precomputed once from the tallest card across *every* video, not the
+  // 3 currently-rendered slides — the old ResizeObserver-driven approach synced viewportEl's
+  // height to whichever card was current, so it visibly jumped on every swipe as videos with
+  // different title/summary/timestamp-count lengths cycled through. Measured off-screen (see
+  // measureContainerRef below) using the same markup/width as the real card, so wrapping is
+  // measured accurately rather than estimated. Once set, the info column's existing
+  // flex-justify-center (already in the JSX below) does the rest: any video shorter than the
+  // tallest now has real extra space in its own card to center within, instead of nothing to
+  // center against.
+  const [maxCardHeight, setMaxCardHeight] = useState<number | null>(null);
+  const measureContainerRef = useRef<HTMLDivElement>(null);
+
+  useLayoutEffect(() => {
+    const container = measureContainerRef.current;
+    if (!container) return;
+    const heights = Array.from(container.children).map((el) => (el as HTMLElement).offsetHeight);
+    if (heights.length > 0) setMaxCardHeight(Math.max(...heights));
+  }, []);
 
   const viewportRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
@@ -272,27 +291,6 @@ export function YoutubeCarousel() {
       } else {
         timestampsHeaderEl.style.display = "none";
         timestampsEl.style.display = "none";
-      }
-    }
-
-    let resizeObserver: ResizeObserver | undefined;
-    if (window.ResizeObserver) {
-      const ytCardEl = infoEl.closest(".Box") as HTMLElement | null;
-      if (ytCardEl) {
-        resizeObserver = new ResizeObserver(() => {
-          // Guard against 0: fires while the accordion is closed too (a hidden ancestor makes
-          // this report 0, not a real collapse), which would otherwise leave viewportEl pinned
-          // to height:0 until the observer's next (async, not synchronous with reopening) fire —
-          // and the accordion's open animation reads content.scrollHeight, which includes this
-          // stale 0, immediately on reopening, well before that correction lands. Animates to a
-          // too-small target, then snaps to the real size once the observer catches up — the
-          // same "opens a bit, then opens to full" symptom. Skipping the 0 leaves viewportEl at
-          // its last known-good height instead, which the reopen's own measurement can trust.
-          if (ytCardEl.offsetHeight > 0) {
-            viewportEl.style.height = ytCardEl.offsetHeight + "px";
-          }
-        });
-        resizeObserver.observe(ytCardEl);
       }
     }
 
@@ -468,7 +466,6 @@ export function YoutubeCarousel() {
       viewportEl.removeEventListener("touchmove", onTouchMove);
       viewportEl.removeEventListener("touchend", endSwipe);
       viewportEl.removeEventListener("touchcancel", endSwipe);
-      resizeObserver?.disconnect();
       delete window.onYouTubeIframeAPIReady;
     };
   }, []);
@@ -476,16 +473,95 @@ export function YoutubeCarousel() {
   if (youtubeData.videos.length === 0) return null;
 
   return (
-    <div id="yt-carousel-viewport" ref={viewportRef} style={{ overflow: "hidden", position: "relative", cursor: "grab", userSelect: "none" }}>
-      <div id="yt-carousel-track" ref={trackRef} style={{ display: "flex", transform: "translateX(-100%)" }}>
+    <div
+      id="yt-carousel-viewport"
+      ref={viewportRef}
+      style={{
+        overflow: "hidden",
+        position: "relative",
+        cursor: "grab",
+        userSelect: "none",
+        height: maxCardHeight ? maxCardHeight + "px" : undefined,
+      }}
+    >
+      {/* Off-screen, one per video — measured once (see the useLayoutEffect above) to find the
+          tallest possible card, then never rendered again. visibility:hidden (not display:none)
+          so it still lays out and measures correctly; position:absolute removes it from the real
+          track's flow entirely. Structural classes/widths mirror the real card so text wrapping
+          measures accurately; alignment classes (flex-items-center/flex-justify-center) are
+          skipped since they don't affect natural content height, only where it sits. */}
+      <div
+        ref={measureContainerRef}
+        aria-hidden="true"
+        style={{ position: "absolute", visibility: "hidden", pointerEvents: "none", top: 0, left: 0, width: "100%", zIndex: -1 }}
+      >
+        {videosRef.current.map((v, i) => (
+          <div
+            key={i}
+            className="Box box-shadow-large p-4 theme-surface theme-border"
+            style={{ borderRadius: 12, paddingBottom: 36, boxSizing: "border-box" }}
+          >
+            <div className="d-flex flex-column flex-lg-row" style={{ gap: 32 }}>
+              <div
+                className="col-12 col-lg-6 flex-shrink-0"
+                style={
+                  isShortVideo(v)
+                    ? { aspectRatio: "9/16", maxWidth: 320, margin: "0 auto", borderRadius: 8 }
+                    : { aspectRatio: "16/9", borderRadius: 8 }
+                }
+              ></div>
+              <div className="col-12 col-lg-6 d-flex flex-column text-left">
+                <div className="mb-2">
+                  <span
+                    className="d-inline-block text-uppercase text-bold f6"
+                    style={{ padding: "4px 12px", borderRadius: 20, letterSpacing: "0.5px" }}
+                  >
+                    {v.category}
+                  </span>
+                </div>
+                <h3 className="f3 mb-2 lh-condensed" style={{ fontWeight: 600 }}>
+                  {v.title}
+                </h3>
+                <p className="f5 mb-3">By {v.channel}</p>
+                <div className="flash yt-flash mb-4" style={{ borderRadius: 8 }}>
+                  <p className="f5 mb-0" style={{ lineHeight: 1.6 }}>
+                    {v.summary}
+                  </p>
+                  {v.timestamps && v.timestamps.length > 0 && (
+                    <>
+                      <div className="mt-3">
+                        <strong className="f6">Key Moments:</strong>
+                      </div>
+                      <div className="mt-2 f6">
+                        {v.timestamps.map((ts, j) => (
+                          <div key={j} style={{ display: "flex", gap: 6, marginBottom: 8 }}>
+                            <span>▶</span>
+                            <span style={{ fontFamily: "monospace" }}>[00:00]</span>
+                            <span>{ts.topic}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div id="yt-carousel-track" ref={trackRef} style={{ display: "flex", height: "100%", transform: "translateX(-100%)" }}>
         <div id="yt-slide-prev" ref={prevSlideRef} className="yt-slide-preview" style={{ flex: "0 0 100%" }}></div>
 
         <div
           id="yt-slide-current"
           className="Box box-shadow-large p-4 theme-surface theme-border"
-          style={{ flex: "0 0 100%", borderRadius: 12, paddingBottom: "36px" }}
+          style={{ flex: "0 0 100%", borderRadius: 12, paddingBottom: "36px", boxSizing: "border-box" }}
         >
-          <div className="d-flex flex-column flex-lg-row flex-items-center" style={{ gap: 32 }}>
+          <div
+            className="d-flex flex-column flex-lg-row flex-items-center"
+            style={{ gap: 32, height: "100%", boxSizing: "border-box" }}
+          >
             <div
               id="yt-player-container"
               ref={videoContainerRef}
