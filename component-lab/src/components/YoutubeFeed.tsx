@@ -1,5 +1,6 @@
 import { Accordion } from "@/components/Accordion";
 import { YoutubeCarousel } from "@/components/YoutubeCarousel";
+import { isDesktopWidthAtMount } from "@/lib/viewport";
 import youtubeData from "../../../_data/youtube.json";
 
 // React port of youtube_feed.html. Reuses the shared Accordion (this is one of the 3 groupable
@@ -19,7 +20,7 @@ export function YoutubeFeed() {
     <Accordion
       id="reclaiming-algo"
       groupable
-      defaultOpen
+      defaultOpen={isDesktopWidthAtMount()}
       title={
         <h2 className="f2 fw-bold theme-fg" style={{ marginBottom: "0 !important", borderBottom: "none" }}>
           Reclaiming the Algo

@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import { Accordion } from "@/components/Accordion";
 import { MediumTray } from "@/components/MediumTray";
 import { TriviaBoard } from "@/components/TriviaBoard";
+import { isDesktopWidthAtMount } from "@/lib/viewport";
 import mediumData from "../../../_data/medium.json";
 import type { MediumItem } from "@/data/insights_types";
 
@@ -26,7 +27,7 @@ export function InsightsWriting() {
     <Accordion
       id="my-writing"
       groupable
-      defaultOpen
+      defaultOpen={isDesktopWidthAtMount()}
       title={
         <h2 className="f2 fw-bold theme-fg" style={{ marginBottom: "0 !important", borderBottom: "none" }}>
           Insights &amp; Writing
