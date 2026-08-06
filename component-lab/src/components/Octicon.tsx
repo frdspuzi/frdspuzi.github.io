@@ -23,6 +23,10 @@ export function Octicon({
       height="20"
       width="20"
       className={className}
+      // Tailwind Preflight forces svg to display:block, breaking inline flow next to text (the
+      // original relies on the browser's native inline default) — an inline style always beats a
+      // plain element-selector stylesheet rule, so this reliably wins regardless of import order.
+      style={{ display: "inline-block" }}
       fill="currentColor"
       viewBox="0 0 16 16"
       version="1.1"

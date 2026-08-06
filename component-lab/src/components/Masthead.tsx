@@ -57,7 +57,10 @@ export function Masthead() {
       <img
         src={user.avatarUrl}
         className="mb-3"
-        style={{ maxWidth: 150, height: "auto" }}
+        // margin: 0 auto centers it — Tailwind Preflight forces img to display:block (the
+        // original relies on the browser's native inline default, centered by the parent's
+        // text-align:center; a block-level element ignores that and needs its own centering).
+        style={{ maxWidth: 150, height: "auto", margin: "0 auto" }}
         width={300}
         height={339}
         alt={user.name || user.login}

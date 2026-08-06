@@ -933,6 +933,65 @@ body {
   }
 }
 
+// Ported from youtube_feed.html's own inline <style> block — unlike that file's .yt-flash/
+// .btn-blue (already centralized in the live site's assets/styles.scss, confirmed by grep),
+// .yt-facade/.yt-facade-thumb/.yt-facade-play were never actually centralized there either, only
+// ever living in that one include's own <style> tag — missed the first time around since an
+// earlier combined "yt-facade|yt-flash|btn-blue" grep matched on the other two terms and was
+// wrongly read as covering all three. Without these, the facade button/thumbnail have no
+// positioning or sizing at all, so the video thumbnail doesn't render visibly.
+.yt-facade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: #000;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+.yt-facade-thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+.yt-facade-short .yt-facade-thumb {
+  object-fit: contain;
+}
+.yt-facade-play {
+  position: relative;
+  z-index: 1;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.yt-facade:hover .yt-facade-play,
+.yt-facade:focus-visible .yt-facade-play {
+  background: rgba(255, 0, 0, 0.85);
+  transform: scale(1.08);
+}
+@media (prefers-reduced-motion: reduce) {
+  .yt-facade-play {
+    transition: none;
+  }
+  .yt-facade:hover .yt-facade-play,
+  .yt-facade:focus-visible .yt-facade-play {
+    transform: none;
+  }
+}
+
 // Below: ported from thoughts.html's and learning_board.html's own inline <style> blocks (never
 // centralized in the live site's assets/styles.scss either — each include ships its own copy,
 // including an identical .btn-blue in both; kept as one copy here). Unlike youtube_feed.html's
@@ -944,7 +1003,16 @@ body {
   flex-direction: column;
   gap: 12px;
   overflow-y: auto;
+  // Explicit, not left to default: per spec, a non-visible overflow-y with no overflow-x set
+  // computes overflow-x to auto too, which shows a horizontal scrollbar the instant anything in
+  // a row card refuses to shrink (see min-width below) — this section should never scroll
+  // sideways on tablet/desktop, only the mobile story-tray override further down should.
+  overflow-x: hidden;
   min-height: 0;
+  // A flex item's default min-width is auto (shrink-to-content), not 0 — without this, a long
+  // article title can hold #medium-posts (itself a flex item of .right-column-content) wider
+  // than its column, which is what the overflow-x guard above would otherwise have to mask.
+  min-width: 0;
   padding-right: 8px;
 }
 .custom-scrollbar::-webkit-scrollbar {
