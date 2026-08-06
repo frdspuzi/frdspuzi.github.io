@@ -18,10 +18,11 @@ const CLOSE: KeyframeAnimationOptions = {
   fill: "forwards",
 };
 
-export function useAnimatedDisclosure(open: boolean, onOpened?: () => void) {
+export function useAnimatedDisclosure(open: boolean, onOpened?: () => void, skipFirstOpenAnimation = false) {
   const contentRef = useRef<HTMLDivElement>(null);
   const animRef = useRef<Animation | null>(null);
   const guardId = useRef(0);
+  const hasOpenedBefore = useRef(false);
 
   const reduceMotion =
     typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -29,6 +30,19 @@ export function useAnimatedDisclosure(open: boolean, onOpened?: () => void) {
   useEffect(() => {
     const content = contentRef.current;
     if (!content) return;
+
+    // A defaultOpen accordion mounts closed, then this hook sees `open` flip true a render later
+    // (register()+toggle() both run from Accordion's own mount effect) — without this, that
+    // mount-triggered transition played the full open animation, which the original's native
+    // `<details open>` never does (only a real click animates there). Skipped once, the first
+    // time `open` becomes true, for accordions that opt in via `skipFirstOpenAnimation`.
+    if (open && skipFirstOpenAnimation && !hasOpenedBefore.current) {
+      hasOpenedBefore.current = true;
+      content.style.display = "";
+      onOpened?.();
+      return;
+    }
+    if (open) hasOpenedBefore.current = true;
 
     if (reduceMotion) {
       content.style.display = open ? "" : "none";

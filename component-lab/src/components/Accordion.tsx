@@ -42,7 +42,7 @@ export function Accordion({
   }, []);
 
   const open = isOpen(id);
-  const contentRef = useAnimatedDisclosure(open, () => scrollIntoViewIfMobile(id));
+  const contentRef = useAnimatedDisclosure(open, () => scrollIntoViewIfMobile(id), defaultOpen);
 
   const joinedTop = isJoinedTop(id);
   const joinedBottom = isJoinedBottom(id);
