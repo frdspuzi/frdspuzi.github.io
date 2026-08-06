@@ -22,6 +22,48 @@ function shuffle<T>(array: T[]): T[] {
   return result;
 }
 
+// Builds the same markup as the real card (both its pre-answer and post-answer/"revealed"
+// shapes) for off-screen measurement only — see the maxUnrevealedHeight/maxRevealedHeight
+// computation below for why.
+function buildMeasureCardHtml(item: LearningItem, revealed: boolean): string {
+  const optionsHtml = item.options
+    .map(
+      (opt) =>
+        '<div class="btn text-left p-2 text-normal f6 trivia-btn" style="width: 100%; white-space: normal;">' +
+        opt +
+        "</div>",
+    )
+    .join("");
+
+  const revealHtml = revealed
+    ? '<div class="flash-success p-3 rounded-2 mb-4" style="margin-top: 16px;">' +
+      '<p class="f4 text-italic mb-0" style="line-height: 1.4;">' +
+      item.learning +
+      "</p></div>" +
+      '<div class="d-flex flex-column border-top pt-4" style="width: 100%;">' +
+      '<div class="f6 mb-3">From the article: <strong class="f5 d-block mt-1">' +
+      item.articleTitle +
+      "</strong></div>" +
+      '<div class="d-flex flex-column flex-sm-row flex-justify-between" style="gap: 12px; width: 100%;">' +
+      '<div class="btn flex-1 text-center">Read Article</div>' +
+      '<div class="btn btn-blue flex-1 text-center">Next Question &rarr;</div>' +
+      "</div></div>"
+    : "";
+
+  return (
+    '<h2 class="f4 mb-3" style="line-height: 1.4; font-weight: 500;">' +
+    item.question +
+    "</h2>" +
+    '<p class="f6 mb-4"><span>Not sure? Read: </span><span class="text-underline">' +
+    item.articleTitle +
+    "</span></p>" +
+    '<div class="d-flex flex-column" style="gap: 12px; margin-bottom: 16px;">' +
+    optionsHtml +
+    "</div>" +
+    revealHtml
+  );
+}
+
 function buildPreviewSlideHtml(item: LearningItem): string {
   const optionsHtml = item.options
     .map(
@@ -84,7 +126,6 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
     const trackEl = trackRef.current!;
     const prevSlideEl = prevSlideRef.current!;
     const nextSlideEl = nextSlideRef.current!;
-    const triviaContainerEl = containerRef.current!;
     const skeletonEl = skeletonRef.current!;
     const contentEl = contentRef.current!;
     const questionEl = questionRef.current!;
@@ -101,19 +142,37 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
     let currentItem: LearningItem | null = null;
     let currentIndex = 0;
 
-    let resizeObserver: ResizeObserver | undefined;
-    if (window.ResizeObserver) {
-      resizeObserver = new ResizeObserver(() => {
-        // Guard against 0: fires while the accordion is closed too (a hidden ancestor reports 0,
-        // not a real collapse) — see YoutubeCarousel's identical guard for the full reasoning.
-        // Left unguarded, reopening would animate to a stale too-small height, then snap once
-        // this observer's next (async) fire corrects it — "opens a bit, then opens to full."
-        if (triviaContainerEl.offsetHeight > 0) {
-          viewportEl.style.height = triviaContainerEl.offsetHeight + "px";
-        }
-      });
-      resizeObserver.observe(triviaContainerEl);
-    }
+    // Fixed heights, precomputed once from the tallest possible card across *every* item, not
+    // whatever the currently-displayed question happens to measure — same fix as
+    // YoutubeCarousel's max-height precompute, for the same reason. The old approach (a
+    // ResizeObserver syncing viewportEl's height to triviaContainerEl's own natural size) lagged
+    // by one async fire on every question switch: loadQuestion() replaces the DOM content
+    // synchronously, but the observer's correction lands a frame later — if the new question
+    // needed more room than the still-stale height (e.g. one extra option), overflow:hidden
+    // clipped it until the observer caught up. Measured off-screen, before first paint, so
+    // there's no async gap to fall into. Two heights, not one: answering a question appends a
+    // reveal panel below the options (taller), so it gets its own precomputed max rather than
+    // forcing every unanswered question to reserve that extra space up front.
+    const measureEl = document.createElement("div");
+    measureEl.style.cssText =
+      "position: absolute; visibility: hidden; pointer-events: none; top: 0; left: 0; width: 100%; z-index: -1; padding: 0 10px; box-sizing: border-box;";
+    viewportEl.appendChild(measureEl);
+
+    const unrevealedMeasureDivs = allLearnings.map((item) => {
+      const el = document.createElement("div");
+      el.innerHTML = buildMeasureCardHtml(item, false);
+      measureEl.appendChild(el);
+      return el;
+    });
+    const revealedMeasureDivs = allLearnings.map((item) => {
+      const el = document.createElement("div");
+      el.innerHTML = buildMeasureCardHtml(item, true);
+      measureEl.appendChild(el);
+      return el;
+    });
+    const maxUnrevealedHeight = Math.max(0, ...unrevealedMeasureDivs.map((el) => el.offsetHeight));
+    const maxRevealedHeight = Math.max(0, ...revealedMeasureDivs.map((el) => el.offsetHeight));
+    viewportEl.removeChild(measureEl);
 
     function updatePagination() {
       const dotsContainer = dotsRef.current!;
@@ -148,6 +207,7 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
       learningTitleEl.textContent = currentItem!.articleTitle;
       learningLinkEl.href = currentItem!.articleUrl;
       revealEl.style.display = "block";
+      viewportEl.style.height = maxRevealedHeight + "px";
     }
 
     function loadQuestion(index: number) {
@@ -179,6 +239,7 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
       updatePagination();
       skeletonEl.style.display = "none";
       contentEl.style.display = "";
+      viewportEl.style.height = maxUnrevealedHeight + "px";
       updatePreviewSlides();
     }
 
@@ -338,7 +399,6 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
       viewportEl.removeEventListener("touchcancel", endSwipe);
       viewportEl.removeEventListener("keydown", onKeydown);
       nextBtn.removeEventListener("click", onNextClick);
-      resizeObserver?.disconnect();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
