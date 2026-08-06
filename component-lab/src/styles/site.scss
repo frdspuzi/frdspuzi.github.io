@@ -1427,6 +1427,47 @@ body {
   border-color: rgba(27, 31, 36, 0.15) !important;
 }
 
+// Ported from photography.html's own inline <style> block — same situation as youtube_feed.html's
+// .yt-facade rules: never actually centralized into the live site's own assets/styles.scss, only
+// ever lived in that one include's <style> tag.
+.infinite-image-field-frame {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.infinite-image-field-frame.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .infinite-image-field-frame {
+    transition: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .infinite-image-field-frame {
+    height: 560px;
+  }
+}
+
+#photography-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+
 .btn-blue:hover {
   background-color: var(--accent-solid-hover) !important;
 }

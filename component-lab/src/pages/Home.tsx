@@ -4,6 +4,7 @@ import { AboutContent } from "@/components/AboutContent";
 import { Gratitude } from "@/components/Gratitude";
 import { YoutubeFeed } from "@/components/YoutubeFeed";
 import { InsightsWriting } from "@/components/InsightsWriting";
+import { Photography } from "@/components/Photography";
 
 // Homepage — mirrors _layouts/home.html's stacked layout. Sections are added here one at a
 // time as they're ported (masthead → gratitude → YouTube feed → Insights & Writing →
@@ -26,6 +27,7 @@ export default function Home() {
         <div id="accordion-group" className="mt-3 mb-6">
           <YoutubeFeed />
           <InsightsWriting />
+          <Photography />
         </div>
       </AccordionGroupProvider>
     </main>
