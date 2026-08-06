@@ -109,6 +109,16 @@
 // `.github-component` (repo-card.html/topic-card.html) deliberately keeps the old system stack
 // instead of inheriting this — it exists specifically to stop a custom font from bleeding into
 // elements meant to look like authentic GitHub UI, see its own comment further down this file.
+html {
+  // Anchors .min-height-full's `min-height: 100%` below (a percentage, which needs a definite-
+  // height ancestor to resolve against — without this it silently does nothing, since <html>'s
+  // own default height is auto/content-sized). Also the actual fix for the theme toggle's
+  // view-transition wipe not covering the whole screen on a page shorter than the viewport: the
+  // transition's root snapshot is sized to documentElement's own box, which was only ever as
+  // tall as its content without this.
+  height: 100%;
+}
+
 body {
   font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -117,6 +127,7 @@ body {
   // scrollbar's own width, which would otherwise introduce a horizontal scrollbar. This is the
   // only thing on the page that intentionally bleeds past the container, so it's safe globally.
   overflow-x: hidden;
+  min-height: 100%;
 }
 
 // Design tokens (see DESIGN.md). Both themes' values ship to the browser always; a
@@ -744,7 +755,7 @@ body {
 
 .social-icon-item a[data-social="github"]~.social-icon-tooltip,
 .social-icon-item a[data-social="github"] .social-icon-fill {
-  background-color: #24262a;
+  background-color: #000000;
 }
 
 .social-icon-item a[data-social="instagram"]~.social-icon-tooltip,

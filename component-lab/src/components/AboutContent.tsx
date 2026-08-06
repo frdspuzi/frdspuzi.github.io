@@ -9,7 +9,12 @@
 // blockquote, which is also static for now. Known gap, not an oversight specific to this file.
 export function AboutContent() {
   return (
-    <div className="theme-fg">
+    // paddingTop, not a margin-top utility: Masthead's own bottom spacing lives on a deeply
+    // nested div (the metadata row, several levels inside Masthead's outer position:relative
+    // wrapper), not on Masthead's own root element — a margin here could collapse through that
+    // chain in ways that are hard to predict without live inspection. Padding never collapses,
+    // so this is guaranteed additive on top of whatever Masthead's own spacing resolves to.
+    <div className="theme-fg" style={{ paddingTop: 32 }}>
       <span id="about"></span>
       <p className="f4 mb-4 theme-fg-muted">
         Hi, I'm Firdaus. I'm a software engineer based in Malaysia focusing on cloud
