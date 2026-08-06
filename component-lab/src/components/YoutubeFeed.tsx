@@ -22,7 +22,11 @@ export function YoutubeFeed() {
       groupable
       defaultOpen={isDesktopWidthAtMount()}
       title={
-        <h2 className="f2 fw-bold theme-fg" style={{ marginBottom: "0 !important", borderBottom: "none" }}>
+        <h2
+          id="reclaiming-algo"
+          className="f2 fw-bold theme-fg"
+          style={{ marginBottom: "0 !important", borderBottom: "none" }}
+        >
           Reclaiming the Algo
         </h2>
       }

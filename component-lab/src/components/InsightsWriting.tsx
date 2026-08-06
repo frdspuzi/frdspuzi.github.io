@@ -29,7 +29,11 @@ export function InsightsWriting() {
       groupable
       defaultOpen={isDesktopWidthAtMount()}
       title={
-        <h2 className="f2 fw-bold theme-fg" style={{ marginBottom: "0 !important", borderBottom: "none" }}>
+        <h2
+          id="my-writing"
+          className="f2 fw-bold theme-fg"
+          style={{ marginBottom: "0 !important", borderBottom: "none" }}
+        >
           Insights &amp; Writing
         </h2>
       }

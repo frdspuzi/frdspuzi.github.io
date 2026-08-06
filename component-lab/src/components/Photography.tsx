@@ -11,7 +11,11 @@ export function Photography() {
       groupable
       defaultOpen={isDesktopWidthAtMount()}
       title={
-        <h2 className="f2 fw-bold theme-fg" style={{ marginBottom: "0 !important", borderBottom: "none" }}>
+        <h2
+          id="photography"
+          className="f2 fw-bold theme-fg"
+          style={{ marginBottom: "0 !important", borderBottom: "none" }}
+        >
           Photography
         </h2>
       }
