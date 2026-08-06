@@ -1,212 +1,233 @@
 [
   {
-    "videoId": "jQDXzEVHMSE",
-    "title": "Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)",
+    "videoId": "ZcgHBB4NqQw",
+    "title": "Junior Software Engineer's Survival Guide | My Mistakes + Advice",
     "selected": true,
-    "reasoning": "Incredible value for a junior engineer. Featuring Gergely Orosz from The Pragmatic Engineer, it provides high-level software architecture and tech career insights directly relevant to fullstack developers.",
-    "summary": "Step inside a masterclass on modern backend architecture and tech leadership with Gergely Orosz and Simon Eskildsen. If you want to understand how high-scale infrastructure is built while picking up proven software engineering career principles, this conversation is a goldmine for your early engineering career."
+    "reasoning": "Directly targets junior software engineers entering the industry, offering practical advice and mistake-prevention tactics.",
+    "summary": "Stepping into your first tech role can feel overwhelming, but avoiding common beginner traps makes all the difference. This survival guide breaks down real mistakes made early in a software career and offers actionable advice to accelerate your growth as a junior developer."
   },
   {
-    "videoId": "-jY2T2PiJBE",
-    "title": "MCP Apps: Extending the Frontier — Ido Salomon & Liad Yosef",
+    "videoId": "JoU_CZWOoo0",
+    "title": "How To Grow As a Junior Developer To Senior | 5 Tips",
+    "selected": true,
+    "reasoning": "High-value career advancement advice tailored specifically to junior fullstack developers wanting to transition to senior roles.",
+    "summary": "Bridging the gap between junior and senior engineer requires more than just writing code fast. Learn 5 core strategies that will sharpen your problem-solving mindset, improve technical communication, and fast-track your path to senior status."
+  },
+  {
+    "videoId": "ztZphO13iIY",
+    "title": "Stop Being A JR Software Engineer | Prime Reacts",
     "selected": false,
-    "reasoning": "Niche protocol developer presentation with limited context for general career or fullstack growth.",
+    "reasoning": "While entertaining, reaction format videos offer lower structured value compared to dedicated guide videos.",
     "summary": ""
   },
   {
-    "videoId": "s4r6nk5WsZw",
-    "title": "MCP Tasks (async): Why Aren't Any Agents Supporting Them? — Cornelia Davis, Temporal",
+    "videoId": "RmS5s6Wbin4",
+    "title": "Gadgets: Personal app vibe coding that is actually safe — Kenton Varda, Cloudflare",
     "selected": false,
-    "reasoning": "Too specialized on Temporal/MCP async specifications; low immediate ROI for a junior fullstack developer.",
+    "reasoning": "Niche conference talk on Cloudflare app safety; too specialized for early-career growth.",
+    "summary": ""
+  },
+  {
+    "videoId": "jQDXzEVHMSE",
+    "title": "Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)",
+    "selected": false,
+    "reasoning": "Deep dive into vector database startup building; interesting for tech lead/founders but less actionable for junior devs.",
+    "summary": ""
+  },
+  {
+    "videoId": "-jY2T2PiJBE",
+    "title": "MCP Apps: Extending the Frontier — Ido Salomon &amp; Liad Yosef",
+    "selected": false,
+    "reasoning": "Niche conference talk with hyper-specific AI tooling content.",
+    "summary": ""
+  },
+  {
+    "videoId": "t0QdRf-uj_w",
+    "title": "Did you know you can interpret C and compile Python?",
+    "selected": false,
+    "reasoning": "Short trivia clip with minimal practical career or engineering value.",
+    "summary": ""
+  },
+  {
+    "videoId": "h2HBo5XBvak",
+    "title": "Speculating about AI and programming languages",
+    "selected": false,
+    "reasoning": "Short opinion clip; lacks depth and actionable career advice.",
     "summary": ""
   },
   {
     "videoId": "aazX6QwMPDI",
     "title": "What is Lua used for?",
     "selected": false,
-    "reasoning": "Shallow YouTube Short offering superficial tech trivia without depth.",
-    "summary": ""
-  },
-  {
-    "videoId": "o1ESrxQ6vlI",
-    "title": "Should people still learn to code?",
-    "selected": false,
-    "reasoning": "Surface-level short discussing a tired AI vs Coding topic without actionable career takeaways.",
-    "summary": ""
-  },
-  {
-    "videoId": "6Pd61IrRTlY",
-    "title": "Why Lua is faster than Python",
-    "selected": false,
-    "reasoning": "Bite-sized comparison short; lacks substantive engineering depth.",
+    "reasoning": "Basic language overview short clip, not directly relevant for fullstack web career.",
     "summary": ""
   },
   {
     "videoId": "tddojhU-atQ",
     "title": "Watch this if you're wanting a business idea suited to your skills...",
     "selected": false,
-    "reasoning": "Generic short pitch on business ideas without deep framework analysis.",
+    "reasoning": "Short promotional teaser clip rather than a full deep-dive session.",
     "summary": ""
   },
   {
     "videoId": "oCVq-wAPqSs",
-    "title": "How to Make Work Optional - The Freedom Profile Matrix",
+    "title": "How to Make Your Job Optional - The Freedom Profile Matrix",
     "selected": true,
-    "reasoning": "Essential long-form career and wealth-building video providing a concrete matrix for early-career professionals seeking leverage and financial independence.",
-    "summary": "Stuck wondering how to structure your career for ultimate leverage and financial resilience? Ali Abdaal breaks down the Freedom Profile Matrix to help you evaluate income streams, skill-building, and long-term autonomy. It's a must-watch blueprint for any young professional planning their path toward financial freedom."
+    "reasoning": "Provides practical career and financial planning frameworks essential for young professionals building financial independence.",
+    "summary": "Relying solely on a single tech salary can leave you vulnerable to industry shifts. Ali Abdaal shares a clear strategic framework to diversify your income, build leverage, and turn your full-time job into a choice rather than a necessity."
   },
   {
     "videoId": "FE6VL7jpfCs",
     "title": "I asked Hormozi how to make $100k a year",
     "selected": false,
-    "reasoning": "Rehashed short content with clickbait pricing dynamics rather than comprehensive guidance.",
+    "reasoning": "Bite-sized short clip that lacks detailed implementation steps.",
+    "summary": ""
+  },
+  {
+    "videoId": "bo4ebVkhp28",
+    "title": "Voice Agent observability with LangSmith 🌟",
+    "selected": false,
+    "reasoning": "Product demo short clip with limited broader educational context.",
     "summary": ""
   },
   {
     "videoId": "qwUM4Sk1_nE",
     "title": "Which version of core ends up in your lockfile?",
     "selected": false,
-    "reasoning": "Hyper-specific package manager short; lacks strategic career or architectural value.",
+    "reasoning": "Extremely brief technical tip short video.",
     "summary": ""
   },
   {
     "videoId": "-rYFDefcq3k",
     "title": "Introducing Gemini Robotics 2",
     "selected": false,
-    "reasoning": "Standard promotional tech announcement video with little direct relevance to fullstack career progression.",
+    "reasoning": "Corporate promotional announcement for robotics model.",
     "summary": ""
   },
   {
-    "videoId": "z6l5nyE_6-I",
-    "title": "Voice Agent observability with LangSmith",
+    "videoId": "_ehgA1v5hO4",
+    "title": "Cukai ekstra untuk kereta EV?",
     "selected": false,
-    "reasoning": "Niche product demonstration focused on voice observability toolsets.",
+    "reasoning": "Short commentary on EV taxation in Malaysia; too narrow in scope.",
     "summary": ""
   },
   {
-    "videoId": "qe4ym5H7j_w",
-    "title": "Makanan viral tak menjaminkan untung berganda!",
+    "videoId": "IRGt2NFZQ9A",
+    "title": "&quot;Peniaga kecil mudah buat pinjaman&quot;?",
     "selected": false,
-    "reasoning": "Short teaser for the full podcast episode; better to pick the full in-depth interview.",
+    "reasoning": "Micro business loan commentary in short form format.",
     "summary": ""
   },
   {
-    "videoId": "NHoczJX0uHM",
-    "title": "[S03:E71] Business viral semata-mata, sampai bila? - Encik Mujiburrahman Abdul Rashid & Pinn Yang",
+    "videoId": "kZ0Q3FYOn-g",
+    "title": "Pekerja mahir diberhentikan",
     "selected": true,
-    "reasoning": "Outstanding local Malaysian financial and business deep-dive dissecting hype vs real unit economics, perfectly suited for a local financial advocate.",
-    "summary": "Dive into the raw reality of the Malaysian business landscape as Financial Faiz host Encik Mujiburrahman and Pinn Yang deconstruct viral hypes versus sustainable revenue models. If you want to build or invest in businesses that last, this candid Malay-language discussion offers crucial insights into financial discipline and market staying power."
-  },
-  {
-    "videoId": "KVfXk6UUOsY",
-    "title": "Perodua Axia turun harga",
-    "selected": false,
-    "reasoning": "Short automotive news clip with no strategic career or wealth insights.",
-    "summary": ""
-  },
-  {
-    "videoId": "kVKndu4XiI0",
-    "title": "Salah komunikasi, rugi 400 bungkus",
-    "selected": false,
-    "reasoning": "Short anecdote clip from a podcast; lacks broader structural frameworks.",
-    "summary": ""
-  },
-  {
-    "videoId": "grKzHRoIxyk",
-    "title": "[S01:E19] Bisnes nasi lemak kekal laris 15 tahun? - Rizal Isa, COO Nasi Lemak Saleha",
-    "selected": true,
-    "reasoning": "Practical case study on long-term enterprise sustainability and operations in Malaysia, appealing directly to a local Islamic financial advocate looking at halal wealth creation.",
-    "summary": "Learn how Nasi Lemak Saleha scaled a local food enterprise into a 15-year household brand through operational rigor and ethical financial practices. COO Rizal Isa breaks down the secrets of maintaining cash flow, quality, and brand integrity in the competitive Malaysian market."
-  },
-  {
-    "videoId": "uPY9ruQjpUc",
-    "title": "Bukti nasi lemak tahan 12 jam",
-    "selected": false,
-    "reasoning": "Gimmicky short clip with no real financial or technical takeaway.",
-    "summary": ""
+    "reasoning": "Crucial context for Malaysian tech workers regarding local job market dynamics, retrenchment trends, and financial protection.",
+    "summary": "Understanding the current Malaysian economic landscape and layoff trends is essential for tech professionals. Financial Faiz breaks down what high-skilled workers need to do to protect their personal finances and stay resilient during tech industry downturns."
   },
   {
     "videoId": "FgBL2T7CUw4",
     "title": "#111 | Your Test Can Be Your Testimony",
     "selected": false,
-    "reasoning": "Generic motivational podcast that lacks targeted actionable substance for software engineers or financial advocates.",
+    "reasoning": "Generic inspirational self-help talk without specific tech or financial substance.",
     "summary": ""
   },
   {
     "videoId": "-aJtCPD95jw",
     "title": "#110 | The Power of Positive Thinking",
     "selected": false,
-    "reasoning": "Standard mindset filler without specific technical, career, or spiritual depth.",
+    "reasoning": "Broad motivational self-help content.",
     "summary": ""
   },
   {
     "videoId": "FJoQR0Z0hLk",
     "title": "#109 | How To Lead With Integrity",
     "selected": false,
-    "reasoning": "Abstract leadership talk lacking practical depth compared to domain-specific options.",
+    "reasoning": "General leadership topic aimed at more senior managers.",
     "summary": ""
   },
   {
     "videoId": "2kGVKdhHUkE",
     "title": "“Wawasan is definitely not just a Malay Bumiputera Muslim party” - Saifuddin Abdullah",
     "selected": false,
-    "reasoning": "Partisan political commentary with little actionable career or personal finance ROI.",
+    "reasoning": "Political interview, low relevance to software engineering and personal finance guidance.",
     "summary": ""
   },
   {
     "videoId": "1Zz_kd6Q4Qo",
     "title": "Lindung 24 Jam: Tak sangka orang guna perkataan kesat untuk kritik Perkeso | In The Studio",
     "selected": false,
-    "reasoning": "Local agency public relations reaction interview with limited direct educational value.",
+    "reasoning": "Local policy/institution interview with lower direct personal growth ROI.",
     "summary": ""
   },
   {
     "videoId": "Xa_Meqgwa18",
     "title": "PUSPAKOM CEO responds to the end of their monopoly in vehicle inspection | In The Studio",
     "selected": false,
-    "reasoning": "Specific corporate news regarding automotive inspection monopolies, irrelevant to software/finance growth.",
+    "reasoning": "Vehicle inspection industry interview, irrelevant to target persona.",
     "summary": ""
   },
   {
-    "videoId": "8iTpnzQOwYc",
-    "title": "How to connect to loved ones with dementia | Kristen Cusato | TEDxSarasota",
+    "videoId": "pnYOSzLeBPM",
+    "title": "Endometriosis: The most common disease you've never heard of #shorts #tedx",
     "selected": false,
-    "reasoning": "Irrelevant medical/caregiver topic for our target profile.",
+    "reasoning": "General health awareness short clip.",
     "summary": ""
   },
   {
-    "videoId": "LqMbPpT57pI",
-    "title": "Water bear walk-on: Discovering your different path | Chloe McGeehan | TEDxDuke",
+    "videoId": "ZRX5yczvEZE",
+    "title": "Silence, Song, and Echo | Bharat Chandak | TEDxKKWIEER",
     "selected": false,
-    "reasoning": "Broad student motivational TEDx talk lacking concrete engineering or financial utility.",
+    "reasoning": "Generic inspirational TEDx speech.",
     "summary": ""
   },
   {
-    "videoId": "887LPwRKC-c",
-    "title": "We shouldn't settle for the single story of Africa | Comfort Markwei | TEDxDuke",
+    "videoId": "2ZId7g63nWI",
+    "title": "Self-Expression and Identity | Samriddhi Rai | TEDxSoftwarica College",
     "selected": false,
-    "reasoning": "Geopolitical cultural discussion unrelated to our specific demographic target.",
+    "reasoning": "Broad personal identity talk with low career/tech alignment.",
     "summary": ""
   },
   {
     "videoId": "E5RnYWQhZiM",
     "title": "Allah Won't Change Your Situation Until You Do This One Simple Thing",
     "selected": true,
-    "reasoning": "High-impact spiritual lecture tailored for a Muslim professional seeking personal growth, proactive self-improvement, and purposeful career execution.",
-    "summary": "Sh. Abdullah Oduro delivers a powerful reminder on the Qur'anic principle of personal transformation as a prerequisite for divine assistance. If you're feeling stuck early in your career, this concise talk provides the spiritual clarity and psychological shift needed to take ownership of your trajectory."
+    "reasoning": "Provides essential Islamic spiritual grounding and mindset shift for personal proactive accountability and growth.",
+    "summary": "True personal and career progress begins with internal change and divine connection. Sheikh Abdullah Oduro delivers a practical Islamic reminder on how taking personal initiative aligns with spiritual growth to transform your life and career outcomes."
   },
   {
     "videoId": "Ho2C4jJYLig",
     "title": "How to Regain Your Connection With Allah",
     "selected": false,
-    "reasoning": "Good spiritual content, but video E5RnYWQhZiM provides a more direct call-to-action for career and life change.",
+    "reasoning": "Valuable spiritual talk, but E5RnYWQhZiM offers a more direct proactive call-to-action for career/life situation improvement.",
     "summary": ""
   },
   {
     "videoId": "ZnXPGmuF2Rw",
     "title": "Why You Keep Repeating the Same Sin (even after Tawbah)",
     "selected": false,
-    "reasoning": "Focuses on specific jurisprudence/spiritual struggles rather than career/financial growth mindset.",
+    "reasoning": "Specific spiritual guidance topic, slightly secondary to general life/career change motivation.",
+    "summary": ""
+  },
+  {
+    "videoId": "TwN1Y7HW-w4",
+    "title": "Your next dev job might not come from a resume — here's why",
+    "selected": false,
+    "reasoning": "Short clip on dev hiring trends; good point but full-length videos offer higher depth.",
+    "summary": ""
+  },
+  {
+    "videoId": "6DT40fYFscU",
+    "title": "How I Broke Production and Why I'm Glad I Did",
+    "selected": false,
+    "reasoning": "Good engineering culture discussion, but beaten by higher priority survival and career growth guides.",
+    "summary": ""
+  },
+  {
+    "videoId": "yMpgmz8xdxE",
+    "title": "The difference between a junior and a senior engineer isn't speed",
+    "selected": false,
+    "reasoning": "Insightful short clip, but content covered more deeply in full-length selected career videos.",
     "summary": ""
   }
 ]
