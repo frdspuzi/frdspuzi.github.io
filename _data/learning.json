@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What sequence of actions is recommended to effectively retain personal insights and combat human forgetfulness?",
+      "question": "Which of the following roles is NOT one of the three core defined roles within the Scrum framework?",
       "options": [
-        "Conduct passive re-reading, store notes in private filing cabinets, and avoid digital tools",
-        "Rely on raw memory, re-read old notes daily, and hoard written journals",
-        "Write thoughts down, build a system of reminders, and share the knowledge publicly",
-        "Memorize thoughts immediately, delete written drafts, and keep insights strictly confidential"
+        "Developer",
+        "Scrum Master",
+        "Project Manager",
+        "Product Owner"
       ],
       "correctIndex": 2,
-      "learning": "To counteract memory loss and ensure long-term retention of insights, individuals should stop relying solely on memory by writing thoughts down, establishing a system of reminders, and sharing the knowledge publicly.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "Which of the following job titles is NOT one of the three core roles defined within the Scrum framework?",
-      "options": [
-        "Product Owner",
-        "Project Manager",
-        "Scrum Master",
-        "Developers"
-      ],
-      "correctIndex": 1,
-      "learning": "A common misconception in team management is assuming a Project Manager exists within Scrum; however, the framework officially defines only three core roles: Product Owner, Scrum Master, and Developers.",
+      "learning": "A common misconception when adopting Scrum is assuming a traditional Project Manager role exists within the process. Instead, Scrum strictly distributes responsibilities across only three core roles: the Product Owner, the Scrum Master, and Developers.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "When analyzing word frequency in the Quran, what cumulative percentage of the total text do the top 20 most common words represent?",
+      "question": "In written Arabic, what is the function of the small markings known as Tashkeel?",
       "options": [
-        "Approximately 20.83%",
-        "Approximately 80.00%",
-        "Approximately 50.25%",
-        "Approximately 12.15%"
+        "They indicate how letters should be pronounced and which vowel sounds to use",
+        "They mark the end of a verse or sentence",
+        "They indicate whether a noun is singular or plural",
+        "They represent capital letters at the beginning of proper names"
       ],
       "correctIndex": 0,
-      "learning": "Contrary to the Pareto Principle (80/20 rule), learning the top 20 most frequently occurring words in the Quran does not cover 80% of the text, but rather accounts for approximately 20.83% of it.",
+      "learning": "Tashkeel are small markings placed above or below Arabic letters to indicate how they should be pronounced, specifically showing which vowel sounds to use.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which term refers to Allah's complete plan and eternal knowledge of everything that will ever happen in life?",
+      "question": "In Islamic concept, how do Qada’ and Qadr differ regarding life events and supplication (Dua)?",
       "options": [
-        "Dua",
-        "Al-Alim",
-        "Qadr",
-        "Qada’"
+        "Both Qada’ and Qadr represent completely unalterable outcomes that cannot be influenced by human actions or supplication under any circumstances.",
+        "Qada’ is the complete preordained decree that cannot be altered, whereas Qadr refers to temporary choices made without divine knowledge.",
+        "Qadr refers to daily events altered by human choices, while Qada’ represents Allah's unchangeable, eternal knowledge.",
+        "Qada’ is the actual unfolding of life events that can be altered by actions and Dua, while Qadr is Allah's complete, eternal plan that already encompasses those alterations."
       ],
-      "correctIndex": 2,
-      "learning": "Qadr refers to Allah's complete plan and eternal knowledge of everything that will ever happen, encompassing all events written for a person's life.",
+      "correctIndex": 3,
+      "learning": "While Qada’ refers to the actual unfolding of life events that can be influenced and altered through human action and supplication (Dua), Qadr is Allah's complete, preordained plan and eternal knowledge that already encompasses all such changes.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In Islamic teachings, what does the concept of 'taqwa' refer to?",
+      "question": "In the framework of divine justice outlined in Quran 99:7–8, what is the precise smallest measure of a good or evil deed that will be accounted for?",
       "options": [
-        "The physical act of performing formal ritual prayers",
-        "The mandatory practice of giving financial charity",
-        "The complete withdrawal from community life",
-        "An awareness of Allah's presence that builds self-restraint and mindfulness"
+        "A grain of sand's weight",
+        "A feather's weight",
+        "A mountain's weight",
+        "An atom's weight"
       ],
       "correctIndex": 3,
-      "learning": "In Islamic teachings, taqwa is defined as an awareness of Allah's presence that fosters mindfulness, builds self-restraint, and purifies one's intentions.",
+      "learning": "Under divine justice, every action is subject to full accountability, ensuring that even an atom's weight of good or evil will be seen and accounted for.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "What primary cognitive response occurs when a person writes down or digitally records information?",
+      "options": [
+        "The brain triggers hyper-focus to continuously retain the recorded data.",
+        "The brain automatically transfers the concept into long-term memory.",
+        "The brain strengthens neural pathways through passive absorption.",
+        "The brain interprets the external recording as permission to delete the stored memory."
+      ],
+      "correctIndex": 3,
+      "learning": "The 'Performance Paradox' of Cognitive Offloading demonstrates that recording information externally prompts the brain to discard it, making active recall necessary to overcome losing roughly 80% of new knowledge within 24 hours.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     }
   ],
-  "fetchedAt": "2026-08-05T03:42:09.645Z"
+  "fetchedAt": "2026-08-06T03:48:00.721Z"
 }
