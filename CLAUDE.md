@@ -2,6 +2,11 @@
 
 You are assisting with Mohammad Firdaus bin Mohd Puzi's personal Jekyll portfolio/blog site.
 
+## Branches — check which one you're on first
+This repo currently has two active branches with fundamentally different stacks. Run `git rev-parse --abbrev-ref HEAD` before trusting any doc below.
+- **`master`** — the live Jekyll site, deploys to frdspuzi.github.io via GitHub Pages. The rest of this file, and the root `.ai/`/`DESIGN.md`, describe this branch.
+- **`feat/component-lab`** — a from-scratch Vite + React + TypeScript full-site port living in `component-lab/`, not yet deployed, not yet pushed to origin. It has its own `.ai/architecture.md` and `.ai/handoff.md` inside `component-lab/.ai/` — read those instead when working there, not this file's own `.ai/` pointers below.
+
 ## Context-Driven Development
 Before making any code change, read [.ai/architecture.md](.ai/architecture.md) and [.ai/handoff.md](.ai/handoff.md). They hold the current architectural rules, data/automation pipeline, and the state of each homepage feature. Re-check them if it's been a while since you last read them in this session — they get updated between sessions.
 
