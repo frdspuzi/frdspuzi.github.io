@@ -7,9 +7,12 @@ type Theme = "light" | "dark";
 // original site (header.html did the pre-paint sync, floating_toc.html owned the actual toggle).
 export function useTheme() {
   const [theme, setThemeState] = useState<Theme>(() => {
-    if (typeof document === "undefined") return "light";
+    // Dark by default — matches index.html's static data-theme="dark" (the pre-paint sync
+    // script there already overrides this from localStorage first if a visitor has a stored
+    // preference, light or dark; this only decides what an unset/unrecognized attribute means).
+    if (typeof document === "undefined") return "dark";
     const attr = document.documentElement.getAttribute("data-theme");
-    return attr === "dark" ? "dark" : "light";
+    return attr === "light" ? "light" : "dark";
   });
 
   const setTheme = useCallback((next: Theme) => {
