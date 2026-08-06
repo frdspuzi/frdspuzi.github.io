@@ -400,13 +400,13 @@ body {
 // across browsers.
 .aurora-text {
   display: inline-block;
-  background: linear-gradient(45deg, #ffffff, #a71e1e, #eeff00, #2b04d4, #000000, #ffffff);
+  background: linear-gradient(45deg, #5e5e5e, #afafaf, #ffffff, #ffffff, #afafaf, #5e5e5e);
   background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  animation: aurora-shift 30s linear infinite;
+  animation: aurora-shift 20s linear infinite;
 }
 
 @keyframes aurora-shift {
@@ -676,6 +676,11 @@ body {
   top: -46px;
 }
 
+// Fixed, not theme-reactive (var(--fg-muted)/--surface/--border) — same reasoning as Masthead.tsx's
+// HERO_TEXT_COLOR: these buttons sit on the shader background, which doesn't respond to the
+// light/dark toggle, so tying their color to the toggle drifts in and out of contrast with it
+// regardless of theme. Only currently used inside the masthead's shader-covered area — revisit
+// this if .social-icon-item is ever reused somewhere with a plain, theme-reactive background.
 .social-icon-item a {
   position: relative;
   overflow: hidden;
@@ -685,9 +690,9 @@ body {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  color: var(--fg-muted);
-  background-color: var(--surface);
-  border: 1px solid var(--border);
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   transition: all 0.3s ease-in-out;
 }
 
@@ -1277,37 +1282,14 @@ body {
   }
 }
 
+// No fixed height clamp (removed — was 450px tablet / 648px desktop, matching the two columns'
+// heights to each other): a magic-number height cuts off whichever column's actual content is
+// taller than that guess, and there's no guarantee the Medium tray's card count or the trivia
+// card's expanded-answer-reveal height will ever match it. Both columns just size to their own
+// content now (align-items: flex-start on the parent row in InsightsWriting.tsx already keeps
+// them top-aligned without needing equal heights).
 .right-column-content {
   min-height: 0;
-}
-
-@media (max-width: 1011px) {
-  .right-column-container {
-    height: 450px;
-    overflow: hidden;
-  }
-}
-
-@media (max-width: 767px) {
-  .right-column-container {
-    height: auto;
-    overflow: visible;
-  }
-}
-
-@media (min-width: 1012px) {
-  .right-column-container {
-    height: 648px;
-    position: relative;
-  }
-
-  .right-column-content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
 }
 
 .medium-tag {
