@@ -1,5 +1,6 @@
 import { AccordionGroupProvider } from "@/hooks/useAccordionGroup";
 import { Masthead } from "@/components/Masthead";
+import { AboutContent } from "@/components/AboutContent";
 import { Gratitude } from "@/components/Gratitude";
 import { YoutubeFeed } from "@/components/YoutubeFeed";
 import { InsightsWriting } from "@/components/InsightsWriting";
@@ -15,6 +16,7 @@ export default function Home() {
   return (
     <main className="container-lg py-6 p-responsive text-center">
       <Masthead />
+      <AboutContent />
 
       <AccordionGroupProvider>
         <div id="gratitude" className="mb-3 text-left">
