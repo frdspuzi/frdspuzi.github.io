@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What cumulative percentage of the Quran's total text do its top 20 most frequently occurring words account for?",
+      "question": "Which Scrum artifact visualizes the progress of a Sprint and displays the remaining work to help track if the team is on schedule?",
       "options": [
-        "Approximately 80.00%",
-        "Approximately 20.83%",
-        "Approximately 50.15%",
-        "Approximately 12.50%"
-      ],
-      "correctIndex": 1,
-      "learning": "When evaluating Quranic vocabulary using data analysis, the top 20 most frequently used words account for approximately 20.83% of the text rather than the 80% predicted by the Pareto Principle.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What primary trade-off occurs when a PCIe device transitions into deeper low-power management states such as L1.2 or L2?",
-      "options": [
-        "An inability to enter short-duration idle states",
-        "Higher power consumption during the active L0 state",
-        "A permanent reduction in active link bandwidth",
-        "An increased wake-up time required to resume activity"
+        "Sprint Backlog",
+        "User Story",
+        "Product Backlog",
+        "Burndown Chart"
       ],
       "correctIndex": 3,
-      "learning": "While placing a PCIe device into deeper low-power management states maximizes energy savings, it introduces the challenge of increased wake-up latency when resuming full operation.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "What is the standard format used to structure a User Story in a Scrum Product Backlog?",
-      "options": [
-        "I want [feature] because [reason]",
-        "As a [role], I will build [feature] before [date]",
-        "[Feature] should be implemented by [date]",
-        "As a [role], I need [feature], so that [reason]"
-      ],
-      "correctIndex": 3,
-      "learning": "In Scrum, user stories follow a structured format that captures the user role, required functionality, and benefit: 'As a [role], I need [feature], so that [reason]'.",
+      "learning": "A Burndown Chart is a Scrum artifact that visualizes the progress of a Sprint and shows remaining work to help track whether the team is on schedule.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "In Islamic teachings on stewardship (khalifah), who holds the responsibility for preserving faith and maintaining community unity?",
+      "question": "In Islamic theology, what distinguishes the concept of Qada' from Qadr?",
       "options": [
-        "Exclusively appointed leaders",
-        "Every individual in the community",
-        "Only future generations",
-        "Solely designated legal scholars"
+        "Qada' is the actual occurrence of events that can be altered by supplication, while Qadr is Allah's complete preordained plan.",
+        "Qada' and Qadr both represent fixed outcomes that cannot be influenced or altered by human actions or prayers.",
+        "Qada' refers to major unchangeable disasters, while Qadr refers solely to positive financial outcomes.",
+        "Qadr refers to real-time events shaped by human decisions, while Qada' is Allah's eternal and all-encompassing knowledge."
       ],
-      "correctIndex": 1,
-      "learning": "While appointed leaders play a specific role, preserving faith and maintaining community unity is a collective responsibility shared by every individual.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "correctIndex": 0,
+      "learning": "Qada' refers to the actual occurrence of events in life that can be influenced or altered by actions and supplications, whereas Qadr is Allah's complete, preordained plan that encompasses all events and changes.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Based on Hermann Ebbinghaus's findings on memory retention, what action is required to prevent losing approximately 80% of newly learned information within 24 hours?",
+      "question": "Which strategy is necessary to counter the loss of approximately 80% of newly learned information within 24 hours?",
       "options": [
-        "Forcing active recall through quizzing",
-        "Simply writing the information down once",
-        "Storing notes in a static digital file",
-        "Re-reading written notes repeatedly"
+        "Physical note hoarding",
+        "Active recall through quizzing",
+        "Passive re-reading",
+        "Static cataloging"
       ],
-      "correctIndex": 0,
-      "learning": "Simply re-reading notes is ineffective for long-term memory retention, as approximately 80% of learned information is forgotten within 24 hours unless active recall through quizzing is used.",
+      "correctIndex": 1,
+      "learning": "Humans forget roughly 80% of what they learn within 24 hours, and passive re-reading is ineffective for retention compared to active recall mechanisms like self-quizzing.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
+    },
+    {
+      "question": "What percentage of the total text of the Quran is comprised of its top 20 most frequently repeated words?",
+      "options": [
+        "Approximately 10.50%",
+        "Approximately 80.00%",
+        "Approximately 50.15%",
+        "Approximately 20.83%"
+      ],
+      "correctIndex": 3,
+      "learning": "While one might expect the 80/20 Pareto Principle to apply to vocabulary learning, data analysis shows that the top 20 most frequently repeated words in the Quran accumulate to approximately 20.83% of the text.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which two groups are explicitly identified in Islamic scripture as being created for the primary purpose of worshiping God?",
+      "options": [
+        "Jinn and mankind",
+        "Angels and mankind",
+        "Humans and animals",
+        "Angels and jinn"
+      ],
+      "correctIndex": 0,
+      "learning": "Islamic scripture explicitly specifies that both jinn and mankind were created for the foundational purpose of worshiping Allah.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-08-07T03:23:44.508Z"
+  "fetchedAt": "2026-08-08T02:27:20.778Z"
 }
