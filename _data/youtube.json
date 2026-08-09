@@ -1,6 +1,136 @@
 {
   "videos": [
     {
+      "title": "Benchmarking Coding Agents on New vs Legacy Codebases — Denys Linkov, Wisedocs",
+      "url": "https://www.youtube.com/watch?v=7vn4WpqNpck",
+      "videoId": "7vn4WpqNpck",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "This talk dives into the real-world realities of refactoring a massive, legacy AI pipeline using modern agentic coding tools and LLMs. By comparing past model limitations with current agentic capabilities, it offers software engineers practical insights on managing technical debt, setting realistic task accuracy expectations, and dramatically accelerating development speed.",
+      "dateAdded": "2026-08-09T02:34:11.878Z",
+      "timestamps": [
+        {
+          "startTime": 351,
+          "endTime": 407,
+          "topic": "Benchmarking LLM Models on Complex Refactoring Tasks"
+        },
+        {
+          "startTime": 468,
+          "endTime": 582,
+          "topic": "The Long Horizon Trap: Why High Accuracy Matters for AI Agents"
+        },
+        {
+          "startTime": 812,
+          "endTime": 866,
+          "topic": "Was the Refactor Worth It? Key Velocity and Cost Results"
+        }
+      ]
+    },
+    {
+      "title": "How to Make Your Job Optional - The Freedom Profile Matrix",
+      "url": "https://www.youtube.com/watch?v=oCVq-wAPqSs",
+      "videoId": "oCVq-wAPqSs",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "This video provides a practical framework to help you evaluate your current career and transition from relying solely on a 9-to-5 paycheck to building sustainable, income-generating assets. By auditing your job through the 'Freedom Profile' matrix and understanding the asset-building equation, you will discover actionable strategies to gain control over your time and make traditional employment optional. It is an essential watch for anyone aspiring to achieve financial independence without sacrificing personal fulfillment.",
+      "dateAdded": "2026-08-09T02:34:11.879Z",
+      "timestamps": [
+        {
+          "startTime": 257,
+          "endTime": 311,
+          "topic": "Evaluating Work Freedom: The 4 Fs Framework"
+        },
+        {
+          "startTime": 673,
+          "endTime": 711,
+          "topic": "The Income vs. Asset Equation for Financial Independence"
+        },
+        {
+          "startTime": 1054,
+          "endTime": 1155,
+          "topic": "The Reality of Starting a Business vs. Traditional Employment"
+        }
+      ]
+    },
+    {
+      "title": "How builders at YC Startup School are using Gemini &amp; Google AI",
+      "url": "https://www.youtube.com/watch?v=hfAkpEM9N5M",
+      "videoId": "hfAkpEM9N5M",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Discover how student founders, researchers, and engineers are leveraging Google's cutting-edge AI tools like Gemini Flash, AlphaFold, and Gemma to build game-changing projects. From parsing international receipts to solving antibiotic resistance and conducting neuroscience research, this video showcases practical, real-world applications of AI straight from the next generation of innovators.",
+      "dateAdded": "2026-08-09T02:34:11.879Z",
+      "timestamps": [
+        {
+          "startTime": 13,
+          "endTime": 23,
+          "topic": "Parsing receipt documents using Gemini 1.5 Flash"
+        },
+        {
+          "startTime": 53,
+          "endTime": 60,
+          "topic": "Visualizing bacterial mutations with AlphaFold"
+        },
+        {
+          "startTime": 90,
+          "endTime": 96,
+          "topic": "Studying offline on flights using open model Gemma"
+        }
+      ]
+    },
+    {
+      "title": "[S01:E20] Adakah ekonomi Malaysia okay? - Dr. Aimi, Economist",
+      "url": "https://www.youtube.com/watch?v=veWCTzQDY7c",
+      "videoId": "veWCTzQDY7c",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "This episode delves into the stark contrast between Malaysia's impressive macroeconomic growth figures and the real-world financial pressures faced by everyday citizens. Economic analyst Dr. Aimi Zulhazmi shares crucial insights on structural reforms, food security, and why long-term policy continuity is essential for escaping the middle-income trap. It offers a clear, thought-provoking breakdown of how leadership vision, R&D innovation, and political stability directly shape a nation's financial future.",
+      "dateAdded": "2026-08-09T02:34:11.879Z",
+      "timestamps": [
+        {
+          "startTime": 307,
+          "endTime": 348,
+          "topic": "Disconnect Between Macroeconomic Data and Rakyat Purchasing Power"
+        },
+        {
+          "startTime": 765,
+          "endTime": 820,
+          "topic": "How South Korea Drives R&D and SME Ecosystem Growth"
+        },
+        {
+          "startTime": 1870,
+          "endTime": 1950,
+          "topic": "Malaysia's Food Security Risks vs. Regional Benchmarks"
+        }
+      ]
+    },
+    {
+      "title": "Priorities Under Pressure | LATEST Khutbah by Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=XtKRB0GcR90",
+      "videoId": "XtKRB0GcR90",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "This sermon offers an insightful perspective on overcoming spiritual polarization and restoring balance to our practice of Islam. By examining Quranic stories and Prophetic teachings, the speaker demonstrates how personal worship and social justice are deeply interconnected rather than opposing priorities. Viewers will gain practical insights on how to avoid picking and choosing aspects of faith while maintaining a holistic, sincere commitment to God.",
+      "dateAdded": "2026-08-09T02:34:11.879Z",
+      "timestamps": [
+        {
+          "startTime": 140,
+          "endTime": 325,
+          "topic": "The two extremes in setting spiritual priorities"
+        },
+        {
+          "startTime": 502,
+          "endTime": 635,
+          "topic": "Surah Al-Ma'un: Connecting personal piety with social justice"
+        },
+        {
+          "startTime": 755,
+          "endTime": 880,
+          "topic": "The 70+ branches of faith and spiritual balance"
+        }
+      ]
+    },
+    {
       "title": "The New Primitives: Building AI Native Software — Kwindla Kramer, Daily",
       "url": "https://www.youtube.com/watch?v=LZuWZRze3MU",
       "videoId": "LZuWZRze3MU",
@@ -35,84 +165,6 @@
       "summary": "Anthropic’s framework offers a practical standard for building reliable autonomous software agents. This talk breaks down complex agentic workflows into clear engineering principles that every junior developer should integrate into their toolkit.",
       "dateAdded": "2026-08-08T02:27:14.198Z",
       "timestamps": []
-    },
-    {
-      "title": "How to Make Your Job Optional - The Freedom Profile Matrix",
-      "url": "https://www.youtube.com/watch?v=oCVq-wAPqSs",
-      "videoId": "oCVq-wAPqSs",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "If you feel trapped in the daily grind, this video provides a practical framework for turning your job from a necessity into a choice by evaluating work through the 'Freedom Profile' lens. Former doctor turned entrepreneur Ali Abdaal breaks down how to transition from trading time for money to building income-generating assets that fund your ideal lifestyle. It is an essential watch for anyone looking to achieve financial independence and spend more time on work they genuinely love.",
-      "dateAdded": "2026-08-08T02:27:14.199Z",
-      "timestamps": [
-        {
-          "startTime": 249,
-          "endTime": 312,
-          "topic": "The Freedom Profile Matrix: Fun, Flexibility, Fulfilment, and Finances"
-        },
-        {
-          "startTime": 515,
-          "endTime": 705,
-          "topic": "The Asset Equation: How Passive Income Makes Work Optional"
-        },
-        {
-          "startTime": 1245,
-          "endTime": 1355,
-          "topic": "DIY vs. Getting Help: The Two Paths to Starting a Successful Business"
-        }
-      ]
-    },
-    {
-      "title": "[S01:E20] Adakah ekonomi Malaysia okay? - Dr. Aimi, Economist",
-      "url": "https://www.youtube.com/watch?v=veWCTzQDY7c",
-      "videoId": "veWCTzQDY7c",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This insightful episode explores the gap between Malaysia's strong macroeconomic statistics and the everyday financial struggles of its citizens. Economic analyst Dr. Aimi Zulhazmi breaks down key structural challenges—including SME support, food security, R&D investment, and political stability—offering a clear look at what Malaysia needs to achieve long-term economic prosperity.",
-      "dateAdded": "2026-08-08T02:27:14.199Z",
-      "timestamps": [
-        {
-          "startTime": 308,
-          "endTime": 348,
-          "topic": "Macroeconomic Prosperity vs. Microeconomic Reality"
-        },
-        {
-          "startTime": 570,
-          "endTime": 610,
-          "topic": "Why SMEs Struggle While Large Corporations Thrive"
-        },
-        {
-          "startTime": 1935,
-          "endTime": 1968,
-          "topic": "Malaysia's Food Security Risks & Lessons from Singapore"
-        }
-      ]
-    },
-    {
-      "title": "Priorities: The Ummah’s Causes or Your Daily Worship? | LATEST Khutbah by Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=XtKRB0GcR90",
-      "videoId": "XtKRB0GcR90",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This sermon addresses the common tendency among Muslims to pit personal worship against social justice, framing them as conflicting priorities. Dr. Omar Suleiman explains that Islam provides a holistic framework where personal piety, individual rituals, and public action are deeply interconnected branches of faith. Watching this video offers invaluable guidance on cultivating a balanced spiritual mindset grounded in the Quran and Sunnah without dismissing any aspect of the Deen.",
-      "dateAdded": "2026-08-08T02:27:14.199Z",
-      "timestamps": [
-        {
-          "startTime": 153,
-          "endTime": 325,
-          "topic": "Two Historical Extremes in Religious Priorities"
-        },
-        {
-          "startTime": 505,
-          "endTime": 690,
-          "topic": "Connecting Personal Piety and Public Justice in Surah Al-Ma'un"
-        },
-        {
-          "startTime": 760,
-          "endTime": 1015,
-          "topic": "The 70+ Branches of Faith and the Holistic Nature of Deen"
-        }
-      ]
     },
     {
       "title": "Allah Won't Change Your Situation Until You Do This One Simple Thing",
@@ -295,59 +347,7 @@
           "topic": "The 6 pragmatic reasons every founder should evaluate before raising venture capital"
         }
       ]
-    },
-    {
-      "title": "[S03:E71] Business viral semata-mata, sampai bila? - Encik Mujiburrahman Abdul Rashid &amp;  Pinn Yang",
-      "url": "https://www.youtube.com/watch?v=NHoczJX0uHM",
-      "videoId": "NHoczJX0uHM",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "This insightful podcast uncovers the real-world financial challenges and growth strategies facing micro and small business owners in Malaysia. Featuring perspectives from BSN's chief executive and Foodie Media's CEO, viewers will learn how to balance viral marketing with product consistency, properly manage business cash flow, and access low-interest micro-financing to scale sustainably.",
-      "dateAdded": "2026-08-05T03:42:03.312Z",
-      "timestamps": [
-        {
-          "startTime": 310,
-          "endTime": 380,
-          "topic": "Why Product Consistency Outlasts Viral Marketing"
-        },
-        {
-          "startTime": 470,
-          "endTime": 650,
-          "topic": "BSN Micro/i-MADANI Collateral-Free Financing Explained"
-        },
-        {
-          "startTime": 1530,
-          "endTime": 1600,
-          "topic": "Smart Cost Management and Increasing Customer Spend"
-        }
-      ]
-    },
-    {
-      "title": "[S01:E19] Bisnes nasi lemak kekal laris 15 tahun? - Rizal Isa, COO Nasi Lemak Saleha",
-      "url": "https://www.youtube.com/watch?v=grKzHRoIxyk",
-      "videoId": "grKzHRoIxyk",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "In this insightful podcast episode, Rizal Isa, COO of Nasi Lemak Saleha, shares the operational secrets behind expanding a humble roadside stall into a thriving F&B enterprise with central kitchens and widespread distribution. Viewers will learn essential business strategies on maintaining food quality, managing high staff turnover, and treating suppliers with loyalty and empathy. It is a must-watch for aspiring entrepreneurs and business owners looking to scale their operations efficiently while staying grounded in strong business ethics.",
-      "dateAdded": "2026-08-05T03:42:03.312Z",
-      "timestamps": [
-        {
-          "startTime": 1231,
-          "endTime": 1401,
-          "topic": "Central Kitchen vs. Satellite Kitchen Operational Model"
-        },
-        {
-          "startTime": 1388,
-          "endTime": 1440,
-          "topic": "Operating 23 Hours with a 1-Hour 'Circuit Breaker' Pause"
-        },
-        {
-          "startTime": 1708,
-          "endTime": 1795,
-          "topic": "Managing F&B Manpower and Incentivizing the 'Golden Team'"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-08-08T02:30:34.569Z"
+  "lastUpdated": "2026-08-09T02:38:07.956Z"
 }
