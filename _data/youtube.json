@@ -1,6 +1,131 @@
 {
   "videos": [
     {
+      "title": "Velocity Sickness: What Happens When Your Whole Team Gets 10x Faster — Matt Dailey, Ref.",
+      "url": "https://www.youtube.com/watch?v=Kz4QJmNrVXU",
+      "videoId": "Kz4QJmNrVXU",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "As AI supercharges individual coding speeds, engineering teams often suffer from 'velocity sickness'—producing endless output without delivering actual product impact. This talk explains why switching from ephemeral chat-driven coding to durable, plan-focused documentation helps teams maintain strategic control over AI agents and drastically improves collaborative output.",
+      "dateAdded": "2026-08-10T02:40:03.161Z",
+      "timestamps": [
+        {
+          "startTime": 232,
+          "endTime": 266,
+          "topic": "Understanding 'Velocity Sickness' in AI-powered teams"
+        },
+        {
+          "startTime": 397,
+          "endTime": 447,
+          "topic": "How AI shifts engineering workflows to Plan and Polish"
+        },
+        {
+          "startTime": 911,
+          "endTime": 954,
+          "topic": "Moving from Code Velocity to Idea Velocity"
+        }
+      ]
+    },
+    {
+      "title": "How to Make Your Job Optional - The Freedom Profile Matrix",
+      "url": "https://www.youtube.com/watch?v=oCVq-wAPqSs",
+      "videoId": "oCVq-wAPqSs",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "This video breaks down a realistic, step-by-step framework for making your full-time job optional by building sustainable income-generating assets. By evaluating your work using the \"Freedom Profile\" (Fun, Flexibility, Fulfillment, and Finances), you'll gain clarity on whether to optimize your current job or pivot into entrepreneurship. It's an insightful watch for anyone looking to achieve financial independence without falling for get-rich-quick shortcuts.",
+      "dateAdded": "2026-08-10T02:40:03.161Z",
+      "timestamps": [
+        {
+          "startTime": 51,
+          "endTime": 190,
+          "topic": "Why your job isn't optional and the core income vs. expense equation"
+        },
+        {
+          "startTime": 248,
+          "endTime": 312,
+          "topic": "The Freedom Profile Matrix: Rating work on Fun, Flexibility, Fulfillment, and Finances"
+        },
+        {
+          "startTime": 672,
+          "endTime": 748,
+          "topic": "How building assets replaces active work to make employment optional"
+        }
+      ]
+    },
+    {
+      "title": "How builders at YC Startup School are using Gemini &amp; Google AI",
+      "url": "https://www.youtube.com/watch?v=hfAkpEM9N5M",
+      "videoId": "hfAkpEM9N5M",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Get an insider look at how top young founders, researchers, and students from leading universities are leveraging cutting-edge AI tools to solve real-world problems. From parsing complex multilingual receipts in seconds to advancing drug discovery for antibiotic resistance, this video highlights how Google's Gemini, Gemma, and AlphaFold are empowering the next generation of tech innovators.",
+      "dateAdded": "2026-08-10T02:40:03.161Z",
+      "timestamps": [
+        {
+          "startTime": 13,
+          "endTime": 23,
+          "topic": "Parsing complex receipt documents with Gemini 1.5 Flash"
+        },
+        {
+          "startTime": 51,
+          "endTime": 74,
+          "topic": "Leveraging AlphaFold for drug discovery and disease research"
+        },
+        {
+          "startTime": 90,
+          "endTime": 96,
+          "topic": "Running Gemma offline to study during flights"
+        }
+      ]
+    },
+    {
+      "title": "[S01:E20] Adakah ekonomi Malaysia okay? - Dr. Aimi, Economist",
+      "url": "https://www.youtube.com/watch?v=veWCTzQDY7c",
+      "videoId": "veWCTzQDY7c",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "This insightful episode breaks down the crucial disconnect between Malaysia's positive macroeconomic growth and the everyday financial struggles faced by ordinary citizens. Featuring economic analyst Dr. Aimi Zulhazmi, the discussion explores pressuring structural issues, from food security vulnerabilities to how political instability disrupts long-term national development.",
+      "dateAdded": "2026-08-10T02:40:03.162Z",
+      "timestamps": [
+        {
+          "startTime": 307,
+          "endTime": 345,
+          "topic": "The disconnect between macro economic growth and citizens' purchasing power"
+        },
+        {
+          "startTime": 1600,
+          "endTime": 1680,
+          "topic": "How frequent government changes disrupt long-term economic plans"
+        },
+        {
+          "startTime": 1868,
+          "endTime": 1970,
+          "topic": "Malaysia's food security challenges and agricultural land allocation"
+        }
+      ]
+    },
+    {
+      "title": "The &quot;Good Enough&quot; Muslim | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/nvU9U9Ny_8I",
+      "videoId": "nvU9U9Ny_8I",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "This thought-provoking clip explores the challenges of maintaining faith and religious integrity in a rapidly changing modern world. It highlights how holding onto even a fraction of sincere faith and striving for ethical living—like securing a fully halal income—can be immensely impactful today.",
+      "dateAdded": "2026-08-10T02:40:03.162Z",
+      "timestamps": [
+        {
+          "startTime": 7,
+          "endTime": 18,
+          "topic": "Holding onto faith during challenging times"
+        },
+        {
+          "startTime": 18,
+          "endTime": 27,
+          "topic": "The modern struggle of maintaining halal income and identity"
+        }
+      ]
+    },
+    {
       "title": "Benchmarking Coding Agents on New vs Legacy Codebases — Denys Linkov, Wisedocs",
       "url": "https://www.youtube.com/watch?v=7vn4WpqNpck",
       "videoId": "7vn4WpqNpck",
@@ -23,84 +148,6 @@
           "startTime": 812,
           "endTime": 866,
           "topic": "Was the Refactor Worth It? Key Velocity and Cost Results"
-        }
-      ]
-    },
-    {
-      "title": "How to Make Your Job Optional - The Freedom Profile Matrix",
-      "url": "https://www.youtube.com/watch?v=oCVq-wAPqSs",
-      "videoId": "oCVq-wAPqSs",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "This video provides a practical framework to help you evaluate your current career and transition from relying solely on a 9-to-5 paycheck to building sustainable, income-generating assets. By auditing your job through the 'Freedom Profile' matrix and understanding the asset-building equation, you will discover actionable strategies to gain control over your time and make traditional employment optional. It is an essential watch for anyone aspiring to achieve financial independence without sacrificing personal fulfillment.",
-      "dateAdded": "2026-08-09T02:34:11.879Z",
-      "timestamps": [
-        {
-          "startTime": 257,
-          "endTime": 311,
-          "topic": "Evaluating Work Freedom: The 4 Fs Framework"
-        },
-        {
-          "startTime": 673,
-          "endTime": 711,
-          "topic": "The Income vs. Asset Equation for Financial Independence"
-        },
-        {
-          "startTime": 1054,
-          "endTime": 1155,
-          "topic": "The Reality of Starting a Business vs. Traditional Employment"
-        }
-      ]
-    },
-    {
-      "title": "How builders at YC Startup School are using Gemini &amp; Google AI",
-      "url": "https://www.youtube.com/watch?v=hfAkpEM9N5M",
-      "videoId": "hfAkpEM9N5M",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Discover how student founders, researchers, and engineers are leveraging Google's cutting-edge AI tools like Gemini Flash, AlphaFold, and Gemma to build game-changing projects. From parsing international receipts to solving antibiotic resistance and conducting neuroscience research, this video showcases practical, real-world applications of AI straight from the next generation of innovators.",
-      "dateAdded": "2026-08-09T02:34:11.879Z",
-      "timestamps": [
-        {
-          "startTime": 13,
-          "endTime": 23,
-          "topic": "Parsing receipt documents using Gemini 1.5 Flash"
-        },
-        {
-          "startTime": 53,
-          "endTime": 60,
-          "topic": "Visualizing bacterial mutations with AlphaFold"
-        },
-        {
-          "startTime": 90,
-          "endTime": 96,
-          "topic": "Studying offline on flights using open model Gemma"
-        }
-      ]
-    },
-    {
-      "title": "[S01:E20] Adakah ekonomi Malaysia okay? - Dr. Aimi, Economist",
-      "url": "https://www.youtube.com/watch?v=veWCTzQDY7c",
-      "videoId": "veWCTzQDY7c",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This episode delves into the stark contrast between Malaysia's impressive macroeconomic growth figures and the real-world financial pressures faced by everyday citizens. Economic analyst Dr. Aimi Zulhazmi shares crucial insights on structural reforms, food security, and why long-term policy continuity is essential for escaping the middle-income trap. It offers a clear, thought-provoking breakdown of how leadership vision, R&D innovation, and political stability directly shape a nation's financial future.",
-      "dateAdded": "2026-08-09T02:34:11.879Z",
-      "timestamps": [
-        {
-          "startTime": 307,
-          "endTime": 348,
-          "topic": "Disconnect Between Macroeconomic Data and Rakyat Purchasing Power"
-        },
-        {
-          "startTime": 765,
-          "endTime": 820,
-          "topic": "How South Korea Drives R&D and SME Ecosystem Growth"
-        },
-        {
-          "startTime": 1870,
-          "endTime": 1950,
-          "topic": "Malaysia's Food Security Risks vs. Regional Benchmarks"
         }
       ]
     },
@@ -300,54 +347,7 @@
           "topic": "Becoming a Confident Decision Maker at Work"
         }
       ]
-    },
-    {
-      "title": "Pekerja mahir diberhentikan",
-      "url": "https://www.youtube.com/shorts/kZ0Q3FYOn-g",
-      "videoId": "kZ0Q3FYOn-g",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Contrary to common belief that cost-cutting only targets entry-level jobs, recent data reveals that high-skilled professionals are increasingly facing retrenchment in today's changing economy. This video offers crucial insights into modern job security realities along with actionable steps—like upskilling, building emergency funds, and diversifying income—to future-proof your career.",
-      "dateAdded": "2026-08-06T03:47:47.871Z",
-      "timestamps": [
-        {
-          "startTime": 10,
-          "endTime": 40,
-          "topic": "High-skilled workers facing majority of retrenchments"
-        },
-        {
-          "startTime": 119,
-          "endTime": 136,
-          "topic": "Actionable steps to safeguard your career"
-        }
-      ]
-    },
-    {
-      "title": "Building Turbopuffer: Gergely Orosz (@pragmaticengineer ) × Simon Eskildsen (CEO)",
-      "url": "https://www.youtube.com/watch?v=jQDXzEVHMSE",
-      "videoId": "jQDXzEVHMSE",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "In this engaging fireside chat, Turbopuffer founder & CEO Simon Eskildsen shares his journey from self-taught teenager to building high-performance database infrastructure powering leading AI tools like Cursor. Viewers will gain valuable, first-principles insights into hardware economics, scalable systems engineering, and a delightfully pragmatic approach to venture capital and remote team culture.",
-      "dateAdded": "2026-08-05T03:42:03.311Z",
-      "timestamps": [
-        {
-          "startTime": 1766,
-          "endTime": 2035,
-          "topic": "How Turbopuffer became Cursor's database choice and cut their bill by 95%"
-        },
-        {
-          "startTime": 2128,
-          "endTime": 2305,
-          "topic": "Simon Eskildsen's hilarious encounter presenting to NVIDIA CEO Jensen Huang"
-        },
-        {
-          "startTime": 2955,
-          "endTime": 3090,
-          "topic": "The 6 pragmatic reasons every founder should evaluate before raising venture capital"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-08-09T02:38:07.956Z"
+  "lastUpdated": "2026-08-10T02:43:27.308Z"
 }
