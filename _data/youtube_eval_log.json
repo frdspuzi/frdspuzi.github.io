@@ -1,212 +1,128 @@
 [
   {
-    "videoId": "OL7kfezynJM",
-    "title": "Multiplayer agentic engineering — Arjun Singh, Superconductor",
-    "selected": false,
-    "reasoning": "Specialized conference presentation on multi-agent architectures; interesting technical concept, but less immediate practical ROI for a junior developer.",
-    "summary": ""
-  },
-  {
-    "videoId": "03l29gJXpCE",
-    "title": "Guide, Verify, Solve — Anirban Chatterjee, Sonar",
-    "selected": false,
-    "reasoning": "High-level vendor pitch on AI code verification tooling lacking broader engineering context or career growth insights.",
-    "summary": ""
-  },
-  {
-    "videoId": "Kz4QJmNrVXU",
-    "title": "Velocity Sickness: What Happens When Your Whole Team Gets 10x Faster — Matt Dailey, Ref.",
+    "videoId": "aeTb5BdmTTc",
+    "title": "Agents, codebases, and teams — Aditya Khandelwal, Amazon AGI Lab",
     "selected": true,
-    "reasoning": "Highly relevant deep-dive into how AI-driven coding speed alters software engineering workflows, code review bottlenecks, and team dynamics for developers.",
-    "summary": "As AI coding assistants accelerate development velocity by 10x, software engineers face unprecedented challenges with code quality, PR reviews, and team communication. This talk breaks down how high-speed engineering teams manage this paradigm shift without burning out. It is essential viewing for any junior developer looking to navigate and thrive in an AI-augmented workplace."
+    "reasoning": "Directly tackles how AI agents integrate into modern engineering teams and complex codebases, making it high-value practical advice for a junior fullstack dev.",
+    "summary": "As software engineering rapidly evolves with AI tools, understanding how AI agents operate within real-world codebases is vital. This talk from Amazon AGI Lab offers crucial foresight on how engineering workflows are changing, giving you a competitive edge early in your career."
   },
   {
-    "videoId": "8rPeyx_cwLY",
-    "title": "His top book recommendation",
+    "videoId": "maRzp4kImJ4",
+    "title": "Taking Reinforcement Learning Cross Datacenter — Nan Jiang, Modal",
     "selected": false,
-    "reasoning": "A brief YouTube Short recommending a book; lacks sufficient depth and detailed breakdown.",
+    "reasoning": "Too niche and infrastructure-heavy for a junior fullstack engineer who needs actionable web and application development insights.",
     "summary": ""
   },
   {
-    "videoId": "7BfUfT3IXI8",
-    "title": "What makes building a JIT hard",
-    "selected": false,
-    "reasoning": "Niche low-level compiler content that falls outside the practical daily focus of a junior fullstack developer.",
-    "summary": ""
-  },
-  {
-    "videoId": "Cgp4ssvrSW0",
-    "title": "100,000 🙏",
-    "selected": false,
-    "reasoning": "Purely a channel milestone celebration video containing zero actionable technical or financial value.",
-    "summary": ""
-  },
-  {
-    "videoId": "tddojhU-atQ",
-    "title": "Watch this if you're wanting a business idea suited to your skills...",
-    "selected": false,
-    "reasoning": "Surface-level short video on business idea generation without detailed execution framework.",
-    "summary": ""
-  },
-  {
-    "videoId": "oCVq-wAPqSs",
-    "title": "How to Make Your Job Optional - The Freedom Profile Matrix",
+    "videoId": "shRR1e2HXMk",
+    "title": "Codex, Behind the Harness — Dominik Kundel, OpenAI",
     "selected": true,
-    "reasoning": "Structured, practical framework covering career building, financial leverage, and achieving career independence early on.",
-    "summary": "Building true long-term financial stability requires a proactive strategy toward career mobility and wealth generation. Ali Abdaal introduces the 'Freedom Profile Matrix' to help young professionals design their career path so that employment becomes an option rather than a trap. It offers incredible clarity for early-career developers looking to build financial independence."
-  },
-  {
-    "videoId": "FE6VL7jpfCs",
-    "title": "I asked Hormozi how to make $100k a year",
-    "selected": false,
-    "reasoning": "Short clip summarizing high-level income advice without practical step-by-step guidance.",
-    "summary": ""
-  },
-  {
-    "videoId": "hfAkpEM9N5M",
-    "title": "How builders at YC Startup School are using Gemini &amp; Google AI",
-    "selected": true,
-    "reasoning": "Practical, real-world tech talk showing how startup engineers integrate cutting-edge AI tools into fullstack applications.",
-    "summary": "Modern fullstack development is rapidly evolving around AI integration, and YC founders are leading the charge. This talk showcases real technical implementations of Gemini and Google AI tools to build scalable, AI-powered products. It provides immediate technical inspiration and actionable patterns for a fullstack engineer looking to level up."
-  },
-  {
-    "videoId": "Ujmx5PsT1IY",
-    "title": "3 things to know about the new CopilotKit integration for Angular",
-    "selected": false,
-    "reasoning": "Brief promotional short snippet focused narrowly on an Angular integration.",
-    "summary": ""
-  },
-  {
-    "videoId": "bo4ebVkhp28",
-    "title": "Voice Agent observability with LangSmith 🌟",
-    "selected": false,
-    "reasoning": "Very short teaser snippet on AI voice observability with minimal educational depth.",
-    "summary": ""
-  },
-  {
-    "videoId": "_JwkmMMbm7I",
-    "title": "Apakah impak selepas kita meninggal nanti?",
-    "selected": false,
-    "reasoning": "Short clip touching on spiritual legacy; too brief compared to full-length economic/career discussions.",
-    "summary": ""
-  },
-  {
-    "videoId": "PwoNKvFguyI",
-    "title": "Solusi masalah kewangan staff",
-    "selected": false,
-    "reasoning": "Brief short on workplace financial distress lacking detailed financial modeling.",
-    "summary": ""
-  },
-  {
-    "videoId": "Q2yIcNerXmU",
-    "title": "Pembiayaan Micro MADANI BSN",
-    "selected": false,
-    "reasoning": "Narrow micro-loan scheme breakdown meant for small local business owners rather than tech professionals.",
-    "summary": ""
+    "reasoning": "Offers an insider look at OpenAI's code generation harness, directly applicable to developers looking to leverage and master AI coding assistants in their daily workflow.",
+    "summary": "Get an insider's look at how OpenAI builds harness systems around Codex for automated code generation. Mastering these tools and concepts will significantly accelerate your daily productivity as a junior fullstack developer."
   },
   {
     "videoId": "veWCTzQDY7c",
     "title": "[S01:E20] Adakah ekonomi Malaysia okay? - Dr. Aimi, Economist",
     "selected": true,
-    "reasoning": "Comprehensive Malaysian economic analysis with an expert, directly useful for local financial planning and career positioning.",
-    "summary": "Making smart career and investment moves requires a firm grasp of the macro environment in Malaysia. In this podcast episode, economist Dr. Aimi unpacks the current state of Malaysia's economy, cost of living, and growth prospects in clear Malay. It is a vital watch for any Malaysian professional striving to make sound financial choices."
+    "reasoning": "Hits the intersection of Malaysian local context and macro-financial literacy hosted by Financial Faiz, a key creator in the Malaysian finance scene.",
+    "summary": "Wondering where the Malaysian economy is actually headed and how it impacts your career and financial security? This deep dive with economist Dr. Aimi breaks down complex economic realities into practical knowledge every young Malaysian professional needs."
   },
   {
     "videoId": "bOgdc2Uy6fA",
     "title": "Politik rosakkan ekonomi Malaysia?",
     "selected": false,
-    "reasoning": "Short podcast teaser snippet; lacks the depth found in the full podcast episode.",
+    "reasoning": "Short snippet format that lacks the depth required for meaningful financial or economic decision-making.",
     "summary": ""
   },
   {
     "videoId": "2Eqgei1_us0",
     "title": "'Koyak' itu perkara biasa",
     "selected": false,
-    "reasoning": "Brief emotional encouragement short snippet with generic advice.",
+    "reasoning": "Generic motivational short with minimal technical or financial value.",
     "summary": ""
   },
   {
-    "videoId": "FgBL2T7CUw4",
-    "title": "#111 | Your Test Can Be Your Testimony",
+    "videoId": "ncAyA7fSUqg",
+    "title": "“Ibu bapa selalu gunakan kondisi kami untuk menakutkan anak-anak mereka” - Firdaus, Pengasas PEKIM",
     "selected": false,
-    "reasoning": "Generic motivational dialogue lacking tailored engineering or financial insights.",
-    "summary": ""
-  },
-  {
-    "videoId": "-aJtCPD95jw",
-    "title": "#110 | The Power of Positive Thinking",
-    "selected": false,
-    "reasoning": "Standard mindset fluff lacking practical career strategies or technical substance.",
-    "summary": ""
-  },
-  {
-    "videoId": "FJoQR0Z0hLk",
-    "title": "#109 | How To Lead With Integrity",
-    "selected": false,
-    "reasoning": "High-level leadership discussion suited for executives rather than junior developers.",
+    "reasoning": "Focuses on specific social/ngo advocacy, which lies outside our primary focus on tech career growth and Islamic finance.",
     "summary": ""
   },
   {
     "videoId": "2kGVKdhHUkE",
     "title": "“Wawasan is definitely not just a Malay Bumiputera Muslim party” - Saifuddin Abdullah",
     "selected": false,
-    "reasoning": "Party politics interview; low relevance to tech engineering or personal financial advice.",
+    "reasoning": "Political interview with limited actionable value for career, finance, or software engineering.",
     "summary": ""
   },
   {
     "videoId": "1Zz_kd6Q4Qo",
     "title": "Lindung 24 Jam: Tak sangka orang guna perkataan kesat untuk kritik Perkeso | In The Studio",
     "selected": false,
-    "reasoning": "Interview focused on public relations issues around PERKESO; limited utility for young tech professionals.",
+    "reasoning": "Hyper-focused on social security agency criticism without broader personal finance strategy or career advice.",
     "summary": ""
   },
   {
-    "videoId": "Xa_Meqgwa18",
-    "title": "PUSPAKOM CEO responds to the end of their monopoly in vehicle inspection | In The Studio",
+    "videoId": "46u2NyXAVYE",
+    "title": "How to nurture your phone-free hobbies | Caitlin Begg | TEDxPrincetonU",
     "selected": false,
-    "reasoning": "Industry-specific interview on Malaysian vehicle inspections, irrelevant to target demographics.",
+    "reasoning": "Generic digital wellness talk; helpful, but out prioritized by targeted engineering and Islamic financial content.",
     "summary": ""
   },
   {
-    "videoId": "nvlTs_MG0EQ",
-    "title": "How digital evidence preserves the truth about war crimes | Anastasiia Liulina | TEDxBroerstraat",
+    "videoId": "qBmGSFDw5QU",
+    "title": "The Myth of the Cancer Warrior | Yvette Colón | TEDxKU",
     "selected": false,
-    "reasoning": "Niche talk on international legal forensics and human rights; not aligned with primary career/financial focus.",
+    "reasoning": "Medical/oncology theme with no alignment to tech, finance, or Islamic career guidance.",
     "summary": ""
   },
   {
-    "videoId": "-CUf34ZIk6s",
-    "title": "AI data centers are too hot—how can we fix it? | Greg Ryder | TEDxWollongong",
+    "videoId": "sJYpyDMKCMk",
+    "title": "When buildings speak | Molly McCluskey | TEDxBrisbane",
     "selected": false,
-    "reasoning": "Hardware/cooling infrastructure discussion; tangential to fullstack software application building.",
+    "reasoning": "Architecture-focused talk with no relevance to the target demographic's key objectives.",
     "summary": ""
   },
   {
-    "videoId": "0mZwaUUKlQE",
-    "title": "The false promises of AI—and what’s coming next | Alvin Wang Graylin | TEDxBerlin",
+    "videoId": "4KYb72UanOE",
+    "title": "The Snowball Effect of Sins | Sh. Ibrahim Hindy",
     "selected": false,
-    "reasoning": "Broad macro critique of AI hype; insightful but less immediately practical than applied AI engineering talks.",
+    "reasoning": "A 60-second YouTube Short; lacks the comprehensive depth offered by full-length spiritual or career talks.",
     "summary": ""
   },
   {
-    "videoId": "nvU9U9Ny_8I",
-    "title": "The &quot;Good Enough&quot; Muslim | Dr. Omar Suleiman",
+    "videoId": "daezHFmWiPY",
+    "title": "Why Songs Aren’t as Harmless as You Think | Imam Tom Facchine",
+    "selected": false,
+    "reasoning": "Short clip on lifestyle/jurisprudence that doesn't target the core intersection of career growth and Islamic finance.",
+    "summary": ""
+  },
+  {
+    "videoId": "a0NqX7HquHU",
+    "title": "Safwan ibn al-Mu’attal (ra): Slandered for Helping A Woman | The Firsts | Dr. Omar Suleiman",
     "selected": true,
-    "reasoning": "Crucial spiritual grounding video addressing perfectionism and faith maintenance for busy modern working professionals.",
-    "summary": "Striving for excellence in a demanding tech career can often make young Muslim professionals feel inadequate in their spiritual lives. Dr. Omar Suleiman tackles spiritual burnout and perfectionism, reframing what consistent faith looks like in daily life. It offers an empowering mental reset for anyone trying to balance high workplace ambitions with spiritual peace."
+    "reasoning": "High-production full-length lecture exploring integrity, managing public image, and enduring slander—crucial character-building lessons for young Muslim professionals.",
+    "summary": "Navigating workplace dynamics and personal reputation requires strong moral grounding. Dr. Omar Suleiman delivers a profound lesson on integrity under unfair criticism, equipping you with spiritual resilience essential for early-career challenges."
   },
   {
-    "videoId": "z3mapzeE4Ys",
-    "title": "Does Allah Love Everyone?",
+    "videoId": "SRczeRdsK2A",
+    "title": "Why Allah Made Women Different Than Men",
     "selected": false,
-    "reasoning": "Brief theological question-and-answer short; valuable, but secondary to spiritual resilience advice for professionals.",
+    "reasoning": "General Islamic discussion on gender differences, less focused on personal growth, career, or financial stewardship.",
     "summary": ""
   },
   {
-    "videoId": "AUtFHB6JUoA",
-    "title": "One Mistake vs. Decades of Faith | Dr. Omar Suleiman",
+    "videoId": "E5RnYWQhZiM",
+    "title": "Allah Won't Change Your Situation Until You Do This One Simple Thing",
+    "selected": true,
+    "reasoning": "Combines Islamic principles with practical self-agency and proactive growth, perfect for someone seeking early-career motivation.",
+    "summary": "Feeling stuck or seeking a career breakthrough? Sheikh Abdullah Oduro grounds the Quranic principle of personal proactive effort into a powerful reminder that taking action is the divine prerequisite for positive change in your life and career."
+  },
+  {
+    "videoId": "Ho2C4jJYLig",
+    "title": "How to Regain Your Connection With Allah",
     "selected": false,
-    "reasoning": "Short spiritual reminder; insightful but less comprehensively focused on career/life balance.",
+    "reasoning": "Good spiritual content, but beat out by Sheikh Oduro's talk on practical self-transformation and action.",
     "summary": ""
   }
 ]

@@ -1,6 +1,136 @@
 {
   "videos": [
     {
+      "title": "Agents, codebases, and teams — Aditya Khandelwal, Amazon AGI Lab",
+      "url": "https://www.youtube.com/watch?v=aeTb5BdmTTc",
+      "videoId": "aeTb5BdmTTc",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Integrating AI coding agents into an engineering team often leads to buggy code, burned budgets, and developer burnout if left to individuals to figure out. This talk delivers a practical roadmap for team leaders on how to restructure codebases and team workflows so that AI agents actually deliver reliable, high-value productivity instead of 'AI slop'.",
+      "dateAdded": "2026-08-11T02:33:07.904Z",
+      "timestamps": [
+        {
+          "startTime": 122,
+          "endTime": 228,
+          "topic": "The Developer Psychological Spectrum: Fear vs. Confidence in AI"
+        },
+        {
+          "startTime": 339,
+          "endTime": 421,
+          "topic": "Why AI Agent Adoption is a Team Engineering Problem, Not an IC Problem"
+        },
+        {
+          "startTime": 543,
+          "endTime": 702,
+          "topic": "The 5-Step Playbook for Shipping Together with AI Agents"
+        }
+      ]
+    },
+    {
+      "title": "Codex, Behind the Harness — Dominik Kundel, OpenAI",
+      "url": "https://www.youtube.com/watch?v=shRR1e2HXMk",
+      "videoId": "shRR1e2HXMk",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Ever wondered how modern AI coding agents handle complex, multi-step tasks behind the scenes? OpenAI's Dominik Kundel breaks down the architecture of the Codex agent harness, showing how it manages context budgets, sandboxes execution securely, and speeds up tool-calling workflows. It is a must-watch for software engineers looking to understand or build their own high-performance AI agents.",
+      "dateAdded": "2026-08-11T02:33:07.904Z",
+      "timestamps": [
+        {
+          "startTime": 148,
+          "endTime": 306,
+          "topic": "Protocols Powering Codex and Context Construction"
+        },
+        {
+          "startTime": 678,
+          "endTime": 930,
+          "topic": "Sandboxing and Auto-Review Safety"
+        },
+        {
+          "startTime": 962,
+          "endTime": 1176,
+          "topic": "Websocket Speed Optimization and Context Compaction"
+        }
+      ]
+    },
+    {
+      "title": "[S01:E20] Adakah ekonomi Malaysia okay? - Dr. Aimi, Economist",
+      "url": "https://www.youtube.com/watch?v=veWCTzQDY7c",
+      "videoId": "veWCTzQDY7c",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "This insightful discussion breaks down the critical disconnect between Malaysia's strong macroeconomic figures and the daily economic pressures faced by ordinary citizens. Dr. Aimi Zulhazmi uncovers systemic challenges including underemployment, weak SME support, and food security risks, offering an essential reality check on the nation's economic trajectory.",
+      "dateAdded": "2026-08-11T02:33:07.904Z",
+      "timestamps": [
+        {
+          "startTime": 307,
+          "endTime": 345,
+          "topic": "Why 70% of Malaysians Don't Feel Macroeconomic Prosperity"
+        },
+        {
+          "startTime": 660,
+          "endTime": 708,
+          "topic": "The Innovation and R&D Commercialization Deficit"
+        },
+        {
+          "startTime": 1935,
+          "endTime": 1968,
+          "topic": "Food Security Vulnerabilities: Malaysia vs. Singapore"
+        }
+      ]
+    },
+    {
+      "title": "Safwan ibn al-Mu’attal (ra): Slandered for Helping A Woman | The Firsts | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=a0NqX7HquHU",
+      "videoId": "a0NqX7HquHU",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Discover the inspiring story of Safwan ibn al-Mu'attal (RA), the noble companion of the Prophet Muhammad ﷺ who was falsely accused alongside A'isha (RA) during the Incident of Ifk. Omar Suleiman highlights Safwan's courage, profound restraint, and the timeless lessons of prophetic justice when facing slander while doing good.",
+      "dateAdded": "2026-08-11T02:33:07.904Z",
+      "timestamps": [
+        {
+          "startTime": 105,
+          "endTime": 210,
+          "topic": "Who Was Safwan ibn al-Mu'attal?"
+        },
+        {
+          "startTime": 420,
+          "endTime": 530,
+          "topic": "The Incident of Ifk & Safwan's Dignified Response"
+        },
+        {
+          "startTime": 810,
+          "endTime": 915,
+          "topic": "Prophetic Justice and Balancing Human Emotion"
+        }
+      ]
+    },
+    {
+      "title": "Allah Won't Change Your Situation Until You Do This One Simple Thing",
+      "url": "https://www.youtube.com/watch?v=E5RnYWQhZiM",
+      "videoId": "E5RnYWQhZiM",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "In this insightful reflection, Abdullah Oduro breaks down Surah Ar-Ra'd (13:11) to explain why many people feel their prayers remain unanswered during times of personal or marital struggle. The core takeaway is that true divine change requires genuine internal transformation and purifying one's intention for Allah, rather than relying on superficial, transactional behavior.",
+      "dateAdded": "2026-08-11T02:33:07.904Z",
+      "timestamps": [
+        {
+          "startTime": 93,
+          "endTime": 180,
+          "topic": "Quranic foundation: Surah Ar-Ra'd (13:11) and understanding divine protection"
+        },
+        {
+          "startTime": 433,
+          "endTime": 535,
+          "topic": "The trap of surface-level behavioral changes vs. true internal transformation"
+        },
+        {
+          "startTime": 615,
+          "endTime": 717,
+          "topic": "Leading from security: Why actions must be for Allah, not transactional praise"
+        }
+      ]
+    },
+    {
       "title": "Velocity Sickness: What Happens When Your Whole Team Gets 10x Faster — Matt Dailey, Ref.",
       "url": "https://www.youtube.com/watch?v=Kz4QJmNrVXU",
       "videoId": "Kz4QJmNrVXU",
@@ -75,32 +205,6 @@
           "startTime": 90,
           "endTime": 96,
           "topic": "Running Gemma offline to study during flights"
-        }
-      ]
-    },
-    {
-      "title": "[S01:E20] Adakah ekonomi Malaysia okay? - Dr. Aimi, Economist",
-      "url": "https://www.youtube.com/watch?v=veWCTzQDY7c",
-      "videoId": "veWCTzQDY7c",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This insightful episode breaks down the crucial disconnect between Malaysia's positive macroeconomic growth and the everyday financial struggles faced by ordinary citizens. Featuring economic analyst Dr. Aimi Zulhazmi, the discussion explores pressuring structural issues, from food security vulnerabilities to how political instability disrupts long-term national development.",
-      "dateAdded": "2026-08-10T02:40:03.162Z",
-      "timestamps": [
-        {
-          "startTime": 307,
-          "endTime": 345,
-          "topic": "The disconnect between macro economic growth and citizens' purchasing power"
-        },
-        {
-          "startTime": 1600,
-          "endTime": 1680,
-          "topic": "How frequent government changes disrupt long-term economic plans"
-        },
-        {
-          "startTime": 1868,
-          "endTime": 1970,
-          "topic": "Malaysia's food security challenges and agricultural land allocation"
         }
       ]
     },
@@ -214,32 +318,6 @@
       "timestamps": []
     },
     {
-      "title": "Allah Won't Change Your Situation Until You Do This One Simple Thing",
-      "url": "https://www.youtube.com/watch?v=E5RnYWQhZiM",
-      "videoId": "E5RnYWQhZiM",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "This insightful lecture unpacks Surah Ar-Ra'd (13:11) to explain why many believers feel their supplications (duas) remain unanswered despite making constant effort. It reveals that real, lasting transformation begins with deep internal change and pure intentions for the sake of Allah, rather than superficial behavioral adjustments aimed at pleasing others. Understanding this distinction empowers individuals to unlock spiritual growth and mend their personal relationships from the inside out.",
-      "dateAdded": "2026-08-07T03:23:27.384Z",
-      "timestamps": [
-        {
-          "startTime": 291,
-          "endTime": 413,
-          "topic": "Surface-Level Efforts vs. True Internal Change"
-        },
-        {
-          "startTime": 525,
-          "endTime": 614,
-          "topic": "Aligning Intentions (Niyyah) for Allah's Sake"
-        },
-        {
-          "startTime": 678,
-          "endTime": 780,
-          "topic": "The Consequences of Neglecting Inner Growth"
-        }
-      ]
-    },
-    {
       "title": "Q&amp;A: Career Advice Every Software Engineer Needs Right Now",
       "url": "https://www.youtube.com/watch?v=6DT40fYFscU",
       "videoId": "6DT40fYFscU",
@@ -290,64 +368,7 @@
           "topic": "Regulatory Arbitrage in Digital Money Lending"
         }
       ]
-    },
-    {
-      "title": "EP208 | PRN Negeri Sembilan 2026: Post-Match Analysis, Pendedahan Laporan RCI Tabung Haji",
-      "url": "https://www.youtube.com/watch?v=Iip82CrAr0U",
-      "videoId": "Iip82CrAr0U",
-      "channel": "Keluar Sekejap",
-      "category": "Finance",
-      "summary": "Tabung Haji is a cornerstone of Malaysian Islamic finance, making the Royal Commission of Inquiry (RCI) findings vital for any advocate in the field. This episode unpacks complex institutional governance and financial management issues into accessible commentary. It offers a clear look at how national Islamic financial bodies are held accountable.",
-      "dateAdded": "2026-08-07T03:23:27.384Z",
-      "timestamps": []
-    },
-    {
-      "title": "Junior Software Engineer's Survival Guide | My Mistakes + Advice",
-      "url": "https://www.youtube.com/watch?v=ZcgHBB4NqQw",
-      "videoId": "ZcgHBB4NqQw",
-      "channel": "Designed to Code",
-      "category": "Discovery 🌍",
-      "summary": "Stepping into your first developer role can be intimidating, but avoiding common workplace pitfalls is the key to thriving. In this honest and practical guide, a software engineer reflects on the early career mistakes that contributed to her layoff and shares actionable strategies on how to communicate effectively, build confidence, and safeguard your job.",
-      "dateAdded": "2026-08-06T03:47:47.871Z",
-      "timestamps": [
-        {
-          "startTime": 53,
-          "endTime": 165,
-          "topic": "Common mistakes junior developers make"
-        },
-        {
-          "startTime": 248,
-          "endTime": 275,
-          "topic": "Actionable steps to succeed and stand out"
-        }
-      ]
-    },
-    {
-      "title": "How To Grow As a Junior Developer To Senior | 5 Tips",
-      "url": "https://www.youtube.com/watch?v=JoU_CZWOoo0",
-      "videoId": "JoU_CZWOoo0",
-      "channel": "Travis Media",
-      "category": "Discovery 🌍",
-      "summary": "Moving beyond a junior developer role isn't just about mastering complex code—it's about developing the communication, leadership, and decision-making skills that drive real project success. This video breaks down five essential habits and mindset shifts that will help you transition smoothly from a junior role to a trusted mid-level or senior engineer.",
-      "dateAdded": "2026-08-06T03:47:47.871Z",
-      "timestamps": [
-        {
-          "startTime": 173,
-          "endTime": 235,
-          "topic": "Building Leadership Through Soft Skills"
-        },
-        {
-          "startTime": 361,
-          "endTime": 426,
-          "topic": "Broadening Technical Knowledge Beyond Just Coding"
-        },
-        {
-          "startTime": 470,
-          "endTime": 535,
-          "topic": "Becoming a Confident Decision Maker at Work"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-08-10T02:43:27.308Z"
+  "lastUpdated": "2026-08-11T02:37:34.027Z"
 }
