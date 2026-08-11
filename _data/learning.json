@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In memory research conducted by Hermann Ebbinghaus in the 1880s, approximately what percentage of learned information is forgotten within 24 hours without active recall?",
+      "question": "What cumulative percentage of the total text of the Quran is comprised by its top 20 most frequently occurring words?",
       "options": [
-        "50%",
-        "30%",
-        "95%",
-        "80%"
-      ],
-      "correctIndex": 3,
-      "learning": "Research conducted by Hermann Ebbinghaus in the 1880s demonstrated that humans forget approximately 80% of what they learn within 24 hours unless they actively force themselves to recall it.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "When analyzing word frequency in the Quran, approximately what percentage of the text do the top 20 most frequent words actually account for?",
-      "options": [
-        "80.00%",
-        "5.10%",
+        "10.15%",
         "20.83%",
-        "50.25%"
+        "50.50%",
+        "80.00%"
       ],
-      "correctIndex": 2,
-      "learning": "Contrary to expectations based on the Pareto Principle (80/20 rule), mastering the top 20 most frequent words in the Quran accounts for only about 20.83% of the total text.",
+      "correctIndex": 1,
+      "learning": "Although one might expect the 80/20 Pareto Principle to apply to vocabulary, the top 20 most frequent words in the Quran actually make up only about 20.83% of the total text.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In PCI Express (PCIe) power management, what is the primary trade-off when transitioning a device into deeper power-saving states?",
+      "question": "According to 1880s research by Hermann Ebbinghaus, approximately what percentage of learned information do people forget within 24 hours without active recall?",
       "options": [
-        "Energy savings increase, but the time required to wake up and resume operation increases",
-        "Energy savings increase, and the time required to wake up and resume operation decreases",
-        "Energy savings decrease, but the time required to wake up and resume operation decreases",
-        "Energy savings remain constant, but data transmission bandwidth is doubled"
+        "80%",
+        "50%",
+        "95%",
+        "30%"
       ],
       "correctIndex": 0,
-      "learning": "PCIe power management balances energy efficiency and system responsiveness across a spectrum of operational states. As a PCIe device transitions into deeper power-saving states, it achieves greater energy savings at the cost of an increased delay to wake up and resume full activity.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
+      "learning": "In the 1880s, Hermann Ebbinghaus demonstrated that people forget about 80% of what they learn within 24 hours unless they actively force themselves to recall it.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     },
     {
-      "question": "In Islamic conceptual terms, what is the key distinction between Qada’ and Qadr?",
+      "question": "In the Scrum framework, which ceremony serves as the meeting where the team demonstrates completed work to the Product Owner and discusses improvements for future Sprints?",
       "options": [
-        "Qada’ is Allah's eternal, unchangeable register, whereas Qadr refers specifically to individual human supplications.",
-        "Qada’ represents the actual occurrence of events that can be altered by supplication, whereas Qadr is Allah's complete, preordained plan.",
-        "Qada’ refers exclusively to disasters and hardships, whereas Qadr represents financial prosperity and success.",
-        "Qada’ represents free will existing entirely outside divine permission, whereas Qadr refers to protection granted by angels."
+        "Sprint Review",
+        "Sprint Planning",
+        "Sprint Backlog",
+        "Daily Scrum"
       ],
-      "correctIndex": 1,
-      "learning": "Qada’ refers to the actual unfolding of events in life that can be influenced by actions and supplication (Dua), while Qadr is Allah’s eternal, preordained plan that encompasses all events and changes within His complete knowledge.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which Scrum artifact is used to visualize the progress of a Sprint and display remaining work?",
-      "options": [
-        "Product Backlog",
-        "User Story",
-        "Burndown Chart",
-        "Sprint Backlog"
-      ],
-      "correctIndex": 2,
-      "learning": "A Burndown Chart is a key Scrum artifact that visualizes the progress of a Sprint and shows remaining work to help track if the team is on schedule.",
+      "correctIndex": 0,
+      "learning": "During the Sprint Review ceremony, the Scrum team demonstrates completed work to the Product Owner, reflects on the Sprint, and discusses improvements for future Sprints.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
+    },
+    {
+      "question": "In Islamic teachings, what three primary roles define the overall purpose of human life?",
+      "options": [
+        "Seeking material wealth, achieving social status, and mastering philosophy",
+        "Worshiping Allah, serving as caretakers (khalifah) of the Earth, and preparing for the Hereafter",
+        "Conquering foreign territories, accumulating artifacts, and avoiding community leadership",
+        "Renouncing all worldly actions, living in isolation, and practicing strict silence"
+      ],
+      "correctIndex": 1,
+      "learning": "In Islamic belief, life is a purposeful journey centered on three key roles: worshiping Allah, serving as caretakers (khalifah) of creation, and preparing for the eternal Hereafter through a test of faith and conduct.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which PCIe power management state offers the highest power savings and requires the longest wake-up time during extended periods of inactivity?",
+      "options": [
+        "L2",
+        "L0s",
+        "L1.2",
+        "L1.0"
+      ],
+      "correctIndex": 0,
+      "learning": "Within PCIe power management, the L2 state represents the deepest sleep state where the device is almost completely powered down, yielding the maximum power savings alongside the longest wake-up time.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     }
   ],
-  "fetchedAt": "2026-08-10T02:39:58.548Z"
+  "fetchedAt": "2026-08-11T02:33:13.289Z"
 }
