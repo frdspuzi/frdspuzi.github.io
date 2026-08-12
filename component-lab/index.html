@@ -15,6 +15,26 @@
         } catch (e) {}
       })();
     </script>
+    <!-- Other half of 404.html's own redirect trick (see that file's comment) — decodes the
+         real path back out of ?p= via history.replaceState before React Router mounts and reads
+         window.location, so a direct link/refresh on a client-routed path (e.g. a post URL)
+         lands on the correct route with no visible flash of the wrong page. Runs before
+         main.tsx's module script (script order in <head> vs the module at the end of <body> is
+         still document order), so BrowserRouter never sees the redirected ?p= URL at all. -->
+    <script type="text/javascript">
+      (function (l) {
+        if (l.search[1] === 'p' && l.search[2] === '=') {
+          var decoded = l.search.slice(3).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&');
+          });
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded[0] + (decoded[1] ? '?' + decoded[1] : '') + l.hash
+          );
+        }
+      })(window.location);
+    </script>
     <!-- Preloaded, not left to the normal CSS-discovers-font flow: site.scss's own @font-face
          rules only get parsed (and the font downloads only start) after the CSS itself has been
          fetched and parsed - a real request-chain delay Lighthouse's network-dependency-tree

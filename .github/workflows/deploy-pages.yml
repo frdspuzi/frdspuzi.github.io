@@ -1,0 +1,62 @@
+name: Deploy component-lab to GitHub Pages
+
+# Runs on every push to master, including the AI-content workflows' own automated commits (they
+# push directly to master, which fires this the same as a manual push) — keeps the deployed site
+# in sync with _data/*.json without a separate trigger, since component-lab imports those files
+# directly at build time rather than fetching them at runtime.
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deployment at a time; a new push cancels an in-flight one rather than queuing behind
+# it, since only the latest commit's build is ever worth actually serving.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: component-lab/package-lock.json
+
+      - name: Install dependencies
+        working-directory: component-lab
+        run: npm ci
+
+      - name: Build
+        working-directory: component-lab
+        run: npm run build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: component-lab/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
