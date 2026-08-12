@@ -310,36 +310,48 @@ CRITICAL INSTRUCTIONS:
 }
 
 // New function to enrich a video with an actual video summary from Vertex AI
+//
+// Retries with backoff, unlike an earlier version of this function — this is a separate Vertex
+// AI client from callGemini()'s own generativelanguage.googleapis.com REST calls (needed here
+// specifically for multimodal video understanding, which the text-only endpoint can't do), so it
+// never got the same waterfall/retry protection CLAUDE.md's own rule requires for every
+// Gemini-calling script. A single transient failure (rate limit, network blip, timeout on a
+// longer video) silently fell all the way through to the empty-timestamps fallback with no
+// second attempt — confirmed as the actual cause of at least one real video shipping with no
+// timestamps despite having a normal-looking summary (the summary fallback and the timestamps
+// fallback are the same code path, so a failed call still produces *a* summary, just never any
+// timestamps, easy to miss without specifically checking for an empty array).
 async function enrichWithVideoSummary(video) {
   if (!GCP_PROJECT_ID) {
     console.warn("GCP_PROJECT_ID not set, skipping Vertex AI video summary enrichment.");
     return video.summary; // Fallback to the short description-based summary
   }
 
-  try {
-    const ai = new GoogleGenAI({
-      vertexai: {
-        project: GCP_PROJECT_ID,
-        location: 'us-central1'
-      }
-    });
+  const ai = new GoogleGenAI({
+    vertexai: {
+      project: GCP_PROJECT_ID,
+      location: 'us-central1'
+    }
+  });
 
-    console.log(`\nWatching video via Vertex AI: ${video.title} (${video.url})`);
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      console.log(`\nWatching video via Vertex AI: ${video.title} (${video.url}) — attempt ${attempt}/${MAX_RETRIES}`);
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-3.6-flash',
-      contents: [
-        {
-          role: 'user',
-          parts: [
-            {
-              fileData: {
-                fileUri: video.url,
-                mimeType: 'video/mp4'
-              }
-            },
-            {
-              text: `You are an expert analyst and a persuasive copywriter. Watch this video and write a punchy, layman-friendly summary (2-3 sentences) that convinces the reader they need to watch this video, not just describes it. Lead with the single most compelling insight, payoff, or "aha" moment - make the value feel concrete and worth their time, the way a great hook or pitch would. Also extract 2-3 of the most valuable, cohesive segments (highlights) with an exact start time and end time in seconds.
+      const response = await ai.models.generateContent({
+        model: 'gemini-3.6-flash',
+        contents: [
+          {
+            role: 'user',
+            parts: [
+              {
+                fileData: {
+                  fileUri: video.url,
+                  mimeType: 'video/mp4'
+                }
+              },
+              {
+                text: `You are an expert analyst and a persuasive copywriter. Watch this video and write a punchy, layman-friendly summary (2-3 sentences) that convinces the reader they need to watch this video, not just describes it. Lead with the single most compelling insight, payoff, or "aha" moment - make the value feel concrete and worth their time, the way a great hook or pitch would. Also extract 2-3 of the most valuable, cohesive segments (highlights) with an exact start time and end time in seconds.
 
 CRITICAL GUARDRAILS:
 1. Be highly skeptical. If the video contains obvious misinformation, scams, or questionable claims, flag it explicitly in your summary rather than hyping it up.
@@ -354,26 +366,29 @@ You MUST return ONLY a valid JSON object in the exact format below, with nothing
     { "startTime": 252, "endTime": 310, "topic": "Why this approach is a trap" }
   ]
 }` }
-          ]
-        }
-      ]
-    });
+            ]
+          }
+        ]
+      });
 
-    if (response && response.text) {
-      console.log(`✓ Deep summary generated.`);
-      try {
+      if (response && response.text) {
+        console.log(`✓ Deep summary generated.`);
         const jsonMatch = response.text.match(/\{[\s\S]*\}/);
         if (jsonMatch) {
           const parsed = JSON.parse(jsonMatch[0]);
           return parsed;
         }
-      } catch (e) {
-        console.error("Failed to parse Vertex AI JSON:", e.message);
+        console.error("Vertex AI response had no parseable JSON, will retry.");
+      } else {
+        console.error("Vertex AI returned an empty response, will retry.");
       }
+    } catch (err) {
+      console.error(`Vertex AI enrichment failed for ${video.url} (attempt ${attempt}/${MAX_RETRIES}):`, err.message);
     }
-  } catch (err) {
-    console.error(`Failed to enrich video ${video.url} with Vertex AI:`, err.message);
+    if (attempt < MAX_RETRIES) await sleep(attempt * 3000);
   }
+
+  console.error(`Giving up on Vertex AI enrichment for ${video.url} after ${MAX_RETRIES} attempts.`);
   return { summary: video.summary, timestamps: [] }; // Fallback
 }
 
@@ -513,6 +528,29 @@ async function main() {
         channel: v.channel ? decodeHtmlEntities(v.channel) : v.channel,
         description: v.description ? decodeHtmlEntities(v.description) : v.description,
       }));
+
+    // Same "never retried once it's an existing entry" gap as the HTML-entity decode above, but
+    // NOT fixed the same cheap-and-always way: re-decoding a string is a free no-op on already-
+    // clean text, but re-enriching is a real Vertex AI video-watch call, so blindly re-running it
+    // for every existing video on every run would burn quota on entries that already succeeded.
+    // Retrying only the ones that still show timestamps: [] (an empty array specifically means a
+    // past attempt failed all the way through enrichWithVideoSummary's own retries, not "no
+    // timestamps were relevant") is the bounded, cost-appropriate version of the same fix — a
+    // video that failed to enrich no longer stays stuck that way for as long as it happens to
+    // remain in the rotating 15-video feed.
+    if (GCP_PROJECT_ID) {
+      const needsRetry = filteredExisting.filter(v => Array.isArray(v.timestamps) && v.timestamps.length === 0);
+      if (needsRetry.length > 0) {
+        console.log(`\n--- Retrying Vertex AI enrichment for ${needsRetry.length} existing video(s) with empty timestamps ---`);
+        for (const video of needsRetry) {
+          const enriched = await enrichWithVideoSummary(video);
+          if (typeof enriched === 'object' && enriched !== null) {
+            video.summary = enriched.summary || video.summary;
+            video.timestamps = enriched.timestamps || [];
+          }
+        }
+      }
+    }
 
     const finalVideos = [...curatedVideos, ...filteredExisting].slice(0, 15); // Keep up to 15 in the feed
 
