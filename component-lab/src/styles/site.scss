@@ -305,20 +305,26 @@ body {
   border-color: var(--border) !important;
 }
 
+// !important on all three: Primer's own .text-gray/.link-gray/.text-gray-light rules are
+// themselves !important (light-mode-only colors, e.g. .text-gray's #586069), so a plain
+// (non-important) override here silently loses the cascade in dark mode — same bug class already
+// documented above for .border/.border-top. Concretely caught by Lighthouse: Gratitude's
+// "Before you scroll, try this..." toggle text rendered at #586069 on a #1e1e1e background, a
+// 2.61:1 contrast ratio against WCAG AA's 4.5:1 minimum, because this rule was losing to Primer's.
 [data-theme="dark"] .text-gray {
-  color: var(--fg-muted);
+  color: var(--fg-muted) !important;
 }
 
 [data-theme="dark"] .link-gray {
-  color: var(--fg-muted);
+  color: var(--fg-muted) !important;
 }
 
 [data-theme="dark"] .link-gray:hover {
-  color: var(--fg);
+  color: var(--fg) !important;
 }
 
 [data-theme="dark"] .text-gray-light {
-  color: var(--fg-muted);
+  color: var(--fg-muted) !important;
 }
 
 [data-theme="dark"] .text-gray-dark {
@@ -491,6 +497,219 @@ body {
 @keyframes cursor-blink {
   50% {
     opacity: 0;
+  }
+}
+
+// Preview Rail (_includes/floating_toc.html) — ported close to 1:1 from the original's own
+// <style> block, not the real @beui/preview-rail component this section used earlier: that
+// component's own default preview panel/rail visual language didn't match this site's minimal
+// tick-mark-only design (a small horizontal bar per section, no icons/text in the rail itself —
+// the label/description only ever show in the separate #rail-preview tooltip on hover/focus).
+// This is genuinely simple enough, and specific enough to this site's own look, that hand-porting
+// the original directly was the right call, not a case of skipping the component-sourcing rule.
+//
+// Primer doesn't set a global box-sizing: border-box reset, so under the browser default
+// (content-box) .rail-tick/#theme-toggle's own width: 100% + padding would add up to MORE than
+// the rail's actual 48px — the button's real box overflows the rail, and centering content
+// *within that overflowing box* doesn't land at the rail's own visual center. Scoping
+// border-box to just this component (not a page-wide reset) keeps width: 100% meaning "the whole
+// rendered button, padding included, is exactly 48px" for every element in here.
+#preview-rail,
+#preview-rail * {
+  box-sizing: border-box;
+}
+
+#preview-rail {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 1000;
+  width: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+  // transform (not left/width) so this stays a compositor-only animation, not one of the
+  // "non-composited animation" properties PageSpeed Insights already flagged elsewhere on this
+  // site (aurora-text's background-position, the underline's stroke-dashoffset) — no reason to
+  // add a third instance of that same category of jank risk.
+  transition: transform 0.3s ease;
+}
+
+.rail-tick,
+#rail-collapse-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+// Mobile-only feature (a phone-specific request, not desktop) — hidden here unconditionally,
+// re-enabled only inside the max-width:767px block below. Desktop never sees this button at all,
+// and (since the max-width scoping also applies to html.rail-pref-hidden #preview-rail's
+// transform rule) a railHidden preference saved on mobile has zero effect if the same browser is
+// later used at a desktop width — the rail always shows there regardless of what was chosen on a
+// phone.
+#rail-collapse-btn {
+  display: none;
+}
+
+// Own color/hover treatment, not shared with .rail-tick — this button isn't part of the
+// section-proximity-scaling system, so it gets a plain, static hover state instead of a
+// tick-mark scale. justify-content: center overrides .rail-tick's shared base rule specifically
+// because this button holds a centered icon (like #theme-toggle below it), not a left-aligned
+// tick-mark bar — without this, the icon sits flush-left instead of lining up in the same column
+// as the theme toggle's icon.
+#rail-collapse-btn {
+  justify-content: center;
+  color: var(--fg-muted);
+}
+#rail-collapse-btn:hover,
+#rail-collapse-btn:focus-visible {
+  color: var(--accent);
+}
+
+.rail-tick .tick-mark {
+  display: block;
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--border);
+  transform: scale(1);
+  transform-origin: left center;
+  transition: transform 0.4s cubic-bezier(0.22, 1.4, 0.36, 1), background-color 0.2s ease;
+}
+
+.rail-tick:hover .tick-mark,
+.rail-tick:focus-visible .tick-mark,
+.rail-tick.toc-active .tick-mark {
+  background: var(--accent);
+}
+
+#rail-preview {
+  position: fixed;
+  top: 24px;
+  left: 56px;
+  z-index: 1000;
+  min-width: 180px;
+  max-width: 220px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.12);
+  padding: 10px 14px;
+  opacity: 0;
+  visibility: hidden;
+  filter: blur(4px);
+  transform: translateX(-6px);
+  transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.22, 1.4, 0.36, 1), filter 0.2s ease, visibility 0.2s;
+  pointer-events: none;
+}
+
+#rail-preview.visible {
+  opacity: 1;
+  visibility: visible;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+#rail-preview-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--fg);
+  margin: 0 0 4px 0;
+}
+
+#rail-preview-desc {
+  font-size: 12px;
+  color: var(--fg-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+// Same opacity/visibility show-hide convention as #rail-preview above, for consistency — hidden
+// and non-interactive by default, only ever shown while html.rail-pref-hidden is set (i.e. only
+// once the rail itself has actually finished sliding away). display: none here is a separate,
+// viewport-based gate on top of that — see #rail-collapse-btn's comment above for why this whole
+// feature is mobile-only; the max-width:767px block below is what turns this display into flex,
+// only at mobile widths.
+#rail-handle {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 1000;
+  width: 22px;
+  height: 48px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  background: var(--surface);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+  color: var(--fg-muted);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s, color 0.2s ease;
+  pointer-events: none;
+}
+html.rail-pref-hidden #rail-handle {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+#rail-handle:hover,
+#rail-handle:focus-visible {
+  color: var(--accent);
+}
+
+@media (max-width: 767px) {
+  // Tick-only nav on narrow screens — no room for the preview panel beside it.
+  #rail-preview {
+    display: none;
+  }
+
+  // The collapse feature (button, handle, and the rule that actually slides the rail away) is
+  // scoped entirely to this block — requested for phone specifically, not desktop, so desktop
+  // never shows the button at all and a railHidden preference saved on mobile has zero effect if
+  // the same browser is later used at a desktop width.
+  #rail-collapse-btn {
+    display: flex;
+  }
+  #rail-handle {
+    display: flex;
+  }
+  html.rail-pref-hidden #preview-rail {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rail-tick .tick-mark {
+    transition: background-color 0.2s ease;
+  }
+  #rail-preview {
+    transition: opacity 0.15s ease, visibility 0.15s;
+    filter: none !important;
+    transform: none !important;
+  }
+  #preview-rail {
+    transition: none;
+  }
+  #rail-handle {
+    transition: color 0.2s ease;
   }
 }
 
@@ -978,7 +1197,12 @@ body {
   position: absolute;
   top: calc(100% + 10px);
   left: 0;
-  z-index: 2;
+  // Was z-index: 2 - high enough before anything nearby had an explicit stacking context, but
+  // the real beui.dev pill tabs' active-indicator uses Tailwind's z-10 for its own internal
+  // layering, which starts sitting above a tooltip that's meant to always float over normal page
+  // content. 1000 matches #rail-preview's own "floating info panel" z-index elsewhere on this
+  // site, not an arbitrary bump.
+  z-index: 1000;
   min-width: 180px;
   max-width: 240px;
   // Same floating-info-panel visual language as #rail-preview (floating_toc.html) — one shared
@@ -1204,6 +1428,16 @@ body {
   background-position: center;
 }
 
+// background-size: cover on a fixed 120x160 *portrait* box will occasionally crop an
+// unusually wide source image (a landscape banner, say) right through its meaningful content —
+// e.g. "What is Scrum?"'s own cover image is a wide text-left/diagram-right banner, and center-
+// cropping it into a portrait card lands squarely in the empty gap between the two, showing
+// neither. Confirmed this isn't a CSS bug (overlay/image positioning both measured pixel-perfect
+// against the card) — it's an inherent tradeoff of forcing arbitrary, auto-fetched RSS images
+// into a fixed portrait shape with no per-image art-direction. Deliberately left as-is rather than
+// switching to background-size: contain (which would letterbox every card, trading this
+// occasional bad crop for losing the full-bleed photo look on every other card that already
+// crops fine).
 .medium-story-card {
   position: relative;
   display: block;
@@ -1272,27 +1506,6 @@ body {
   padding: 4px 10px !important;
 }
 
-.medium-story-skeleton {
-  width: 120px;
-  height: 160px;
-  flex-shrink: 0;
-  border-radius: 10px;
-}
-
-.medium-skeleton-story {
-  display: none;
-}
-
-@media (max-width: 767px) {
-  .medium-skeleton-row {
-    display: none;
-  }
-
-  .medium-skeleton-story {
-    display: flex;
-  }
-}
-
 // No fixed height clamp (removed — was 450px tablet / 648px desktop, matching the two columns'
 // heights to each other): a magic-number height cuts off whichever column's actual content is
 // taller than that guess, and there's no guarantee the Medium tray's card count or the trivia
@@ -1301,6 +1514,34 @@ body {
 // them top-aligned without needing equal heights).
 .right-column-content {
   min-height: 0;
+  min-width: 0;
+  // The w-100 class on this element in MediumTray.tsx does nothing — this project's compiled
+  // Primer CSS bundle doesn't actually include a .w-100 rule (confirmed: zero matches for that
+  // selector anywhere in primer.css), so this element was really sizing itself at `width: auto`
+  // inside a flex-column parent the whole time. That should still stretch to the parent's full
+  // width by default (align-items: normal computes to stretch) — but in practice the browser was
+  // instead shrink-fitting it to its own overflowing content (the mobile story tray's
+  // fixed-width, flex-shrink: 0 cards), rendering it wider than .right-column-container itself.
+  // An explicit, real width forces the issue regardless of why stretch wasn't winning on its own.
+  width: 100%;
+  max-width: 100%;
+}
+
+// The Medium/trivia columns are two col-lg-6 (width: 50%) flex items sharing a 32px gap — that
+// gap is extra space the flex algorithm has to find room for on top of the 50%+50%, so the row
+// always overflows its own container by exactly the gap width and something has to shrink.
+// Plain width-based sizing left that shrink asymmetric: the trivia column carried the original
+// inline style's flex-shrink-0 (see InsightsWriting.tsx's own comment), so 100% of the 32px came
+// out of the Medium column alone, silently rendering it ~32px narrower than the trivia card next
+// to it — which is what made the pill row above it (sized to match its own column) look
+// misaligned against the trivia card even though it was already correctly matching the boundary
+// it lived in. flex: 1 1 0% sidesteps the whole problem instead of rebalancing it: ignoring
+// col-lg-6's width and computing each column purely from an even split of whatever space the gap
+// leaves keeps both columns equal regardless of content, with no shrink asymmetry possible.
+@media (min-width: 1012px) {
+  .insights-column {
+    flex: 1 1 0%;
+  }
 }
 
 .medium-tag {
@@ -1315,35 +1556,6 @@ body {
   border: 1px solid var(--accent-border);
   text-transform: uppercase;
   letter-spacing: 0.5px;
-}
-
-#medium-filters {
-  flex-wrap: wrap;
-  gap: 8px;
-  align-items: center;
-}
-
-.medium-filter-btn {
-  padding: 6px 16px;
-  border-radius: 20px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--fg-muted);
-  font-size: 13px;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.medium-filter-btn:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-
-.medium-filter-btn.active {
-  background: var(--accent-solid);
-  border-color: var(--accent-solid);
-  color: white;
 }
 
 .learning-board {
@@ -1457,6 +1669,20 @@ body {
 @media (min-width: 768px) {
   .infinite-image-field-frame {
     height: 560px;
+  }
+}
+
+// On mobile, .animated-details.is-open>.accordion-content already stretches to roughly fill the
+// screen (calc(100dvh - 70px), see that rule's own comment) — but this frame's base height above
+// (400px) is a fixed value, not viewport-relative, so it stayed small and left dead space below
+// it inside that same scroll region, unlike Insights & Writing (whose height comes from a real
+// measurement of its own content, so it already fills the available room). Same 70px summary-bar
+// allowance, minus this content's own p-4 padding (16px top + 16px bottom = 32px), since that
+// padding sits inside the same max-height'd region as this frame.
+@media (max-width: 767px) {
+  .infinite-image-field-frame {
+    height: calc(100vh - 102px);
+    height: calc(100dvh - 102px);
   }
 }
 

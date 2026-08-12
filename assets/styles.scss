@@ -1,6 +1,4 @@
----
----
-// Primer is self-hosted (assets/vendor/primer.css, linked in header.html's <head>) rather than
+--- --- // Primer is self-hosted (assets/vendor/primer.css, linked in header.html's <head>) rather than
 // imported from unpkg.com — see the comment there for why. Not a CSS @import here either way:
 // an @import can only be discovered after this file itself is downloaded and parsed, so it can't
 // load in parallel with it regardless of where the CSS actually comes from.
@@ -36,6 +34,7 @@
   src: url('/assets/fonts/fira-sans-400-latin-ext.woff2') format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -44,6 +43,7 @@
   src: url('/assets/fonts/fira-sans-400-latin.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -52,6 +52,7 @@
   src: url('/assets/fonts/fira-sans-500-latin-ext.woff2') format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -60,6 +61,7 @@
   src: url('/assets/fonts/fira-sans-500-latin.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -68,6 +70,7 @@
   src: url('/assets/fonts/fira-sans-600-latin-ext.woff2') format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -76,6 +79,7 @@
   src: url('/assets/fonts/fira-sans-600-latin.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -84,6 +88,7 @@
   src: url('/assets/fonts/fira-sans-700-latin-ext.woff2') format('woff2');
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
+
 @font-face {
   font-family: 'Fira Sans';
   font-style: normal;
@@ -129,8 +134,8 @@ body {
   --accent-solid-hover: #035fc7;
   // Whisper-subtle "just barely visible" outline used by the collapsible section wrappers
   // (youtube_feed/thoughts/photography.html) — tinted opposite the theme's own background.
-  --overlay-bg: rgba(0,0,0,0.01);
-  --overlay-border: rgba(0,0,0,0.04);
+  --overlay-bg: rgba(0, 0, 0, 0.01);
+  --overlay-border: rgba(0, 0, 0, 0.04);
 }
 
 [data-theme="dark"] {
@@ -145,17 +150,17 @@ body {
   --surface-page: #1e1e1e;
   --surface-raised: #1a1a1a;
   --accent: #58a6ff;
-  --accent-bg: rgba(31,111,235,0.2);
-  --accent-border: rgba(56,139,253,0.4);
+  --accent-bg: rgba(31, 111, 235, 0.2);
+  --accent-border: rgba(56, 139, 253, 0.4);
   // Translucent, not solid — a flat #34d058 measured at 1.3:1 contrast against --success-fg
   // text (near-unreadable). A dark-tinted overlay keeps the "green alert" feel while giving
   // the bright green text something dark enough to read against (~10:1).
-  --success-bg: rgba(46,160,67,0.15);
+  --success-bg: rgba(46, 160, 67, 0.15);
   --success-fg: #7ee787;
   --accent-solid: #1f6feb;
   --accent-solid-hover: #388bfd;
-  --overlay-bg: rgba(255,255,255,0.01);
-  --overlay-border: rgba(255,255,255,0.05);
+  --overlay-bg: rgba(255, 255, 255, 0.01);
+  --overlay-border: rgba(255, 255, 255, 0.05);
   // --danger, --btn-primary, --fg-faint intentionally unchanged — already theme-invariant.
 }
 
@@ -165,26 +170,32 @@ body {
 .theme-fg {
   color: var(--fg);
 }
+
 .theme-fg-muted {
   color: var(--fg-muted);
 }
+
 .theme-surface {
   background: var(--surface);
 }
+
 .theme-surface-page {
   background: var(--surface-page);
   border-color: var(--border);
 }
+
 .theme-border {
   border-color: var(--border);
 }
+
 // One-off: youtube_feed.html's "flash" notice panel used a translucent white tint in dark
 // mode instead of a solid surface, so it isn't a plain token swap — scoped override instead.
 .yt-flash {
   background: var(--surface-alt);
 }
+
 [data-theme="dark"] .yt-flash {
-  background: rgba(255,255,255,0.03);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 // Primer's own stock button/text classes (.btn, .btn-outline, .btn-invisible, .text-gray)
@@ -204,39 +215,46 @@ body {
   background-image: none !important;
   border-color: var(--border) !important;
 }
+
 [data-theme="dark"] .btn:hover {
   background-color: var(--surface) !important;
   background-image: none !important;
 }
+
 [data-theme="dark"] .btn-outline {
   color: var(--accent) !important;
   background-color: transparent !important;
   background-image: none !important;
   border-color: var(--accent) !important;
 }
+
 [data-theme="dark"] .btn-outline:hover {
   color: #ffffff !important;
   background-color: var(--accent-solid) !important;
   background-image: none !important;
   border-color: var(--accent-solid) !important;
 }
+
 [data-theme="dark"] .btn-invisible {
   background-color: transparent !important;
   background-image: none !important;
   border-color: transparent !important;
   color: var(--fg-muted) !important;
 }
+
 [data-theme="dark"] .btn-invisible:hover {
   background-color: var(--surface-alt) !important;
   background-image: none !important;
   color: var(--fg) !important;
 }
+
 // .trivia-btn (learning_board.html) also carries Primer's bare .btn class — same gradient
 // issue, same fix.
 [data-theme="dark"] .trivia-btn {
   background-image: none !important;
   color: var(--fg) !important;
 }
+
 // Primer's .Box component (article cards in thoughts.html, YouTube's video-info box) and
 // .form-control (the gratitude textarea) — both solid white by default, never themed at all.
 [data-theme="dark"] .Box {
@@ -244,14 +262,17 @@ body {
   border-color: var(--border) !important;
   color: var(--fg) !important;
 }
+
 [data-theme="dark"] .form-control {
   background-color: var(--surface-raised) !important;
   border-color: var(--border) !important;
   color: var(--fg) !important;
 }
+
 [data-theme="dark"] .form-control::placeholder {
   color: var(--fg-muted);
 }
+
 // Primer's bare .border/.border-top utilities (learning-board, topic/repo/post-card,
 // the Insights & Writing card's own bottom divider) bake in `!important` on a light-mode-only
 // #e1e4e8, the same "never themed at all" issue as .Box/.form-control above — .theme-border's own
@@ -262,34 +283,42 @@ body {
 [data-theme="dark"] .border-top {
   border-color: var(--border) !important;
 }
+
 [data-theme="dark"] .text-gray {
   color: var(--fg-muted);
 }
+
 [data-theme="dark"] .link-gray {
   color: var(--fg-muted);
 }
+
 [data-theme="dark"] .link-gray:hover {
   color: var(--fg);
 }
+
 [data-theme="dark"] .text-gray-light {
   color: var(--fg-muted);
 }
+
 [data-theme="dark"] .text-gray-dark {
   color: var(--fg);
 }
 
 // Shared accordion primitive (drives .details-reset <details> sections across the site).
 // See assets/js/accordion.js for the bounce open/close behavior this pairs with.
-.animated-details > summary {
+.animated-details>summary {
   list-style: none;
 }
-.animated-details > summary::-webkit-details-marker {
+
+.animated-details>summary::-webkit-details-marker {
   display: none;
 }
+
 .collapse-arrow {
   transition: transform 0.42s cubic-bezier(0.34, 1.4, 0.64, 1);
   transform: rotate(-90deg);
 }
+
 // `.is-open` (JS-managed, accordion.js), not the native `[open]` attribute — `[open]` is
 // deliberately NOT removed until the close animation's `anim.onfinish`, ~460ms after the
 // close actually starts, so the content stays laid out while it visually shrinks. Anything
@@ -305,13 +334,15 @@ body {
 .animated-details.is-open .collapse-arrow {
   transform: rotate(0deg);
 }
+
 // Header/content divider — only meaningful (and only rendered) while there's content below it
 // to divide from. Used to be an unconditional inline style on <summary>, which meant a CLOSED
 // section still showed it immediately above the <details>'s own outer border — two adjacent
 // 1px lines instead of one.
-.animated-details.is-open > summary {
+.animated-details.is-open>summary {
   border-bottom: 1px solid var(--overlay-border);
 }
+
 // Mobile: cap the open section's content to roughly the remaining viewport height, with
 // internal scroll for anything taller — so the whole section fits on screen without the page
 // scroll running past its own bottom edge (user request, 2026-08-04: "try to fit everything
@@ -335,7 +366,7 @@ body {
 // does nothing at all on swipe without `-webkit-overflow-scrolling: touch` explicitly set
 // (already diagnosed once this session for that other region).
 @media (max-width: 767px) {
-  .animated-details.is-open > .accordion-content {
+  .animated-details.is-open>.accordion-content {
     max-height: calc(100vh - 70px);
     max-height: calc(100dvh - 70px);
     overflow-y: auto;
@@ -359,7 +390,7 @@ body {
 // across browsers.
 .aurora-text {
   display: inline-block;
-  background: linear-gradient(90deg, #FF0080, #7928CA, #0070F3, #38bdf8, #FF0080);
+  background: linear-gradient(90deg, #ffffff, #7928CA, #0070F3, #38bdf8, #FF0080);
   background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -393,6 +424,7 @@ body {
   position: relative;
   display: inline-block;
 }
+
 .highlight-underline-svg {
   position: absolute;
   left: 0;
@@ -402,6 +434,7 @@ body {
   overflow: visible;
   pointer-events: none;
 }
+
 .highlight-underline-svg path {
   fill: none;
   stroke: var(--accent);
@@ -411,11 +444,13 @@ body {
   stroke-dashoffset: 100;
   animation: highlight-draw 700ms ease-out 300ms forwards;
 }
+
 @keyframes highlight-draw {
   to {
     stroke-dashoffset: 0;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .highlight-underline-svg path {
     animation: none;
@@ -473,12 +508,15 @@ body {
 #theme-toggle .icon-moon {
   display: block;
 }
+
 #theme-toggle .icon-sun {
   display: none;
 }
+
 [data-theme="dark"] #theme-toggle .icon-moon {
   display: none;
 }
+
 [data-theme="dark"] #theme-toggle .icon-sun {
   display: block;
 }
@@ -488,17 +526,21 @@ body {
 ::view-transition-old(root) {
   animation: none;
 }
+
 ::view-transition-new(root) {
   animation: theme-reveal 400ms ease-out;
 }
+
 @keyframes theme-reveal {
   from {
     clip-path: inset(100% 0 0 0);
   }
+
   to {
     clip-path: inset(0 0 0 0);
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   ::view-transition-new(root) {
     animation: none;
@@ -525,9 +567,11 @@ body {
     border-radius 0.58s cubic-bezier(0.34, 1.56, 0.64, 1),
     border-top-color 0.58s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+
 .js-accordion-group:first-child {
   margin-top: 0;
 }
+
 .js-accordion-group.group-joined-top {
   margin-top: 0;
   border-top-left-radius: 0;
@@ -540,10 +584,12 @@ body {
   // before it "snaps" flush. border-top-color IS animatable, so this fades in sync instead.
   border-top-color: transparent;
 }
+
 .js-accordion-group.group-joined-bottom {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+
 @media (prefers-reduced-motion: reduce) {
   .js-accordion-group {
     transition: none;
@@ -591,9 +637,11 @@ body {
   margin: 0;
   gap: 10px;
 }
+
 .social-icon-item {
   position: relative;
 }
+
 .social-icon-tooltip {
   position: absolute;
   top: -30px;
@@ -610,12 +658,14 @@ body {
   transition: all 0.3s ease;
   pointer-events: none;
 }
+
 .social-icon-item:hover .social-icon-tooltip,
 .social-icon-item.is-active .social-icon-tooltip {
   opacity: 1;
   visibility: visible;
   top: -46px;
 }
+
 .social-icon-item a {
   position: relative;
   overflow: hidden;
@@ -630,11 +680,13 @@ body {
   border: 1px solid var(--border);
   transition: all 0.3s ease-in-out;
 }
+
 .social-icon-item:hover a,
 .social-icon-item.is-active a {
   color: #fff;
   box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
 }
+
 // SVG fill forced to currentColor (not just inherited) since social_media.yml's icons carry
 // their own hardcoded fill="#959da5"/similar presentation attributes — a plain `fill: currentColor`
 // without !important would still lose to those on some of the icons that set fill on individual
@@ -647,6 +699,7 @@ body {
   height: 18px;
   fill: currentColor !important;
 }
+
 .social-icon-fill {
   position: absolute;
   top: auto;
@@ -660,6 +713,7 @@ body {
   background-color: var(--accent-solid);
   transition: all 0.3s ease-in-out;
 }
+
 .social-icon-item:hover .social-icon-fill,
 .social-icon-item.is-active .social-icon-fill {
   height: 100%;
@@ -668,24 +722,28 @@ body {
 // Real per-service brand colors, only for services actually configured (github, linkedin) plus
 // the two others the reference component itself already had colors for (instagram, youtube), in
 // case those get added to _config.yml later. Everything else uses the generic fallback above.
-.social-icon-item a[data-social="linkedin"] ~ .social-icon-tooltip,
+.social-icon-item a[data-social="linkedin"]~.social-icon-tooltip,
 .social-icon-item a[data-social="linkedin"] .social-icon-fill {
   background-color: #0274b3;
 }
-.social-icon-item a[data-social="github"] ~ .social-icon-tooltip,
+
+.social-icon-item a[data-social="github"]~.social-icon-tooltip,
 .social-icon-item a[data-social="github"] .social-icon-fill {
   background-color: #24262a;
 }
-.social-icon-item a[data-social="instagram"] ~ .social-icon-tooltip,
+
+.social-icon-item a[data-social="instagram"]~.social-icon-tooltip,
 .social-icon-item a[data-social="instagram"] .social-icon-fill {
   background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
 }
-.social-icon-item a[data-social="youtube"] ~ .social-icon-tooltip,
+
+.social-icon-item a[data-social="youtube"]~.social-icon-tooltip,
 .social-icon-item a[data-social="youtube"] .social-icon-fill {
   background-color: #ff0000;
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .social-icon-tooltip,
   .social-icon-item a,
   .social-icon-fill {
@@ -695,17 +753,17 @@ body {
 
 // If a user adds a custom font, this component will stop it from bleeding into GitHub components:
 .github-component {
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol !important;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
 }
 
 .repo-language-color {
-    filter: brightness(125%) !important;
-    border-radius: 50%;
-    display: inline-block;
-    height: 12px;
-    position: relative;
-    top: 2px;
-    width: 12px;
+  filter: brightness(125%) !important;
+  border-radius: 50%;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  top: 2px;
+  width: 12px;
 }
 
 .emoji {
@@ -715,7 +773,11 @@ body {
 }
 
 .article {
-  h1, h2, h3, h4,
+
+  h1,
+  h2,
+  h3,
+  h4,
   .highlight {
     margin-bottom: 16px;
   }
@@ -727,12 +789,14 @@ body {
     margin-bottom: 16px;
   }
 
-  ul, ol {
+  ul,
+  ol {
     padding-left: 32px;
     margin-bottom: 16px;
   }
 
-  li ul, li ol {
+  li ul,
+  li ol {
     padding-left: 16px;
     margin-bottom: 0px;
   }
@@ -752,9 +816,13 @@ body {
   border-radius: 6px;
   animation: skeleton-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
+
 @keyframes skeleton-pulse {
-  50% { opacity: 0.5; }
+  50% {
+    opacity: 0.5;
+  }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .skeleton {
     animation: none;
@@ -776,6 +844,7 @@ body {
   position: relative;
   display: inline-flex;
 }
+
 // Summary-row placement (youtube_feed.html/thoughts.html/photography.html, 2026-08-05) — only
 // shown while its section is actually open, reusing the exact `.is-open` class accordion.js
 // already keeps in sync (same class already driving the chevron rotation and header divider
@@ -786,9 +855,11 @@ body {
 .goo-popover-summary {
   display: none;
 }
+
 .animated-details.is-open .goo-popover-summary {
   display: inline-flex;
 }
+
 .goo-popover-trigger {
   // Primer's own base reset sets `button { -webkit-appearance: button; }` on every bare
   // <button> — on some browsers that draws native OS button chrome that can paint over custom
@@ -816,10 +887,11 @@ body {
   font-weight: 700;
   font-size: 12px;
   line-height: 20px; // matches the trigger's own fixed height — a block-level span centers more
-                     // reliably this way than relying on flex-centering a bare text node, which
-                     // has known cross-browser edge cases with anonymous flex items.
+  // reliably this way than relying on flex-centering a bare text node, which
+  // has known cross-browser edge cases with anonymous flex items.
   transition: color 0.15s ease, border-color 0.15s ease;
 }
+
 .goo-popover-trigger:hover,
 .goo-popover-trigger:focus-visible {
   color: var(--accent);
@@ -843,6 +915,7 @@ body {
   pointer-events: none;
   z-index: 1;
 }
+
 .goo-popover-dot {
   position: absolute;
   top: 0;
@@ -854,6 +927,7 @@ body {
   transform: scale(0);
   transition: transform 0.4s cubic-bezier(0.34, 1.4, 0.64, 1);
 }
+
 .goo-popover-panel-shape {
   position: absolute;
   top: calc(100% + 10px);
@@ -862,8 +936,8 @@ body {
   max-width: 240px;
   width: max-content;
   height: 64px; // approximate — the real, auto-sized box is .goo-popover-content below; this
-                // blob shape only needs to visually cover roughly the same footprint while
-                // merging with the dot, not pixel-match the final text height exactly.
+  // blob shape only needs to visually cover roughly the same footprint while
+  // merging with the dot, not pixel-match the final text height exactly.
   border-radius: 8px;
   background: var(--surface);
   transform-origin: top left;
@@ -896,6 +970,7 @@ body {
   transition: opacity 0.2s ease;
   transition-delay: 0s;
 }
+
 .goo-popover-content a {
   color: var(--accent);
 }
@@ -908,6 +983,7 @@ body {
 .goo-popover.is-open .goo-popover-panel-shape {
   transform: scale(1);
 }
+
 .goo-popover:hover .goo-popover-content,
 .goo-popover:focus-within .goo-popover-content,
 .goo-popover.is-open .goo-popover-content {
@@ -920,9 +996,11 @@ body {
   .goo-popover-blob {
     display: none;
   }
+
   .goo-popover-content {
     transition: none;
   }
+
   .goo-popover:hover .goo-popover-content,
   .goo-popover:focus-within .goo-popover-content,
   .goo-popover.is-open .goo-popover-content {

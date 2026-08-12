@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useAccordionGroup } from "@/hooks/useAccordionGroup";
 import { useAnimatedDisclosure } from "@/hooks/useAnimatedDisclosure";
+import { useTypewriter } from "@/hooks/useTypewriter";
 import gratitudeData from "../../../_data/gratitude.json";
 
 // React port of gratitude.html. Not one of the 3 "groupable" homepage sections (no joined-border
@@ -48,6 +49,7 @@ export function Gratitude() {
 
   const open = isOpen(id);
   const contentRef = useAnimatedDisclosure(open, () => scrollIntoViewIfMobile(id));
+  const quoteRef = useTypewriter<HTMLQuoteElement>();
 
   const [text, setText] = useState("");
   const [thinking, setThinking] = useState(false);
@@ -114,6 +116,7 @@ export function Gratitude() {
       <div ref={contentRef} className="pt-3">
         <div className="mb-3">
           <blockquote
+            ref={quoteRef}
             className="mb-3 p-3"
             style={{
               background: "var(--surface)",

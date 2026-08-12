@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lighthouse": "npm run lighthouse:mobile && npm run lighthouse:desktop",
+    "lighthouse:mobile": "lighthouse http://localhost:4173 --view --output html --output-path ./lighthouse-report-mobile.html",
+    "lighthouse:desktop": "lighthouse http://localhost:4173 --preset=desktop --view --output html --output-path ./lighthouse-report-desktop.html"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
@@ -32,6 +35,7 @@
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.4",
+    "lighthouse": "^13.4.1",
     "oxlint": "^1.75.0",
     "sass": "^1.102.0",
     "typescript": "~6.0.2",

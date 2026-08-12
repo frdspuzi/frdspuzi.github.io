@@ -1,13 +1,15 @@
+import { useTypewriter } from "@/hooks/useTypewriter";
+
 // React port of index.html's own markdown body — rendered via Jekyll's `{{ content }}` in
 // _layouts/home.html, between masthead.html and gratitude.html, not part of masthead.html
 // itself. Easy to miss porting since it's a separate file from the masthead include it visually
 // sits right next to.
 //
-// The Hadith blockquote also gets assets/js/quote-typing.js's typewriter-on-scroll-into-view
-// treatment on the original (a generic "every <blockquote> on the page" site-wide rule, not
-// specific to this quote) — not ported here yet, same as Gratitude.tsx's own Surah Ibrahim
-// blockquote, which is also static for now. Known gap, not an oversight specific to this file.
+// The Hadith blockquote gets assets/js/quote-typing.js's typewriter-on-scroll-into-view treatment
+// on the original (a generic "every <blockquote> on the page" site-wide rule, not specific to
+// this quote) — see useTypewriter, also used by Gratitude.tsx's own Surah Ibrahim blockquote.
 export function AboutContent() {
+  const quoteRef = useTypewriter<HTMLQuoteElement>();
   return (
     // paddingTop, not a margin-top utility: Masthead's own bottom spacing lives on a deeply
     // nested div (the metadata row, several levels inside Masthead's outer position:relative
@@ -27,6 +29,7 @@ export function AboutContent() {
         lacking.
       </p>
       <blockquote
+        ref={quoteRef}
         className="my-5 p-4 text-left"
         style={{
           background: "var(--surface)",

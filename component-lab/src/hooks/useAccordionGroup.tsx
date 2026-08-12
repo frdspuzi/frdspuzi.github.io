@@ -53,6 +53,17 @@ export function AccordionGroupProvider({ children }: { children: ReactNode }) {
   // have access to the neighbor's own prop value.
   const defaultOpenRef = useRef<Record<string, boolean>>({});
   const elRef = useRef<Record<string, HTMLElement | null>>({});
+  // register() only mutates the refs above — cheap, but that also means it never causes a
+  // re-render on its own. Every accordion registers from its own mount effect, which fires
+  // *after* the very first render, so isJoinedTop/isJoinedBottom below (computed during render)
+  // see empty orderRef/groupableRef on that first pass and every section reads as having no
+  // groupable neighbor — a real bug, not just a first-frame flicker: nothing re-renders these
+  // consumers afterward until the *first* toggle() anywhere changes openMap, so a page that's
+  // never been interacted with stays stuck showing every section as a separate, gapped card
+  // instead of the joined list. This counter exists purely to force that recompute once
+  // registration data is actually populated — bumped by every register() call; React 18 batches
+  // the 3 near-simultaneous mount-effect calls (one per homepage section) into a single re-render.
+  const [registerVersion, setRegisterVersion] = useState(0);
 
   const register = useCallback(
     (id: string, groupable: boolean, defaultOpen: boolean, el: HTMLElement | null) => {
@@ -60,6 +71,7 @@ export function AccordionGroupProvider({ children }: { children: ReactNode }) {
       groupableRef.current[id] = groupable;
       defaultOpenRef.current[id] = defaultOpen;
       elRef.current[id] = el;
+      setRegisterVersion((v) => v + 1);
     },
     [],
   );
@@ -110,6 +122,11 @@ export function AccordionGroupProvider({ children }: { children: ReactNode }) {
     [openMap],
   );
 
+  // registerVersion in both dep arrays, unused inside the callback bodies themselves — its only
+  // job is forcing a new function reference (and so a new context value, via the useMemo below)
+  // once registration data that these callbacks read from refs has actually changed. Without it
+  // these would keep the exact same reference across the mount-time registrations, since
+  // effectiveOpenById (their only "real" dependency) doesn't change until the first toggle.
   const isJoinedTop = useCallback(
     (id: string) => {
       if (!groupableRef.current[id] || effectiveOpenById(id)) return false;
@@ -117,7 +134,8 @@ export function AccordionGroupProvider({ children }: { children: ReactNode }) {
       const prevId = idx > 0 ? orderRef.current[idx - 1] : null;
       return !!prevId && groupableRef.current[prevId] === true && !effectiveOpenById(prevId);
     },
-    [effectiveOpenById],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [effectiveOpenById, registerVersion],
   );
 
   const isJoinedBottom = useCallback(
@@ -127,7 +145,8 @@ export function AccordionGroupProvider({ children }: { children: ReactNode }) {
       const nextId = idx < orderRef.current.length - 1 ? orderRef.current[idx + 1] : null;
       return !!nextId && groupableRef.current[nextId] === true && !effectiveOpenById(nextId);
     },
-    [effectiveOpenById],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [effectiveOpenById, registerVersion],
   );
 
   const value = useMemo(

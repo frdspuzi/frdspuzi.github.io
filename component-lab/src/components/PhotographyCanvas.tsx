@@ -48,6 +48,19 @@ const FRICTION = 0.92;
 const MIN_VELOCITY = 0.03;
 const DRAG_VEL_SMOOTHING = 0.35;
 const CLICK_DRAG_THRESHOLD = 8;
+// One-time "pan loop" the first time the canvas is actually revealed, teaching that it pans in
+// every direction — cursor: grab (below) covers a mouse hovering it, but touch visitors get no
+// equivalent hint. A first version of this reused the existing momentum system (setting dragVel
+// and letting FRICTION decay it, same as a real flick) — simple, but imprecise by nature: where
+// it actually stops depends on frame timing, so it read as a random bump rather than a deliberate
+// demo, and it only ever showed one direction. This instead directly tweens cam.x/y through a full
+// circle and back to its exact starting point over NUDGE_DURATION_MS, bypassing the momentum
+// system entirely for this one purpose — see playPanLoop below. No persistence (no localStorage),
+// matching the swipe carousels' own hint: plays fresh on every page load, not a visitor's
+// first-ever visit only.
+const NUDGE_DELAY_MS = 600;
+const NUDGE_DURATION_MS = 1400;
+const NUDGE_RADIUS_PX = 50;
 
 type Tile = { x: number; y: number; w: number; h: number; imgIdx: number; settled?: boolean };
 
@@ -306,6 +319,45 @@ export function PhotographyCanvas() {
       initCanvasSizing();
     }
 
+    let nudgeTimeoutId = 0;
+    let nudgeRafId = 0;
+    // ease-in-out cubic — starts and ends the loop gently rather than snapping into motion.
+    function easeInOutCubic(t: number) {
+      return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    }
+    function scheduleNudge() {
+      if (reduceMotion) return;
+      nudgeTimeoutId = window.setTimeout(() => {
+        if (dragging) return;
+        const homeX = cam.x;
+        const homeY = cam.y;
+        const startTime = performance.now();
+        function frame(now: number) {
+          // A real drag starting mid-loop takes over cam.x/y itself via moveDrag — this has to
+          // stop touching cam entirely the instant that happens, or the two would fight over it
+          // every frame (whichever runs last that frame wins, a visible flicker).
+          if (dragging) return;
+          const rawT = Math.min(1, (now - startTime) / NUDGE_DURATION_MS);
+          const t = easeInOutCubic(rawT);
+          // Parametric circle starting and ending at (homeX, homeY): sin(0)=0 and 1-cos(0)=0
+          // put t=0 exactly at home, sin(2π)=0 and 1-cos(2π)=0 put t=1 exactly back at home too
+          // — guaranteed, not approximated the way the previous friction-decay version was.
+          const theta = 2 * Math.PI * t;
+          cam.x = homeX + NUDGE_RADIUS_PX * Math.sin(theta);
+          cam.y = homeY + NUDGE_RADIUS_PX * (1 - Math.cos(theta));
+          render();
+          if (rawT < 1) {
+            nudgeRafId = requestAnimationFrame(frame);
+          } else {
+            cam.x = homeX;
+            cam.y = homeY;
+            render();
+          }
+        }
+        nudgeRafId = requestAnimationFrame(frame);
+      }, NUDGE_DELAY_MS);
+    }
+
     let revealIo: IntersectionObserver | undefined;
     if ("IntersectionObserver" in window) {
       revealIo = new IntersectionObserver((entries) => {
@@ -319,6 +371,26 @@ export function PhotographyCanvas() {
       revealIo.observe(frameEl);
     } else {
       frameEl.classList.add("is-revealed");
+    }
+
+    // Separate from revealIo above on purpose, not reused: revealIo intentionally fires at the
+    // default threshold (as soon as even a sliver of the frame is on screen), so the fade-in
+    // reveal isn't delayed — appropriate for a reveal, wrong for a "the user is actually looking
+    // at this" gate. threshold: 0.6 matches useSwipeHint's own YT/quiz gate, so this only plays
+    // once the canvas is substantially visible, not the instant its top edge scrolls into frame.
+    let nudgeIo: IntersectionObserver | undefined;
+    if ("IntersectionObserver" in window) {
+      nudgeIo = new IntersectionObserver(
+        (entries) => {
+          if (!entries[0].isIntersecting) return;
+          nudgeIo!.disconnect();
+          scheduleNudge();
+        },
+        { threshold: 0.6 },
+      );
+      nudgeIo.observe(frameEl);
+    } else {
+      scheduleNudge();
     }
 
     function onClick(e: MouseEvent) {
@@ -404,8 +476,11 @@ export function PhotographyCanvas() {
 
     return () => {
       cancelAnimationFrame(rafId);
+      window.clearTimeout(nudgeTimeoutId);
+      cancelAnimationFrame(nudgeRafId);
       lazyIo?.disconnect();
       revealIo?.disconnect();
+      nudgeIo?.disconnect();
       resizeObserver?.disconnect();
       canvas.removeEventListener("click", onClick);
       canvas.removeEventListener("mousedown", onMouseDown);

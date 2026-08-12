@@ -23,6 +23,11 @@ type AccordionProps = {
   description?: ReactNode; // goo-popover content, shown only while open — same as the original
   groupable?: boolean; // true for the 3 main homepage sections (joined-border treatment)
   defaultOpen?: boolean;
+  // Optional escape hatch for a child whose own height can be stale while this section is
+  // closed (currently only TriviaBoard, via InsightsWriting) — see useAnimatedDisclosure's own
+  // comment for exactly when this runs and why it has to be a synchronous callback, not an
+  // effect on the child's own side.
+  onBeforeMeasure?: () => void;
   children: ReactNode;
 };
 
@@ -32,6 +37,7 @@ export function Accordion({
   description,
   groupable = false,
   defaultOpen = false,
+  onBeforeMeasure,
   children,
 }: AccordionProps) {
   const { isOpen, toggle, register, isJoinedTop, isJoinedBottom, scrollIntoViewIfMobile } =
@@ -44,7 +50,7 @@ export function Accordion({
   }, []);
 
   const open = isOpen(id, defaultOpen);
-  const contentRef = useAnimatedDisclosure(open, () => scrollIntoViewIfMobile(id));
+  const contentRef = useAnimatedDisclosure(open, () => scrollIntoViewIfMobile(id), onBeforeMeasure);
 
   const joinedTop = isJoinedTop(id);
   const joinedBottom = isJoinedBottom(id);

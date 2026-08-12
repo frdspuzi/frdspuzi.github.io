@@ -6,31 +6,104 @@ const { GoogleGenAI } = require('@google/genai');
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const GCP_PROJECT_ID = process.env.GCP_PROJECT_ID;
 const OUTPUT_FILE = path.join(__dirname, '..', '..', '_data', 'youtube.json');
+const THUMBS_DIR = path.join(__dirname, '..', '..', 'assets', 'youtube-thumbnails');
 
 const GEMINI_MODELS = [
   'gemini-3.6-flash',
-  'gemini-2.5-flash',
+  'gemini-3.5-flash',
   'gemini-3.1-flash-lite',
   'gemini-2.5-flash-lite'
 ];
 const MAX_RETRIES = 3;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+// api.rss2json.com passes through YouTube's own RSS <title>/<description> text nodes verbatim -
+// XML entity-escaped at the source (e.g. "Q&amp;A" for a title literally containing "Q&A") - and
+// never decodes them itself. Left undecoded, "&amp;" shows up as literal, visible text in the UI
+// instead of "&". No new dependency for this - just the handful of entities XML/HTML actually use
+// in plain text content, plus numeric entities for anything else (emoji, non-ASCII punctuation).
+function decodeHtmlEntities(str) {
+  if (!str) return str;
+  return str
+    .replace(/&(#x[0-9a-fA-F]+|#[0-9]+);/g, (_, code) =>
+      String.fromCodePoint(code[1] === 'x' ? parseInt(code.slice(2), 16) : parseInt(code.slice(1), 10))
+    )
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'");
+}
+
+// Same download/sync pattern as fetch_unsplash.js's syncLocalImages(): download straight into the
+// repo instead of the frontend hotlinking i.ytimg.com on every visit. i.ytimg.com sets no
+// meaningful cache-control headers (a real Lighthouse "efficient cache lifetimes" finding) and
+// contributes to a "third-party cookie" Best Practices flag alongside Medium's own hotlinked
+// images - self-hosting is the only real fix for headers this site doesn't control. hqdefault.jpg
+// is a fixed, predictable URL (just videoId), so this needs no extra API call beyond the download
+// itself.
+async function downloadThumbnail(videoId, destPath) {
+  const res = await fetch(`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`);
+  if (!res.ok) throw new Error(`Failed to download thumbnail for ${videoId}: HTTP ${res.status}`);
+  const buffer = Buffer.from(await res.arrayBuffer());
+  fs.writeFileSync(destPath, buffer);
+}
+
+// Downloads any thumbnail (for a video actually in the final feed) not already saved locally, and
+// removes any locally-saved thumbnail for a video that's fallen out of the feed - same
+// download-missing/remove-stale shape as fetch_unsplash.js's own sync, just keyed by videoId
+// instead of Unsplash photo id.
+async function syncThumbnails(finalVideos) {
+  fs.mkdirSync(THUMBS_DIR, { recursive: true });
+
+  const currentIds = new Set(finalVideos.map(v => v.videoId));
+  const existingFiles = fs.readdirSync(THUMBS_DIR).filter(f => f.endsWith('.jpg'));
+  const existingIds = new Set(existingFiles.map(f => f.slice(0, -4)));
+
+  let downloaded = 0;
+  for (const videoId of currentIds) {
+    if (existingIds.has(videoId)) continue;
+    try {
+      await downloadThumbnail(videoId, path.join(THUMBS_DIR, `${videoId}.jpg`));
+      downloaded++;
+    } catch (err) {
+      console.error(`Thumbnail download failed for ${videoId}, will retry next run:`, err.message);
+    }
+    await sleep(300); // polite to YouTube's CDN, matches fetch_unsplash.js's own PAGE_DELAY_MS
+  }
+
+  let removed = 0;
+  for (const file of existingFiles) {
+    if (!currentIds.has(file.slice(0, -4))) {
+      fs.unlinkSync(path.join(THUMBS_DIR, file));
+      removed++;
+    }
+  }
+
+  console.log(`Thumbnail sync: ${downloaded} downloaded, ${removed} removed, ${currentIds.size} total.`);
+}
+
 const CHANNELS = [
   { url: "https://www.youtube.com/@aiDotEngineer", category: "Tech & Engineering" },
-  { url: "https://www.youtube.com/@RyanLPeterman", category: "Tech & Career" },
+  { url: "https://www.youtube.com/@RyanLPeterman", category: "Tech & Engineering" },
   { url: "https://www.youtube.com/@aliabdaal", category: "Productivity" },
   { url: "https://www.youtube.com/@GoogleDevelopers", category: "Tech & Engineering" },
   { url: "https://www.youtube.com/channel/UCSYUI0C0gG-Kp03GBaO2G9Q", category: "Finance" },
   { url: "https://www.youtube.com/channel/UCYkfgq8LmajU50WadNGGxtA", category: "Finance" },
-  { url: "https://www.youtube.com/@TheGameOfImpossible", category: "Productivity" },
-  { url: "https://www.youtube.com/@bfmradiomy", category: "Finance" },
+  { url: "https://www.youtube.com/@TheGameOfImpossible", category: "General Ideas" },
+  { url: "https://www.youtube.com/@bfmradiomy", category: "General Ideas" },
   { url: "https://www.youtube.com/@TEDx", category: "General Ideas" },
   { url: "https://www.youtube.com/@yaqeeninstituteofficial", category: "Islamic Studies" },
   { url: "https://www.youtube.com/@shabdullahoduro", category: "Islamic Studies" },
   { url: "https://www.youtube.com/@pragmaticengineer", category: "Tech & Engineering" },
   { url: "https://www.youtube.com/channel/UCdMz6KKEDW_1Qqas-ya7S6w", category: "Tech & Engineering" },
-  { url: "https://www.youtube.com/@keluarsekejap", category: "Finance" }
+  { url: "https://www.youtube.com/@keluarsekejap", category: "General Ideas" },
+  { url: "https://www.youtube.com/@rafiziramli929", category: "General Ideas" },
+  { url: "https://www.youtube.com/@mattpocockuk", category: "Tech & Engineering" },
+  { url: "https://www.youtube.com/@DwarkeshPatel", category: "General Ideas" },
+  { url: "https://www.youtube.com/@MuslimFounder", category: "Islamic Studies" },
+  { url: "https://www.youtube.com/@ycombinator", category: "Tech & Engineering" },
+  { url: "https://www.youtube.com/@bigthink", category: "General Ideas" },
 ];
 
 const DISCOVERY_QUERIES = [
@@ -112,10 +185,15 @@ async function scrapeDiscoveryVideos(query) {
         for (const item of contents) {
           if (item.videoRenderer) {
             results.push({
-              title: item.videoRenderer.title.runs[0].text,
+              // YouTube's own ytInitialData embeds these "runs[].text" strings HTML-escaped even
+              // though they sit inside valid JSON - same underlying issue as fetchRss's XML feed,
+              // just a different source.
+              title: decodeHtmlEntities(item.videoRenderer.title.runs[0].text),
               link: `https://www.youtube.com/watch?v=${item.videoRenderer.videoId}`,
               thumbnail: item.videoRenderer.thumbnail.thumbnails[0].url,
-              author: item.videoRenderer.ownerText?.runs[0]?.text || "YouTube Creator"
+              author: item.videoRenderer.ownerText?.runs[0]?.text
+                ? decodeHtmlEntities(item.videoRenderer.ownerText.runs[0].text)
+                : "YouTube Creator"
             });
           }
         }
@@ -260,16 +338,17 @@ async function enrichWithVideoSummary(video) {
                 mimeType: 'video/mp4'
               }
             },
-            { text: `You are an expert analyst. Watch this video and write a layman-friendly, highly engaging summary (2-3 sentences) explaining WHY this video is worth the viewer's time and what the core takeaway is. Also extract 2-3 of the most valuable, cohesive segments (highlights) with an exact start time and end time in seconds.
+            {
+              text: `You are an expert analyst and a persuasive copywriter. Watch this video and write a punchy, layman-friendly summary (2-3 sentences) that convinces the reader they need to watch this video, not just describes it. Lead with the single most compelling insight, payoff, or "aha" moment - make the value feel concrete and worth their time, the way a great hook or pitch would. Also extract 2-3 of the most valuable, cohesive segments (highlights) with an exact start time and end time in seconds.
 
 CRITICAL GUARDRAILS:
-1. Be highly skeptical. If the video contains obvious misinformation, scams, or questionable claims, flag it explicitly in your summary.
+1. Be highly skeptical. If the video contains obvious misinformation, scams, or questionable claims, flag it explicitly in your summary rather than hyping it up.
 2. If the video touches on theology or philosophy, ensure your summary and highlighted takeaways do not promote anything that goes against core Islamic values.
 3. ABSOLUTELY DO NOT hallucinate timestamps that exceed the actual length of the video. If it is a Short, all timestamps must be under 60 seconds.
 
 You MUST return ONLY a valid JSON object in the exact format below, with nothing else:
 {
-  "summary": "Your engaging 2-3 sentence summary...",
+  "summary": "Your persuasive, hook-driven 2-3 sentence summary...",
   "timestamps": [
     { "startTime": 135, "endTime": 180, "topic": "Explanation of the core concept" },
     { "startTime": 252, "endTime": 310, "topic": "Why this approach is a trap" }
@@ -288,7 +367,7 @@ You MUST return ONLY a valid JSON object in the exact format below, with nothing
           const parsed = JSON.parse(jsonMatch[0]);
           return parsed;
         }
-      } catch(e) {
+      } catch (e) {
         console.error("Failed to parse Vertex AI JSON:", e.message);
       }
     }
@@ -342,12 +421,12 @@ async function main() {
       const videoId = videoIdMatch ? videoIdMatch[1] : vid.link.split('/').pop();
 
       // Clean HTML tags from description and truncate to save tokens
-      let cleanDesc = (vid.description || "").replace(/<[^>]*>?/gm, '').substring(0, 400).trim();
+      let cleanDesc = decodeHtmlEntities((vid.description || "").replace(/<[^>]*>?/gm, '').substring(0, 400).trim());
 
       videoCandidates.push({
         videoId: videoId,
-        title: vid.title,
-        channel: vid.author || channel.category,
+        title: decodeHtmlEntities(vid.title),
+        channel: vid.author ? decodeHtmlEntities(vid.author) : channel.category,
         category: channel.category,
         publishDate: vid.pubDate,
         description: cleanDesc,
@@ -424,6 +503,8 @@ async function main() {
     const filteredExisting = existingVideos.filter(v => !newVideoIds.has(v.videoId));
 
     const finalVideos = [...curatedVideos, ...filteredExisting].slice(0, 15); // Keep up to 15 in the feed
+
+    await syncThumbnails(finalVideos);
 
     const finalOutput = {
       videos: finalVideos,

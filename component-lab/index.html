@@ -15,6 +15,17 @@
         } catch (e) {}
       })();
     </script>
+    <!-- Preloaded, not left to the normal CSS-discovers-font flow: site.scss's own @font-face
+         rules only get parsed (and the font downloads only start) after the CSS itself has been
+         fetched and parsed - a real request-chain delay Lighthouse's network-dependency-tree
+         audit flagged. Only the 3 files actually used on this page (400/500/600, latin subset -
+         the -ext subsets and weight 700 aren't referenced by any rendered text here, so
+         preloading them would just waste bandwidth on files the browser wouldn't otherwise
+         fetch). crossorigin is required on font preloads even for same-origin files, per spec -
+         fonts are fetched in "anonymous" CORS mode regardless of origin. -->
+    <link rel="preload" href="/assets/fonts/fira-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/fira-sans-500-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/fira-sans-600-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Mohammad Firdaus bin Mohd Puzi</title>

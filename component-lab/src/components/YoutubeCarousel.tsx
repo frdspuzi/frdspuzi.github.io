@@ -1,4 +1,8 @@
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from "react";
+import { useSwipeHint } from "@/hooks/useSwipeHint";
+import { toSentenceCase } from "@/lib/utils";
+
+export type YoutubeCarouselHandle = { remeasure: () => void };
 import youtubeData from "../../../_data/youtube.json";
 import type { YoutubeVideo, YTPlayer } from "@/data/youtube_types";
 
@@ -156,7 +160,12 @@ function VideoCard({
   const isMobileNow = window.matchMedia("(max-width: 767px)").matches;
   const keepFacadeLandscape = isShort && isMobileNow && !showingPlayer;
   const isPortrait = isShort && !keepFacadeLandscape;
-  const thumbUrl = "https://i.ytimg.com/vi/" + video.videoId + "/hqdefault.jpg";
+  // Self-hosted, not hotlinked from i.ytimg.com: that CDN sets no meaningful cache-control
+  // headers and contributes a third-party cookie, both real Lighthouse Best Practices/Performance
+  // findings. fetch_youtube.js downloads this for every video actually in the final feed before
+  // youtube.json is ever written, so by the time a videoId appears in the data, its thumbnail is
+  // already committed alongside it - no fallback to the remote URL needed.
+  const thumbUrl = "/assets/youtube-thumbnails/" + video.videoId + ".jpg";
   const timestamps = video.timestamps || [];
   // Optimistic (shows everything) until the player reports a real duration, then filters out any
   // timestamp past the end - same behavior as the original's renderTimestamps(), just expressed
@@ -212,7 +221,7 @@ function VideoCard({
                 letterSpacing: "0.5px",
               }}
             >
-              {video.category}
+              {toSentenceCase(video.category)}
             </span>
           </div>
 
@@ -272,29 +281,58 @@ function VideoCard({
   );
 }
 
-export function YoutubeCarousel() {
-  const [videos] = useState<YoutubeVideo[]>(() => shuffle(youtubeData.videos as YoutubeVideo[]));
+export const YoutubeCarousel = forwardRef<YoutubeCarouselHandle, { activeFilter: string }>(function YoutubeCarousel(
+  { activeFilter },
+  ref,
+) {
+  // Filtered once, at mount — the parent (YoutubeFeed) remounts this component via key=
+  // {activeFilter} whenever the filter changes, so there's no need to react to activeFilter
+  // changing here directly (fresh currentIndex/shuffle come for free with the remount).
+  const [videos] = useState<YoutubeVideo[]>(() => {
+    const shuffled = shuffle(youtubeData.videos as YoutubeVideo[]);
+    return activeFilter === "all" ? shuffled : shuffled.filter((v) => v.category === activeFilter);
+  });
   const [currentIndex, setCurrentIndex] = useState(0);
   const isFirstRender = useRef(true);
 
-  // Fixed viewport height, precomputed once from the tallest card across *every* video, not just
-  // the 3 currently-rendered slides - otherwise it visibly jumps on every swipe as videos with
-  // different title/summary/timestamp-count lengths cycle through. Measured off-screen using the
-  // real VideoCard component itself (isActive=false), so the measurement is pixel-identical to
-  // what actually renders rather than a separately-maintained approximation of it.
+  // Fixed viewport height, precomputed once from the tallest card across *every* video in the
+  // full, unfiltered set (not just whichever category is currently active) - so switching filters
+  // never resizes the carousel, matching TriviaBoard's own "benchmark against everything, not
+  // just what's currently shown" height fix. Measured off-screen using the real VideoCard
+  // component itself (isActive=false), so the measurement is pixel-identical to what actually
+  // renders rather than a separately-maintained approximation of it.
   const [maxCardHeight, setMaxCardHeight] = useState<number | null>(null);
   const measureContainerRef = useRef<HTMLDivElement>(null);
 
-  useLayoutEffect(() => {
+  function measureNow() {
     const container = measureContainerRef.current;
     if (!container) return;
     const heights = Array.from(container.children).map((el) => (el as HTMLElement).offsetHeight);
     if (heights.length > 0) setMaxCardHeight(Math.max(...heights));
+  }
+
+  useLayoutEffect(() => {
+    // Skipped when starting invisible (offsetWidth reads 0 — an ancestor accordion is closed,
+    // the common case on mobile, where every homepage section starts closed) rather than run
+    // unconditionally: measuring every VideoCard's real rendered height here is expensive (this
+    // is a full React component tree per video, not a lightweight synthetic string like
+    // TriviaBoard's own measurement), and a Lighthouse mobile run traced real main-thread cost to
+    // this exact class of work — React's initial commit doesn't paint partial trees, so this was
+    // delaying first paint for the entire page, not just this carousel. remeasure (exposed via
+    // the imperative handle below, called from Accordion's onBeforeMeasure) computes the real
+    // value synchronously the moment this section actually opens, so skipping here only ever
+    // leaves an invisible element unmeasured, never a visible one.
+    const container = measureContainerRef.current;
+    if (!container || container.offsetWidth === 0) return;
+    measureNow();
   }, []);
+
+  useImperativeHandle(ref, () => ({ remeasure: measureNow }));
 
   const viewportRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const dragDistanceRef = useRef(0);
+  const markSwipeInteracted = useSwipeHint(trackRef, viewportRef);
 
   function navigate(direction: 1 | -1) {
     setCurrentIndex((prev) => (prev + direction + videos.length) % videos.length);
@@ -341,6 +379,7 @@ export function YoutubeCarousel() {
       swipeLastX = x;
       swipeLastY = y;
       viewportEl!.style.cursor = "grabbing";
+      markSwipeInteracted();
     }
 
     function moveSwipe(x: number, y: number) {
@@ -467,7 +506,7 @@ export function YoutubeCarousel() {
           boxSizing: "border-box",
         }}
       >
-        {videos.map((v) => (
+        {(youtubeData.videos as YoutubeVideo[]).map((v) => (
           <VideoCard key={v.videoId} video={v} isActive={false} dragDistanceRef={dragDistanceRef} onNavigate={() => {}} />
         ))}
       </div>
@@ -494,4 +533,4 @@ export function YoutubeCarousel() {
       </div>
     </div>
   );
-}
+});

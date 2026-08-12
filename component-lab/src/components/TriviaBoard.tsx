@@ -1,6 +1,9 @@
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useRef } from "react";
+import { useSwipeHint } from "@/hooks/useSwipeHint";
 import learningData from "../../../_data/learning.json";
 import type { LearningItem } from "@/data/insights_types";
+
+export type TriviaBoardHandle = { remeasure: () => void };
 
 // React port of learning_board.html. Same imperative-refs approach as YoutubeCarousel.tsx (the
 // swipe-settle-then-swap-question choreography is exactly as sequence-sensitive), ported from
@@ -23,8 +26,7 @@ function shuffle<T>(array: T[]): T[] {
 }
 
 // Builds the same markup as the real card (both its pre-answer and post-answer/"revealed"
-// shapes) for off-screen measurement only — see the maxUnrevealedHeight/maxRevealedHeight
-// computation below for why.
+// shapes) for off-screen measurement only — see the maxCardHeight computation below for why.
 function buildMeasureCardHtml(item: LearningItem, revealed: boolean): string {
   const optionsHtml = item.options
     .map(
@@ -90,8 +92,47 @@ function buildPreviewSlideHtml(item: LearningItem): string {
 const SWIPE_COMMIT_THRESHOLD = 50;
 const SWIPE_AXIS_LOCK_THRESHOLD = 10;
 const SWIPE_SETTLE_MS = 250;
+// A few px of cheap insurance on top of the measured max, in case of any other sub-pixel gap
+// between the synthetic measurement markup and the real rendered DOM (rounding, border
+// antialiasing) that isn't worth chasing individually — invisible as slack space on a full card,
+// far cheaper than a clipped option.
+const MEASURE_SAFETY_BUFFER_PX = 6;
 
-export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
+// One fixed height, precomputed from the tallest possible card (in its *revealed* shape —
+// question + options + the success panel/footer that appears after answering) across *every*
+// item, not whatever the currently-displayed question happens to measure — so the carousel
+// viewport never resizes/jumps when swiping to a taller or shorter question, or when revealing an
+// answer. Module-level (not a closure inside the component) so both the mount effect's initial
+// measurement and the isAccordionOpen-triggered re-measurement below can call the exact same
+// logic without duplicating it.
+function measureMaxCardHeight(viewportEl: HTMLDivElement, allLearnings: LearningItem[]): number {
+  const el = document.createElement("div");
+  el.style.cssText =
+    "position: absolute; visibility: hidden; pointer-events: none; top: 0; left: 0; width: 100%; z-index: -1; padding: 0 10px; box-sizing: border-box;";
+  viewportEl.appendChild(el);
+  // display: flow-root on each wrapper, not a plain block div: the real trivia-content is a
+  // direct child of a `display: flex` container, and flex items always establish their own
+  // block formatting context for their children (spec behavior, not a Primer/site.scss rule) —
+  // so its last child's trailing margin stays fully contained inside its box. A plain div
+  // doesn't get that BFC for free, so that same trailing margin was collapsing straight through
+  // the wrapper's bottom edge and silently disappearing from offsetHeight — undercounting every
+  // measured item by the same amount, including the one actually driving the max.
+  const measureDivs = allLearnings.map((item) => {
+    const div = document.createElement("div");
+    div.style.display = "flow-root";
+    div.innerHTML = buildMeasureCardHtml(item, true);
+    el.appendChild(div);
+    return div;
+  });
+  const height = Math.max(0, ...measureDivs.map((div) => div.offsetHeight)) + MEASURE_SAFETY_BUFFER_PX;
+  viewportEl.removeChild(el);
+  return height;
+}
+
+export const TriviaBoard = forwardRef<TriviaBoardHandle, { activeFilter: string }>(function TriviaBoard(
+  { activeFilter },
+  ref,
+) {
   const viewportRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const prevSlideRef = useRef<HTMLDivElement>(null);
@@ -112,6 +153,7 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
 
   const applyFilterRef = useRef<(category: string) => void>(() => {});
   const isFirstFilterRun = useRef(true);
+  const markSwipeInteracted = useSwipeHint(trackRef, viewportRef);
 
   const allLearnings = (learningData.learnings as LearningItem[]).filter((l) => l.question && l.options);
 
@@ -142,37 +184,27 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
     let currentItem: LearningItem | null = null;
     let currentIndex = 0;
 
-    // Fixed heights, precomputed once from the tallest possible card across *every* item, not
-    // whatever the currently-displayed question happens to measure — same fix as
-    // YoutubeCarousel's max-height precompute, for the same reason. The old approach (a
-    // ResizeObserver syncing viewportEl's height to triviaContainerEl's own natural size) lagged
-    // by one async fire on every question switch: loadQuestion() replaces the DOM content
-    // synchronously, but the observer's correction lands a frame later — if the new question
-    // needed more room than the still-stale height (e.g. one extra option), overflow:hidden
-    // clipped it until the observer caught up. Measured off-screen, before first paint, so
-    // there's no async gap to fall into. Two heights, not one: answering a question appends a
-    // reveal panel below the options (taller), so it gets its own precomputed max rather than
-    // forcing every unanswered question to reserve that extra space up front.
-    const measureEl = document.createElement("div");
-    measureEl.style.cssText =
-      "position: absolute; visibility: hidden; pointer-events: none; top: 0; left: 0; width: 100%; z-index: -1; padding: 0 10px; box-sizing: border-box;";
-    viewportEl.appendChild(measureEl);
-
-    const unrevealedMeasureDivs = allLearnings.map((item) => {
-      const el = document.createElement("div");
-      el.innerHTML = buildMeasureCardHtml(item, false);
-      measureEl.appendChild(el);
-      return el;
-    });
-    const revealedMeasureDivs = allLearnings.map((item) => {
-      const el = document.createElement("div");
-      el.innerHTML = buildMeasureCardHtml(item, true);
-      measureEl.appendChild(el);
-      return el;
-    });
-    const maxUnrevealedHeight = Math.max(0, ...unrevealedMeasureDivs.map((el) => el.offsetHeight));
-    const maxRevealedHeight = Math.max(0, ...revealedMeasureDivs.map((el) => el.offsetHeight));
-    viewportEl.removeChild(measureEl);
+    // Wrapped in a mutable local, not a one-shot const, and re-run via a ResizeObserver below:
+    // this section lives inside an accordion that can default closed (mobile — the common case,
+    // since every homepage section starts closed there), so this first measurement can run while
+    // viewportEl (and everything in it) is genuinely 0×0 — every measureDiv reports
+    // offsetHeight: 0, and maxCardHeight silently collapses to just MEASURE_SAFETY_BUFFER_PX (the
+    // exact "6px" bug this comment is here to explain). Accordion's own onBeforeMeasure callback
+    // (wired up via the imperative handle below) is what actually catches the closed->open
+    // transition in time for the open animation; the ResizeObserver further down is a
+    // general-purpose safety net for any other resize (window resize, orientation change, font
+    // load) — not what handles this specific transition.
+    //
+    // Skipping the real computation entirely when starting invisible (offsetWidth reads 0 here
+    // in that case) isn't just an optimization for its own sake: this is genuinely expensive —
+    // one measurement div per learning item, each holding its full revealed-shape HTML, plus the
+    // forced layout read to measure them — and a Lighthouse mobile run traced ~350ms of main-
+    // thread time to it, delaying first paint for the *entire page* (React's initial commit
+    // doesn't paint partial trees, so this blocked simple above-the-fold text elsewhere on the
+    // page too). Correctness doesn't depend on doing it now: onBeforeMeasure recomputes the real
+    // value synchronously the moment this section actually opens, so a placeholder here is only
+    // ever visible on an invisible element.
+    let maxCardHeight = viewportEl.offsetWidth > 0 ? measureMaxCardHeight(viewportEl, allLearnings) : 0;
 
     function updatePagination() {
       const dotsContainer = dotsRef.current!;
@@ -207,7 +239,6 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
       learningTitleEl.textContent = currentItem!.articleTitle;
       learningLinkEl.href = currentItem!.articleUrl;
       revealEl.style.display = "block";
-      viewportEl.style.height = maxRevealedHeight + "px";
     }
 
     function loadQuestion(index: number) {
@@ -239,7 +270,7 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
       updatePagination();
       skeletonEl.style.display = "none";
       contentEl.style.display = "";
-      viewportEl.style.height = maxUnrevealedHeight + "px";
+      viewportEl.style.height = maxCardHeight + "px";
       updatePreviewSlides();
     }
 
@@ -284,6 +315,7 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
       swipeLastX = x;
       swipeLastY = y;
       viewportEl.style.cursor = "grabbing";
+      markSwipeInteracted();
     }
 
     function moveSwipe(x: number, y: number) {
@@ -389,6 +421,21 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
 
     loadQuestion(0);
 
+    // General-purpose safety net (window resize, orientation change, font load) — re-measures and
+    // re-applies whenever viewportEl's actual rendered size changes for any other reason. Guarded
+    // so re-applying the *same* height (the common case once already correct) doesn't itself
+    // trigger another resize/fire loop. The closed->open transition specifically is handled
+    // synchronously by the isAccordionOpen effect further below instead of relying on this, since
+    // this fires asynchronously — too late to inform the accordion's own open-height animation.
+    const resizeObserver = new ResizeObserver(() => {
+      const remeasured = measureMaxCardHeight(viewportEl, allLearnings);
+      if (remeasured !== maxCardHeight) {
+        maxCardHeight = remeasured;
+        viewportEl.style.height = maxCardHeight + "px";
+      }
+    });
+    resizeObserver.observe(viewportEl);
+
     return () => {
       viewportEl.removeEventListener("mousedown", onMouseDown);
       window.removeEventListener("mousemove", onMouseMove);
@@ -399,6 +446,7 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
       viewportEl.removeEventListener("touchcancel", endSwipe);
       viewportEl.removeEventListener("keydown", onKeydown);
       nextBtn.removeEventListener("click", onNextClick);
+      resizeObserver.disconnect();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -411,8 +459,41 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
     applyFilterRef.current(activeFilter);
   }, [activeFilter]);
 
+  // Exposed for Accordion to call directly, synchronously, at the one moment that's actually
+  // correct: inside its own useAnimatedDisclosure effect, right after it sets
+  // content.style.display = "" and right before it reads content.scrollHeight to size the open
+  // animation. An earlier version of this tried a useLayoutEffect here instead, keyed on an
+  // isAccordionOpen prop, reasoning that React fires a descendant's layout effects before its
+  // ancestor's — true, but irrelevant: the DOM mutation that actually makes this section visible
+  // only happens *inside* Accordion's own effect, which is the parent and therefore still runs
+  // after this one. This component's effect was measuring while still hidden from the *previous*
+  // render, same race, just relocated. An imperative callback sidesteps the ordering question
+  // entirely by calling this at the exact right line of Accordion's own effect instead of hoping
+  // some other effect's scheduling happens to land first.
+  useImperativeHandle(
+    ref,
+    () => ({
+      remeasure() {
+        const viewportEl = viewportRef.current;
+        if (!viewportEl || allLearnings.length === 0) return;
+        viewportEl.style.height = measureMaxCardHeight(viewportEl, allLearnings) + "px";
+      },
+    }),
+    [allLearnings],
+  );
+
   return (
-    <div className="learning-board box-shadow-large mb-4 mb-md-0 p-4 p-md-5 border rounded-2 flex-auto d-flex flex-column theme-surface theme-border position-relative overflow-hidden">
+    <div
+      className="learning-board box-shadow-large mb-4 mb-md-0 p-4 p-md-5 border rounded-2 flex-auto d-flex flex-column theme-surface theme-border position-relative overflow-hidden"
+      // flex-auto (flex: 1 1 auto) is shrinkable by default like every flex-column ancestor in
+      // this chain — on a short mobile viewport, .animated-details.is-open>.accordion-content's
+      // own max-height+overflow-y:auto (site.scss) is what's *supposed* to become the scroll
+      // boundary for content taller than the screen, but without flex-shrink: 0 at every level
+      // down to the carousel viewport, flexbox instead silently compresses this card's own box
+      // to fit whatever height it's handed — overriding the precomputed max-height fix below and
+      // clipping the last option, not scrolling to reveal it.
+      style={{ flexShrink: 0 }}
+    >
       <div
         className="position-absolute"
         style={{ top: -20, right: -20, opacity: 0.05, fontSize: 150, lineHeight: 1, pointerEvents: "none", userSelect: "none" }}
@@ -420,7 +501,19 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
         🧠
       </div>
 
-      <div className="position-relative z-1 text-center text-md-left d-flex flex-column h-100">
+      <div
+        className="position-relative z-1 text-center text-md-left d-flex flex-column"
+        // Not h-100: .learning-board (this div's parent) is itself content-driven (flex-basis:
+        // auto, no definite height of its own), so height: 100% here had no valid ancestor to
+        // resolve against — not a harmless no-op like the same pattern was for html/body
+        // elsewhere in this project, but a genuine flexbox circularity (a flex item's auto basis
+        // is computed from its content's natural size, and a percentage-height descendant can't
+        // contribute to that without already knowing the answer, so the browser drops it from
+        // the calculation instead) that left this element sized from a broken layout pass —
+        // which is what was actually overriding the precomputed carousel height below, not
+        // flex-shrink.
+        style={{ flexShrink: 0 }}
+      >
         <div
           className="flex-shrink-0 d-flex flex-column flex-md-row flex-justify-between flex-items-md-start mb-4"
           style={{ gap: 16 }}
@@ -452,9 +545,13 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
               ref={viewportRef}
               tabIndex={0}
               aria-label="Trivia question card — swipe or use arrow keys to browse questions"
-              style={{ overflow: "hidden", position: "relative", cursor: "grab", userSelect: "none" }}
+              style={{ overflow: "hidden", position: "relative", cursor: "grab", userSelect: "none", flexShrink: 0 }}
             >
-              <div id="trivia-carousel-track" ref={trackRef} style={{ display: "flex", transform: "translateX(-100%)" }}>
+              <div
+                id="trivia-carousel-track"
+                ref={trackRef}
+                style={{ display: "flex", height: "100%", transform: "translateX(-100%)" }}
+              >
                 <div id="trivia-slide-prev" ref={prevSlideRef} className="trivia-slide-preview" style={{ flex: "0 0 100%", padding: "0 10px" }}></div>
 
                 <div id="trivia-container" ref={containerRef} className="d-flex flex-column" style={{ flex: "0 0 100%", minHeight: 0, padding: "0 10px" }}>
@@ -467,7 +564,12 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
                     <span className="skeleton" style={{ width: "100%", height: 40 }}></span>
                   </div>
 
-                  <div id="trivia-content" ref={contentRef} className="flex-auto" style={{ minHeight: 0, display: "none" }}>
+                  <div
+                    id="trivia-content"
+                    ref={contentRef}
+                    className="flex-auto d-flex flex-column"
+                    style={{ minHeight: 0, display: "none" }}
+                  >
                     <h2 id="trivia-question" ref={questionRef} className="f4 mb-3" style={{ lineHeight: 1.4, fontWeight: 500, color: "var(--fg)" }}>
                       Loading question...
                     </h2>
@@ -487,7 +589,7 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
 
                     <div id="trivia-options" ref={optionsRef} className="d-flex flex-column" style={{ gap: 12, marginBottom: 16 }}></div>
 
-                    <div id="trivia-reveal" ref={revealRef} style={{ display: "none" }}>
+                    <div id="trivia-reveal" ref={revealRef} style={{ display: "none", marginTop: "auto" }}>
                       <div className="flash-success p-3 rounded-2 mb-4" style={{ backgroundColor: "var(--success-bg)", border: "1px solid var(--success-fg)" }}>
                         <p id="learning-text" ref={learningTextRef} className="f4 text-italic mb-0" style={{ lineHeight: 1.4, color: "var(--success-fg)" }}></p>
                       </div>
@@ -517,4 +619,4 @@ export function TriviaBoard({ activeFilter }: { activeFilter: string }) {
       </div>
     </div>
   );
-}
+});

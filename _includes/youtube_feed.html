@@ -375,7 +375,12 @@
       if (ytReady && ytPlayer && ytPlayer.cueVideoById) {
         ytPlayer.cueVideoById(v.videoId);
       } else {
-        facadeThumbEl.src = 'https://i.ytimg.com/vi/' + v.videoId + '/hqdefault.jpg';
+        // Self-hosted, not hotlinked from i.ytimg.com: that CDN sets no meaningful cache-control
+        // headers and contributes a third-party cookie - both real Lighthouse findings.
+        // fetch_youtube.js downloads this for every video actually in the final feed before
+        // youtube.json is ever written, so it's already committed by the time a videoId shows up
+        // in the data - no fallback to the remote URL needed.
+        facadeThumbEl.src = '{{ "/assets/youtube-thumbnails/" | relative_url }}' + v.videoId + '.jpg';
         facadeThumbEl.alt = v.title;
       }
 
@@ -459,7 +464,8 @@
     // regular, or the narrow 9:16 portrait box a Short gets immediately on desktop, even before
     // its facade is ever clicked).
     function buildPreviewSlide(video) {
-      var thumbUrl = 'https://i.ytimg.com/vi/' + video.videoId + '/hqdefault.jpg';
+      // Self-hosted, not hotlinked - see the matching comment on facadeThumbEl.src above.
+      var thumbUrl = '{{ "/assets/youtube-thumbnails/" | relative_url }}' + video.videoId + '.jpg';
       var isShort = !!(video.url && video.url.includes('/shorts/'));
       var isMobileNow = window.matchMedia('(max-width: 767px)').matches;
       var keepPreviewLandscape = isShort && isMobileNow;

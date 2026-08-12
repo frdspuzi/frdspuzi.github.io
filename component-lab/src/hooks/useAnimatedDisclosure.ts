@@ -27,7 +27,20 @@ const CLOSE: KeyframeAnimationOptions = {
   fill: "forwards",
 };
 
-export function useAnimatedDisclosure(open: boolean, onOpened?: () => void) {
+export function useAnimatedDisclosure(
+  open: boolean,
+  onOpened?: () => void,
+  // Called synchronously, right after content.style.display is set to visible and right before
+  // content.scrollHeight is read below — the one moment a child's own late-corrected height
+  // (e.g. TriviaBoard's trivia-card measurement, which can be wrong while this section was
+  // closed) needs to be fixed up for the read that's about to size this open animation. A
+  // useLayoutEffect inside that child can't reliably land here on its own: React runs a child's
+  // layout effects before its parent's, but the DOM mutation that makes this section visible only
+  // happens in *this* effect, so a child's effect still runs while the previous, hidden state is
+  // still on screen. An explicit callback, invoked at this exact line, has no such ordering
+  // ambiguity.
+  onBeforeMeasure?: () => void,
+) {
   const contentRef = useRef<HTMLDivElement>(null);
   const animRef = useRef<Animation | null>(null);
   const guardId = useRef(0);
@@ -71,6 +84,7 @@ export function useAnimatedDisclosure(open: boolean, onOpened?: () => void) {
 
     if (open) {
       content.style.display = "";
+      onBeforeMeasure?.();
       const target = content.scrollHeight;
       const computed = getComputedStyle(content);
       const padTop = computed.paddingTop;

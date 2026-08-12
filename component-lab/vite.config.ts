@@ -6,6 +6,14 @@ import { defineConfig } from "vite"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  build: {
+    // Lets Lighthouse/DevTools performance profiling point at real source file/line instead of
+    // minified bundle offsets (e.g. the forced-reflow audit currently just says "line 2948,
+    // column 235492") - not shipped to end users in any way that costs them anything, since
+    // sourcemaps are only fetched by DevTools when actually opened, never during a normal page
+    // load.
+    sourcemap: true,
+  },
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "./src"),
