@@ -500,7 +500,19 @@ async function main() {
     }
 
     const newVideoIds = new Set(curatedVideos.map(v => v.videoId));
-    const filteredExisting = existingVideos.filter(v => !newVideoIds.has(v.videoId));
+    // decodeHtmlEntities() below only ever ran on freshly-fetched (curatedVideos) entries — a
+    // video carried forward from a previous run's existingVideos never got re-decoded, so any
+    // entry stored before this fix existed just kept rotating through the feed with its raw
+    // "&amp;"/"&quot;" intact indefinitely, never healing on its own. Re-decoding here too closes
+    // that gap for good, not just for whatever happened to be in the feed the day this was added.
+    const filteredExisting = existingVideos
+      .filter(v => !newVideoIds.has(v.videoId))
+      .map(v => ({
+        ...v,
+        title: decodeHtmlEntities(v.title || ""),
+        channel: v.channel ? decodeHtmlEntities(v.channel) : v.channel,
+        description: v.description ? decodeHtmlEntities(v.description) : v.description,
+      }));
 
     const finalVideos = [...curatedVideos, ...filteredExisting].slice(0, 15); // Keep up to 15 in the feed
 
