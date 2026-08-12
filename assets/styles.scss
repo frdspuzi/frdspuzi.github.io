@@ -1,4 +1,6 @@
---- --- // Primer is self-hosted (assets/vendor/primer.css, linked in header.html's <head>) rather than
+---
+---
+// Primer is self-hosted (assets/vendor/primer.css, linked in header.html's <head>) rather than
 // imported from unpkg.com — see the comment there for why. Not a CSS @import here either way:
 // an @import can only be discovered after this file itself is downloaded and parsed, so it can't
 // load in parallel with it regardless of where the CSS actually comes from.
@@ -390,7 +392,7 @@ body {
 // across browsers.
 .aurora-text {
   display: inline-block;
-  background: linear-gradient(90deg, #ffffff, #7928CA, #0070F3, #38bdf8, #FF0080);
+  background: linear-gradient(90deg, #FF0080, #7928CA, #0070F3, #38bdf8, #FF0080);
   background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -845,32 +847,7 @@ body {
   display: inline-flex;
 }
 
-// Summary-row placement (youtube_feed.html/thoughts.html/photography.html, 2026-08-05) — only
-// shown while its section is actually open, reusing the exact `.is-open` class accordion.js
-// already keeps in sync (same class already driving the chevron rotation and header divider
-// just above this in the file) rather than adding a second, separately-timed mechanism. This
-// matters for more than just tidiness: `.is-open` is removed at the *start* of closing (on
-// `accordion:willclose`), not after the ~460ms close animation finishes, so the icon disappears
-// right as the section starts collapsing instead of lingering through the whole close.
-.goo-popover-summary {
-  display: none;
-}
-
-.animated-details.is-open .goo-popover-summary {
-  display: inline-flex;
-}
-
 .goo-popover-trigger {
-  // Primer's own base reset sets `button { -webkit-appearance: button; }` on every bare
-  // <button> — on some browsers that draws native OS button chrome that can paint over custom
-  // background/text styling entirely, which is what was actually hiding the "i" (reported by
-  // the user as "the button is there but the i is not there": the circular border still showed
-  // — border/box-shadow generally survive native appearance — but the glyph itself didn't).
-  // `appearance: none` fully suppresses that native rendering before any of the custom styling
-  // below is applied.
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -886,9 +863,7 @@ body {
   font-style: italic;
   font-weight: 700;
   font-size: 12px;
-  line-height: 20px; // matches the trigger's own fixed height — a block-level span centers more
-  // reliably this way than relying on flex-centering a bare text node, which
-  // has known cross-browser edge cases with anonymous flex items.
+  line-height: 1;
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
