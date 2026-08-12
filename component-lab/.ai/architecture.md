@@ -1,8 +1,6 @@
 # component-lab Architectural Context
 
-**This is a different project from the one described by the repo root's `.ai/architecture.md`.** That file documents the live Jekyll site on `master` — Liquid, Primer, vanilla per-include JS, GitHub Actions content pipeline. None of it is binding here; this directory is a from-scratch Vite + React + TypeScript port of the same site, built on branch `feat/component-lab`. Read this file, not the root one, before touching anything under `component-lab/`.
-
-**End goal:** eventually replace Jekyll as what actually deploys to frdspuzi.github.io. Cutting the live GitHub Pages deployment over is an explicit, separate, later, re-confirmed phase — not started, not implied by anything below. It touches `.github/workflows/*.yml`, which per the repo root's `CLAUDE.md` needs a heads-up first (PAT with `workflow` scope) regardless of which branch/subproject is asking.
+**This is now the only project in this repo.** It started as a from-scratch Vite + React + TypeScript port of what used to be a Jekyll site, built on branch `feat/component-lab`; as of 2026-08-12 it's merged into `master` and is what actually deploys to frdspuzi.github.io (via `.github/workflows/deploy-pages.yml`, GitHub Pages' Source set to "GitHub Actions"). The Jekyll source, the root `.ai/architecture.md` this section used to point away from, and `DESIGN.md` have all been deleted — there's nothing else to cross-reference anymore. Read `component-lab/.ai/handoff.md` for the deployment cutover's own history and the bugs that surfaced along the way.
 
 **The approved build plan lives outside this repo** at `C:\Users\frdsp\.claude\plans\clever-sleeping-papert.md` (a Claude Code plan file, not checked into git) — read it for the full build order and the reasoning behind the architecture decisions below if it still exists; this file is the durable, git-tracked record in case that plan file is ever cleaned up.
 
@@ -59,6 +57,7 @@ If a new bug shows up anywhere near open/close animation, suspect one of these f
 
 ## Not Yet Decided / Explicitly Deferred
 
-- The actual GitHub Pages deployment cutover (see "End goal" above).
-- Whether the AI-content GitHub Actions scripts should ever write somewhere other than `_data/*.json` once/if this replaces Jekyll.
+- The GitHub Pages deployment cutover happened 2026-08-12 — no longer deferred, see handoff.md.
+- Whether the AI-content GitHub Actions scripts should ever write somewhere other than `_data/*.json` — still an open question, now more relevant since this is the permanent home rather than a maybe-someday one.
 - Whether `useTheme`/`ThemeToggle` (ported from beui.dev's own theme-toggle reference) and the goo-popover (ported from beui.dev's Popover) should be re-examined under the "check registries first" rule above — they were built before that rule was established; not yet revisited.
+- Whether `component-lab/` should move up to the repo root now that it's the only project — currently left as a subdirectory since that's a separate, bigger restructuring (updating the deploy workflow's `working-directory`, every relative import, etc.) than "retire the dead Jekyll files."

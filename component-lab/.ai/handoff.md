@@ -1,11 +1,12 @@
 # component-lab Handoff Briefing
 
-**To the incoming agent/session:** you're on branch `feat/component-lab`, working on a full Vite + React port of frdspuzi.github.io — a different project from what the repo root's `.ai/handoff.md`/`.ai/architecture.md` describe (the live Jekyll site on `master`). Read `component-lab/.ai/architecture.md` first for the persistent rules (tech stack, the component-sourcing rule, the shared accordion system's hard-won invariants), this file for current state.
+**To the incoming agent/session:** `component-lab/` is a full Vite + React port of frdspuzi.github.io, and as of 2026-08-12 it **is the live site** — merged into `master`, and GitHub Pages' Source setting switched from "Deploy from a branch" (the old Jekyll auto-build) to "GitHub Actions" (deploys `component-lab/dist` via `.github/workflows/deploy-pages.yml`). The Jekyll source that used to live at the repo root (`_includes/`, `_layouts/`, `assets/styles.scss`, `DESIGN.md`, the root `.ai/` pair) has been deleted — there is no second stack to worry about anymore. Read `component-lab/.ai/architecture.md` first for the persistent rules (tech stack, the component-sourcing rule, the shared accordion system's hard-won invariants), this file for current state.
 
-**This repo currently has two live branches with fundamentally different stacks — don't assume you're on the one you expect:**
-- `master` — the live Jekyll site, deploys to frdspuzi.github.io via GitHub Pages. Its own `.ai/architecture.md`/`.ai/handoff.md` at the repo root apply there.
-- `feat/component-lab` — this branch. A from-scratch Vite + React + TypeScript port living in `component-lab/`, not yet deployed anywhere, not yet pushed to origin. Its own `.ai/` pair (this directory) applies here.
-Run `git rev-parse --abbrev-ref HEAD` if in doubt before trusting either pair of docs.
+**Still shared with the old content pipeline, not Jekyll-specific — don't delete these thinking they're leftover Jekyll cruft:** `_data/*.json`, `_posts/*.md` (both imported directly by `component-lab/src`), and `assets/{photography,youtube-thumbnails,medium-images}/` (synced into `component-lab/public/assets/` by `scripts/sync-assets.js` on every `predev`/`prebuild` — never committed there directly). All written by `.github/scripts/*.js` on the same schedule as before.
+
+## Status (2026-08-12 session end)
+
+**Deployed to production this session.** Merged `feat/component-lab` into `master`, built the `deploy-pages.yml` workflow (with the standard GitHub-Pages-SPA-routing 404.html trick, since this app uses `BrowserRouter`), and — after several real bugs surfaced only once it was actually live (a squished Jekyll front-matter line that had silently broken the *old* site's CSS for a while, an accidental content revert in a follow-up fix commit, `[skip ci]` on every automated content commit meaning the deploy workflow never fired after a content refresh, and stale committed image copies in `public/assets/` going out of sync with the root `assets/` folders) — confirmed working end-to-end via a real headless-Chrome-driven verification (`chrome-launcher` + `puppeteer-core`, both already in `node_modules` from the Lighthouse tooling). See git log around this date for the full bug chain and fixes; the short version is captured in the "Still shared" note above and the deploy workflow's own comments.
 
 ## Status (2026-08-07 session end)
 
