@@ -1,12 +1,31 @@
 name: Deploy component-lab to GitHub Pages
 
-# Runs on every push to master, including the AI-content workflows' own automated commits (they
-# push directly to master, which fires this the same as a manual push) — keeps the deployed site
-# in sync with _data/*.json without a separate trigger, since component-lab imports those files
-# directly at build time rather than fetching them at runtime.
+# push: for direct/manual pushes to master (this workflow's own commits, anything pushed by
+# hand). NOT sufficient by itself for the AI-content workflows below, even though they also push
+# to master: every one of them commits with "[skip ci]" (see each workflow's own commit step) —
+# a GitHub-recognized directive that suppresses *all* workflow runs triggered by that push,
+# including this one, regardless of how the workflow that made the commit was itself triggered
+# (cron or manual workflow_dispatch both still produce a "[skip ci]" commit). Confirmed the hard
+# way: manually running Fetch Medium/Unsplash still didn't redeploy component-lab, and the site
+# fell back to serving the classic Jekyll build in the meantime.
+#
+# workflow_run is the fix — it triggers on another workflow's *completion*, a separate event from
+# the push itself, so it isn't subject to that same "[skip ci]" push-event suppression. Every
+# workflow that writes to _data/*.json (which component-lab imports directly at build time, not
+# at runtime) is listed here, so any content refresh — scheduled or manual — keeps the deployed
+# build in sync without needing a second, unskipped commit.
 on:
   push:
     branches: [master]
+  workflow_run:
+    workflows:
+      - "Daily AI Content Generation"
+      - "AI Gratitude Generator"
+      - "AI Learning Trivia"
+      - "AI YouTube Curator"
+      - "Fetch Medium Articles"
+      - "Fetch Unsplash Photos"
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -23,9 +42,18 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Only proceed for a workflow_run if the triggering workflow actually succeeded — it still
+    # fires on failure/cancellation, and there's nothing new to deploy if the content fetch
+    # itself didn't complete (no commit means no push means _data/*.json didn't change).
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # workflow_run doesn't check out the commit that triggered it by default (it resolves
+          # to this workflow file's own ref instead) — head_sha is the actual commit the content
+          # workflow just pushed, which is what needs building.
+          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.ref }}
 
       - name: Set up Node
         uses: actions/setup-node@v4
