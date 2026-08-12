@@ -14,6 +14,13 @@ dist-ssr
 lighthouse-report*.html
 lighthouse-report*.json
 
+# Synced fresh from the root assets/ folders by scripts/sync-assets.js (predev/prebuild) — never
+# committed here, so there's only ever one real copy (the root, written by
+# .github/scripts/*.js) instead of two that can silently drift apart.
+public/assets/photography
+public/assets/youtube-thumbnails
+public/assets/medium-images
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
