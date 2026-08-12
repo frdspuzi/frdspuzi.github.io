@@ -1,0 +1,1699 @@
+// Primer is self-hosted (assets/vendor/primer.css, linked in header.html's <head>) rather than
+// imported from unpkg.com — see the comment there for why. Not a CSS @import here either way:
+// an @import can only be discovered after this file itself is downloaded and parsed, so it can't
+// load in parallel with it regardless of where the CSS actually comes from.
+//
+// A Sass build-time @import (merging primer.css into this file, one request instead of two) was
+// tried and reverted same day: Jekyll's Sass toolchain (jekyll-sass-converter 1.5.2 / the legacy
+// Ruby `sass` gem, effectively unmaintained) has a real bug processing Primer's file this way —
+// it inserted two huge blocks of pure whitespace (104KB and 16KB, confirmed absent from the
+// source file, so genuinely introduced by the compiler) right at the boundaries between Primer's
+// own internally-concatenated license comments (Primer-core/Primer-product/Primer-marketing).
+// Not worth the risk for what was already the smaller of two wins that day (self-hosting Fira
+// Sans, done separately, was the bigger one) — reverted to the known-correct separate <link>
+// approach rather than ship CSS with an unpredictable compiler bug in it.
+//
+// component-lab port note: Primer is imported directly in main.tsx instead (plain CSS import,
+// bundled by Vite/PostCSS — a modern bundler, not the old Ruby Sass gem the comment above is
+// about, so that specific bug doesn't apply here). This file is the rest of the original
+// styles.scss, front-matter stripped (Jekyll's empty `---\n---` marker isn't valid SCSS).
+@import 'highlight-syntax';
+
+// Site-wide font: Fira Sans, self-hosted (assets/fonts/, weights 400/500/600/700 — the actual
+// set of weights used anywhere on the site) instead of loaded live from Google Fonts, 2026-08-03.
+// Google Fonts cost two chained cross-origin requests on every page load: fetch CSS from
+// fonts.googleapis.com, which then points at font files on fonts.gstatic.com — a second origin,
+// a second round-trip, neither loadable in parallel with the first. Self-hosting removes both;
+// the @font-face rules below are just more of the CSS the browser is already fetching. Only the
+// `latin`/`latin-ext` Unicode subsets were downloaded (not Google's other 5: cyrillic, cyrillic-
+// ext, greek, greek-ext, vietnamese) — this site has no content in those scripts, so shipping
+// those subsets would be pure waste. If that ever changes, re-fetch the full set from
+// `https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap` with a
+// real Chrome User-Agent (a generic one gets served .ttf, not .woff2 — content negotiation keys
+// off recognizing the UA specifically) and add the missing subsets' files + @font-face rules.
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-400-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-500-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-500-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-600-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-600-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-700-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/assets/fonts/fira-sans-700-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+// Overrides Primer's own `body { font-family: -apple-system, ... }` — same specificity (element
+// selector), wins on source order since this comes after Primer's @import above. System stack
+// kept as the fallback chain, not dropped, in case the web font fails to load for any reason.
+// `.github-component` (repo-card.html/topic-card.html) deliberately keeps the old system stack
+// instead of inheriting this — it exists specifically to stop a custom font from bleeding into
+// elements meant to look like authentic GitHub UI, see its own comment further down this file.
+html {
+  // Anchors .min-height-full's `min-height: 100%` below (a percentage, which needs a definite-
+  // height ancestor to resolve against — without this it silently does nothing, since <html>'s
+  // own default height is auto/content-sized). Also the actual fix for the theme toggle's
+  // view-transition wipe not covering the whole screen on a page shorter than the viewport: the
+  // transition's root snapshot is sized to documentElement's own box, which was only ever as
+  // tall as its content without this.
+  height: 100%;
+}
+
+body {
+  font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  // Masthead's shader background breaks out of <main>'s centered container to full viewport
+  // width via `width: 100vw; transform: translateX(-50%)` — in most browsers 100vw includes the
+  // scrollbar's own width, which would otherwise introduce a horizontal scrollbar. This is the
+  // only thing on the page that intentionally bleeds past the container, so it's safe globally.
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+// Design tokens (see DESIGN.md). Both themes' values ship to the browser always; a
+// `data-theme="dark"` attribute on <html> (set by Liquid at build time from `site.style`,
+// overridable at runtime by the theme toggle in floating_toc.html) picks which applies.
+:root {
+  --fg: #24292e;
+  --fg-muted: #586069;
+  --fg-faint: #959da5;
+  --border: #e1e4e8;
+  --surface: #ffffff;
+  --surface-alt: #f6f8fa;
+  --surface-page: #f6f8fa;
+  --surface-raised: #ffffff;
+  --accent: #0969da;
+  --accent-bg: #ddf4ff;
+  --accent-border: #b6e3ff;
+  --success-bg: #dcffe4;
+  --success-fg: #176f2c;
+  --danger: #cb2431;
+  --btn-primary: #2ea44f;
+  // Solid-fill button blue — distinct from --accent, whose dark value (#58a6ff) is meant
+  // for text/icons and reads too washed-out as a filled button background.
+  --accent-solid: #0969da;
+  --accent-solid-hover: #035fc7;
+  // Whisper-subtle "just barely visible" outline used by the collapsible section wrappers
+  // (youtube_feed/thoughts/photography.html) — tinted opposite the theme's own background.
+  --overlay-bg: rgba(0, 0, 0, 0.01);
+  --overlay-border: rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] {
+  // Near-black, Material-dark-inspired — deliberately darker and less blue-tinted than
+  // GitHub's own dark theme grays this block used before. Elevation order preserved
+  // (surface-alt darkest → surface → surface-raised → surface-page lightest).
+  --fg: #c9d1d9;
+  --fg-muted: #8b949e;
+  --border: #2a2a2a;
+  --surface: #121212;
+  --surface-alt: #0a0a0a;
+  --surface-page: #1e1e1e;
+  --surface-raised: #1a1a1a;
+  --accent: #58a6ff;
+  --accent-bg: rgba(31, 111, 235, 0.2);
+  --accent-border: rgba(56, 139, 253, 0.4);
+  // Translucent, not solid — a flat #34d058 measured at 1.3:1 contrast against --success-fg
+  // text (near-unreadable). A dark-tinted overlay keeps the "green alert" feel while giving
+  // the bright green text something dark enough to read against (~10:1).
+  --success-bg: rgba(46, 160, 67, 0.15);
+  --success-fg: #7ee787;
+  --accent-solid: #1f6feb;
+  --accent-solid-hover: #388bfd;
+  --overlay-bg: rgba(255, 255, 255, 0.01);
+  --overlay-border: rgba(255, 255, 255, 0.05);
+  // --danger, --btn-primary, --fg-faint intentionally unchanged — already theme-invariant.
+}
+
+// Utility classes replacing the old per-element {% if site.style == 'dark' %}CLASS-A{% else %}CLASS-B{% endif %}
+// pattern in _layouts/*.html, masthead.html, interests.html, projects.html — one static class each,
+// themed via the tokens above instead of picking a fixed Primer class at build time.
+.theme-fg {
+  color: var(--fg);
+}
+
+.theme-fg-muted {
+  color: var(--fg-muted);
+}
+
+.theme-surface {
+  background: var(--surface);
+}
+
+.theme-surface-page {
+  background: var(--surface-page);
+  border-color: var(--border);
+}
+
+.theme-border {
+  border-color: var(--border);
+}
+
+// One-off: youtube_feed.html's "flash" notice panel used a translucent white tint in dark
+// mode instead of a solid surface, so it isn't a plain token swap — scoped override instead.
+.yt-flash {
+  background: var(--surface-alt);
+}
+
+[data-theme="dark"] .yt-flash {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+// Primer's own stock button/text classes (.btn, .btn-outline, .btn-invisible, .text-gray)
+// have their own fixed light-mode colors baked into the imported Primer CSS bundle — never
+// themed at all before. Scoped dark-mode overrides here, since these are Primer's classes,
+// not ours to redefine in :root. (.btn-blue already has its own override, further below.)
+//
+// `background-image: none` matters here: classic Primer buttons paint a light gradient via
+// `background-image`, layered *on top of* `background-color` — overriding only the color
+// (as an earlier pass here did) leaves the light gradient visibly showing through. Also
+// using `!important` throughout this block: Primer's own button rules turned out to have
+// enough internal specificity/gradient layering that plain `[data-theme="dark"] .btn { }`
+// wasn't reliably winning — confirmed by screenshots showing several buttons still light.
+[data-theme="dark"] .btn {
+  color: var(--fg) !important;
+  background-color: var(--surface-raised) !important;
+  background-image: none !important;
+  border-color: var(--border) !important;
+}
+
+[data-theme="dark"] .btn:hover {
+  background-color: var(--surface) !important;
+  background-image: none !important;
+}
+
+[data-theme="dark"] .btn-outline {
+  color: var(--accent) !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: var(--accent) !important;
+}
+
+[data-theme="dark"] .btn-outline:hover {
+  color: #ffffff !important;
+  background-color: var(--accent-solid) !important;
+  background-image: none !important;
+  border-color: var(--accent-solid) !important;
+}
+
+[data-theme="dark"] .btn-invisible {
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent !important;
+  color: var(--fg-muted) !important;
+}
+
+[data-theme="dark"] .btn-invisible:hover {
+  background-color: var(--surface-alt) !important;
+  background-image: none !important;
+  color: var(--fg) !important;
+}
+
+// .trivia-btn (learning_board.html) also carries Primer's bare .btn class — same gradient
+// issue, same fix.
+[data-theme="dark"] .trivia-btn {
+  background-image: none !important;
+  color: var(--fg) !important;
+}
+
+// Primer's .Box component (article cards in thoughts.html, YouTube's video-info box) and
+// .form-control (the gratitude textarea) — both solid white by default, never themed at all.
+[data-theme="dark"] .Box {
+  background-color: var(--surface) !important;
+  border-color: var(--border) !important;
+  color: var(--fg) !important;
+}
+
+[data-theme="dark"] .form-control {
+  background-color: var(--surface-raised) !important;
+  border-color: var(--border) !important;
+  color: var(--fg) !important;
+}
+
+[data-theme="dark"] .form-control::placeholder {
+  color: var(--fg-muted);
+}
+
+// Primer's bare .border/.border-top utilities (learning-board, topic/repo/post-card,
+// the Insights & Writing card's own bottom divider) bake in `!important` on a light-mode-only
+// #e1e4e8, the same "never themed at all" issue as .Box/.form-control above — .theme-border's own
+// border-color: var(--border) (no !important) was already applied alongside these on every one of
+// those elements, but was silently losing the cascade to Primer's !important. Found via the light
+// outline still showing on the "AI Insight of the Day" card in dark mode (2026-08-04).
+[data-theme="dark"] .border,
+[data-theme="dark"] .border-top {
+  border-color: var(--border) !important;
+}
+
+// !important on all three: Primer's own .text-gray/.link-gray/.text-gray-light rules are
+// themselves !important (light-mode-only colors, e.g. .text-gray's #586069), so a plain
+// (non-important) override here silently loses the cascade in dark mode — same bug class already
+// documented above for .border/.border-top. Concretely caught by Lighthouse: Gratitude's
+// "Before you scroll, try this..." toggle text rendered at #586069 on a #1e1e1e background, a
+// 2.61:1 contrast ratio against WCAG AA's 4.5:1 minimum, because this rule was losing to Primer's.
+[data-theme="dark"] .text-gray {
+  color: var(--fg-muted) !important;
+}
+
+[data-theme="dark"] .link-gray {
+  color: var(--fg-muted) !important;
+}
+
+[data-theme="dark"] .link-gray:hover {
+  color: var(--fg) !important;
+}
+
+[data-theme="dark"] .text-gray-light {
+  color: var(--fg-muted) !important;
+}
+
+[data-theme="dark"] .text-gray-dark {
+  color: var(--fg);
+}
+
+// Shared accordion primitive (drives .details-reset <details> sections across the site).
+// See assets/js/accordion.js for the bounce open/close behavior this pairs with.
+.animated-details>summary {
+  list-style: none;
+}
+
+.animated-details>summary::-webkit-details-marker {
+  display: none;
+}
+
+.collapse-arrow {
+  transition: transform 0.42s cubic-bezier(0.34, 1.4, 0.64, 1);
+  transform: rotate(-90deg);
+}
+
+// `.is-open` (JS-managed, accordion.js), not the native `[open]` attribute — `[open]` is
+// deliberately NOT removed until the close animation's `anim.onfinish`, ~460ms after the
+// close actually starts, so the content stays laid out while it visually shrinks. Anything
+// tied to `[open]` directly (this used to be `.animated-details[open]`) stayed in its "open"
+// look for that entire 460ms, then jumped to "closed" in one abrupt step right at the end —
+// the chevron stayed pointed open and the header divider stayed visible the whole time content
+// was shrinking, then both snapped at once. accordion.js removes `.is-open` at the *start* of
+// close() instead (same moment as the `accordion:willclose` event), so these transition in
+// sync with the content instead of trailing behind it. accordion.js also keeps `.is-open`
+// correct on load and on every native `toggle` unconditionally (not just for the animated
+// path), so reduced-motion users get the right chevron/divider state too — never rely on
+// `[open]` here again without re-adding that sync.
+.animated-details.is-open .collapse-arrow {
+  transform: rotate(0deg);
+}
+
+// Header/content divider — only meaningful (and only rendered) while there's content below it
+// to divide from. Used to be an unconditional inline style on <summary>, which meant a CLOSED
+// section still showed it immediately above the <details>'s own outer border — two adjacent
+// 1px lines instead of one.
+.animated-details.is-open>summary {
+  border-bottom: 1px solid var(--overlay-border);
+}
+
+// Mobile: cap the open section's content to roughly the remaining viewport height, with
+// internal scroll for anything taller — so the whole section fits on screen without the page
+// scroll running past its own bottom edge (user request, 2026-08-04: "try to fit everything
+// into the screen"). Companion to accordion-mobile-single-open.js's scrollIntoView, which
+// already puts this section's <summary> at the top of the viewport — the 70px subtracted here
+// (was 90px) is an approximate allowance for that summary bar's own height (p-4 padding +
+// heading + chevron), not a measured exact value; reduced after a follow-up screenshot showed
+// "Insights & Writing" still cutting off the trivia card's last answer option even with the
+// article list already shrunk to a phone-only story tray — 90px was leaving less usable room
+// than the summary bar (plus the small margins the whole content block picks up) actually
+// takes, so this remains a CSS-only approximation, just a closer one, not worth adding JS to
+// compute pixel-perfect. `100dvh` (dynamic viewport height) is declared second so it wins over
+// `100vh` in browsers that support it — accounts for a mobile browser's address bar
+// collapsing/expanding as the visitor scrolls, so this doesn't undercount the actually-visible
+// area. Doesn't fight accordion.js's own inline height-driven animation: CSS max-height always
+// caps the rendered box regardless of what inline `height` accordion.js or youtube_feed.html's
+// own ResizeObserver set, so this only ever visibly kicks in once the open animation has
+// already settled. Same nested-scroll-region touch properties as #medium-posts' .custom-scrollbar
+// (thoughts.html) and for the same reason — this is also a scroll region nested inside the
+// page's own scroll, and iOS Safari's default touch handling for a *nested* overflow region
+// does nothing at all on swipe without `-webkit-overflow-scrolling: touch` explicitly set
+// (already diagnosed once this session for that other region).
+@media (max-width: 767px) {
+  .animated-details.is-open>.accordion-content {
+    max-height: calc(100vh - 70px);
+    max-height: calc(100dvh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+}
+
+// Aurora Text — animated rainbow gradient clipped to text. Deliberately not built from the
+// --accent tokens above; this one flourish uses its own fixed rainbow palette on purpose.
+//
+// `aurora-shift` is the ambient continuous shimmer (always on). The on-load reveal sweep is
+// driven separately by assets/js/aurora-reveal.js via an animated `mask-image` — a ported
+// adaptation of the real https://magicui.design/docs/components/dia-text-reveal algorithm
+// (a soft-edged band sweeping left-to-right, revealed region already-visible behind it,
+// unrevealed region hidden ahead of it), NOT a plain hard-edge wipe. It's JS-driven rather
+// than a CSS @keyframes because the reference's easing computes a *moving band position* each
+// frame, not two fixed endpoints — not reducible to a simple linear/cubic-bezier keyframe.
+// `display: inline-block` matters here: mask-image on a plain `inline` span is unreliable
+// across browsers.
+.aurora-text {
+  display: inline-block;
+  background: linear-gradient(45deg, #5e5e5e, #afafaf, #ffffff, #ffffff, #afafaf, #5e5e5e);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: aurora-shift 20s linear infinite;
+}
+
+@keyframes aurora-shift {
+  to {
+    background-position: 300% center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora-text {
+    animation: none;
+    background-position: 0% center;
+  }
+}
+
+// Highlighter underline — a self-drawing SVG underline stroke beneath a specific inline
+// phrase, reference: https://magicui.design/docs/components/highlighter (its "underline"
+// action). The real component delegates to the rough-notation library for a hand-sketched
+// look; reimplemented here with a plain SVG path + the standard pathLength-normalized
+// stroke-dasharray/stroke-dashoffset "line draw" CSS technique instead of adding a new
+// dependency (consistent with every other reference component this session). No JS needed —
+// a pure CSS keyframe, unlike aurora-reveal which genuinely required per-frame computation.
+// Scoped to one specific phrase (index.html's Hadith quote), not a generic site-wide rule.
+.highlight-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight-underline-svg {
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 10px;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.highlight-underline-svg path {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  animation: highlight-draw 700ms ease-out 300ms forwards;
+}
+
+@keyframes highlight-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .highlight-underline-svg path {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+
+// Typing-animation cursor, used by assets/js/quote-typing.js while a blockquote is mid-type.
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  margin-left: 2px;
+  background: currentColor;
+  animation: cursor-blink 0.8s step-end infinite;
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+// Preview Rail (_includes/floating_toc.html) — ported close to 1:1 from the original's own
+// <style> block, not the real @beui/preview-rail component this section used earlier: that
+// component's own default preview panel/rail visual language didn't match this site's minimal
+// tick-mark-only design (a small horizontal bar per section, no icons/text in the rail itself —
+// the label/description only ever show in the separate #rail-preview tooltip on hover/focus).
+// This is genuinely simple enough, and specific enough to this site's own look, that hand-porting
+// the original directly was the right call, not a case of skipping the component-sourcing rule.
+//
+// Primer doesn't set a global box-sizing: border-box reset, so under the browser default
+// (content-box) .rail-tick/#theme-toggle's own width: 100% + padding would add up to MORE than
+// the rail's actual 48px — the button's real box overflows the rail, and centering content
+// *within that overflowing box* doesn't land at the rail's own visual center. Scoping
+// border-box to just this component (not a page-wide reset) keeps width: 100% meaning "the whole
+// rendered button, padding included, is exactly 48px" for every element in here.
+#preview-rail,
+#preview-rail * {
+  box-sizing: border-box;
+}
+
+#preview-rail {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 1000;
+  width: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 12px 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+  // transform (not left/width) so this stays a compositor-only animation, not one of the
+  // "non-composited animation" properties PageSpeed Insights already flagged elsewhere on this
+  // site (aurora-text's background-position, the underline's stroke-dashoffset) — no reason to
+  // add a third instance of that same category of jank risk.
+  transition: transform 0.3s ease;
+}
+
+.rail-tick,
+#rail-collapse-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 6px 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+// Mobile-only feature (a phone-specific request, not desktop) — hidden here unconditionally,
+// re-enabled only inside the max-width:767px block below. Desktop never sees this button at all,
+// and (since the max-width scoping also applies to html.rail-pref-hidden #preview-rail's
+// transform rule) a railHidden preference saved on mobile has zero effect if the same browser is
+// later used at a desktop width — the rail always shows there regardless of what was chosen on a
+// phone.
+#rail-collapse-btn {
+  display: none;
+}
+
+// Own color/hover treatment, not shared with .rail-tick — this button isn't part of the
+// section-proximity-scaling system, so it gets a plain, static hover state instead of a
+// tick-mark scale. justify-content: center overrides .rail-tick's shared base rule specifically
+// because this button holds a centered icon (like #theme-toggle below it), not a left-aligned
+// tick-mark bar — without this, the icon sits flush-left instead of lining up in the same column
+// as the theme toggle's icon.
+#rail-collapse-btn {
+  justify-content: center;
+  color: var(--fg-muted);
+}
+#rail-collapse-btn:hover,
+#rail-collapse-btn:focus-visible {
+  color: var(--accent);
+}
+
+.rail-tick .tick-mark {
+  display: block;
+  width: 24px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--border);
+  transform: scale(1);
+  transform-origin: left center;
+  transition: transform 0.4s cubic-bezier(0.22, 1.4, 0.36, 1), background-color 0.2s ease;
+}
+
+.rail-tick:hover .tick-mark,
+.rail-tick:focus-visible .tick-mark,
+.rail-tick.toc-active .tick-mark {
+  background: var(--accent);
+}
+
+#rail-preview {
+  position: fixed;
+  top: 24px;
+  left: 56px;
+  z-index: 1000;
+  min-width: 180px;
+  max-width: 220px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.12);
+  padding: 10px 14px;
+  opacity: 0;
+  visibility: hidden;
+  filter: blur(4px);
+  transform: translateX(-6px);
+  transition: opacity 0.2s ease, transform 0.25s cubic-bezier(0.22, 1.4, 0.36, 1), filter 0.2s ease, visibility 0.2s;
+  pointer-events: none;
+}
+
+#rail-preview.visible {
+  opacity: 1;
+  visibility: visible;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+#rail-preview-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--fg);
+  margin: 0 0 4px 0;
+}
+
+#rail-preview-desc {
+  font-size: 12px;
+  color: var(--fg-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+// Same opacity/visibility show-hide convention as #rail-preview above, for consistency — hidden
+// and non-interactive by default, only ever shown while html.rail-pref-hidden is set (i.e. only
+// once the rail itself has actually finished sliding away). display: none here is a separate,
+// viewport-based gate on top of that — see #rail-collapse-btn's comment above for why this whole
+// feature is mobile-only; the max-width:767px block below is what turns this display into flex,
+// only at mobile widths.
+#rail-handle {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  z-index: 1000;
+  width: 22px;
+  height: 48px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  background: var(--surface);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+  color: var(--fg-muted);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s, color 0.2s ease;
+  pointer-events: none;
+}
+html.rail-pref-hidden #rail-handle {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+#rail-handle:hover,
+#rail-handle:focus-visible {
+  color: var(--accent);
+}
+
+@media (max-width: 767px) {
+  // Tick-only nav on narrow screens — no room for the preview panel beside it.
+  #rail-preview {
+    display: none;
+  }
+
+  // The collapse feature (button, handle, and the rule that actually slides the rail away) is
+  // scoped entirely to this block — requested for phone specifically, not desktop, so desktop
+  // never shows the button at all and a railHidden preference saved on mobile has zero effect if
+  // the same browser is later used at a desktop width.
+  #rail-collapse-btn {
+    display: flex;
+  }
+  #rail-handle {
+    display: flex;
+  }
+  html.rail-pref-hidden #preview-rail {
+    transform: translateX(-100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rail-tick .tick-mark {
+    transition: background-color 0.2s ease;
+  }
+  #rail-preview {
+    transition: opacity 0.15s ease, visibility 0.15s;
+    filter: none !important;
+    transform: none !important;
+  }
+  #preview-rail {
+    transition: none;
+  }
+  #rail-handle {
+    transition: color 0.2s ease;
+  }
+}
+
+// Rectangle theme toggle (_includes/floating_toc.html) — reference:
+// https://beui.dev/components/motion/theme-toggle
+// Lives as the last flex item inside #preview-rail (not its own fixed position), so it
+// always sits directly below the nav ticks regardless of how many there are.
+#theme-toggle {
+  width: 100%;
+  // Top/bottom of the divider line (border-top, below) are deliberately balanced: the rail's own
+  // flex `gap: 14px` is the only space above the line (no extra margin-top), and padding-top
+  // matches it at 14px, so the line sits equidistant between the last tick above and the icon
+  // below — previously `margin-top: 4px` stacked on top of the 14px gap (18px total above) while
+  // `padding-top` was only 8px, visibly closer to the icon than to the tick above it.
+  padding: 14px 12px 4px;
+  margin-top: 0;
+  border: none;
+  border-top: 1px solid var(--border);
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--fg-muted);
+}
+
+#theme-toggle:hover {
+  color: var(--accent);
+}
+
+#theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
+#theme-toggle .icon-moon {
+  display: block;
+}
+
+#theme-toggle .icon-sun {
+  display: none;
+}
+
+[data-theme="dark"] #theme-toggle .icon-moon {
+  display: none;
+}
+
+[data-theme="dark"] #theme-toggle .icon-sun {
+  display: block;
+}
+
+// Rectangular bottom-up reveal wipe, driven by document.startViewTransition() in
+// floating_toc.html — "400ms + ease-out mirrors native OS mode-switch timing."
+::view-transition-old(root) {
+  animation: none;
+}
+
+::view-transition-new(root) {
+  animation: theme-reveal 400ms ease-out;
+}
+
+@keyframes theme-reveal {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
+
+// Bouncy-accordion "joined list" grouping — the part the first accordion pass was missing.
+// Reference: https://beui.dev/components/motion/bouncy-accordion (ROW_TRANSITION spring,
+// duration 0.55/bounce 0.38, animates border-radius/spacing based on startsGroup/endsGroup).
+// Applies to the 3 main homepage sections only (assets/js/accordion-grouping.js computes
+// which modifier classes apply); reuses the accordion-open bounce curve above instead of a
+// 5th easing curve — its 580ms/strong-overshoot spec is already close to the reference's own
+// row-transition timing.
+// Default (and no-JS/pre-JS fallback) is rounded + spaced — matches the original always-open
+// appearance safely. JS only ever *adds* the flush "joined" treatment for the specific case
+// of two adjacent closed sections; it never has to add rounding/spacing back on top of a
+// broken flush default, so a script failure degrades to "always separated," not "always
+// joined with no rounding" (which would look broken, not just less fancy).
+.js-accordion-group {
+  margin-top: 32px;
+  border: 1px solid var(--overlay-border);
+  border-radius: 12px;
+  transition: margin-top 0.58s cubic-bezier(0.34, 1.56, 0.64, 1),
+    border-radius 0.58s cubic-bezier(0.34, 1.56, 0.64, 1),
+    border-top-color 0.58s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.js-accordion-group:first-child {
+  margin-top: 0;
+}
+
+.js-accordion-group.group-joined-top {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  // The item directly above already contributes a border-bottom at this exact seam — without
+  // this, two adjacent 1px borders stack into a visibly thicker line right where they join.
+  // Fades the color to transparent rather than `border-top: none` — border-style isn't
+  // animatable, so a hard style switch happens instantly while margin-top is still smoothly
+  // shrinking over the next 460ms, leaving a visible borderless gap for that whole stretch
+  // before it "snaps" flush. border-top-color IS animatable, so this fades in sync instead.
+  border-top-color: transparent;
+}
+
+.js-accordion-group.group-joined-bottom {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-accordion-group {
+    transition: none;
+  }
+}
+
+// Optical padding: each of the 3 main sections' content wrapper ends in a row of bordered/solid
+// elements (buttons, carousels) that sit close to this element's own bottom edge — a bit of
+// extra space compensates for that visual weight. NOT a `padding-bottom` override: this exact
+// element (`summary + div`) is `accordion.js`'s `content`, whose open()/close() animates
+// `paddingBottom` via WAAPI. A `padding-bottom: ... !important` override was tried first — it
+// survived close/reopen (fixed a real bug where an *inline* version of the same idea got wiped
+// by the animation's own cleanup), but broke differently: `!important` declarations always beat
+// Web Animations API values in the cascade regardless of `fill` mode, so the override was
+// fighting the WAAPI keyframes for the same property on every open/close, and lost the padding
+// after the animation rather than before it. A `::after` spacer sidesteps the conflict entirely
+// — it doesn't touch `padding-bottom` at all, so there's nothing for the animation and a
+// stylesheet rule to contend over. It's still ordinary content inside `content`'s own box, so it
+// gets clipped correctly by the same height/overflow animation as everything else during
+// open/close — no special-casing needed, same as any other static child.
+.accordion-content::after {
+  content: '';
+  display: block;
+  height: 24px;
+}
+
+// Social icons (masthead.html) — reference: https://uiverse.io/wilsondesouza/brave-earwig-75.
+// uiverse.io blocks automated fetching (WebFetch/curl both got 403s across three different
+// component URLs), so this was reimplemented from the raw CSS the user copied via the site's own
+// "copy code" button and pasted directly, rather than a live fetch — same faithful-port approach
+// as every other reference component this session, just a different source of the original code.
+// Circular icon buttons with a brand-colored fill that rises from the bottom, plus a tooltip that
+// fades/slides up — both on hover, or on `.is-active` (see the touch/tap handling in
+// masthead.html's own script, since `:hover` doesn't meaningfully exist on a touchscreen and
+// `.is-active` is what a tap toggles instead, driving the exact same CSS). Rest-state color/
+// background switched from the reference's hardcoded light-mode values (#fff bg, #4d4d4d icon)
+// to this site's own design tokens, so it correctly adapts to dark mode — the brand fill colors
+// specifically stay constant regardless of theme, same convention as every other brand-color
+// usage on this site (e.g. .btn-blue).
+.social-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+
+.social-icon-item {
+  position: relative;
+}
+
+.social-icon-tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background: var(--accent-solid);
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 13px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.social-icon-item:hover .social-icon-tooltip,
+.social-icon-item.is-active .social-icon-tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -46px;
+}
+
+// Fixed, not theme-reactive (var(--fg-muted)/--surface/--border) — same reasoning as Masthead.tsx's
+// HERO_TEXT_COLOR: these buttons sit on the shader background, which doesn't respond to the
+// light/dark toggle, so tying their color to the toggle drifts in and out of contrast with it
+// regardless of theme. Only currently used inside the masthead's shader-covered area — revisit
+// this if .social-icon-item is ever reused somewhere with a plain, theme-reactive background.
+.social-icon-item a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon-item:hover a,
+.social-icon-item.is-active a {
+  color: #fff;
+  box-shadow: 3px 2px 45px 0px rgba(0, 0, 0, 0.12);
+}
+
+// SVG fill forced to currentColor (not just inherited) since social_media.yml's icons carry
+// their own hardcoded fill="#959da5"/similar presentation attributes — a plain `fill: currentColor`
+// without !important would still lose to those on some of the icons that set fill on individual
+// child paths/circles rather than just the root <svg>, so every descendant is targeted directly.
+.social-icon-item a svg,
+.social-icon-item a svg * {
+  position: relative;
+  z-index: 1;
+  width: 18px;
+  height: 18px;
+  fill: currentColor !important;
+}
+
+.social-icon-fill {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  // Generic fallback for any configured service without a specific brand color below —
+  // deliberately not hand-picking a brand color for every one of social_media.yml's ~14
+  // services when only github/linkedin are actually configured in _config.yml right now.
+  background-color: var(--accent-solid);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon-item:hover .social-icon-fill,
+.social-icon-item.is-active .social-icon-fill {
+  height: 100%;
+}
+
+// Real per-service brand colors, only for services actually configured (github, linkedin) plus
+// the two others the reference component itself already had colors for (instagram, youtube), in
+// case those get added to _config.yml later. Everything else uses the generic fallback above.
+.social-icon-item a[data-social="linkedin"]~.social-icon-tooltip,
+.social-icon-item a[data-social="linkedin"] .social-icon-fill {
+  background-color: #0274b3;
+}
+
+.social-icon-item a[data-social="github"]~.social-icon-tooltip,
+.social-icon-item a[data-social="github"] .social-icon-fill {
+  background-color: #000000;
+}
+
+.social-icon-item a[data-social="instagram"]~.social-icon-tooltip,
+.social-icon-item a[data-social="instagram"] .social-icon-fill {
+  background: linear-gradient(45deg, #405de6, #5b51db, #b33ab4, #c135b4, #e1306c, #fd1f1f);
+}
+
+.social-icon-item a[data-social="youtube"]~.social-icon-tooltip,
+.social-icon-item a[data-social="youtube"] .social-icon-fill {
+  background-color: #ff0000;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .social-icon-tooltip,
+  .social-icon-item a,
+  .social-icon-fill {
+    transition: none;
+  }
+}
+
+// If a user adds a custom font, this component will stop it from bleeding into GitHub components:
+.github-component {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
+}
+
+.repo-language-color {
+  filter: brightness(125%) !important;
+  border-radius: 50%;
+  display: inline-block;
+  height: 12px;
+  position: relative;
+  top: 2px;
+  width: 12px;
+}
+
+.emoji {
+  width: 18px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.article {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .highlight {
+    margin-bottom: 16px;
+  }
+
+  blockquote {
+    color: #6a737d;
+    border-left: 2px solid #959da5;
+    padding-left: 16px;
+    margin-bottom: 16px;
+  }
+
+  ul,
+  ol {
+    padding-left: 32px;
+    margin-bottom: 16px;
+  }
+
+  li ul,
+  li ol {
+    padding-left: 16px;
+    margin-bottom: 0px;
+  }
+}
+
+// Skeleton loading placeholders (YouTube card, AI Trivia, Medium article list) — shadcn/ui's
+// actual Skeleton component (ui.shadcn.com/docs/components/base/skeleton), confirmed by fetching
+// its real source rather than assuming from the name: a plain opacity pulse via Tailwind's
+// `animate-pulse` (`2s cubic-bezier(0.4, 0, 0.6, 1) infinite`, keyframe `50% { opacity: .5 }`),
+// not a moving left-to-right gradient sweep/shimmer — that's a different, unrelated pattern the
+// user considered and explicitly didn't want. `var(--border)` reused as the fill color rather
+// than introducing a new token — already a light-enough neutral gray in both themes to read as
+// "placeholder," not an actual UI element.
+.skeleton {
+  display: block;
+  background: var(--border);
+  border-radius: 6px;
+  animation: skeleton-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes skeleton-pulse {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: none;
+    opacity: 0.7;
+  }
+}
+
+.min-height-full {
+  min-height: 100vh;
+}
+
+// (i) popover replacing each of the 3 main sections' one-line description paragraph — reference:
+// https://beui.dev/components/motion/popover's "Gooey Popover". Reimplemented in vanilla CSS/JS
+// rather than adopting React/Motion/shadcn (this site has none of that toolchain), same approach
+// as every other beui.dev/magicui reference this session — port the look, not the framework.
+// Desktop reveals via plain :hover/:focus-within below (zero JS); touch press-and-hold is the
+// one thing CSS can't do reliably, handled by assets/js/goo-popover.js toggling `.is-open`.
+.goo-popover {
+  position: relative;
+  display: inline-flex;
+}
+
+// Summary-row placement (youtube_feed.html/thoughts.html/photography.html, 2026-08-05) — only
+// shown while its section is actually open, reusing the exact `.is-open` class accordion.js
+// already keeps in sync (same class already driving the chevron rotation and header divider
+// just above this in the file) rather than adding a second, separately-timed mechanism. This
+// matters for more than just tidiness: `.is-open` is removed at the *start* of closing (on
+// `accordion:willclose`), not after the ~460ms close animation finishes, so the icon disappears
+// right as the section starts collapsing instead of lingering through the whole close.
+.goo-popover-summary {
+  display: none;
+}
+
+.animated-details.is-open .goo-popover-summary {
+  display: inline-flex;
+}
+
+.goo-popover-trigger {
+  // Primer's own base reset sets `button { -webkit-appearance: button; }` on every bare
+  // <button> — on some browsers that draws native OS button chrome that can paint over custom
+  // background/text styling entirely, which is what was actually hiding the "i" (reported by
+  // the user as "the button is there but the i is not there": the circular border still showed
+  // — border/box-shadow generally survive native appearance — but the glyph itself didn't).
+  // `appearance: none` fully suppresses that native rendering before any of the custom styling
+  // below is applied.
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg-muted);
+  padding: 0;
+  cursor: pointer;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px; // matches the trigger's own fixed height — a block-level span centers more
+  // reliably this way than relying on flex-centering a bare text node, which
+  // has known cross-browser edge cases with anonymous flex items.
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.goo-popover-trigger:hover,
+.goo-popover-trigger:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent-border);
+}
+
+// The blurred blob group — dot (coincident with the trigger) + panel-shape (inset:0 over the
+// same box .goo-popover-content occupies) — both live inside the goo filter together, so as
+// panel-shape scales up from the trigger's corner their blurred edges bridge into one merged
+// blob with a soft connecting neck, instead of two separate blurry circles. Deliberately
+// `transform: scale()`, not an animated width/height — CSS can't transition to `height: auto` at
+// all (the same limitation accordion.js works around with WAAPI + a measured scrollHeight rather
+// than a plain CSS transition), and scale is compositor-friendly besides.
+.goo-popover-blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  filter: url(#goo-popover-filter);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.goo-popover-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--surface);
+  transform: scale(0);
+  transition: transform 0.4s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+.goo-popover-panel-shape {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  min-width: 180px;
+  max-width: 240px;
+  width: max-content;
+  height: 64px; // approximate — the real, auto-sized box is .goo-popover-content below; this
+  // blob shape only needs to visually cover roughly the same footprint while
+  // merging with the dot, not pixel-match the final text height exactly.
+  border-radius: 8px;
+  background: var(--surface);
+  transform-origin: top left;
+  transform: scale(0);
+  transition: transform 0.4s cubic-bezier(0.34, 1.4, 0.64, 1);
+}
+
+// Crisp content — never inside the filter, so it never blurs. Opacity-only, delayed slightly so
+// it fades in once the blob has mostly finished merging ("crisp content fading in on top," per
+// the reference's own description).
+.goo-popover-content {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  // Was z-index: 2 - high enough before anything nearby had an explicit stacking context, but
+  // the real beui.dev pill tabs' active-indicator uses Tailwind's z-10 for its own internal
+  // layering, which starts sitting above a tooltip that's meant to always float over normal page
+  // content. 1000 matches #rail-preview's own "floating info panel" z-index elsewhere on this
+  // site, not an arbitrary bump.
+  z-index: 1000;
+  min-width: 180px;
+  max-width: 240px;
+  // Same floating-info-panel visual language as #rail-preview (floating_toc.html) — one shared
+  // look for "a small panel of text hovering near the thing it describes," not a second one.
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.12);
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--fg-muted);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  transition-delay: 0s;
+}
+
+.goo-popover-content a {
+  color: var(--accent);
+}
+
+.goo-popover:hover .goo-popover-dot,
+.goo-popover:focus-within .goo-popover-dot,
+.goo-popover.is-open .goo-popover-dot,
+.goo-popover:hover .goo-popover-panel-shape,
+.goo-popover:focus-within .goo-popover-panel-shape,
+.goo-popover.is-open .goo-popover-panel-shape {
+  transform: scale(1);
+}
+
+.goo-popover:hover .goo-popover-content,
+.goo-popover:focus-within .goo-popover-content,
+.goo-popover.is-open .goo-popover-content {
+  opacity: 1;
+  pointer-events: auto;
+  transition-delay: 0.18s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .goo-popover-blob {
+    display: none;
+  }
+
+  .goo-popover-content {
+    transition: none;
+  }
+
+  .goo-popover:hover .goo-popover-content,
+  .goo-popover:focus-within .goo-popover-content,
+  .goo-popover.is-open .goo-popover-content {
+    transition-delay: 0s;
+  }
+}
+
+// Ported from youtube_feed.html's own inline <style> block — unlike that file's .yt-flash/
+// .btn-blue (already centralized in the live site's assets/styles.scss, confirmed by grep),
+// .yt-facade/.yt-facade-thumb/.yt-facade-play were never actually centralized there either, only
+// ever living in that one include's own <style> tag — missed the first time around since an
+// earlier combined "yt-facade|yt-flash|btn-blue" grep matched on the other two terms and was
+// wrongly read as covering all three. Without these, the facade button/thumbnail have no
+// positioning or sizing at all, so the video thumbnail doesn't render visibly.
+.yt-facade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: none;
+  background: #000;
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.yt-facade-thumb {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+.yt-facade-short .yt-facade-thumb {
+  object-fit: contain;
+}
+
+.yt-facade-play {
+  position: relative;
+  z-index: 1;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.yt-facade:hover .yt-facade-play,
+.yt-facade:focus-visible .yt-facade-play {
+  background: rgba(255, 0, 0, 0.85);
+  transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yt-facade-play {
+    transition: none;
+  }
+
+  .yt-facade:hover .yt-facade-play,
+  .yt-facade:focus-visible .yt-facade-play {
+    transform: none;
+  }
+}
+
+// Below: ported from thoughts.html's and learning_board.html's own inline <style> blocks (never
+// centralized in the live site's assets/styles.scss either — each include ships its own copy,
+// including an identical .btn-blue in both; kept as one copy here). Unlike youtube_feed.html's
+// inline block, these were never duplicated into the global stylesheet upstream, so component-lab
+// needs them added directly.
+
+#medium-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  // Explicit, not left to default: per spec, a non-visible overflow-y with no overflow-x set
+  // computes overflow-x to auto too, which shows a horizontal scrollbar the instant anything in
+  // a row card refuses to shrink (see min-width below) — this section should never scroll
+  // sideways on tablet/desktop, only the mobile story-tray override further down should.
+  overflow-x: hidden;
+  min-height: 0;
+  // A flex item's default min-width is auto (shrink-to-content), not 0 — without this, a long
+  // article title can hold #medium-posts (itself a flex item of .right-column-content) wider
+  // than its column, which is what the overflow-x guard above would otherwise have to mask.
+  min-width: 0;
+  padding-right: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--fg-faint);
+}
+
+.custom-scrollbar {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
+@media (max-width: 767px) {
+  #medium-posts {
+    flex-direction: row;
+    overflow-y: visible;
+    overflow-x: auto;
+    min-height: auto;
+    padding-right: 0;
+    gap: 10px;
+  }
+
+  .custom-scrollbar {
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    touch-action: pan-x;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.medium-card-wrapper {
+  transition: opacity 0.2s ease;
+}
+
+.medium-card {
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  border: 1px solid var(--border);
+}
+
+.medium-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12) !important;
+  transform: translateY(-2px);
+}
+
+.medium-title {
+  color: var(--fg);
+}
+
+.medium-excerpt {
+  color: var(--fg-muted);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.medium-date {
+  color: var(--fg-faint);
+}
+
+.medium-image {
+  background-size: cover;
+  background-position: center;
+}
+
+// background-size: cover on a fixed 120x160 *portrait* box will occasionally crop an
+// unusually wide source image (a landscape banner, say) right through its meaningful content —
+// e.g. "What is Scrum?"'s own cover image is a wide text-left/diagram-right banner, and center-
+// cropping it into a portrait card lands squarely in the empty gap between the two, showing
+// neither. Confirmed this isn't a CSS bug (overlay/image positioning both measured pixel-perfect
+// against the card) — it's an inherent tradeoff of forcing arbitrary, auto-fetched RSS images
+// into a fixed portrait shape with no per-image art-direction. Deliberately left as-is rather than
+// switching to background-size: contain (which would letterbox every card, trading this
+// occasional bad crop for losing the full-bleed photo look on every other card that already
+// crops fine).
+.medium-story-card {
+  position: relative;
+  display: block;
+  width: 120px;
+  height: 160px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--surface-alt);
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease;
+}
+
+.medium-story-card:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.medium-story-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 65%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+
+.medium-story-overlay-top {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 40%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  pointer-events: none;
+}
+
+.medium-story-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.35));
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.medium-story-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-color: rgba(0, 0, 0, 0.55) !important;
+  color: #fff !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  padding: 4px 10px !important;
+}
+
+// No fixed height clamp (removed — was 450px tablet / 648px desktop, matching the two columns'
+// heights to each other): a magic-number height cuts off whichever column's actual content is
+// taller than that guess, and there's no guarantee the Medium tray's card count or the trivia
+// card's expanded-answer-reveal height will ever match it. Both columns just size to their own
+// content now (align-items: flex-start on the parent row in InsightsWriting.tsx already keeps
+// them top-aligned without needing equal heights).
+.right-column-content {
+  min-height: 0;
+  min-width: 0;
+  // The w-100 class on this element in MediumTray.tsx does nothing — this project's compiled
+  // Primer CSS bundle doesn't actually include a .w-100 rule (confirmed: zero matches for that
+  // selector anywhere in primer.css), so this element was really sizing itself at `width: auto`
+  // inside a flex-column parent the whole time. That should still stretch to the parent's full
+  // width by default (align-items: normal computes to stretch) — but in practice the browser was
+  // instead shrink-fitting it to its own overflowing content (the mobile story tray's
+  // fixed-width, flex-shrink: 0 cards), rendering it wider than .right-column-container itself.
+  // An explicit, real width forces the issue regardless of why stretch wasn't winning on its own.
+  width: 100%;
+  max-width: 100%;
+}
+
+// The Medium/trivia columns are two col-lg-6 (width: 50%) flex items sharing a 32px gap — that
+// gap is extra space the flex algorithm has to find room for on top of the 50%+50%, so the row
+// always overflows its own container by exactly the gap width and something has to shrink.
+// Plain width-based sizing left that shrink asymmetric: the trivia column carried the original
+// inline style's flex-shrink-0 (see InsightsWriting.tsx's own comment), so 100% of the 32px came
+// out of the Medium column alone, silently rendering it ~32px narrower than the trivia card next
+// to it — which is what made the pill row above it (sized to match its own column) look
+// misaligned against the trivia card even though it was already correctly matching the boundary
+// it lived in. flex: 1 1 0% sidesteps the whole problem instead of rebalancing it: ignoring
+// col-lg-6's width and computing each column purely from an even split of whatever space the gap
+// leaves keeps both columns equal regardless of content, with no shrink asymmetry possible.
+@media (min-width: 1012px) {
+  .insights-column {
+    flex: 1 1 0%;
+  }
+}
+
+.medium-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background-color: var(--accent-bg);
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.learning-board {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(145deg, var(--surface-raised), var(--surface-page));
+  padding-bottom: 36px !important;
+}
+
+@media (min-width: 768px) {
+  .learning-board {
+    padding-bottom: 44px !important;
+  }
+}
+
+.learning-board:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12) !important;
+}
+
+.trivia-btn {
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background-color: var(--surface-raised);
+}
+
+.trivia-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  background-color: var(--accent-bg);
+  color: var(--accent);
+}
+
+.trivia-correct {
+  background-color: var(--btn-primary) !important;
+  border-color: var(--btn-primary) !important;
+  color: #ffffff !important;
+}
+
+.trivia-wrong {
+  background-color: var(--danger) !important;
+  border-color: var(--danger) !important;
+  color: #ffffff !important;
+}
+
+.trivia-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--border);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.trivia-dot.active {
+  background-color: var(--fg);
+  transform: scale(1.4);
+}
+
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+.shake-anim {
+  animation: shake 0.3s ease-in-out;
+}
+
+.btn-blue {
+  background-color: var(--accent-solid) !important;
+  color: #ffffff !important;
+  border-color: rgba(27, 31, 36, 0.15) !important;
+}
+
+// Ported from photography.html's own inline <style> block — same situation as youtube_feed.html's
+// .yt-facade rules: never actually centralized into the live site's own assets/styles.scss, only
+// ever lived in that one include's <style> tag.
+.infinite-image-field-frame {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--surface-alt);
+  border: 1px solid var(--border);
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.infinite-image-field-frame.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .infinite-image-field-frame {
+    transition: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .infinite-image-field-frame {
+    height: 560px;
+  }
+}
+
+// On mobile, .animated-details.is-open>.accordion-content already stretches to roughly fill the
+// screen (calc(100dvh - 70px), see that rule's own comment) — but this frame's base height above
+// (400px) is a fixed value, not viewport-relative, so it stayed small and left dead space below
+// it inside that same scroll region, unlike Insights & Writing (whose height comes from a real
+// measurement of its own content, so it already fills the available room). Same 70px summary-bar
+// allowance, minus this content's own p-4 padding (16px top + 16px bottom = 32px), since that
+// padding sits inside the same max-height'd region as this frame.
+@media (max-width: 767px) {
+  .infinite-image-field-frame {
+    height: calc(100vh - 102px);
+    height: calc(100dvh - 102px);
+  }
+}
+
+#photography-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+
+.btn-blue:hover {
+  background-color: var(--accent-solid-hover) !important;
+}

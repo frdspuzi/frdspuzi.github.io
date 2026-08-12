@@ -199,18 +199,20 @@
   // on its own. Falls back to the untouched original URL if neither known Medium CDN pattern
   // matches (both `.replace()` calls are no-ops on a non-matching string), rather than guessing
   // at an unfamiliar URL shape.
-  function shrinkMediumImage(url, targetWidth) {
-    return url
-      .replace(/resize:fit:\d+(\/format:\w+)?/, 'resize:fit:' + targetWidth + '/format:webp')
-      .replace(/\/max\/\d+\//, '/v2/resize:fit:' + targetWidth + '/format:webp/');
-  }
-
-  function findImageUrl(item, targetWidth) {
+  // Self-hosted, not hotlinked from cdn-images-1.medium.com: that CDN sets a third-party cookie
+  // (_cfuvid) and no meaningful cache-control headers, both real Lighthouse findings - same fix
+  // already applied to YouTube's facade thumbnails above. fetch_medium.js downloads this for
+  // every article that has one before medium.json is ever written, so it's already committed by
+  // the time a guid shows up in the data - no fallback to the remote URL needed. Still checks
+  // item.content for whether an image exists at all (some articles have none), just no longer
+  // uses the URL it finds there or resizes on the fly (that now happens once, at download time).
+  function findImageUrl(item) {
     var imgRegex = /<img[^>]+src="([^">]+)"/g;
     var match;
     while ((match = imgRegex.exec(item.content)) !== null) {
       if (match[1].indexOf('stat?event') === -1) {
-        return shrinkMediumImage(match[1], targetWidth);
+        var id = item.guid.split('/').filter(Boolean).pop();
+        return '{{ "/assets/medium-images/" | relative_url }}' + id + '.jpg';
       }
     }
     return null;
@@ -220,7 +222,7 @@
   // this session's mobile work, still used on tablet/desktop.
   function buildRowCard(item, category) {
     var excerpt = extractSummary(item.content);
-    var imageUrl = findImageUrl(item, 320);
+    var imageUrl = findImageUrl(item);
 
     var imageHtml = '';
     if (imageUrl) {
@@ -255,7 +257,7 @@
   // computes moves to the link's aria-label instead of being dropped outright.
   function buildStoryCard(item, category) {
     var excerpt = extractSummary(item.content);
-    var imageUrl = findImageUrl(item, 240);
+    var imageUrl = findImageUrl(item);
     var imageStyle = imageUrl ? "background-image: url('" + imageUrl + "');" : '';
 
     var card = document.createElement('div');

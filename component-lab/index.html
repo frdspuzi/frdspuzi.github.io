@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="min-height-full" lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Pre-paint theme sync, ported from header.html's own inline script — runs before React
+         even mounts (this is the static index.html shell, not a component), so a returning
+         visitor who chose dark mode never sees a light-mode flash before the app catches up. -->
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('theme');
+          if (stored === 'light' || stored === 'dark') {
+            document.documentElement.setAttribute('data-theme', stored);
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <!-- Preloaded, not left to the normal CSS-discovers-font flow: site.scss's own @font-face
+         rules only get parsed (and the font downloads only start) after the CSS itself has been
+         fetched and parsed - a real request-chain delay Lighthouse's network-dependency-tree
+         audit flagged. Only the 3 files actually used on this page (400/500/600, latin subset -
+         the -ext subsets and weight 700 aren't referenced by any rendered text here, so
+         preloading them would just waste bandwidth on files the browser wouldn't otherwise
+         fetch). crossorigin is required on font preloads even for same-origin files, per spec -
+         fonts are fetched in "anonymous" CORS mode regardless of origin. -->
+    <link rel="preload" href="/assets/fonts/fira-sans-400-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/fira-sans-500-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/fira-sans-600-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Mohammad Firdaus bin Mohd Puzi</title>
+    <meta
+      name="description"
+      content="Software engineer's personal portfolio and blog — thoughts, technical explorations, and reflections."
+    />
+  </head>
+  <body class="theme-surface-page min-height-full">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
