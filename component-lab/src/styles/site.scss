@@ -464,16 +464,36 @@ body {
     display: none !important;
   }
 
+  // Floats over the content instead of reserving its own row — with the title gone there's
+  // nothing else left in this row to lay out, so the freed space goes to accordion-content
+  // (which now starts at the very top) rather than sitting empty behind a mostly-blank header
+  // bar. pointer-events: none on the row + auto back on the button means a tap in the dead
+  // space around the button (this row no longer has a visible background) doesn't accidentally
+  // trigger the header's own onClick (which toggles the section closed).
   .animated-details.is-maximized>.accordion-header {
-    flex-shrink: 0;
-    justify-content: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: 1;
+    padding: 8px !important; // override Primer's .p-4!important
+    pointer-events: none;
+  }
+
+  .animated-details.is-maximized>.accordion-header .maximize-toggle-btn {
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
   }
 
   .animated-details.is-maximized>.accordion-content {
     flex: 1 1 auto;
+    height: 100%;
     min-height: 0;
     max-height: none !important;
     margin: 0;
+    overflow-y: auto;
   }
 }
 
