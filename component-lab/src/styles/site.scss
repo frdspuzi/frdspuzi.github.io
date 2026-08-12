@@ -403,6 +403,80 @@ body {
   }
 }
 
+// Mobile-only "maximize" toggle for the 3 groupable sections (Accordion.tsx) — a real fullscreen
+// takeover, not just trimming some chrome (explicit user framing: "like how you maximise a
+// window"). The button is a permanent part of the header row in the DOM (discoverable before
+// maximizing, no duplicate element needed), repositioned here via CSS once .is-maximized is
+// active rather than existing twice.
+.maximize-toggle-btn {
+  display: none; // shown only per the media query below, and only for groupable sections
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  color: var(--fg-muted);
+  cursor: pointer;
+  border-radius: 6px;
+  flex-shrink: 0;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.maximize-toggle-btn:hover,
+.maximize-toggle-btn:focus-visible {
+  color: var(--accent);
+  background-color: var(--surface-alt);
+}
+
+@media (max-width: 767px) {
+  .js-accordion-group .maximize-toggle-btn {
+    display: inline-flex;
+  }
+
+  // Equal specificity to .animated-details.is-open>.accordion-content above (3 classes each) —
+  // wins on source order since it's declared after, for the moment an element carries both
+  // .is-open and .is-maximized at once (maximize only ever applies to an already-open section).
+  .animated-details.is-maximized {
+    position: fixed;
+    inset: 0;
+    z-index: 2000; // above #preview-rail/#rail-preview/#rail-handle's own z-index: 1000
+    margin: 0 !important;
+    border-radius: 0 !important;
+    display: flex;
+    flex-direction: column;
+    // --overlay-bg is a near-transparent tint (rgba(...,0.01)) meant to sit on top of the page's
+    // own background while the card is small and in-flow — at fullscreen size it lets everything
+    // behind (the masthead, other sections) show straight through. Needs a real opaque
+    // background here; !important since the background comes from an inline style on this same
+    // element (Accordion.tsx sets `background: var(--overlay-bg)` directly), which otherwise
+    // beats any non-important class rule regardless of specificity.
+    background: var(--surface-page) !important;
+  }
+
+  // The title/goo-popover side and the chevron both hide — only the maximize button (now
+  // showing its "restore" icon) stays visible, giving the header almost nothing left to occupy
+  // beyond that one control. !important because .accordion-header-title also carries Primer's
+  // .d-flex, which is itself display:flex!important — without matching !important here our
+  // higher-specificity plain `display:none` still loses to it.
+  .animated-details.is-maximized .accordion-header-title,
+  .animated-details.is-maximized .collapse-arrow {
+    display: none !important;
+  }
+
+  .animated-details.is-maximized>.accordion-header {
+    flex-shrink: 0;
+    justify-content: flex-end;
+  }
+
+  .animated-details.is-maximized>.accordion-content {
+    flex: 1 1 auto;
+    min-height: 0;
+    max-height: none !important;
+    margin: 0;
+  }
+}
+
 // Aurora Text — animated rainbow gradient clipped to text. Deliberately not built from the
 // --accent tokens above; this one flourish uses its own fixed rainbow palette on purpose.
 //

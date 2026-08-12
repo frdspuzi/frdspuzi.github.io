@@ -1,4 +1,5 @@
-import { useEffect, useRef, type ReactNode } from "react";
+import { Maximize2, Minimize2 } from "lucide-react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { useAccordionGroup } from "@/hooks/useAccordionGroup";
 import { useAnimatedDisclosure } from "@/hooks/useAnimatedDisclosure";
 
@@ -43,6 +44,13 @@ export function Accordion({
   const { isOpen, toggle, register, isJoinedTop, isJoinedBottom, scrollIntoViewIfMobile } =
     useAccordionGroup();
   const detailsRef = useRef<HTMLDivElement>(null);
+  // Mobile-only "maximize" — a true fullscreen takeover (position: fixed, covers the masthead
+  // and every other section) rather than just trimming some chrome, per explicit request: "like
+  // how you maximise a window". Local state, not threaded through useAccordionGroup — only the
+  // currently-open section can be maximized (the button only renders while open, see below), and
+  // mobile single-open already guarantees at most one section is open at a time, so there's
+  // never a real coordination question between sections here.
+  const [isMaximized, setIsMaximized] = useState(false);
 
   useEffect(() => {
     register(id, groupable, defaultOpen, detailsRef.current);
@@ -51,6 +59,13 @@ export function Accordion({
 
   const open = isOpen(id, defaultOpen);
   const contentRef = useAnimatedDisclosure(open, () => scrollIntoViewIfMobile(id), onBeforeMeasure);
+
+  // Un-maximize if the section closes out from under it (e.g. mobile single-open force-closing
+  // this section when another one opens) — maximized-but-closed isn't a reachable state through
+  // the UI, but is one this state could otherwise get stuck in.
+  useEffect(() => {
+    if (!open) setIsMaximized(false);
+  }, [open]);
 
   const joinedTop = isJoinedTop(id);
   const joinedBottom = isJoinedBottom(id);
@@ -63,16 +78,17 @@ export function Accordion({
         (groupable ? " js-accordion-group" : "") +
         (open ? " is-open" : "") +
         (joinedTop ? " group-joined-top" : "") +
-        (joinedBottom ? " group-joined-bottom" : "")
+        (joinedBottom ? " group-joined-bottom" : "") +
+        (isMaximized ? " is-maximized" : "")
       }
       style={{ background: "var(--overlay-bg)" }}
     >
       <div
-        className="p-4 d-flex flex-justify-between flex-items-center"
+        className="p-4 d-flex flex-justify-between flex-items-center accordion-header"
         style={{ cursor: "pointer", userSelect: "none" }}
         onClick={() => toggle(id, defaultOpen)}
       >
-        <div className="d-flex flex-items-center" style={{ gap: 8 }}>
+        <div className="d-flex flex-items-center accordion-header-title" style={{ gap: 8 }}>
           {title}
           {description && (
             <div className="goo-popover goo-popover-summary">
@@ -95,16 +111,34 @@ export function Accordion({
             </div>
           )}
         </div>
-        <svg
-          className="collapse-arrow text-gray flex-shrink-0"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 16 16"
-          width="24"
-          height="24"
-          fill="currentColor"
-        >
-          <path d="M12.78 6.22a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L3.22 7.28a.75.75 0 0 1 1.06-1.06L8 9.94l3.72-3.72a.75.75 0 0 1 1.06 0Z"></path>
-        </svg>
+        <div className="d-flex flex-items-center" style={{ gap: 4 }}>
+          {/* Mobile-only (see site.scss's .maximize-toggle-btn) and open-only — maximizing a
+              closed section isn't a meaningful action, so there's nothing to render until the
+              section is actually showing content worth maximizing. */}
+          {groupable && open && (
+            <button
+              type="button"
+              className="maximize-toggle-btn"
+              aria-label={isMaximized ? "Restore section to normal size" : "Maximize section"}
+              onClick={(e) => {
+                e.stopPropagation();
+                setIsMaximized((m) => !m);
+              }}
+            >
+              {isMaximized ? <Minimize2 size={18} aria-hidden="true" /> : <Maximize2 size={18} aria-hidden="true" />}
+            </button>
+          )}
+          <svg
+            className="collapse-arrow text-gray flex-shrink-0"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            width="24"
+            height="24"
+            fill="currentColor"
+          >
+            <path d="M12.78 6.22a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L3.22 7.28a.75.75 0 0 1 1.06-1.06L8 9.94l3.72-3.72a.75.75 0 0 1 1.06 0Z"></path>
+          </svg>
+        </div>
       </div>
       <div ref={contentRef} className="p-4 text-left accordion-content">
         {children}
