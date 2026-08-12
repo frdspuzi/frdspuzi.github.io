@@ -1588,13 +1588,21 @@ html.rail-pref-hidden #rail-handle {
   color: var(--accent);
 }
 
-.trivia-correct {
+// .trivia-btn.trivia-correct/.trivia-wrong, not a single class alone: every trivia option is
+// also a bare Primer .btn, and [data-theme="dark"] .btn (above) sets background-color/color
+// with !important at 2-selector specificity — a single-class !important rule loses to that
+// regardless of which comes later in the file (specificity is the tie-breaker before source
+// order when both sides are !important). Chaining onto .trivia-btn ties that specificity, and
+// being defined later in the file wins the tie — confirmed via a real click on the deployed
+// site: without this, both the correct and incorrect answer read as the same plain
+// --surface-raised background, no green/red at all.
+.trivia-btn.trivia-correct {
   background-color: var(--btn-primary) !important;
   border-color: var(--btn-primary) !important;
   color: #ffffff !important;
 }
 
-.trivia-wrong {
+.trivia-btn.trivia-wrong {
   background-color: var(--danger) !important;
   border-color: var(--danger) !important;
   color: #ffffff !important;
