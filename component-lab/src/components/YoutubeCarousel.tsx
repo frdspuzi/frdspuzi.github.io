@@ -411,7 +411,12 @@ export const YoutubeCarousel = forwardRef<YoutubeCarouselHandle, { activeFilter:
       viewportEl!.style.cursor = "grab";
       if (swipeAxis === "vertical") return;
       const netX = swipeLastX - swipeStartX;
-      const committed = Math.abs(netX) > SWIPE_COMMIT_THRESHOLD;
+      // With only 1 video (e.g. a filtered category with a single entry), navigate() has
+      // nowhere to go — currentIndex never actually changes, so the useLayoutEffect that resets
+      // the track's transform on [currentIndex] never re-fires, leaving it stuck at the
+      // just-committed 0%/-200% instead of snapping back to center. Since there's nothing to
+      // swipe to anyway, always treat it as uncommitted so the existing snap-back path handles it.
+      const committed = videos.length > 1 && Math.abs(netX) > SWIPE_COMMIT_THRESHOLD;
 
       if (!committed) {
         if (!reduceMotion) {
@@ -479,6 +484,21 @@ export const YoutubeCarousel = forwardRef<YoutubeCarouselHandle, { activeFilter:
   const prevIndex = (currentIndex - 1 + videos.length) % videos.length;
   const nextIndex = (currentIndex + 1) % videos.length;
 
+  // With very small filtered categories (1-2 videos), the peek slots can't help repeating
+  // content — prevIndex/currentIndex/nextIndex collide by construction (e.g. with exactly 2
+  // videos, prev and next always land on the same "other" video). Keying naively by videoId
+  // then gives sibling slides duplicate `key`s, which breaks React's reconciliation on the next
+  // swipe (confirmed via a real drag test: the track gained an extra untracked child and its
+  // transform never reset, so the carousel looked stuck). Suffixing only the slot that collides
+  // with `current` keeps the current<->prev/next identity handoff (a VideoCard's state carrying
+  // over as the window slides) intact for the pairing that actually matters, and only forces a
+  // fresh mount for the redundant duplicate peek — harmless, since peek cards are always inert.
+  const prevKey = prevIndex === currentIndex ? videos[prevIndex].videoId + "-prev" : videos[prevIndex].videoId;
+  const nextKey =
+    nextIndex === currentIndex || nextIndex === prevIndex
+      ? videos[nextIndex].videoId + "-next"
+      : videos[nextIndex].videoId;
+
   return (
     <div
       id="yt-carousel-viewport"
@@ -513,7 +533,7 @@ export const YoutubeCarousel = forwardRef<YoutubeCarouselHandle, { activeFilter:
 
       <div id="yt-carousel-track" ref={trackRef} style={{ display: "flex", height: "100%", transform: "translateX(-100%)" }}>
         <div
-          key={videos[prevIndex].videoId}
+          key={prevKey}
           style={{ flex: "0 0 100%", padding: `0 ${SLIDE_GAP_PX}px`, boxSizing: "border-box" }}
         >
           <VideoCard video={videos[prevIndex]} isActive={false} dragDistanceRef={dragDistanceRef} onNavigate={navigate} />
@@ -525,7 +545,7 @@ export const YoutubeCarousel = forwardRef<YoutubeCarouselHandle, { activeFilter:
           <VideoCard video={videos[currentIndex]} isActive dragDistanceRef={dragDistanceRef} onNavigate={navigate} />
         </div>
         <div
-          key={videos[nextIndex].videoId}
+          key={nextKey}
           style={{ flex: "0 0 100%", padding: `0 ${SLIDE_GAP_PX}px`, boxSizing: "border-box" }}
         >
           <VideoCard video={videos[nextIndex]} isActive={false} dragDistanceRef={dragDistanceRef} onNavigate={navigate} />
