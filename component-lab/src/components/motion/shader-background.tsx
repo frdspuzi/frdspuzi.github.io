@@ -1,135 +1,33 @@
 "use client";
 // beui.dev/components/motion/shader-background
 
-import {
-  ColorPanels,
-  type ColorPanelsProps,
-  Dithering,
-  type DitheringProps,
-  DotGrid,
-  type DotGridProps,
-  DotOrbit,
-  type DotOrbitProps,
-  GodRays,
-  type GodRaysProps,
-  GrainGradient,
-  type GrainGradientProps,
-  Metaballs,
-  type MetaballsProps,
-  MeshGradient,
-  type MeshGradientProps,
-  NeuroNoise,
-  type NeuroNoiseProps,
-  PerlinNoise,
-  type PerlinNoiseProps,
-  PulsingBorder,
-  type PulsingBorderProps,
-  SimplexNoise,
-  type SimplexNoiseProps,
-  SmokeRing,
-  type SmokeRingProps,
-  Spiral,
-  type SpiralProps,
-  StaticMeshGradient,
-  type StaticMeshGradientProps,
-  StaticRadialGradient,
-  type StaticRadialGradientProps,
-  Swirl,
-  type SwirlProps,
-  Voronoi,
-  type VoronoiProps,
-  Warp,
-  type WarpProps,
-  Water,
-  type WaterProps,
-  Waves,
-  type WavesProps,
-} from "@paper-design/shaders-react";
+import { MeshGradient, type MeshGradientProps } from "@paper-design/shaders-react";
 import { useReducedMotion } from "motion/react";
-import type { ComponentType } from "react";
 import { cn } from "@/lib/utils";
 
-type ShaderVariantProps = {
-  "mesh-gradient": MeshGradientProps;
-  "grain-gradient": GrainGradientProps;
-  "dot-grid": DotGridProps;
-  "dot-orbit": DotOrbitProps;
-  warp: WarpProps;
-  waves: WavesProps;
-  water: WaterProps;
-  voronoi: VoronoiProps;
-  swirl: SwirlProps;
-  "smoke-ring": SmokeRingProps;
-  "static-radial-gradient": StaticRadialGradientProps;
-  "neuro-noise": NeuroNoiseProps;
-  metaballs: MetaballsProps;
-  "god-rays": GodRaysProps;
-  spiral: SpiralProps;
-  dithering: DitheringProps;
-  "pulsing-border": PulsingBorderProps;
-  "color-panels": ColorPanelsProps;
-  "static-mesh-gradient": StaticMeshGradientProps;
-  "simplex-noise": SimplexNoiseProps;
-  "perlin-noise": PerlinNoiseProps;
-};
+// The real beui.dev component supports ~20 shader variants (grain-gradient, dot-grid, warp,
+// voronoi, metaballs, ...), each imported unconditionally and referenced from a variant->
+// component map so any of them could be selected at runtime. This codebase only ever uses
+// "mesh-gradient" (Masthead's hero background, TriviaBoard's low-opacity card fill) — every
+// other variant was dead weight bundled into the main chunk with zero call sites (confirmed via
+// a repo-wide grep for `variant="` before removing this). Trimmed to just the one variant this
+// site actually renders; if a future section wants a different shader, re-add its import here
+// rather than paying for the whole catalog up front for one still-unused variant.
+export type ShaderBackgroundVariant = "mesh-gradient";
 
-export type ShaderBackgroundVariant = keyof ShaderVariantProps;
+export type ShaderBackgroundProps = { variant: "mesh-gradient" } & MeshGradientProps & {
+    className?: string;
+  };
 
-export type ShaderBackgroundProps = {
-  [K in ShaderBackgroundVariant]: { variant: K } & ShaderVariantProps[K];
-}[ShaderBackgroundVariant];
-
-const VARIANT_COMPONENTS: {
-  [K in ShaderBackgroundVariant]: ComponentType<ShaderVariantProps[K]>;
-} = {
-  "mesh-gradient": MeshGradient,
-  "grain-gradient": GrainGradient,
-  "dot-grid": DotGrid,
-  "dot-orbit": DotOrbit,
-  warp: Warp,
-  waves: Waves,
-  water: Water,
-  voronoi: Voronoi,
-  swirl: Swirl,
-  "smoke-ring": SmokeRing,
-  "static-radial-gradient": StaticRadialGradient,
-  "neuro-noise": NeuroNoise,
-  metaballs: Metaballs,
-  "god-rays": GodRays,
-  spiral: Spiral,
-  dithering: Dithering,
-  "pulsing-border": PulsingBorder,
-  "color-panels": ColorPanels,
-  "static-mesh-gradient": StaticMeshGradient,
-  "simplex-noise": SimplexNoise,
-  "perlin-noise": PerlinNoise,
-};
-
-export const SHADER_BACKGROUND_VARIANTS = Object.keys(
-  VARIANT_COMPONENTS,
-) as ShaderBackgroundVariant[];
+export const SHADER_BACKGROUND_VARIANTS: ShaderBackgroundVariant[] = ["mesh-gradient"];
 
 /**
- * Not every variant animates (e.g. dot-grid is a static pattern), so `speed`
- * is only frozen for reduced motion when the variant actually exposes it.
+ * `speed` is frozen to 0 for reduced motion — MeshGradient is animated, unlike some of the
+ * static-pattern variants the fuller beui.dev component also supports.
  */
-export function ShaderBackground({
-  variant,
-  className,
-  ...rest
-}: ShaderBackgroundProps) {
+export function ShaderBackground({ variant: _variant, className, ...rest }: ShaderBackgroundProps) {
   const reducedMotion = useReducedMotion();
-  const Shader = VARIANT_COMPONENTS[variant] as ComponentType<
-    Record<string, unknown>
-  >;
-  const props = rest as Record<string, unknown>;
-  const speedProps = reducedMotion && "speed" in props ? { speed: 0 } : {};
+  const speedProps = reducedMotion ? { speed: 0 } : {};
 
-  return (
-    <Shader
-      {...props}
-      {...speedProps}
-      className={cn("h-full w-full", className)}
-    />
-  );
+  return <MeshGradient {...rest} {...speedProps} className={cn("h-full w-full", className)} />;
 }
