@@ -5,6 +5,7 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const OUTPUT_FILE = path.join(__dirname, '..', '..', '_data', 'gratitude.json');
 const GEMINI_MODELS = [
   'gemini-3.7-flash',
+  'gemini-3.6-flash',
   'gemini-2.5-flash',
   'gemini-3.1-flash-lite',
   'gemini-2.5-flash-lite'

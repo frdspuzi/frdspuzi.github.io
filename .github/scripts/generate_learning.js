@@ -6,6 +6,7 @@ const MEDIUM_RSS_URL = 'https://api.rss2json.com/v1/api.json?rss_url=https://med
 const OUTPUT_FILE = path.join(__dirname, '..', '..', '_data', 'learning.json');
 const GEMINI_MODELS = [
   'gemini-3.7-flash',
+  'gemini-3.6-flash',
   'gemini-2.5-flash',
   'gemini-3.1-flash-lite',
   'gemini-2.5-flash-lite'
