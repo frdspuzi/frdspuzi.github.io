@@ -1,5 +1,6 @@
 import { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useRef } from "react";
 import { useSwipeHint } from "@/hooks/useSwipeHint";
+import { ShaderBackground } from "@/components/motion/shader-background";
 import learningData from "../../../_data/learning.json";
 import type { LearningItem } from "@/data/insights_types";
 
@@ -494,6 +495,28 @@ export const TriviaBoard = forwardRef<TriviaBoardHandle, { activeFilter: string 
       // clipping the last option, not scrolling to reveal it.
       style={{ flexShrink: 0 }}
     >
+      {/* Same shader/colors as Masthead's own animated background, at a fraction of the
+          opacity — a low-key ambient fill for this card's otherwise-empty surface rather than a
+          focal element. No separate scrim needed the way Masthead's does: that one exists to
+          keep white hero text readable against a full-strength shader; here the shader itself is
+          already faint enough not to fight card content painted on top of it. Reduced-motion is
+          handled inside ShaderBackground itself (freezes speed to 0), no extra handling needed
+          here. Sits before the z-1 content div in DOM order (plain, non-positioned stacking) so
+          it paints behind everything else in the card, same as the brain emoji just below it. */}
+      <div
+        className="position-absolute"
+        style={{ inset: 0, opacity: 0.08, pointerEvents: "none", overflow: "hidden" }}
+      >
+        <ShaderBackground
+          variant="mesh-gradient"
+          className="h-full w-full"
+          colors={["#2600ffff", "#7db8ffff", "#000000ff", "#001a2c"]}
+          distortion={0.6}
+          swirl={0.5}
+          speed={0.3}
+        />
+      </div>
+
       <div
         className="position-absolute"
         style={{ top: -20, right: -20, opacity: 0.05, fontSize: 150, lineHeight: 1, pointerEvents: "none", userSelect: "none" }}
