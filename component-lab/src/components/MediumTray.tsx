@@ -219,7 +219,15 @@ export function MediumTray({
                 return (
                   <div
                     key={item.guid}
-                    className={"medium-card-wrapper" + (isMobile ? " flex-shrink-0" : " w-100")}
+                    // No "w-100" on the desktop row-card path (unlike the original site,
+                    // deliberately): this Tailwind-using project generates a real `.w-100 {
+                    // width: calc(var(--spacing) * 100) }` utility (Tailwind's numeric spacing
+                    // scale, not Primer/Bootstrap's `100%` convention) — 100 * the 4px spacing
+                    // unit is exactly 400px, hard-capping every card there regardless of the
+                    // actual column width (confirmed via a real DOM test: an unrelated fresh
+                    // element with just this class also measured exactly 400px). A plain block
+                    // child already fills its parent's width with no class needed here.
+                    className={"medium-card-wrapper" + (isMobile ? " flex-shrink-0" : "")}
                     style={{ opacity: matches ? 1 : 0, display: matches ? "" : "none" }}
                   >
                     {isMobile ? <StoryCard item={item} /> : <RowCard item={item} />}
