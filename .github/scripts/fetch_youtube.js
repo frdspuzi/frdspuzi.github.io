@@ -9,6 +9,7 @@ const OUTPUT_FILE = path.join(__dirname, '..', '..', '_data', 'youtube.json');
 const THUMBS_DIR = path.join(__dirname, '..', '..', 'assets', 'youtube-thumbnails');
 
 const GEMINI_MODELS = [
+  'gemini-3.7-flash',
   'gemini-3.6-flash',
   'gemini-3.5-flash',
   'gemini-3.1-flash-lite',
@@ -339,7 +340,7 @@ async function enrichWithVideoSummary(video) {
       console.log(`\nWatching video via Vertex AI: ${video.title} (${video.url}) — attempt ${attempt}/${MAX_RETRIES}`);
 
       const response = await ai.models.generateContent({
-        model: 'gemini-3.6-flash',
+        model: 'gemini-3.7-flash',
         contents: [
           {
             role: 'user',
