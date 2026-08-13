@@ -187,25 +187,39 @@ function VideoCard({
               : { aspectRatio: "16/9", maxWidth: "100%", margin: 0, borderRadius: 8, overflow: "hidden", position: "relative" }
           }
         >
-          {showingPlayer ? (
-            <div ref={playerContainerRef} style={{ width: "100%", height: "100%" }} />
-          ) : (
-            <button
-              type="button"
-              className={"yt-facade" + (keepFacadeLandscape ? " yt-facade-short" : "")}
-              aria-label="Play video"
-              tabIndex={isActive ? 0 : -1}
-              onClick={isActive ? handlePlayClick : undefined}
-              onKeyDown={isActive ? handleFacadeKeydown : undefined}
-            >
-              <img className="yt-facade-thumb" src={thumbUrl} alt={video.title} />
-              <span className="yt-facade-play" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="28" height="28">
-                  <path d="M8 5v14l11-7z" fill="#fff"></path>
-                </svg>
-              </span>
-            </button>
-          )}
+          {/* Both always mounted, visibility toggled by CSS rather than conditionally rendering
+              one or the other — critical for the player container specifically. The real
+              YouTube IFrame API doesn't render *into* the element it's given; per its own docs
+              it *replaces* that element outright with an <iframe>, detaching the original div
+              from the DOM without React's knowledge. If this div were conditionally unmounted
+              (the swipe-away path — the VideoCard instance itself persists via its keyed slot,
+              React just re-renders it with isActive: false), React would try to remove a node
+              it thinks is still attached where it left it, throw `NotFoundError: Failed to
+              execute 'removeChild' on 'Node': The node to be removed is not a child of this
+              node` (already detached from under it), and crash the whole tree uncaught — the
+              exact "swipe away after pressing play shows a blank page" bug this fixes. Keeping
+              this div permanently in the same JSX position means React's reconciliation never
+              revisits it once handed off, regardless of what the YT API does inside it. */}
+          <div
+            ref={playerContainerRef}
+            style={{ width: "100%", height: "100%", display: showingPlayer ? "block" : "none" }}
+          />
+          <button
+            type="button"
+            className={"yt-facade" + (keepFacadeLandscape ? " yt-facade-short" : "")}
+            aria-label="Play video"
+            tabIndex={isActive ? 0 : -1}
+            onClick={isActive ? handlePlayClick : undefined}
+            onKeyDown={isActive ? handleFacadeKeydown : undefined}
+            style={{ display: showingPlayer ? "none" : undefined }}
+          >
+            <img className="yt-facade-thumb" src={thumbUrl} alt={video.title} />
+            <span className="yt-facade-play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="28" height="28">
+                <path d="M8 5v14l11-7z" fill="#fff"></path>
+              </svg>
+            </span>
+          </button>
         </div>
 
         <div className="col-12 col-lg-6 d-flex flex-column flex-justify-center text-left">
