@@ -40,17 +40,17 @@ function buildMeasureCardHtml(item: LearningItem, revealed: boolean): string {
 
   const revealHtml = revealed
     ? '<div class="flash-success p-3 rounded-2 mb-4" style="margin-top: 16px;">' +
-      '<p class="f4 text-italic mb-0" style="line-height: 1.4;">' +
-      item.learning +
-      "</p></div>" +
-      '<div class="d-flex flex-column border-top pt-4" style="width: 100%;">' +
-      '<div class="f6 mb-3">From the article: <strong class="f5 d-block mt-1">' +
-      item.articleTitle +
-      "</strong></div>" +
-      '<div class="d-flex flex-column flex-sm-row flex-justify-between" style="gap: 12px; width: 100%;">' +
-      '<div class="btn flex-1 text-center">Read Article</div>' +
-      '<div class="btn btn-blue flex-1 text-center">Next Question &rarr;</div>' +
-      "</div></div>"
+    '<p class="f4 text-italic mb-0" style="line-height: 1.4;">' +
+    item.learning +
+    "</p></div>" +
+    '<div class="d-flex flex-column border-top pt-4" style="width: 100%;">' +
+    '<div class="f6 mb-3">From the article: <strong class="f5 d-block mt-1">' +
+    item.articleTitle +
+    "</strong></div>" +
+    '<div class="d-flex flex-column flex-sm-row flex-justify-between" style="gap: 12px; width: 100%;">' +
+    '<div class="btn flex-1 text-center">Read Article</div>' +
+    '<div class="btn btn-blue flex-1 text-center">Next Question &rarr;</div>' +
+    "</div></div>"
     : "";
 
   return (
@@ -152,7 +152,7 @@ export const TriviaBoard = forwardRef<TriviaBoardHandle, { activeFilter: string 
   const subtitleRef = useRef<HTMLParagraphElement>(null);
   const nextBtnRef = useRef<HTMLButtonElement>(null);
 
-  const applyFilterRef = useRef<(category: string) => void>(() => {});
+  const applyFilterRef = useRef<(category: string) => void>(() => { });
   const isFirstFilterRun = useRef(true);
   const markSwipeInteracted = useSwipeHint(trackRef, viewportRef);
 
