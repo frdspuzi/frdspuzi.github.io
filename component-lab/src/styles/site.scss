@@ -1654,6 +1654,18 @@ html.rail-pref-hidden #rail-handle {
 @media (min-width: 1012px) {
   .insights-column {
     flex: 1 1 0%;
+    // flex-basis: 0% only sets the *starting point* before flex-grow distributes the leftover
+    // space evenly — it doesn't override a flex item's default min-width: auto, which still lets
+    // the item's own content set a content-based floor beneath that even split. Concretely: once
+    // TriviaBoard's reveal panel (its "Read Article"/"Next Question" button row) is shown, its
+    // min-content width grows and pulled ~16px away from the Medium column instead of staying at
+    // the intended 50/50 — which then fed back into TriviaBoard's own precomputed-max-height
+    // carousel (component-lab/src/components/TriviaBoard.tsx): its ResizeObserver correctly
+    // detected the resulting width change and re-measured at the new (wider) width, landing on a
+    // genuinely smaller height there, so the card visibly shrank right as the answer revealed.
+    // min-width: 0 removes that content-based floor, making both columns hold the even split
+    // regardless of content, matching what flex: 1 1 0% was already trying to guarantee.
+    min-width: 0;
   }
 }
 
