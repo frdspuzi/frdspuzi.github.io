@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In Islamic theology, what three primary roles define the foundational purpose of human existence?",
+      "question": "Which PCIe power management substate achieves deeper energy savings than L1.0 specifically by powering down the electrical circuits of the main link?",
       "options": [
-        "Worshiping Allah, serving as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter",
-        "Conquering foreign territories, building physical monuments, and avoiding community governance",
-        "Accumulating material wealth, establishing political dominance, and recording historical events",
-        "Practicing absolute monastic isolation, rejecting societal duties, and seeking worldly fame"
+        "L1.2",
+        "L2",
+        "L1.1",
+        "L0s"
       ],
-      "correctIndex": 0,
-      "learning": "In Islamic teachings, human life is structured around three primary responsibilities: building a relationship with Allah through worship, acting as stewards or caretakers (khalifah) of the Earth, and navigating life as a test to prepare for the eternal Hereafter.",
+      "correctIndex": 2,
+      "learning": "In PCIe power management, the L1.1 substate provides deeper energy savings than L1.0 by turning off the electrical circuits of the main link, which results in an increased wake-up time.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
+    },
+    {
+      "question": "When fulfilling the role of a caretaker (khalifah), who bears the responsibility of preserving faith and maintaining community unity?",
+      "options": [
+        "Only future generations once they come of age",
+        "Exclusively appointed leaders",
+        "Every individual in the community collectively",
+        "Solely designated religious scholars"
+      ],
+      "correctIndex": 2,
+      "learning": "Preserving faith and maintaining community unity is a collective responsibility shared by every individual as a caretaker (khalifah), rather than being restricted solely to appointed leaders.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "What is the primary motivation behind breaking the Scrum process into smaller, iterative cycles known as Sprints?",
+      "question": "What cumulative percentage of the Quran's text is represented by its 20 most frequently repeated words?",
       "options": [
-        "To eliminate the need for team collaboration",
-        "To increase the overall length of the project",
-        "To allow for greater flexibility and quicker adjustments",
-        "To reduce the number of team members needed"
+        "Approximately 5.10%",
+        "Approximately 80.00%",
+        "Approximately 20.83%",
+        "Approximately 50.25%"
       ],
       "correctIndex": 2,
-      "learning": "The primary purpose of breaking the Scrum process into smaller, iterative cycles called Sprints is to allow for more flexibility and quicker adjustments during development.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
+      "learning": "Contrary to expectations under the Pareto Principle (80/20 rule), the 20 most frequently occurring words in the Quran account for only about 20.83% of the total text.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
     },
     {
-      "question": "Which three-part strategy is recommended to prevent forgetting personal insights and make knowledge useful?",
+      "question": "When a person alters the actual unfolding of events in their life (Qada') through supplication and action, how does this impact Allah's preordained plan and knowledge (Qadr)?",
       "options": [
-        "Store information in a static digital file, review it monthly, and delete old entries",
-        "Rely on natural cognitive memory, discuss thoughts verbally, and archive written drafts",
-        "Re-read written notes daily, memorize key phrases, and keep records private",
-        "Write ideas down, establish a system to trigger reminders, and share the knowledge publicly"
+        "It does not alter Qadr, because the supplication, action, and resulting change were already encompassed within Allah's complete knowledge.",
+        "It forces Qadr to be continually rewritten to adjust for unexpected human decisions.",
+        "It overwrites Qadr, erasing the previously written eternal plan.",
+        "It temporarily suspends Qadr until the human choice is finalized."
       ],
-      "correctIndex": 3,
-      "learning": "To overcome the brain's natural forgetfulness and retain personal insights, one must document their ideas, build a system to regularly trigger active recall, and share beneficial knowledge publicly.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In Islamic belief regarding divine decree, how is Qada’ distinguished from Qadr?",
-      "options": [
-        "Qada’ refers exclusively to spiritual acts of worship, while Qadr refers solely to worldly financial outcomes.",
-        "Qada’ is the actual occurrence of events that can be altered by human actions and supplications, while Qadr is Allah's preordained plan and complete knowledge.",
-        "Qadr is the actual occurrence of events shaped by choices, while Qada’ is Allah's fixed knowledge that cannot encompass changes.",
-        "Qadr is altered every time a person makes a decision, while Qada’ remains an unwritten mystery even to divine knowledge."
-      ],
-      "correctIndex": 1,
-      "learning": "Qada’ refers to the actual unfolding of events in life, which can be influenced or altered through supplication and actions, whereas Qadr represents Allah's complete preordained plan and eternal knowledge that already encompasses those changes.",
+      "correctIndex": 0,
+      "learning": "Although human action and supplication can alter Qada' (the actual occurrence of events), this change does not alter Qadr, because the choice to act and the altered outcome were already fully known and written as part of Allah's eternal plan.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "What primary trade-off occurs when a PCIe device enters deeper power-saving states such as L1.2 or L2?",
+      "question": "Which Scrum artifact visualizes the progress of a Sprint and shows the remaining work to track if the team is on schedule?",
       "options": [
-        "Data transmission bandwidth increases, but electrical components suffer reduced longevity.",
-        "Wake-up time is minimized, but the device consumes significantly more active power.",
-        "Power savings are maximized, but the device experiences the longest wake-up delay to resume activity.",
-        "Electrical circuits remain fully powered, preventing any actual energy savings."
+        "Product Backlog",
+        "Sprint Review",
+        "Sprint Backlog",
+        "Burndown Chart"
       ],
-      "correctIndex": 2,
-      "learning": "In PCIe power management, transitioning into deeper sleep states yields higher energy savings, but introduces the challenge of increased wake-up latency when resuming full operation.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
+      "correctIndex": 3,
+      "learning": "In Scrum, a Burndown Chart is an artifact used to visualize the progress of a Sprint and display the remaining work, helping the team track whether they are on schedule.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
     }
   ],
-  "fetchedAt": "2026-08-12T03:02:31.500Z"
+  "fetchedAt": "2026-08-13T03:05:21.321Z"
 }
