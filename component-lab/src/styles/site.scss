@@ -1315,6 +1315,25 @@ html.rail-pref-hidden #rail-handle {
   transition-delay: 0s;
 }
 
+// Invisible bridge over the 10px gap between the trigger and this panel (matches the `top: calc
+// (100% + 10px)` above exactly). `.goo-popover:hover` only holds while the pointer is over some
+// element inside `.goo-popover`'s own DOM subtree — moving the mouse straight down from the
+// trigger to the content panel crosses that gap, where the pointer is over neither, dropping
+// :hover and snapping `.goo-popover-content` back to pointer-events: none before the cursor ever
+// reaches a link inside it (reported: can't hover down to click a link in the panel). `pointer-
+// events: auto` here overrides the parent's `none` while closed — hovering this strip alone is
+// enough to open the popover anyway (the same as hovering the trigger), so there's no separate
+// "armed" state to track.
+.goo-popover-content::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
+  pointer-events: auto;
+}
+
 .goo-popover-content a {
   color: var(--accent);
 }
