@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Which PCIe power management substate achieves deeper energy savings than L1.0 specifically by powering down the electrical circuits of the main link?",
+      "question": "What is the primary purpose of dividing a development process into smaller, iterative cycles called Sprints in the Scrum framework?",
       "options": [
-        "L1.2",
-        "L2",
-        "L1.1",
-        "L0s"
+        "To eliminate the need for testing and review phases",
+        "To reduce the number of developers needed on the team",
+        "To allow for more flexibility and quicker adjustments",
+        "To extend the overall timeline of the project"
       ],
       "correctIndex": 2,
-      "learning": "In PCIe power management, the L1.1 substate provides deeper energy savings than L1.0 by turning off the electrical circuits of the main link, which results in an increased wake-up time.",
+      "learning": "Scrum is an agile approach that breaks the development process into smaller, iterative cycles called Sprints to enable greater flexibility and quicker adjustments.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "What fundamental trade-off governs the spectrum of PCIe power management states ranging from L0 to L2?",
+      "options": [
+        "Signal integrity versus transmission distance",
+        "Data transmission speed versus bus width",
+        "Energy savings versus wake-up latency",
+        "Hardware longevity versus operating temperature"
+      ],
+      "correctIndex": 2,
+      "learning": "PCIe power management operates across a spectrum of states (from active L0 to deep sleep L2) that trade off energy savings against wake-up latency to balance power efficiency with system responsiveness.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "When fulfilling the role of a caretaker (khalifah), who bears the responsibility of preserving faith and maintaining community unity?",
+      "question": "What is a key precision trade-off when analyzing Arabic text that has been stripped of Tashkeel (vocalization marks)?",
       "options": [
-        "Only future generations once they come of age",
-        "Exclusively appointed leaders",
-        "Every individual in the community collectively",
-        "Solely designated religious scholars"
+        "String-splitting algorithms fail to separate individual words in verses",
+        "Distinct words with different meanings and pronunciations share the exact same spelling",
+        "Prepositions and conjunctions are automatically removed from the vocabulary",
+        "Right-to-left script orientation is permanently lost during DataFrame import"
       ],
-      "correctIndex": 2,
-      "learning": "Preserving faith and maintaining community unity is a collective responsibility shared by every individual as a caretaker (khalifah), rather than being restricted solely to appointed leaders.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What cumulative percentage of the Quran's text is represented by its 20 most frequently repeated words?",
-      "options": [
-        "Approximately 5.10%",
-        "Approximately 80.00%",
-        "Approximately 20.83%",
-        "Approximately 50.25%"
-      ],
-      "correctIndex": 2,
-      "learning": "Contrary to expectations under the Pareto Principle (80/20 rule), the 20 most frequently occurring words in the Quran account for only about 20.83% of the total text.",
+      "correctIndex": 1,
+      "learning": "Analyzing Arabic text without Tashkeel (vowel markings) yields a simpler and more uniform dataset, but sacrifices precision because distinct words can share identical spellings without their vocalization marks.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "When a person alters the actual unfolding of events in their life (Qada') through supplication and action, how does this impact Allah's preordained plan and knowledge (Qadr)?",
+      "question": "To effectively retain personal insights and prevent ideas from being forgotten, what core strategy should be used instead of relying solely on memory?",
       "options": [
-        "It does not alter Qadr, because the supplication, action, and resulting change were already encompassed within Allah's complete knowledge.",
-        "It forces Qadr to be continually rewritten to adjust for unexpected human decisions.",
-        "It overwrites Qadr, erasing the previously written eternal plan.",
-        "It temporarily suspends Qadr until the human choice is finalized."
+        "Treating the brain as a permanent filing cabinet through mental repetition",
+        "Writing thoughts down, establishing a reminder system for recall, and sharing the knowledge publicly",
+        "Storing notes in private digital archives without an automated review mechanism",
+        "Relying on passive re-reading of physical notebooks rather than active quizzing"
       ],
-      "correctIndex": 0,
-      "learning": "Although human action and supplication can alter Qada' (the actual occurrence of events), this change does not alter Qadr, because the choice to act and the altered outcome were already fully known and written as part of Allah's eternal plan.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
+      "correctIndex": 1,
+      "learning": "To overcome natural forgetfulness and maximize the value of insights, one should stop relying solely on memory and instead write ideas down, implement an active reminder system, and share the knowledge publicly.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     },
     {
-      "question": "Which Scrum artifact visualizes the progress of a Sprint and shows the remaining work to track if the team is on schedule?",
+      "question": "Which Arabic term refers to the role and responsibility of human beings serving as caretakers or stewards of the Earth?",
       "options": [
-        "Product Backlog",
-        "Sprint Review",
-        "Sprint Backlog",
-        "Burndown Chart"
+        "Hadith",
+        "Jinn",
+        "Khalifah",
+        "Taqwa"
       ],
-      "correctIndex": 3,
-      "learning": "In Scrum, a Burndown Chart is an artifact used to visualize the progress of a Sprint and display the remaining work, helping the team track whether they are on schedule.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
+      "correctIndex": 2,
+      "learning": "In Islamic belief, life's purpose centers on worshiping God, preparing for the Hereafter, and serving as a 'Khalifah'—a caretaker or steward of the Earth responsible for preserving faith and fostering unity.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-08-13T03:05:21.321Z"
+  "fetchedAt": "2026-08-14T03:04:34.906Z"
 }
