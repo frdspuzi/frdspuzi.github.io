@@ -118,14 +118,8 @@ export function Masthead({ metadata = true }: { metadata?: boolean }) {
           // original relies on the browser's native inline default, centered by the parent's
           // text-align:center; a block-level element ignores that and needs its own centering).
           style={{ maxWidth: 150, height: "auto", margin: "0 auto" }}
-          // Source is 225x254 (1.5x the 150px CSS display width) — sharp enough on high-DPI
-          // displays for a small decorative avatar without shipping a full 2x asset; Lighthouse
-          // flagged the previous 300x339 (2x) source as ~15KB larger than it needed to be for
-          // this element's actual display size. width/height are the real source dimensions
-          // (not the CSS size) since the browser uses these, not the style block, to reserve
-          // layout space before the image itself loads.
-          width={225}
-          height={254}
+          width={300}
+          height={339}
           alt={user.name || user.login}
         />
         <h1 className="mb-2 lh-condensed" style={{ color: HERO_TEXT_COLOR }}>
