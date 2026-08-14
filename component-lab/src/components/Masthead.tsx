@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { user } from "@/data/user";
 import socialMedia from "@/data/social_media.json";
 import { socialAccounts } from "@/config/social_accounts";
@@ -81,8 +81,38 @@ const SCRIM_COLOR = "rgba(0, 0, 0, 0.35)";
 const HERO_TEXT_COLOR = "#ffffff";
 const HERO_TEXT_MUTED_COLOR = "rgba(255, 255, 255, 0.75)";
 
+// A superhero-mask variation on the plain avatar, alternated in for a bit of personality — both
+// share the same "black-line-art face icon" style and near-identical aspect ratio (0.885 vs
+// 0.886), so the crossfade never visibly resizes or letterboxes between them.
+const AVATAR_VARIANTS = [
+  { src: user.avatarUrl, width: 300, height: 339 },
+  { src: "/assets/img/avatar-alt.webp", width: 225, height: 254 },
+];
+const AVATAR_CYCLE_MS = 5000;
+const AVATAR_FADE_MS = 700;
+
+// Both variants render simultaneously, stacked via position:absolute, crossfading opacity on a
+// timer — not swapping a single <img>'s src, which would need to fade all the way to nothing and
+// back rather than dissolving directly from one to the other, and would show a blank flash if the
+// next image weren't already cached. Reduced motion stops the cycle entirely (stays on the first
+// variant) rather than just cutting the transition, matching this component's other motion-gated
+// pieces (the shader's own speed, the social icons' fill animation).
+function useAvatarCycle(count: number) {
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    if (count <= 1) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const id = window.setInterval(() => {
+      setIndex((i) => (i + 1) % count);
+    }, AVATAR_CYCLE_MS);
+    return () => window.clearInterval(id);
+  }, [count]);
+  return index;
+}
+
 export function Masthead({ metadata = true }: { metadata?: boolean }) {
   useTouchSocialIconReveal();
+  const avatarIndex = useAvatarCycle(AVATAR_VARIANTS.length);
 
   return (
     <div style={{ position: "relative" }}>
@@ -111,17 +141,32 @@ export function Masthead({ metadata = true }: { metadata?: boolean }) {
         <div style={{ position: "absolute", inset: 0, background: SCRIM_COLOR }}></div>
       </div>
       <div style={{ position: "relative", zIndex: 1 }}>
-        <img
-          src={user.avatarUrl}
-          className="mb-3"
-          // margin: 0 auto centers it — Tailwind Preflight forces img to display:block (the
-          // original relies on the browser's native inline default, centered by the parent's
-          // text-align:center; a block-level element ignores that and needs its own centering).
-          style={{ maxWidth: 150, height: "auto", margin: "0 auto" }}
-          width={300}
-          height={339}
-          alt={user.name || user.login}
-        />
+        {/* Fixed-size wrapper, not height:auto like a single <img> could use — the stacked
+            variants are position:absolute (so their opacity crossfade doesn't also displace
+            layout), and absolutely-positioned children don't contribute to a parent's auto
+            height. 170px matches both variants' own aspect ratio at this 150px width (they're
+            close enough — 0.885 vs 0.886 — that neither needs its own separate height). */}
+        <div className="mb-3" style={{ position: "relative", width: 150, height: 170, margin: "0 auto" }}>
+          {AVATAR_VARIANTS.map((variant, i) => (
+            <img
+              key={variant.src}
+              src={variant.src}
+              style={{
+                position: "absolute",
+                inset: 0,
+                width: "100%",
+                height: "100%",
+                objectFit: "contain",
+                opacity: i === avatarIndex ? 1 : 0,
+                transition: `opacity ${AVATAR_FADE_MS}ms ease`,
+              }}
+              width={variant.width}
+              height={variant.height}
+              alt={user.name || user.login}
+              aria-hidden={i === avatarIndex ? undefined : true}
+            />
+          ))}
+        </div>
         <h1 className="mb-2 lh-condensed" style={{ color: HERO_TEXT_COLOR }}>
           {user.name || <span className="aurora-text">{user.login}</span>}
         </h1>
