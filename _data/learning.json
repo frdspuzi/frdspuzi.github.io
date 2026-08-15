@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Within the PCIe L1 power management sub-states, what is the primary operational trade-off of placing a link into the L1.2 sub-state rather than L1.0?",
+      "question": "What is the primary motivation for implementing Power Management States in PCIe devices?",
       "options": [
-        "It allows instantaneous wake-up while consuming more baseline idle power",
-        "It maximizes power savings by turning off more components at the cost of the longest wake-up delay within L1",
-        "It maintains active data transmission while powering down peripheral clock generators",
-        "It completely shuts down the device, requiring a full system reboot to resume"
+        "To prevent electromagnetic interference across adjacent motherboard lanes",
+        "To eliminate the need for hardware-level compatibility drivers",
+        "To maximize raw clock speed and continuous physical bandwidth",
+        "To efficiently use energy, extend device longevity, and enhance system performance"
       ],
-      "correctIndex": 1,
-      "learning": "In PCIe power management, deeper sub-states like L1.2 maximize energy efficiency by powering down more components, but this introduces the challenge of the longest delay when resuming active operation.",
+      "correctIndex": 3,
+      "learning": "PCIe Power Management States are required for the efficient use of energy, extending device longevity, and enhancing system performance in environments where power consumption is a critical concern.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "What is identified in Islamic scripture as the foundational purpose behind the creation of jinn and mankind?",
+      "question": "In Islamic teachings, what three core purposes define the primary roles of human life?",
       "options": [
-        "To worship Allah",
-        "To accumulate worldly wealth and status",
-        "To establish dominion over all other beings",
-        "To conquer the physical universe"
+        "Renouncing society, practicing strict ascetic isolation, and achieving self-deification",
+        "Mastering physical sciences, establishing monarchies, and avoiding earthly tests",
+        "Worshiping Allah, acting as caretakers (khalifah) of the Earth, and preparing for the Hereafter",
+        "Accumulating wealth, conquering foreign lands, and preserving ancient lineage"
       ],
-      "correctIndex": 0,
-      "learning": "In Islamic theological teachings, the foundational motivation for the creation of jinn and mankind is explicitly stated as worshiping Allah.",
+      "correctIndex": 2,
+      "learning": "In Islamic teachings, life's purpose is defined by three primary roles: worshiping Allah (devotion), serving as caretakers (khalifah) of the Earth to preserve faith and unity (responsibility), and preparing for the eternal Hereafter through conscious accountability in a test of faith and conduct.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In the Scrum framework, what is the primary purpose of breaking the development process into smaller, iterative cycles called Sprints?",
+      "question": "Which of the following is NOT one of the three official roles defined in the Scrum framework?",
       "options": [
-        "To increase the overall length and scope of the project timeline",
-        "To eliminate the need for daily team collaboration",
-        "To reduce the number of developers needed on a team",
-        "To allow for more flexibility and quicker adjustments"
+        "Scrum Master",
+        "Product Owner",
+        "Project Manager",
+        "Developers"
       ],
-      "correctIndex": 3,
-      "learning": "Scrum is an agile framework that divides work into smaller, iterative cycles called Sprints to provide teams with greater flexibility and the ability to make quicker adjustments.",
+      "correctIndex": 2,
+      "learning": "A common misconception when transitioning to Scrum is assuming a traditional Project Manager role exists within the team; Scrum strictly defines only three core roles: Product Owner, Scrum Master, and Developers.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "When testing whether the 80/20 Pareto Principle applies to Quranic vocabulary, what cumulative proportion of the text do the top 20 most frequent words actually represent?",
+      "question": "In the theological relationship between divine decree and human agency, how does altering an outcome through supplication (Dua) relate to Qada’ and Qadr?",
       "options": [
-        "Approximately 20.83%",
-        "Approximately 80.00%",
-        "Approximately 5.12%",
-        "Approximately 50.45%"
+        "The supplication completely removes the event from both the unfolding decree (Qada’) and the divine knowledge (Qadr).",
+        "The supplication overwrites and erases what was preordained in Qadr without impacting the worldly unfolding of Qada’.",
+        "The supplication alters the unfolding occurrence of events (Qada’), but that change was already known and encompassed within the eternal divine plan (Qadr).",
+        "The supplication alters the eternal divine plan (Qadr), while the unfolding occurrence of events (Qada’) remains rigid and unaffected."
       ],
-      "correctIndex": 0,
-      "learning": "Although the Pareto Principle suggests that 20% of effort yields 80% of results, analyzing the most frequent words in the Quran shows that the top 20 words accumulate to only about 20.83% of the total text rather than 80%.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which concept represents the actual unfolding and occurrence of events in one's life that can be altered through supplication (Dua) and personal actions?",
-      "options": [
-        "Mu’aqqibat",
-        "Qada’",
-        "Al-Alim",
-        "Qadr"
-      ],
-      "correctIndex": 1,
-      "learning": "Qada’ refers to the actual unfolding and occurrence of events in a person's life that can be influenced by actions and supplications, whereas Qadr encompasses the complete, preordained plan and eternal knowledge written by Allah.",
+      "correctIndex": 2,
+      "learning": "While Qada’ represents the actual unfolding of events in life that can be altered through sincere actions and supplication (Dua), any such change is already known to Allah and fully encompassed within His eternal, preordained plan (Qadr).",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "According to the prophetic tradition recorded in Sahih Muslim 1631, which three deeds continue to benefit a human being after their death?",
+      "options": [
+        "Building physical structures, feeding the hungry, or public preaching",
+        "Sincere repentance, memorizing scripture, or honoring parents",
+        "Ongoing charity, beneficial knowledge, or a righteous child who prays for them",
+        "Daily prayers, fasting during Ramadan, or performing the pilgrimage"
+      ],
+      "correctIndex": 2,
+      "learning": "In Sahih Muslim 1631, the Prophet Muhammad (ﷺ) stated that when a human being dies, all their deeds come to an end except for three: ongoing charity, beneficial knowledge, or a righteous child who prays for them.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     }
   ],
-  "fetchedAt": "2026-08-15T01:54:32.756Z"
+  "fetchedAt": "2026-08-15T09:38:43.250Z"
 }
