@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What is the primary motivation for implementing Power Management States in PCIe devices?",
+      "question": "Rather than trusting personal memory to retain insights, what three-step approach ensures that knowledge is retained and utilized effectively?",
       "options": [
-        "To prevent electromagnetic interference across adjacent motherboard lanes",
-        "To eliminate the need for hardware-level compatibility drivers",
-        "To maximize raw clock speed and continuous physical bandwidth",
-        "To efficiently use energy, extend device longevity, and enhance system performance"
+        "Writing thoughts down, building an active reminder system, and sharing them publicly",
+        "Memorizing summaries, keeping notes strictly private, and re-reading them regularly",
+        "Digitally archiving notes, deleting past entries, and reviewing them annually",
+        "Relying on mental intuition, avoiding external documentation, and studying in isolation"
       ],
-      "correctIndex": 3,
-      "learning": "PCIe Power Management States are required for the efficient use of energy, extending device longevity, and enhancing system performance in environments where power consumption is a critical concern.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
+      "correctIndex": 0,
+      "learning": "To overcome the brain's natural tendency to discard stored ideas, you should stop relying solely on memory and instead write down your thoughts, build an active system to remind you of them, and share that knowledge publicly.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     },
     {
-      "question": "In Islamic teachings, what three core purposes define the primary roles of human life?",
+      "question": "In the Scrum framework, what is the primary purpose of breaking the development process into smaller, iterative cycles known as Sprints?",
       "options": [
-        "Renouncing society, practicing strict ascetic isolation, and achieving self-deification",
-        "Mastering physical sciences, establishing monarchies, and avoiding earthly tests",
-        "Worshiping Allah, acting as caretakers (khalifah) of the Earth, and preparing for the Hereafter",
-        "Accumulating wealth, conquering foreign lands, and preserving ancient lineage"
+        "To extend the overall delivery timeline for all features",
+        "To allow for greater flexibility and quicker adjustments",
+        "To eliminate the need for cross-functional roles",
+        "To reduce the total number of developers required on a team"
       ],
-      "correctIndex": 2,
-      "learning": "In Islamic teachings, life's purpose is defined by three primary roles: worshiping Allah (devotion), serving as caretakers (khalifah) of the Earth to preserve faith and unity (responsibility), and preparing for the eternal Hereafter through conscious accountability in a test of faith and conduct.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which of the following is NOT one of the three official roles defined in the Scrum framework?",
-      "options": [
-        "Scrum Master",
-        "Product Owner",
-        "Project Manager",
-        "Developers"
-      ],
-      "correctIndex": 2,
-      "learning": "A common misconception when transitioning to Scrum is assuming a traditional Project Manager role exists within the team; Scrum strictly defines only three core roles: Product Owner, Scrum Master, and Developers.",
+      "correctIndex": 1,
+      "learning": "Scrum organizes development into smaller, iterative cycles called Sprints to provide greater flexibility and enable teams to make quicker adjustments.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "In the theological relationship between divine decree and human agency, how does altering an outcome through supplication (Dua) relate to Qada’ and Qadr?",
+      "question": "In Islamic tradition, what is identified as the foundational purpose behind the creation of mankind and jinn?",
       "options": [
-        "The supplication completely removes the event from both the unfolding decree (Qada’) and the divine knowledge (Qadr).",
-        "The supplication overwrites and erases what was preordained in Qadr without impacting the worldly unfolding of Qada’.",
-        "The supplication alters the unfolding occurrence of events (Qada’), but that change was already known and encompassed within the eternal divine plan (Qadr).",
-        "The supplication alters the eternal divine plan (Qadr), while the unfolding occurrence of events (Qada’) remains rigid and unaffected."
+        "To attain material prosperity",
+        "To worship Allah",
+        "To conquer physical realms",
+        "To seek absolute worldly knowledge"
       ],
-      "correctIndex": 2,
-      "learning": "While Qada’ represents the actual unfolding of events in life that can be altered through sincere actions and supplication (Dua), any such change is already known to Allah and fully encompassed within His eternal, preordained plan (Qadr).",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "correctIndex": 1,
+      "learning": "The foundational purpose for the creation of mankind and jinn is established as worshiping Allah, which encompasses recognizing divine sovereignty, demonstrating gratitude, and developing mindfulness (taqwa).",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "According to the prophetic tradition recorded in Sahih Muslim 1631, which three deeds continue to benefit a human being after their death?",
+      "question": "Which PCIe power management state is designed for the longest periods of inactivity, providing the highest power savings but requiring the longest wake-up time?",
       "options": [
-        "Building physical structures, feeding the hungry, or public preaching",
-        "Sincere repentance, memorizing scripture, or honoring parents",
-        "Ongoing charity, beneficial knowledge, or a righteous child who prays for them",
-        "Daily prayers, fasting during Ramadan, or performing the pilgrimage"
+        "L0s",
+        "L1.2",
+        "L1.0",
+        "L2"
       ],
-      "correctIndex": 2,
-      "learning": "In Sahih Muslim 1631, the Prophet Muhammad (ﷺ) stated that when a human being dies, all their deeds come to an end except for three: ongoing charity, beneficial knowledge, or a righteous child who prays for them.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
+      "correctIndex": 3,
+      "learning": "In PCIe power management, the L2 deeper sleep state is utilized for the longest periods of inactivity, delivering the greatest power savings while resulting in the longest wake-up time.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
+    },
+    {
+      "question": "In Islamic theology, which concept refers to the actual unfolding and occurrence of events in a person's life that can be influenced and altered by actions and supplication?",
+      "options": [
+        "Qada’",
+        "Barakah",
+        "Tawakkul",
+        "Qadr"
+      ],
+      "correctIndex": 0,
+      "learning": "Qada’ refers to the actual occurrence and unfolding of events in one's life that can be altered through actions and Dua, whereas Qadr encompasses Allah’s complete, eternal knowledge and preordained plan that already accounts for those changes.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-08-15T09:38:43.250Z"
+  "fetchedAt": "2026-08-16T02:02:12.467Z"
 }
