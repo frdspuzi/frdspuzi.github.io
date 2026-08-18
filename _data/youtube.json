@@ -1,28 +1,132 @@
 {
   "videos": [
     {
+      "title": "Creator of TypeScript: 10x Faster Typescript, Why AI Won't Replace SWEs | Anders Hejlsberg",
+      "url": "https://www.youtube.com/watch?v=cywK3XYYJ2o",
+      "videoId": "cywK3XYYJ2o",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Discover how TypeScript achieved a massive 10x performance leap through a native port to Go rather than an error-prone ground-up rewrite. Legendary language creator Anders Hejlsberg breaks down compiler architecture, why Rust wasn't the right fit, and the pragmatic limits of AI in software engineering.",
+      "dateAdded": "2026-08-18T01:55:56.307Z",
+      "timestamps": [
+        {
+          "startTime": 635,
+          "endTime": 815,
+          "topic": "Why Go was chosen over Rust for TypeScript's native rewrite"
+        },
+        {
+          "startTime": 916,
+          "endTime": 1055,
+          "topic": "Deterministic translation tools vs. raw AI for large codebase migration"
+        },
+        {
+          "startTime": 3110,
+          "endTime": 3312,
+          "topic": "Why full AI automation is a myth and human oversight remains critical"
+        }
+      ]
+    },
+    {
       "title": "What To Do With Your Life",
       "url": "https://www.youtube.com/watch?v=fEMHMd7fovM",
       "videoId": "fEMHMd7fovM",
       "channel": "Ali Abdaal",
       "category": "Productivity",
-      "summary": "Figuring out what to do with your life often feels paralyzing because the question is too broad, but breaking it down into a structured framework turns abstract anxiety into actionable clarity. In this video, you'll discover a practical 3-part blueprint—spanning life-area mapping, limitless dream planning, and the transformative 5-year 'Odyssey Plan'—to uncover what truly drives you. If you feel stuck between career paths or unsure of your next move, this step-by-step guide delivers the exact journaling exercises you need to find your direction.",
-      "dateAdded": "2026-08-17T01:59:55.551Z",
+      "summary": "Feeling paralyzed by the daunting question of what to do with your life? This video breaks down a proven 3-step framework—defining life areas, unconstrained dreaming, and crafting a multi-path life vision—that cuts through vague anxiety to give you immediate, actionable clarity. If you've ever felt stuck between chasing money, status, or genuine fulfillment, these practical journaling exercises will completely reframe how you design your future.",
+      "dateAdded": "2026-08-18T01:55:56.307Z",
       "timestamps": [
         {
-          "startTime": 100,
-          "endTime": 225,
-          "topic": "Step 1: Defining your core life areas and clarifying what you actually want"
+          "startTime": 468,
+          "endTime": 540,
+          "topic": "Unpacking the 'Why' and the feelings behind ambitious goals"
         },
         {
           "startTime": 878,
-          "endTime": 960,
-          "topic": "Step 3: The Odyssey Plan—mapping three alternative 5-year futures"
+          "endTime": 955,
+          "topic": "The Odyssey Plan: Designing 3 alternative 5-year futures"
         },
         {
-          "startTime": 1034,
-          "endTime": 1133,
-          "topic": "The Service & Eulogy prompts: uncovering true purpose and lasting legacy"
+          "startTime": 1035,
+          "endTime": 1102,
+          "topic": "The Service Prompt: Finding purposeful work beyond money"
+        }
+      ]
+    },
+    {
+      "title": "Hands on with Gemini 3.7 Flash",
+      "url": "https://www.youtube.com/watch?v=kacf2bib-X0",
+      "videoId": "kacf2bib-X0",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Discover how top tech leaders from Box, Databricks, and Emergent cut enterprise AI costs tenfold while dramatically improving performance. Watch this panel to learn how adopting high-efficiency models like Gemini 3.7 Flash revolutionizes multi-agent systems and real-world data pipelines. If you are building scalable AI products, this conversation delivers practical architectures to maximize speed without overspending.",
+      "dateAdded": "2026-08-18T01:55:56.307Z",
+      "timestamps": [
+        {
+          "startTime": 24,
+          "endTime": 109,
+          "topic": "Enterprise scale versus frontier AI hype"
+        },
+        {
+          "startTime": 144,
+          "endTime": 220,
+          "topic": "The 'Minimum Viable Model' framework and token efficiency"
+        },
+        {
+          "startTime": 297,
+          "endTime": 402,
+          "topic": "Architecting multi-agent systems with intent classification"
+        }
+      ]
+    },
+    {
+      "title": "Wise vs Bank: Siapa bagi exchange rate lebih baik?",
+      "url": "https://www.youtube.com/watch?v=wwgWeguDZSU",
+      "videoId": "wwgWeguDZSU",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Every time you spend abroad or pay for foreign subscriptions with a traditional bank card, hidden markups and network fees quietly eat away at your money. Discover how using Wise and its mid-market exchange rates, auto-conversion, and disposable virtual cards can protect your wallet and eliminate unnecessary charges. Watch this guide to optimize every single foreign currency transaction you make.",
+      "dateAdded": "2026-08-18T01:55:56.307Z",
+      "timestamps": [
+        {
+          "startTime": 56,
+          "endTime": 96,
+          "topic": "The Hidden Costs and Markup Fees of Traditional Bank Cards"
+        },
+        {
+          "startTime": 258,
+          "endTime": 298,
+          "topic": "Automating Better Exchange Rates with Auto and Smart Conversion"
+        },
+        {
+          "startTime": 333,
+          "endTime": 395,
+          "topic": "Protecting Subscriptions with Disposable Virtual Cards"
+        }
+      ]
+    },
+    {
+      "title": "Your Activism Doesn't Excuse Your Disobedience | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/gM_dPnYh4Gs",
+      "videoId": "gM_dPnYh4Gs",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Think social justice excuses neglecting your prayers, or that personal piety means ignoring the oppressed? This powerful reminder breaks down why the Quran firmly unites public decency with personal worship, dismantling the false divide between activism and spiritual duty. Watch to discover why faith demands both compassion for the vulnerable and dedication to your daily prayer.",
+      "dateAdded": "2026-08-18T01:55:56.307Z",
+      "timestamps": [
+        {
+          "startTime": 15,
+          "endTime": 36,
+          "topic": "Personal Piety vs. Public Decency in the Quran"
+        },
+        {
+          "startTime": 36,
+          "endTime": 52,
+          "topic": "Connecting Social Justice with Daily Prayer"
+        },
+        {
+          "startTime": 52,
+          "endTime": 76,
+          "topic": "Avoiding the Extremes of Activism and Worship"
         }
       ]
     },
@@ -49,32 +153,6 @@
           "startTime": 96,
           "endTime": 118,
           "topic": "Synthesizing Deep Academic and Scientific Research Faster"
-        }
-      ]
-    },
-    {
-      "title": "Wise vs Bank: Siapa bagi exchange rate lebih baik?",
-      "url": "https://www.youtube.com/watch?v=wwgWeguDZSU",
-      "videoId": "wwgWeguDZSU",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Did you know that standard bank cards secretly charge you extra markups and network fees every time you travel overseas or pay for foreign subscriptions? This video breaks down how traditional banks quietly eat into your wallet on foreign currency transactions and shows you how to use Wise to lock in real mid-market exchange rates and safeguard your money with disposable virtual cards. Watch this to immediately cut unnecessary foreign transaction fees on your next overseas trip or software bill.",
-      "dateAdded": "2026-08-17T01:59:55.551Z",
-      "timestamps": [
-        {
-          "startTime": 56,
-          "endTime": 136,
-          "topic": "The Hidden Fees Traditional Banks Charge for Foreign Currency"
-        },
-        {
-          "startTime": 140,
-          "endTime": 189,
-          "topic": "What is Wise and How Mid-Market Exchange Rates Work"
-        },
-        {
-          "startTime": 330,
-          "endTime": 401,
-          "topic": "Protecting Online Payments and Subscriptions with Wise Virtual Cards"
         }
       ]
     },
@@ -306,80 +384,7 @@
           "topic": "Prophetic Justice and Balancing Human Emotion"
         }
       ]
-    },
-    {
-      "title": "Allah Won't Change Your Situation Until You Do This One Simple Thing",
-      "url": "https://www.youtube.com/watch?v=E5RnYWQhZiM",
-      "videoId": "E5RnYWQhZiM",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "In this insightful reflection, Abdullah Oduro breaks down Surah Ar-Ra'd (13:11) to explain why many people feel their prayers remain unanswered during times of personal or marital struggle. The core takeaway is that true divine change requires genuine internal transformation and purifying one's intention for Allah, rather than relying on superficial, transactional behavior.",
-      "dateAdded": "2026-08-11T02:33:07.904Z",
-      "timestamps": [
-        {
-          "startTime": 93,
-          "endTime": 180,
-          "topic": "Quranic foundation: Surah Ar-Ra'd (13:11) and understanding divine protection"
-        },
-        {
-          "startTime": 433,
-          "endTime": 535,
-          "topic": "The trap of surface-level behavioral changes vs. true internal transformation"
-        },
-        {
-          "startTime": 615,
-          "endTime": 717,
-          "topic": "Leading from security: Why actions must be for Allah, not transactional praise"
-        }
-      ]
-    },
-    {
-      "title": "Velocity Sickness: What Happens When Your Whole Team Gets 10x Faster — Matt Dailey, Ref.",
-      "url": "https://www.youtube.com/watch?v=Kz4QJmNrVXU",
-      "videoId": "Kz4QJmNrVXU",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "As AI supercharges individual coding speeds, engineering teams often suffer from 'velocity sickness'—producing endless output without delivering actual product impact. This talk explains why switching from ephemeral chat-driven coding to durable, plan-focused documentation helps teams maintain strategic control over AI agents and drastically improves collaborative output.",
-      "dateAdded": "2026-08-10T02:40:03.161Z",
-      "timestamps": [
-        {
-          "startTime": 232,
-          "endTime": 266,
-          "topic": "Understanding 'Velocity Sickness' in AI-powered teams"
-        },
-        {
-          "startTime": 397,
-          "endTime": 447,
-          "topic": "How AI shifts engineering workflows to Plan and Polish"
-        },
-        {
-          "startTime": 911,
-          "endTime": 954,
-          "topic": "Moving from Code Velocity to Idea Velocity"
-        }
-      ]
-    },
-    {
-      "title": "The \"Good Enough\" Muslim | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/nvU9U9Ny_8I",
-      "videoId": "nvU9U9Ny_8I",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "This thought-provoking clip explores the challenges of maintaining faith and religious integrity in a rapidly changing modern world. It highlights how holding onto even a fraction of sincere faith and striving for ethical living—like securing a fully halal income—can be immensely impactful today.",
-      "dateAdded": "2026-08-10T02:40:03.162Z",
-      "timestamps": [
-        {
-          "startTime": 7,
-          "endTime": 18,
-          "topic": "Holding onto faith during challenging times"
-        },
-        {
-          "startTime": 18,
-          "endTime": 27,
-          "topic": "The modern struggle of maintaining halal income and identity"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-08-17T02:03:23.925Z"
+  "lastUpdated": "2026-08-18T01:59:20.872Z"
 }
