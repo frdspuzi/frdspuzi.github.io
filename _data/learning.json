@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Which Scrum artifact is used to visualize the progress of a Sprint and show the remaining work?",
+      "question": "Which two groups of beings are explicitly stated in Quran 51:56 to have been created solely for the purpose of worship?",
       "options": [
-        "Sprint Backlog",
-        "Product Backlog",
-        "Sprint Review",
-        "Burndown Chart"
-      ],
-      "correctIndex": 3,
-      "learning": "A Burndown Chart is a Scrum artifact that visualizes the progress of a Sprint, displaying remaining work to help track whether the team is on schedule.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "Research conducted by Hermann Ebbinghaus in the 1880s demonstrated that humans forget approximately what percentage of newly learned information within 24 hours without active recall?",
-      "options": [
-        "50%",
-        "30%",
-        "65%",
-        "80%"
-      ],
-      "correctIndex": 3,
-      "learning": "In the 1880s, Hermann Ebbinghaus proved that humans forget about 80% of what they learn within 24 hours unless they actively force themselves to recall it.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In PCIe power management, which state provides the highest power savings and the longest wake-up time by almost completely powering down the device?",
-      "options": [
-        "L1.0",
-        "L2",
-        "L0s",
-        "L0"
-      ],
-      "correctIndex": 1,
-      "learning": "PCIe manages energy efficiency and responsiveness across a spectrum of power states, ranging from L0 (fully active) to L2 (almost completely powered down for maximum power savings with the longest wake-up time).",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "In Islamic scripture, which two groups are explicitly identified in Quran 51:56 as being created specifically for the purpose of worshiping God?",
-      "options": [
-        "Prophets and mankind",
-        "Jinn and angels",
+        "Mankind and animals",
         "Jinn and mankind",
+        "Jinn and angels",
         "Angels and mankind"
       ],
-      "correctIndex": 2,
-      "learning": "Quran 51:56 explicitly states that the foundational purpose behind the creation of both jinn and mankind is to worship Allah.",
+      "correctIndex": 1,
+      "learning": "Quran 51:56 explicitly states the foundational purpose for creating both jinn and mankind: 'I did not create the jinn and mankind except to worship Me.'",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which term refers to the actual occurrence and unfolding of events in one's life that can be influenced and altered by actions and supplication (Dua)?",
+      "question": "What is the primary motivation for dividing the development process into smaller, iterative cycles called Sprints in the Scrum framework?",
       "options": [
-        "Dua",
-        "Qada’",
-        "Qadr",
-        "Al-Alim"
+        "To increase the overall length of the project",
+        "To replace the need for continuous product testing",
+        "To allow for more flexibility and quicker adjustments",
+        "To reduce the number of team members needed"
       ],
-      "correctIndex": 1,
-      "learning": "Qada’ refers to the unfolding and actual occurrence of events in a person's life that can be altered through actions and supplication (Dua), whereas Qadr is Allah's complete, eternal, and preordained plan.",
+      "correctIndex": 2,
+      "learning": "In Scrum, the primary purpose of breaking work into smaller, iterative cycles known as Sprints is to provide greater flexibility and enable teams to make quicker adjustments.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "In Islamic belief, which concept refers to the complete, eternal plan and knowledge preordained by Allah, encompassing all events that will ever occur?",
+      "options": [
+        "Qada’",
+        "Jami",
+        "Dua",
+        "Qadr"
+      ],
+      "correctIndex": 3,
+      "learning": "In Islamic theology, Qada’ refers to the actual occurrence and unfolding of events in life that can be influenced by actions and supplication, whereas Qadr is Allah’s complete, preordained plan and eternal knowledge of everything that will ever happen.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "What percentage of newly learned information did 1880s researcher Hermann Ebbinghaus prove is forgotten within 24 hours unless actively recalled?",
+      "options": [
+        "95%",
+        "80%",
+        "25%",
+        "50%"
+      ],
+      "correctIndex": 1,
+      "learning": "In the 1880s, Hermann Ebbinghaus demonstrated that humans forget roughly 80% of what they learn within 24 hours unless they actively practice recall.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "In PCIe power management, which specific substate represents the deepest power-saving mode within the L1 state?",
+      "options": [
+        "L0s",
+        "L1.0",
+        "L1.1",
+        "L1.2"
+      ],
+      "correctIndex": 3,
+      "learning": "Within PCIe power management, L1.2 is the deepest power-saving substate in L1, shutting down the maximum number of components to achieve the highest energy savings in exchange for the longest wake-up delay.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     }
   ],
-  "fetchedAt": "2026-08-18T01:55:49.989Z"
+  "fetchedAt": "2026-08-19T01:57:40.469Z"
 }
