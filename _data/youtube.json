@@ -1,28 +1,33 @@
 {
   "videos": [
     {
-      "title": "Infra behind Krea 2: How to train and serve at scale — Gabriel Jorge Menezes, Krea.ai",
-      "url": "https://www.youtube.com/watch?v=byn9PURoBNY",
-      "videoId": "byn9PURoBNY",
+      "title": "Why Your Enterprise Tech Stack Isn’t Ready for AI Agents — Christopher Lovejoy & Saul Howard",
+      "url": "https://www.youtube.com/watch?v=mav15aW9lLM",
+      "videoId": "mav15aW9lLM",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Discover the battle-tested infrastructure secrets behind training and serving massive diffusion models from scratch across thousands of GPUs. Learn how Krea AI avoided catastrophic downtime, debunked misleading GPU utilization metrics, and architected seamless workload spillover between training and live inference. If you want to scale AI workloads without burning millions on failed runs, this talk is a must-watch.",
-      "dateAdded": "2026-08-19T01:57:59.394Z",
+      "summary": "Building a working AI agent proof-of-concept takes weeks, but taking it into high-stakes, heavily regulated enterprise environments usually hits an immediate wall of compliance, privacy, and security audits. This talk delivers a battle-tested blueprint of the core architectural primitives—including immutable event sourcing, zero-trust object storage, and human-agent equivalency—required to bridge that gap. If you are building agentic systems that need to survive enterprise security reviews and real-world deployment, this session is mandatory watching.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
       "timestamps": [
         {
-          "startTime": 260,
-          "endTime": 471,
-          "topic": "The Real GPU & Network Metrics That Prevent Large-Scale Training Crashes"
+          "startTime": 407,
+          "endTime": 523,
+          "topic": "The compliance reality check: Why successful POCs stall before production"
         },
         {
-          "startTime": 526,
-          "endTime": 715,
-          "topic": "Dynamic Workload Scheduling and Cluster Failover Using Kueue"
+          "startTime": 648,
+          "endTime": 847,
+          "topic": "Using immutable event ledgers for complete auditability and state replay"
         },
         {
-          "startTime": 715,
-          "endTime": 982,
-          "topic": "Serverless GPU Bursting and Multi-Tenant Scaling with Virtual Kubelet"
+          "startTime": 1027,
+          "endTime": 1256,
+          "topic": "Solving sensitive data handling and prompt injection with orchestration-adjacent object storage"
+        },
+        {
+          "startTime": 1346,
+          "endTime": 1445,
+          "topic": "Enforcing human-agent equivalency for seamless dynamic escalations"
         }
       ]
     },
@@ -32,23 +37,23 @@
       "videoId": "fEMHMd7fovM",
       "channel": "Ali Abdaal",
       "category": "Productivity",
-      "summary": "Asking yourself 'what should I do with my life?' is an overwhelming trap because the question is far too vague to be actionable. This video delivers a crystal-clear, 3-part framework that cuts through the noise by defining your anti-goals, unleashing unconstrained dreams, and mapping out three distinct 5-year futures using the Odyssey Plan. If you feel stuck, overwhelmed, or directionless, this practical exercise will immediately clarify the exact path and lifestyle you want to build next.",
-      "dateAdded": "2026-08-19T01:57:59.394Z",
+      "summary": "Asking yourself 'what should I do with my life?' is too vague to be useful—which is why most people stay paralyzed by indecision. In this video, you'll discover a practical three-part system to break your life down into manageable areas, define what you actually want (and don't want), and map out alternative five-year paths using exercises like the Odyssey Plan. Watch this to replace existential dread with a clear, actionable direction for your career, health, and personal life.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
       "timestamps": [
         {
-          "startTime": 106,
-          "endTime": 187,
-          "topic": "Defining What You Want vs. What You Don't Want in Key Life Areas"
+          "startTime": 99,
+          "endTime": 224,
+          "topic": "Deconstructing Vague Goals into What You Want vs. What You Don't Want"
         },
         {
-          "startTime": 469,
-          "endTime": 532,
-          "topic": "The 'Why' Exercise: Uncovering the True Feelings Behind Your Goals"
+          "startTime": 633,
+          "endTime": 720,
+          "topic": "The Uncapped 'Dreams' Brainstorming Exercise"
         },
         {
-          "startTime": 880,
-          "endTime": 955,
-          "topic": "The Odyssey Plan: Mapping Out Three Alternate 5-Year Futures"
+          "startTime": 879,
+          "endTime": 974,
+          "topic": "The Odyssey Plan: Mapping Out 3 Divergent 5-Year Futures"
         }
       ]
     },
@@ -58,75 +63,23 @@
       "videoId": "kN_iMEAi1dw",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Imagine broadcasting a live speech and letting an international audience listen in real-time across multiple languages simultaneously with virtually zero latency. This hands-on walkthrough reveals how to build a scalable, open-source broadcast translator using the Gemini Live API, LiveKit, and Google Cloud Run. Watch to discover how effortlessly you can deploy next-generation multimodal AI translation directly into your own applications.",
-      "dateAdded": "2026-08-19T01:57:59.395Z",
+      "summary": "Break language barriers instantly by turning any live spoken stream into simultaneous, multi-language AI broadcasts in real time! Discover how combining the Gemini Live API with LiveKit and Google Cloud Run lets you deliver sub-second speech translation and synchronized captions to global audiences at event scale. If you build interactive web applications or live streaming tools, this step-by-step architectural breakdown and open-source code demo is an essential watch.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
       "timestamps": [
         {
-          "startTime": 0,
-          "endTime": 62,
-          "topic": "Real-Time AI Translation Demonstration"
+          "startTime": 102,
+          "endTime": 223,
+          "topic": "How the real-time multi-language broadcast architecture works"
         },
         {
-          "startTime": 76,
-          "endTime": 224,
-          "topic": "Architecture Walkthrough: LiveKit & Gemini Translation Bridge"
+          "startTime": 715,
+          "endTime": 850,
+          "topic": "Gemini Live API WebSocket integration and audio streaming"
         },
         {
-          "startTime": 545,
-          "endTime": 680,
-          "topic": "Deploying the Live Translation App to Google Cloud Run"
-        }
-      ]
-    },
-    {
-      "title": "Bahrain Grand Prix: Kenapa Sepang jadi pilihan?",
-      "url": "https://www.youtube.com/watch?v=e3XGjP_xhrs",
-      "videoId": "e3XGjP_xhrs",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Ever wondered why Malaysia stopped hosting Formula 1 despite owning one of the world's finest racing circuits—and what it actually takes financially to bring the Grand Prix back? This breakdown uncovers the eye-opening economics behind F1 hosting fees, who really profits from race weekends, and whether the massive investment truly pays off for the host country. Watch this video to get a fascinating insider look at the multi-million dollar business of motorsport.",
-      "dateAdded": "2026-08-19T01:57:59.395Z",
-      "timestamps": [
-        {
-          "startTime": 303,
-          "endTime": 444,
-          "topic": "The History and Iconic Design of Sepang International Circuit"
-        },
-        {
-          "startTime": 456,
-          "endTime": 649,
-          "topic": "Why Malaysia Stopped Hosting F1: Astronomical Fees and Declining Sales"
-        },
-        {
-          "startTime": 913,
-          "endTime": 1056,
-          "topic": "The Financial Breakdown and Economic Spillover Effect of Hosting F1"
-        }
-      ]
-    },
-    {
-      "title": "Creator of TypeScript: 10x Faster Typescript, Why AI Won't Replace SWEs | Anders Hejlsberg",
-      "url": "https://www.youtube.com/watch?v=cywK3XYYJ2o",
-      "videoId": "cywK3XYYJ2o",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Discover how TypeScript achieved a massive 10x performance leap through a native port to Go rather than an error-prone ground-up rewrite. Legendary language creator Anders Hejlsberg breaks down compiler architecture, why Rust wasn't the right fit, and the pragmatic limits of AI in software engineering.",
-      "dateAdded": "2026-08-18T01:55:56.307Z",
-      "timestamps": [
-        {
-          "startTime": 635,
-          "endTime": 815,
-          "topic": "Why Go was chosen over Rust for TypeScript's native rewrite"
-        },
-        {
-          "startTime": 916,
-          "endTime": 1055,
-          "topic": "Deterministic translation tools vs. raw AI for large codebase migration"
-        },
-        {
-          "startTime": 3110,
-          "endTime": 3312,
-          "topic": "Why full AI automation is a myth and human oversight remains critical"
+          "startTime": 906,
+          "endTime": 1035,
+          "topic": "Deploying containerized real-time translation on Google Cloud Run"
         }
       ]
     },
@@ -136,229 +89,307 @@
       "videoId": "kacf2bib-X0",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Discover how top tech leaders from Box, Databricks, and Emergent cut enterprise AI costs tenfold while dramatically improving performance. Watch this panel to learn how adopting high-efficiency models like Gemini 3.7 Flash revolutionizes multi-agent systems and real-world data pipelines. If you are building scalable AI products, this conversation delivers practical architectures to maximize speed without overspending.",
-      "dateAdded": "2026-08-18T01:55:56.307Z",
+      "summary": "Building enterprise-scale AI isn't about using the biggest, most expensive model—it's about mastering the 'minimum viable model' to slash latency and costs without sacrificing intelligence. Watch leading builders from Box, Databricks, and Emergent explain how Gemini 3.7 Flash powers high-efficiency, multi-agent workflows at 10x cheaper economics. If you want practical blueprints for deploying production-ready AI agents without burning through your budget, this discussion is essential viewing.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
       "timestamps": [
         {
-          "startTime": 24,
-          "endTime": 109,
-          "topic": "Enterprise scale versus frontier AI hype"
+          "startTime": 85,
+          "endTime": 136,
+          "topic": "Why cost optimization and the 'minimum viable model' define modern enterprise AI"
         },
         {
-          "startTime": 144,
-          "endTime": 220,
-          "topic": "The 'Minimum Viable Model' framework and token efficiency"
+          "startTime": 177,
+          "endTime": 242,
+          "topic": "How 10x cheaper token costs unlock ambitious developer innovation"
         },
         {
-          "startTime": 297,
-          "endTime": 402,
-          "topic": "Architecting multi-agent systems with intent classification"
+          "startTime": 177,
+          "endTime": 242,
+          "topic": "Scaling multi-agent architectures and rapid intent classification with Gemini 3.7 Flash"
         }
       ]
     },
     {
-      "title": "Wise vs Bank: Siapa bagi exchange rate lebih baik?",
-      "url": "https://www.youtube.com/watch?v=wwgWeguDZSU",
-      "videoId": "wwgWeguDZSU",
+      "title": "Pendapatan KWSP meningkat 48%",
+      "url": "https://www.youtube.com/shorts/f-zp5nwhq7o",
+      "videoId": "f-zp5nwhq7o",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Every time you spend abroad or pay for foreign subscriptions with a traditional bank card, hidden markups and network fees quietly eat away at your money. Discover how using Wise and its mid-market exchange rates, auto-conversion, and disposable virtual cards can protect your wallet and eliminate unnecessary charges. Watch this guide to optimize every single foreign currency transaction you make.",
-      "dateAdded": "2026-08-18T01:55:56.307Z",
+      "summary": "EPF recorded a massive 48% jump in investment income, but does that actually guarantee a massive dividend payout for members? Watch this breakdown to uncover the reality behind the headline figures—specifically how unrealized paper gains impact your actual returns—and see where EPF's global investments are truly driving profits.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
       "timestamps": [
         {
-          "startTime": 56,
-          "endTime": 96,
-          "topic": "The Hidden Costs and Markup Fees of Traditional Bank Cards"
+          "startTime": 28,
+          "endTime": 55,
+          "topic": "Why EPF's Revenue Surge Includes Non-Distributable Paper Gains"
         },
         {
-          "startTime": 258,
-          "endTime": 298,
-          "topic": "Automating Better Exchange Rates with Auto and Smart Conversion"
+          "startTime": 68,
+          "endTime": 110,
+          "topic": "How Global Equity & AI Market Exposure Drove EPF's Big Returns"
         },
         {
-          "startTime": 333,
-          "endTime": 395,
-          "topic": "Protecting Subscriptions with Disposable Virtual Cards"
+          "startTime": 145,
+          "endTime": 164,
+          "topic": "Potential Dividend Projections Compared to Past Performance"
         }
       ]
     },
     {
-      "title": "Your Activism Doesn't Excuse Your Disobedience | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/gM_dPnYh4Gs",
-      "videoId": "gM_dPnYh4Gs",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Think social justice excuses neglecting your prayers, or that personal piety means ignoring the oppressed? This powerful reminder breaks down why the Quran firmly unites public decency with personal worship, dismantling the false divide between activism and spiritual duty. Watch to discover why faith demands both compassion for the vulnerable and dedication to your daily prayer.",
-      "dateAdded": "2026-08-18T01:55:56.307Z",
-      "timestamps": [
-        {
-          "startTime": 15,
-          "endTime": 36,
-          "topic": "Personal Piety vs. Public Decency in the Quran"
-        },
-        {
-          "startTime": 36,
-          "endTime": 52,
-          "topic": "Connecting Social Justice with Daily Prayer"
-        },
-        {
-          "startTime": 52,
-          "endTime": 76,
-          "topic": "Avoiding the Extremes of Activism and Worship"
-        }
-      ]
-    },
-    {
-      "title": "How builders at YC Startup School are using Gemini & Google AI",
-      "url": "https://www.youtube.com/watch?v=hfAkpEM9N5M",
-      "videoId": "hfAkpEM9N5M",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Discover how the next generation of top founders and researchers from Stanford, UPenn, and beyond are actively building the future with Google's advanced AI models. From accelerating antibiotic resistance breakthroughs with AlphaFold to parsing complex financial data in real time using Gemini Flash, this video reveals the practical, cutting-edge workflows reshaping tech today.",
-      "dateAdded": "2026-08-17T01:59:55.551Z",
-      "timestamps": [
-        {
-          "startTime": 13,
-          "endTime": 31,
-          "topic": "Automating Global Financial Workflows with Gemini Flash"
-        },
-        {
-          "startTime": 51,
-          "endTime": 74,
-          "topic": "Tackling Global Health and Drug Discovery with AlphaFold"
-        },
-        {
-          "startTime": 96,
-          "endTime": 118,
-          "topic": "Synthesizing Deep Academic and Scientific Research Faster"
-        }
-      ]
-    },
-    {
-      "title": "[S01:E21] Kedai kek 500 cawangan, apa rahsia Secret Recipe kekal konsisten? - Patrick Sim, Group CEO",
-      "url": "https://www.youtube.com/watch?v=Flmd1Uma33s",
-      "videoId": "Flmd1Uma33s",
-      "channel": "Financial Faiz Podcast",
+      "title": "Scam duit kutu RM1.7 juta?",
+      "url": "https://www.youtube.com/shorts/nsq_ptkpymw",
+      "videoId": "nsq_ptkpymw",
+      "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Discover the untold story of how Secret Recipe evolved from an unexpected hair salon concept into an iconic international F&B empire with over 500 outlets worldwide. Group CEO Patrick Sim pulls back the curtain on the operational blueprints behind maintaining strict quality control, scaling through franchising, and keeping a brand relevant for nearly 30 years. Whether you are an aspiring entrepreneur or an experienced business leader, this candid discussion provides invaluable lessons on navigating retail growth and avoiding costly operational pitfalls.",
-      "dateAdded": "2026-08-17T01:59:55.551Z",
+      "summary": "Think joining a 'kutu' (money pool) scheme is just a harmless way to force yourself to save? This video exposes the massive legal and financial risks of these schemes, including severe penalties under Malaysian law and hidden opportunity costs compared to legitimate investments. Watch to find out why even putting 'duit kutu' in your bank transfer references can instantly sabotage your loan applications.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
       "timestamps": [
         {
-          "startTime": 235,
-          "endTime": 295,
-          "topic": "The Unconventional Origin: Pivoting from a Hair Salon to Secret Recipe"
+          "startTime": 16,
+          "endTime": 43,
+          "topic": "The legal penalties of running commercial 'kutu' schemes in Malaysia"
+        },
+        {
+          "startTime": 73,
+          "endTime": 107,
+          "topic": "Why 'main kutu' is a financial trap vs investing in ASB"
+        },
+        {
+          "startTime": 108,
+          "endTime": 125,
+          "topic": "How 'kutu' transactions on bank statements can get your loans rejected"
+        }
+      ]
+    },
+    {
+      "title": "#109 | How To Lead With Integrity ",
+      "url": "https://www.youtube.com/watch?v=FJoQR0Z0hLk",
+      "videoId": "FJoQR0Z0hLk",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "Even the most celebrated leaders and massive corporations can suffer catastrophic downfalls when unchecked power, shady procurement shortcuts, and rubber-stamping boards take over. Drawing on high-profile scandals like 1MDB alongside frontline CEO experience, this episode breaks down the red flags that precede corporate ruin. Discover the vital governance frameworks and personal ethical litmus tests every leader needs to navigate high-stakes decisions safely.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "timestamps": [
+        {
+          "startTime": 588,
+          "endTime": 677,
+          "topic": "Key warning signs of corruption and fraud in procurement"
         },
         {
           "startTime": 810,
-          "endTime": 885,
-          "topic": "Maintaining Consistent Food Quality Across Hundreds of Outlets"
+          "endTime": 876,
+          "topic": "The dangerous illusion of taking bribes: standing on a cliff edge"
         },
         {
-          "startTime": 1265,
-          "endTime": 1345,
-          "topic": "Franchising vs. Company-Owned Stores: Balancing Control and Scale"
+          "startTime": 1536,
+          "endTime": 1605,
+          "topic": "Three golden rules for navigating grey areas and ethical dilemmas"
         }
       ]
     },
     {
-      "title": "Are You Too Sensitive? | LATEST Khutbah by Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=KexLHRCIrh0",
-      "videoId": "KexLHRCIrh0",
+      "title": "Why Your Attention is Worth More Than You Think & Who’s Buying It | Focal Point | Imam Tom Facchine",
+      "url": "https://www.youtube.com/watch?v=DLopUaCTt3Q",
+      "videoId": "DLopUaCTt3Q",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Discover the essential character traits taught by the Prophet ﷺ that protect a believer from the Hellfire by cultivating approachability, gentleness, and an easygoing nature. Learn how overlooking minor offenses and refusing to feed personal drama transforms everyday conflicts into profound spiritual rewards. Watch this khutbah to master the balance between maintaining healthy boundaries and preventing your ego from escalating petty disputes.",
-      "dateAdded": "2026-08-17T01:59:55.551Z",
+      "summary": "The very tech executives who built smartphones and social media severely restrict their own children from using them—because they know our devices were engineered to systematically destroy human willpower and attention. Discover how the modern attention economy evolved into surveillance capitalism and technofeudalism, and learn how this relentless digital distraction silently erodes our capacity for deep reflection (tadabbur), sincere worship (khushu'), and spiritual presence. Watching this breakdown will fundamentally change how you guard your time, mind, and faith against algorithmic manipulation.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
       "timestamps": [
         {
-          "startTime": 60,
-          "endTime": 165,
-          "topic": "The Prophetic characteristics that shield a believer from Hellfire"
+          "startTime": 485,
+          "endTime": 613,
+          "topic": "Irresistible Engineering: Why willpower alone cannot beat algorithmic addiction"
         },
         {
-          "startTime": 530,
-          "endTime": 660,
-          "topic": "Practicing 'Samhan': The power of overlooking petty grievances"
+          "startTime": 628,
+          "endTime": 760,
+          "topic": "Surveillance Capitalism & Technofeudalism: How human attention became raw material"
         },
         {
-          "startTime": 1005,
-          "endTime": 1110,
-          "topic": "Defending sacred boundaries versus protecting an inflated ego"
+          "startTime": 1225,
+          "endTime": 1370,
+          "topic": "The Spiritual Cost: Reclaiming presence (khushu') and guarding irreplaceable time"
         }
       ]
     },
     {
-      "title": "Insurans atau Takaful?",
-      "url": "https://www.youtube.com/shorts/AkrZUJ_rlzg",
-      "videoId": "AkrZUJ_rlzg",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Relying solely on takaful or insurance without an emergency fund is a dangerous financial mistake that could leave you stranded if you suddenly lose your job. Discover why medical coverage won't pay your living commitments and why you need a three-pillar safety net—emergency funds, sinking funds, and takaful—to achieve true financial security.",
-      "dateAdded": "2026-08-16T02:02:30.318Z",
+      "title": "Allah Won't Change Your Situation Until You Do This One Simple Thing",
+      "url": "https://www.youtube.com/watch?v=E5RnYWQhZiM",
+      "videoId": "E5RnYWQhZiM",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "If you've been making the exact same dua for years and taking all the right external steps without seeing results, you might be missing the single most crucial requirement: genuine internal transformation. This video breaks down a powerful verse from Surah Ar-Ra'd to reveal why Allah withholds change until we shift our deep inner intentions rather than relying on surface-level behavioral fixes. Watch to understand the spiritual mechanics behind answered prayers and learn how to break through emotional and marital stagnation.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
       "timestamps": [
         {
-          "startTime": 21,
-          "endTime": 53,
-          "topic": "Why Takaful Alone Cannot Replace an Emergency Fund During Layoffs"
+          "startTime": 125,
+          "endTime": 270,
+          "topic": "Why Divine Protection and Withholding Coexist"
         },
         {
-          "startTime": 54,
-          "endTime": 83,
-          "topic": "The Essential 3-Part Financial Safety Net You Must Have"
+          "startTime": 360,
+          "endTime": 515,
+          "topic": "Surface Behavioral Fixes vs. True Internal Transformation"
+        },
+        {
+          "startTime": 678,
+          "endTime": 810,
+          "topic": "The Cost of Emotional Drift and Delayed Growth"
         }
       ]
     },
     {
-      "title": "How to Become a Productive Muslim: Complete Self-Improvement Guide | Belal Assaad",
-      "url": "https://www.youtube.com/watch?v=-ZSxXF79r3g",
-      "videoId": "-ZSxXF79r3g",
-      "channel": "Learn Islam",
-      "category": "Discovery 🌍",
-      "summary": "Stop blaming bad luck, toxic people, or supernatural excuses for your setbacks—real transformation starts when you take radical ownership of your actions. This powerful talk delivers practical Islamic strategies to build mental toughness, master self-discipline, and replace reactive excuses with unwavering willpower. Watch to discover actionable rules, like the 90-second emotional mastery technique, that will fundamentally elevate your productivity and character.",
-      "dateAdded": "2026-08-15T09:38:56.312Z",
+      "title": "From Chrome DevTools to AI Engineering, with Addy Osmani",
+      "url": "https://www.youtube.com/watch?v=2fyPnxKu8ZM",
+      "videoId": "2fyPnxKu8ZM",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "As AI agents increasingly write our code, software engineering is shifting from syntax generation to managing autonomous 'software factories'—bringing a massive risk of 'cognitive surrender' where developers lose critical problem-solving skills. Former Google Director of Engineering Addy Osmani unpacks how to leverage AI without losing your technical edge, maintain deep system accountability, and future-proof your career as tech roles unbundle. If you want to know what truly keeps an engineer irreplaceable in the AI era, this conversation is an essential watch.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
       "timestamps": [
         {
-          "startTime": 226,
-          "endTime": 312,
-          "topic": "The Sunnah of decisive commitment and resilience from the Battle of Uhud"
+          "startTime": 3690,
+          "endTime": 3810,
+          "topic": "The Threat of Cognitive Debt and Cognitive Surrender with AI"
         },
         {
-          "startTime": 782,
-          "endTime": 834,
-          "topic": "Reframing failure as a lesson to innovate rather than quit"
+          "startTime": 3960,
+          "endTime": 4080,
+          "topic": "Loop Engineering and the Rise of Autonomous Software Factories"
         },
+        {
+          "startTime": 5420,
+          "endTime": 5530,
+          "topic": "The Unbundling of Engineering Roles and How to Stay Relevant"
+        }
+      ]
+    },
+    {
+      "title": "Inside Amazon's Internal AI Training Loop",
+      "url": "https://www.youtube.com/watch?v=NNgxRAu9YAo",
+      "videoId": "NNgxRAu9YAo",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "Writing code is no longer the bottleneck in software development—the real challenge has shifted to validating whether you are building the right thing and keeping up with rapidly evolving AI capabilities. Amazon's Head of Agentic AI pulls back the curtain on how frontier models are trained using reinforcement learning gyms, why traditional benchmarks become obsolete in months, and how engineering teams must adapt to agentic workflows. Watch this to discover how to navigate the shift toward autonomous AI systems and build faster feedback loops before your current development process falls behind.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "timestamps": [
+        {
+          "startTime": 505,
+          "endTime": 675,
+          "topic": "The Moving Target: Why AI Evals and Benchmarks Quickly Saturate"
+        },
+        {
+          "startTime": 1269,
+          "endTime": 1440,
+          "topic": "The Shifting Bottleneck: From Coding Hours to Rapid Product Validation"
+        },
+        {
+          "startTime": 1987,
+          "endTime": 2160,
+          "topic": "Inside RL Gyms: Training AI Models in Simulated Failure Environments"
+        }
+      ]
+    },
+    {
+      "title": "Bukan Menyelamatkan Tabung Haji, Tapi Pindahkan Beban",
+      "url": "https://www.youtube.com/watch?v=9Cd-cQDq1EI",
+      "videoId": "9Cd-cQDq1EI",
+      "channel": "Rafizi Ramli",
+      "category": "General Ideas",
+      "summary": "Did the government truly rescue Tabung Haji, or was the financial burden simply shifted onto the public? Discover the real story as official audited financial statements from 2019 to 2025 expose the hard numbers behind the recovery of toxic assets across different administrations. If you want the unvarnished facts backed by solid data rather than political rhetoric, this breakdown is essential viewing.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "timestamps": [
+        {
+          "startTime": 11,
+          "endTime": 56,
+          "topic": "Debunking the claim of saving Tabung Haji"
+        },
+        {
+          "startTime": 57,
+          "endTime": 128,
+          "topic": "Audited financial performance analysis of UJSB (2019–2025)"
+        }
+      ]
+    },
+    {
+      "title": "LIVE: Uncle Bob on Software Fundamentals in the Age of AI",
+      "url": "https://www.youtube.com/watch?v=zcLPGC-tvgk",
+      "videoId": "zcLPGC-tvgk",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Legendary software engineer Uncle Bob Martin breaks down how to harness AI coding agents without letting them bury your codebase in messy, unmaintainable garbage. Discover how combining deterministic verification tools like mutation testing with specialized multi-agent pipelines lets you 5x development speed while keeping code quality rock solid. If you want to know how Clean Code principles survive and thrive in the era of AI-driven development, this masterclass is a must-watch.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "timestamps": [
         {
           "startTime": 1158,
-          "endTime": 1210,
-          "topic": "Mastering the 90-second rule to defeat anger and emotional reactivity"
+          "endTime": 1360,
+          "topic": "The Multi-Agent gauntlet: Specifier, Coder, Cleaner, Hardener, and QA"
+        },
+        {
+          "startTime": 2175,
+          "endTime": 2495,
+          "topic": "Why upfront Spec-Driven Planning fails and Agile iteration wins with AI"
+        },
+        {
+          "startTime": 2715,
+          "endTime": 2900,
+          "topic": "How junior developers must learn fundamentals before steering AI agents"
         }
       ]
     },
     {
-      "title": "How to Make Your Job Optional - The Freedom Profile Matrix",
-      "url": "https://www.youtube.com/watch?v=oCVq-wAPqSs",
-      "videoId": "oCVq-wAPqSs",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "Making your job optional isn't just about quitting—it is about shifting from trading time for money to building income-generating assets while optimizing for what actually brings fulfillment. Discover the practical Freedom Profile Matrix to diagnose your work life and learn the exact financial equation needed to make work a choice rather than an obligation.",
-      "dateAdded": "2026-08-15T09:38:56.313Z",
+      "title": "New Skills! v1.2 brings /wait-what, /writing-for-agents, and fixes /grill-me",
+      "url": "https://www.youtube.com/watch?v=gaDdrDdczO4",
+      "videoId": "gaDdrDdczO4",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Tired of AI coding assistants giving you convoluted, incomprehensible jargon or dragging you through painfully slow one-question-at-a-time interrogations? The v1.2.0 update to the popular AI Skills framework introduces powerful new workflows like the 'wait-what' plain-English reset and graph-based interactive grilling to massively speed up your AI pairing sessions. Watch this walkthrough to discover how these battle-tested skills can instantly transform Claude Code and Codex into razor-sharp, productive collaborators.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
       "timestamps": [
         {
-          "startTime": 190,
-          "endTime": 310,
-          "topic": "The Freedom Profile Matrix: Evaluating Fun, Flexibility, Fulfilment, and Finance"
+          "startTime": 233,
+          "endTime": 355,
+          "topic": "Taming LLM Verbosity with the 'wait-what' Skill"
         },
         {
-          "startTime": 672,
-          "endTime": 789,
-          "topic": "The Income vs. Asset Equation for Making Work Optional"
+          "startTime": 402,
+          "endTime": 545,
+          "topic": "Faster Decision Making with Batched Graph Questions in 'grill-me'"
         },
         {
-          "startTime": 1054,
-          "endTime": 1243,
-          "topic": "The Real Trade-offs of Starting a Business vs. Employment"
+          "startTime": 728,
+          "endTime": 855,
+          "topic": "Automating Painful Manual Setup with the 'wizard' Skill"
+        }
+      ]
+    },
+    {
+      "title": "/wayfinder: Nothing is too big to plan anymore",
+      "url": "https://www.youtube.com/watch?v=F3lL98Pj90o",
+      "videoId": "F3lL98Pj90o",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "AI coding agents usually break down on ambitious projects because complex ideas get trapped by single-session context limits and unresolved decisions. 'Wayfinder' solves this by turning vague goals into dynamic maps of decision tickets, prototypes, and targeted research sessions to clear the fog of war. Watch this breakdown to master a repeatable, software-engineering-grounded workflow that lets AI orchestrate and execute massive projects seamlessly.",
+      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "timestamps": [
+        {
+          "startTime": 130,
+          "endTime": 250,
+          "topic": "Navigating the 'fog of war' when planning big work with AI"
+        },
+        {
+          "startTime": 460,
+          "endTime": 548,
+          "topic": "The 4 essential ticket types: Research, Prototype, Grilling, and Tasks"
+        },
+        {
+          "startTime": 763,
+          "endTime": 842,
+          "topic": "Why disposable specs beat traditional spec-driven development"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-08-19T02:00:06.578Z"
+  "lastUpdated": "2026-08-19T21:56:52.692Z"
 }
