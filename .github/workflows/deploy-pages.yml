@@ -46,14 +46,23 @@ jobs:
     # fires on failure/cancellation, and there's nothing new to deploy if the content fetch
     # itself didn't complete (no commit means no push means _data/*.json didn't change).
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    outputs:
+      commit_sha: ${{ steps.resolve-sha.outputs.sha }}
     steps:
+      - name: Resolve commit SHA
+        id: resolve-sha
+        # Same commit workflow_run vs push logic the checkout step below needs — factored into
+        # one place so the "Verify live deployment" step in the deploy job can't drift from what
+        # was actually built.
+        run: echo "sha=${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.sha }}" >> "$GITHUB_OUTPUT"
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           # workflow_run doesn't check out the commit that triggered it by default (it resolves
           # to this workflow file's own ref instead) — head_sha is the actual commit the content
           # workflow just pushed, which is what needs building.
-          ref: ${{ github.event_name == 'workflow_run' && github.event.workflow_run.head_sha || github.ref }}
+          ref: ${{ steps.resolve-sha.outputs.sha }}
 
       - name: Set up Node
         uses: actions/setup-node@v4
@@ -69,6 +78,10 @@ jobs:
       - name: Build
         working-directory: component-lab
         run: npm run build
+        env:
+          # Baked into index.html's <meta name="build-commit"> via Vite's HTML env replacement —
+          # see that tag's own comment for why (the "Verify live deployment" step below).
+          VITE_COMMIT_SHA: ${{ steps.resolve-sha.outputs.sha }}
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -88,3 +101,25 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Verify live deployment
+        # actions/deploy-pages reporting success doesn't guarantee GitHub Pages' CDN actually
+        # serves the new build - confirmed for real once (2026-08-19: a successful deploy of a
+        # commit with a fresh _data/youtube.json still served an ~90-minute-stale bundle,
+        # silently, with nothing in Actions showing anything wrong). Polling for this build's own
+        # commit SHA (baked into index.html's <meta name="build-commit"> - see that tag's
+        # comment) turns that into a loud, visible failure instead of a stale site nobody notices
+        # until someone happens to check by hand.
+        run: |
+          SHA="${{ needs.build.outputs.commit_sha }}"
+          URL="${{ steps.deployment.outputs.page_url }}"
+          for i in 1 2 3 4 5 6; do
+            if curl -fsS "$URL" | grep -q "$SHA"; then
+              echo "Live site confirmed serving commit $SHA."
+              exit 0
+            fi
+            echo "Attempt $i/6: live site not yet showing $SHA, retrying in 15s..."
+            sleep 15
+          done
+          echo "::error::Live site still not serving commit $SHA after deploy reported success - GitHub Pages CDN is likely stuck on a stale build. Re-run this workflow (or trigger it via workflow_dispatch) to retry."
+          exit 1

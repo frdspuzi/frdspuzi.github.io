@@ -53,6 +53,13 @@
       name="description"
       content="Software engineer's personal portfolio and blog — thoughts, technical explorations, and reflections."
     />
+    <!-- Vite substitutes %VITE_COMMIT_SHA% from the env var of the same name at build time (its
+         built-in HTML env replacement, no plugin needed) — deploy-pages.yml's own "Verify live
+         deployment" step curls the live site for this exact string after publishing, so a
+         GitHub Pages CDN edge that reports a successful deploy but never actually serves the new
+         build (confirmed to happen at least once — see that step's own comment) fails the job
+         loudly instead of silently leaving stale content live. -->
+    <meta name="build-commit" content="%VITE_COMMIT_SHA%" />
   </head>
   <body class="theme-surface-page min-height-full">
     <div id="root"></div>
