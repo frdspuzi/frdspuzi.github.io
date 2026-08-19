@@ -1,6 +1,120 @@
 {
   "videos": [
     {
+      "title": "Infra behind Krea 2: How to train and serve at scale — Gabriel Jorge Menezes, Krea.ai",
+      "url": "https://www.youtube.com/watch?v=byn9PURoBNY",
+      "videoId": "byn9PURoBNY",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Discover the battle-tested infrastructure secrets behind training and serving massive diffusion models from scratch across thousands of GPUs. Learn how Krea AI avoided catastrophic downtime, debunked misleading GPU utilization metrics, and architected seamless workload spillover between training and live inference. If you want to scale AI workloads without burning millions on failed runs, this talk is a must-watch.",
+      "dateAdded": "2026-08-19T01:57:59.394Z",
+      "timestamps": [
+        {
+          "startTime": 260,
+          "endTime": 471,
+          "topic": "The Real GPU & Network Metrics That Prevent Large-Scale Training Crashes"
+        },
+        {
+          "startTime": 526,
+          "endTime": 715,
+          "topic": "Dynamic Workload Scheduling and Cluster Failover Using Kueue"
+        },
+        {
+          "startTime": 715,
+          "endTime": 982,
+          "topic": "Serverless GPU Bursting and Multi-Tenant Scaling with Virtual Kubelet"
+        }
+      ]
+    },
+    {
+      "title": "What To Do With Your Life",
+      "url": "https://www.youtube.com/watch?v=fEMHMd7fovM",
+      "videoId": "fEMHMd7fovM",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "Asking yourself 'what should I do with my life?' is an overwhelming trap because the question is far too vague to be actionable. This video delivers a crystal-clear, 3-part framework that cuts through the noise by defining your anti-goals, unleashing unconstrained dreams, and mapping out three distinct 5-year futures using the Odyssey Plan. If you feel stuck, overwhelmed, or directionless, this practical exercise will immediately clarify the exact path and lifestyle you want to build next.",
+      "dateAdded": "2026-08-19T01:57:59.394Z",
+      "timestamps": [
+        {
+          "startTime": 106,
+          "endTime": 187,
+          "topic": "Defining What You Want vs. What You Don't Want in Key Life Areas"
+        },
+        {
+          "startTime": 469,
+          "endTime": 532,
+          "topic": "The 'Why' Exercise: Uncovering the True Feelings Behind Your Goals"
+        },
+        {
+          "startTime": 880,
+          "endTime": 955,
+          "topic": "The Odyssey Plan: Mapping Out Three Alternate 5-Year Futures"
+        }
+      ]
+    },
+    {
+      "title": "Build a live translation broadcast app with the Gemini Live API and LiveKit",
+      "url": "https://www.youtube.com/watch?v=kN_iMEAi1dw",
+      "videoId": "kN_iMEAi1dw",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Imagine broadcasting a live speech and letting an international audience listen in real-time across multiple languages simultaneously with virtually zero latency. This hands-on walkthrough reveals how to build a scalable, open-source broadcast translator using the Gemini Live API, LiveKit, and Google Cloud Run. Watch to discover how effortlessly you can deploy next-generation multimodal AI translation directly into your own applications.",
+      "dateAdded": "2026-08-19T01:57:59.395Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 62,
+          "topic": "Real-Time AI Translation Demonstration"
+        },
+        {
+          "startTime": 76,
+          "endTime": 224,
+          "topic": "Architecture Walkthrough: LiveKit & Gemini Translation Bridge"
+        },
+        {
+          "startTime": 545,
+          "endTime": 680,
+          "topic": "Deploying the Live Translation App to Google Cloud Run"
+        }
+      ]
+    },
+    {
+      "title": "Bahrain Grand Prix: Kenapa Sepang jadi pilihan?",
+      "url": "https://www.youtube.com/watch?v=e3XGjP_xhrs",
+      "videoId": "e3XGjP_xhrs",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Ever wondered why Malaysia stopped hosting Formula 1 despite owning one of the world's finest racing circuits—and what it actually takes financially to bring the Grand Prix back? This breakdown uncovers the eye-opening economics behind F1 hosting fees, who really profits from race weekends, and whether the massive investment truly pays off for the host country. Watch this video to get a fascinating insider look at the multi-million dollar business of motorsport.",
+      "dateAdded": "2026-08-19T01:57:59.395Z",
+      "timestamps": [
+        {
+          "startTime": 303,
+          "endTime": 444,
+          "topic": "The History and Iconic Design of Sepang International Circuit"
+        },
+        {
+          "startTime": 456,
+          "endTime": 649,
+          "topic": "Why Malaysia Stopped Hosting F1: Astronomical Fees and Declining Sales"
+        },
+        {
+          "startTime": 913,
+          "endTime": 1056,
+          "topic": "The Financial Breakdown and Economic Spillover Effect of Hosting F1"
+        }
+      ]
+    },
+    {
+      "title": "Why Your Attention is Worth More Than You Think & Who’s Buying It | Focal Point | Imam Tom Facchine",
+      "url": "https://www.youtube.com/watch?v=DLopUaCTt3Q",
+      "videoId": "DLopUaCTt3Q",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "As a software engineer and a Muslim, understanding the hidden ethical and economic machinery of the digital attention economy is critical. Imam Tom Facchine unpacks how big tech monetizes human attention and shares how to reclaim intentionality and spiritual focus in an age of constant distraction.",
+      "dateAdded": "2026-08-19T01:57:59.395Z",
+      "timestamps": []
+    },
+    {
       "title": "Creator of TypeScript: 10x Faster Typescript, Why AI Won't Replace SWEs | Anders Hejlsberg",
       "url": "https://www.youtube.com/watch?v=cywK3XYYJ2o",
       "videoId": "cywK3XYYJ2o",
@@ -23,32 +137,6 @@
           "startTime": 3110,
           "endTime": 3312,
           "topic": "Why full AI automation is a myth and human oversight remains critical"
-        }
-      ]
-    },
-    {
-      "title": "What To Do With Your Life",
-      "url": "https://www.youtube.com/watch?v=fEMHMd7fovM",
-      "videoId": "fEMHMd7fovM",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "Feeling paralyzed by the daunting question of what to do with your life? This video breaks down a proven 3-step framework—defining life areas, unconstrained dreaming, and crafting a multi-path life vision—that cuts through vague anxiety to give you immediate, actionable clarity. If you've ever felt stuck between chasing money, status, or genuine fulfillment, these practical journaling exercises will completely reframe how you design your future.",
-      "dateAdded": "2026-08-18T01:55:56.307Z",
-      "timestamps": [
-        {
-          "startTime": 468,
-          "endTime": 540,
-          "topic": "Unpacking the 'Why' and the feelings behind ambitious goals"
-        },
-        {
-          "startTime": 878,
-          "endTime": 955,
-          "topic": "The Odyssey Plan: Designing 3 alternative 5-year futures"
-        },
-        {
-          "startTime": 1035,
-          "endTime": 1102,
-          "topic": "The Service Prompt: Finding purposeful work beyond money"
         }
       ]
     },
@@ -280,111 +368,7 @@
           "topic": "The Real Trade-offs of Starting a Business vs. Employment"
         }
       ]
-    },
-    {
-      "title": "Agents, codebases, and teams — Aditya Khandelwal, Amazon AGI Lab",
-      "url": "https://www.youtube.com/watch?v=aeTb5BdmTTc",
-      "videoId": "aeTb5BdmTTc",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Integrating AI coding agents into an engineering team often leads to buggy code, burned budgets, and developer burnout if left to individuals to figure out. This talk delivers a practical roadmap for team leaders on how to restructure codebases and team workflows so that AI agents actually deliver reliable, high-value productivity instead of 'AI slop'.",
-      "dateAdded": "2026-08-11T02:33:07.904Z",
-      "timestamps": [
-        {
-          "startTime": 122,
-          "endTime": 228,
-          "topic": "The Developer Psychological Spectrum: Fear vs. Confidence in AI"
-        },
-        {
-          "startTime": 339,
-          "endTime": 421,
-          "topic": "Why AI Agent Adoption is a Team Engineering Problem, Not an IC Problem"
-        },
-        {
-          "startTime": 543,
-          "endTime": 702,
-          "topic": "The 5-Step Playbook for Shipping Together with AI Agents"
-        }
-      ]
-    },
-    {
-      "title": "Codex, Behind the Harness — Dominik Kundel, OpenAI",
-      "url": "https://www.youtube.com/watch?v=shRR1e2HXMk",
-      "videoId": "shRR1e2HXMk",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Ever wondered how modern AI coding agents handle complex, multi-step tasks behind the scenes? OpenAI's Dominik Kundel breaks down the architecture of the Codex agent harness, showing how it manages context budgets, sandboxes execution securely, and speeds up tool-calling workflows. It is a must-watch for software engineers looking to understand or build their own high-performance AI agents.",
-      "dateAdded": "2026-08-11T02:33:07.904Z",
-      "timestamps": [
-        {
-          "startTime": 148,
-          "endTime": 306,
-          "topic": "Protocols Powering Codex and Context Construction"
-        },
-        {
-          "startTime": 678,
-          "endTime": 930,
-          "topic": "Sandboxing and Auto-Review Safety"
-        },
-        {
-          "startTime": 962,
-          "endTime": 1176,
-          "topic": "Websocket Speed Optimization and Context Compaction"
-        }
-      ]
-    },
-    {
-      "title": "[S01:E20] Adakah ekonomi Malaysia okay? - Dr. Aimi, Economist",
-      "url": "https://www.youtube.com/watch?v=veWCTzQDY7c",
-      "videoId": "veWCTzQDY7c",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "This insightful discussion breaks down the critical disconnect between Malaysia's strong macroeconomic figures and the daily economic pressures faced by ordinary citizens. Dr. Aimi Zulhazmi uncovers systemic challenges including underemployment, weak SME support, and food security risks, offering an essential reality check on the nation's economic trajectory.",
-      "dateAdded": "2026-08-11T02:33:07.904Z",
-      "timestamps": [
-        {
-          "startTime": 307,
-          "endTime": 345,
-          "topic": "Why 70% of Malaysians Don't Feel Macroeconomic Prosperity"
-        },
-        {
-          "startTime": 660,
-          "endTime": 708,
-          "topic": "The Innovation and R&D Commercialization Deficit"
-        },
-        {
-          "startTime": 1935,
-          "endTime": 1968,
-          "topic": "Food Security Vulnerabilities: Malaysia vs. Singapore"
-        }
-      ]
-    },
-    {
-      "title": "Safwan ibn al-Mu’attal (ra): Slandered for Helping A Woman | The Firsts | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=a0NqX7HquHU",
-      "videoId": "a0NqX7HquHU",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Discover the inspiring story of Safwan ibn al-Mu'attal (RA), the noble companion of the Prophet Muhammad ﷺ who was falsely accused alongside A'isha (RA) during the Incident of Ifk. Omar Suleiman highlights Safwan's courage, profound restraint, and the timeless lessons of prophetic justice when facing slander while doing good.",
-      "dateAdded": "2026-08-11T02:33:07.904Z",
-      "timestamps": [
-        {
-          "startTime": 105,
-          "endTime": 210,
-          "topic": "Who Was Safwan ibn al-Mu'attal?"
-        },
-        {
-          "startTime": 420,
-          "endTime": 530,
-          "topic": "The Incident of Ifk & Safwan's Dignified Response"
-        },
-        {
-          "startTime": 810,
-          "endTime": 915,
-          "topic": "Prophetic Justice and Balancing Human Emotion"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-08-18T01:59:20.872Z"
+  "lastUpdated": "2026-08-19T02:00:06.578Z"
 }

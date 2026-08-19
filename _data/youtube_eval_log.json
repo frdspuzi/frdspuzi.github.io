@@ -1,212 +1,212 @@
 [
   {
-    "videoId": "YgEv7IQzGdM",
-    "title": "How to Kill the Code Review — Ankit Jain, Aviator",
+    "videoId": "5dCAmSDOAjI",
+    "title": "The Next Medium: Why Real-Time Interactive Video Changes Everything — Ahmed Ahres, Reactor",
     "selected": false,
-    "reasoning": "Niche CI/CD and engineering management talk that is less directly impactful for a junior developer than broader technical and career fundamentals.",
+    "reasoning": "Interesting AI engineering talk, but too specialized compared to broader foundational fullstack engineering topics.",
     "summary": ""
   },
   {
-    "videoId": "MkRYPFIMCSA",
-    "title": "Security Firewall for Agents — Ryan Dahl, Deno",
+    "videoId": "byn9PURoBNY",
+    "title": "Infra behind Krea 2: How to train and serve at scale — Gabriel Jorge Menezes, Krea.ai",
+    "selected": true,
+    "reasoning": "Offers immense architectural insight into real-world production infrastructure and high-scale serving, ideal for a junior engineer looking to level up.",
+    "summary": "Step behind the scenes of a high-growth AI platform to see how production infrastructure is architected and scaled under heavy load. For a junior fullstack engineer, this provides rare, practical insight into real-world distributed systems and backend engineering."
+  },
+  {
+    "videoId": "Xln-On3syJk",
+    "title": "Generative Video at the Speed of Light — Keegan McCallum, uRun",
     "selected": false,
-    "reasoning": "Interesting talk by Ryan Dahl, but highly specialized around AI agent sandboxing rather than immediate fullstack engineering priorities.",
+    "reasoning": "Very niche deep-dive on generative video rendering that offers limited practical utility for junior web development.",
     "summary": ""
   },
   {
-    "videoId": "WP3hjUXd918",
-    "title": "Context Engineering in 2026 — Louis-François Bouchard, Omar Solano & Samridhi Vaid, Towards AI",
+    "videoId": "oYwnvRDXnVo",
+    "title": "Will JavaScript become less popular in the future?",
     "selected": false,
-    "reasoning": "Solid panel discussion on context windows and LLMs, but beaten out by more hands-on developer tutorials and deep architectural interviews.",
+    "reasoning": "Short-form opinion piece with superficial depth.",
+    "summary": ""
+  },
+  {
+    "videoId": "duTdZFVLkiI",
+    "title": "How Typescript was originally created",
+    "selected": false,
+    "reasoning": "Brief trivia short without actionable coding or career advice.",
     "summary": ""
   },
   {
     "videoId": "jikWu7GPWk0",
     "title": "Will AI write +90% of all code?",
     "selected": false,
-    "reasoning": "Bite-sized YouTube Short offering superficial speculative commentary on AI coding.",
+    "reasoning": "Standard short-form speculation on AI coding trends.",
     "summary": ""
-  },
-  {
-    "videoId": "gLUI0lFpGWs",
-    "title": "\"Don't let people tell you...\"",
-    "selected": false,
-    "reasoning": "Vague motivational Short lacking substantive career development takeaways.",
-    "summary": ""
-  },
-  {
-    "videoId": "cywK3XYYJ2o",
-    "title": "Creator of TypeScript: 10x Faster Typescript, Why AI Won't Replace SWEs | Anders Hejlsberg",
-    "selected": true,
-    "reasoning": "Invaluable long-form interview with a legendary language designer covering the future of TypeScript, performance, and career longevity for engineers in the AI era.",
-    "summary": "Hear directly from the legend behind TypeScript on how modern tooling is evolving and why software engineering fundamentals still trump AI hype. It is an inspiring masterclass that will boost your confidence and clarify where to focus your technical growth."
   },
   {
     "videoId": "nH-sP5Afyxk",
     "title": "Our new AI employee can give you $100 of free work - link in description!",
     "selected": false,
-    "reasoning": "Promotional Short advertising a SaaS tool with zero educational depth.",
+    "reasoning": "Promotional short advertising a specific service.",
     "summary": ""
   },
   {
     "videoId": "fEMHMd7fovM",
     "title": "What To Do With Your Life",
     "selected": true,
-    "reasoning": "Exceptional long-form deep dive for early-career professionals navigating career decisions, life design, and avoiding early burnout.",
-    "summary": "Feeling overwhelmed by endless career choices and uncertain about your next move? This comprehensive guide breaks down practical frameworks to clarify your core values, choose fulfilling work, and build long-term career momentum without burning out."
+    "reasoning": "Long-form, comprehensive career clarity guide directly targeting individuals early in their professional journey.",
+    "summary": "Feeling uncertain about your career trajectory or next big move? This comprehensive guide breaks down actionable frameworks to help you find clarity, balance ambition with fulfillment, and make deliberate choices early in your career."
   },
   {
     "videoId": "waDtXRCShCg",
     "title": "Focus on one thing per quarter to succeed faster - click link in bio for my new app :)",
     "selected": false,
-    "reasoning": "Short promotional clip pitching a productivity app.",
+    "reasoning": "Promotional short for a productivity app.",
     "summary": ""
+  },
+  {
+    "videoId": "Z8ycfJosB-o",
+    "title": "Build a live translation broadcast app with the Gemini Live API and LiveKit",
+    "selected": false,
+    "reasoning": "Short teaser for the full-length technical tutorial.",
+    "summary": ""
+  },
+  {
+    "videoId": "kN_iMEAi1dw",
+    "title": "Build a live translation broadcast app with the Gemini Live API and LiveKit",
+    "selected": true,
+    "reasoning": "Hands-on, practical fullstack build tutorial integrating real-time streaming and multimodal AI APIs.",
+    "summary": "Level up your technical portfolio by building a real-time multimodal translation app from scratch using the Gemini Live API and LiveKit. This project-based walkthrough shows junior fullstack engineers exactly how modern real-time WebRTC and AI APIs connect in production."
   },
   {
     "videoId": "kacf2bib-X0",
     "title": "Hands on with Gemini 3.7 Flash",
+    "selected": false,
+    "reasoning": "Good developer demo, but outclassed by the end-to-end fullstack build tutorial.",
+    "summary": ""
+  },
+  {
+    "videoId": "e3XGjP_xhrs",
+    "title": "Bahrain Grand Prix: Kenapa Sepang jadi pilihan?",
     "selected": true,
-    "reasoning": "Direct, practical technical walkthrough from Google showing how fullstack developers can build with state-of-the-art multimodal AI APIs.",
-    "summary": "Get up to speed with Google's latest high-speed multimodal model through practical, real-world developer demonstrations. As a fullstack engineer, learning how to integrate these APIs now gives you a massive edge in building modern, AI-powered applications."
+    "reasoning": "High-value Malaysian economic and financial breakdown by Financial Faiz examining national sports economics and investments.",
+    "summary": "Financial Faiz breaks down the complex economics, costs, and strategic trade-offs of hosting mega-events like Formula 1 in Malaysia. It is a sharp, engaging analysis of Malaysian macroeconomic strategy and fiscal decision-making delivered in conversational Bahasa Melayu."
   },
   {
-    "videoId": "sStb4mjP7RY",
-    "title": "What is Gemini 3.7 Flash?",
+    "videoId": "bix66EBVKjE",
+    "title": "Kenapa Malaysia jadi host F1?",
     "selected": false,
-    "reasoning": "High-level marketing Short superseded by the comprehensive hands-on developer session.",
+    "reasoning": "Short clip summarizing points from the full long-form video.",
     "summary": ""
   },
   {
-    "videoId": "9_PtOVH2FPE",
-    "title": "Introducing Gemini 3.7 Flash",
+    "videoId": "NIXM72mqFX8",
+    "title": "Kesan buruk kartel terhadap pasaran",
     "selected": false,
-    "reasoning": "Standard product release announcement which is less actionable than the hands-on coding walkthrough.",
+    "reasoning": "Brief short on cartel market effects without comprehensive analysis.",
     "summary": ""
   },
   {
-    "videoId": "9xa3Ze1NJe4",
-    "title": "Gaji rider naik RM95 sejam?",
+    "videoId": "hQUawp_qcAY",
+    "title": "Strategi baru Secret Recipe",
     "selected": false,
-    "reasoning": "Bait-heavy local economy Short with limited strategic financial insight.",
+    "reasoning": "Bite-sized business snippet.",
     "summary": ""
-  },
-  {
-    "videoId": "65tA6ZyG1AQ",
-    "title": "Rumah di bandar atau di kampung?",
-    "selected": false,
-    "reasoning": "Brief real estate discussion clipped as a Short without deep financial modelling.",
-    "summary": ""
-  },
-  {
-    "videoId": "wwgWeguDZSU",
-    "title": "Wise vs Bank: Siapa bagi exchange rate lebih baik?",
-    "selected": true,
-    "reasoning": "Crucial practical personal finance comparison for Malaysians dealing with international payments, fintech services, and foreign exchange transparency.",
-    "summary": "Whether you are shopping online, traveling, or receiving foreign income as a tech professional, hidden currency markups can eat away your hard-earned money. Faiz breaks down the real fee structures between traditional Malaysian banks and modern fintech solutions like Wise so you always get the best rates."
   },
   {
     "videoId": "FoPrxxghOdo",
     "title": "Franchise dalam mall mahal?",
     "selected": false,
-    "reasoning": "Quick podcast soundbite about mall franchise costs that lacks broader financial utility.",
+    "reasoning": "Short clip discussing mall franchise costs.",
     "summary": ""
   },
   {
     "videoId": "CotkHKSDhpo",
     "title": "Secret Recipe hire mystery shopper?",
     "selected": false,
-    "reasoning": "Trivial trivia Short about F&B operations.",
-    "summary": ""
-  },
-  {
-    "videoId": "GPU8mkq8ixs",
-    "title": "Malaysia jauh ketinggalan R&D?",
-    "selected": false,
-    "reasoning": "Brief podcast snippet that introduces a policy topic without sufficient depth.",
+    "reasoning": "Short-form trivia on corporate mystery shopping.",
     "summary": ""
   },
   {
     "videoId": "FgBL2T7CUw4",
     "title": "#111 | Your Test Can Be Your Testimony",
     "selected": false,
-    "reasoning": "Generic motivational podcast with Christian-centric phrasing that is less tailored to our target persona.",
+    "reasoning": "Generic motivational podcast with non-Islamic religious framing.",
     "summary": ""
   },
   {
     "videoId": "-aJtCPD95jw",
     "title": "#110 | The Power of Positive Thinking",
     "selected": false,
-    "reasoning": "Repetitive, outdated self-help tropes with minimal concrete takeaways.",
+    "reasoning": "Generic self-help tropes with minimal unique value.",
     "summary": ""
   },
   {
     "videoId": "FJoQR0Z0hLk",
     "title": "#109 | How To Lead With Integrity",
     "selected": false,
-    "reasoning": "Generic leadership principles that are broad and lack concrete junior-level application.",
+    "reasoning": "Generic leadership advice lacking specific demographic relevance.",
     "summary": ""
   },
   {
     "videoId": "Fw9qLN2XPGs",
     "title": "Stigma iktiosis, ibu bapa wariskan fakta yang salah - Firdaus, Pengasas PEKIM",
     "selected": false,
-    "reasoning": "Important health awareness discussion on skin conditions, but not aligned with core career and financial priorities.",
+    "reasoning": "Niche health awareness interview that doesn't align closely with core career/tech/Islamic finance focus.",
     "summary": ""
   },
   {
     "videoId": "ncAyA7fSUqg",
     "title": "“Ibu bapa selalu gunakan kondisi kami untuk menakutkan anak-anak mereka” - Firdaus, Pengasas PEKIM",
     "selected": false,
-    "reasoning": "Short human-interest excerpt covering health stigma.",
+    "reasoning": "Short excerpt of the medical condition interview.",
     "summary": ""
   },
   {
     "videoId": "2kGVKdhHUkE",
     "title": "“Wawasan is definitely not just a Malay Bumiputera Muslim party” - Saifuddin Abdullah",
     "selected": false,
-    "reasoning": "Partisan political discourse that provides little actionable personal or professional value.",
+    "reasoning": "Partisan political talk show segment with low actionable career or tech value.",
     "summary": ""
   },
   {
-    "videoId": "5SuxfytUbXc",
-    "title": "Why addiction hits women differently | Milky Kohno | TEDxPortland",
+    "videoId": "qBQVo0L5Swk",
+    "title": "The secret language of tombstones | Danielle Gagne | TEDxAlfred University",
     "selected": false,
-    "reasoning": "Niche neurobiology talk that does not directly match the target audience's core focus areas.",
+    "reasoning": "Historical/anthropological talk unrelated to the target profile.",
     "summary": ""
   },
   {
-    "videoId": "u89mrFcEn1U",
-    "title": "Change your perspective, change your possibilities | Cyril Joseph | TEDxMoulsari Avenue",
+    "videoId": "hdldPFZzta8",
+    "title": "Why Knowing What’s Healthy isn’t Enough for Behavior Change  | Astghik Atanyan | TEDxAUA",
     "selected": false,
-    "reasoning": "Standard boilerplate TEDx talk offering generic mindset advice.",
+    "reasoning": "General health psychology talk with standard behavioral advice.",
     "summary": ""
   },
   {
-    "videoId": "mccHPqaQeN8",
-    "title": "How to create a life that’s really yours | Janine Matho | TEDxEuro School Whitefield",
+    "videoId": "vFckoVbzoyY",
+    "title": "Design Your Own Future | Haibo Xiao | TEDxShanghai Singapore Intl School",
     "selected": false,
-    "reasoning": "General lifestyle talk that is outclassed by Ali Abdaal's dedicated career navigation framework.",
+    "reasoning": "Standard school-level TEDx motivational talk with limited depth.",
     "summary": ""
   },
   {
-    "videoId": "gM_dPnYh4Gs",
-    "title": "Your Activism Doesn't Excuse Your Disobedience | Dr. Omar Suleiman",
+    "videoId": "8uDytYb6a9E",
+    "title": "Join the Book Club on the Yaqeen App!",
+    "selected": false,
+    "reasoning": "Short promotional ad for the Yaqeen Institute app.",
+    "summary": ""
+  },
+  {
+    "videoId": "DLopUaCTt3Q",
+    "title": "Why Your Attention is Worth More Than You Think & Who’s Buying It | Focal Point | Imam Tom Facchine",
     "selected": true,
-    "reasoning": "A powerful spiritual reminder by Dr. Omar Suleiman addressing the balance between external social/financial advocacy and internal Islamic integrity.",
-    "summary": "When advocating for ethical causes and social impact, it is easy to let personal spiritual discipline slide. Dr. Omar Suleiman delivers a vital reality check on maintaining sincere faith, internal ethics, and steadfastness while championing causes in the modern world."
+    "reasoning": "Deep, nuanced critique of modern tech platforms, surveillance capitalism, and the attention economy from an Islamic perspective.",
+    "summary": "As a software engineer and a Muslim, understanding the hidden ethical and economic machinery of the digital attention economy is critical. Imam Tom Facchine unpacks how big tech monetizes human attention and shares how to reclaim intentionality and spiritual focus in an age of constant distraction."
   },
   {
-    "videoId": "7u2OP5Yttb4",
-    "title": "A Convert’s Perspective on Hijra | Imam Tom Facchine",
+    "videoId": "l-Gi_RiKG0U",
+    "title": "One Name That Unlocks Forgiveness | Sh. Abdullah Oduro",
     "selected": false,
-    "reasoning": "A short discussion on relocation and hijrah, less universally applicable for a young local Malaysian professional.",
-    "summary": ""
-  },
-  {
-    "videoId": "7d376SCEDaw",
-    "title": "The Kid Accused of Being Dajjal | Dr. Omar Suleiman",
-    "selected": false,
-    "reasoning": "An eschatological historical narration in Short format, interesting but less actionable than practical ethical guidance.",
+    "reasoning": "Short reminder clip without the analytical depth of long-form discourse.",
     "summary": ""
   }
 ]
