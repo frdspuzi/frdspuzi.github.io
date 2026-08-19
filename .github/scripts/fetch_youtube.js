@@ -279,14 +279,23 @@ async function callGemini(prompt) {
 }
 
 // Evaluate Bulk Videos via Gemini
+//
+// The "pick EXACTLY the top 5" framing this replaced was validated against real labeled data
+// (30+39 real candidates from actual runs, hand-labeled against what the site owner actually
+// wanted to watch) as a genuine mismatch, not just a hunch: his real picks ran 40-64% of a
+// batch, nowhere near a fixed top-5. A from-scratch rewrite via GEPA (reflective LLM-driven
+// prompt optimization, dspy.GEPA) was tried first and failed - all 50 of its mutated candidates
+// overfit to the specific training examples' titles and scored *worse* than this file's own
+// original prompt on held-out data. What actually worked, tested the same way, was much
+// smaller: dropping the fixed quota and telling the model to select based on genuine fit
+// instead of an exclusive top-N cutoff (0.727 avg F1 across all 5 labeled batches vs. 0.699 for
+// the old top-5 framing - and notably it wins specifically on the batches where he wanted the
+// most videos, which the old fixed-5 cap structurally couldn't do regardless of how well it
+// judged individual videos).
 async function evaluateBulk(videoCandidates) {
-  const prompt = `You are an expert content curator. You have been given a massive list of ${videoCandidates.length} recent YouTube videos.
-Your job is to act like a brutal talent scout and pick the absolute best 5 videos from this list that provide the highest value for our target demographic:
-- A Muslim
-- A Malaysian
-- A Junior Fullstack Software Engineer
-- Someone early in their career seeking advice
-- An Islamic financial advocate
+  const prompt = `You are curating a YouTube feed for one specific person: a Muslim, Malaysian, junior fullstack software engineer early in his career, who also cares about Islamic finance. His core interests are: practical/applied software engineering and AI tooling (not academic AI research or formal math), Islamic finance and Malaysian business/economics, direct Islamic spiritual reminders, and career/productivity advice for someone early in their career.
+
+You have been given a list of ${videoCandidates.length} recent YouTube video candidates. Decide which ones he would actually want to watch. There is no fixed quota - select as many or as few as genuinely fit those interests, whether that's 2 videos or 20. Don't apply an artificial "top N only" filter, but also don't pad the list - a video only belongs if it genuinely matches his actual interests above, not merely because it's plausible or well-produced. Deep academic/research AI content, generic TEDx talks, partisan politics, historical trivia, and pure promotional content should still be excluded regardless of how large the selection ends up being otherwise.
 
 Here are the video candidates (in JSON format):
 ${JSON.stringify(videoCandidates, null, 2)}
@@ -294,8 +303,8 @@ ${JSON.stringify(videoCandidates, null, 2)}
 CRITICAL INSTRUCTIONS:
 1. Review the titles, channels, publish dates, and descriptions.
 2. Provide a brief verdict ("reasoning") for EVERY SINGLE VIDEO on whether it is valuable or fluff.
-3. Mark EXACTLY the top 5 most genuinely valuable videos as "selected": true. The rest must be false.
-4. For the 5 selected videos ONLY, write a layman-friendly "summary" (2-3 sentences) explaining WHY it's worth their time. Make it intriguing and hook the viewer, but keep the tone natural and authentic.
+3. Mark every video that genuinely fits his interests as "selected": true - no fixed count, judge each on its own merits. The rest must be false.
+4. For every selected video, write a layman-friendly "summary" (2-3 sentences) explaining WHY it's worth their time. Make it intriguing and hook the viewer, but keep the tone natural and authentic.
 5. Return ONLY valid JSON in the exact format below, with nothing else:
 {
   "evaluations": [
