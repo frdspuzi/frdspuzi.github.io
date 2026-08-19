@@ -473,7 +473,8 @@ async function main() {
   }
 
   const evaluations = await evaluateBulk(videoCandidates);
-  const curatedVideos = [];
+  // let, not const: filtered down to drop permanently-Vertex-AI-blocked videos further below.
+  let curatedVideos = [];
 
   // Write the entire evaluation log for transparency
   if (evaluations.length > 0) {
@@ -516,6 +517,17 @@ async function main() {
         curatedVideos[i].summary = enriched;
         curatedVideos[i].timestamps = [];
       }
+    }
+
+    // Drop rather than ship with no timestamps: a video Vertex AI is permanently blocked from
+    // (see enrichWithVideoSummary's own comment) would otherwise sit in the feed indefinitely
+    // with no "Key Moments" section for as long as it stayed in rotation. It never even
+    // occupied a real feed slot from the visitor's perspective, so simply not including it costs
+    // nothing beyond that day's batch being one video smaller.
+    const blockedCount = curatedVideos.filter(v => v.enrichmentBlocked).length;
+    if (blockedCount > 0) {
+      console.log(`Dropping ${blockedCount} newly-curated video(s) Vertex AI is permanently blocked from.`);
+      curatedVideos = curatedVideos.filter(v => !v.enrichmentBlocked);
     }
   }
 
@@ -577,7 +589,11 @@ async function main() {
       }
     }
 
-    const finalVideos = [...curatedVideos, ...filteredExisting].slice(0, 15); // Keep up to 15 in the feed
+    // filteredExisting can carry enrichmentBlocked two ways: freshly set by the retry pass just
+    // above, or already sitting in _data/youtube.json from a previous run (retried and blocked
+    // before, or GCP_PROJECT_ID wasn't set this run so the retry pass didn't touch it at all) —
+    // excluding it here catches both, not just the ones this specific run happened to retry.
+    const finalVideos = [...curatedVideos, ...filteredExisting.filter(v => !v.enrichmentBlocked)].slice(0, 15); // Keep up to 15 in the feed
 
     await syncThumbnails(finalVideos);
 
