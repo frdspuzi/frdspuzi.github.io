@@ -105,6 +105,7 @@ const CHANNELS = [
   { url: "https://www.youtube.com/@MuslimFounder", category: "Islamic Studies" },
   { url: "https://www.youtube.com/@ycombinator", category: "Tech & Engineering" },
   { url: "https://www.youtube.com/@bigthink", category: "General Ideas" },
+  { url: "https://www.youtube.com/@kerissilicon", category: "Tech & Engineering" },
 ];
 
 const DISCOVERY_QUERIES = [
@@ -385,6 +386,19 @@ You MUST return ONLY a valid JSON object in the exact format below, with nothing
       }
     } catch (err) {
       console.error(`Vertex AI enrichment failed for ${video.url} (attempt ${attempt}/${MAX_RETRIES}):`, err.message);
+      // PERMISSION_DENIED ("User does not have access to the video") is Google's backend being
+      // unable to ingest this specific video's content for processing - typically the uploader
+      // disabled embedding/download access. The video still plays fine in a normal browser, but
+      // this is not a transient failure: retrying the identical request against the same
+      // permission wall will never succeed, so burning the remaining attempts (and their sleep
+      // backoff) on it is pure waste. enrichmentBlocked below is what lets main()'s "retry
+      // existing entries with empty timestamps" pass tell this apart from a genuine transient
+      // failure worth trying again another day - without it, a permanently-blocked video would
+      // get silently re-attempted (and re-fail) forever, every single run.
+      if (err.message && err.message.includes('PERMISSION_DENIED')) {
+        console.error(`Permission denied is not retryable - giving up on ${video.url} immediately.`);
+        return { summary: video.summary, timestamps: [], enrichmentBlocked: true };
+      }
     }
     if (attempt < MAX_RETRIES) await sleep(attempt * 3000);
   }
@@ -497,6 +511,7 @@ async function main() {
       if (typeof enriched === 'object' && enriched !== null) {
         curatedVideos[i].summary = enriched.summary || curatedVideos[i].summary;
         curatedVideos[i].timestamps = enriched.timestamps || [];
+        if (enriched.enrichmentBlocked) curatedVideos[i].enrichmentBlocked = true;
       } else {
         curatedVideos[i].summary = enriched;
         curatedVideos[i].timestamps = [];
@@ -539,8 +554,16 @@ async function main() {
     // timestamps were relevant") is the bounded, cost-appropriate version of the same fix — a
     // video that failed to enrich no longer stays stuck that way for as long as it happens to
     // remain in the rotating 15-video feed.
+    //
+    // !v.enrichmentBlocked excludes videos enrichWithVideoSummary gave up on permanently (a real
+    // one: PERMISSION_DENIED, "User does not have access to the video" - Google's backend can't
+    // ingest that specific video's content, typically because the uploader disabled embedding/
+    // download access; it plays fine in a normal browser, but retrying the identical request
+    // will never succeed). Without this, a permanently-blocked video would silently re-fail
+    // every single run for as long as it stays in the rotating feed, burning MAX_RETRIES calls
+    // each time for a result already known in advance.
     if (GCP_PROJECT_ID) {
-      const needsRetry = filteredExisting.filter(v => Array.isArray(v.timestamps) && v.timestamps.length === 0);
+      const needsRetry = filteredExisting.filter(v => Array.isArray(v.timestamps) && v.timestamps.length === 0 && !v.enrichmentBlocked);
       if (needsRetry.length > 0) {
         console.log(`\n--- Retrying Vertex AI enrichment for ${needsRetry.length} existing video(s) with empty timestamps ---`);
         for (const video of needsRetry) {
@@ -548,6 +571,7 @@ async function main() {
           if (typeof enriched === 'object' && enriched !== null) {
             video.summary = enriched.summary || video.summary;
             video.timestamps = enriched.timestamps || [];
+            if (enriched.enrichmentBlocked) video.enrichmentBlocked = true;
           }
         }
       }
