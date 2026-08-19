@@ -143,17 +143,37 @@ async function resolveChannelId(url) {
   return null;
 }
 
-// Fetch RSS feed
+// Parses the handful of fields this script actually needs (title, link, author, pubDate,
+// description) out of one <entry> block from YouTube's own Atom feed. Plain regex, not a real
+// XML parser - safe here specifically because this is a single, consistent, YouTube-generated
+// feed format (not arbitrary third-party XML), the same "hand-roll it, no new dependency for a
+// well-understood fixed format" call this codebase already made for the PNG decoder used during
+// this session's vignette debugging. `<title>` must be matched before `<media:group>` starts in
+// each entry, since entries also carry a `<media:title>` with (usually) the same text - taking
+// the first `<title>` match found in the entry substring is what keeps this the outer one, not
+// the nested one.
+function parseAtomEntry(entryXml) {
+  const title = entryXml.match(/<title>([\s\S]*?)<\/title>/)?.[1] ?? '';
+  const link = entryXml.match(/<link rel="alternate" href="([^"]*)"/)?.[1] ?? '';
+  const author = entryXml.match(/<author>\s*<name>([\s\S]*?)<\/name>/)?.[1] ?? '';
+  const pubDate = entryXml.match(/<published>([\s\S]*?)<\/published>/)?.[1] ?? '';
+  const description = entryXml.match(/<media:description>([\s\S]*?)<\/media:description>/)?.[1] ?? '';
+  return { title, link, author, pubDate, description };
+}
+
+// Fetch RSS feed - direct from YouTube's own public Atom feed, not api.rss2json.com. rss2json
+// was just a JSON-converting middleman wrapping this exact same feed; its free tier started
+// hard-rejecting new feed conversions ("You are converting new feeds in a very short period,
+// please use an API key") partway through this list once it grew past ~10 channels, silently
+// dropping every channel after that point from consideration on every single run - confirmed by
+// testing all 21 channels directly against both paths. Fetching YouTube's own feed removes that
+// rate-limited third party from the pipeline entirely: no new dependency, no new secret, and one
+// less thing that can go down or change its pricing/limits out from under this script.
 async function fetchRss(channelId) {
   try {
-    // using api.rss2json.com is easiest for XML -> JSON, but has rate limits.
-    // However, since we're running daily, 10 requests is perfectly fine.
-    const rssUrl = `https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
-    const res = await fetch(rssUrl);
-    const data = await res.json();
-    if (data.status === 'ok') {
-      return data.items || [];
-    }
+    const xml = await fetchHtml(`https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`);
+    const entries = xml.match(/<entry>[\s\S]*?<\/entry>/g) || [];
+    return entries.map(parseAtomEntry);
   } catch (err) {
     console.error(`Failed to fetch RSS for ${channelId}`, err);
   }
@@ -443,7 +463,7 @@ async function main() {
     if (!channelId) continue;
 
     const videos = await fetchRss(channelId);
-    await sleep(1500); // Prevent hitting rss2json rate limits
+    await sleep(1500); // Polite pacing against youtube.com now that fetchRss hits it directly
 
     // Take top 3 recent videos per channel
     for (const vid of videos.slice(0, 3)) {
