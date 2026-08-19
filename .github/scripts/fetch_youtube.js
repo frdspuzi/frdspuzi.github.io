@@ -244,7 +244,10 @@ async function callGemini(prompt) {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
               contents: [{ parts: [{ text: prompt }] }],
-              generationConfig: { temperature: 1.1, maxOutputTokens: 8192 }
+              // 8192 was tuned for the old ~30-candidate/top-5-only shape; the rss2json fix (up to
+              // 63 candidates) plus the unbounded-selection prompt (verbose reasoning+summary per
+              // pick, no cap) now regularly need more room than that, truncating the JSON mid-object.
+              generationConfig: { temperature: 1.1, maxOutputTokens: 32768 }
             })
           }
         );
