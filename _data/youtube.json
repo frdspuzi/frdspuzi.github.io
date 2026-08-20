@@ -6,28 +6,23 @@
       "videoId": "mav15aW9lLM",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Building a working AI agent proof-of-concept takes weeks, but taking it into high-stakes, heavily regulated enterprise environments usually hits an immediate wall of compliance, privacy, and security audits. This talk delivers a battle-tested blueprint of the core architectural primitives—including immutable event sourcing, zero-trust object storage, and human-agent equivalency—required to bridge that gap. If you are building agentic systems that need to survive enterprise security reviews and real-world deployment, this session is mandatory watching.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "Building a working AI prototype takes weeks, but making it survive real-world enterprise compliance, legal audits, and privacy standards will break standard architectures. Engineers from Anthropic and Anterior reveal why typical tech stacks fail and unpack four foundational primitives—like immutable event ledgers and human-agent equivalency—needed to ship production-grade agents in high-stakes environments like healthcare. Watch this talk to discover how to architect bulletproof agent systems from day one instead of bolting on costly security band-aids later.",
+      "dateAdded": "2026-08-20T01:57:12.066Z",
       "timestamps": [
         {
-          "startTime": 407,
-          "endTime": 523,
-          "topic": "The compliance reality check: Why successful POCs stall before production"
+          "startTime": 408,
+          "endTime": 522,
+          "topic": "The enterprise reality check: Why successful AI prototypes fail compliance"
         },
         {
-          "startTime": 648,
-          "endTime": 847,
-          "topic": "Using immutable event ledgers for complete auditability and state replay"
+          "startTime": 628,
+          "endTime": 765,
+          "topic": "Using immutable event ledgers to achieve effortless auditability and replayability"
         },
         {
-          "startTime": 1027,
-          "endTime": 1256,
-          "topic": "Solving sensitive data handling and prompt injection with orchestration-adjacent object storage"
-        },
-        {
-          "startTime": 1346,
-          "endTime": 1445,
-          "topic": "Enforcing human-agent equivalency for seamless dynamic escalations"
+          "startTime": 826,
+          "endTime": 935,
+          "topic": "Human-agent equivalency: Architecting dynamic human-in-the-loop escalation"
         }
       ]
     },
@@ -37,23 +32,23 @@
       "videoId": "fEMHMd7fovM",
       "channel": "Ali Abdaal",
       "category": "Productivity",
-      "summary": "Asking yourself 'what should I do with my life?' is too vague to be useful—which is why most people stay paralyzed by indecision. In this video, you'll discover a practical three-part system to break your life down into manageable areas, define what you actually want (and don't want), and map out alternative five-year paths using exercises like the Odyssey Plan. Watch this to replace existential dread with a clear, actionable direction for your career, health, and personal life.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "Feeling paralyzed by the question of what to do with your life? The real issue isn't a lack of ambition—it's fixating on rigid job titles instead of defining your desired lifestyle and the underlying feelings you're actually hunting for. This video provides a practical 3-step framework featuring powerful exercises like the Odyssey Plan to turn vague existential dread into an actionable, fulfilling life direction.",
+      "dateAdded": "2026-08-20T01:57:12.066Z",
       "timestamps": [
         {
-          "startTime": 99,
-          "endTime": 224,
-          "topic": "Deconstructing Vague Goals into What You Want vs. What You Don't Want"
-        },
-        {
-          "startTime": 633,
-          "endTime": 720,
-          "topic": "The Uncapped 'Dreams' Brainstorming Exercise"
+          "startTime": 469,
+          "endTime": 531,
+          "topic": "Uncovering the Real Feeling Behind Your Ambitions"
         },
         {
           "startTime": 879,
-          "endTime": 974,
-          "topic": "The Odyssey Plan: Mapping Out 3 Divergent 5-Year Futures"
+          "endTime": 918,
+          "topic": "The Odyssey Plan: 3 Radical 5-Year Life Paths"
+        },
+        {
+          "startTime": 1033,
+          "endTime": 1102,
+          "topic": "The 40-Hour Service Prompt to Find True Work"
         }
       ]
     },
@@ -63,23 +58,23 @@
       "videoId": "kN_iMEAi1dw",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Break language barriers instantly by turning any live spoken stream into simultaneous, multi-language AI broadcasts in real time! Discover how combining the Gemini Live API with LiveKit and Google Cloud Run lets you deliver sub-second speech translation and synchronized captions to global audiences at event scale. If you build interactive web applications or live streaming tools, this step-by-step architectural breakdown and open-source code demo is an essential watch.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "Imagine broadcasting your presentation live while an international audience seamlessly hears and reads your words translated into their native languages in real time. This practical guide shows you how to build and deploy an on-demand translation engine combining the Gemini Live API, LiveKit, and Google Cloud Run. Watch to unlock the exact architecture and codebase required to bridge real-time AI voice translation into your next application.",
+      "dateAdded": "2026-08-20T01:57:12.066Z",
       "timestamps": [
         {
           "startTime": 102,
-          "endTime": 223,
-          "topic": "How the real-time multi-language broadcast architecture works"
+          "endTime": 240,
+          "topic": "Live Demonstration: Real-Time Multi-Language Broadcast & Dynamic Routing"
         },
         {
-          "startTime": 715,
-          "endTime": 850,
-          "topic": "Gemini Live API WebSocket integration and audio streaming"
+          "startTime": 367,
+          "endTime": 534,
+          "topic": "Code Deep-Dive: LiveKit Translation Bridge & Gemini WebSocket Pipelines"
         },
         {
-          "startTime": 906,
-          "endTime": 1035,
-          "topic": "Deploying containerized real-time translation on Google Cloud Run"
+          "startTime": 546,
+          "endTime": 715,
+          "topic": "Production Deployment & Scaling Architecture on Google Cloud Run"
         }
       ]
     },
@@ -89,23 +84,18 @@
       "videoId": "kacf2bib-X0",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Building enterprise-scale AI isn't about using the biggest, most expensive model—it's about mastering the 'minimum viable model' to slash latency and costs without sacrificing intelligence. Watch leading builders from Box, Databricks, and Emergent explain how Gemini 3.7 Flash powers high-efficiency, multi-agent workflows at 10x cheaper economics. If you want practical blueprints for deploying production-ready AI agents without burning through your budget, this discussion is essential viewing.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "Building enterprise-grade AI doesn't mean burning budget by throwing expensive frontier models at every single task. Industry leaders from Box, Databricks, and Emergent break down how leveraging Gemini 3.7 Flash within multi-agent architectures slashes token costs by 10x while accelerating execution. Watch to learn how to adopt the 'minimum viable model' approach and scale massive workflows without overspending.",
+      "dateAdded": "2026-08-20T01:57:12.066Z",
       "timestamps": [
         {
-          "startTime": 85,
-          "endTime": 136,
-          "topic": "Why cost optimization and the 'minimum viable model' define modern enterprise AI"
+          "startTime": 104,
+          "endTime": 146,
+          "topic": "The 'Minimum Viable Model' strategy to stop overspending on compute"
         },
         {
           "startTime": 177,
           "endTime": 242,
-          "topic": "How 10x cheaper token costs unlock ambitious developer innovation"
-        },
-        {
-          "startTime": 177,
-          "endTime": 242,
-          "topic": "Scaling multi-agent architectures and rapid intent classification with Gemini 3.7 Flash"
+          "topic": "Designing multi-agent systems with fast intent classification"
         }
       ]
     },
@@ -115,49 +105,49 @@
       "videoId": "f-zp5nwhq7o",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "EPF recorded a massive 48% jump in investment income, but does that actually guarantee a massive dividend payout for members? Watch this breakdown to uncover the reality behind the headline figures—specifically how unrealized paper gains impact your actual returns—and see where EPF's global investments are truly driving profits.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "EPF reported a massive 48% jump in investment income, but does that actually translate to a record-breaking 7% dividend for members? Discover the critical difference between realized profits and paper gains, and see how global equity and AI investments truly impact your retirement payout.",
+      "dateAdded": "2026-08-20T01:57:12.066Z",
       "timestamps": [
         {
           "startTime": 28,
           "endTime": 55,
-          "topic": "Why EPF's Revenue Surge Includes Non-Distributable Paper Gains"
+          "topic": "The reality behind the 48% surge: Unrealized gains and dividend limitations"
         },
         {
-          "startTime": 68,
-          "endTime": 110,
-          "topic": "How Global Equity & AI Market Exposure Drove EPF's Big Returns"
+          "startTime": 108,
+          "endTime": 151,
+          "topic": "How global equities and AI sector investments drove EPF's massive returns"
         },
         {
-          "startTime": 145,
-          "endTime": 164,
-          "topic": "Potential Dividend Projections Compared to Past Performance"
+          "startTime": 196,
+          "endTime": 243,
+          "topic": "Rising active membership and voluntary contributions breakdown"
         }
       ]
     },
     {
-      "title": "Scam duit kutu RM1.7 juta?",
-      "url": "https://www.youtube.com/shorts/nsq_ptkpymw",
-      "videoId": "nsq_ptkpymw",
-      "channel": "Financial Faiz",
+      "title": "Strategi baru Secret Recipe",
+      "url": "https://www.youtube.com/shorts/hQUawp_qcAY",
+      "videoId": "hQUawp_qcAY",
+      "channel": "Financial Faiz Podcast",
       "category": "Finance",
-      "summary": "Think joining a 'kutu' (money pool) scheme is just a harmless way to force yourself to save? This video exposes the massive legal and financial risks of these schemes, including severe penalties under Malaysian law and hidden opportunity costs compared to legitimate investments. Watch to find out why even putting 'duit kutu' in your bank transfer references can instantly sabotage your loan applications.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "How does a legacy F&B giant modernize without losing the core identity that made it famous? The Group CEO of Secret Recipe reveals their secret playbook: blending factory automation and digital tech with viral IP collaborations like Bichi Mao and ZUS Coffee. Watch this breakdown to see how heritage brands successfully capture the next generation of consumers in a cutthroat market.",
+      "dateAdded": "2026-08-20T01:57:12.066Z",
       "timestamps": [
         {
-          "startTime": 16,
-          "endTime": 43,
-          "topic": "The legal penalties of running commercial 'kutu' schemes in Malaysia"
+          "startTime": 8,
+          "endTime": 40,
+          "topic": "Modernizing Secret Recipe through technology and vibrant marketing"
         },
         {
-          "startTime": 73,
-          "endTime": 107,
-          "topic": "Why 'main kutu' is a financial trap vs investing in ASB"
+          "startTime": 45,
+          "endTime": 69,
+          "topic": "Engaging Gen Z with Bichi Mao merch and blind boxes"
         },
         {
-          "startTime": 108,
-          "endTime": 125,
-          "topic": "How 'kutu' transactions on bank statements can get your loans rejected"
+          "startTime": 69,
+          "endTime": 95,
+          "topic": "Competing with dedicated beverage brands like ZUS and Tealive"
         }
       ]
     },
@@ -167,23 +157,23 @@
       "videoId": "FJoQR0Z0hLk",
       "channel": "The Game Of Impossible",
       "category": "General Ideas",
-      "summary": "Even the most celebrated leaders and massive corporations can suffer catastrophic downfalls when unchecked power, shady procurement shortcuts, and rubber-stamping boards take over. Drawing on high-profile scandals like 1MDB alongside frontline CEO experience, this episode breaks down the red flags that precede corporate ruin. Discover the vital governance frameworks and personal ethical litmus tests every leader needs to navigate high-stakes decisions safely.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "Even the most respected executives and massive organizations can collapse overnight when boardroom governance fails and power goes unchecked. In this insightful discussion, seasoned corporate leader Idris Jala breaks down the fatal red flags of executive corruption—from procurement loopholes to CEO dominance—and shares the exact ethical 'litmus test' required to safeguard integrity at the highest levels.",
+      "dateAdded": "2026-08-20T01:57:12.067Z",
       "timestamps": [
+        {
+          "startTime": 303,
+          "endTime": 415,
+          "topic": "Case Study on 1MDB: The Danger of Power Concentration"
+        },
         {
           "startTime": 588,
           "endTime": 677,
-          "topic": "Key warning signs of corruption and fraud in procurement"
+          "topic": "Key Warning Signs of Boardroom and Procurement Corruption"
         },
         {
-          "startTime": 810,
-          "endTime": 876,
-          "topic": "The dangerous illusion of taking bribes: standing on a cliff edge"
-        },
-        {
-          "startTime": 1536,
+          "startTime": 1538,
           "endTime": 1605,
-          "topic": "Three golden rules for navigating grey areas and ethical dilemmas"
+          "topic": "The 3 Golden Rules and the 'Litmus Test' for Ethical Decisions"
         }
       ]
     },
@@ -193,23 +183,23 @@
       "videoId": "DLopUaCTt3Q",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "The very tech executives who built smartphones and social media severely restrict their own children from using them—because they know our devices were engineered to systematically destroy human willpower and attention. Discover how the modern attention economy evolved into surveillance capitalism and technofeudalism, and learn how this relentless digital distraction silently erodes our capacity for deep reflection (tadabbur), sincere worship (khushu'), and spiritual presence. Watching this breakdown will fundamentally change how you guard your time, mind, and faith against algorithmic manipulation.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "The very tech leaders who designed modern smartphones and social algorithms strictly ban their own children from using them—because our attention isn't just being distracted, it's being harvested. This eye-opening talk breaks down the predatory engineering behind digital addiction, surveillance capitalism, and how reclaiming your focus is vital to protecting both your mind and your spiritual connection with Allah.",
+      "dateAdded": "2026-08-20T01:57:12.067Z",
       "timestamps": [
         {
           "startTime": 485,
-          "endTime": 613,
-          "topic": "Irresistible Engineering: Why willpower alone cannot beat algorithmic addiction"
+          "endTime": 578,
+          "topic": "Engineered Addiction: The Slot-Machine Mechanics of Social Media"
         },
         {
           "startTime": 628,
-          "endTime": 760,
-          "topic": "Surveillance Capitalism & Technofeudalism: How human attention became raw material"
+          "endTime": 737,
+          "topic": "Surveillance Capitalism and the Business of Predicting Human Behavior"
         },
         {
-          "startTime": 1225,
-          "endTime": 1370,
-          "topic": "The Spiritual Cost: Reclaiming presence (khushu') and guarding irreplaceable time"
+          "startTime": 1445,
+          "endTime": 1533,
+          "topic": "Rewiring the Mind and Reclaiming Khushu' in Worship"
         }
       ]
     },
@@ -219,23 +209,23 @@
       "videoId": "E5RnYWQhZiM",
       "channel": "Sh. Abdullah Oduro",
       "category": "Islamic Studies",
-      "summary": "If you've been making the exact same dua for years and taking all the right external steps without seeing results, you might be missing the single most crucial requirement: genuine internal transformation. This video breaks down a powerful verse from Surah Ar-Ra'd to reveal why Allah withholds change until we shift our deep inner intentions rather than relying on surface-level behavioral fixes. Watch to understand the spiritual mechanics behind answered prayers and learn how to break through emotional and marital stagnation.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "If you feel like your sincere prayers are being ignored, you might be falling into the trap of fixing surface-level behaviors while neglecting your inner self. This eye-opening breakdown of Surah Ar-Ra'd (13:11) reveals why transactional self-improvement and outward gestures fail to bring true change in your life and relationships. Watch this to discover the essential internal shift needed to genuinely transform your character and invite Allah's help.",
+      "dateAdded": "2026-08-20T01:57:12.067Z",
       "timestamps": [
         {
-          "startTime": 125,
-          "endTime": 270,
-          "topic": "Why Divine Protection and Withholding Coexist"
+          "startTime": 291,
+          "endTime": 525,
+          "topic": "The Illusion of Surface-Level Effort vs. True Internal Transformation"
         },
         {
-          "startTime": 360,
-          "endTime": 515,
-          "topic": "Surface Behavioral Fixes vs. True Internal Transformation"
+          "startTime": 545,
+          "endTime": 677,
+          "topic": "Overcoming Transactional Expectations and Insecurity in Marriage"
         },
         {
           "startTime": 678,
-          "endTime": 810,
-          "topic": "The Cost of Emotional Drift and Delayed Growth"
+          "endTime": 876,
+          "topic": "The Danger of Emotional Calcification and Missed Opportunities to Change"
         }
       ]
     },
@@ -245,23 +235,23 @@
       "videoId": "2fyPnxKu8ZM",
       "channel": "The Pragmatic Engineer",
       "category": "Tech & Engineering",
-      "summary": "As AI agents increasingly write our code, software engineering is shifting from syntax generation to managing autonomous 'software factories'—bringing a massive risk of 'cognitive surrender' where developers lose critical problem-solving skills. Former Google Director of Engineering Addy Osmani unpacks how to leverage AI without losing your technical edge, maintain deep system accountability, and future-proof your career as tech roles unbundle. If you want to know what truly keeps an engineer irreplaceable in the AI era, this conversation is an essential watch.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "Former Google Director of Engineering Addy Osmani reveals how AI is fundamentally reshaping software development—and why the engineers who survive won't just write syntax, but master the judgment, verification, and architecture behind automated systems. Watch to discover actionable frameworks like 'loop engineering' and learn how to avoid the career-killing trap of 'cognitive surrender' as autonomous coding agents take over.",
+      "dateAdded": "2026-08-20T01:57:12.067Z",
       "timestamps": [
         {
-          "startTime": 3690,
+          "startTime": 3680,
           "endTime": 3810,
-          "topic": "The Threat of Cognitive Debt and Cognitive Surrender with AI"
+          "topic": "The Hidden Dangers of Cognitive Debt and Cognitive Surrender"
         },
         {
           "startTime": 3960,
-          "endTime": 4080,
-          "topic": "Loop Engineering and the Rise of Autonomous Software Factories"
+          "endTime": 4110,
+          "topic": "The Rise of Loop Engineering and Autonomous Software Factories"
         },
         {
-          "startTime": 5420,
+          "startTime": 5410,
           "endTime": 5530,
-          "topic": "The Unbundling of Engineering Roles and How to Stay Relevant"
+          "topic": "Future-Proofing Your Engineering Career Beyond Just Writing Code"
         }
       ]
     },
@@ -271,23 +261,23 @@
       "videoId": "NNgxRAu9YAo",
       "channel": "Beyond Coding",
       "category": "Tech & Engineering",
-      "summary": "Writing code is no longer the bottleneck in software development—the real challenge has shifted to validating whether you are building the right thing and keeping up with rapidly evolving AI capabilities. Amazon's Head of Agentic AI pulls back the curtain on how frontier models are trained using reinforcement learning gyms, why traditional benchmarks become obsolete in months, and how engineering teams must adapt to agentic workflows. Watch this to discover how to navigate the shift toward autonomous AI systems and build faster feedback loops before your current development process falls behind.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "Engineering hours are no longer the bottleneck in tech—now, the real challenge is deciding whether you are building the right product and learning fast enough to keep up. In this deep dive with Michael Giannangeli, Head of Product for Agentic AI at Amazon Nova, you'll discover how next-generation AI agents, reinforcement learning gyms, and automated model evaluations are completely reshaping how software is built and maintained. Watch this conversation to see how industry leaders stay on the cutting edge of autonomous workflows without falling behind.",
+      "dateAdded": "2026-08-20T01:57:12.067Z",
       "timestamps": [
         {
-          "startTime": 505,
-          "endTime": 675,
-          "topic": "The Moving Target: Why AI Evals and Benchmarks Quickly Saturate"
+          "startTime": 391,
+          "endTime": 469,
+          "topic": "The unsolved challenge of AI model routing and cost-efficiency"
         },
         {
           "startTime": 1269,
-          "endTime": 1440,
-          "topic": "The Shifting Bottleneck: From Coding Hours to Rapid Product Validation"
+          "endTime": 1350,
+          "topic": "Why the bottleneck shifted from engineering hours to product direction"
         },
         {
-          "startTime": 1987,
-          "endTime": 2160,
-          "topic": "Inside RL Gyms: Training AI Models in Simulated Failure Environments"
+          "startTime": 1986,
+          "endTime": 2055,
+          "topic": "How simulated RL Gyms enable AI agents to learn from failure"
         }
       ]
     },
@@ -297,18 +287,23 @@
       "videoId": "9Cd-cQDq1EI",
       "channel": "Rafizi Ramli",
       "category": "General Ideas",
-      "summary": "Did the government truly rescue Tabung Haji, or was the financial burden simply shifted onto the public? Discover the real story as official audited financial statements from 2019 to 2025 expose the hard numbers behind the recovery of toxic assets across different administrations. If you want the unvarnished facts backed by solid data rather than political rhetoric, this breakdown is essential viewing.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "Did the government really rescue Tabung Haji, or simply pass a massive financial burden directly onto taxpayers? Dive into the official audited financial statements of Urusharta Jamaah Sdn Bhd (UJSB) spanning 2019 to 2025 to uncover the hard data behind the political narratives. Watch to see how consecutive administrations actually performed in recovering toxic assets when held against undeniable numbers.",
+      "dateAdded": "2026-08-20T01:57:12.067Z",
       "timestamps": [
         {
           "startTime": 11,
-          "endTime": 56,
-          "topic": "Debunking the claim of saving Tabung Haji"
+          "endTime": 57,
+          "topic": "The Tabung Haji Bailout: Saving the Fund vs. Burdening the Public"
         },
         {
           "startTime": 57,
+          "endTime": 102,
+          "topic": "Breaking Down UJSB's Audited Financial Performance (2019-2025)"
+        },
+        {
+          "startTime": 102,
           "endTime": 128,
-          "topic": "Audited financial performance analysis of UJSB (2019–2025)"
+          "topic": "Why Audited Data Matters Over Political Rhetoric"
         }
       ]
     },
@@ -318,23 +313,23 @@
       "videoId": "zcLPGC-tvgk",
       "channel": "Matt Pocock",
       "category": "Tech & Engineering",
-      "summary": "Legendary software engineer Uncle Bob Martin breaks down how to harness AI coding agents without letting them bury your codebase in messy, unmaintainable garbage. Discover how combining deterministic verification tools like mutation testing with specialized multi-agent pipelines lets you 5x development speed while keeping code quality rock solid. If you want to know how Clean Code principles survive and thrive in the era of AI-driven development, this masterclass is a must-watch.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "Clean Code legend Uncle Bob reveals the exact blueprint for utilizing AI coding agents without drowning in sloppy, hallucinated spaghetti code. Discover why massive prompt engineering fails due to context limits, and how chaining deterministic verification tools like mutation testing and complexity scores into multi-agent pipelines delivers spotless, production-grade software. If you want to multiply your development speed while keeping architectural discipline intact in the AI era, this masterclass is essential viewing.",
+      "dateAdded": "2026-08-20T01:57:12.067Z",
       "timestamps": [
         {
           "startTime": 1158,
-          "endTime": 1360,
-          "topic": "The Multi-Agent gauntlet: Specifier, Coder, Cleaner, Hardener, and QA"
+          "endTime": 1350,
+          "topic": "Uncle Bob's multi-agent assembly line: Specifier, Coder, Cleaner, Hardener, and QA"
         },
         {
           "startTime": 2175,
-          "endTime": 2495,
-          "topic": "Why upfront Spec-Driven Planning fails and Agile iteration wins with AI"
+          "endTime": 2298,
+          "topic": "Why heavy upfront spec-driven development fails with AI agents"
         },
         {
-          "startTime": 2715,
-          "endTime": 2900,
-          "topic": "How junior developers must learn fundamentals before steering AI agents"
+          "startTime": 2803,
+          "endTime": 2955,
+          "topic": "Why mastering software fundamentals is required to effectively manage AI agents"
         }
       ]
     },
@@ -344,23 +339,23 @@
       "videoId": "gaDdrDdczO4",
       "channel": "Matt Pocock",
       "category": "Tech & Engineering",
-      "summary": "Tired of AI coding assistants giving you convoluted, incomprehensible jargon or dragging you through painfully slow one-question-at-a-time interrogations? The v1.2.0 update to the popular AI Skills framework introduces powerful new workflows like the 'wait-what' plain-English reset and graph-based interactive grilling to massively speed up your AI pairing sessions. Watch this walkthrough to discover how these battle-tested skills can instantly transform Claude Code and Codex into razor-sharp, productive collaborators.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "If you're tired of AI coding assistants burying you in confusing jargon or asking painful one-by-one setup questions, this release is an essential upgrade to your workflow. Matt Pocock breaks down high-impact new tools like 'wait-what' to instantly translate LLM rambling into plain English and an upgraded batch-questioning flow that dramatically accelerates agent planning sessions. Watch this video to streamline your AI engineering setup and make AI agents work strictly on your terms.",
+      "dateAdded": "2026-08-20T01:57:12.067Z",
       "timestamps": [
         {
-          "startTime": 233,
-          "endTime": 355,
-          "topic": "Taming LLM Verbosity with the 'wait-what' Skill"
+          "startTime": 197,
+          "endTime": 242,
+          "topic": "Fixing LLM verbosity and confusing output with the 'wait-what' skill"
         },
         {
-          "startTime": 402,
-          "endTime": 545,
-          "topic": "Faster Decision Making with Batched Graph Questions in 'grill-me'"
+          "startTime": 242,
+          "endTime": 387,
+          "topic": "Speeding up agent planning with multi-question rounds in 'grill-me'"
         },
         {
-          "startTime": 728,
-          "endTime": 855,
-          "topic": "Automating Painful Manual Setup with the 'wizard' Skill"
+          "startTime": 448,
+          "endTime": 538,
+          "topic": "Automating tedious provisioning tasks with interactive bash wizards"
         }
       ]
     },
@@ -370,26 +365,26 @@
       "videoId": "F3lL98Pj90o",
       "channel": "Matt Pocock",
       "category": "Tech & Engineering",
-      "summary": "AI coding agents usually break down on ambitious projects because complex ideas get trapped by single-session context limits and unresolved decisions. 'Wayfinder' solves this by turning vague goals into dynamic maps of decision tickets, prototypes, and targeted research sessions to clear the fog of war. Watch this breakdown to master a repeatable, software-engineering-grounded workflow that lets AI orchestrate and execute massive projects seamlessly.",
-      "dateAdded": "2026-08-19T21:40:36.416Z",
+      "summary": "Struggling to plan complex, ambitious software projects with AI agents without hitting context limits or getting lost in the weeds? Discover 'Wayfinder'—a systematic workflow that maps out foggy project paths across multiple sub-sessions, breaking down monolithic ideas into structured research, prototyping, and decision tickets. Watch this video to learn how to orchestrate high-level architecture into bite-sized execution steps that any coding agent can reliably deliver.",
+      "dateAdded": "2026-08-20T01:57:12.067Z",
       "timestamps": [
         {
           "startTime": 130,
-          "endTime": 250,
-          "topic": "Navigating the 'fog of war' when planning big work with AI"
+          "endTime": 270,
+          "topic": "How Wayfinder maps foggy project ideas into structured decision tickets"
         },
         {
-          "startTime": 460,
+          "startTime": 461,
           "endTime": 548,
-          "topic": "The 4 essential ticket types: Research, Prototype, Grilling, and Tasks"
+          "topic": "The 4 Wayfinder ticket types and why prototyping prevents waterfall traps"
         },
         {
-          "startTime": 763,
+          "startTime": 753,
           "endTime": 842,
-          "topic": "Why disposable specs beat traditional spec-driven development"
+          "topic": "Spec-driven development vs. Wayfinder's non-persistent destination specs"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-08-19T21:56:52.692Z"
+  "lastUpdated": "2026-08-20T02:10:39.466Z"
 }
