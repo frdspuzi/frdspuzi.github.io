@@ -25,6 +25,7 @@ on:
       - "AI YouTube Curator"
       - "Fetch Medium Articles"
       - "Fetch Unsplash Photos"
+      - "Fetch GitHub Trending"
     types: [completed]
   workflow_dispatch:
 

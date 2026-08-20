@@ -19,6 +19,7 @@ const SECTIONS: { id: string; label: string; desc: string }[] = [
   { id: "reclaiming-algo", label: "Reclaiming the Algo", desc: "Curated, mindful YouTube picks" },
   { id: "my-writing", label: "Insights & Writing", desc: "Articles + AI trivia" },
   { id: "photography", label: "Photography", desc: "Shots from Unsplash" },
+  { id: "github-trending", label: "What the Internet's Building", desc: "This week's trending GitHub repos" },
 ];
 
 const SCALE_BY_DISTANCE = [1, 0.68, 0.44, 0.25];
@@ -31,7 +32,7 @@ function scaleForDistance(d: number) {
 // <Accordion> instance was registered with. "about" isn't an accordion at all, just scrolls.
 function accordionDefaultFor(id: string): boolean | null {
   if (id === "gratitude") return false; // Gratitude never defaultOpens, any viewport
-  if (id === "reclaiming-algo" || id === "my-writing" || id === "photography") {
+  if (id === "reclaiming-algo" || id === "my-writing" || id === "photography" || id === "github-trending") {
     return isDesktopWidthAtMount();
   }
   return null;

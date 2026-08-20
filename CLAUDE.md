@@ -7,6 +7,9 @@ This repo used to run a Jekyll site from the root (`_includes/`, `_layouts/`, `a
 
 **Still shared with the old pipeline, not Jekyll-specific**: `_data/*.json` (imported directly by `component-lab/src` — one source of truth, not duplicated), `_posts/*.md` (same, imported via Vite's `?raw`), and `assets/{photography,youtube-thumbnails,medium-images}/` (synced into `component-lab/public/assets/` by `component-lab/scripts/sync-assets.js`, which runs automatically via `predev`/`prebuild` — never committed there, so there's only ever one real copy). All of this is written by `.github/scripts/*.js`, scheduled by the workflows in `.github/workflows/*.yml` — none of that changed with the Jekyll cutover.
 
+## Personal profile
+`PROFILE.md` at the repo root (gitignored — never commit it) is the site owner's real interest/background profile, built from actual signal (a Google Takeout export), not guesswork. Any content-curation prompt (the YouTube curator, and any future personalized feature) should pull from it instead of hand-writing a fresh "who this is for" description each time. If the file is missing, ask the user before reconstructing it from scratch — it was deliberately built to exclude some real-but-irrelevant or sensitive patterns found in the source data, so a naive rebuild could reintroduce noise it was designed to filter out.
+
 ## Context-Driven Development
 Before making any code change, read [component-lab/.ai/architecture.md](component-lab/.ai/architecture.md) and [component-lab/.ai/handoff.md](component-lab/.ai/handoff.md). They hold the current architectural rules, data/automation pipeline, and the state of each homepage feature. Re-check them if it's been a while since you last read them in this session — they get updated between sessions.
 

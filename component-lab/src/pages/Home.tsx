@@ -5,6 +5,7 @@ import { Gratitude } from "@/components/Gratitude";
 import { YoutubeFeed } from "@/components/YoutubeFeed";
 import { InsightsWriting } from "@/components/InsightsWriting";
 import { Photography } from "@/components/Photography";
+import { GithubTrending } from "@/components/GithubTrending";
 import { FloatingNav } from "@/components/FloatingNav";
 
 // Homepage — mirrors _layouts/home.html's stacked layout. All 5 sections plus the Preview Rail
@@ -29,6 +30,7 @@ export default function Home() {
           <YoutubeFeed />
           <InsightsWriting />
           <Photography />
+          <GithubTrending />
         </div>
 
         <FloatingNav />
