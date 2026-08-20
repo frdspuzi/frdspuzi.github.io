@@ -1,0 +1,41 @@
+name: CI
+
+# Scoped to .github/scripts only, not component-lab - that half already gets its own gate
+# (lint + typecheck + build) inside deploy-pages.yml's build job, which runs on every deploy
+# regardless. This workflow exists because .github/scripts had zero lint or test coverage despite
+# containing real, previously-broken logic (rss2json rate-limiting, a truncated Gemini response,
+# Vertex AI PERMISSION_DENIED handling - see fetch_youtube.js's own comments), and none of that
+# has anything to do with what gets built and deployed, so it doesn't belong in deploy-pages.yml
+# and doesn't gate it either - it's a visible check, not a deploy blocker.
+on:
+  push:
+    branches: [master]
+    paths:
+      - '.github/scripts/**'
+      - '.github/workflows/ci.yml'
+
+jobs:
+  scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: .github/scripts/package-lock.json
+
+      - name: Install dependencies
+        working-directory: .github/scripts
+        run: npm ci
+
+      - name: Lint
+        working-directory: .github/scripts
+        run: npm run lint
+
+      - name: Test
+        working-directory: .github/scripts
+        run: npm test

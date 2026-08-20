@@ -329,6 +329,16 @@ CRITICAL INSTRUCTIONS:
 }`;
 
   const responseText = await callGemini(prompt);
+  return parseEvaluationResponse(responseText);
+}
+
+// Split out of evaluateBulk so this parsing/fallback behavior is testable against real response
+// fixtures without a network call - this exact code path is what silently swallowed a truncated
+// Gemini response in production (2026-08-19: a response cut off mid-object, missing the `},`/`{`
+// boundary between two evaluations, since maxOutputTokens was too small for the candidate volume
+// at the time) and fell all the way through to "Gemini did not select any valid videos today."
+// with no other signal anything had gone wrong.
+function parseEvaluationResponse(responseText) {
   if (!responseText) return [];
 
   try {
@@ -646,4 +656,13 @@ async function main() {
   }
 }
 
-main();
+// Guards against main() running as a side effect of require()-ing this file for its exports (a
+// real, not hypothetical, hazard once tests started importing from it - see fetch_youtube.test.js
+// for the actual failure this caught: requiring the file for decodeHtmlEntities/parseAtomEntry
+// unconditionally ran the live script, tripping the missing-GEMINI_API_KEY process.exit(1) below).
+// No effect on the normal `node fetch_youtube.js` invocation the GitHub Actions workflow uses.
+if (require.main === module) {
+  main();
+}
+
+module.exports = { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse };

@@ -1,0 +1,130 @@
+import { describe, it, expect } from 'vitest';
+import { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse } from './fetch_youtube.js';
+
+describe('decodeHtmlEntities', () => {
+  it('decodes named entities', () => {
+    expect(decodeHtmlEntities('Q&amp;A with &lt;guest&gt;')).toBe('Q&A with <guest>');
+  });
+
+  it('decodes numeric and hex entities', () => {
+    expect(decodeHtmlEntities('&#39;quoted&#39; &amp; &#x2014; dash')).toBe("'quoted' & — dash");
+  });
+
+  it('passes through text with no entities unchanged', () => {
+    expect(decodeHtmlEntities('plain text, nothing to decode')).toBe('plain text, nothing to decode');
+  });
+
+  it('returns falsy input unchanged', () => {
+    expect(decodeHtmlEntities('')).toBe('');
+    expect(decodeHtmlEntities(null)).toBe(null);
+    expect(decodeHtmlEntities(undefined)).toBe(undefined);
+  });
+});
+
+describe('parseAtomEntry', () => {
+  it('extracts title, link, author, pubDate, and description from a real-shaped entry', () => {
+    const entry = `
+      <entry>
+        <id>yt:video:abc123XYZ_9</id>
+        <title>Q&amp;A: Building at Scale</title>
+        <link rel="alternate" href="https://www.youtube.com/watch?v=abc123XYZ_9"/>
+        <author>
+          <name>Some Engineering Channel</name>
+          <uri>https://www.youtube.com/channel/UCabc123</uri>
+        </author>
+        <published>2026-08-19T12:00:00+00:00</published>
+        <media:group>
+          <media:title>Q&amp;A: Building at Scale</media:title>
+          <media:description>A deep dive into &lt;systems&gt; design.</media:description>
+        </media:group>
+      </entry>
+    `;
+    expect(parseAtomEntry(entry)).toEqual({
+      title: 'Q&amp;A: Building at Scale',
+      link: 'https://www.youtube.com/watch?v=abc123XYZ_9',
+      author: 'Some Engineering Channel',
+      pubDate: '2026-08-19T12:00:00+00:00',
+      description: 'A deep dive into &lt;systems&gt; design.',
+    });
+  });
+
+  it('takes the outer <title>, not the nested <media:title>', () => {
+    const entry = `
+      <entry>
+        <title>Outer Title</title>
+        <media:group><media:title>Inner Title</media:title></media:group>
+      </entry>
+    `;
+    expect(parseAtomEntry(entry).title).toBe('Outer Title');
+  });
+
+  it('defaults every field to an empty string when the entry is missing them', () => {
+    expect(parseAtomEntry('<entry></entry>')).toEqual({
+      title: '',
+      link: '',
+      author: '',
+      pubDate: '',
+      description: '',
+    });
+  });
+});
+
+describe('parseEvaluationResponse', () => {
+  it('parses a well-formed response', () => {
+    const response = `{
+      "evaluations": [
+        { "videoId": "abc123", "title": "A Video", "selected": true, "reasoning": "Fits.", "summary": "Worth it." }
+      ]
+    }`;
+    expect(parseEvaluationResponse(response)).toEqual([
+      { videoId: 'abc123', title: 'A Video', selected: true, reasoning: 'Fits.', summary: 'Worth it.' },
+    ]);
+  });
+
+  it('parses a response wrapped in a markdown code fence', () => {
+    const response = '```json\n{"evaluations": [{"videoId": "abc123", "selected": false}]}\n```';
+    expect(parseEvaluationResponse(response)).toEqual([{ videoId: 'abc123', selected: false }]);
+  });
+
+  it('returns an empty array, not a throw, for a truncated response (the real 2026-08-19 incident)', () => {
+    // Real Gemini output from a production run: cut off mid-generation between two evaluation
+    // objects (missing "}," / "{" right after the empty summary), because maxOutputTokens was
+    // too small for the candidate volume at the time. JSON.parse throws a SyntaxError on this -
+    // the whole point of parseEvaluationResponse is to catch that and degrade to an empty list
+    // instead of the failure propagating uncaught.
+    const truncatedResponse = `{
+      "evaluations": [
+        {
+          "videoId": "kacf2bib-X0",
+          "title": "Hands on with Gemini 3.7 Flash",
+          "selected": true,
+          "reasoning": "Directly relevant to his AI tooling interest.",
+          "summary": "A hands-on look at the newest Gemini model."
+        },
+        {
+          "videoId": "Sb2zfJhDUCM",
+          "title": "EP19 #SembangKS | Cekodok, Mee dan LRT",
+          "selected": false,
+          "reasoning": "Casual commentary covering local gossip and partisan political banter.",
+          "summary": ""
+          "videoId": "zLUZclThLhU",
+          "title": "Some Other Video",
+          "selected": false,
+          "reasoning": "Cut off here",
+          "summary": ""
+        }
+      ]
+    }`;
+    expect(parseEvaluationResponse(truncatedResponse)).toEqual([]);
+  });
+
+  it('returns an empty array for falsy input', () => {
+    expect(parseEvaluationResponse('')).toEqual([]);
+    expect(parseEvaluationResponse(null)).toEqual([]);
+    expect(parseEvaluationResponse(undefined)).toEqual([]);
+  });
+
+  it('returns an empty array when there is no JSON object in the response at all', () => {
+    expect(parseEvaluationResponse('I refuse to answer that.')).toEqual([]);
+  });
+});

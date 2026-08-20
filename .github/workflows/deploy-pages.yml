@@ -75,6 +75,10 @@ jobs:
         working-directory: component-lab
         run: npm ci
 
+      - name: Lint
+        working-directory: component-lab
+        run: npm run lint
+
       - name: Build
         working-directory: component-lab
         run: npm run build
