@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -e
 cd component-lab
 npx lint-staged
 npm run typecheck
