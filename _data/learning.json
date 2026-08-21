@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In the Arabic script, what term refers to the small markings placed above or below letters to indicate how they should be pronounced and which vowel sound to use?",
+      "question": "In the Hadith recorded in Sahih Muslim 1631, which three things continue to benefit a human being after all their other deeds come to an end upon death?",
       "options": [
-        "Tashkeel",
-        "Tafsir",
-        "Uthmani",
-        "Tajweed"
+        "Ongoing charity, beneficial knowledge, and a righteous child who prays for them",
+        "Daily prayers, regular fasting, and completed pilgrimages",
+        "Worldly wealth, personal reputation, and public monuments",
+        "Physical strength, artistic creations, and acquired land"
       ],
       "correctIndex": 0,
-      "learning": "Tashkeel are small diacritical marks placed above or below Arabic letters to indicate their pronunciation and specific vowel sounds, functioning much like vowels in English to clarify how a word is spoken.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Who demonstrated in the 1880s that humans forget approximately 80% of what they learn within 24 hours without active recall?",
-      "options": [
-        "Wilhelm Wundt",
-        "Hermann Ebbinghaus",
-        "Ivan Pavlov",
-        "B.F. Skinner"
-      ],
-      "correctIndex": 1,
-      "learning": "In the 1880s, Hermann Ebbinghaus established that humans forget roughly 80% of newly learned information within 24 hours unless they actively force themselves to recall it.",
+      "learning": "As stated in Sahih Muslim 1631, when a human being dies, all of their deeds come to an end except for three: ongoing charity, beneficial knowledge, or a righteous child who prays for them.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "Which concept refers to the actual unfolding and occurrence of events in life that can be influenced or altered by personal actions and supplication (Dua)?",
+      "question": "In Islamic tradition, which Arabic term refers to the human responsibility of serving as caretakers or stewards of the Earth?",
       "options": [
-        "Qadr",
         "Hadith",
-        "Qada’",
-        "Al-Alim"
+        "Khalifah",
+        "Jinn",
+        "Taqwa"
       ],
-      "correctIndex": 2,
-      "learning": "Qada’ refers to the actual occurrence and unfolding of events in our lives, which can be altered or influenced by actions and Dua (supplication), whereas Qadr represents Allah's complete, preordained plan and eternal knowledge.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "correctIndex": 1,
+      "learning": "In Islamic teachings, the term 'khalifah' refers to humanity's role as caretakers and stewards of the Earth, tasked with preserving faith and fostering unity.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which PCIe power state is the deepest substate within L1, maximizing energy savings at the cost of having the longest wake-up delay among L1 states?",
+      "question": "Approximately what cumulative percentage of the Quran's text is accounted for by its top 20 most frequently used words?",
       "options": [
-        "L1.0",
-        "L0s",
-        "L1.1",
-        "L1.2"
+        "20.83%",
+        "35.25%",
+        "50.50%",
+        "80.00%"
       ],
-      "correctIndex": 3,
-      "learning": "Within the PCIe L1 power-saving hierarchy, L1.2 powers off the most components to maximize energy conservation, which introduces the drawback of the longest delay to resume full operational activity among L1 states.",
+      "correctIndex": 0,
+      "learning": "Although the Pareto principle often suggests a small fraction of inputs yields 80% of results, the top 20 most frequent words in the Quran account for approximately 20.83% of the text.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What is the primary motivation for implementing Power Management States in PCIe devices?",
+      "options": [
+        "To maximize raw data throughput and bypass thermal throttling limits",
+        "To eliminate hardware-level interrupts in favor of software polling",
+        "To ensure efficient energy use, extend device longevity, and enhance system performance",
+        "To reduce physical connector pin counts and simplify board trace routing"
+      ],
+      "correctIndex": 2,
+      "learning": "PCIe Power Management States are implemented to ensure the efficient use of energy, extend device longevity, and enhance system performance in environments where power consumption is a major concern.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "In Islamic thought regarding the role of the caretaker (khalifah), who carries the responsibility for preserving the faith and maintaining community unity?",
+      "question": "When an individual successfully alters the unfolding events of their life (Qada’) through sincere supplication (Dua) and action, how does this change interact with divine preordainment (Qadr)?",
       "options": [
-        "Only scholars and judges",
-        "Exclusively appointed leaders and caliphs",
-        "Solely monastic orders and recluses",
-        "Every individual as a collective responsibility"
+        "The change and the decision to supplicate were already known to Allah and part of Qadr",
+        "The change proves that human free will functions completely outside of Qadr",
+        "The change replaces and nullifies the original plan recorded in Qadr",
+        "The change temporarily bypasses Allah's eternal knowledge and Qadr"
       ],
-      "correctIndex": 3,
-      "learning": "Rather than being the sole burden of appointed leaders, serving as a caretaker (khalifah) to protect faith and maintain community unity is a collective responsibility shared by every individual.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "correctIndex": 0,
+      "learning": "Although personal actions and supplications (Dua) have the power to alter the unfolding events of life (Qada’), any resulting change does not exist outside of divine decree; it was already known to Allah and encompassed within His eternal plan (Qadr).",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     }
   ],
-  "fetchedAt": "2026-08-20T01:56:49.653Z"
+  "fetchedAt": "2026-08-21T02:03:30.849Z"
 }
