@@ -55,6 +55,24 @@ If a new bug shows up anywhere near open/close animation, suspect one of these f
 - **Cross-component coordination becomes ordinary React state/props, not global functions.** The original's `window.filterTrivia` (Medium's category filter buttons reaching into a separately-included trivia widget) is now `activeFilter` state lifted to `InsightsWriting.tsx`, passed down to both `MediumTray` and `TriviaBoard` as props. Look for this pattern — a `window.*` global hook in the original almost always means "this needs to become lifted state," not "reproduce the global."
 - **`useAccordionGroup`'s mobile single-open / `isDesktopWidthAtMount()` (`src/lib/viewport.ts`)** replaces `_layouts/home.html`'s own synchronous pre-paint script that force-closes every `#accordion-group` section on mobile. Any new `Accordion` instance that should default open on desktop / closed on mobile (i.e. any of the "groupable" homepage sections) must pass `defaultOpen={isDesktopWidthAtMount()}`, not a hardcoded boolean.
 
+## Testing Strategy
+
+Decided 2026-08-22 via a `/grill-with-docs` session, after a long feature-build session (GithubTrending) that relied entirely on ad hoc headless-browser scripts (chrome-launcher + puppeteer-core, written per-bug, deleted after use) for verification, with zero automated tests anywhere in `component-lab`.
+
+**Forward-only, not retroactive.** Applies to new features from 2026-08-22 onward. Nothing already built (Accordion system, GithubTrending, the other 3 homepage sections) gets backfilled coverage — that would be its own separate, explicitly-scoped effort, not a side effect of adopting this policy.
+
+**Two layers, no coverage percentage enforced:**
+- **Vitest + React Testing Library** (`npm test` / `npm run test:watch`) — component/logic tests, colocated as `*.test.ts(x)`. Config lives in `vite.config.ts`'s `test` block (imports `defineConfig` from `vitest/config`, not `vite`, to pick up the types); jsdom environment, setup file at `src/test/setup.ts` (just the jest-dom matchers). `passWithNoTests: true` is deliberate — the suite is genuinely empty right now (no retroactive backfill), and an empty suite must still be a real, green gate rather than a red one everyone learns to ignore.
+- **Playwright** (`npm run test:e2e`) — reserved for critical cross-cutting flows (accordion open/close, mobile single-open, load-more-button state) once a specific one has actually bitten twice, not written speculatively. `playwright.config.ts` runs `npm run dev` as its own webServer (auto-started, port 5173), two projects (`chromium`, `mobile-chromium` via Pixel 7 emulation). Unlike Vitest, Playwright hard-fails (`Error: No tests found`, exit 1) on an empty suite, so `e2e/smoke.spec.ts` exists as a single narrow exception: it asserts the homepage boots and renders an `<h1>` with zero console errors. This is deploy/build-verification infra — the same category as `deploy-pages.yml`'s own "Verify live deployment" step — not feature coverage, and shouldn't be treated as precedent for adding more specs without an actual reason.
+
+**No visual regression tooling** (Storybook Visual Tests, Percy, screenshot-diffing) — deliberately skipped. The re-approval overhead every time a deliberate visual change ships (this site changes visually *often*) outweighs the benefit for a one-person project; the manual real-browser-verification discipline from prior sessions covers this ground instead.
+
+**Runs in two places:**
+- **Pre-commit** (Husky + lint-staged, `component-lab/.husky/pre-commit`): `lint-staged` (oxlint on staged files only, config in `.lintstagedrc.json`) → `npm run typecheck` (`tsc -b`) → `npm run test` (Vitest only — Playwright is too slow for a commit-time hook, browser startup alone costs seconds per project).
+- **CI** (`deploy-pages.yml`'s existing `build` job): `npm test` added alongside the existing lint/build steps, gating every deploy.
+
+**Known quirk**: `npx husky` / `npx husky init` prints `.git can't be found` and does not itself set `core.hooksPath` in this environment (reproduced in both Git Bash and PowerShell) — likely a Windows-specific path-resolution issue in Husky v9 when run from a subdirectory (`component-lab`) rather than the git root. Non-fatal (exits 0), so it doesn't break `npm install`/`npm ci`, but it means `core.hooksPath` was set manually via `git config core.hooksPath component-lab/.husky` rather than by Husky's own init. If hooks ever stop firing after a fresh clone, check `git config --get core.hooksPath` first — it may need to be set by hand again.
+
 ## Not Yet Decided / Explicitly Deferred
 
 - The GitHub Pages deployment cutover happened 2026-08-12 — no longer deferred, see handoff.md.
