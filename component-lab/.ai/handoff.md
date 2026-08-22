@@ -4,6 +4,15 @@
 
 **Still shared with the old content pipeline, not Jekyll-specific — don't delete these thinking they're leftover Jekyll cruft:** `_data/*.json`, `_posts/*.md` (both imported directly by `component-lab/src`), and `assets/{photography,youtube-thumbnails,medium-images}/` (synced into `component-lab/public/assets/` by `scripts/sync-assets.js` on every `predev`/`prebuild` — never committed there directly). All written by `.github/scripts/*.js` on the same schedule as before.
 
+## Status (2026-08-23 session end, part 4 — fixes Product Hunt card thumbnails)
+
+**Product Hunt cards were rendering badly distorted images** — caught by looking at the real rendered site (screenshot showed cropped, zoomed-in icon fragments instead of app screenshots), not assumed. Root cause, confirmed via real API investigation: `fetch_producthunt.js` was requesting `thumbnail { url }`, which Product Hunt's API always returns as a **square logo/icon** (confirmed 1:1 dimensions on every sample checked) — rendering that at `aspectRatio: "16/9"` with `objectFit: "cover"` stretched and cropped it into the distorted result.
+
+- **Fix**: query `media { type url }` too. Every one of 20 real sampled posts had at least one `type: "image"` entry, and every one checked was landscape (several exactly 1200×630, the OG-image ratio) — real launch screenshots, not logos. `parsePost()` now prefers the first `type: "image"` media entry, falling back to `thumbnail.url` only if a post genuinely has none (not observed in the real sample, but kept as a safety net).
+- **`ProductHuntPost` gained `thumbnailIsLogo: boolean`** so the frontend knows which shape it got. `ProductCard` (`ProductHuntList.tsx`) renders a real screenshot full-width at 16/9 as before, but a logo fallback renders small and square (48×48, matching GitHub's owner-avatar treatment) instead of being stretched.
+- Re-ran `fetch_producthunt.js` for real after the fix — all 20 current posts got real screenshot URLs, zero logo fallbacks in practice today.
+- Tests in `fetch_producthunt.test.js` now cover: media preferred over thumbnail, video-type media entries skipped, fallback to thumbnail (with `thumbnailIsLogo: true`) when media has no image entries or is absent entirely.
+
 ## Status (2026-08-23 session end, part 3 — corrects part 2's carousel shape)
 
 **Part 2 (below) built the wrong shape for the GitHub/Product Hunt swipe carousel** — two separate carousels, each swiping through individual repos/products one at a time. What was actually asked for, caught only once the user looked at localhost: **one carousel, exactly 2 fixed slides — slide 1 is the full GitHub list, slide 2 is the full Product Hunt list, and swiping switches which whole source you're looking at**, not which individual item.

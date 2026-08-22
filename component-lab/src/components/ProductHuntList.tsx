@@ -37,15 +37,34 @@ function ProductCard({
         className="Box box-shadow-small p-4 text-left"
         style={{ width: "100%", boxSizing: "border-box", border: "none", clipPath }}
       >
-        {post.thumbnailUrl && (
+        {/* Real launch screenshots (fetch_producthunt.js's own media[] preference) render full-
+            width at 16/9 - real signal worth the space. A logo fallback (no screenshot available
+            for this post - confirmed via thumbnailIsLogo, not guessed from the image's own
+            dimensions) renders small and square instead: stretching a square logo into 16/9
+            produced a badly distorted, zoomed-in crop (caught by looking at the real rendered
+            site, not assumed) - a small honest logo beats either that or an empty gap. */}
+        {post.thumbnailUrl && post.thumbnailIsLogo ? (
           <img
             src={post.thumbnailUrl}
             alt=""
             loading="lazy"
             draggable={false}
+            width={48}
+            height={48}
             className="rounded-2"
-            style={{ width: "100%", aspectRatio: "16/9", objectFit: "cover", marginBottom: 12 }}
+            style={{ marginBottom: 12 }}
           />
+        ) : (
+          post.thumbnailUrl && (
+            <img
+              src={post.thumbnailUrl}
+              alt=""
+              loading="lazy"
+              draggable={false}
+              className="rounded-2"
+              style={{ width: "100%", aspectRatio: "16/9", objectFit: "cover", marginBottom: 12 }}
+            />
+          )
         )}
 
         <div className="d-flex flex-items-center mb-1" style={{ gap: 8, minWidth: 0, flexWrap: "wrap" }}>

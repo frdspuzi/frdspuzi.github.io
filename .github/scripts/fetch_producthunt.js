@@ -49,6 +49,7 @@ async function fetchTodaysPosts() {
             votesCount
             dailyRank
             thumbnail { url }
+            media { type url }
             makers { name profileImage }
             topics(first: 3) { edges { node { name } } }
           }
@@ -76,9 +77,23 @@ async function fetchTodaysPosts() {
 // API responses - presumably a private/opted-out profile) - filtered out here rather than shown as
 // an anonymous avatar, matching fetch_github.js's own "never render a claim that isn't real" bar
 // for the contributor stack.
+//
+// thumbnail.url is always a square logo/icon (confirmed against real API responses - every sample
+// checked was exactly 1:1), not a launch screenshot - rendering it full-width at 16/9 produced a
+// badly distorted, zoomed-in crop (caught by looking at the real rendered site, not assumed).
+// media[] (type: "image" | "video") is where the real wide screenshots/banners actually live -
+// confirmed every one of 20 sampled posts had at least one type:"image" entry, and every image
+// entry checked was landscape (several exactly 1200x630, the standard OG-image ratio). First
+// image-type media entry is used as the display image; thumbnail is the fallback for the case
+// (not observed in practice, but cheap to guard) where a post has no media entries at all -
+// thumbnailIsLogo tells the frontend which shape it got, so it can render a small honest logo
+// instead of stretching it (see ProductHuntList.tsx's own ProductCard).
 function parsePost(edge) {
   const node = edge.node;
   const makers = (node.makers || []).filter((m) => m.profileImage && m.name !== '[REDACTED]');
+  const firstImageMedia = (node.media || []).find((m) => m.type === 'image');
+  const thumbnailUrl = firstImageMedia?.url ?? node.thumbnail?.url ?? '';
+  const thumbnailIsLogo = !firstImageMedia;
 
   return {
     name: node.name,
@@ -87,7 +102,8 @@ function parsePost(edge) {
     website: node.website,
     votesCount: node.votesCount,
     dailyRank: node.dailyRank,
-    thumbnailUrl: node.thumbnail?.url ?? '',
+    thumbnailUrl,
+    thumbnailIsLogo,
     makerNames: makers.map((m) => m.name),
     makerAvatarUrls: makers.map((m) => m.profileImage),
     topics: (node.topics?.edges ?? []).map((e) => e.node.name)

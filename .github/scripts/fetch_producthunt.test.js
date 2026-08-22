@@ -4,6 +4,9 @@ import { parsePost, parsePosts, parseHookResponse, todayWindow } from './fetch_p
 // Real-shaped GraphQL edge, matching the actual field set confirmed against the live API
 // (2026-08-22 investigation) - some makers legitimately come back as { name: "[REDACTED]",
 // profileImage: null } for private/opted-out profiles, kept here to test that filtering.
+// thumbnail is always a square logo (confirmed 1:1 against real API responses); media[] is where
+// the real wide screenshots live (confirmed landscape, e.g. 1200x630) - both present here so the
+// "media wins" preference actually gets exercised, not just the fallback path.
 const REAL_SHAPED_EDGE = {
   node: {
     name: 'HyNote for Mac',
@@ -12,7 +15,11 @@ const REAL_SHAPED_EDGE = {
     website: 'https://www.producthunt.com/r/abc123',
     votesCount: 378,
     dailyRank: 1,
-    thumbnail: { url: 'https://ph-files.imgix.net/example.png' },
+    thumbnail: { url: 'https://ph-files.imgix.net/logo-square.png' },
+    media: [
+      { type: 'video', url: 'https://ph-files.imgix.net/video-poster.png', videoUrl: 'https://youtube.com/watch?v=x' },
+      { type: 'image', url: 'https://ph-files.imgix.net/screenshot-wide.png', videoUrl: null },
+    ],
     makers: [
       { name: 'Sandy Kong', profileImage: 'https://ph-avatars.imgix.net/1.jpeg' },
       { name: '[REDACTED]', profileImage: null },
@@ -23,7 +30,7 @@ const REAL_SHAPED_EDGE = {
 };
 
 describe('parsePost', () => {
-  it('extracts name, tagline, urls, votes, rank, thumbnail, makers, and topics from a real-shaped edge', () => {
+  it('extracts name, tagline, urls, votes, rank, makers, and topics from a real-shaped edge', () => {
     expect(parsePost(REAL_SHAPED_EDGE)).toEqual({
       name: 'HyNote for Mac',
       tagline: 'Free local transcription that is 100% Private',
@@ -31,11 +38,38 @@ describe('parsePost', () => {
       website: 'https://www.producthunt.com/r/abc123',
       votesCount: 378,
       dailyRank: 1,
-      thumbnailUrl: 'https://ph-files.imgix.net/example.png',
+      thumbnailUrl: 'https://ph-files.imgix.net/screenshot-wide.png',
+      thumbnailIsLogo: false,
       makerNames: ['Sandy Kong', 'Mia Lian'],
       makerAvatarUrls: ['https://ph-avatars.imgix.net/1.jpeg', 'https://ph-avatars.imgix.net/2.jpeg'],
       topics: ['Meetings', 'Apple'],
     });
+  });
+
+  it('prefers the first type:"image" media entry over thumbnail (a square logo), skipping type:"video" entries', () => {
+    const post = parsePost(REAL_SHAPED_EDGE);
+    expect(post.thumbnailUrl).toBe('https://ph-files.imgix.net/screenshot-wide.png');
+    expect(post.thumbnailUrl).not.toBe('https://ph-files.imgix.net/logo-square.png');
+    expect(post.thumbnailIsLogo).toBe(false);
+  });
+
+  it('falls back to thumbnail (and flags thumbnailIsLogo) when media has no image entries', () => {
+    const edge = {
+      node: {
+        ...REAL_SHAPED_EDGE.node,
+        media: [{ type: 'video', url: 'https://ph-files.imgix.net/video-poster.png', videoUrl: 'https://youtube.com/x' }],
+      },
+    };
+    const post = parsePost(edge);
+    expect(post.thumbnailUrl).toBe('https://ph-files.imgix.net/logo-square.png');
+    expect(post.thumbnailIsLogo).toBe(true);
+  });
+
+  it('falls back to thumbnail (and flags thumbnailIsLogo) when media is entirely absent', () => {
+    const edge = { node: { ...REAL_SHAPED_EDGE.node, media: undefined } };
+    const post = parsePost(edge);
+    expect(post.thumbnailUrl).toBe('https://ph-files.imgix.net/logo-square.png');
+    expect(post.thumbnailIsLogo).toBe(true);
   });
 
   it('filters out redacted/private makers (name "[REDACTED]", profileImage null)', () => {
@@ -53,6 +87,7 @@ describe('parsePost', () => {
       votesCount: undefined,
       dailyRank: undefined,
       thumbnailUrl: '',
+      thumbnailIsLogo: true,
       makerNames: [],
       makerAvatarUrls: [],
       topics: [],
