@@ -403,6 +403,24 @@ body {
   }
 }
 
+// Not nested in the mobile media query above (unlike that block) - this applies at every
+// viewport width, every section. .accordion-content's own top padding (24px, from Primer's
+// .p-4) sits directly under the header row, which already has real visual weight of its own
+// (title, icons, the border/background the header and content share) - user request: when a
+// section is open, that top gap reads as wasted space rather than intentional breathing room.
+// Left/right/bottom padding untouched, only top removed. !important since p-4 is itself
+// declared !important in primer.css.
+//
+// :not(.is-maximized) - explicitly excluded per follow-up user request. Maximized (see the
+// fullscreen-takeover rules below) is a different situation: the header collapses to just the
+// floating maximize button positioned absolutely over the content's top-left corner, so that top
+// padding is genuinely load-bearing there (keeps real content clear of the button) rather than
+// empty space under a normal in-flow header. Removing it in that state specifically would have
+// undone the reason it exists in the first place, not just trimmed something incidental.
+.animated-details.is-open:not(.is-maximized)>.accordion-content {
+  padding-top: 0 !important;
+}
+
 // Mobile-only "maximize" toggle for the 3 groupable sections (Accordion.tsx) — a real fullscreen
 // takeover, not just trimming some chrome (explicit user framing: "like how you maximise a
 // window"). The button is a permanent part of the header row in the DOM (discoverable before
@@ -432,6 +450,68 @@ body {
 @media (max-width: 767px) {
   .js-accordion-group .maximize-toggle-btn {
     display: inline-flex;
+  }
+
+  // Shared fix, not scoped to one section - every groupable section's title loses real width the
+  // moment it opens, because the maximize-toggle-btn above only renders while open (Accordion.tsx:
+  // `{groupable && open && (<button className="maximize-toggle-btn">...`), shrinking the title's
+  // share of the header row. Confirmed via real measurement on a 390px viewport: 269px available
+  // closed, 205px open - a 64px loss, enough to push a title from one line to two purely from
+  // opening it, nothing about the title text itself changing. !important to beat Primer's own
+  // .f2{font-size:24px!important}.
+  //
+  // Applied unconditionally (mobile-wide), not scoped to .is-open - an earlier version only
+  // shrank the title while open, which meant it visibly resized the instant you tapped a section
+  // (24px -> 16px), a jump for its own sake. Same size before and after avoids that; the trade is
+  // the closed title no longer uses the extra room it technically has (it was never short on
+  // space to begin with, so 16px there isn't fixing anything, just keeping both states in sync).
+  //
+  // 16px, not a gentler reduction - measured via canvas text-width against this site's own
+  // longest title ("What the Internet's Building", 29 chars): 16px is the exact threshold that
+  // fits 205px available width (204px measured, the open state's tighter width), the smallest
+  // reduction that actually achieves "doesn't wrap" rather than just "wraps less." One shared
+  // value for every section's title, not a per-title exact-fit number - standardized on the worst
+  // case (the longest title) so shorter titles get consistent treatment too.
+  .accordion-header-title h2 {
+    font-size: 16px !important;
+  }
+
+  // Icons in the header row were all sized to balance against the title's original 24px (Primer
+  // f2) - now that mobile shrinks the title to 16px (two-thirds of that), the icons scale down by
+  // the same two-thirds ratio so they still read as proportional to the text next to them,
+  // instead of suddenly looking oversized against a smaller title. No !important needed for any
+  // of these - HTML width/height presentation attributes (Maximize2/Minimize2's size={18} prop,
+  // the chevron's own width="24" height="24") have lower priority than any class-based CSS rule,
+  // even an unqualified one.
+  .goo-popover-trigger {
+    width: 14px;
+    height: 14px;
+  }
+
+  .collapse-arrow {
+    width: 16px;
+    height: 16px;
+  }
+
+  .maximize-toggle-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  // The maximize button's real clickable hitbox is 32x32px (see .maximize-toggle-btn above) even
+  // though its icon glyph is only 12px - a deliberate, correctly-sized tap target, not a bug. But
+  // Accordion.tsx's own gap between it and the chevron next to it is only 4px, and a real finger's
+  // contact area (~40-50px) is far bigger than that gap - confirmed via real measurement (no
+  // literal DOM overlap, chevron center correctly resolves to the chevron, not the button) but
+  // 4px sits well under the ~8px minimum spacing accessibility guidance (WCAG 2.5.5, Apple/Google
+  // both recommend similar) calls for between two *different* adjacent tap targets, since the
+  // chevron itself has no hitbox of its own - the whole header's onClick covers it, right up to
+  // the maximize button's own boundary. !important since gap comes from an inline style on this
+  // element (Accordion.tsx sets `style={{ gap: 4 }}` directly), which otherwise beats a plain
+  // class rule regardless of specificity - same pattern already used elsewhere in this file for
+  // exactly this reason.
+  .accordion-header-icons {
+    gap: 12px !important;
   }
 
   // Equal specificity to .animated-details.is-open>.accordion-content above (3 classes each) —
@@ -1534,6 +1614,46 @@ html.rail-pref-hidden #rail-handle {
 
 .medium-date {
   color: var(--fg-faint);
+}
+
+// GithubTrendingList.tsx's RepoCard - moved off inline styles specifically because the mobile
+// font-size reduction below needs a real media query, which inline React styles can't express.
+// Also keeps this component consistent with architecture.md's "Primer-classed content doesn't mix
+// in Tailwind utilities" convention - GithubTrendingList.tsx still keeps genuinely dynamic/one-off
+// values (avatar overlap margins, the squircle clip-path) as inline styles, matching how
+// MediumTray splits the same way between its own CSS classes here and inline per-item values.
+.trending-card-title {
+  font-size: 20px; // Primer's f3
+}
+
+.trending-card-hook {
+  font-size: 14px; // Primer's f5
+}
+
+.trending-card-meta,
+.trending-card-personalization {
+  font-size: 12px; // Primer's f6
+}
+
+// Real user feedback ("too much" on mobile) after the flex-wrap overflow fix (below 767px, the
+// same breakpoint the mobile single-open/maximize rules already use) turned one card into 4
+// separate visually-competing rows. Smaller text is the lever asked for specifically - not
+// hiding any of the 8 pieces of info a card carries (owner avatar, rank, name, contributor
+// stack, language, stars, hook, personalization), just shrinking the type scale so all of it
+// reads as clearly secondary/supporting rather than every line competing at near-equal weight.
+@media (max-width: 767px) {
+  .trending-card-title {
+    font-size: 15px;
+  }
+
+  .trending-card-hook {
+    font-size: 13px;
+  }
+
+  .trending-card-meta,
+  .trending-card-personalization {
+    font-size: 11px;
+  }
 }
 
 .medium-image {

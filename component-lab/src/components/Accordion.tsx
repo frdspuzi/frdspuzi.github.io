@@ -111,7 +111,7 @@ export function Accordion({
             </div>
           )}
         </div>
-        <div className="d-flex flex-items-center" style={{ gap: 4 }}>
+        <div className="d-flex flex-items-center accordion-header-icons" style={{ gap: 4 }}>
           {/* Mobile-only (see site.scss's .maximize-toggle-btn) and open-only — maximizing a
               closed section isn't a meaningful action, so there's nothing to render until the
               section is actually showing content worth maximizing. */}

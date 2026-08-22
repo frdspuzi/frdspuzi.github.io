@@ -45,6 +45,12 @@ const REAL_SHAPED_ENTRY = `
         24,068</a>
     <a href="/cathrynlavery/diagram-design/forks" data-view-component="true" class="tmp-mr-3 Link Link--muted d-inline-block">
         1,464</a>
+    <span data-view-component="true" class="tmp-mr-3 d-inline-block">
+        Built by
+          <a class="d-inline-block" href="/cathrynlavery"><img class="avatar mb-1 avatar-user" src="https://avatars.githubusercontent.com/u/1?v=4" alt="@cathrynlavery" /></a>
+          <a class="d-inline-block" href="/parveen0029"><img class="avatar mb-1 avatar-user" src="https://avatars.githubusercontent.com/u/2?v=4" alt="@parveen0029" /></a>
+          <a class="d-inline-block" href="/mvanhorn"><img class="avatar mb-1 avatar-user" src="https://avatars.githubusercontent.com/u/3?v=4" alt="@mvanhorn" /></a>
+    </span>
     <span data-view-component="true" class="d-inline-block float-sm-right">
         14,397 stars this week
     </span>
@@ -83,6 +89,8 @@ describe('parseTrendingEntry', () => {
       language: 'HTML',
       starsThisWeek: 14397,
       totalStars: 24068,
+      ownerAvatarUrl: 'https://github.com/cathrynlavery.png',
+      contributorAvatarUrls: ['https://github.com/parveen0029.png', 'https://github.com/mvanhorn.png'],
     });
   });
 
@@ -91,6 +99,15 @@ describe('parseTrendingEntry', () => {
     // encodes the real repo path - a naive "first href in the article" regex would grab that
     // instead of the actual repository link.
     expect(parseTrendingEntry(REAL_SHAPED_ENTRY).fullName).not.toContain('login');
+  });
+
+  it('filters the owner out of their own contributor list', () => {
+    // cathrynlavery appears both as the repo owner AND as the first "Built by" avatar (real
+    // GitHub behavior - the owner is usually also a top contributor) - only the two other
+    // contributors should end up in contributorAvatarUrls, not a duplicate of the owner.
+    const urls = parseTrendingEntry(REAL_SHAPED_ENTRY).contributorAvatarUrls;
+    expect(urls).not.toContain('https://github.com/cathrynlavery.png');
+    expect(urls).toHaveLength(2);
   });
 
   it('decodes HTML entities in the description', () => {
@@ -105,6 +122,8 @@ describe('parseTrendingEntry', () => {
       language: '',
       starsThisWeek: 0,
       totalStars: 0,
+      ownerAvatarUrl: '',
+      contributorAvatarUrls: [],
     });
   });
 });

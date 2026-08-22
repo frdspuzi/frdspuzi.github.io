@@ -19,7 +19,6 @@ import {
 // Joined-border modifiers (group-joined-top/bottom) only apply to accordions that opt in via
 // `groupable` (the 3 main homepage sections) — matches accordion-grouping.js's own scoping to
 // .js-accordion-group specifically, a narrower set than the mobile-single-open behavior.
-const OPEN_MS = 580; // matches accordion.js's own OPEN.duration exactly
 
 type AccordionGroupState = {
   // `defaultOpen` is a fallback for ids never explicitly toggled yet — the caller (<Accordion>)
@@ -99,22 +98,63 @@ export function AccordionGroupProvider({ children }: { children: ReactNode }) {
     });
   }, []);
 
-  // Scroll-into-view after OPEN_MS once a section opens on mobile — same delay reasoning as the
-  // original (waits for both this section's expansion and any auto-closed sibling's collapse to
-  // settle before measuring position). Reduced motion skips the delay entirely, matching
-  // accordion.js never animating for those users either. Called from <Accordion>'s own effect,
-  // not from toggle() above, so the state update itself stays a pure reducer.
+  // Scroll-into-view once a section opens on mobile, once the page has actually finished
+  // settling — NOT a fixed OPEN_MS delay (a real, prior version of this function). OPEN_MS alone
+  // matches this accordion's own WAAPI open-animation duration, which is right for sections whose
+  // content is already fully sized the instant they open, but wrong for sections whose content
+  // keeps growing past that point (an image canvas still loading, avatar images still resolving,
+  // a ResizeObserver-driven layout recalculating) — confirmed via real headless-browser
+  // measurement: Photography settled at top:662px instead of 0, a GithubTrending section settled
+  // at top:546px instead of 0, both on a genuine first open, both landing correctly only on a
+  // second open once that same content was already loaded/settled from the first time.
+  //
+  // ResizeObserver on document.body, debounced, is the actual settlement signal - it keeps firing
+  // for as long as ANYTHING on the page is still resizing (this accordion's own open animation,
+  // a sibling's auto-close on mobile single-open, slow-loading content inside), and the scroll
+  // only fires once a DEBOUNCE_MS gap has passed with no further resize activity. MAX_WAIT_MS is
+  // a hard ceiling so a page that never fully stops (unlikely, but not provably impossible) can't
+  // leave the scroll stuck forever - it fires anyway once the ceiling is hit, same "good enough"
+  // floor the old fixed-delay version already accepted.
+  //
+  // Doesn't need this file's own architecture.md invariant #4 (ResizeObserver + a `> 0` height
+  // guard) - that guard exists specifically for observers watching an element an ancestor's
+  // display:none can hide (which reports a stale 0). document.body is never itself hidden by an
+  // ancestor, so its scrollHeight is never spuriously 0 the way a hidden accordion's own content
+  // element would be.
   const scrollIntoViewIfMobile = useCallback((id: string) => {
     if (!window.matchMedia("(max-width: 767px)").matches) return;
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const el = elRef.current[id];
     if (!el) return;
-    window.setTimeout(
-      () => {
-        el.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
-      },
-      reduceMotion ? 0 : OPEN_MS,
-    );
+
+    if (reduceMotion) {
+      el.scrollIntoView({ behavior: "auto", block: "start" });
+      return;
+    }
+
+    const DEBOUNCE_MS = 150;
+    const MAX_WAIT_MS = 2500;
+    let settled = false;
+    let debounceTimer: number;
+
+    const doScroll = () => {
+      if (settled) return;
+      settled = true;
+      observer.disconnect();
+      window.clearTimeout(maxWaitTimer);
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
+
+    const observer = new ResizeObserver(() => {
+      window.clearTimeout(debounceTimer);
+      debounceTimer = window.setTimeout(doScroll, DEBOUNCE_MS);
+    });
+    observer.observe(document.body);
+    // Armed immediately too, in case nothing ever resizes at all (a section whose content was
+    // already fully sized before this even ran) - without this, doScroll would only ever fire
+    // via the MAX_WAIT_MS ceiling for that case, turning an instant scroll into a 2.5s stall.
+    debounceTimer = window.setTimeout(doScroll, DEBOUNCE_MS);
+    const maxWaitTimer = window.setTimeout(doScroll, MAX_WAIT_MS);
   }, []);
 
   const effectiveOpenById = useCallback(
@@ -162,5 +202,3 @@ export function useAccordionGroup() {
   if (!ctx) throw new Error("useAccordionGroup must be used within an AccordionGroupProvider");
   return ctx;
 }
-
-export { OPEN_MS };

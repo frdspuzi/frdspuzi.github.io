@@ -18,8 +18,8 @@ const SECTIONS: { id: string; label: string; desc: string }[] = [
   { id: "gratitude", label: "Gratitude", desc: "A mindful pause" },
   { id: "reclaiming-algo", label: "Reclaiming the Algo", desc: "Curated, mindful YouTube picks" },
   { id: "my-writing", label: "Insights & Writing", desc: "Articles + AI trivia" },
-  { id: "photography", label: "Photography", desc: "Shots from Unsplash" },
   { id: "github-trending", label: "What the Internet's Building", desc: "This week's trending GitHub repos" },
+  { id: "photography", label: "Photography", desc: "Shots from Unsplash" },
 ];
 
 const SCALE_BY_DISTANCE = [1, 0.68, 0.44, 0.25];

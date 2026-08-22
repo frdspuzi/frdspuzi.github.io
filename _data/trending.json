@@ -6,9 +6,16 @@
       "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
       "language": "HTML",
       "starsThisWeek": 14397,
-      "totalStars": 24078,
-      "hook": "This project provides 38 clean diagram templates built with HTML and SVG. You can use these templates with AI coding assistants to generate clear architecture diagrams.",
-      "personalization": "Useful for generating clean visual documentation when testing AI coding tools like Claude Code."
+      "totalStars": 24133,
+      "ownerAvatarUrl": "https://github.com/cathrynlavery.png",
+      "contributorAvatarUrls": [
+        "https://github.com/parveen0029.png",
+        "https://github.com/mvanhorn.png",
+        "https://github.com/web-flow.png",
+        "https://github.com/philyuchkoff.png"
+      ],
+      "hook": "This repository provides 38 diagram templates made with plain HTML and SVG. SVG means Scalable Vector Graphics, which are images that stay sharp at any size. You can paste these templates into AI coding assistants to generate clean visual diagrams.",
+      "personalization": "Useful when prompting AI coding tools like Claude Code to render architecture diagrams for your fullstack web apps."
     },
     {
       "fullName": "volcengine/OpenViking",
@@ -16,9 +23,17 @@
       "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
       "language": "Python",
       "starsThisWeek": 1659,
-      "totalStars": 30837,
-      "hook": "This tool manages memory, retrieved data, and skills for AI agents in one place. It helps an agent remember past tasks and reuse successful workflows across sessions.",
-      "personalization": "Relevant for your applied context engineering and agent memory workflows."
+      "totalStars": 30888,
+      "ownerAvatarUrl": "https://github.com/volcengine.png",
+      "contributorAvatarUrls": [
+        "https://github.com/qin-ctx.png",
+        "https://github.com/claude.png",
+        "https://github.com/zhoujh01.png",
+        "https://github.com/ZaynJarvis.png",
+        "https://github.com/r266-tech.png"
+      ],
+      "hook": "OpenViking is a context database built for AI agents. An AI agent is a software program that performs tasks autonomously. The tool combines long-term memory, document search, and agent skills into one unified system.",
+      "personalization": "Helpful for testing how structured context storage improves prompt performance and consistency in agentic workflows."
     },
     {
       "fullName": "basecamp/omarchy",
@@ -26,8 +41,16 @@
       "description": "Beautiful, Modern & Opinionated Linux",
       "language": "Shell",
       "starsThisWeek": 2208,
-      "totalStars": 26965,
-      "hook": "This repository provides a custom Linux desktop setup from Basecamp. It installs modern developer tools and visual themes out of the box.",
+      "totalStars": 26988,
+      "ownerAvatarUrl": "https://github.com/basecamp.png",
+      "contributorAvatarUrls": [
+        "https://github.com/dhh.png",
+        "https://github.com/ryanrhughes.png",
+        "https://github.com/claude.png",
+        "https://github.com/tahayvr.png",
+        "https://github.com/pomartel.png"
+      ],
+      "hook": "Omarchy is an opinionated Linux operating system setup created by Basecamp. It installs a complete developer desktop with custom styles, standard tools, and streamlined default settings.",
       "personalization": ""
     },
     {
@@ -36,9 +59,17 @@
       "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
       "language": "Python",
       "starsThisWeek": 3838,
-      "totalStars": 8045,
-      "hook": "Needle is a tiny AI foundation model that takes only 14 megabytes of storage. It runs directly on small devices like phones and smart home hardware without cloud servers.",
-      "personalization": ""
+      "totalStars": 8069,
+      "ownerAvatarUrl": "https://github.com/cactus-compute.png",
+      "contributorAvatarUrls": [
+        "https://github.com/HenryNdubuaku.png",
+        "https://github.com/ncylich.png",
+        "https://github.com/kar-m.png",
+        "https://github.com/justinl66.png",
+        "https://github.com/jakmro.png"
+      ],
+      "hook": "Needle is a tiny artificial intelligence model that requires only 14 megabytes of storage. It runs directly on small edge hardware like phones and home devices without an internet connection.",
+      "personalization": "Worth watching if you build privacy-focused mobile side projects that need on-device AI without monthly cloud API bills."
     },
     {
       "fullName": "semantica-agi/semantica",
@@ -46,9 +77,17 @@
       "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
       "language": "Python",
       "starsThisWeek": 4005,
-      "totalStars": 9752,
-      "hook": "This tool organizes data into knowledge graphs to provide better context for AI systems. A knowledge graph links related facts together so AI outputs remain traceable.",
-      "personalization": "Relevant for building accountable AI systems where prompt outputs require verifiable, structured grounding."
+      "totalStars": 9772,
+      "ownerAvatarUrl": "https://github.com/semantica-agi.png",
+      "contributorAvatarUrls": [
+        "https://github.com/KaifAhmad1.png",
+        "https://github.com/Sameer6305.png",
+        "https://github.com/claude.png",
+        "https://github.com/ZohaibHassan16.png",
+        "https://github.com/dependabot.png"
+      ],
+      "hook": "Semantica is an infrastructure library that organizes data into knowledge graphs. A knowledge graph is a network of connected facts and relationships. This graph structure helps developers build AI systems that provide verifiable citations for their outputs.",
+      "personalization": "Relevant if you build auditable AI side projects, such as rule-checking workflows for Islamic finance compliance."
     },
     {
       "fullName": "NVIDIA-NeMo/Switchyard",
@@ -56,9 +95,17 @@
       "description": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.",
       "language": "Rust",
       "starsThisWeek": 1220,
-      "totalStars": 1945,
-      "hook": "Switchyard is a proxy tool that routes AI prompts across different model providers. It uses standard OpenAI and Anthropic API formats to help you test latency, quality, and cost.",
-      "personalization": "Directly useful for your prompt evaluation and routing workflows across different LLM providers."
+      "totalStars": 1951,
+      "ownerAvatarUrl": "https://github.com/NVIDIA-NeMo.png",
+      "contributorAvatarUrls": [
+        "https://github.com/nachiketb-nvidia.png",
+        "https://github.com/elyasmnvidian.png",
+        "https://github.com/grahamking.png",
+        "https://github.com/ayushag-nv.png",
+        "https://github.com/ryan-lempka.png"
+      ],
+      "hook": "Switchyard routes application traffic across different model providers through one central proxy. It maintains compatibility with standard OpenAI and Anthropic API endpoints. You can benchmark latency, compare answer quality, and optimize token costs without changing your application code.",
+      "personalization": "Directly supports your prompt evaluation workflows by letting you switch and benchmark different model backends side by side."
     },
     {
       "fullName": "modular/modular",
@@ -66,8 +113,16 @@
       "description": "The Modular Platform (includes MAX & Mojo)",
       "language": "Mojo",
       "starsThisWeek": 641,
-      "totalStars": 27641,
-      "hook": "This repository contains the Modular software platform, including the Mojo programming language and the MAX engine. Mojo combines the simple syntax of Python with the execution speed of C.",
+      "totalStars": 27726,
+      "ownerAvatarUrl": "https://github.com/modular.png",
+      "contributorAvatarUrls": [
+        "https://github.com/abduld.png",
+        "https://github.com/lattner.png",
+        "https://github.com/JoeLoser.png",
+        "https://github.com/keith.png",
+        "https://github.com/atomicapple0.png"
+      ],
+      "hook": "This repository hosts the Modular platform, including the Mojo programming language. Mojo gives developers the fast execution speed of C++ while keeping the simple syntax of Python.",
       "personalization": ""
     },
     {
@@ -76,8 +131,15 @@
       "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
       "language": "Python",
       "starsThisWeek": 7380,
-      "totalStars": 112546,
-      "hook": "This tool creates short video clips automatically from a single topic or keyword. It generates scripts, adds voice narration, and combines video footage into a finished file.",
+      "totalStars": 112660,
+      "ownerAvatarUrl": "https://github.com/harry0703.png",
+      "contributorAvatarUrls": [
+        "https://github.com/yyhhyyyyyy.png",
+        "https://github.com/vuisme.png",
+        "https://github.com/claude.png",
+        "https://github.com/pcbntt.png"
+      ],
+      "hook": "MoneyPrinterTurbo creates short videos automatically from a single text topic. It writes the video script, generates voice narration, selects video clips, and renders subtitles.",
       "personalization": ""
     },
     {
@@ -86,9 +148,17 @@
       "description": "A collective list of free APIs",
       "language": "Python",
       "starsThisWeek": 10183,
-      "totalStars": 466888,
-      "hook": "This repository provides a large list of free application programming interfaces, or APIs. An API is an interface that allows your application to fetch data from another online service.",
-      "personalization": "A handy resource to find free APIs for Islamic finance or utility side projects."
+      "totalStars": 466975,
+      "ownerAvatarUrl": "https://github.com/public-apis.png",
+      "contributorAvatarUrls": [
+        "https://github.com/matheusfelipeog.png",
+        "https://github.com/davemachado.png",
+        "https://github.com/ArindamOSS.png",
+        "https://github.com/pawelborkar.png",
+        "https://github.com/jbrooksuk.png"
+      ],
+      "hook": "This project maintains a categorized list of free application programming interfaces, or APIs. An API is an interface that lets your code fetch data from external services.",
+      "personalization": "A handy directory to discover free endpoints (such as currency rates or prayer data) for fullstack side projects."
     },
     {
       "fullName": "megadose/holehe",
@@ -96,8 +166,15 @@
       "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
       "language": "Python",
       "starsThisWeek": 1704,
-      "totalStars": 13799,
-      "hook": "Holehe is a command-line tool that checks if an email address is registered on popular websites. It tests password recovery pages without sending alert emails to the target account.",
+      "totalStars": 13807,
+      "ownerAvatarUrl": "https://github.com/megadose.png",
+      "contributorAvatarUrls": [
+        "https://github.com/Eriys.png",
+        "https://github.com/novitae.png",
+        "https://github.com/mxrch.png",
+        "https://github.com/byt3loss.png"
+      ],
+      "hook": "Holehe checks if a specific email address is registered on more than 120 websites. It inspects password recovery pages without sending actual password reset messages to the user.",
       "personalization": ""
     },
     {
@@ -106,8 +183,15 @@
       "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
       "language": "Rust",
       "starsThisWeek": 1492,
-      "totalStars": 11357,
-      "hook": "OpenLogi is an open-source program that configures Logitech mice and keyboards. It runs locally without requiring user accounts or sending tracking data.",
+      "totalStars": 11501,
+      "ownerAvatarUrl": "https://github.com/AprilNEA.png",
+      "contributorAvatarUrls": [
+        "https://github.com/davidbudnick.png",
+        "https://github.com/aprilnea.png",
+        "https://github.com/cserby.png",
+        "https://github.com/tagawa0525.png"
+      ],
+      "hook": "OpenLogi is a lightweight configuration tool for Logitech computer mice and keyboards. It runs entirely on your local machine with no user accounts and no background telemetry.",
       "personalization": ""
     },
     {
@@ -116,8 +200,15 @@
       "description": "Desktop app to generate 3D models from images or prompt using local AI — runs entirely on your GPU",
       "language": "TypeScript",
       "starsThisWeek": 1797,
-      "totalStars": 7004,
-      "hook": "Modly is a desktop application that creates three-dimensional models from images or text prompts. It runs local AI models on your computer graphics card to keep data private.",
+      "totalStars": 7011,
+      "ownerAvatarUrl": "https://github.com/lightningpixel.png",
+      "contributorAvatarUrls": [
+        "https://github.com/Lorchie.png",
+        "https://github.com/iammojogo-sudo.png",
+        "https://github.com/DrHepa.png",
+        "https://github.com/jokrasno.png"
+      ],
+      "hook": "Modly is a desktop program that generates three-dimensional models from images or text prompts. It executes all generative AI calculations locally on your computer graphics card.",
       "personalization": ""
     },
     {
@@ -126,8 +217,16 @@
       "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
       "language": "Rust",
       "starsThisWeek": 2557,
-      "totalStars": 3841,
-      "hook": "Macro is an all-in-one productivity workspace for teams. It combines email, chat, documents, and tasks into one application with shared AI memory.",
+      "totalStars": 3847,
+      "ownerAvatarUrl": "https://github.com/macro-inc.png",
+      "contributorAvatarUrls": [
+        "https://github.com/whutchinson98.png",
+        "https://github.com/gbirman.png",
+        "https://github.com/synoet.png",
+        "https://github.com/sedson.png",
+        "https://github.com/evanhutnik.png"
+      ],
+      "hook": "Macro is an all-in-one workspace that brings email, team chat, documents, and tasks together. It connects these work items using a shared memory layer for AI assistants.",
       "personalization": ""
     },
     {
@@ -136,9 +235,17 @@
       "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
       "language": "Python",
       "starsThisWeek": 3338,
-      "totalStars": 74037,
-      "hook": "Unsloth is a tool and interface to run and fine-tune large language models locally. Fine-tuning adjusts an existing model on custom data so it performs a specific task better.",
-      "personalization": "Useful if you want to run or fine-tune open models locally for prompt evaluation."
+      "totalStars": 74046,
+      "ownerAvatarUrl": "https://github.com/unslothai.png",
+      "contributorAvatarUrls": [
+        "https://github.com/danielhanchen.png",
+        "https://github.com/pre-commit-ci.png",
+        "https://github.com/shimmyshimmer.png",
+        "https://github.com/wasimysaid.png",
+        "https://github.com/Datta0.png"
+      ],
+      "hook": "Unsloth allows you to train and run open-source large language models locally. It uses custom GPU kernels to make model training faster while consuming significantly less memory.",
+      "personalization": "Helpful to keep in your toolkit when prompt engineering alone reaches its limits and you need local model fine-tuning."
     },
     {
       "fullName": "akitaonrails/ai-memory",
@@ -146,9 +253,16 @@
       "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
       "language": "Rust",
       "starsThisWeek": 1717,
-      "totalStars": 3433,
-      "hook": "This tool manages long-term memory for terminal-based AI coding agents. It lets you switch between different coding tools without losing your project context or past instructions.",
-      "personalization": "Directly relevant for evaluating multiple AI coding CLIs without losing context across tool switches."
+      "totalStars": 3472,
+      "ownerAvatarUrl": "https://github.com/akitaonrails.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/djalmajr.png",
+        "https://github.com/wblech.png",
+        "https://github.com/rthiago.png"
+      ],
+      "hook": "This tool manages persistent, long-term memory for command-line AI coding assistants. It saves project context across sessions so you can hand off tasks between different AI tools without losing project history.",
+      "personalization": "Directly solves the context-loss problem when evaluating and switching between different AI coding CLI tools on your projects."
     },
     {
       "fullName": "jundot/omlx",
@@ -156,9 +270,16 @@
       "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
       "language": "Python",
       "starsThisWeek": 1102,
-      "totalStars": 20048,
-      "hook": "Omlx is an AI model server built for Apple Silicon Mac computers. It runs from your macOS menu bar and manages memory caching to process prompts quickly.",
-      "personalization": ""
+      "totalStars": 20064,
+      "ownerAvatarUrl": "https://github.com/jundot.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/cfbraun.png",
+        "https://github.com/JimStenstrom.png",
+        "https://github.com/github-actions.png"
+      ],
+      "hook": "Omlx is an inference server designed for Apple Silicon Mac computers. An inference server runs language models and answers incoming text requests. You can monitor and control the server directly from the macOS menu bar.",
+      "personalization": "A convenient tool if you want to run fast local models on your Mac to test prompt ideas offline."
     },
     {
       "fullName": "AlexsJones/llmfit",
@@ -166,9 +287,16 @@
       "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
       "language": "Rust",
       "starsThisWeek": 1545,
-      "totalStars": 33213,
-      "hook": "LLMfit is a command-line utility that inspects your computer hardware. It shows you which open-source AI models your machine can run comfortably.",
-      "personalization": ""
+      "totalStars": 33229,
+      "ownerAvatarUrl": "https://github.com/AlexsJones.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/dependabot.png",
+        "https://github.com/three-foxes-in-a-trenchcoat.png",
+        "https://github.com/github-actions.png"
+      ],
+      "hook": "LLMfit is a command-line tool that inspects your computer hardware. It analyzes your processor and memory to show you which open-source AI models can run smoothly on your machine.",
+      "personalization": "Saves you setup time by identifying which local LLMs your development machine can comfortably run for prompt testing."
     },
     {
       "fullName": "CodebuffAI/freebuff",
@@ -176,10 +304,18 @@
       "description": "The free coding agent",
       "language": "TypeScript",
       "starsThisWeek": 1037,
-      "totalStars": 10214,
-      "hook": "Freebuff is an open-source coding agent that runs in your terminal. It reads your codebase and writes code changes based on your plain-text instructions.",
-      "personalization": "A new open-source agent worth testing against your current AI coding tool evaluation benchmarks."
+      "totalStars": 10227,
+      "ownerAvatarUrl": "https://github.com/CodebuffAI.png",
+      "contributorAvatarUrls": [
+        "https://github.com/jahooma.png",
+        "https://github.com/github-actions.png",
+        "https://github.com/brandonkachen.png",
+        "https://github.com/charleslien.png",
+        "https://github.com/venkr.png"
+      ],
+      "hook": "Freebuff is an open-source coding agent that works in your terminal. It inspects your project files, writes code changes, and runs commands to complete programming tasks.",
+      "personalization": "Another practical coding agent to benchmark against your current AI development stack."
     }
   ],
-  "lastUpdated": "2026-08-20T15:24:37.350Z"
+  "lastUpdated": "2026-08-20T17:17:54.720Z"
 }

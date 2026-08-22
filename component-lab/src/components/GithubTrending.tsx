@@ -1,19 +1,20 @@
-import { lazy, Suspense, useState } from "react";
+import { useState } from "react";
 import { Accordion } from "@/components/Accordion";
 import { isDesktopWidthAtMount } from "@/lib/viewport";
+import { GithubTrendingList } from "@/components/GithubTrendingList";
 import trendingData from "../../../_data/trending.json";
 import type { TrendingRepo } from "@/data/trending_types";
 
-// Lazy so this section's own (small) chunk isn't shipped until opened - NOT dodging a new eager
-// `motion` dependency the way PhotographyCanvas.tsx's split does, since `motion` is already
-// unconditionally eager elsewhere (Masthead's shader background, MediumTray's pill tabs) - see
-// GithubTrendingList.tsx's own comment for the corrected reasoning.
-const GithubTrendingList = lazy(() =>
-  import("@/components/GithubTrendingList").then((m) => ({ default: m.GithubTrendingList })),
-);
-
-// New homepage section, the 4th "groupable" one. Reuses the shared Accordion like the other 3 -
-// unlike them, this has no Jekyll-era original to port from (built directly in component-lab).
+// Eager, not React.lazy() (unlike an earlier version of this file) - GithubTrendingList's own
+// chunk is small (~2.6kB, nowhere near PhotographyCanvas.tsx's 159kB, the case lazy-loading
+// actually earns its keep for), and lazy-loading it was found to actively cause a real bug: the
+// Suspense boundary resolves asynchronously, so on a real click-to-open, useAnimatedDisclosure's
+// synchronous scrollHeight measurement fired while the Suspense fallback (null, zero height) was
+// still showing - the real cards then mounted ~200ms later, after the open animation had already
+// locked to that near-zero target. Confirmed via a real headless-browser click-to-open test
+// sampling rendered card count over time. Removing the lazy boundary fixes this at the root
+// (nothing async between the section opening and its real content existing) rather than patching
+// around the timing with another delay.
 export function GithubTrending() {
   const repos = (trendingData.repos ?? []) as TrendingRepo[];
   const [everOpened, setEverOpened] = useState(isDesktopWidthAtMount());
@@ -23,24 +24,7 @@ export function GithubTrending() {
       id="github-trending"
       groupable
       defaultOpen={isDesktopWidthAtMount()}
-      // onBeforeMeasure only fires on a REAL open transition (a click) - useAnimatedDisclosure's
-      // isFirstRun path (the desktop defaultOpen-from-first-paint case, already handled by
-      // everOpened's own useState initializer below) skips it entirely, so there's no double-
-      // delay on first load. On a real transition, useAnimatedDisclosure captures scrollHeight
-      // once, synchronously, right here, then locks the content to that height with
-      // overflow:hidden until settle() releases it back to auto/visible - which happens via
-      // anim.onfinish at OPEN_DURATION (580ms, confirmed in useAnimatedDisclosure.ts). Mounting
-      // GithubTrendingList (and AnimatedList's own incremental-reveal growth) immediately here
-      // would grow the content *during* that locked window - items added while `overflow:hidden`
-      // holds the stale, one-card-tall measured height render clipped, then all pop into view at
-      // once when settle() fires. That's exactly the "content growing post-measurement inside an
-      // Accordion" class architecture.md's invariants #3/#4 warn about. Delaying past 580ms (a
-      // 70ms buffer, not touching the shared Accordion/useAnimatedDisclosure code at all) means
-      // AnimatedList only starts adding items once the container is already unlocked - the
-      // stagger then just reflows a height:auto container normally, exactly as intended.
-      onBeforeMeasure={() => {
-        window.setTimeout(() => setEverOpened(true), 650);
-      }}
+      onBeforeMeasure={() => setEverOpened(true)}
       title={
         <h2
           id="github-trending"
@@ -55,11 +39,7 @@ export function GithubTrending() {
       {repos.length === 0 ? (
         <p className="text-gray">No trending repos yet — check back after the next weekly run.</p>
       ) : (
-        everOpened && (
-          <Suspense fallback={null}>
-            <GithubTrendingList repos={repos} />
-          </Suspense>
-        )
+        everOpened && <GithubTrendingList repos={repos} />
       )}
     </Accordion>
   );

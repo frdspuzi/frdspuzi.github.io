@@ -39,6 +39,14 @@ async function fetchTrendingHtml() {
   return res.text();
 }
 
+// GitHub's own stable, official redirect (confirmed via a real request: 302s to
+// avatars.githubusercontent.com/u/{id}) - works for both user and org accounts, so it's used for
+// both the repo owner and each "Built by" contributor rather than the differently-shaped src=
+// URLs GitHub's own markup happens to embed for the latter. One helper, one derivation, for both.
+function avatarUrlFor(username) {
+  return `https://github.com/${username}.png`;
+}
+
 // Parses the handful of fields this script actually needs out of one <article class="Box-row">
 // block - GitHub's own trending-page markup, confirmed against real fetched HTML (not guessed):
 // the repo's full name and URL come straight from the h2 link's href (not the link text, which is
@@ -48,6 +56,12 @@ async function fetchTrendingHtml() {
 // lifetime stars) from the trailing summary span. Plain regex, not a real HTML parser - same
 // "single, consistent, machine-generated format" justification this codebase already used for the
 // YouTube Atom feed parser and the PNG decoder.
+//
+// contributorUsernames comes from the page's own "Built by" section - confirmed (via a real fetch
+// across all 18 live entries) that this always caps at a handful of avatars regardless of a
+// repo's true contributor count, so this is deliberately NOT used to derive or claim any kind of
+// total contributor count - just used to render a small, honest "some people worked on this"
+// avatar stack, never a number.
 function parseTrendingEntry(articleHtml) {
   const fullName = articleHtml.match(/<h2[^>]*>\s*<a[^>]*?href="\/([^"]+)"/)?.[1] ?? '';
   const description = decodeHtmlEntities(
@@ -58,6 +72,14 @@ function parseTrendingEntry(articleHtml) {
   const starsThisWeek = starsThisWeekMatch ? parseInt(starsThisWeekMatch[1].replace(/,/g, ''), 10) : 0;
   const totalStarsMatch = articleHtml.match(/\/stargazers"[^>]*>[\s\S]*?([\d,]+)<\/a>/);
   const totalStars = totalStarsMatch ? parseInt(totalStarsMatch[1].replace(/,/g, ''), 10) : 0;
+  const owner = fullName.split('/')[0] ?? '';
+
+  // Bounded by the "N stars this week" span that always follows it - an unbounded match would
+  // run past this article's own "Built by" section into whatever comes next.
+  const builtByMatch = articleHtml.match(/Built by([\s\S]*?)<span data-view-component="true" class="d-inline-block float-sm-right">/);
+  const contributorUsernames = builtByMatch
+    ? [...builtByMatch[1].matchAll(/alt="@([a-zA-Z0-9_-]+)"/g)].map(m => m[1]).filter(u => u !== owner)
+    : [];
 
   return {
     fullName,
@@ -65,7 +87,9 @@ function parseTrendingEntry(articleHtml) {
     description,
     language,
     starsThisWeek,
-    totalStars
+    totalStars,
+    ownerAvatarUrl: owner ? avatarUrlFor(owner) : '',
+    contributorAvatarUrls: contributorUsernames.map(avatarUrlFor)
   };
 }
 

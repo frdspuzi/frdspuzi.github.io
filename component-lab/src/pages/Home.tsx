@@ -26,11 +26,11 @@ export default function Home() {
           <Gratitude />
         </div>
 
-        <div id="accordion-group" className="mt-3 mb-6">
+        <div id="accordion-group" className="mt-3 mb-6 text-left">
           <YoutubeFeed />
           <InsightsWriting />
-          <Photography />
           <GithubTrending />
+          <Photography />
         </div>
 
         <FloatingNav />
