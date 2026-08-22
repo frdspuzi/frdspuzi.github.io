@@ -80,6 +80,10 @@ jobs:
         working-directory: component-lab
         run: npm run lint
 
+      - name: Test
+        working-directory: component-lab
+        run: npm test
+
       - name: Build
         working-directory: component-lab
         run: npm run build
