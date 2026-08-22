@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In the Hadith recorded in Sahih Muslim 1631, which three things continue to benefit a human being after all their other deeds come to an end upon death?",
+      "question": "In Islamic theology, which concept refers to Allah’s complete, preordained plan and eternal knowledge of everything that will ever happen?",
       "options": [
-        "Ongoing charity, beneficial knowledge, and a righteous child who prays for them",
-        "Daily prayers, regular fasting, and completed pilgrimages",
-        "Worldly wealth, personal reputation, and public monuments",
-        "Physical strength, artistic creations, and acquired land"
+        "Qadr",
+        "Qada’",
+        "Dua",
+        "Jami"
       ],
       "correctIndex": 0,
-      "learning": "As stated in Sahih Muslim 1631, when a human being dies, all of their deeds come to an end except for three: ongoing charity, beneficial knowledge, or a righteous child who prays for them.",
+      "learning": "While Qada’ refers to the actual unfolding of events as they happen in one's life, Qadr represents Allah's complete, preordained plan and eternal knowledge of all events.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "To effectively retain lessons and stop relying on faulty memory, what three-step approach is recommended for managing ideas?",
+      "options": [
+        "Re-read notes daily, memorize them, and keep them private",
+        "Record voice memos, avoid digital tools, and practice rote repetition",
+        "Store notes in a static offline folder, review monthly, and discard old thoughts",
+        "Write it down, build a reminder system, and share it"
+      ],
+      "correctIndex": 3,
+      "learning": "Instead of relying on brain storage, the optimal approach to retaining knowledge is to write ideas down, construct an active system to remind yourself, and share the lessons publicly.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "In Islamic tradition, which Arabic term refers to the human responsibility of serving as caretakers or stewards of the Earth?",
+      "question": "In Islamic teachings, which term designates humanity's role and responsibility as caretakers or stewards of the Earth?",
       "options": [
-        "Hadith",
         "Khalifah",
+        "Taqwa",
         "Jinn",
-        "Taqwa"
+        "Hadith"
       ],
-      "correctIndex": 1,
-      "learning": "In Islamic teachings, the term 'khalifah' refers to humanity's role as caretakers and stewards of the Earth, tasked with preserving faith and fostering unity.",
+      "correctIndex": 0,
+      "learning": "In Islamic teachings, life's purpose is defined by three primary roles: worshiping Allah through devotion and mindfulness (taqwa), acting as caretakers (khalifah) who preserve faith and unity on Earth, and navigating life as a test of conduct in preparation for the Hereafter.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Approximately what cumulative percentage of the Quran's text is accounted for by its top 20 most frequently used words?",
+      "question": "Which PCIe power management state is intended for the longest periods of inactivity, providing the highest power savings but requiring the longest wake-up time?",
       "options": [
-        "20.83%",
-        "35.25%",
-        "50.50%",
-        "80.00%"
+        "L1.2",
+        "L2",
+        "L1.0",
+        "L0s"
       ],
-      "correctIndex": 0,
-      "learning": "Although the Pareto principle often suggests a small fraction of inputs yields 80% of results, the top 20 most frequent words in the Quran account for approximately 20.83% of the text.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What is the primary motivation for implementing Power Management States in PCIe devices?",
-      "options": [
-        "To maximize raw data throughput and bypass thermal throttling limits",
-        "To eliminate hardware-level interrupts in favor of software polling",
-        "To ensure efficient energy use, extend device longevity, and enhance system performance",
-        "To reduce physical connector pin counts and simplify board trace routing"
-      ],
-      "correctIndex": 2,
-      "learning": "PCIe Power Management States are implemented to ensure the efficient use of energy, extend device longevity, and enhance system performance in environments where power consumption is a major concern.",
+      "correctIndex": 1,
+      "learning": "In PCIe power management, the L2 state is used for the longest periods of inactivity, offering the highest power savings and the longest wake-up time because the device is almost completely powered down.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "When an individual successfully alters the unfolding events of their life (Qada’) through sincere supplication (Dua) and action, how does this change interact with divine preordainment (Qadr)?",
+      "question": "In Scrum, which artifact is used to visualize the progress of a Sprint and display the remaining work?",
       "options": [
-        "The change and the decision to supplicate were already known to Allah and part of Qadr",
-        "The change proves that human free will functions completely outside of Qadr",
-        "The change replaces and nullifies the original plan recorded in Qadr",
-        "The change temporarily bypasses Allah's eternal knowledge and Qadr"
+        "Product Backlog",
+        "User Story",
+        "Sprint Backlog",
+        "Burndown Chart"
       ],
-      "correctIndex": 0,
-      "learning": "Although personal actions and supplications (Dua) have the power to alter the unfolding events of life (Qada’), any resulting change does not exist outside of divine decree; it was already known to Allah and encompassed within His eternal plan (Qadr).",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
+      "correctIndex": 3,
+      "learning": "In Scrum, a Burndown Chart is an artifact that visualizes the progress of a Sprint by showing remaining work, helping the team track if they are on schedule.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
     }
   ],
-  "fetchedAt": "2026-08-21T02:03:30.849Z"
+  "fetchedAt": "2026-08-22T01:55:35.022Z"
 }
