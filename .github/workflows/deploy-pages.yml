@@ -26,6 +26,7 @@ on:
       - "Fetch Medium Articles"
       - "Fetch Unsplash Photos"
       - "Fetch GitHub Trending"
+      - "Fetch Product Hunt Trending"
     types: [completed]
   workflow_dispatch:
 
