@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In Islamic theology, which concept refers to Allah’s complete, preordained plan and eternal knowledge of everything that will ever happen?",
+      "question": "Which concept represents the actual unfolding occurrence of events in life that individuals are responsible for and can alter through their actions and supplications?",
       "options": [
+        "Tirmidhi",
         "Qadr",
         "Qada’",
-        "Dua",
-        "Jami"
+        "Al-Alim"
       ],
-      "correctIndex": 0,
-      "learning": "While Qada’ refers to the actual unfolding of events as they happen in one's life, Qadr represents Allah's complete, preordained plan and eternal knowledge of all events.",
+      "correctIndex": 2,
+      "learning": "While Qadr is Allah's eternal and preordained knowledge of all things, individuals possess the free will and responsibility to alter their Qada’—the actual unfolding of life events—through proactive effort and sincere supplication.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "To effectively retain lessons and stop relying on faulty memory, what three-step approach is recommended for managing ideas?",
+      "question": "In PCIe power management, which state represents the deepest sleep mode where the device is almost completely powered down, yielding the highest power savings and the longest wake-up time?",
       "options": [
-        "Re-read notes daily, memorize them, and keep them private",
-        "Record voice memos, avoid digital tools, and practice rote repetition",
-        "Store notes in a static offline folder, review monthly, and discard old thoughts",
-        "Write it down, build a reminder system, and share it"
-      ],
-      "correctIndex": 3,
-      "learning": "Instead of relying on brain storage, the optimal approach to retaining knowledge is to write ideas down, construct an active system to remind yourself, and share the lessons publicly.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In Islamic teachings, which term designates humanity's role and responsibility as caretakers or stewards of the Earth?",
-      "options": [
-        "Khalifah",
-        "Taqwa",
-        "Jinn",
-        "Hadith"
-      ],
-      "correctIndex": 0,
-      "learning": "In Islamic teachings, life's purpose is defined by three primary roles: worshiping Allah through devotion and mindfulness (taqwa), acting as caretakers (khalifah) who preserve faith and unity on Earth, and navigating life as a test of conduct in preparation for the Hereafter.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which PCIe power management state is intended for the longest periods of inactivity, providing the highest power savings but requiring the longest wake-up time?",
-      "options": [
-        "L1.2",
-        "L2",
         "L1.0",
+        "L2",
+        "L0",
         "L0s"
       ],
       "correctIndex": 1,
-      "learning": "In PCIe power management, the L2 state is used for the longest periods of inactivity, offering the highest power savings and the longest wake-up time because the device is almost completely powered down.",
+      "learning": "In PCIe power management, the L2 state is used for the longest periods of inactivity, offering the highest power savings and longest wake-up time by almost completely powering down the device.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "In Scrum, which artifact is used to visualize the progress of a Sprint and display the remaining work?",
+      "question": "Compared to the approximately 170,000 words documented in the Oxford English Dictionary, roughly how many distinct words exist in the Arabic language?",
       "options": [
-        "Product Backlog",
-        "User Story",
-        "Sprint Backlog",
-        "Burndown Chart"
+        "25 million",
+        "1.5 million",
+        "12 million",
+        "5 million"
+      ],
+      "correctIndex": 2,
+      "learning": "The Arabic language possesses an immense vocabulary of approximately 12 million distinct words compared to around 170,000 English words in the Oxford English Dictionary, resulting in an estimated 71:1 ratio of Arabic to English words.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In Islamic tradition, which Arabic term refers to humanity's designated role as caretakers or stewards of creation on Earth?",
+      "options": [
+        "Bukhari",
+        "Khalifah",
+        "Taqwa",
+        "Jinn"
+      ],
+      "correctIndex": 1,
+      "learning": "In Islamic belief, humans are designated as khalifah—caretakers or stewards of the Earth responsible for maintaining unity, protecting the faith, and caring for creation.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In the Scrum framework, what is the primary focus of the Sprint Review ceremony?",
+      "options": [
+        "Selecting user stories to create the initial Product Backlog",
+        "Defining and assigning long-term project roles to team members",
+        "Holding a daily stand-up to discuss progress and immediate blockers",
+        "Demonstrating completed work to the Product Owner and discussing improvements for future Sprints"
       ],
       "correctIndex": 3,
-      "learning": "In Scrum, a Burndown Chart is an artifact that visualizes the progress of a Sprint by showing remaining work, helping the team track if they are on schedule.",
+      "learning": "The Sprint Review ceremony serves to demonstrate completed work to the Product Owner while allowing the team to reflect on the Sprint and identify improvements for future iterations.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     }
   ],
-  "fetchedAt": "2026-08-22T01:55:35.022Z"
+  "fetchedAt": "2026-08-23T03:26:23.148Z"
 }
