@@ -129,7 +129,9 @@ export function ProductHuntList({
   const hiddenCount = posts.length - visibleCount;
 
   return (
-    <div className="d-flex flex-column" style={{ gap: 16, width: "100%" }}>
+    // See GithubTrendingList's identical comment - height:100% + marginTop:"auto" on the button
+    // pins it to the bottom of the available space rather than floating right under the last card.
+    <div className="d-flex flex-column" style={{ gap: 16, width: "100%", height: "100%" }}>
       <h3 className="f5 text-uppercase text-gray-light mb-0 tracking-wide" style={{ letterSpacing: 2 }}>
         Launched on Product Hunt · daily
       </h3>
@@ -140,7 +142,7 @@ export function ProductHuntList({
         <button
           type="button"
           className="btn"
-          style={{ alignSelf: "center" }}
+          style={{ alignSelf: "center", marginTop: "auto" }}
           tabIndex={isActive ? 0 : -1}
           onClick={isActive ? onToggleExpanded : undefined}
         >

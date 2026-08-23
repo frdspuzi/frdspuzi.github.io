@@ -143,7 +143,11 @@ export function GithubTrendingList({
   const hiddenCount = repos.length - visibleCount;
 
   return (
-    <div className="d-flex flex-column" style={{ gap: 16, width: "100%" }}>
+    // height: 100% + the button's marginTop: auto below - when this panel's own content is
+    // shorter than the carousel's fixed viewport height (set to the taller of the 2 slides), the
+    // button pins to the bottom of the available space instead of floating right under the last
+    // card with empty space beneath it.
+    <div className="d-flex flex-column" style={{ gap: 16, width: "100%", height: "100%" }}>
       <h3 className="f5 text-uppercase text-gray-light mb-0 tracking-wide" style={{ letterSpacing: 2 }}>
         Trending on GitHub · weekly
       </h3>
@@ -154,7 +158,7 @@ export function GithubTrendingList({
         <button
           type="button"
           className="btn"
-          style={{ alignSelf: "center" }}
+          style={{ alignSelf: "center", marginTop: "auto" }}
           tabIndex={isActive ? 0 : -1}
           onClick={isActive ? onToggleExpanded : undefined}
         >
