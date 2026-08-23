@@ -26,6 +26,16 @@ const SWIPE_COMMIT_THRESHOLD = 50;
 const SWIPE_AXIS_LOCK_THRESHOLD = 10;
 const SWIPE_SETTLE_MS = 250;
 const SLIDE_GAP_PX = 10;
+// Same insurance as TriviaBoard.tsx's own MEASURE_SAFETY_BUFFER_PX, same underlying cause: a
+// small, real gap between the offscreen measurement pass and the real rendered layout. Here it's
+// specifically because the "Load more" button's height:100%+marginTop:"auto" bottom-pinning
+// (GithubTrendingList.tsx/ProductHuntList.tsx) can only take effect once the flex column's own
+// height:100% resolves against a *definite* parent height - which is exactly the number this
+// measurement is computing, so the offscreen pass (parent height still indefinite at that point)
+// measures a few px short of what the real stretched-and-pinned layout ends up needing. Confirmed
+// via real measurement: the button clipped 9px past the carousel viewport's bottom edge in the
+// expanded state before this buffer was added.
+const MEASURE_SAFETY_BUFFER_PX = 12;
 
 const SLIDE_IDS = ["github", "producthunt"] as const;
 type SlideId = (typeof SLIDE_IDS)[number];
@@ -89,7 +99,7 @@ export const TrendingCarousel = forwardRef<
     const container = measureContainerRef.current;
     if (!container) return;
     const heights = Array.from(container.children).map((el) => (el as HTMLElement).offsetHeight);
-    if (heights.length > 0) setMaxSlideHeight(Math.max(...heights));
+    if (heights.length > 0) setMaxSlideHeight(Math.max(...heights) + MEASURE_SAFETY_BUFFER_PX);
   }
 
   useLayoutEffect(() => {
