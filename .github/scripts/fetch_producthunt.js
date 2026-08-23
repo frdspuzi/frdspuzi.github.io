@@ -49,7 +49,6 @@ async function fetchTodaysPosts() {
             votesCount
             dailyRank
             thumbnail { url }
-            media { type url }
             makers { name profileImage }
             topics(first: 3) { edges { node { name } } }
           }
@@ -78,22 +77,18 @@ async function fetchTodaysPosts() {
 // an anonymous avatar, matching fetch_github.js's own "never render a claim that isn't real" bar
 // for the contributor stack.
 //
-// thumbnail.url is always a square logo/icon (confirmed against real API responses - every sample
-// checked was exactly 1:1), not a launch screenshot - rendering it full-width at 16/9 produced a
-// badly distorted, zoomed-in crop (caught by looking at the real rendered site, not assumed).
-// media[] (type: "image" | "video") is where the real wide screenshots/banners actually live -
-// confirmed every one of 20 sampled posts had at least one type:"image" entry, and every image
-// entry checked was landscape (several exactly 1200x630, the standard OG-image ratio). First
-// image-type media entry is used as the display image; thumbnail is the fallback for the case
-// (not observed in practice, but cheap to guard) where a post has no media entries at all -
-// thumbnailIsLogo tells the frontend which shape it got, so it can render a small honest logo
-// instead of stretching it (see ProductHuntList.tsx's own ProductCard).
+// iconUrl (from thumbnail.url) is always a square logo/icon (confirmed 1:1 against real API
+// responses). 2026-08-23 history worth knowing if this gets touched again: first used as a
+// full-width 16/9 banner (badly distorted a square image); switched to preferring media[]'s real
+// wide screenshots instead (fixed the distortion, but made Product Hunt cards ~4x a GitHub card's
+// height - the carousel shares one fixed height across both slides so swiping never resizes it,
+// which pushed a huge whitespace gap onto the shorter GitHub slide); briefly removed images
+// entirely; settled here - the square logo, small and inline next to the title, mirroring how
+// RepoCard uses the owner avatar (see ProductHuntList.tsx's own ProductCard). No media[] query
+// needed anymore - the square logo is exactly the shape a small inline icon wants.
 function parsePost(edge) {
   const node = edge.node;
   const makers = (node.makers || []).filter((m) => m.profileImage && m.name !== '[REDACTED]');
-  const firstImageMedia = (node.media || []).find((m) => m.type === 'image');
-  const thumbnailUrl = firstImageMedia?.url ?? node.thumbnail?.url ?? '';
-  const thumbnailIsLogo = !firstImageMedia;
 
   return {
     name: node.name,
@@ -102,8 +97,7 @@ function parsePost(edge) {
     website: node.website,
     votesCount: node.votesCount,
     dailyRank: node.dailyRank,
-    thumbnailUrl,
-    thumbnailIsLogo,
+    iconUrl: node.thumbnail?.url ?? '',
     makerNames: makers.map((m) => m.name),
     makerAvatarUrls: makers.map((m) => m.profileImage),
     topics: (node.topics?.edges ?? []).map((e) => e.node.name)

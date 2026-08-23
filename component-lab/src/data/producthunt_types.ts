@@ -5,12 +5,10 @@ export type ProductHuntPost = {
   website: string;
   votesCount: number;
   dailyRank: number;
-  thumbnailUrl: string;
-  // true when thumbnailUrl fell back to the product's square logo because no real (wide) launch
-  // screenshot was available in Product Hunt's `media` array - see fetch_producthunt.js's own
-  // parsePost comment. The card renders this shape differently (small, honest logo) rather than
-  // stretching a square image into a 16/9 box.
-  thumbnailIsLogo: boolean;
+  // Always a square logo/icon (Product Hunt's own thumbnail field) - rendered small and inline
+  // next to the product name, the same treatment GithubTrendingList's RepoCard gives the repo
+  // owner's avatar. Not a launch screenshot - see fetch_producthunt.js's parsePost comment for why.
+  iconUrl: string;
   hook: string;
   personalization: string;
   // Real makers only - Product Hunt's API returns { name: "[REDACTED]", profileImage: null } for

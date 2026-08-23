@@ -4,7 +4,16 @@
 
 **Still shared with the old content pipeline, not Jekyll-specific — don't delete these thinking they're leftover Jekyll cruft:** `_data/*.json`, `_posts/*.md` (both imported directly by `component-lab/src`), and `assets/{photography,youtube-thumbnails,medium-images}/` (synced into `component-lab/public/assets/` by `scripts/sync-assets.js` on every `predev`/`prebuild` — never committed there directly). All written by `.github/scripts/*.js` on the same schedule as before.
 
-## Status (2026-08-23 session end, part 4 — fixes Product Hunt card thumbnails)
+## Status (2026-08-23 session end, part 5 — replaces part 4's media[] screenshot with a small inline icon)
+
+**Part 4's fix (below) was itself replaced the same day.** The full-width screenshot it introduced fixed the distortion, but a real height measurement showed it made Product Hunt cards ~4x a GitHub card's height (avg PH card 651px, screenshot alone 485px / 74.5% of that) — since the carousel deliberately shares one fixed height across both slides (so swiping never resizes it), that pushed a large empty whitespace gap onto the shorter GitHub slide, visible in the real rendered site.
+
+- **Settled on: the square `thumbnail.url` logo, small (28×28) and inline next to the product name** — the exact treatment `GithubTrendingList.tsx`'s `RepoCard` already gives the repo owner's avatar, so `ProductCard`'s row 1 now mirrors `RepoCard`'s row 1 structure directly. `rounded-2` not `rounded-full` (these are square app icons, not person avatars — a circle crop looks wrong on most of them).
+- The `media[]`/`thumbnailIsLogo` logic from part 4 is gone entirely — no longer needed once the square logo became the *intended* shape instead of a fallback to route around. `fetch_producthunt.js` only queries `thumbnail { url }` again; `ProductHuntPost` has a single `iconUrl: string` field.
+- Measured result: panel-height gap dropped from the original ~8,758px down to roughly balanced (a small real sample measured GitHub 996px vs. Product Hunt 764px for 5 matched items each) — no more visible whitespace problem.
+- Tests in `fetch_producthunt.test.js` simplified back down to match — just `iconUrl` extraction, no media-preference/fallback cases to cover anymore.
+
+## Status (2026-08-23 session end, part 4 — introduced, then replaced by part 5, a media[]-based screenshot)
 
 **Product Hunt cards were rendering badly distorted images** — caught by looking at the real rendered site (screenshot showed cropped, zoomed-in icon fragments instead of app screenshots), not assumed. Root cause, confirmed via real API investigation: `fetch_producthunt.js` was requesting `thumbnail { url }`, which Product Hunt's API always returns as a **square logo/icon** (confirmed 1:1 dimensions on every sample checked) — rendering that at `aspectRatio: "16/9"` with `objectFit: "cover"` stretched and cropped it into the distorted result.
 
