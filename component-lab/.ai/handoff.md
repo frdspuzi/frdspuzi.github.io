@@ -4,6 +4,14 @@
 
 **Still shared with the old content pipeline, not Jekyll-specific — don't delete these thinking they're leftover Jekyll cruft:** `_data/*.json`, `_posts/*.md` (both imported directly by `component-lab/src`), and `assets/{photography,youtube-thumbnails,medium-images}/` (synced into `component-lab/public/assets/` by `scripts/sync-assets.js` on every `predev`/`prebuild` — never committed there directly). All written by `.github/scripts/*.js` on the same schedule as before.
 
+## Status (2026-08-23 session end, part 6 — top-5-plus-load-more per list, replacing matched-count capping)
+
+**Each of the 2 carousel slides (GitHub, Product Hunt) now defaults to its own top 5 items with an independent "Load more"/"Show less" toggle**, instead of both being pre-capped to the same length via `matchedTrendingCount()`. That helper and its test (`src/lib/trendingCount.ts`/`.test.ts`) are deleted - no longer used anywhere.
+
+- `GithubTrendingList.tsx`/`ProductHuntList.tsx` each own an `INITIAL_COUNT = 5` and local slicing (`expanded ? full : min(5, full)`), same shape `GithubTrendingList` used *before* the whole carousel rebuild. `expanded`/`onToggleExpanded` are now props, not local state - `TrendingCarousel.tsx` owns both flags (`githubExpanded`/`phExpanded`) so it can call its own `measureNow()` whenever either toggles (a `useLayoutEffect` keyed on both flags) - the offscreen measure copies and the visible track copies read the same state, so remeasuring after a toggle picks up the new item count correctly, verified via a real click-to-expand test (5 -> 18 GitHub cards, viewport height 1086px -> 3560px, zero clipping, zero console errors) and the reverse collapse (back to 1086px cleanly).
+- **Entrance animation restored** on both card types - the `motion.div` (`initial: scale 0/opacity 0`, `whileInView`, spring transition, `delay: 1`) that `RepoCard` had *before* the 2026-08-23 carousel rebuild dropped it, brought back per explicit request ("keep previous animation") and now applied to `ProductCard` too for symmetry, both un-changed from the original values (including the `delay: 1` that was itself a prior session's own deliberate leftover, not a default worth re-tuning).
+- `TrendingSection.tsx` simplified accordingly - no more `isDesktopWidthAtMount()`-gated count branching, just passes the full real lists straight through.
+
 ## Status (2026-08-23 session end, part 5 — replaces part 4's media[] screenshot with a small inline icon)
 
 **Part 4's fix (below) was itself replaced the same day.** The full-width screenshot it introduced fixed the distortion, but a real height measurement showed it made Product Hunt cards ~4x a GitHub card's height (avg PH card 651px, screenshot alone 485px / 74.5% of that) — since the carousel deliberately shares one fixed height across both slides (so swiping never resizes it), that pushed a large empty whitespace gap onto the shorter GitHub slide, visible in the real rendered site.

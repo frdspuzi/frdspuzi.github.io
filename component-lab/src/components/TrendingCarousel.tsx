@@ -8,11 +8,13 @@ import type { ProductHuntPost } from "@/data/producthunt_types";
 export type TrendingCarouselHandle = { remeasure: () => void };
 
 // The one swipeable carousel for "What the Internet's Building" - exactly 2 fixed slides (GitHub,
-// Product Hunt), not one carousel per source swiping through individual items. Each slide is a
-// full list (GithubTrendingList/ProductHuntList), pre-capped to the same length by
-// TrendingSection.tsx's own matchedTrendingCount() so swiping between the two never changes the
-// carousel's own size (2026-08-23 correction - an earlier version of this feature built two
-// separate per-item carousels instead, which wasn't what was actually asked for).
+// Product Hunt), not one carousel per source swiping through individual items (2026-08-23
+// correction - an earlier version built two separate per-item carousels instead, which wasn't
+// what was actually asked for). Each slide is a full list (GithubTrendingList/ProductHuntList);
+// each defaults to its own top-5 with an independent "Load more" toggle, tracked here (not inside
+// each List) so a toggle can trigger remeasureNow() - the offscreen measure copies read whatever
+// expanded state is passed in, same as the visible track copies, so growing either list's visible
+// count and remeasuring keeps the carousel's own height accurate without a swipe being required.
 //
 // Swipe physics are the same imperative-refs shape as YoutubeCarousel.tsx (state-driven
 // currentIndex, keyed prev/current/next window, drag handled outside React's render cycle) - with
@@ -34,17 +36,37 @@ function Slide({
   posts,
   isActive,
   dragDistanceRef,
+  githubExpanded,
+  onToggleGithubExpanded,
+  phExpanded,
+  onTogglePhExpanded,
 }: {
   id: SlideId;
   repos: TrendingRepo[];
   posts: ProductHuntPost[];
   isActive: boolean;
   dragDistanceRef: React.MutableRefObject<number>;
+  githubExpanded: boolean;
+  onToggleGithubExpanded: () => void;
+  phExpanded: boolean;
+  onTogglePhExpanded: () => void;
 }) {
   return id === "github" ? (
-    <GithubTrendingList repos={repos} isActive={isActive} dragDistanceRef={dragDistanceRef} />
+    <GithubTrendingList
+      repos={repos}
+      isActive={isActive}
+      dragDistanceRef={dragDistanceRef}
+      expanded={githubExpanded}
+      onToggleExpanded={onToggleGithubExpanded}
+    />
   ) : (
-    <ProductHuntList posts={posts} isActive={isActive} dragDistanceRef={dragDistanceRef} />
+    <ProductHuntList
+      posts={posts}
+      isActive={isActive}
+      dragDistanceRef={dragDistanceRef}
+      expanded={phExpanded}
+      onToggleExpanded={onTogglePhExpanded}
+    />
   );
 }
 
@@ -58,6 +80,10 @@ export const TrendingCarousel = forwardRef<
   const [maxSlideHeight, setMaxSlideHeight] = useState<number | null>(null);
   const measureContainerRef = useRef<HTMLDivElement>(null);
   const dragDistanceRef = useRef(0);
+  const [githubExpanded, setGithubExpanded] = useState(false);
+  const [phExpanded, setPhExpanded] = useState(false);
+  const toggleGithubExpanded = () => setGithubExpanded((e) => !e);
+  const togglePhExpanded = () => setPhExpanded((e) => !e);
 
   function measureNow() {
     const container = measureContainerRef.current;
@@ -71,6 +97,14 @@ export const TrendingCarousel = forwardRef<
     if (!container || container.offsetWidth === 0) return;
     measureNow();
   }, []);
+
+  // Re-measure whenever either list's expanded state changes - the offscreen measure copies
+  // below read the same githubExpanded/phExpanded state as the visible track copies, so by the
+  // time this runs (post-DOM-update, pre-paint) they already reflect the new item count.
+  useLayoutEffect(() => {
+    if (isFirstRender.current) return; // covered by the mount effect above
+    measureNow();
+  }, [githubExpanded, phExpanded]);
 
   useImperativeHandle(ref, () => ({ remeasure: measureNow }));
 
@@ -261,20 +295,60 @@ export const TrendingCarousel = forwardRef<
       >
         {SLIDE_IDS.map((id) => (
           <div key={id}>
-            <Slide id={id} repos={repos} posts={posts} isActive={false} dragDistanceRef={dragDistanceRef} />
+            <Slide
+              id={id}
+              repos={repos}
+              posts={posts}
+              isActive={false}
+              dragDistanceRef={dragDistanceRef}
+              githubExpanded={githubExpanded}
+              onToggleGithubExpanded={toggleGithubExpanded}
+              phExpanded={phExpanded}
+              onTogglePhExpanded={togglePhExpanded}
+            />
           </div>
         ))}
       </div>
 
       <div ref={trackRef} style={{ display: "flex", height: "100%", transform: "translateX(-100%)" }}>
         <div key={prevKey} style={{ flex: "0 0 100%", padding: `0 ${SLIDE_GAP_PX}px`, boxSizing: "border-box" }}>
-          <Slide id={SLIDE_IDS[prevIndex]} repos={repos} posts={posts} isActive={false} dragDistanceRef={dragDistanceRef} />
+          <Slide
+            id={SLIDE_IDS[prevIndex]}
+            repos={repos}
+            posts={posts}
+            isActive={false}
+            dragDistanceRef={dragDistanceRef}
+            githubExpanded={githubExpanded}
+            onToggleGithubExpanded={toggleGithubExpanded}
+            phExpanded={phExpanded}
+            onTogglePhExpanded={togglePhExpanded}
+          />
         </div>
         <div key={SLIDE_IDS[currentIndex]} style={{ flex: "0 0 100%", padding: `0 ${SLIDE_GAP_PX}px`, boxSizing: "border-box" }}>
-          <Slide id={SLIDE_IDS[currentIndex]} repos={repos} posts={posts} isActive dragDistanceRef={dragDistanceRef} />
+          <Slide
+            id={SLIDE_IDS[currentIndex]}
+            repos={repos}
+            posts={posts}
+            isActive
+            dragDistanceRef={dragDistanceRef}
+            githubExpanded={githubExpanded}
+            onToggleGithubExpanded={toggleGithubExpanded}
+            phExpanded={phExpanded}
+            onTogglePhExpanded={togglePhExpanded}
+          />
         </div>
         <div key={nextKey} style={{ flex: "0 0 100%", padding: `0 ${SLIDE_GAP_PX}px`, boxSizing: "border-box" }}>
-          <Slide id={SLIDE_IDS[nextIndex]} repos={repos} posts={posts} isActive={false} dragDistanceRef={dragDistanceRef} />
+          <Slide
+            id={SLIDE_IDS[nextIndex]}
+            repos={repos}
+            posts={posts}
+            isActive={false}
+            dragDistanceRef={dragDistanceRef}
+            githubExpanded={githubExpanded}
+            onToggleGithubExpanded={toggleGithubExpanded}
+            phExpanded={phExpanded}
+            onTogglePhExpanded={togglePhExpanded}
+          />
         </div>
       </div>
       </div>
