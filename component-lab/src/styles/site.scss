@@ -1858,12 +1858,21 @@ html.rail-pref-hidden #rail-handle {
   height: 6px;
   border-radius: 50%;
   background-color: var(--border);
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.2s ease, width 0.2s ease, height 0.2s ease;
 }
 
+// Was transform: scale(1.4) - that paints 1.2px *outside* the dot's own 6px layout box on every
+// edge without the box itself growing to match, which is exactly the kind of mismatch that can
+// render as a visibly incomplete/flattened circle on a real device (different pixel ratio/
+// rasterization than desktop testing catches) - reported from a real phone screenshot, not
+// reproducible in headless testing at the same viewport width. Sizing the box itself instead
+// means there's nothing painted outside it to ever get cut off - the flex row's own
+// align-items:center already centers the shorter inactive dots against the now-taller active one,
+// no clipping possible.
 .trivia-dot.active {
   background-color: var(--fg);
-  transform: scale(1.4);
+  width: 8px;
+  height: 8px;
 }
 
 @keyframes shake {
