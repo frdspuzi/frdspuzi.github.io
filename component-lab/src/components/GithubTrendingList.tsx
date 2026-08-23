@@ -51,7 +51,7 @@ function RepoCard({
         className="Box box-shadow-small p-4 text-left"
         style={{ width: "100%", boxSizing: "border-box", border: "none", clipPath }}
       >
-        <div className="d-flex flex-items-center mb-2" style={{ gap: 8, minWidth: 0, flexWrap: "wrap" }}>
+        <div className="d-flex flex-items-center mb-3" style={{ gap: 8, minWidth: 0, flexWrap: "wrap" }}>
           {repo.ownerAvatarUrl && (
             <img
               src={repo.ownerAvatarUrl}
@@ -68,7 +68,7 @@ function RepoCard({
           </h3>
         </div>
 
-        <div className="trending-card-meta text-gray d-flex flex-items-center mb-3" style={{ gap: 8, flexWrap: "wrap" }}>
+        <div className="trending-card-meta text-gray d-flex flex-items-center mb-2" style={{ gap: 8, flexWrap: "wrap" }}>
           {repo.contributorAvatarUrls.length > 0 && (
             <span className="d-flex flex-shrink-0">
               {repo.contributorAvatarUrls.slice(0, 4).map((url, i) => (
