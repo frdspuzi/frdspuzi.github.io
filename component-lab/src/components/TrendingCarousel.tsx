@@ -270,8 +270,14 @@ export const TrendingCarousel = forwardRef<
       {/* Reuses TriviaBoard's own .trivia-dot/.trivia-dot.active CSS - same "which of a small,
           fixed set of pages am I on" affordance, just React-rendered instead of imperatively
           built (this carousel already keeps currentIndex as real state, no need for
-          TriviaBoard's own DOM-building approach here). */}
-      <div className="d-flex flex-justify-center mb-3">
+          TriviaBoard's own DOM-building approach here). Needs its own explicit mt-3, unlike
+          TriviaBoard's identical dots row: TriviaBoard's always sits below its own heading/
+          subtitle text, but this carousel's dots are the very first thing in the accordion's
+          content - combined with .animated-details.is-open:not(.is-maximized)>.accordion-content's
+          padding-top:0 (site.scss), that left the dots flush against the header bar with zero
+          clearance, easy to miss/read as "covered" by the header - reported from a real mobile
+          screenshot. */}
+      <div className="d-flex flex-justify-center mb-3" style={{ marginTop: 16 }}>
         <div className="d-flex flex-items-center" style={{ gap: 6 }}>
           {SLIDE_IDS.map((id, i) => (
             <div key={id} className={"trivia-dot" + (i === currentIndex ? " active" : "")}></div>
