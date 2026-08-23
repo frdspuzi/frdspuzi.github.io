@@ -2,10 +2,13 @@ name: Fetch Product Hunt Trending
 
 on:
   schedule:
-    - cron: '0 3 * * *' # Daily, 03:00 UTC - not weekly like github-trending.yml's cron: a Product
-      # Hunt product launches once and never reappears, so a weekly cadence structurally discards
-      # real content instead of just smoothing noise (confirmed via a real week of live data,
-      # 2026-08-22 - see fetch_producthunt.js's own comment on todayWindow for the numbers).
+    - cron: '10 22 * * *' # Daily, 06:10 GMT+8 - was 03:00 UTC (11:00 GMT+8). Not weekly like
+      # github-trending.yml's cron: a Product Hunt product launches once and never reappears, so a
+      # weekly cadence structurally discards real content instead of just smoothing noise
+      # (confirmed via a real week of live data, 2026-08-22 - see fetch_producthunt.js's own
+      # comment on todayWindow for the numbers). Set 10 minutes after ai-daily-content.yml's own
+      # 06:00 GMT+8 anchor (not the same instant) since both call the Gemini API - this script is
+      # the 4th concurrent caller alongside that workflow's youtube/gratitude/learning sub-jobs.
   workflow_dispatch: # Allow manual trigger
 
 jobs:

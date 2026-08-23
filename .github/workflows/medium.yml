@@ -2,7 +2,9 @@ name: Fetch Medium Articles
 
 on:
   schedule:
-    - cron: '0 1 * * *' # Once a day — articles don't publish often enough to need more
+    - cron: '0 22 * * *' # Daily, 06:00 GMT+8 - was 01:00 UTC (09:00 GMT+8). Articles don't publish
+      # often enough to need more than once a day; no Gemini calls here, so no rate-limit reason to
+      # keep it apart from the other workflows now sharing this same morning anchor.
   workflow_dispatch: # Allow manual trigger
 
 jobs:

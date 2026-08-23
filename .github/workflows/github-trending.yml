@@ -2,7 +2,10 @@ name: Fetch GitHub Trending
 
 on:
   schedule:
-    - cron: '0 2 * * 1' # Weekly, Monday 02:00 UTC - matches fetch_github.js's own since=weekly window; daily trending was confirmed too volatile to be a useful signal (see docs/adr and the trending-repos design thread).
+    - cron: '0 22 * * 0' # Weekly, fires Sunday 22:00 UTC = Monday 06:00 GMT+8 - was Monday 02:00
+      # UTC (Monday 10:00 GMT+8). Matches fetch_github.js's own since=weekly window; daily trending
+      # was confirmed too volatile to be a useful signal (see docs/adr and the trending-repos
+      # design thread).
   workflow_dispatch: # Allow manual trigger
 
 jobs:

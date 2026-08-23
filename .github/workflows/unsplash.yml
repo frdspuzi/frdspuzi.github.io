@@ -2,7 +2,9 @@ name: Fetch Unsplash Photos
 
 on:
   schedule:
-    - cron: '0 0,12 * * *' # Run twice a day
+    - cron: '0 22 * * *' # Daily, 06:00 GMT+8 - was twice a day (00:00 and 12:00 UTC); collapsed to
+      # once a day per an explicit scope call when the other daily content workflows were moved to
+      # a shared 06:00 GMT+8 morning anchor.
   workflow_dispatch: # Allow manual trigger
 
 jobs:
@@ -51,5 +53,10 @@ jobs:
             echo "No new photos."
           else
             git commit -m "chore: Update Unsplash photos data (All Photos, Favourites) [skip ci]"
+            # Every other daily-content workflow already rebases before pushing - this one didn't,
+            # which was safe only because it ran well clear of the others' schedules. Now that all
+            # of them converge on the same 06:00 GMT+8 morning window, a concurrent push from
+            # another workflow landing first would otherwise reject this one outright with no retry.
+            git pull --rebase -X theirs
             git push
           fi
