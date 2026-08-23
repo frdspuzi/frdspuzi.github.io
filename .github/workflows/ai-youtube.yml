@@ -22,7 +22,13 @@ jobs:
 
       - name: Install Node Dependencies
         working-directory: .github/scripts
-        run: npm install
+        # npm ci, not npm install - the latter can rewrite package-lock.json on drift (integrity
+        # hashes, resolved URLs), and that file is tracked but never staged by this workflow's own
+        # "Commit and push changes" step below, which left it as a genuine unstaged change and
+        # made `git pull --rebase` fail with "cannot pull with rebase: You have unstaged changes."
+        # npm ci never mutates the lockfile, so this removes the problem at the source instead of
+        # adding package-lock.json to the git add list.
+        run: npm ci
 
       - id: auth
         name: Authenticate to Google Cloud

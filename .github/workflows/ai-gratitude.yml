@@ -21,7 +21,10 @@ jobs:
 
       - name: Install Node Dependencies
         working-directory: .github/scripts
-        run: npm install
+        # npm ci, not npm install - see ai-youtube.yml's identical fix/comment for why (npm install
+        # can rewrite package-lock.json on drift, which this workflow's own commit step never
+        # stages, breaking `git pull --rebase` with "You have unstaged changes").
+        run: npm ci
 
       - name: Generate Gratitude Suggestions via Gemini
         env:
