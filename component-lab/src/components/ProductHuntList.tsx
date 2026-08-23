@@ -41,7 +41,7 @@ function ProductCard({
             owner's avatar (28x28, inline with the title) - rounded-2 rather than rounded-full
             since these are square app icons/logos, not person avatars, and forcing one into a
             circle crops it oddly. */}
-        <div className="d-flex flex-items-center mb-1" style={{ gap: 8, minWidth: 0, flexWrap: "wrap" }}>
+        <div className="d-flex flex-items-center mb-2" style={{ gap: 8, minWidth: 0, flexWrap: "wrap" }}>
           {post.iconUrl && (
             <img
               src={post.iconUrl}
@@ -58,7 +58,7 @@ function ProductCard({
           </h3>
         </div>
 
-        <div className="trending-card-meta text-gray d-flex flex-items-center mb-2" style={{ gap: 8, flexWrap: "wrap" }}>
+        <div className="trending-card-meta text-gray d-flex flex-items-center mb-3" style={{ gap: 8, flexWrap: "wrap" }}>
           {post.makerAvatarUrls.length > 0 && (
             <span className="d-flex flex-shrink-0">
               {post.makerAvatarUrls.slice(0, 4).map((url, i) => (
@@ -85,7 +85,7 @@ function ProductCard({
           <span>▲ {post.votesCount.toLocaleString()} votes</span>
         </div>
 
-        <p className="trending-card-hook mb-1" style={{ color: "var(--fg-muted)" }}>{post.hook}</p>
+        <p className="trending-card-hook mb-2" style={{ color: "var(--fg-muted)" }}>{post.hook}</p>
 
         {post.personalization && (
           <p className="trending-card-personalization text-gray mb-0" style={{ fontStyle: "italic" }}>
