@@ -41,7 +41,7 @@ function ProductCard({
             owner's avatar (28x28, inline with the title) - rounded-2 rather than rounded-full
             since these are square app icons/logos, not person avatars, and forcing one into a
             circle crops it oddly. */}
-        <div className="d-flex flex-items-center mb-3" style={{ gap: 8, minWidth: 0, flexWrap: "wrap" }}>
+        <div className="d-flex flex-items-center mb-2" style={{ gap: 8, minWidth: 0, flexWrap: "wrap" }}>
           {post.iconUrl && (
             <img
               src={post.iconUrl}
