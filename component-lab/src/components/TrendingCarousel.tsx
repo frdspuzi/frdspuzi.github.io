@@ -10,11 +10,13 @@ export type TrendingCarouselHandle = { remeasure: () => void };
 // The one swipeable carousel for "What the Internet's Building" - exactly 2 fixed slides (GitHub,
 // Product Hunt), not one carousel per source swiping through individual items (2026-08-23
 // correction - an earlier version built two separate per-item carousels instead, which wasn't
-// what was actually asked for). Each slide is a full list (GithubTrendingList/ProductHuntList);
-// each defaults to its own top-5 with an independent "Load more" toggle, tracked here (not inside
-// each List) so a toggle can trigger remeasureNow() - the offscreen measure copies read whatever
-// expanded state is passed in, same as the visible track copies, so growing either list's visible
-// count and remeasuring keeps the carousel's own height accurate without a swipe being required.
+// what was actually asked for). Each slide is a full list (GithubTrendingList/ProductHuntList),
+// both defaulting to top-5 with a single SHARED "Load more" toggle (2026-08-23 - was two
+// independent per-list flags at first, changed so swiping to the other slide always shows it in
+// the same expanded/collapsed state, not whatever that slide happened to be left in). Tracked here
+// (not inside each List) so a toggle can trigger remeasureNow() - the offscreen measure copies
+// read the same expanded state as the visible track copies, so growing both lists' visible counts
+// and remeasuring keeps the carousel's own height accurate without a swipe being required.
 //
 // Swipe physics are the same imperative-refs shape as YoutubeCarousel.tsx (state-driven
 // currentIndex, keyed prev/current/next window, drag handled outside React's render cycle) - with
@@ -51,36 +53,32 @@ function Slide({
   posts,
   isActive,
   dragDistanceRef,
-  githubExpanded,
-  onToggleGithubExpanded,
-  phExpanded,
-  onTogglePhExpanded,
+  expanded,
+  onToggleExpanded,
 }: {
   id: SlideId;
   repos: TrendingRepo[];
   posts: ProductHuntPost[];
   isActive: boolean;
   dragDistanceRef: React.MutableRefObject<number>;
-  githubExpanded: boolean;
-  onToggleGithubExpanded: () => void;
-  phExpanded: boolean;
-  onTogglePhExpanded: () => void;
+  expanded: boolean;
+  onToggleExpanded: () => void;
 }) {
   return id === "github" ? (
     <GithubTrendingList
       repos={repos}
       isActive={isActive}
       dragDistanceRef={dragDistanceRef}
-      expanded={githubExpanded}
-      onToggleExpanded={onToggleGithubExpanded}
+      expanded={expanded}
+      onToggleExpanded={onToggleExpanded}
     />
   ) : (
     <ProductHuntList
       posts={posts}
       isActive={isActive}
       dragDistanceRef={dragDistanceRef}
-      expanded={phExpanded}
-      onToggleExpanded={onTogglePhExpanded}
+      expanded={expanded}
+      onToggleExpanded={onToggleExpanded}
     />
   );
 }
@@ -95,10 +93,8 @@ export const TrendingCarousel = forwardRef<
   const [maxSlideHeight, setMaxSlideHeight] = useState<number | null>(null);
   const measureContainerRef = useRef<HTMLDivElement>(null);
   const dragDistanceRef = useRef(0);
-  const [githubExpanded, setGithubExpanded] = useState(false);
-  const [phExpanded, setPhExpanded] = useState(false);
-  const toggleGithubExpanded = () => setGithubExpanded((e) => !e);
-  const togglePhExpanded = () => setPhExpanded((e) => !e);
+  const [expanded, setExpanded] = useState(false);
+  const toggleExpanded = () => setExpanded((e) => !e);
 
   function measureNow() {
     const container = measureContainerRef.current;
@@ -113,13 +109,13 @@ export const TrendingCarousel = forwardRef<
     measureNow();
   }, []);
 
-  // Re-measure whenever either list's expanded state changes - the offscreen measure copies
-  // below read the same githubExpanded/phExpanded state as the visible track copies, so by the
-  // time this runs (post-DOM-update, pre-paint) they already reflect the new item count.
+  // Re-measure whenever the shared expanded state changes - the offscreen measure copies below
+  // read the same expanded state as the visible track copies, so by the time this runs (post-DOM-
+  // update, pre-paint) they already reflect the new item count.
   useLayoutEffect(() => {
     if (isFirstRender.current) return; // covered by the mount effect above
     measureNow();
-  }, [githubExpanded, phExpanded]);
+  }, [expanded]);
 
   useImperativeHandle(ref, () => ({ remeasure: measureNow }));
 
@@ -316,10 +312,8 @@ export const TrendingCarousel = forwardRef<
               posts={posts}
               isActive={false}
               dragDistanceRef={dragDistanceRef}
-              githubExpanded={githubExpanded}
-              onToggleGithubExpanded={toggleGithubExpanded}
-              phExpanded={phExpanded}
-              onTogglePhExpanded={togglePhExpanded}
+              expanded={expanded}
+              onToggleExpanded={toggleExpanded}
             />
           </div>
         ))}
@@ -333,10 +327,8 @@ export const TrendingCarousel = forwardRef<
             posts={posts}
             isActive={false}
             dragDistanceRef={dragDistanceRef}
-            githubExpanded={githubExpanded}
-            onToggleGithubExpanded={toggleGithubExpanded}
-            phExpanded={phExpanded}
-            onTogglePhExpanded={togglePhExpanded}
+            expanded={expanded}
+            onToggleExpanded={toggleExpanded}
           />
         </div>
         <div key={SLIDE_IDS[currentIndex]} style={{ flex: "0 0 100%", padding: `0 ${SLIDE_GAP_PX}px`, boxSizing: "border-box" }}>
@@ -346,10 +338,8 @@ export const TrendingCarousel = forwardRef<
             posts={posts}
             isActive
             dragDistanceRef={dragDistanceRef}
-            githubExpanded={githubExpanded}
-            onToggleGithubExpanded={toggleGithubExpanded}
-            phExpanded={phExpanded}
-            onTogglePhExpanded={togglePhExpanded}
+            expanded={expanded}
+            onToggleExpanded={toggleExpanded}
           />
         </div>
         <div key={nextKey} style={{ flex: "0 0 100%", padding: `0 ${SLIDE_GAP_PX}px`, boxSizing: "border-box" }}>
@@ -359,10 +349,8 @@ export const TrendingCarousel = forwardRef<
             posts={posts}
             isActive={false}
             dragDistanceRef={dragDistanceRef}
-            githubExpanded={githubExpanded}
-            onToggleGithubExpanded={toggleGithubExpanded}
-            phExpanded={phExpanded}
-            onTogglePhExpanded={togglePhExpanded}
+            expanded={expanded}
+            onToggleExpanded={toggleExpanded}
           />
         </div>
       </div>
