@@ -353,6 +353,18 @@ function parseEvaluationResponse(responseText) {
   return [];
 }
 
+// A video Gemini re-selects while it's still cycling through the rotating feed doesn't need
+// Vertex AI to watch it again - it already has a real summary/timestamps from a previous run,
+// sitting in _data/youtube.json's existingVideos. Only a *successful* past enrichment counts as
+// reusable (non-empty timestamps) - an empty array means a past attempt failed all the way
+// through enrichWithVideoSummary's own retries, and that's still worth trying fresh, same as the
+// existing filteredExisting retry pass in main() does for videos that stayed in the feed.
+function findReusableEnrichment(videoId, existingVideos) {
+  const match = existingVideos.find(v => v.videoId === videoId);
+  if (!match || !Array.isArray(match.timestamps) || match.timestamps.length === 0) return null;
+  return { summary: match.summary, timestamps: match.timestamps, dateAdded: match.dateAdded };
+}
+
 // New function to enrich a video with an actual video summary from Vertex AI
 //
 // Retries with backoff, unlike an earlier version of this function — this is a separate Vertex
@@ -544,12 +556,33 @@ async function main() {
     }
   }
 
+  // Loaded here (not just further down at the merge step) so the Deep Summarization pass below
+  // can check it too - a video Gemini re-selects while it's still cycling through the feed is
+  // already in here with a real summary/timestamps, and doesn't need Vertex AI to watch it again.
+  let existingVideos = [];
+  if (fs.existsSync(OUTPUT_FILE)) {
+    try {
+      const raw = fs.readFileSync(OUTPUT_FILE);
+      const data = JSON.parse(raw);
+      existingVideos = data.videos || [];
+    } catch (e) { }
+  }
+
   // --------------------------------------------------------
   // NEW: Deep Summarization using Vertex AI
   // --------------------------------------------------------
   if (curatedVideos.length > 0 && GCP_PROJECT_ID) {
     console.log(`\n--- Starting Vertex AI Deep Summarization for ${curatedVideos.length} videos ---`);
     for (let i = 0; i < curatedVideos.length; i++) {
+      const reusable = findReusableEnrichment(curatedVideos[i].videoId, existingVideos);
+      if (reusable) {
+        console.log(`Reusing existing enrichment for "${curatedVideos[i].title}" - already watched in a previous run, no need to re-run Vertex AI.`);
+        curatedVideos[i].summary = reusable.summary;
+        curatedVideos[i].timestamps = reusable.timestamps;
+        curatedVideos[i].dateAdded = reusable.dateAdded || curatedVideos[i].dateAdded;
+        continue;
+      }
+
       const enriched = await enrichWithVideoSummary(curatedVideos[i]);
       if (typeof enriched === 'object' && enriched !== null) {
         curatedVideos[i].summary = enriched.summary || curatedVideos[i].summary;
@@ -575,15 +608,6 @@ async function main() {
 
   // Save to _data/youtube.json
   if (curatedVideos.length > 0) {
-    let existingVideos = [];
-    if (fs.existsSync(OUTPUT_FILE)) {
-      try {
-        const raw = fs.readFileSync(OUTPUT_FILE);
-        const data = JSON.parse(raw);
-        existingVideos = data.videos || [];
-      } catch (e) { }
-    }
-
     const newVideoIds = new Set(curatedVideos.map(v => v.videoId));
     // decodeHtmlEntities() below only ever ran on freshly-fetched (curatedVideos) entries — a
     // video carried forward from a previous run's existingVideos never got re-decoded, so any
@@ -665,4 +689,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse };
+module.exports = { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse, findReusableEnrichment };

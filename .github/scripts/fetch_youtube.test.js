@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse } from './fetch_youtube.js';
+import { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse, findReusableEnrichment } from './fetch_youtube.js';
 
 describe('decodeHtmlEntities', () => {
   it('decodes named entities', () => {
@@ -126,5 +126,41 @@ describe('parseEvaluationResponse', () => {
 
   it('returns an empty array when there is no JSON object in the response at all', () => {
     expect(parseEvaluationResponse('I refuse to answer that.')).toEqual([]);
+  });
+});
+
+describe('findReusableEnrichment', () => {
+  const enrichedExisting = {
+    videoId: 'abc123XYZ_9',
+    title: 'Some Video',
+    summary: 'Already watched this one, real Vertex summary.',
+    dateAdded: '2026-08-01T00:00:00.000Z',
+    timestamps: [{ startTime: 0, endTime: 60, topic: 'Intro' }],
+  };
+
+  it('returns the existing summary, timestamps, and dateAdded for a video that was already successfully enriched', () => {
+    expect(findReusableEnrichment('abc123XYZ_9', [enrichedExisting])).toEqual({
+      summary: enrichedExisting.summary,
+      timestamps: enrichedExisting.timestamps,
+      dateAdded: enrichedExisting.dateAdded,
+    });
+  });
+
+  it('returns null when the video is not in the existing list at all', () => {
+    expect(findReusableEnrichment('brandNewVideo1', [enrichedExisting])).toBe(null);
+  });
+
+  it('returns null when the existing entry has empty timestamps (a past enrichment attempt failed, not a success worth reusing)', () => {
+    const failedExisting = { ...enrichedExisting, timestamps: [] };
+    expect(findReusableEnrichment('abc123XYZ_9', [failedExisting])).toBe(null);
+  });
+
+  it('returns null when the existing entry has no timestamps field at all', () => {
+    const noTimestamps = { videoId: 'abc123XYZ_9', title: 'Some Video', summary: 'x', dateAdded: '2026-08-01T00:00:00.000Z' };
+    expect(findReusableEnrichment('abc123XYZ_9', [noTimestamps])).toBe(null);
+  });
+
+  it('returns null for an empty existing list', () => {
+    expect(findReusableEnrichment('abc123XYZ_9', [])).toBe(null);
   });
 });
