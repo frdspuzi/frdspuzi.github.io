@@ -34,7 +34,12 @@ const SLIDE_GAP_PX = 10;
 // measurement is computing, so the offscreen pass (parent height still indefinite at that point)
 // measures a few px short of what the real stretched-and-pinned layout ends up needing. Confirmed
 // via real measurement: the button clipped 9px past the carousel viewport's bottom edge in the
-// expanded state before this buffer was added.
+// expanded state before this buffer was added. This is deliberately just rounding insurance, not
+// the button's actual bottom padding - that's real, explicit paddingBottom on each List's own root
+// (see GithubTrendingList.tsx/ProductHuntList.tsx), a separate concern this buffer can't cover
+// since marginTop:"auto" always consumes 100% of whatever extra height this buffer adds, as blank
+// space *above* the button, never room *below* it - bumping this value alone doesn't give the
+// button breathing room, it was a dead end tried before the real paddingBottom fix.
 const MEASURE_SAFETY_BUFFER_PX = 12;
 
 const SLIDE_IDS = ["github", "producthunt"] as const;

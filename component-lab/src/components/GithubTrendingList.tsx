@@ -43,7 +43,7 @@ function RepoCard({
       initial={{ scale: 0, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: true, margin: "0px 0px -40px 0px" }}
-      transition={{ type: "spring", stiffness: 350, damping: 40, delay: 1 }}
+      transition={{ type: "spring", stiffness: 350, damping: 40, delay: 0.3 }}
       style={{ transformOrigin: "top center" }}
     >
       <a
@@ -146,8 +146,14 @@ export function GithubTrendingList({
     // height: 100% + the button's marginTop: auto below - when this panel's own content is
     // shorter than the carousel's fixed viewport height (set to the taller of the 2 slides), the
     // button pins to the bottom of the available space instead of floating right under the last
-    // card with empty space beneath it.
-    <div className="d-flex flex-column" style={{ gap: 16, width: "100%", height: "100%" }}>
+    // card with empty space beneath it. paddingBottom is a separate, deliberate concern from
+    // TrendingCarousel's own MEASURE_SAFETY_BUFFER_PX: marginTop:"auto" always consumes *all*
+    // leftover space, so it pushes the button flush against whatever the container's bottom edge
+    // is - increasing the container's own height (the buffer) only adds blank space *above* the
+    // button, never room *below* it. Real breathing room below the button has to come from padding
+    // on the container itself, pulling its content-box bottom edge inward from the outer edge the
+    // button would otherwise sit flush against.
+    <div className="d-flex flex-column" style={{ gap: 16, width: "100%", height: "100%", paddingBottom: 24 }}>
       <h3 className="f5 text-uppercase text-gray-light mb-0 tracking-wide" style={{ letterSpacing: 2 }}>
         Trending on GitHub · weekly
       </h3>

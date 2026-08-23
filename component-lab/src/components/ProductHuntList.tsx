@@ -31,7 +31,7 @@ function ProductCard({
       initial={{ scale: 0, opacity: 0 }}
       whileInView={{ scale: 1, opacity: 1 }}
       viewport={{ once: true, margin: "0px 0px -40px 0px" }}
-      transition={{ type: "spring", stiffness: 350, damping: 40, delay: 1 }}
+      transition={{ type: "spring", stiffness: 350, damping: 40, delay: 0.3 }}
       style={{ transformOrigin: "top center" }}
     >
       <a
@@ -129,9 +129,10 @@ export function ProductHuntList({
   const hiddenCount = posts.length - visibleCount;
 
   return (
-    // See GithubTrendingList's identical comment - height:100% + marginTop:"auto" on the button
-    // pins it to the bottom of the available space rather than floating right under the last card.
-    <div className="d-flex flex-column" style={{ gap: 16, width: "100%", height: "100%" }}>
+    // See GithubTrendingList's identical comment - height:100% + marginTop:"auto" pins the button
+    // to the bottom of the available space, and paddingBottom gives it real breathing room there
+    // (marginTop:"auto" alone pushes it flush against the outer edge, with nothing below it).
+    <div className="d-flex flex-column" style={{ gap: 16, width: "100%", height: "100%", paddingBottom: 24 }}>
       <h3 className="f5 text-uppercase text-gray-light mb-0 tracking-wide" style={{ letterSpacing: 2 }}>
         Launched on Product Hunt · daily
       </h3>
