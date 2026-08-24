@@ -1,430 +1,446 @@
 {
   "posts": [
     {
-      "name": "Toplify",
-      "tagline": "Track your App Store ranking worldwide",
-      "url": "https://www.producthunt.com/products/toplify?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/HQFTOUXGX42OW4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 313,
+      "name": "PaymentKit",
+      "tagline": "Billing that survives a processor shutdown",
+      "url": "https://www.producthunt.com/products/paymentkit?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/VBME2QKKZVBULI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 393,
       "dailyRank": 1,
-      "iconUrl": "https://ph-files.imgix.net/d211222b-49ee-4978-b7f1-24ec78ebc3c8.png?auto=format",
+      "iconUrl": "https://ph-files.imgix.net/a2d8eca7-1611-49e8-9806-26ffea9ec546.png?auto=format",
       "makerNames": [
-        "Dmytro Chuta"
+        "Christine Carroll",
+        "Diego Vidal",
+        "Shawn Sheikh",
+        "Hamza (Gondal) Afzal",
+        "Nate Rosen"
       ],
       "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/585024/7365ba27-a81d-45e7-aed5-f916e69a5757.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+        "https://ph-avatars.imgix.net/8181351/411f3d69-8a18-49ea-874e-6c22bd1093a0.png?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/10151854/825aebe1-dc6a-4789-ad6c-ee62ca124660.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/586046/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/9015601/7c55b5d5-6889-42cd-88cc-54e1750f712b.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/10166244/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
       ],
       "topics": [
+        "Fintech",
+        "SaaS",
+        "E-Commerce"
+      ],
+      "hook": "PaymentKit lets you switch payment processors without losing customer subscription data. A payment processor is a service that handles credit card transactions. The tool keeps your billing active if an account gets closed.",
+      "personalization": "Useful to keep in mind if you build SaaS or Islamic fintech apps that require payment gateway redundancy."
+    },
+    {
+      "name": "Decawork",
+      "tagline": "Control your company's internal AI agents and tools",
+      "url": "https://www.producthunt.com/products/decawork?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/6L7FAO6PDHTEGG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 256,
+      "dailyRank": 2,
+      "iconUrl": "https://ph-files.imgix.net/25a8ffa0-c6ed-4f85-9e9d-38896e194c79.png?auto=format",
+      "makerNames": [
+        "Aman"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/9552488/b10f390c-4f67-4bae-a309-fb10913fa05a.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Software Engineering",
+        "Artificial Intelligence",
+        "Security"
+      ],
+      "hook": "Decawork helps organizations manage internal AI agents. An AI agent is software that performs tasks autonomously. The platform provides permission controls and audit logs to keep company data safe.",
+      "personalization": "Relevant if you need to secure and monitor custom LLM agents deployed across internal tools."
+    },
+    {
+      "name": "Navigara",
+      "tagline": "Connect Your AI Spend Directly to Your Roadmap",
+      "url": "https://www.producthunt.com/products/navigara?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/N4737ZSIONEFWG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 226,
+      "dailyRank": 3,
+      "iconUrl": "https://ph-files.imgix.net/cbf9525b-3c2f-4caf-89cd-cf7b958e76d6.png?auto=format",
+      "makerNames": [
+        "Peter Malina"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/787393/4d1dbac2-59c1-4cdd-9561-28a718817e26.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Analytics",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ],
+      "hook": "Navigara tracks your artificial intelligence spending across product features. It connects your API token costs directly to specific roadmap tasks. This helps engineering teams see which features cost the most money.",
+      "personalization": "Directly useful for your applied AI work when monitoring LLM prompt evaluation and token costs across features."
+    },
+    {
+      "name": "Offloop",
+      "tagline": "A shared workspace where people and AI agents get work done",
+      "url": "https://www.producthunt.com/products/offloop?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/QKHNZCG3KG6RH3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 221,
+      "dailyRank": 4,
+      "iconUrl": "https://ph-files.imgix.net/5edc1f32-7d4f-4748-a5a0-72ec3daed353.png?auto=format",
+      "makerNames": [
+        "bb"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/9183528/d4288254-f5ad-46c8-b6b8-6433a41f2c13.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
+        "Artificial Intelligence",
+        "Tech"
+      ],
+      "hook": "Offloop is a shared digital workspace for teams and AI agents. Human teammates and software bots can assign tasks, share context, and finish projects together in one interface.",
+      "personalization": ""
+    },
+    {
+      "name": "WorldMap.lol",
+      "tagline": "Put your startup on the map. Literally.",
+      "url": "https://www.producthunt.com/products/worldmap-lol?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/IK4ONXSX5BRNUA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 174,
+      "dailyRank": 5,
+      "iconUrl": "https://ph-files.imgix.net/e991e3d5-d343-4fc3-aaf8-433bac3402e4.svg?auto=format",
+      "makerNames": [
+        "Arthur Bodachevskiy"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/3567247/9041ffdd-ced2-4160-a8b2-58f595f475b8.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Analytics",
         "Marketing",
+        "Games"
+      ],
+      "hook": "WorldMap.lol is an interactive map that displays software startups worldwide. Founders can list their project location and discover other tech products globally.",
+      "personalization": ""
+    },
+    {
+      "name": "Antigravity Remote Control",
+      "tagline": "Drive Antigravity agents from any browser",
+      "url": "https://www.producthunt.com/products/google-antigravity?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/KKIM77T2NNVHRR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 134,
+      "dailyRank": 6,
+      "iconUrl": "https://ph-files.imgix.net/64f05fed-5478-434e-b175-80b218391f8c.png?auto=format",
+      "makerNames": [
+        "Rody Davis"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/2018931/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
+        "Artificial Intelligence"
+      ],
+      "hook": "Antigravity Remote Control lets you manage coding agents from any web browser. You can trigger tasks and review automated code changes remotely on your mobile phone or laptop.",
+      "personalization": "Worth testing if you want to trigger and monitor background AI coding agents away from your main machine."
+    },
+    {
+      "name": "Dropstone",
+      "tagline": "The AI runtime that remembers, learns, and acts everywhere",
+      "url": "https://www.producthunt.com/products/dropstone-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/2QWED3PGXZG25J?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 121,
+      "dailyRank": 7,
+      "iconUrl": "https://ph-files.imgix.net/a842d9d9-424e-421a-8ac6-93f1745a1aeb.png?auto=format",
+      "makerNames": [
+        "Santosh Arron"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/8035278/18fe66f6-237a-4169-bfbe-aed441960bb0.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ],
+      "hook": "Dropstone is an execution runtime for AI applications. It gives software agents persistent memory across sessions. Agents can remember previous user inputs and execute actions across different tools.",
+      "personalization": "Highly relevant for applied AI engineering when building agents that need state management and memory retrieval."
+    },
+    {
+      "name": "Localdock",
+      "tagline": "Every local project gets a real address.",
+      "url": "https://www.producthunt.com/products/localdock?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/ICZAQZNUWJYH7P?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 106,
+      "dailyRank": 8,
+      "iconUrl": "https://ph-files.imgix.net/df32973d-5cd3-435d-abc7-2a765d465291.png?auto=format",
+      "makerNames": [
+        "Dmytro V"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/8382557/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
         "Developer Tools"
       ],
-      "hook": "Toplify tracks the position of your mobile application in the App Store. It shows your ranking across different countries.",
+      "hook": "Localdock creates custom domain names for your local development projects. It replaces standard localhost port numbers with readable web addresses on your computer.",
+      "personalization": "A solid utility for your daily fullstack workflow when running multiple local frontend and backend servers."
+    },
+    {
+      "name": "Bumply",
+      "tagline": "Update your dependencies and undo anything",
+      "url": "https://www.producthunt.com/products/bumply?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/UU6NGEKCQA7R57?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 106,
+      "dailyRank": 9,
+      "iconUrl": "https://ph-files.imgix.net/007fd5a9-c9fe-4780-ba46-1eb63c219b0e.png?auto=format",
+      "makerNames": [
+        "Elias Ripari"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/8823044/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Developer Tools"
+      ],
+      "hook": "Bumply updates software dependencies in your code repositories safely. It checks updates automatically and lets you roll back changes if a new library version breaks your build.",
+      "personalization": "Helpful for keeping your fullstack web apps and side project dependencies up to date without breaking changes."
+    },
+    {
+      "name": "Trama",
+      "tagline": "Create macOS native automations using plain language",
+      "url": "https://www.producthunt.com/products/trama-mac-automation-in-plain-language?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/V7HJKXXGPGC7QL?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 99,
+      "dailyRank": 10,
+      "iconUrl": "https://ph-files.imgix.net/28877ef0-43e3-4c34-8700-d02f8b09367a.jpeg?auto=format",
+      "makerNames": [
+        "ErnandesCavalheiro"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/9486399/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Mac",
+        "Artificial Intelligence"
+      ],
+      "hook": "Trama lets you build Mac desktop automations using plain English sentences. You describe a repetitive computer task, and the app converts your words into a native shortcut.",
       "personalization": ""
     },
     {
-      "name": "Open Analytics",
-      "tagline": "AI-Native Google Analytics alternative for the modern web",
-      "url": "https://www.producthunt.com/products/open-analytics-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/AGWMLNH2CQI3U6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 214,
-      "dailyRank": 2,
-      "iconUrl": "https://ph-files.imgix.net/96c57ef6-7f1c-448b-b2d0-e6c2bbcebcfa.png?auto=format",
+      "name": "Phoenix",
+      "tagline": "AI coding agent built for iOS, macOS app development",
+      "url": "https://www.producthunt.com/products/phoenix-10?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/R2WY3CAIXHTVOZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 93,
+      "dailyRank": 11,
+      "iconUrl": "https://ph-files.imgix.net/563eeb65-071f-4d9f-bc76-6111a5c8b9d6.png?auto=format",
       "makerNames": [
-        "Rahul Bridge"
+        "Sreejith NP"
       ],
       "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/9654911/a7d33566-d452-44f7-8442-1a8d9bdec827.png?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Open Source",
-        "Analytics",
-        "GitHub"
-      ],
-      "hook": "Open Analytics is an open-source tool for tracking website visitors. It uses AI to answer questions about your traffic data.",
-      "personalization": "A privacy-friendly, self-hosted analytics option for your fullstack web apps and side projects."
-    },
-    {
-      "name": "SubtitleGenerator",
-      "tagline": "From video to publish-ready AI subtitles—all in one browser",
-      "url": "https://www.producthunt.com/products/subtitlegenerator?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/ZYQ3SSNKVR2CLN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 191,
-      "dailyRank": 3,
-      "iconUrl": "https://ph-files.imgix.net/b1ed3fdd-273d-4d50-8124-c04bface24d9.png?auto=format",
-      "makerNames": [
-        "Yana Li"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/9885821/4ec2f97b-933b-4005-a74d-d0141d399963.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Social Media",
-        "Artificial Intelligence",
-        "Video"
-      ],
-      "hook": "SubtitleGenerator creates subtitles for your video files directly inside your web browser. It uses AI to transcribe spoken words into text.",
-      "personalization": ""
-    },
-    {
-      "name": "Maccess",
-      "tagline": "Your Mac, in your pocket — trackpad, screen, and AI",
-      "url": "https://www.producthunt.com/products/maccess?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/HVWKOBYWJKKZIG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 154,
-      "dailyRank": 4,
-      "iconUrl": "https://ph-files.imgix.net/9846c8e8-156f-49ed-9794-9b32bfab7bce.png?auto=format",
-      "makerNames": [
-        "Muhammad Ahmad"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/10145908/b8e6b57c-5e9d-4bd3-8eb9-41e8c531466a.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+        "https://ph-avatars.imgix.net/10146513/62347b1e-492c-4ee2-9355-2984b71488fb.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
       ],
       "topics": [
         "Developer Tools",
+        "Artificial Intelligence",
+        "Vibe coding"
+      ],
+      "hook": "Phoenix is an AI coding assistant designed specifically for Apple platforms. It writes Swift code, fixes bugs in Xcode, and helps developers build iOS and macOS applications faster.",
+      "personalization": "Another dedicated AI coding tool to benchmark against your existing development setup."
+    },
+    {
+      "name": "Lucid Train",
+      "tagline": "Build system design for new and existing codebase",
+      "url": "https://www.producthunt.com/products/lucid-train?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/EIVQY453NHXK2T?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 91,
+      "dailyRank": 12,
+      "iconUrl": "https://ph-files.imgix.net/fe13b2b4-d001-4e53-8e9a-2e029b9cf497.png?auto=format",
+      "makerNames": [
+        "Arnab Bhattacharya"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/4668417/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
+        "Software Engineering",
+        "Developer Tools"
+      ],
+      "hook": "Lucid Train generates system architecture diagrams from your source code. It analyzes your codebase and visualizes how different services, databases, and APIs connect.",
+      "personalization": "Great for planning clean architectures or quickly understanding the data flow in complex fullstack codebases."
+    },
+    {
+      "name": "Destiny Rings",
+      "tagline": "Proximity-powered dating, social & networking",
+      "url": "https://www.producthunt.com/products/destiny-rings?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/3DTTW4XISHZK6G?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 89,
+      "dailyRank": 13,
+      "iconUrl": "https://ph-files.imgix.net/09951ffa-2403-469f-8b13-4620c405a931.png?auto=format",
+      "makerNames": [
+        "Destiny Rings"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10149830/75109f58-ff2b-4aef-b273-96c5835bcda4.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Dating",
+        "Wearables",
+        "Social Networking"
+      ],
+      "hook": "Destiny Rings is a smart wearable device for in-person networking and dating. The ring alerts you when another user with shared interests is standing nearby.",
+      "personalization": ""
+    },
+    {
+      "name": "Contrive",
+      "tagline": "Search and act across all your work apps",
+      "url": "https://www.producthunt.com/products/contrive?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/6IPCP4KZKB3T62?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 89,
+      "dailyRank": 14,
+      "iconUrl": "https://ph-files.imgix.net/75c61f74-a2fa-48d2-9c47-1369d2edc12a.png?auto=format",
+      "makerNames": [
+        "Venceslav Zlatev"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10073782/original.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
+        "Artificial Intelligence",
+        "Search"
+      ],
+      "hook": "Contrive is a unified search tool for workplace software. It searches across Slack, Google Drive, and Notion simultaneously so you can find files and trigger actions quickly.",
+      "personalization": ""
+    },
+    {
+      "name": "Wavepocket ▶︎•၊||၊||။၊|။",
+      "tagline": "Synth, drum kit, a 4-track tape loop, and FX app",
+      "url": "https://www.producthunt.com/products/wavepocket-free-ios-app?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/H3U3J7JMT6UHQ2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 87,
+      "dailyRank": 15,
+      "iconUrl": "https://ph-files.imgix.net/7d5a4915-1861-483d-a94c-684215feb729.png?auto=format",
+      "makerNames": [
+        "Matt Sandy"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/9965662/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Music",
+        "Audio"
+      ],
+      "hook": "Wavepocket is an iOS audio app for music creation. It includes a synthesizer, drum machine, and a four-track tape recorder for making beats on your phone.",
+      "personalization": ""
+    },
+    {
+      "name": "Cortex by SKYNETLAB",
+      "tagline": "The memory layer that decides what's worth remembering",
+      "url": "https://www.producthunt.com/products/cortex-by-skynetlab?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/KKJVZ2IIEPI66M?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 81,
+      "dailyRank": 16,
+      "iconUrl": "https://ph-files.imgix.net/bc5213f6-3f22-4adc-a27b-3f35295eace9.png?auto=format",
+      "makerNames": [
+        "Filippo Pilotta"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10162337/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
+        "SaaS",
+        "Artificial Intelligence"
+      ],
+      "hook": "Cortex is an intelligent memory layer for AI agents. It evaluates user interactions and decides which facts are important to store long-term. This reduces database clutter and lowers API token usage.",
+      "personalization": "Directly matches your prompt optimization focus by pruning unnecessary context and cutting token overhead."
+    },
+    {
+      "name": "IFAH",
+      "tagline": "Instruments for composing and experiencing sound as a space",
+      "url": "https://www.producthunt.com/products/ifah-a-new-experience-of-sound?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/LKGV76WCQ4VW2L?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 78,
+      "dailyRank": 17,
+      "iconUrl": "https://ph-files.imgix.net/90270444-b0d2-400b-bde1-6b0ed4e16120.svg?auto=format",
+      "makerNames": [
+        "Mars"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10163034/40fa3fa8-3719-4806-9f8d-625c01792003.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Music",
+        "Audio",
+        "Health"
+      ],
+      "hook": "IFAH is a sound design software application. It lets sound designers place audio elements in three-dimensional space to create immersive listening experiences.",
+      "personalization": ""
+    },
+    {
+      "name": "Treebar",
+      "tagline": "Treebar gives you one view of every active worktree",
+      "url": "https://www.producthunt.com/products/treebar-where-is-codex?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/MP4Y4NBWEJJAF4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 75,
+      "dailyRank": 18,
+      "iconUrl": "https://ph-files.imgix.net/104cb797-521d-45a3-95df-243e41b2eea3.png?auto=format",
+      "makerNames": [
+        "Cory Parry"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10162921/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
         "Menu Bar Apps",
         "Apple"
       ],
-      "hook": "Maccess turns your phone into a remote control for your Mac. You can view your screen, move the cursor, and trigger AI actions from your phone.",
+      "hook": "Treebar is a menu bar application for Git worktrees. A Git worktree allows you to check out multiple branches at the same time in separate folders. The tool lets you switch between them with one click.",
+      "personalization": "Useful for your Git workflow when you need to jump between bug fixes and feature branches without stashing changes."
+    },
+    {
+      "name": "Wild Static",
+      "tagline": "One AI. One memory. Shared by everyone.",
+      "url": "https://www.producthunt.com/products/wild-static?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/RNIVV642YTTLZ7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 18,
+      "dailyRank": 19,
+      "iconUrl": "https://ph-files.imgix.net/eaada5e7-e9d1-48fe-953d-f9e72b31e690.png?auto=format",
+      "makerNames": [
+        "Adam Hutchinson"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/106336/01a198b5-81a6-4e0c-bfd2-bf6b12c54590.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Artificial Intelligence",
+        "Social Networking",
+        "Chat rooms"
+      ],
+      "hook": "Wild Static is an experimental chat room where all users talk to a single shared AI. The AI retains a single continuous memory of conversations with every participant.",
       "personalization": ""
     },
     {
-      "name": "AutoClaw",
-      "tagline": "An AI work agent across desktop, browser, and chat",
-      "url": "https://www.producthunt.com/products/z-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/CP2T53A7KU7FHJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 138,
-      "dailyRank": 5,
-      "iconUrl": "https://ph-files.imgix.net/f951257a-8593-406d-880c-b4cbf8b17bce.png?auto=format",
+      "name": "TapTo.Top",
+      "tagline": "Tap to play, rank your product To Top  -  Free",
+      "url": "https://www.producthunt.com/products/tapto-top?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/4UB5ITRX6JJLCT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 17,
+      "dailyRank": 20,
+      "iconUrl": "https://ph-files.imgix.net/d2a46c89-988c-450f-9ca9-5cb3c7f3db31.svg?auto=format",
       "makerNames": [
-        "Zixuan Li"
+        "Ahab"
       ],
       "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/8805806/e459f5ae-bcc4-427c-8d3a-69e31893c6a2.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+        "https://ph-avatars.imgix.net/9928110/fdbdd0f7-8393-47f2-ab61-83b0d8be92a3.png?auto=format&crop=faces&fit=crop&h=original&w=original"
       ],
       "topics": [
-        "Productivity",
-        "Artificial Intelligence"
-      ],
-      "hook": "AutoClaw is an AI agent that automates tasks across your computer, web browser, and chat apps. An AI agent is software that completes multi-step tasks without human intervention.",
-      "personalization": "Useful to inspect if you evaluate agentic workflows and desktop automation tools."
-    },
-    {
-      "name": "Zero",
-      "tagline": "Vercel's programming language built for AI agents",
-      "url": "https://www.producthunt.com/products/zero-15?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/2PR44EYSQC74U3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 126,
-      "dailyRank": 6,
-      "iconUrl": "https://ph-files.imgix.net/593bff22-3211-44db-a06d-ed28c7ea317c.vnd.microsoft.icon?auto=format",
-      "makerNames": [],
-      "makerAvatarUrls": [],
-      "topics": [
-        "Languages",
-        "Developer Tools",
-        "Artificial Intelligence"
-      ],
-      "hook": "Zero is a programming language created by Vercel for AI agents. It helps developers write reliable code that connects AI models to external tools.",
-      "personalization": "Directly relevant if you evaluate new programming paradigms designed for AI engineering."
-    },
-    {
-      "name": "Pawvis",
-      "tagline": "Control your Mac via camera & train gestures, local & FOSS",
-      "url": "https://www.producthunt.com/products/pawvis?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/HKKJVJPTO6V2R3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 95,
-      "dailyRank": 7,
-      "iconUrl": "https://ph-files.imgix.net/3a438bcc-bd9d-4b17-9c47-f42b3c4668b6.png?auto=format",
-      "makerNames": [
-        "Alexandria Redmon"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/3175433/82484e28-4461-40ad-b0fb-bd0712f42861.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Productivity",
-        "Developer Tools",
-        "GitHub"
-      ],
-      "hook": "Pawvis lets you control your Mac using hand gestures caught by your camera. It runs entirely on your local machine and is open source.",
-      "personalization": ""
-    },
-    {
-      "name": "KerasFormers",
-      "tagline": "Keras 3 collection of pretrained models",
-      "url": "https://www.producthunt.com/products/kerasformers?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/JPL2L2XFP7HO77?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 89,
-      "dailyRank": 8,
-      "iconUrl": "https://ph-files.imgix.net/3bc3b19e-f96e-4602-b3fd-660aeb43a19d.png?auto=format",
-      "makerNames": [
-        "Gitesh Chawda"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/10154173/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Developer Tools",
-        "Artificial Intelligence",
-        "GitHub"
-      ],
-      "hook": "KerasFormers provides pre-trained transformer models for the Keras 3 framework. A transformer model is a neural network architecture used to process natural language and vision tasks.",
-      "personalization": "Relevant if you need pre-trained model baselines for applied AI tasks and inference pipelines."
-    },
-    {
-      "name": "Agents Never Sleep",
-      "tagline": "Agents keep running with the lid closed",
-      "url": "https://www.producthunt.com/products/agents-never-sleep?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/W2ZLZ4HQ2AODJR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 87,
-      "dailyRank": 9,
-      "iconUrl": "https://ph-files.imgix.net/e7133dd2-1677-45cb-ba5f-3e0fcde16af7.svg?auto=format",
-      "makerNames": [
-        "Aleksei Rozhnov"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/5361885/3e7aafa1-da35-4568-b4e4-be05f5cf5eb5.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Developer Tools",
-        "Artificial Intelligence",
-        "Menu Bar Apps"
-      ],
-      "hook": "Agents Never Sleep is a menu bar utility for macOS. It prevents your Mac from sleeping so background tasks continue running when you close the lid.",
-      "personalization": "Helpful when you run long prompt evaluation jobs or background scripts locally on your laptop."
-    },
-    {
-      "name": "Port Radar for macOS",
-      "tagline": "An AI port manager for your Mac. ",
-      "url": "https://www.producthunt.com/products/port-radar-for-macos?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/65G5SQ6CHMW3B2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 79,
-      "dailyRank": 10,
-      "iconUrl": "https://ph-files.imgix.net/af6da402-e7bc-496a-bc55-71d5fa226887.png?auto=format",
-      "makerNames": [
-        "Sebastian Solano"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/8874618/d6d92b67-a82d-4cbb-a0be-3ca2e43f48d3.png?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Mac",
-        "Developer Tools",
-        "Artificial Intelligence"
-      ],
-      "hook": "Port Radar is a utility that manages network ports on macOS. A network port is a communication endpoint that software programs use to exchange data.",
-      "personalization": "Convenient for fullstack development when local servers conflict on common development ports."
-    },
-    {
-      "name": "VeloFiler",
-      "tagline": "Keyboard-first dual-pane file manager for macOS",
-      "url": "https://www.producthunt.com/products/velofiler?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/6MGOSPTJJTKW77?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 70,
-      "dailyRank": 11,
-      "iconUrl": "https://ph-files.imgix.net/d413a35c-ff42-4baa-85f9-e68ac085cc80.png?auto=format",
-      "makerNames": [],
-      "makerAvatarUrls": [],
-      "topics": [
-        "Mac",
-        "Productivity",
-        "Developer Tools"
-      ],
-      "hook": "VeloFiler is a two-panel file manager for macOS. You can organize, move, and view files entirely using keyboard shortcuts.",
-      "personalization": ""
-    },
-    {
-      "name": "Pocket by Meta",
-      "tagline": "Vibe-code games, then share them like TikToks",
-      "url": "https://www.producthunt.com/products/pocket-by-meta?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/TS5OPLKBFOVKXH?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 70,
-      "dailyRank": 12,
-      "iconUrl": "https://ph-files.imgix.net/3809bf07-6cf6-4672-a001-59c5789f16de.webp?auto=format",
-      "makerNames": [],
-      "makerAvatarUrls": [],
-      "topics": [
-        "Android",
-        "Artificial Intelligence",
+        "Marketing",
+        "Tech",
         "Games"
       ],
-      "hook": "Pocket by Meta is an Android app for creating mini-games with AI prompts. Users can build small games and share them in a social feed.",
-      "personalization": ""
-    },
-    {
-      "name": "Flappy Bid",
-      "tagline": "The leaderboard money can't buy",
-      "url": "https://www.producthunt.com/products/flappy-bid?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/26NE2SSINN6IO5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 35,
-      "dailyRank": 13,
-      "iconUrl": "https://ph-files.imgix.net/69bbe8bc-f560-45d4-b796-edf6259d227f.svg?auto=format",
-      "makerNames": [
-        "Ahmad"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/9502651/30d78cf8-ad72-47a2-8318-6790623b966f.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Action Games",
-        "Marketing",
-        "Advertising"
-      ],
-      "hook": "Flappy Bid is a browser-based arcade game with an active leaderboard. Advertisers bid money to show their brand names at the top of the score list.",
-      "personalization": ""
-    },
-    {
-      "name": "roastme.gg",
-      "tagline": "Get roasted. Publicly.",
-      "url": "https://www.producthunt.com/products/roastme-gg?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/ZCZCCI2MOER2FY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 11,
-      "dailyRank": 14,
-      "iconUrl": "https://ph-files.imgix.net/a6147feb-3452-48e1-840c-aa44c8334130.png?auto=format",
-      "makerNames": [
-        "Alex Cloudstar"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/3514778/a4001e10-7836-4996-9cba-a8348dae6a69.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Artificial Intelligence",
-        "Entertainment",
-        "Social Networking"
-      ],
-      "hook": "roastme.gg is an entertainment website. It uses AI to generate humorous insults based on public social media profiles.",
-      "personalization": ""
-    },
-    {
-      "name": "First Verse",
-      "tagline": "The best new poems, written by real people",
-      "url": "https://www.producthunt.com/products/first-verse?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/O3ISXEJHQTQVYM?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 10,
-      "dailyRank": 15,
-      "iconUrl": "https://ph-files.imgix.net/3c240f41-5f80-437b-8048-fe4022acb1a9.png?auto=format",
-      "makerNames": [
-        "Andrew Tye"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/1038278/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Writing",
-        "Tech",
-        "Community"
-      ],
-      "hook": "First Verse is a community platform for reading and sharing poetry. All poems on the platform are written by real human authors.",
-      "personalization": ""
-    },
-    {
-      "name": "Cognitive Biases Academy",
-      "tagline": "Free, 66 languages, one goal: a billion self-aware minds",
-      "url": "https://www.producthunt.com/products/cognitive-biases-academy?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/ST5VTDHMWNGDVP?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 8,
-      "dailyRank": 16,
-      "iconUrl": "https://ph-files.imgix.net/955c1710-989b-4c12-bba2-994c8a310cd3.png?auto=format",
-      "makerNames": [
-        "Volodymyr Zhukov"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/4980520/d43e3eb5-a5e5-4255-a35c-621bb3a2564a.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Health & Fitness",
-        "Productivity",
-        "Social Impact"
-      ],
-      "hook": "Cognitive Biases Academy is a free educational platform available in 66 languages. It teaches users how to recognize systematic errors in human thinking.",
-      "personalization": ""
-    },
-    {
-      "name": "Canned Web",
-      "tagline": "Lock a Mac to one website. Kiosk mode. No MDM",
-      "url": "https://www.producthunt.com/products/canned-web?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/WB4KOBVUY2AJA2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 8,
-      "dailyRank": 17,
-      "iconUrl": "https://ph-files.imgix.net/56cae241-9708-40d2-9ddb-8b2a391b5bf1.png?auto=format",
-      "makerNames": [
-        "David Pfluegl"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/4098240/8c0b0825-796b-459e-b6cd-7423330cb208.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Mac",
-        "Productivity",
-        "Marketing"
-      ],
-      "hook": "Canned Web locks a Mac computer to a single website. It creates a dedicated display kiosk without requiring complex enterprise management tools.",
-      "personalization": ""
-    },
-    {
-      "name": "Mugmoji",
-      "tagline": "Turn any photo into an animated Slack emoji. Free.",
-      "url": "https://www.producthunt.com/products/mugmoji?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/OONKTHIVIRMEUM?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 7,
-      "dailyRank": 18,
-      "iconUrl": "https://ph-files.imgix.net/9f744685-1f2a-402a-a4c1-01dac3f9f370.png?auto=format",
-      "makerNames": [
-        "Ben Shih"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/3124662/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Slack",
-        "Design Tools",
-        "Productivity"
-      ],
-      "hook": "Mugmoji transforms standard portrait photos into animated emojis for Slack. It removes image backgrounds automatically and adds motion effects.",
-      "personalization": ""
-    },
-    {
-      "name": "Gemini for Students",
-      "tagline": "Introducing 1 Year Free Google AI for College Students",
-      "url": "https://www.producthunt.com/products/gemini-for-students?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/OJXZYM2OUD57J7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 6,
-      "dailyRank": 19,
-      "iconUrl": "https://ph-files.imgix.net/7d00e52b-acdf-45bf-957d-c6a1acd7d500.png?auto=format",
-      "makerNames": [
-        "Logan Kilpatrick"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/4854124/668473d9-6abc-46cf-b5f3-9fa4f5c8ded0.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Productivity",
-        "Education",
-        "Artificial Intelligence"
-      ],
-      "hook": "Gemini for Students offers college students one year of free access to Google's advanced AI models and features.",
-      "personalization": ""
-    },
-    {
-      "name": "Quick RSS",
-      "tagline": "Private RSS Reader",
-      "url": "https://www.producthunt.com/products/palettegenius?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/O5O4ZOPJQF6EGY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 6,
-      "dailyRank": 20,
-      "iconUrl": "https://ph-files.imgix.net/abf4c358-048c-4ef2-80a7-426caccadf26.png?auto=format",
-      "makerNames": [
-        "Kenny Wang"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/1449336/f2976466-94fb-402b-a722-1c23a50b9652.png?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Productivity",
-        "News"
-      ],
-      "hook": "Quick RSS is a desktop feed reader that protects user privacy. A feed reader collects new articles from selected websites into a single list.",
+      "hook": "TapTo.Top is a web game designed for product marketing. Users tap their screens repeatedly to vote and push a listed product higher up a public leaderboard.",
       "personalization": ""
     }
   ],
-  "lastUpdated": "2026-08-23T00:39:12.122Z"
+  "lastUpdated": "2026-08-24T22:40:26.737Z"
 }
