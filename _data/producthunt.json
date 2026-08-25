@@ -1,446 +1,443 @@
 {
   "posts": [
     {
-      "name": "PaymentKit",
-      "tagline": "Billing that survives a processor shutdown",
-      "url": "https://www.producthunt.com/products/paymentkit?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/VBME2QKKZVBULI?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 393,
+      "name": "akta.pro",
+      "tagline": "Private company data and signals API for the agent economy",
+      "url": "https://www.producthunt.com/products/akta-pro?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/7VLENQJQZQK4EG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 347,
       "dailyRank": 1,
-      "iconUrl": "https://ph-files.imgix.net/a2d8eca7-1611-49e8-9806-26ffea9ec546.png?auto=format",
+      "iconUrl": "https://ph-files.imgix.net/d096a90c-a4f0-414d-992a-d1803381c3f8.x-icon?auto=format",
       "makerNames": [
-        "Christine Carroll",
-        "Diego Vidal",
-        "Shawn Sheikh",
-        "Hamza (Gondal) Afzal",
-        "Nate Rosen"
+        "Siddhant Masson",
+        "Saswat Nanda",
+        "Bharat Garg",
+        "Shiv Akhil Vasandani",
+        "Neeraj Kanoi"
       ],
       "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/8181351/411f3d69-8a18-49ea-874e-6c22bd1093a0.png?auto=format&crop=faces&fit=crop&h=original&w=original",
-        "https://ph-avatars.imgix.net/10151854/825aebe1-dc6a-4789-ad6c-ee62ca124660.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original",
-        "https://ph-avatars.imgix.net/586046/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original",
-        "https://ph-avatars.imgix.net/9015601/7c55b5d5-6889-42cd-88cc-54e1750f712b.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original",
-        "https://ph-avatars.imgix.net/10166244/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+        "https://ph-avatars.imgix.net/6610394/de49bf37-d43b-444c-aaa3-49d02570f824.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/9904172/0b29d836-00b2-42ed-8287-8833b786f2a2.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/9902511/2092581a-3e38-4c65-865a-c08074f13ca0.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/9880376/df88c65d-5a4f-47ac-858b-68d52de38c48.png?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/9875027/7d11932a-1fff-4eab-9587-a4b4128cfab6.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "API",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ],
+      "hook": "Akta provides an API for private company data and business signals. AI agents can query this API to look up company information automatically.",
+      "personalization": "Useful if you build AI agents for financial research or automated screening of private firms."
+    },
+    {
+      "name": "Diet Claude",
+      "tagline": "Never get blindsided by Claude's usage limits again",
+      "url": "https://www.producthunt.com/products/diet-claude?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/FBBFOTHWP2O4QH?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 320,
+      "dailyRank": 2,
+      "iconUrl": "https://ph-files.imgix.net/a128ff6b-cc8e-4abc-98e6-1b8d59df2afd.png?auto=format",
+      "makerNames": [
+        "Surbhi Singla"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/6193223/b223d9c3-7f50-42d6-a9b0-d61ecb4b60f7.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Chrome Extensions",
+        "Productivity",
+        "Artificial Intelligence"
+      ],
+      "hook": "Diet Claude is a Chrome extension for Claude web users. It tracks your token and message usage in real time. It warns you before you reach Claude rate limits.",
+      "personalization": "Helps you avoid sudden rate limit blocks while running prompt iterations during development."
+    },
+    {
+      "name": "Agnost AI",
+      "tagline": "Catch agent failures your evals miss",
+      "url": "https://www.producthunt.com/products/agnost-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/ETAPVE6UI3URIT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 222,
+      "dailyRank": 3,
+      "iconUrl": "https://ph-files.imgix.net/f511fa69-1ce2-4fc3-97b0-83ade5ce489c.png?auto=format",
+      "makerNames": [
+        "Parth Ajmera"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/8729733/original.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Analytics",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ],
+      "hook": "Agnost AI monitors agentic AI workflows. It catches failure modes that standard evaluation benchmarks miss. It traces prompt inputs and tool outputs to find errors.",
+      "personalization": "Directly aligns with your applied work in prompt evaluation, error analysis, and agent reliability."
+    },
+    {
+      "name": "Jotform AI Data Assistant",
+      "tagline": "Turn form data into insights and action with AI",
+      "url": "https://www.producthunt.com/products/jotform?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/2IXJ3KDUVPWSJK?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 206,
+      "dailyRank": 4,
+      "iconUrl": "https://ph-files.imgix.net/5fa0bcc2-ea71-476c-8840-2cb5eacd96ff.png?auto=format",
+      "makerNames": [],
+      "makerAvatarUrls": [],
+      "topics": [
+        "Productivity",
+        "Artificial Intelligence",
+        "Data & Analytics"
+      ],
+      "hook": "This tool connects AI directly to your Jotform submission data. Users can ask questions in plain English to generate summaries, tables, and charts.",
+      "personalization": ""
+    },
+    {
+      "name": "Nimbia",
+      "tagline": "AI screen-sharing calls for user onboarding",
+      "url": "https://www.producthunt.com/products/nimbia?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/5GM7KP7RMUFRD6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 154,
+      "dailyRank": 5,
+      "iconUrl": "https://ph-files.imgix.net/41704d70-33a4-46fb-a8c8-497d930466c2.png?auto=format",
+      "makerNames": [
+        "Jonno Riekwel"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/862/206eea96-b56c-4f4a-b5a1-93d721db9979.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Customer Success",
+        "SaaS",
+        "Artificial Intelligence"
+      ],
+      "hook": "Nimbia provides AI agents that join live screen-sharing calls. The AI talks with new users and guides them through web applications.",
+      "personalization": ""
+    },
+    {
+      "name": "Memoria",
+      "tagline": "Search photos by text, speech, object & faces. 100% offline.",
+      "url": "https://www.producthunt.com/products/memoria-5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/2LUVN6DSPZLZVG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 142,
+      "dailyRank": 6,
+      "iconUrl": "https://ph-files.imgix.net/67f1608f-3486-427c-9167-15a2081ae5a4.svg?auto=format",
+      "makerNames": [
+        "Anas"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10053696/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
+        "Privacy",
+        "Artificial Intelligence"
+      ],
+      "hook": "Memoria is a local photo search application. It indexes images by text, speech, objects, and faces. All processing happens on your local device without cloud servers.",
+      "personalization": ""
+    },
+    {
+      "name": "coolplugz",
+      "tagline": "A Claude orchestrator that saves developers loads of time",
+      "url": "https://www.producthunt.com/products/coolplugz?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/YMM5QLG2OGVHU6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 129,
+      "dailyRank": 7,
+      "iconUrl": "https://ph-files.imgix.net/6eb128c9-6391-4082-b192-474cdac339e3.png?auto=format",
+      "makerNames": [
+        "Tasos V"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/1677272/16fcf08a-ea42-44f6-9cb0-7b45e5da8271.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Artificial Intelligence",
+        "Development"
+      ],
+      "hook": "Coolplugz is an orchestration tool for Claude. It manages context windows, prompt templates, and workflows for developers across long coding sessions.",
+      "personalization": "Relevant for your evaluation of AI developer tools and Claude-based engineering workflows."
+    },
+    {
+      "name": "Flare",
+      "tagline": "The graph-first IDE and interactive map for agentic coding",
+      "url": "https://www.producthunt.com/products/flare-11?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/Q57SMSGYJL2BXW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 116,
+      "dailyRank": 8,
+      "iconUrl": "https://ph-files.imgix.net/5c86f438-db19-4d97-80f2-cc9bf542244e.png?auto=format",
+      "makerNames": [
+        "AlgoMauro"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/6872665/6e8046ff-95eb-4387-8b7f-afc703d72b6c.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Open Source",
+        "Developer Tools",
+        "Vibe coding"
+      ],
+      "hook": "Flare is a code editor built around an interactive visual graph. It represents code files and dependencies as visual nodes. AI agents use this graph map to navigate codebases.",
+      "personalization": "Interesting to test if you want to evaluate new AI-assisted code navigation paradigms."
+    },
+    {
+      "name": "Ninjō AI",
+      "tagline": "AI sales agents on any channel that runs from Claude Code",
+      "url": "https://www.producthunt.com/products/ninjo-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/5OOMHTQENABQUM?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 115,
+      "dailyRank": 9,
+      "iconUrl": "https://ph-files.imgix.net/fc02f063-50b8-420c-8ec0-22ba147b97c1.jpeg?auto=format",
+      "makerNames": [
+        "Francisco Rangel"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10171684/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Sales",
+        "SaaS",
+        "Artificial Intelligence"
+      ],
+      "hook": "Ninjō AI lets developers build and run outbound sales agents. The agents run directly through Claude Code command-line workflows.",
+      "personalization": "Worth a look if you experiment with the new Claude Code CLI environment."
+    },
+    {
+      "name": "Purchase API by Agentcard",
+      "tagline": "one API call and your agent buys anything online",
+      "url": "https://www.producthunt.com/products/agent-card?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/XZKGFALU5JJJ4O?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 115,
+      "dailyRank": 10,
+      "iconUrl": "https://ph-files.imgix.net/0fa43230-d539-4c5b-b63a-0ddd949db65c.png?auto=format",
+      "makerNames": [
+        "Karen S."
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/1702780/ee366471-d1dd-4dfe-81bf-51d2843f208b.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
       ],
       "topics": [
         "Fintech",
-        "SaaS",
-        "E-Commerce"
-      ],
-      "hook": "PaymentKit lets you switch payment processors without losing customer subscription data. A payment processor is a service that handles credit card transactions. The tool keeps your billing active if an account gets closed.",
-      "personalization": "Useful to keep in mind if you build SaaS or Islamic fintech apps that require payment gateway redundancy."
-    },
-    {
-      "name": "Decawork",
-      "tagline": "Control your company's internal AI agents and tools",
-      "url": "https://www.producthunt.com/products/decawork?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/6L7FAO6PDHTEGG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 256,
-      "dailyRank": 2,
-      "iconUrl": "https://ph-files.imgix.net/25a8ffa0-c6ed-4f85-9e9d-38896e194c79.png?auto=format",
-      "makerNames": [
-        "Aman"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/9552488/b10f390c-4f67-4bae-a309-fb10913fa05a.png?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Software Engineering",
-        "Artificial Intelligence",
-        "Security"
-      ],
-      "hook": "Decawork helps organizations manage internal AI agents. An AI agent is software that performs tasks autonomously. The platform provides permission controls and audit logs to keep company data safe.",
-      "personalization": "Relevant if you need to secure and monitor custom LLM agents deployed across internal tools."
-    },
-    {
-      "name": "Navigara",
-      "tagline": "Connect Your AI Spend Directly to Your Roadmap",
-      "url": "https://www.producthunt.com/products/navigara?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/N4737ZSIONEFWG?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 226,
-      "dailyRank": 3,
-      "iconUrl": "https://ph-files.imgix.net/cbf9525b-3c2f-4caf-89cd-cf7b958e76d6.png?auto=format",
-      "makerNames": [
-        "Peter Malina"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/787393/4d1dbac2-59c1-4cdd-9561-28a718817e26.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Analytics",
         "Developer Tools",
         "Artificial Intelligence"
       ],
-      "hook": "Navigara tracks your artificial intelligence spending across product features. It connects your API token costs directly to specific roadmap tasks. This helps engineering teams see which features cost the most money.",
-      "personalization": "Directly useful for your applied AI work when monitoring LLM prompt evaluation and token costs across features."
+      "hook": "Agentcard provides an API that lets software agents make online payments. It generates secure virtual payment cards for automated checkouts.",
+      "personalization": "An interesting architectural pattern if you follow automated fintech agents and payment safety controls."
     },
     {
-      "name": "Offloop",
-      "tagline": "A shared workspace where people and AI agents get work done",
-      "url": "https://www.producthunt.com/products/offloop?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/QKHNZCG3KG6RH3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 221,
-      "dailyRank": 4,
-      "iconUrl": "https://ph-files.imgix.net/5edc1f32-7d4f-4748-a5a0-72ec3daed353.png?auto=format",
+      "name": "Altar II",
+      "tagline": "The mechanical keyboard Apple never made",
+      "url": "https://www.producthunt.com/products/electronic-materials-office-altar-i?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/AJSTJ4ISNT6DBT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 111,
+      "dailyRank": 11,
+      "iconUrl": "https://ph-files.imgix.net/0a4c08dd-1097-41ed-97a9-218cf79d05cf.png?auto=format",
       "makerNames": [
-        "bb"
+        "Andrew Emerson"
       ],
       "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/9183528/d4288254-f5ad-46c8-b6b8-6433a41f2c13.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+        "https://ph-avatars.imgix.net/2686157/9002381c-b3a9-4e7b-bec2-d2b9715683a0.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
       ],
       "topics": [
-        "Productivity",
-        "Artificial Intelligence",
-        "Tech"
+        "Custom Keyboards",
+        "Hardware"
       ],
-      "hook": "Offloop is a shared digital workspace for teams and AI agents. Human teammates and software bots can assign tasks, share context, and finish projects together in one interface.",
+      "hook": "Altar II is a low-profile mechanical keyboard made with an aluminum frame. It is designed specifically for macOS users.",
       "personalization": ""
     },
     {
-      "name": "WorldMap.lol",
-      "tagline": "Put your startup on the map. Literally.",
-      "url": "https://www.producthunt.com/products/worldmap-lol?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/IK4ONXSX5BRNUA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 174,
-      "dailyRank": 5,
-      "iconUrl": "https://ph-files.imgix.net/e991e3d5-d343-4fc3-aaf8-433bac3402e4.svg?auto=format",
+      "name": "Marble MCP",
+      "tagline": "Manage your CMS content from Claude, Cursor, and Codex",
+      "url": "https://www.producthunt.com/products/marble-7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/RTXOM7N7BNMKCO?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 91,
+      "dailyRank": 12,
+      "iconUrl": "https://ph-files.imgix.net/ef16e517-527e-4a7e-b6c4-0a7b7b63a7ef.png?auto=format",
       "makerNames": [
-        "Arthur Bodachevskiy"
+        "Taqib Ibrahim"
       ],
       "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/3567247/9041ffdd-ced2-4160-a8b2-58f595f475b8.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+        "https://ph-avatars.imgix.net/7591180/8986be38-a1dd-41df-88bc-473061569852.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
       ],
       "topics": [
-        "Analytics",
-        "Marketing",
-        "Games"
-      ],
-      "hook": "WorldMap.lol is an interactive map that displays software startups worldwide. Founders can list their project location and discover other tech products globally.",
-      "personalization": ""
-    },
-    {
-      "name": "Antigravity Remote Control",
-      "tagline": "Drive Antigravity agents from any browser",
-      "url": "https://www.producthunt.com/products/google-antigravity?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/KKIM77T2NNVHRR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 134,
-      "dailyRank": 6,
-      "iconUrl": "https://ph-files.imgix.net/64f05fed-5478-434e-b175-80b218391f8c.png?auto=format",
-      "makerNames": [
-        "Rody Davis"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/2018931/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Productivity",
-        "Artificial Intelligence"
-      ],
-      "hook": "Antigravity Remote Control lets you manage coding agents from any web browser. You can trigger tasks and review automated code changes remotely on your mobile phone or laptop.",
-      "personalization": "Worth testing if you want to trigger and monitor background AI coding agents away from your main machine."
-    },
-    {
-      "name": "Dropstone",
-      "tagline": "The AI runtime that remembers, learns, and acts everywhere",
-      "url": "https://www.producthunt.com/products/dropstone-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/2QWED3PGXZG25J?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 121,
-      "dailyRank": 7,
-      "iconUrl": "https://ph-files.imgix.net/a842d9d9-424e-421a-8ac6-93f1745a1aeb.png?auto=format",
-      "makerNames": [
-        "Santosh Arron"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/8035278/18fe66f6-237a-4169-bfbe-aed441960bb0.png?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Productivity",
+        "Writing",
         "Developer Tools",
         "Artificial Intelligence"
       ],
-      "hook": "Dropstone is an execution runtime for AI applications. It gives software agents persistent memory across sessions. Agents can remember previous user inputs and execute actions across different tools.",
-      "personalization": "Highly relevant for applied AI engineering when building agents that need state management and memory retrieval."
+      "hook": "Marble connects your CMS content to AI tools like Cursor and Claude. It uses the Model Context Protocol (MCP). MCP is an open standard that lets AI assistants read and edit external data safely.",
+      "personalization": "Valuable if you use Cursor or Claude to manage database and CMS layers in fullstack projects."
     },
     {
-      "name": "Localdock",
-      "tagline": "Every local project gets a real address.",
-      "url": "https://www.producthunt.com/products/localdock?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/ICZAQZNUWJYH7P?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 106,
-      "dailyRank": 8,
-      "iconUrl": "https://ph-files.imgix.net/df32973d-5cd3-435d-abc7-2a765d465291.png?auto=format",
+      "name": "DockDuck",
+      "tagline": "The native macOS file manager Finder should be",
+      "url": "https://www.producthunt.com/products/dockduck?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/N2HXC3OGDP4D6R?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 88,
+      "dailyRank": 13,
+      "iconUrl": "https://ph-files.imgix.net/e1f30f19-7115-47ac-bb7d-daf5289abd3a.png?auto=format",
       "makerNames": [
-        "Dmytro V"
+        "Martin"
       ],
       "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/8382557/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Developer Tools"
-      ],
-      "hook": "Localdock creates custom domain names for your local development projects. It replaces standard localhost port numbers with readable web addresses on your computer.",
-      "personalization": "A solid utility for your daily fullstack workflow when running multiple local frontend and backend servers."
-    },
-    {
-      "name": "Bumply",
-      "tagline": "Update your dependencies and undo anything",
-      "url": "https://www.producthunt.com/products/bumply?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/UU6NGEKCQA7R57?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 106,
-      "dailyRank": 9,
-      "iconUrl": "https://ph-files.imgix.net/007fd5a9-c9fe-4780-ba46-1eb63c219b0e.png?auto=format",
-      "makerNames": [
-        "Elias Ripari"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/8823044/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Developer Tools"
-      ],
-      "hook": "Bumply updates software dependencies in your code repositories safely. It checks updates automatically and lets you roll back changes if a new library version breaks your build.",
-      "personalization": "Helpful for keeping your fullstack web apps and side project dependencies up to date without breaking changes."
-    },
-    {
-      "name": "Trama",
-      "tagline": "Create macOS native automations using plain language",
-      "url": "https://www.producthunt.com/products/trama-mac-automation-in-plain-language?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/V7HJKXXGPGC7QL?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 99,
-      "dailyRank": 10,
-      "iconUrl": "https://ph-files.imgix.net/28877ef0-43e3-4c34-8700-d02f8b09367a.jpeg?auto=format",
-      "makerNames": [
-        "ErnandesCavalheiro"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/9486399/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+        "https://ph-avatars.imgix.net/9867393/af2cbf59-9b87-4d12-87ce-0ebec9961e02.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
       ],
       "topics": [
         "Mac",
-        "Artificial Intelligence"
+        "Productivity",
+        "Developer Tools"
       ],
-      "hook": "Trama lets you build Mac desktop automations using plain English sentences. You describe a repetitive computer task, and the app converts your words into a native shortcut.",
+      "hook": "DockDuck is an alternative file manager app for macOS. It offers a dual-pane interface and fast file operations.",
       "personalization": ""
     },
     {
-      "name": "Phoenix",
-      "tagline": "AI coding agent built for iOS, macOS app development",
-      "url": "https://www.producthunt.com/products/phoenix-10?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/R2WY3CAIXHTVOZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 93,
-      "dailyRank": 11,
-      "iconUrl": "https://ph-files.imgix.net/563eeb65-071f-4d9f-bc76-6111a5c8b9d6.png?auto=format",
+      "name": "Keymap",
+      "tagline": "Every shortcut, one ⌘⌘ away.",
+      "url": "https://www.producthunt.com/products/keymap?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/E37NYCZNQQHBT6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 87,
+      "dailyRank": 14,
+      "iconUrl": "https://ph-files.imgix.net/553d88ac-cdda-4081-bc92-e35af6e753ae.png?auto=format",
       "makerNames": [
-        "Sreejith NP"
+        "David"
       ],
       "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/10146513/62347b1e-492c-4ee2-9355-2984b71488fb.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+        "https://ph-avatars.imgix.net/9306203/fdaf1432-8716-40c5-9ed8-b06b7fbc70ce.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Mac",
+        "Productivity",
+        "Custom Keyboards"
+      ],
+      "hook": "Keymap is a macOS utility that indexes application shortcuts. Users press a single hotkey to search and view all shortcuts for the active app.",
+      "personalization": ""
+    },
+    {
+      "name": "Particle Studio",
+      "tagline": "Transform Static Images Into Dynamic Particle Experiences",
+      "url": "https://www.producthunt.com/products/particle-studio?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/6UQL23ZGKEAEBC?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 87,
+      "dailyRank": 15,
+      "iconUrl": "https://ph-files.imgix.net/ce7b2573-223b-46b4-93fb-f44c712efc9a.png?auto=format",
+      "makerNames": [
+        "Stelvin Saji"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/9361047/original.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Design Tools",
+        "Developer Tools",
+        "No-Code"
+      ],
+      "hook": "Particle Studio converts static 2D images into interactive particle web animations. It exports ready-to-use front-end code for websites.",
+      "personalization": ""
+    },
+    {
+      "name": "Postaway.space",
+      "tagline": "A little piece of the past, sent your way.",
+      "url": "https://www.producthunt.com/products/postaway-space?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/YBUTLCX3WWRMZ3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 85,
+      "dailyRank": 16,
+      "iconUrl": "https://ph-files.imgix.net/b6d28471-7ae2-45ec-bdaa-a13f865da6df.png?auto=format",
+      "makerNames": [
+        "Martin Chen"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/9910312/317d1274-0c73-466f-90d9-8812fa04c7df.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Travel",
+        "Graphics & Design",
+        "Social Networking"
+      ],
+      "hook": "Postaway is a web service for sending physical postcards. Users write notes online, and the company prints and delivers real postcards globally.",
+      "personalization": ""
+    },
+    {
+      "name": "Hacktron Automations",
+      "tagline": "Close the loop between vulnerability discovery and patching.",
+      "url": "https://www.producthunt.com/products/hacktron?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/IG6ZAQAZ526U6I?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 84,
+      "dailyRank": 17,
+      "iconUrl": "https://ph-files.imgix.net/ab9021cc-7156-42f2-8c9d-04d4f73aa432.png?auto=format",
+      "makerNames": [
+        "Zayne Zhang"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/9699972/original.png?auto=format&crop=faces&fit=crop&h=original&w=original"
       ],
       "topics": [
         "Developer Tools",
         "Artificial Intelligence",
-        "Vibe coding"
+        "Security"
       ],
-      "hook": "Phoenix is an AI coding assistant designed specifically for Apple platforms. It writes Swift code, fixes bugs in Xcode, and helps developers build iOS and macOS applications faster.",
-      "personalization": "Another dedicated AI coding tool to benchmark against your existing development setup."
+      "hook": "Hacktron scans software repositories for security vulnerabilities. It uses AI to generate pull requests that patch detected security flaws.",
+      "personalization": "Useful for automating security fixes in your fullstack repositories."
     },
     {
-      "name": "Lucid Train",
-      "tagline": "Build system design for new and existing codebase",
-      "url": "https://www.producthunt.com/products/lucid-train?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/EIVQY453NHXK2T?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 91,
-      "dailyRank": 12,
-      "iconUrl": "https://ph-files.imgix.net/fe13b2b4-d001-4e53-8e9a-2e029b9cf497.png?auto=format",
+      "name": "session-indexer",
+      "tagline": "Semantic search over your own Claude Code session history",
+      "url": "https://www.producthunt.com/products/session-indexer?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/ETCFI2CS6NMIEC?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 84,
+      "dailyRank": 18,
+      "iconUrl": "https://ph-files.imgix.net/c9720a62-813b-45e7-919a-d247e43da1c1.png?auto=format",
       "makerNames": [
-        "Arnab Bhattacharya"
+        "Valentyn Solomko"
       ],
       "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/4668417/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+        "https://ph-avatars.imgix.net/10164412/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
       ],
       "topics": [
-        "Productivity",
-        "Software Engineering",
-        "Developer Tools"
-      ],
-      "hook": "Lucid Train generates system architecture diagrams from your source code. It analyzes your codebase and visualizes how different services, databases, and APIs connect.",
-      "personalization": "Great for planning clean architectures or quickly understanding the data flow in complex fullstack codebases."
-    },
-    {
-      "name": "Destiny Rings",
-      "tagline": "Proximity-powered dating, social & networking",
-      "url": "https://www.producthunt.com/products/destiny-rings?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/3DTTW4XISHZK6G?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 89,
-      "dailyRank": 13,
-      "iconUrl": "https://ph-files.imgix.net/09951ffa-2403-469f-8b13-4620c405a931.png?auto=format",
-      "makerNames": [
-        "Destiny Rings"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/10149830/75109f58-ff2b-4aef-b273-96c5835bcda4.png?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Dating",
-        "Wearables",
-        "Social Networking"
-      ],
-      "hook": "Destiny Rings is a smart wearable device for in-person networking and dating. The ring alerts you when another user with shared interests is standing nearby.",
-      "personalization": ""
-    },
-    {
-      "name": "Contrive",
-      "tagline": "Search and act across all your work apps",
-      "url": "https://www.producthunt.com/products/contrive?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/6IPCP4KZKB3T62?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 89,
-      "dailyRank": 14,
-      "iconUrl": "https://ph-files.imgix.net/75c61f74-a2fa-48d2-9c47-1369d2edc12a.png?auto=format",
-      "makerNames": [
-        "Venceslav Zlatev"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/10073782/original.png?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Productivity",
-        "Artificial Intelligence",
-        "Search"
-      ],
-      "hook": "Contrive is a unified search tool for workplace software. It searches across Slack, Google Drive, and Notion simultaneously so you can find files and trigger actions quickly.",
-      "personalization": ""
-    },
-    {
-      "name": "Wavepocket ▶︎•၊||၊||။၊|။",
-      "tagline": "Synth, drum kit, a 4-track tape loop, and FX app",
-      "url": "https://www.producthunt.com/products/wavepocket-free-ios-app?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/H3U3J7JMT6UHQ2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 87,
-      "dailyRank": 15,
-      "iconUrl": "https://ph-files.imgix.net/7d5a4915-1861-483d-a94c-684215feb729.png?auto=format",
-      "makerNames": [
-        "Matt Sandy"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/9965662/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Music",
-        "Audio"
-      ],
-      "hook": "Wavepocket is an iOS audio app for music creation. It includes a synthesizer, drum machine, and a four-track tape recorder for making beats on your phone.",
-      "personalization": ""
-    },
-    {
-      "name": "Cortex by SKYNETLAB",
-      "tagline": "The memory layer that decides what's worth remembering",
-      "url": "https://www.producthunt.com/products/cortex-by-skynetlab?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/KKJVZ2IIEPI66M?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 81,
-      "dailyRank": 16,
-      "iconUrl": "https://ph-files.imgix.net/bc5213f6-3f22-4adc-a27b-3f35295eace9.png?auto=format",
-      "makerNames": [
-        "Filippo Pilotta"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/10162337/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Productivity",
-        "SaaS",
+        "Open Source",
+        "Developer Tools",
         "Artificial Intelligence"
       ],
-      "hook": "Cortex is an intelligent memory layer for AI agents. It evaluates user interactions and decides which facts are important to store long-term. This reduces database clutter and lowers API token usage.",
-      "personalization": "Directly matches your prompt optimization focus by pruning unnecessary context and cutting token overhead."
+      "hook": "Session-indexer is an open-source tool for Claude Code. It runs semantic search over your past terminal sessions. Semantic search finds text based on meaning rather than exact word matches.",
+      "personalization": "Directly useful if you use Claude Code and need to search past prompt iterations and debug history."
     },
     {
-      "name": "IFAH",
-      "tagline": "Instruments for composing and experiencing sound as a space",
-      "url": "https://www.producthunt.com/products/ifah-a-new-experience-of-sound?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/LKGV76WCQ4VW2L?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 78,
-      "dailyRank": 17,
-      "iconUrl": "https://ph-files.imgix.net/90270444-b0d2-400b-bde1-6b0ed4e16120.svg?auto=format",
-      "makerNames": [
-        "Mars"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/10163034/40fa3fa8-3719-4806-9f8d-625c01792003.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Music",
-        "Audio",
-        "Health"
-      ],
-      "hook": "IFAH is a sound design software application. It lets sound designers place audio elements in three-dimensional space to create immersive listening experiences.",
-      "personalization": ""
-    },
-    {
-      "name": "Treebar",
-      "tagline": "Treebar gives you one view of every active worktree",
-      "url": "https://www.producthunt.com/products/treebar-where-is-codex?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/MP4Y4NBWEJJAF4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 75,
-      "dailyRank": 18,
-      "iconUrl": "https://ph-files.imgix.net/104cb797-521d-45a3-95df-243e41b2eea3.png?auto=format",
-      "makerNames": [
-        "Cory Parry"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/10162921/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
-      "topics": [
-        "Productivity",
-        "Menu Bar Apps",
-        "Apple"
-      ],
-      "hook": "Treebar is a menu bar application for Git worktrees. A Git worktree allows you to check out multiple branches at the same time in separate folders. The tool lets you switch between them with one click.",
-      "personalization": "Useful for your Git workflow when you need to jump between bug fixes and feature branches without stashing changes."
-    },
-    {
-      "name": "Wild Static",
-      "tagline": "One AI. One memory. Shared by everyone.",
-      "url": "https://www.producthunt.com/products/wild-static?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/RNIVV642YTTLZ7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 18,
+      "name": "Buddy Visual Tests",
+      "tagline": "Every UI change, reviewed before merge",
+      "url": "https://www.producthunt.com/products/buddy?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/MBSQZKX3HH7DJY?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 83,
       "dailyRank": 19,
-      "iconUrl": "https://ph-files.imgix.net/eaada5e7-e9d1-48fe-953d-f9e72b31e690.png?auto=format",
+      "iconUrl": "https://ph-files.imgix.net/9426c01d-3ac0-4014-a186-318a012d3fd7.jpeg?auto=format",
       "makerNames": [
-        "Adam Hutchinson"
+        "Bartosz Wróbel"
       ],
       "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/106336/01a198b5-81a6-4e0c-bfd2-bf6b12c54590.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+        "https://ph-avatars.imgix.net/2529007/b7347c3f-4c09-4f0f-a3d2-3b2b6f9006ec.png?auto=format&crop=faces&fit=crop&h=original&w=original"
       ],
       "topics": [
-        "Artificial Intelligence",
-        "Social Networking",
-        "Chat rooms"
+        "Software Engineering",
+        "Developer Tools",
+        "Development"
       ],
-      "hook": "Wild Static is an experimental chat room where all users talk to a single shared AI. The AI retains a single continuous memory of conversations with every participant.",
-      "personalization": ""
+      "hook": "Buddy Visual Tests takes automated screenshots of user interfaces during pull requests. It detects visual layout bugs before code merges into production.",
+      "personalization": "Helpful for catching front-end regressions in your fullstack web applications."
     },
     {
-      "name": "TapTo.Top",
-      "tagline": "Tap to play, rank your product To Top  -  Free",
-      "url": "https://www.producthunt.com/products/tapto-top?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/4UB5ITRX6JJLCT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 17,
+      "name": "ChatGPT Ad Library",
+      "tagline": "See every ad running inside ChatGPT",
+      "url": "https://www.producthunt.com/products/chatgpt-ad-library?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/ZTALTKBK7KDAT7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 79,
       "dailyRank": 20,
-      "iconUrl": "https://ph-files.imgix.net/d2a46c89-988c-450f-9ca9-5cb3c7f3db31.svg?auto=format",
-      "makerNames": [
-        "Ahab"
-      ],
-      "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/9928110/fdbdd0f7-8393-47f2-ab61-83b0d8be92a3.png?auto=format&crop=faces&fit=crop&h=original&w=original"
-      ],
+      "iconUrl": "https://ph-files.imgix.net/1c3ff4be-bd6a-4a13-9c94-f48d38a72490.png?auto=format",
+      "makerNames": [],
+      "makerAvatarUrls": [],
       "topics": [
-        "Marketing",
-        "Tech",
-        "Games"
+        "Analytics",
+        "Advertising",
+        "Tech"
       ],
-      "hook": "TapTo.Top is a web game designed for product marketing. Users tap their screens repeatedly to vote and push a listed product higher up a public leaderboard.",
+      "hook": "ChatGPT Ad Library collects and displays active advertisements placed inside ChatGPT responses. It helps users track sponsored AI brand placements.",
       "personalization": ""
     }
   ],
-  "lastUpdated": "2026-08-24T22:40:26.737Z"
+  "lastUpdated": "2026-08-25T22:41:51.791Z"
 }
