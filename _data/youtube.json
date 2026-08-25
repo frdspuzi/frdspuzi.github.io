@@ -27,58 +27,6 @@
       ]
     },
     {
-      "title": "Agent Frameworks Considered Harmful — Rémi Louf, .txt",
-      "url": "https://www.youtube.com/watch?v=KHudyx5wW3U",
-      "videoId": "KHudyx5wW3U",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Most AI agent frameworks make building autonomous systems needlessly fragile by burying logic in complex graph code instead of treating agents like standard background operating system processes. In this talk, dottxt CEO Rémi Louf shares how replacing heavy agent libraries with an event-driven, content-addressed kernel architecture makes agents auditable, reproducible, and truly reliable. If you are struggling with flaky agent orchestration or debugging nightmare pipelines, this presentation provides the exact blueprint for fixing your agent infrastructure.",
-      "dateAdded": "2026-08-23T03:26:45.860Z",
-      "timestamps": [
-        {
-          "startTime": 443,
-          "endTime": 510,
-          "topic": "Why coding agents in code is harmful vs. declarative definitions"
-        },
-        {
-          "startTime": 466,
-          "endTime": 515,
-          "topic": "Event-driven orchestration: Eliminating graph complexity"
-        },
-        {
-          "startTime": 728,
-          "endTime": 820,
-          "topic": "Building content-addressed prompts and auditable AI execution"
-        }
-      ]
-    },
-    {
-      "title": "What To Do With Your Life",
-      "url": "https://www.youtube.com/watch?v=fEMHMd7fovM",
-      "videoId": "fEMHMd7fovM",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "Asking yourself what to do with your life is too vague to be useful—real clarity only comes when you break life into specific domains and define what you strictly do not want just as clearly as what you desire. This video breaks down an actionable, 3-step framework combining unconstrained dream mapping and the famous 5-Year Odyssey Plan to turn abstract existential dread into a tangible direction. If you feel stuck at a career or personal crossroads, this step-by-step roadmap will give you the practical clarity you need to move forward with confidence.",
-      "dateAdded": "2026-08-23T03:26:45.860Z",
-      "timestamps": [
-        {
-          "startTime": 102,
-          "endTime": 225,
-          "topic": "Step 1: Mapping Life Areas and Defining What You Want"
-        },
-        {
-          "startTime": 631,
-          "endTime": 760,
-          "topic": "Step 2: Unconstrained Dream Mapping (Have, Do, Learn, Experience)"
-        },
-        {
-          "startTime": 878,
-          "endTime": 975,
-          "topic": "Step 3: The 5-Year Odyssey Plan to Test Alternative Life Paths"
-        }
-      ]
-    },
-    {
       "title": "Build a live translation broadcast app with the Gemini Live API and LiveKit",
       "url": "https://www.youtube.com/watch?v=kN_iMEAi1dw",
       "videoId": "kN_iMEAi1dw",
@@ -127,6 +75,136 @@
           "startTime": 177,
           "endTime": 242,
           "topic": "Powering Multi-Agent Architectures and Fast Intent Classification"
+        }
+      ]
+    },
+    {
+      "title": "Strategi baru Secret Recipe",
+      "url": "https://www.youtube.com/shorts/hQUawp_qcAY",
+      "videoId": "hQUawp_qcAY",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Discover how legacy F&B giant Secret Recipe successfully reinvents itself for the younger generation without losing its core identity. Group CEO Patrick Sim shares their modern playbook, combining operational automation with viral character collaborations like Bichi Mao and brand partnerships with ZUS Coffee. Watch this breakdown to learn practical strategies for keeping a classic brand fresh and competitive in a fast-changing market.",
+      "dateAdded": "2026-08-23T03:26:45.861Z",
+      "timestamps": [
+        {
+          "startTime": 9,
+          "endTime": 40,
+          "topic": "Modernizing Operations and Preserving Core Brand Identity"
+        },
+        {
+          "startTime": 44,
+          "endTime": 69,
+          "topic": "Engaging Gen Z with Trendy Collaborations and Merchandise"
+        },
+        {
+          "startTime": 69,
+          "endTime": 96,
+          "topic": "Co-Branding and Navigating Beverage Industry Competition"
+        }
+      ]
+    },
+    {
+      "title": "Franchise dalam mall mahal?",
+      "url": "https://www.youtube.com/shorts/FoPrxxghOdo",
+      "videoId": "FoPrxxghOdo",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Ever wondered why running a restaurant in a top-tier shopping mall is a brutal financial battle? The CEO of Secret Recipe breaks down the hidden costs eating away at F&B profits—from mandatory concept renovations every few years to malls taking a direct cut of your turnover. Watch this behind-the-scenes breakdown to understand the harsh economics of mall retail and how top brands fight to preserve their margins.",
+      "dateAdded": "2026-08-23T03:26:45.861Z",
+      "timestamps": [
+        {
+          "startTime": 16,
+          "endTime": 56,
+          "topic": "The hidden expenses and mandatory renovation cycles of mall outlets"
+        },
+        {
+          "startTime": 64,
+          "endTime": 88,
+          "topic": "How malls take a commission on sales versus base rental"
+        },
+        {
+          "startTime": 98,
+          "endTime": 142,
+          "topic": "Battling shrinking margins amid rising supply and tax costs"
+        }
+      ]
+    },
+    {
+      "title": "#112 | Just Do It (Leon Jala)",
+      "url": "https://www.youtube.com/watch?v=9o5fR1xq3Hk",
+      "videoId": "9o5fR1xq3Hk",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "Stepping into a high-stakes leadership role doesn't require having all the answers—it demands the humility to listen, embrace imperfection, and stay anchored to a clear purpose. Discover essential lessons on overcoming imposter syndrome, leading from the ground up, and navigating the rush toward AI readiness without losing your core mission. If you want actionable wisdom on managing major career transitions with confidence and clarity, this episode is a must-watch.",
+      "dateAdded": "2026-08-23T03:26:45.861Z",
+      "timestamps": [
+        {
+          "startTime": 307,
+          "endTime": 450,
+          "topic": "Why overcoming fear of imperfection is a leader's superpower"
+        },
+        {
+          "startTime": 522,
+          "endTime": 700,
+          "topic": "The value of listening on the ground before prescribing solutions"
+        },
+        {
+          "startTime": 895,
+          "endTime": 1180,
+          "topic": "Grounding AI readiness and technological breakthroughs in core purpose"
+        }
+      ]
+    },
+    {
+      "title": "Agent Frameworks Considered Harmful — Rémi Louf, .txt",
+      "url": "https://www.youtube.com/watch?v=KHudyx5wW3U",
+      "videoId": "KHudyx5wW3U",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Most AI agent frameworks make building autonomous systems needlessly fragile by burying logic in complex graph code instead of treating agents like standard background operating system processes. In this talk, dottxt CEO Rémi Louf shares how replacing heavy agent libraries with an event-driven, content-addressed kernel architecture makes agents auditable, reproducible, and truly reliable. If you are struggling with flaky agent orchestration or debugging nightmare pipelines, this presentation provides the exact blueprint for fixing your agent infrastructure.",
+      "dateAdded": "2026-08-23T03:26:45.860Z",
+      "timestamps": [
+        {
+          "startTime": 443,
+          "endTime": 510,
+          "topic": "Why coding agents in code is harmful vs. declarative definitions"
+        },
+        {
+          "startTime": 466,
+          "endTime": 515,
+          "topic": "Event-driven orchestration: Eliminating graph complexity"
+        },
+        {
+          "startTime": 728,
+          "endTime": 820,
+          "topic": "Building content-addressed prompts and auditable AI execution"
+        }
+      ]
+    },
+    {
+      "title": "What To Do With Your Life",
+      "url": "https://www.youtube.com/watch?v=fEMHMd7fovM",
+      "videoId": "fEMHMd7fovM",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "Asking yourself what to do with your life is too vague to be useful—real clarity only comes when you break life into specific domains and define what you strictly do not want just as clearly as what you desire. This video breaks down an actionable, 3-step framework combining unconstrained dream mapping and the famous 5-Year Odyssey Plan to turn abstract existential dread into a tangible direction. If you feel stuck at a career or personal crossroads, this step-by-step roadmap will give you the practical clarity you need to move forward with confidence.",
+      "dateAdded": "2026-08-23T03:26:45.860Z",
+      "timestamps": [
+        {
+          "startTime": 102,
+          "endTime": 225,
+          "topic": "Step 1: Mapping Life Areas and Defining What You Want"
+        },
+        {
+          "startTime": 631,
+          "endTime": 760,
+          "topic": "Step 2: Unconstrained Dream Mapping (Have, Do, Learn, Experience)"
+        },
+        {
+          "startTime": 878,
+          "endTime": 975,
+          "topic": "Step 3: The 5-Year Odyssey Plan to Test Alternative Life Paths"
         }
       ]
     },
@@ -209,58 +287,6 @@
       ]
     },
     {
-      "title": "Strategi baru Secret Recipe",
-      "url": "https://www.youtube.com/shorts/hQUawp_qcAY",
-      "videoId": "hQUawp_qcAY",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Discover how legacy F&B giant Secret Recipe successfully reinvents itself for the younger generation without losing its core identity. Group CEO Patrick Sim shares their modern playbook, combining operational automation with viral character collaborations like Bichi Mao and brand partnerships with ZUS Coffee. Watch this breakdown to learn practical strategies for keeping a classic brand fresh and competitive in a fast-changing market.",
-      "dateAdded": "2026-08-23T03:26:45.861Z",
-      "timestamps": [
-        {
-          "startTime": 9,
-          "endTime": 40,
-          "topic": "Modernizing Operations and Preserving Core Brand Identity"
-        },
-        {
-          "startTime": 44,
-          "endTime": 69,
-          "topic": "Engaging Gen Z with Trendy Collaborations and Merchandise"
-        },
-        {
-          "startTime": 69,
-          "endTime": 96,
-          "topic": "Co-Branding and Navigating Beverage Industry Competition"
-        }
-      ]
-    },
-    {
-      "title": "Franchise dalam mall mahal?",
-      "url": "https://www.youtube.com/shorts/FoPrxxghOdo",
-      "videoId": "FoPrxxghOdo",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Ever wondered why running a restaurant in a top-tier shopping mall is a brutal financial battle? The CEO of Secret Recipe breaks down the hidden costs eating away at F&B profits—from mandatory concept renovations every few years to malls taking a direct cut of your turnover. Watch this behind-the-scenes breakdown to understand the harsh economics of mall retail and how top brands fight to preserve their margins.",
-      "dateAdded": "2026-08-23T03:26:45.861Z",
-      "timestamps": [
-        {
-          "startTime": 16,
-          "endTime": 56,
-          "topic": "The hidden expenses and mandatory renovation cycles of mall outlets"
-        },
-        {
-          "startTime": 64,
-          "endTime": 88,
-          "topic": "How malls take a commission on sales versus base rental"
-        },
-        {
-          "startTime": 98,
-          "endTime": 142,
-          "topic": "Battling shrinking margins amid rising supply and tax costs"
-        }
-      ]
-    },
-    {
       "title": "Secret Recipe hire mystery shopper?",
       "url": "https://www.youtube.com/shorts/CotkHKSDhpo",
       "videoId": "CotkHKSDhpo",
@@ -283,32 +309,6 @@
           "startTime": 67,
           "endTime": 82,
           "topic": "Centralized backend production for recipe consistency"
-        }
-      ]
-    },
-    {
-      "title": "#112 | Just Do It (Leon Jala)",
-      "url": "https://www.youtube.com/watch?v=9o5fR1xq3Hk",
-      "videoId": "9o5fR1xq3Hk",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "Stepping into a high-stakes leadership role doesn't require having all the answers—it demands the humility to listen, embrace imperfection, and stay anchored to a clear purpose. Discover essential lessons on overcoming imposter syndrome, leading from the ground up, and navigating the rush toward AI readiness without losing your core mission. If you want actionable wisdom on managing major career transitions with confidence and clarity, this episode is a must-watch.",
-      "dateAdded": "2026-08-23T03:26:45.861Z",
-      "timestamps": [
-        {
-          "startTime": 307,
-          "endTime": 450,
-          "topic": "Why overcoming fear of imperfection is a leader's superpower"
-        },
-        {
-          "startTime": 522,
-          "endTime": 700,
-          "topic": "The value of listening on the ground before prescribing solutions"
-        },
-        {
-          "startTime": 895,
-          "endTime": 1180,
-          "topic": "Grounding AI readiness and technological breakthroughs in core purpose"
         }
       ]
     },
@@ -381,5 +381,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-08-24T22:20:13.162Z"
+  "lastUpdated": "2026-08-25T22:14:01.809Z"
 }
