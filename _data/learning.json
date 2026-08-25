@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Which researcher demonstrated in the 1880s that humans forget approximately 80% of newly learned information within 24 hours unless they actively practice recall?",
+      "question": "In Hermann Ebbinghaus's 1880s memory research, approximately what percentage of newly learned information is forgotten within 24 hours without active recall?",
       "options": [
-        "Hermann Ebbinghaus",
-        "Wilhelm Wundt",
-        "Edward Thorndike",
-        "Ivan Pavlov"
+        "45%",
+        "20%",
+        "60%",
+        "80%"
       ],
-      "correctIndex": 0,
-      "learning": "In the 1880s, Hermann Ebbinghaus demonstrated that humans forget about 80% of what they learn within 24 hours unless they actively force themselves to recall the information.",
+      "correctIndex": 3,
+      "learning": "In the 1880s, Hermann Ebbinghaus proved that humans forget about 80% of what they learn within 24 hours unless they actively force themselves to recall the information.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "What is the standard format used to define a User Story in a Product Backlog?",
+      "question": "What is the primary purpose of dividing a project into smaller, iterative cycles called Sprints in the Scrum framework?",
       "options": [
-        "As a [role], I need [feature], so that [reason]",
-        "I want [feature] because [reason]",
-        "[Feature] should be implemented by [date]",
-        "For [role], build [feature] to fulfill [requirement]"
+        "To eliminate the need for testing throughout development",
+        "To reduce the number of developers needed on the team",
+        "To extend the overall duration and timeline of the project",
+        "To allow for greater flexibility and quicker adjustments"
       ],
-      "correctIndex": 0,
-      "learning": "In Scrum, user stories in the Product Backlog follow the specific structured format: 'As a [role], I need [feature], so that [reason]'.",
+      "correctIndex": 3,
+      "learning": "Scrum is an agile approach that divides development into smaller, iterative cycles called Sprints to enable greater flexibility and quicker adjustments.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "In Islamic teachings, which Arabic term is used to describe humanity's role as caretakers, stewards, or successive authorities of the Earth?",
+      "question": "In Islamic teachings, which concept describes humanity's designated role as stewards and caretakers of the Earth?",
       "options": [
-        "Hadith",
-        "Taqwa",
+        "Salah",
         "Khalifah",
-        "Jinn"
+        "Jinn",
+        "Taqwa"
       ],
-      "correctIndex": 2,
-      "learning": "In Islamic belief, humans are designated as khalifah, meaning they are entrusted to act as caretakers and stewards of Allah's creation on Earth.",
+      "correctIndex": 1,
+      "learning": "In Islamic philosophy, human existence centers on three core purposes: worshiping Allah, serving as caretakers or stewards (khalifah) of the Earth, and navigating life as an accountable test in preparation for the Hereafter.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In PCIe power management, which state represents the deepest sleep mode where the device is almost completely powered down, resulting in the highest power savings and the longest wake-up time?",
+      "question": "What are the primary motivations for utilizing Power Management States in PCIe devices?",
       "options": [
-        "L1.1",
-        "L0s",
-        "L2",
-        "L1.0"
+        "Maximizing raw data throughput, preventing bus contention, and overclocking the device",
+        "Eliminating physical heat dissipation requirements, avoiding link training, and reducing pin count",
+        "Synchronizing multi-core processor clocks, reducing electromagnetic interference, and enabling hot swapping",
+        "Efficiently using energy, extending device longevity, and enhancing system performance"
       ],
-      "correctIndex": 2,
-      "learning": "In PCIe power management, the L2 state is used for the longest periods of inactivity and represents an almost completely powered-down state that offers maximum energy savings at the expense of the longest wake-up time.",
+      "correctIndex": 3,
+      "learning": "PCIe Power Management States are implemented to ensure the efficient use of energy, extend device longevity, and enhance system performance in environments where power consumption is a major concern.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "In Islamic tradition regarding supplication (Dua), a prayer is promised to be granted or to turn away an equivalent evil provided the petitioner does not ask for which two things?",
+      "question": "In the Islamic framework of destiny, which aspect refers to the unfolding occurrence of events in one's life that an individual has the active responsibility to alter through choices and supplications?",
       "options": [
-        "Material wealth or personal fame",
-        "A prolonged lifespan or avoidance of illness",
-        "Something sinful or the severing of kinship ties",
-        "Vengeance or the downfall of an enemy"
+        "Qada’",
+        "Tirmidhi",
+        "Al-Alim",
+        "Qadr"
       ],
-      "correctIndex": 2,
-      "learning": "In the narration from Jami at-Tirmidhi (3573), every supplication made by a Muslim is granted or offsets an equivalent evil, as long as it does not involve asking for something sinful or the severing of family kinship ties.",
+      "correctIndex": 0,
+      "learning": "Individuals are granted free will and hold responsibility for altering the actual occurrence of events in their lives (Qada’) through actions and supplication, while all such changes remain fully encompassed within Allah’s eternal knowledge and plan (Qadr).",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     }
   ],
-  "fetchedAt": "2026-08-24T22:13:23.189Z"
+  "fetchedAt": "2026-08-25T22:13:30.936Z"
 }
