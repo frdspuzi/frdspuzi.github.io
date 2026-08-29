@@ -1,44 +1,44 @@
 [
   {
-    "videoId": "qdAkxLoYNI8",
-    "title": "How to Generate Mergeable Code with a Context Engine — Peter Werry, Unblocked",
+    "videoId": "HKlPmuh3Qrs",
+    "title": "GTA 6 is not a game they're selling to players",
+    "selected": false,
+    "reasoning": "A short promotional clip discussing gaming industry business models rather than actionable software engineering or career advice.",
+    "summary": ""
+  },
+  {
+    "videoId": "8xBJPa_480Q",
+    "title": "Why performant code matters (but gets widely ignored), with Casey Muratori",
     "selected": true,
-    "reasoning": "Directly tackles practical AI-assisted software engineering and how to feed repository context into coding agents to produce usable, mergeable code.",
-    "summary": "Learn how context engines solve the frustrating problem of AI coding tools hallucinating or missing crucial codebase context. It offers practical techniques for getting AI agents to generate clean, production-ready pull requests."
+    "reasoning": "A deep dive into software performance and engineering craftsmanship that provides foundational mindset shifts for junior engineers.",
+    "summary": "Casey Muratori breaks down why modern software has become unnecessarily bloated and slow, and how understanding machine performance makes you a fundamentally better engineer. For an early-career developer, it offers a refreshing, grounded perspective on writing efficient, high-quality code."
   },
   {
-    "videoId": "pOvWgX7IJsc",
-    "title": "Can LLMs Write Fast Multi-GPU Kernels? — Simran Arora, Together AI",
+    "videoId": "XNAeptioFKU",
+    "title": "What does a Google director do?",
     "selected": false,
-    "reasoning": "Focuses on deep, low-level multi-GPU kernel optimization and systems research rather than practical fullstack software engineering or AI tooling.",
+    "reasoning": "A brief YouTube Short snippet about high-level executive management rather than actionable technical or career guidance.",
     "summary": ""
   },
   {
-    "videoId": "qqrk7CtkuIw",
-    "title": "How Anthropic Builds: Lessons from Labs — Mike Krieger, Anthropic",
+    "videoId": "o0ORPbSEgd8",
+    "title": "Max Junestrand: You Need The Willingness To Learn Faster Than Anyone Else",
     "selected": true,
-    "reasoning": "Provides high-value engineering leadership insights on practical workflows, using AI models to accelerate large-scale software tasks and building modern AI products.",
-    "summary": "Anthropic's Mike Krieger shares real-world lessons on pushing AI tools to their limits, including porting entire codebases in a single weekend. It is packed with actionable mental models for developers looking to maximize their leverage with AI."
+    "reasoning": "A practical talk on extreme learning velocity, customer discovery, and building modern enterprise software.",
+    "summary": "Hear how Legora scaled from $1M to $100M ARR by out-learning the competition and staying relentlessly close to user problems. It delivers practical lessons on rapid skill acquisition and product execution that any ambitious junior engineer can apply immediately."
   },
   {
-    "videoId": "JdLf3xO1hB0",
-    "title": "Why Isn’t China Further Behind in AI? - Dylan Patel",
+    "videoId": "IfoPg2QefF8",
+    "title": "Going In Deep On Data | YC Paper Club",
     "selected": false,
-    "reasoning": "A high-level geopolitical commentary short with no actionable software engineering, career, or Islamic finance value.",
+    "reasoning": "Focuses on academic research papers, multilingual pre-training, and benchmark data rather than applied engineering.",
     "summary": ""
   },
   {
-    "videoId": "4HEfWnMmLNk",
-    "title": "AI Doesn't Need to Be Good at Politics to Change Everything - Ryan Greenblatt",
+    "videoId": "zLUZclThLhU",
+    "title": "Michael Kratsios: Inside the White House's AI Strategy",
     "selected": false,
-    "reasoning": "Abstract philosophical commentary in short form that does not fit his core technical or professional interests.",
-    "summary": ""
-  },
-  {
-    "videoId": "LooFKIOAVqY",
-    "title": "Why AI labs are shelving their best models - Dylan Patel",
-    "selected": false,
-    "reasoning": "High-level industry commentary and speculation short with little practical engineering or career relevance.",
+    "reasoning": "Focuses on US government tech policy and national AI strategy rather than practical software engineering or career growth.",
     "summary": ""
   }
 ]
