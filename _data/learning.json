@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What percentage of newly learned information did Hermann Ebbinghaus prove is forgotten within 24 hours without active recall?",
+      "question": "In PCIe power management, which specific substate achieves greater energy savings than L1.0 by powering down the electrical circuits of the main link?",
       "options": [
-        "95%",
-        "50%",
-        "30%",
-        "80%"
-      ],
-      "correctIndex": 3,
-      "learning": "In the 1880s, Hermann Ebbinghaus demonstrated that people forget approximately 80% of what they learn within 24 hours unless they actively force themselves to recall it.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In the Scrum framework, which artifact is specifically used to visualize the progress of a Sprint and display the remaining work?",
-      "options": [
-        "Burndown Chart",
-        "User Story",
-        "Product Backlog",
-        "Sprint Backlog"
-      ],
-      "correctIndex": 0,
-      "learning": "In Scrum, a Burndown Chart is an artifact that visualizes the progress of a Sprint, displaying the remaining work and helping the team track whether they are on schedule.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "What cumulative percentage of the Quran is comprised of its top 20 most frequently occurring words?",
-      "options": [
-        "Approximately 80.00%",
-        "Approximately 20.83%",
-        "Approximately 63.50%",
-        "Approximately 45.15%"
+        "L1.0",
+        "L1.1",
+        "L0s",
+        "L0"
       ],
       "correctIndex": 1,
-      "learning": "Contrary to the expectation that the 80/20 Pareto Principle might apply, the top 20 most repeated words in the Quran only account for approximately 20.83% of the total text.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
+      "learning": "The PCIe L1.1 substate achieves deeper power savings than L1.0 by specifically powering down the electrical circuits of the main link at the cost of an increased wake-up time.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     },
     {
-      "question": "In Islamic scripture (Quran 51:56), what foundational purpose is explicitly stated for the creation of both jinn and mankind?",
+      "question": "In Islamic teaching, why were life and death created?",
       "options": [
-        "To seek material wealth and prosperity",
-        "To worship Allah",
-        "To build eternal earthly monuments",
-        "To conquer the physical universe"
+        "To establish material wealth",
+        "To test who is best in deed",
+        "To display physical dominance",
+        "To punish past generations"
       ],
       "correctIndex": 1,
-      "learning": "In Islamic belief, the primary motivation behind the creation of jinn and mankind is foundational worship of Allah, as stated in Quran 51:56.",
+      "learning": "In Islamic theology, life and death were fundamentally created as a divine test to determine who is best in deed and conduct.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which PCIe power management substate achieves deeper energy savings specifically by powering down the electrical circuits of the main link?",
+      "question": "When a person's sincere supplications (Dua) and actions alter the unfolding of events in their life (Qada'), how does this change relate to divine decree (Qadr)?",
       "options": [
-        "L0s",
-        "L1.1",
-        "L1.2",
-        "L1.0"
+        "Qadr is permanently rewritten each time human free will contradicts the original plan",
+        "The act of supplicating and the resulting change were already encompassed within Allah's eternal knowledge and plan (Qadr)",
+        "Making Dua removes an event from Qadr entirely and places it solely under human control",
+        "The change completely overrides and replaces what was originally preordained in Qadr"
       ],
       "correctIndex": 1,
-      "learning": "In PCIe power management, the L1.1 substate achieves greater power savings than L1.0 by specifically powering down the electrical circuits of the main link, at the cost of an increased wake-up time.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
+      "learning": "Although Qada' (the unfolding of events) can be altered through actions and Dua, this change does not contradict Qadr, because the decision to supplicate and the altered outcome were already known to Allah and part of His preordained plan.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In the Scrum framework, what is the primary motivation for breaking a development process into smaller, iterative cycles called Sprints?",
+      "options": [
+        "To reduce the number of team members needed",
+        "To increase the overall length of the project",
+        "To eliminate the need for project testing phases",
+        "To allow for more flexibility and quicker adjustments"
+      ],
+      "correctIndex": 3,
+      "learning": "Scrum breaks the development process into smaller, iterative cycles called Sprints to provide greater flexibility and enable quicker adjustments throughout a project.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "Compared to roughly 170,000 words in the Oxford English Dictionary, approximately how many distinct words exist in the Arabic language?",
+      "options": [
+        "24 million",
+        "5 million",
+        "12 million",
+        "1.2 million"
+      ],
+      "correctIndex": 2,
+      "learning": "The Arabic language contains approximately 12 million distinct words compared to 170,000 words in the Oxford English Dictionary, resulting in an approximate 71:1 ratio.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-08-28T05:51:36.887Z"
+  "fetchedAt": "2026-08-29T03:24:55.324Z"
 }
