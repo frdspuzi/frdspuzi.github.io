@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In PCIe power management, which specific substate achieves greater energy savings than L1.0 by powering down the electrical circuits of the main link?",
+      "question": "What psychological phenomenon occurs when writing down or externally storing information signals the brain that it can safely forget it?",
       "options": [
-        "L1.0",
-        "L1.1",
-        "L0s",
-        "L0"
+        "The Ebbinghaus Interference",
+        "The Performance Paradox of Cognitive Offloading",
+        "The Retroactive Memory Bias",
+        "The Spaced Retention Deficit"
       ],
       "correctIndex": 1,
-      "learning": "The PCIe L1.1 substate achieves deeper power savings than L1.0 by specifically powering down the electrical circuits of the main link at the cost of an increased wake-up time.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
+      "learning": "The 'Performance Paradox' of Cognitive Offloading describes how recording or storing information externally prompts the brain to treat the information as disposable and forget it.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     },
     {
-      "question": "In Islamic teaching, why were life and death created?",
+      "question": "Which Scrum artifact is used to visualize the progress of a Sprint and display remaining work to determine if the team is on schedule?",
       "options": [
-        "To establish material wealth",
-        "To test who is best in deed",
-        "To display physical dominance",
-        "To punish past generations"
+        "Burndown Chart",
+        "Product Backlog",
+        "Sprint Review",
+        "Sprint Backlog"
       ],
-      "correctIndex": 1,
-      "learning": "In Islamic theology, life and death were fundamentally created as a divine test to determine who is best in deed and conduct.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "When a person's sincere supplications (Dua) and actions alter the unfolding of events in their life (Qada'), how does this change relate to divine decree (Qadr)?",
-      "options": [
-        "Qadr is permanently rewritten each time human free will contradicts the original plan",
-        "The act of supplicating and the resulting change were already encompassed within Allah's eternal knowledge and plan (Qadr)",
-        "Making Dua removes an event from Qadr entirely and places it solely under human control",
-        "The change completely overrides and replaces what was originally preordained in Qadr"
-      ],
-      "correctIndex": 1,
-      "learning": "Although Qada' (the unfolding of events) can be altered through actions and Dua, this change does not contradict Qadr, because the decision to supplicate and the altered outcome were already known to Allah and part of His preordained plan.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In the Scrum framework, what is the primary motivation for breaking a development process into smaller, iterative cycles called Sprints?",
-      "options": [
-        "To reduce the number of team members needed",
-        "To increase the overall length of the project",
-        "To eliminate the need for project testing phases",
-        "To allow for more flexibility and quicker adjustments"
-      ],
-      "correctIndex": 3,
-      "learning": "Scrum breaks the development process into smaller, iterative cycles called Sprints to provide greater flexibility and enable quicker adjustments throughout a project.",
+      "correctIndex": 0,
+      "learning": "The Burndown Chart is a key Scrum artifact that visualizes a Sprint's progress, showing remaining work and helping track whether the team is on schedule.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "Compared to roughly 170,000 words in the Oxford English Dictionary, approximately how many distinct words exist in the Arabic language?",
+      "question": "Which concept or rule suggests that 80% of outcomes or results stem from 20% of efforts, often used to test whether learning a small core set of high-frequency words can unlock majority comprehension of a text?",
       "options": [
-        "24 million",
-        "5 million",
-        "12 million",
-        "1.2 million"
+        "Pareto Principle",
+        "Parkinson's Law",
+        "Murphy's Law",
+        "Peter Principle"
       ],
-      "correctIndex": 2,
-      "learning": "The Arabic language contains approximately 12 million distinct words compared to 170,000 words in the Oxford English Dictionary, resulting in an approximate 71:1 ratio.",
+      "correctIndex": 0,
+      "learning": "The study was motivated by the Pareto Principle (80/20 rule) to test whether learning the top 20 most frequent words could yield comprehension of 80% of the Quran.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "In Islamic belief, which term refers to the vital role of humans serving as caretakers or successive authorities on Earth?",
+      "options": [
+        "Hadith",
+        "Khalifah",
+        "Jinn",
+        "Taqwa"
+      ],
+      "correctIndex": 1,
+      "learning": "In Islamic teachings, life's purpose is defined by three primary responsibilities: worshiping Allah, living through a test of faith and conduct for the Hereafter, and serving as caretakers or stewards (khalifah) of the Earth.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What is the primary trade-off when a PCIe device transitions into progressively deeper power management states, moving from L0s toward L2?",
+      "options": [
+        "Instantaneous resume capability with increased idle power draw",
+        "Greater energy savings at the cost of longer wake-up latency",
+        "Reduced energy efficiency in exchange for higher operating clock speeds",
+        "Higher data transmission bandwidth at the cost of increased heat generation"
+      ],
+      "correctIndex": 1,
+      "learning": "PCIe power management relies on a spectrum of states (from L0 down to L2) that progressively power down device components, maximizing energy savings at the expense of longer wake-up times.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     }
   ],
-  "fetchedAt": "2026-08-29T03:24:55.324Z"
+  "fetchedAt": "2026-08-29T23:40:24.159Z"
 }
