@@ -1,321 +1,336 @@
 {
   "repos": [
     {
-      "fullName": "cathrynlavery/diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "language": "HTML",
-      "starsThisWeek": 14397,
-      "totalStars": 24133,
-      "ownerAvatarUrl": "https://github.com/cathrynlavery.png",
+      "fullName": "freestylefly/awesome-gpt-image-2",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
+      "language": "JavaScript",
+      "starsThisWeek": 13413,
+      "totalStars": 25631,
+      "ownerAvatarUrl": "https://github.com/freestylefly.png",
       "contributorAvatarUrls": [
-        "https://github.com/parveen0029.png",
-        "https://github.com/mvanhorn.png",
-        "https://github.com/web-flow.png",
-        "https://github.com/philyuchkoff.png"
-      ],
-      "hook": "This repository provides 38 diagram templates made with plain HTML and SVG. SVG means Scalable Vector Graphics, which are images that stay sharp at any size. You can paste these templates into AI coding assistants to generate clean visual diagrams.",
-      "personalization": "Useful when prompting AI coding tools like Claude Code to render architecture diagrams for your fullstack web apps."
-    },
-    {
-      "fullName": "volcengine/OpenViking",
-      "url": "https://github.com/volcengine/OpenViking",
-      "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
-      "language": "Python",
-      "starsThisWeek": 1659,
-      "totalStars": 30888,
-      "ownerAvatarUrl": "https://github.com/volcengine.png",
-      "contributorAvatarUrls": [
-        "https://github.com/qin-ctx.png",
         "https://github.com/claude.png",
-        "https://github.com/zhoujh01.png",
-        "https://github.com/ZaynJarvis.png",
-        "https://github.com/r266-tech.png"
+        "https://github.com/ImgBotApp.png",
+        "https://github.com/LengShangbai.png",
+        "https://github.com/sscodeai.png"
       ],
-      "hook": "OpenViking is a context database built for AI agents. An AI agent is a software program that performs tasks autonomously. The tool combines long-term memory, document search, and agent skills into one unified system.",
-      "personalization": "Helpful for testing how structured context storage improves prompt performance and consistency in agentic workflows."
+      "hook": "This repository provides a structured template library for image generation prompts. It treats prompts as modular code that you can version and test.",
+      "personalization": "Helpful if you want to apply structured prompt optimization techniques to image generation workflows."
     },
     {
-      "fullName": "basecamp/omarchy",
-      "url": "https://github.com/basecamp/omarchy",
+      "fullName": "anthropics/claude-plugins-community",
+      "url": "https://github.com/anthropics/claude-plugins-community",
+      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
+      "language": "Python",
+      "starsThisWeek": 2162,
+      "totalStars": 2874,
+      "ownerAvatarUrl": "https://github.com/anthropics.png",
+      "contributorAvatarUrls": [
+        "https://github.com/github-actions.png",
+        "https://github.com/bryan-anthropic.png",
+        "https://github.com/claude.png",
+        "https://github.com/tobinsouth.png",
+        "https://github.com/ThariqS.png"
+      ],
+      "hook": "This repository is a community marketplace for Claude Code plugins. Plugins are add-on tools that give the AI coding agent new capabilities and terminal commands.",
+      "personalization": "Directly relevant for evaluating third-party extensions and tool-calling patterns in Claude Code."
+    },
+    {
+      "fullName": "tt-a1i/archify",
+      "url": "https://github.com/tt-a1i/archify",
+      "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
+      "language": "JavaScript",
+      "starsThisWeek": 18103,
+      "totalStars": 34477,
+      "ownerAvatarUrl": "https://github.com/tt-a1i.png",
+      "contributorAvatarUrls": [
+        "https://github.com/sunsunsun-java.png",
+        "https://github.com/YunyueLi.png",
+        "https://github.com/cursoragent.png",
+        "https://github.com/claude.png"
+      ],
+      "hook": "This tool generates interactive architecture and sequence diagrams. It outputs standalone HTML files with smooth animations and clean visual exports.",
+      "personalization": "Useful for generating clean system architecture diagrams for your fullstack side projects."
+    },
+    {
+      "fullName": "omacom/omarchy",
+      "url": "https://github.com/omacom/omarchy",
       "description": "Beautiful, Modern & Opinionated Linux",
       "language": "Shell",
-      "starsThisWeek": 2208,
-      "totalStars": 26988,
-      "ownerAvatarUrl": "https://github.com/basecamp.png",
+      "starsThisWeek": 6692,
+      "totalStars": 35524,
+      "ownerAvatarUrl": "https://github.com/omacom.png",
       "contributorAvatarUrls": [
         "https://github.com/dhh.png",
         "https://github.com/ryanrhughes.png",
         "https://github.com/claude.png",
-        "https://github.com/tahayvr.png",
-        "https://github.com/pomartel.png"
+        "https://github.com/codex.png",
+        "https://github.com/omarchybot.png"
       ],
-      "hook": "Omarchy is an opinionated Linux operating system setup created by Basecamp. It installs a complete developer desktop with custom styles, standard tools, and streamlined default settings.",
+      "hook": "This project offers an automated installer for Arch Linux. It configures a modern desktop environment and developer tools with minimal manual setup.",
       "personalization": ""
     },
     {
-      "fullName": "cactus-compute/needle",
-      "url": "https://github.com/cactus-compute/needle",
-      "description": "14MB foundation model for tiny devices; phones, wearables, smart home, and robots.",
-      "language": "Python",
-      "starsThisWeek": 3838,
-      "totalStars": 8069,
-      "ownerAvatarUrl": "https://github.com/cactus-compute.png",
+      "fullName": "apache/maka",
+      "url": "https://github.com/apache/maka",
+      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
+      "language": "TypeScript",
+      "starsThisWeek": 1973,
+      "totalStars": 4187,
+      "ownerAvatarUrl": "https://github.com/apache.png",
       "contributorAvatarUrls": [
-        "https://github.com/HenryNdubuaku.png",
-        "https://github.com/ncylich.png",
-        "https://github.com/kar-m.png",
-        "https://github.com/justinl66.png",
-        "https://github.com/jakmro.png"
+        "https://github.com/jackwener.png",
+        "https://github.com/Astro-Han.png",
+        "https://github.com/likun666661.png",
+        "https://github.com/M4n5ter.png",
+        "https://github.com/me2seeks.png"
       ],
-      "hook": "Needle is a tiny artificial intelligence model that requires only 14 megabytes of storage. It runs directly on small edge hardware like phones and home devices without an internet connection.",
-      "personalization": "Worth watching if you build privacy-focused mobile side projects that need on-device AI without monthly cloud API bills."
+      "hook": "This project is a local-first workspace for AI agents. It stores all model prompts, tool executions, and user permissions in an immutable log.",
+      "personalization": "Valuable for auditing agent behavior and evaluating tool-use decisions in a local development environment."
     },
     {
-      "fullName": "semantica-agi/semantica",
-      "url": "https://github.com/semantica-agi/semantica",
-      "description": "Graph-Native Infrastructure for Context and Accountable AI Systems",
-      "language": "Python",
-      "starsThisWeek": 4005,
-      "totalStars": 9772,
-      "ownerAvatarUrl": "https://github.com/semantica-agi.png",
+      "fullName": "tashfeenahmed/freellmapi",
+      "url": "https://github.com/tashfeenahmed/freellmapi",
+      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
+      "language": "TypeScript",
+      "starsThisWeek": 3037,
+      "totalStars": 22761,
+      "ownerAvatarUrl": "https://github.com/tashfeenahmed.png",
       "contributorAvatarUrls": [
-        "https://github.com/KaifAhmad1.png",
-        "https://github.com/Sameer6305.png",
         "https://github.com/claude.png",
-        "https://github.com/ZohaibHassan16.png",
-        "https://github.com/dependabot.png"
+        "https://github.com/suantea.png",
+        "https://github.com/OhOkThisIsFine.png",
+        "https://github.com/tashdroid.png"
       ],
-      "hook": "Semantica is an infrastructure library that organizes data into knowledge graphs. A knowledge graph is a network of connected facts and relationships. This graph structure helps developers build AI systems that provide verifiable citations for their outputs.",
-      "personalization": "Relevant if you build auditable AI side projects, such as rule-checking workflows for Islamic finance compliance."
+      "hook": "This proxy server routes requests to multiple free AI model providers through one unified endpoint. An endpoint is a web address that receives software requests. It includes automatic failover if a provider goes offline.",
+      "personalization": "Great for running low-cost prompt evaluations across many models without managing separate API accounts."
     },
     {
-      "fullName": "NVIDIA-NeMo/Switchyard",
-      "url": "https://github.com/NVIDIA-NeMo/Switchyard",
-      "description": "Switchyard lets LLM applications route traffic across models and providers while preserving native OpenAI and Anthropic API compatibility - enabling flexible model selection, benchmarking, and cost/performance optimization.",
-      "language": "Rust",
-      "starsThisWeek": 1220,
-      "totalStars": 1951,
-      "ownerAvatarUrl": "https://github.com/NVIDIA-NeMo.png",
-      "contributorAvatarUrls": [
-        "https://github.com/nachiketb-nvidia.png",
-        "https://github.com/elyasmnvidian.png",
-        "https://github.com/grahamking.png",
-        "https://github.com/ayushag-nv.png",
-        "https://github.com/ryan-lempka.png"
-      ],
-      "hook": "Switchyard routes application traffic across different model providers through one central proxy. It maintains compatibility with standard OpenAI and Anthropic API endpoints. You can benchmark latency, compare answer quality, and optimize token costs without changing your application code.",
-      "personalization": "Directly supports your prompt evaluation workflows by letting you switch and benchmark different model backends side by side."
-    },
-    {
-      "fullName": "modular/modular",
-      "url": "https://github.com/modular/modular",
-      "description": "The Modular Platform (includes MAX & Mojo)",
-      "language": "Mojo",
-      "starsThisWeek": 641,
-      "totalStars": 27726,
-      "ownerAvatarUrl": "https://github.com/modular.png",
-      "contributorAvatarUrls": [
-        "https://github.com/abduld.png",
-        "https://github.com/lattner.png",
-        "https://github.com/JoeLoser.png",
-        "https://github.com/keith.png",
-        "https://github.com/atomicapple0.png"
-      ],
-      "hook": "This repository hosts the Modular platform, including the Mojo programming language. Mojo gives developers the fast execution speed of C++ while keeping the simple syntax of Python.",
-      "personalization": ""
-    },
-    {
-      "fullName": "harry0703/MoneyPrinterTurbo",
-      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "fullName": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
+      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "language": "Python",
-      "starsThisWeek": 7380,
-      "totalStars": 112660,
-      "ownerAvatarUrl": "https://github.com/harry0703.png",
+      "starsThisWeek": 5348,
+      "totalStars": 38515,
+      "ownerAvatarUrl": "https://github.com/MadsLorentzen.png",
       "contributorAvatarUrls": [
-        "https://github.com/yyhhyyyyyy.png",
-        "https://github.com/vuisme.png",
         "https://github.com/claude.png",
-        "https://github.com/pcbntt.png"
+        "https://github.com/ayobamiseun.png",
+        "https://github.com/oscarbol09.png",
+        "https://github.com/LeoWinston-9596.png"
       ],
-      "hook": "MoneyPrinterTurbo creates short videos automatically from a single text topic. It writes the video script, generates voice narration, selects video clips, and renders subtitles.",
-      "personalization": ""
+      "hook": "This project automates job application workflows using Claude Code. It evaluates job postings, tailors resumes, and creates interview practice questions on your local computer.",
+      "personalization": "A practical example of using Claude Code to automate complex, multi-step tasks locally."
     },
     {
-      "fullName": "public-apis/public-apis",
-      "url": "https://github.com/public-apis/public-apis",
-      "description": "A collective list of free APIs",
+      "fullName": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "language": "Python",
-      "starsThisWeek": 10183,
-      "totalStars": 466975,
-      "ownerAvatarUrl": "https://github.com/public-apis.png",
+      "starsThisWeek": 1940,
+      "totalStars": 35607,
+      "ownerAvatarUrl": "https://github.com/anthropics.png",
       "contributorAvatarUrls": [
-        "https://github.com/matheusfelipeog.png",
-        "https://github.com/davemachado.png",
-        "https://github.com/ArindamOSS.png",
-        "https://github.com/pawelborkar.png",
-        "https://github.com/jbrooksuk.png"
+        "https://github.com/github-actions.png",
+        "https://github.com/bryan-anthropic.png",
+        "https://github.com/claude.png",
+        "https://github.com/tobinsouth.png",
+        "https://github.com/k6l3.png"
       ],
-      "hook": "This project maintains a categorized list of free application programming interfaces, or APIs. An API is an interface that lets your code fetch data from external services.",
-      "personalization": "A handy directory to discover free endpoints (such as currency rates or prayer data) for fullstack side projects."
-    },
-    {
-      "fullName": "megadose/holehe",
-      "url": "https://github.com/megadose/holehe",
-      "description": "holehe allows you to check if the mail is used on different sites like twitter, instagram and will retrieve information on sites with the forgotten password function.",
-      "language": "Python",
-      "starsThisWeek": 1704,
-      "totalStars": 13807,
-      "ownerAvatarUrl": "https://github.com/megadose.png",
-      "contributorAvatarUrls": [
-        "https://github.com/Eriys.png",
-        "https://github.com/novitae.png",
-        "https://github.com/mxrch.png",
-        "https://github.com/byt3loss.png"
-      ],
-      "hook": "Holehe checks if a specific email address is registered on more than 120 websites. It inspects password recovery pages without sending actual password reset messages to the user.",
-      "personalization": ""
+      "hook": "This repository is the official directory of plugins maintained by Anthropic. It contains verified tools and integrations for Claude Code.",
+      "personalization": "An essential reference for tracking official plugin standards as you evaluate Claude Code against other tools."
     },
     {
       "fullName": "AprilNEA/OpenLogi",
       "url": "https://github.com/AprilNEA/OpenLogi",
       "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
       "language": "Rust",
-      "starsThisWeek": 1492,
-      "totalStars": 11501,
+      "starsThisWeek": 3406,
+      "totalStars": 17898,
       "ownerAvatarUrl": "https://github.com/AprilNEA.png",
       "contributorAvatarUrls": [
         "https://github.com/davidbudnick.png",
         "https://github.com/aprilnea.png",
         "https://github.com/cserby.png",
-        "https://github.com/tagawa0525.png"
-      ],
-      "hook": "OpenLogi is a lightweight configuration tool for Logitech computer mice and keyboards. It runs entirely on your local machine with no user accounts and no background telemetry.",
-      "personalization": ""
-    },
-    {
-      "fullName": "lightningpixel/modly",
-      "url": "https://github.com/lightningpixel/modly",
-      "description": "Desktop app to generate 3D models from images or prompt using local AI — runs entirely on your GPU",
-      "language": "TypeScript",
-      "starsThisWeek": 1797,
-      "totalStars": 7011,
-      "ownerAvatarUrl": "https://github.com/lightningpixel.png",
-      "contributorAvatarUrls": [
-        "https://github.com/Lorchie.png",
-        "https://github.com/iammojogo-sudo.png",
-        "https://github.com/DrHepa.png",
-        "https://github.com/jokrasno.png"
-      ],
-      "hook": "Modly is a desktop program that generates three-dimensional models from images or text prompts. It executes all generative AI calculations locally on your computer graphics card.",
-      "personalization": ""
-    },
-    {
-      "fullName": "macro-inc/macro",
-      "url": "https://github.com/macro-inc/macro",
-      "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-      "language": "Rust",
-      "starsThisWeek": 2557,
-      "totalStars": 3847,
-      "ownerAvatarUrl": "https://github.com/macro-inc.png",
-      "contributorAvatarUrls": [
-        "https://github.com/whutchinson98.png",
-        "https://github.com/gbirman.png",
-        "https://github.com/synoet.png",
-        "https://github.com/sedson.png",
-        "https://github.com/evanhutnik.png"
-      ],
-      "hook": "Macro is an all-in-one workspace that brings email, team chat, documents, and tasks together. It connects these work items using a shared memory layer for AI assistants.",
-      "personalization": ""
-    },
-    {
-      "fullName": "unslothai/unsloth",
-      "url": "https://github.com/unslothai/unsloth",
-      "description": "Local UI to run and train LLMs and diffusion models, including Qwen3.8, Kimi K3, MiniMax-H3, Gemma 4, DeepSeek-V4, FLUX and more.",
-      "language": "Python",
-      "starsThisWeek": 3338,
-      "totalStars": 74046,
-      "ownerAvatarUrl": "https://github.com/unslothai.png",
-      "contributorAvatarUrls": [
-        "https://github.com/danielhanchen.png",
-        "https://github.com/pre-commit-ci.png",
-        "https://github.com/shimmyshimmer.png",
-        "https://github.com/wasimysaid.png",
-        "https://github.com/Datta0.png"
-      ],
-      "hook": "Unsloth allows you to train and run open-source large language models locally. It uses custom GPU kernels to make model training faster while consuming significantly less memory.",
-      "personalization": "Helpful to keep in your toolkit when prompt engineering alone reaches its limits and you need local model fine-tuning."
-    },
-    {
-      "fullName": "akitaonrails/ai-memory",
-      "url": "https://github.com/akitaonrails/ai-memory",
-      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
-      "language": "Rust",
-      "starsThisWeek": 1717,
-      "totalStars": 3472,
-      "ownerAvatarUrl": "https://github.com/akitaonrails.png",
-      "contributorAvatarUrls": [
-        "https://github.com/claude.png",
-        "https://github.com/djalmajr.png",
-        "https://github.com/wblech.png",
-        "https://github.com/rthiago.png"
-      ],
-      "hook": "This tool manages persistent, long-term memory for command-line AI coding assistants. It saves project context across sessions so you can hand off tasks between different AI tools without losing project history.",
-      "personalization": "Directly solves the context-loss problem when evaluating and switching between different AI coding CLI tools on your projects."
-    },
-    {
-      "fullName": "jundot/omlx",
-      "url": "https://github.com/jundot/omlx",
-      "description": "LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar",
-      "language": "Python",
-      "starsThisWeek": 1102,
-      "totalStars": 20064,
-      "ownerAvatarUrl": "https://github.com/jundot.png",
-      "contributorAvatarUrls": [
-        "https://github.com/claude.png",
-        "https://github.com/cfbraun.png",
-        "https://github.com/JimStenstrom.png",
         "https://github.com/github-actions.png"
       ],
-      "hook": "Omlx is an inference server designed for Apple Silicon Mac computers. An inference server runs language models and answers incoming text requests. You can monitor and control the server directly from the macOS menu bar.",
-      "personalization": "A convenient tool if you want to run fast local models on your Mac to test prompt ideas offline."
+      "hook": "This application is a lightweight, open-source driver for Logitech mice and keyboards. It runs locally without user accounts or background telemetry.",
+      "personalization": ""
     },
     {
-      "fullName": "AlexsJones/llmfit",
-      "url": "https://github.com/AlexsJones/llmfit",
-      "description": "Hundreds of models & providers. One command to find what runs on your hardware.",
-      "language": "Rust",
-      "starsThisWeek": 1545,
-      "totalStars": 33229,
-      "ownerAvatarUrl": "https://github.com/AlexsJones.png",
+      "fullName": "rohitg00/ai-engineering-from-scratch",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "language": "Python",
+      "starsThisWeek": 3720,
+      "totalStars": 51268,
+      "ownerAvatarUrl": "https://github.com/rohitg00.png",
       "contributorAvatarUrls": [
-        "https://github.com/claude.png",
-        "https://github.com/dependabot.png",
-        "https://github.com/three-foxes-in-a-trenchcoat.png",
-        "https://github.com/github-actions.png"
-      ],
-      "hook": "LLMfit is a command-line tool that inspects your computer hardware. It analyzes your processor and memory to show you which open-source AI models can run smoothly on your machine.",
-      "personalization": "Saves you setup time by identifying which local LLMs your development machine can comfortably run for prompt testing."
-    },
-    {
-      "fullName": "CodebuffAI/freebuff",
-      "url": "https://github.com/CodebuffAI/freebuff",
-      "description": "The free coding agent",
-      "language": "TypeScript",
-      "starsThisWeek": 1037,
-      "totalStars": 10227,
-      "ownerAvatarUrl": "https://github.com/CodebuffAI.png",
-      "contributorAvatarUrls": [
-        "https://github.com/jahooma.png",
         "https://github.com/github-actions.png",
-        "https://github.com/brandonkachen.png",
-        "https://github.com/charleslien.png",
-        "https://github.com/venkr.png"
+        "https://github.com/abhinav-m22.png",
+        "https://github.com/thereisnotime.png",
+        "https://github.com/thejesh23.png"
       ],
-      "hook": "Freebuff is an open-source coding agent that works in your terminal. It inspects your project files, writes code changes, and runs commands to complete programming tasks.",
-      "personalization": "Another practical coding agent to benchmark against your current AI development stack."
+      "hook": "This repository teaches practical AI engineering concepts using step-by-step code tutorials. It focuses on building and shipping real systems rather than studying academic theory.",
+      "personalization": "Directly matches your focus on hands-on applied AI engineering and system implementation."
+    },
+    {
+      "fullName": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "description": "Cursor plugin specification and official plugins",
+      "language": "TypeScript",
+      "starsThisWeek": 1503,
+      "totalStars": 6270,
+      "ownerAvatarUrl": "https://github.com/cursor.png",
+      "contributorAvatarUrls": [
+        "https://github.com/cursoragent.png",
+        "https://github.com/poteto.png",
+        "https://github.com/roshansada.png",
+        "https://github.com/ericzakariasson.png",
+        "https://github.com/n2parko.png"
+      ],
+      "hook": "This repository defines the official plugin specification for the Cursor code editor. It includes sample plugins that extend the editor's AI features.",
+      "personalization": "Useful for comparing Cursor's extension model directly with Claude Code's plugin ecosystem."
+    },
+    {
+      "fullName": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "language": "Python",
+      "starsThisWeek": 4309,
+      "totalStars": 39197,
+      "ownerAvatarUrl": "https://github.com/K-Dense-AI.png",
+      "contributorAvatarUrls": [
+        "https://github.com/TKassis.png",
+        "https://github.com/cursoragent.png",
+        "https://github.com/borealBytes.png",
+        "https://github.com/github-actions.png",
+        "https://github.com/claude.png"
+      ],
+      "hook": "This library provides specialized tools and database connectors for AI agents in scientific research. It helps agents query chemistry, biology, and clinical data sources.",
+      "personalization": ""
+    },
+    {
+      "fullName": "ConardLi/garden-skills",
+      "url": "https://github.com/ConardLi/garden-skills",
+      "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
+      "language": "CSS",
+      "starsThisWeek": 1222,
+      "totalStars": 11767,
+      "ownerAvatarUrl": "https://github.com/ConardLi.png",
+      "contributorAvatarUrls": [
+        "https://github.com/github-actions.png",
+        "https://github.com/cursoragent.png",
+        "https://github.com/eltociear.png"
+      ],
+      "hook": "This repository contains a collection of reusable skills for AI agents. These skills help agents build web user interfaces, search documents, and create images.",
+      "personalization": "Provides practical agent skills you can plug into your fullstack web development workflows."
+    },
+    {
+      "fullName": "google/googletest",
+      "url": "https://github.com/google/googletest",
+      "description": "GoogleTest - Google Testing and Mocking Framework",
+      "language": "C++",
+      "starsThisWeek": 441,
+      "totalStars": 39383,
+      "ownerAvatarUrl": "https://github.com/google.png",
+      "contributorAvatarUrls": [
+        "https://github.com/gennadiycivil.png",
+        "https://github.com/derekmauro.png",
+        "https://github.com/kuzkry.png",
+        "https://github.com/copybara-github.png"
+      ],
+      "hook": "This repository contains Google's testing and mocking framework for C++ programs. It helps developers write automated unit tests to verify code quality.",
+      "personalization": ""
+    },
+    {
+      "fullName": "Alishahryar1/free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
+      "language": "Python",
+      "starsThisWeek": 4324,
+      "totalStars": 51925,
+      "ownerAvatarUrl": "https://github.com/Alishahryar1.png",
+      "contributorAvatarUrls": [
+        "https://github.com/cursoragent.png",
+        "https://github.com/dependabot.png",
+        "https://github.com/claude.png",
+        "https://github.com/rishiskhare.png"
+      ],
+      "hook": "This tool lets you run terminal coding agents using free model endpoints. It provides a simple setup to test agents without paying API fees.",
+      "personalization": "Helpful for testing terminal-based coding agents during side project development."
+    },
+    {
+      "fullName": "THU-MAIC/OpenMAIC",
+      "url": "https://github.com/THU-MAIC/OpenMAIC",
+      "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
+      "language": "TypeScript",
+      "starsThisWeek": 2085,
+      "totalStars": 23932,
+      "ownerAvatarUrl": "https://github.com/THU-MAIC.png",
+      "contributorAvatarUrls": [
+        "https://github.com/wyuc.png",
+        "https://github.com/claude.png",
+        "https://github.com/cosarah.png",
+        "https://github.com/YizukiAme.png",
+        "https://github.com/ly-wang19.png"
+      ],
+      "hook": "This platform simulates an interactive classroom using multiple AI agents. The agents act as instructors and students to discuss educational topics together.",
+      "personalization": ""
+    },
+    {
+      "fullName": "abi/screenshot-to-code",
+      "url": "https://github.com/abi/screenshot-to-code",
+      "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
+      "language": "Python",
+      "starsThisWeek": 1909,
+      "totalStars": 76384,
+      "ownerAvatarUrl": "https://github.com/abi.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/clean99.png",
+        "https://github.com/sweep-ai-deprecated.png",
+        "https://github.com/kachbit.png"
+      ],
+      "hook": "This application converts design screenshots into frontend code. It supports popular web technologies such as HTML, Tailwind CSS, React, and Vue.",
+      "personalization": "Speeds up UI prototyping when building frontend interfaces for your fullstack apps."
+    },
+    {
+      "fullName": "openai/codex",
+      "url": "https://github.com/openai/codex",
+      "description": "Lightweight coding agent that runs in your terminal",
+      "language": "Rust",
+      "starsThisWeek": 5510,
+      "totalStars": 120086,
+      "ownerAvatarUrl": "https://github.com/openai.png",
+      "contributorAvatarUrls": [
+        "https://github.com/jif-oai.png",
+        "https://github.com/bolinfest.png",
+        "https://github.com/etraut-openai.png",
+        "https://github.com/aibrahim-oai.png",
+        "https://github.com/pakrym-oai.png"
+      ],
+      "hook": "This project is OpenAI's lightweight coding agent that runs directly in your terminal. It inspects your repository, modifies source files, and executes commands.",
+      "personalization": "A key tool to benchmark when you evaluate terminal AI coding assistants against Claude Code."
+    },
+    {
+      "fullName": "tinyhumansai/openhuman",
+      "url": "https://github.com/tinyhumansai/openhuman",
+      "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
+      "language": "Rust",
+      "starsThisWeek": 2526,
+      "totalStars": 39013,
+      "ownerAvatarUrl": "https://github.com/tinyhumansai.png",
+      "contributorAvatarUrls": [
+        "https://github.com/senamakel.png",
+        "https://github.com/medullabot.png",
+        "https://github.com/claude.png",
+        "https://github.com/graycyrus.png",
+        "https://github.com/M3gA-Mind.png"
+      ],
+      "hook": "This software is a local personal assistant that builds a long-term memory of your work. It coordinates multiple AI agents to perform research and manage workflows.",
+      "personalization": ""
     }
   ],
-  "lastUpdated": "2026-08-20T17:17:54.720Z"
+  "lastUpdated": "2026-08-31T00:11:42.265Z"
 }
