@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Which PCIe power management state is designed for the longest periods of inactivity, offering the highest power savings at the cost of the longest wake-up time?",
+      "question": "Which PCIe power management state is designed for the longest periods of inactivity, offering the highest power savings while requiring the longest wake-up time?",
       "options": [
-        "L1.2",
-        "L0s",
+        "L1.0",
         "L2",
-        "L1.0"
+        "L0s",
+        "L1.1"
       ],
-      "correctIndex": 2,
-      "learning": "In PCIe power management, the L2 state is a deep sleep mode where the device is almost completely powered down, maximizing energy savings during extended periods of inactivity while requiring the longest time to wake up.",
+      "correctIndex": 1,
+      "learning": "In PCIe power management, the L2 state provides the highest power savings for the longest periods of inactivity, but it requires the longest wake-up time to resume activity.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "In Islamic scripture, which specific practice is explicitly identified as prohibiting immorality and wrongdoing?",
+      "question": "In Islamic scripture (Quran 67:2), what is identified as the fundamental reason for the creation of life and death?",
       "options": [
-        "Prayer",
-        "Pilgrimage",
-        "Almsgiving",
-        "Fasting"
+        "To eliminate all physical hardship on Earth",
+        "To experience earthly diversion and amusement",
+        "To establish material wealth and dominance",
+        "To test who is best in deed"
       ],
-      "correctIndex": 0,
-      "learning": "According to Quran 29:45, prayer is highlighted not just as a ritual, but as an active safeguard that prohibits immorality and wrongdoing.",
+      "correctIndex": 3,
+      "learning": "In Islamic teachings, earthly life and death were explicitly created as a divine test of conduct to determine who is best in deeds (Quran 67:2).",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In the Scrum framework, what is the primary motivation for dividing a project into smaller, iterative cycles known as Sprints?",
+      "question": "What is the standard format structure for a User Story within a Scrum Product Backlog?",
       "options": [
-        "To eliminate the need for testing and product reviews",
-        "To reduce the number of team members needed",
-        "To extend the overall timeline of the project",
-        "To allow for more flexibility and quicker adjustments"
+        "[Feature] must be completed by [deadline]",
+        "As a [role], I need [feature], so that [reason]",
+        "Given [context], When [action], Then [result]",
+        "I want [feature] because [reason]"
       ],
-      "correctIndex": 3,
-      "learning": "In the Scrum agile approach, the primary motivation for breaking development into smaller, iterative cycles called Sprints is to allow for greater flexibility and quicker adjustments.",
+      "correctIndex": 1,
+      "learning": "In Scrum, user stories in the Product Backlog follow the standardized structure: 'As a [role], I need [feature], so that [reason]'.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "In Islamic theology, which concept refers to the actual unfolding and occurrence of events in life that can be influenced or altered through sincere supplication (Dua) and human action?",
+      "question": "Comparing the estimated 12 million distinct Arabic words to the 170,000 words in the Oxford English Dictionary, what is the approximate ratio of Arabic words to English words?",
       "options": [
-        "Al-Alim",
-        "Qada’",
-        "Tirmidhi",
-        "Qadr"
+        "71:1",
+        "35:1",
+        "120:1",
+        "54:1"
       ],
-      "correctIndex": 1,
-      "learning": "Qada’ represents the unfolding occurrence of events in a person's life that can be shaped and altered through actions and supplication, whereas Qadr is Allah’s complete, eternal, and preordained plan containing all knowledge of those events.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Contrary to the expectation of the 80/20 Pareto Principle, what approximate percentage of the Quran's text is actually accounted for by its top 20 most frequently occurring words?",
-      "options": [
-        "~80.00%",
-        "~5.25%",
-        "~20.83%",
-        "~50.50%"
-      ],
-      "correctIndex": 2,
-      "learning": "Although the Pareto Principle might suggest that the top 20 words account for the vast majority of the Quran, data analysis shows the top 20 most frequent words actually accumulate to only about 20.83% of the text.",
+      "correctIndex": 0,
+      "learning": "Arabic contains approximately 12 million distinct words compared to 170,000 English words in the Oxford English Dictionary, creating a ratio of roughly 71 Arabic words for every 1 English word.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "Instead of relying solely on memory to retain important ideas and insights, what comprehensive approach ensures long-term retention and value?",
+      "options": [
+        "Memorizing concepts through rote repetition and avoiding digital note-taking",
+        "Re-reading archived notes periodically while keeping them strictly private",
+        "Relying entirely on cognitive offloading without any follow-up review system",
+        "Writing them down, building an active recall system, and sharing them publicly"
+      ],
+      "correctIndex": 3,
+      "learning": "Rather than trusting human memory to retain insights, effective knowledge management requires writing thoughts down, building a system to prompt active recall, and sharing that knowledge publicly.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     }
   ],
-  "fetchedAt": "2026-09-01T00:51:19.609Z"
+  "fetchedAt": "2026-09-01T10:47:53.147Z"
 }
