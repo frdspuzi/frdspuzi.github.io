@@ -16,6 +16,14 @@ const GEMINI_MODELS = [
   'gemini-2.5-flash-lite'
 ];
 const MAX_RETRIES = 3;
+// Vertex AI video enrichment gets its own, more patient retry budget - MAX_RETRIES' 3 attempts
+// with a 3s/6s backoff (9s total) is fine for callGemini's lightweight text-only calls, but real
+// evidence (2026-09-01: a video failed all 3 attempts during a run, most likely hitting Google's
+// own known intermittent PERMISSION_DENIED bug on fileData/file_uri requests - see
+// enrichWithVideoSummary's own comment) shows that's nowhere near enough to ride out even a short
+// transient backend window, so videos fall through to "wait for tomorrow's cross-day retry" more
+// often than necessary. The cost of trying harder here is just a few more seconds of CI time.
+const VIDEO_ENRICHMENT_MAX_RETRIES = 5;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // api.rss2json.com passes through YouTube's own RSS <title>/<description> text nodes verbatim -
@@ -390,9 +398,9 @@ async function enrichWithVideoSummary(video) {
     }
   });
 
-  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+  for (let attempt = 1; attempt <= VIDEO_ENRICHMENT_MAX_RETRIES; attempt++) {
     try {
-      console.log(`\nWatching video via Vertex AI: ${video.title} (${video.url}) — attempt ${attempt}/${MAX_RETRIES}`);
+      console.log(`\nWatching video via Vertex AI: ${video.title} (${video.url}) — attempt ${attempt}/${VIDEO_ENRICHMENT_MAX_RETRIES}`);
 
       const response = await ai.models.generateContent({
         model: 'gemini-3.7-flash',
@@ -439,7 +447,7 @@ You MUST return ONLY a valid JSON object in the exact format below, with nothing
         console.error("Vertex AI returned an empty response, will retry.");
       }
     } catch (err) {
-      console.error(`Vertex AI enrichment failed for ${video.url} (attempt ${attempt}/${MAX_RETRIES}):`, err.message);
+      console.error(`Vertex AI enrichment failed for ${video.url} (attempt ${attempt}/${VIDEO_ENRICHMENT_MAX_RETRIES}):`, err.message);
       // Used to treat any PERMISSION_DENIED as "this specific video is permanently blocked"
       // (uploader disabled embed/download access) and give up immediately, setting
       // enrichmentBlocked so it'd never be retried. That assumption is wrong often enough to be
@@ -455,10 +463,10 @@ You MUST return ONLY a valid JSON object in the exact format below, with nothing
       // selected every day (2026-09-01 investigation). Falling through to the normal per-attempt
       // retry loop below, same as any other error, is the safe default either way.
     }
-    if (attempt < MAX_RETRIES) await sleep(attempt * 3000);
+    if (attempt < VIDEO_ENRICHMENT_MAX_RETRIES) await sleep(attempt * 3000);
   }
 
-  console.error(`Giving up on Vertex AI enrichment for ${video.url} after ${MAX_RETRIES} attempts.`);
+  console.error(`Giving up on Vertex AI enrichment for ${video.url} after ${VIDEO_ENRICHMENT_MAX_RETRIES} attempts - will retry again on a future run.`);
   return { summary: video.summary, timestamps: [] }; // Fallback
 }
 
@@ -595,11 +603,12 @@ async function main() {
       }
     }
 
-    // Drop rather than ship with no timestamps: a video Vertex AI is permanently blocked from
-    // (see enrichWithVideoSummary's own comment) would otherwise sit in the feed indefinitely
-    // with no "Key Moments" section for as long as it stayed in rotation. It never even
-    // occupied a real feed slot from the visitor's perspective, so simply not including it costs
-    // nothing beyond that day's batch being one video smaller.
+    // Drop rather than ship with no timestamps: a video flagged enrichmentBlocked would otherwise
+    // sit in the feed indefinitely with no "Key Moments" section for as long as it stayed in
+    // rotation. As of the 2026-09-01 fix, enrichWithVideoSummary no longer ever sets this flag
+    // (see its own comment - PERMISSION_DENIED turned out to be an unreliable signal for "this
+    // specific video is permanently blocked," not a real distinguishing feature) - this filter is
+    // now dormant, kept only as a defensive backstop in case some future path sets it again.
     const blockedCount = curatedVideos.filter(v => v.enrichmentBlocked).length;
     if (blockedCount > 0) {
       console.log(`Dropping ${blockedCount} newly-curated video(s) Vertex AI is permanently blocked from.`);
@@ -634,13 +643,11 @@ async function main() {
     // video that failed to enrich no longer stays stuck that way for as long as it happens to
     // remain in the rotating 15-video feed.
     //
-    // !v.enrichmentBlocked excludes videos enrichWithVideoSummary gave up on permanently (a real
-    // one: PERMISSION_DENIED, "User does not have access to the video" - Google's backend can't
-    // ingest that specific video's content, typically because the uploader disabled embedding/
-    // download access; it plays fine in a normal browser, but retrying the identical request
-    // will never succeed). Without this, a permanently-blocked video would silently re-fail
-    // every single run for as long as it stays in the rotating feed, burning MAX_RETRIES calls
-    // each time for a result already known in advance.
+    // !v.enrichmentBlocked is a defensive backstop, not a currently-reachable path: as of the
+    // 2026-09-01 fix, enrichWithVideoSummary no longer ever sets this flag (see its own comment -
+    // PERMISSION_DENIED turned out not to reliably mean "this specific video is permanently
+    // blocked," so treating it that way was silently discarding real, eventually-recoverable
+    // videos). Kept here only in case some future path sets it again.
     if (GCP_PROJECT_ID) {
       const needsRetry = filteredExisting.filter(v => Array.isArray(v.timestamps) && v.timestamps.length === 0 && !v.enrichmentBlocked);
       if (needsRetry.length > 0) {
