@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Which PCIe power management state is designed for the longest periods of inactivity, offering the highest power savings while requiring the longest wake-up time?",
+      "question": "During which Scrum ceremony does the development team demonstrate completed work to the Product Owner and discuss improvements for future Sprints?",
       "options": [
-        "L1.0",
-        "L2",
-        "L0s",
-        "L1.1"
+        "Product Backlog Refinement",
+        "Sprint Review",
+        "Sprint Planning",
+        "Daily Scrum"
       ],
       "correctIndex": 1,
-      "learning": "In PCIe power management, the L2 state provides the highest power savings for the longest periods of inactivity, but it requires the longest wake-up time to resume activity.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "In Islamic scripture (Quran 67:2), what is identified as the fundamental reason for the creation of life and death?",
-      "options": [
-        "To eliminate all physical hardship on Earth",
-        "To experience earthly diversion and amusement",
-        "To establish material wealth and dominance",
-        "To test who is best in deed"
-      ],
-      "correctIndex": 3,
-      "learning": "In Islamic teachings, earthly life and death were explicitly created as a divine test of conduct to determine who is best in deeds (Quran 67:2).",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What is the standard format structure for a User Story within a Scrum Product Backlog?",
-      "options": [
-        "[Feature] must be completed by [deadline]",
-        "As a [role], I need [feature], so that [reason]",
-        "Given [context], When [action], Then [result]",
-        "I want [feature] because [reason]"
-      ],
-      "correctIndex": 1,
-      "learning": "In Scrum, user stories in the Product Backlog follow the standardized structure: 'As a [role], I need [feature], so that [reason]'.",
+      "learning": "The Sprint Review is a Scrum ceremony where the team demonstrates completed work to the Product Owner and reflects on the Sprint to discuss improvements for future cycles.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "Comparing the estimated 12 million distinct Arabic words to the 170,000 words in the Oxford English Dictionary, what is the approximate ratio of Arabic words to English words?",
+      "question": "In Islamic belief, what three primary roles define the foundational purpose of human existence?",
       "options": [
-        "71:1",
-        "35:1",
-        "120:1",
-        "54:1"
+        "Worshiping Allah, serving as Earth's caretakers (khalifah), and preparing for the eternal Hereafter",
+        "Conquering foreign territories, accumulating worldly prestige, and preserving ancestral traditions",
+        "Practicing complete asceticism, achieving physical immortality, and discovering esoteric secrets",
+        "Seeking material prosperity, establishing secular empires, and mastering philosophical logic"
       ],
       "correctIndex": 0,
-      "learning": "Arabic contains approximately 12 million distinct words compared to 170,000 English words in the Oxford English Dictionary, creating a ratio of roughly 71 Arabic words for every 1 English word.",
+      "learning": "In Islamic thought, human purpose revolves around three core responsibilities: establishing a relationship of worship and mindfulness with Allah, acting as caretakers (khalifah) of creation and faith, and navigating life as a test in preparation for the eternal Hereafter.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In written Arabic, what term refers to the small markings placed above or below letters to indicate pronunciation and specific vowel sounds?",
+      "options": [
+        "Tashkeel",
+        "Paretto",
+        "Thumma",
+        "Uthmani"
+      ],
+      "correctIndex": 0,
+      "learning": "Tashkeel refers to the small markings placed above or below Arabic letters that indicate pronunciation and specify which vowel sounds to use.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Instead of relying solely on memory to retain important ideas and insights, what comprehensive approach ensures long-term retention and value?",
+      "question": "In the theological distinction between divine decree and life events, which term refers to the actual occurrence and unfolding of events in life that can be influenced by supplication and human action?",
       "options": [
-        "Memorizing concepts through rote repetition and avoiding digital note-taking",
-        "Re-reading archived notes periodically while keeping them strictly private",
-        "Relying entirely on cognitive offloading without any follow-up review system",
-        "Writing them down, building an active recall system, and sharing them publicly"
+        "Al-Alim",
+        "Qadr",
+        "Jami",
+        "Qada’"
       ],
       "correctIndex": 3,
-      "learning": "Rather than trusting human memory to retain insights, effective knowledge management requires writing thoughts down, building a system to prompt active recall, and sharing that knowledge publicly.",
+      "learning": "Qada’ refers to the actual unfolding and occurrence of events in one's life, which can be shaped or altered by actions and sincere supplication (Dua), while Qadr encompasses Allah's complete, preordained knowledge and eternal plan.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What psychological phenomenon describes the paradox where recording information externally causes the brain to immediately forget it?",
+      "options": [
+        "The \"Performance Paradox\" of Cognitive Offloading",
+        "The Spaced Repetition Deficit",
+        "The Ebbinghaus Forgetting Constant",
+        "The Active Recall Dilemma"
+      ],
+      "correctIndex": 0,
+      "learning": "The \"Performance Paradox\" of Cognitive Offloading (or Digital Amnesia) occurs when writing information down or storing it on a device causes the brain to treat it as permission to delete the memory.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     }
   ],
-  "fetchedAt": "2026-09-01T10:47:53.147Z"
+  "fetchedAt": "2026-09-01T11:57:36.493Z"
 }
