@@ -440,19 +440,20 @@ You MUST return ONLY a valid JSON object in the exact format below, with nothing
       }
     } catch (err) {
       console.error(`Vertex AI enrichment failed for ${video.url} (attempt ${attempt}/${MAX_RETRIES}):`, err.message);
-      // PERMISSION_DENIED ("User does not have access to the video") is Google's backend being
-      // unable to ingest this specific video's content for processing - typically the uploader
-      // disabled embedding/download access. The video still plays fine in a normal browser, but
-      // this is not a transient failure: retrying the identical request against the same
-      // permission wall will never succeed, so burning the remaining attempts (and their sleep
-      // backoff) on it is pure waste. enrichmentBlocked below is what lets main()'s "retry
-      // existing entries with empty timestamps" pass tell this apart from a genuine transient
-      // failure worth trying again another day - without it, a permanently-blocked video would
-      // get silently re-attempted (and re-fail) forever, every single run.
-      if (err.message && err.message.includes('PERMISSION_DENIED')) {
-        console.error(`Permission denied is not retryable - giving up on ${video.url} immediately.`);
-        return { summary: video.summary, timestamps: [], enrichmentBlocked: true };
-      }
+      // Used to treat any PERMISSION_DENIED as "this specific video is permanently blocked"
+      // (uploader disabled embed/download access) and give up immediately, setting
+      // enrichmentBlocked so it'd never be retried. That assumption is wrong often enough to be
+      // dangerous: Google's own generateContent backend has real, dated community reports
+      // (discuss.ai.google.dev, starting ~2026-08-13) of "403 PERMISSION_DENIED: The caller does
+      // not have permission" on fileData/file_uri requests - this exact call shape - as a
+      // *platform-side*, transient bug, with the identical request succeeding again later with no
+      // client-side change. There's no reliable way to tell that apart from a genuine per-video
+      // block from the message alone, and misclassifying the former as the latter means a video
+      // that was simply unlucky enough to hit a transient window gets permanently blacklisted from
+      // the feed instead of naturally succeeding on a later attempt - confirmed as the real cause
+      // of the YouTube feed going a week+ with zero new videos despite fresh candidates being
+      // selected every day (2026-09-01 investigation). Falling through to the normal per-attempt
+      // retry loop below, same as any other error, is the safe default either way.
     }
     if (attempt < MAX_RETRIES) await sleep(attempt * 3000);
   }
