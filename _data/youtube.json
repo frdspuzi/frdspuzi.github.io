@@ -1,33 +1,73 @@
 {
   "videos": [
     {
-      "title": "The Signal Layer: What to Build When Anything Can Be Built — Lena Hall, Akamai",
-      "url": "https://www.youtube.com/watch?v=1KOdiGgMtpY",
-      "videoId": "1KOdiGgMtpY",
+      "title": "The End of the Static Screen: Architecting Intent-Driven UX — Gus Iwanaga, commercetools",
+      "url": "https://www.youtube.com/watch?v=QrMcNe2jjt8",
+      "videoId": "QrMcNe2jjt8",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "When AI makes generating code virtually free, the real skill shifts from writing syntax to deciding what is actually worth building. Akamai's Lena Hall breaks down how engineers can maintain leverage and deliver genuine impact in an AI-saturated market.",
-      "dateAdded": "2026-09-01T11:57:48.657Z",
+      "summary": "As AI shifts user interfaces from static layouts to generative, intent-driven experiences, software engineers face unpredictable outputs. This talk breaks down how to architect reliable UI systems that stay cohesive even when AI models drift.",
+      "dateAdded": "2026-09-01T23:39:03.902Z",
       "timestamps": []
     },
     {
-      "title": "Creator of Scala: Comparing Languages And How AI Will Impact Them | Martin Odersky",
-      "url": "https://www.youtube.com/watch?v=LdN4sPWM-WY",
-      "videoId": "LdN4sPWM-WY",
+      "title": "Agent Spending Without Controls — Rodrigo Coelho & Pranav Maheshwari, Edge & Node",
+      "url": "https://www.youtube.com/watch?v=ZyGMqdIpPoE",
+      "videoId": "ZyGMqdIpPoE",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Giving AI agents access to paid APIs and financial tools opens up powerful capabilities, but without proper controls, costs can spiral instantly. Learn how engineers build metered endpoints and execution boundaries for autonomous agents.",
+      "dateAdded": "2026-09-01T23:39:03.902Z",
+      "timestamps": []
+    },
+    {
+      "title": "Challenges of mixing object oriented and functional features",
+      "url": "https://www.youtube.com/shorts/p_q7OONp4mQ",
+      "videoId": "p_q7OONp4mQ",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Scala creator Martin Odersky dives into language design tradeoffs and how modern AI tools are reshaping how we write code. It's an insightful masterclass on understanding software abstractions at a deeper level early in your engineering career.",
-      "dateAdded": "2026-09-01T11:57:48.657Z",
+      "summary": "Martin Odersky breaks down the trade-offs of combining object-oriented and functional programming in production systems. Understanding these design tensions helps fullstack developers write cleaner, more maintainable code across any language.",
+      "dateAdded": "2026-09-01T23:39:03.902Z",
       "timestamps": []
     },
     {
-      "title": "How to build with Gemini 3.5 Transcribe",
-      "url": "https://www.youtube.com/watch?v=PWPsZssgfDo",
-      "videoId": "PWPsZssgfDo",
+      "title": "Agentic approaches to processing long videos with Gemini",
+      "url": "https://www.youtube.com/shorts/HyfhaGNVKUA",
+      "videoId": "HyfhaGNVKUA",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Google DeepMind's Thor Schaeff walks through integrating real-time multilingual transcription APIs directly into production web applications. It provides practical code examples that junior fullstack developers can immediately implement in their own projects.",
-      "dateAdded": "2026-09-01T11:57:48.657Z",
+      "summary": "Processing long multimodal inputs can destroy your LLM budget. This quick breakdown shows how using agentic video chunking with Gemini reduces token consumption and slashes latency in production.",
+      "dateAdded": "2026-09-01T23:39:03.902Z",
+      "timestamps": []
+    },
+    {
+      "title": "Agentic video understanding in Gemini",
+      "url": "https://www.youtube.com/watch?v=ytjgy30Cono",
+      "videoId": "ytjgy30Cono",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Learn how Google DeepMind implements agentic video processing in Gemini 3.5/3.7 Flash models. This technical walk-through demonstrates how to parse long-form video content efficiently while maintaining high retrieval accuracy.",
+      "dateAdded": "2026-09-01T23:39:03.902Z",
+      "timestamps": []
+    },
+    {
+      "title": "Apa hak kita jika loan kena reject?",
+      "url": "https://www.youtube.com/shorts/-pFdvOk2kKY",
+      "videoId": "-pFdvOk2kKY",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "When a bank rejects your loan application in Malaysia, you don't have to be left in the dark. Financial Faiz explains your rights as a borrower and how different financial institutions evaluate risk profiles.",
+      "dateAdded": "2026-09-01T23:39:03.902Z",
+      "timestamps": []
+    },
+    {
+      "title": "Jangan pinjamkan nama untuk joint loan?",
+      "url": "https://www.youtube.com/shorts/iXI8zU2msgU",
+      "videoId": "iXI8zU2msgU",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Co-signing a joint loan for family members might seem like a noble gesture, but it severely limits your own financial freedom. This clip highlights how joint liabilities permanently affect your credit score and future home loan eligibility.",
+      "dateAdded": "2026-09-01T23:39:03.902Z",
       "timestamps": []
     },
     {
@@ -36,45 +76,9 @@
       "videoId": "CykKkuNrwK0",
       "channel": "Financial Faiz Podcast",
       "category": "Finance",
-      "summary": "Learn how credit cards, BNPL schemes, and hidden commitments can quickly derail your early career savings and financial freedom in Malaysia. Financial experts break down practical rules to keep your debt profile clean before applying for major financing.",
-      "dateAdded": "2026-09-01T11:57:48.657Z",
+      "summary": "Navigating Buy Now Pay Later schemes and credit card limits is a major trap for early-career professionals in Malaysia. Financial experts break down how compounding commitments derail long-term goals like property ownership and investments.",
+      "dateAdded": "2026-09-01T23:39:03.902Z",
       "timestamps": []
-    },
-    {
-      "title": "#113 | Never Quit On Your Goals (Leon Jala)",
-      "url": "https://www.youtube.com/watch?v=5sV3gGhwGNE",
-      "videoId": "5sV3gGhwGNE",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "PEMANDU CEO Leon Jala introduces the DMS framework for maintaining discipline and breaking through career plateaus after initial motivation fades. He also reflects on rebounding from the worst performance review of his career with actionable leadership lessons.",
-      "dateAdded": "2026-09-01T11:57:48.657Z",
-      "timestamps": []
-    },
-    {
-      "title": "#112 | Just Do It (Leon Jala)",
-      "url": "https://www.youtube.com/watch?v=9o5fR1xq3Hk",
-      "videoId": "9o5fR1xq3Hk",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "Stepping into a high-stakes leadership role doesn't require having all the answers—it demands the humility to listen, embrace imperfection, and stay anchored to a clear purpose. Discover essential lessons on overcoming imposter syndrome, leading from the ground up, and navigating the rush toward AI readiness without losing your core mission. If you want actionable wisdom on managing major career transitions with confidence and clarity, this episode is a must-watch.",
-      "dateAdded": "2026-08-23T03:26:45.861Z",
-      "timestamps": [
-        {
-          "startTime": 307,
-          "endTime": 450,
-          "topic": "Why overcoming fear of imperfection is a leader's superpower"
-        },
-        {
-          "startTime": 522,
-          "endTime": 700,
-          "topic": "The value of listening on the ground before prescribing solutions"
-        },
-        {
-          "startTime": 895,
-          "endTime": 1180,
-          "topic": "Grounding AI readiness and technological breakthroughs in core purpose"
-        }
-      ]
     },
     {
       "title": "\"RCI Tabung Haji tak panggil saya, jadi saya cerita di sini\" - Bekas Ketua Audit Negara",
@@ -82,8 +86,18 @@
       "videoId": "dYrN9NmlzMo",
       "channel": "BFM 89.9",
       "category": "General Ideas",
-      "summary": "The former Auditor-General of Malaysia provides a rare, insider account of auditing Tabung Haji and handling financial compliance at the highest levels of governance. It offers crucial context for anyone interested in institutional integrity and Islamic financial oversight in Malaysia.",
-      "dateAdded": "2026-09-01T11:57:48.658Z",
+      "summary": "Former Auditor-General of Malaysia provides first-hand details regarding the controversial 2017/2018 audit of Lembaga Tabung Haji. An essential watch for understanding financial governance and accountability in Malaysia's largest Islamic fund.",
+      "dateAdded": "2026-09-01T23:39:03.903Z",
+      "timestamps": []
+    },
+    {
+      "title": "Why You Can't Afford a Normal Life Anymore | Imam Tom Facchine",
+      "url": "https://www.youtube.com/shorts/5ssDQjtwECU",
+      "videoId": "5ssDQjtwECU",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Imam Tom Facchine analyzes the spiritual and psychological toll of modern debt-driven economic systems. He offers an Islamic perspective on staying grounded, living within means, and preserving sanity in a high-cost environment.",
+      "dateAdded": "2026-09-01T23:39:03.903Z",
       "timestamps": []
     },
     {
@@ -92,8 +106,8 @@
       "videoId": "HGK4HmQEUIU",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Dr. Omar Suleiman explores the Prophetic warnings regarding the end-times struggle to maintain purely Halal earnings and the loss of barakah in modern wealth. It provides essential spiritual and practical principles for keeping your career and income ethically grounded.",
-      "dateAdded": "2026-09-01T11:57:48.658Z",
+      "summary": "Dr. Omar Suleiman explores the Prophetic warnings about modern wealth, questionable earnings, and the erosion of barakah in our income. A profound check for professionals striving to keep their career and earnings completely halal.",
+      "dateAdded": "2026-09-01T23:39:03.903Z",
       "timestamps": []
     },
     {
@@ -102,28 +116,28 @@
       "videoId": "xVuaf-q6sDM",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "A poignant reminder that as you rush to build your career, the people around you—especially aging parents—are also on a ticking clock. It offers a vital reality check on honoring relationships before time runs out.",
-      "dateAdded": "2026-09-01T11:57:48.658Z",
+      "summary": "It's easy to obsess over career milestones while delaying spiritual and family commitments. Dr. Omar Suleiman delivers a moving reminder that the time we have with aging parents and loved ones is limited, urging immediate action over future promises.",
+      "dateAdded": "2026-09-01T23:39:03.903Z",
       "timestamps": []
     },
     {
-      "title": "Abdullah ibn Abi Umayyah (ra): He Shouted Over the Prophet ﷺ | The Firsts | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=lZWDn2Xytr8",
-      "videoId": "lZWDn2Xytr8",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Discover the incredible story of a companion who spent years vehemently opposing the Prophet ﷺ before undergoing a transformative journey of redemption and sacrifice. It is a powerful reminder that sincerity can overcome past mistakes and reshape one's character.",
-      "dateAdded": "2026-09-01T11:57:48.658Z",
-      "timestamps": []
-    },
-    {
-      "title": "Why performant code matters (but gets widely ignored), with Casey Muratori",
-      "url": "https://www.youtube.com/watch?v=8xBJPa_480Q",
-      "videoId": "8xBJPa_480Q",
+      "title": "All devs should learn Assembly",
+      "url": "https://www.youtube.com/shorts/Ze7Cmz2i9QQ",
+      "videoId": "Ze7Cmz2i9QQ",
       "channel": "The Pragmatic Engineer",
       "category": "Tech & Engineering",
-      "summary": "Renowned performance engineer Casey Muratori joins The Pragmatic Engineer to explain why hardware performance fundamentals are being ignored and how to fix your code habits. This episode delivers foundational engineering wisdom that will make you a significantly sharper developer.",
-      "dateAdded": "2026-09-01T11:57:48.658Z",
+      "summary": "Casey Muratori argues why understanding hardware execution and low-level mechanics makes you a vastly better engineer. Gaining intuition for underlying computer architecture helps junior developers debug higher-level abstractions far faster.",
+      "dateAdded": "2026-09-01T23:39:03.903Z",
+      "timestamps": []
+    },
+    {
+      "title": "If you've been at the same company 3+ years, you're already in a box",
+      "url": "https://www.youtube.com/shorts/kXEtGhaiBQM",
+      "videoId": "kXEtGhaiBQM",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "Staying too comfortable early in your engineering career can stunt your professional growth. CTO Ian Miell explains why staying pushed outside your comfort zone is essential to building high-level system architectural thinking.",
+      "dateAdded": "2026-09-01T23:39:03.903Z",
       "timestamps": []
     },
     {
@@ -132,40 +146,10 @@
       "videoId": "aVVA3gP3M9U",
       "channel": "Beyond Coding",
       "category": "Tech & Engineering",
-      "summary": "Engineering leader Mallika Rao breaks down how modern developers can rapidly develop architectural judgment now that AI can write raw code implementations. It offers a concrete blueprint for leveling up from a junior syntax writer to a high-impact technical thinker.",
-      "dateAdded": "2026-09-01T11:57:48.658Z",
-      "timestamps": []
-    },
-    {
-      "title": "EP11 #KenaSoal | Harapan Belanjawan 2027, Had Umur Ahli Politik, Semangat Patriotik Malaysia",
-      "url": "https://www.youtube.com/watch?v=nO9vLmrmq_U",
-      "videoId": "nO9vLmrmq_U",
-      "channel": "Keluar Sekejap",
-      "category": "General Ideas",
-      "summary": "Khairy Jamaluddin and Shahril Hamdan break down the structural economic challenges facing Malaysia and what policy shifts are needed in upcoming national budgets. It provides sharp, accessible insights into Malaysia's macroeconomic trajectory.",
-      "dateAdded": "2026-09-01T11:57:48.658Z",
-      "timestamps": []
-    },
-    {
-      "title": "LIVE: Uncle Bob on Software Fundamentals in the Age of AI",
-      "url": "https://www.youtube.com/watch?v=zcLPGC-tvgk",
-      "videoId": "zcLPGC-tvgk",
-      "channel": "Matt Pocock",
-      "category": "Tech & Engineering",
-      "summary": "Uncle Bob and Matt Pocock debate how traditional software craft, TDD, and architectural principles survive alongside modern AI coding agents. It is required viewing for a junior developer looking to leverage AI without compromising code quality.",
-      "dateAdded": "2026-09-01T11:57:48.658Z",
-      "timestamps": []
-    },
-    {
-      "title": "New Skills! v1.2 brings /wait-what, /writing-for-agents, and fixes /grill-me",
-      "url": "https://www.youtube.com/watch?v=gaDdrDdczO4",
-      "videoId": "gaDdrDdczO4",
-      "channel": "Matt Pocock",
-      "category": "Tech & Engineering",
-      "summary": "Explore cutting-edge workflows for configuring AI coding agents and streamlining CLI developer tooling. Matt Pocock demonstrates custom prompt skills that make coding assistants significantly more accurate and practical in day-to-day engineering.",
-      "dateAdded": "2026-09-01T11:57:48.658Z",
+      "summary": "Now that AI tooling handles basic boilerplate implementation, senior engineering is all about technical judgment and architecture. Big tech engineering leader Mallika Rao maps out how junior devs can intentionally cultivate judgment early.",
+      "dateAdded": "2026-09-01T23:39:03.903Z",
       "timestamps": []
     }
   ],
-  "lastUpdated": "2026-09-01T12:10:06.698Z"
+  "lastUpdated": "2026-09-01T23:53:50.855Z"
 }
