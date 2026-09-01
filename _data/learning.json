@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "During which Scrum ceremony does the development team demonstrate completed work to the Product Owner and discuss improvements for future Sprints?",
+      "question": "What psychological phenomenon describes the tendency of the brain to immediately forget information once it is recorded or stored digitally?",
       "options": [
-        "Product Backlog Refinement",
-        "Sprint Review",
-        "Sprint Planning",
-        "Daily Scrum"
+        "The \"Performance Paradox\" of Cognitive Offloading",
+        "The Spaced Repetition Fallacy",
+        "The Active Recall Deficit",
+        "The Retrospective Filing Error"
       ],
-      "correctIndex": 1,
-      "learning": "The Sprint Review is a Scrum ceremony where the team demonstrates completed work to the Product Owner and reflects on the Sprint to discuss improvements for future cycles.",
+      "correctIndex": 0,
+      "learning": "The 'Performance Paradox' of Cognitive Offloading (or Digital Amnesia) occurs because the brain treats writing something down or storing it on a device as permission to delete that information from memory.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "What standard structure is used to format a User Story within a Scrum Product Backlog?",
+      "options": [
+        "As a [role], I need [feature], so that [reason]",
+        "I want [feature], because [reason]",
+        "When [role] performs [action], then [outcome] occurs",
+        "[Feature] should be implemented by [date]"
+      ],
+      "correctIndex": 0,
+      "learning": "In Scrum, user stories in the Product Backlog are structured using the standard template: 'As a [role], I need [feature], so that [reason].'",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "In Islamic belief, what three primary roles define the foundational purpose of human existence?",
+      "question": "In Islamic philosophy, beyond performing standard rituals, which internal quality does worship specifically foster to build self-restraint and deter wrongdoing?",
       "options": [
-        "Worshiping Allah, serving as Earth's caretakers (khalifah), and preparing for the eternal Hereafter",
-        "Conquering foreign territories, accumulating worldly prestige, and preserving ancestral traditions",
-        "Practicing complete asceticism, achieving physical immortality, and discovering esoteric secrets",
-        "Seeking material prosperity, establishing secular empires, and mastering philosophical logic"
+        "Ijma",
+        "Qisas",
+        "Sunnah",
+        "Taqwa"
       ],
-      "correctIndex": 0,
-      "learning": "In Islamic thought, human purpose revolves around three core responsibilities: establishing a relationship of worship and mindfulness with Allah, acting as caretakers (khalifah) of creation and faith, and navigating life as a test in preparation for the eternal Hereafter.",
+      "correctIndex": 3,
+      "learning": "Worship in Islam extends beyond mere ritual performance; its foundational purpose is to cultivate taqwa (mindfulness and awareness of Allah), which builds self-restraint and purifies human intentions.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In written Arabic, what term refers to the small markings placed above or below letters to indicate pronunciation and specific vowel sounds?",
+      "question": "What primary trade-off occurs when transitioning a PCIe device into deeper power-saving states such as L1.2 or L2?",
       "options": [
-        "Tashkeel",
-        "Paretto",
-        "Thumma",
-        "Uthmani"
+        "Energy savings are maximized, but the device requires a significantly longer wake-up time to resume activity.",
+        "The link remains fully active, but voltage output is permanently decreased.",
+        "Data transmission speeds increase, but the device generates higher operational heat.",
+        "Wake-up delays are eliminated, but data packet loss becomes significantly higher."
       ],
       "correctIndex": 0,
-      "learning": "Tashkeel refers to the small markings placed above or below Arabic letters that indicate pronunciation and specify which vowel sounds to use.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
+      "learning": "While entering deeper PCIe power-saving states like L1.2 and L2 maximizes energy conservation, it introduces the challenge of increased wake-up delays before the device can resume active operation.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     },
     {
-      "question": "In the theological distinction between divine decree and life events, which term refers to the actual occurrence and unfolding of events in life that can be influenced by supplication and human action?",
+      "question": "What concept refers to Allah's complete, preordained plan and eternal knowledge of everything that will ever happen?",
       "options": [
-        "Al-Alim",
-        "Qadr",
         "Jami",
-        "Qada’"
+        "Qadr",
+        "Al-Alim",
+        "Qada'"
       ],
-      "correctIndex": 3,
-      "learning": "Qada’ refers to the actual unfolding and occurrence of events in one's life, which can be shaped or altered by actions and sincere supplication (Dua), while Qadr encompasses Allah's complete, preordained knowledge and eternal plan.",
+      "correctIndex": 1,
+      "learning": "Qadr represents Allah's complete and eternal plan encompassing everything that will ever happen, whereas Qada' refers to the actual unfolding of events in life that can be altered by supplication and human actions.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
-    },
-    {
-      "question": "What psychological phenomenon describes the paradox where recording information externally causes the brain to immediately forget it?",
-      "options": [
-        "The \"Performance Paradox\" of Cognitive Offloading",
-        "The Spaced Repetition Deficit",
-        "The Ebbinghaus Forgetting Constant",
-        "The Active Recall Dilemma"
-      ],
-      "correctIndex": 0,
-      "learning": "The \"Performance Paradox\" of Cognitive Offloading (or Digital Amnesia) occurs when writing information down or storing it on a device causes the brain to treat it as permission to delete the memory.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
     }
   ],
-  "fetchedAt": "2026-09-01T11:57:36.493Z"
+  "fetchedAt": "2026-09-01T23:38:43.794Z"
 }
