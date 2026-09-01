@@ -1,6 +1,96 @@
 {
   "videos": [
     {
+      "title": "The Signal Layer: What to Build When Anything Can Be Built — Lena Hall, Akamai",
+      "url": "https://www.youtube.com/watch?v=1KOdiGgMtpY",
+      "videoId": "1KOdiGgMtpY",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "As AI makes writing code cheaper and faster, what actually differentiates valuable software? Lena Hall breaks down how engineers can focus on real leverage and production impact in an era of agentic abundance.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
+    },
+    {
+      "title": "Top programming languages to learn in 2026",
+      "url": "https://www.youtube.com/shorts/F_iuERNaP04",
+      "videoId": "F_iuERNaP04",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Get quick, high-signal perspectives from the creator of Scala on which programming languages are worth investing time in for modern engineering. A great quick watch for junior devs charting their learning roadmap.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
+    },
+    {
+      "title": "Creator of Scala: Comparing Languages And How AI Will Impact Them | Martin Odersky",
+      "url": "https://www.youtube.com/watch?v=LdN4sPWM-WY",
+      "videoId": "LdN4sPWM-WY",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Martin Odersky, creator of Scala, compares language architectures like Rust, Zig, and Python while analyzing how AI is transforming programming. It offers foundational clarity for junior devs wanting to understand language design choices.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
+    },
+    {
+      "title": "How to build with Gemini 3.5 Transcribe",
+      "url": "https://www.youtube.com/watch?v=PWPsZssgfDo",
+      "videoId": "PWPsZssgfDo",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Learn how to build and integrate real-time voice and transcription features using Google's latest Gemini APIs. This hands-on walkthrough shows fullstack developers how to handle multilingual speech, custom vocabulary, and live interactions.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
+    },
+    {
+      "title": "Apa hak kita jika loan kena reject?",
+      "url": "https://www.youtube.com/shorts/-pFdvOk2kKY",
+      "videoId": "-pFdvOk2kKY",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Ever wondered why Malaysian banks reject financing applications and what your rights are in response? This quick breakdown explains how banks assess risk so you can navigate loan approvals smarter.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
+    },
+    {
+      "title": "Jangan pinjamkan nama untuk joint loan?",
+      "url": "https://www.youtube.com/shorts/iXI8zU2msgU",
+      "videoId": "iXI8zU2msgU",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Lending your name for a family member's joint loan can quietly wreck your credit score and future borrowing capacity. This short provides a crucial reality check on managing debt liabilities in Malaysia.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
+    },
+    {
+      "title": "BNPL boleh ganti kad kredit?",
+      "url": "https://www.youtube.com/shorts/0dvgIB3lgUI",
+      "videoId": "0dvgIB3lgUI",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Get a clear breakdown of the functional differences between Buy Now Pay Later services and credit cards in Malaysia. It helps you understand credit limits, overseas utility, and how to avoid easy debt traps.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
+    },
+    {
+      "title": "[S01:E22]  Credit Card vs BNPL:  Mana sebenarnya lebih bahaya? - Norliza Rahmat & Fairuz Izwan",
+      "url": "https://www.youtube.com/watch?v=CykKkuNrwK0",
+      "videoId": "CykKkuNrwK0",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Managing commitments on an entry-level salary is a common challenge for young Malaysian professionals. This podcast episode breaks down the real dangers of BNPL, credit cards, and car loans to help you build solid financial health early.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
+    },
+    {
+      "title": "#113 | Never Quit On Your Goals (Leon Jala)",
+      "url": "https://www.youtube.com/watch?v=5sV3gGhwGNE",
+      "videoId": "5sV3gGhwGNE",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "Leon Jala shares actionable career frameworks for sustaining momentum and navigating harsh 360-degree performance reviews. It is a motivating, grounded discussion on building professional resilience and discipline.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
+    },
+    {
       "title": "#112 | Just Do It (Leon Jala)",
       "url": "https://www.youtube.com/watch?v=9o5fR1xq3Hk",
       "videoId": "9o5fR1xq3Hk",
@@ -27,359 +117,55 @@
       ]
     },
     {
-      "title": "The Agent Behind the Curtain: Building the Oz Cloud Agent Platform — Safia Abdalla, Warp",
-      "url": "https://www.youtube.com/watch?v=L173Z8DpaJg",
-      "videoId": "L173Z8DpaJg",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "AI coding has outgrown single prompts and local laptops, demanding dedicated cloud platforms that coordinate specialized agent swarms behind the scenes. In this talk, Warp's Safia Abdalla breaks down how they architected 'Oz'—their cloud agent platform—to seamlessly handle sandboxing, multi-harness orchestration, and automated PR lifecycles while shielding developers from infrastructure complexity. Watch this if you want a concrete, battle-tested blueprint for turning AI agents into a scalable, real-world software workshop.",
-      "dateAdded": "2026-08-23T03:26:45.860Z",
-      "timestamps": [
-        {
-          "startTime": 401,
-          "endTime": 510,
-          "topic": "Why Real Engineering Requires Multi-Agent Orchestration Beyond a Single Prompt"
-        },
-        {
-          "startTime": 672,
-          "endTime": 790,
-          "topic": "Automating the Open Source SDLC Loop with Autonomous Review Agents"
-        },
-        {
-          "startTime": 873,
-          "endTime": 1050,
-          "topic": "From 'Software Factory' to 'Software Workshop': Designing Systems for Human-Centric Craft"
-        }
-      ]
-    },
-    {
-      "title": "Build a live translation broadcast app with the Gemini Live API and LiveKit",
-      "url": "https://www.youtube.com/watch?v=kN_iMEAi1dw",
-      "videoId": "kN_iMEAi1dw",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Imagine broadcasting a live presentation and instantly streaming synchronized audio and subtitles in dozens of languages to audience members' phones in real time. This hands-on walkthrough reveals how to build and deploy your own open-source live translation app using the Gemini Live API, LiveKit, and Google Cloud Run. Watch this video to learn the exact architecture, code setup, and deployment workflow needed to bridge language barriers effortlessly in your own projects.",
-      "dateAdded": "2026-08-23T03:26:45.861Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 63,
-          "topic": "Real-time multilingual translation demo in action"
-        },
-        {
-          "startTime": 372,
-          "endTime": 530,
-          "topic": "Architecture walkthrough and Gemini Live API integration"
-        },
-        {
-          "startTime": 535,
-          "endTime": 680,
-          "topic": "Deploying the app to Google Cloud Run and scaling limits"
-        }
-      ]
-    },
-    {
-      "title": "Hands on with Gemini 3.7 Flash",
-      "url": "https://www.youtube.com/watch?v=kacf2bib-X0",
-      "videoId": "kacf2bib-X0",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Discover how engineering leaders from Box, Databricks, and Emergent are revolutionizing AI architecture by trading oversized frontier models for hyper-efficient 'minimum viable models' like Gemini 3.7 Flash. Slashing token costs and latency by 10x unlocks massive enterprise scale and sophisticated multi-agent workflows without blowing through engineering budgets. Watch this panel to see the exact operational blueprints top tech teams use to deploy production-ready AI agents today.",
-      "dateAdded": "2026-08-23T03:26:45.861Z",
-      "timestamps": [
-        {
-          "startTime": 24,
-          "endTime": 70,
-          "topic": "The Enterprise Shift: Moving from AI Hype to Scalable, Practical Workflows"
-        },
-        {
-          "startTime": 104,
-          "endTime": 146,
-          "topic": "The 'Minimum Viable Model' Concept: Eliminating Token Cost Waste"
-        },
-        {
-          "startTime": 177,
-          "endTime": 242,
-          "topic": "Powering Multi-Agent Architectures and Fast Intent Classification"
-        }
-      ]
-    },
-    {
-      "title": "Strategi baru Secret Recipe",
-      "url": "https://www.youtube.com/shorts/hQUawp_qcAY",
-      "videoId": "hQUawp_qcAY",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Discover how legacy F&B giant Secret Recipe successfully reinvents itself for the younger generation without losing its core identity. Group CEO Patrick Sim shares their modern playbook, combining operational automation with viral character collaborations like Bichi Mao and brand partnerships with ZUS Coffee. Watch this breakdown to learn practical strategies for keeping a classic brand fresh and competitive in a fast-changing market.",
-      "dateAdded": "2026-08-23T03:26:45.861Z",
-      "timestamps": [
-        {
-          "startTime": 9,
-          "endTime": 40,
-          "topic": "Modernizing Operations and Preserving Core Brand Identity"
-        },
-        {
-          "startTime": 44,
-          "endTime": 69,
-          "topic": "Engaging Gen Z with Trendy Collaborations and Merchandise"
-        },
-        {
-          "startTime": 69,
-          "endTime": 96,
-          "topic": "Co-Branding and Navigating Beverage Industry Competition"
-        }
-      ]
-    },
-    {
-      "title": "Franchise dalam mall mahal?",
-      "url": "https://www.youtube.com/shorts/FoPrxxghOdo",
-      "videoId": "FoPrxxghOdo",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Ever wondered why running a restaurant in a top-tier shopping mall is a brutal financial battle? The CEO of Secret Recipe breaks down the hidden costs eating away at F&B profits—from mandatory concept renovations every few years to malls taking a direct cut of your turnover. Watch this behind-the-scenes breakdown to understand the harsh economics of mall retail and how top brands fight to preserve their margins.",
-      "dateAdded": "2026-08-23T03:26:45.861Z",
-      "timestamps": [
-        {
-          "startTime": 16,
-          "endTime": 56,
-          "topic": "The hidden expenses and mandatory renovation cycles of mall outlets"
-        },
-        {
-          "startTime": 64,
-          "endTime": 88,
-          "topic": "How malls take a commission on sales versus base rental"
-        },
-        {
-          "startTime": 98,
-          "endTime": 142,
-          "topic": "Battling shrinking margins amid rising supply and tax costs"
-        }
-      ]
-    },
-    {
-      "title": "Agent Frameworks Considered Harmful — Rémi Louf, .txt",
-      "url": "https://www.youtube.com/watch?v=KHudyx5wW3U",
-      "videoId": "KHudyx5wW3U",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Most AI agent frameworks make building autonomous systems needlessly fragile by burying logic in complex graph code instead of treating agents like standard background operating system processes. In this talk, dottxt CEO Rémi Louf shares how replacing heavy agent libraries with an event-driven, content-addressed kernel architecture makes agents auditable, reproducible, and truly reliable. If you are struggling with flaky agent orchestration or debugging nightmare pipelines, this presentation provides the exact blueprint for fixing your agent infrastructure.",
-      "dateAdded": "2026-08-23T03:26:45.860Z",
-      "timestamps": [
-        {
-          "startTime": 443,
-          "endTime": 510,
-          "topic": "Why coding agents in code is harmful vs. declarative definitions"
-        },
-        {
-          "startTime": 466,
-          "endTime": 515,
-          "topic": "Event-driven orchestration: Eliminating graph complexity"
-        },
-        {
-          "startTime": 728,
-          "endTime": 820,
-          "topic": "Building content-addressed prompts and auditable AI execution"
-        }
-      ]
-    },
-    {
-      "title": "What To Do With Your Life",
-      "url": "https://www.youtube.com/watch?v=fEMHMd7fovM",
-      "videoId": "fEMHMd7fovM",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "Asking yourself what to do with your life is too vague to be useful—real clarity only comes when you break life into specific domains and define what you strictly do not want just as clearly as what you desire. This video breaks down an actionable, 3-step framework combining unconstrained dream mapping and the famous 5-Year Odyssey Plan to turn abstract existential dread into a tangible direction. If you feel stuck at a career or personal crossroads, this step-by-step roadmap will give you the practical clarity you need to move forward with confidence.",
-      "dateAdded": "2026-08-23T03:26:45.860Z",
-      "timestamps": [
-        {
-          "startTime": 102,
-          "endTime": 225,
-          "topic": "Step 1: Mapping Life Areas and Defining What You Want"
-        },
-        {
-          "startTime": 631,
-          "endTime": 760,
-          "topic": "Step 2: Unconstrained Dream Mapping (Have, Do, Learn, Experience)"
-        },
-        {
-          "startTime": 878,
-          "endTime": 975,
-          "topic": "Step 3: The 5-Year Odyssey Plan to Test Alternative Life Paths"
-        }
-      ]
-    },
-    {
-      "title": "Urus duit guna TNG eWallet",
-      "url": "https://www.youtube.com/shorts/CloktpapAqM",
-      "videoId": "CloktpapAqM",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Managing your finances at 35 the exact same way you did in your 20s is a massive financial trap. Discover the three distinct life stages—Save, Grow, and Retire—and learn how to leverage simple tools right inside Touch 'n Go eWallet to secure your financial future today.",
-      "dateAdded": "2026-08-24T22:13:46.058Z",
-      "timestamps": [
-        {
-          "startTime": 24,
-          "endTime": 44,
-          "topic": "Phase 1 (Ages 18-25): Building a Strong Foundation Through Saving"
-        },
-        {
-          "startTime": 45,
-          "endTime": 116,
-          "topic": "Phase 2 (Ages 25-35): Shifting Mindset to Investment and Growth"
-        },
-        {
-          "startTime": 117,
-          "endTime": 150,
-          "topic": "Phase 3 (Ages 35+): Harnessing Compound Interest for Retirement"
-        }
-      ]
-    },
-    {
-      "title": "F1 kembali ke Sepang",
-      "url": "https://www.youtube.com/shorts/1uk_YWySiF4",
-      "videoId": "1uk_YWySiF4",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Ever wondered why Malaysia pulled the plug on hosting Formula 1 at the iconic Sepang Circuit? Discover the staggering financial costs, steep attendance drop-offs, and intense regional competition that made the Grand Prix unsustainable. Watch this breakdown to uncover the hard numbers and business reality behind F1 racing in Malaysia.",
-      "dateAdded": "2026-08-24T22:13:46.058Z",
-      "timestamps": [
-        {
-          "startTime": 24,
-          "endTime": 60,
-          "topic": "The massive financial costs of hosting Formula 1 in Sepang"
-        },
-        {
-          "startTime": 60,
-          "endTime": 94,
-          "topic": "Sharp drop in spectator attendance and ticket demand"
-        },
-        {
-          "startTime": 95,
-          "endTime": 138,
-          "topic": "Regional competition from Singapore GP and Sepang's design legacy"
-        }
-      ]
-    },
-    {
-      "title": "Kartel boleh elak mahkamah?",
-      "url": "https://www.youtube.com/shorts/ubYjlacepTk",
-      "videoId": "ubYjlacepTk",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Think out-of-court settlements are just an easy escape for wealthy cartels? The CEO of MyCC reveals the harsh reality of economic sabotage and why stopping market manipulation immediately is crucial before it spirals out of control and wrecks key national industries.",
-      "dateAdded": "2026-08-24T22:13:46.058Z",
-      "timestamps": [
-        {
-          "startTime": 8,
-          "endTime": 31,
-          "topic": "Is settlement just an easy way out for wealthy cartels?"
-        },
-        {
-          "startTime": 32,
-          "endTime": 69,
-          "topic": "Why cartel behavior is the 'supreme evil' of competition law"
-        },
-        {
-          "startTime": 109,
-          "endTime": 154,
-          "topic": "Real-world enforcement cases: Stopping illegal price hikes in transit and tourism"
-        }
-      ]
-    },
-    {
-      "title": "Secret Recipe hire mystery shopper?",
-      "url": "https://www.youtube.com/shorts/CotkHKSDhpo",
-      "videoId": "CotkHKSDhpo",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Discover how Secret Recipe maintains flawless quality control across hundreds of franchise branches with Group CEO Patrick Sim. Learn the insider strategies they rely on—from hiring paid mystery shoppers to centralizing backend kitchen production—to deliver consistent taste and service everywhere. If you want to scale a food business without sacrificing quality, this behind-the-scenes breakdown is a must-watch.",
-      "dateAdded": "2026-08-24T22:13:46.058Z",
-      "timestamps": [
-        {
-          "startTime": 9,
-          "endTime": 38,
-          "topic": "Using mystery shoppers to audit real customer experience"
-        },
-        {
-          "startTime": 48,
-          "endTime": 66,
-          "topic": "Franchisee staffing and mandatory HQ training"
-        },
-        {
-          "startTime": 67,
-          "endTime": 82,
-          "topic": "Centralized backend production for recipe consistency"
-        }
-      ]
-    },
-    {
-      "title": "#110 | The Power of Positive Thinking",
-      "url": "https://www.youtube.com/watch?v=-aJtCPD95jw",
-      "videoId": "-aJtCPD95jw",
-      "channel": "The Game Of Impossible",
+      "title": "\"RCI Tabung Haji tak panggil saya, jadi saya cerita di sini\" - Bekas Ketua Audit Negara",
+      "url": "https://www.youtube.com/watch?v=dYrN9NmlzMo",
+      "videoId": "dYrN9NmlzMo",
+      "channel": "BFM 89.9",
       "category": "General Ideas",
-      "summary": "Positive thinking without structured execution is just daydreaming—or worse, toxic positivity that ignores real organizational fires. In this episode, Idris and Leon Jala break down how to pair radical optimism with actionable problem-solving frameworks that pull companies out of crises and empower teams to take full ownership.",
-      "dateAdded": "2026-08-24T22:13:46.058Z",
-      "timestamps": [
-        {
-          "startTime": 155,
-          "endTime": 220,
-          "topic": "The 'Two Halves of One Engine' Rule: Why Optimism Without Action Fails"
-        },
-        {
-          "startTime": 740,
-          "endTime": 880,
-          "topic": "Using Automatic Escalation to Fix Systems Instead of Blaming People"
-        },
-        {
-          "startTime": 1135,
-          "endTime": 1290,
-          "topic": "5 Coaching Questions and the 1-3-1 Framework for High-Performing Teams"
-        }
-      ]
+      "summary": "The former Auditor General reveals behind-the-scenes insights into the landmark 2018 audit of Lembaga Tabung Haji. For anyone interested in Malaysian governance and Islamic financial institutions, this insider account is eye-opening.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
     },
     {
-      "title": "Islam Isn’t About Self-Validation | Imam Tom Facchine",
-      "url": "https://www.youtube.com/shorts/TRz7j-tTyPM",
-      "videoId": "TRz7j-tTyPM",
+      "title": "Is Any Income Actually Halal Anymore? | Signs of the Hour Ep. 15 | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=HGK4HmQEUIU",
+      "videoId": "HGK4HmQEUIU",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Are you using faith to genuinely transform, or merely as a therapeutic coping tool? This eye-opening talk breaks down the subtle 'yogafication' of religion, revealing why authentic Islamic submission is meant to challenge and reshape your ego rather than simply validate your feelings. Watch to understand the vital difference between real spiritual growth and modern self-help culture.",
-      "dateAdded": "2026-08-24T22:13:46.058Z",
-      "timestamps": [
-        {
-          "startTime": 11,
-          "endTime": 37,
-          "topic": "The 'yogafication' of Islam and therapy culture"
-        },
-        {
-          "startTime": 38,
-          "endTime": 71,
-          "topic": "True submission vs. modern self-validation"
-        }
-      ]
+      "summary": "Dr. Omar Suleiman addresses modern dilemmas around earning halal income and avoiding doubtful wealth in today's economy. A profound spiritual reminder that ties religious ethics directly to our daily work and finances.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
     },
     {
-      "title": "Losing the True Beauty of the Masjid | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/jx6AM_Wlm80",
-      "videoId": "jx6AM_Wlm80",
+      "title": "Everyone Around You Is On A Clock Too | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/xVuaf-q6sDM",
+      "videoId": "xVuaf-q6sDM",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "When the essence of faith is lost, sacred spaces risk becoming mere aesthetic displays and tourist destinations rather than houses of sincere devotion. Watch this powerful reflection to understand why focusing on outward beauty over spiritual substance threatens the true purpose of a masjid.",
-      "dateAdded": "2026-08-24T22:13:46.058Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 12,
-          "topic": "The danger of religious form without spiritual substance"
-        },
-        {
-          "startTime": 12,
-          "endTime": 28,
-          "topic": "When mosques turn into tourist spots rather than places of honor"
-        }
-      ]
+      "summary": "This short reminder refocuses our priorities on family and parents before time runs out. It provides an essential perspective check for young professionals caught in the daily career grind.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
+    },
+    {
+      "title": "Abdullah ibn Abi Umayyah (ra): He Shouted Over the Prophet ﷺ | The Firsts | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=lZWDn2Xytr8",
+      "videoId": "lZWDn2Xytr8",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Discover the incredible story of Abdullah ibn Abi Umayyah (ra), who went from one of the fiercest opponents of the Prophet ﷺ to a devoted companion. A touching lesson on sincere repentance and personal transformation.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
+    },
+    {
+      "title": "Why performant code matters (but gets widely ignored), with Casey Muratori",
+      "url": "https://www.youtube.com/watch?v=8xBJPa_480Q",
+      "videoId": "8xBJPa_480Q",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Casey Muratori and Gergely Orosz dive into why software performance is widely neglected and why mastering computational efficiency makes you a superior engineer. An essential watch for fullstack developers looking to write cleaner, faster code.",
+      "dateAdded": "2026-09-01T10:48:21.541Z",
+      "timestamps": []
     }
   ],
-  "lastUpdated": "2026-09-01T00:51:59.081Z"
+  "lastUpdated": "2026-09-01T10:52:31.354Z"
 }

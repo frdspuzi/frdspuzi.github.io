@@ -2,601 +2,421 @@
   {
     "videoId": "KLDdXOw6jIc",
     "title": "SOTA Generative Media Panel — Dumitru Erhan, Shane Gu & Nicole Brichtova, Google DeepMind",
-    "category": "Tech & Engineering",
-    "channel": "AI Engineer",
-    "publishDate": "2026-08-30T14:00:06+00:00",
-    "reasoning": "This panel focuses on academic model evaluation and generative media research rather than practical software engineering or developer tooling.",
     "selected": false,
+    "reasoning": "This is an academic research panel focused on generative media evaluation metrics rather than practical software engineering or tooling.",
     "summary": ""
   },
   {
     "videoId": "S6aSoQ6_u5A",
     "title": "Tell the Robot What You Want — Sandhya Subramani, AWS",
-    "category": "Tech & Engineering",
-    "channel": "AI Engineer",
-    "publishDate": "2026-08-29T18:30:17+00:00",
-    "reasoning": "A niche hardware and robotics agent demo that is less relevant to a junior fullstack web developer's daily workflow.",
     "selected": false,
+    "reasoning": "Focuses on niche embedded robotics and hardware rovers rather than applied fullstack software engineering.",
     "summary": ""
   },
   {
     "videoId": "1KOdiGgMtpY",
     "title": "The Signal Layer: What to Build When Anything Can Be Built — Lena Hall, Akamai",
-    "category": "Tech & Engineering",
-    "channel": "AI Engineer",
-    "publishDate": "2026-08-29T18:00:34+00:00",
-    "reasoning": "Offers an insightful perspective on product thinking and engineering value in an era where AI can generate boilerplate code instantly.",
     "selected": true,
-    "summary": "As AI makes writing code cheaper and faster, the real challenge for software engineers shifts to figuring out what is actually worth building. This talk explores how developers can cut through generic AI outputs to deliver genuine user value."
+    "reasoning": "Offers practical insights into leveraging AI agents in production and navigating how engineering value shifts when raw code generation is commoditized.",
+    "summary": "As AI makes writing code cheaper and faster, what actually differentiates valuable software? Lena Hall breaks down how engineers can focus on real leverage and production impact in an era of agentic abundance."
   },
   {
     "videoId": "F_iuERNaP04",
     "title": "Top programming languages to learn in 2026",
-    "category": "Tech & Engineering",
-    "channel": "Ryan Peterman",
-    "publishDate": "2026-08-31T17:04:20+00:00",
-    "reasoning": "A short promotional clip extracted from the full-length interview with Martin Odersky.",
-    "selected": false,
-    "summary": ""
+    "selected": true,
+    "reasoning": "Relevant high-level guidance from language creator Martin Odersky for early-career developers evaluating language ecosystems.",
+    "summary": "Get quick, high-signal perspectives from the creator of Scala on which programming languages are worth investing time in for modern engineering. A great quick watch for junior devs charting their learning roadmap."
   },
   {
     "videoId": "kQUUuThuoFI",
     "title": "Rust is overused right now",
-    "category": "Tech & Engineering",
-    "channel": "Ryan Peterman",
-    "publishDate": "2026-08-31T13:03:27+00:00",
-    "reasoning": "A brief soundbite clip from the full interview with Martin Odersky.",
     "selected": false,
+    "reasoning": "A short, isolated snippet; the full-length interview provides far better depth on language trade-offs.",
     "summary": ""
   },
   {
     "videoId": "LdN4sPWM-WY",
     "title": "Creator of Scala: Comparing Languages And How AI Will Impact Them | Martin Odersky",
-    "category": "Tech & Engineering",
-    "channel": "Ryan Peterman",
-    "publishDate": "2026-08-31T13:00:37+00:00",
-    "reasoning": "An in-depth technical conversation with Martin Odersky comparing language ergonomics (Rust, Zig, Python, Scala) and how AI is transforming programming paradigms.",
     "selected": true,
-    "summary": "Hear directly from the creator of Scala on how programming language design is evolving alongside modern AI tooling. It provides junior developers with foundational insights into choosing the right tools and paradigms for building robust software."
+    "reasoning": "Directly relevant discussion comparing major programming languages and exploring how AI coding tooling is altering software development.",
+    "summary": "Martin Odersky, creator of Scala, compares language architectures like Rust, Zig, and Python while analyzing how AI is transforming programming. It offers foundational clarity for junior devs wanting to understand language design choices."
   },
   {
     "videoId": "TsU00pg6dmY",
     "title": "I speak faster than I type - Free Month of Wispr Flow Pro in the description :)",
-    "category": "Productivity",
-    "channel": "Ali Abdaal",
-    "publishDate": "2026-08-25T13:00:41+00:00",
-    "reasoning": "A sponsored short video promoting an affiliate link for a dictation tool.",
     "selected": false,
+    "reasoning": "Pure promotional sponsor content for an app.",
     "summary": ""
   },
   {
     "videoId": "D11PMo1JVU4",
     "title": "30 days free of Manychat Pro in the description :)",
-    "category": "Productivity",
-    "channel": "Ali Abdaal",
-    "publishDate": "2026-08-20T11:45:08+00:00",
-    "reasoning": "A promotional short containing an affiliate link for chatbot software.",
     "selected": false,
+    "reasoning": "Pure promotional affiliate advertisement.",
     "summary": ""
   },
   {
     "videoId": "nH-sP5Afyxk",
     "title": "Our new AI employee can give you $100 of free work - link in description!",
-    "category": "Productivity",
-    "channel": "Ali Abdaal",
-    "publishDate": "2026-08-17T10:00:08+00:00",
-    "reasoning": "A promotional marketing short designed around an affiliate referral code.",
     "selected": false,
+    "reasoning": "Sponsored product advertisement.",
     "summary": ""
   },
   {
     "videoId": "qzLrKKjdsPU",
     "title": "Build voice-first apps with Gemini 3.5 Transcribe",
-    "category": "Tech & Engineering",
-    "channel": "Google for Developers",
-    "publishDate": "2026-08-27T01:00:08+00:00",
-    "reasoning": "A teaser short for the full Gemini transcription tutorial.",
     "selected": false,
+    "reasoning": "Short teaser clip; the full tutorial video is much more valuable for practical implementation.",
     "summary": ""
   },
   {
     "videoId": "PWPsZssgfDo",
     "title": "How to build with Gemini 3.5 Transcribe",
-    "category": "Tech & Engineering",
-    "channel": "Google for Developers",
-    "publishDate": "2026-08-26T21:26:41+00:00",
-    "reasoning": "A practical, code-level developer walkthrough on integrating real-time multilingual speech transcription using the Gemini API.",
     "selected": true,
-    "summary": "Learn how to implement real-time voice transcription and multilingual support directly into your applications using the Gemini Interactions API. This practical tutorial gives fullstack engineers ready-to-deploy techniques for voice-enabled user experiences."
+    "reasoning": "Practical API walkthrough and applied AI engineering tutorial suitable for fullstack developers building speech-enabled features.",
+    "summary": "Learn how to build and integrate real-time voice and transcription features using Google's latest Gemini APIs. This hands-on walkthrough shows fullstack developers how to handle multilingual speech, custom vocabulary, and live interactions."
   },
   {
     "videoId": "Z8ycfJosB-o",
     "title": "Build a live translation broadcast app with the Gemini Live API and LiveKit",
-    "category": "Tech & Engineering",
-    "channel": "Google for Developers",
-    "publishDate": "2026-08-18T16:00:07+00:00",
-    "reasoning": "A short high-level overview; the full developer documentation and longer tutorials cover this implementation more comprehensively.",
     "selected": false,
+    "reasoning": "A short demo reel rather than an actionable tutorial.",
+    "summary": ""
+  },
+  {
+    "videoId": "Y5FCzny8ecY",
+    "title": "Bantuan tunai bayi Singapore",
+    "selected": false,
+    "reasoning": "General lifestyle trivia comparison with little practical financial utility.",
     "summary": ""
   },
   {
     "videoId": "-pFdvOk2kKY",
     "title": "Apa hak kita jika loan kena reject?",
-    "category": "Finance",
-    "channel": "Financial Faiz",
-    "publishDate": "2026-08-28T08:00:05+00:00",
-    "reasoning": "A short bite-sized clip on bank loan rejection procedures; the long-form podcasts offer much more actionable financial depth.",
-    "selected": false,
-    "summary": ""
+    "selected": true,
+    "reasoning": "Clear, practical Malaysian personal finance guidance on consumer banking rights and credit risk appetite.",
+    "summary": "Ever wondered why Malaysian banks reject financing applications and what your rights are in response? This quick breakdown explains how banks assess risk so you can navigate loan approvals smarter."
   },
   {
     "videoId": "e2jppwB3JY4",
     "title": "Cara urus duit dah berubah",
-    "category": "Finance",
-    "channel": "Financial Faiz",
-    "publishDate": "2026-08-28T04:02:27+00:00",
-    "reasoning": "A brief holiday-themed short with general personal finance commentary.",
     "selected": false,
+    "reasoning": "Generic Merdeka reflection without concrete personal finance steps.",
     "summary": ""
   },
   {
-    "videoId": "j5fKOISXQuw",
-    "title": "Hadap jam demi gaji SGD, berbaloi ke?",
-    "category": "Finance",
-    "channel": "Financial Faiz",
-    "publishDate": "2026-08-27T23:00:06+00:00",
-    "reasoning": "Directly tackles a critical career and financial dilemma for young Malaysian professionals: earning SGD across the border versus building a career locally.",
+    "videoId": "iXI8zU2msgU",
+    "title": "Jangan pinjamkan nama untuk joint loan?",
     "selected": true,
-    "summary": "Is enduring grueling daily commutes across the causeway for a Singapore Dollar salary genuinely worth the trade-offs? Financial Faiz breaks down the real mathematical and lifestyle costs to help Malaysian professionals make informed career decisions."
+    "reasoning": "Essential local personal finance advice warning against high-risk joint commitments in Malaysia.",
+    "summary": "Lending your name for a family member's joint loan can quietly wreck your credit score and future borrowing capacity. This short provides a crucial reality check on managing debt liabilities in Malaysia."
   },
   {
     "videoId": "0dvgIB3lgUI",
     "title": "BNPL boleh ganti kad kredit?",
-    "category": "Finance",
-    "channel": "Financial Faiz Podcast",
-    "publishDate": "2026-08-28T09:51:26+00:00",
-    "reasoning": "A short snippet excerpted from the full BNPL vs Credit Card podcast episode.",
-    "selected": false,
-    "summary": ""
+    "selected": true,
+    "reasoning": "Actionable Malaysian personal finance comparison between BNPL and credit cards for young professionals.",
+    "summary": "Get a clear breakdown of the functional differences between Buy Now Pay Later services and credit cards in Malaysia. It helps you understand credit limits, overseas utility, and how to avoid easy debt traps."
   },
   {
     "videoId": "CykKkuNrwK0",
     "title": "[S01:E22]  Credit Card vs BNPL:  Mana sebenarnya lebih bahaya? - Norliza Rahmat & Fairuz Izwan",
-    "category": "Finance",
-    "channel": "Financial Faiz Podcast",
-    "publishDate": "2026-08-26T23:00:26+00:00",
-    "reasoning": "A detailed discussion on Malaysian consumer debt, credit cards, BNPL traps, and car financing tailored for young working adults.",
     "selected": true,
-    "summary": "Gain critical financial literacy around managing credit cards, Buy Now Pay Later schemes, and vehicle loans in Malaysia. This full episode breaks down how hidden debt commitments quietly derail long-term financial freedom for young earners."
-  },
-  {
-    "videoId": "-k8wAq1Mu0M",
-    "title": "Masih berguna ke kad kredit?",
-    "category": "Finance",
-    "channel": "Financial Faiz Podcast",
-    "publishDate": "2026-08-26T10:00:22+00:00",
-    "reasoning": "A short clip highlighting points already covered in depth in the full podcast episode.",
-    "selected": false,
-    "summary": ""
+    "reasoning": "In-depth Malaysian personal finance discussion addressing real-world money management and credit traps for early-career earners.",
+    "summary": "Managing commitments on an entry-level salary is a common challenge for young Malaysian professionals. This podcast episode breaks down the real dangers of BNPL, credit cards, and car loans to help you build solid financial health early."
   },
   {
     "videoId": "5sV3gGhwGNE",
     "title": "#113 | Never Quit On Your Goals (Leon Jala)",
-    "category": "General Ideas",
-    "channel": "The Game Of Impossible",
-    "publishDate": "2026-08-27T22:00:39+00:00",
-    "reasoning": "Practical Malaysian career podcast offering actionable frameworks on sustaining momentum, solving problems recursively, and handling critical performance reviews.",
     "selected": true,
-    "summary": "Leon Jala shares the DMS framework for building persistent discipline and breaks down how he navigated the most difficult performance review of his career. It offers grounded, actionable career guidance for junior professionals looking to grow resilience."
+    "reasoning": "Practical discipline frameworks and honest career feedback reflections tailored for early-to-mid career progression.",
+    "summary": "Leon Jala shares actionable career frameworks for sustaining momentum and navigating harsh 360-degree performance reviews. It is a motivating, grounded discussion on building professional resilience and discipline."
   },
   {
     "videoId": "9o5fR1xq3Hk",
     "title": "#112 | Just Do It (Leon Jala)",
-    "category": "General Ideas",
-    "channel": "The Game Of Impossible",
-    "publishDate": "2026-08-20T22:00:24+00:00",
-    "reasoning": "Offers candid Malaysian leadership lessons on stepping into challenging roles, maintaining intellectual humility, and prioritizing core purpose over tool obsession.",
     "selected": true,
-    "summary": "Discover practical mindset shifts on navigating high-pressure workplace transitions and why clarity of purpose consistently outperforms chasing the latest productivity tools. An authentic, local take on executive growth and personal accountability."
+    "reasoning": "Local Malaysian leadership perspectives on clarity of purpose, early leadership hurdles, and overcoming reliance on tooling.",
+    "summary": "Reflecting on stepping into executive leadership in Malaysia, this episode explores why fundamental clarity matters far more than just adopting AI tools. It is a thoughtful listen for anyone looking to mature their mindset early in their career."
   },
   {
     "videoId": "FgBL2T7CUw4",
     "title": "#111 | Your Test Can Be Your Testimony",
-    "category": "General Ideas",
-    "channel": "The Game Of Impossible",
-    "publishDate": "2026-07-23T22:00:05+00:00",
-    "reasoning": "A personal episode centered on Idris Jala's cancer diagnosis and Christian faith reflections, outside the user's Islamic and technical focus.",
     "selected": false,
+    "reasoning": "A deeply personal medical journey conversation, not directly aligned with core engineering, finance, or spiritual study topics.",
+    "summary": ""
+  },
+  {
+    "videoId": "erCTZUeEbwI",
+    "title": "Harga Seekor Anjing K9 Boleh Cecah RM100K",
+    "selected": false,
+    "reasoning": "Niche government procurement trivia with no relevance to software, career, or personal finance.",
     "summary": ""
   },
   {
     "videoId": "BTDBP6NuQ3o",
     "title": "Tak Faham Erti Sakau - Bekas Ketua Audit Negara",
-    "category": "General Ideas",
-    "channel": "BFM 89.9",
-    "publishDate": "2026-08-29T06:27:04+00:00",
-    "reasoning": "A 1-minute clip from the full BFM interview regarding the Tabung Haji audit.",
     "selected": false,
+    "reasoning": "Short clip from a longer interview regarding the Tabung Haji audit.",
     "summary": ""
   },
   {
     "videoId": "dYrN9NmlzMo",
     "title": "\"RCI Tabung Haji tak panggil saya, jadi saya cerita di sini\" - Bekas Ketua Audit Negara",
-    "category": "General Ideas",
-    "channel": "BFM 89.9",
-    "publishDate": "2026-08-28T08:05:56+00:00",
-    "reasoning": "Directly covers financial governance, auditing, and accountability within Lembaga Tabung Haji, Malaysia's premier Islamic pilgrimage and investment fund.",
     "selected": true,
-    "summary": "Former Auditor General Tan Sri Ambrin Buang reveals what went on behind the scenes during the critical 2018 audit of Lembaga Tabung Haji. It is an essential watch for anyone interested in Malaysian institutional governance and Islamic fund management."
-  },
-  {
-    "videoId": "UUObk6Xee3A",
-    "title": "Ramai yang bangun pagi dan fikir macam mana nak tipu bos? | In The Studio",
-    "category": "General Ideas",
-    "channel": "BFM 89.9",
-    "publishDate": "2026-08-26T06:04:18+00:00",
-    "reasoning": "A pragmatic look at Malaysian workplace culture, employee rights, leave policies, and professional ethics between management and staff.",
-    "selected": true,
-    "summary": "HR professionals unpack why workplace mistrust leads to fake medical leaves and toxic work environments in Malaysian companies. It provides junior employees with valuable perspectives on navigating leave rights, communication, and professional conduct."
+    "reasoning": "Important firsthand insight into the governance and audit history of Lembaga Tabung Haji, a cornerstone institution of Malaysian Islamic finance.",
+    "summary": "The former Auditor General reveals behind-the-scenes insights into the landmark 2018 audit of Lembaga Tabung Haji. For anyone interested in Malaysian governance and Islamic financial institutions, this insider account is eye-opening."
   },
   {
     "videoId": "t13gJi3dAKc",
     "title": "Why you should date the short guy | Amy Chan | TEDxVancouver",
-    "category": "General Ideas",
-    "channel": "TEDx Talks",
-    "publishDate": "2026-08-31T17:00:29+00:00",
-    "reasoning": "A generic relationship TEDx talk unrelated to the user's engineering, finance, or spiritual interests.",
     "selected": false,
+    "reasoning": "Generic TEDx dating talk.",
     "summary": ""
   },
   {
     "videoId": "_HutRlCnfWg",
     "title": "The momentum trap—and how to avoid it | Colleen Pimentel | TEDxMcMasterU",
-    "category": "General Ideas",
-    "channel": "TEDx Talks",
-    "publishDate": "2026-08-31T16:52:43+00:00",
-    "reasoning": "A generic TEDx talk offering standard high-level advice on taking pauses.",
     "selected": false,
+    "reasoning": "Generic TEDx motivational talk.",
     "summary": ""
   },
   {
     "videoId": "ToRsMnc9C2Q",
     "title": "Running towards a life I love | Teesha Roy | TEDxWarwick Salon",
-    "category": "General Ideas",
-    "channel": "TEDx Talks",
-    "publishDate": "2026-08-31T16:52:15+00:00",
-    "reasoning": "A personal lifestyle and running story from TEDx with minimal professional relevance.",
     "selected": false,
+    "reasoning": "Generic TEDx personal story.",
     "summary": ""
+  },
+  {
+    "videoId": "HGK4HmQEUIU",
+    "title": "Is Any Income Actually Halal Anymore? | Signs of the Hour Ep. 15 | Dr. Omar Suleiman",
+    "selected": true,
+    "reasoning": "Directly tackles Islamic financial ethics, earning halal livelihood, and maintaining spiritual barakah in modern income streams.",
+    "summary": "Dr. Omar Suleiman addresses modern dilemmas around earning halal income and avoiding doubtful wealth in today's economy. A profound spiritual reminder that ties religious ethics directly to our daily work and finances."
   },
   {
     "videoId": "xVuaf-q6sDM",
     "title": "Everyone Around You Is On A Clock Too | Dr. Omar Suleiman",
-    "category": "Islamic Studies",
-    "channel": "Yaqeen Institute",
-    "publishDate": "2026-09-01T00:01:29+00:00",
-    "reasoning": "A poignant, direct Islamic spiritual reminder on the urgency of fulfilling family obligations and recognizing the finite time we have with loved ones.",
     "selected": true,
-    "summary": "A powerful reminder that our parents and families are on a limited clock while we postpone showing up for them until work calms down. Dr. Omar Suleiman urges us to reorder our priorities before it is too late."
+    "reasoning": "A poignant, high-impact Islamic spiritual reminder on time management, family duty, and mortality.",
+    "summary": "This short reminder refocuses our priorities on family and parents before time runs out. It provides an essential perspective check for young professionals caught in the daily career grind."
   },
   {
     "videoId": "lZWDn2Xytr8",
     "title": "Abdullah ibn Abi Umayyah (ra): He Shouted Over the Prophet ﷺ | The Firsts | Dr. Omar Suleiman",
-    "category": "Islamic Studies",
-    "channel": "Yaqeen Institute",
-    "publishDate": "2026-08-31T14:00:06+00:00",
-    "reasoning": "A compelling Seerah narrative exploring sincere repentance, spiritual redemption, and overcoming feelings of being unforgivable.",
     "selected": true,
-    "summary": "Explore the dramatic journey of Abdullah ibn Abi Umayyah (ra), who opposed the Prophet ﷺ for years before experiencing profound spiritual transformation. This episode offers timeless lessons on sincere repentance and the boundless reach of Allah's mercy."
-  },
-  {
-    "videoId": "R2Mzpke55bk",
-    "title": "Haram Dressed as Halal | Dr. Omar Suleiman",
-    "category": "Islamic Studies",
-    "channel": "Yaqeen Institute",
-    "publishDate": "2026-08-30T17:14:05+00:00",
-    "reasoning": "A punchy spiritual reminder dissecting modern euphemisms and how we rationalize sinful habits as self-care or virtue.",
-    "selected": true,
-    "summary": "Dr. Omar Suleiman explains how modern language masks spiritual pitfalls by rebranding disobedience as personal peace or boundary-setting. A sharp, necessary reality check on keeping moral clarity in everyday choices."
+    "reasoning": "Rich biographical Islamic spiritual reflection on redemption, humility, and the mercy of the Prophet ﷺ.",
+    "summary": "Discover the incredible story of Abdullah ibn Abi Umayyah (ra), who went from one of the fiercest opponents of the Prophet ﷺ to a devoted companion. A touching lesson on sincere repentance and personal transformation."
   },
   {
     "videoId": "virI0wQgOsI",
     "title": "What Men Don't Understand About Women (And It's Breaking Marriages)",
-    "category": "Islamic Studies",
-    "channel": "Sh. Abdullah Oduro",
-    "publishDate": "2026-08-22T16:00:21+00:00",
-    "reasoning": "A relationship and marriage advice video with promotional service links, rather than a direct spiritual reminder or career guide.",
     "selected": false,
+    "reasoning": "Relationship/marriage dynamic coaching, outside the core career, software, and spiritual reminders.",
     "summary": ""
   },
   {
     "videoId": "48SF-Yg2ZRM",
     "title": "Why Quoting Qur'an AT Your Wife Backfires",
-    "category": "Islamic Studies",
-    "channel": "Sh. Abdullah Oduro",
-    "publishDate": "2026-08-19T16:00:03+00:00",
-    "reasoning": "Specific marital coaching content tailored to resolving domestic relationship arguments.",
     "selected": false,
+    "reasoning": "Marital dynamics advice, not aligned with core engineering, finance, or general Islamic reminders.",
     "summary": ""
   },
   {
     "videoId": "SRczeRdsK2A",
     "title": "Why Allah Made Women Different Than Men",
-    "category": "Islamic Studies",
-    "channel": "Sh. Abdullah Oduro",
-    "publishDate": "2026-08-08T16:00:00+00:00",
-    "reasoning": "Broad gender dynamics discussion focused primarily on marriage and relationship dynamics.",
     "selected": false,
+    "reasoning": "General marital coaching and gender role discourse.",
     "summary": ""
   },
   {
     "videoId": "LJFTH2VnUOk",
     "title": "Not everyone is adopting AI",
-    "category": "Tech & Engineering",
-    "channel": "The Pragmatic Engineer",
-    "publishDate": "2026-08-30T15:00:18+00:00",
-    "reasoning": "A short snippet from the full podcast episode with Casey Muratori.",
     "selected": false,
+    "reasoning": "Short clip; the full episode provides the comprehensive technical discussion.",
     "summary": ""
   },
   {
     "videoId": "HKlPmuh3Qrs",
     "title": "GTA 6 is not a game they're selling to players",
-    "category": "Tech & Engineering",
-    "channel": "The Pragmatic Engineer",
-    "publishDate": "2026-08-27T17:25:53+00:00",
-    "reasoning": "A short opinion clip on videogame business models, not directly relevant to fullstack engineering work.",
     "selected": false,
+    "reasoning": "Short gaming industry commentary.",
     "summary": ""
   },
   {
     "videoId": "8xBJPa_480Q",
     "title": "Why performant code matters (but gets widely ignored), with Casey Muratori",
-    "category": "Tech & Engineering",
-    "channel": "The Pragmatic Engineer",
-    "publishDate": "2026-08-26T15:58:24+00:00",
-    "reasoning": "A deep dive into software performance fundamentals, mechanical sympathy, and the practical software craftsmanship often missing in modern web development.",
     "selected": true,
-    "summary": "Casey Muratori breaks down why software performance is systematically neglected and why understanding underlying hardware efficiency makes you a 10x better engineer. Essential listening for junior developers who want to write clean, blazing-fast code."
+    "reasoning": "Deep dive into software engineering craftsmanship, computing efficiency, and writing performant code for practical engineering growth.",
+    "summary": "Casey Muratori and Gergely Orosz dive into why software performance is widely neglected and why mastering computational efficiency makes you a superior engineer. An essential watch for fullstack developers looking to write cleaner, faster code."
   },
   {
     "videoId": "kXEtGhaiBQM",
     "title": "If you've been at the same company 3+ years, you're already in a box",
-    "category": "Tech & Engineering",
-    "channel": "Beyond Coding",
-    "publishDate": "2026-08-30T07:35:27+00:00",
-    "reasoning": "A short highlight reel clip from the Beyond Coding podcast.",
-    "selected": false,
-    "summary": ""
+    "selected": true,
+    "reasoning": "Direct career advice for software engineers on staying challenged, understanding architectural systems, and avoiding stagnation.",
+    "summary": "CTO Ian Miell explains why staying too comfortable in your developer role limits growth and how understanding systems beyond your immediate codebase accelerates your career. A sharp, practical career tip for early-stage devs."
   },
   {
     "videoId": "eeWqh3xFeJk",
     "title": "How new staff engineers build judgment without years of experience",
-    "category": "Tech & Engineering",
-    "channel": "Beyond Coding",
-    "publishDate": "2026-08-28T19:29:48+00:00",
-    "reasoning": "A teaser short for the full-length interview with Mallika Rao.",
     "selected": false,
+    "reasoning": "Short snippet; the full-length podcast interview is included and delivers deeper context.",
     "summary": ""
   },
   {
     "videoId": "aVVA3gP3M9U",
     "title": "How New Staff Engineers Build Judgment Without Years of Experience",
-    "category": "Tech & Engineering",
-    "channel": "Beyond Coding",
-    "publishDate": "2026-08-26T11:00:33+00:00",
-    "reasoning": "Actionable career advancement advice for junior and mid-level engineers on developing architectural judgment and system-level thinking as AI automates routine coding.",
     "selected": true,
-    "summary": "Learn how junior and mid-level engineers can accelerate their career growth and build technical judgment when AI already handles basic syntax. Mallika Rao explains why understanding business context and system trade-offs is your real path to senior levels."
+    "reasoning": "High-value career advice for junior engineers transitioning into higher-level architectural decision-making in the age of AI.",
+    "summary": "With AI generating boilerplate implementation code, engineering judgment is now the primary differentiator. Big tech leader Mallika Rao breaks down how early-career engineers can build sound architectural judgment and advance rapidly."
   },
   {
     "videoId": "8vytMSZ24g8",
     "title": "EP20 #SembangKS | Episod Istimewa yang ke-20",
-    "category": "General Ideas",
-    "channel": "Keluar Sekejap",
-    "publishDate": "2026-08-26T09:30:34+00:00",
-    "reasoning": "General political banter and miscellaneous national news chat rather than structured economic or career analysis.",
     "selected": false,
+    "reasoning": "Broad political commentary and general social banter with low targeted value.",
     "summary": ""
   },
   {
     "videoId": "nO9vLmrmq_U",
     "title": "EP11 #KenaSoal | Harapan Belanjawan 2027, Had Umur Ahli Politik, Semangat Patriotik Malaysia",
-    "category": "General Ideas",
-    "channel": "Keluar Sekejap",
-    "publishDate": "2026-08-21T12:00:29+00:00",
-    "reasoning": "Provides an insightful look into Malaysia's national budget expectations, economic priority sectors, and fiscal policy trajectory.",
     "selected": true,
-    "summary": "Get a grounded breakdown of Malaysia's upcoming national budget and the critical economic sectors the country needs to prioritize. Khairy Jamaluddin and Shahril Hamdan analyze how national fiscal choices impact the broader business landscape."
+    "reasoning": "Covers Malaysian national budget expectations, economic sectoral directions, and fiscal priorities by knowledgeable commentators.",
+    "summary": "Khairy Jamaluddin and Shahril Hamdan discuss key economic priorities and sector expectations ahead of the Malaysian national budget. A valuable deep dive for keeping tabs on Malaysia's fiscal direction and macro-economy."
   },
   {
     "videoId": "Sb2zfJhDUCM",
     "title": "EP19 #SembangKS | Cekodok, Mee dan LRT",
-    "category": "General Ideas",
-    "channel": "Keluar Sekejap",
-    "publishDate": "2026-08-19T08:00:13+00:00",
-    "reasoning": "A lighthearted episode covering miscellaneous viral topics and public transport maintenance rather than structured economic insights.",
     "selected": false,
+    "reasoning": "Casual banter and broad political gossip.",
     "summary": ""
   },
   {
     "videoId": "zcLPGC-tvgk",
     "title": "LIVE: Uncle Bob on Software Fundamentals in the Age of AI",
-    "category": "Tech & Engineering",
-    "channel": "Matt Pocock",
-    "publishDate": "2026-08-19T16:21:41+00:00",
-    "reasoning": "Robert C. Martin (Uncle Bob) and Matt Pocock debate why core software architecture, testing, and clean design are vital when working with AI coding agents.",
     "selected": true,
-    "summary": "Uncle Bob and Matt Pocock dive into why core engineering principles, testing discipline, and clean architecture matter more than ever when using AI coding assistants. A must-watch discussion for early-career developers navigating agentic workflows."
+    "reasoning": "Critical discussion between Robert C. Martin and Matt Pocock on maintaining software fundamentals and clean code while using AI coding agents.",
+    "summary": "Uncle Bob joins Matt Pocock to debate why foundational software engineering principles and discipline matter more than ever when working with AI coding agents. Essential viewing for junior engineers wanting to use AI without producing unmaintainable code."
   },
   {
     "videoId": "gaDdrDdczO4",
     "title": "New Skills! v1.2 brings /wait-what, /writing-for-agents, and fixes /grill-me",
-    "category": "Tech & Engineering",
-    "channel": "Matt Pocock",
-    "publishDate": "2026-08-05T15:28:41+00:00",
-    "reasoning": "Practical and hands-on tooling walkthrough for optimizing Claude Code and developer workflows with agent skills.",
     "selected": true,
-    "summary": "Supercharge your terminal AI setup with new workflow skills designed for Claude Code and coding agents. Matt Pocock demonstrates concrete techniques to control agent verbosity and automate infrastructure tasks directly from your code editor."
+    "reasoning": "Hands-on, applied developer tooling walkthrough for Claude Code skills and prompt ergonomics for coding workflows.",
+    "summary": "Matt Pocock demonstrates practical skills and CLI tooling to improve how you orchestrate AI coding agents in your daily development setup. Highly actionable for streamlining your daily software engineering workflow."
   },
   {
     "videoId": "F3lL98Pj90o",
     "title": "/wayfinder: Nothing is too big to plan anymore",
-    "category": "Tech & Engineering",
-    "channel": "Matt Pocock",
-    "publishDate": "2026-07-30T10:17:45+00:00",
-    "reasoning": "Demonstrates an applied AI tooling framework for breaking down large software engineering initiatives across multiple agent sessions.",
     "selected": true,
-    "summary": "See how to coordinate complex, multi-step engineering projects across AI agent sessions with Wayfinder. This applied demo shows fullstack engineers how to structure research, prototyping, and task management without losing execution context."
+    "reasoning": "Practical workflow tool for orchestrating multi-agent software development and turning foggy project concepts into concrete plans.",
+    "summary": "Explore Wayfinder, an AI planning skill designed to turn ambiguous software concepts into structured, executable project tickets and code tasks. Ideal for fullstack devs managing end-to-end features with AI assistance."
   },
   {
     "videoId": "t7_qbA9P6HM",
     "title": "The Export Controls Are Working - Dylan Patel",
-    "category": "General Ideas",
-    "channel": "Dwarkesh Patel",
-    "publishDate": "2026-08-31T21:08:02+00:00",
-    "reasoning": "A short clip on US-China semiconductor export controls and geopolitical policy.",
     "selected": false,
+    "reasoning": "Short geopolitical clip on chip export bans.",
     "summary": ""
   },
   {
     "videoId": "u15N3l4RT80",
     "title": "The OpenAI/Hugging Face attack, clearly explained",
-    "category": "Tech & Engineering",
-    "channel": "Dwarkesh Patel",
-    "publishDate": "2026-08-31T20:49:34+00:00",
-    "reasoning": "A clear, accessible technical walkthrough of an AI security vulnerability and supply chain attack vector.",
     "selected": true,
-    "summary": "Understand the real-world security vulnerabilities lurking within modern AI model hubs and API integrations. This concise breakdown explains how the OpenAI/Hugging Face exploit worked and what engineers need to know to secure their AI pipelines."
+    "reasoning": "Applied explanation of a major security vulnerability affecting AI model hosting and supply chains, relevant for practicing developers.",
+    "summary": "Dwarkesh Patel explains the mechanics of a real-world security vulnerability discovered across OpenAI and Hugging Face infrastructure. An engaging primer on AI supply chain security for practicing developers."
   },
   {
     "videoId": "Dc4zMcJzhDE",
     "title": "We're Worried About the Wrong Kind of Centralization - Dylan Patel",
-    "category": "General Ideas",
-    "channel": "Dwarkesh Patel",
-    "publishDate": "2026-08-30T22:18:58+00:00",
-    "reasoning": "A short soundbite regarding semiconductor hardware supply chain centralization.",
     "selected": false,
+    "reasoning": "Short clip about semiconductor industry centralization.",
     "summary": ""
   },
   {
     "videoId": "9G5x0Dxerfo",
     "title": "The Palestinian Genius Revolutionizing How Startups Operate ($23M Company)",
-    "category": "Islamic Studies",
-    "channel": "Muslim Founder",
-    "publishDate": "2026-08-30T16:21:51+00:00",
-    "reasoning": "An inspiring case study of a Muslim founder building a venture-backed cloud infrastructure AI platform that optimizes cloud computing costs.",
     "selected": true,
-    "summary": "Follow the journey of Jawad Shreim, who transitioned from Silicon Valley to build MilkStraw AI, an automated cloud infrastructure platform now backed by regional VCs. An inspiring story combining Muslim identity, startup resilience, and applied cloud engineering."
+    "reasoning": "Inspiring case study of a Muslim founder building an AI cloud infrastructure cost optimization platform backed by regional VC funding.",
+    "summary": "Meet Jawad Shreim, founder of MilkStraw AI, who scaled a company that uses AI to slash startup cloud infrastructure costs. A compelling intersection of software infrastructure, entrepreneurship, and Muslim leadership."
   },
   {
     "videoId": "p06R4aBmikU",
     "title": "Why Beginners Should Start With A Service-Based Business ...",
-    "category": "Islamic Studies",
-    "channel": "Muslim Founder",
-    "publishDate": "2026-08-29T17:24:31+00:00",
-    "reasoning": "A generic 60-second business advice short without technical or financial depth.",
     "selected": false,
+    "reasoning": "Generic business coaching short.",
     "summary": ""
   },
   {
     "videoId": "K-WHzyHchA0",
     "title": "Yaqeen VS Entitlement in Duaa ...",
-    "category": "Islamic Studies",
-    "channel": "Muslim Founder",
-    "publishDate": "2026-08-27T18:09:55+00:00",
-    "reasoning": "A direct and impactful spiritual reminder on approaching Allah in supplication with unwavering faith rather than entitlement.",
     "selected": true,
-    "summary": "Learn the vital spiritual distinction between having firm conviction (yaqeen) in Allah's response and falling into spiritual entitlement. A brief, grounding reminder for maintaining humility and trust in your daily prayers."
+    "reasoning": "Concise, meaningful Islamic reminder on the internal state of certainty versus entitlement during prayer.",
+    "summary": "A succinct spiritual reminder unpacking the difference between having sincere yaqeen (certainty) in Allah's response versus falling into entitlement. Great for cultivating mindfulness in your daily du'a."
   },
   {
     "videoId": "o0ORPbSEgd8",
     "title": "Max Junestrand: You Need The Willingness To Learn Faster Than Anyone Else",
-    "category": "Tech & Engineering",
-    "channel": "Y Combinator",
-    "publishDate": "2026-08-25T14:00:29+00:00",
-    "reasoning": "A practical YC Startup School talk on building and scaling an applied vertical AI software company from $1M to $100M ARR through intense customer focus.",
     "selected": true,
-    "summary": "Discover how Legora scaled from $1M to $100M ARR by embedding directly with customers to build specialized enterprise AI software. Packed with practical takeaways on iterative software delivery, fast learning loops, and product-market fit."
+    "reasoning": "Practical YC startup talk on rapid iteration, cold outreach, and scaling enterprise software to $100M ARR.",
+    "summary": "Legora's CEO breaks down how relentless execution, extreme learning velocity, and sitting directly with users built a $100M enterprise software company in record time. A masterclass in software product execution for any builder."
   },
   {
     "videoId": "IfoPg2QefF8",
     "title": "Going In Deep On Data | YC Paper Club",
-    "category": "Tech & Engineering",
-    "channel": "Y Combinator",
-    "publishDate": "2026-08-20T14:00:12+00:00",
-    "reasoning": "Focused heavily on academic paper reviews, benchmark theory, and multilingual pre-training math, which is outside applied fullstack tooling.",
     "selected": false,
+    "reasoning": "Deep academic research paper discussion on model pre-training data benchmarks rather than practical engineering.",
     "summary": ""
   },
   {
     "videoId": "zLUZclThLhU",
     "title": "Michael Kratsios: Inside the White House's AI Strategy",
-    "category": "Tech & Engineering",
-    "channel": "Y Combinator",
-    "publishDate": "2026-08-18T21:30:38+00:00",
-    "reasoning": "Covers US federal tech policy and government strategy rather than practical software engineering or Malaysian economics.",
     "selected": false,
+    "reasoning": "Focuses on high-level US public policy and geopolitical bureaucracy rather than applied development.",
     "summary": ""
   },
   {
     "videoId": "xBNqQNMOhyw",
     "title": "Why you should question everything (according to philosophy) @philosophyminis",
-    "category": "General Ideas",
-    "channel": "Big Think",
-    "publishDate": "2026-08-31T19:31:09+00:00",
-    "reasoning": "A generic philosophy short offering introductory musings on skepticism.",
     "selected": false,
+    "reasoning": "Generic philosophy short.",
     "summary": ""
   },
   {
     "videoId": "1QxP2mbnuEM",
     "title": "The most important election of our lives | Dan Carlin and Kmele Foster",
-    "category": "General Ideas",
-    "channel": "Big Think",
-    "publishDate": "2026-08-28T16:07:17+00:00",
-    "reasoning": "Partisan US electoral politics discussion, which falls under excluded topics.",
     "selected": false,
+    "reasoning": "Partisan US political commentary.",
     "summary": ""
   },
   {
     "videoId": "OOMx2BHHWtE",
     "title": "One of the world's greatest mathematicians explains 6 essential concepts of math | Terence Tao",
-    "category": "General Ideas",
-    "channel": "Big Think",
-    "publishDate": "2026-08-28T13:00:34+00:00",
-    "reasoning": "Deep formal math theory that is explicitly excluded per the user's focus on practical software engineering.",
     "selected": false,
+    "reasoning": "Theoretical formal mathematics lecture, which is explicitly outside the user's focus on practical software engineering.",
     "summary": ""
   },
   {
     "videoId": "0ky3W5mejWY",
     "title": "China's pitch to the Global South, in one sentence.Gita Wirjawan on why it works.",
-    "category": "Tech & Engineering",
-    "channel": "Keris & Silicon",
-    "publishDate": "2026-08-20T10:35:38+00:00",
-    "reasoning": "A short geopolitical teaser; the full episode provides the complete economic context.",
     "selected": false,
+    "reasoning": "Brief international relations geopolitical snippet.",
     "summary": ""
   },
   {
     "videoId": "LKWEpYyMe68",
     "title": "Indonesia builds 5,000 megawatts a year. To be AI-ready it needs 600,000 more.That’s 120 years.",
-    "category": "Tech & Engineering",
-    "channel": "Keris & Silicon",
-    "publishDate": "2026-08-19T02:42:11+00:00",
-    "reasoning": "A brief short extracted from the full Keris & Silicon podcast episode.",
     "selected": false,
+    "reasoning": "Short clip highlighting regional power grid statistics.",
     "summary": ""
   },
   {
     "videoId": "fDKH028SI38",
     "title": "Can Southeast Asia Own the AI Story? | Gita Wirjawan | Keris & Silicon EP04",
-    "category": "Tech & Engineering",
-    "channel": "Keris & Silicon",
-    "publishDate": "2026-08-18T02:00:15+00:00",
-    "reasoning": "A strategic discussion on Southeast Asia's tech ecosystem, AI infrastructure demands, energy constraints, and economic positioning.",
     "selected": true,
-    "summary": "Former Indonesian Trade Minister Gita Wirjawan and Shahril Hamdan unpack whether Southeast Asia can become an active stakeholder in the AI era rather than just a passive consumer. A critical regional analysis covering energy infrastructure, data sovereignty, and tech growth."
+    "reasoning": "In-depth regional economic discussion on Southeast Asia's position, tech infrastructure, and business viability in the AI economy.",
+    "summary": "Former Indonesian Trade Minister Gita Wirjawan sits down with Shahril Hamdan to analyze what Southeast Asia needs to become an AI stakeholder rather than a mere spectator. A crucial conversation on regional digital economics and infrastructure."
   }
 ]
