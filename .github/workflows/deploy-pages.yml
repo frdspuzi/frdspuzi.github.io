@@ -113,13 +113,16 @@ jobs:
         uses: actions/deploy-pages@v5
 
       - name: Verify live deployment
+        id: verify
         # actions/deploy-pages reporting success doesn't guarantee GitHub Pages' CDN actually
-        # serves the new build - confirmed for real once (2026-08-19: a successful deploy of a
-        # commit with a fresh _data/youtube.json still served an ~90-minute-stale bundle,
-        # silently, with nothing in Actions showing anything wrong). Polling for this build's own
+        # serves the new build - confirmed for real twice now (2026-08-19, and again 2026-09-01:
+        # this exact poll passed, confirming the new commit was briefly live, then the site
+        # reverted to an already-superseded build for 40+ minutes with no further deploy having
+        # run - nothing in Actions showed anything wrong either time). Polling for this build's own
         # commit SHA (baked into index.html's <meta name="build-commit"> - see that tag's
-        # comment) turns that into a loud, visible failure instead of a stale site nobody notices
-        # until someone happens to check by hand.
+        # comment) turns the FIRST kind of failure (never went live at all) into a loud, visible
+        # one instead of a stale site nobody notices - but 2026-09-01 showed passing this check
+        # once isn't sufficient on its own; see "Re-check after a settle window" below.
         run: |
           SHA="${{ needs.build.outputs.commit_sha }}"
           URL="${{ steps.deployment.outputs.page_url }}"
@@ -132,4 +135,43 @@ jobs:
             sleep 15
           done
           echo "::error::Live site still not serving commit $SHA after deploy reported success - GitHub Pages CDN is likely stuck on a stale build. Re-run this workflow (or trigger it via workflow_dispatch) to retry."
+          exit 1
+
+      - name: Re-check after a settle window
+        id: settle-check
+        # The real 2026-09-01 failure mode: the check above passed (new commit briefly live), then
+        # GitHub Pages silently reverted to an older, already-superseded deployment minutes later -
+        # a platform-side inconsistency, not anything wrong with this workflow's own build or the
+        # data it deployed. Waiting a few minutes and checking once more catches that pattern
+        # before the job ends, instead of leaving the site stuck until someone happens to notice.
+        run: |
+          echo "Waiting 3 minutes to confirm the deployment actually held..."
+          sleep 180
+          SHA="${{ needs.build.outputs.commit_sha }}"
+          URL="${{ steps.deployment.outputs.page_url }}"
+          if curl -fsS "$URL" | grep -q "$SHA"; then
+            echo "Still serving $SHA after the settle window - deployment held."
+          else
+            echo "Live site reverted to a stale build after initially serving $SHA - redeploying."
+            echo "reverted=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Redeploy if the settle check caught a revert
+        if: steps.settle-check.outputs.reverted == 'true'
+        uses: actions/deploy-pages@v5
+
+      - name: Final verify after redeploy
+        if: steps.settle-check.outputs.reverted == 'true'
+        run: |
+          SHA="${{ needs.build.outputs.commit_sha }}"
+          URL="${{ steps.deployment.outputs.page_url }}"
+          for i in 1 2 3 4 5 6; do
+            if curl -fsS "$URL" | grep -q "$SHA"; then
+              echo "Live site confirmed serving commit $SHA after redeploy."
+              exit 0
+            fi
+            echo "Attempt $i/6: live site not yet showing $SHA after redeploy, retrying in 15s..."
+            sleep 15
+          done
+          echo "::error::Live site still not serving commit $SHA even after a redeploy - GitHub Pages CDN needs manual investigation."
           exit 1
