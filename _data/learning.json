@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Which PCIe power management state is characterized as a very light sleep mode designed for very short durations of idleness, allowing the link to quickly wake up?",
+      "question": "What is the primary motivation for dividing the development process into smaller, iterative cycles called Sprints in Scrum?",
       "options": [
-        "L1.0",
-        "L2",
-        "L1.2",
-        "L0s"
+        "To extend the overall timeline of the project",
+        "To reduce the number of team members needed",
+        "To allow for more flexibility and quicker adjustments",
+        "To eliminate the need for testing and review"
+      ],
+      "correctIndex": 2,
+      "learning": "The core motivation behind breaking the development process into iterative cycles called Sprints in Scrum is to provide teams with greater flexibility and the ability to make quicker adjustments.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "When analyzing the frequency of vocabulary across the entire Quran, what cumulative percentage of the text do the top 20 most repeated words account for?",
+      "options": [
+        "Approximately 80.00%",
+        "Approximately 45.50%",
+        "Approximately 62.36%",
+        "Approximately 20.83%"
       ],
       "correctIndex": 3,
-      "learning": "In PCIe power management, the L0s state serves as a very light sleep state designed for brief periods of idleness, enabling the link to quickly wake up and resume activity.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "In Surah Ar-Ra’d (13:11), what must occur before Allah changes the condition of a people?",
-      "options": [
-        "They must endure a preordained disaster",
-        "They must change what is in themselves",
-        "They must attain absolute worldly success",
-        "They must sever their ties of kinship"
-      ],
-      "correctIndex": 1,
-      "learning": "A fundamental moral lesson in Surah Ar-Ra’d (13:11) is that Allah does not alter the circumstances or condition of a people until they take responsibility to change what is within themselves.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Compared to the roughly 170,000 words listed in the Oxford English Dictionary, approximately how many distinct words exist in the Arabic language?",
-      "options": [
-        "12 million",
-        "25 million",
-        "1.2 million",
-        "5 million"
-      ],
-      "correctIndex": 0,
-      "learning": "The Arabic language contains roughly 12 million distinct words compared to the 170,000 words in the Oxford English Dictionary, creating an approximate 71:1 ratio of Arabic to English words.",
+      "learning": "Although the Pareto Principle might suggest a small number of words would cover 80% of the text, the top 20 most frequent words in the Quran actually account for approximately 20.83% of the total content.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which term in Islamic teachings refers to the role of human beings as caretakers or stewards of the Earth?",
+      "question": "In the 1880s, researcher Hermann Ebbinghaus demonstrated that humans forget approximately what percentage of what they learn within 24 hours without active recall?",
       "options": [
-        "Hadith",
-        "Khalifah",
-        "Jinn",
-        "Taqwa"
+        "30%",
+        "95%",
+        "50%",
+        "80%"
       ],
-      "correctIndex": 1,
-      "learning": "In Islamic teachings, the term 'khalifah' refers to humanity's responsibility to act as caretakers and stewards of the Earth and its creation.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "correctIndex": 3,
+      "learning": "In the 1880s, Hermann Ebbinghaus demonstrated that without active recall, humans forget approximately 80% of what they learn within just 24 hours.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "In the context of Islamic theology regarding destiny, how do Qada’ and Qadr relate when a supplication (Dua) alters an outcome?",
+      "options": [
+        "The supplication cannot alter Qada’ or Qadr, as all manifested events are rigid and unresponsive to prayer",
+        "The altered outcome fundamentally rewires Qadr, leaving Qada’ unchanged as an eternal blueprint",
+        "The altered outcome represents a change in Qada’, yet that change was already known and written in Qadr",
+        "The supplication operates entirely outside of Qadr, proving human free will supersedes divine knowledge"
+      ],
+      "correctIndex": 2,
+      "learning": "Qada’ refers to the actual unfolding of events in life that can be altered through human actions and supplication (Dua), whereas Qadr is Allah's complete, preordained knowledge and eternal plan that already encompasses those very choices and changes.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which of the following is NOT recognized as one of the three key roles in the Scrum framework?",
+      "question": "In Islamic theology, what is stated in Quran 51:56 as the foundational reason for the creation of jinn and mankind?",
       "options": [
-        "Scrum Master",
-        "Developers",
-        "Product Owner",
-        "Project Manager"
+        "To acquire mortal fame",
+        "To worship Allah",
+        "To conquer all lands",
+        "To govern material riches"
       ],
-      "correctIndex": 3,
-      "learning": "A common misconception in Scrum is assuming a traditional Project Manager is part of the core team structure; Scrum strictly defines only three roles: Product Owner, Scrum Master, and Developers.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
+      "correctIndex": 1,
+      "learning": "In Islamic theology, the foundational purpose for the creation of both jinn and mankind is to worship Allah and recognize His supreme sovereignty.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-09-02T12:27:54.162Z"
+  "fetchedAt": "2026-09-02T14:56:02.239Z"
 }
