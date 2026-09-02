@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What is the primary motivation for dividing the development process into smaller, iterative cycles called Sprints in Scrum?",
+      "question": "In PCIe power management, which state represents the deepest sleep mode where the device is almost completely powered down, offering maximum energy savings at the cost of the longest wake-up time?",
       "options": [
-        "To extend the overall timeline of the project",
-        "To reduce the number of team members needed",
-        "To allow for more flexibility and quicker adjustments",
-        "To eliminate the need for testing and review"
+        "L2",
+        "L1.0",
+        "L0s",
+        "L1.2"
       ],
-      "correctIndex": 2,
-      "learning": "The core motivation behind breaking the development process into iterative cycles called Sprints in Scrum is to provide teams with greater flexibility and the ability to make quicker adjustments.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
+      "correctIndex": 0,
+      "learning": "The L2 state in PCIe power management is designed for the longest periods of inactivity, providing the highest power savings by almost completely powering down the device, but requiring the longest wake-up time to restart.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     },
     {
-      "question": "When analyzing the frequency of vocabulary across the entire Quran, what cumulative percentage of the text do the top 20 most repeated words account for?",
+      "question": "What cumulative percentage of the Quran's text is composed of its top 20 most frequently repeated words?",
       "options": [
+        "Approximately 50.50%",
         "Approximately 80.00%",
-        "Approximately 45.50%",
-        "Approximately 62.36%",
+        "Approximately 5.25%",
         "Approximately 20.83%"
       ],
       "correctIndex": 3,
-      "learning": "Although the Pareto Principle might suggest a small number of words would cover 80% of the text, the top 20 most frequent words in the Quran actually account for approximately 20.83% of the total content.",
+      "learning": "While the Pareto Principle suggests a top subset might comprise 80% of a whole, the top 20 most frequent words in the Quran accumulate to approximately 20.83% of the total text.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In the 1880s, researcher Hermann Ebbinghaus demonstrated that humans forget approximately what percentage of what they learn within 24 hours without active recall?",
+      "question": "In Islamic belief, what is stated as the primary foundational purpose for the creation of mankind and jinn?",
       "options": [
-        "30%",
-        "95%",
-        "50%",
-        "80%"
-      ],
-      "correctIndex": 3,
-      "learning": "In the 1880s, Hermann Ebbinghaus demonstrated that without active recall, humans forget approximately 80% of what they learn within just 24 hours.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In the context of Islamic theology regarding destiny, how do Qada’ and Qadr relate when a supplication (Dua) alters an outcome?",
-      "options": [
-        "The supplication cannot alter Qada’ or Qadr, as all manifested events are rigid and unresponsive to prayer",
-        "The altered outcome fundamentally rewires Qadr, leaving Qada’ unchanged as an eternal blueprint",
-        "The altered outcome represents a change in Qada’, yet that change was already known and written in Qadr",
-        "The supplication operates entirely outside of Qadr, proving human free will supersedes divine knowledge"
+        "To achieve earthly immortality",
+        "To conquer the physical universe",
+        "To worship Allah",
+        "To seek material wealth and power"
       ],
       "correctIndex": 2,
-      "learning": "Qada’ refers to the actual unfolding of events in life that can be altered through human actions and supplication (Dua), whereas Qadr is Allah's complete, preordained knowledge and eternal plan that already encompasses those very choices and changes.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In Islamic theology, what is stated in Quran 51:56 as the foundational reason for the creation of jinn and mankind?",
-      "options": [
-        "To acquire mortal fame",
-        "To worship Allah",
-        "To conquer all lands",
-        "To govern material riches"
-      ],
-      "correctIndex": 1,
-      "learning": "In Islamic theology, the foundational purpose for the creation of both jinn and mankind is to worship Allah and recognize His supreme sovereignty.",
+      "learning": "In Islamic theology, the foundational motivation behind the creation of humanity and jinn is the worship of Allah, establishing a relationship based on recognizing divine sovereignty, practicing gratitude, and developing mindfulness.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "In the Scrum framework, which artifact is specifically used to visualize the progress of a Sprint and display the remaining work?",
+      "options": [
+        "Burndown Chart",
+        "Sprint Review",
+        "Product Backlog",
+        "Sprint Backlog"
+      ],
+      "correctIndex": 0,
+      "learning": "In Scrum, the Burndown Chart is an artifact that visualizes the progress of a Sprint by displaying remaining work, helping the team track whether they are on schedule.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "When a person's sincere supplication (Dua) or action successfully alters the unfolding of life events (Qada’), how does that change relate to divine decree (Qadr)?",
+      "options": [
+        "The decision to pray and the resulting change were already known to Allah and part of Qadr",
+        "The change completely overrides and permanently erases what was written in Qadr",
+        "The action creates a brand-new destiny that was previously unknown to Allah",
+        "The altered outcome exists entirely outside of Allah's divine knowledge"
+      ],
+      "correctIndex": 0,
+      "learning": "Although human actions and sincere supplications (Dua) can alter the unfolding of life events (Qada’), both the decision to supplicate and the resulting change are already known to Allah and encompassed within His eternal plan (Qadr).",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-09-02T14:56:02.239Z"
+  "fetchedAt": "2026-09-02T23:38:39.981Z"
 }
