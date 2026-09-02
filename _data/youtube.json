@@ -6,8 +6,8 @@
       "videoId": "QrMcNe2jjt8",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "As AI shifts user interfaces from static layouts to generative, intent-driven experiences, software engineers face unpredictable outputs. This talk breaks down how to architect reliable UI systems that stay cohesive even when AI models drift.",
-      "dateAdded": "2026-09-01T23:39:03.902Z",
+      "summary": "Building user interfaces for AI workflows is messy, and standard component libraries often fall short. This talk breaks down real-world architectural patterns and failure modes when building intent-driven frontend experiences.",
+      "dateAdded": "2026-09-02T12:28:15.271Z",
       "timestamps": []
     },
     {
@@ -16,28 +16,8 @@
       "videoId": "ZyGMqdIpPoE",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Giving AI agents access to paid APIs and financial tools opens up powerful capabilities, but without proper controls, costs can spiral instantly. Learn how engineers build metered endpoints and execution boundaries for autonomous agents.",
-      "dateAdded": "2026-09-01T23:39:03.902Z",
-      "timestamps": []
-    },
-    {
-      "title": "Challenges of mixing object oriented and functional features",
-      "url": "https://www.youtube.com/shorts/p_q7OONp4mQ",
-      "videoId": "p_q7OONp4mQ",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Martin Odersky breaks down the trade-offs of combining object-oriented and functional programming in production systems. Understanding these design tensions helps fullstack developers write cleaner, more maintainable code across any language.",
-      "dateAdded": "2026-09-01T23:39:03.902Z",
-      "timestamps": []
-    },
-    {
-      "title": "Agentic approaches to processing long videos with Gemini",
-      "url": "https://www.youtube.com/shorts/HyfhaGNVKUA",
-      "videoId": "HyfhaGNVKUA",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Processing long multimodal inputs can destroy your LLM budget. This quick breakdown shows how using agentic video chunking with Gemini reduces token consumption and slashes latency in production.",
-      "dateAdded": "2026-09-01T23:39:03.902Z",
+      "summary": "If you are hooking LLMs up to external APIs and payment rails, controlling runaway spend is a critical engineering problem. Learn how developers are implementing practical control layers and skill files to govern autonomous agent transactions.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
       "timestamps": []
     },
     {
@@ -46,28 +26,18 @@
       "videoId": "ytjgy30Cono",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Learn how Google DeepMind implements agentic video processing in Gemini 3.5/3.7 Flash models. This technical walk-through demonstrates how to parse long-form video content efficiently while maintaining high retrieval accuracy.",
-      "dateAdded": "2026-09-01T23:39:03.902Z",
+      "summary": "Processing heavy multimedia with LLMs can burn through API credits rapidly if done naively. This deep dive shows fullstack engineers how to implement agentic chunking and sampling to dramatically lower token costs while boosting extraction accuracy.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
       "timestamps": []
     },
     {
-      "title": "Apa hak kita jika loan kena reject?",
-      "url": "https://www.youtube.com/shorts/-pFdvOk2kKY",
-      "videoId": "-pFdvOk2kKY",
+      "title": "[S03:E74] TAK MAMPU ambil takaful, isu DUIT atau PRIORITI? - Azam Yusof & Mohamad Saifudin",
+      "url": "https://www.youtube.com/watch?v=k3n27uHScrg",
+      "videoId": "k3n27uHScrg",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "When a bank rejects your loan application in Malaysia, you don't have to be left in the dark. Financial Faiz explains your rights as a borrower and how different financial institutions evaluate risk profiles.",
-      "dateAdded": "2026-09-01T23:39:03.902Z",
-      "timestamps": []
-    },
-    {
-      "title": "Jangan pinjamkan nama untuk joint loan?",
-      "url": "https://www.youtube.com/shorts/iXI8zU2msgU",
-      "videoId": "iXI8zU2msgU",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Co-signing a joint loan for family members might seem like a noble gesture, but it severely limits your own financial freedom. This clip highlights how joint liabilities permanently affect your credit score and future home loan eligibility.",
-      "dateAdded": "2026-09-01T23:39:03.902Z",
+      "summary": "Navigating financial safety nets early in your career can be confusing, especially when balancing tight cash flows. This episode breaks down how Takaful, Hibah, and Wakaf function practically in Malaysia to protect your family without breaking your budget.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
       "timestamps": []
     },
     {
@@ -76,28 +46,18 @@
       "videoId": "CykKkuNrwK0",
       "channel": "Financial Faiz Podcast",
       "category": "Finance",
-      "summary": "Navigating Buy Now Pay Later schemes and credit card limits is a major trap for early-career professionals in Malaysia. Financial experts break down how compounding commitments derail long-term goals like property ownership and investments.",
-      "dateAdded": "2026-09-01T23:39:03.902Z",
+      "summary": "As a junior engineer earning your first professional salary, modern credit facilities and 'Buy Now Pay Later' schemes can quietly erode your savings. This breakdown gives practical advice on managing cash flow, avoiding debt traps, and building healthy credit habits in Malaysia.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
       "timestamps": []
     },
     {
-      "title": "\"RCI Tabung Haji tak panggil saya, jadi saya cerita di sini\" - Bekas Ketua Audit Negara",
-      "url": "https://www.youtube.com/watch?v=dYrN9NmlzMo",
-      "videoId": "dYrN9NmlzMo",
-      "channel": "BFM 89.9",
+      "title": "#113 | Never Quit On Your Goals (Leon Jala)",
+      "url": "https://www.youtube.com/watch?v=5sV3gGhwGNE",
+      "videoId": "5sV3gGhwGNE",
+      "channel": "The Game Of Impossible",
       "category": "General Ideas",
-      "summary": "Former Auditor-General of Malaysia provides first-hand details regarding the controversial 2017/2018 audit of Lembaga Tabung Haji. An essential watch for understanding financial governance and accountability in Malaysia's largest Islamic fund.",
-      "dateAdded": "2026-09-01T23:39:03.903Z",
-      "timestamps": []
-    },
-    {
-      "title": "Why You Can't Afford a Normal Life Anymore | Imam Tom Facchine",
-      "url": "https://www.youtube.com/shorts/5ssDQjtwECU",
-      "videoId": "5ssDQjtwECU",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Imam Tom Facchine analyzes the spiritual and psychological toll of modern debt-driven economic systems. He offers an Islamic perspective on staying grounded, living within means, and preserving sanity in a high-cost environment.",
-      "dateAdded": "2026-09-01T23:39:03.903Z",
+      "summary": "Starting out in tech requires staying disciplined even after the initial enthusiasm wears off. Leon Jala shares a structured framework for relentless execution alongside candid lessons from handling harsh feedback early in his career.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
       "timestamps": []
     },
     {
@@ -106,8 +66,8 @@
       "videoId": "HGK4HmQEUIU",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Dr. Omar Suleiman explores the Prophetic warnings about modern wealth, questionable earnings, and the erosion of barakah in our income. A profound check for professionals striving to keep their career and earnings completely halal.",
-      "dateAdded": "2026-09-01T23:39:03.903Z",
+      "summary": "In an economy driven by interest, aggressive speculation, and financial gray areas, ensuring your income is truly pure is a vital spiritual priority. Dr. Omar Suleiman explores the Prophetic teachings on wealth, barakah, and how to maintain ethical integrity in your career.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
       "timestamps": []
     },
     {
@@ -116,40 +76,80 @@
       "videoId": "xVuaf-q6sDM",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "It's easy to obsess over career milestones while delaying spiritual and family commitments. Dr. Omar Suleiman delivers a moving reminder that the time we have with aging parents and loved ones is limited, urging immediate action over future promises.",
-      "dateAdded": "2026-09-01T23:39:03.903Z",
+      "summary": "When you are buried in code sprints and career building, it is easy to defer being present for your parents and family until things 'calm down.' This short reminder delivers a poignant spiritual wake-up call on the urgency of cherishing the people around you before time runs out.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
       "timestamps": []
     },
     {
-      "title": "All devs should learn Assembly",
-      "url": "https://www.youtube.com/shorts/Ze7Cmz2i9QQ",
-      "videoId": "Ze7Cmz2i9QQ",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Casey Muratori argues why understanding hardware execution and low-level mechanics makes you a vastly better engineer. Gaining intuition for underlying computer architecture helps junior developers debug higher-level abstractions far faster.",
-      "dateAdded": "2026-09-01T23:39:03.903Z",
-      "timestamps": []
-    },
-    {
-      "title": "If you've been at the same company 3+ years, you're already in a box",
-      "url": "https://www.youtube.com/shorts/kXEtGhaiBQM",
-      "videoId": "kXEtGhaiBQM",
+      "title": "Niantic Spatial CTO: How The Best Engineers Solve Problems You'd Give Up On",
+      "url": "https://www.youtube.com/watch?v=jO085XIsdBM",
+      "videoId": "jO085XIsdBM",
       "channel": "Beyond Coding",
       "category": "Tech & Engineering",
-      "summary": "Staying too comfortable early in your engineering career can stunt your professional growth. CTO Ian Miell explains why staying pushed outside your comfort zone is essential to building high-level system architectural thinking.",
-      "dateAdded": "2026-09-01T23:39:03.903Z",
+      "summary": "Hearing how legendary systems builders tackle seemingly impossible technical roadblocks is invaluable for a junior dev. Brian McClendon breaks down the debugging mental models, engineering tenacity, and team standards that separate great software engineers from average ones.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
       "timestamps": []
     },
     {
-      "title": "How New Staff Engineers Build Judgment Without Years of Experience",
-      "url": "https://www.youtube.com/watch?v=aVVA3gP3M9U",
-      "videoId": "aVVA3gP3M9U",
+      "title": "How new staff engineers build judgment without years of experience",
+      "url": "https://www.youtube.com/shorts/eeWqh3xFeJk",
+      "videoId": "eeWqh3xFeJk",
       "channel": "Beyond Coding",
       "category": "Tech & Engineering",
-      "summary": "Now that AI tooling handles basic boilerplate implementation, senior engineering is all about technical judgment and architecture. Big tech engineering leader Mallika Rao maps out how junior devs can intentionally cultivate judgment early.",
-      "dateAdded": "2026-09-01T23:39:03.903Z",
+      "summary": "When AI tooling makes writing boilerplate code abundant, your real career leverage comes from system judgment and architectural trade-offs. This concise insight explains how junior developers can intentionally cultivate high-level engineering taste early in their careers.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
+      "timestamps": []
+    },
+    {
+      "title": "LIVE: Uncle Bob on Software Fundamentals in the Age of AI",
+      "url": "https://www.youtube.com/watch?v=zcLPGC-tvgk",
+      "videoId": "zcLPGC-tvgk",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "As an early-career engineer using AI coding assistants, it is easy to let core engineering rigor slip. Matt Pocock and Uncle Bob debate why clean architecture, solid boundaries, and testing discipline matter more than ever when orchestrating AI agents.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
+      "timestamps": []
+    },
+    {
+      "title": "New Skills! v1.2 brings /wait-what, /writing-for-agents, and fixes /grill-me",
+      "url": "https://www.youtube.com/watch?v=gaDdrDdczO4",
+      "videoId": "gaDdrDdczO4",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Supercharge your local AI coding workflows with concrete, usable agent skills. Matt Pocock demonstrates hands-on configurations and tooling that streamline infrastructure provisioning, context management, and technical vetting directly inside terminal-based coding agents.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
+      "timestamps": []
+    },
+    {
+      "title": "/wayfinder: Nothing is too big to plan anymore",
+      "url": "https://www.youtube.com/watch?v=F3lL98Pj90o",
+      "videoId": "F3lL98Pj90o",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Managing large codebases and complex fullstack features with AI often falls apart during the planning stage. This video demonstrates a structured workflow to decompose ambiguous software projects into verifiable, multi-session agent execution maps.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
+      "timestamps": []
+    },
+    {
+      "title": "The Palestinian Genius Revolutionizing How Startups Operate ($23M Company)",
+      "url": "https://www.youtube.com/watch?v=9G5x0Dxerfo",
+      "videoId": "9G5x0Dxerfo",
+      "channel": "Muslim Founder",
+      "category": "Islamic Studies",
+      "summary": "Discover how a Muslim software engineer built a multi-million-dollar automated cloud cost optimization platform from the ground up. This interview covers both the engineering reality of cutting cloud infrastructure bills and the entrepreneurial journey of building a venture-backed tech company.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
+      "timestamps": []
+    },
+    {
+      "title": "Max Junestrand: You Need The Willingness To Learn Faster Than Anyone Else",
+      "url": "https://www.youtube.com/watch?v=o0ORPbSEgd8",
+      "videoId": "o0ORPbSEgd8",
+      "channel": "Y Combinator",
+      "category": "Tech & Engineering",
+      "summary": "Scaling a software product from initial prototype to $100M ARR requires extreme iteration velocity and deep customer empathy. Legora's founder delivers a masterclass in how software builders can accelerate their learning curve and ship features that enterprise users actually pay for.",
+      "dateAdded": "2026-09-02T12:28:15.272Z",
       "timestamps": []
     }
   ],
-  "lastUpdated": "2026-09-01T23:53:50.855Z"
+  "lastUpdated": "2026-09-02T12:41:07.826Z"
 }
