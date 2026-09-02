@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse, findReusableEnrichment } from './fetch_youtube.js';
+import { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse, findReusableEnrichment, buildEnrichmentLogEntry } from './fetch_youtube.js';
 
 describe('decodeHtmlEntities', () => {
   it('decodes named entities', () => {
@@ -162,5 +162,59 @@ describe('findReusableEnrichment', () => {
 
   it('returns null for an empty existing list', () => {
     expect(findReusableEnrichment('abc123XYZ_9', [])).toBe(null);
+  });
+});
+
+describe('buildEnrichmentLogEntry', () => {
+  const video = { videoId: 'abc123XYZ_9', title: 'Some Video' };
+
+  it('records a success outcome with no errors when the video succeeded on the first attempt', () => {
+    const enriched = { summary: 'x', timestamps: [{ startTime: 0, endTime: 10, topic: 'Intro' }], errors: [] };
+    expect(buildEnrichmentLogEntry(video, enriched)).toEqual({
+      videoId: 'abc123XYZ_9',
+      title: 'Some Video',
+      outcome: 'success',
+      errors: [],
+    });
+  });
+
+  it('records a success outcome alongside prior failed attempts when it eventually succeeded', () => {
+    const enriched = {
+      summary: 'x',
+      timestamps: [{ startTime: 0, endTime: 10, topic: 'Intro' }],
+      errors: [{ attempt: 1, message: 'PERMISSION_DENIED: The caller does not have permission', status: 403 }],
+    };
+    expect(buildEnrichmentLogEntry(video, enriched)).toEqual({
+      videoId: 'abc123XYZ_9',
+      title: 'Some Video',
+      outcome: 'success',
+      errors: enriched.errors,
+    });
+  });
+
+  it('records a failed outcome with the real error messages when every attempt failed', () => {
+    const enriched = {
+      summary: 'x',
+      timestamps: [],
+      errors: [
+        { attempt: 1, message: 'PERMISSION_DENIED: The caller does not have permission', status: 403 },
+        { attempt: 2, message: 'PERMISSION_DENIED: The caller does not have permission', status: 403 },
+      ],
+    };
+    expect(buildEnrichmentLogEntry(video, enriched)).toEqual({
+      videoId: 'abc123XYZ_9',
+      title: 'Some Video',
+      outcome: 'failed',
+      errors: enriched.errors,
+    });
+  });
+
+  it('records a failed outcome with no errors when GCP_PROJECT_ID was unset (enriched is a bare summary string, not an object)', () => {
+    expect(buildEnrichmentLogEntry(video, 'a plain fallback summary string')).toEqual({
+      videoId: 'abc123XYZ_9',
+      title: 'Some Video',
+      outcome: 'failed',
+      errors: [],
+    });
   });
 });

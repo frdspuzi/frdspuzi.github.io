@@ -373,6 +373,20 @@ function findReusableEnrichment(videoId, existingVideos) {
   return { summary: match.summary, timestamps: match.timestamps, dateAdded: match.dateAdded };
 }
 
+// Turns one enrichWithVideoSummary() result into a persistable log entry - pulled out as its own
+// function so main() doesn't duplicate this shape-checking at both of its call sites (the fresh
+// curatedVideos pass and the cross-day needsRetry pass).
+function buildEnrichmentLogEntry(video, enriched) {
+  const isObject = typeof enriched === 'object' && enriched !== null;
+  const timestamps = isObject ? (enriched.timestamps || []) : [];
+  return {
+    videoId: video.videoId,
+    title: video.title,
+    outcome: timestamps.length > 0 ? 'success' : 'failed',
+    errors: isObject ? (enriched.errors || []) : [],
+  };
+}
+
 // New function to enrich a video with an actual video summary from Vertex AI
 //
 // Retries with backoff, unlike an earlier version of this function — this is a separate Vertex
@@ -397,6 +411,14 @@ async function enrichWithVideoSummary(video) {
       location: 'us-central1'
     }
   });
+
+  // Recorded on every attempt (success or not) and returned alongside the result, not just
+  // console.error'd - console output needs repo-admin rights to read from Actions' job logs
+  // (confirmed the hard way during the 2026-09-01 investigation: `gh api .../logs` returns 403
+  // for a non-admin token), so anything only logged to the console is effectively invisible for
+  // debugging. main() persists this to _data/youtube_enrichment_log.json, same transparency
+  // pattern as youtube_eval_log.json for Gemini's bulk selection step.
+  const errors = [];
 
   for (let attempt = 1; attempt <= VIDEO_ENRICHMENT_MAX_RETRIES; attempt++) {
     try {
@@ -440,14 +462,20 @@ You MUST return ONLY a valid JSON object in the exact format below, with nothing
         const jsonMatch = response.text.match(/\{[\s\S]*\}/);
         if (jsonMatch) {
           const parsed = JSON.parse(jsonMatch[0]);
-          return parsed;
+          return { ...parsed, errors };
         }
         console.error("Vertex AI response had no parseable JSON, will retry.");
+        errors.push({ attempt, message: "Response had no parseable JSON", rawText: (response.text || '').slice(0, 500) });
       } else {
         console.error("Vertex AI returned an empty response, will retry.");
+        errors.push({ attempt, message: "Empty response (no response.text)" });
       }
     } catch (err) {
       console.error(`Vertex AI enrichment failed for ${video.url} (attempt ${attempt}/${VIDEO_ENRICHMENT_MAX_RETRIES}):`, err.message);
+      // status/code aren't on every error shape the SDK can throw - captured defensively, only
+      // when present, so the persisted log has the real HTTP/gRPC status (e.g. 403, RESOURCE_
+      // EXHAUSTED) alongside the message, not just whatever text err.message happened to include.
+      errors.push({ attempt, message: err.message, status: err.status ?? err.code ?? undefined });
       // Used to treat any PERMISSION_DENIED as "this specific video is permanently blocked"
       // (uploader disabled embed/download access) and give up immediately, setting
       // enrichmentBlocked so it'd never be retried. That assumption is wrong often enough to be
@@ -467,7 +495,7 @@ You MUST return ONLY a valid JSON object in the exact format below, with nothing
   }
 
   console.error(`Giving up on Vertex AI enrichment for ${video.url} after ${VIDEO_ENRICHMENT_MAX_RETRIES} attempts - will retry again on a future run.`);
-  return { summary: video.summary, timestamps: [] }; // Fallback
+  return { summary: video.summary, timestamps: [], errors }; // Fallback
 }
 
 async function main() {
@@ -475,6 +503,10 @@ async function main() {
     console.error("GEMINI_API_KEY is not set.");
     process.exit(1);
   }
+
+  // Collected across both enrichWithVideoSummary call sites below and persisted to
+  // _data/youtube_enrichment_log.json at the end - see that function's own comment on why.
+  const enrichmentLog = [];
 
   const videoCandidates = [];
 
@@ -593,6 +625,7 @@ async function main() {
       }
 
       const enriched = await enrichWithVideoSummary(curatedVideos[i]);
+      enrichmentLog.push(buildEnrichmentLogEntry(curatedVideos[i], enriched));
       if (typeof enriched === 'object' && enriched !== null) {
         curatedVideos[i].summary = enriched.summary || curatedVideos[i].summary;
         curatedVideos[i].timestamps = enriched.timestamps || [];
@@ -654,6 +687,7 @@ async function main() {
         console.log(`\n--- Retrying Vertex AI enrichment for ${needsRetry.length} existing video(s) with empty timestamps ---`);
         for (const video of needsRetry) {
           const enriched = await enrichWithVideoSummary(video);
+          enrichmentLog.push(buildEnrichmentLogEntry(video, enriched));
           if (typeof enriched === 'object' && enriched !== null) {
             video.summary = enriched.summary || video.summary;
             video.timestamps = enriched.timestamps || [];
@@ -683,6 +717,16 @@ async function main() {
 
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalOutput, null, 2));
     console.log(`Successfully wrote ${finalVideos.length} videos to ${OUTPUT_FILE}`);
+
+    // Real error text from every Vertex AI enrichment attempt this run, success or not - written
+    // for the same reason as youtube_eval_log.json above: console output isn't readable without
+    // repo-admin rights to Actions' job logs.
+    if (enrichmentLog.length > 0) {
+      const enrichmentLogFile = path.join(__dirname, '..', '..', '_data', 'youtube_enrichment_log.json');
+      fs.writeFileSync(enrichmentLogFile, JSON.stringify(enrichmentLog, null, 2));
+      const failed = enrichmentLog.filter(e => e.outcome === 'failed').length;
+      console.log(`Successfully wrote ${enrichmentLog.length} enrichment logs to ${enrichmentLogFile} (${failed} failed).`);
+    }
   } else {
     console.log("Gemini did not select any valid videos today.");
   }
@@ -697,4 +741,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse, findReusableEnrichment };
+module.exports = { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse, findReusableEnrichment, buildEnrichmentLogEntry };
