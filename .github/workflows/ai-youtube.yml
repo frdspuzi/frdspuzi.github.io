@@ -49,6 +49,10 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add _data/youtube.json
           git add _data/youtube_eval_log.json || true
+          # Added 2026-09-02: fetch_youtube.js writes this every run but nothing staged it, so it
+          # was silently discarded on the runner's teardown - real bug, confirmed the hard way when
+          # it never showed up on origin/master despite the script logging a successful write.
+          git add _data/youtube_enrichment_log.json || true
           # -A (not just `git add`) so deletions are staged too — fetch_youtube.js's syncThumbnails()
           # removes local thumbnails for any video that's fallen out of the curated feed, and a plain
           # `git add` on a path only stages additions/modifications, not files deleted from disk.
