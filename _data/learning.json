@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What psychological phenomenon describes the tendency of the brain to immediately forget information once it is recorded or stored digitally?",
+      "question": "Which PCIe power management state is characterized as a very light sleep mode designed for very short durations of idleness, allowing the link to quickly wake up?",
       "options": [
-        "The \"Performance Paradox\" of Cognitive Offloading",
-        "The Spaced Repetition Fallacy",
-        "The Active Recall Deficit",
-        "The Retrospective Filing Error"
-      ],
-      "correctIndex": 0,
-      "learning": "The 'Performance Paradox' of Cognitive Offloading (or Digital Amnesia) occurs because the brain treats writing something down or storing it on a device as permission to delete that information from memory.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "What standard structure is used to format a User Story within a Scrum Product Backlog?",
-      "options": [
-        "As a [role], I need [feature], so that [reason]",
-        "I want [feature], because [reason]",
-        "When [role] performs [action], then [outcome] occurs",
-        "[Feature] should be implemented by [date]"
-      ],
-      "correctIndex": 0,
-      "learning": "In Scrum, user stories in the Product Backlog are structured using the standard template: 'As a [role], I need [feature], so that [reason].'",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "In Islamic philosophy, beyond performing standard rituals, which internal quality does worship specifically foster to build self-restraint and deter wrongdoing?",
-      "options": [
-        "Ijma",
-        "Qisas",
-        "Sunnah",
-        "Taqwa"
+        "L1.0",
+        "L2",
+        "L1.2",
+        "L0s"
       ],
       "correctIndex": 3,
-      "learning": "Worship in Islam extends beyond mere ritual performance; its foundational purpose is to cultivate taqwa (mindfulness and awareness of Allah), which builds self-restraint and purifies human intentions.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What primary trade-off occurs when transitioning a PCIe device into deeper power-saving states such as L1.2 or L2?",
-      "options": [
-        "Energy savings are maximized, but the device requires a significantly longer wake-up time to resume activity.",
-        "The link remains fully active, but voltage output is permanently decreased.",
-        "Data transmission speeds increase, but the device generates higher operational heat.",
-        "Wake-up delays are eliminated, but data packet loss becomes significantly higher."
-      ],
-      "correctIndex": 0,
-      "learning": "While entering deeper PCIe power-saving states like L1.2 and L2 maximizes energy conservation, it introduces the challenge of increased wake-up delays before the device can resume active operation.",
+      "learning": "In PCIe power management, the L0s state serves as a very light sleep state designed for brief periods of idleness, enabling the link to quickly wake up and resume activity.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "What concept refers to Allah's complete, preordained plan and eternal knowledge of everything that will ever happen?",
+      "question": "In Surah Ar-Ra’d (13:11), what must occur before Allah changes the condition of a people?",
       "options": [
-        "Jami",
-        "Qadr",
-        "Al-Alim",
-        "Qada'"
+        "They must endure a preordained disaster",
+        "They must change what is in themselves",
+        "They must attain absolute worldly success",
+        "They must sever their ties of kinship"
       ],
       "correctIndex": 1,
-      "learning": "Qadr represents Allah's complete and eternal plan encompassing everything that will ever happen, whereas Qada' refers to the actual unfolding of events in life that can be altered by supplication and human actions.",
+      "learning": "A fundamental moral lesson in Surah Ar-Ra’d (13:11) is that Allah does not alter the circumstances or condition of a people until they take responsibility to change what is within themselves.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "Compared to the roughly 170,000 words listed in the Oxford English Dictionary, approximately how many distinct words exist in the Arabic language?",
+      "options": [
+        "12 million",
+        "25 million",
+        "1.2 million",
+        "5 million"
+      ],
+      "correctIndex": 0,
+      "learning": "The Arabic language contains roughly 12 million distinct words compared to the 170,000 words in the Oxford English Dictionary, creating an approximate 71:1 ratio of Arabic to English words.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which term in Islamic teachings refers to the role of human beings as caretakers or stewards of the Earth?",
+      "options": [
+        "Hadith",
+        "Khalifah",
+        "Jinn",
+        "Taqwa"
+      ],
+      "correctIndex": 1,
+      "learning": "In Islamic teachings, the term 'khalifah' refers to humanity's responsibility to act as caretakers and stewards of the Earth and its creation.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which of the following is NOT recognized as one of the three key roles in the Scrum framework?",
+      "options": [
+        "Scrum Master",
+        "Developers",
+        "Product Owner",
+        "Project Manager"
+      ],
+      "correctIndex": 3,
+      "learning": "A common misconception in Scrum is assuming a traditional Project Manager is part of the core team structure; Scrum strictly defines only three roles: Product Owner, Scrum Master, and Developers.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
     }
   ],
-  "fetchedAt": "2026-09-01T23:38:43.794Z"
+  "fetchedAt": "2026-09-02T12:27:54.162Z"
 }
