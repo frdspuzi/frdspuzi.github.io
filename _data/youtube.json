@@ -1,28 +1,148 @@
 {
   "videos": [
     {
-      "title": "The End of the Static Screen: Architecting Intent-Driven UX — Gus Iwanaga, commercetools",
-      "url": "https://www.youtube.com/watch?v=QrMcNe2jjt8",
-      "videoId": "QrMcNe2jjt8",
+      "title": "From coding to Knowledge work agents — Karan Vaidya, Composio",
+      "url": "https://www.youtube.com/watch?v=xxfMT-bPEmU",
+      "videoId": "xxfMT-bPEmU",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "For decades, software forced humans to memorize complex interfaces, but generative UI is finally flipping the script so interfaces dynamically build themselves around human intent. In this talk, Gus from commercetools reveals the hard-won architecture lessons behind building real-world generative UX, moving beyond unreliable open-ended outputs to robust, declarative design systems. Watch this to discover how agentic orchestration and atomic UI design will redefine how users interact with software forever.",
-      "dateAdded": "2026-09-03T10:40:59.549Z",
+      "summary": "AI coding agents didn't succeed simply because models got smarter—they succeeded because software engineering already had git histories, CI/CD test suites, and branch protections to keep them on track. Watch this talk to discover the six critical infrastructure primitives needed to finally unleash reliable, autonomous AI agents across everyday enterprise knowledge work without catastrophic mistakes.",
+      "dateAdded": "2026-09-03T23:37:07.001Z",
       "timestamps": [
         {
-          "startTime": 515,
-          "endTime": 610,
-          "topic": "Live Demo: Orchestrating dynamic, intent-driven UI in real time"
+          "startTime": 60,
+          "endTime": 160,
+          "topic": "Why coding agents took off while knowledge-work agents fell behind"
         },
         {
-          "startTime": 630,
-          "endTime": 700,
-          "topic": "The Three Generative UI Protocols: Controlled, Declarative, and Open-Ended"
+          "startTime": 505,
+          "endTime": 670,
+          "topic": "Solving the memory and context crisis across fragmented enterprise apps"
         },
         {
-          "startTime": 1038,
-          "endTime": 1188,
-          "topic": "Solving AI UI Chaos: Information architecture using Atomic Design hierarchies"
+          "startTime": 898,
+          "endTime": 1070,
+          "topic": "Governance, policy enforcement, and reversibility for safe AI automation"
+        }
+      ]
+    },
+    {
+      "title": "Your company brain will leak secrets: how we stopped it for big banks — Tanmai Gopal, PromptQL",
+      "url": "https://www.youtube.com/watch?v=0uC6u0lJJl4",
+      "videoId": "0uC6u0lJJl4",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Deploying internal AI agents across your organization risks leaking sensitive corporate data if your 'company brain' isn't architected properly. Discover why traditional memory silos and auto-saving agents fail, and learn the four essential architectural rules to safely scale collaborative AI agents using scoped wikis and virtualized credentials. If you are building enterprise AI workflows, this talk provides the blueprint to keep proprietary knowledge secure without breaking usability.",
+      "dateAdded": "2026-09-03T23:37:07.001Z",
+      "timestamps": [
+        {
+          "startTime": 487,
+          "endTime": 645,
+          "topic": "Why healthy company brains require continuous, growing contribution rates"
+        },
+        {
+          "startTime": 900,
+          "endTime": 1025,
+          "topic": "Scoped wikis vs. auto-memory: How to safely contribute company context"
+        },
+        {
+          "startTime": 1424,
+          "endTime": 1505,
+          "topic": "Credential virtualization and the 4 rules for secure company AI"
+        }
+      ]
+    },
+    {
+      "title": "Agents' next frontier: agent-to-agent and network effects — Jean-Denis Greze, Town",
+      "url": "https://www.youtube.com/watch?v=REascnFlq_8",
+      "videoId": "REascnFlq_8",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "The true bottleneck holding AI agents back isn't intelligence—it's private data trapped in disconnected silos. Former Plaid CTO Jean-Denis Greze breaks down how to transform multi-agent systems into privacy-preserving search networks that safely share knowledge and trigger explosive network effects. Watch this talk to learn the 5 practical architectural strategies top engineers are using to build next-generation autonomous agents.",
+      "dateAdded": "2026-09-03T23:37:07.001Z",
+      "timestamps": [
+        {
+          "startTime": 71,
+          "endTime": 150,
+          "topic": "Why Running an Agent is Fundamentally a Search Problem"
+        },
+        {
+          "startTime": 370,
+          "endTime": 485,
+          "topic": "Privacy-Preserving Cross-Silo Tools: Exposing Signal Without Content"
+        },
+        {
+          "startTime": 761,
+          "endTime": 880,
+          "topic": "Black-Box Compute: Autonomous Reasoning with Approval-on-Disclosure"
+        }
+      ]
+    },
+    {
+      "title": "Why care about functional programming",
+      "url": "https://www.youtube.com/shorts/14nt2s-eGmw",
+      "videoId": "14nt2s-eGmw",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Tired of tracking down elusive bugs caused by changing variables and messy side effects? Scala creator Martin Odersky breaks down why functional programming makes your code drastically more predictable—to the point where you might never even need a debugger again. Watch this quick clip to discover how coding with pure values can instantly elevate your software development skills.",
+      "dateAdded": "2026-09-03T23:37:07.001Z",
+      "timestamps": [
+        {
+          "startTime": 5,
+          "endTime": 29,
+          "topic": "How programming with values eliminates side-effect bugs"
+        },
+        {
+          "startTime": 30,
+          "endTime": 41,
+          "topic": "Why functional code eliminates the need for debuggers"
+        }
+      ]
+    },
+    {
+      "title": "Will there be less SWEs in 10 years?",
+      "url": "https://www.youtube.com/shorts/ytv-hnNrros",
+      "videoId": "ytv-hnNrros",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Will AI replace software engineers or make the elite few unstoppable? Martin Odersky, the creator of Scala, reveals why the future of coding won't belong to average developers, but to highly skilled 'control engineers' who master math and logic to keep AI in check. Watch this short clip to understand how the engineering bar is shifting and what skills you must master to stay ahead.",
+      "dateAdded": "2026-09-03T23:37:07.001Z",
+      "timestamps": [
+        {
+          "startTime": 4,
+          "endTime": 18,
+          "topic": "Why future software engineering will demand deeper math and logic to steer AI"
+        },
+        {
+          "startTime": 18,
+          "endTime": 34,
+          "topic": "The control engineer analogy: why the industry will need fewer but higher-skilled developers"
+        }
+      ]
+    },
+    {
+      "title": "Creator of Lua: You Can Interpret C And Compile Python | Roberto Ierusalimschy",
+      "url": "https://www.youtube.com/watch?v=4cWFOQQjLvk",
+      "videoId": "4cWFOQQjLvk",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Ever wondered why compiled languages achieve blazing speeds while dynamic languages struggle with raw performance? Lua creator Roberto Ierusalimschy breaks down the foundational mechanics of type systems, revealing why automatic type inference isn't a silver bullet for dynamic code. Watch this deep dive to uncover how compilers truly operate under the hood and why mental discipline in coding can unlock massive performance gains.",
+      "dateAdded": "2026-09-03T23:37:07.001Z",
+      "timestamps": [
+        {
+          "startTime": 31,
+          "endTime": 105,
+          "topic": "Why 'eval' defines dynamic languages and complicates compilation"
+        },
+        {
+          "startTime": 156,
+          "endTime": 222,
+          "topic": "How type systems enable efficient memory allocation and machine code generation"
+        },
+        {
+          "startTime": 278,
+          "endTime": 381,
+          "topic": "The limits of type inference and how LuaJIT achieves top-tier performance"
         }
       ]
     },
@@ -49,6 +169,58 @@
           "startTime": 113,
           "endTime": 174,
           "topic": "The Think-Act-Observe pipeline in action"
+        }
+      ]
+    },
+    {
+      "title": "Koray Kavukcuoglu on frontier models, coding agents, and building AGI",
+      "url": "https://www.youtube.com/watch?v=Rrr2gdbvNFU",
+      "videoId": "Rrr2gdbvNFU",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Go behind the scenes with Google DeepMind's Chief AI Architect, Koray Kavukcuoglu, as he reveals why there is no single benchmark test for AGI and what it actually takes to build frontier intelligence. Discover how the shift from raw language models to autonomous agentic systems is reshaping AI capabilities, alongside exclusive insights into the development of Gemini 4 and Google's long-term roadmap. If you want a masterclass in how frontier AI is engineered from the ground up, this insider conversation is a must-watch.",
+      "dateAdded": "2026-09-03T23:37:07.001Z",
+      "timestamps": [
+        {
+          "startTime": 428,
+          "endTime": 532,
+          "topic": "Google DeepMind's commitment to staying at the frontier of AI"
+        },
+        {
+          "startTime": 724,
+          "endTime": 845,
+          "topic": "From Atari DQN to Gemini: The evolution of agentic deep reinforcement learning"
+        },
+        {
+          "startTime": 1147,
+          "endTime": 1265,
+          "topic": "Stacked sigmoids and how technological breakthroughs drive real AI progress"
+        }
+      ]
+    },
+    {
+      "title": "Konsep wakaf dalam takaful",
+      "url": "https://www.youtube.com/shorts/AJTkOYbsyVA",
+      "videoId": "AJTkOYbsyVA",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "When we pass away, can we really count on our heirs to donate on our behalf? This eye-opening conversation shares a sobering real-life story and reveals why integrating waqaf into your takaful plan is crucial to securing your own continuous rewards in the hereafter. Watch to discover how waqaf functions as a transparent social finance tool that empowers society while creating a lasting personal legacy.",
+      "dateAdded": "2026-09-03T23:37:07.001Z",
+      "timestamps": [
+        {
+          "startTime": 21,
+          "endTime": 47,
+          "topic": "A sobering story on why you cannot rely on heirs to donate for you"
+        },
+        {
+          "startTime": 56,
+          "endTime": 84,
+          "topic": "Using waqaf in takaful for continuous afterlife rewards and social finance"
+        },
+        {
+          "startTime": 124,
+          "endTime": 152,
+          "topic": "How waqaf transcends background as a structured way to give back to society"
         }
       ]
     },
@@ -101,32 +273,6 @@
           "startTime": 88,
           "endTime": 113,
           "topic": "Why cartel prohibition is MyCC's primary focus"
-        }
-      ]
-    },
-    {
-      "title": "[S03:E74] TAK MAMPU ambil takaful, isu DUIT atau PRIORITI? - Azam Yusof & Mohamad Saifudin",
-      "url": "https://www.youtube.com/watch?v=k3n27uHScrg",
-      "videoId": "k3n27uHScrg",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Discover why securing Takaful isn't just about preparing for unexpected tragedy—it is a powerful tool to provide immediate financial liquidity and leave an enduring spiritual legacy through Hibah and Waqf. Industry leaders from Sun Life Malaysia Takaful break down how structured protection, death settlement options, and Shariah-compliant planning safeguard your family's future while continuing your good deeds beyond a lifetime. Watching this will completely shift your perspective from viewing Takaful as a cost to seeing it as an indispensable blueprint for your family's survival and your hereafter.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
-      "timestamps": [
-        {
-          "startTime": 780,
-          "endTime": 945,
-          "topic": "Real-Life Impact: Why Takaful Hibah is Crucial for Immediate Family Liquidity"
-        },
-        {
-          "startTime": 1380,
-          "endTime": 1560,
-          "topic": "Protection with Purpose: Integrating Waqf for Continuous Charity After Death"
-        },
-        {
-          "startTime": 3000,
-          "endTime": 3180,
-          "topic": "Death Settlement Option (DSO): Preventing Beneficiaries from Depleting Lump Sums"
         }
       ]
     },
@@ -209,182 +355,31 @@
       ]
     },
     {
-      "title": "#113 | Never Quit On Your Goals (Leon Jala)",
-      "url": "https://www.youtube.com/watch?v=5sV3gGhwGNE",
-      "videoId": "5sV3gGhwGNE",
+      "title": "#114 | The Art of Disappointing People (Leon Jala)",
+      "url": "https://www.youtube.com/watch?v=xmTrUK8LuOk",
+      "videoId": "xmTrUK8LuOk",
       "channel": "The Game Of Impossible",
       "category": "General Ideas",
-      "summary": "The secret to unstoppable momentum isn't flawless execution—it's building a delivery discipline that turns inevitable friction into your greatest growth engine. Learn how the proven 'DMS' framework (Do relentlessly, Monitor constantly, Solve recursively) eliminates fear of failure and compounds tiny actions into massive breakthroughs. If you're tired of stalling on your goals or carrying the entire weight of execution alone, this episode will fundamentally transform how you lead and build habits.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "summary": "True transformational leadership isn't about keeping everyone happy—it is about having the courage to disappoint people at a rate they can absorb for the sake of a higher mission. Learn actionable frameworks like the '1-3-1' problem-solving model and structured weekly check-ins that replace superficial people-pleasing with constructive, high-trust leadership.",
+      "dateAdded": "2026-09-03T23:37:07.002Z",
       "timestamps": [
         {
-          "startTime": 175,
-          "endTime": 260,
-          "topic": "The 'DMS' Framework and Public Commitment"
+          "startTime": 65,
+          "endTime": 138,
+          "topic": "The Difference Between Niceness and Kindness in Leadership"
         },
         {
-          "startTime": 515,
+          "startTime": 306,
+          "endTime": 475,
+          "topic": "The 4-Question Framework for Effective Weekly 1-on-1s and Feedback"
+        },
+        {
+          "startTime": 558,
           "endTime": 615,
-          "topic": "The Snowflake Analogy: Compounding Small Wins into Avalanches"
-        },
-        {
-          "startTime": 1150,
-          "endTime": 1235,
-          "topic": "Recursive Problem Solving: Overcoming Insecurity and Fear of Failure"
-        }
-      ]
-    },
-    {
-      "title": "Most Replayed: They Ignored Upin & Ipin | Founder & Managing Director of Les’ Copaque Production",
-      "url": "https://www.youtube.com/shorts/rc9T9Qvkq3g",
-      "videoId": "rc9T9Qvkq3g",
-      "channel": "BFM 89.9",
-      "category": "General Ideas",
-      "summary": "Despite global acclaim and standing alongside industry giants like Disney's *Frozen* on the Oscars shortlist, the creator of *Upin & Ipin* reveals why the Malaysian government continues to sideline the nation's biggest animation icon for tourism and sports campaigns. Discover the surprising bureaucratic red tape and missed opportunities holding back homegrown cultural icons from representing their own country on the world stage.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 29,
-          "topic": "Upin & Ipin's Oscar Recognition and International Acclaim"
-        },
-        {
-          "startTime": 29,
-          "endTime": 60,
-          "topic": "Offering the Brand for Free: Why Tourism Campaigns Ignored Upin & Ipin"
-        },
-        {
-          "startTime": 60,
-          "endTime": 83,
-          "topic": "Bureaucracy vs National Pride in Malaysian Media"
-        }
-      ]
-    },
-    {
-      "title": "What “Your Truth” Actually Means | Sr. Sarah Sultan",
-      "url": "https://www.youtube.com/shorts/JZxsp9x1LCM",
-      "videoId": "JZxsp9x1LCM",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Popular culture tells us to \"live our truth,\" but following mere feelings often masks our ego taking precedence over divine guidance. Discover how prioritizing personal comfort over revelation mirrors the arrogance of Iblis, and why anchoring yourself in submission to Allah provides true, unchanging stability.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 22,
-          "topic": "The Illusion of 'Living Your Truth' vs. Divine Reality"
-        },
-        {
-          "startTime": 23,
-          "endTime": 61,
-          "topic": "How Following Ego Mirrors the Arrogance of Iblis"
-        },
-        {
-          "startTime": 62,
-          "endTime": 75,
-          "topic": "Why Doing What Is Right Transcends Personal Feelings"
-        }
-      ]
-    },
-    {
-      "title": "Why You Can't Afford a Normal Life Anymore | Imam Tom Facchine",
-      "url": "https://www.youtube.com/shorts/5ssDQjtwECU",
-      "videoId": "5ssDQjtwECU",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Ever wonder why you're constantly hustling yet barely staying afloat? This eye-opening breakdown reveals how modern economic systems and crippling debt are designed to keep you trapped on a financial hamster wheel, ultimately eroding families, mental health, and societal stability.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 27,
-          "topic": "The reality of modern financial struggle and debt traps"
-        },
-        {
-          "startTime": 27,
-          "endTime": 58,
-          "topic": "How the top 1% design systems to keep you dependent"
-        },
-        {
-          "startTime": 58,
-          "endTime": 74,
-          "topic": "The systemic impact on marriage and birth rates"
-        }
-      ]
-    },
-    {
-      "title": "Is Any Income Actually Halal Anymore? | Signs of the Hour Ep. 15 | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=HGK4HmQEUIU",
-      "videoId": "HGK4HmQEUIU",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "The Prophet Muhammad (pbuh) didn't fear that poverty would destroy his community—he feared that an abundance of wealth and the relentless rat race to acquire it would ruin their souls. In this eye-opening episode, Dr. Omar Suleiman breaks down the end-times prophecies regarding spiritual decay, the normalization of illicit income, and why consumerism is the ultimate trap for the modern believer. Watch this to learn how to spiritually detox your finances and protect your heart from the subtle dangers of greed and interest.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
-      "timestamps": [
-        {
-          "startTime": 220,
-          "endTime": 325,
-          "topic": "Why excessive wealth poses a greater spiritual danger than poverty"
-        },
-        {
-          "startTime": 1005,
-          "endTime": 1080,
-          "topic": "Abu Bakr's radical vigilance against consuming haram income"
-        },
-        {
-          "startTime": 1220,
-          "endTime": 1355,
-          "topic": "Navigating modern financial systems and purifying wealth through charity"
-        }
-      ]
-    },
-    {
-      "title": "How The Best Engineers Solve Problems Most Give Up On (Niantic Spatial CTO)",
-      "url": "https://www.youtube.com/watch?v=jO085XIsdBM",
-      "videoId": "jO085XIsdBM",
-      "channel": "Beyond Coding",
-      "category": "Tech & Engineering",
-      "summary": "Google Earth's original creator, Brian McClendon, reveals how engineering is advancing beyond static 3D maps toward dynamic, four-dimensional digital twins capable of reconstructing physical spaces across time. Discover how breakthrough technologies like Gaussian splatting and Sim-to-Real physics engines are training the next generation of autonomous robots and spatial intelligence. Watch this masterclass to learn why blindly relying on AI hype is a trap and how elite engineers build rigorous, self-testing systems that solve massive real-world problems.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
-      "timestamps": [
-        {
-          "startTime": 400,
-          "endTime": 515,
-          "topic": "The 4D Map: Reconstructing Realities Across Time"
-        },
-        {
-          "startTime": 915,
-          "endTime": 1055,
-          "topic": "Gaussian Splatting: The Future of High-Speed 3D Real-to-Sim"
-        },
-        {
-          "startTime": 2090,
-          "endTime": 2165,
-          "topic": "Why 'Token-Maxing' Fails and How to Properly Design AI Problem Spaces"
-        }
-      ]
-    },
-    {
-      "title": "If you've been at the same company 3+ years, you're already in a box",
-      "url": "https://www.youtube.com/shorts/kXEtGhaiBQM",
-      "videoId": "kXEtGhaiBQM",
-      "channel": "Beyond Coding",
-      "category": "Tech & Engineering",
-      "summary": "If you feel 100% comfortable in your current job, you're likely missing out on massive growth—the sweet spot is spending 30% of your time uncomfortable by trading existing expertise for new learning. Watch this clip to discover how strategic career transitions work and why systemic obstacles shouldn't be mistaken for personal failure.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 17,
-          "topic": "The 30% discomfort rule for career progression"
-        },
-        {
-          "startTime": 23,
-          "endTime": 39,
-          "topic": "Understanding systemic challenges versus personal blame"
+          "topic": "Anchoring in 'True North' to Overcome the Need for People-Pleasing"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-09-03T10:57:25.319Z"
+  "lastUpdated": "2026-09-03T23:55:21.584Z"
 }

@@ -1,97 +1,79 @@
 [
   {
-    "videoId": "QrMcNe2jjt8",
-    "title": "The End of the Static Screen: Architecting Intent-Driven UX — Gus Iwanaga, commercetools",
+    "videoId": "xxfMT-bPEmU",
+    "title": "From coding to Knowledge work agents — Karan Vaidya, Composio",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "ytjgy30Cono",
-    "title": "Agentic video understanding in Gemini",
+    "videoId": "0uC6u0lJJl4",
+    "title": "Your company brain will leak secrets: how we stopped it for big banks — Tanmai Gopal, PromptQL",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "VEIxKlOEkyI",
-    "title": "Scam vending machine",
+    "videoId": "REascnFlq_8",
+    "title": "Agents' next frontier: agent-to-agent and network effects — Jean-Denis Greze, Town",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "xvfcJd4sFN8",
-    "title": "Tipuan bida mainan kartel?",
+    "videoId": "14nt2s-eGmw",
+    "title": "Why care about functional programming",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "k3n27uHScrg",
-    "title": "[S03:E74] TAK MAMPU ambil takaful, isu DUIT atau PRIORITI? - Azam Yusof & Mohamad Saifudin",
+    "videoId": "ytv-hnNrros",
+    "title": "Will there be less SWEs in 10 years?",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "CC8Q9rycSRA",
-    "title": "Ekonomi teruk, kita buat apa?",
+    "videoId": "4cWFOQQjLvk",
+    "title": "Creator of Lua: You Can Interpret C And Compile Python | Roberto Ierusalimschy",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "iXI8zU2msgU",
-    "title": "Jangan pinjamkan nama untuk joint loan?",
+    "videoId": "Rrr2gdbvNFU",
+    "title": "Koray Kavukcuoglu on frontier models, coding agents, and building AGI",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "0dvgIB3lgUI",
-    "title": "BNPL boleh ganti kad kredit?",
+    "videoId": "AJTkOYbsyVA",
+    "title": "Konsep wakaf dalam takaful",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "5sV3gGhwGNE",
-    "title": "#113 | Never Quit On Your Goals (Leon Jala)",
+    "videoId": "xmTrUK8LuOk",
+    "title": "#114 | The Art of Disappointing People (Leon Jala)",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "rc9T9Qvkq3g",
-    "title": "Most Replayed: They Ignored Upin & Ipin | Founder & Managing Director of Les’ Copaque Production",
+    "videoId": "TrZGwHUzdS0",
+    "title": "The Mercy of Less | Sh. Mohammad Elshinawy",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "JZxsp9x1LCM",
-    "title": "What “Your Truth” Actually Means | Sr. Sarah Sultan",
+    "videoId": "deB3LNWW5dA",
+    "title": "Performant code is usually well architected code",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "5ssDQjtwECU",
-    "title": "Why You Can't Afford a Normal Life Anymore | Imam Tom Facchine",
+    "videoId": "Ze7Cmz2i9QQ",
+    "title": "All devs should learn Assembly",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "HGK4HmQEUIU",
-    "title": "Is Any Income Actually Halal Anymore? | Signs of the Hour Ep. 15 | Dr. Omar Suleiman",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "jO085XIsdBM",
-    "title": "How The Best Engineers Solve Problems Most Give Up On (Niantic Spatial CTO)",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "kXEtGhaiBQM",
-    "title": "If you've been at the same company 3+ years, you're already in a box",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "eeWqh3xFeJk",
-    "title": "How new staff engineers build judgment without years of experience",
+    "videoId": "LJFTH2VnUOk",
+    "title": "Not everyone is adopting AI",
     "outcome": "success",
     "errors": []
   },
@@ -99,7 +81,13 @@
     "videoId": "zcLPGC-tvgk",
     "title": "LIVE: Uncle Bob on Software Fundamentals in the Age of AI",
     "outcome": "success",
-    "errors": []
+    "errors": [
+      {
+        "attempt": 1,
+        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
+        "status": 429
+      }
+    ]
   },
   {
     "videoId": "gaDdrDdczO4",
@@ -120,8 +108,20 @@
     "errors": []
   },
   {
+    "videoId": "p06R4aBmikU",
+    "title": "Why Beginners Should Start With A Service-Based Business ...",
+    "outcome": "success",
+    "errors": []
+  },
+  {
     "videoId": "K-WHzyHchA0",
     "title": "Yaqeen VS Entitlement in Duaa ...",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "5bxp78i96S8",
+    "title": "Paul Graham On Startups, Ambition, and Great Founders",
     "outcome": "success",
     "errors": []
   },
@@ -129,17 +129,17 @@
     "videoId": "o0ORPbSEgd8",
     "title": "Max Junestrand: You Need The Willingness To Learn Faster Than Anyone Else",
     "outcome": "success",
-    "errors": []
+    "errors": [
+      {
+        "attempt": 1,
+        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
+        "status": 429
+      }
+    ]
   },
   {
-    "videoId": "ytv-hnNrros",
-    "title": "Will there be less SWEs in 10 years?",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "9o5fR1xq3Hk",
-    "title": "#112 | Just Do It (Leon Jala)",
+    "videoId": "fDKH028SI38",
+    "title": "Can Southeast Asia Own the AI Story? | Gita Wirjawan | Keris & Silicon EP04",
     "outcome": "success",
     "errors": []
   }
