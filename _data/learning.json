@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Regarding the concept of stewardship (khalifah), who bears the responsibility of preserving religious teachings and maintaining communal unity?",
+      "question": "Approximately what percentage of newly learned information is forgotten within 24 hours unless active recall is practiced, as demonstrated by Hermann Ebbinghaus?",
       "options": [
-        "Only appointed leaders and official caliphs",
-        "Every individual as a shared collective duty, not solely appointed leaders",
-        "Exclusively theological scholars and jurists",
-        "Solely future generations once they reach adulthood"
+        "30%",
+        "50%",
+        "80%",
+        "65%"
       ],
-      "correctIndex": 1,
-      "learning": "A common misconception is that safeguarding faith and unity rests entirely on designated leaders; in reality, every individual shares the collective responsibility as a caretaker (khalifah).",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which PCIe power management substate provides the deepest energy savings within the L1 tier, but incurs the longest delay to resume activity?",
-      "options": [
-        "L1.1",
-        "L1.2",
-        "L0s",
-        "L1.0"
-      ],
-      "correctIndex": 1,
-      "learning": "In PCIe power management, achieving deeper energy savings in the L1.2 substate requires turning off additional components, which presents the challenge of incurring the longest wake-up delay among all L1 substates.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "Which of the following is commonly mistaken as a standard Scrum role, but is NOT one of the three core Scrum roles?",
-      "options": [
-        "Scrum Master",
-        "Developers",
-        "Product Owner",
-        "Project Manager"
-      ],
-      "correctIndex": 3,
-      "learning": "A common point of confusion in Scrum is assuming a traditional Project Manager role exists, whereas the framework formally defines only three key roles: Product Owner, Scrum Master, and Developers.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "What psychological concept describes the phenomenon where recording information externally causes the brain to immediately discard or forget it?",
-      "options": [
-        "The Spaced Retrieval Illusion",
-        "The Performance Paradox of Cognitive Offloading",
-        "The Active Recall Bias",
-        "The Ebbinghaus Interference Loop"
-      ],
-      "correctIndex": 1,
-      "learning": "The 'Performance Paradox' of cognitive offloading refers to how writing something down or saving it to a device gives the brain subconscious permission to discard the information, leading to digital amnesia.",
+      "correctIndex": 2,
+      "learning": "Hermann Ebbinghaus demonstrated that humans forget approximately 80% of newly learned information within 24 hours unless they actively force themselves to recall it.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "What prerequisite is stated in Surah Ar-Ra’d (13:11) for Allah to change the condition of a people?",
+      "question": "Which statistical concept served as the primary motivation for investigating whether learning the top 20 most frequent words would account for 80% of the Quran's content?",
       "options": [
-        "They must live in total isolation",
-        "They must eliminate all physical hardship",
-        "They must attain worldly wealth",
-        "They must change what is in themselves"
+        "Zipf's Law",
+        "The Pareto Principle",
+        "Parkinson's Law",
+        "Benford's Law"
+      ],
+      "correctIndex": 1,
+      "learning": "The Pareto Principle (the 80/20 rule) served as the primary motivation for the study, testing whether mastering the top 20 words could yield an understanding of 80% of the Quran with minimal effort.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What is the primary focus of the Sprint Review ceremony in Scrum?",
+      "options": [
+        "To demonstrate completed work to the Product Owner and discuss improvements for future Sprints",
+        "To protect the development team from external distractions and resolve team impediments",
+        "To select user stories from the Product Backlog and produce a Sprint Backlog",
+        "To hold a brief daily meeting to discuss ongoing progress, plans, and blockers"
+      ],
+      "correctIndex": 0,
+      "learning": "In Scrum, the Sprint Review ceremony serves to demonstrate completed work to the Product Owner and allow the team to reflect on the Sprint to identify improvements for future Sprints.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "When an individual exercises free will and supplication to actively change their life circumstances, which aspect of destiny are they altering?",
+      "options": [
+        "Ghafir",
+        "Qadr",
+        "Al-Alim",
+        "Qada’"
       ],
       "correctIndex": 3,
-      "learning": "As stated in Surah Ar-Ra’d (13:11), Allah does not change the condition of a people until they take the initiative to change what is within themselves.",
+      "learning": "Individuals hold the responsibility to influence and alter their Qada’ (the actual unfolding of life events) through their actions and supplications, even though every change is already eternally known and written in Allah's Qadr.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "What is the fundamental operational trade-off when a PCIe device transitions across the spectrum into deeper power management states (from L0 to L2)?",
+      "options": [
+        "Achieving greater energy savings in exchange for longer wake-up times",
+        "Enhancing system responsiveness in exchange for reduced maximum bandwidth",
+        "Increasing data transmission speed in exchange for higher idle voltage",
+        "Reducing hardware longevity in exchange for lower standby heat"
+      ],
+      "correctIndex": 0,
+      "learning": "PCIe power management regulates energy consumption across a spectrum of states ranging from active (L0) to deep sleep (L2), systematically trading wake-up responsiveness for greater power savings based on link inactivity.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     }
   ],
-  "fetchedAt": "2026-09-03T10:40:33.192Z"
+  "fetchedAt": "2026-09-03T23:36:46.393Z"
 }
