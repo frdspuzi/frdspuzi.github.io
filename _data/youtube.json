@@ -6,19 +6,25 @@
       "videoId": "QrMcNe2jjt8",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Learn how frontend architectures must evolve when generative models introduce non-deterministic layouts and data. This session breaks down practical solutions for building reliable, intent-driven user experiences without shipping broken interfaces.",
-      "dateAdded": "2026-09-03T10:03:52.013Z",
-      "timestamps": []
-    },
-    {
-      "title": "Will there be less SWEs in 10 years?",
-      "url": "https://www.youtube.com/shorts/ytv-hnNrros",
-      "videoId": "ytv-hnNrros",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Hear veteran language creator Martin Odersky weigh in on how AI will reshape the software engineering job market over the next decade. It provides grounded perspective for junior engineers navigating early-career anxiety.",
-      "dateAdded": "2026-09-03T10:03:52.013Z",
-      "timestamps": []
+      "summary": "For decades, software forced humans to memorize complex interfaces, but generative UI is finally flipping the script so interfaces dynamically build themselves around human intent. In this talk, Gus from commercetools reveals the hard-won architecture lessons behind building real-world generative UX, moving beyond unreliable open-ended outputs to robust, declarative design systems. Watch this to discover how agentic orchestration and atomic UI design will redefine how users interact with software forever.",
+      "dateAdded": "2026-09-03T10:40:59.549Z",
+      "timestamps": [
+        {
+          "startTime": 515,
+          "endTime": 610,
+          "topic": "Live Demo: Orchestrating dynamic, intent-driven UI in real time"
+        },
+        {
+          "startTime": 630,
+          "endTime": 700,
+          "topic": "The Three Generative UI Protocols: Controlled, Declarative, and Open-Ended"
+        },
+        {
+          "startTime": 1038,
+          "endTime": 1188,
+          "topic": "Solving AI UI Chaos: Information architecture using Atomic Design hierarchies"
+        }
+      ]
     },
     {
       "title": "Agentic video understanding in Gemini",
@@ -26,9 +32,25 @@
       "videoId": "ytjgy30Cono",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Discover practical architectural strategies to process long-form multimodal inputs while slashing token consumption and latency. Maarten Grootendorst breaks down how agentic video understanding operates in production applications.",
-      "dateAdded": "2026-09-03T10:03:52.013Z",
-      "timestamps": []
+      "summary": "Feeding entire raw videos into AI models burns through hundreds of thousands of unnecessary tokens and degrades accuracy. Discover how agentic video understanding with Gemini changes the game by empowering the model to autonomously pull transcripts, target specific timestamps, and inspect key frames on demand. Watch this concise breakdown to slash your API costs while significantly boosting your multimodal video analysis performance.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 5,
+          "endTime": 67,
+          "topic": "The costly pitfall of naive video processing"
+        },
+        {
+          "startTime": 67,
+          "endTime": 113,
+          "topic": "Introducing Agentic Video Understanding"
+        },
+        {
+          "startTime": 113,
+          "endTime": 174,
+          "topic": "The Think-Act-Observe pipeline in action"
+        }
+      ]
     },
     {
       "title": "Scam vending machine",
@@ -36,9 +58,25 @@
       "videoId": "VEIxKlOEkyI",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Faiz dissects how seemingly legitimate 'passive income' investment schemes trap retail investors. A quick, sharp reminder on spotting predatory financial pitches in the local region.",
-      "dateAdded": "2026-09-03T10:03:52.013Z",
-      "timestamps": []
+      "summary": "Thinking of investing in a vending machine scheme for guaranteed passive income? Watch this breakdown of how over 40 investors lost SGD 4 million (RM 13 million) to a flashy scammer promising unrealistic returns. Learn the costly realities of running actual vending machines so you can spot red flags before losing your hard-earned money.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 48,
+          "topic": "The Nozomi Vending Machine scam and how the scammer built trust"
+        },
+        {
+          "startTime": 48,
+          "endTime": 96,
+          "topic": "The unrealistic passive income promise and how the scheme collapsed"
+        },
+        {
+          "startTime": 96,
+          "endTime": 133,
+          "topic": "The real operational costs and risks of vending machine businesses"
+        }
+      ]
     },
     {
       "title": "Tipuan bida mainan kartel?",
@@ -46,9 +84,25 @@
       "videoId": "xvfcJd4sFN8",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Understand how procurement cartels manipulate tender processes to stifle fair competition. This breakdown sheds light on hidden corporate market dynamics in Malaysia.",
-      "dateAdded": "2026-09-03T10:03:52.013Z",
-      "timestamps": []
+      "summary": "Discover how deceptive bid rigging and massive corporate cartels quietly manipulate market prices in Malaysia, including the infamous RM415 million poultry feed case. Hear directly from the CEO of MyCC as he exposes the ruthless tactics anticompetitive players use and how regulators crack down on the 'supreme evil' of market competition. Watch this clip to understand how hidden cartels directly impact the economy and consumer prices.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 10,
+          "endTime": 35,
+          "topic": "The RM415 million poultry feed cartel case"
+        },
+        {
+          "startTime": 46,
+          "endTime": 70,
+          "topic": "Understanding bid rigging cartels ('tipuan bida')"
+        },
+        {
+          "startTime": 88,
+          "endTime": 113,
+          "topic": "Why cartel prohibition is MyCC's primary focus"
+        }
+      ]
     },
     {
       "title": "[S03:E74] TAK MAMPU ambil takaful, isu DUIT atau PRIORITI? - Azam Yusof & Mohamad Saifudin",
@@ -56,9 +110,25 @@
       "videoId": "k3n27uHScrg",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "This comprehensive discussion dives deep into Malaysian Islamic financial planning, specifically addressing Takaful protection, estate distribution via Hibah, and legacy building through Wakaf. Essential viewing for young Muslims structuring their financial safety net.",
-      "dateAdded": "2026-09-03T10:03:52.013Z",
-      "timestamps": []
+      "summary": "Discover why securing Takaful isn't just about preparing for unexpected tragedy—it is a powerful tool to provide immediate financial liquidity and leave an enduring spiritual legacy through Hibah and Waqf. Industry leaders from Sun Life Malaysia Takaful break down how structured protection, death settlement options, and Shariah-compliant planning safeguard your family's future while continuing your good deeds beyond a lifetime. Watching this will completely shift your perspective from viewing Takaful as a cost to seeing it as an indispensable blueprint for your family's survival and your hereafter.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 780,
+          "endTime": 945,
+          "topic": "Real-Life Impact: Why Takaful Hibah is Crucial for Immediate Family Liquidity"
+        },
+        {
+          "startTime": 1380,
+          "endTime": 1560,
+          "topic": "Protection with Purpose: Integrating Waqf for Continuous Charity After Death"
+        },
+        {
+          "startTime": 3000,
+          "endTime": 3180,
+          "topic": "Death Settlement Option (DSO): Preventing Beneficiaries from Depleting Lump Sums"
+        }
+      ]
     },
     {
       "title": "Ekonomi teruk, kita buat apa?",
@@ -66,9 +136,25 @@
       "videoId": "CC8Q9rycSRA",
       "channel": "Financial Faiz Podcast",
       "category": "Finance",
-      "summary": "A concise perspective on maintaining disciplined personal cashflow and financial control during tough macroeconomic conditions in Malaysia.",
-      "dateAdded": "2026-09-03T10:03:52.013Z",
-      "timestamps": []
+      "summary": "You can't control the government, inflation, or global economic crises—just like you can't stop the rain—but financial literacy is the umbrella that keeps you dry. Discover why mastering personal finance is the only reliable shield to protect your household and investments when macroeconomic turbulence hits.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 18,
+          "endTime": 43,
+          "topic": "The Umbrella Analogy: Controlling What You Can"
+        },
+        {
+          "startTime": 71,
+          "endTime": 96,
+          "topic": "Navigating OPR Hikes and Global Economic Shocks"
+        },
+        {
+          "startTime": 102,
+          "endTime": 120,
+          "topic": "Taking Charge of Your Household's Financial Destiny"
+        }
+      ]
     },
     {
       "title": "Jangan pinjamkan nama untuk joint loan?",
@@ -76,9 +162,25 @@
       "videoId": "iXI8zU2msgU",
       "channel": "Financial Faiz Podcast",
       "category": "Finance",
-      "summary": "Protecting your credit score is critical early in your career. This video explains the serious legal and financial risks of acting as a loan guarantor or joint applicant.",
-      "dateAdded": "2026-09-03T10:03:52.014Z",
-      "timestamps": []
+      "summary": "Never let family members pressure you into a joint loan or 'borrowing' your name, because doing so directly ruins your Debt Service Ratio (DSR) and credit profile. Even if they promise to pay, banks will count that massive debt against your name, completely blocking you from buying your own car or home later. Watch this essential advice to learn how to stand your ground against emotional blackmail and protect your financial future.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 26,
+          "endTime": 64,
+          "topic": "How family members exploit guilt to get joint loans"
+        },
+        {
+          "startTime": 148,
+          "endTime": 217,
+          "topic": "The hidden danger: How co-signing destroys your Debt Service Ratio (DSR)"
+        },
+        {
+          "startTime": 218,
+          "endTime": 245,
+          "topic": "Breaking the cycle of family debt traps by simply saying no"
+        }
+      ]
     },
     {
       "title": "BNPL boleh ganti kad kredit?",
@@ -86,9 +188,25 @@
       "videoId": "0dvgIB3lgUI",
       "channel": "Financial Faiz Podcast",
       "category": "Finance",
-      "summary": "Get a grounded comparison between modern BNPL facilities and conventional credit instruments, highlighting the debt traps young earners must avoid.",
-      "dateAdded": "2026-09-03T10:03:52.014Z",
-      "timestamps": []
+      "summary": "Think Buy Now Pay Later (BNPL) completely replaces credit cards? Discover why understanding the key differences in limits, overseas utility, and installment perks is essential to beating the banks at their own game. Watch this breakdown to learn how to smartly leverage credit facilities without paying a single cent in interest.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 20,
+          "endTime": 70,
+          "topic": "BNPL vs. credit cards: Accessibility and credit limits"
+        },
+        {
+          "startTime": 70,
+          "endTime": 107,
+          "topic": "Practical functional differences and installment plans (EPP)"
+        },
+        {
+          "startTime": 107,
+          "endTime": 136,
+          "topic": "How to use credit facilities smartly without paying interest"
+        }
+      ]
     },
     {
       "title": "#113 | Never Quit On Your Goals (Leon Jala)",
@@ -96,19 +214,25 @@
       "videoId": "5sV3gGhwGNE",
       "channel": "The Game Of Impossible",
       "category": "General Ideas",
-      "summary": "PEMANDU CEO Leon Jala introduces the DMS framework to sustain momentum and discipline through tough career hurdles. He shares valuable lessons from receiving harsh performance feedback and turning it into leadership growth.",
-      "dateAdded": "2026-09-03T10:03:52.014Z",
-      "timestamps": []
-    },
-    {
-      "title": "#112 | Just Do It (Leon Jala)",
-      "url": "https://www.youtube.com/watch?v=9o5fR1xq3Hk",
-      "videoId": "9o5fR1xq3Hk",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "Leon Jala shares candid insights on stepping into leadership roles, operating with clarity of purpose, and why deep problem understanding trumps tool obsession for young professionals.",
-      "dateAdded": "2026-09-03T10:03:52.014Z",
-      "timestamps": []
+      "summary": "The secret to unstoppable momentum isn't flawless execution—it's building a delivery discipline that turns inevitable friction into your greatest growth engine. Learn how the proven 'DMS' framework (Do relentlessly, Monitor constantly, Solve recursively) eliminates fear of failure and compounds tiny actions into massive breakthroughs. If you're tired of stalling on your goals or carrying the entire weight of execution alone, this episode will fundamentally transform how you lead and build habits.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 175,
+          "endTime": 260,
+          "topic": "The 'DMS' Framework and Public Commitment"
+        },
+        {
+          "startTime": 515,
+          "endTime": 615,
+          "topic": "The Snowflake Analogy: Compounding Small Wins into Avalanches"
+        },
+        {
+          "startTime": 1150,
+          "endTime": 1235,
+          "topic": "Recursive Problem Solving: Overcoming Insecurity and Fear of Failure"
+        }
+      ]
     },
     {
       "title": "Most Replayed: They Ignored Upin & Ipin | Founder & Managing Director of Les’ Copaque Production",
@@ -116,9 +240,25 @@
       "videoId": "rc9T9Qvkq3g",
       "channel": "BFM 89.9",
       "category": "General Ideas",
-      "summary": "The founder of Les' Copaque reveals the business mechanics behind scaling Upin & Ipin into a global brand without a traditional background. An inspiring case study in Malaysian enterprise and intellectual property.",
-      "dateAdded": "2026-09-03T10:03:52.014Z",
-      "timestamps": []
+      "summary": "Despite global acclaim and standing alongside industry giants like Disney's *Frozen* on the Oscars shortlist, the creator of *Upin & Ipin* reveals why the Malaysian government continues to sideline the nation's biggest animation icon for tourism and sports campaigns. Discover the surprising bureaucratic red tape and missed opportunities holding back homegrown cultural icons from representing their own country on the world stage.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 29,
+          "topic": "Upin & Ipin's Oscar Recognition and International Acclaim"
+        },
+        {
+          "startTime": 29,
+          "endTime": 60,
+          "topic": "Offering the Brand for Free: Why Tourism Campaigns Ignored Upin & Ipin"
+        },
+        {
+          "startTime": 60,
+          "endTime": 83,
+          "topic": "Bureaucracy vs National Pride in Malaysian Media"
+        }
+      ]
     },
     {
       "title": "What “Your Truth” Actually Means | Sr. Sarah Sultan",
@@ -126,9 +266,25 @@
       "videoId": "JZxsp9x1LCM",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Sr. Sarah Sultan reflects on the modern trap of conflating personal ego with truth, tracing its spiritual dangers back to Iblis. A timely spiritual reminder on humility and self-awareness.",
-      "dateAdded": "2026-09-03T10:03:52.014Z",
-      "timestamps": []
+      "summary": "Popular culture tells us to \"live our truth,\" but following mere feelings often masks our ego taking precedence over divine guidance. Discover how prioritizing personal comfort over revelation mirrors the arrogance of Iblis, and why anchoring yourself in submission to Allah provides true, unchanging stability.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 22,
+          "topic": "The Illusion of 'Living Your Truth' vs. Divine Reality"
+        },
+        {
+          "startTime": 23,
+          "endTime": 61,
+          "topic": "How Following Ego Mirrors the Arrogance of Iblis"
+        },
+        {
+          "startTime": 62,
+          "endTime": 75,
+          "topic": "Why Doing What Is Right Transcends Personal Feelings"
+        }
+      ]
     },
     {
       "title": "Why You Can't Afford a Normal Life Anymore | Imam Tom Facchine",
@@ -136,9 +292,25 @@
       "videoId": "5ssDQjtwECU",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Imam Tom Facchine breaks down how debt-heavy modern economic structures exhaust individuals and erode community life. It offers an Islamic lens on understanding cost-of-living struggles and reorienting priorities.",
-      "dateAdded": "2026-09-03T10:03:52.014Z",
-      "timestamps": []
+      "summary": "Ever wonder why you're constantly hustling yet barely staying afloat? This eye-opening breakdown reveals how modern economic systems and crippling debt are designed to keep you trapped on a financial hamster wheel, ultimately eroding families, mental health, and societal stability.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 27,
+          "topic": "The reality of modern financial struggle and debt traps"
+        },
+        {
+          "startTime": 27,
+          "endTime": 58,
+          "topic": "How the top 1% design systems to keep you dependent"
+        },
+        {
+          "startTime": 58,
+          "endTime": 74,
+          "topic": "The systemic impact on marriage and birth rates"
+        }
+      ]
     },
     {
       "title": "Is Any Income Actually Halal Anymore? | Signs of the Hour Ep. 15 | Dr. Omar Suleiman",
@@ -146,10 +318,73 @@
       "videoId": "HGK4HmQEUIU",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Dr. Omar Suleiman explores the Prophetic warnings about end-times wealth, the loss of barakah, and the necessity of scrutinizing one's income sources. A profound examination of financial ethics for Muslims earning in the modern economy.",
-      "dateAdded": "2026-09-03T10:03:52.014Z",
-      "timestamps": []
+      "summary": "The Prophet Muhammad (pbuh) didn't fear that poverty would destroy his community—he feared that an abundance of wealth and the relentless rat race to acquire it would ruin their souls. In this eye-opening episode, Dr. Omar Suleiman breaks down the end-times prophecies regarding spiritual decay, the normalization of illicit income, and why consumerism is the ultimate trap for the modern believer. Watch this to learn how to spiritually detox your finances and protect your heart from the subtle dangers of greed and interest.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 220,
+          "endTime": 325,
+          "topic": "Why excessive wealth poses a greater spiritual danger than poverty"
+        },
+        {
+          "startTime": 1005,
+          "endTime": 1080,
+          "topic": "Abu Bakr's radical vigilance against consuming haram income"
+        },
+        {
+          "startTime": 1220,
+          "endTime": 1355,
+          "topic": "Navigating modern financial systems and purifying wealth through charity"
+        }
+      ]
+    },
+    {
+      "title": "How The Best Engineers Solve Problems Most Give Up On (Niantic Spatial CTO)",
+      "url": "https://www.youtube.com/watch?v=jO085XIsdBM",
+      "videoId": "jO085XIsdBM",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "Google Earth's original creator, Brian McClendon, reveals how engineering is advancing beyond static 3D maps toward dynamic, four-dimensional digital twins capable of reconstructing physical spaces across time. Discover how breakthrough technologies like Gaussian splatting and Sim-to-Real physics engines are training the next generation of autonomous robots and spatial intelligence. Watch this masterclass to learn why blindly relying on AI hype is a trap and how elite engineers build rigorous, self-testing systems that solve massive real-world problems.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 400,
+          "endTime": 515,
+          "topic": "The 4D Map: Reconstructing Realities Across Time"
+        },
+        {
+          "startTime": 915,
+          "endTime": 1055,
+          "topic": "Gaussian Splatting: The Future of High-Speed 3D Real-to-Sim"
+        },
+        {
+          "startTime": 2090,
+          "endTime": 2165,
+          "topic": "Why 'Token-Maxing' Fails and How to Properly Design AI Problem Spaces"
+        }
+      ]
+    },
+    {
+      "title": "If you've been at the same company 3+ years, you're already in a box",
+      "url": "https://www.youtube.com/shorts/kXEtGhaiBQM",
+      "videoId": "kXEtGhaiBQM",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "If you feel 100% comfortable in your current job, you're likely missing out on massive growth—the sweet spot is spending 30% of your time uncomfortable by trading existing expertise for new learning. Watch this clip to discover how strategic career transitions work and why systemic obstacles shouldn't be mistaken for personal failure.",
+      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 17,
+          "topic": "The 30% discomfort rule for career progression"
+        },
+        {
+          "startTime": 23,
+          "endTime": 39,
+          "topic": "Understanding systemic challenges versus personal blame"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-09-03T10:18:18.181Z"
+  "lastUpdated": "2026-09-03T10:57:25.319Z"
 }
