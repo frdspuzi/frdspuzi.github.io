@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Approximately what percentage of newly learned information is forgotten within 24 hours unless active recall is practiced, as demonstrated by Hermann Ebbinghaus?",
+      "question": "What psychological phenomenon describes the brain's tendency to discard information from memory once it has been written down or stored externally?",
       "options": [
-        "30%",
-        "50%",
-        "80%",
-        "65%"
+        "The Hypercorrection Effect",
+        "The Performance Paradox of Cognitive Offloading",
+        "The Primacy-Recency Conflict",
+        "Semantic Satiation"
       ],
-      "correctIndex": 2,
-      "learning": "Hermann Ebbinghaus demonstrated that humans forget approximately 80% of newly learned information within 24 hours unless they actively force themselves to recall it.",
+      "correctIndex": 1,
+      "learning": "Writing down or externally storing information often signals the brain that it has permission to forget it, a phenomenon known as Digital Amnesia or the Performance Paradox of Cognitive Offloading.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "Which statistical concept served as the primary motivation for investigating whether learning the top 20 most frequent words would account for 80% of the Quran's content?",
+      "question": "In the Scrum framework, during which ceremony does the team demonstrate completed work to the Product Owner and discuss improvements for future Sprints?",
       "options": [
-        "Zipf's Law",
-        "The Pareto Principle",
-        "Parkinson's Law",
-        "Benford's Law"
+        "Daily Scrum",
+        "Backlog Refinement",
+        "Sprint Planning",
+        "Sprint Review"
       ],
-      "correctIndex": 1,
-      "learning": "The Pareto Principle (the 80/20 rule) served as the primary motivation for the study, testing whether mastering the top 20 words could yield an understanding of 80% of the Quran with minimal effort.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What is the primary focus of the Sprint Review ceremony in Scrum?",
-      "options": [
-        "To demonstrate completed work to the Product Owner and discuss improvements for future Sprints",
-        "To protect the development team from external distractions and resolve team impediments",
-        "To select user stories from the Product Backlog and produce a Sprint Backlog",
-        "To hold a brief daily meeting to discuss ongoing progress, plans, and blockers"
-      ],
-      "correctIndex": 0,
-      "learning": "In Scrum, the Sprint Review ceremony serves to demonstrate completed work to the Product Owner and allow the team to reflect on the Sprint to identify improvements for future Sprints.",
+      "correctIndex": 3,
+      "learning": "During the Sprint Review ceremony, the Scrum team demonstrates completed work to the Product Owner and reflects on the Sprint to identify improvements for future cycles.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "When an individual exercises free will and supplication to actively change their life circumstances, which aspect of destiny are they altering?",
+      "question": "In Quran 51:56, which two creations are explicitly stated as being created solely to worship Allah?",
       "options": [
-        "Ghafir",
-        "Qadr",
-        "Al-Alim",
-        "Qada’"
+        "The jinn and mankind",
+        "Angels and mankind",
+        "Mankind and animals",
+        "The jinn and angels"
       ],
-      "correctIndex": 3,
-      "learning": "Individuals hold the responsibility to influence and alter their Qada’ (the actual unfolding of life events) through their actions and supplications, even though every change is already eternally known and written in Allah's Qadr.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "correctIndex": 0,
+      "learning": "Quran 51:56 defines the foundational purpose of creation by stating, 'I did not create the jinn and mankind except to worship Me.'",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "What is the fundamental operational trade-off when a PCIe device transitions across the spectrum into deeper power management states (from L0 to L2)?",
+      "question": "In PCIe power management, which specific state achieves deeper energy savings than L1.0 by powering down the electrical circuits of the main link?",
       "options": [
-        "Achieving greater energy savings in exchange for longer wake-up times",
-        "Enhancing system responsiveness in exchange for reduced maximum bandwidth",
-        "Increasing data transmission speed in exchange for higher idle voltage",
-        "Reducing hardware longevity in exchange for lower standby heat"
+        "L1.2",
+        "L0s",
+        "L2",
+        "L1.1"
       ],
-      "correctIndex": 0,
-      "learning": "PCIe power management regulates energy consumption across a spectrum of states ranging from active (L0) to deep sleep (L2), systematically trading wake-up responsiveness for greater power savings based on link inactivity.",
+      "correctIndex": 3,
+      "learning": "In PCIe power management, the L1.1 substate achieves greater energy savings than L1.0 by specifically powering down the electrical circuits of the main link, resulting in higher power conservation alongside an increased wake-up time.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
+    },
+    {
+      "question": "When a person's sincere supplications or actions alter the unfolding of events in their life (Qada'), how does this alteration relate to Qadr?",
+      "options": [
+        "The alteration was already known to Allah and is encompassed within His eternal, preordained plan",
+        "The alteration takes place entirely outside of divine permission and knowledge",
+        "The alteration proves that human decisions cannot exist alongside divine knowledge",
+        "The alteration completely overrides and negates the preordained plan"
+      ],
+      "correctIndex": 0,
+      "learning": "While human actions and supplications (Dua) can influence or alter the unfolding of life events (Qada'), any such change was already known to Allah and is completely encompassed within His eternal plan and knowledge (Qadr).",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
     }
   ],
-  "fetchedAt": "2026-09-03T23:36:46.393Z"
+  "fetchedAt": "2026-09-04T23:28:56.735Z"
 }
