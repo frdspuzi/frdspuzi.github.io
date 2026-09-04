@@ -1,6 +1,32 @@
 {
   "videos": [
     {
+      "title": "Why AI Agents Need Million-Token Context — Thomas Wolf & Olive Song, MiniMax",
+      "url": "https://www.youtube.com/watch?v=5Cxe5dv2Xlw",
+      "videoId": "5Cxe5dv2Xlw",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Discover how MiniMax built top-tier open models like M3 by pioneering native multimodal pre-training from day one and inventing MiniMax Sparse Attention to effortlessly process over 1 million tokens. In this insightful fireside chat with Hugging Face's Thomas Wolf, get a rare behind-the-scenes look at the architectural innovations and automated agent workflows powering the next generation of frontier AI models.",
+      "dateAdded": "2026-09-04T23:29:30.930Z",
+      "timestamps": [
+        {
+          "startTime": 234,
+          "endTime": 335,
+          "topic": "Overview of MiniMax M3 and Long-Context Multimodal Capabilities"
+        },
+        {
+          "startTime": 510,
+          "endTime": 597,
+          "topic": "Architecture of MiniMax Sparse Attention (MSA)"
+        },
+        {
+          "startTime": 638,
+          "endTime": 775,
+          "topic": "Native Multimodal Pre-training vs. Post-hoc Adapters"
+        }
+      ]
+    },
+    {
       "title": "From coding to Knowledge work agents — Karan Vaidya, Composio",
       "url": "https://www.youtube.com/watch?v=xxfMT-bPEmU",
       "videoId": "xxfMT-bPEmU",
@@ -53,96 +79,28 @@
       ]
     },
     {
-      "title": "Agents' next frontier: agent-to-agent and network effects — Jean-Denis Greze, Town",
-      "url": "https://www.youtube.com/watch?v=REascnFlq_8",
-      "videoId": "REascnFlq_8",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "The true bottleneck holding AI agents back isn't intelligence—it's private data trapped in disconnected silos. Former Plaid CTO Jean-Denis Greze breaks down how to transform multi-agent systems into privacy-preserving search networks that safely share knowledge and trigger explosive network effects. Watch this talk to learn the 5 practical architectural strategies top engineers are using to build next-generation autonomous agents.",
-      "dateAdded": "2026-09-03T23:37:07.001Z",
-      "timestamps": [
-        {
-          "startTime": 71,
-          "endTime": 150,
-          "topic": "Why Running an Agent is Fundamentally a Search Problem"
-        },
-        {
-          "startTime": 370,
-          "endTime": 485,
-          "topic": "Privacy-Preserving Cross-Silo Tools: Exposing Signal Without Content"
-        },
-        {
-          "startTime": 761,
-          "endTime": 880,
-          "topic": "Black-Box Compute: Autonomous Reasoning with Approval-on-Disclosure"
-        }
-      ]
-    },
-    {
-      "title": "Why care about functional programming",
-      "url": "https://www.youtube.com/shorts/14nt2s-eGmw",
-      "videoId": "14nt2s-eGmw",
+      "title": "Creator of Lua: Top 3 Languages Every Engineer Should Learn in 2026 | Roberto Ierusalimschy",
+      "url": "https://www.youtube.com/watch?v=k2zi9pt5yUE",
+      "videoId": "k2zi9pt5yUE",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Tired of tracking down elusive bugs caused by changing variables and messy side effects? Scala creator Martin Odersky breaks down why functional programming makes your code drastically more predictable—to the point where you might never even need a debugger again. Watch this quick clip to discover how coding with pure values can instantly elevate your software development skills.",
-      "dateAdded": "2026-09-03T23:37:07.001Z",
+      "summary": "Want to fundamentally upgrade your problem-solving intuition as a software engineer? Lua creator Roberto Ierusalimschy reveals why mastering unconventional languages like Haskell, Scheme, and bare-metal Assembly is the ultimate shortcut to becoming a elite programmer. Discover how exploring distinct paradigms outside mainstream syntax will reshape how you think about computation forever.",
+      "dateAdded": "2026-09-04T23:29:30.930Z",
       "timestamps": [
         {
-          "startTime": 5,
-          "endTime": 29,
-          "topic": "How programming with values eliminates side-effect bugs"
+          "startTime": 9,
+          "endTime": 93,
+          "topic": "Why Haskell and Functional Programming Expand Your Mind"
         },
         {
-          "startTime": 30,
-          "endTime": 41,
-          "topic": "Why functional code eliminates the need for debuggers"
-        }
-      ]
-    },
-    {
-      "title": "Will there be less SWEs in 10 years?",
-      "url": "https://www.youtube.com/shorts/ytv-hnNrros",
-      "videoId": "ytv-hnNrros",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Will AI replace software engineers or make the elite few unstoppable? Martin Odersky, the creator of Scala, reveals why the future of coding won't belong to average developers, but to highly skilled 'control engineers' who master math and logic to keep AI in check. Watch this short clip to understand how the engineering bar is shifting and what skills you must master to stay ahead.",
-      "dateAdded": "2026-09-03T23:37:07.001Z",
-      "timestamps": [
-        {
-          "startTime": 4,
-          "endTime": 18,
-          "topic": "Why future software engineering will demand deeper math and logic to steer AI"
+          "startTime": 94,
+          "endTime": 122,
+          "topic": "Understanding the Machine with C and Assembly"
         },
         {
-          "startTime": 18,
-          "endTime": 34,
-          "topic": "The control engineer analogy: why the industry will need fewer but higher-skilled developers"
-        }
-      ]
-    },
-    {
-      "title": "Creator of Lua: You Can Interpret C And Compile Python | Roberto Ierusalimschy",
-      "url": "https://www.youtube.com/watch?v=4cWFOQQjLvk",
-      "videoId": "4cWFOQQjLvk",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Ever wondered why compiled languages achieve blazing speeds while dynamic languages struggle with raw performance? Lua creator Roberto Ierusalimschy breaks down the foundational mechanics of type systems, revealing why automatic type inference isn't a silver bullet for dynamic code. Watch this deep dive to uncover how compilers truly operate under the hood and why mental discipline in coding can unlock massive performance gains.",
-      "dateAdded": "2026-09-03T23:37:07.001Z",
-      "timestamps": [
-        {
-          "startTime": 31,
-          "endTime": 105,
-          "topic": "Why 'eval' defines dynamic languages and complicates compilation"
-        },
-        {
-          "startTime": 156,
-          "endTime": 222,
-          "topic": "How type systems enable efficient memory allocation and machine code generation"
-        },
-        {
-          "startTime": 278,
-          "endTime": 381,
-          "topic": "The limits of type inference and how LuaJIT achieves top-tier performance"
+          "startTime": 123,
+          "endTime": 184,
+          "topic": "The Elegance of Scheme and the Forgotten Power of SNOBOL"
         }
       ]
     },
@@ -173,32 +131,6 @@
       ]
     },
     {
-      "title": "Koray Kavukcuoglu on frontier models, coding agents, and building AGI",
-      "url": "https://www.youtube.com/watch?v=Rrr2gdbvNFU",
-      "videoId": "Rrr2gdbvNFU",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Go behind the scenes with Google DeepMind's Chief AI Architect, Koray Kavukcuoglu, as he reveals why there is no single benchmark test for AGI and what it actually takes to build frontier intelligence. Discover how the shift from raw language models to autonomous agentic systems is reshaping AI capabilities, alongside exclusive insights into the development of Gemini 4 and Google's long-term roadmap. If you want a masterclass in how frontier AI is engineered from the ground up, this insider conversation is a must-watch.",
-      "dateAdded": "2026-09-03T23:37:07.001Z",
-      "timestamps": [
-        {
-          "startTime": 428,
-          "endTime": 532,
-          "topic": "Google DeepMind's commitment to staying at the frontier of AI"
-        },
-        {
-          "startTime": 724,
-          "endTime": 845,
-          "topic": "From Atari DQN to Gemini: The evolution of agentic deep reinforcement learning"
-        },
-        {
-          "startTime": 1147,
-          "endTime": 1265,
-          "topic": "Stacked sigmoids and how technological breakthroughs drive real AI progress"
-        }
-      ]
-    },
-    {
       "title": "Konsep wakaf dalam takaful",
       "url": "https://www.youtube.com/shorts/AJTkOYbsyVA",
       "videoId": "AJTkOYbsyVA",
@@ -221,58 +153,6 @@
           "startTime": 124,
           "endTime": 152,
           "topic": "How waqaf transcends background as a structured way to give back to society"
-        }
-      ]
-    },
-    {
-      "title": "Scam vending machine",
-      "url": "https://www.youtube.com/shorts/VEIxKlOEkyI",
-      "videoId": "VEIxKlOEkyI",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Thinking of investing in a vending machine scheme for guaranteed passive income? Watch this breakdown of how over 40 investors lost SGD 4 million (RM 13 million) to a flashy scammer promising unrealistic returns. Learn the costly realities of running actual vending machines so you can spot red flags before losing your hard-earned money.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 48,
-          "topic": "The Nozomi Vending Machine scam and how the scammer built trust"
-        },
-        {
-          "startTime": 48,
-          "endTime": 96,
-          "topic": "The unrealistic passive income promise and how the scheme collapsed"
-        },
-        {
-          "startTime": 96,
-          "endTime": 133,
-          "topic": "The real operational costs and risks of vending machine businesses"
-        }
-      ]
-    },
-    {
-      "title": "Tipuan bida mainan kartel?",
-      "url": "https://www.youtube.com/shorts/xvfcJd4sFN8",
-      "videoId": "xvfcJd4sFN8",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Discover how deceptive bid rigging and massive corporate cartels quietly manipulate market prices in Malaysia, including the infamous RM415 million poultry feed case. Hear directly from the CEO of MyCC as he exposes the ruthless tactics anticompetitive players use and how regulators crack down on the 'supreme evil' of market competition. Watch this clip to understand how hidden cartels directly impact the economy and consumer prices.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
-      "timestamps": [
-        {
-          "startTime": 10,
-          "endTime": 35,
-          "topic": "The RM415 million poultry feed cartel case"
-        },
-        {
-          "startTime": 46,
-          "endTime": 70,
-          "topic": "Understanding bid rigging cartels ('tipuan bida')"
-        },
-        {
-          "startTime": 88,
-          "endTime": 113,
-          "topic": "Why cartel prohibition is MyCC's primary focus"
         }
       ]
     },
@@ -379,7 +259,137 @@
           "topic": "Anchoring in 'True North' to Overcome the Need for People-Pleasing"
         }
       ]
+    },
+    {
+      "title": "#113 | Never Quit On Your Goals (Leon Jala)",
+      "url": "https://www.youtube.com/watch?v=5sV3gGhwGNE",
+      "videoId": "5sV3gGhwGNE",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "Most ambitious projects fail not from a lack of great ideas, but from losing momentum the moment initial excitement fades and obstacles arise. Discover the proven 'DMS' framework—Do it relentlessly, Monitor constantly, and Solve problems recursively—to build unbreakable discipline, systematic accountability, and resilient leadership. Watch this episode to learn how to turn compounding, small actions into unstoppable momentum and overcome the fear of failure for good.",
+      "dateAdded": "2026-09-04T23:29:30.930Z",
+      "timestamps": [
+        {
+          "startTime": 178,
+          "endTime": 310,
+          "topic": "The 'DMS' Framework: Do Relentlessly, Monitor Constantly, Solve Recursively"
+        },
+        {
+          "startTime": 890,
+          "endTime": 1055,
+          "topic": "Building an Automatic Escalation System for Accountability"
+        },
+        {
+          "startTime": 1300,
+          "endTime": 1490,
+          "topic": "The Danger of Hoarding Work and Why Leaders Must Solve Problems Recursively"
+        }
+      ]
+    },
+    {
+      "title": "Most Replayed: They Ignored Upin & Ipin | Founder & Managing Director of Les’ Copaque Production",
+      "url": "https://www.youtube.com/shorts/rc9T9Qvkq3g",
+      "videoId": "rc9T9Qvkq3g",
+      "channel": "BFM 89.9",
+      "category": "General Ideas",
+      "summary": "Despite Upin & Ipin gaining international acclaim and sharing the stage with blockbuster global hits like Disney's Frozen, its creator reveals how government initiatives continuously sideline Malaysia's most iconic brand. Watch this candid interview to understand why bureaucratic resistance is holding back a homegrown cultural powerhouse that could elevate national tourism and events worldwide.",
+      "dateAdded": "2026-09-04T23:29:30.930Z",
+      "timestamps": [
+        {
+          "startTime": 4,
+          "endTime": 28,
+          "topic": "Upin & Ipin's Oscar qualification and global recognition"
+        },
+        {
+          "startTime": 28,
+          "endTime": 60,
+          "topic": "Government's missed opportunity in national tourism campaigns"
+        },
+        {
+          "startTime": 60,
+          "endTime": 76,
+          "topic": "Bureaucratic pushback against using homegrown icons for sports events"
+        }
+      ]
+    },
+    {
+      "title": "Nothing Fixes Itself | LATEST Khutbah by Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=CD_5PBWQQ3Y",
+      "videoId": "CD_5PBWQQ3Y",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Supplication without action is insufficient—Allah only grants success (Tawfiq) when we take tangible steps to repair what is broken in our lives. Dr. Omar Suleiman breaks down the Quranic formula for mending shattered relationships, swallowing our egos, and bridging the gap between sincere prayer and real-world effort. Watch this sermon to discover how taking the first difficult step can unlock divine resolution in your most hopeless situations.",
+      "dateAdded": "2026-09-04T23:29:30.930Z",
+      "timestamps": [
+        {
+          "startTime": 243,
+          "endTime": 445,
+          "topic": "The Quranic Equation: Sincere Intent, Action (Islah), and Divine Success (Tawfiq)"
+        },
+        {
+          "startTime": 553,
+          "endTime": 765,
+          "topic": "Why Broken Relationships Fail to Mend Without Mutual Will"
+        },
+        {
+          "startTime": 915,
+          "endTime": 1105,
+          "topic": "The Fallacy of Passive Dua: Taking the First Step to Fix Conflict"
+        }
+      ]
+    },
+    {
+      "title": "Performant code is usually well architected code",
+      "url": "https://www.youtube.com/shorts/deB3LNWW5dA",
+      "videoId": "deB3LNWW5dA",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Over-engineering code with endless abstractions and microservices doesn't make it well-architected—it makes it sluggish and impossible to maintain. In this clip, Casey Muratori reveals why simple, readable code is naturally performant and how to design software that leaves the door wide open for maximum efficiency.",
+      "dateAdded": "2026-09-04T23:29:30.930Z",
+      "timestamps": [
+        {
+          "startTime": 3,
+          "endTime": 28,
+          "topic": "Why simple, well-architected code runs fast by default"
+        },
+        {
+          "startTime": 28,
+          "endTime": 42,
+          "topic": "The pitfalls of over-engineering architecture"
+        },
+        {
+          "startTime": 42,
+          "endTime": 61,
+          "topic": "The true sweet spot of performant and maintainable code"
+        }
+      ]
+    },
+    {
+      "title": "How The Best Engineers Solve Problems Most Give Up On (Niantic Spatial CTO)",
+      "url": "https://www.youtube.com/watch?v=jO085XIsdBM",
+      "videoId": "jO085XIsdBM",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "Google Earth co-creator and Niantic Spatial CTO Brian McClendon reveals why static 3D mapping is obsolete and how cutting-edge Gaussian splatting is creating a searchable, interactive 4D digital twin of our world. Discover how physical spaces, historical imagery, and spatial AI are converging to train autonomous robots and unlock reality-bending mixed reality. If you want to cut through generative AI hype and understand the real engineering breakthroughs bridging the digital and physical realms, this conversation is an absolute must-watch.",
+      "dateAdded": "2026-09-04T23:29:30.930Z",
+      "timestamps": [
+        {
+          "startTime": 400,
+          "endTime": 518,
+          "topic": "Building a 4D Digital Twin: Capturing the World Across Time"
+        },
+        {
+          "startTime": 915,
+          "endTime": 1053,
+          "topic": "How Gaussian Splats Are Replacing Traditional 3D Meshes"
+        },
+        {
+          "startTime": 1329,
+          "endTime": 1500,
+          "topic": "Designing at Production Scale: Why Token-Maxing AI Fails Real Engineering"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-09-03T23:55:21.584Z"
+  "lastUpdated": "2026-09-04T23:42:29.835Z"
 }
