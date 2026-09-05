@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "What psychological phenomenon describes the brain's tendency to discard information from memory once it has been written down or stored externally?",
+      "question": "Which statistical concept or rule of thumb served as the primary motivation for investigating whether the top 20 words account for 80% of the text in the Quran?",
       "options": [
-        "The Hypercorrection Effect",
-        "The Performance Paradox of Cognitive Offloading",
-        "The Primacy-Recency Conflict",
-        "Semantic Satiation"
-      ],
-      "correctIndex": 1,
-      "learning": "Writing down or externally storing information often signals the brain that it has permission to forget it, a phenomenon known as Digital Amnesia or the Performance Paradox of Cognitive Offloading.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In the Scrum framework, during which ceremony does the team demonstrate completed work to the Product Owner and discuss improvements for future Sprints?",
-      "options": [
-        "Daily Scrum",
-        "Backlog Refinement",
-        "Sprint Planning",
-        "Sprint Review"
-      ],
-      "correctIndex": 3,
-      "learning": "During the Sprint Review ceremony, the Scrum team demonstrates completed work to the Product Owner and reflects on the Sprint to identify improvements for future cycles.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "In Quran 51:56, which two creations are explicitly stated as being created solely to worship Allah?",
-      "options": [
-        "The jinn and mankind",
-        "Angels and mankind",
-        "Mankind and animals",
-        "The jinn and angels"
+        "Pareto Principle",
+        "Benford's Law",
+        "Zipf's Law",
+        "Heaps' Law"
       ],
       "correctIndex": 0,
-      "learning": "Quran 51:56 defines the foundational purpose of creation by stating, 'I did not create the jinn and mankind except to worship Me.'",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "learning": "The investigation was motivated by testing the Pareto Principle (the 80/20 rule) to see if learning the top 20 most repeated words would cover 80% of the text in the Quran.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In PCIe power management, which specific state achieves deeper energy savings than L1.0 by powering down the electrical circuits of the main link?",
+      "question": "In Islamic thought, which concept refers to the actual unfolding of events in one's life that can be altered through sincere actions and supplication?",
       "options": [
-        "L1.2",
-        "L0s",
-        "L2",
-        "L1.1"
+        "Qadr",
+        "Al-Alim",
+        "Ghafir",
+        "Qada’"
       ],
       "correctIndex": 3,
-      "learning": "In PCIe power management, the L1.1 substate achieves greater energy savings than L1.0 by specifically powering down the electrical circuits of the main link, resulting in higher power conservation alongside an increased wake-up time.",
+      "learning": "While individuals can alter their Qada’ (the actual occurrence of events) through sincere actions and supplication (Dua), any resulting change has always been known to Allah and is already part of His eternal plan (Qadr).",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Within the PCIe L1 power management substates, which specific substate achieves the maximum power savings at the cost of the longest delay to resume activity?",
+      "options": [
+        "L1.2",
+        "L1.0",
+        "L0s",
+        "L1.1"
+      ],
+      "correctIndex": 0,
+      "learning": "Within PCIe L1 power management substates, achieving maximum power savings in L1.2 comes with the trade-off of introducing the longest wake-up delay before resuming full operation.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "When a person's sincere supplications or actions alter the unfolding of events in their life (Qada'), how does this alteration relate to Qadr?",
+      "question": "In Islamic theology, what is explicitly identified in Quran 51:56 as the foundational purpose for creating jinn and mankind?",
       "options": [
-        "The alteration was already known to Allah and is encompassed within His eternal, preordained plan",
-        "The alteration takes place entirely outside of divine permission and knowledge",
-        "The alteration proves that human decisions cannot exist alongside divine knowledge",
-        "The alteration completely overrides and negates the preordained plan"
+        "To accumulate knowledge and material wealth",
+        "To govern and conquer earthly kingdoms",
+        "To experience worldly pleasures and diversions",
+        "To worship Allah"
+      ],
+      "correctIndex": 3,
+      "learning": "In Islamic belief, the foundational motivation behind the creation of jinn and mankind is defined in Quran 51:56 as being solely to worship Allah.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which Scrum artifact is specifically used to visualize the progress of a Sprint and display the remaining work to track if the team is on schedule?",
+      "options": [
+        "Burndown Chart",
+        "Product Backlog",
+        "Sprint Backlog",
+        "Daily Stand-up"
       ],
       "correctIndex": 0,
-      "learning": "While human actions and supplications (Dua) can influence or alter the unfolding of life events (Qada'), any such change was already known to Allah and is completely encompassed within His eternal plan and knowledge (Qadr).",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
+      "learning": "In Scrum, the Burndown Chart is the primary artifact designed to visualize Sprint progress and display remaining work to ensure the team stays on schedule.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
     }
   ],
-  "fetchedAt": "2026-09-04T23:28:56.735Z"
+  "fetchedAt": "2026-09-05T23:25:53.840Z"
 }
