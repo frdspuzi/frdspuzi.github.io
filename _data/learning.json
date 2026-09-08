@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In the 1880s, researcher Hermann Ebbinghaus demonstrated that without active recall, approximately what percentage of newly learned information is forgotten within 24 hours?",
+      "question": "In PCIe power management, which state is designed as a very light sleep state for short durations of idleness, allowing the link to rapidly resume full activity?",
       "options": [
-        "80%",
-        "35%",
-        "95%",
-        "50%"
-      ],
-      "correctIndex": 0,
-      "learning": "Research conducted by Hermann Ebbinghaus in the 1880s proved that humans forget roughly 80% of newly learned information within 24 hours unless active recall is used.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In PCIe power management, which state offers the highest power savings and requires the longest wake-up time, leaving the device almost completely powered down?",
-      "options": [
+        "L1.2",
         "L1.0",
         "L2",
-        "L0",
         "L0s"
       ],
-      "correctIndex": 1,
-      "learning": "In PCIe power management, the L2 state is the deepest sleep state where the device is almost completely powered down, offering the highest power savings and the longest wake-up time for extended periods of inactivity.",
+      "correctIndex": 3,
+      "learning": "In PCIe power management, the L0s state functions as a very light sleep state designed for short periods of idleness, enabling the link to quickly wake up and resume data transmission.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "What is a primary technical trade-off when analyzing Arabic text that has been stripped of Tashkeel (vowel markings)?",
+      "question": "Beyond the mere performance of outward rituals, which concept in Islamic worship specifically refers to developing mindfulness and an inner awareness of God that restrains wrongdoing?",
       "options": [
-        "Right-to-left language formatting cannot be loaded into dataframes",
-        "String manipulation methods like split() fail to identify word boundaries",
-        "Precision is lost because distinct words with different pronunciations can share the exact same spelling",
-        "Word frequency cannot be computed without direct English translations"
+        "Dunya",
+        "Taqwa",
+        "Jinn",
+        "Khalifah"
       ],
-      "correctIndex": 2,
-      "learning": "Removing Tashkeel (vowel markings) simplifies Arabic text and makes it more uniform for data analysis, but it sacrifices precision because words with different pronunciations and meanings can share identical spelling without those marks.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "correctIndex": 1,
+      "learning": "In Islamic teachings, worship is not merely the performance of mechanical rituals, but a means to foster taqwa—an ongoing mindfulness and awareness of God that guides individuals away from wrongdoing.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
+    },
+    {
+      "question": "What psychological phenomenon describes the tendency of the human brain to forget information immediately after writing it down or storing it on a device?",
+      "options": [
+        "The Ebbinghaus Threshold",
+        "The \"Performance Paradox\" of Cognitive Offloading",
+        "Spaced Storage Disconnect",
+        "Active Recall Bias"
+      ],
+      "correctIndex": 1,
+      "learning": "Due to the \"Performance Paradox\" of Cognitive Offloading (or Digital Amnesia), writing down or externally storing information prompts the brain to treat it as permission to forget the material.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     },
     {
       "question": "During which Scrum ceremony does the team demonstrate completed work to the Product Owner and discuss improvements for future Sprints?",
       "options": [
-        "Daily Scrum",
-        "Sprint Planning",
         "Sprint Review",
-        "Sprint Backlog"
+        "Sprint Planning",
+        "Sprint Refinement",
+        "Daily Scrum"
       ],
-      "correctIndex": 2,
-      "learning": "The Sprint Review ceremony serves as the final phase where the team demonstrates completed work to the Product Owner and reflects on the Sprint to discuss improvements for future cycles.",
+      "correctIndex": 0,
+      "learning": "The Sprint Review ceremony serves as the concluding event where the team demonstrates completed work to the Product Owner, reflects on the Sprint, and discusses improvements for future cycles.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "In Islamic theology, what Arabic term refers to humanity's role and responsibility as stewards, caretakers, and successive authorities on Earth?",
+      "question": "In the concept of destiny, what is the primary distinction between Qada’ and Qadr?",
       "options": [
-        "Bukhari",
-        "Taqwa",
-        "Khalifah",
-        "Jinn"
+        "Qadr represents the unfolding of daily events, while Qada’ encompasses Allah’s complete and eternal knowledge.",
+        "Qada’ refers to the actual unfolding of events that can be altered by supplication, while Qadr is Allah’s complete, preordained plan.",
+        "Qada’ is the eternal, unchangeable register of creation, while Qadr refers strictly to human decisions.",
+        "Qada’ represents fixed disasters that cannot be altered, while Qadr refers to successful worldly business outcomes."
       ],
-      "correctIndex": 2,
-      "learning": "In Islamic theology, the purpose of human existence is centered on three core responsibilities: worshiping Allah, serving as earthly stewards (khalifah) to preserve faith and unity, and navigating life as a test of accountability for the eternal Hereafter.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "correctIndex": 1,
+      "learning": "Qada’ refers to the actual unfolding of events in life that can be influenced by supplication (Dua) and actions, whereas Qadr is Allah’s complete and preordained plan that already encompasses those actions and changes.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     }
   ],
-  "fetchedAt": "2026-09-07T23:50:27.249Z"
+  "fetchedAt": "2026-09-08T23:44:26.239Z"
 }
