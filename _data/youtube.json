@@ -1,32 +1,6 @@
 {
   "videos": [
     {
-      "title": "Why AI Agents Need Million-Token Context — Thomas Wolf & Olive Song, MiniMax",
-      "url": "https://www.youtube.com/watch?v=5Cxe5dv2Xlw",
-      "videoId": "5Cxe5dv2Xlw",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Discover how MiniMax built top-tier open models like M3 by pioneering native multimodal pre-training from day one and inventing MiniMax Sparse Attention to effortlessly process over 1 million tokens. In this insightful fireside chat with Hugging Face's Thomas Wolf, get a rare behind-the-scenes look at the architectural innovations and automated agent workflows powering the next generation of frontier AI models.",
-      "dateAdded": "2026-09-04T23:29:30.930Z",
-      "timestamps": [
-        {
-          "startTime": 234,
-          "endTime": 335,
-          "topic": "Overview of MiniMax M3 and Long-Context Multimodal Capabilities"
-        },
-        {
-          "startTime": 510,
-          "endTime": 597,
-          "topic": "Architecture of MiniMax Sparse Attention (MSA)"
-        },
-        {
-          "startTime": 638,
-          "endTime": 775,
-          "topic": "Native Multimodal Pre-training vs. Post-hoc Adapters"
-        }
-      ]
-    },
-    {
       "title": "From coding to Knowledge work agents — Karan Vaidya, Composio",
       "url": "https://www.youtube.com/watch?v=xxfMT-bPEmU",
       "videoId": "xxfMT-bPEmU",
@@ -53,28 +27,44 @@
       ]
     },
     {
-      "title": "Your company brain will leak secrets: how we stopped it for big banks — Tanmai Gopal, PromptQL",
-      "url": "https://www.youtube.com/watch?v=0uC6u0lJJl4",
-      "videoId": "0uC6u0lJJl4",
-      "channel": "AI Engineer",
+      "title": "The next big shift in AI from Anthropic",
+      "url": "https://www.youtube.com/shorts/LUi3_T2PH8Y",
+      "videoId": "LUi3_T2PH8Y",
+      "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Deploying internal AI agents across your organization risks leaking sensitive corporate data if your 'company brain' isn't architected properly. Discover why traditional memory silos and auto-saving agents fail, and learn the four essential architectural rules to safely scale collaborative AI agents using scoped wikis and virtualized credentials. If you are building enterprise AI workflows, this talk provides the blueprint to keep proprietary knowledge secure without breaking usability.",
-      "dateAdded": "2026-09-03T23:37:07.001Z",
+      "summary": "Coding is just the beginning—Anthropic engineers reveal how AI is expanding beyond code generation to automate the entire software development lifecycle. Discover how upcoming shifts in generative interfaces and autonomous workflows will fundamentally change how developers build and maintain software.",
+      "dateAdded": "2026-09-08T23:44:39.170Z",
       "timestamps": [
         {
-          "startTime": 487,
-          "endTime": 645,
-          "topic": "Why healthy company brains require continuous, growing contribution rates"
+          "startTime": 7,
+          "endTime": 32,
+          "topic": "Claude Code vs. Claude Tag across the software lifecycle"
         },
         {
-          "startTime": 900,
-          "endTime": 1025,
-          "topic": "Scoped wikis vs. auto-memory: How to safely contribute company context"
+          "startTime": 33,
+          "endTime": 54,
+          "topic": "Turning development workflows into automated loops with generative interfaces"
+        }
+      ]
+    },
+    {
+      "title": "Coding is largely solved here's what matters still",
+      "url": "https://www.youtube.com/shorts/Cf0fBrfparI",
+      "videoId": "Cf0fBrfparI",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Even in an era where AI can write software, deep technical literacy is the only way you can judge, guide, and build truly great products. Discover why 'solved coding' isn't the end of programming, but an unprecedented unlock that eliminates common bottlenecks and lets builders tackle entirely new frontiers.",
+      "dateAdded": "2026-09-08T23:44:39.170Z",
+      "timestamps": [
+        {
+          "startTime": 4,
+          "endTime": 27,
+          "topic": "Why technical literacy and engineering fundamentals still matter"
         },
         {
-          "startTime": 1424,
-          "endTime": 1505,
-          "topic": "Credential virtualization and the 4 rules for secure company AI"
+          "startTime": 27,
+          "endTime": 50,
+          "topic": "What 'coding is solved' actually means for the future of building"
         }
       ]
     },
@@ -100,49 +90,28 @@
       ]
     },
     {
-      "title": "Anthropic's number one tip for engineers",
-      "url": "https://www.youtube.com/shorts/UyrO2CUqpPo",
-      "videoId": "UyrO2CUqpPo",
-      "channel": "Ryan Peterman",
+      "title": "Agentic approaches to processing long videos with Gemini",
+      "url": "https://www.youtube.com/shorts/HyfhaGNVKUA",
+      "videoId": "HyfhaGNVKUA",
+      "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Anthropic's top engineer reveals the single mindset shift that transforms how developers use AI: treat Claude as a thought partner, not just a tool. Learn how to ask the right questions and elevate your work to building the systems that build products.",
-      "dateAdded": "2026-09-07T23:50:46.898Z",
+      "summary": "Dumping full videos into AI models wastes hundreds of thousands of tokens and dilutes the accuracy of your results. Learn how agentic video understanding empowers Gemini to dynamically query transcripts, specific frames, and audio only when needed. Watch this quick breakdown to see how a simple think-act-observe loop slashes token costs while dramatically boosting AI comprehension.",
+      "dateAdded": "2026-09-08T23:44:39.170Z",
       "timestamps": [
         {
-          "startTime": 0,
-          "endTime": 19,
-          "topic": "Anthropic's #1 rule: Treat Claude as a thought partner"
+          "startTime": 16,
+          "endTime": 43,
+          "topic": "Replacing full video ingestion with targeted tool calls"
         },
         {
-          "startTime": 19,
-          "endTime": 30,
-          "topic": "Leveling up: Building the system that builds the system"
-        }
-      ]
-    },
-    {
-      "title": "How Anthropic Builds And How Engineering Will Change Soon | Thariq Shihipar",
-      "url": "https://www.youtube.com/watch?v=2Kch3tWMnw8",
-      "videoId": "2Kch3tWMnw8",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Anthropic engineer Thariq Shihipar reveals that getting 10x output from AI isn't about writing clever one-liner prompts—it's about stepping into a higher level of abstraction and building robust automated loops and verification harnesses. If you want an authentic, insider playbook on how frontier AI creators actually build software, test code, and stay irreplaceable as programming evolves, this masterclass is must-watch material.",
-      "dateAdded": "2026-09-07T23:50:46.898Z",
-      "timestamps": [
-        {
-          "startTime": 68,
-          "endTime": 152,
-          "topic": "Treating AI as a thought partner and moving up abstraction levels"
+          "startTime": 44,
+          "endTime": 70,
+          "topic": "The think-act-observe agentic loop in action"
         },
         {
-          "startTime": 396,
-          "endTime": 510,
-          "topic": "Harness engineering and autonomous modes"
-        },
-        {
-          "startTime": 3675,
-          "endTime": 3765,
-          "topic": "Why deep technical mastery matters more than ever"
+          "startTime": 71,
+          "endTime": 90,
+          "topic": "Token reduction and performance advantages"
         }
       ]
     },
@@ -173,54 +142,64 @@
       ]
     },
     {
-      "title": "Peluang pelaburan hartanah baru?",
-      "url": "https://www.youtube.com/shorts/N7bEm2M5JW0",
-      "videoId": "N7bEm2M5JW0",
+      "title": "[S03:E75] Inflasi terkawal, kos hidup makin mahal? - Dato'  Fraziali Ismail, Assistant Governor BNM",
+      "url": "https://www.youtube.com/watch?v=gD-xbzLZg0Y",
+      "videoId": "gD-xbzLZg0Y",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Looking to diversify beyond ASB? Discover the crucial differences between Amanah Hartanah Bumiputera (AHB) and ASB, including AHB's massive RM1 million individual investment limit, physical commercial real estate backing, and automatic zakat deduction. Watch this breakdown to see which fixed-price fund fits your portfolio strategy and how you can easily subscribe online.",
-      "dateAdded": "2026-09-07T23:50:46.898Z",
+      "summary": "Get a clear, direct explanation from the Assistant Governor of Bank Negara Malaysia on why living costs feel high even when inflation is reported low. It demystifies key economic indicators and wage-growth dynamics affecting young professionals in Malaysia.",
+      "dateAdded": "2026-09-08T23:44:39.170Z",
+      "timestamps": []
+    },
+    {
+      "title": "Takaful penting, tapi ramai tangguh",
+      "url": "https://www.youtube.com/shorts/fegXrq50Phw",
+      "videoId": "fegXrq50Phw",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Most people know takaful is essential, yet they keep putting it off until a sudden tragedy leaves their loved ones stranded with debt and uncertainty. This discussion reveals why breadwinners often delay securing protection and how a simple nudge from a spouse or mother can prevent irreversible financial regret. Watch this to learn why taking action on takaful and hibah today is the ultimate act of responsibility for your family's future.",
+      "dateAdded": "2026-09-08T23:44:39.170Z",
       "timestamps": [
         {
-          "startTime": 25,
-          "endTime": 50,
-          "topic": "Asset differences: Stock market equities vs. commercial real estate"
+          "startTime": 13,
+          "endTime": 36,
+          "topic": "The Awareness Gap: Why people understand takaful but still delay"
         },
         {
-          "startTime": 50,
+          "startTime": 66,
           "endTime": 96,
-          "topic": "Comparing individual limits, Shariah compliance, and dividend yields"
+          "topic": "The Family Nudge: Why wives and mothers play a crucial role"
         },
         {
-          "startTime": 109,
-          "endTime": 125,
-          "topic": "Minimum entry amounts and how to purchase AHB units online"
+          "startTime": 115,
+          "endTime": 155,
+          "topic": "Learning from Tragedy: Why waiting for a wake-up call is dangerous"
         }
       ]
     },
     {
-      "title": "Konsep wakaf dalam takaful",
-      "url": "https://www.youtube.com/shorts/AJTkOYbsyVA",
-      "videoId": "AJTkOYbsyVA",
+      "title": "Kadar OPR masih kekal?",
+      "url": "https://www.youtube.com/shorts/fdyrdYOTGDQ",
+      "videoId": "fdyrdYOTGDQ",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "When we pass away, can we really count on our heirs to donate on our behalf? This eye-opening conversation shares a sobering real-life story and reveals why integrating waqaf into your takaful plan is crucial to securing your own continuous rewards in the hereafter. Watch to discover how waqaf functions as a transparent social finance tool that empowers society while creating a lasting personal legacy.",
-      "dateAdded": "2026-09-03T23:37:07.001Z",
+      "summary": "Wondering how Bank Negara Malaysia's interest rate decisions directly hit your wallet? Discover how the Overnight Policy Rate (OPR) dictates your monthly home loan installments through the Standardised Base Rate (SBR) and why rate stability is great news for your budget.",
+      "dateAdded": "2026-09-08T23:44:39.170Z",
       "timestamps": [
         {
-          "startTime": 21,
-          "endTime": 47,
-          "topic": "A sobering story on why you cannot rely on heirs to donate for you"
+          "startTime": 18,
+          "endTime": 50,
+          "topic": "What is the Overnight Policy Rate (OPR)?"
         },
         {
-          "startTime": 56,
-          "endTime": 84,
-          "topic": "Using waqaf in takaful for continuous afterlife rewards and social finance"
+          "startTime": 50,
+          "endTime": 156,
+          "topic": "How OPR and SBR impact your monthly home loan repayments"
         },
         {
-          "startTime": 124,
-          "endTime": 152,
-          "topic": "How waqaf transcends background as a structured way to give back to society"
+          "startTime": 208,
+          "endTime": 250,
+          "topic": "Economic factors behind BNM's decision to maintain rates"
         }
       ]
     },
@@ -298,28 +277,54 @@
       ]
     },
     {
-      "title": "Game-changing warehouse solutions enabled by tech | In The Studio",
-      "url": "https://www.youtube.com/watch?v=yCbnGhrlxfI",
-      "videoId": "yCbnGhrlxfI",
-      "channel": "BFM 89.9",
+      "title": "#113 | Never Quit On Your Goals (Leon Jala)",
+      "url": "https://www.youtube.com/watch?v=5sV3gGhwGNE",
+      "videoId": "5sV3gGhwGNE",
+      "channel": "The Game Of Impossible",
       "category": "General Ideas",
-      "summary": "Relying on manual warehouse operations costs businesses billions in lost opportunities, but digital transformation is no longer an all-or-nothing gamble. In this interview, CelcomDigi's Chief Enterprise Business Officer reveals how combining 5G Standalone, AI, and robotics achieves 100% inventory accuracy and 20x faster fulfillment. Watch to discover the practical, modular roadmap that allows both SMEs and large enterprises to scale smart automation affordably without disrupting daily operations.",
-      "dateAdded": "2026-09-07T23:50:46.898Z",
+      "summary": "The biggest threat to long-term success isn't a lack of talent—it is losing momentum the moment initial motivation fades and friction sets in. In this episode, you will discover the proven 'DMS' framework (Do relentlessly, Monitor constantly, Solve recursively) used to build unshakeable discipline, implement effective accountability systems, and transform recurring problems into compound growth. If you want to stop getting stuck in operational bottlenecks and learn how true leaders sustain massive momentum, this breakdown is essential viewing.",
+      "dateAdded": "2026-09-08T23:44:39.171Z",
       "timestamps": [
         {
-          "startTime": 120,
-          "endTime": 270,
-          "topic": "Key Benefits: 50% Efficiency Boost and 100% Accuracy"
+          "startTime": 187,
+          "endTime": 255,
+          "topic": "The DMS Framework and the Power of Public Commitment"
         },
         {
-          "startTime": 645,
-          "endTime": 760,
-          "topic": "Why 5G Standalone is the Crucial Backbone for Robotics and Drones"
+          "startTime": 915,
+          "endTime": 1005,
+          "topic": "Implementing an Automatic Escalation System for Accountability"
         },
         {
-          "startTime": 1020,
-          "endTime": 1195,
-          "topic": "Modular 'As-A-Service' Adoption Strategies for SMEs and Large Enterprises"
+          "startTime": 1340,
+          "endTime": 1480,
+          "topic": "The Danger of Hoarding Work: A Leadership Lesson on Recursive Problem Solving"
+        }
+      ]
+    },
+    {
+      "title": "No profits since 2018, has Pos Malaysia lost their route? - Charles Brewer, CEO of Pos Malaysia",
+      "url": "https://www.youtube.com/watch?v=5UMPn3vFLNs",
+      "videoId": "5UMPn3vFLNs",
+      "channel": "BFM 89.9",
+      "category": "General Ideas",
+      "summary": "How does a 200-year-old national postal service survive when letter mail drops by over 80% while delivery costs continue to skyrocket? Pos Malaysia CEO Charles Brewer breaks down the brutal realities of competing against subsidized logistics giants, why shipping a cross-country parcel currently costs less than a cappuccino, and reveals an exclusive new live-tracking feature rolling out nationwide. Watch this interview to see the high-stakes turnaround playbook of a legacy titan fighting to remain profitable in a digital-first economy.",
+      "dateAdded": "2026-09-08T23:44:39.171Z",
+      "timestamps": [
+        {
+          "startTime": 150,
+          "endTime": 295,
+          "topic": "The 80% Collapse in Letter Mail and the Pivot to Cutthroat Logistics"
+        },
+        {
+          "startTime": 388,
+          "endTime": 445,
+          "topic": "Why Sending a Parcel in Malaysia Costs Less Than a Cappuccino"
+        },
+        {
+          "startTime": 1600,
+          "endTime": 1710,
+          "topic": "Exclusive Announcement: Real-Time Live Map Parcel Tracking"
         }
       ]
     },
@@ -348,28 +353,7 @@
           "topic": "Bureaucratic pushback against using homegrown icons for sports events"
         }
       ]
-    },
-    {
-      "title": "The Formula for How Allah Opens Doors | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/ViIOJ9LiU4o",
-      "videoId": "ViIOJ9LiU4o",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Stressed about your finances? Discover the powerful reminder of how Allah never closes a door of provision without opening wider ones—progressing from a single umbilical cord to the eight gates of Paradise. Watch this to transform your mindset on sustenance and understand why your decreed rizq will pursue you just as relentlessly as death itself.",
-      "dateAdded": "2026-09-07T23:50:46.898Z",
-      "timestamps": [
-        {
-          "startTime": 25,
-          "endTime": 62,
-          "topic": "The progression of provision from birth to the doors of Jannah"
-        },
-        {
-          "startTime": 62,
-          "endTime": 75,
-          "topic": "Why your sustenance is guaranteed to catch you"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-09-08T00:05:05.044Z"
+  "lastUpdated": "2026-09-08T23:54:35.899Z"
 }
