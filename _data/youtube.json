@@ -1,91 +1,143 @@
 {
   "videos": [
     {
-      "title": "From coding to Knowledge work agents — Karan Vaidya, Composio",
-      "url": "https://www.youtube.com/watch?v=xxfMT-bPEmU",
-      "videoId": "xxfMT-bPEmU",
+      "title": "The exact tools used to port a massive codebase in days #programming #typescript #dev",
+      "url": "https://www.youtube.com/shorts/AJhjm4_UJIk",
+      "videoId": "AJhjm4_UJIk",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "AI coding agents didn't succeed simply because models got smarter—they succeeded because software engineering already had git histories, CI/CD test suites, and branch protections to keep them on track. Watch this talk to discover the six critical infrastructure primitives needed to finally unleash reliable, autonomous AI agents across everyday enterprise knowledge work without catastrophic mistakes.",
-      "dateAdded": "2026-09-03T23:37:07.001Z",
+      "summary": "Instagram co-founder Mike Krieger reveals how he pulled off an engineering feat once considered impossible: porting hundreds of thousands of lines of Python code into TypeScript over a single weekend. Watch this clip to discover how automated AI workflows can turn what used to be months of tedious refactoring into seamless, weekend-long tasks.",
+      "dateAdded": "2026-09-09T23:39:32.580Z",
       "timestamps": [
         {
-          "startTime": 60,
-          "endTime": 160,
-          "topic": "Why coding agents took off while knowledge-work agents fell behind"
-        },
-        {
-          "startTime": 505,
-          "endTime": 670,
-          "topic": "Solving the memory and context crisis across fragmented enterprise apps"
-        },
-        {
-          "startTime": 898,
-          "endTime": 1070,
-          "topic": "Governance, policy enforcement, and reversibility for safe AI automation"
-        }
-      ]
-    },
-    {
-      "title": "The next big shift in AI from Anthropic",
-      "url": "https://www.youtube.com/shorts/LUi3_T2PH8Y",
-      "videoId": "LUi3_T2PH8Y",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Coding is just the beginning—Anthropic engineers reveal how AI is expanding beyond code generation to automate the entire software development lifecycle. Discover how upcoming shifts in generative interfaces and autonomous workflows will fundamentally change how developers build and maintain software.",
-      "dateAdded": "2026-09-08T23:44:39.170Z",
-      "timestamps": [
-        {
-          "startTime": 7,
-          "endTime": 32,
-          "topic": "Claude Code vs. Claude Tag across the software lifecycle"
-        },
-        {
-          "startTime": 33,
-          "endTime": 54,
-          "topic": "Turning development workflows into automated loops with generative interfaces"
-        }
-      ]
-    },
-    {
-      "title": "Coding is largely solved here's what matters still",
-      "url": "https://www.youtube.com/shorts/Cf0fBrfparI",
-      "videoId": "Cf0fBrfparI",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Even in an era where AI can write software, deep technical literacy is the only way you can judge, guide, and build truly great products. Discover why 'solved coding' isn't the end of programming, but an unprecedented unlock that eliminates common bottlenecks and lets builders tackle entirely new frontiers.",
-      "dateAdded": "2026-09-08T23:44:39.170Z",
-      "timestamps": [
-        {
-          "startTime": 4,
-          "endTime": 27,
-          "topic": "Why technical literacy and engineering fundamentals still matter"
+          "startTime": 8,
+          "endTime": 26,
+          "topic": "The 'unreasonable' idea to rewrite a massive codebase"
         },
         {
           "startTime": 27,
           "endTime": 50,
-          "topic": "What 'coding is solved' actually means for the future of building"
+          "topic": "Automating the complete code migration and verification over a weekend"
         }
       ]
     },
     {
-      "title": "The best ways people aren't using AI yet",
-      "url": "https://www.youtube.com/shorts/dlV-5RIX0vI",
-      "videoId": "dlV-5RIX0vI",
-      "channel": "Ryan Peterman",
+      "title": "The Universal Remote Control for AI — Alex Hancock, Block",
+      "url": "https://www.youtube.com/watch?v=YkNulwcc5jk",
+      "videoId": "YkNulwcc5jk",
+      "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Most people are using AI completely wrong by sticking to manual software interfaces when they should be treating everyday tasks like code. In this clip, an Anthropic engineer reveals how using coding agents like Claude Code to run Python scripts and FFmpeg pipelines can automate everything from personal accounting to video editing faster than ever. Watch to discover why reducing your daily knowledge work into code-like instructions is the ultimate AI productivity unlock.",
-      "dateAdded": "2026-09-07T23:50:46.898Z",
+      "summary": "While tools like MCP standardized how AI agents access data and APIs, controlling agents across different apps and editors has remained a fragmented nightmare. Discover the Agent Client Protocol (ACP)—an emerging open standard that acts as a 'universal remote' to let any frontend, IDE, or CLI seamlessly orchestrate any AI agent, locally or in the cloud.",
+      "dateAdded": "2026-09-09T23:39:32.580Z",
       "timestamps": [
         {
-          "startTime": 5,
-          "endTime": 31,
-          "topic": "Why technical framing unlocks AI knowledge work"
+          "startTime": 140,
+          "endTime": 270,
+          "topic": "The Missing Standard: Why We Need an Agent Client Protocol"
         },
         {
-          "startTime": 31,
-          "endTime": 53,
-          "topic": "Automating accounting and video editing with code agents"
+          "startTime": 367,
+          "endTime": 435,
+          "topic": "How ACP Works and Its Extensible Architecture"
+        },
+        {
+          "startTime": 438,
+          "endTime": 558,
+          "topic": "Live Demos: Controlling AI Agents Across Zed, CLI, and Web"
+        }
+      ]
+    },
+    {
+      "title": "MCP Apps: Give the Model Data, Give the User a UI — Dustin Mihalik, Indeed",
+      "url": "https://www.youtube.com/watch?v=lbaXnx0KLA8",
+      "videoId": "lbaXnx0KLA8",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Integrating rich graphical UIs into AI agents often breaks model intelligence by turning the frontend into an invisible black box. Discover the three golden rules of MCP Apps—including syncing user interactions and decoupling data processing from rendering—to deliver beautiful interactive interfaces without blinding the LLM. If you are building agentic apps for platforms like Claude or ChatGPT, this talk reveals the battle-tested patterns you need to avoid critical UX traps.",
+      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "timestamps": [
+        {
+          "startTime": 248,
+          "endTime": 300,
+          "topic": "Rule #1: Ensuring UI Content is Provided as Structured Data to the Model"
+        },
+        {
+          "startTime": 431,
+          "endTime": 484,
+          "topic": "Rule #2: Feeding Real-Time User Interactions Back to the Model Context"
+        },
+        {
+          "startTime": 607,
+          "endTime": 695,
+          "topic": "Rule #3: Separating Data Processing from UI Rendering"
+        }
+      ]
+    },
+    {
+      "title": "Unusual tip to get more out of the models",
+      "url": "https://www.youtube.com/shorts/b9hQ6uTVToo",
+      "videoId": "b9hQ6uTVToo",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Stop telling AI models to \"believe in themselves\"—an Anthropic engineer reveals that the real magic behind these quirky prompts is simply giving the model permission to spend more compute. Learn how explicitly authorizing AI to deploy sub-agents and workflows unlocks dramatically better problem-solving power. Watch this quick clip to immediately upgrade your prompting strategy for complex coding and reasoning tasks.",
+      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "timestamps": [
+        {
+          "startTime": 4,
+          "endTime": 28,
+          "topic": "The real reason motivational prompts work on AI"
+        },
+        {
+          "startTime": 29,
+          "endTime": 45,
+          "topic": "Actionable tip: Giving AI permission to use sub-agents and workflows"
+        }
+      ]
+    },
+    {
+      "title": "How Anthropic engineers pick models",
+      "url": "https://www.youtube.com/shorts/PR-coJdE5Tg",
+      "videoId": "PR-coJdE5Tg",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Ever wonder how the engineers behind Claude actually choose and deploy AI models in their daily workflow? Discover the insider strategy for maximizing frontier models right now—from high-level planning to heavy-duty implementation—before rapid compute scaling changes the game entirely.",
+      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 17,
+          "topic": "Getting the most out of frontier models"
+        },
+        {
+          "startTime": 17,
+          "endTime": 42,
+          "topic": "How Anthropic engineers divide planning vs implementation"
+        }
+      ]
+    },
+    {
+      "title": "Creator of TypeScript & C#: AI Software Engineering Predictions | Anders Hejlsberg",
+      "url": "https://www.youtube.com/watch?v=qEDMAPpl_O4",
+      "videoId": "qEDMAPpl_O4",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Will AI truly replace developers, or are we mistaking boilerplate volume for real architectural innovation? Programming legend Anders Hejlsberg cuts through the industry hype, explaining why stochastic AI models fail at novel problems like writing compilers and why human accountability remains irreplaceable. Watch this to see how software engineering isn't dying—it's evolving from manual typing into supervisory agent review.",
+      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "timestamps": [
+        {
+          "startTime": 67,
+          "endTime": 145,
+          "topic": "Why AI Struggles with Novel Algorithms and Complex Compilers"
+        },
+        {
+          "startTime": 162,
+          "endTime": 216,
+          "topic": "The Accountability Trap: Legal and Human Responsibility in AI Coding"
+        },
+        {
+          "startTime": 300,
+          "endTime": 366,
+          "topic": "How the Craft Is Changing: Shifting from Typing Code to Supervising Agents"
         }
       ]
     },
@@ -142,64 +194,80 @@
       ]
     },
     {
-      "title": "[S03:E75] Inflasi terkawal, kos hidup makin mahal? - Dato'  Fraziali Ismail, Assistant Governor BNM",
-      "url": "https://www.youtube.com/watch?v=gD-xbzLZg0Y",
-      "videoId": "gD-xbzLZg0Y",
+      "title": "BUDI95 kembali 300 liter",
+      "url": "https://www.youtube.com/shorts/d-ueArs7g-Q",
+      "videoId": "d-ueArs7g-Q",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Get a clear, direct explanation from the Assistant Governor of Bank Negara Malaysia on why living costs feel high even when inflation is reported low. It demystifies key economic indicators and wage-growth dynamics affecting young professionals in Malaysia.",
-      "dateAdded": "2026-09-08T23:44:39.170Z",
-      "timestamps": []
-    },
-    {
-      "title": "Takaful penting, tapi ramai tangguh",
-      "url": "https://www.youtube.com/shorts/fegXrq50Phw",
-      "videoId": "fegXrq50Phw",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Most people know takaful is essential, yet they keep putting it off until a sudden tragedy leaves their loved ones stranded with debt and uncertainty. This discussion reveals why breadwinners often delay securing protection and how a simple nudge from a spouse or mother can prevent irreversible financial regret. Watch this to learn why taking action on takaful and hibah today is the ultimate act of responsibility for your family's future.",
-      "dateAdded": "2026-09-08T23:44:39.170Z",
+      "summary": "Discover how targeted fuel subsidies really impact your wallet and the national budget when global oil prices fluctuate. Faiz Azmi breaks down the numbers behind the BUDI95 quota restoration to 300 liters and reveals who actually benefits most from government fuel assistance. Watch this breakdown to understand the true economic balance between personal fuel savings and national financial sustainability.",
+      "dateAdded": "2026-09-09T23:39:32.580Z",
       "timestamps": [
         {
           "startTime": 13,
-          "endTime": 36,
-          "topic": "The Awareness Gap: Why people understand takaful but still delay"
+          "endTime": 46,
+          "topic": "Why fuel subsidy quotas were cut during global oil price surges"
         },
         {
-          "startTime": 66,
-          "endTime": 96,
-          "topic": "The Family Nudge: Why wives and mothers play a crucial role"
+          "startTime": 72,
+          "endTime": 108,
+          "topic": "Who actually benefits from increasing the BUDI95 quota to 300 liters"
         },
         {
-          "startTime": 115,
-          "endTime": 155,
-          "topic": "Learning from Tragedy: Why waiting for a wake-up call is dangerous"
+          "startTime": 116,
+          "endTime": 140,
+          "topic": "The fiscal risks and enforcement challenges of expanding fuel subsidies"
         }
       ]
     },
     {
-      "title": "Kadar OPR masih kekal?",
-      "url": "https://www.youtube.com/shorts/fdyrdYOTGDQ",
-      "videoId": "fdyrdYOTGDQ",
+      "title": "Cara kerajaan tangani tipuan bida",
+      "url": "https://www.youtube.com/shorts/TtQSw-5mS70",
+      "videoId": "TtQSw-5mS70",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Wondering how Bank Negara Malaysia's interest rate decisions directly hit your wallet? Discover how the Overnight Policy Rate (OPR) dictates your monthly home loan installments through the Standardised Base Rate (SBR) and why rate stability is great news for your budget.",
-      "dateAdded": "2026-09-08T23:44:39.170Z",
+      "summary": "Discover how over 500 companies are secretly siphoning off billions in taxpayer money through coordinated government tender cartels. In this revealing clip, MyCC's CEO explains how a targeted RM20+ million enforcement drive and 35 specialized investigators are actively working to plug massive leakages and dismantle bid-rigging schemes.",
+      "dateAdded": "2026-09-09T23:39:32.580Z",
       "timestamps": [
         {
           "startTime": 18,
-          "endTime": 50,
-          "topic": "What is the Overnight Policy Rate (OPR)?"
+          "endTime": 41,
+          "topic": "Funding and hiring 35 specialized investigators to combat bid rigging"
         },
         {
-          "startTime": 50,
-          "endTime": 156,
-          "topic": "How OPR and SBR impact your monthly home loan repayments"
+          "startTime": 41,
+          "endTime": 59,
+          "topic": "Scale of the investigation: 500+ companies and RM4 billion in tenders"
         },
         {
-          "startTime": 208,
-          "endTime": 250,
-          "topic": "Economic factors behind BNM's decision to maintain rates"
+          "startTime": 60,
+          "endTime": 100,
+          "topic": "How tender cartels inflate public procurement costs by tens of billions"
+        }
+      ]
+    },
+    {
+      "title": "Malaysia mengatasi negara serantau?",
+      "url": "https://www.youtube.com/shorts/qe5iT86UMsI",
+      "videoId": "qe5iT86UMsI",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Discover how Malaysia consistently outperforms regional peers by maintaining steady economic growth alongside low inflation and near-full employment. This breakdown reveals why a diversified multi-sector economy and well-balanced export markets protect the nation against global shocks while positioning it at the very heart of the booming AI supply chain.",
+      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "timestamps": [
+        {
+          "startTime": 39,
+          "endTime": 77,
+          "topic": "Malaysia's strong macroeconomic growth and stability compared to regional peers"
+        },
+        {
+          "startTime": 121,
+          "endTime": 153,
+          "topic": "Economic resilience through sector and commodity diversification"
+        },
+        {
+          "startTime": 204,
+          "endTime": 252,
+          "topic": "Export market diversity and Malaysia's role in the global AI supply chain boom"
         }
       ]
     },
@@ -277,32 +345,6 @@
       ]
     },
     {
-      "title": "#113 | Never Quit On Your Goals (Leon Jala)",
-      "url": "https://www.youtube.com/watch?v=5sV3gGhwGNE",
-      "videoId": "5sV3gGhwGNE",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "The biggest threat to long-term success isn't a lack of talent—it is losing momentum the moment initial motivation fades and friction sets in. In this episode, you will discover the proven 'DMS' framework (Do relentlessly, Monitor constantly, Solve recursively) used to build unshakeable discipline, implement effective accountability systems, and transform recurring problems into compound growth. If you want to stop getting stuck in operational bottlenecks and learn how true leaders sustain massive momentum, this breakdown is essential viewing.",
-      "dateAdded": "2026-09-08T23:44:39.171Z",
-      "timestamps": [
-        {
-          "startTime": 187,
-          "endTime": 255,
-          "topic": "The DMS Framework and the Power of Public Commitment"
-        },
-        {
-          "startTime": 915,
-          "endTime": 1005,
-          "topic": "Implementing an Automatic Escalation System for Accountability"
-        },
-        {
-          "startTime": 1340,
-          "endTime": 1480,
-          "topic": "The Danger of Hoarding Work: A Leadership Lesson on Recursive Problem Solving"
-        }
-      ]
-    },
-    {
       "title": "No profits since 2018, has Pos Malaysia lost their route? - Charles Brewer, CEO of Pos Malaysia",
       "url": "https://www.youtube.com/watch?v=5UMPn3vFLNs",
       "videoId": "5UMPn3vFLNs",
@@ -327,33 +369,7 @@
           "topic": "Exclusive Announcement: Real-Time Live Map Parcel Tracking"
         }
       ]
-    },
-    {
-      "title": "Most Replayed: They Ignored Upin & Ipin | Founder & Managing Director of Les’ Copaque Production",
-      "url": "https://www.youtube.com/shorts/rc9T9Qvkq3g",
-      "videoId": "rc9T9Qvkq3g",
-      "channel": "BFM 89.9",
-      "category": "General Ideas",
-      "summary": "Despite Upin & Ipin gaining international acclaim and sharing the stage with blockbuster global hits like Disney's Frozen, its creator reveals how government initiatives continuously sideline Malaysia's most iconic brand. Watch this candid interview to understand why bureaucratic resistance is holding back a homegrown cultural powerhouse that could elevate national tourism and events worldwide.",
-      "dateAdded": "2026-09-04T23:29:30.930Z",
-      "timestamps": [
-        {
-          "startTime": 4,
-          "endTime": 28,
-          "topic": "Upin & Ipin's Oscar qualification and global recognition"
-        },
-        {
-          "startTime": 28,
-          "endTime": 60,
-          "topic": "Government's missed opportunity in national tourism campaigns"
-        },
-        {
-          "startTime": 60,
-          "endTime": 76,
-          "topic": "Bureaucratic pushback against using homegrown icons for sports events"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-09-08T23:54:35.899Z"
+  "lastUpdated": "2026-09-09T23:53:41.292Z"
 }
