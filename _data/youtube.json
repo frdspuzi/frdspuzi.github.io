@@ -1,28 +1,28 @@
 {
   "videos": [
     {
-      "title": "One Designer + AI. Hundreds of Deliverables. — Vincent Wendy, AI Engineer",
-      "url": "https://www.youtube.com/watch?v=O1FN4awNEtM",
-      "videoId": "O1FN4awNEtM",
+      "title": "Building ambitious software — Jonathan Kelley, Dioxus Labs & Cognition",
+      "url": "https://www.youtube.com/watch?v=H7vFrcNWXzs",
+      "videoId": "H7vFrcNWXzs",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "How can a solo designer produce hundreds of pixel-perfect assets and manage signage for a 7,000-person conference without burning out? Discover how combining structured design systems with AI agents like Devin turns repetitive production, dynamic schedule updates, and tedious QA into automated workflows. Watch this talk to see the exact tactical blueprint for supercharging your design output with autonomous AI tools.",
-      "dateAdded": "2026-09-10T23:30:51.704Z",
+      "summary": "AI coding agents have made writing code virtually free, but why does shipping high-quality software feel harder than ever? Dioxus creator Jonathan Kelley reveals the hard-won lessons from scaling a massive Rust framework with AI—showing why software architecture, rigorous line-by-line reviews, and harness-building are now an engineer's true superpower. Watch this talk to discover how to wield coding agents without falling into the trap of becoming a 'slop cannon.'",
+      "dateAdded": "2026-09-11T23:38:14.156Z",
       "timestamps": [
         {
-          "startTime": 451,
-          "endTime": 645,
-          "topic": "The 5-Step Framework to Solve Design Scale"
+          "startTime": 337,
+          "endTime": 440,
+          "topic": "The 'Slop Cannon' Trap and Why AI Agents Excel at Rust"
         },
         {
-          "startTime": 451,
-          "endTime": 625,
-          "topic": "Automated Workflows: Turning Specs into Instant Deliverables with AI"
+          "startTime": 596,
+          "endTime": 715,
+          "topic": "Leveraging AI's Infinite Patience for Mundane and Complex Tasks"
         },
         {
-          "startTime": 787,
-          "endTime": 855,
-          "topic": "AI-Powered QA: Validating Hundreds of Sponsor Assets Automatically"
+          "startTime": 963,
+          "endTime": 1080,
+          "topic": "Why Code Architecture Remains an Art in the Age of AI"
         }
       ]
     },
@@ -53,70 +53,70 @@
       ]
     },
     {
-      "title": "Using stronger models to clean up tech debt",
-      "url": "https://www.youtube.com/shorts/xwndXpLRrAQ",
-      "videoId": "xwndXpLRrAQ",
+      "title": "What eng interns do at Anthropic",
+      "url": "https://www.youtube.com/shorts/I5QqmJLd8y4",
+      "videoId": "I5QqmJLd8y4",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Should you stop spending months cleaning up tech debt and let the next generation of AI fix it instead? An Anthropic engineer on the Claude Code team reveals a counterintuitive strategy for startup engineering: prioritize short-term value delivery and let upcoming AI models handle your long-term refactoring bottlenecks.",
-      "dateAdded": "2026-09-10T23:30:51.704Z",
+      "summary": "Think AI coding assistants make engineering internships obsolete? Anthropic engineer Thariq S. reveals why interns are actually tackling more exciting, high-impact research challenges than ever before instead of routine boilerplate code. Watch to discover how the rise of AI is transforming entry-level engineering into a frontier of novel problem-solving.",
+      "dateAdded": "2026-09-11T23:38:14.156Z",
+      "timestamps": [
+        {
+          "startTime": 7,
+          "endTime": 34,
+          "topic": "Why interns work on novel research problems instead of routine specs"
+        },
+        {
+          "startTime": 34,
+          "endTime": 46,
+          "topic": "The shift from boilerplate coding to solving brand-new engineering problems"
+        }
+      ]
+    },
+    {
+      "title": "How long until Claude does everything",
+      "url": "https://www.youtube.com/shorts/arZhCHlOYLc",
+      "videoId": "arZhCHlOYLc",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "AI can already complete software engineering tickets from start to finish, but only if the specification is flawless. An Anthropic engineer reveals why raw coding isn't the real bottleneck holding full AI automation back—it's clarifying product vision and knowing what to build in the first place. Watch this clip to understand why human judgment remains essential in an AI-driven development world.",
+      "dateAdded": "2026-09-11T23:38:14.156Z",
       "timestamps": [
         {
           "startTime": 0,
-          "endTime": 16,
-          "topic": "The dilemma of fixing tech debt vs. waiting for stronger AI models"
+          "endTime": 15,
+          "topic": "Can Claude do 100% of the coding work?"
         },
         {
-          "startTime": 17,
-          "endTime": 35,
-          "topic": "Why thinking in shorter timescales changes how you handle long-term projects"
+          "startTime": 15,
+          "endTime": 40,
+          "topic": "Why product vision and specifications are the true bottleneck"
         }
       ]
     },
     {
-      "title": "How he got his job at Anthropic",
-      "url": "https://www.youtube.com/shorts/gs6Nwx0GFb0",
-      "videoId": "gs6Nwx0GFb0",
+      "title": "Creator of TypeScript: Why We Chose Go For Our Rewrite | Anders Hejlsberg",
+      "url": "https://www.youtube.com/watch?v=rX9kkMonrG8",
+      "videoId": "rX9kkMonrG8",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Landing a coveted AI engineering role at Anthropic didn't take years of traditional networking—it took just one month of public initiative. Discover how building a single interpretability visualization and sharing it on Twitter caught industry attention and directly unlocked an intro to Anthropic's Claude team.",
-      "dateAdded": "2026-09-10T23:30:51.704Z",
+      "summary": "Ever wonder why the TypeScript team chose Go over the industry-darling Rust when porting their compiler to native code? Programming language legend Anders Hejlsberg reveals the pragmatic engineering reality: real-world compiler data structures are full of circular references that fight Rust's borrow checker, making Go's built-in garbage collection and shared-memory concurrency the vastly superior choice. Watch this clip to learn how top language architects balance raw performance against real-world compiler architecture.",
+      "dateAdded": "2026-09-11T23:38:14.156Z",
       "timestamps": [
         {
-          "startTime": 2,
-          "endTime": 20,
-          "topic": "The strategic fellowship and building in public mindset"
+          "startTime": 47,
+          "endTime": 151,
+          "topic": "The limits of JavaScript: Concurrency and performance bottlenecks"
         },
         {
-          "startTime": 20,
-          "endTime": 32,
-          "topic": "How one Twitter post turned into an Anthropic job intro"
+          "startTime": 306,
+          "endTime": 446,
+          "topic": "Why porting instead of rewriting led directly to Go"
         },
         {
-          "startTime": 32,
-          "endTime": 46,
-          "topic": "Why showing proactive initiative opens doors at top AI labs"
-        }
-      ]
-    },
-    {
-      "title": "Unusual tip to get more out of the models",
-      "url": "https://www.youtube.com/shorts/b9hQ6uTVToo",
-      "videoId": "b9hQ6uTVToo",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Stop telling AI models to \"believe in themselves\"—an Anthropic engineer reveals that the real magic behind these quirky prompts is simply giving the model permission to spend more compute. Learn how explicitly authorizing AI to deploy sub-agents and workflows unlocks dramatically better problem-solving power. Watch this quick clip to immediately upgrade your prompting strategy for complex coding and reasoning tasks.",
-      "dateAdded": "2026-09-09T23:39:32.580Z",
-      "timestamps": [
-        {
-          "startTime": 4,
-          "endTime": 28,
-          "topic": "The real reason motivational prompts work on AI"
-        },
-        {
-          "startTime": 29,
-          "endTime": 45,
-          "topic": "Actionable tip: Giving AI permission to use sub-agents and workflows"
+          "startTime": 493,
+          "endTime": 605,
+          "topic": "Why Rust was rejected: Circular data structures and the borrow checker"
         }
       ]
     },
@@ -173,28 +173,28 @@
       ]
     },
     {
-      "title": "Agentic video understanding in Gemini",
-      "url": "https://www.youtube.com/watch?v=ytjgy30Cono",
-      "videoId": "ytjgy30Cono",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Feeding entire raw videos into AI models burns through hundreds of thousands of unnecessary tokens and degrades accuracy. Discover how agentic video understanding with Gemini changes the game by empowering the model to autonomously pull transcripts, target specific timestamps, and inspect key frames on demand. Watch this concise breakdown to slash your API costs while significantly boosting your multimodal video analysis performance.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "title": "Peranan OPR dalam ekonomi Malaysia",
+      "url": "https://www.youtube.com/shorts/o7PAMtmPUJ8",
+      "videoId": "o7PAMtmPUJ8",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Ever wondered why central banks tweak interest rates when daily living costs soar? Learn how the Overnight Policy Rate (OPR) functions as a crucial demand-stabilization tool to tame runaway inflation, and why supply shocks like rising oil or the AI chip boom require a completely different approach.",
+      "dateAdded": "2026-09-11T23:38:14.156Z",
       "timestamps": [
         {
-          "startTime": 5,
-          "endTime": 67,
-          "topic": "The costly pitfall of naive video processing"
+          "startTime": 20,
+          "endTime": 43,
+          "topic": "How OPR controls demand-pull inflation"
+        },
+        {
+          "startTime": 44,
+          "endTime": 66,
+          "topic": "Why monetary policy cannot fix supply-side price surges"
         },
         {
           "startTime": 67,
-          "endTime": 113,
-          "topic": "Introducing Agentic Video Understanding"
-        },
-        {
-          "startTime": 113,
-          "endTime": 174,
-          "topic": "The Think-Act-Observe pipeline in action"
+          "endTime": 83,
+          "topic": "Real-world example: The AI boom driving memory chip costs"
         }
       ]
     },
@@ -221,53 +221,6 @@
           "startTime": 340,
           "endTime": 443,
           "topic": "Practical Solutions: Gradual Hikes & Education-Based Wage Tiers"
-        }
-      ]
-    },
-    {
-      "title": "Gaji naik membunuh bisnes SME?",
-      "url": "https://www.youtube.com/shorts/PST5db7noqM",
-      "videoId": "PST5db7noqM",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "While a proposed minimum wage hike to RM3,100 sounds like a lifeline for employees facing inflation, many SMEs are already struggling to pay the mandatory RM1,700. Watch this breakdown to understand the fierce debate between worker livelihood and small business survival in Malaysia.",
-      "dateAdded": "2026-09-10T23:30:51.705Z",
-      "timestamps": [
-        {
-          "startTime": 14,
-          "endTime": 39,
-          "topic": "The reality of non-compliance with the current RM1,700 minimum wage"
-        },
-        {
-          "startTime": 40,
-          "endTime": 60,
-          "topic": "The clash between workers and SME employers over the RM3,100 proposal"
-        }
-      ]
-    },
-    {
-      "title": "Ekonomi bagus tapi rakyat tak rasa?",
-      "url": "https://www.youtube.com/shorts/ZWDnh7gk0SY",
-      "videoId": "ZWDnh7gk0SY",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Ever wondered why strong GDP figures rarely feel tangible in your everyday wallet? Bank Negara Malaysia's Assistant Governor breaks down the crucial link between headline economic growth and massive real-world benefits—from widespread wage adjustments and direct cash aid to fuel subsidies that shield millions from global inflation.",
-      "dateAdded": "2026-09-10T23:30:51.705Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 43,
-          "topic": "The disconnect between GDP data and the man on the street"
-        },
-        {
-          "startTime": 44,
-          "endTime": 87,
-          "topic": "How national growth funds civil service pay hikes and minimum wage increases"
-        },
-        {
-          "startTime": 128,
-          "endTime": 154,
-          "topic": "How economic strength powers fuel subsidies and shields citizens from global shocks"
         }
       ]
     },
@@ -369,7 +322,59 @@
           "topic": "Hiring for Integrity, Learning Speed, and Eliminating Blame Culture"
         }
       ]
+    },
+    {
+      "title": "#114 | The Art of Disappointing People (Leon Jala)",
+      "url": "https://www.youtube.com/watch?v=xmTrUK8LuOk",
+      "videoId": "xmTrUK8LuOk",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "Transformational leadership isn't about keeping everyone happy—it's about learning how to deliver uncomfortable truths and disappoint people at a rate they can absorb to drive real growth. Discover the actionable 4-question framework and the '1-3-1' problem-solving model that turn tense feedback sessions into high-trust, empowering conversations. If you struggle with people-pleasing or avoiding conflict at work, this episode provides the exact roadmap to shift from superficial niceness to transformative leadership.",
+      "dateAdded": "2026-09-11T23:38:14.156Z",
+      "timestamps": [
+        {
+          "startTime": 65,
+          "endTime": 140,
+          "topic": "Niceness vs. Kindness: Why Pleasers Fail as Leaders"
+        },
+        {
+          "startTime": 306,
+          "endTime": 479,
+          "topic": "The 4-Question Weekly Check-In and the 1-3-1 Problem Solving Rule"
+        },
+        {
+          "startTime": 560,
+          "endTime": 692,
+          "topic": "Anchoring in Your 'True North' to Eliminate Fear of Conflict"
+        }
+      ]
+    },
+    {
+      "title": "No profits since 2018, has Pos Msia lost their route? - Charles Brewer, Group CEO of Pos Malaysia",
+      "url": "https://www.youtube.com/watch?v=5UMPn3vFLNs",
+      "videoId": "5UMPn3vFLNs",
+      "channel": "BFM 89.9",
+      "category": "General Ideas",
+      "summary": "Discover how a 200-year-old national postal giant is battling massive structural declines, fierce courier price wars, and crushing service mandates to engineer a dramatic turnaround. Pos Malaysia Group CEO Charles Brewer reveals the brutal economics behind why sending a parcel costs less than a cup of coffee and what strategic pivots are essential to keep the company alive. Watch this candid breakdown to understand the true complexities and future of legacy postal logistics.",
+      "dateAdded": "2026-09-11T23:38:14.156Z",
+      "timestamps": [
+        {
+          "startTime": 227,
+          "endTime": 436,
+          "topic": "The courier price war and why parcel delivery pricing is broken"
+        },
+        {
+          "startTime": 646,
+          "endTime": 815,
+          "topic": "The Universal Service Obligation dilemma and declining mail volumes"
+        },
+        {
+          "startTime": 1598,
+          "endTime": 1710,
+          "topic": "Exclusive reveal: Pos Malaysia's upcoming live map tracking feature"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-09-11T00:35:18.788Z"
+  "lastUpdated": "2026-09-11T23:48:30.364Z"
 }

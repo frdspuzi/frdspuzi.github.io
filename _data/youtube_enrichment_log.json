@@ -1,99 +1,49 @@
 [
   {
-    "videoId": "O1FN4awNEtM",
-    "title": "One Designer + AI. Hundreds of Deliverables. — Vincent Wendy, AI Engineer",
+    "videoId": "H7vFrcNWXzs",
+    "title": "Building ambitious software — Jonathan Kelley, Dioxus Labs & Cognition",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "Krzs8GeiWTc",
-    "title": "Generative UI... in Python? — Jeremiah Lowin, Prefect",
+    "videoId": "I5QqmJLd8y4",
+    "title": "What eng interns do at Anthropic",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "xwndXpLRrAQ",
-    "title": "Using stronger models to clean up tech debt",
+    "videoId": "arZhCHlOYLc",
+    "title": "How long until Claude does everything",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "gs6Nwx0GFb0",
-    "title": "How he got his job at Anthropic",
+    "videoId": "rX9kkMonrG8",
+    "title": "Creator of TypeScript: Why We Chose Go For Our Rewrite | Anders Hejlsberg",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "K8AMhj-ImMI",
-    "title": "If you’re ambitious but inconsistent, please watch this",
-    "outcome": "success",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "fetch failed"
-      }
-    ]
-  },
-  {
-    "videoId": "Imyt1fqKcA0",
-    "title": "Gaji minimum RM3,100, mampu ke majikan tanggung?",
+    "videoId": "o7PAMtmPUJ8",
+    "title": "Peranan OPR dalam ekonomi Malaysia",
     "outcome": "success",
     "errors": []
-  },
-  {
-    "videoId": "PST5db7noqM",
-    "title": "Gaji naik membunuh bisnes SME?",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "ZWDnh7gk0SY",
-    "title": "Ekonomi bagus tapi rakyat tak rasa?",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "xMmJVh_3e-g",
-    "title": "#115 | Catherine Goh Chooses Accountability Over Title",
-    "outcome": "success",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      }
-    ]
   },
   {
     "videoId": "xmTrUK8LuOk",
     "title": "#114 | The Art of Disappointing People (Leon Jala)",
     "outcome": "success",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "fetch failed"
-      },
-      {
-        "attempt": 2,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      },
-      {
-        "attempt": 3,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      }
-    ]
+    "errors": []
   },
   {
-    "videoId": "yCbnGhrlxfI",
-    "title": "Game-changing warehouse solutions enabled by tech | In The Studio",
+    "videoId": "5UMPn3vFLNs",
+    "title": "No profits since 2018, has Pos Msia lost their route? - Charles Brewer, Group CEO of Pos Malaysia",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "rc9T9Qvkq3g",
-    "title": "Most Replayed: They Ignored Upin & Ipin | Founder & Managing Director of Les’ Copaque Production",
+    "videoId": "yCbnGhrlxfI",
+    "title": "Game-changing warehouse solutions enabled by tech | In The Studio",
     "outcome": "success",
     "errors": []
   },
@@ -110,40 +60,14 @@
     "errors": []
   },
   {
-    "videoId": "29LNcOLT5B0",
-    "title": "Khutbah by Dr. Omar Suleiman",
-    "outcome": "failed",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "{\"error\":{\"code\":500,\"message\":\"Internal error encountered.\",\"status\":\"INTERNAL\"}}",
-        "status": 500
-      },
-      {
-        "attempt": 2,
-        "message": "{\"error\":{\"code\":500,\"message\":\"Internal error encountered.\",\"status\":\"INTERNAL\"}}",
-        "status": 500
-      },
-      {
-        "attempt": 3,
-        "message": "{\"error\":{\"code\":500,\"message\":\"Internal error encountered.\",\"status\":\"INTERNAL\"}}",
-        "status": 500
-      },
-      {
-        "attempt": 4,
-        "message": "{\"error\":{\"code\":500,\"message\":\"Internal error encountered.\",\"status\":\"INTERNAL\"}}",
-        "status": 500
-      },
-      {
-        "attempt": 5,
-        "message": "{\"error\":{\"code\":500,\"message\":\"Internal error encountered.\",\"status\":\"INTERNAL\"}}",
-        "status": 500
-      }
-    ]
-  },
-  {
     "videoId": "DjE07PPgkf0",
     "title": "How Allah Wants You to Think About Success",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "_w1pmgvdDXI",
+    "title": "How is code review changing",
     "outcome": "success",
     "errors": []
   },
@@ -160,12 +84,6 @@
     "errors": []
   },
   {
-    "videoId": "sLSTM9znQNs",
-    "title": "Building Codex with Tibo Sottiaux",
-    "outcome": "success",
-    "errors": []
-  },
-  {
     "videoId": "8DrCY-RXm7k",
     "title": "How this ex-Googler accidentally founded a database company",
     "outcome": "success",
@@ -178,42 +96,16 @@
     "errors": []
   },
   {
-    "videoId": "sielsb4EUzw",
-    "title": "The CTO who built Google Earth on what actually hard problems look like",
-    "outcome": "success",
-    "errors": []
-  },
-  {
     "videoId": "zcLPGC-tvgk",
     "title": "LIVE: Uncle Bob on Software Fundamentals in the Age of AI",
     "outcome": "success",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "fetch failed"
-      },
-      {
-        "attempt": 2,
-        "message": "fetch failed"
-      }
-    ]
+    "errors": []
   },
   {
     "videoId": "gaDdrDdczO4",
     "title": "New Skills! v1.2 brings /wait-what, /writing-for-agents, and fixes /grill-me",
     "outcome": "success",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      },
-      {
-        "attempt": 2,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      }
-    ]
+    "errors": []
   },
   {
     "videoId": "F3lL98Pj90o",
@@ -222,86 +114,15 @@
     "errors": []
   },
   {
-    "videoId": "MTjtvlkXaJg",
-    "title": "The Feeling Everyone Gets After Their First $10k Month ...",
+    "videoId": "Jp3Lpn7Xoko",
+    "title": "Fixing Your Relationship With Allah ﷻ Will Fix Your Business!",
     "outcome": "success",
     "errors": []
-  },
-  {
-    "videoId": "fMmKhnHvSJk",
-    "title": "The Worst Business Mistake Beginners Make!",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "85yMxGIYXMY",
-    "title": "Exactly How This Muslim Kid Built a $14M Startup (with zero funding)",
-    "outcome": "success",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      }
-    ]
-  },
-  {
-    "videoId": "n9xKblqyQ28",
-    "title": "Why The Harness Matters More Than The Model | YC Paper Club",
-    "outcome": "success",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "fetch failed"
-      }
-    ]
-  },
-  {
-    "videoId": "arte3arYBrU",
-    "title": "The rule of 20%: How to find the sweet spot for improved performance | Daniel Coyle: Full Interview",
-    "outcome": "failed",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      },
-      {
-        "attempt": 2,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      },
-      {
-        "attempt": 3,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      },
-      {
-        "attempt": 4,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      },
-      {
-        "attempt": 5,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      }
-    ]
   },
   {
     "videoId": "fDKH028SI38",
     "title": "Can Southeast Asia Own the AI Story? | Gita Wirjawan | Keris & Silicon EP04",
     "outcome": "success",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "fetch failed"
-      },
-      {
-        "attempt": 2,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      }
-    ]
+    "errors": []
   }
 ]
