@@ -1,75 +1,101 @@
 {
   "videos": [
     {
-      "title": "The exact tools used to port a massive codebase in days #programming #typescript #dev",
-      "url": "https://www.youtube.com/shorts/AJhjm4_UJIk",
-      "videoId": "AJhjm4_UJIk",
+      "title": "One Designer + AI. Hundreds of Deliverables. — Vincent Wendy, AI Engineer",
+      "url": "https://www.youtube.com/watch?v=O1FN4awNEtM",
+      "videoId": "O1FN4awNEtM",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Instagram co-founder Mike Krieger reveals how he pulled off an engineering feat once considered impossible: porting hundreds of thousands of lines of Python code into TypeScript over a single weekend. Watch this clip to discover how automated AI workflows can turn what used to be months of tedious refactoring into seamless, weekend-long tasks.",
-      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "summary": "How can a solo designer produce hundreds of pixel-perfect assets and manage signage for a 7,000-person conference without burning out? Discover how combining structured design systems with AI agents like Devin turns repetitive production, dynamic schedule updates, and tedious QA into automated workflows. Watch this talk to see the exact tactical blueprint for supercharging your design output with autonomous AI tools.",
+      "dateAdded": "2026-09-10T23:30:51.704Z",
       "timestamps": [
         {
-          "startTime": 8,
-          "endTime": 26,
-          "topic": "The 'unreasonable' idea to rewrite a massive codebase"
+          "startTime": 451,
+          "endTime": 645,
+          "topic": "The 5-Step Framework to Solve Design Scale"
         },
         {
-          "startTime": 27,
-          "endTime": 50,
-          "topic": "Automating the complete code migration and verification over a weekend"
+          "startTime": 451,
+          "endTime": 625,
+          "topic": "Automated Workflows: Turning Specs into Instant Deliverables with AI"
+        },
+        {
+          "startTime": 787,
+          "endTime": 855,
+          "topic": "AI-Powered QA: Validating Hundreds of Sponsor Assets Automatically"
         }
       ]
     },
     {
-      "title": "The Universal Remote Control for AI — Alex Hancock, Block",
-      "url": "https://www.youtube.com/watch?v=YkNulwcc5jk",
-      "videoId": "YkNulwcc5jk",
+      "title": "Generative UI... in Python? — Jeremiah Lowin, Prefect",
+      "url": "https://www.youtube.com/watch?v=Krzs8GeiWTc",
+      "videoId": "Krzs8GeiWTc",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "While tools like MCP standardized how AI agents access data and APIs, controlling agents across different apps and editors has remained a fragmented nightmare. Discover the Agent Client Protocol (ACP)—an emerging open standard that acts as a 'universal remote' to let any frontend, IDE, or CLI seamlessly orchestrate any AI agent, locally or in the cloud.",
-      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "summary": "Building rich, interactive user interfaces for AI agents usually forces Python engineers into the complexities of JavaScript and React. Discover Prefab, an open-source framework that lets developers compose reactive, production-ready frontends purely in Python while slashing token costs by 70% through streamed generative UI.",
+      "dateAdded": "2026-09-10T23:30:51.704Z",
       "timestamps": [
         {
-          "startTime": 140,
-          "endTime": 270,
-          "topic": "The Missing Standard: Why We Need an Agent Client Protocol"
+          "startTime": 97,
+          "endTime": 178,
+          "topic": "How MCP Apps Deliver Direct Interactive UI to Users"
         },
         {
-          "startTime": 367,
-          "endTime": 435,
-          "topic": "How ACP Works and Its Extensible Architecture"
+          "startTime": 389,
+          "endTime": 514,
+          "topic": "Introducing Prefab: Composing Frontends Directly in Python"
         },
         {
-          "startTime": 438,
-          "endTime": 558,
-          "topic": "Live Demos: Controlling AI Agents Across Zed, CLI, and Web"
+          "startTime": 900,
+          "endTime": 1013,
+          "topic": "Streaming Generative UI and Slashing Token Usage by 70%"
         }
       ]
     },
     {
-      "title": "MCP Apps: Give the Model Data, Give the User a UI — Dustin Mihalik, Indeed",
-      "url": "https://www.youtube.com/watch?v=lbaXnx0KLA8",
-      "videoId": "lbaXnx0KLA8",
-      "channel": "AI Engineer",
+      "title": "Using stronger models to clean up tech debt",
+      "url": "https://www.youtube.com/shorts/xwndXpLRrAQ",
+      "videoId": "xwndXpLRrAQ",
+      "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Integrating rich graphical UIs into AI agents often breaks model intelligence by turning the frontend into an invisible black box. Discover the three golden rules of MCP Apps—including syncing user interactions and decoupling data processing from rendering—to deliver beautiful interactive interfaces without blinding the LLM. If you are building agentic apps for platforms like Claude or ChatGPT, this talk reveals the battle-tested patterns you need to avoid critical UX traps.",
-      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "summary": "Should you stop spending months cleaning up tech debt and let the next generation of AI fix it instead? An Anthropic engineer on the Claude Code team reveals a counterintuitive strategy for startup engineering: prioritize short-term value delivery and let upcoming AI models handle your long-term refactoring bottlenecks.",
+      "dateAdded": "2026-09-10T23:30:51.704Z",
       "timestamps": [
         {
-          "startTime": 248,
-          "endTime": 300,
-          "topic": "Rule #1: Ensuring UI Content is Provided as Structured Data to the Model"
+          "startTime": 0,
+          "endTime": 16,
+          "topic": "The dilemma of fixing tech debt vs. waiting for stronger AI models"
         },
         {
-          "startTime": 431,
-          "endTime": 484,
-          "topic": "Rule #2: Feeding Real-Time User Interactions Back to the Model Context"
+          "startTime": 17,
+          "endTime": 35,
+          "topic": "Why thinking in shorter timescales changes how you handle long-term projects"
+        }
+      ]
+    },
+    {
+      "title": "How he got his job at Anthropic",
+      "url": "https://www.youtube.com/shorts/gs6Nwx0GFb0",
+      "videoId": "gs6Nwx0GFb0",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Landing a coveted AI engineering role at Anthropic didn't take years of traditional networking—it took just one month of public initiative. Discover how building a single interpretability visualization and sharing it on Twitter caught industry attention and directly unlocked an intro to Anthropic's Claude team.",
+      "dateAdded": "2026-09-10T23:30:51.704Z",
+      "timestamps": [
+        {
+          "startTime": 2,
+          "endTime": 20,
+          "topic": "The strategic fellowship and building in public mindset"
         },
         {
-          "startTime": 607,
-          "endTime": 695,
-          "topic": "Rule #3: Separating Data Processing from UI Rendering"
+          "startTime": 20,
+          "endTime": 32,
+          "topic": "How one Twitter post turned into an Anthropic job intro"
+        },
+        {
+          "startTime": 32,
+          "endTime": 46,
+          "topic": "Why showing proactive initiative opens doors at top AI labs"
         }
       ]
     },
@@ -95,49 +121,28 @@
       ]
     },
     {
-      "title": "How Anthropic engineers pick models",
-      "url": "https://www.youtube.com/shorts/PR-coJdE5Tg",
-      "videoId": "PR-coJdE5Tg",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Ever wonder how the engineers behind Claude actually choose and deploy AI models in their daily workflow? Discover the insider strategy for maximizing frontier models right now—from high-level planning to heavy-duty implementation—before rapid compute scaling changes the game entirely.",
-      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "title": "If you’re ambitious but inconsistent, please watch this",
+      "url": "https://www.youtube.com/watch?v=K8AMhj-ImMI",
+      "videoId": "K8AMhj-ImMI",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "Most people fail to reach their goals not because they lack discipline or information, but because their subconscious beliefs quietly sabotage their follow-through before they ever reach their true limits. In this eye-opening breakdown with bestselling author Nir Eyal, you'll discover how to dismantle hidden limiting labels, distinguish inevitable pain from self-imposed suffering, and dramatically expand your capacity to persist without burning out. If you've ever found yourself stuck knowing exactly what to do but unable to execute, this framework will fundamentally change how you take action.",
+      "dateAdded": "2026-09-10T23:30:51.704Z",
       "timestamps": [
         {
-          "startTime": 0,
-          "endTime": 17,
-          "topic": "Getting the most out of frontier models"
+          "startTime": 317,
+          "endTime": 437,
+          "topic": "The Motivation Triangle: Why knowledge and desire fail without belief"
         },
         {
-          "startTime": 17,
-          "endTime": 42,
-          "topic": "How Anthropic engineers divide planning vs implementation"
-        }
-      ]
-    },
-    {
-      "title": "Creator of TypeScript & C#: AI Software Engineering Predictions | Anders Hejlsberg",
-      "url": "https://www.youtube.com/watch?v=qEDMAPpl_O4",
-      "videoId": "qEDMAPpl_O4",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Will AI truly replace developers, or are we mistaking boilerplate volume for real architectural innovation? Programming legend Anders Hejlsberg cuts through the industry hype, explaining why stochastic AI models fail at novel problems like writing compilers and why human accountability remains irreplaceable. Watch this to see how software engineering isn't dying—it's evolving from manual typing into supervisory agent review.",
-      "dateAdded": "2026-09-09T23:39:32.580Z",
-      "timestamps": [
-        {
-          "startTime": 67,
-          "endTime": 145,
-          "topic": "Why AI Struggles with Novel Algorithms and Complex Compilers"
+          "startTime": 781,
+          "endTime": 949,
+          "topic": "The Rat Experiment: How belief dictates physical endurance and limits"
         },
         {
-          "startTime": 162,
-          "endTime": 216,
-          "topic": "The Accountability Trap: Legal and Human Responsibility in AI Coding"
-        },
-        {
-          "startTime": 300,
-          "endTime": 366,
-          "topic": "How the Craft Is Changing: Shifting from Typing Code to Supervising Agents"
+          "startTime": 1670,
+          "endTime": 1815,
+          "topic": "The 4-Step Turnaround Method: Rewiring limiting assumptions causing suffering"
         }
       ]
     },
@@ -194,80 +199,75 @@
       ]
     },
     {
-      "title": "BUDI95 kembali 300 liter",
-      "url": "https://www.youtube.com/shorts/d-ueArs7g-Q",
-      "videoId": "d-ueArs7g-Q",
+      "title": "Gaji minimum RM3,100, mampu ke majikan tanggung?",
+      "url": "https://www.youtube.com/watch?v=Imyt1fqKcA0",
+      "videoId": "Imyt1fqKcA0",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Discover how targeted fuel subsidies really impact your wallet and the national budget when global oil prices fluctuate. Faiz Azmi breaks down the numbers behind the BUDI95 quota restoration to 300 liters and reveals who actually benefits most from government fuel assistance. Watch this breakdown to understand the true economic balance between personal fuel savings and national financial sustainability.",
-      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "summary": "Raising the minimum wage to RM3,100 sounds like a dream for workers battling inflation, but a sudden 82% jump could trigger devastating hiring freezes, salary compression, and accelerated inflation that erases any gains. This video breaks down the harsh economic trade-offs facing Malaysian SMEs while presenting balanced, realistic solutions like gradual increases and education-based wage tiers. Watch this to understand how proposed labor policies will directly impact your job security, salary structure, and purchasing power.",
+      "dateAdded": "2026-09-10T23:30:51.704Z",
       "timestamps": [
         {
-          "startTime": 13,
-          "endTime": 46,
-          "topic": "Why fuel subsidy quotas were cut during global oil price surges"
+          "startTime": 151,
+          "endTime": 238,
+          "topic": "The RM3,100 Proposal & Employer Pushback"
         },
         {
-          "startTime": 72,
-          "endTime": 108,
-          "topic": "Who actually benefits from increasing the BUDI95 quota to 300 liters"
+          "startTime": 242,
+          "endTime": 338,
+          "topic": "Hidden Side Effects: Salary Compression, AI Shift, and Inflation"
         },
         {
-          "startTime": 116,
-          "endTime": 140,
-          "topic": "The fiscal risks and enforcement challenges of expanding fuel subsidies"
+          "startTime": 340,
+          "endTime": 443,
+          "topic": "Practical Solutions: Gradual Hikes & Education-Based Wage Tiers"
         }
       ]
     },
     {
-      "title": "Cara kerajaan tangani tipuan bida",
-      "url": "https://www.youtube.com/shorts/TtQSw-5mS70",
-      "videoId": "TtQSw-5mS70",
+      "title": "Gaji naik membunuh bisnes SME?",
+      "url": "https://www.youtube.com/shorts/PST5db7noqM",
+      "videoId": "PST5db7noqM",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Discover how over 500 companies are secretly siphoning off billions in taxpayer money through coordinated government tender cartels. In this revealing clip, MyCC's CEO explains how a targeted RM20+ million enforcement drive and 35 specialized investigators are actively working to plug massive leakages and dismantle bid-rigging schemes.",
-      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "summary": "While a proposed minimum wage hike to RM3,100 sounds like a lifeline for employees facing inflation, many SMEs are already struggling to pay the mandatory RM1,700. Watch this breakdown to understand the fierce debate between worker livelihood and small business survival in Malaysia.",
+      "dateAdded": "2026-09-10T23:30:51.705Z",
       "timestamps": [
         {
-          "startTime": 18,
-          "endTime": 41,
-          "topic": "Funding and hiring 35 specialized investigators to combat bid rigging"
+          "startTime": 14,
+          "endTime": 39,
+          "topic": "The reality of non-compliance with the current RM1,700 minimum wage"
         },
         {
-          "startTime": 41,
-          "endTime": 59,
-          "topic": "Scale of the investigation: 500+ companies and RM4 billion in tenders"
-        },
-        {
-          "startTime": 60,
-          "endTime": 100,
-          "topic": "How tender cartels inflate public procurement costs by tens of billions"
+          "startTime": 40,
+          "endTime": 60,
+          "topic": "The clash between workers and SME employers over the RM3,100 proposal"
         }
       ]
     },
     {
-      "title": "Malaysia mengatasi negara serantau?",
-      "url": "https://www.youtube.com/shorts/qe5iT86UMsI",
-      "videoId": "qe5iT86UMsI",
+      "title": "Ekonomi bagus tapi rakyat tak rasa?",
+      "url": "https://www.youtube.com/shorts/ZWDnh7gk0SY",
+      "videoId": "ZWDnh7gk0SY",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Discover how Malaysia consistently outperforms regional peers by maintaining steady economic growth alongside low inflation and near-full employment. This breakdown reveals why a diversified multi-sector economy and well-balanced export markets protect the nation against global shocks while positioning it at the very heart of the booming AI supply chain.",
-      "dateAdded": "2026-09-09T23:39:32.580Z",
+      "summary": "Ever wondered why strong GDP figures rarely feel tangible in your everyday wallet? Bank Negara Malaysia's Assistant Governor breaks down the crucial link between headline economic growth and massive real-world benefits—from widespread wage adjustments and direct cash aid to fuel subsidies that shield millions from global inflation.",
+      "dateAdded": "2026-09-10T23:30:51.705Z",
       "timestamps": [
         {
-          "startTime": 39,
-          "endTime": 77,
-          "topic": "Malaysia's strong macroeconomic growth and stability compared to regional peers"
+          "startTime": 0,
+          "endTime": 43,
+          "topic": "The disconnect between GDP data and the man on the street"
         },
         {
-          "startTime": 121,
-          "endTime": 153,
-          "topic": "Economic resilience through sector and commodity diversification"
+          "startTime": 44,
+          "endTime": 87,
+          "topic": "How national growth funds civil service pay hikes and minimum wage increases"
         },
         {
-          "startTime": 204,
-          "endTime": 252,
-          "topic": "Export market diversity and Malaysia's role in the global AI supply chain boom"
+          "startTime": 128,
+          "endTime": 154,
+          "topic": "How economic strength powers fuel subsidies and shields citizens from global shocks"
         }
       ]
     },
@@ -345,31 +345,31 @@
       ]
     },
     {
-      "title": "No profits since 2018, has Pos Malaysia lost their route? - Charles Brewer, CEO of Pos Malaysia",
-      "url": "https://www.youtube.com/watch?v=5UMPn3vFLNs",
-      "videoId": "5UMPn3vFLNs",
-      "channel": "BFM 89.9",
+      "title": "#115 | Catherine Goh Chooses Accountability Over Title",
+      "url": "https://www.youtube.com/watch?v=xMmJVh_3e-g",
+      "videoId": "xMmJVh_3e-g",
+      "channel": "The Game Of Impossible",
       "category": "General Ideas",
-      "summary": "How does a 200-year-old national postal service survive when letter mail drops by over 80% while delivery costs continue to skyrocket? Pos Malaysia CEO Charles Brewer breaks down the brutal realities of competing against subsidized logistics giants, why shipping a cross-country parcel currently costs less than a cappuccino, and reveals an exclusive new live-tracking feature rolling out nationwide. Watch this interview to see the high-stakes turnaround playbook of a legacy titan fighting to remain profitable in a digital-first economy.",
-      "dateAdded": "2026-09-08T23:44:39.171Z",
+      "summary": "Discover how Catherine Goh rose from helping her family sell fruit at local night markets to becoming the CEO of Santan, AirAsia's renowned F&B brand. In this candid interview, she breaks down why Tony Fernandes hired her after a blunt three-minute conversation and reveals the operational mindset needed to scale businesses during severe crises. If you want actionable leadership wisdom on balancing raw data with gut consumer instinct and building radically accountable teams, this conversation is an essential watch.",
+      "dateAdded": "2026-09-10T23:30:51.705Z",
       "timestamps": [
         {
-          "startTime": 150,
-          "endTime": 295,
-          "topic": "The 80% Collapse in Letter Mail and the Pivot to Cutthroat Logistics"
+          "startTime": 443,
+          "endTime": 555,
+          "topic": "The 3-Minute Interview with Tony Fernandes that Changed Everything"
         },
         {
-          "startTime": 388,
-          "endTime": 445,
-          "topic": "Why Sending a Parcel in Malaysia Costs Less Than a Cappuccino"
+          "startTime": 888,
+          "endTime": 935,
+          "topic": "Balancing Data and Intuition: The 50/50 Rule for Consumer Products"
         },
         {
-          "startTime": 1600,
-          "endTime": 1710,
-          "topic": "Exclusive Announcement: Real-Time Live Map Parcel Tracking"
+          "startTime": 1314,
+          "endTime": 1390,
+          "topic": "Hiring for Integrity, Learning Speed, and Eliminating Blame Culture"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-09-09T23:53:41.292Z"
+  "lastUpdated": "2026-09-11T00:35:18.788Z"
 }
