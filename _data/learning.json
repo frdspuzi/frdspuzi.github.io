@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "Compared to the roughly 170,000 English words found in the Oxford English Dictionary, approximately how many distinct words exist in the Arabic language?",
+      "question": "What psychological concept describes the tendency of the brain to immediately discard or forget information once it has been recorded externally on paper or stored in a device?",
       "options": [
-        "1.2 million",
-        "5 million",
-        "25 million",
-        "12 million"
+        "The Cognitive Dissonance Trap",
+        "The Zeigarnik Retention Effect",
+        "The Performance Paradox of Cognitive Offloading",
+        "The Spaced Retrieval Fallacy"
       ],
-      "correctIndex": 3,
-      "learning": "Arabic exhibits immense linguistic complexity, containing approximately 12 million distinct words compared to about 170,000 in the Oxford English Dictionary, yielding a ratio of roughly 71 to 1.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
+      "correctIndex": 2,
+      "learning": "The 'Performance Paradox' of cognitive offloading, also related to digital amnesia, occurs because storing information externally gives the brain psychological permission to discard that data rather than retain it in memory.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
     },
     {
-      "question": "Which PCIe power management state represents an almost completely powered-down device that provides the highest power savings at the expense of the longest wake-up time?",
+      "question": "In PCIe power management, which power-saving substate specifically involves powering down the electrical circuits of the main link to achieve deeper energy savings than the basic sleep state?",
       "options": [
-        "L0",
+        "L1.1",
+        "L2",
         "L1.0",
-        "L0s",
-        "L2"
+        "L0s"
       ],
-      "correctIndex": 3,
-      "learning": "In PCIe power management, the L2 state is designed for the longest periods of inactivity, offering the highest power savings while requiring the longest wake-up time.",
+      "correctIndex": 0,
+      "learning": "In PCIe power management, the L1.1 substate provides deeper power savings than L1.0 by specifically powering down the electrical circuits of the main link, resulting in increased wake-up time.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "What is the fundamental difference between Qada’ and Qadr regarding life events and divine preordination?",
+      "question": "What is the standard format used to structure a User Story in a Product Backlog?",
       "options": [
-        "Qadr is the actual occurrence of events that can be altered by human actions, while Qada’ is the preordained plan.",
-        "Qada’ represents actions completely outside of divine knowledge, while Qadr is determined entirely by human choices.",
-        "Qada’ is the actual occurrence of events that can be altered by human actions and supplications, while Qadr is Allah's complete, preordained plan and eternal knowledge.",
-        "Qada’ refers exclusively to unexpected natural disasters, while Qadr refers solely to individual financial decisions."
+        "[Feature] should be implemented by [date]",
+        "As a [role], I need [feature], so that [reason]",
+        "I want [feature] because [reason]",
+        "For [role], build [feature] before [milestone]"
       ],
-      "correctIndex": 2,
-      "learning": "Qada’ refers to the actual unfolding of life events, which can be influenced and altered through human action and supplication, whereas Qadr is Allah’s complete, preordained plan and eternal knowledge that already encompasses all occurrences and changes.",
+      "correctIndex": 1,
+      "learning": "In Scrum, User Stories within the Product Backlog are structured using the standard format: 'As a [role], I need [feature], so that [reason]' to clearly define features from the user's perspective.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "When an individual's actions or supplications (Dua) alter the actual unfolding of events in their life (Qada'), how does this alteration interact with divine decree (Qadr)?",
+      "options": [
+        "The alteration was already eternally known and encompassed within Qadr",
+        "The alteration completely overrides and nullifies the original Qadr",
+        "The alteration permanently postpones Qadr until the afterlife",
+        "The alteration exists outside of divine knowledge and permission"
+      ],
+      "correctIndex": 0,
+      "learning": "While human supplications and actions can alter the actual occurrence of events (Qada’), this change does not contradict divine preordainment because the change itself was already known to Allah and written as part of His complete plan (Qadr).",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In Islamic belief, what three key roles define the core purpose of human life on Earth?",
+      "question": "In Islamic theology, which Arabic term is used to describe the role of human beings as caretakers or successive authorities on Earth?",
       "options": [
-        "Accumulating material wealth, gaining political dominance, and seeking personal fame",
-        "Worshiping Allah, serving as caretakers (khalifah) of the Earth, and undergoing a test of faith and conduct",
-        "Practicing total worldly renunciation, living in isolation, and performing physical penance",
-        "Studying ancient secular philosophies, achieving absolute stoicism, and eliminating all social obligations"
+        "Jinn",
+        "Khalifah",
+        "Taqwa",
+        "Fitrah"
       ],
       "correctIndex": 1,
-      "learning": "In Islamic belief, human life is structured around three primary responsibilities: worshiping Allah, acting as caretakers (khalifah) of the Earth, and preparing for the eternal Hereafter through a test of faith and conduct.",
+      "learning": "In Islamic scripture, humans are given the role of 'khalifah,' which designates them as caretakers and successive authorities tasked with stewardship over Earth and maintaining communal unity.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
-    },
-    {
-      "question": "What is the primary purpose of breaking a development process into smaller, iterative cycles called Sprints in Scrum?",
-      "options": [
-        "To increase the overall length of the project",
-        "To reduce the number of team members needed",
-        "To allow for more flexibility and quicker adjustments",
-        "To eliminate the need for project planning"
-      ],
-      "correctIndex": 2,
-      "learning": "Scrum is an agile approach that breaks the development process into smaller, iterative cycles called Sprints to allow for greater flexibility and quicker adjustments.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
     }
   ],
-  "fetchedAt": "2026-09-11T23:37:26.935Z"
+  "fetchedAt": "2026-09-12T23:30:22.746Z"
 }
