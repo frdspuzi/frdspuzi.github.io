@@ -1,61 +1,25 @@
 [
   {
-    "videoId": "H7vFrcNWXzs",
-    "title": "Building ambitious software — Jonathan Kelley, Dioxus Labs & Cognition",
+    "videoId": "3a2o7XKCb1o",
+    "title": "What is loop engineering",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "I5QqmJLd8y4",
-    "title": "What eng interns do at Anthropic",
+    "videoId": "1YqXzbWo50c",
+    "title": "How to avoid AI slop",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "arZhCHlOYLc",
-    "title": "How long until Claude does everything",
+    "videoId": "ihJIXgzUOiU",
+    "title": "5 cara beli iPhone 18",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "rX9kkMonrG8",
-    "title": "Creator of TypeScript: Why We Chose Go For Our Rewrite | Anders Hejlsberg",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "o7PAMtmPUJ8",
-    "title": "Peranan OPR dalam ekonomi Malaysia",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "xmTrUK8LuOk",
-    "title": "#114 | The Art of Disappointing People (Leon Jala)",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "5UMPn3vFLNs",
-    "title": "No profits since 2018, has Pos Msia lost their route? - Charles Brewer, Group CEO of Pos Malaysia",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "yCbnGhrlxfI",
-    "title": "Game-changing warehouse solutions enabled by tech | In The Studio",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "lFYszxlWcg0",
-    "title": "Du'a Won't Work Until You Do | Dr. Omar Suleiman",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "PsDva7XLC58",
-    "title": "The Loop of Modern Surveillance | Imam Tom Facchine",
+    "videoId": "gxyqwQQPfY0",
+    "title": "Clear Intentions In A Chaotic World | Anchored Ep. 1 | Hadith #1 | Sh. Mohammad Elshinawy",
     "outcome": "success",
     "errors": []
   },
@@ -123,6 +87,12 @@
     "videoId": "fDKH028SI38",
     "title": "Can Southeast Asia Own the AI Story? | Gita Wirjawan | Keris & Silicon EP04",
     "outcome": "success",
-    "errors": []
+    "errors": [
+      {
+        "attempt": 1,
+        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
+        "status": 429
+      }
+    ]
   }
 ]

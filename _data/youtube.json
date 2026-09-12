@@ -53,6 +53,48 @@
       ]
     },
     {
+      "title": "What is loop engineering",
+      "url": "https://www.youtube.com/shorts/3a2o7XKCb1o",
+      "videoId": "3a2o7XKCb1o",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Stop micromanaging your AI prompts one by one—an engineer from Anthropic reveals how 'loop engineering' lets you build autonomous systems that continuously prompt and guide AI workflows for you. Watch this clip to understand how scaling automated feedback loops can handle complex tasks just like managing an elite, dedicated team.",
+      "dateAdded": "2026-09-12T23:29:50.527Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 15,
+          "topic": "The definition of loop engineering vs. direct prompting"
+        },
+        {
+          "startTime": 15,
+          "endTime": 40,
+          "topic": "Scaling automated loops and ensuring high-value output"
+        }
+      ]
+    },
+    {
+      "title": "How to avoid AI slop",
+      "url": "https://www.youtube.com/shorts/1YqXzbWo50c",
+      "videoId": "1YqXzbWo50c",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "How do you avoid generating low-effort 'AI slop' without feeling like a fraud? An Anthropic engineer reveals a dead-simple rule of thumb: only share an AI-generated output if you would be completely proud to show the prompt you used to create it. Watch this clip to master authentic AI collaboration that keeps your team's trust intact.",
+      "dateAdded": "2026-09-12T23:29:50.527Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 21,
+          "topic": "The golden rule for sharing AI outputs"
+        },
+        {
+          "startTime": 21,
+          "endTime": 58,
+          "topic": "Maintaining trust and proof of work with AI ideas"
+        }
+      ]
+    },
+    {
       "title": "What eng interns do at Anthropic",
       "url": "https://www.youtube.com/shorts/I5QqmJLd8y4",
       "videoId": "I5QqmJLd8y4",
@@ -70,53 +112,6 @@
           "startTime": 34,
           "endTime": 46,
           "topic": "The shift from boilerplate coding to solving brand-new engineering problems"
-        }
-      ]
-    },
-    {
-      "title": "How long until Claude does everything",
-      "url": "https://www.youtube.com/shorts/arZhCHlOYLc",
-      "videoId": "arZhCHlOYLc",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "AI can already complete software engineering tickets from start to finish, but only if the specification is flawless. An Anthropic engineer reveals why raw coding isn't the real bottleneck holding full AI automation back—it's clarifying product vision and knowing what to build in the first place. Watch this clip to understand why human judgment remains essential in an AI-driven development world.",
-      "dateAdded": "2026-09-11T23:38:14.156Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 15,
-          "topic": "Can Claude do 100% of the coding work?"
-        },
-        {
-          "startTime": 15,
-          "endTime": 40,
-          "topic": "Why product vision and specifications are the true bottleneck"
-        }
-      ]
-    },
-    {
-      "title": "Creator of TypeScript: Why We Chose Go For Our Rewrite | Anders Hejlsberg",
-      "url": "https://www.youtube.com/watch?v=rX9kkMonrG8",
-      "videoId": "rX9kkMonrG8",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Ever wonder why the TypeScript team chose Go over the industry-darling Rust when porting their compiler to native code? Programming language legend Anders Hejlsberg reveals the pragmatic engineering reality: real-world compiler data structures are full of circular references that fight Rust's borrow checker, making Go's built-in garbage collection and shared-memory concurrency the vastly superior choice. Watch this clip to learn how top language architects balance raw performance against real-world compiler architecture.",
-      "dateAdded": "2026-09-11T23:38:14.156Z",
-      "timestamps": [
-        {
-          "startTime": 47,
-          "endTime": 151,
-          "topic": "The limits of JavaScript: Concurrency and performance bottlenecks"
-        },
-        {
-          "startTime": 306,
-          "endTime": 446,
-          "topic": "Why porting instead of rewriting led directly to Go"
-        },
-        {
-          "startTime": 493,
-          "endTime": 605,
-          "topic": "Why Rust was rejected: Circular data structures and the borrow checker"
         }
       ]
     },
@@ -173,6 +168,32 @@
       ]
     },
     {
+      "title": "5 cara beli iPhone 18",
+      "url": "https://www.youtube.com/shorts/ihJIXgzUOiU",
+      "videoId": "ihJIXgzUOiU",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Thinking about upgrading to a luxury smartphone using telco bundles or installment plans? This breakdown reveals the hidden traps behind 'discounted' contracts and installment schemes that could secretly cost you thousands more than you realize. Watch this guide to master the smart financial moves before locking yourself into years of unnecessary debt.",
+      "dateAdded": "2026-09-12T23:29:50.527Z",
+      "timestamps": [
+        {
+          "startTime": 48,
+          "endTime": 106,
+          "topic": "The Hidden Cost of Telco Subsidies"
+        },
+        {
+          "startTime": 106,
+          "endTime": 156,
+          "topic": "Calculating the True Long-Term Cost of Monthly Plans"
+        },
+        {
+          "startTime": 156,
+          "endTime": 216,
+          "topic": "How to Properly Use 0% Credit Card Installment Plans"
+        }
+      ]
+    },
+    {
       "title": "Peranan OPR dalam ekonomi Malaysia",
       "url": "https://www.youtube.com/shorts/o7PAMtmPUJ8",
       "videoId": "o7PAMtmPUJ8",
@@ -195,32 +216,6 @@
           "startTime": 67,
           "endTime": 83,
           "topic": "Real-world example: The AI boom driving memory chip costs"
-        }
-      ]
-    },
-    {
-      "title": "Gaji minimum RM3,100, mampu ke majikan tanggung?",
-      "url": "https://www.youtube.com/watch?v=Imyt1fqKcA0",
-      "videoId": "Imyt1fqKcA0",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Raising the minimum wage to RM3,100 sounds like a dream for workers battling inflation, but a sudden 82% jump could trigger devastating hiring freezes, salary compression, and accelerated inflation that erases any gains. This video breaks down the harsh economic trade-offs facing Malaysian SMEs while presenting balanced, realistic solutions like gradual increases and education-based wage tiers. Watch this to understand how proposed labor policies will directly impact your job security, salary structure, and purchasing power.",
-      "dateAdded": "2026-09-10T23:30:51.704Z",
-      "timestamps": [
-        {
-          "startTime": 151,
-          "endTime": 238,
-          "topic": "The RM3,100 Proposal & Employer Pushback"
-        },
-        {
-          "startTime": 242,
-          "endTime": 338,
-          "topic": "Hidden Side Effects: Salary Compression, AI Shift, and Inflation"
-        },
-        {
-          "startTime": 340,
-          "endTime": 443,
-          "topic": "Practical Solutions: Gradual Hikes & Education-Based Wage Tiers"
         }
       ]
     },
@@ -376,5 +371,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-09-11T23:48:30.364Z"
+  "lastUpdated": "2026-09-12T23:45:38.737Z"
 }
