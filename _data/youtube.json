@@ -53,6 +53,48 @@
       ]
     },
     {
+      "title": "What percent of Anthropics code is autonomous",
+      "url": "https://www.youtube.com/shorts/gNgc_JT8ur8",
+      "videoId": "gNgc_JT8ur8",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Ever wonder how engineers at Anthropic actually use their own AI to write software? An engineer on the Claude Code team reveals how Claude handles the tedious 'glue work'—like converting Figma designs straight into working code—so developers can focus exclusively on high-impact, unique engineering challenges. Watch to see what real-world autonomous coding looks like from the inside.",
+      "dateAdded": "2026-09-13T23:43:52.495Z",
+      "timestamps": [
+        {
+          "startTime": 13,
+          "endTime": 24,
+          "topic": "Automating design-to-code workflows with Claude Code and Figma MCP"
+        },
+        {
+          "startTime": 24,
+          "endTime": 46,
+          "topic": "Offloading 'glue work' to AI so developers focus on unique tasks"
+        }
+      ]
+    },
+    {
+      "title": "Is prompting models a durable skill for engineers",
+      "url": "https://www.youtube.com/shorts/iv3QbS6q8ok",
+      "videoId": "iv3QbS6q8ok",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Think prompt engineering is a temporary fad? An Anthropic engineer reveals why the real value isn't memorizing prompt tricks, but mastering the skill of adapting as AI models evolve. Discover how the Claude Code team cut 80% of their system prompts and why learning to unlearn old techniques is the ultimate AI superpower.",
+      "dateAdded": "2026-09-13T23:43:52.495Z",
+      "timestamps": [
+        {
+          "startTime": 5,
+          "endTime": 22,
+          "topic": "Why prompting is bigger than just the input prompt"
+        },
+        {
+          "startTime": 28,
+          "endTime": 54,
+          "topic": "Cutting 80% of Claude Code's system prompt & mastering adaptability"
+        }
+      ]
+    },
+    {
       "title": "What is loop engineering",
       "url": "https://www.youtube.com/shorts/3a2o7XKCb1o",
       "videoId": "3a2o7XKCb1o",
@@ -70,48 +112,6 @@
           "startTime": 15,
           "endTime": 40,
           "topic": "Scaling automated loops and ensuring high-value output"
-        }
-      ]
-    },
-    {
-      "title": "How to avoid AI slop",
-      "url": "https://www.youtube.com/shorts/1YqXzbWo50c",
-      "videoId": "1YqXzbWo50c",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "How do you avoid generating low-effort 'AI slop' without feeling like a fraud? An Anthropic engineer reveals a dead-simple rule of thumb: only share an AI-generated output if you would be completely proud to show the prompt you used to create it. Watch this clip to master authentic AI collaboration that keeps your team's trust intact.",
-      "dateAdded": "2026-09-12T23:29:50.527Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 21,
-          "topic": "The golden rule for sharing AI outputs"
-        },
-        {
-          "startTime": 21,
-          "endTime": 58,
-          "topic": "Maintaining trust and proof of work with AI ideas"
-        }
-      ]
-    },
-    {
-      "title": "What eng interns do at Anthropic",
-      "url": "https://www.youtube.com/shorts/I5QqmJLd8y4",
-      "videoId": "I5QqmJLd8y4",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Think AI coding assistants make engineering internships obsolete? Anthropic engineer Thariq S. reveals why interns are actually tackling more exciting, high-impact research challenges than ever before instead of routine boilerplate code. Watch to discover how the rise of AI is transforming entry-level engineering into a frontier of novel problem-solving.",
-      "dateAdded": "2026-09-11T23:38:14.156Z",
-      "timestamps": [
-        {
-          "startTime": 7,
-          "endTime": 34,
-          "topic": "Why interns work on novel research problems instead of routine specs"
-        },
-        {
-          "startTime": 34,
-          "endTime": 46,
-          "topic": "The shift from boilerplate coding to solving brand-new engineering problems"
         }
       ]
     },
@@ -345,31 +345,31 @@
       ]
     },
     {
-      "title": "No profits since 2018, has Pos Msia lost their route? - Charles Brewer, Group CEO of Pos Malaysia",
-      "url": "https://www.youtube.com/watch?v=5UMPn3vFLNs",
-      "videoId": "5UMPn3vFLNs",
+      "title": "Early investors need to be a little crazy | In The Studio",
+      "url": "https://www.youtube.com/watch?v=FLJme_CuInE",
+      "videoId": "FLJme_CuInE",
       "channel": "BFM 89.9",
       "category": "General Ideas",
-      "summary": "Discover how a 200-year-old national postal giant is battling massive structural declines, fierce courier price wars, and crushing service mandates to engineer a dramatic turnaround. Pos Malaysia Group CEO Charles Brewer reveals the brutal economics behind why sending a parcel costs less than a cup of coffee and what strategic pivots are essential to keep the company alive. Watch this candid breakdown to understand the true complexities and future of legacy postal logistics.",
-      "dateAdded": "2026-09-11T23:38:14.156Z",
+      "summary": "Ever wondered why venture capitalists regularly pass on brilliant business ideas yet pour millions into flawed prototypes backed by the right founder? In this masterclass discussion, seasoned VCs Charles Wong and Jacob Ko pull back the curtain on early-stage investing—revealing the hidden red flags that sink pitch meetings and the exact 'Smart, Hustle, and Heart' framework they use to find fund-returning outliers. Whether you're an entrepreneur looking to raise capital or aiming to break into venture capital without a finance degree, this episode delivers raw, actionable insider wisdom you cannot afford to miss.",
+      "dateAdded": "2026-09-13T23:43:52.496Z",
       "timestamps": [
         {
-          "startTime": 227,
-          "endTime": 436,
-          "topic": "The courier price war and why parcel delivery pricing is broken"
+          "startTime": 86,
+          "endTime": 225,
+          "topic": "Venture Capital vs. Private Equity and the Hunt for Fund Returners"
         },
         {
-          "startTime": 646,
-          "endTime": 815,
-          "topic": "The Universal Service Obligation dilemma and declining mail volumes"
+          "startTime": 1349,
+          "endTime": 1540,
+          "topic": "Debunking the Finance Degree Myth: The Smart, Hustle, and Heart Framework"
         },
         {
-          "startTime": 1598,
-          "endTime": 1710,
-          "topic": "Exclusive reveal: Pos Malaysia's upcoming live map tracking feature"
+          "startTime": 2928,
+          "endTime": 3090,
+          "topic": "Deadly Red Flags: Why VCs Back Adaptable Founders Over Polished Ideas"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-09-12T23:45:38.737Z"
+  "lastUpdated": "2026-09-13T23:54:26.513Z"
 }
