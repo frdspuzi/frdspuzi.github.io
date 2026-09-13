@@ -1,272 +1,255 @@
 {
   "repos": [
     {
-      "fullName": "freestylefly/awesome-gpt-image-2",
-      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
-      "description": "Prompt as Code | GPT-Image2 工业级提示词引擎与模板库，530+ 个案例逆向工程，20+ 套工业级模板，并提炼出Skills，持续更新中",
-      "language": "JavaScript",
-      "starsThisWeek": 13413,
-      "totalStars": 25631,
-      "ownerAvatarUrl": "https://github.com/freestylefly.png",
+      "fullName": "ayghri/i-have-adhd",
+      "url": "https://github.com/ayghri/i-have-adhd",
+      "description": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+      "language": "Python",
+      "starsThisWeek": 15924,
+      "totalStars": 44289,
+      "ownerAvatarUrl": "https://github.com/ayghri.png",
       "contributorAvatarUrls": [
+        "https://github.com/thejesh23.png",
         "https://github.com/claude.png",
-        "https://github.com/ImgBotApp.png",
-        "https://github.com/LengShangbai.png",
-        "https://github.com/sscodeai.png"
+        "https://github.com/SillyDark.png",
+        "https://github.com/commie70.png"
       ],
-      "hook": "This repository provides a structured template library for image generation prompts. It treats prompts as modular code that you can version and test.",
-      "personalization": "Helpful if you want to apply structured prompt optimization techniques to image generation workflows."
+      "hook": "This tool changes how AI coding agents print their answers. It forces the AI to give direct answers first. You get clear summaries instead of long walls of text.",
+      "personalization": "Useful if you want to optimize how AI coding assistants present information."
     },
     {
-      "fullName": "anthropics/claude-plugins-community",
-      "url": "https://github.com/anthropics/claude-plugins-community",
-      "description": "Community plugin marketplace for Claude Cowork and Claude Code. Read-only mirror — submit plugins at clau.de/plugin-directory-submission.",
-      "language": "Python",
-      "starsThisWeek": 2162,
-      "totalStars": 2874,
-      "ownerAvatarUrl": "https://github.com/anthropics.png",
+      "fullName": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+      "language": "JavaScript",
+      "starsThisWeek": 8086,
+      "totalStars": 257740,
+      "ownerAvatarUrl": "https://github.com/affaan-m.png",
       "contributorAvatarUrls": [
-        "https://github.com/github-actions.png",
-        "https://github.com/bryan-anthropic.png",
+        "https://github.com/haelyra.png",
         "https://github.com/claude.png",
-        "https://github.com/tobinsouth.png",
-        "https://github.com/ThariqS.png"
+        "https://github.com/dependabot.png",
+        "https://github.com/pangerlkr.png"
       ],
-      "hook": "This repository is a community marketplace for Claude Code plugins. Plugins are add-on tools that give the AI coding agent new capabilities and terminal commands.",
-      "personalization": "Directly relevant for evaluating third-party extensions and tool-calling patterns in Claude Code."
+      "hook": "This system helps you run AI coding agents more efficiently. It adds memory, security checks, and optimized prompt routines. It supports platforms like Claude Code and Cursor.",
+      "personalization": "Great for your work evaluating AI coding tools and optimizing agent performance."
+    },
+    {
+      "fullName": "openai/plugins",
+      "url": "https://github.com/openai/plugins",
+      "description": "OpenAI Plugins",
+      "language": "JavaScript",
+      "starsThisWeek": 1120,
+      "totalStars": 6615,
+      "ownerAvatarUrl": "https://github.com/openai.png",
+      "contributorAvatarUrls": [
+        "https://github.com/cching-openai.png",
+        "https://github.com/ashwinm-oai.png",
+        "https://github.com/Aismit.png",
+        "https://github.com/vb-openai.png",
+        "https://github.com/gverma-openai.png"
+      ],
+      "hook": "This repository contains code examples for OpenAI plugins. Plugins let AI models connect to outside APIs and tools.",
+      "personalization": ""
+    },
+    {
+      "fullName": "bilawalsidhu/gods-eye-view",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "description": "A spy satellite simulator in your browser, except the data is real. Live open source spatial intelligence on a photorealistic 3D globe.",
+      "language": "JavaScript",
+      "starsThisWeek": 10510,
+      "totalStars": 31824,
+      "ownerAvatarUrl": "https://github.com/bilawalsidhu.png",
+      "contributorAvatarUrls": [
+        "https://github.com/samehkhamis.png",
+        "https://github.com/Tom-Neverwinter.png",
+        "https://github.com/claude.png",
+        "https://github.com/daikaginza.png"
+      ],
+      "hook": "This web application shows real satellite data on a 3D globe. You can view spatial intelligence directly inside your browser.",
+      "personalization": ""
+    },
+    {
+      "fullName": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "language": "TypeScript",
+      "starsThisWeek": 1936,
+      "totalStars": 22615,
+      "ownerAvatarUrl": "https://github.com/mksglu.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/github-actions.png",
+        "https://github.com/ipedro.png",
+        "https://github.com/ousamabenyounes.png"
+      ],
+      "hook": "This tool reduces the text sent to AI coding agents. It cuts tool outputs by 98 percent to save token space. It also keeps session memory across 17 platforms.",
+      "personalization": "Directly relevant to your work in context optimization and prompt evaluation."
+    },
+    {
+      "fullName": "DietrichGebert/ponytail",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+      "language": "JavaScript",
+      "starsThisWeek": 9272,
+      "totalStars": 137290,
+      "ownerAvatarUrl": "https://github.com/DietrichGebert.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/Lakshya77089.png",
+        "https://github.com/ousamabenyounes.png",
+        "https://github.com/dhedhialy.png"
+      ],
+      "hook": "This prompt skill guides AI agents to write minimal code. It forces the AI to reuse existing tools instead of writing new code.",
+      "personalization": "Helpful when testing prompt strategies that prevent unnecessary code generation."
     },
     {
       "fullName": "tt-a1i/archify",
       "url": "https://github.com/tt-a1i/archify",
       "description": "Agent skill for beautiful, verifiable architecture, workflow, sequence, data-flow, and lifecycle diagrams—self-contained HTML with motion and crisp export.",
       "language": "JavaScript",
-      "starsThisWeek": 18103,
-      "totalStars": 34477,
+      "starsThisWeek": 10442,
+      "totalStars": 60710,
       "ownerAvatarUrl": "https://github.com/tt-a1i.png",
       "contributorAvatarUrls": [
         "https://github.com/sunsunsun-java.png",
-        "https://github.com/YunyueLi.png",
         "https://github.com/cursoragent.png",
+        "https://github.com/YunyueLi.png",
         "https://github.com/claude.png"
       ],
-      "hook": "This tool generates interactive architecture and sequence diagrams. It outputs standalone HTML files with smooth animations and clean visual exports.",
-      "personalization": "Useful for generating clean system architecture diagrams for your fullstack side projects."
+      "hook": "This tool turns system designs into interactive web diagrams. You can view workflow charts and sequence diagrams directly in plain HTML.",
+      "personalization": "Useful for visualizing fullstack architectures when planning your side projects."
     },
     {
-      "fullName": "omacom/omarchy",
-      "url": "https://github.com/omacom/omarchy",
-      "description": "Beautiful, Modern & Opinionated Linux",
-      "language": "Shell",
-      "starsThisWeek": 6692,
-      "totalStars": 35524,
-      "ownerAvatarUrl": "https://github.com/omacom.png",
+      "fullName": "openai/skills",
+      "url": "https://github.com/openai/skills",
+      "description": "Skills Catalog for Codex",
+      "language": "Python",
+      "starsThisWeek": 1579,
+      "totalStars": 27092,
+      "ownerAvatarUrl": "https://github.com/openai.png",
       "contributorAvatarUrls": [
-        "https://github.com/dhh.png",
-        "https://github.com/ryanrhughes.png",
-        "https://github.com/claude.png",
-        "https://github.com/codex.png",
-        "https://github.com/omarchybot.png"
+        "https://github.com/dkundel-openai.png",
+        "https://github.com/gverma-openai.png",
+        "https://github.com/vb-openai.png",
+        "https://github.com/ae-openai.png",
+        "https://github.com/quuu.png"
       ],
-      "hook": "This project offers an automated installer for Arch Linux. It configures a modern desktop environment and developer tools with minimal manual setup.",
+      "hook": "This repository contains reusable skills for OpenAI Codex. Skills are pre-written instructions that help AI perform specific coding tasks.",
+      "personalization": "Relevant for benchmarking and analyzing standard AI coding skill formats."
+    },
+    {
+      "fullName": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
+      "language": "TypeScript",
+      "starsThisWeek": 5124,
+      "totalStars": 49580,
+      "ownerAvatarUrl": "https://github.com/heygen-com.png",
+      "contributorAvatarUrls": [
+        "https://github.com/miguel-heygen.png",
+        "https://github.com/vanceingalls.png",
+        "https://github.com/jrusso1020.png",
+        "https://github.com/claude.png",
+        "https://github.com/ukimsanov.png"
+      ],
+      "hook": "This library converts HTML code into rendered video files. It allows AI agents to create videos programmatically using web code.",
       "personalization": ""
     },
     {
-      "fullName": "apache/maka",
-      "url": "https://github.com/apache/maka",
-      "description": "Apache Maka (Incubating) is a local-first AI agent workspace. Model messages, tool calls, tool results, permission decisions, and termination events are recorded as an append-only log.",
-      "language": "TypeScript",
-      "starsThisWeek": 1973,
-      "totalStars": 4187,
-      "ownerAvatarUrl": "https://github.com/apache.png",
-      "contributorAvatarUrls": [
-        "https://github.com/jackwener.png",
-        "https://github.com/Astro-Han.png",
-        "https://github.com/likun666661.png",
-        "https://github.com/M4n5ter.png",
-        "https://github.com/me2seeks.png"
-      ],
-      "hook": "This project is a local-first workspace for AI agents. It stores all model prompts, tool executions, and user permissions in an immutable log.",
-      "personalization": "Valuable for auditing agent behavior and evaluating tool-use decisions in a local development environment."
-    },
-    {
-      "fullName": "tashfeenahmed/freellmapi",
-      "url": "https://github.com/tashfeenahmed/freellmapi",
-      "description": "7.4 billion tokens per month. 34 free LLM providers. 635 free model endpoints. All behind one /v1 endpoint, plus any custom OpenAI-compatible endpoint. Smart routing, automatic failover, encrypted keys. Personal experimentation only.",
-      "language": "TypeScript",
-      "starsThisWeek": 3037,
-      "totalStars": 22761,
-      "ownerAvatarUrl": "https://github.com/tashfeenahmed.png",
-      "contributorAvatarUrls": [
-        "https://github.com/claude.png",
-        "https://github.com/suantea.png",
-        "https://github.com/OhOkThisIsFine.png",
-        "https://github.com/tashdroid.png"
-      ],
-      "hook": "This proxy server routes requests to multiple free AI model providers through one unified endpoint. An endpoint is a web address that receives software requests. It includes automatic failover if a provider goes offline.",
-      "personalization": "Great for running low-cost prompt evaluations across many models without managing separate API accounts."
-    },
-    {
-      "fullName": "MadsLorentzen/ai-job-search",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "fullName": "microsoft/markitdown",
+      "url": "https://github.com/microsoft/markitdown",
+      "description": "Python tool for converting files and office documents to Markdown.",
       "language": "Python",
-      "starsThisWeek": 5348,
-      "totalStars": 38515,
-      "ownerAvatarUrl": "https://github.com/MadsLorentzen.png",
+      "starsThisWeek": 4823,
+      "totalStars": 183575,
+      "ownerAvatarUrl": "https://github.com/microsoft.png",
       "contributorAvatarUrls": [
-        "https://github.com/claude.png",
-        "https://github.com/ayobamiseun.png",
-        "https://github.com/oscarbol09.png",
-        "https://github.com/LeoWinston-9596.png"
+        "https://github.com/afourney.png",
+        "https://github.com/gagb.png",
+        "https://github.com/sugatoray.png",
+        "https://github.com/PetrAPConsulting.png",
+        "https://github.com/dependabot.png"
       ],
-      "hook": "This project automates job application workflows using Claude Code. It evaluates job postings, tailors resumes, and creates interview practice questions on your local computer.",
-      "personalization": "A practical example of using Claude Code to automate complex, multi-step tasks locally."
+      "hook": "This Python tool converts documents into Markdown text. Markdown is a simple text format for formatting documents. It processes files like Word documents, spreadsheets, and PDFs.",
+      "personalization": "Great for cleaning raw documents before feeding them into prompt evaluation pipelines."
     },
     {
-      "fullName": "anthropics/claude-plugins-official",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "language": "Python",
-      "starsThisWeek": 1940,
-      "totalStars": 35607,
-      "ownerAvatarUrl": "https://github.com/anthropics.png",
+      "fullName": "obra/superpowers",
+      "url": "https://github.com/obra/superpowers",
+      "description": "An agentic skills framework & software development methodology that works.",
+      "language": "Shell",
+      "starsThisWeek": 3938,
+      "totalStars": 286184,
+      "ownerAvatarUrl": "https://github.com/obra.png",
       "contributorAvatarUrls": [
-        "https://github.com/github-actions.png",
-        "https://github.com/bryan-anthropic.png",
+        "https://github.com/arittr.png",
         "https://github.com/claude.png",
-        "https://github.com/tobinsouth.png",
-        "https://github.com/k6l3.png"
+        "https://github.com/clkao.png",
+        "https://github.com/jjshanks.png"
       ],
-      "hook": "This repository is the official directory of plugins maintained by Anthropic. It contains verified tools and integrations for Claude Code.",
-      "personalization": "An essential reference for tracking official plugin standards as you evaluate Claude Code against other tools."
+      "hook": "This project provides a framework for building AI agent skills. It structures how agents plan, write, and test software.",
+      "personalization": "Fits well with your evaluation of AI coding tools and workflows."
     },
     {
-      "fullName": "AprilNEA/OpenLogi",
-      "url": "https://github.com/AprilNEA/OpenLogi",
-      "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
-      "language": "Rust",
-      "starsThisWeek": 3406,
-      "totalStars": 17898,
-      "ownerAvatarUrl": "https://github.com/AprilNEA.png",
+      "fullName": "coreyhaines31/marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "description": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "language": "JavaScript",
+      "starsThisWeek": 2822,
+      "totalStars": 49985,
+      "ownerAvatarUrl": "https://github.com/coreyhaines31.png",
       "contributorAvatarUrls": [
-        "https://github.com/davidbudnick.png",
-        "https://github.com/aprilnea.png",
-        "https://github.com/cserby.png",
+        "https://github.com/claude.png",
+        "https://github.com/njcameron.png",
+        "https://github.com/Jiliac.png",
+        "https://github.com/basseko.png"
+      ],
+      "hook": "This collection gives AI agents specialized skills for digital marketing. It helps agents write marketing copy, analyze search data, and optimize conversion rates.",
+      "personalization": "Useful if you need to promote your Islamic tech side projects."
+    },
+    {
+      "fullName": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "starsThisWeek": 783,
+      "totalStars": 51834,
+      "ownerAvatarUrl": "https://github.com/ChromeDevTools.png",
+      "contributorAvatarUrls": [
+        "https://github.com/OrKoN.png",
+        "https://github.com/dependabot.png",
+        "https://github.com/Lightning00Blade.png",
+        "https://github.com/browser-automation-bot.png",
+        "https://github.com/yulunz.png"
+      ],
+      "hook": "This tool lets AI coding agents control Chrome developer tools directly. Agents can inspect web pages, debug JavaScript, and fix layout bugs automatically.",
+      "personalization": "Directly applies to evaluating fullstack web development workflows with AI."
+    },
+    {
+      "fullName": "cathrynlavery/diagram-design",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "description": "38 editorial diagram types for Claude Code, Codex, and Pi. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+      "language": "HTML",
+      "starsThisWeek": 7409,
+      "totalStars": 39173,
+      "ownerAvatarUrl": "https://github.com/cathrynlavery.png",
+      "contributorAvatarUrls": [
+        "https://github.com/parveen0029.png",
+        "https://github.com/claude.png",
+        "https://github.com/mvanhorn.png",
         "https://github.com/github-actions.png"
       ],
-      "hook": "This application is a lightweight, open-source driver for Logitech mice and keyboards. It runs locally without user accounts or background telemetry.",
+      "hook": "This project provides 38 visual diagram templates for AI agents. It lets agents generate clean HTML and SVG charts without heavy dependencies.",
       "personalization": ""
-    },
-    {
-      "fullName": "rohitg00/ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
-      "description": "Learn it. Build it. Ship it for others.",
-      "language": "Python",
-      "starsThisWeek": 3720,
-      "totalStars": 51268,
-      "ownerAvatarUrl": "https://github.com/rohitg00.png",
-      "contributorAvatarUrls": [
-        "https://github.com/github-actions.png",
-        "https://github.com/abhinav-m22.png",
-        "https://github.com/thereisnotime.png",
-        "https://github.com/thejesh23.png"
-      ],
-      "hook": "This repository teaches practical AI engineering concepts using step-by-step code tutorials. It focuses on building and shipping real systems rather than studying academic theory.",
-      "personalization": "Directly matches your focus on hands-on applied AI engineering and system implementation."
-    },
-    {
-      "fullName": "cursor/plugins",
-      "url": "https://github.com/cursor/plugins",
-      "description": "Cursor plugin specification and official plugins",
-      "language": "TypeScript",
-      "starsThisWeek": 1503,
-      "totalStars": 6270,
-      "ownerAvatarUrl": "https://github.com/cursor.png",
-      "contributorAvatarUrls": [
-        "https://github.com/cursoragent.png",
-        "https://github.com/poteto.png",
-        "https://github.com/roshansada.png",
-        "https://github.com/ericzakariasson.png",
-        "https://github.com/n2parko.png"
-      ],
-      "hook": "This repository defines the official plugin specification for the Cursor code editor. It includes sample plugins that extend the editor's AI features.",
-      "personalization": "Useful for comparing Cursor's extension model directly with Claude Code's plugin ecosystem."
-    },
-    {
-      "fullName": "K-Dense-AI/scientific-agent-skills",
-      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
-      "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 190,000+ scientists worldwide. 165 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
-      "language": "Python",
-      "starsThisWeek": 4309,
-      "totalStars": 39197,
-      "ownerAvatarUrl": "https://github.com/K-Dense-AI.png",
-      "contributorAvatarUrls": [
-        "https://github.com/TKassis.png",
-        "https://github.com/cursoragent.png",
-        "https://github.com/borealBytes.png",
-        "https://github.com/github-actions.png",
-        "https://github.com/claude.png"
-      ],
-      "hook": "This library provides specialized tools and database connectors for AI agents in scientific research. It helps agents query chemistry, biology, and clinical data sources.",
-      "personalization": ""
-    },
-    {
-      "fullName": "ConardLi/garden-skills",
-      "url": "https://github.com/ConardLi/garden-skills",
-      "description": "ConardLi's open-source Skills collection, featuring web design, knowledge retrieval, image generation, and more.",
-      "language": "CSS",
-      "starsThisWeek": 1222,
-      "totalStars": 11767,
-      "ownerAvatarUrl": "https://github.com/ConardLi.png",
-      "contributorAvatarUrls": [
-        "https://github.com/github-actions.png",
-        "https://github.com/cursoragent.png",
-        "https://github.com/eltociear.png"
-      ],
-      "hook": "This repository contains a collection of reusable skills for AI agents. These skills help agents build web user interfaces, search documents, and create images.",
-      "personalization": "Provides practical agent skills you can plug into your fullstack web development workflows."
-    },
-    {
-      "fullName": "google/googletest",
-      "url": "https://github.com/google/googletest",
-      "description": "GoogleTest - Google Testing and Mocking Framework",
-      "language": "C++",
-      "starsThisWeek": 441,
-      "totalStars": 39383,
-      "ownerAvatarUrl": "https://github.com/google.png",
-      "contributorAvatarUrls": [
-        "https://github.com/gennadiycivil.png",
-        "https://github.com/derekmauro.png",
-        "https://github.com/kuzkry.png",
-        "https://github.com/copybara-github.png"
-      ],
-      "hook": "This repository contains Google's testing and mocking framework for C++ programs. It helps developers write automated unit tests to verify code quality.",
-      "personalization": ""
-    },
-    {
-      "fullName": "Alishahryar1/free-claude-code",
-      "url": "https://github.com/Alishahryar1/free-claude-code",
-      "description": "Use Claude Code, Codex, Pi, and OpenCode and more for free (1.3B+ free tokens) from your terminal, app, IDE, or phone like OpenClaw (voice supported + ToS friendly)",
-      "language": "Python",
-      "starsThisWeek": 4324,
-      "totalStars": 51925,
-      "ownerAvatarUrl": "https://github.com/Alishahryar1.png",
-      "contributorAvatarUrls": [
-        "https://github.com/cursoragent.png",
-        "https://github.com/dependabot.png",
-        "https://github.com/claude.png",
-        "https://github.com/rishiskhare.png"
-      ],
-      "hook": "This tool lets you run terminal coding agents using free model endpoints. It provides a simple setup to test agents without paying API fees.",
-      "personalization": "Helpful for testing terminal-based coding agents during side project development."
     },
     {
       "fullName": "THU-MAIC/OpenMAIC",
       "url": "https://github.com/THU-MAIC/OpenMAIC",
       "description": "Open Multi-Agent Interactive Classroom — Get an immersive, multi-agent learning experience in just one click",
       "language": "TypeScript",
-      "starsThisWeek": 2085,
-      "totalStars": 23932,
+      "starsThisWeek": 4417,
+      "totalStars": 36463,
       "ownerAvatarUrl": "https://github.com/THU-MAIC.png",
       "contributorAvatarUrls": [
         "https://github.com/wyuc.png",
@@ -275,62 +258,146 @@
         "https://github.com/YizukiAme.png",
         "https://github.com/ly-wang19.png"
       ],
-      "hook": "This platform simulates an interactive classroom using multiple AI agents. The agents act as instructors and students to discuss educational topics together.",
+      "hook": "This software builds virtual classroom environments using multiple AI agents. Users can interact with simulated teachers and classmates in real time.",
       "personalization": ""
     },
     {
-      "fullName": "abi/screenshot-to-code",
-      "url": "https://github.com/abi/screenshot-to-code",
-      "description": "Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)",
+      "fullName": "Tencent/WeKnora",
+      "url": "https://github.com/Tencent/WeKnora",
+      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
+      "language": "Go",
+      "starsThisWeek": 1168,
+      "totalStars": 22857,
+      "ownerAvatarUrl": "https://github.com/Tencent.png",
+      "contributorAvatarUrls": [
+        "https://github.com/lyingbug.png",
+        "https://github.com/voidkey.png",
+        "https://github.com/begoniezhao.png",
+        "https://github.com/claude.png",
+        "https://github.com/dependabot.png"
+      ],
+      "hook": "This platform turns raw documents into searchable knowledge bases. It uses Retrieval-Augmented Generation to answer questions. Retrieval-Augmented Generation finds relevant facts before generating answers.",
+      "personalization": "Useful reference architecture for building Islamic knowledge bases or finance engines."
+    },
+    {
+      "fullName": "blader/humanizer",
+      "url": "https://github.com/blader/humanizer",
+      "description": "Agent skill that removes signs of AI-generated writing from text",
       "language": "Python",
-      "starsThisWeek": 1909,
-      "totalStars": 76384,
-      "ownerAvatarUrl": "https://github.com/abi.png",
+      "starsThisWeek": 4069,
+      "totalStars": 47660,
+      "ownerAvatarUrl": "https://github.com/blader.png",
       "contributorAvatarUrls": [
         "https://github.com/claude.png",
-        "https://github.com/clean99.png",
-        "https://github.com/sweep-ai-deprecated.png",
-        "https://github.com/kachbit.png"
+        "https://github.com/mvanhorn.png",
+        "https://github.com/Scott-Emberson.png",
+        "https://github.com/warp-agent.png"
       ],
-      "hook": "This application converts design screenshots into frontend code. It supports popular web technologies such as HTML, Tailwind CSS, React, and Vue.",
-      "personalization": "Speeds up UI prototyping when building frontend interfaces for your fullstack apps."
+      "hook": "This skill rewrites AI text to make it sound natural. It removes repetitive phrasing common in machine writing.",
+      "personalization": "Useful for refining generated outputs during prompt optimization work."
     },
     {
-      "fullName": "openai/codex",
-      "url": "https://github.com/openai/codex",
-      "description": "Lightweight coding agent that runs in your terminal",
+      "fullName": "max-sixty/worktrunk",
+      "url": "https://github.com/max-sixty/worktrunk",
+      "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
       "language": "Rust",
-      "starsThisWeek": 5510,
-      "totalStars": 120086,
-      "ownerAvatarUrl": "https://github.com/openai.png",
+      "starsThisWeek": 257,
+      "totalStars": 7516,
+      "ownerAvatarUrl": "https://github.com/max-sixty.png",
       "contributorAvatarUrls": [
-        "https://github.com/jif-oai.png",
-        "https://github.com/bolinfest.png",
-        "https://github.com/etraut-openai.png",
-        "https://github.com/aibrahim-oai.png",
-        "https://github.com/pakrym-oai.png"
-      ],
-      "hook": "This project is OpenAI's lightweight coding agent that runs directly in your terminal. It inspects your repository, modifies source files, and executes commands.",
-      "personalization": "A key tool to benchmark when you evaluate terminal AI coding assistants against Claude Code."
-    },
-    {
-      "fullName": "tinyhumansai/openhuman",
-      "url": "https://github.com/tinyhumansai/openhuman",
-      "description": "Your Personal AI super intelligence. A brain that builds a local-first memory of your life, a fantastic orchestrator of agent fleets and workflows, and a deep researcher.",
-      "language": "Rust",
-      "starsThisWeek": 2526,
-      "totalStars": 39013,
-      "ownerAvatarUrl": "https://github.com/tinyhumansai.png",
-      "contributorAvatarUrls": [
-        "https://github.com/senamakel.png",
-        "https://github.com/medullabot.png",
         "https://github.com/claude.png",
-        "https://github.com/graycyrus.png",
-        "https://github.com/M3gA-Mind.png"
+        "https://github.com/worktrunk-bot.png",
+        "https://github.com/dependabot.png",
+        "https://github.com/github-actions.png"
       ],
-      "hook": "This software is a local personal assistant that builds a long-term memory of your work. It coordinates multiple AI agents to perform research and manage workflows.",
+      "hook": "This command-line tool manages Git worktrees. Git worktrees let you work on multiple code branches in separate folders simultaneously.",
+      "personalization": "Helps you run multiple AI coding agents on different branches at once."
+    },
+    {
+      "fullName": "humanlayer/skills",
+      "url": "https://github.com/humanlayer/skills",
+      "description": "",
+      "language": "TypeScript",
+      "starsThisWeek": 1380,
+      "totalStars": 3994,
+      "ownerAvatarUrl": "https://github.com/humanlayer.png",
+      "contributorAvatarUrls": [
+        "https://github.com/dexhorthy.png",
+        "https://github.com/claude.png",
+        "https://github.com/K-Mistele.png"
+      ],
+      "hook": "This repository contains action skills for AI agents. It helps agents run terminal commands, execute code, and manage files safely.",
       "personalization": ""
+    },
+    {
+      "fullName": "earthtojake/text-to-cad",
+      "url": "https://github.com/earthtojake/text-to-cad",
+      "description": "A library of agent skills for CAD, CAE and CAM",
+      "language": "Python",
+      "starsThisWeek": 1011,
+      "totalStars": 15579,
+      "ownerAvatarUrl": "https://github.com/earthtojake.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/github-actions.png",
+        "https://github.com/warun7.png",
+        "https://github.com/dependabot.png"
+      ],
+      "hook": "This library adds 3D design skills to AI agents. Agents can create mechanical models using computer-aided design tools.",
+      "personalization": ""
+    },
+    {
+      "fullName": "petergyang/no-ai-slop",
+      "url": "https://github.com/petergyang/no-ai-slop",
+      "description": "Removes 20+ patterns of AI slop from any piece of writing.",
+      "language": "Python",
+      "starsThisWeek": 1307,
+      "totalStars": 9173,
+      "ownerAvatarUrl": "https://github.com/petergyang.png",
+      "contributorAvatarUrls": [
+        "https://github.com/amateurhuman.png",
+        "https://github.com/tmchow.png",
+        "https://github.com/tymrtn.png",
+        "https://github.com/CooperSheroy.png"
+      ],
+      "hook": "This tool cleans text by removing common AI writing patterns. It detects overused artificial words and replaces them with simple phrasing.",
+      "personalization": "Relevant to your work in prompt optimization and text quality evaluation."
+    },
+    {
+      "fullName": "github/spec-kit",
+      "url": "https://github.com/github/spec-kit",
+      "description": "💫 Toolkit to help you get started with Spec-Driven Development",
+      "language": "Python",
+      "starsThisWeek": 2501,
+      "totalStars": 136388,
+      "ownerAvatarUrl": "https://github.com/github.png",
+      "contributorAvatarUrls": [
+        "https://github.com/mnriem.png",
+        "https://github.com/localden.png",
+        "https://github.com/Copilot.png",
+        "https://github.com/claude.png",
+        "https://github.com/github-actions.png"
+      ],
+      "hook": "This toolkit helps developers write specifications before generating code. It keeps AI coding tools focused on clear requirements.",
+      "personalization": "Fits well with evaluating structured prompt methodologies for fullstack coding."
+    },
+    {
+      "fullName": "kunchenguid/firstmate",
+      "url": "https://github.com/kunchenguid/firstmate",
+      "description": "Talk to one agent. Ship with a crew.",
+      "language": "Shell",
+      "starsThisWeek": 763,
+      "totalStars": 5732,
+      "ownerAvatarUrl": "https://github.com/kunchenguid.png",
+      "contributorAvatarUrls": [
+        "https://github.com/karotkriss.png",
+        "https://github.com/claude.png",
+        "https://github.com/mremond.png",
+        "https://github.com/cursoragent.png"
+      ],
+      "hook": "This system coordinates multiple specialized AI agents under one manager. You talk to one interface while background agents complete complex subtasks.",
+      "personalization": "Valuable for evaluating multi-agent orchestration tools."
     }
   ],
-  "lastUpdated": "2026-08-31T00:11:42.265Z"
+  "lastUpdated": "2026-09-13T23:53:01.945Z"
 }
