@@ -1,61 +1,61 @@
 {
   "learnings": [
     {
-      "question": "According to the Quran in Surah Ar-Ra’d (13:11), under what circumstance will Allah change the condition of a people?",
+      "question": "In PCIe power management, which state specifically powers down the electrical circuits of the main link to achieve deeper energy savings within the L1 tier?",
       "options": [
-        "When they withdraw entirely from public life",
-        "Until they change what is in themselves",
-        "Only after they face a severe disaster",
-        "Once they completely eliminate all worldly desires"
-      ],
-      "correctIndex": 1,
-      "learning": "Surah Ar-Ra’d (13:11) establishes the principle of personal responsibility, stating that Allah does not change the condition of a people until they take the initiative to change what is within themselves.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which three-part strategy is recommended to overcome natural forgetfulness and ensure personal insights remain useful rather than lost?",
-      "options": [
-        "Writing ideas down, building a recall system, and sharing the knowledge publicly",
-        "Relying on mental repetition, avoiding digital note-taking, and keeping lessons private",
-        "Limiting written records, using passive review techniques, and memorizing core principles",
-        "Hoarding notes in private static files, re-reading them weekly, and minimizing external sharing"
-      ],
-      "correctIndex": 0,
-      "learning": "To combat natural forgetfulness and avoid treating the brain like a filing cabinet, one should write down insights, establish an active system to trigger recall, and share that knowledge publicly.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "Which Scrum artifact is specifically designed to visualize the progress of a Sprint and display the remaining work?",
-      "options": [
-        "Sprint Backlog",
-        "Product Backlog",
-        "Sprint Retrospective",
-        "Burndown Chart"
+        "L1.0",
+        "L2",
+        "L0s",
+        "L1.1"
       ],
       "correctIndex": 3,
-      "learning": "In Scrum, the Burndown Chart is the artifact that visualizes the progress of a Sprint by showing the remaining work and tracking whether the team is on schedule.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "What is the primary motivation for implementing Power Management States in PCIe devices?",
-      "options": [
-        "To ensure efficient energy use, extend device longevity, and save power based on activity while remaining responsive",
-        "To eliminate the need for physical hardware cooling components in peripheral devices",
-        "To permanently limit device transmission bandwidth to prevent electromagnetic interference",
-        "To convert high-speed serial data transmission into parallel bus communication"
-      ],
-      "correctIndex": 0,
-      "learning": "PCIe Power Management States are implemented to achieve efficient energy consumption, extend device longevity, and save energy based on device activity while maintaining necessary responsiveness.",
+      "learning": "In PCIe power management, L1.1 is a deeper substate of L1 where additional components, specifically the electrical circuits of the main link, are powered down to increase power savings at the expense of wake-up time.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
+    },
+    {
+      "question": "In Islamic theology, which Arabic term designates humanity's role as stewards or caretakers of the Earth?",
+      "options": [
+        "Jinn",
+        "Khalifah",
+        "Hadith",
+        "Taqwa"
+      ],
+      "correctIndex": 1,
+      "learning": "In Islamic philosophy, human purpose centers on three interconnected roles: worshiping Allah, serving as stewards (khalifah) of the Earth, and preparing for the eternal Hereafter through conscious moral accountability.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Approximately what percentage of the total text of the Quran is made up of its 20 most frequently occurring words?",
+      "options": [
+        "80.00%",
+        "50.50%",
+        "20.83%",
+        "5.15%"
+      ],
+      "correctIndex": 2,
+      "learning": "Contrary to the traditional 80/20 Pareto Principle expectation, the top 20 most frequently occurring words in the Quran account for only approximately 20.83% of its total text.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In Scrum, which ceremony involves the team demonstrating completed work to the Product Owner and discussing improvements for future Sprints?",
+      "options": [
+        "Daily Scrum",
+        "Sprint Review",
+        "Sprint Planning",
+        "Sprint Release"
+      ],
+      "correctIndex": 1,
+      "learning": "In the Scrum framework, the Sprint Review ceremony is dedicated to demonstrating completed work to the Product Owner and reflecting on the Sprint to identify improvements for future cycles.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
     }
   ],
-  "fetchedAt": "2026-09-13T23:43:06.299Z"
+  "fetchedAt": "2026-09-15T23:47:40.318Z"
 }
