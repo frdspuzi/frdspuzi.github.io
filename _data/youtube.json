@@ -1,117 +1,122 @@
 {
   "videos": [
     {
-      "title": "Building ambitious software — Jonathan Kelley, Dioxus Labs & Cognition",
-      "url": "https://www.youtube.com/watch?v=H7vFrcNWXzs",
-      "videoId": "H7vFrcNWXzs",
+      "title": "Act, Confirm, or Stop? Smarter behavior for AI assistants, wearables & robots — Amit Desai, Roku",
+      "url": "https://www.youtube.com/watch?v=Zd5b40Jbp_k",
+      "videoId": "Zd5b40Jbp_k",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "AI coding agents have made writing code virtually free, but why does shipping high-quality software feel harder than ever? Dioxus creator Jonathan Kelley reveals the hard-won lessons from scaling a massive Rust framework with AI—showing why software architecture, rigorous line-by-line reviews, and harness-building are now an engineer's true superpower. Watch this talk to discover how to wield coding agents without falling into the trap of becoming a 'slop cannon.'",
-      "dateAdded": "2026-09-11T23:38:14.156Z",
+      "summary": "Chasing 100% model accuracy in voice AI is a losing battle—the real secret to delighting users is optimizing how your system behaves when it is uncertain. By implementing the Outcome User Cost Heuristic (OUCH) framework to decide when an assistant should act, confirm, or stop, you can drastically cut user friction and boost satisfaction without altering your underlying models. Watch this talk to discover how math-driven decision thresholds can transform clumsy voice assistants and embodied AI into intuitive, low-friction experiences.",
+      "dateAdded": "2026-09-15T23:49:01.048Z",
       "timestamps": [
         {
-          "startTime": 337,
-          "endTime": 440,
-          "topic": "The 'Slop Cannon' Trap and Why AI Agents Excel at Rust"
+          "startTime": 470,
+          "endTime": 560,
+          "topic": "Introducing OUCH: The Outcome User Cost Heuristic"
         },
         {
-          "startTime": 596,
-          "endTime": 715,
-          "topic": "Leveraging AI's Infinite Patience for Mundane and Complex Tasks"
+          "startTime": 620,
+          "endTime": 720,
+          "topic": "Interactive Demo: Optimizing the Act vs. Stop Threshold"
         },
         {
-          "startTime": 963,
-          "endTime": 1080,
-          "topic": "Why Code Architecture Remains an Art in the Age of AI"
+          "startTime": 736,
+          "endTime": 840,
+          "topic": "Integrating Confirmation Behaviors into AI Decision Models"
         }
       ]
     },
     {
-      "title": "Generative UI... in Python? — Jeremiah Lowin, Prefect",
-      "url": "https://www.youtube.com/watch?v=Krzs8GeiWTc",
-      "videoId": "Krzs8GeiWTc",
+      "title": "\"My name is... my name is...\": A Linguistic Map for Voice Agents — Midam Kim, ServiceNow",
+      "url": "https://www.youtube.com/watch?v=IDNfAZVKvPE",
+      "videoId": "IDNfAZVKvPE",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Building rich, interactive user interfaces for AI agents usually forces Python engineers into the complexities of JavaScript and React. Discover Prefab, an open-source framework that lets developers compose reactive, production-ready frontends purely in Python while slashing token costs by 70% through streamed generative UI.",
-      "dateAdded": "2026-09-10T23:30:51.704Z",
+      "summary": "Most voice AI bots fail not because of poor speech-to-text models, but because they treat conversations as static pipelines instead of dynamic, collaborative human activities. By mapping dialogue across four interdependent linguistic layers—sounds, words, turn-taking interactions, and evolving mental models—this talk reveals the exact framework needed to prevent catastrophic bot breakdowns. Watch to discover how engineering around real-time linguistic orchestration turns frustrating voice agents into seamless conversational partners.",
+      "dateAdded": "2026-09-15T23:49:01.048Z",
       "timestamps": [
         {
-          "startTime": 97,
-          "endTime": 178,
-          "topic": "How MCP Apps Deliver Direct Interactive UI to Users"
+          "startTime": 213,
+          "endTime": 275,
+          "topic": "Human Communication as a Joint Activity"
         },
         {
-          "startTime": 389,
-          "endTime": 514,
-          "topic": "Introducing Prefab: Composing Frontends Directly in Python"
+          "startTime": 395,
+          "endTime": 545,
+          "topic": "The 4-Layer Linguistic Framework for Voice AI"
         },
         {
-          "startTime": 900,
-          "endTime": 1013,
-          "topic": "Streaming Generative UI and Slashing Token Usage by 70%"
+          "startTime": 566,
+          "endTime": 625,
+          "topic": "Why Mental Models Persist Beyond Spoken Words"
         }
       ]
     },
     {
-      "title": "What percent of Anthropics code is autonomous",
-      "url": "https://www.youtube.com/shorts/gNgc_JT8ur8",
-      "videoId": "gNgc_JT8ur8",
-      "channel": "Ryan Peterman",
+      "title": "Realtime Voice Agents with Frontier Intelligence — Bohan Li, EliseAI",
+      "url": "https://www.youtube.com/watch?v=MBHOH1NmDqc",
+      "videoId": "MBHOH1NmDqc",
+      "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Ever wonder how engineers at Anthropic actually use their own AI to write software? An engineer on the Claude Code team reveals how Claude handles the tedious 'glue work'—like converting Figma designs straight into working code—so developers can focus exclusively on high-impact, unique engineering challenges. Watch to see what real-world autonomous coding looks like from the inside.",
-      "dateAdded": "2026-09-13T23:43:52.495Z",
+      "summary": "Discover how EliseAI engineers ultra-fast, natural-sounding voice agents using frontier intelligence without the crippling latency of traditional LLM architectures. By leveraging clever techniques like speculative transcription, async background tool injection, and audio prefix caching, this talk reveals the practical blueprint for achieving truly real-time conversational AI.",
+      "dateAdded": "2026-09-15T23:49:01.048Z",
       "timestamps": [
         {
-          "startTime": 13,
-          "endTime": 24,
-          "topic": "Automating design-to-code workflows with Claude Code and Figma MCP"
+          "startTime": 345,
+          "endTime": 606,
+          "topic": "Async Background Tool Injection for Fast LLM Inference"
         },
         {
-          "startTime": 24,
-          "endTime": 46,
-          "topic": "Offloading 'glue work' to AI so developers focus on unique tasks"
+          "startTime": 607,
+          "endTime": 937,
+          "topic": "Audio Prefix Caching to Eliminate Text-to-Speech Latency"
+        },
+        {
+          "startTime": 947,
+          "endTime": 695,
+          "topic": "Live Demonstration of Real-Time Voice Agent Handling Patient Calls"
         }
       ]
     },
     {
-      "title": "Is prompting models a durable skill for engineers",
-      "url": "https://www.youtube.com/shorts/iv3QbS6q8ok",
-      "videoId": "iv3QbS6q8ok",
+      "title": "How to avoid short tenure resume problems",
+      "url": "https://www.youtube.com/shorts/vJM_FgmI8gc",
+      "videoId": "vJM_FgmI8gc",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Think prompt engineering is a temporary fad? An Anthropic engineer reveals why the real value isn't memorizing prompt tricks, but mastering the skill of adapting as AI models evolve. Discover how the Claude Code team cut 80% of their system prompts and why learning to unlearn old techniques is the ultimate AI superpower.",
-      "dateAdded": "2026-09-13T23:43:52.495Z",
+      "summary": "Worried that short job tenures on your resume make you look like an unreliable job hopper? An Airbnb Staff Engineer reveals the exact mindset and strategy to shut down interviewer skepticism early on by reframing quick transitions into ambition and a relentless drive to solve hard problems. Learn how to turn an interviewer's biggest red flag into your strongest selling point.",
+      "dateAdded": "2026-09-15T23:49:01.048Z",
       "timestamps": [
         {
-          "startTime": 5,
-          "endTime": 22,
-          "topic": "Why prompting is bigger than just the input prompt"
+          "startTime": 9,
+          "endTime": 36,
+          "topic": "How to reframe short tenures into ambition"
         },
         {
-          "startTime": 28,
+          "startTime": 36,
           "endTime": 54,
-          "topic": "Cutting 80% of Claude Code's system prompt & mastering adaptability"
+          "topic": "Overcoming interviewer skepticism in real time"
         }
       ]
     },
     {
-      "title": "What is loop engineering",
-      "url": "https://www.youtube.com/shorts/3a2o7XKCb1o",
-      "videoId": "3a2o7XKCb1o",
+      "title": "Why you should read technical papers",
+      "url": "https://www.youtube.com/shorts/tUQ-UmYkVXk",
+      "videoId": "tUQ-UmYkVXk",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Stop micromanaging your AI prompts one by one—an engineer from Anthropic reveals how 'loop engineering' lets you build autonomous systems that continuously prompt and guide AI workflows for you. Watch this clip to understand how scaling automated feedback loops can handle complex tasks just like managing an elite, dedicated team.",
-      "dateAdded": "2026-09-12T23:29:50.527Z",
+      "summary": "You don't need to be an academic or work in a specialized niche to gain massive value from technical research papers. Watch game developer Casey Muratori explain how exploring papers outside your discipline expands your knowledge, along with an easy, practical way to pick your very first read.",
+      "dateAdded": "2026-09-15T23:49:01.048Z",
       "timestamps": [
         {
           "startTime": 0,
-          "endTime": 15,
-          "topic": "The definition of loop engineering vs. direct prompting"
+          "endTime": 20,
+          "topic": "The unexpected value of reading papers outside your field"
         },
         {
-          "startTime": 15,
-          "endTime": 40,
-          "topic": "Scaling automated loops and ensuring high-value output"
+          "startTime": 20,
+          "endTime": 46,
+          "topic": "How to get started using USENIX proceedings and award winners"
         }
       ]
     },
@@ -142,80 +147,101 @@
       ]
     },
     {
-      "title": "Agentic approaches to processing long videos with Gemini",
-      "url": "https://www.youtube.com/shorts/HyfhaGNVKUA",
-      "videoId": "HyfhaGNVKUA",
+      "title": "🪄 Gemini Live API in action",
+      "url": "https://www.youtube.com/shorts/FVkp6tc2rNY",
+      "videoId": "FVkp6tc2rNY",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Dumping full videos into AI models wastes hundreds of thousands of tokens and dilutes the accuracy of your results. Learn how agentic video understanding empowers Gemini to dynamically query transcripts, specific frames, and audio only when needed. Watch this quick breakdown to see how a simple think-act-observe loop slashes token costs while dramatically boosting AI comprehension.",
-      "dateAdded": "2026-09-08T23:44:39.170Z",
+      "summary": "Discover how the latest updates to the Gemini Live API unlock proactive voice interactions, asynchronous tool calling, and high-level background reasoning on the fly. Watch this side-by-side demo to see how switching to the maximum reasoning model dramatically elevates real-time generative capabilities without interrupting the natural flow of conversation.",
+      "dateAdded": "2026-09-15T23:49:01.048Z",
       "timestamps": [
         {
-          "startTime": 16,
-          "endTime": 43,
-          "topic": "Replacing full video ingestion with targeted tool calls"
+          "startTime": 3,
+          "endTime": 36,
+          "topic": "Overview of new Live API features and proactive audio demo"
         },
         {
-          "startTime": 44,
-          "endTime": 70,
-          "topic": "The think-act-observe agentic loop in action"
+          "startTime": 36,
+          "endTime": 62,
+          "topic": "Testing standard SVG generation in live mode"
         },
         {
-          "startTime": 71,
-          "endTime": 90,
-          "topic": "Token reduction and performance advantages"
+          "startTime": 62,
+          "endTime": 93,
+          "topic": "Max high-reasoning model demo delivering superior vector graphics"
         }
       ]
     },
     {
-      "title": "5 cara beli iPhone 18",
-      "url": "https://www.youtube.com/shorts/ihJIXgzUOiU",
-      "videoId": "ihJIXgzUOiU",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Thinking about upgrading to a luxury smartphone using telco bundles or installment plans? This breakdown reveals the hidden traps behind 'discounted' contracts and installment schemes that could secretly cost you thousands more than you realize. Watch this guide to master the smart financial moves before locking yourself into years of unnecessary debt.",
-      "dateAdded": "2026-09-12T23:29:50.527Z",
+      "title": "What's new in the Gemini Live API",
+      "url": "https://www.youtube.com/watch?v=3CyW24Pkz4o",
+      "videoId": "3CyW24Pkz4o",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Discover how the latest Gemini Live API updates unlock true real-time multitasking for AI voice assistants. See live demos of async function calling and frontier-level background reasoning executing heavy tasks—like generating complex vector art—all without interrupting natural, fluid conversation. Watch this to see the next generation of responsive, multi-threaded AI agents in action.",
+      "dateAdded": "2026-09-15T23:49:01.048Z",
       "timestamps": [
         {
-          "startTime": 48,
-          "endTime": 106,
-          "topic": "The Hidden Cost of Telco Subsidies"
+          "startTime": 47,
+          "endTime": 105,
+          "topic": "Overview of new Gemini Live API features"
         },
         {
-          "startTime": 106,
-          "endTime": 156,
-          "topic": "Calculating the True Long-Term Cost of Monthly Plans"
+          "startTime": 214,
+          "endTime": 306,
+          "topic": "Live demonstration of async function calling"
         },
         {
-          "startTime": 156,
-          "endTime": 216,
-          "topic": "How to Properly Use 0% Credit Card Installment Plans"
+          "startTime": 312,
+          "endTime": 428,
+          "topic": "Frontier-level background reasoning and SVG generation demo"
         }
       ]
     },
     {
-      "title": "Peranan OPR dalam ekonomi Malaysia",
-      "url": "https://www.youtube.com/shorts/o7PAMtmPUJ8",
-      "videoId": "o7PAMtmPUJ8",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Ever wondered why central banks tweak interest rates when daily living costs soar? Learn how the Overnight Policy Rate (OPR) functions as a crucial demand-stabilization tool to tame runaway inflation, and why supply shocks like rising oil or the AI chip boom require a completely different approach.",
-      "dateAdded": "2026-09-11T23:38:14.156Z",
+      "title": "Manage your agents while you’re on the move with the Antigravity Remote Control",
+      "url": "https://www.youtube.com/shorts/M1q063UD-gw",
+      "videoId": "M1q063UD-gw",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Never let a long-running coding agent stall while you're away from your desk again. Google Antigravity Remote Control lets you monitor multi-agent workflows, approve diffs, and steer code execution directly from your smartphone while keeping your full local build context intact.",
+      "dateAdded": "2026-09-15T23:49:01.048Z",
       "timestamps": [
         {
-          "startTime": 20,
-          "endTime": 43,
-          "topic": "How OPR controls demand-pull inflation"
+          "startTime": 6,
+          "endTime": 19,
+          "topic": "Introducing Antigravity Remote Control for Multi-Device Agent Orchestration"
         },
         {
-          "startTime": 44,
-          "endTime": 66,
-          "topic": "Why monetary policy cannot fix supply-side price surges"
+          "startTime": 19,
+          "endTime": 35,
+          "topic": "Real-Time Push Alerts, Diff Approvals, and Retaining Local Context on Mobile"
+        }
+      ]
+    },
+    {
+      "title": "Giliran Tabung Haji disusun semula?",
+      "url": "https://www.youtube.com/shorts/7iOIN1TUI4c",
+      "videoId": "7iOIN1TUI4c",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Tabung Haji is overhauling its account structure into a dual-tier system to ensure depositors are genuinely financially prepared when their turn arrives. Learn how the new Tabung Am and Tabung Istito'ah mechanism works—including the mandatory RM15,000 threshold and the 10-day withdrawal rule—so your Hajj eligibility stays secure.",
+      "dateAdded": "2026-09-15T23:49:01.048Z",
+      "timestamps": [
+        {
+          "startTime": 13,
+          "endTime": 59,
+          "topic": "The Multi-Tabung system: Differences between Tabung Am and Tabung Istito'ah"
         },
         {
-          "startTime": 67,
-          "endTime": 83,
-          "topic": "Real-world example: The AI boom driving memory chip costs"
+          "startTime": 60,
+          "endTime": 112,
+          "topic": "Automatic Hajj queue eligibility and the RM15,000 minimum savings rule"
+        },
+        {
+          "startTime": 113,
+          "endTime": 153,
+          "topic": "Why Tabung Haji made the change: Reducing high offer rejection rates"
         }
       ]
     },
@@ -319,32 +345,6 @@
       ]
     },
     {
-      "title": "#114 | The Art of Disappointing People (Leon Jala)",
-      "url": "https://www.youtube.com/watch?v=xmTrUK8LuOk",
-      "videoId": "xmTrUK8LuOk",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "Transformational leadership isn't about keeping everyone happy—it's about learning how to deliver uncomfortable truths and disappoint people at a rate they can absorb to drive real growth. Discover the actionable 4-question framework and the '1-3-1' problem-solving model that turn tense feedback sessions into high-trust, empowering conversations. If you struggle with people-pleasing or avoiding conflict at work, this episode provides the exact roadmap to shift from superficial niceness to transformative leadership.",
-      "dateAdded": "2026-09-11T23:38:14.156Z",
-      "timestamps": [
-        {
-          "startTime": 65,
-          "endTime": 140,
-          "topic": "Niceness vs. Kindness: Why Pleasers Fail as Leaders"
-        },
-        {
-          "startTime": 306,
-          "endTime": 479,
-          "topic": "The 4-Question Weekly Check-In and the 1-3-1 Problem Solving Rule"
-        },
-        {
-          "startTime": 560,
-          "endTime": 692,
-          "topic": "Anchoring in Your 'True North' to Eliminate Fear of Conflict"
-        }
-      ]
-    },
-    {
       "title": "Early investors need to be a little crazy | In The Studio",
       "url": "https://www.youtube.com/watch?v=FLJme_CuInE",
       "videoId": "FLJme_CuInE",
@@ -371,5 +371,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-09-13T23:54:26.513Z"
+  "lastUpdated": "2026-09-16T00:03:34.412Z"
 }

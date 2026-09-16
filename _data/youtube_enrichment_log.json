@@ -1,31 +1,117 @@
 [
   {
-    "videoId": "gNgc_JT8ur8",
-    "title": "What percent of Anthropics code is autonomous",
+    "videoId": "Zd5b40Jbp_k",
+    "title": "Act, Confirm, or Stop? Smarter behavior for AI assistants, wearables & robots — Amit Desai, Roku",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "iv3QbS6q8ok",
-    "title": "Is prompting models a durable skill for engineers",
+    "videoId": "IDNfAZVKvPE",
+    "title": "\"My name is... my name is...\": A Linguistic Map for Voice Agents — Midam Kim, ServiceNow",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "FLJme_CuInE",
-    "title": "Early investors need to be a little crazy | In The Studio",
+    "videoId": "MBHOH1NmDqc",
+    "title": "Realtime Voice Agents with Frontier Intelligence — Bohan Li, EliseAI",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "X3XXhemdNQw",
-    "title": "Allah and Same-Day Shipping? | Dr. Omar Suleiman",
+    "videoId": "vJM_FgmI8gc",
+    "title": "How to avoid short tenure resume problems",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "tUQ-UmYkVXk",
+    "title": "Why you should read technical papers",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "FVkp6tc2rNY",
+    "title": "🪄 Gemini Live API in action",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "3CyW24Pkz4o",
+    "title": "What's new in the Gemini Live API",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "M1q063UD-gw",
+    "title": "Manage your agents while you’re on the move with the Antigravity Remote Control",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "7iOIN1TUI4c",
+    "title": "Giliran Tabung Haji disusun semula?",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "5UMPn3vFLNs",
+    "title": "No profits since 2018, has Pos Msia lost their route? - Charles Brewer, Group CEO of Pos Malaysia",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "CNaNuvIL6iE",
+    "title": "Why You Should Pray for People You Envy | Imam Tom Facchine",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "foJalwzRiGI",
+    "title": "A Manufactured Crisis: What’s Fighting for Your Attention? | Snapshots with Imam Tom Facchine",
+    "outcome": "failed",
+    "errors": [
+      {
+        "attempt": 1,
+        "message": "{\"error\":{\"code\":500,\"message\":\"Internal error encountered.\",\"status\":\"INTERNAL\"}}",
+        "status": 500
+      },
+      {
+        "attempt": 2,
+        "message": "{\"error\":{\"code\":500,\"message\":\"Internal error encountered.\",\"status\":\"INTERNAL\"}}",
+        "status": 500
+      },
+      {
+        "attempt": 3,
+        "message": "{\"error\":{\"code\":500,\"message\":\"Internal error encountered.\",\"status\":\"INTERNAL\"}}",
+        "status": 500
+      },
+      {
+        "attempt": 4,
+        "message": "{\"error\":{\"code\":500,\"message\":\"Internal error encountered.\",\"status\":\"INTERNAL\"}}",
+        "status": 500
+      },
+      {
+        "attempt": 5,
+        "message": "{\"error\":{\"code\":500,\"message\":\"Internal error encountered.\",\"status\":\"INTERNAL\"}}",
+        "status": 500
+      }
+    ]
+  },
+  {
+    "videoId": "S5WJQAbu3LQ",
+    "title": "How Time Is Shrinking | Signs of the Hour Ep. 17 | Dr. Omar Suleiman",
     "outcome": "success",
     "errors": []
   },
   {
     "videoId": "DjE07PPgkf0",
     "title": "How Allah Wants You to Think About Success",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "jYZ3XGJ8GUA",
+    "title": "How do you deal with AI getting so good at coding?",
     "outcome": "success",
     "errors": []
   },
@@ -42,20 +128,14 @@
     "errors": []
   },
   {
-    "videoId": "r4Mn_HJkN6A",
-    "title": "Is local dev disappearing with agents",
+    "videoId": "P6vvHLt195I",
+    "title": "How to stop burning out senior engineers on code review",
     "outcome": "success",
     "errors": []
   },
   {
     "videoId": "8DrCY-RXm7k",
     "title": "How an Ex-Googler Accidentally Founded a Database Company",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "dgwZB1RKroY",
-    "title": "Why most software engineers aren't ready for what's coming",
     "outcome": "success",
     "errors": []
   },
@@ -78,21 +158,21 @@
     "errors": []
   },
   {
+    "videoId": "mVvJsB-JCcY",
+    "title": "The Muslim Genius Who Built a $1B Company Fighting the Banking System",
+    "outcome": "success",
+    "errors": []
+  },
+  {
     "videoId": "Jp3Lpn7Xoko",
     "title": "Fixing Your Relationship With Allah ﷻ Will Fix Your Business!",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "fDKH028SI38",
-    "title": "Can Southeast Asia Own the AI Story? | Gita Wirjawan | Keris & Silicon EP04",
+    "videoId": "MTjtvlkXaJg",
+    "title": "The Feeling Everyone Gets After Their First $10k Month ...",
     "outcome": "success",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "{\"error\":{\"code\":429,\"message\":\"Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.\",\"status\":\"RESOURCE_EXHAUSTED\"}}",
-        "status": 429
-      }
-    ]
+    "errors": []
   }
 ]
