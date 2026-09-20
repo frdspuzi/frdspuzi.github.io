@@ -12,11 +12,20 @@ import './index.css'
 import './styles/primer.css'
 import './styles/site.scss'
 import App from './App.tsx'
+import { getLegacyDomainRedirectTarget } from './lib/legacyDomainRedirect'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </StrictMode>,
-)
+// Checked before the app ever renders, so a visitor on the old frdspuzi.github.io URL never sees
+// a flash of content served under it - see docs/specs/0001-custom-domain-firdauspuzi-com.md.
+const legacyRedirectTarget = getLegacyDomainRedirectTarget(window.location)
+
+if (legacyRedirectTarget) {
+  window.location.replace(legacyRedirectTarget)
+} else {
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </StrictMode>,
+  )
+}

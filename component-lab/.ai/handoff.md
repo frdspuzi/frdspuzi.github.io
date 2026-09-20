@@ -4,6 +4,14 @@
 
 **Still shared with the old content pipeline, not Jekyll-specific — don't delete these thinking they're leftover Jekyll cruft:** `_data/*.json`, `_posts/*.md` (both imported directly by `component-lab/src`), and `assets/{photography,youtube-thumbnails,medium-images}/` (synced into `component-lab/public/assets/` by `scripts/sync-assets.js` on every `predev`/`prebuild` — never committed there directly). All written by `.github/scripts/*.js` on the same schedule as before.
 
+## Status (2026-09-21 session end — custom domain, firdauspuzi.com)
+
+**The site now has a custom domain, `firdauspuzi.com`, live alongside the original `frdspuzi.github.io`** — see `docs/specs/0001-custom-domain-firdauspuzi-com.md` for the full spec (from a `/grilling` session) and rationale (professional branding for job search; GitHub Pages kept as host, no migration needed).
+
+- **Infra side (already done, outside this repo):** DNS at the registrar (GoDaddy) points the apex at GitHub Pages' 4 IPs plus a `www` CNAME to `frdspuzi.github.io`; the repo's Settings → Pages → Custom domain is set to `firdauspuzi.com` (apex primary, `www` redirects into it), DNS check passed, HTTPS cert issuance is automatic/pending. No `CNAME` file needed in the repo — confirmed via GitHub's own docs that Actions-based Pages deploys don't use one.
+- **Code side (this session):** `src/lib/legacyDomainRedirect.ts` — a pure `getLegacyDomainRedirectTarget(location)` function (hostname/pathname/search/hash in, target URL or `null` out) — plus its colocated `legacyDomainRedirect.test.ts` (this repo's first committed test, per the forward-only Testing Strategy in `architecture.md`). Wired into `main.tsx`: checked before `createRoot(...).render(...)`, so a visitor still on `frdspuzi.github.io` is sent to `firdauspuzi.com` (path/query/hash preserved) without React ever rendering the stale-URL page first. GitHub doesn't auto-redirect between a repo's default and custom domain — both would otherwise keep serving the same content in parallel forever.
+- No changes to `_data/*.json`, content-generation workflows, or `deploy-pages.yml` — fully isolated from the automated content pipeline.
+
 ## Status (2026-08-23 session end, part 6 — top-5-plus-load-more per list, replacing matched-count capping)
 
 **Each of the 2 carousel slides (GitHub, Product Hunt) now defaults to its own top 5 items with an independent "Load more"/"Show less" toggle**, instead of both being pre-capped to the same length via `matchedTrendingCount()`. That helper and its test (`src/lib/trendingCount.ts`/`.test.ts`) are deleted - no longer used anywhere.
