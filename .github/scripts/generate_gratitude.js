@@ -1,6 +1,21 @@
 const fs = require('fs');
 const path = require('path');
 
+// Audience for the gratitude suggestions below, distilled from PROFILE.md (gitignored, dev-time
+// reference only - see docs/adr/0001-manual-profile-for-content-personalization.md) down to the
+// category level it's safe to commit, same discipline fetch_youtube.js's evaluateBulk() already
+// uses for its own prompt. Kept here - not inline in the prompt string below, and not in any
+// external routine/automation config - specifically so nothing that reads this repo's commit
+// history or a routine definition sees more than category-level detail about the site owner.
+//
+// A Malaysian, Muslim, full-stack cloud software engineer with real career depth (experienced,
+// not a junior - avoid a generic-junior-dev tone). Also runs a small freelance automation
+// practice on the side. Builds side projects that fuse Islamic ethics with engineering -
+// community-facing tools where getting a religious/technical detail right matters more than
+// shipping fast. Cares about Islamic finance and thinks in cost-conscious, Ringgit-denominated
+// terms. Follows football (La Liga) as a light personal interest, not a core one. Family time
+// and daily Islamic practice (prayer, the quiet moments around it) matter to him.
+
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const OUTPUT_FILE = path.join(__dirname, '..', '..', '_data', 'gratitude.json');
 const GEMINI_MODELS = [
