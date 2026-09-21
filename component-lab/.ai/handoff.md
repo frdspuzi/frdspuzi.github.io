@@ -4,6 +4,15 @@
 
 **Still shared with the old content pipeline, not Jekyll-specific — don't delete these thinking they're leftover Jekyll cruft:** `_data/*.json`, `_posts/*.md` (both imported directly by `component-lab/src`), and `assets/{photography,youtube-thumbnails,medium-images}/` (synced into `component-lab/public/assets/` by `scripts/sync-assets.js` on every `predev`/`prebuild` — never committed there directly). All written by `.github/scripts/*.js` on the same schedule as before.
 
+## Status (2026-09-21 session end — YouTube enrichment moved off Vertex AI)
+
+**`fetch_youtube.js`'s video-enrichment step (`enrichWithVideoSummary`) no longer uses Vertex AI** — see `docs/specs/0002-agentic-video-enrichment.md` for the full spec (from a `/grilling` session) and rationale. That step was 96% of this pipeline's Gemini spend (RM63.92 of RM66.32/month), driven by brute-force full-frame + full-audio processing. It now runs on Gemini's newer Interactions API (`ai.interactions.create`, `processing: "agentic"`) via the same plain `GEMINI_API_KEY` `callGemini()` already used elsewhere in this file — confirmed working via live test calls (Python and JS SDK, both real API responses, not just docs) before implementing.
+
+- **Auth fully dropped for this script**: the `GCP_PROJECT_ID`-gated skip-path is gone (enrichment now always runs when `GEMINI_API_KEY` is set, already required unconditionally). `ai-youtube.yml`'s `google-github-actions/auth@v2` step and `id-token: write` permission are removed — nothing in this script needs Vertex AI/Workload Identity Federation credentials anymore. The `GCP_WORKLOAD_IDENTITY_PROVIDER`/`GCP_PROJECT_ID` GitHub secrets are confirmed unused anywhere else in the repo; deleting the stored values in GitHub settings is a manual follow-up, not done here.
+- **External contract unchanged** — same `{summary, timestamps, errors}` return shape, same retry/backoff loop (`VIDEO_ENRICHMENT_MAX_RETRIES`), same content-safety guardrails in the prompt (misinformation skepticism, no anti-Islamic content, no hallucinated timestamps, Shorts <60s), same reuse/dedup logic for already-enriched videos. Only the call inside the loop changed.
+- **`@google/genai` bumped 2.18.0 → 2.23.0** (was locked stale despite `package.json` already saying `"latest"`) — the older version doesn't have the `Interactions` API at all, confirmed by inspecting its type definitions before assuming a bump alone would work.
+- No fallback to the old Vertex path was kept (deliberate — direct cutover, already validated via live calls). The already-cheap selection/curation step (`evaluateBulk`) was explicitly left untouched — this migration targeted only the actual cost driver.
+
 ## Status (2026-09-21 session end — custom domain, firdauspuzi.com)
 
 **The site now has a custom domain, `firdauspuzi.com`, live alongside the original `frdspuzi.github.io`** — see `docs/specs/0001-custom-domain-firdauspuzi-com.md` for the full spec (from a `/grilling` session) and rationale (professional branding for job search; GitHub Pages kept as host, no migration needed).

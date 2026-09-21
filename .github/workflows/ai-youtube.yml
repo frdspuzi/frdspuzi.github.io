@@ -8,8 +8,7 @@ jobs:
   youtube:
     runs-on: ubuntu-latest
     permissions:
-      contents: write 
-      id-token: write
+      contents: write
 
     steps:
       - name: Checkout repository
@@ -30,17 +29,9 @@ jobs:
         # adding package-lock.json to the git add list.
         run: npm ci
 
-      - id: auth
-        name: Authenticate to Google Cloud
-        uses: google-github-actions/auth@v2
-        with:
-          workload_identity_provider: '${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}'
-          service_account: 'github-actions-bot@${{ secrets.GCP_PROJECT_ID }}.iam.gserviceaccount.com'
-
       - name: Fetch Curated YouTube Videos via Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
         run: node .github/scripts/fetch_youtube.js
 
       - name: Commit and push changes

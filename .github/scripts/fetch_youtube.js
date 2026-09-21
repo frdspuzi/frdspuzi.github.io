@@ -4,7 +4,6 @@ const https = require('https');
 const { GoogleGenAI } = require('@google/genai');
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const GCP_PROJECT_ID = process.env.GCP_PROJECT_ID;
 const OUTPUT_FILE = path.join(__dirname, '..', '..', '_data', 'youtube.json');
 const THUMBS_DIR = path.join(__dirname, '..', '..', 'assets', 'youtube-thumbnails');
 
@@ -16,7 +15,7 @@ const GEMINI_MODELS = [
   'gemini-2.5-flash-lite'
 ];
 const MAX_RETRIES = 3;
-// Vertex AI video enrichment gets its own, more patient retry budget - MAX_RETRIES' 3 attempts
+// Video enrichment gets its own, more patient retry budget - MAX_RETRIES' 3 attempts
 // with a 3s/6s backoff (9s total) is fine for callGemini's lightweight text-only calls, but real
 // evidence (2026-09-01: a video failed all 3 attempts during a run, most likely hitting Google's
 // own known intermittent PERMISSION_DENIED bug on fileData/file_uri requests - see
@@ -362,7 +361,7 @@ function parseEvaluationResponse(responseText) {
 }
 
 // A video Gemini re-selects while it's still cycling through the rotating feed doesn't need
-// Vertex AI to watch it again - it already has a real summary/timestamps from a previous run,
+// Gemini to watch it again - it already has a real summary/timestamps from a previous run,
 // sitting in _data/youtube.json's existingVideos. Only a *successful* past enrichment counts as
 // reusable (non-empty timestamps) - an empty array means a past attempt failed all the way
 // through enrichWithVideoSummary's own retries, and that's still worth trying fresh, same as the
@@ -387,30 +386,28 @@ function buildEnrichmentLogEntry(video, enriched) {
   };
 }
 
-// New function to enrich a video with an actual video summary from Vertex AI
+// New function to enrich a video with an actual video summary from Gemini's agentic video
+// processing (migrated 2026-09-21 from a separate Vertex AI client - see
+// docs/specs/0002-agentic-video-enrichment.md). Agentic mode has the model decide what to watch,
+// how fast, and through which modality instead of brute-force sampling every frame and the full
+// audio track, which cut this step's real billed cost (Video + Audio Input Predictions was 96%
+// of this pipeline's Gemini spend) - confirmed via a live test call before this migration, using
+// @google/genai 2.23.0 (the version package.json/package-lock.json were bumped to as part of this
+// same change - a later "latest" install may drift past it, but 2.23.0 is what was actually
+// validated), not just documentation. It runs on the same plain GEMINI_API_KEY callGemini()
+// already uses elsewhere in this file, through the newer Interactions API (ai.interactions.create),
+// not the REST waterfall callGemini() itself uses - multimodal video understanding isn't available on
+// that text-only endpoint.
 //
-// Retries with backoff, unlike an earlier version of this function — this is a separate Vertex
-// AI client from callGemini()'s own generativelanguage.googleapis.com REST calls (needed here
-// specifically for multimodal video understanding, which the text-only endpoint can't do), so it
-// never got the same waterfall/retry protection CLAUDE.md's own rule requires for every
-// Gemini-calling script. A single transient failure (rate limit, network blip, timeout on a
-// longer video) silently fell all the way through to the empty-timestamps fallback with no
-// second attempt — confirmed as the actual cause of at least one real video shipping with no
-// timestamps despite having a normal-looking summary (the summary fallback and the timestamps
-// fallback are the same code path, so a failed call still produces *a* summary, just never any
-// timestamps, easy to miss without specifically checking for an empty array).
+// Retries with backoff, unlike an earlier version of this function - a single transient failure
+// (rate limit, network blip, timeout on a longer video) used to silently fall all the way through
+// to the empty-timestamps fallback with no second attempt, confirmed as the actual cause of at
+// least one real video shipping with no timestamps despite having a normal-looking summary (the
+// summary fallback and the timestamps fallback are the same code path, so a failed call still
+// produces *a* summary, just never any timestamps, easy to miss without specifically checking for
+// an empty array). That retry behavior is preserved unchanged by this migration.
 async function enrichWithVideoSummary(video) {
-  if (!GCP_PROJECT_ID) {
-    console.warn("GCP_PROJECT_ID not set, skipping Vertex AI video summary enrichment.");
-    return video.summary; // Fallback to the short description-based summary
-  }
-
-  const ai = new GoogleGenAI({
-    vertexai: {
-      project: GCP_PROJECT_ID,
-      location: 'us-central1'
-    }
-  });
+  const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 
   // Recorded on every attempt (success or not) and returned alongside the result, not just
   // console.error'd - console output needs repo-admin rights to read from Actions' job logs
@@ -422,22 +419,14 @@ async function enrichWithVideoSummary(video) {
 
   for (let attempt = 1; attempt <= VIDEO_ENRICHMENT_MAX_RETRIES; attempt++) {
     try {
-      console.log(`\nWatching video via Vertex AI: ${video.title} (${video.url}) — attempt ${attempt}/${VIDEO_ENRICHMENT_MAX_RETRIES}`);
+      console.log(`\nWatching video via Gemini (agentic): ${video.title} (${video.url}) — attempt ${attempt}/${VIDEO_ENRICHMENT_MAX_RETRIES}`);
 
-      const response = await ai.models.generateContent({
+      const interaction = await ai.interactions.create({
         model: 'gemini-3.7-flash',
-        contents: [
+        input: [
           {
-            role: 'user',
-            parts: [
-              {
-                fileData: {
-                  fileUri: video.url,
-                  mimeType: 'video/mp4'
-                }
-              },
-              {
-                text: `You are an expert analyst and a persuasive copywriter. Watch this video and write a punchy, layman-friendly summary (2-3 sentences) that convinces the reader they need to watch this video, not just describes it. Lead with the single most compelling insight, payoff, or "aha" moment - make the value feel concrete and worth their time, the way a great hook or pitch would. Also extract 2-3 of the most valuable, cohesive segments (highlights) with an exact start time and end time in seconds.
+            type: 'text',
+            text: `You are an expert analyst and a persuasive copywriter. Watch this video and write a punchy, layman-friendly summary (2-3 sentences) that convinces the reader they need to watch this video, not just describes it. Lead with the single most compelling insight, payoff, or "aha" moment - make the value feel concrete and worth their time, the way a great hook or pitch would. Also extract 2-3 of the most valuable, cohesive segments (highlights) with an exact start time and end time in seconds.
 
 CRITICAL GUARDRAILS:
 1. Be highly skeptical. If the video contains obvious misinformation, scams, or questionable claims, flag it explicitly in your summary rather than hyping it up.
@@ -451,27 +440,31 @@ You MUST return ONLY a valid JSON object in the exact format below, with nothing
     { "startTime": 135, "endTime": 180, "topic": "Explanation of the core concept" },
     { "startTime": 252, "endTime": 310, "topic": "Why this approach is a trap" }
   ]
-}` }
-            ]
+}`
+          },
+          {
+            type: 'video',
+            uri: video.url,
+            processing: 'agentic'
           }
         ]
       });
 
-      if (response && response.text) {
+      if (interaction && interaction.output_text) {
         console.log(`✓ Deep summary generated.`);
-        const jsonMatch = response.text.match(/\{[\s\S]*\}/);
+        const jsonMatch = interaction.output_text.match(/\{[\s\S]*\}/);
         if (jsonMatch) {
           const parsed = JSON.parse(jsonMatch[0]);
           return { ...parsed, errors };
         }
-        console.error("Vertex AI response had no parseable JSON, will retry.");
-        errors.push({ attempt, message: "Response had no parseable JSON", rawText: (response.text || '').slice(0, 500) });
+        console.error("Gemini response had no parseable JSON, will retry.");
+        errors.push({ attempt, message: "Response had no parseable JSON", rawText: (interaction.output_text || '').slice(0, 500) });
       } else {
-        console.error("Vertex AI returned an empty response, will retry.");
-        errors.push({ attempt, message: "Empty response (no response.text)" });
+        console.error("Gemini returned an empty response, will retry.");
+        errors.push({ attempt, message: "Empty response (no output_text)" });
       }
     } catch (err) {
-      console.error(`Vertex AI enrichment failed for ${video.url} (attempt ${attempt}/${VIDEO_ENRICHMENT_MAX_RETRIES}):`, err.message);
+      console.error(`Gemini enrichment failed for ${video.url} (attempt ${attempt}/${VIDEO_ENRICHMENT_MAX_RETRIES}):`, err.message);
       // status/code aren't on every error shape the SDK can throw - captured defensively, only
       // when present, so the persisted log has the real HTTP/gRPC status (e.g. 403, RESOURCE_
       // EXHAUSTED) alongside the message, not just whatever text err.message happened to include.
@@ -489,12 +482,14 @@ You MUST return ONLY a valid JSON object in the exact format below, with nothing
       // the feed instead of naturally succeeding on a later attempt - confirmed as the real cause
       // of the YouTube feed going a week+ with zero new videos despite fresh candidates being
       // selected every day (2026-09-01 investigation). Falling through to the normal per-attempt
-      // retry loop below, same as any other error, is the safe default either way.
+      // retry loop below, same as any other error, is the safe default either way. Kept as-is by
+      // this migration - the same class of platform-side transient error is plausible on the new
+      // API too, and there's still no reliable way to tell it apart from a genuine per-video block.
     }
     if (attempt < VIDEO_ENRICHMENT_MAX_RETRIES) await sleep(attempt * 3000);
   }
 
-  console.error(`Giving up on Vertex AI enrichment for ${video.url} after ${VIDEO_ENRICHMENT_MAX_RETRIES} attempts - will retry again on a future run.`);
+  console.error(`Giving up on Gemini enrichment for ${video.url} after ${VIDEO_ENRICHMENT_MAX_RETRIES} attempts - will retry again on a future run.`);
   return { summary: video.summary, timestamps: [], errors }; // Fallback
 }
 
@@ -568,7 +563,7 @@ async function main() {
   }
 
   const evaluations = await evaluateBulk(videoCandidates);
-  // let, not const: filtered down to drop permanently-Vertex-AI-blocked videos further below.
+  // let, not const: filtered down to drop permanently-Gemini-blocked videos further below.
   let curatedVideos = [];
 
   // Write the entire evaluation log for transparency
@@ -599,7 +594,7 @@ async function main() {
 
   // Loaded here (not just further down at the merge step) so the Deep Summarization pass below
   // can check it too - a video Gemini re-selects while it's still cycling through the feed is
-  // already in here with a real summary/timestamps, and doesn't need Vertex AI to watch it again.
+  // already in here with a real summary/timestamps, and doesn't need Gemini to watch it again.
   let existingVideos = [];
   if (fs.existsSync(OUTPUT_FILE)) {
     try {
@@ -610,14 +605,14 @@ async function main() {
   }
 
   // --------------------------------------------------------
-  // NEW: Deep Summarization using Vertex AI
+  // NEW: Deep Summarization using Gemini's agentic video processing
   // --------------------------------------------------------
-  if (curatedVideos.length > 0 && GCP_PROJECT_ID) {
-    console.log(`\n--- Starting Vertex AI Deep Summarization for ${curatedVideos.length} videos ---`);
+  if (curatedVideos.length > 0) {
+    console.log(`\n--- Starting Gemini Deep Summarization for ${curatedVideos.length} videos ---`);
     for (let i = 0; i < curatedVideos.length; i++) {
       const reusable = findReusableEnrichment(curatedVideos[i].videoId, existingVideos);
       if (reusable) {
-        console.log(`Reusing existing enrichment for "${curatedVideos[i].title}" - already watched in a previous run, no need to re-run Vertex AI.`);
+        console.log(`Reusing existing enrichment for "${curatedVideos[i].title}" - already watched in a previous run, no need to re-run Gemini.`);
         curatedVideos[i].summary = reusable.summary;
         curatedVideos[i].timestamps = reusable.timestamps;
         curatedVideos[i].dateAdded = reusable.dateAdded || curatedVideos[i].dateAdded;
@@ -644,7 +639,7 @@ async function main() {
     // now dormant, kept only as a defensive backstop in case some future path sets it again.
     const blockedCount = curatedVideos.filter(v => v.enrichmentBlocked).length;
     if (blockedCount > 0) {
-      console.log(`Dropping ${blockedCount} newly-curated video(s) Vertex AI is permanently blocked from.`);
+      console.log(`Dropping ${blockedCount} newly-curated video(s) Gemini is permanently blocked from.`);
       curatedVideos = curatedVideos.filter(v => !v.enrichmentBlocked);
     }
   }
@@ -668,7 +663,7 @@ async function main() {
 
     // Same "never retried once it's an existing entry" gap as the HTML-entity decode above, but
     // NOT fixed the same cheap-and-always way: re-decoding a string is a free no-op on already-
-    // clean text, but re-enriching is a real Vertex AI video-watch call, so blindly re-running it
+    // clean text, but re-enriching is a real Gemini video-watch call, so blindly re-running it
     // for every existing video on every run would burn quota on entries that already succeeded.
     // Retrying only the ones that still show timestamps: [] (an empty array specifically means a
     // past attempt failed all the way through enrichWithVideoSummary's own retries, not "no
@@ -681,26 +676,24 @@ async function main() {
     // PERMISSION_DENIED turned out not to reliably mean "this specific video is permanently
     // blocked," so treating it that way was silently discarding real, eventually-recoverable
     // videos). Kept here only in case some future path sets it again.
-    if (GCP_PROJECT_ID) {
-      const needsRetry = filteredExisting.filter(v => Array.isArray(v.timestamps) && v.timestamps.length === 0 && !v.enrichmentBlocked);
-      if (needsRetry.length > 0) {
-        console.log(`\n--- Retrying Vertex AI enrichment for ${needsRetry.length} existing video(s) with empty timestamps ---`);
-        for (const video of needsRetry) {
-          const enriched = await enrichWithVideoSummary(video);
-          enrichmentLog.push(buildEnrichmentLogEntry(video, enriched));
-          if (typeof enriched === 'object' && enriched !== null) {
-            video.summary = enriched.summary || video.summary;
-            video.timestamps = enriched.timestamps || [];
-            if (enriched.enrichmentBlocked) video.enrichmentBlocked = true;
-          }
+    const needsRetry = filteredExisting.filter(v => Array.isArray(v.timestamps) && v.timestamps.length === 0 && !v.enrichmentBlocked);
+    if (needsRetry.length > 0) {
+      console.log(`\n--- Retrying Gemini enrichment for ${needsRetry.length} existing video(s) with empty timestamps ---`);
+      for (const video of needsRetry) {
+        const enriched = await enrichWithVideoSummary(video);
+        enrichmentLog.push(buildEnrichmentLogEntry(video, enriched));
+        if (typeof enriched === 'object' && enriched !== null) {
+          video.summary = enriched.summary || video.summary;
+          video.timestamps = enriched.timestamps || [];
+          if (enriched.enrichmentBlocked) video.enrichmentBlocked = true;
         }
       }
     }
 
     // filteredExisting can carry enrichmentBlocked two ways: freshly set by the retry pass just
     // above, or already sitting in _data/youtube.json from a previous run (retried and blocked
-    // before, or GCP_PROJECT_ID wasn't set this run so the retry pass didn't touch it at all) —
-    // excluding it here catches both, not just the ones this specific run happened to retry.
+    // before) — excluding it here catches both, not just the ones this specific run happened to
+    // retry.
     const finalVideos = [...curatedVideos, ...filteredExisting.filter(v => !v.enrichmentBlocked)].slice(0, 15); // Keep up to 15 in the feed
 
     await syncThumbnails(finalVideos);
@@ -718,7 +711,7 @@ async function main() {
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(finalOutput, null, 2));
     console.log(`Successfully wrote ${finalVideos.length} videos to ${OUTPUT_FILE}`);
 
-    // Real error text from every Vertex AI enrichment attempt this run, success or not - written
+    // Real error text from every Gemini enrichment attempt this run, success or not - written
     // for the same reason as youtube_eval_log.json above: console output isn't readable without
     // repo-admin rights to Actions' job logs.
     if (enrichmentLog.length > 0) {

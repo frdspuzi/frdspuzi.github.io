@@ -209,7 +209,7 @@ describe('buildEnrichmentLogEntry', () => {
     });
   });
 
-  it('records a failed outcome with no errors when GCP_PROJECT_ID was unset (enriched is a bare summary string, not an object)', () => {
+  it('records a failed outcome with no errors when enriched is a bare summary string, not an object', () => {
     expect(buildEnrichmentLogEntry(video, 'a plain fallback summary string')).toEqual({
       videoId: 'abc123XYZ_9',
       title: 'Some Video',
