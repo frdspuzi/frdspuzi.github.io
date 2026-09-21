@@ -69,7 +69,12 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v7
         with:
-          node-version: '20'
+          # jsdom 30's bundled undici (transitively, via vitest) calls
+          # node:worker_threads.markAsUncloneable, which doesn't exist before Node ~22.10 -
+          # confirmed the hard way (TypeError: webidl.util.markAsUncloneable is not a function,
+          # crashing every `npm test` run at module-load, not intermittent). Node 20 can't run
+          # this test suite at all regardless of jsdom/vitest version pinning going forward.
+          node-version: '22'
           cache: 'npm'
           cache-dependency-path: component-lab/package-lock.json
 
