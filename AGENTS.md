@@ -1,4 +1,6 @@
-# frdspuzi.github.io — Claude Code Instructions
+# frdspuzi.github.io — AI Agent Instructions
+
+This is the single instruction file for AI coding agents in this repo. Codex CLI reads it directly; Claude Code reads it too via the built-in `agents-md@builtin` plugin (enabled globally in `~/.claude/settings.json`), which loads `AGENTS.md` exactly where a `CLAUDE.md` would go — there is no `CLAUDE.md` in this repo, by design, so there's nothing to keep in sync.
 
 You are assisting with Mohammad Firdaus bin Mohd Puzi's personal portfolio/blog site — a Vite + React + TypeScript app living in `component-lab/`, deployed to frdspuzi.github.io via a GitHub Actions workflow (`.github/workflows/deploy-pages.yml`) that builds `component-lab/` and deploys it through GitHub Pages' "GitHub Actions" source mode.
 
