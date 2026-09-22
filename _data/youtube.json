@@ -1,174 +1,54 @@
 {
   "videos": [
     {
-      "title": "Act, Confirm, or Stop? Smarter behavior for AI assistants, wearables & robots — Amit Desai, Roku",
-      "url": "https://www.youtube.com/watch?v=Zd5b40Jbp_k",
-      "videoId": "Zd5b40Jbp_k",
+      "title": "The Dark Arts of Skill Engineering — Paul Bakaus, Renaissance Geek (Impeccable)",
+      "url": "https://www.youtube.com/watch?v=SQMCtZX3trg",
+      "videoId": "SQMCtZX3trg",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Chasing 100% model accuracy in voice AI is a losing battle—the real secret to delighting users is optimizing how your system behaves when it is uncertain. By implementing the Outcome User Cost Heuristic (OUCH) framework to decide when an assistant should act, confirm, or stop, you can drastically cut user friction and boost satisfaction without altering your underlying models. Watch this talk to discover how math-driven decision thresholds can transform clumsy voice assistants and embodied AI into intuitive, low-friction experiences.",
-      "dateAdded": "2026-09-15T23:49:01.048Z",
+      "summary": "Telling an AI what not to do is a trap: banning generic fonts or colors merely shifts the model into the next closest cliché in its latent space. In this masterclass, the creator of Impeccable reveals how to transcend basic prompt engineering by building 'harness engineering' architectures—using adversarial sub-agents, dynamic scripts, and real-time execution hooks to force original, reliable results. If you want to turn erratic AI outputs into production-grade, deterministically guided workflows across different harnesses, this talk is an essential blueprint.",
+      "dateAdded": "2026-09-22T00:20:43.515Z",
       "timestamps": [
         {
-          "startTime": 470,
-          "endTime": 560,
-          "topic": "Introducing OUCH: The Outcome User Cost Heuristic"
+          "startTime": 392,
+          "endTime": 480,
+          "topic": "Prompting vs. Harness Engineering: Escaping Model Gravity"
         },
         {
-          "startTime": 620,
-          "endTime": 720,
-          "topic": "Interactive Demo: Optimizing the Act vs. Stop Threshold"
+          "startTime": 480,
+          "endTime": 675,
+          "topic": "Adversarial Sub-Agents: Eliminating LLM Confirmation Bias"
         },
         {
-          "startTime": 736,
-          "endTime": 840,
-          "topic": "Integrating Confirmation Behaviors into AI Decision Models"
+          "startTime": 1780,
+          "endTime": 2020,
+          "topic": "Hooks and Passive Guardrails: Enforcing Rules in Real Time"
         }
       ]
     },
     {
-      "title": "\"My name is... my name is...\": A Linguistic Map for Voice Agents — Midam Kim, ServiceNow",
-      "url": "https://www.youtube.com/watch?v=IDNfAZVKvPE",
-      "videoId": "IDNfAZVKvPE",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Most voice AI bots fail not because of poor speech-to-text models, but because they treat conversations as static pipelines instead of dynamic, collaborative human activities. By mapping dialogue across four interdependent linguistic layers—sounds, words, turn-taking interactions, and evolving mental models—this talk reveals the exact framework needed to prevent catastrophic bot breakdowns. Watch to discover how engineering around real-time linguistic orchestration turns frustrating voice agents into seamless conversational partners.",
-      "dateAdded": "2026-09-15T23:49:01.048Z",
-      "timestamps": [
-        {
-          "startTime": 213,
-          "endTime": 275,
-          "topic": "Human Communication as a Joint Activity"
-        },
-        {
-          "startTime": 395,
-          "endTime": 545,
-          "topic": "The 4-Layer Linguistic Framework for Voice AI"
-        },
-        {
-          "startTime": 566,
-          "endTime": 625,
-          "topic": "Why Mental Models Persist Beyond Spoken Words"
-        }
-      ]
-    },
-    {
-      "title": "Realtime Voice Agents with Frontier Intelligence — Bohan Li, EliseAI",
-      "url": "https://www.youtube.com/watch?v=MBHOH1NmDqc",
-      "videoId": "MBHOH1NmDqc",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Discover how EliseAI engineers ultra-fast, natural-sounding voice agents using frontier intelligence without the crippling latency of traditional LLM architectures. By leveraging clever techniques like speculative transcription, async background tool injection, and audio prefix caching, this talk reveals the practical blueprint for achieving truly real-time conversational AI.",
-      "dateAdded": "2026-09-15T23:49:01.048Z",
-      "timestamps": [
-        {
-          "startTime": 345,
-          "endTime": 606,
-          "topic": "Async Background Tool Injection for Fast LLM Inference"
-        },
-        {
-          "startTime": 607,
-          "endTime": 937,
-          "topic": "Audio Prefix Caching to Eliminate Text-to-Speech Latency"
-        },
-        {
-          "startTime": 947,
-          "endTime": 695,
-          "topic": "Live Demonstration of Real-Time Voice Agent Handling Patient Calls"
-        }
-      ]
-    },
-    {
-      "title": "How to avoid short tenure resume problems",
-      "url": "https://www.youtube.com/shorts/vJM_FgmI8gc",
-      "videoId": "vJM_FgmI8gc",
+      "title": "OpenAI & Meta Distinguished Eng (IC9): The Psychology Behind Tech Career Peaks | Philip Su",
+      "url": "https://www.youtube.com/watch?v=RMo04pSSiao",
+      "videoId": "RMo04pSSiao",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Worried that short job tenures on your resume make you look like an unreliable job hopper? An Airbnb Staff Engineer reveals the exact mindset and strategy to shut down interviewer skepticism early on by reframing quick transitions into ambition and a relentless drive to solve hard problems. Learn how to turn an interviewer's biggest red flag into your strongest selling point.",
-      "dateAdded": "2026-09-15T23:49:01.048Z",
+      "summary": "What happens when you reach the absolute pinnacle of your career, only to realize the unrelenting pressure and shifting role isn't worth the trophy? Former Facebook and OpenAI Distinguished Engineer Philip Su exposes the unspoken psychological trap of the 'career asymptote' and reveals why he voluntarily sought a demotion from Level 9 to Level 7. If you are relentlessly grinding for your next promotion, this brutally honest conversation will fundamentally redefine how you measure success, burnout, and your life outside of work.",
+      "dateAdded": "2026-09-22T00:20:43.515Z",
       "timestamps": [
         {
-          "startTime": 9,
-          "endTime": 36,
-          "topic": "How to reframe short tenures into ambition"
+          "startTime": 575,
+          "endTime": 690,
+          "topic": "Why climbing past Staff Engineer shifts your job from coding to endless meetings and politics"
         },
         {
-          "startTime": 36,
-          "endTime": 54,
-          "topic": "Overcoming interviewer skepticism in real time"
-        }
-      ]
-    },
-    {
-      "title": "Why you should read technical papers",
-      "url": "https://www.youtube.com/shorts/tUQ-UmYkVXk",
-      "videoId": "tUQ-UmYkVXk",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "You don't need to be an academic or work in a specialized niche to gain massive value from technical research papers. Watch game developer Casey Muratori explain how exploring papers outside your discipline expands your knowledge, along with an easy, practical way to pick your very first read.",
-      "dateAdded": "2026-09-15T23:49:01.048Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 20,
-          "topic": "The unexpected value of reading papers outside your field"
+          "startTime": 870,
+          "endTime": 1050,
+          "topic": "The hidden burden of career peaks and why Philip voluntarily requested a demotion from IC9 to IC7"
         },
         {
-          "startTime": 20,
-          "endTime": 46,
-          "topic": "How to get started using USENIX proceedings and award winners"
-        }
-      ]
-    },
-    {
-      "title": "If you’re ambitious but inconsistent, please watch this",
-      "url": "https://www.youtube.com/watch?v=K8AMhj-ImMI",
-      "videoId": "K8AMhj-ImMI",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "Most people fail to reach their goals not because they lack discipline or information, but because their subconscious beliefs quietly sabotage their follow-through before they ever reach their true limits. In this eye-opening breakdown with bestselling author Nir Eyal, you'll discover how to dismantle hidden limiting labels, distinguish inevitable pain from self-imposed suffering, and dramatically expand your capacity to persist without burning out. If you've ever found yourself stuck knowing exactly what to do but unable to execute, this framework will fundamentally change how you take action.",
-      "dateAdded": "2026-09-10T23:30:51.704Z",
-      "timestamps": [
-        {
-          "startTime": 317,
-          "endTime": 437,
-          "topic": "The Motivation Triangle: Why knowledge and desire fail without belief"
-        },
-        {
-          "startTime": 781,
-          "endTime": 949,
-          "topic": "The Rat Experiment: How belief dictates physical endurance and limits"
-        },
-        {
-          "startTime": 1670,
-          "endTime": 1815,
-          "topic": "The 4-Step Turnaround Method: Rewiring limiting assumptions causing suffering"
-        }
-      ]
-    },
-    {
-      "title": "🪄 Gemini Live API in action",
-      "url": "https://www.youtube.com/shorts/FVkp6tc2rNY",
-      "videoId": "FVkp6tc2rNY",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Discover how the latest updates to the Gemini Live API unlock proactive voice interactions, asynchronous tool calling, and high-level background reasoning on the fly. Watch this side-by-side demo to see how switching to the maximum reasoning model dramatically elevates real-time generative capabilities without interrupting the natural flow of conversation.",
-      "dateAdded": "2026-09-15T23:49:01.048Z",
-      "timestamps": [
-        {
-          "startTime": 3,
-          "endTime": 36,
-          "topic": "Overview of new Live API features and proactive audio demo"
-        },
-        {
-          "startTime": 36,
-          "endTime": 62,
-          "topic": "Testing standard SVG generation in live mode"
-        },
-        {
-          "startTime": 62,
-          "endTime": 93,
-          "topic": "Max high-reasoning model demo delivering superior vector graphics"
+          "startTime": 2310,
+          "endTime": 2415,
+          "topic": "The 'Day After' trap: Why hitting your ultimate goal can leave you feeling empty"
         }
       ]
     },
@@ -199,122 +79,80 @@
       ]
     },
     {
-      "title": "Manage your agents while you’re on the move with the Antigravity Remote Control",
-      "url": "https://www.youtube.com/shorts/M1q063UD-gw",
-      "videoId": "M1q063UD-gw",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Never let a long-running coding agent stall while you're away from your desk again. Google Antigravity Remote Control lets you monitor multi-agent workflows, approve diffs, and steer code execution directly from your smartphone while keeping your full local build context intact.",
-      "dateAdded": "2026-09-15T23:49:01.048Z",
-      "timestamps": [
-        {
-          "startTime": 6,
-          "endTime": 19,
-          "topic": "Introducing Antigravity Remote Control for Multi-Device Agent Orchestration"
-        },
-        {
-          "startTime": 19,
-          "endTime": 35,
-          "topic": "Real-Time Push Alerts, Diff Approvals, and Retaining Local Context on Mobile"
-        }
-      ]
-    },
-    {
-      "title": "Giliran Tabung Haji disusun semula?",
-      "url": "https://www.youtube.com/shorts/7iOIN1TUI4c",
-      "videoId": "7iOIN1TUI4c",
+      "title": "Wise vs Bank: Mana lebih jimat transfer duit overseas?",
+      "url": "https://www.youtube.com/watch?v=ziyY2wuMoJQ",
+      "videoId": "ziyY2wuMoJQ",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Tabung Haji is overhauling its account structure into a dual-tier system to ensure depositors are genuinely financially prepared when their turn arrives. Learn how the new Tabung Am and Tabung Istito'ah mechanism works—including the mandatory RM15,000 threshold and the 10-day withdrawal rule—so your Hajj eligibility stays secure.",
-      "dateAdded": "2026-09-15T23:49:01.048Z",
+      "summary": "Banks love advertising 'zero fee' international transfers, but secretly siphon away hundreds of dollars by marking up exchange rates and routing funds through costly intermediary networks. This video exposes the hidden mechanics behind traditional SWIFT transfers and shows you how to bypass high bank fees using transparent, mid-market exchange rates. If you ever send money abroad or travel overseas, this breakdown will instantly save you serious cash on your next transaction.",
+      "dateAdded": "2026-09-22T00:20:43.515Z",
       "timestamps": [
         {
-          "startTime": 13,
-          "endTime": 59,
-          "topic": "The Multi-Tabung system: Differences between Tabung Am and Tabung Istito'ah"
+          "startTime": 81,
+          "endTime": 172,
+          "topic": "The hidden trap of bank FX markups vs. real mid-market exchange rates"
         },
         {
-          "startTime": 60,
-          "endTime": 112,
-          "topic": "Automatic Hajj queue eligibility and the RM15,000 minimum savings rule"
+          "startTime": 172,
+          "endTime": 318,
+          "topic": "Why traditional SWIFT wire transfers are slow, expensive, and loaded with middleman fees"
         },
         {
-          "startTime": 113,
-          "endTime": 153,
-          "topic": "Why Tabung Haji made the change: Reducing high offer rejection rates"
+          "startTime": 400,
+          "endTime": 515,
+          "topic": "Maximizing overseas spending with multi-currency cards, disposable virtual cards, and auto-conversion"
         }
       ]
     },
     {
-      "title": "Ekonomi teruk, kita buat apa?",
-      "url": "https://www.youtube.com/shorts/CC8Q9rycSRA",
-      "videoId": "CC8Q9rycSRA",
+      "title": "[S01: E23] Gaji RM3,000 mampu ke untuk beli rumah? - Erman Taib & Nur Aliya",
+      "url": "https://www.youtube.com/watch?v=6hjBxMVxfsw",
+      "videoId": "6hjBxMVxfsw",
       "channel": "Financial Faiz Podcast",
       "category": "Finance",
-      "summary": "You can't control political shifts, Bank Negara's interest rate hikes, or global economic crises, but financial literacy is the umbrella that keeps you from getting soaked. Watch this video to learn why mastering your personal finances is your only real safeguard against layoffs and inflation when the unexpected hits.",
-      "dateAdded": "2026-09-07T23:50:46.898Z",
+      "summary": "Rushing into property ownership just because you're told 'renting is throwing money away' can trap you in a devastating 35-year financial liability before your career even takes off. In this eye-opening panel, banking and real estate experts break down the hidden borrowing formulas (DSR and NDI), the costly traps of commercial-titled properties, and the real math behind renting versus buying. Watch this before signing any loan papers to protect your cash flow and ensure your first property is an asset, not a financial trap.",
+      "dateAdded": "2026-09-22T00:20:43.515Z",
       "timestamps": [
         {
-          "startTime": 19,
-          "endTime": 43,
-          "topic": "The Umbrella Analogy: Focusing on What You Can Control"
+          "startTime": 1165,
+          "endTime": 1335,
+          "topic": "High-Risk Property Traps First-Time Buyers Should Avoid"
         },
         {
-          "startTime": 71,
-          "endTime": 102,
-          "topic": "Understanding OPR Hikes, Global Crises, and Financial Resilience"
+          "startTime": 1540,
+          "endTime": 1750,
+          "topic": "Building on Custom Land vs. Buying from a Developer"
+        },
+        {
+          "startTime": 2270,
+          "endTime": 2625,
+          "topic": "Handling Parental Pressure to Buy Property Immediately After Graduating"
         }
       ]
     },
     {
-      "title": "Jangan pinjamkan nama untuk joint loan?",
-      "url": "https://www.youtube.com/shorts/iXI8zU2msgU",
-      "videoId": "iXI8zU2msgU",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Never let family members pressure you into a joint loan or 'borrowing' your name, because doing so directly ruins your Debt Service Ratio (DSR) and credit profile. Even if they promise to pay, banks will count that massive debt against your name, completely blocking you from buying your own car or home later. Watch this essential advice to learn how to stand your ground against emotional blackmail and protect your financial future.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
+      "title": "#116 | Leadership Lessons from Shell's Country Chair (Siti Sulaiman)",
+      "url": "https://www.youtube.com/watch?v=gJKkedZa6G4",
+      "videoId": "gJKkedZa6G4",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "True leadership breakthrough doesn't come from projecting flawless authority—it begins when you treat tough feedback as a gift and build deep human trust before demanding big results. Shell Malaysia Country Chair Siti Sulaiman shares battle-tested frameworks like 'Me, Us, It' and reveals how vulnerability transforms resistance into unstoppable team momentum. If you want practical insights on navigating high-stakes change and elevating your leadership from technical mastery to strategic influence, this conversation is essential viewing.",
+      "dateAdded": "2026-09-22T00:20:43.515Z",
       "timestamps": [
         {
-          "startTime": 26,
-          "endTime": 64,
-          "topic": "How family members exploit guilt to get joint loans"
+          "startTime": 900,
+          "endTime": 1025,
+          "topic": "The value of outsider perspective and 'unturning stones'"
         },
         {
-          "startTime": 148,
-          "endTime": 217,
-          "topic": "The hidden danger: How co-signing destroys your Debt Service Ratio (DSR)"
+          "startTime": 1380,
+          "endTime": 1540,
+          "topic": "Embracing critical feedback as a gift to lead with vulnerability"
         },
         {
-          "startTime": 218,
-          "endTime": 245,
-          "topic": "Breaking the cycle of family debt traps by simply saying no"
-        }
-      ]
-    },
-    {
-      "title": "BNPL boleh ganti kad kredit?",
-      "url": "https://www.youtube.com/shorts/0dvgIB3lgUI",
-      "videoId": "0dvgIB3lgUI",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Think Buy Now Pay Later (BNPL) completely replaces credit cards? Discover why understanding the key differences in limits, overseas utility, and installment perks is essential to beating the banks at their own game. Watch this breakdown to learn how to smartly leverage credit facilities without paying a single cent in interest.",
-      "dateAdded": "2026-09-03T10:40:59.550Z",
-      "timestamps": [
-        {
-          "startTime": 20,
-          "endTime": 70,
-          "topic": "BNPL vs. credit cards: Accessibility and credit limits"
-        },
-        {
-          "startTime": 70,
-          "endTime": 107,
-          "topic": "Practical functional differences and installment plans (EPP)"
-        },
-        {
-          "startTime": 107,
-          "endTime": 136,
-          "topic": "How to use credit facilities smartly without paying interest"
+          "startTime": 1630,
+          "endTime": 1830,
+          "topic": "The 'Me, Us, It' framework for radical trust and accountability"
         }
       ]
     },
@@ -369,7 +207,189 @@
           "topic": "Deadly Red Flags: Why VCs Back Adaptable Founders Over Polished Ideas"
         }
       ]
+    },
+    {
+      "title": "How Allah Wants You to Think About Success",
+      "url": "https://www.youtube.com/watch?v=DjE07PPgkf0",
+      "videoId": "DjE07PPgkf0",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "If you have checked every worldly box—career, wealth, and family—yet still feel an unexplainable inner void, you are measuring your life by the wrong scoreboard. This video delivers a powerful wake-up call on how true success is defined by Allah rather than societal expectations, revealing why outward achievements crumble without private spiritual integrity. Watch this to realign your priorities and start investing in what actually survives beyond the grave.",
+      "dateAdded": "2026-09-22T00:20:43.516Z",
+      "timestamps": [
+        {
+          "startTime": 75,
+          "endTime": 250,
+          "topic": "Why worldly metrics fail and Allah judges hearts over wealth"
+        },
+        {
+          "startTime": 455,
+          "endTime": 645,
+          "topic": "The danger of hidden sins and why private integrity defines real manhood"
+        },
+        {
+          "startTime": 805,
+          "endTime": 1045,
+          "topic": "What truly follows you to the grave vs. what gets left behind"
+        }
+      ]
+    },
+    {
+      "title": "AI Skills with Matt Pocock",
+      "url": "https://www.youtube.com/watch?v=4DhcSPkEbwI",
+      "videoId": "4DhcSPkEbwI",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "While most developers assume AI coding makes classic software architecture obsolete, the secret to unlocking dramatically smarter agents is actually 25-year-old engineering literature. Educator Matt Pocock demonstrates how classic concepts like 'tracer bullets' and domain-driven design act as high-leverage 'leading words' that force LLMs to think strategically rather than churning out bloated technical debt. If you want to master autonomous workflows that build clean, production-ready software without babysitting your AI, this breakdown is an absolute masterclass.",
+      "dateAdded": "2026-09-22T00:20:43.516Z",
+      "timestamps": [
+        {
+          "startTime": 1995,
+          "endTime": 2150,
+          "topic": "Why relentless interactive questioning beats one-shot prompting (The 'GrillMe' Skill)"
+        },
+        {
+          "startTime": 3180,
+          "endTime": 3350,
+          "topic": "Unlocking LLM latent knowledge with 'leading words' from classic programming books"
+        },
+        {
+          "startTime": 3690,
+          "endTime": 3810,
+          "topic": "Tactical vs. strategic programming and managing software entropy with AI"
+        }
+      ]
+    },
+    {
+      "title": "How Top Software Engineers Still Get Hired When Most Get Ghosted",
+      "url": "https://www.youtube.com/watch?v=ITzTnWs8wME",
+      "videoId": "ITzTnWs8wME",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "With AI automating routine coding and tech layoffs reshaping the industry, generic resumes and memorized frameworks are no longer enough to land or keep high-tier software engineering roles. Industry insiders reveal the exact blueprint to thrive in today's market—from standing out via high-impact open-source contributions to mastering problem decomposition and expanding project scope. If you want to future-proof your tech career and understand what hiring managers actually look for in the AI era, this conversation is essential viewing.",
+      "dateAdded": "2026-09-22T00:20:43.516Z",
+      "timestamps": [
+        {
+          "startTime": 815,
+          "endTime": 905,
+          "topic": "The tactical secret to getting open-source pull requests reviewed and merged"
+        },
+        {
+          "startTime": 1150,
+          "endTime": 1340,
+          "topic": "Why mechanical coding is becoming obsolete and the core skills modern engineers need"
+        },
+        {
+          "startTime": 1720,
+          "endTime": 1820,
+          "topic": "Why engineers must pursue project scope and business impact over job titles"
+        }
+      ]
+    },
+    {
+      "title": "LIVE: Uncle Bob on Software Fundamentals in the Age of AI",
+      "url": "https://www.youtube.com/watch?v=zcLPGC-tvgk",
+      "videoId": "zcLPGC-tvgk",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Legendary software engineering pioneer 'Uncle Bob' Martin reveals the counterintuitive secret to mastering AI coding agents: stop bloating your prompts with steering instructions and start locking AI in strict, deterministic testing straightjackets. If your AI assistants constantly spiral into messy, broken loops, this masterclass shows you how to harness automated complexity analysis, mutation testing, and multi-agent pipelines to produce bulletproof code at 5x human speed without manual line-by-line reviews. Watch this to discover why traditional software engineering fundamentals are actually your greatest superpower in the AI era.",
+      "dateAdded": "2026-09-22T00:20:43.516Z",
+      "timestamps": [
+        {
+          "startTime": 735,
+          "endTime": 915,
+          "topic": "Why prompt engineering fails and deterministic tools win"
+        },
+        {
+          "startTime": 1155,
+          "endTime": 1380,
+          "topic": "The multi-agent gauntlet: specifier, coder, cleaner, and hardener"
+        },
+        {
+          "startTime": 2180,
+          "endTime": 2480,
+          "topic": "The flaw of upfront spec-driven planning and the return of Agile"
+        }
+      ]
+    },
+    {
+      "title": "New Skills! v1.2 brings /wait-what, /writing-for-agents, and fixes /grill-me",
+      "url": "https://www.youtube.com/watch?v=gaDdrDdczO4",
+      "videoId": "gaDdrDdczO4",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Stop letting AI coding assistants drown you in verbose jargon or bog you down with tedious, one-question-at-a-time design interrogations. Matt Pocock breaks down the major v1.2 upgrades to his massively popular AI engineering skills library, showcasing breakthrough workflows like graph-based questioning and instant clarity commands. If you build with Claude Code or Codex, this breakdown delivers the exact tools you need to radically accelerate your spec-to-code workflow while keeping complete control over critical infrastructure.",
+      "dateAdded": "2026-09-22T00:20:43.516Z",
+      "timestamps": [
+        {
+          "startTime": 160,
+          "endTime": 245,
+          "topic": "The 'Wait, What?' Skill: Taming LLM Verbosity and Jargon"
+        },
+        {
+          "startTime": 245,
+          "endTime": 388,
+          "topic": "Graph-Based Questioning: Turbocharging the 'Grill Me' Spec Workflow"
+        },
+        {
+          "startTime": 448,
+          "endTime": 540,
+          "topic": "The Interactive Bash Wizard: Guided Execution for Sensitive Infrastructure"
+        }
+      ]
+    },
+    {
+      "title": "/wayfinder: Nothing is too big to plan anymore",
+      "url": "https://www.youtube.com/watch?v=F3lL98Pj90o",
+      "videoId": "F3lL98Pj90o",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Most AI coding tools fall apart the moment a project exceeds a single context window, forcing developers to downsize their ambitions to fit the AI. This video breaks down Wayfinder—a battle-tested orchestration workflow that navigates the complex 'fog of war' by automatically breaking massive features into linked research, prototyping, and decision tickets across multiple agent sessions. If you want to stop micro-managing prompts and start architecting enterprise-scale software with autonomous AI agents, this video delivers the exact blueprint.",
+      "dateAdded": "2026-09-22T00:20:43.516Z",
+      "timestamps": [
+        {
+          "startTime": 130,
+          "endTime": 270,
+          "topic": "Navigating the 'Fog of War' with multi-session ticket mapping"
+        },
+        {
+          "startTime": 460,
+          "endTime": 565,
+          "topic": "The 4 ticket types and using prototypes to avoid waterfall planning"
+        },
+        {
+          "startTime": 700,
+          "endTime": 825,
+          "topic": "When to use Wayfinder vs. standard single-session planning"
+        }
+      ]
+    },
+    {
+      "title": "The State of Startups in 2026",
+      "url": "https://www.youtube.com/watch?v=yslXlV2BP_Y",
+      "videoId": "yslXlV2BP_Y",
+      "channel": "Y Combinator",
+      "category": "Tech & Engineering",
+      "summary": "Building a venture-backed company is no longer reserved for 20-something software coders; AI agents are triggering a massive resurgence in hard tech, solo founders, and industry veterans with deep domain experience. Y Combinator partners reveal insider data showing startups scaling from zero to seven-figure run rates in mere months by delivering end-to-end automated workflows rather than old-school software tools. If you want a front-row seat to where the biggest startup opportunities and venture dollars are heading next, this breakdown is an absolute must-watch.",
+      "dateAdded": "2026-09-22T00:20:43.516Z",
+      "timestamps": [
+        {
+          "startTime": 75,
+          "endTime": 315,
+          "topic": "Why hard tech and physical manufacturing are exploding across YC batches"
+        },
+        {
+          "startTime": 1080,
+          "endTime": 1370,
+          "topic": "How end-to-end AI agents are replacing SaaS and supercharging startup revenues"
+        },
+        {
+          "startTime": 1760,
+          "endTime": 2090,
+          "topic": "The unprecedented rise of solo founders and seasoned veteran builders"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-09-16T00:03:34.412Z"
+  "lastUpdated": "2026-09-22T00:24:03.813Z"
 }
