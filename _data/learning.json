@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In PCIe power management, which state is characterized as a very light sleep state designed for very short durations of idleness, allowing the link to quickly wake up?",
+      "question": "In Islamic theology, which term refers to the actual occurrence and unfolding of events in a person's life that can be influenced or altered by supplication (Dua) and actions?",
       "options": [
-        "L0s",
-        "L1.0",
-        "L2",
-        "L0"
+        "Qadr",
+        "Tawakkul",
+        "Fitrah",
+        "Qada’"
       ],
-      "correctIndex": 0,
-      "learning": "In PCIe power management, the L0s state functions as a very light sleep state designed for very short durations of idleness where the link can quickly wake up to resume activity.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "What three-step actionable strategy is recommended to overcome forgetfulness and prevent the loss of learned personal insights?",
-      "options": [
-        "Record voice memos, delete old writings, and rely on passive review",
-        "Maintain a static digital notebook, re-read entries daily, and avoid active recall",
-        "Write them down, build a system to remind yourself, and share the knowledge publicly",
-        "Commit them to memory, avoid digital tools, and keep notes strictly private"
-      ],
-      "correctIndex": 2,
-      "learning": "Instead of relying on memory, effectively preserving and reinforcing insights requires writing them down, setting up a system for active reminders, and sharing that beneficial knowledge publicly.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In Islamic concepts of destiny, how does Qada’ differ fundamentally from Qadr?",
-      "options": [
-        "Qada’ refers to the actual unfolding of events that can be altered by actions and supplications, whereas Qadr is the preordained divine plan and knowledge encompassing those changes.",
-        "Qada’ cannot be influenced by human prayer or choice, whereas Qadr is rewritten entirely without prior divine knowledge.",
-        "Qada’ is the unalterable eternal decree, whereas Qadr refers strictly to spontaneous earthly occurrences outside divine control.",
-        "Qada’ dictates only spiritual outcomes in the afterlife, whereas Qadr governs material affairs and physical events on Earth."
-      ],
-      "correctIndex": 0,
-      "learning": "Qada’ refers to the unfolding of events in life that can be actively altered through supplication (Dua) and human action, while Qadr is Allah’s all-encompassing, preordained knowledge and plan that already includes those choices and alterations.",
+      "correctIndex": 3,
+      "learning": "Qada’ refers to the actual occurrence and unfolding of events in life, which can be altered through actions and Dua (supplication), while Qadr represents Allah’s complete, preordained plan and eternal knowledge.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In Islamic belief, what is identified as the foundational purpose behind the creation of mankind and jinn?",
+      "question": "In PCIe power management, which L1 substate specifically powers down the electrical circuits of the main link to achieve greater energy savings than L1.0?",
       "options": [
-        "To conquer other nations",
-        "To worship Allah",
-        "To seek eternal earthly life",
-        "To build worldly wealth"
+        "L1.1",
+        "L2",
+        "L1.2",
+        "L0s"
       ],
-      "correctIndex": 1,
-      "learning": "In Islamic theology, the Quran (51:56) establishes the primary motivation behind the creation of jinn and mankind as worshiping Allah.",
+      "correctIndex": 0,
+      "learning": "Within PCIe L1 power-saving states, L1.1 achieves deeper energy savings than L1.0 by specifically powering down the electrical circuits of the main link, resulting in an increased wake-up time.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
+    },
+    {
+      "question": "When analyzing Arabic text, what precision challenge arises from removing Tashkeel (vowel markings) to simplify the dataset?",
+      "options": [
+        "The right-to-left reading order is permanently inverted in tabular displays",
+        "The text encoding becomes incompatible with standard JSON and data structures",
+        "Different words that share the same letter spelling become indistinguishable",
+        "Words can no longer be split and tokenized using standard whitespace delimiters"
+      ],
+      "correctIndex": 2,
+      "learning": "While omitting Tashkeel (vowel markings) makes Arabic text simpler and more uniform for data analysis, it sacrifices precision because distinct Arabic words can share the exact same letter spelling when vowel marks are absent.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Regarding the stewardship role of 'khalifah,' who holds the responsibility for preserving faith and maintaining communal unity?",
+      "options": [
+        "Every individual collectively, rather than appointed leaders alone",
+        "Appointed leaders and scholars exclusively",
+        "Solely historical figures and former prophets",
+        "Only the political authorities within a state"
+      ],
+      "correctIndex": 0,
+      "learning": "Under the role of khalifah (caretaker), preserving religious teachings and maintaining communal unity is not the exclusive domain of appointed leaders, but a collective responsibility shared by each individual.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which of the following is NOT recognized as one of the three core roles within the Scrum framework?",
+      "question": "Which Scrum artifact is used to visualize the progress of a Sprint and display the remaining work to determine if the team is on schedule?",
       "options": [
-        "Product Owner",
-        "Developers",
-        "Project Manager",
-        "Scrum Master"
+        "Product Backlog",
+        "User Story",
+        "Burndown Chart",
+        "Sprint Backlog"
       ],
       "correctIndex": 2,
-      "learning": "A common misconception in agile adoption is the inclusion of traditional management titles; Scrum explicitly defines only three core roles: Product Owner, Scrum Master, and Developers.",
+      "learning": "In Scrum, a Burndown Chart is an artifact that visualizes the progress of a Sprint by showing remaining work and helping the team track if they are on schedule.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     }
   ],
-  "fetchedAt": "2026-09-22T00:20:15.302Z"
+  "fetchedAt": "2026-09-22T23:53:57.133Z"
 }
