@@ -1,13 +1,12 @@
 import { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from "react";
 import { useSwipeHint } from "@/hooks/useSwipeHint";
 import { toSentenceCase } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Popover, PopoverContent, PopoverDescription, PopoverHeader, PopoverTitle, PopoverTrigger } from "@/components/ui/popover";
 import { ArrowUpRight, Check } from "lucide-react";
 import {
   GEMINI_NOTEBOOK_NEW_URL,
   buildGeminiNotebookClipboard,
-  buildGeminiNotebookPrompt,
   pasteKey as getPasteKey,
 } from "@/lib/geminiNotebook";
 import { Kbd } from "@/components/ui/kbd";
@@ -107,6 +106,7 @@ function VideoCard({
   const [notebookHandoff, setNotebookHandoff] = useState<"copied" | "failed" | "blocked" | null>(null);
   const [autoOpenIn, setAutoOpenIn] = useState<number | null>(null);
   const isActiveRef = useRef(isActive);
+  const isTouch = window.matchMedia("(pointer: coarse)").matches;
   const playerContainerRef = useRef<HTMLDivElement>(null);
   const ytPlayerRef = useRef<YTPlayer | null>(null);
   const pendingSeekRef = useRef<number | null>(null);
@@ -170,13 +170,12 @@ function VideoCard({
   // source actually talk to NotebookLM's private backend through the user's already-authenticated
   // extension session, not a link - both out of reach for a plain webpage button.
   //
-  // The one real platform mechanism: NotebookLM's mobile app registers as a native OS share
-  // target (Android/iOS "Share to NotebookLM" adds the shared link as an actual source and drops
-  // the shared text into its chat box). navigator.share()'s {text, url} is exactly this shape -
-  // the same "a note plus a link" combo any share target expects - so it's tried first; a
-  // cancelled share (AbortError) is a user decision, not a failure, so it does NOT fall through.
-  // Desktop copies link + prompt together (one paste, by choice) and shows a popover reminding the
-  // visitor to paste, then opens the new tab after a short countdown (or on its button). Opening it
+  // Every device gets the same flow: copy link + prompt together (one paste, by choice), show a
+  // popover reminding the visitor to paste, then open the Gemini Notebook web app. Phones used to go
+  // through the OS share sheet instead, but whether the app keeps the shared prompt was unverified
+  // and visitors without the app had no fallback; opening the web app keeps the prompt, and a
+  // tapped link lets the phone offer the installed app. Desktop also auto-opens the tab after a
+  // short countdown; phones don't, since app hand-off generally needs a real tap. Opening it
   // straight away stole focus before any "copied" feedback could be seen, and /new drops every
   // query param (verified), so the paste is unavoidable and has to be asked for up front. It must go
   // into the chat box (focused on a fresh /new notebook): sent there, Gemini adds the video as a
@@ -187,18 +186,6 @@ function VideoCard({
       return;
     }
     if (!isActive) return;
-
-    // Touch devices only: desktop Chrome/Edge (Windows) and Safari (macOS) implement
-    // navigator.share too, but their OS share sheet never lists Gemini Notebook.
-    if (navigator.share && window.matchMedia("(pointer: coarse)").matches) {
-      try {
-        await navigator.share({ title: video.title, text: buildGeminiNotebookPrompt(video), url: video.url });
-        return;
-      } catch (err) {
-        if ((err as Error).name === "AbortError") return;
-        // Any other failure - fall through to the clipboard path below.
-      }
-    }
     const copied = navigator.clipboard
       ? await navigator.clipboard.writeText(buildGeminiNotebookClipboard(video)).then(() => true, () => false)
       : false;
@@ -207,14 +194,10 @@ function VideoCard({
     setNotebookHandoff(copied ? "copied" : "failed");
   }
 
-  function openGeminiNotebook(automatic: boolean) {
-    if (!automatic) {
-      window.open(GEMINI_NOTEBOOK_NEW_URL, "_blank", "noopener,noreferrer");
-      setNotebookHandoff(null);
-      return;
-    }
-    // "noopener" makes window.open always return null, which would hide a popup-blocker refusal -
-    // so the timed open skips it and severs the opener link by hand instead.
+  // Countdown path only - the button is a real <a> link. "noopener" makes window.open always
+  // return null, which would hide a popup-blocker refusal, so this skips it and severs the opener
+  // link by hand instead.
+  function autoOpenGeminiNotebook() {
     const tab = window.open(GEMINI_NOTEBOOK_NEW_URL, "_blank");
     if (tab) {
       tab.opener = null;
@@ -230,7 +213,7 @@ function VideoCard({
   }, [isActive]);
 
   useEffect(() => {
-    if (notebookHandoff !== "copied") {
+    if (notebookHandoff !== "copied" || isTouch) {
       setAutoOpenIn(null);
       return;
     }
@@ -242,7 +225,7 @@ function VideoCard({
         setAutoOpenIn(left);
       } else {
         clearInterval(id);
-        openGeminiNotebook(true);
+        autoOpenGeminiNotebook();
       }
     }, 1000);
     return () => clearInterval(id);
@@ -268,7 +251,7 @@ function VideoCard({
   // youtube.json is ever written, so by the time a videoId appears in the data, its thumbnail is
   // already committed alongside it - no fallback to the remote URL needed.
   const thumbUrl = "/assets/youtube-thumbnails/" + video.videoId + ".jpg";
-  const pasteKey = getPasteKey(navigator.platform, window.matchMedia("(pointer: coarse)").matches);
+  const pasteKey = getPasteKey(navigator.platform, isTouch);
   const timestamps = video.timestamps || [];
   // Optimistic (shows everything) until the player reports a real duration, then filters out any
   // timestamp past the end - same behavior as the original's renderTimestamps(), just expressed
@@ -403,7 +386,7 @@ function VideoCard({
               </svg>
               Add to Gemini Notebook
             </PopoverTrigger>
-            <PopoverContent align="start" className="w-80 gap-3 p-4">
+            <PopoverContent align="start" collisionPadding={16} className="w-80 gap-3 p-4">
               <PopoverHeader className="gap-1">
                 {notebookHandoff === "failed" ? (
                   <>
@@ -439,10 +422,20 @@ function VideoCard({
                     ? "Tab blocked by your browser"
                     : autoOpenIn !== null && `Opening in ${autoOpenIn}s…`}
                 </span>
-                <Button size="sm" className="shrink-0" onClick={() => openGeminiNotebook(false)}>
+                {/* A real link, not a button: phones hand links to the installed app only on a
+                    genuine tap. data-slot opts it into index.css's Primer escape like any shadcn
+                    part (Base UI's Button would stamp role="button" on it instead). */}
+                <a
+                  data-slot="button"
+                  className={buttonVariants({ size: "sm", className: "shrink-0" })}
+                  href={GEMINI_NOTEBOOK_NEW_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setNotebookHandoff(null)}
+                >
                   Open Gemini Notebook
                   <ArrowUpRight data-icon="inline-end" aria-hidden="true" />
-                </Button>
+                </a>
               </div>
             </PopoverContent>
           </Popover>
