@@ -23,9 +23,11 @@ describe("buildGeminiNotebookPrompt", () => {
     expect(prompt).toBe(
       buildGeminiNotebookPrompt(video) +
         "\nWherever a point draws on a Quran verse or hadith, cite it inside that same point, not in a " +
-        "separate section: its exact number and a link, Quran as surah:ayah (e.g. https://quran.com/2/255) " +
-        "and hadith by collection and number (e.g. https://sunnah.com/bukhari:1), noting whether each " +
-        "hadith is sahih. If you can't confirm a reference, say so instead of guessing.",
+        "separate section: the Arabic text, an English translation (Saheeh International for the Quran, the " +
+        "translation shown on sunnah.com for hadith), its exact number and a link, Quran as surah:ayah " +
+        "(e.g. https://quran.com/2/255) and hadith by collection and number (e.g. https://sunnah.com/bukhari:1), " +
+        "noting whether each hadith is sahih. If you can't confirm a reference or its wording, say so instead " +
+        "of guessing.",
     );
   });
 });
