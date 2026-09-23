@@ -59,10 +59,11 @@ const SWIPE_SETTLE_MS = 250;
 // an unrounded gray smudge rather than a corner. This exposes the page's own background there
 // instead.
 const SLIDE_GAP_PX = 10;
-// Browsers only let a page open a tab shortly after the click that caused it. Measured in real
-// Chrome with its popup blocker on: allowed at 5s, blocked at 6s. Past that, the timed open is
-// refused and the popover falls back to "Tab blocked by your browser" + the manual button.
-const NOTEBOOK_AUTO_OPEN_SECONDS = 4;
+// The countdown loads Gemini Notebook in the same tab, not a new one: a script-opened new tab is
+// popup-blocked from 6s after the click (measured in real Chrome), a same-tab load never is. A
+// code-triggered load also stays in the browser on phones instead of handing off to the installed
+// app, which only opens on its home screen (tested), while the browser's /new creates a notebook.
+const NOTEBOOK_AUTO_OPEN_SECONDS = 10;
 
 // Module-scoped singleton loader for the YouTube IFrame API script - shared across every
 // VideoCard instance (only ever one at a time actually creates a player, but which instance that
@@ -103,7 +104,7 @@ function VideoCard({
 }) {
   const [showFacade, setShowFacade] = useState(true);
   const [videoDuration, setVideoDuration] = useState<number | null>(null);
-  const [notebookHandoff, setNotebookHandoff] = useState<"copied" | "failed" | "blocked" | null>(null);
+  const [notebookHandoff, setNotebookHandoff] = useState<"copied" | "failed" | null>(null);
   const [autoOpenIn, setAutoOpenIn] = useState<number | null>(null);
   const isActiveRef = useRef(isActive);
   const isTouch = window.matchMedia("(pointer: coarse)").matches;
@@ -173,9 +174,10 @@ function VideoCard({
   // Every device gets the same flow: copy link + prompt together (one paste, by choice), show a
   // popover reminding the visitor to paste, then open the Gemini Notebook web app. Phones used to go
   // through the OS share sheet instead, but whether the app keeps the shared prompt was unverified
-  // and visitors without the app had no fallback; opening the web app keeps the prompt, and a
-  // tapped link lets the phone offer the installed app. Desktop also auto-opens the tab after a
-  // short countdown; phones don't, since app hand-off generally needs a real tap. Opening it
+  // and visitors without the app had no fallback; opening the web app keeps the prompt. With the
+  // app installed, the phone opens it on its home screen for any notebook.google.com URL, even a
+  // typed /new (tested on a real phone), so the phone wording asks for a new notebook first. The
+  // countdown then loads it in the same tab on every device (see NOTEBOOK_AUTO_OPEN_SECONDS). Opening it
   // straight away stole focus before any "copied" feedback could be seen, and /new drops every
   // query param (verified), so the paste is unavoidable and has to be asked for up front. It must go
   // into the chat box (focused on a fresh /new notebook): sent there, Gemini adds the video as a
@@ -194,17 +196,9 @@ function VideoCard({
     setNotebookHandoff(copied ? "copied" : "failed");
   }
 
-  // Countdown path only - the button is a real <a> link. "noopener" makes window.open always
-  // return null, which would hide a popup-blocker refusal, so this skips it and severs the opener
-  // link by hand instead.
   function autoOpenGeminiNotebook() {
-    const tab = window.open(GEMINI_NOTEBOOK_NEW_URL, "_blank");
-    if (tab) {
-      tab.opener = null;
-      setNotebookHandoff(null);
-    } else {
-      setNotebookHandoff("blocked");
-    }
+    setNotebookHandoff(null);
+    window.location.assign(GEMINI_NOTEBOOK_NEW_URL);
   }
 
   useEffect(() => {
@@ -213,7 +207,7 @@ function VideoCard({
   }, [isActive]);
 
   useEffect(() => {
-    if (notebookHandoff !== "copied" || isTouch) {
+    if (notebookHandoff !== "copied") {
       setAutoOpenIn(null);
       return;
     }
@@ -403,24 +397,22 @@ function VideoCard({
                       Link + prompt copied
                     </PopoverTitle>
                     <PopoverDescription>
-                      In the new notebook,{" "}
                       {pasteKey ? (
                         <>
-                          paste into the chat with <Kbd className="border border-border">{pasteKey}</Kbd> and press Enter
+                          In the new notebook, paste into the chat with{" "}
+                          <Kbd className="border border-border">{pasteKey}</Kbd> and press Enter.
                         </>
                       ) : (
-                        "long-press the chat box, tap Paste, then send"
-                      )}
-                      . Gemini adds the video and answers.
+                        "Start a new notebook if one isn't open, then long-press the chat box, tap Paste and send."
+                      )}{" "}
+                      Gemini adds the video and answers.
                     </PopoverDescription>
                   </>
                 )}
               </PopoverHeader>
               <div className="flex items-center justify-between gap-3">
                 <span className="min-w-0 text-xs text-muted-foreground" aria-live="polite">
-                  {notebookHandoff === "blocked"
-                    ? "Tab blocked by your browser"
-                    : autoOpenIn !== null && `Opening in ${autoOpenIn}s…`}
+                  {autoOpenIn !== null && `Opening in ${autoOpenIn}s…`}
                 </span>
                 {/* A real link, not a button: phones hand links to the installed app only on a
                     genuine tap. data-slot opts it into index.css's Primer escape like any shadcn
