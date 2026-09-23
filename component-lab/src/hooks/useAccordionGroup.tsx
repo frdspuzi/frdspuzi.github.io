@@ -36,7 +36,9 @@ type AccordionGroupState = {
   // Called by <Accordion>'s own effect once it observes itself transitioning to open — state
   // setters (toggle, above) stay pure; this is the one place that actually schedules a timer/
   // touches the DOM, kept separate on purpose.
-  scrollIntoViewIfMobile: (id: string) => void;
+  // onScrolled runs once the scroll has actually finished (mobile only), so a caller can chain a
+  // follow-up step, e.g. <Accordion>'s auto-maximize, after the section has snapped to the top.
+  scrollIntoViewIfMobile: (id: string, onScrolled?: () => void) => void;
 };
 
 const AccordionGroupContext = createContext<AccordionGroupState | null>(null);
@@ -121,7 +123,7 @@ export function AccordionGroupProvider({ children }: { children: ReactNode }) {
   // display:none can hide (which reports a stale 0). document.body is never itself hidden by an
   // ancestor, so its scrollHeight is never spuriously 0 the way a hidden accordion's own content
   // element would be.
-  const scrollIntoViewIfMobile = useCallback((id: string) => {
+  const scrollIntoViewIfMobile = useCallback((id: string, onScrolled?: () => void) => {
     if (!window.matchMedia("(max-width: 767px)").matches) return;
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const el = elRef.current[id];
@@ -129,8 +131,30 @@ export function AccordionGroupProvider({ children }: { children: ReactNode }) {
 
     if (reduceMotion) {
       el.scrollIntoView({ behavior: "auto", block: "start" });
+      onScrolled?.();
       return;
     }
+
+    // A smooth scroll's end is signalled by `scrollend`; when the section is already at the top
+    // no scroll happens and no event fires, so that case finishes immediately, and a timer covers
+    // browsers without `scrollend`.
+    const scrollThenNotify = () => {
+      if (Math.abs(el.getBoundingClientRect().top) < 2) {
+        onScrolled?.();
+        return;
+      }
+      let notified = false;
+      const notify = () => {
+        if (notified) return;
+        notified = true;
+        window.removeEventListener("scrollend", notify);
+        window.clearTimeout(fallback);
+        onScrolled?.();
+      };
+      window.addEventListener("scrollend", notify);
+      const fallback = window.setTimeout(notify, 1000);
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    };
 
     const DEBOUNCE_MS = 150;
     const MAX_WAIT_MS = 2500;
@@ -142,7 +166,7 @@ export function AccordionGroupProvider({ children }: { children: ReactNode }) {
       settled = true;
       observer.disconnect();
       window.clearTimeout(maxWaitTimer);
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      scrollThenNotify();
     };
 
     const observer = new ResizeObserver(() => {

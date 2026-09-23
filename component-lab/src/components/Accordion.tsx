@@ -1,7 +1,7 @@
 import { Maximize2, Minimize2 } from "lucide-react";
-import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useEffect, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 import { useAccordionGroup } from "@/hooks/useAccordionGroup";
-import { OPEN_DURATION, useAnimatedDisclosure } from "@/hooks/useAnimatedDisclosure";
+import { useAnimatedDisclosure } from "@/hooks/useAnimatedDisclosure";
 
 // React port of accordion.js's bounce open/close. The vanilla version drove this imperatively
 // from a click handler; here the *state* (open/closed, via useAccordionGroup) is the source of
@@ -58,31 +58,34 @@ export function Accordion({
   }, []);
 
   const open = isOpen(id, defaultOpen);
-  const contentRef = useAnimatedDisclosure(open, () => scrollIntoViewIfMobile(id), onBeforeMeasure);
 
   // Un-maximize if the section closes out from under it (e.g. mobile single-open force-closing
   // this section when another one opens) — maximized-but-closed isn't a reachable state through
   // the UI, but is one this state could otherwise get stuck in.
   //
-  // On mobile, opening a maximizable section also maximizes it once the open animation has
-  // finished (per request: open -> animation plays -> maximized view). Skipped on the first run
-  // so a section that's already open at mount isn't maximized without the visitor opening it.
+  // On mobile, a maximizable section the visitor opens is maximized once it has finished opening
+  // AND snapped to the top (per request: open -> animation -> scroll -> maximized view), chained
+  // off scrollIntoViewIfMobile's completion rather than a timer, which fired mid-scroll. Not for a
+  // section already open at mount. A layout effect declared before useAnimatedDisclosure, so the
+  // flag is set before that hook's own layout effect can fire the (possibly synchronous) callback.
+  const autoMaximizeRef = useRef(false);
   const isFirstOpenRun = useRef(true);
-  useEffect(() => {
-    if (!open) {
-      setIsMaximized(false);
-      isFirstOpenRun.current = false;
-      return;
-    }
-    if (isFirstOpenRun.current) {
-      isFirstOpenRun.current = false;
-      return;
-    }
-    if (!groupable || !window.matchMedia("(max-width: 767px)").matches) return;
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const timer = window.setTimeout(() => setIsMaximized(true), reduceMotion ? 0 : OPEN_DURATION);
-    return () => window.clearTimeout(timer);
+  useLayoutEffect(() => {
+    autoMaximizeRef.current = open && groupable && !isFirstOpenRun.current;
+    isFirstOpenRun.current = false;
+    if (!open) setIsMaximized(false);
   }, [open, groupable]);
+
+  const contentRef = useAnimatedDisclosure(
+    open,
+    () =>
+      scrollIntoViewIfMobile(id, () => {
+        if (!autoMaximizeRef.current) return;
+        autoMaximizeRef.current = false;
+        setIsMaximized(true);
+      }),
+    onBeforeMeasure,
+  );
 
   const joinedTop = isJoinedTop(id);
   const joinedBottom = isJoinedBottom(id);
