@@ -79,10 +79,8 @@ export function Tabs({
   );
 }
 
-// bg-card/border-border swapped for this site's own CSS custom properties, not shadcn's —
-// shadcn's tokens only flip for dark mode via a `.dark` ancestor class, which nothing on this
-// site ever sets (it uses its own `[data-theme="dark"]` attribute instead) — same fix already
-// applied to preview-rail.tsx for the same reason.
+// bg-card/border-border swapped for this site's own CSS custom properties, not shadcn's, so the
+// tabs match the surrounding site surfaces rather than shadcn's neutral palette.
 // overflow-x-auto + flex-nowrap on pill/segment (not underline, which doesn't share this
 // problem): both use one continuously-rounded background wrapping every trigger as a single
 // shape, which only reads correctly as a single row — wrapped onto 2-3 rows on a narrow screen,

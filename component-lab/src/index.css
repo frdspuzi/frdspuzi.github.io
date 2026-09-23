@@ -3,7 +3,9 @@
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
 
-@custom-variant dark (&:is(.dark *));
+/* Keyed to the site's own theme attribute (useTheme.ts sets data-theme on <html>), not shadcn's
+   default `.dark` class, which nothing here sets - otherwise shadcn components stay light forever. */
+@custom-variant dark (&:is([data-theme="dark"] *));
 
 @theme inline {
     --font-heading: var(--font-sans);
@@ -83,7 +85,7 @@
     --sidebar-ring: oklch(0.708 0 0);
 }
 
-.dark {
+[data-theme="dark"] {
     --background: oklch(0.145 0 0);
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.205 0 0);
@@ -127,4 +129,22 @@
   html {
     @apply font-sans;
     }
+}
+
+/* shadcn components (every part carries data-slot) opt out of Primer + site.scss. Those are
+   unlayered, and unlayered CSS beats Tailwind's @layer utilities regardless of specificity -
+   Primer's `button { border-radius: 0; font: inherit }` was flattening shadcn buttons.
+   revert-layer drops every unlayered declaration, falling back to Tailwind's layers.
+   Doubled attribute = (0,2,0), enough to beat Primer's `[type=button]`-style selectors.
+   Primer itself can't be layered instead: its utilities are !important, and !important
+   inverts layer order, so they'd then beat site.scss's dark-mode !important overrides. */
+[data-slot][data-slot] {
+  all: revert-layer;
+}
+
+/* Primer's `.border` (!important) shares its name with Tailwind's `border` utility and would
+   force a gray border on e.g. border-transparent variants. Tripled to beat site.scss's
+   `[data-theme="dark"] .border`. */
+[data-slot][data-slot][data-slot] {
+  border-color: revert-layer !important;
 }

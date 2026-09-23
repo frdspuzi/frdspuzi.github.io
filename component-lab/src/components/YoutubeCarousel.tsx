@@ -1,6 +1,15 @@
 import { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useRef, useState } from "react";
 import { useSwipeHint } from "@/hooks/useSwipeHint";
 import { toSentenceCase } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
+import { Popover, PopoverContent, PopoverDescription, PopoverHeader, PopoverTitle, PopoverTrigger } from "@/components/ui/popover";
+import { ArrowUpRight, Check } from "lucide-react";
+import {
+  GEMINI_NOTEBOOK_NEW_URL,
+  buildGeminiNotebookClipboard,
+  buildGeminiNotebookPrompt,
+  pasteInstruction,
+} from "@/lib/geminiNotebook";
 
 export type YoutubeCarouselHandle = { remeasure: () => void };
 import youtubeData from "../../../_data/youtube.json";
@@ -50,6 +59,9 @@ const SWIPE_SETTLE_MS = 250;
 // an unrounded gray smudge rather than a corner. This exposes the page's own background there
 // instead.
 const SLIDE_GAP_PX = 10;
+// Browsers only let a page open a tab for a few seconds after the click that caused it (~5s in
+// Chrome); the countdown starts after the clipboard write resolves, so 5 would land outside it.
+const NOTEBOOK_AUTO_OPEN_SECONDS = 4;
 
 // Module-scoped singleton loader for the YouTube IFrame API script - shared across every
 // VideoCard instance (only ever one at a time actually creates a player, but which instance that
@@ -90,6 +102,9 @@ function VideoCard({
 }) {
   const [showFacade, setShowFacade] = useState(true);
   const [videoDuration, setVideoDuration] = useState<number | null>(null);
+  const [notebookHandoff, setNotebookHandoff] = useState<"copied" | "failed" | "blocked" | null>(null);
+  const [autoOpenIn, setAutoOpenIn] = useState<number | null>(null);
+  const isActiveRef = useRef(isActive);
   const playerContainerRef = useRef<HTMLDivElement>(null);
   const ytPlayerRef = useRef<YTPlayer | null>(null);
   const pendingSeekRef = useRef<number | null>(null);
@@ -145,6 +160,89 @@ function VideoCard({
       pendingSeekRef.current = t;
     }
   }
+
+  // Gemini Notebook (formerly NotebookLM; notebooklm.google.com now redirects to notebook.google.com) has no documented URL param or API for
+  // prefilling a source or a chat prompt - the only real API is NotebookLM Enterprise (paid,
+  // GCP-service-account-gated, creates notebooks in an org's Enterprise tenant, not this site
+  // owner's own personal library), and the Chrome extensions that appear to one-click-add a
+  // source actually talk to NotebookLM's private backend through the user's already-authenticated
+  // extension session, not a link - both out of reach for a plain webpage button.
+  //
+  // The one real platform mechanism: NotebookLM's mobile app registers as a native OS share
+  // target (Android/iOS "Share to NotebookLM" adds the shared link as an actual source and drops
+  // the shared text into its chat box). navigator.share()'s {text, url} is exactly this shape -
+  // the same "a note plus a link" combo any share target expects - so it's tried first; a
+  // cancelled share (AbortError) is a user decision, not a failure, so it does NOT fall through.
+  // Desktop copies link + prompt together (one paste, by choice) and shows a popover reminding the
+  // visitor to paste, then opens the new tab after a short countdown (or on its button). Opening it
+  // straight away stole focus before any "copied" feedback could be seen, and /new drops every
+  // query param (verified), so the paste is unavoidable and has to be asked for up front.
+  async function handleNotebookOpenChange(open: boolean) {
+    if (!open) {
+      setNotebookHandoff(null);
+      return;
+    }
+    if (!isActive) return;
+
+    // Touch devices only: desktop Chrome/Edge (Windows) and Safari (macOS) implement
+    // navigator.share too, but their OS share sheet never lists Gemini Notebook.
+    if (navigator.share && window.matchMedia("(pointer: coarse)").matches) {
+      try {
+        await navigator.share({ title: video.title, text: buildGeminiNotebookPrompt(video), url: video.url });
+        return;
+      } catch (err) {
+        if ((err as Error).name === "AbortError") return;
+        // Any other failure - fall through to the clipboard path below.
+      }
+    }
+    const copied = navigator.clipboard
+      ? await navigator.clipboard.writeText(buildGeminiNotebookClipboard(video)).then(() => true, () => false)
+      : false;
+    // The card may have swiped out of the active slot while the write was pending.
+    if (!isActiveRef.current) return;
+    setNotebookHandoff(copied ? "copied" : "failed");
+  }
+
+  function openGeminiNotebook(automatic: boolean) {
+    if (!automatic) {
+      window.open(GEMINI_NOTEBOOK_NEW_URL, "_blank", "noopener,noreferrer");
+      setNotebookHandoff(null);
+      return;
+    }
+    // "noopener" makes window.open always return null, which would hide a popup-blocker refusal -
+    // so the timed open skips it and severs the opener link by hand instead.
+    const tab = window.open(GEMINI_NOTEBOOK_NEW_URL, "_blank");
+    if (tab) {
+      tab.opener = null;
+      setNotebookHandoff(null);
+    } else {
+      setNotebookHandoff("blocked");
+    }
+  }
+
+  useEffect(() => {
+    isActiveRef.current = isActive;
+    if (!isActive) setNotebookHandoff(null);
+  }, [isActive]);
+
+  useEffect(() => {
+    if (notebookHandoff !== "copied") {
+      setAutoOpenIn(null);
+      return;
+    }
+    let left = NOTEBOOK_AUTO_OPEN_SECONDS;
+    setAutoOpenIn(left);
+    const id = setInterval(() => {
+      left -= 1;
+      if (left > 0) {
+        setAutoOpenIn(left);
+      } else {
+        clearInterval(id);
+        openGeminiNotebook(true);
+      }
+    }, 1000);
+    return () => clearInterval(id);
+  }, [notebookHandoff]);
 
   function handleFacadeKeydown(e: React.KeyboardEvent) {
     if (e.key === "ArrowLeft") {
@@ -289,6 +387,52 @@ function VideoCard({
               </>
             )}
           </div>
+
+          <Popover open={notebookHandoff !== null} onOpenChange={handleNotebookOpenChange}>
+            <PopoverTrigger
+              render={<Button variant="outline" size="sm" style={{ alignSelf: "flex-start" }} tabIndex={isActive ? 0 : -1} />}
+            >
+              {/* Simple Icons' NotebookLM mark - no rebranded "Gemini Notebook" icon exists yet. */}
+              <svg data-icon="inline-start" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M11.999 3.201C5.372 3.201 0 8.528 0 15.101V20.8h2.212v-.568c0-2.666 2.178-4.827 4.866-4.827 2.688 0 4.866 2.16 4.866 4.827v.568h2.212v-.568c0-3.877-3.17-7.019-7.078-7.019A7.075 7.075 0 0 0 2.992 14.5a7.355 7.355 0 0 1 6.568-4.016c4.057 0 7.347 3.264 7.347 7.287V20.8h2.212V17.77c0-5.235-4.28-9.481-9.56-9.481a9.563 9.563 0 0 0-6.217 2.28A9.795 9.795 0 0 1 12 5.393c5.406 0 9.788 4.346 9.788 9.707V20.8H24V15.1c-.001-6.573-5.373-11.9-12.001-11.9Z" />
+              </svg>
+              Add to Gemini Notebook
+            </PopoverTrigger>
+            <PopoverContent align="start">
+              <PopoverHeader>
+                {notebookHandoff === "failed" ? (
+                  <>
+                    <PopoverTitle>Couldn't copy automatically</PopoverTitle>
+                    <PopoverDescription>
+                      In the new notebook, add this video as a source:{" "}
+                      <span className="break-all select-all text-foreground">{video.url}</span>
+                    </PopoverDescription>
+                  </>
+                ) : (
+                  <>
+                    <PopoverTitle className="flex items-center gap-1.5">
+                      <Check className="size-4" aria-hidden="true" />
+                      Link + prompt copied
+                    </PopoverTitle>
+                    <PopoverDescription>
+                      In the new notebook,{" "}
+                      {pasteInstruction(navigator.platform, window.matchMedia("(pointer: coarse)").matches)}. The video
+                      link and prompt are both on your clipboard.
+                    </PopoverDescription>
+                    <PopoverDescription>
+                      {notebookHandoff === "blocked"
+                        ? "Your browser blocked the new tab — open it below."
+                        : autoOpenIn !== null && `Opening in ${autoOpenIn}s…`}
+                    </PopoverDescription>
+                  </>
+                )}
+              </PopoverHeader>
+              <Button size="sm" className="self-end" onClick={() => openGeminiNotebook(false)}>
+                Open Gemini Notebook
+                <ArrowUpRight data-icon="inline-end" aria-hidden="true" />
+              </Button>
+            </PopoverContent>
+          </Popover>
         </div>
       </div>
     </div>
