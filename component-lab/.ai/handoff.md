@@ -4,6 +4,12 @@
 
 **Still shared with the old content pipeline, not Jekyll-specific — don't delete these thinking they're leftover Jekyll cruft:** `_data/*.json`, `_posts/*.md` (both imported directly by `component-lab/src`), and `assets/{photography,youtube-thumbnails,medium-images}/` (synced into `component-lab/public/assets/` by `scripts/sync-assets.js` on every `predev`/`prebuild` — never committed there directly). All written by `.github/scripts/*.js` on the same schedule as before.
 
+## Status (2026-09-23 session — mobile sections auto-maximize after opening)
+
+**On phones (≤767px), opening a main (`groupable`) accordion section now maximizes it once the open animation finishes** — per request: open → animation → maximized view. Implemented in `Accordion.tsx`'s existing `[open]` effect: a `setTimeout(OPEN_DURATION)` (0 with reduced motion) sets `isMaximized`, cleared if the section closes first; a first-run guard stops a section that's already open at mount from maximizing unprompted. Covers the floating-nav rail too, since it opens sections the same way. Restore button and closing are unchanged, and desktop never auto-maximizes. Verified on an emulated phone: open at 250ms, maximized at ~950ms, restore works, opening a second section maximizes it and closes the first.
+
+**Side effect caught and fixed**: shadcn `PopoverContent`'s positioner was `z-50`, below the maximized section's `z-index: 2000`, so the Gemini Notebook popover opened *behind* a maximized YouTube section (confirmed via `elementFromPoint`). It's now `z-[2100]` in `src/components/ui/popover.tsx`. Any future overlay component (dialog, tooltip, dropdown) needs the same: above 2000.
+
 ## Status (2026-09-23 session — "Add to Gemini Notebook" button on the YouTube carousel)
 
 **Every `VideoCard` in `YoutubeCarousel.tsx` now has an "Add to Gemini Notebook" button** (Gemini Notebook = NotebookLM's July 2026 rebrand), next to its Key Moments list. Went through a real `/grill-with-docs` session first (not a snap decision) - two rounds of live research kept overturning the design:

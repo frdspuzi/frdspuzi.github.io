@@ -31,7 +31,8 @@ function PopoverContent({
         side={side}
         sideOffset={sideOffset}
         collisionPadding={collisionPadding}
-        className="isolate z-50"
+        // Above the site's own top layer: a maximized accordion section is z-index 2000 (site.scss).
+        className="isolate z-[2100]"
       >
         <PopoverPrimitive.Popup
           data-slot="popover-content"

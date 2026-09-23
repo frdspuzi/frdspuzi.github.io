@@ -1,7 +1,7 @@
 import { Maximize2, Minimize2 } from "lucide-react";
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { useAccordionGroup } from "@/hooks/useAccordionGroup";
-import { useAnimatedDisclosure } from "@/hooks/useAnimatedDisclosure";
+import { OPEN_DURATION, useAnimatedDisclosure } from "@/hooks/useAnimatedDisclosure";
 
 // React port of accordion.js's bounce open/close. The vanilla version drove this imperatively
 // from a click handler; here the *state* (open/closed, via useAccordionGroup) is the source of
@@ -63,9 +63,26 @@ export function Accordion({
   // Un-maximize if the section closes out from under it (e.g. mobile single-open force-closing
   // this section when another one opens) — maximized-but-closed isn't a reachable state through
   // the UI, but is one this state could otherwise get stuck in.
+  //
+  // On mobile, opening a maximizable section also maximizes it once the open animation has
+  // finished (per request: open -> animation plays -> maximized view). Skipped on the first run
+  // so a section that's already open at mount isn't maximized without the visitor opening it.
+  const isFirstOpenRun = useRef(true);
   useEffect(() => {
-    if (!open) setIsMaximized(false);
-  }, [open]);
+    if (!open) {
+      setIsMaximized(false);
+      isFirstOpenRun.current = false;
+      return;
+    }
+    if (isFirstOpenRun.current) {
+      isFirstOpenRun.current = false;
+      return;
+    }
+    if (!groupable || !window.matchMedia("(max-width: 767px)").matches) return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const timer = window.setTimeout(() => setIsMaximized(true), reduceMotion ? 0 : OPEN_DURATION);
+    return () => window.clearTimeout(timer);
+  }, [open, groupable]);
 
   const joinedTop = isJoinedTop(id);
   const joinedBottom = isJoinedBottom(id);
