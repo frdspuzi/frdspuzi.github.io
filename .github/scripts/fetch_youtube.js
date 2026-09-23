@@ -110,6 +110,7 @@ const CHANNELS = [
   { url: "https://www.youtube.com/@mattpocockuk", category: "Tech & Engineering" },
   { url: "https://www.youtube.com/@DwarkeshPatel", category: "General Ideas" },
   { url: "https://www.youtube.com/@MuslimFounder", category: "Islamic Studies" },
+  { url: "https://www.youtube.com/@theansaripodcast", category: "Islamic Studies" },
   { url: "https://www.youtube.com/@ycombinator", category: "Tech & Engineering" },
   { url: "https://www.youtube.com/@bigthink", category: "General Ideas" },
   { url: "https://www.youtube.com/@kerissilicon", category: "Tech & Engineering" },
