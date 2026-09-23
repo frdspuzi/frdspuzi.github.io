@@ -4,6 +4,7 @@ import { buildGeminiNotebookClipboard, buildGeminiNotebookPrompt, pasteKey } fro
 const video = {
   title: "Cukai Malaysia vs Singapore",
   channel: "Financial Faiz",
+  category: "Finance",
   url: "https://www.youtube.com/watch?v=QFxzKnP3VuE",
 };
 
@@ -14,6 +15,17 @@ describe("buildGeminiNotebookPrompt", () => {
         "1. The key takeaways, as short bullet points.\n" +
         "2. One or two practical ways I could apply this.\n" +
         "3. Three follow-up questions worth asking about it.",
+    );
+  });
+
+  it("for Islamic Studies, also asks for numbered Quran/hadith references linked to quran.com and sunnah.com", () => {
+    const prompt = buildGeminiNotebookPrompt({ ...video, category: "Islamic Studies" });
+    expect(prompt).toBe(
+      buildGeminiNotebookPrompt(video) +
+        "\n4. Every Quran verse and hadith the video references, each with its exact number and a link: " +
+        "Quran as surah:ayah (e.g. https://quran.com/2/255), hadith by collection and number " +
+        "(e.g. https://sunnah.com/bukhari:1), noting whether each hadith is sahih. " +
+        "If you can't confirm a reference, say so instead of guessing.",
     );
   });
 });
