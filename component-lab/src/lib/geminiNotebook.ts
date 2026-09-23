@@ -9,8 +9,9 @@ export const GEMINI_NOTEBOOK_NEW_URL = "https://notebook.google.com/new";
 // still got an English answer from this English prompt. No timestamps asked for: only the
 // transcript is imported, so they could be invented; the notebook's own citations cover that.
 //
-// Islamic Studies videos also ask for every Quran/hadith reference with its exact number and a
-// link. The example URLs show the formats (both verified to resolve: Ayatul Kursi, Sahih
+// Islamic Studies videos also ask for each Quran/hadith reference with its exact number and a
+// link, cited inside the point it supports: a numbered "4." item made Gemini put them all in a
+// separate section at the end (tested), away from the claims they back. The example URLs show the formats (both verified to resolve: Ayatul Kursi, Sahih
 // al-Bukhari 1). "Say so instead of guessing": a wrong hadith number or grading is worse than none.
 export function buildGeminiNotebookPrompt(video: NotebookVideo): string {
   const prompt =
@@ -21,10 +22,10 @@ export function buildGeminiNotebookPrompt(video: NotebookVideo): string {
   if (video.category !== "Islamic Studies") return prompt;
   return (
     prompt +
-    "\n4. Every Quran verse and hadith the video references, each with its exact number and a link: " +
-    "Quran as surah:ayah (e.g. https://quran.com/2/255), hadith by collection and number " +
-    "(e.g. https://sunnah.com/bukhari:1), noting whether each hadith is sahih. " +
-    "If you can't confirm a reference, say so instead of guessing."
+    "\nWherever a point draws on a Quran verse or hadith, cite it inside that same point, not in a " +
+    "separate section: its exact number and a link, Quran as surah:ayah (e.g. https://quran.com/2/255) " +
+    "and hadith by collection and number (e.g. https://sunnah.com/bukhari:1), noting whether each " +
+    "hadith is sahih. If you can't confirm a reference, say so instead of guessing."
   );
 }
 

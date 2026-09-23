@@ -18,14 +18,14 @@ describe("buildGeminiNotebookPrompt", () => {
     );
   });
 
-  it("for Islamic Studies, also asks for numbered Quran/hadith references linked to quran.com and sunnah.com", () => {
+  it("for Islamic Studies, asks for Quran/hadith references cited inline in the points, not in a separate section", () => {
     const prompt = buildGeminiNotebookPrompt({ ...video, category: "Islamic Studies" });
     expect(prompt).toBe(
       buildGeminiNotebookPrompt(video) +
-        "\n4. Every Quran verse and hadith the video references, each with its exact number and a link: " +
-        "Quran as surah:ayah (e.g. https://quran.com/2/255), hadith by collection and number " +
-        "(e.g. https://sunnah.com/bukhari:1), noting whether each hadith is sahih. " +
-        "If you can't confirm a reference, say so instead of guessing.",
+        "\nWherever a point draws on a Quran verse or hadith, cite it inside that same point, not in a " +
+        "separate section: its exact number and a link, Quran as surah:ayah (e.g. https://quran.com/2/255) " +
+        "and hadith by collection and number (e.g. https://sunnah.com/bukhari:1), noting whether each " +
+        "hadith is sahih. If you can't confirm a reference, say so instead of guessing.",
     );
   });
 });
