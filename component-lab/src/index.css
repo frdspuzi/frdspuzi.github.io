@@ -142,9 +142,12 @@
   all: revert-layer;
 }
 
-/* Primer's `.border` (!important) shares its name with Tailwind's `border` utility and would
-   force a gray border on e.g. border-transparent variants. Tripled to beat site.scss's
-   `[data-theme="dark"] .border`. */
+/* Some Primer !important utilities share names with Tailwind's: `.border` (would force a gray
+   border on border-transparent variants) and the spacing scale (Primer's `.p-4` is 24px, Tailwind's
+   16px). Tripled to beat site.scss's `[data-theme="dark"] .border`. Side effect: inline style
+   padding/margin on a data-slot element is overridden too - use classes there. */
 [data-slot][data-slot][data-slot] {
   border-color: revert-layer !important;
+  padding: revert-layer !important;
+  margin: revert-layer !important;
 }

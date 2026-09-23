@@ -8,8 +8,9 @@ import {
   GEMINI_NOTEBOOK_NEW_URL,
   buildGeminiNotebookClipboard,
   buildGeminiNotebookPrompt,
-  pasteInstruction,
+  pasteKey as getPasteKey,
 } from "@/lib/geminiNotebook";
+import { Kbd } from "@/components/ui/kbd";
 
 export type YoutubeCarouselHandle = { remeasure: () => void };
 import youtubeData from "../../../_data/youtube.json";
@@ -59,8 +60,9 @@ const SWIPE_SETTLE_MS = 250;
 // an unrounded gray smudge rather than a corner. This exposes the page's own background there
 // instead.
 const SLIDE_GAP_PX = 10;
-// Browsers only let a page open a tab for a few seconds after the click that caused it (~5s in
-// Chrome); the countdown starts after the clipboard write resolves, so 5 would land outside it.
+// Browsers only let a page open a tab shortly after the click that caused it. Measured in real
+// Chrome with its popup blocker on: allowed at 5s, blocked at 6s. Past that, the timed open is
+// refused and the popover falls back to "Tab blocked by your browser" + the manual button.
 const NOTEBOOK_AUTO_OPEN_SECONDS = 4;
 
 // Module-scoped singleton loader for the YouTube IFrame API script - shared across every
@@ -176,7 +178,9 @@ function VideoCard({
   // Desktop copies link + prompt together (one paste, by choice) and shows a popover reminding the
   // visitor to paste, then opens the new tab after a short countdown (or on its button). Opening it
   // straight away stole focus before any "copied" feedback could be seen, and /new drops every
-  // query param (verified), so the paste is unavoidable and has to be asked for up front.
+  // query param (verified), so the paste is unavoidable and has to be asked for up front. It must go
+  // into the chat box (focused on a fresh /new notebook): sent there, Gemini adds the video as a
+  // source itself and answers; the "Website and YouTube URLs" source box rejects link + prompt.
   async function handleNotebookOpenChange(open: boolean) {
     if (!open) {
       setNotebookHandoff(null);
@@ -264,6 +268,7 @@ function VideoCard({
   // youtube.json is ever written, so by the time a videoId appears in the data, its thumbnail is
   // already committed alongside it - no fallback to the remote URL needed.
   const thumbUrl = "/assets/youtube-thumbnails/" + video.videoId + ".jpg";
+  const pasteKey = getPasteKey(navigator.platform, window.matchMedia("(pointer: coarse)").matches);
   const timestamps = video.timestamps || [];
   // Optimistic (shows everything) until the player reports a real duration, then filters out any
   // timestamp past the end - same behavior as the original's renderTimestamps(), just expressed
@@ -398,8 +403,8 @@ function VideoCard({
               </svg>
               Add to Gemini Notebook
             </PopoverTrigger>
-            <PopoverContent align="start">
-              <PopoverHeader>
+            <PopoverContent align="start" className="w-80 gap-3 p-4">
+              <PopoverHeader className="gap-1">
                 {notebookHandoff === "failed" ? (
                   <>
                     <PopoverTitle>Couldn't copy automatically</PopoverTitle>
@@ -416,21 +421,29 @@ function VideoCard({
                     </PopoverTitle>
                     <PopoverDescription>
                       In the new notebook,{" "}
-                      {pasteInstruction(navigator.platform, window.matchMedia("(pointer: coarse)").matches)}. The video
-                      link and prompt are both on your clipboard.
-                    </PopoverDescription>
-                    <PopoverDescription>
-                      {notebookHandoff === "blocked"
-                        ? "Your browser blocked the new tab — open it below."
-                        : autoOpenIn !== null && `Opening in ${autoOpenIn}s…`}
+                      {pasteKey ? (
+                        <>
+                          paste into the chat with <Kbd className="border border-border">{pasteKey}</Kbd> and press Enter
+                        </>
+                      ) : (
+                        "long-press the chat box, tap Paste, then send"
+                      )}
+                      . Gemini adds the video and answers.
                     </PopoverDescription>
                   </>
                 )}
               </PopoverHeader>
-              <Button size="sm" className="self-end" onClick={() => openGeminiNotebook(false)}>
-                Open Gemini Notebook
-                <ArrowUpRight data-icon="inline-end" aria-hidden="true" />
-              </Button>
+              <div className="flex items-center justify-between gap-3">
+                <span className="min-w-0 text-xs text-muted-foreground" aria-live="polite">
+                  {notebookHandoff === "blocked"
+                    ? "Tab blocked by your browser"
+                    : autoOpenIn !== null && `Opening in ${autoOpenIn}s…`}
+                </span>
+                <Button size="sm" className="shrink-0" onClick={() => openGeminiNotebook(false)}>
+                  Open Gemini Notebook
+                  <ArrowUpRight data-icon="inline-end" aria-hidden="true" />
+                </Button>
+              </div>
             </PopoverContent>
           </Popover>
         </div>
