@@ -1,215 +1,215 @@
 {
   "learnings": [
     {
-      "question": "Which 19th-century psychologist demonstrated that people forget about 80% of newly learned information within just 24 hours unless they actively work to recall it?",
+      "question": "Which 19th-century psychologist demonstrated that people forget roughly 80% of new information within 24 hours unless they actively recall it?",
       "options": [
-        "William James",
-        "B.F. Skinner",
+        "Hermann Ebbinghaus",
         "Ivan Pavlov",
-        "Hermann Ebbinghaus"
+        "William James",
+        "B.F. Skinner"
       ],
-      "correctIndex": 3,
-      "learning": "Hermann Ebbinghaus showed in the 1880s that people forget roughly 80% of what they learn within 24 hours unless they actively force themselves to recall it, which is the basis for spaced repetition beating simple re-reading.",
+      "correctIndex": 0,
+      "learning": "In the 1880s, Hermann Ebbinghaus proved that people forget about 80% of what they learn within 24 hours unless they actively force themselves to recall it.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "In a hadith recorded in Sahih Muslim, which three things continue to benefit a person even after they die?",
+      "question": "What term, coined from 'Google Effect' research, describes the way our brains treat information as safe to forget once it's been written down or saved digitally?",
       "options": [
-        "Wealth, family, and good health",
-        "Daily prayer, fasting, and pilgrimage",
-        "Repentance, patience, and gratitude",
-        "Ongoing charity, beneficial knowledge, and a righteous child who prays for them"
+        "Source Amnesia",
+        "Digital Amnesia",
+        "Information Fatigue Syndrome",
+        "Digital Dementia"
       ],
-      "correctIndex": 3,
-      "learning": "A hadith in Sahih Muslim (1631) states that when a person dies, all their deeds end except three: ongoing charity, beneficial knowledge, or a righteous child who prays for them.",
+      "correctIndex": 1,
+      "learning": "Researchers behind the 'Google Effect' paper call this phenomenon Digital Amnesia: the moment we write something down or save it, our brains take that as permission to let it go.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "In the Scrum framework, which artifact visually tracks a sprint's remaining work and helps a team see whether it's on schedule?",
+      "question": "In Scrum, which artifact is used to visualize a sprint's progress and show how much work remains?",
       "options": [
-        "Burndown Chart",
-        "Sprint Backlog",
         "Kanban Board",
-        "Product Backlog"
+        "Product Backlog",
+        "Burndown Chart",
+        "Sprint Backlog"
       ],
-      "correctIndex": 0,
-      "learning": "The Burndown Chart is the Scrum artifact that visualizes a sprint's progress, showing remaining work and whether the team is tracking to schedule.",
+      "correctIndex": 2,
+      "learning": "The Burndown Chart visualizes the progress of the Sprint, showing remaining work and helping the team track if they're on schedule.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "What is the main purpose of breaking a project into small, iterative cycles called Sprints, as done in the Scrum framework?",
+      "question": "What is the primary purpose of breaking a project into short, iterative cycles called Sprints in the Scrum framework?",
       "options": [
-        "To increase the overall length of the project",
-        "To allow for more flexibility and quicker adjustments",
+        "To eliminate the need for team meetings",
+        "To lengthen the overall project timeline",
         "To reduce the number of team members needed",
-        "To eliminate the need for a Product Owner"
-      ],
-      "correctIndex": 1,
-      "learning": "Scrum breaks work into iterative Sprints specifically to allow more flexibility and quicker adjustments, rather than to shorten teams or extend timelines.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "In an Islamic framework of life's purpose, which three roles are humans described as being called to fulfill?",
-      "options": [
-        "Seeking wealth, gaining knowledge, and building a family legacy",
-        "Worshiping Allah, serving as stewards (khalifah) of the Earth, and preparing for the Hereafter through accountability",
-        "Achieving success, helping others, and finding happiness",
-        "Performing rituals, avoiding sin, and seeking forgiveness"
-      ],
-      "correctIndex": 1,
-      "learning": "Life's purpose in this Islamic framework centers on three roles: worshiping Allah, serving as khalifah (steward) of the Earth, and living as a test of faith and conduct through accountability.",
-      "articleTitle": "Ever Wondered Why We're Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What Arabic term, used in the Quran, refers to humanity's role as a steward or caretaker of the Earth?",
-      "options": [
-        "Khalifah",
-        "Taqwa",
-        "Shura",
-        "Ummah"
-      ],
-      "correctIndex": 0,
-      "learning": "Khalifah is the Quranic term for humanity's role as steward or caretaker of the Earth, carrying responsibility for preserving faith and unity within the community.",
-      "articleTitle": "Ever Wondered Why We're Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "The Quran verse describing 'an atom's weight of good' and 'an atom's weight of evil' each being seen by their doer illustrates which principle?",
-      "options": [
-        "That only major sins are ever recorded",
-        "That good deeds automatically cancel out bad deeds",
-        "That intentions matter more than actions",
-        "That every deed, no matter how small, is accounted for and rewarded or punished"
+        "To allow for more flexibility and quicker adjustments"
       ],
       "correctIndex": 3,
-      "learning": "Quran 99:7-8 teaches that every deed, however small ('an atom's weight'), is accounted for by Allah, reinforcing that no good effort is wasted.",
-      "articleTitle": "Ever Wondered Why We're Here?",
+      "learning": "Scrum breaks the process into smaller, iterative cycles called Sprints specifically to allow for more flexibility and quicker adjustments.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "In Islamic theology, what does the Arabic term 'khalifah' — used to describe humanity's role on Earth — mean?",
+      "options": [
+        "Prophet",
+        "Caretaker or steward",
+        "Judge",
+        "Warrior"
+      ],
+      "correctIndex": 1,
+      "learning": "Muslims are described as khalifah, or caretakers/stewards of Allah's creation on Earth, a role that carries responsibility for preserving faith and unity.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In PCIe power management, which state is a very light sleep mode meant for short idle periods, letting the link wake up quickly to resume activity?",
+      "question": "In Islamic teaching on the purpose of life, humanity's role centers on worshiping Allah, acting as caretakers of the Earth, and what third element?",
       "options": [
-        "L2",
-        "L0",
+        "Accumulating wealth for future generations",
+        "Achieving political leadership",
+        "Memorizing religious scripture",
+        "Preparing for the Hereafter through accountability for one's actions"
+      ],
+      "correctIndex": 3,
+      "learning": "Life's purpose revolves around three roles: worshiping Allah, serving as stewards of the Earth, and preparing for the eternal Hereafter through conscious, accountable choices.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which question did the Prophet Muhammad (peace be upon him) ask himself as a model of gratitude toward Allah, as recorded in Sahih Bukhari?",
+      "options": [
+        "Shall I not be a grateful servant?",
+        "Shall I not be a righteous servant?",
+        "Shall I not be a humble servant?",
+        "Shall I not be a patient servant?"
+      ],
+      "correctIndex": 0,
+      "learning": "The Prophet Muhammad modeled gratitude by asking, 'Shall I not be a grateful servant?' (Sahih Bukhari 1130), showing gratitude as the heart of worship.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In PCIe power management, which low-power link state is designed for very short idle periods and can 'wake up' almost instantly to resume full activity?",
+      "options": [
         "L0s",
+        "L1.2",
+        "L2",
         "L1.0"
       ],
-      "correctIndex": 2,
-      "learning": "L0s is PCIe's lightest power-saving state, designed for very short idle periods so the link can wake almost instantly, unlike the deeper L1 substates or L2.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "As a PCIe device moves into deeper power-saving states such as L1.1, L1.2, and L2, what is the general tradeoff involved?",
-      "options": [
-        "Greater energy savings in exchange for a longer wake-up (resume) time",
-        "Faster wake-up time but higher energy use",
-        "Increased data transfer speed but reduced reliability",
-        "Lower manufacturing cost but reduced device lifespan"
-      ],
       "correctIndex": 0,
-      "learning": "PCIe's deeper power states (L1.1, L1.2, L2) power down more components for greater energy savings, at the cost of a longer time to wake back up.",
+      "learning": "L0s is a very light sleep state designed for very short durations of idleness, allowing the link to quickly wake up and resume activity.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "In Islamic theology, what is the key distinction between 'Qada'' and 'Qadr'?",
+      "question": "Which PCIe power state leaves a device almost completely powered down, offering the greatest energy savings but the longest wake-up time?",
       "options": [
-        "Qada' is destiny while Qadr is free will, with no link to Allah's knowledge",
-        "Qada' is prayer, while Qadr is fasting",
-        "Qada' refers to the Hereafter, while Qadr refers to worldly life",
-        "Qada' is the actual unfolding of events in life, while Qadr is Allah's complete, eternal preordained plan and knowledge of all things"
+        "L0",
+        "L0s",
+        "L1.1",
+        "L2"
       ],
       "correctIndex": 3,
-      "learning": "Qada' refers to the actual events that unfold in a person's life, while Qadr is Allah's complete and eternal knowledge and plan encompassing everything that will happen.",
-      "articleTitle": "The Art of Qada' and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
+      "learning": "L2 is the deepest PCIe power state, used for the longest periods of inactivity, with the highest power savings and the longest wake-up time.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     },
     {
-      "question": "In Islamic teaching, what does a well-known verse in Surah Ar-Ra'd (13:11) say must happen before Allah changes the condition of a people?",
+      "question": "In Islamic theology, which term refers to the actual unfolding of events in a person's life, as shaped by their own actions and decisions?",
       "options": [
-        "A change in the weather or environment",
-        "A change in leadership",
-        "A change within themselves (their own inner state)",
-        "A period of divine punishment"
+        "Qadr",
+        "Tawakkul",
+        "Qada'",
+        "Taqwa"
       ],
       "correctIndex": 2,
-      "learning": "Surah Ar-Ra'd 13:11 teaches that Allah does not change the condition of a people until they change what is within themselves first.",
-      "articleTitle": "The Art of Qada' and Qadr",
+      "learning": "Qada' refers to the actual occurrence of events in our lives, representing the unfolding of events as they happen, shaped by our actions and decisions.",
+      "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "When a person's sincere prayer (Dua) appears to change the outcome of their life (their Qada'), how is this reconciled with Allah's Qadr (preordained plan)?",
+      "question": "According to the concept of Qada' and Qadr, what can influence or alter a person's Qada' (the unfolding events of their life)?",
       "options": [
-        "It means Allah's plan was incomplete and had to be revised",
-        "It proves that Qadr does not actually exist",
-        "The change itself, and the decision to pray, were already known and included within Allah's Qadr",
-        "It means the person's fate was altered purely by chance"
+        "Sincere Dua (supplication) and one's own actions",
+        "Only the actions of religious scholars",
+        "Random chance alone",
+        "Nothing — Qada' is completely fixed and unchangeable"
+      ],
+      "correctIndex": 0,
+      "learning": "Qada' can be influenced or altered by Dua (supplication) and our own actions, even though this change was always known to Allah as part of His Qadr.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Per a hadith recorded in Jami at-Tirmidhi, what does Allah do when a Muslim sincerely supplicates (makes Dua), as long as the request isn't sinful or one that severs family ties?",
+      "options": [
+        "Allah ignores the request until the Day of Judgment",
+        "Allah always grants the request within 40 days",
+        "Allah either grants the request or turns away an equivalent amount of evil from them",
+        "Allah grants it only if it is repeated seven times"
       ],
       "correctIndex": 2,
-      "learning": "Even when Dua appears to change a person's Qada', that change and the act of praying were always encompassed within Allah's Qadr, since His knowledge is complete.",
-      "articleTitle": "The Art of Qada' and Qadr",
+      "learning": "A hadith in Jami at-Tirmidhi (3573) states that Allah grants a sincere supplication or turns away an equivalent amount of evil from the person who made it.",
+      "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "A word-frequency analysis of the Quran tested whether the Pareto Principle (the 80/20 rule) applied to its vocabulary. What share of the Quran's total word count did the top 20 most frequent words actually account for?",
+      "question": "In a word-frequency analysis of the Quran's Arabic text, what percentage of the entire text did the top 20 most-repeated words actually account for?",
       "options": [
         "About 20.83%",
+        "About 80%",
         "About 5%",
-        "About 50%",
-        "About 80%"
+        "About 50%"
       ],
       "correctIndex": 0,
-      "learning": "A data analysis of Quranic word frequency found the top 20 most common words made up only about 20.83% of total word count, not the 80% the Pareto Principle would predict.",
+      "learning": "A data analysis found the top 20 most-repeated words in the Quran only accumulate to about 20.83% of the text, disproving an 80/20 Pareto-style assumption.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In Arabic script, what term refers to the small diacritical markings placed above or below letters to indicate vowel sounds and pronunciation?",
+      "question": "What term refers to the small diacritical marks placed above or below Arabic letters to indicate their vowel sounds and pronunciation?",
       "options": [
-        "Tafsir",
-        "Tashkeel",
+        "Hijaiyah",
+        "Tajweed",
         "Isnad",
-        "Tajweed"
-      ],
-      "correctIndex": 1,
-      "learning": "Tashkeel are the diacritical marks placed above or below Arabic letters to indicate vowel sounds; without them, the same spelling can be read multiple ways.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "When analyzing word frequency in the Quran, why was the original Arabic text used instead of an English translation?",
-      "options": [
-        "Because no English translation of the Quran exists",
-        "Because analyzing Arabic text was computationally faster",
-        "Because Arabic words are always exactly one syllable long",
-        "Because translations aren't a direct match, and Arabic has vastly more distinct words than English (roughly a 71-to-1 ratio)"
+        "Tashkeel"
       ],
       "correctIndex": 3,
-      "learning": "The analysis used Arabic instead of English translation because English translations aren't a direct match and Arabic has an estimated 71 times more distinct words than English.",
+      "learning": "Tashkeel are the small markings placed above or below Arabic letters to indicate which vowel sound to use, similar to vowels in English.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In this word-frequency analysis of the Quran, why was the original Arabic text used instead of an English translation?",
+      "options": [
+        "Because no English translation API was available",
+        "Because Arabic text loads faster via API",
+        "English translations aren't a direct translation, and Arabic has far more distinct words than English",
+        "Because Arabic words are easier to count programmatically"
+      ],
+      "correctIndex": 2,
+      "learning": "The analysis used Arabic text because English translation may not be a direct translation, and there are roughly 12 million distinct Arabic words versus 170,000 English words — about a 71:1 ratio.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     }
   ],
-  "fetchedAt": "2026-09-24T17:15:22.762Z"
+  "fetchedAt": "2026-09-24T22:36:43.188Z"
 }
