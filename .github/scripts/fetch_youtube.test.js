@@ -1,5 +1,26 @@
 import { describe, it, expect } from 'vitest';
-import { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse, findReusableEnrichment, buildEnrichmentLogEntry } from './fetch_youtube.js';
+import { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse, findReusableEnrichment, buildEnrichmentLogEntry, isLivestreamPage } from './fetch_youtube.js';
+
+describe('isLivestreamPage', () => {
+  // Real fragments from YouTube watch pages (2026-09-24): an upcoming/live stream and an ended one
+  // both carry "isLiveContent":true; a normal upload carries false.
+  it('flags a live or upcoming stream', () => {
+    expect(isLivestreamPage('..."isLive":true,"isLiveContent":true,"lengthSeconds":"0"...')).toBe(true);
+  });
+
+  it('flags a livestream that has already ended', () => {
+    expect(isLivestreamPage('..."lengthSeconds":"4415","isLiveContent":true,...')).toBe(true);
+  });
+
+  it('does not flag a normal upload', () => {
+    expect(isLivestreamPage('..."lengthSeconds":"1203","isLiveContent":false,...')).toBe(false);
+  });
+
+  it('does not flag a page without the field (e.g. a failed or consent page), so a YouTube hiccup cannot empty the feed', () => {
+    expect(isLivestreamPage('<html>consent page</html>')).toBe(false);
+    expect(isLivestreamPage('')).toBe(false);
+  });
+});
 
 describe('decodeHtmlEntities', () => {
   it('decodes named entities', () => {

@@ -187,6 +187,38 @@ async function fetchRss(channelId) {
   return [];
 }
 
+// Livestreams are excluded entirely (site owner's call, 2026-09-24): an upcoming or still-live
+// stream has nothing for Gemini to watch - it got curated anyway, with a summary written from
+// its title/description alone, and every enrichment attempt 403'd. YouTube's watch page marks
+// upcoming, live and ended streams alike with "isLiveContent":true (verified on real pages,
+// including with fetchHtml's own bare request). A page without the field counts as not live, so
+// a YouTube hiccup keeps a video rather than emptying the feed.
+function isLivestreamPage(html) {
+  return /"isLiveContent":true/.test(html || '');
+}
+
+async function isLivestream(videoId) {
+  try {
+    return isLivestreamPage(await fetchHtml(`https://www.youtube.com/watch?v=${videoId}`));
+  } catch (err) {
+    console.error(`Livestream check failed for ${videoId}`, err);
+    return false;
+  }
+}
+
+async function withoutLivestreams(videos, label) {
+  const kept = [];
+  for (const video of videos) {
+    if (await isLivestream(video.videoId)) {
+      console.log(`Skipping livestream (${label}): ${video.title}`);
+    } else {
+      kept.push(video);
+    }
+    await sleep(500); // Same polite pacing idea as the RSS loop, lighter: one page per video
+  }
+  return kept;
+}
+
 // Scrape YouTube search for Discovery feature
 async function scrapeDiscoveryVideos(query) {
   try {
@@ -503,7 +535,7 @@ async function main() {
   // _data/youtube_enrichment_log.json at the end - see that function's own comment on why.
   const enrichmentLog = [];
 
-  const videoCandidates = [];
+  let videoCandidates = [];
 
   // 1. Roll for Discovery (20% chance)
   const roll = Math.random();
@@ -555,7 +587,10 @@ async function main() {
     }
   }
 
-  console.log(`Collected ${videoCandidates.length} total video candidates. Sending to Gemini for bulk evaluation...`);
+  // Before Gemini sees them, so a livestream can't win a slot or cost evaluation tokens.
+  const candidatesBefore = videoCandidates.length;
+  videoCandidates = await withoutLivestreams(videoCandidates, "candidate");
+  console.log(`Collected ${videoCandidates.length} total video candidates (${candidatesBefore - videoCandidates.length} livestream(s) skipped). Sending to Gemini for bulk evaluation...`);
 
   if (videoCandidates.length === 0) {
     console.log("No candidates found to evaluate.");
@@ -603,6 +638,9 @@ async function main() {
       existingVideos = data.videos || [];
     } catch (e) { }
   }
+  // Also clears livestreams already in the feed from before this rule existed. Note the feed is
+  // only rewritten on a run that curates at least one new video (see "Save" below).
+  existingVideos = await withoutLivestreams(existingVideos, "already in feed");
 
   // --------------------------------------------------------
   // NEW: Deep Summarization using Gemini's agentic video processing
@@ -734,4 +772,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse, findReusableEnrichment, buildEnrichmentLogEntry };
+module.exports = { decodeHtmlEntities, parseAtomEntry, parseEvaluationResponse, findReusableEnrichment, buildEnrichmentLogEntry, isLivestreamPage };
