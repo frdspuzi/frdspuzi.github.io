@@ -1,75 +1,75 @@
 {
   "learnings": [
     {
-      "question": "In Islamic theology, which term refers to the actual occurrence and unfolding of events in a person's life that can be influenced or altered by supplication (Dua) and actions?",
+      "question": "In the relationship between destiny and supplication, what occurs with regard to Qadr when a person's Dua alters their Qada'?",
       "options": [
-        "Qadr",
-        "Tawakkul",
-        "Fitrah",
-        "Qada’"
+        "Qadr is overridden and voided by the exercise of human free will",
+        "Qadr is rewritten and replaced with an entirely new divine decree",
+        "The change is already encompassed within Qadr, as it was always known and written in Allah's plan",
+        "Qadr is temporarily suspended until the outcome of the supplication is finalized"
       ],
-      "correctIndex": 3,
-      "learning": "Qada’ refers to the actual occurrence and unfolding of events in life, which can be altered through actions and Dua (supplication), while Qadr represents Allah’s complete, preordained plan and eternal knowledge.",
+      "correctIndex": 2,
+      "learning": "Although sincere Dua and human actions can alter Qada’ (the unfolding of life events), the decision to make Dua and the subsequent change itself were always known to Allah and are already encompassed within Qadr.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In PCIe power management, which L1 substate specifically powers down the electrical circuits of the main link to achieve greater energy savings than L1.0?",
+      "question": "What term refers to the small markings placed above or below Arabic letters to indicate proper pronunciation and specific vowel sounds?",
       "options": [
-        "L1.1",
-        "L2",
-        "L1.2",
-        "L0s"
+        "Tanween",
+        "Tajweed",
+        "Uthmani",
+        "Tashkeel"
       ],
-      "correctIndex": 0,
-      "learning": "Within PCIe L1 power-saving states, L1.1 achieves deeper energy savings than L1.0 by specifically powering down the electrical circuits of the main link, resulting in an increased wake-up time.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "When analyzing Arabic text, what precision challenge arises from removing Tashkeel (vowel markings) to simplify the dataset?",
-      "options": [
-        "The right-to-left reading order is permanently inverted in tabular displays",
-        "The text encoding becomes incompatible with standard JSON and data structures",
-        "Different words that share the same letter spelling become indistinguishable",
-        "Words can no longer be split and tokenized using standard whitespace delimiters"
-      ],
-      "correctIndex": 2,
-      "learning": "While omitting Tashkeel (vowel markings) makes Arabic text simpler and more uniform for data analysis, it sacrifices precision because distinct Arabic words can share the exact same letter spelling when vowel marks are absent.",
+      "correctIndex": 3,
+      "learning": "Tashkeel refers to the small markings placed above or below Arabic letters to indicate how words should be pronounced, specifically denoting which vowel sounds to use.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Regarding the stewardship role of 'khalifah,' who holds the responsibility for preserving faith and maintaining communal unity?",
+      "question": "In Islamic tradition, which two groups of creations are specifically stated in Quran 51:56 as being created to worship Allah?",
       "options": [
-        "Every individual collectively, rather than appointed leaders alone",
-        "Appointed leaders and scholars exclusively",
-        "Solely historical figures and former prophets",
-        "Only the political authorities within a state"
+        "Mankind and animals",
+        "Angels and mankind",
+        "Jinn and angels",
+        "Jinn and mankind"
       ],
-      "correctIndex": 0,
-      "learning": "Under the role of khalifah (caretaker), preserving religious teachings and maintaining communal unity is not the exclusive domain of appointed leaders, but a collective responsibility shared by each individual.",
+      "correctIndex": 3,
+      "learning": "According to Quran 51:56, the foundational divine purpose for the creation of both jinn and mankind is exclusively to worship Allah.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which Scrum artifact is used to visualize the progress of a Sprint and display the remaining work to determine if the team is on schedule?",
+      "question": "What is the standard format used to write a User Story within a Scrum Product Backlog?",
       "options": [
-        "Product Backlog",
-        "User Story",
-        "Burndown Chart",
-        "Sprint Backlog"
+        "[Feature] should be implemented by [date]",
+        "I want [feature] because [reason]",
+        "As a [role], I need [feature], so that [reason]",
+        "For [role], build [feature] by [milestone]"
       ],
       "correctIndex": 2,
-      "learning": "In Scrum, a Burndown Chart is an artifact that visualizes the progress of a Sprint by showing remaining work and helping the team track if they are on schedule.",
+      "learning": "In Scrum, user stories within the Product Backlog are structured using the standard format: 'As a [role], I need [feature], so that [reason]'.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
+    },
+    {
+      "question": "Which PCIe low-power state is designed for very short durations of idleness and allows the link to quickly wake up and resume activity?",
+      "options": [
+        "L2",
+        "L0",
+        "L1.2",
+        "L0s"
+      ],
+      "correctIndex": 3,
+      "learning": "The PCIe L0s state functions as a very light sleep mode designed for very short periods of idleness, enabling the link to wake up rapidly to resume full activity.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
     }
   ],
-  "fetchedAt": "2026-09-22T23:53:57.133Z"
+  "fetchedAt": "2026-09-24T00:03:45.359Z"
 }
