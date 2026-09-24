@@ -1,28 +1,100 @@
 {
   "videos": [
     {
-      "title": "The Dark Arts of Skill Engineering — Paul Bakaus, Renaissance Geek (Impeccable)",
-      "url": "https://www.youtube.com/watch?v=SQMCtZX3trg",
-      "videoId": "SQMCtZX3trg",
+      "title": "AI Engineer Paris 2026 Main Stage: Google DeepMind, ElevenLabs, Hugging Face & Stripe | Day 2",
+      "url": "https://www.youtube.com/watch?v=g0vqT_wZtXA",
+      "videoId": "g0vqT_wZtXA",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Telling an AI what not to do is a trap: banning generic fonts or colors merely shifts the model into the next closest cliché in its latent space. In this masterclass, the creator of Impeccable reveals how to transcend basic prompt engineering by building 'harness engineering' architectures—using adversarial sub-agents, dynamic scripts, and real-time execution hooks to force original, reliable results. If you want to turn erratic AI outputs into production-grade, deterministically guided workflows across different harnesses, this talk is an essential blueprint.",
-      "dateAdded": "2026-09-22T00:20:43.515Z",
+      "summary": "Get an inside look at how leading tech teams are moving AI beyond chat prompts into production software factories and autonomous coding workflows. It provides real architectural insights you can apply directly to your fullstack development projects.",
+      "dateAdded": "2026-09-24T00:04:17.700Z",
+      "timestamps": []
+    },
+    {
+      "title": "AI Engineer Paris 2026 Opening Keynotes: Mistral, Langfuse & Sizzy | Day 1",
+      "url": "https://www.youtube.com/watch?v=CGq9KRSb9Kc",
+      "videoId": "CGq9KRSb9Kc",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Discover the latest developer tooling ecosystem for building production-ready AI applications, featuring keynotes from teams like Langfuse and Mistral. It is packed with practical ideas for integrating AI agents seamlessly into modern web apps.",
+      "dateAdded": "2026-09-24T00:04:17.700Z",
+      "timestamps": []
+    },
+    {
+      "title": "His biggest career regret",
+      "url": "https://www.youtube.com/shorts/uv1kmYcf9TM",
+      "videoId": "uv1kmYcf9TM",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "If you only care that your code works or your metrics went up, you're quietly sabotaging your long-term growth. In this candid reflection, an experienced tech builder shares his biggest career regret—taking shortcuts—and reveals why shifting from fast iteration to deep curiosity is the ultimate competitive advantage. Watch this to learn how dedicating dedicated time to understand underlying systems can transform your trajectory as an engineer.",
+      "dateAdded": "2026-09-24T00:04:17.700Z",
       "timestamps": [
         {
-          "startTime": 392,
-          "endTime": 480,
-          "topic": "Prompting vs. Harness Engineering: Escaping Model Gravity"
+          "startTime": 0,
+          "endTime": 29,
+          "topic": "The hidden trap of moving on the moment something works"
         },
         {
-          "startTime": 480,
-          "endTime": 675,
-          "topic": "Adversarial Sub-Agents: Eliminating LLM Confirmation Bias"
+          "startTime": 29,
+          "endTime": 61,
+          "topic": "How chasing fast metrics at Meta and startups blinded deep technical understanding"
         },
         {
-          "startTime": 1780,
-          "endTime": 2020,
-          "topic": "Hooks and Passive Guardrails: Enforcing Rules in Real Time"
+          "startTime": 61,
+          "endTime": 96,
+          "topic": "The 70/30 rule: Shifting your time toward genuine technical mastery"
+        }
+      ]
+    },
+    {
+      "title": "His biggest career regret after 30 years",
+      "url": "https://www.youtube.com/shorts/ufftJLJ2mGE",
+      "videoId": "ufftJLJ2mGE",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Achieving your biggest dream can actually leave you empty and lost if you don't know the answer to one crucial question: what do you do the day after? This video reveals the hidden identity trap that blindsides elite athletes and high achievers once they reach their peak. Watch this to ensure your ultimate goal doesn't become a dead end for your purpose and skills.",
+      "dateAdded": "2026-09-24T00:04:17.700Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 18,
+          "topic": "The 'day after' thought experiment"
+        },
+        {
+          "startTime": 18,
+          "endTime": 36,
+          "topic": "The danger of peaking without skills outside your domain"
+        },
+        {
+          "startTime": 36,
+          "endTime": 50,
+          "topic": "Why planning beyond your ultimate goal is essential"
+        }
+      ]
+    },
+    {
+      "title": "Creator of Scala: How AI Will Impact Programming Languages | Martin Odersky",
+      "url": "https://www.youtube.com/watch?v=_l2qD0rJlFo",
+      "videoId": "_l2qD0rJlFo",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "As AI churns out mountains of code that humans can no longer realistically review, software development faces an existential security crisis. The solution isn't trying to review faster—it's evolving programming languages into strict, capability-based type systems that act as unbreakable contracts for AI agents. Watch to discover how the future of programming will shift from writing raw syntax to defining bulletproof boundaries that AI is mathematically unable to breach.",
+      "dateAdded": "2026-09-24T00:04:17.700Z",
+      "timestamps": [
+        {
+          "startTime": 15,
+          "endTime": 105,
+          "topic": "The AI code review crisis and why types must become the contract"
+        },
+        {
+          "startTime": 172,
+          "endTime": 285,
+          "topic": "Why memory safety is not enough: Capability-based security for AI agents"
+        },
+        {
+          "startTime": 322,
+          "endTime": 435,
+          "topic": "How capability types enforce permissions and prevent resource leaks in practice"
         }
       ]
     },
@@ -44,6 +116,32 @@
           "startTime": 36,
           "endTime": 91,
           "topic": "Live demonstration of high-reasoning visual generation during active conversation"
+        }
+      ]
+    },
+    {
+      "title": "5 Tempat simpanan untuk daily return",
+      "url": "https://www.youtube.com/shorts/nc9vQYylZG0",
+      "videoId": "nc9vQYylZG0",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Stop letting your emergency savings sit idle in low-interest bank accounts when you can earn up to 5% daily returns with total liquidity and Shariah compliance. This breakdown reveals five proven places to park your short-term cash—including PIDM-protected digital banks and high-yield money market funds—so your money works around the clock without locking you in. Watch this to immediately optimize your cash flow and maximize passive daily returns on money you use every day.",
+      "dateAdded": "2026-09-24T00:04:17.700Z",
+      "timestamps": [
+        {
+          "startTime": 13,
+          "endTime": 70,
+          "topic": "High-yield daily returns with ShopeePay Money+ and Touch 'n Go GO+"
+        },
+        {
+          "startTime": 71,
+          "endTime": 100,
+          "topic": "AEON Bank: PIDM-protected digital banking with daily profit rates"
+        },
+        {
+          "startTime": 100,
+          "endTime": 148,
+          "topic": "Maximizing idle cash for stock investors via Moomoo Cash Plus and Versa Cash-i"
         }
       ]
     },
@@ -100,6 +198,27 @@
       ]
     },
     {
+      "title": "Gen Z tak minat beli rumah?",
+      "url": "https://www.youtube.com/shorts/PXdx3GmbL6o",
+      "videoId": "PXdx3GmbL6o",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Renting forever might seem convenient, but waiting until your 40s to buy property traps you with drastically higher monthly installments and overwhelming family commitments. Buying a starter home young unlocks longer loan tenures and manageable payments before life gets expensive, yet many youths trade this wealth-building advantage for temporary lifestyle clout. Watch this video to discover why starting small early is the ultimate financial shortcut you can't afford to overlook.",
+      "dateAdded": "2026-09-24T00:04:17.700Z",
+      "timestamps": [
+        {
+          "startTime": 28,
+          "endTime": 71,
+          "topic": "The financial advantage of buying property at a young age"
+        },
+        {
+          "startTime": 71,
+          "endTime": 132,
+          "topic": "The lifestyle and social media trap that keeps Gen Z renting"
+        }
+      ]
+    },
+    {
       "title": "[S02:E01] Subsidi dah ditambah, kenapa bil elektrik masih naik? - Dr.Aimi, Penganalisis Ekonomi",
       "url": "https://www.youtube.com/watch?v=Tc9h2ClJ8DQ",
       "videoId": "Tc9h2ClJ8DQ",
@@ -122,32 +241,6 @@
           "startTime": 2340,
           "endTime": 2680,
           "topic": "Why a uniform RM3,100 minimum wage fails without localized data and productivity"
-        }
-      ]
-    },
-    {
-      "title": "Beli rumah siap atau bina sendiri?",
-      "url": "https://www.youtube.com/shorts/F3buzRa7PpA",
-      "videoId": "F3buzRa7PpA",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Building your dream home from scratch might seem like a massive money-saver, but hidden contractor traps and zero accountability can quickly turn your project into an expensive nightmare. Discover the crucial trade-offs between custom building versus buying from a developer—including legal safeguards, scam prevention, and neighborhood control—so you don't risk losing your hard-earned savings. Watch this breakdown before making the biggest property investment of your life.",
-      "dateAdded": "2026-09-22T23:54:13.177Z",
-      "timestamps": [
-        {
-          "startTime": 12,
-          "endTime": 48,
-          "topic": "The cost reality: Why custom builds are cheaper and where developer markups come from"
-        },
-        {
-          "startTime": 49,
-          "endTime": 78,
-          "topic": "The major risks of runaway contractors and project delays when building yourself"
-        },
-        {
-          "startTime": 79,
-          "endTime": 135,
-          "topic": "Why buying from a developer provides better legal protection and neighborhood planning"
         }
       ]
     },
@@ -254,127 +347,7 @@
           "topic": "Deadly Red Flags: Why VCs Back Adaptable Founders Over Polished Ideas"
         }
       ]
-    },
-    {
-      "title": "When People Yearn To Enter Their Graves | Signs of the Hour Ep. 18 | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=M4ka-T3tXPc",
-      "videoId": "M4ka-T3tXPc",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "While those in the graves would give anything for just one more minute on earth to perform a single good deed, many living people paradoxically wish for death out of worldly burnout and spiritual emptiness. This eye-opening lecture dismantles the dangerous illusion of viewing death as an escape and reveals the profound prophetic mindset needed to find purpose in every extra day you are given. Watch this to radically shift your perspective on hardship, protect your faith in times of trial, and realign your life's ultimate calculus.",
-      "dateAdded": "2026-09-22T23:54:13.177Z",
-      "timestamps": [
-        {
-          "startTime": 85,
-          "endTime": 210,
-          "topic": "The Prophecy of Emptiness: Wishing for the Grave Out of Dunya Exhaustion"
-        },
-        {
-          "startTime": 320,
-          "endTime": 440,
-          "topic": "Escape vs. Faith: The Only Permissible Way to Pray Concerning Death"
-        },
-        {
-          "startTime": 1080,
-          "endTime": 1210,
-          "topic": "The Ultimate Paradox: Why Every Extra Day of Life is an Invaluable Gift"
-        }
-      ]
-    },
-    {
-      "title": "How Allah Wants You to Think About Success",
-      "url": "https://www.youtube.com/watch?v=DjE07PPgkf0",
-      "videoId": "DjE07PPgkf0",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "If you have checked every worldly box—career, wealth, and family—yet still feel an unexplainable inner void, you are measuring your life by the wrong scoreboard. This video delivers a powerful wake-up call on how true success is defined by Allah rather than societal expectations, revealing why outward achievements crumble without private spiritual integrity. Watch this to realign your priorities and start investing in what actually survives beyond the grave.",
-      "dateAdded": "2026-09-22T00:20:43.516Z",
-      "timestamps": [
-        {
-          "startTime": 75,
-          "endTime": 250,
-          "topic": "Why worldly metrics fail and Allah judges hearts over wealth"
-        },
-        {
-          "startTime": 455,
-          "endTime": 645,
-          "topic": "The danger of hidden sins and why private integrity defines real manhood"
-        },
-        {
-          "startTime": 805,
-          "endTime": 1045,
-          "topic": "What truly follows you to the grave vs. what gets left behind"
-        }
-      ]
-    },
-    {
-      "title": "Why strategic programming is like a mixing desk",
-      "url": "https://www.youtube.com/shorts/CgQCi8qQ3Fw",
-      "videoId": "CgQCi8qQ3Fw",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Strategic programming is notoriously difficult to master because architectural blunders take months to surface—often long after the developer who made them has moved on. This quick breakdown reveals why balancing decisions like microservices versus monoliths is like tuning a giant mixing desk where you can't hear the bad notes until nearly a year later. Watch this to understand how delayed feedback traps engineering teams and how to approach software design with long-term foresight.",
-      "dateAdded": "2026-09-22T23:54:13.177Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 15,
-          "topic": "Why strategic programming mistakes take months to surface"
-        },
-        {
-          "startTime": 15,
-          "endTime": 42,
-          "topic": "The mixing desk analogy: tuning microservices vs. monoliths"
-        }
-      ]
-    },
-    {
-      "title": "Plan by day, let agents code by night",
-      "url": "https://www.youtube.com/shorts/OIulx_R3TLY",
-      "videoId": "OIulx_R3TLY",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Stop babysitting your AI tools and burning out from non-stop context-switching across terminal windows. By adopting the 'day shift vs. night shift' workflow—where you focus on high-level planning and let autonomous agents write clean code while you sleep—you can maximize your productivity without the cognitive fatigue. Watch this clip to see how running AI agents completely AFK unlocks true developer leverage.",
-      "dateAdded": "2026-09-22T23:54:13.177Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 18,
-          "topic": "The 'day shift and night shift' AI agent model"
-        },
-        {
-          "startTime": 18,
-          "endTime": 36,
-          "topic": "Overcoming burnout from constant context-switching"
-        },
-        {
-          "startTime": 36,
-          "endTime": 54,
-          "topic": "Running AI agents AFK to focus on high-leverage tasks"
-        }
-      ]
-    },
-    {
-      "title": "Why your AI harness matters more than the model you pick",
-      "url": "https://www.youtube.com/shorts/8Yg74nkMvW0",
-      "videoId": "8Yg74nkMvW0",
-      "channel": "Beyond Coding",
-      "category": "Tech & Engineering",
-      "summary": "Think the underlying AI model is all that matters for your coding workflow? It turns out the harness you choose matters far more—a top-tier model can completely fail in the wrong setup while thriving in another. Watch this quick breakdown to understand why your developer tooling makes or breaks your results and why you have to keep experimenting to stay ahead.",
-      "dateAdded": "2026-09-22T23:54:13.177Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 12,
-          "topic": "Why the AI harness matters more than the underlying model"
-        },
-        {
-          "startTime": 12,
-          "endTime": 30,
-          "topic": "The moving target of coding tools and why continuous experimentation is essential"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-09-22T23:56:21.820Z"
+  "lastUpdated": "2026-09-24T00:08:50.073Z"
 }

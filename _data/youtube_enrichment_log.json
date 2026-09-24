@@ -1,61 +1,143 @@
 [
   {
-    "videoId": "FVkp6tc2rNY",
-    "title": "🪄 Gemini Live API in action",
+    "videoId": "g0vqT_wZtXA",
+    "title": "AI Engineer Paris 2026 Main Stage: Google DeepMind, ElevenLabs, Hugging Face & Stripe | Day 2",
+    "outcome": "failed",
+    "errors": [
+      {
+        "attempt": 1,
+        "message": "403 The caller does not have permission",
+        "status": 403
+      },
+      {
+        "attempt": 2,
+        "message": "403 The caller does not have permission",
+        "status": 403
+      },
+      {
+        "attempt": 3,
+        "message": "403 The caller does not have permission",
+        "status": 403
+      },
+      {
+        "attempt": 4,
+        "message": "403 The caller does not have permission",
+        "status": 403
+      },
+      {
+        "attempt": 5,
+        "message": "403 The caller does not have permission",
+        "status": 403
+      }
+    ]
+  },
+  {
+    "videoId": "CGq9KRSb9Kc",
+    "title": "AI Engineer Paris 2026 Opening Keynotes: Mistral, Langfuse & Sizzy | Day 1",
+    "outcome": "failed",
+    "errors": [
+      {
+        "attempt": 1,
+        "message": "403 The caller does not have permission",
+        "status": 403
+      },
+      {
+        "attempt": 2,
+        "message": "403 The caller does not have permission",
+        "status": 403
+      },
+      {
+        "attempt": 3,
+        "message": "403 The caller does not have permission",
+        "status": 403
+      },
+      {
+        "attempt": 4,
+        "message": "403 The caller does not have permission",
+        "status": 403
+      },
+      {
+        "attempt": 5,
+        "message": "403 The caller does not have permission",
+        "status": 403
+      }
+    ]
+  },
+  {
+    "videoId": "uv1kmYcf9TM",
+    "title": "His biggest career regret",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "1ZG3xoGqxLI",
-    "title": "TNG eWallet roasting warga Threads?",
+    "videoId": "ufftJLJ2mGE",
+    "title": "His biggest career regret after 30 years",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "QFxzKnP3VuE",
-    "title": "Cukai Malaysia vs Singapore",
+    "videoId": "_l2qD0rJlFo",
+    "title": "Creator of Scala: How AI Will Impact Programming Languages | Martin Odersky",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "Tc9h2ClJ8DQ",
-    "title": "[S02:E01] Subsidi dah ditambah, kenapa bil elektrik masih naik? - Dr.Aimi, Penganalisis Ekonomi",
+    "videoId": "nc9vQYylZG0",
+    "title": "5 Tempat simpanan untuk daily return",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "F3buzRa7PpA",
-    "title": "Beli rumah siap atau bina sendiri?",
+    "videoId": "PXdx3GmbL6o",
+    "title": "Gen Z tak minat beli rumah?",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "xmTrUK8LuOk",
-    "title": "#114 | The Art of Disappointing People (Leon Jala)",
+    "videoId": "KZSzF0KEFRg",
+    "title": "Design Engineering with Maggie Appleton",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "M4ka-T3tXPc",
-    "title": "When People Yearn To Enter Their Graves | Signs of the Hour Ep. 18 | Dr. Omar Suleiman",
+    "videoId": "28TM-L9MTXM",
+    "title": "Pivoting from voice coach to software engineer",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "CgQCi8qQ3Fw",
-    "title": "Why strategic programming is like a mixing desk",
+    "videoId": "uKO1ueC6eu0",
+    "title": "How Amp Ships 50 Times a Day With AI Agents",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "OIulx_R3TLY",
-    "title": "Plan by day, let agents code by night",
+    "videoId": "jJXJAGOHuqU",
+    "title": "What actually gets engineers hired when CVs all look the same",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "8Yg74nkMvW0",
-    "title": "Why your AI harness matters more than the model you pick",
+    "videoId": "zcLPGC-tvgk",
+    "title": "LIVE: Uncle Bob on Software Fundamentals in the Age of AI",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "gaDdrDdczO4",
+    "title": "New Skills! v1.2 brings /wait-what, /writing-for-agents, and fixes /grill-me",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "F3lL98Pj90o",
+    "title": "/wayfinder: Nothing is too big to plan anymore",
+    "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "ZwyFkrPZ5vs",
+    "title": "The Mission Behind Billion-Dollar Company Fasset.",
     "outcome": "success",
     "errors": []
   },
@@ -72,8 +154,8 @@
     "errors": []
   },
   {
-    "videoId": "LZWxVgrvlrY",
-    "title": "A Person Becomes a Muslim Twice in His Life...",
+    "videoId": "yslXlV2BP_Y",
+    "title": "The State of Startups in 2026",
     "outcome": "success",
     "errors": []
   }
