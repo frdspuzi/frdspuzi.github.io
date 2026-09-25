@@ -1,6 +1,79 @@
 {
   "videos": [
     {
+      "title": "AI Engineer Paris 2026 Main Stage: Google DeepMind, ElevenLabs, Hugging Face & Stripe | Day 2",
+      "url": "https://www.youtube.com/watch?v=g0vqT_wZtXA",
+      "videoId": "g0vqT_wZtXA",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "As generative models transition from basic chatbots into real-time physical robotics, full-stack code orchestration, and on-device intelligence, understanding modern AI infrastructure is no longer optional—it is the ultimate competitive advantage. This comprehensive deep-dive brings together frontier engineers from Mistral, DeepMind, Nvidia, Cognition, and Black Forest Labs to deliver field-tested playbooks on speculative decoding, diffusion-based LLMs, and agentic workflows. Watching this will completely reshape how you architect, optimize, and scale production-grade AI systems.",
+      "dateAdded": "2026-09-25T00:08:37.990Z",
+      "timestamps": [
+        {
+          "startTime": 2190,
+          "endTime": 2440,
+          "topic": "Repurposing Generative Video Backbones for Robotic Action Prediction"
+        },
+        {
+          "startTime": 22570,
+          "endTime": 23070,
+          "topic": "Scaling Coding Agents Across Massive Codebases Using Agentic MapReduce"
+        },
+        {
+          "startTime": 28400,
+          "endTime": 28830,
+          "topic": "Architecting Compute-Bound Diffusion LLMs for Ultra-Fast Decision Making"
+        }
+      ]
+    },
+    {
+      "title": "Specialists versus generalist software engs",
+      "url": "https://www.youtube.com/shorts/ge-3SZM1A1I",
+      "videoId": "ge-3SZM1A1I",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Committing too early to a single niche might be the biggest trap in your professional life, leaving you dangerously narrow or completely obsolete in the age of AI. Discover why hyper-specializing before exploring creates 'idiot savants' who struggle with basic adaptability and risk getting replaced overnight. Watch this quick masterclass to learn how strategic dabbling can future-proof your career and reveal your true strengths.",
+      "dateAdded": "2026-09-25T00:08:37.990Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 28,
+          "topic": "Why early specialization only works for rare prodigies"
+        },
+        {
+          "startTime": 28,
+          "endTime": 63,
+          "topic": "The 'idiot savant' danger of over-specializing too early"
+        },
+        {
+          "startTime": 63,
+          "endTime": 95,
+          "topic": "How AI makes hyper-specialized career paths a risky bet"
+        }
+      ]
+    },
+    {
+      "title": "Is life better with slower promotions",
+      "url": "https://www.youtube.com/shorts/b0nqerrQ0cU",
+      "videoId": "b0nqerrQ0cU",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Rushing to the top of the corporate ladder might actually destroy your long-term drive, but waiting too long comes with its own painful tradeoff. This eye-opening conversation breaks down the psychological paradox of reaching career milestones too fast versus waiting until you're too old to truly enjoy the rewards. Watch this quick clip to completely rethink how you pace your ambition and define personal success.",
+      "dateAdded": "2026-09-25T00:08:37.990Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 22,
+          "topic": "The hidden danger of getting promoted too fast in your 20s"
+        },
+        {
+          "startTime": 22,
+          "endTime": 43,
+          "topic": "The Corvette paradox: Waiting too long to enjoy your success"
+        }
+      ]
+    },
+    {
       "title": "His biggest career regret",
       "url": "https://www.youtube.com/shorts/uv1kmYcf9TM",
       "videoId": "uv1kmYcf9TM",
@@ -27,75 +100,54 @@
       ]
     },
     {
-      "title": "His biggest career regret after 30 years",
-      "url": "https://www.youtube.com/shorts/ufftJLJ2mGE",
-      "videoId": "ufftJLJ2mGE",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Achieving your biggest dream can actually leave you empty and lost if you don't know the answer to one crucial question: what do you do the day after? This video reveals the hidden identity trap that blindsides elite athletes and high achievers once they reach their peak. Watch this to ensure your ultimate goal doesn't become a dead end for your purpose and skills.",
-      "dateAdded": "2026-09-24T00:04:17.700Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 18,
-          "topic": "The 'day after' thought experiment"
-        },
-        {
-          "startTime": 18,
-          "endTime": 36,
-          "topic": "The danger of peaking without skills outside your domain"
-        },
-        {
-          "startTime": 36,
-          "endTime": 50,
-          "topic": "Why planning beyond your ultimate goal is essential"
-        }
-      ]
-    },
-    {
-      "title": "Creator of Scala: How AI Will Impact Programming Languages | Martin Odersky",
-      "url": "https://www.youtube.com/watch?v=_l2qD0rJlFo",
-      "videoId": "_l2qD0rJlFo",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "As AI churns out mountains of code that humans can no longer realistically review, software development faces an existential security crisis. The solution isn't trying to review faster—it's evolving programming languages into strict, capability-based type systems that act as unbreakable contracts for AI agents. Watch to discover how the future of programming will shift from writing raw syntax to defining bulletproof boundaries that AI is mathematically unable to breach.",
-      "dateAdded": "2026-09-24T00:04:17.700Z",
-      "timestamps": [
-        {
-          "startTime": 15,
-          "endTime": 105,
-          "topic": "The AI code review crisis and why types must become the contract"
-        },
-        {
-          "startTime": 172,
-          "endTime": 285,
-          "topic": "Why memory safety is not enough: Capability-based security for AI agents"
-        },
-        {
-          "startTime": 322,
-          "endTime": 435,
-          "topic": "How capability types enforce permissions and prevent resource leaks in practice"
-        }
-      ]
-    },
-    {
-      "title": "🪄 Gemini Live API in action",
-      "url": "https://www.youtube.com/shorts/FVkp6tc2rNY",
-      "videoId": "FVkp6tc2rNY",
+      "title": "The next generation of voice AI with Google DeepMind and Sierra AI",
+      "url": "https://www.youtube.com/watch?v=-G431WC_-RM",
+      "videoId": "-G431WC_-RM",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Discover how voice AI is evolving from simple chatbots into fully capable, real-time multimodal agents that can think and execute complex tasks in the background without breaking conversation. This rapid demo showcases the power of Gemini's upgraded Live API, highlighting game-changing features like async function calling, proactive audio, and frontier-level background reasoning. Watch to see firsthand how seamless live interaction and high-level reasoning now operate together in native audio.",
-      "dateAdded": "2026-09-22T23:54:13.177Z",
+      "summary": "Building enterprise-ready AI voice agents requires far more than just fast speech-to-text; it demands solving critical trade-offs between instant response latency and complex reasoning, as well as native multimodal code-switching. This insider conversation breaks down the 'Maslow's hierarchy of voice quality' and reveals how next-generation native audio models are revolutionizing real-time agentic workflows. Watch to discover what actually separates clumsy automated phone trees from truly natural, intelligent conversational AI.",
+      "dateAdded": "2026-09-25T00:08:37.990Z",
       "timestamps": [
         {
-          "startTime": 0,
-          "endTime": 35,
-          "topic": "Overview of new Live API features and async function calling demo"
+          "startTime": 109,
+          "endTime": 167,
+          "topic": "Dual Latencies: Time to First Audio vs. Time to First Useful Response"
         },
         {
-          "startTime": 36,
+          "startTime": 168,
+          "endTime": 205,
+          "topic": "Why Native Multimodal Audio Outperforms Cascaded Transcription in Code-Switching"
+        },
+        {
+          "startTime": 205,
+          "endTime": 258,
+          "topic": "The 'Maslow's Hierarchy of Voice Quality' and Dynamic Benchmarking"
+        }
+      ]
+    },
+    {
+      "title": "Hidden cost rumah subsale",
+      "url": "https://www.youtube.com/shorts/hiAMiO8Vcl4",
+      "videoId": "hiAMiO8Vcl4",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Thinking a 10% deposit is all you need to buy a subsale house is an expensive mistake that catches many first-time buyers completely off guard. This quick guide breaks down the four crucial hidden costs you must budget for—from legal fees and MOT stamp duty to valuation charges and critical MRTT takaful coverage traps. Watch this before making an offer so you don't get blindsided by thousands in unexpected upfront expenses.",
+      "dateAdded": "2026-09-25T00:08:37.990Z",
+      "timestamps": [
+        {
+          "startTime": 8,
+          "endTime": 50,
+          "topic": "Hidden legal fees and MOT stamp duty costs"
+        },
+        {
+          "startTime": 50,
           "endTime": 91,
-          "topic": "Live demonstration of high-reasoning visual generation during active conversation"
+          "topic": "Why buyers get stuck paying for property valuation"
+        },
+        {
+          "startTime": 91,
+          "endTime": 130,
+          "topic": "MRTT/MLTT takaful protection and coverage duration pitfalls"
         }
       ]
     },
@@ -152,28 +204,54 @@
       ]
     },
     {
-      "title": "Cukai Malaysia vs Singapore",
-      "url": "https://www.youtube.com/shorts/QFxzKnP3VuE",
-      "videoId": "QFxzKnP3VuE",
-      "channel": "Financial Faiz",
+      "title": "Gaji minimum dah tak relevan?",
+      "url": "https://www.youtube.com/shorts/uf5ERJGRIcc",
+      "videoId": "uf5ERJGRIcc",
+      "channel": "Financial Faiz Podcast",
       "category": "Finance",
-      "summary": "Think working in Singapore automatically means keeping more of your hard-earned cash just because of its lower 5.65% effective tax rate versus Malaysia's 9.4%? This eye-opening breakdown reveals why skyrocketing living costs and stark differences in tax reliefs mean Singapore isn't always the winner. Watch this before planning your next career move to learn how mastering Malaysia's lifestyle tax reliefs could actually leave more money in your pocket.",
-      "dateAdded": "2026-09-22T23:54:13.177Z",
+      "summary": "Why is a flat national minimum wage failing both workers and business owners across Malaysia? This compelling discussion reveals how one-size-fits-all salary mandates ignore drastic regional cost-of-living differences, leading to wages that are either unsustainable for SMEs or impossible for urban workers to survive on. Watch this clip to see why adopting locality-based DOSM data could finally fix wage policy and reflect what your work is actually worth.",
+      "dateAdded": "2026-09-25T00:08:37.990Z",
       "timestamps": [
         {
-          "startTime": 10,
-          "endTime": 55,
-          "topic": "Effective tax rate comparison: Malaysia vs. Singapore on a 100k income"
+          "startTime": 0,
+          "endTime": 42,
+          "topic": "The flaw of enforcing a one-size-fits-all national wage floor"
         },
         {
-          "startTime": 55,
-          "endTime": 80,
-          "topic": "The hidden costs of living in Singapore: Rent, COE, and GST"
+          "startTime": 42,
+          "endTime": 82,
+          "topic": "Using DOSM locality cost-of-living data instead of arbitrary wage brackets"
         },
         {
-          "startTime": 80,
-          "endTime": 125,
-          "topic": "Malaysia's lifestyle tax reliefs vs. Singapore's automated deduction system"
+          "startTime": 82,
+          "endTime": 117,
+          "topic": "Why regional living costs must dictate local salary standards"
+        }
+      ]
+    },
+    {
+      "title": "TNB memonopoli elektrik negara?",
+      "url": "https://www.youtube.com/shorts/ScSXDzpObDw",
+      "videoId": "ScSXDzpObDw",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Think breaking up TNB's monopoly would automatically lower your electricity bills? Discover why having multiple private distributors isn't always the magic bullet and how strict oversight by the Energy Commission actually shields consumers from arbitrary price hikes. Watch this breakdown to understand the economic realities and government controls shaping Malaysia's power grid.",
+      "dateAdded": "2026-09-25T00:08:37.990Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 37,
+          "topic": "How the Energy Commission regulates TNB's electricity tariffs"
+        },
+        {
+          "startTime": 37,
+          "endTime": 60,
+          "topic": "Monopoly vs. oligopoly and price control comparisons"
+        },
+        {
+          "startTime": 60,
+          "endTime": 110,
+          "topic": "TNB's evolution as a GLC and managing the national grid"
         }
       ]
     },
@@ -195,32 +273,6 @@
           "startTime": 71,
           "endTime": 132,
           "topic": "The lifestyle and social media trap that keeps Gen Z renting"
-        }
-      ]
-    },
-    {
-      "title": "[S02:E01] Subsidi dah ditambah, kenapa bil elektrik masih naik? - Dr.Aimi, Penganalisis Ekonomi",
-      "url": "https://www.youtube.com/watch?v=Tc9h2ClJ8DQ",
-      "videoId": "Tc9h2ClJ8DQ",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Think a blanket RM3,100 minimum wage or utility subsidies will instantly solve your cost-of-living struggles? In this episode, Dr. Aimi Zulhazmi breaks down why uniform wage hikes without productivity gains risk crushing local businesses, while exposing the hard economic realities behind rising electricity bills and cross-border haze. If you want to understand how macro policies directly impact your wallet and career, this is an essential deep dive.",
-      "dateAdded": "2026-09-22T23:54:13.177Z",
-      "timestamps": [
-        {
-          "startTime": 360,
-          "endTime": 540,
-          "topic": "Why electricity bills spike and the hidden mechanics behind utility subsidies"
-        },
-        {
-          "startTime": 1620,
-          "endTime": 2100,
-          "topic": "The true economic and cross-border toll of the recurring haze crisis"
-        },
-        {
-          "startTime": 2340,
-          "endTime": 2680,
-          "topic": "Why a uniform RM3,100 minimum wage fails without localized data and productivity"
         }
       ]
     },
@@ -303,31 +355,31 @@
       ]
     },
     {
-      "title": "Early investors need to be a little crazy | In The Studio",
-      "url": "https://www.youtube.com/watch?v=FLJme_CuInE",
-      "videoId": "FLJme_CuInE",
-      "channel": "BFM 89.9",
-      "category": "General Ideas",
-      "summary": "Ever wondered why venture capitalists regularly pass on brilliant business ideas yet pour millions into flawed prototypes backed by the right founder? In this masterclass discussion, seasoned VCs Charles Wong and Jacob Ko pull back the curtain on early-stage investing—revealing the hidden red flags that sink pitch meetings and the exact 'Smart, Hustle, and Heart' framework they use to find fund-returning outliers. Whether you're an entrepreneur looking to raise capital or aiming to break into venture capital without a finance degree, this episode delivers raw, actionable insider wisdom you cannot afford to miss.",
-      "dateAdded": "2026-09-13T23:43:52.496Z",
+      "title": "How To Self-Diagnose Hypocrisy | Sh. Mohammad Elshinawy",
+      "url": "https://www.youtube.com/shorts/vK0mJemSfYg",
+      "videoId": "vK0mJemSfYg",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Ever worry deep down that you might secretly be a hypocrite in your faith? This video shares a profound, counterintuitive truth from early Islamic tradition: the very fear of hypocrisy is the exact shield that protects you from it. Watch this to discover why self-doubt, when paired with good deeds, is actually a hallmark of a sincere believer rather than a spiritual failure.",
+      "dateAdded": "2026-09-25T00:08:37.990Z",
       "timestamps": [
         {
-          "startTime": 86,
-          "endTime": 225,
-          "topic": "Venture Capital vs. Private Equity and the Hunt for Fund Returners"
+          "startTime": 0,
+          "endTime": 24,
+          "topic": "The courage to hold a mirror to your own spiritual state"
         },
         {
-          "startTime": 1349,
-          "endTime": 1540,
-          "topic": "Debunking the Finance Degree Myth: The Smart, Hustle, and Heart Framework"
+          "startTime": 24,
+          "endTime": 45,
+          "topic": "Ibn Mas'ud's insight on why fearing hypocrisy protects you"
         },
         {
-          "startTime": 2928,
-          "endTime": 3090,
-          "topic": "Deadly Red Flags: Why VCs Back Adaptable Founders Over Polished Ideas"
+          "startTime": 45,
+          "endTime": 61,
+          "topic": "The core distinction between a believer's humility and a hypocrite's false security"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-09-24T00:08:50.073Z"
+  "lastUpdated": "2026-09-25T00:13:47.982Z"
 }
