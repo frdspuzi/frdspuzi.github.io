@@ -1,80 +1,70 @@
 {
   "videos": [
     {
-      "title": "Teaching LLMs to Speak Spotify — Yves Raimond & Jacqueline Wood, Spotify",
-      "url": "https://www.youtube.com/watch?v=2LRIAfng7eA",
-      "videoId": "2LRIAfng7eA",
+      "title": "We Let Claude Code and Codex Race Human Researchers — Elie Bakouch, Prime Intellect",
+      "url": "https://www.youtube.com/watch?v=oVsEddfhdxc",
+      "videoId": "oVsEddfhdxc",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Discover how Spotify revolutionized its recommendation engine by embedding its massive catalog directly into open-weight LLMs using quantized 'semantic IDs.' By replacing rigid, black-box ranking algorithms with transparent, conversational reasoning, Spotify enables users to dynamically steer their taste profiles in real time without causing the AI to suffer catastrophic forgetting. If you want a proven, production-grade blueprint for industrial-scale generative personalization, this behind-the-scenes engineering breakdown is an absolute must-watch.",
-      "dateAdded": "2026-09-26T00:15:13.495Z",
+      "summary": "While major tech labs hype recursive self-improvement as an imminent revolution, real-world benchmarks reveal that autonomous AI agents can beat human training speedrun records yet still fail to invent fundamentally novel algorithms. By pitting frontier models like Claude and Codex against ML optimization challenges, this talk uncovers the surprising gap between AI hype and reality—and maps out the multi-agent architectures needed to push past incremental tweaks toward genuine scientific discovery.",
+      "dateAdded": "2026-09-26T23:59:59.715Z",
       "timestamps": [
         {
-          "startTime": 155,
-          "endTime": 250,
-          "topic": "The Shift from Black-Box Ranking to Generative, Reasoned Personalization"
-        },
-        {
-          "startTime": 510,
-          "endTime": 650,
-          "topic": "Teaching LLMs Spotify's Catalog: Semantic IDs and the 4-Stage NEO Framework"
-        },
-        {
-          "startTime": 750,
-          "endTime": 900,
-          "topic": "Key Training Insights: Preventing Catastrophic Forgetting and Optimizing Inference"
-        }
-      ]
-    },
-    {
-      "title": "Why LLM Recommenders Will Be AI's Biggest Consumer App — Devansh Tandon, Meta",
-      "url": "https://www.youtube.com/watch?v=lIgdnF0s0kQ",
-      "videoId": "lIgdnF0s0kQ",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "While the world obsesses over AI chatbots, Meta's recommendation research reveals that LLM-driven recommender engines are quietly dominating consumer tech with an astonishing 100x cost-efficiency advantage over tools like ChatGPT. Because recommender models output compact semantic pointers to creator media rather than generating raw text from scratch, they convert raw compute directly into billion-dollar engagement flywheels. Watch this video to uncover the exact architectural blueprint behind next-generation, steerable AI feeds powering platforms like Instagram and YouTube.",
-      "dateAdded": "2026-09-26T00:15:13.495Z",
-      "timestamps": [
-        {
-          "startTime": 138,
-          "endTime": 335,
-          "topic": "How recommender systems follow the exact power-law scaling laws of frontier LLMs"
-        },
-        {
-          "startTime": 490,
-          "endTime": 735,
-          "topic": "The architectural recipe: Tokenizing content with Semantic IDs and chain-of-thought ranking"
-        },
-        {
-          "startTime": 850,
-          "endTime": 985,
-          "topic": "The token efficiency showdown: Why content feeds are 100x cheaper per hour than AI chat apps"
-        }
-      ]
-    },
-    {
-      "title": "Distill the LLM, Don't Serve It: Search & Personalization at DoorDash — Raghav Saboo, DoorDash",
-      "url": "https://www.youtube.com/watch?v=ACPEpji5NV4",
-      "videoId": "ACPEpji5NV4",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Stop trying to replace your entire recommendation engine with slow, costly real-time LLM calls—DoorDash's engineering team reveals how to distill offline LLM reasoning into lightweight, high-speed production models. By treating marketplace discovery as a semantic understanding challenge rather than raw engagement chasing, this talk provides the exact blueprint for using semantic IDs, multi-timescale memory, and graded supervision to supercharge search relevance and conversion at massive scale. If you build search, discovery, or recommender systems, this masterclass on bridging generative AI with production ML is an absolute must-watch.",
-      "dateAdded": "2026-09-26T00:15:13.495Z",
-      "timestamps": [
-        {
-          "startTime": 195,
-          "endTime": 370,
-          "topic": "Distilling LLM Reasoning into Offline Supervision for Retrieval and Ranking"
-        },
-        {
-          "startTime": 635,
-          "endTime": 840,
-          "topic": "Overcoming Catalog Limits with Learned Hierarchical Semantic IDs"
+          "startTime": 464,
+          "endTime": 620,
+          "topic": "Autonomous Agent Showdown: Claude vs. Codex in AI Research"
         },
         {
           "startTime": 860,
-          "endTime": 1100,
-          "topic": "Building Multi-Timescale Consumer Memory and Context Graphs"
+          "endTime": 935,
+          "topic": "The Discovery Gap: Why Frontier Models Struggle with True Innovation"
+        },
+        {
+          "startTime": 940,
+          "endTime": 1040,
+          "topic": "The Blueprint for Real AI Breakthroughs: Multi-Agent Evolutionary Loops"
+        }
+      ]
+    },
+    {
+      "title": "The craziest promotion of his life",
+      "url": "https://www.youtube.com/shorts/qnNi_NJtT8k",
+      "videoId": "qnNi_NJtT8k",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Imagine getting promoted to the exact same engineering tier at Microsoft as Guido van Rossum, the creator of Python, and instantly colliding with massive imposter syndrome. In this candid clip, you'll learn how elite engineers overcome intense self-doubt and why reaching tech's highest levels requires building a sustained body of work rather than relying on a single lucky year. Watch this to understand what top-tier engineering leadership truly takes behind the scenes.",
+      "dateAdded": "2026-09-26T23:59:59.715Z",
+      "timestamps": [
+        {
+          "startTime": 10,
+          "endTime": 29,
+          "topic": "Sharing a title with Python's creator and triggering maximum imposter syndrome"
+        },
+        {
+          "startTime": 47,
+          "endTime": 68,
+          "topic": "The reality of elite promotions: Why a proven track record beats a lucky year"
+        }
+      ]
+    },
+    {
+      "title": "The number one thing he wishes he could change in his career",
+      "url": "https://www.youtube.com/shorts/oGTTSL9K3yw",
+      "videoId": "oGTTSL9K3yw",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Is sacrificing your personal relationships for non-stop career hustle truly worth it in the long run? In this candid reflection, a successful professional reveals his biggest regret—being 100% available for his job at the cost of family and friends—and why he'd gladly trade career milestones to reclaim that time. Watch this short reality check to re-evaluate your own priorities before hindsight catches up with you.",
+      "dateAdded": "2026-09-26T23:59:59.715Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 20,
+          "topic": "The regret of prioritizing workplace availability over loved ones"
+        },
+        {
+          "startTime": 21,
+          "endTime": 37,
+          "topic": "Why trading career success for family time is worth it"
         }
       ]
     },
@@ -101,58 +91,6 @@
           "startTime": 58,
           "endTime": 84,
           "topic": "The hidden reality of corporate promotions and the cost of staying silent"
-        }
-      ]
-    },
-    {
-      "title": "Distinguished Eng: Why You Shouldn’t Goal On Promotions | Bryan Cantrill",
-      "url": "https://www.youtube.com/watch?v=uLFqnloaL4s",
-      "videoId": "uLFqnloaL4s",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Grinding purely for prestigious job titles or early retirement isn't the ultimate victory—it's a fast track to an existential crisis once you finally cross the finish line. Tech veteran Bryan Cantrill breaks down why deferring your purpose in pursuit of wealth and external validation leaves even top achievers miserable, and why grounding your daily work in genuine meaning is the only sustainable path forward. If you want to avoid sacrificing years climbing a corporate ladder you'll eventually regret, this eye-opening conversation is an essential watch.",
-      "dateAdded": "2026-09-26T00:15:13.495Z",
-      "timestamps": [
-        {
-          "startTime": 38,
-          "endTime": 135,
-          "topic": "Why chasing titles and external validation is a recipe for a mid-life crisis"
-        },
-        {
-          "startTime": 145,
-          "endTime": 235,
-          "topic": "The fallacy of deferring meaningful work until after achieving financial independence"
-        },
-        {
-          "startTime": 290,
-          "endTime": 380,
-          "topic": "Lessons from the dot-com bust on the emptiness of sudden wealth without direction"
-        }
-      ]
-    },
-    {
-      "title": "The next generation of voice AI with Google DeepMind and Sierra AI",
-      "url": "https://www.youtube.com/watch?v=-G431WC_-RM",
-      "videoId": "-G431WC_-RM",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Building enterprise-ready AI voice agents requires far more than just fast speech-to-text; it demands solving critical trade-offs between instant response latency and complex reasoning, as well as native multimodal code-switching. This insider conversation breaks down the 'Maslow's hierarchy of voice quality' and reveals how next-generation native audio models are revolutionizing real-time agentic workflows. Watch to discover what actually separates clumsy automated phone trees from truly natural, intelligent conversational AI.",
-      "dateAdded": "2026-09-25T00:08:37.990Z",
-      "timestamps": [
-        {
-          "startTime": 109,
-          "endTime": 167,
-          "topic": "Dual Latencies: Time to First Audio vs. Time to First Useful Response"
-        },
-        {
-          "startTime": 168,
-          "endTime": 205,
-          "topic": "Why Native Multimodal Audio Outperforms Cascaded Transcription in Code-Switching"
-        },
-        {
-          "startTime": 205,
-          "endTime": 258,
-          "topic": "The 'Maslow's Hierarchy of Voice Quality' and Dynamic Benchmarking"
         }
       ]
     },
@@ -235,32 +173,6 @@
       ]
     },
     {
-      "title": "Bahan api punca bil TNB naik?",
-      "url": "https://www.youtube.com/shorts/sICFyv_fCc4",
-      "videoId": "sICFyv_fCc4",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Ever wonder why your electricity bill keeps climbing even when your daily usage hasn't changed at all? This eye-opening breakdown demystifies the hidden mechanics behind your bill, revealing how automatic fuel cost adjustments (AFA), new 8% SST thresholds, and global coal price spikes directly hit your wallet. Watch this to decode your electricity bill and understand the real global factors dictating what you pay.",
-      "dateAdded": "2026-09-26T00:15:13.496Z",
-      "timestamps": [
-        {
-          "startTime": 26,
-          "endTime": 55,
-          "topic": "Decoding the hidden charges, fuel adjustments (AFA), and SST thresholds in your bill"
-        },
-        {
-          "startTime": 65,
-          "endTime": 95,
-          "topic": "Why reliance on coal commodities drives electricity generation costs higher"
-        },
-        {
-          "startTime": 95,
-          "endTime": 122,
-          "topic": "How global energy crunches and international fuel spikes impact power utilities"
-        }
-      ]
-    },
-    {
       "title": "Gaji minimum dah tak relevan?",
       "url": "https://www.youtube.com/shorts/uf5ERJGRIcc",
       "videoId": "uf5ERJGRIcc",
@@ -339,57 +251,130 @@
       ]
     },
     {
-      "title": "#114 | The Art of Disappointing People (Leon Jala)",
-      "url": "https://www.youtube.com/watch?v=xmTrUK8LuOk",
-      "videoId": "xmTrUK8LuOk",
-      "channel": "The Game Of Impossible",
+      "title": "“We spend half a million to train one engineer” | In The Studio",
+      "url": "https://www.youtube.com/watch?v=4ntNKfYy5ow",
+      "videoId": "4ntNKfYy5ow",
+      "channel": "BFM 89.9",
       "category": "General Ideas",
-      "summary": "Trying to please everyone is the fastest way to fail as a leader—real transformation requires disappointing people at the rate they can handle to serve a greater mission. This video unpacks the crucial psychological clash between our craving for acceptance and our need for growth, showing why avoiding conflict ultimately damages relationships and performance. You'll walk away with a battle-tested, four-question check-in framework and the '1-3-1' problem-solving method to deliver stinging feedback with radical empathy and zero drama.",
-      "dateAdded": "2026-09-22T23:54:13.177Z",
+      "summary": "Malaysia is quietly orchestrating a high-stakes leap from low-margin chip assembly to high-value semiconductor IC design, investing nearly half a million ringgit per engineer to build an elite tech workforce. Discover how Selangor is capitalizing on the US-China chip war to capture a lucrative neutral 'white supply chain' and using radical retention strategies to keep its top minds from being poached abroad. If you want to understand where Southeast Asia's next high-tech boom is truly heading, this insider breakdown is an essential watch.",
+      "dateAdded": "2026-09-26T23:59:59.715Z",
       "timestamps": [
         {
-          "startTime": 65,
-          "endTime": 135,
-          "topic": "Niceness vs. Kindness: Why True Care Requires Constructive Correction"
+          "startTime": 510,
+          "endTime": 610,
+          "topic": "Training Malaysia's 'Top Gun' IC designers and breaking tech salary ceilings"
         },
         {
-          "startTime": 305,
-          "endTime": 515,
-          "topic": "The 4-Question 1-on-1 Framework and the '1-3-1' Problem-Solving Model"
+          "startTime": 940,
+          "endTime": 1040,
+          "topic": "Turning global chip war neutrality into the 'White Supply Chain' opportunity"
         },
         {
-          "startTime": 560,
-          "endTime": 695,
-          "topic": "Anchoring in 'True North' Mission to Remove Personal Ego from Difficult Conversations"
+          "startTime": 1675,
+          "endTime": 1880,
+          "topic": "Combating the global brain drain with radical talent retention tactics"
         }
       ]
     },
     {
-      "title": "Why Big Dinners Are Killing Friendships | LATEST Khutbah by Sh. Mohammad Elshinawy",
-      "url": "https://www.youtube.com/watch?v=U_oOGefmfk8",
-      "videoId": "U_oOGefmfk8",
+      "title": "The Squeeze Is Not the Punishment | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/_BHOzYhtKUI",
+      "videoId": "_BHOzYhtKUI",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "In an age of digital isolation and superficial meetups, modern culture has quietly killed deep community by turning home hospitality into an exhausting, stressful performance. This powerful talk exposes how over-complicating hosting actually destroys relationships, revealing timeless Quranic and Prophetic insights that make genuine hospitality effortless, spiritually rewarding, and life-changing. Watch this to discover how embracing simple, authentic connection in your home can rebuild brotherhood and banish social burnout.",
-      "dateAdded": "2026-09-26T00:15:13.496Z",
+      "summary": "Feeling spiritually stuck or overwhelmed by life's restrictions? Discover why life's tightest moments aren't punishments, but rather divine protection and preparation designed to expand your soul for your greatest blessings. Watch this to uncover the profound wisdom behind Allah's names Al-Qabid and Al-Basit and permanently transform how you view hardship and ease.",
+      "dateAdded": "2026-09-26T23:59:59.715Z",
       "timestamps": [
         {
-          "startTime": 241,
-          "endTime": 350,
-          "topic": "Why Modern Isolation Kills Community and the Power of Home Hospitality"
+          "startTime": 0,
+          "endTime": 35,
+          "topic": "Why divine constriction is protection and expansion is a test"
         },
         {
-          "startTime": 620,
-          "endTime": 840,
-          "topic": "The Hospitality Trap: How Extravagance and Over-Preparing Break Ties"
+          "startTime": 35,
+          "endTime": 59,
+          "topic": "The spiritual rhythm: Qabd and Bast as the inhale and exhale of your soul"
         },
         {
-          "startTime": 970,
-          "endTime": 1135,
-          "topic": "The Quranic Blueprint: Lessons in Effortless Hosting from Ibrahim (AS)"
+          "startTime": 59,
+          "endTime": 98,
+          "topic": "How pressure prepares you for purpose: Angel Jibreel embracing the Prophet (PBUH)"
+        }
+      ]
+    },
+    {
+      "title": "The 4 Decrees Written For You In Your Mother’s Womb | Anchored Ep. 3 | Sh. Mohammad Elshinawy",
+      "url": "https://www.youtube.com/watch?v=NaNIBKD0_xs",
+      "videoId": "NaNIBKD0_xs",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Your destiny may be written, but sincere supplication and righteous action can actively alter your decree—whereas paralyzing anxiety will change nothing. By unpacking classical Hadith on predestination, scientific harmony, and religious integrity, this lecture reveals why hidden spiritual ailments dictate how you exit this life. Watch this to resolve deep-seated questions about free will, protect your faith from subtle corruptions, and anchor your daily purpose in the authentic Sunnah.",
+      "dateAdded": "2026-09-26T23:59:59.715Z",
+      "timestamps": [
+        {
+          "startTime": 980,
+          "endTime": 1110,
+          "topic": "How Dua and Righteous Deeds Interact with Divine Destiny"
+        },
+        {
+          "startTime": 1590,
+          "endTime": 1780,
+          "topic": "Why Hidden Sins Cause People to Stumble at the Moment of Death"
+        },
+        {
+          "startTime": 2605,
+          "endTime": 2950,
+          "topic": "The Critical Dangers of Religious Innovation (Bid'ah) to Faith and Unity"
+        }
+      ]
+    },
+    {
+      "title": "How Allah Wants You to Think About Success",
+      "url": "https://www.youtube.com/watch?v=DjE07PPgkf0",
+      "videoId": "DjE07PPgkf0",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "If you've checked off every worldly box—career, house, family—yet still sit in your car feeling unfulfilled, this video uncovers the crucial metric of success you've been missing all along. It breaks down why the endless cycle of chasing public validation leaves the soul empty and how shifting your focus to private integrity completely transforms your inner peace. Watch this to learn how to realign your daily ambition with what actually carries weight with Allah and outlasts the grave.",
+      "dateAdded": "2026-09-26T23:59:59.715Z",
+      "timestamps": [
+        {
+          "startTime": 110,
+          "endTime": 270,
+          "topic": "Why worldly success metrics fail and what Allah actually measures"
+        },
+        {
+          "startTime": 458,
+          "endTime": 610,
+          "topic": "The danger of secret compromises and the Hadith of Tihama"
+        },
+        {
+          "startTime": 890,
+          "endTime": 1050,
+          "topic": "The three enduring legacies that follow you into the grave"
+        }
+      ]
+    },
+    {
+      "title": "Agents should show, not ask",
+      "url": "https://www.youtube.com/shorts/gnYNZEwq9ho",
+      "videoId": "gnYNZEwq9ho",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Ever get mental fatigue when an AI agent bombards you with 20 tedious multiple-choice questions just to set up a task? Discover why text chats and command-line interfaces are currently the biggest bottleneck in AI workflows, and see how intuitive visual GUI cards could revolutionize the way we collaborate with agents.",
+      "dateAdded": "2026-09-26T23:59:59.715Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 22,
+          "topic": "The agent bottleneck: Why text-based planning exhausts your brain"
+        },
+        {
+          "startTime": 22,
+          "endTime": 54,
+          "topic": "Prototyping visual cards and dynamic GUI for agent decision-making"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-09-26T00:18:38.455Z"
+  "lastUpdated": "2026-09-27T00:03:06.046Z"
 }
