@@ -1,422 +1,423 @@
 [
   {
-    "videoId": "oVsEddfhdxc",
-    "title": "We Let Claude Code and Codex Race Human Researchers — Elie Bakouch, Prime Intellect",
+    "videoId": "474j-n1Ltxc",
+    "title": "AI-Generated Code Is Already Competing With Human Code — Daksh Gupta, Greptile",
     "selected": true,
-    "reasoning": "Directly demonstrates applied AI coding tools (Claude Code and Codex) tackling real-world engineering tasks.",
-    "summary": "See how state-of-the-art coding agents perform when pitted against human engineers in real development challenges. It provides practical insights into what today's AI tools can actually automate and where they still fail."
+    "reasoning": "Provides practical, data-backed insights on how AI-generated code performs in real-world enterprise codebases.",
+    "summary": "Greptile analyzed over a million pull requests across top tech companies to see if AI code actually holds up in production. If you are curious about how agentic coding is reshaping code review and code quality, this talk offers grounded empirical answers."
   },
   {
-    "videoId": "OA-Mc60Rboo",
-    "title": "Beating RL With Reflection: GEPA and Optimize Anything — Lakshya A. Agrawal, GEPA",
+    "videoId": "buHC7bQE1X4",
+    "title": "Get Out of the Model's Way — Kevin Hou, Google DeepMind",
+    "selected": true,
+    "reasoning": "Covers applied software engineering principles behind Google's agentic coding tools.",
+    "summary": "Discover the engineering architecture behind Antigravity, DeepMind's agentic coding system that built an entire OS kernel from scratch. It shares crucial design principles for building software products that amplify AI models rather than constraining them."
+  },
+  {
+    "videoId": "tUPPVhBBcoM",
+    "title": "Software Engineering Is Becoming Factory Engineering — Zach Lloyd, Warp",
+    "selected": true,
+    "reasoning": "Actionable perspective on how AI is changing modern software workflows and developer roles.",
+    "summary": "Warp's founder explains why traditional coding is transitioning into managing automated 'software factories.' A must-watch for junior engineers looking to future-proof their workflow and understand the future of developer tooling."
+  },
+  {
+    "videoId": "nIuc21UX4Mo",
+    "title": "Hiring without Leetcode",
+    "channel": "Ryan Peterman",
+    "selected": true,
+    "reasoning": "Relevant career insights into practical engineering interview practices from Stripe's CTO.",
+    "summary": "Stripe's CTO discusses why whiteboard LeetCode interviews fail to measure real developer talent and what realistic technical hiring looks like. Essential perspective for junior engineers preparing for practical industry interviews."
+  },
+  {
+    "videoId": "PC82aVcRia4",
+    "title": "Questions on corporate politics but they get increasingly darker",
     "selected": false,
-    "reasoning": "Academic research and formal reinforcement learning concepts rather than practical developer tooling.",
+    "reasoning": "Short promo teaser without substantive, actionable career advice.",
     "summary": ""
   },
   {
-    "videoId": "x4e5O9zN0TE",
-    "title": "Long-Horizon Agents Need Experiments, Not Just Prompts — Erina Karati",
-    "selected": false,
-    "reasoning": "Specialized game simulation agent research rather than practical web/fullstack tooling.",
-    "summary": ""
-  },
-  {
-    "videoId": "qnNi_NJtT8k",
-    "title": "The craziest promotion of his life",
+    "videoId": "aLfERXEwzH0",
+    "title": "The tradeoff he wish he knew earlier",
     "selected": true,
-    "reasoning": "Valuable engineering career perspective on overcoming imposter syndrome from a Distinguished Engineer.",
-    "summary": "Even top engineers at major tech companies struggle with imposter syndrome when working alongside industry legends. This short offers reassuring, grounded career perspective for junior developers."
-  },
-  {
-    "videoId": "oGTTSL9K3yw",
-    "title": "The number one thing he wishes he could change in his career",
-    "selected": true,
-    "reasoning": "Practical early-career advice from a senior tech leader about avoiding burnout and setting boundaries.",
-    "summary": "A veteran engineering leader reflects on the danger of over-availability and sacrificing personal life early in your career. It's a crucial reminder on building sustainable working habits from day one."
-  },
-  {
-    "videoId": "n3Lu7kfhrv0",
-    "title": "Amazon VP: \"People won't like to hear this\"",
-    "selected": true,
-    "reasoning": "Unvarnished, actionable advice on career progression and promotion dynamics in tech.",
-    "summary": "An ex-Amazon VP breaks down why being a 'nice, patient engineer' can stall your promotion trajectory. A candid look at the unspoken mechanics of career progression in software engineering."
+    "reasoning": "Actionable early-career advice on effort and tradeoffs from a veteran Big Tech engineer.",
+    "summary": "A distinguished engineer from OpenAI and Meta breaks down the real tradeoffs of pushing hard early in your career versus seeking work-life balance. An honest reminder for junior professionals navigating their initial career climb."
   },
   {
     "videoId": "LhHBU4Zq_2I",
     "title": "I hired an AI employee 90 days ago...here's what happened",
     "selected": false,
-    "reasoning": "Promotional influencer content with affiliate marketing.",
+    "reasoning": "Promotional sponsored video rather than practical developer tooling.",
     "summary": ""
   },
   {
     "videoId": "J5U3t6-zVz0",
     "title": "What I Actually Do When I’m Not Making YouTube Videos",
     "selected": false,
-    "reasoning": "Generic lifestyle vlog and promotional course pitch.",
+    "reasoning": "Personal lifestyle vlog and brand promotion with no relevant technical or Islamic finance value.",
     "summary": ""
   },
   {
     "videoId": "7j34m56ZD9g",
     "title": "If you're watching this before Sept 26th .... link in bio :)",
     "selected": false,
-    "reasoning": "Short promotional teaser for an upcoming workshop.",
+    "reasoning": "Promotional short for a paid workshop.",
     "summary": ""
   },
   {
     "videoId": "s82Ho5HdltE",
     "title": "Per-Layer Embeddings (PLE) in Gemma 4 explained",
     "selected": false,
-    "reasoning": "Academic LLM architectural deep-dive rather than applied fullstack engineering.",
+    "reasoning": "Deep theoretical model architecture research rather than applied software engineering or AI tooling.",
     "summary": ""
   },
   {
     "videoId": "-G431WC_-RM",
     "title": "The next generation of voice AI with Google DeepMind and Sierra AI",
     "selected": false,
-    "reasoning": "Broad research discussion and benchmarking talk rather than practical tooling.",
+    "reasoning": "Specialized voice model architecture and research benchmarks, not relevant to day-to-day fullstack development.",
     "summary": ""
   },
   {
     "videoId": "YDCB8Bk1OBE",
     "title": "Gemma 4 12B: The encoder-free model explained",
     "selected": false,
-    "reasoning": "Theoretical model architecture explanation.",
+    "reasoning": "Academic AI model architecture deep-dive, not practical developer tooling.",
     "summary": ""
   },
   {
     "videoId": "q3MArAgSjx0",
     "title": "Perangkap kewangan Gen Z?",
     "selected": true,
-    "reasoning": "Directly relevant Malaysian personal finance advice for young working adults starting their careers.",
-    "summary": "A practical breakdown of common financial traps fresh graduates and young professionals in Malaysia fall into when earning their first salaries. Essential viewing for managing cash flow and avoiding lifestyle inflation."
+    "reasoning": "Practical Malaysian personal finance advice directly targeted at early-career professionals.",
+    "summary": "Financial Faiz breaks down common financial traps young Malaysian professionals fall into, from car loans to lifestyle inflation. It offers a grounded look at budgeting and building savings before commitments spiral out of control."
   },
   {
     "videoId": "hiAMiO8Vcl4",
     "title": "Hidden cost rumah subsale",
     "selected": true,
-    "reasoning": "Actionable Malaysian real estate finance breakdown covering hidden legal, stamp duty, and takaful fees.",
-    "summary": "Buying a first property in Malaysia involves far more than just the 10% downpayment. Learn the breakdown of legal fees, MOT, and MRTT/MLTT so you can plan your financial milestones properly."
+    "reasoning": "Practical Malaysian property and personal finance advice on hidden purchasing fees.",
+    "summary": "Thinking about buying property in Malaysia? This breakdown covers the crucial hidden fees beyond the 10% down payment—like legal fees, stamp duties, and MRTT/MLTT—so you don't get caught off guard."
   },
   {
     "videoId": "nc9vQYylZG0",
     "title": "5 Tempat simpanan untuk daily return",
     "selected": true,
-    "reasoning": "Covers Malaysian cash management instruments with a focus on liquidity and Shariah compliance.",
-    "summary": "Explore the top options in Malaysia for earning daily returns on your emergency fund or idle cash, including Shariah-compliant vehicles like Versa Cash-i and digital banks. A quick guide to optimizing your short-term savings."
+    "reasoning": "Directly compares short-term cash management vehicles in Malaysia with explicit focus on Syariah compliance.",
+    "summary": "Learn where to park your emergency funds or short-term cash in Malaysia for daily returns using platforms like Versa Cash-i, AEON Bank, and e-wallets. It clearly highlights liquidity, returns, and crucial Shariah-compliant status."
   },
   {
     "videoId": "loAHSO0MscQ",
     "title": "Nusantara punca jerebu makin teruk?",
     "selected": false,
-    "reasoning": "Regional environmental and political commentary outside core personal finance or engineering interests.",
+    "reasoning": "Environmental/political commentary that does not match personal finance, software, or faith interests.",
     "summary": ""
   },
   {
     "videoId": "sICFyv_fCc4",
     "title": "Bahan api punca bil TNB naik?",
     "selected": false,
-    "reasoning": "Minor utility tariff breakdown rather than core personal finance, tech, or spiritual content.",
+    "reasoning": "General utility tariff explainer without broader economic or career utility.",
     "summary": ""
   },
   {
     "videoId": "uf5ERJGRIcc",
     "title": "Gaji minimum dah tak relevan?",
     "selected": true,
-    "reasoning": "Relevant discussion on Malaysian macroeconomic policy, cost of living, and wage dynamics.",
-    "summary": "Examine how Malaysia's minimum wage compares against actual urban living costs measured by DOSM. A concise look at the economic realities shaping the Malaysian job market and compensation."
+    "reasoning": "Examines Malaysian living costs and national wage benchmarks from an economic perspective.",
+    "summary": "An insightful look at Malaysia's RM1,700 minimum wage versus urban living costs measured by DOSM. A valuable snapshot of the current macroeconomic realities facing Malaysian workers across different regions."
   },
   {
     "videoId": "gJKkedZa6G4",
     "title": "#116 | Leadership Lessons from Shell's Country Chair (Siti Sulaiman)",
     "selected": true,
-    "reasoning": "Valuable corporate leadership and career advice from a prominent Malaysian executive.",
-    "summary": "Hear from the Country Chair of Shell Malaysia on navigating a multi-decade corporate career from an entry-level scholarship to executive leadership. Full of practical takeaways on accountability, career growth, and leadership."
+    "reasoning": "High-caliber Malaysian corporate leadership and career advice from a veteran industry executive.",
+    "summary": "Shell Malaysia's Country Chair shares lessons from her 32-year journey from a young scholar to leading one of the nation's biggest energy operations. Packed with wisdom on navigating international postings and long-term career growth in corporate Malaysia."
   },
   {
     "videoId": "xMmJVh_3e-g",
     "title": "#115 | Catherine Goh Chooses Accountability Over Title",
     "selected": true,
-    "reasoning": "Malaysian business leadership interview centered on career growth, ethics, faith, and accountability.",
-    "summary": "The CEO of Santan shares how focusing on accountability rather than vanity titles propelled her career from night markets to the executive suite. A grounded conversation on maintaining integrity and faith in business."
+    "reasoning": "Malaysian business leadership conversation covering integrity, faith, and early career growth.",
+    "summary": "From working at night markets to becoming the CEO of Santan, Catherine Goh shares practical lessons on personal accountability and staying grounded. It is a motivating, faith-sensitive conversation on building a career with integrity."
   },
   {
     "videoId": "xmTrUK8LuOk",
     "title": "#114 | The Art of Disappointing People (Leon Jala)",
     "selected": false,
-    "reasoning": "Broad leadership coaching talk that is less actionable for a junior individual contributor.",
+    "reasoning": "Generic executive coaching monologue, less relevant to junior individual contributors.",
     "summary": ""
   },
   {
     "videoId": "4ntNKfYy5ow",
     "title": "“We spend half a million to train one engineer” | In The Studio",
     "selected": true,
-    "reasoning": "Insightful discussion on Malaysia's tech talent ecosystem, engineering talent drain, and regional tech economics.",
-    "summary": "An in-depth look at Malaysia's engineering talent landscape, high-tech semiconductor ambitions, and the economic pressures of talent poaching across Southeast Asia. Crucial context for any Malaysian engineer navigating the local tech scene."
+    "reasoning": "Directly discusses the Malaysian tech talent landscape, engineering training, and regional brain drain.",
+    "summary": "SIDEC's CEO explains how Selangor is investing heavily to train high-skilled engineers and tackle regional talent poaching from Singapore and Taiwan. An eye-opening overview of Malaysia's engineering ecosystem and what drives high-value tech careers locally."
   },
   {
     "videoId": "_kqMp_VVj0U",
     "title": "Life after losing a loved one to suicide | Maya, Suicide Loss Survivor | In The Studio",
     "selected": false,
-    "reasoning": "General mental health interview not aligned with core engineering, finance, or Islamic themes.",
+    "reasoning": "Personal mental health interview, not aligned with core career, technical, Islamic finance, or spiritual interests.",
     "summary": ""
   },
   {
     "videoId": "4zcaZ7I-WOg",
     "title": "We don't say \"I care\" in Malaysia. Instead, we say... | Part 2",
     "selected": false,
-    "reasoning": "Social media fluff content without practical or educational substance.",
+    "reasoning": "Short cultural entertainment fluff.",
+    "summary": ""
+  },
+  {
+    "videoId": "PKN3b8hmzWg",
+    "title": "Our kids are more than their problems—let’s act like it | Kris Anderson Moore | TEDxFoggyBottom",
+    "selected": false,
+    "reasoning": "Generic TEDx talk on youth education; excluded by instruction guidelines.",
     "summary": ""
   },
   {
     "videoId": "qImtjhUKn6g",
     "title": "How this next-gen telescope will search for life in space | Natasha Latouf | TEDxFoggyBottom",
     "selected": false,
-    "reasoning": "Generic TEDx talk on astronomy.",
+    "reasoning": "Astrophysics TEDx talk; outside scope of interests.",
     "summary": ""
   },
   {
     "videoId": "yvpq0c3ZJu0",
     "title": "Why more AI data centers aren’t the answer | Dimitrios Nikolopoulos | TEDxMidAtlantic",
     "selected": false,
-    "reasoning": "Generic TEDx talk on high-performance computing infrastructure.",
+    "reasoning": "Generic TEDx talk on computing infrastructure.",
     "summary": ""
   },
   {
-    "videoId": "zYfEcGMl-PE",
-    "title": "What if Those Most Impacted by Displacement Designed the Future of Land | Ramla Sahid | TEDxSanDiego",
-    "selected": false,
-    "reasoning": "Generic TEDx talk on community land organizing.",
-    "summary": ""
+    "videoId": "k_f5Mssqsrg",
+    "title": "Envying the Dead? | Dr. Omar Suleiman",
+    "selected": true,
+    "reasoning": "Direct Islamic spiritual reminder addressing emotional resilience and trial through hadith.",
+    "summary": "Dr. Omar Suleiman explores the Prophetic teachings on coping with severe worldly distress and keeping one's heart attached to the Akhirah. A powerful, short spiritual boost for staying grounded amid life's pressures."
+  },
+  {
+    "videoId": "xMwihBUKP6g",
+    "title": "How the Prophet (s) Navigated Loss | Dr. Omar Suleiman",
+    "selected": true,
+    "reasoning": "Direct Islamic reminder on Prophetic patience and emotional balance during hardship.",
+    "summary": "Learn how the Prophet Muhammad ﷺ balanced genuine grief with profound trust and surrender to Allah. A concise reminder on finding peace and maintaining sabr through life's unexpected setbacks."
   },
   {
     "videoId": "ESyFyd7L1ss",
     "title": "Do Angels Really Curse a Wife Who Says No? | Real Talk Season 2",
     "selected": false,
-    "reasoning": "Specific marital relationship fiqh question rather than broad spiritual reminders or personal growth.",
+    "reasoning": "Narrow marital hadith context, less suited to general daily spiritual reminders or early-career focus.",
     "summary": ""
-  },
-  {
-    "videoId": "_BHOzYhtKUI",
-    "title": "The Squeeze Is Not the Punishment | Dr. Omar Suleiman",
-    "selected": true,
-    "reasoning": "Direct and uplifting Islamic spiritual reminder on navigating hardship and trusting Allah's timing.",
-    "summary": "A poignant spiritual reminder explaining why life's constraints and pressures are not necessarily punishments, but necessary phases of spiritual growth. Perfect for finding perspective and peace during stressful career seasons."
-  },
-  {
-    "videoId": "NaNIBKD0_xs",
-    "title": "The 4 Decrees Written For You In Your Mother’s Womb | Anchored Ep. 3 | Sh. Mohammad Elshinawy",
-    "selected": true,
-    "reasoning": "Core Islamic spiritual lecture on Qadr, rizq (provision), and purpose.",
-    "summary": "Delve into the foundational concept of Qadr and how your provision (rizq) and lifespan are pre-ordained. An essential reminder for early-career professionals on balancing hard work with trust in divine decree."
   },
   {
     "videoId": "vSYsmnIO08k",
     "title": "You Will Keep Struggling in Marriage Until You Do This",
     "selected": false,
-    "reasoning": "Promotional webinar pitch for a paid marriage program.",
+    "reasoning": "Webinar promotional pitch for marriage coaching.",
     "summary": ""
   },
   {
     "videoId": "rKJZrbWEWh0",
     "title": "How To Be The Man Your Wife Feels Safe With",
     "selected": false,
-    "reasoning": "Promotional webinar lead generation content.",
+    "reasoning": "Promotional funnel for an off-platform paid men's masterclass.",
     "summary": ""
   },
   {
     "videoId": "DjE07PPgkf0",
     "title": "How Allah Wants You to Think About Success",
     "selected": true,
-    "reasoning": "Direct Islamic reminder on redefining success, career ambition, and worldly achievements.",
-    "summary": "Reflect on what genuine success looks like from an Islamic perspective versus societal pressure. A valuable grounding session for young professionals striving to align career ambitions with faith."
+    "reasoning": "Direct Islamic reminder aligning personal ambition, consistency in worship, and true success.",
+    "summary": "Shaykh Abdullah Oduro breaks down what real success means in Islam compared to worldly metrics. A timely spiritual recalibration for an ambitious young professional striving to maintain consistency in faith and work."
+  },
+  {
+    "videoId": "UXKJgI4iOc8",
+    "title": "Quitting Vercel to launch Total TypeScript",
+    "selected": true,
+    "reasoning": "Practical insights into the fullstack/TypeScript developer ecosystem and career transitions.",
+    "summary": "Matt Pocock shares what pushed him to leave Vercel and build Total TypeScript into a top educational platform. A great short watch for fullstack engineers interested in TypeScript mastery and modern developer education."
   },
   {
     "videoId": "KoLesHrVm1A",
     "title": "Sketching a tiny weather robot for ESP32",
     "selected": false,
-    "reasoning": "Niche hardware hobbyist clip with little practical fullstack application.",
+    "reasoning": "Niche IoT hardware hobby project, unrelated to fullstack SWE or applied AI workflows.",
     "summary": ""
   },
   {
     "videoId": "gnYNZEwq9ho",
     "title": "Agents should show, not ask",
     "selected": true,
-    "reasoning": "Actionable UX/UI design principle for building interactive AI tools and agent workflows.",
-    "summary": "GitHub Next design engineer Maggie Appleton explains why effective AI agents should demonstrate solutions visually rather than querying users with text prompts. A sharp, actionable insight for fullstack engineers building AI-driven interfaces."
-  },
-  {
-    "videoId": "KZSzF0KEFRg",
-    "title": "Design Engineering with Maggie Appleton",
-    "selected": true,
-    "reasoning": "In-depth practical discussion on design engineering, AI prototyping, and modern software collaboration.",
-    "summary": "Discover how design engineering bridges the gap between frontend development and modern AI capabilities at GitHub Next. Learn how to craft intuitive, agentic user experiences as a fullstack developer."
+    "reasoning": "Applied AI tooling and UI/UX design paradigm for software engineers building agentic tools.",
+    "summary": "GitHub Next's Maggie Appleton breaks down the core interaction design principle for AI coding agents: why agents should display artifacts instead of asking vague questions. Essential viewing for engineers integrating AI workflows into applications."
   },
   {
     "videoId": "SaCDnBUYJSk",
     "title": "Is it time to kill the pull request?",
     "selected": true,
-    "reasoning": "Practical engineering workflow insight on high-velocity deployment and integrating AI agents into CI/CD.",
-    "summary": "A provocative look at how AI agents are challenging traditional pull request workflows to dramatically speed up shipping velocity. Learn how high-performing teams rethink code reviews in an AI-assisted environment."
+    "reasoning": "Explores how AI agents are transforming modern CI/CD and production deployment workflows.",
+    "summary": "Discover how AI-first engineering teams are shipping to production dozens of times daily without traditional pull requests. An intriguing look into how code collaboration is evolving alongside autonomous agents."
   },
   {
     "videoId": "uKO1ueC6eu0",
     "title": "How Amp Ships 50 Times a Day With AI Agents",
     "selected": true,
-    "reasoning": "Applied software engineering breakdown of continuous deployment, agent permissions, and development workflows.",
-    "summary": "See the practical architecture and team practices that allow Amp to deploy to production 50 times a day using AI agents. Packed with real-world patterns for permissions, testing, and modern release pipelines."
+    "reasoning": "Deep dive into real-world software engineering workflows and AI agent integration.",
+    "summary": "Amp's engineering team reveals how they eliminated PR bottlenecks to ship 50 times a day using autonomous coding agents. Packed with practical takeaways on agent sandboxing, permissioning, and modern continuous deployment."
   },
   {
     "videoId": "8Yg74nkMvW0",
     "title": "Why your AI harness matters more than the model you pick",
     "selected": true,
-    "reasoning": "Crucial practical takeaway for software engineers building LLM applications and evaluation harnesses.",
-    "summary": "Find out why the evaluation harness, tool-calling environment, and error-handling framework matter far more than which foundational model you plug in. Essential architectural advice for building reliable AI software."
+    "reasoning": "Applied engineering perspective on evaluation harnesses and tooling over raw foundation models.",
+    "summary": "Stop worrying about which frontier LLM is best—this video explains why your testing harness, context injection, and agent toolchain dictate real-world performance. A practical guide for engineers building AI-augmented dev tools."
   },
   {
     "videoId": "xNw0ruE5si4",
     "title": "EP12 #KenaSoal | Tabung Najib, Kenyataan KPM-MITI, Teknokrat Dalam Politik, Rumah Untuk Anak Muda",
     "selected": false,
-    "reasoning": "Partisan political commentary and party politics.",
+    "reasoning": "Partisan Malaysian political commentary; explicitly excluded per instructions.",
     "summary": ""
   },
   {
     "videoId": "S5g4fb3jetw",
     "title": "EP24 #SembangKS | Keretapi Sekejap",
     "selected": false,
-    "reasoning": "Casual political banter and local controversy discussion.",
+    "reasoning": "Casual Malaysian political and social banter without direct career or finance utility.",
     "summary": ""
   },
   {
     "videoId": "9Tw5PIcEjIk",
     "title": "Anwar tegaskan pengampunan Najib kuasa mutlak Agong, namun kenyataan awalnya seakan ambil kredit.",
     "selected": false,
-    "reasoning": "Partisan political snippet.",
+    "reasoning": "Partisan domestic political controversy; excluded per guidelines.",
     "summary": ""
   },
   {
     "videoId": "zcLPGC-tvgk",
     "title": "LIVE: Uncle Bob on Software Fundamentals in the Age of AI",
     "selected": true,
-    "reasoning": "Vital discussion bridging core software craft, Clean Code principles, and modern AI coding assistants.",
-    "summary": "Industry veteran Uncle Bob joins Matt Pocock to debate why foundational software craftsmanship and clean code matter more than ever when working with AI coding agents. A must-watch for junior engineers looking to build lasting technical depth."
+    "reasoning": "Direct discussion on foundational software engineering craftsmanship alongside coding agents.",
+    "summary": "Robert C. Martin ('Uncle Bob') and Matt Pocock debate why clean code, testing, and architecture fundamentals matter more than ever when using AI coding assistants. Invaluable foundational advice for a junior engineer building a long-term technical career."
   },
   {
     "videoId": "gaDdrDdczO4",
     "title": "New Skills! v1.2 brings /wait-what, /writing-for-agents, and fixes /grill-me",
     "selected": true,
-    "reasoning": "Applied tooling update showing how to configure and extend Claude Code and CLI coding agents.",
-    "summary": "Explore practical new workflows and skills designed to tame AI agent verbosity, manage infrastructure, and sharpen prompting in tools like Claude Code. Directly applicable to everyday development productivity."
+    "reasoning": "Hands-on AI tooling and workflow enhancement for developers using Claude Code and terminal agents.",
+    "summary": "Explore new custom skills and agent extensions for Claude Code and coding CLI tools, including automated code grilling and infra provisioning. A hands-on tutorial for supercharging your daily terminal and coding productivity."
   },
   {
     "videoId": "F3lL98Pj90o",
     "title": "/wayfinder: Nothing is too big to plan anymore",
     "selected": true,
-    "reasoning": "Practical AI-assisted planning tool for decomposing large codebases and complex fullstack features.",
-    "summary": "Learn how to use AI-driven task orchestration to break down overwhelming software projects into concrete execution maps and tickets. A massive productivity booster for planning complex features."
+    "reasoning": "Applied developer tool for orchestrating multi-agent software planning and task tracking.",
+    "summary": "Learn how Wayfinder turns vague architecture ideas into structured execution plans across multiple agent sessions and issue trackers. An actionable tooling walkthrough for developers tackling large-scale feature implementations."
+  },
+  {
+    "videoId": "vkecOqfTh_I",
+    "title": "What If Each AI Generation Gets Slightly Less Aligned? - Noam Brown",
+    "selected": false,
+    "reasoning": "Theoretical AI safety and alignment philosophy rather than practical tooling.",
+    "summary": ""
   },
   {
     "videoId": "_Wn0CUjFZWQ",
     "title": "Why LLMs Might Hit a Wall - Noam Brown",
     "selected": false,
-    "reasoning": "High-level theoretical AI scaling research speculation.",
+    "reasoning": "Speculative AI scaling research debate, not applied software engineering.",
     "summary": ""
   },
   {
     "videoId": "nHkYf3iGlRE",
     "title": "You can win every battle and still lose the war - Sarah Paine",
     "selected": false,
-    "reasoning": "Military history trivia.",
+    "reasoning": "Historical military trivia; excluded per instructions.",
     "summary": ""
   },
   {
-    "videoId": "f6cjAEr08qk",
-    "title": "Sarah Paine — Why wars are so difficult to end",
-    "selected": false,
-    "reasoning": "Academic military history lecture.",
-    "summary": ""
+    "videoId": "U2ONsU3hlFA",
+    "title": "The Muslim Founder Who Built a $100M Company Fighting With Tinder",
+    "selected": true,
+    "reasoning": "Inspiring story of a Muslim software engineer and tech entrepreneur building a major consumer platform.",
+    "summary": "Shahzad Younas left investment banking, taught himself to code, and built Muzz into a $100M company with over 20 million users. A deeply inspiring story of tech craftsmanship, Muslim entrepreneurship, and product execution."
   },
   {
     "videoId": "ZwyFkrPZ5vs",
     "title": "The Mission Behind Billion-Dollar Company Fasset.",
     "selected": true,
-    "reasoning": "Directly intersects Islamic finance, fintech entrepreneurship, and digital asset platforms.",
-    "summary": "Hear the founding mission behind Fasset, a billion-dollar digital asset platform built for emerging Muslim markets. An inspiring case study on how Islamic finance principles merge with modern fintech products."
+    "reasoning": "Covers Islamic fintech and digital asset infrastructure in emerging Muslim markets.",
+    "summary": "Hear the founding mission behind Fasset, a billion-dollar fintech platform bringing Shariah-compliant digital financial assets to underserved markets. A great glance into the frontier of Islamic fintech and banking innovation."
   },
   {
     "videoId": "fBYcCUdNut8",
     "title": "Why It's Difficult for Muslims to Open a Bank Account",
     "selected": true,
-    "reasoning": "Highlights Islamic fintech challenges, cross-border banking friction, and financial inclusion.",
-    "summary": "A concise breakdown of the regulatory and infrastructural hurdles facing Muslims in global banking, and how Shariah-compliant digital financial services are working to solve financial exclusion."
-  },
-  {
-    "videoId": "_vfp10ujbEw",
-    "title": "Fasset CEO ($1B): 'Shariah Compliance' is a Colonial Mindset!",
-    "selected": true,
-    "reasoning": "Thought-provoking discussion on ethical Islamic finance innovation versus checkbox compliance.",
-    "summary": "The CEO of Fasset challenges standard industry perceptions of Shariah compliance, advocating for true ethical alignment rather than superficial legal engineering. A thought-provoking perspective on the future of Islamic finance."
+    "reasoning": "Addresses global banking barriers for Muslims and the growing need for Islamic fintech solutions.",
+    "summary": "This clip unpacks the financial exclusion and compliance hurdles Muslims face across international banking systems. It highlights why alternative Islamic fintech solutions are becoming essential global infrastructure."
   },
   {
     "videoId": "Jv5B5CEaPJI",
     "title": "Robot-Use Agents: Why General-Purpose Models May Win in Robotics",
     "selected": false,
-    "reasoning": "General robotics research trend rather than applied web/software developer tooling.",
+    "reasoning": "Academic robotics theory and generalized policy models, far removed from fullstack SWE.",
     "summary": ""
   },
   {
     "videoId": "j7Ee8hMme3c",
     "title": "Rocket cargo delivery anywhere on Earth in minutes",
     "selected": false,
-    "reasoning": "Hardware/aerospace startup pitch clip.",
+    "reasoning": "Aerospace and defense hardware startup pitch, outside the viewer's core focus.",
     "summary": ""
   },
   {
     "videoId": "iGY7httJjQA",
     "title": "Autonomous construction on Earth and beyond",
     "selected": false,
-    "reasoning": "Hardware construction robotics startup pitch.",
+    "reasoning": "Industrial robotics startup showcase with no software or Islamic finance crossover.",
     "summary": ""
   },
   {
     "videoId": "pNSeoen-kFw",
     "title": "How did the universe begin? | Big Think Explainers",
     "selected": false,
-    "reasoning": "Generic cosmology explainer video.",
+    "reasoning": "Cosmology trivia and poster promotion.",
     "summary": ""
   },
   {
     "videoId": "DVgSwPSJZWQ",
     "title": "Why AI feels alive | Adam Frank",
     "selected": false,
-    "reasoning": "Philosophical speculation on AI consciousness.",
+    "reasoning": "Philosophical pop-science monologue on AI consciousness, not practical engineering.",
     "summary": ""
   },
   {
     "videoId": "yzNzjg1c0V4",
     "title": "The tiny habits that change your life, one minute at a time | Tal Ben-Shahar: Full Interview",
     "selected": false,
-    "reasoning": "Generic self-help interview lacking specific relevance to tech or faith.",
+    "reasoning": "Generic self-help interview on micro-habits without specific relevance to early-career tech or faith.",
     "summary": ""
   },
   {
     "videoId": "Ms0tZaYK6h0",
     "title": "Chinese tech is already cheaper. What if it gets better too?",
     "selected": false,
-    "reasoning": "Geopolitical tech clip without practical application.",
+    "reasoning": "Macro geopolitical tech commentary with no applied engineering or Malaysian finance focus.",
     "summary": ""
   },
   {
     "videoId": "z5QHwAy777A",
     "title": "The Make-Everything Economy: China, AI and What Comes Next| Damien Ma | Keris & Silicon",
     "selected": false,
-    "reasoning": "Broad international macroeconomic policy analysis.",
+    "reasoning": "Macroeconomic industrial policy analysis of China; not relevant to Malaysian business or day-to-day software engineering.",
     "summary": ""
   },
   {
     "videoId": "0ky3W5mejWY",
     "title": "China's pitch to the Global South, in one sentence.Gita Wirjawan on why it works.",
     "selected": false,
-    "reasoning": "Broad geopolitical commentary clip.",
+    "reasoning": "Broad international diplomacy and geopolitical commentary.",
     "summary": ""
   }
 ]

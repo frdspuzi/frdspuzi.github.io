@@ -1,96 +1,132 @@
 {
   "videos": [
     {
-      "title": "We Let Claude Code and Codex Race Human Researchers — Elie Bakouch, Prime Intellect",
-      "url": "https://www.youtube.com/watch?v=oVsEddfhdxc",
-      "videoId": "oVsEddfhdxc",
+      "title": "AI-Generated Code Is Already Competing With Human Code — Daksh Gupta, Greptile",
+      "url": "https://www.youtube.com/watch?v=474j-n1Ltxc",
+      "videoId": "474j-n1Ltxc",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "While major tech labs hype recursive self-improvement as an imminent revolution, real-world benchmarks reveal that autonomous AI agents can beat human training speedrun records yet still fail to invent fundamentally novel algorithms. By pitting frontier models like Claude and Codex against ML optimization challenges, this talk uncovers the surprising gap between AI hype and reality—and maps out the multi-agent architectures needed to push past incremental tweaks toward genuine scientific discovery.",
-      "dateAdded": "2026-09-26T23:59:59.715Z",
+      "summary": "Analyzing over a million enterprise pull requests reveals a shocking reality: fully autonomous AI coding agents now match human software engineers in merge quality, revert rates, and critical bug frequency. Yet, while agents write code just as well as people, they introduce wildly different failure patterns—such as a 50% higher propensity for SQL injections. Watch this talk to see the hard empirical data proving AI coding is already taking over production codebases and learn how engineering teams must adapt their review workflows.",
+      "dateAdded": "2026-09-28T00:05:33.644Z",
       "timestamps": [
         {
-          "startTime": 464,
-          "endTime": 620,
-          "topic": "Autonomous Agent Showdown: Claude vs. Codex in AI Research"
+          "startTime": 315,
+          "endTime": 505,
+          "topic": "Benchmarking AI code quality against human developers across enterprise PRs"
         },
         {
-          "startTime": 860,
-          "endTime": 935,
-          "topic": "The Discovery Gap: Why Frontier Models Struggle with True Innovation"
+          "startTime": 505,
+          "endTime": 580,
+          "topic": "Uncovering unique security vulnerabilities and failure patterns in AI models"
         },
         {
-          "startTime": 940,
-          "endTime": 1040,
-          "topic": "The Blueprint for Real AI Breakthroughs: Multi-Agent Evolutionary Loops"
+          "startTime": 580,
+          "endTime": 730,
+          "topic": "Rethinking code review for a world where top engineers ship 500+ PRs a month"
         }
       ]
     },
     {
-      "title": "The craziest promotion of his life",
-      "url": "https://www.youtube.com/shorts/qnNi_NJtT8k",
-      "videoId": "qnNi_NJtT8k",
-      "channel": "Ryan Peterman",
+      "title": "Get Out of the Model's Way — Kevin Hou, Google DeepMind",
+      "url": "https://www.youtube.com/watch?v=buHC7bQE1X4",
+      "videoId": "buHC7bQE1X4",
+      "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Imagine getting promoted to the exact same engineering tier at Microsoft as Guido van Rossum, the creator of Python, and instantly colliding with massive imposter syndrome. In this candid clip, you'll learn how elite engineers overcome intense self-doubt and why reaching tech's highest levels requires building a sustained body of work rather than relying on a single lucky year. Watch this to understand what top-tier engineering leadership truly takes behind the scenes.",
-      "dateAdded": "2026-09-26T23:59:59.715Z",
+      "summary": "What if building an entire operating system from scratch took just 12 hours, a swarm of 93 autonomous AI agents, and under $1,000? In this visionary talk, Google DeepMind's Kevin Hou reveals how AI is evolving from simple chat sidebars into self-orchestrating multi-agent teams that dynamically spawn subagents and generate on-the-fly user interfaces. If you want to see the exact blueprint of how software engineering will operate in the agent-first era, this behind-the-scenes deep dive is an absolute must-watch.",
+      "dateAdded": "2026-09-28T00:05:33.645Z",
       "timestamps": [
         {
-          "startTime": 10,
-          "endTime": 29,
-          "topic": "Sharing a title with Python's creator and triggering maximum imposter syndrome"
+          "startTime": 501,
+          "endTime": 660,
+          "topic": "Agent Teams and Building an OS Kernel to Play Doom"
         },
         {
-          "startTime": 47,
-          "endTime": 68,
-          "topic": "The reality of elite promotions: Why a proven track record beats a lucky year"
+          "startTime": 675,
+          "endTime": 855,
+          "topic": "Automating Deep Research & Hypothesis Testing with Subagents"
+        },
+        {
+          "startTime": 855,
+          "endTime": 1055,
+          "topic": "The 3 Core Primitives of Next-Gen AI: Subagents, Sidecars, and Generative UI"
         }
       ]
     },
     {
-      "title": "The number one thing he wishes he could change in his career",
-      "url": "https://www.youtube.com/shorts/oGTTSL9K3yw",
-      "videoId": "oGTTSL9K3yw",
+      "title": "Software Engineering Is Becoming Factory Engineering — Zach Lloyd, Warp",
+      "url": "https://www.youtube.com/watch?v=tUPPVhBBcoM",
+      "videoId": "tUPPVhBBcoM",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Software engineering is undergoing an irreversible shift: writing code is becoming obsolete, and the future belongs to engineers who design and operate autonomous AI 'factories' that produce software. Former Google Principal Engineer and Warp founder Zach Lloyd reveals the exact architectural blueprint to transition from manual coding to managing self-improving agentic pipelines. Watch this talk to discover how to future-proof your engineering career and build end-to-end automated systems spanning issue triage, spec generation, and continuous verification.",
+      "dateAdded": "2026-09-28T00:05:33.645Z",
+      "timestamps": [
+        {
+          "startTime": 300,
+          "endTime": 460,
+          "topic": "The Death of Code Moats: Why Cheap AI Cloning Demands Building in the Open"
+        },
+        {
+          "startTime": 540,
+          "endTime": 730,
+          "topic": "Blueprint of a Software Factory: Automated Triage, Spec Writing, and Verification"
+        },
+        {
+          "startTime": 890,
+          "endTime": 975,
+          "topic": "From Coder to Meta-Engineer: Navigating the Transition to Process Engineering"
+        }
+      ]
+    },
+    {
+      "title": "Hiring without Leetcode",
+      "url": "https://www.youtube.com/shorts/nIuc21UX4Mo",
+      "videoId": "nIuc21UX4Mo",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Is sacrificing your personal relationships for non-stop career hustle truly worth it in the long run? In this candid reflection, a successful professional reveals his biggest regret—being 100% available for his job at the cost of family and friends—and why he'd gladly trade career milestones to reclaim that time. Watch this short reality check to re-evaluate your own priorities before hindsight catches up with you.",
-      "dateAdded": "2026-09-26T23:59:59.715Z",
+      "summary": "Traditional whiteboard coding interviews fail to reflect how engineers actually build software, which is why Stripe completely scrapped them. Discover how switching to realistic, laptop-based pair programming allowed them to evaluate genuine craft and maintain one of Silicon Valley's highest talent bars for years. Watch this quick breakdown to learn the exact philosophy that transformed tech hiring.",
+      "dateAdded": "2026-09-28T00:05:33.645Z",
       "timestamps": [
         {
           "startTime": 0,
-          "endTime": 20,
-          "topic": "The regret of prioritizing workplace availability over loved ones"
+          "endTime": 19,
+          "topic": "The flaw with traditional whiteboard interviews"
+        },
+        {
+          "startTime": 19,
+          "endTime": 34,
+          "topic": "Stripe's realistic pair-programming approach"
+        },
+        {
+          "startTime": 34,
+          "endTime": 53,
+          "topic": "How interview design maintains a high talent bar"
+        }
+      ]
+    },
+    {
+      "title": "The tradeoff he wish he knew earlier",
+      "url": "https://www.youtube.com/shorts/aLfERXEwzH0",
+      "videoId": "aLfERXEwzH0",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Blind ambition will burn you out unless you clearly understand the exact price you are paying for future freedom. Veteran tech leader Philip Su cuts through common career advice to explain the real trade-off between extreme hustle in your youth and earning long-term autonomy. Watch this 30-second reality check to ensure your hard work is actually buying the life you want.",
+      "dateAdded": "2026-09-28T00:05:33.645Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 11,
+          "topic": "Why wealthy advice against grinding overlooks real-world trade-offs"
+        },
+        {
+          "startTime": 11,
+          "endTime": 21,
+          "topic": "Sacrificing in your youth to buy future career freedom"
         },
         {
           "startTime": 21,
-          "endTime": 37,
-          "topic": "Why trading career success for family time is worth it"
-        }
-      ]
-    },
-    {
-      "title": "Amazon VP: \"People won't like to hear this\"",
-      "url": "https://www.youtube.com/shorts/n3Lu7kfhrv0",
-      "videoId": "n3Lu7kfhrv0",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Think keeping your head down and patiently doing great work is enough to get promoted? A seasoned leader reveals the uncomfortable truth about why bosses consistently promote demanding 'flight risks' over silent, loyal team players. Watch this video to learn the unspoken corporate triage rules so you can stop getting overlooked and start taking control of your career advancement.",
-      "dateAdded": "2026-09-26T00:15:13.495Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 22,
-          "topic": "The dilemma: Promoting the vocal agitator vs. the patient team player"
-        },
-        {
-          "startTime": 22,
-          "endTime": 58,
-          "topic": "Corporate triage: Why managers prioritize retention risk over fairness"
-        },
-        {
-          "startTime": 58,
-          "endTime": 84,
-          "topic": "The hidden reality of corporate promotions and the cost of staying silent"
+          "endTime": 30,
+          "topic": "The pitfall of blind ambition without understanding the cost"
         }
       ]
     },
@@ -277,54 +313,54 @@
       ]
     },
     {
-      "title": "The Squeeze Is Not the Punishment | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/_BHOzYhtKUI",
-      "videoId": "_BHOzYhtKUI",
+      "title": "Envying the Dead? | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/k_f5Mssqsrg",
+      "videoId": "k_f5Mssqsrg",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Feeling spiritually stuck or overwhelmed by life's restrictions? Discover why life's tightest moments aren't punishments, but rather divine protection and preparation designed to expand your soul for your greatest blessings. Watch this to uncover the profound wisdom behind Allah's names Al-Qabid and Al-Basit and permanently transform how you view hardship and ease.",
-      "dateAdded": "2026-09-26T23:59:59.715Z",
+      "summary": "While those in the grave beg for just one more chance at life, those exhausted by worldly heartbreaks often find themselves wishing for an escape—proving that living faithfully for Allah is sometimes harder than dying for Him. This powerful reminder exposes the devastating reality of spiritual burnout and draws upon the unwavering resilience of Prophet Ayyub (Job) to show how faith can anchor your soul when everything is stripped away. If you are feeling overwhelmed, drained, or detached from your purpose, watching this video will reframe your perspective and reignite your drive to keep going.",
+      "dateAdded": "2026-09-28T00:05:33.645Z",
       "timestamps": [
         {
           "startTime": 0,
-          "endTime": 35,
-          "topic": "Why divine constriction is protection and expansion is a test"
+          "endTime": 11,
+          "topic": "The paradox of wishing for death versus pleading for another chance"
         },
         {
-          "startTime": 35,
-          "endTime": 59,
-          "topic": "The spiritual rhythm: Qabd and Bast as the inhale and exhale of your soul"
+          "startTime": 11,
+          "endTime": 21,
+          "topic": "Prophet Ayyub's endurance and the challenge of living for Allah"
         },
         {
-          "startTime": 59,
-          "endTime": 98,
-          "topic": "How pressure prepares you for purpose: Angel Jibreel embracing the Prophet (PBUH)"
+          "startTime": 21,
+          "endTime": 36,
+          "topic": "The danger of spiritual death and losing inner purpose"
         }
       ]
     },
     {
-      "title": "The 4 Decrees Written For You In Your Mother’s Womb | Anchored Ep. 3 | Sh. Mohammad Elshinawy",
-      "url": "https://www.youtube.com/watch?v=NaNIBKD0_xs",
-      "videoId": "NaNIBKD0_xs",
+      "title": "How the Prophet (s) Navigated Loss | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/xMwihBUKP6g",
+      "videoId": "xMwihBUKP6g",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Your destiny may be written, but sincere supplication and righteous action can actively alter your decree—whereas paralyzing anxiety will change nothing. By unpacking classical Hadith on predestination, scientific harmony, and religious integrity, this lecture reveals why hidden spiritual ailments dictate how you exit this life. Watch this to resolve deep-seated questions about free will, protect your faith from subtle corruptions, and anchor your daily purpose in the authentic Sunnah.",
-      "dateAdded": "2026-09-26T23:59:59.715Z",
+      "summary": "True patience during tragedy isn't about suppressing your grief or rationalizing why hardship happens—it is entirely about what you choose not to say when your heart is breaking. Drawing from the profound example of Prophet Muhammad (PBUH) mourning his son Ibrahim, this video reveals that tears and sorrow are deeply human, while true faith lies in speaking only what pleases Allah. Watch this short reminder to transform how you process pain and anchor yourself in divine trust during life's hardest moments.",
+      "dateAdded": "2026-09-28T00:05:33.645Z",
       "timestamps": [
         {
-          "startTime": 980,
-          "endTime": 1110,
-          "topic": "How Dua and Righteous Deeds Interact with Divine Destiny"
+          "startTime": 0,
+          "endTime": 33,
+          "topic": "Why patience does not mean philosophizing or rationalizing loss"
         },
         {
-          "startTime": 1590,
-          "endTime": 1780,
-          "topic": "Why Hidden Sins Cause People to Stumble at the Moment of Death"
+          "startTime": 33,
+          "endTime": 58,
+          "topic": "Embracing natural grief while speaking only what pleases Allah"
         },
         {
-          "startTime": 2605,
-          "endTime": 2950,
-          "topic": "The Critical Dangers of Religious Innovation (Bid'ah) to Faith and Unity"
+          "startTime": 58,
+          "endTime": 81,
+          "topic": "Trusting Allah's ultimate wisdom when pain is beyond comprehension"
         }
       ]
     },
@@ -353,28 +389,7 @@
           "topic": "The three enduring legacies that follow you into the grave"
         }
       ]
-    },
-    {
-      "title": "Agents should show, not ask",
-      "url": "https://www.youtube.com/shorts/gnYNZEwq9ho",
-      "videoId": "gnYNZEwq9ho",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Ever get mental fatigue when an AI agent bombards you with 20 tedious multiple-choice questions just to set up a task? Discover why text chats and command-line interfaces are currently the biggest bottleneck in AI workflows, and see how intuitive visual GUI cards could revolutionize the way we collaborate with agents.",
-      "dateAdded": "2026-09-26T23:59:59.715Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 22,
-          "topic": "The agent bottleneck: Why text-based planning exhausts your brain"
-        },
-        {
-          "startTime": 22,
-          "endTime": 54,
-          "topic": "Prototyping visual cards and dynamic GUI for agent decision-making"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-09-27T00:03:06.046Z"
+  "lastUpdated": "2026-09-28T00:10:17.777Z"
 }
