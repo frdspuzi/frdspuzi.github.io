@@ -1,148 +1,148 @@
 {
   "videos": [
     {
-      "title": "AI-Generated Code Is Already Competing With Human Code — Daksh Gupta, Greptile",
-      "url": "https://www.youtube.com/watch?v=474j-n1Ltxc",
-      "videoId": "474j-n1Ltxc",
+      "title": "The State of AI in Software Development: Data from 400+ Orgs — Justin Reock, DX",
+      "url": "https://www.youtube.com/watch?v=Se8jHLliLXE",
+      "videoId": "Se8jHLliLXE",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Analyzing over a million enterprise pull requests reveals a shocking reality: fully autonomous AI coding agents now match human software engineers in merge quality, revert rates, and critical bug frequency. Yet, while agents write code just as well as people, they introduce wildly different failure patterns—such as a 50% higher propensity for SQL injections. Watch this talk to see the hard empirical data proving AI coding is already taking over production codebases and learn how engineering teams must adapt their review workflows.",
-      "dateAdded": "2026-09-28T00:05:33.644Z",
+      "summary": "Despite pouring millions into AI coding assistants expecting 10x leaps, hard data across 200,000 developers reveals median velocity gains sit at just 7.7%—with nobody hitting even 2x. This talk exposes why AI-generated code is triggering bloated pull requests and dropping deployment confidence when applied to the wrong parts of the development lifecycle. If you want the unvarnished, data-backed truth on where AI actually drives engineering ROI versus where it creates friction, this presentation is essential viewing.",
+      "dateAdded": "2026-10-01T00:55:42.524Z",
       "timestamps": [
         {
-          "startTime": 315,
-          "endTime": 505,
-          "topic": "Benchmarking AI code quality against human developers across enterprise PRs"
+          "startTime": 360,
+          "endTime": 515,
+          "topic": "The AI Quality Paradox: Surging PR sizes and dropping change confidence"
         },
         {
-          "startTime": 505,
-          "endTime": 580,
-          "topic": "Uncovering unique security vulnerabilities and failure patterns in AI models"
+          "startTime": 898,
+          "endTime": 985,
+          "topic": "The Bottleneck Fallacy: Why AI code generation yields modest overall gains"
         },
         {
-          "startTime": 580,
-          "endTime": 730,
-          "topic": "Rethinking code review for a world where top engineers ship 500+ PRs a month"
+          "startTime": 985,
+          "endTime": 1115,
+          "topic": "Real-World ROI: How Zapier, Morgan Stanley, and Spotify deploy AI across the SDLC"
         }
       ]
     },
     {
-      "title": "Get Out of the Model's Way — Kevin Hou, Google Antigravity",
-      "url": "https://www.youtube.com/watch?v=buHC7bQE1X4",
-      "videoId": "buHC7bQE1X4",
+      "title": "The Death of the Code Review: What the Data Actually Says — Laurie Voss, Arize AI",
+      "url": "https://www.youtube.com/watch?v=_mi3alkqy4s",
+      "videoId": "_mi3alkqy4s",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "What if building an entire operating system from scratch took just 12 hours, a swarm of 93 autonomous AI agents, and under $1,000? In this visionary talk, Google DeepMind's Kevin Hou reveals how AI is evolving from simple chat sidebars into self-orchestrating multi-agent teams that dynamically spawn subagents and generate on-the-fly user interfaces. If you want to see the exact blueprint of how software engineering will operate in the agent-first era, this behind-the-scenes deep dive is an absolute must-watch.",
-      "dateAdded": "2026-09-28T00:05:33.645Z",
+      "summary": "AI agents have unlocked a 740% surge in code generation, yet engineering teams are only shipping 30% more software because manual code review has become an impossible bottleneck. Blindly trusting green tests is a dangerous illusion, as AI code routinely passes automated test suites while introducing massive maintainability and security vulnerabilities under the hood. This talk delivers the roadmap for the next era of development: why you must stop reviewing individual pull requests and start engineering the automated rubrics, evaluation harnesses, and runtime observability systems that make AI code genuinely safe to ship.",
+      "dateAdded": "2026-10-01T00:55:42.524Z",
       "timestamps": [
         {
-          "startTime": 501,
-          "endTime": 660,
-          "topic": "Agent Teams and Building an OS Kernel to Play Doom"
+          "startTime": 95,
+          "endTime": 155,
+          "topic": "The 741% Code Boom vs. 30% Ship Rate Bottleneck"
         },
         {
-          "startTime": 675,
-          "endTime": 855,
-          "topic": "Automating Deep Research & Hypothesis Testing with Subagents"
+          "startTime": 958,
+          "endTime": 1048,
+          "topic": "The Illusion of Green Tests: How AI Passed Test Suites While Creating 13,000 Unsafe Blocks"
         },
         {
-          "startTime": 855,
-          "endTime": 1055,
-          "topic": "The 3 Core Primitives of Next-Gen AI: Subagents, Sidecars, and Generative UI"
+          "startTime": 1365,
+          "endTime": 1450,
+          "topic": "Stop Reviewing PRs: Shifting from Line-by-Line Reviewer to Harness Engineer"
         }
       ]
     },
     {
-      "title": "Software Engineering Is Becoming Factory Engineering — Zach Lloyd, Warp",
-      "url": "https://www.youtube.com/watch?v=tUPPVhBBcoM",
-      "videoId": "tUPPVhBBcoM",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Software engineering is undergoing an irreversible shift: writing code is becoming obsolete, and the future belongs to engineers who design and operate autonomous AI 'factories' that produce software. Former Google Principal Engineer and Warp founder Zach Lloyd reveals the exact architectural blueprint to transition from manual coding to managing self-improving agentic pipelines. Watch this talk to discover how to future-proof your engineering career and build end-to-end automated systems spanning issue triage, spec generation, and continuous verification.",
-      "dateAdded": "2026-09-28T00:05:33.645Z",
-      "timestamps": [
-        {
-          "startTime": 300,
-          "endTime": 460,
-          "topic": "The Death of Code Moats: Why Cheap AI Cloning Demands Building in the Open"
-        },
-        {
-          "startTime": 540,
-          "endTime": 730,
-          "topic": "Blueprint of a Software Factory: Automated Triage, Spec Writing, and Verification"
-        },
-        {
-          "startTime": 890,
-          "endTime": 975,
-          "topic": "From Coder to Meta-Engineer: Navigating the Transition to Process Engineering"
-        }
-      ]
-    },
-    {
-      "title": "The quiet engineer's way to get credit",
-      "url": "https://www.youtube.com/shorts/R87cmcAfYQw",
-      "videoId": "R87cmcAfYQw",
+      "title": "\"HR's job is to side with me unless I've done something illegal\"",
+      "url": "https://www.youtube.com/shorts/BhcZf49CmMo",
+      "videoId": "BhcZf49CmMo",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "You don't need to be the loudest voice in the room to build a legendary career—you just need the right leverage. Discover the 'silent engineer's publicity method' and how one former Amazon engineer made himself unforgettable for over a decade without saying a word. Watch this quick breakdown to learn how building tools others rely on can make your reputation do the talking for you.",
-      "dateAdded": "2026-09-30T00:51:35.852Z",
+      "summary": "Think hard work or HR can protect you from a toxic boss? This eye-opening breakdown exposes the subtle, ruthless playbook managers use to quietly force employees out without breaking a single corporate rule. Watch this to recognize the warning signs of quiet firing before your career trajectory gets derailed.",
+      "dateAdded": "2026-10-01T00:55:42.524Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 22,
+          "topic": "Subtle tactics managers use to make you quit voluntarily"
+        },
+        {
+          "startTime": 22,
+          "endTime": 39,
+          "topic": "Weaponizing performance reviews and shifting goalposts"
+        },
+        {
+          "startTime": 39,
+          "endTime": 60,
+          "topic": "The harsh truth about why HR will side with management"
+        }
+      ]
+    },
+    {
+      "title": "Your manager picks whoever won't push back",
+      "url": "https://www.youtube.com/shorts/ebYEIGHr6fU",
+      "videoId": "ebYEIGHr6fU",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "The secret to never having unwanted grunt work dumped on your desk isn't working harder—it's proactively pitching your own ideas so you always appear completely booked with high-impact projects. When you do get caught idle, mastering the strategic 'porcupine defense' makes offloading busywork onto you far more trouble than it's worth. Watch this quick breakdown to master workplace boundaries and protect your valuable time from opportunistic coworkers.",
+      "dateAdded": "2026-10-01T00:55:42.524Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 23,
+          "topic": "Playing offense: Proactively pitching projects to avoid dumped work"
+        },
+        {
+          "startTime": 23,
+          "endTime": 58,
+          "topic": "The porcupine defense: Making yourself too thorny to assign busywork to"
+        }
+      ]
+    },
+    {
+      "title": "How to stop others from taking your scope",
+      "url": "https://www.youtube.com/shorts/teoGpvLfE88",
+      "videoId": "teoGpvLfE88",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Ever worry about ambitious coworkers swooping in to poach your best ideas and take over your projects? This punchy breakdown reveals clever workplace defense tactics—from becoming the 'kingmaker' who controls project handoffs to sneakily offloading your grunt work onto rivals. Watch this to master office politics and protect your high-visibility work before someone else claims it.",
+      "dateAdded": "2026-10-01T00:55:42.524Z",
       "timestamps": [
         {
           "startTime": 0,
           "endTime": 18,
-          "topic": "The two best ways quiet engineers can gain recognition without self-promotion"
+          "topic": "Playing the 'kingmaker' and keeping ideas under wraps"
         },
         {
           "startTime": 18,
-          "endTime": 54,
-          "topic": "How an Amazon engineer became a company legend by building an essential tool"
+          "endTime": 42,
+          "topic": "The darker tactic: Offloading your busywork onto competitors"
         }
       ]
     },
     {
-      "title": "Amazon VP on who really gets the credit",
-      "url": "https://www.youtube.com/shorts/0NSzdSKcIQE",
-      "videoId": "0NSzdSKcIQE",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Doing great work means nothing if someone else announces it first—the person who speaks up almost always walks away with the lion's share of the credit. This quick masterclass breaks down the essential workplace tactic for claiming visibility on collaborative projects without taking unfair credit. Watch this to learn how to strategically voice your contributions so your hard work never goes unnoticed again.",
-      "dateAdded": "2026-09-30T00:51:35.852Z",
+      "title": "Berhutang demi majlis kahwin?",
+      "url": "https://www.youtube.com/shorts/OEXlO-0KlFA",
+      "videoId": "OEXlO-0KlFA",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Taking out a ten-year personal loan just to fund a half-day wedding reception is one of the quickest ways to sabotage your financial future before your marriage even starts. This video breaks down why pleasing societal expectations leads to long-term regret and explains how financial alignment—being 'sekufu' in money mindset—is the true foundation of marital happiness. Watch this to avoid crippling debt and learn how to prioritize your actual life together over a fleeting event.",
+      "dateAdded": "2026-10-01T00:55:42.524Z",
       "timestamps": [
         {
           "startTime": 0,
-          "endTime": 25,
-          "topic": "The first-speaker advantage and capturing project credit"
+          "endTime": 35,
+          "topic": "Why married life matters far more than the wedding day"
         },
         {
-          "startTime": 25,
-          "endTime": 51,
-          "topic": "How to piggyback and claim your share if someone speaks first"
+          "startTime": 35,
+          "endTime": 75,
+          "topic": "The financial trap of taking personal loans for a wedding ceremony"
         },
         {
-          "startTime": 51,
-          "endTime": 61,
-          "topic": "Why silence guarantees your efforts will be overlooked"
-        }
-      ]
-    },
-    {
-      "title": "\"I only give out three shit work tokens a month\"",
-      "url": "https://www.youtube.com/shorts/eNTb2sIy1x0",
-      "videoId": "eNTb2sIy1x0",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Want to push back on thankless tasks from your boss without coming across as difficult or uncooperative? This clever psychological framing trick demonstrates how introducing an arbitrary 'token limit' forces others to respect your boundaries while actually boosting your likability. Watch this quick breakdown to learn how setting subconscious anchors can protect your time at work.",
-      "dateAdded": "2026-09-30T00:51:35.852Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 30,
-          "topic": "The 'shit work token' framing technique"
-        },
-        {
-          "startTime": 30,
-          "endTime": 64,
-          "topic": "How subconscious anchors let you push back and stay respected"
+          "startTime": 75,
+          "endTime": 140,
+          "topic": "Ignoring societal pressure and finding financial compatibility (sekufu)"
         }
       ]
     },
@@ -195,32 +195,6 @@
           "startTime": 77,
           "endTime": 128,
           "topic": "Maintaining family standard of living and dual-income breadwinner needs"
-        }
-      ]
-    },
-    {
-      "title": "Perangkap kewangan Gen Z?",
-      "url": "https://www.youtube.com/shorts/q3MArAgSjx0",
-      "videoId": "q3MArAgSjx0",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Think you can easily afford a new car just because your salary covers the monthly installment? This video reveals the brutal hidden financial blindspots—like unexpected four-figure year-two insurance bills and runaway 'Buy Now, Pay Later' debts—that quietly drain young adults' bank accounts. Watch this before signing your next financing agreement so you don't end up paying double just to impress others.",
-      "dateAdded": "2026-09-26T00:15:13.495Z",
-      "timestamps": [
-        {
-          "startTime": 25,
-          "endTime": 95,
-          "topic": "The illusion of car affordability based purely on monthly installments"
-        },
-        {
-          "startTime": 95,
-          "endTime": 140,
-          "topic": "The financial shock of year-two insurance renewals and maintenance costs"
-        },
-        {
-          "startTime": 140,
-          "endTime": 160,
-          "topic": "Delayed gratification and the risks of gadget financing through Buy Now Pay Later"
         }
       ]
     },
@@ -324,14 +298,56 @@
       ]
     },
     {
-      "title": "The Devil Whispers. Your Intellect Does the Rest | Snapshots with Imam Tom Facchine",
+      "title": "How To Know If Your Hope Is Fake | Sh. Mohammad Elshinawy",
+      "url": "https://www.youtube.com/shorts/mUgP1uaqPII",
+      "videoId": "mUgP1uaqPII",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Expecting Paradise while actively sowing the seeds of sin is a dangerous delusion, but the ultimate trap is convincing yourself you will repent tomorrow. This powerful reminder exposes procrastination as Shaytan's most lethal snare and reveals why delaying your return to Allah is a gamble you cannot afford to take. Watch this to break free from false hopes and take urgent action to secure your ultimate reward before time runs out.",
+      "dateAdded": "2026-10-01T00:55:42.524Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 25,
+          "topic": "The delusion of false hope and expecting Paradise through sinful actions"
+        },
+        {
+          "startTime": 25,
+          "endTime": 49,
+          "topic": "How procrastination and delaying repentance become a deadly snare"
+        },
+        {
+          "startTime": 49,
+          "endTime": 68,
+          "topic": "The urgency of striving for Allah's precious reward without delay"
+        }
+      ]
+    },
+    {
+      "title": "The Devil Didn’t Need to Convince You | Snapshots with Imam Tom Facchine",
       "url": "https://www.youtube.com/watch?v=FezK9gGEI8Q",
       "videoId": "FezK9gGEI8Q",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Imam Tom Facchine unpacks how our own intelligence can subtly rationalize our desires and ego when disconnected from taqwa. This reminder will help you cultivate intellectual humility and guard your heart against self-deception.",
-      "dateAdded": "2026-09-30T00:51:35.853Z",
-      "timestamps": []
+      "summary": "Being intelligent won't protect you from bad ideas—it often just makes your rationalizations sound far more sophisticated. This eye-opening talk reveals how unchecked desires and the hunger for social approval can hijack your intellect into justifying spiritual compromises, proving why raw smarts are dangerous without divine revelation. Watch this to learn how to truly anchor your mind in Taqwa and ensure your intelligence serves truth rather than your ego.",
+      "dateAdded": "2026-10-01T00:55:42.524Z",
+      "timestamps": [
+        {
+          "startTime": 11,
+          "endTime": 145,
+          "topic": "The difference between raw intelligence and Islamic 'Aql"
+        },
+        {
+          "startTime": 146,
+          "endTime": 252,
+          "topic": "How desires and social pressure hijack the intellect"
+        },
+        {
+          "startTime": 253,
+          "endTime": 300,
+          "topic": "Practical self-checks to anchor your intelligence in Taqwa"
+        }
+      ]
     },
     {
       "title": "Why Modern Life Makes Every Death Feel Sudden | Signs of the Hour Ep. 19 | Dr. Omar Suleiman",
@@ -360,5 +376,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-09-30T00:55:56.926Z"
+  "lastUpdated": "2026-10-01T00:59:12.465Z"
 }
