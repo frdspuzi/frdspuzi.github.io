@@ -1,215 +1,215 @@
 {
   "learnings": [
     {
-      "question": "In the 1880s, a psychologist demonstrated that people forget roughly what percentage of newly learned information within just 24 hours, unless they actively recall it?",
+      "question": "According to 19th-century psychologist Hermann Ebbinghaus's research on the \"forgetting curve,\" roughly what percentage of newly learned material do people forget within just 24 hours unless they actively force themselves to recall it?",
       "options": [
+        "About 20%",
+        "About 95%",
         "About 50%",
-        "About 30%",
-        "About 80%",
-        "About 95%"
-      ],
-      "correctIndex": 2,
-      "learning": "Hermann Ebbinghaus showed in the 1880s that people forget about 80% of what they learn within 24 hours unless they actively force themselves to recall it — the basis for spaced repetition.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "What term, coined by researchers behind the 'Google Effect' paper, describes the tendency to forget information as soon as it's saved digitally or looked up online?",
-      "options": [
-        "Analog Fatigue",
-        "Memory Palace Effect",
-        "Digital Amnesia",
-        "Cognitive Saturation"
-      ],
-      "correctIndex": 2,
-      "learning": "The 'Google Effect' research calls it Digital Amnesia: the moment we write something down or save it digitally, our brains treat that as permission to forget it.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In the Scrum framework, what is the name of the artifact that visualizes a Sprint's progress and shows how much work remains?",
-      "options": [
-        "Burndown Chart",
-        "Gantt Chart",
-        "Product Backlog",
-        "Sprint Backlog"
-      ],
-      "correctIndex": 0,
-      "learning": "The Burndown Chart is the Scrum artifact that visualizes Sprint progress, showing remaining work and whether the team is on schedule.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "Which job title is commonly mistaken for an official Scrum role, despite not actually being one of Scrum's three defined roles?",
-      "options": [
-        "Product Owner",
-        "Developer",
-        "Scrum Master",
-        "Project Manager"
+        "About 80%"
       ],
       "correctIndex": 3,
-      "learning": "Scrum defines only three roles — Product Owner, Scrum Master, and Developers. 'Project Manager' is not one of them, a common point of confusion for people new to the framework.",
+      "learning": "Hermann Ebbinghaus proved back in the 1880s that we forget about 80% of what we learn within 24 hours unless we actively force ourselves to recall it — simply re-reading material doesn't work as well as being quizzed on it.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "What is the name of the psychological effect in which the simple act of writing something down (or saving it to your phone) signals to your brain that it's now safe to forget it?",
+      "options": [
+        "Confirmation Bias",
+        "The Dunning-Kruger Effect",
+        "Cognitive Offloading",
+        "Analysis Paralysis"
+      ],
+      "correctIndex": 2,
+      "learning": "Psychologists call the habit of outsourcing memory to notes or devices \"Cognitive Offloading\" — part of what's sometimes dubbed the \"Performance Paradox,\" since the moment we write something down, our brain treats it as permission to delete it.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "In the Scrum framework, which role is primarily responsible for protecting the team from distractions, helping resolve issues, and facilitating the overall Scrum process?",
+      "options": [
+        "Developers",
+        "Scrum Master",
+        "Project Manager",
+        "Product Owner"
+      ],
+      "correctIndex": 1,
+      "learning": "The Scrum Master's job is to protect the team from distractions, help resolve issues, and facilitate the Scrum process — notably, \"Project Manager\" isn't one of Scrum's three defined roles at all.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "What Arabic term, drawn from Quran 2:30, refers to humanity's role as steward or caretaker of the Earth?",
+      "question": "What is the main purpose of breaking a project into short, iterative cycles called \"Sprints\" in the Scrum methodology?",
       "options": [
-        "Taqwa",
-        "Ummah",
-        "Khalifah",
-        "Shariah"
+        "To eliminate the need for any planning",
+        "To increase the overall length of the project",
+        "To allow for more flexibility and quicker adjustments",
+        "To reduce the number of team members needed"
       ],
       "correctIndex": 2,
-      "learning": "Khalifah is the Quranic term (2:30) for humanity's role as steward or caretaker of the Earth, carrying responsibility for preserving faith and unity.",
+      "learning": "Scrum is an agile approach that breaks work into short, iterative cycles called Sprints specifically to allow for more flexibility and quicker adjustments, rather than committing to one long, rigid plan.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "In the Islamic worldview described in this exploration of life's purpose, what are the three core roles that give human life meaning?",
+      "options": [
+        "Worship, stewardship (khalifah) of the Earth, and accountability in the Hereafter",
+        "Knowledge, power, and legacy",
+        "Charity, prayer, and fasting alone",
+        "Wealth, family, and good health"
+      ],
+      "correctIndex": 0,
+      "learning": "This exploration of life's purpose frames human existence around three primary roles: worshiping Allah, serving as stewards (khalifah) of the Earth, and preparing for the Hereafter through a life of conscious choices and accountability.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "According to Surah Adh-Dhariyat (51:56), what is given as the core reason jinn and mankind were created?",
+      "question": "Which verse of the Quran is cited as stating that Allah created jinn and mankind for no purpose other than to worship Him?",
       "options": [
-        "To multiply and populate the earth",
-        "To worship Allah",
-        "To seek knowledge above all else",
-        "To attain wealth and power"
+        "Quran 4:6",
+        "Quran 29:64",
+        "Quran 51:56",
+        "Quran 2:30"
+      ],
+      "correctIndex": 2,
+      "learning": "Quran 51:56 — \"I did not create the jinn and mankind except to worship Me\" — is presented as the foundational statement of human purpose in Islam.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In Islamic theology, what term describes humanity's role as caretakers or stewards of the Earth, responsible for preserving faith and unity?",
+      "options": [
+        "Ummah",
+        "Khalifah",
+        "Taqwa",
+        "Shura"
       ],
       "correctIndex": 1,
-      "learning": "Quran 51:56 states: 'I did not create the jinn and mankind except to worship Me' — framed as the foundational purpose of human existence.",
+      "learning": "\"Khalifah\" refers to humanity's role as caretakers of Allah's creation on Earth — a responsibility that extends beyond personal conduct to preserving faith and unity within the community.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which Hadith collection records the Prophet Muhammad's (ﷺ) statement, 'There will be no prophet after me; instead, there will be caliphs'?",
+      "question": "In PCIe power management, which state is described as a very light sleep mode, designed for only very short periods of idleness, that lets the link wake up quickly to resume activity?",
       "options": [
-        "Sahih Muslim",
-        "Sahih Bukhari",
-        "Jami at-Tirmidhi",
-        "Sunan Abu Dawood"
-      ],
-      "correctIndex": 1,
-      "learning": "The statement 'There will be no prophet after me; instead, there will be caliphs' is recorded in Sahih Bukhari 3455, underscoring the responsibility of continued leadership after the Prophet.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In PCIe power management, which state represents a device fully powered on and actively transmitting data, with no power-saving measures applied?",
-      "options": [
-        "L1.0",
         "L2",
+        "L1.0",
         "L0s",
         "L0"
       ],
-      "correctIndex": 3,
-      "learning": "L0 is the PCIe active state: the device is fully operational and transmitting data, with no power-saving measures in effect.",
+      "correctIndex": 2,
+      "learning": "L0s is a very light sleep state in PCIe power management — comparable to a computer screen turning off — designed for very short durations of idleness while still allowing a quick return to full activity.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "What is given as the primary purpose of implementing power management states in PCIe devices?",
+      "question": "Which PCIe power state is described as almost completely powered down, used for the longest periods of inactivity, and offering the highest power savings at the cost of the longest wake-up time?",
       "options": [
-        "Increasing the raw physical data-transfer speed between devices",
-        "Efficient energy use, extending device longevity, and enhancing system performance",
-        "Enabling backward compatibility with USB devices",
-        "Reducing the manufacturing cost of PCIe hardware"
+        "L0s",
+        "L1.1",
+        "L1.2",
+        "L2"
       ],
-      "correctIndex": 1,
-      "learning": "PCIe power management states exist to efficiently manage energy use, extend device longevity, and enhance system performance, especially where power consumption is a major concern.",
+      "correctIndex": 3,
+      "learning": "L2 is the deepest PCIe power state — the device is almost completely powered down, giving the highest power savings but the longest delay when waking back up, comparable to a fully shut-down computer.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "In Islamic theology, what term refers to the actual unfolding of events in a person's life, as opposed to Allah's complete eternal foreknowledge of them?",
+      "question": "In Islamic theology, which term refers to Allah's complete and eternal plan for everything that will ever happen, already written and fully known to Him?",
       "options": [
-        "Qadr",
-        "Taqwa",
-        "Tawakkul",
-        "Qada'"
+        "Ihsan",
+        "Dua",
+        "Qada'",
+        "Qadr"
       ],
       "correctIndex": 3,
-      "learning": "Qada' refers to the actual occurrence of events in our lives as they unfold, shaped by our actions — distinct from Qadr, which is Allah's complete, eternal plan.",
+      "learning": "Qadr is everything Allah has planned and written for our lives, encompassing His complete and eternal knowledge of everything that will ever happen — distinct from Qada', which is the actual unfolding of events as they happen.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which Quranic verse teaches that Allah does not change the condition of a people until they change what is within themselves?",
+      "question": "According to a hadith narrated by Ubadah bin As-Samit, what happens whenever a Muslim sincerely calls upon Allah with a supplication (dua), so long as it isn't for something sinful or for severing family ties?",
       "options": [
-        "Surah Al-Baqarah 2:286",
-        "Surah Ar-Ra'd 13:11",
-        "Surah Al-Hadid 57:22",
-        "Surah Yusuf 12:87"
-      ],
-      "correctIndex": 1,
-      "learning": "Surah Ar-Ra'd 13:11 teaches that Allah does not change a people's condition until they change what is within themselves — framed as the basis for taking responsibility for one's own Qada'.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What resolves the apparent tension between making Dua to change one's circumstances and Allah's complete, eternal foreknowledge of all events?",
-      "options": [
-        "Any change brought about through Dua was already known by Allah and is itself part of His Qadr",
-        "Qada' and Qadr are simply two names for the same fixed, unchangeable outcome",
-        "Dua only brings spiritual reward and has no effect on worldly outcomes",
-        "Free will is an illusion, so no action, including Dua, changes anything"
+        "Allah either grants the request or wards off an equivalent amount of evil from them",
+        "Allah always grants the exact request within that person's lifetime",
+        "The dua is only accepted if made during the last third of the night",
+        "The dua is rejected if the same request is repeated more than three times"
       ],
       "correctIndex": 0,
-      "learning": "Dua and action can alter one's Qada', but that very change was always encompassed within Allah's Qadr — His perfect, prior knowledge — resolving the tension between free will and predestination.",
+      "learning": "A hadith (Jami at-Tirmidhi 3573) states that there is no Muslim who supplicates to Allah, so long as it isn't for something sinful or for severing family ties, except that Allah either grants it to them or turns away an equivalent amount of evil.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In a word-frequency analysis of the Quran testing the 80/20 Pareto Principle, what percentage of the Quran's total text did the top 20 most frequent words actually account for?",
+      "question": "Given the principle that \"Allah does not change the condition of a people until they change what is in themselves,\" what practical response does this teaching encourage when facing hardship?",
       "options": [
-        "About 80%",
-        "About 35%",
-        "About 50%",
-        "About 20.83%"
+        "Take responsibility and make sincere dua while actively working to change your situation",
+        "Wait patiently for the situation to change without taking any action",
+        "Accept the hardship as fixed and unchangeable fate",
+        "Ask a religious scholar to perform the dua on your behalf instead"
       ],
-      "correctIndex": 3,
-      "learning": "Contrary to the 80/20 Pareto Principle hypothesis, the top 20 most frequent words in the Quran accounted for only about 20.83% of its total text, not 80%.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "correctIndex": 0,
+      "learning": "The practical takeaway is to take charge of your own condition: make sincere dua and strive for positive change, since Allah does not change a people's condition until they change what is within themselves.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In Arabic script, what term refers to the small diacritical marks placed above or below letters to indicate vowel sounds?",
+      "question": "A data analysis of the full Arabic text of the Quran tested whether the Pareto Principle (80/20 rule) applied to its vocabulary. What percentage of the entire text did the 20 most frequently used words actually account for?",
       "options": [
-        "Isnad",
-        "Sukun",
-        "Tashkeel",
-        "Hamza"
+        "About 5%",
+        "About 50%",
+        "About 20.83%",
+        "About 80%"
       ],
       "correctIndex": 2,
-      "learning": "Tashkeel are the small diacritical marks added above or below Arabic letters to indicate vowel sounds, similar to how vowels work in English.",
+      "learning": "Testing the Pareto Principle against the Quran's vocabulary found it didn't hold: the top 20 most frequent words accounted for only about 20.83% of the full text, not 80%.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "When analyzing word frequency across the Quran, why was the original Arabic text used instead of an English translation?",
+      "question": "What term refers to the small diacritical marks placed above or below Arabic letters to indicate which vowel sound to use when pronouncing them?",
       "options": [
-        "Because Arabic text requires less computational processing power to analyze",
-        "Because English translations aren't a direct equivalent, and Arabic has a far larger vocabulary (around 12 million words) than English (around 170,000)",
-        "Because the Quran.com API only accepts Arabic-language queries",
-        "Because no English translation of the Quran has ever been published"
+        "Tajweed",
+        "Isnad",
+        "Hamza",
+        "Tashkeel"
+      ],
+      "correctIndex": 3,
+      "learning": "Tashkeel are the small markings placed above or below Arabic letters to indicate pronunciation — similar to how vowels work in English — and without them, reading Arabic text correctly becomes much trickier.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "A word-frequency analysis of every verse in the Quran found that one particular verse, used as a refrain, is repeated more often than any other. Which verse topped that list?",
+      "options": [
+        "\"Woe that Day to the deniers.\"",
+        "\"Then which of the favors of your Lord will you deny?\"",
+        "\"So fear Allah and obey me.\"",
+        "\"Indeed, I am to you a trustworthy messenger.\""
       ],
       "correctIndex": 1,
-      "learning": "Arabic was chosen over English translation because translations aren't a direct equivalent, and Arabic's vocabulary (roughly 12 million words) vastly outnumbers English's (roughly 170,000 words in the Oxford English Dictionary) — about a 71:1 ratio.",
+      "learning": "Running a value-count on every verse in the Quran's text showed that \"Then which of the favors of your Lord will you deny?\" is the most frequently repeated verse of all.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     }
   ],
-  "fetchedAt": "2026-10-01T22:37:17.188Z"
+  "fetchedAt": "2026-10-02T22:37:25.970Z"
 }
