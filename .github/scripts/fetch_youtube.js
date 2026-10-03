@@ -100,7 +100,7 @@ const CHANNELS = [
   { url: "https://www.youtube.com/channel/UCYkfgq8LmajU50WadNGGxtA", category: "Finance" },
   { url: "https://www.youtube.com/@TheGameOfImpossible", category: "General Ideas" },
   { url: "https://www.youtube.com/@bfmradiomy", category: "General Ideas" },
-  { url: "https://www.youtube.com/@TEDx", category: "General Ideas" },
+  { url: "https://www.youtube.com/@TEDEd", category: "General Ideas" },
   { url: "https://www.youtube.com/@yaqeeninstituteofficial", category: "Islamic Studies" },
   { url: "https://www.youtube.com/@shabdullahoduro", category: "Islamic Studies" },
   { url: "https://www.youtube.com/@pragmaticengineer", category: "Tech & Engineering" },

@@ -4,6 +4,10 @@
 
 **Still shared with the old content pipeline, not Jekyll-specific — don't delete these thinking they're leftover Jekyll cruft:** `_data/*.json`, `_posts/*.md` (both imported directly by `component-lab/src`), and `assets/{photography,youtube-thumbnails,medium-images}/` (synced into `component-lab/public/assets/` by `scripts/sync-assets.js` on every `predev`/`prebuild` — never committed there directly). All written by `.github/scripts/*.js` on the same schedule as before.
 
+## Status (2026-10-03 session — TED channel swapped to TED-Ed)
+
+**The YouTube curator's TED source is now `@TEDEd` instead of `@TEDx`** (`CHANNELS` in `.github/scripts/fetch_youtube.js`, still "General Ideas"). Site owner's call. The curator prompt's "generic TEDx talks" exclusion was left as is; it still applies to TEDx uploads that surface via discovery search. Existing TEDx videos in `_data/youtube.json` age out on their own.
+
 ## Status (2026-09-24 session — gratitude + learning now Claude-only; Gemini jobs removed)
 
 **`ai-daily-content.yml` now runs only the YouTube job.** Its `gratitude` and `learning` jobs (Gemini) were removed because they ran *after* the Claude cloud routines and overwrote them every night: the Claude routines commit at ~22:19 and ~22:3x UTC, and the Actions `[skip ci]` commits followed at ~00:03 UTC. So since 2026-09-21 the live site showed Gemini content most of the day, and the Gemini calls were still being billed. `ai-gratitude.yml` / `ai-learning.yml` remain as manual-only fallbacks (`workflow_dispatch`; they have no schedule of their own). The routines' own commits (no `[skip ci]`) trigger `deploy-pages.yml` via its normal `push` trigger.
