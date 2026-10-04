@@ -2,6 +2,7 @@ import { describe, it, expect, vi, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import { AccordionGroupProvider } from "@/hooks/useAccordionGroup";
 import { ResearchSection } from "./ResearchSection";
+import researchData from "../../../_data/research.json";
 
 vi.mock("@/lib/viewport", () => ({
   isDesktopWidthAtMount: () => true,
@@ -27,6 +28,13 @@ beforeEach(() => {
     unobserve() {}
     disconnect() {}
   };
+
+  (window as unknown as { IntersectionObserver: unknown }).IntersectionObserver =
+    class IntersectionObserver {
+      observe() {}
+      unobserve() {}
+      disconnect() {}
+    };
 });
 
 describe("ResearchSection", () => {
@@ -38,11 +46,11 @@ describe("ResearchSection", () => {
     );
 
     expect(screen.getByText("Research Discovery")).toBeDefined();
-    expect(screen.getByText(/Last updated:/)).toBeDefined();
+    expect(screen.queryByText(/Last updated:/)).toBeNull();
     expect(screen.getByRole("tab", { name: "All" })).toBeDefined();
     expect(screen.getByRole("tab", { name: "Tech" })).toBeDefined();
     expect(
-      screen.getByText(/A new approach of a path-tracking system/)
+      screen.getByText(new RegExp(researchData.papers[0].title.slice(0, 30)))
     ).toBeDefined();
   });
 });

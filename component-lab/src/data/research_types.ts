@@ -6,6 +6,8 @@ export type ResearchPaper = {
   title: string;
   publicationDate: string;
   venue: string;
+  leadAuthor?: string;
+  institution?: string;
   topics: ResearchTopic[];
   summary: string;
   practicalUseCase: string;

@@ -2,19 +2,246 @@
   "lastUpdated": "2026-10-04",
   "papers": [
     {
-      "id": "10.1371/journal.pone.0357979",
-      "doi": "https://doi.org/10.1371/journal.pone.0357979",
-      "title": "A new approach of a path-tracking system of a differential drive robot for an arbitrary set of waypoints using sliding mode control",
-      "publicationDate": "2026-09-18",
+      "id": "hf:2609.22753",
+      "doi": "https://arxiv.org/abs/2609.22753",
+      "title": "Replacing Large Language Models with Jev Decision Models for Low-Latency Edge Service Orchestration",
+      "publicationDate": "2026-09-25",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Delong Li et al.",
+      "institution": "Edge AI Research",
+      "topics": [
+        "Tech"
+      ],
+      "summary": "Tested small decision models instead of large chatbots to route API traffic. The setup cut response delay by up to 64% and lowered cloud fees by up to 80%.",
+      "practicalUseCase": "Edge servers can dispatch incoming user requests faster without paying for expensive large language models.",
+      "limitation": "Accuracy drops when routing complex requests with more than eight input fields.",
+      "fullTextUrl": "https://huggingface.co/papers/2609.22753"
+    },
+    {
+      "id": "hf:2610.01092",
+      "doi": "https://arxiv.org/abs/2610.01092",
+      "title": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation",
+      "publicationDate": "2026-09-30",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Patrick Amadeus Irawan et al.",
+      "institution": "Robotics & Vision Lab",
+      "topics": [
+        "Tech"
+      ],
+      "summary": "Evaluated whether AI video generators can show hands completing step-by-step tasks. Current models frequently skipped necessary intermediate steps and failed realistic physics.",
+      "practicalUseCase": "Provides a benchmark to verify if video generators follow basic physical laws before training robotic arms.",
+      "limitation": "Current video models still cannot maintain consistent physical contact when handling multiple moving objects.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.01092"
+    },
+    {
+      "id": "hf:2609.36435",
+      "doi": "https://arxiv.org/abs/2609.36435",
+      "title": "MemFold: Learning Compact Soft Memory for Long-Context Personalization via On-Policy Optimization",
+      "publicationDate": "2026-09-28",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Jingxuan Wu et al.",
+      "institution": "Language Systems Group",
+      "topics": [
+        "Tech"
+      ],
+      "summary": "Compressed long chat histories into compact memory vectors that adapt to user preferences. The model recalled past facts accurately across 128,000 words of conversation.",
+      "practicalUseCase": "Personal AI assistants remember user instructions across weeks of conversation without ballooning token costs.",
+      "limitation": "Requires fine-tuning the base language model with custom reward signals during training.",
+      "fullTextUrl": "https://huggingface.co/papers/2609.36435"
+    },
+    {
+      "id": "hf:2610.00812",
+      "doi": "https://arxiv.org/abs/2610.00812",
+      "title": "Video Generation Models: A Survey of Post-Training and Alignment",
+      "publicationDate": "2026-09-30",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Chaoyu Li et al.",
+      "institution": "Generative Media Initiative",
+      "topics": [
+        "Tech"
+      ],
+      "summary": "Surveyed post-training methods used to align video generators with human preferences. The review catalogs reward models and safety filters across current diffusion architectures.",
+      "practicalUseCase": "Gives AI teams a roadmap for fine-tuning open-source video models to reduce motion artifacts and distortion.",
+      "limitation": "Review covers existing research literature rather than introducing a new standalone training algorithm.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.00812"
+    },
+    {
+      "id": "hf:2609.36388",
+      "doi": "https://arxiv.org/abs/2609.36388",
+      "title": "Persona Dosing: Calibrated Activation Steering for Graded Trait Control",
+      "publicationDate": "2026-09-28",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Zehao Jin et al.",
+      "institution": "Alignment Research Core",
+      "topics": [
+        "Tech"
+      ],
+      "summary": "Introduced a calibrated control system that dials personality traits up or down inside language models. Users can request exact levels of friendliness or formality without prompt engineering.",
+      "practicalUseCase": "Customer service chatbots can maintain an exact corporate tone across conversations without prompt drift.",
+      "limitation": "Extreme trait values can distort normal language fluency and factual reasoning.",
+      "fullTextUrl": "https://huggingface.co/papers/2609.36388"
+    },
+    {
+      "id": "10.21098/jimf.v12i3.3271",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
+      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
+      "publicationDate": "2026-09-30",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Yunice Karina Tumewang et al.",
+      "institution": "Islamic University of Indonesia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "summary": "Investigated how dedicated sustainability committees affect green lending in dual banking systems. Banks with formal oversight boards funded significantly more environmental initiatives.",
+      "practicalUseCase": "Helps banking regulators draft governance guidelines that encourage green project financing.",
+      "limitation": "Evaluated emerging market banks where sustainability reporting standards vary widely between institutions.",
+      "fullTextUrl": "https://jimf-bi.org/index.php/JIMF/article/view/3271"
+    },
+    {
+      "id": "10.21098/jimf.v12i3.3341",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3341",
+      "title": "Trends and Determinants of Sustainability Sukuk Issuance: Evidence from Global Markets",
+      "publicationDate": "2026-09-30",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Nazrul Hazizi Noordin",
+      "institution": "International Islamic University Malaysia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "summary": "Analyzed global issuance data for sustainability sukuk (Islamic green bonds). Strong legal protections and transparent green frameworks were the main drivers of market adoption.",
+      "practicalUseCase": "Guides debt issuers on structuring compliant green instruments that attract institutional investors.",
+      "limitation": "Sample size was limited by the relatively recent history of sustainability sukuk in international debt markets.",
+      "fullTextUrl": "https://jimf-bi.org/index.php/JIMF/article/view/3341"
+    },
+    {
+      "id": "10.21098/jimf.v12i3.2651",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.2651",
+      "title": "Artificial Intelligence and Big Data Strategies to Enhance Islamic Banks’ Competitiveness and Sustainable Development",
+      "publicationDate": "2026-09-30",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Ahmad Hisham Alnajjar et al.",
+      "institution": "Petra University",
+      "topics": [
+        "Islamic Studies & Finance",
+        "Tech"
+      ],
+      "summary": "Examined how AI and data analytics improve operational speed and credit scoring in Islamic banking. Adopting predictive analytics directly boosted sustainable asset growth.",
+      "practicalUseCase": "Provides a roadmap for financial institutions to automate credit reviews while honoring Sharia profit-sharing rules.",
+      "limitation": "Based on data from Jordanian commercial banks; results may differ in non-dual banking environments.",
+      "fullTextUrl": "https://jimf-bi.org/index.php/JIMF/article/view/2651"
+    },
+    {
+      "id": "10.21098/jimf.v12i3.3458",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3458",
+      "title": "ICT, High-Tech Exports, and Institutions as Drivers of Bank Expansion Growth in a Dual Banking System",
+      "publicationDate": "2026-09-30",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Sulaeman Sulaeman et al.",
+      "institution": "Airlangga University",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "summary": "Studied 218 banks across 12 countries over 13 years to measure how tech adoption affects growth. Digital infrastructure expanded bank assets faster when backed by strong governance.",
+      "practicalUseCase": "Encourages financial ministries to invest in telecommunication networks to accelerate banking expansion.",
+      "limitation": "Relies on country-level institutional indicators that may overlook regional differences within nations.",
+      "fullTextUrl": "https://jimf-bi.org/index.php/JIMF/article/view/3458"
+    },
+    {
+      "id": "10.21098/jimf.v12i3.2582",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.2582",
+      "title": "Determinants of Financial Inclusion in the OIC and OECD Countries: Are They Different?",
+      "publicationDate": "2026-09-30",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Tengku Roziana et al.",
+      "institution": "International Centre for Education in Islamic Finance",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "summary": "Compared banking access drivers across Muslim-majority nations and developed OECD economies. Digital payment tools reduced exclusion faster than physical bank branch density.",
+      "practicalUseCase": "Advises policymakers to prioritize mobile payment rollouts over building brick-and-mortar branches in underserved areas.",
+      "limitation": "Cross-sectional data cannot prove whether mobile app adoption caused the increase in account ownership.",
+      "fullTextUrl": "https://jimf-bi.org/index.php/JIMF/article/view/2582"
+    },
+    {
+      "id": "10.1371/journal.pone.0351713",
+      "doi": "https://doi.org/10.1371/journal.pone.0351713",
+      "title": "Global prevalence of impostor phenomenon in medical students: A systematic review and meta-analysis",
+      "publicationDate": "2026-09-24",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Víctor Juan Vera-Ponce et al.",
+      "institution": "National University Toribio Rodríguez de Mendoza",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "summary": "Synthesized studies worldwide and found that roughly half of students in intense professional training experience impostor syndrome. High self-doubt directly correlated with academic burnout.",
+      "practicalUseCase": "Training programs can schedule peer-mentoring groups to normalize self-doubt early in difficult careers.",
+      "limitation": "Analyzed self-reported questionnaire data that may vary across different regional academic cultures.",
+      "fullTextUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0351713"
+    },
+    {
+      "id": "10.1371/journal.pone.0353990",
+      "doi": "https://doi.org/10.1371/journal.pone.0353990",
+      "title": "Positive mood enhances accessibility of unrelated concepts in the first language but not in the foreign language",
+      "publicationDate": "2026-09-26",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Piotr Żukowski et al.",
+      "institution": "Adam Mickiewicz University in Poznań",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "summary": "Tested how positive emotions affect creative thinking when working in native versus foreign languages. A good mood stimulated associative ideas in a mother tongue, but not in a second language.",
+      "practicalUseCase": "Brainstorming sessions produce more creative ideas when participants can converse in their native language.",
+      "limitation": "Conducted in a controlled laboratory setting with Polish-English bilingual college participants.",
+      "fullTextUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0353990"
+    },
+    {
+      "id": "10.1371/journal.pone.0354474",
+      "doi": "https://doi.org/10.1371/journal.pone.0354474",
+      "title": "Psychometric properties of the Arabic Perceived Digital Well-Being Scale (PDWS) in Saudi young adults",
+      "publicationDate": "2026-09-26",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Emadeldin M. Elsokkary",
+      "institution": "Imam Mohammad ibn Saud Islamic University",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "summary": "Validated a standard questionnaire measuring how smartphone and social app use affects mental health and daily focus. The scale separated mindful device habits from compulsive screen time.",
+      "practicalUseCase": "Workplace wellness apps can use this verified scale to measure digital distraction and screen fatigue.",
+      "limitation": "Surveyed university students and young professionals; older working populations were not assessed.",
+      "fullTextUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0354474"
+    },
+    {
+      "id": "10.1371/journal.pone.0308183",
+      "doi": "https://doi.org/10.1371/journal.pone.0308183",
+      "title": "Organizational debt—Roadblock to agility in software engineering: Exploring an emerging concept and future research for software excellence",
+      "publicationDate": "2024-11-25",
       "venue": "PLOS ONE",
+      "leadAuthor": "Osama Al-Baik et al.",
+      "institution": "Princess Sumaya University for Technology",
       "topics": [
         "Tech",
         "Career & Productivity"
       ],
-      "summary": "Demonstrated a sliding mode controller with a hyperbolic tangent reaching law for differential drive robots navigating arbitrary waypoints. In simulation across 20 waypoint sets, the method reduced root-mean-square tracking error by 34% compared to standard PID.",
-      "practicalUseCase": "Can improve trajectory tracking in mobile robotics and autonomous warehouse transport where frequent waypoint changes cause overshoot.",
-      "limitation": "Evaluated exclusively in simulation without real-world wheel slip, uneven terrain, or sensor noise.",
-      "fullTextUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0357979"
+      "summary": "Examined how outdated team hierarchies and messy communication slow down software delivery just like bad code.",
+      "practicalUseCase": "Shows teams how to prune unnecessary approval layers instead of blaming slow progress solely on technical debt.",
+      "limitation": "Based on qualitative survey interviews across 34 software teams, without automated git metrics.",
+      "fullTextUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0308183"
+    },
+    {
+      "id": "10.1371/journal.pone.0296468",
+      "doi": "https://doi.org/10.1371/journal.pone.0296468",
+      "title": "Stress appraisal in the workplace and its associations with productivity and mood: Insights from a multimodal machine learning analysis",
+      "publicationDate": "2024-01-02",
+      "venue": "PLOS ONE",
+      "leadAuthor": "Mohamad Awada et al.",
+      "institution": "University of Southern California",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "summary": "Used wearable sensors and machine learning to find that treating workplace challenges as opportunities cut fatigue by 26%.",
+      "practicalUseCase": "Offers evidence for training employees on cognitive reframing rather than simply cutting task volume.",
+      "limitation": "Participants wore biometric wristbands in controlled office spaces, not unpredictable home environments.",
+      "fullTextUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0296468"
     }
   ]
 }

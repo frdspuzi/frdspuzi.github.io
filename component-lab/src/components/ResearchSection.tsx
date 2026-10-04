@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { motion } from "motion/react";
 import { Accordion } from "@/components/Accordion";
 import { isDesktopWidthAtMount } from "@/lib/viewport";
 import { Tabs, TabsList, TabsTrigger } from "@/components/motion/tabs";
+import { useSquirclePath } from "@/hooks/useSquirclePath";
 import researchData from "../../../_data/research.json";
 import type { ResearchData, ResearchPaper, ResearchTopic } from "@/data/research_types";
 
@@ -13,10 +15,118 @@ const ALL_TOPICS: readonly ResearchTopic[] = [
 
 const INITIAL_COUNT = 5;
 
+function ResearchCard({ paper, rank }: { paper: ResearchPaper; rank: number }) {
+  const { ref: squircleRef, clipPath } = useSquirclePath(24);
+
+  return (
+    <motion.div
+      initial={{ scale: 0, opacity: 0 }}
+      whileInView={{ scale: 1, opacity: 1 }}
+      viewport={{ once: true, margin: "0px 0px -40px 0px" }}
+      transition={{ type: "spring", stiffness: 350, damping: 40, delay: 0.2 }}
+      style={{ transformOrigin: "top center" }}
+    >
+      <article
+        ref={squircleRef}
+        className="Box box-shadow-small p-4 text-left"
+        style={{
+          width: "100%",
+          boxSizing: "border-box",
+          border: "none",
+          background: "var(--surface)",
+          clipPath: clipPath ?? undefined,
+          borderRadius: clipPath ? undefined : 16,
+        }}
+      >
+        {/* Title with inline rank */}
+        <h3
+          className="trending-card-title text-bold lh-condensed mb-2"
+          style={{ color: "var(--fg)", minWidth: 0 }}
+        >
+          <span className="text-gray" style={{ fontWeight: 400, marginRight: 6 }}>
+            #{rank}
+          </span>
+          <a
+            href={paper.fullTextUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "var(--fg)", textDecoration: "none" }}
+          >
+            {paper.title}
+          </a>
+        </h3>
+
+        {/* Metadata: Authors & Institution • Date • Topics • Code */}
+        <div
+          className="trending-card-meta text-gray d-flex flex-wrap flex-items-center mb-2"
+          style={{ gap: 6 }}
+        >
+          {paper.leadAuthor && <span>{paper.leadAuthor}</span>}
+          {paper.institution && <span>•</span>}
+          {paper.institution && <span>{paper.institution}</span>}
+          <span>•</span>
+          <span>{paper.publicationDate}</span>
+          {paper.topics.map((t) => (
+            <span
+              key={t}
+              style={{
+                padding: "1px 6px",
+                borderRadius: 4,
+                background: "var(--surface-page)",
+                border: "1px solid var(--border)",
+                fontSize: "11px",
+                color: "var(--fg-muted)",
+              }}
+            >
+              {t}
+            </span>
+          ))}
+          {paper.codeUrl && (
+            <>
+              <span>•</span>
+              <a
+                href={paper.codeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "var(--fg-muted)", textDecoration: "underline" }}
+              >
+                Code
+              </a>
+            </>
+          )}
+        </div>
+
+        {/* Hook */}
+        <p
+          className="trending-card-hook mb-2"
+          style={{ color: "var(--fg-muted)", lineHeight: 1.5 }}
+        >
+          {paper.summary}
+        </p>
+
+        {/* Why it matters */}
+        <p
+          className="trending-card-personalization text-gray mb-1"
+          style={{ fontStyle: "italic", lineHeight: 1.45 }}
+        >
+          Why it matters: {paper.practicalUseCase}
+        </p>
+
+        {/* Caveat */}
+        <p
+          className="trending-card-personalization text-gray mb-0"
+          style={{ lineHeight: 1.45 }}
+        >
+          Caveat: {paper.limitation}
+        </p>
+      </article>
+    </motion.div>
+  );
+}
+
 export function ResearchSection() {
   const data = researchData as ResearchData;
   const papers = (data.papers ?? []) as ResearchPaper[];
-  const lastUpdated = data.lastUpdated ?? "";
 
   const [activeTopic, setActiveTopic] = useState<string>("all");
   const [expanded, setExpanded] = useState<boolean>(false);
@@ -53,13 +163,7 @@ export function ResearchSection() {
       }
       description="Peer-reviewed breakthroughs in Tech, Islamic Studies & Finance, and Career & Productivity — distilled into practical briefs with verified limitations."
     >
-      <div className="research-feed">
-        {lastUpdated && (
-          <div className="text-gray f6 mb-3">
-            Last updated: {lastUpdated}
-          </div>
-        )}
-
+      <div className="research-feed" style={{ textAlign: "left" }}>
         {papers.length === 0 ? (
           <p className="text-gray">
             No research briefs yet — check back after the next scheduled intake.
@@ -75,7 +179,7 @@ export function ResearchSection() {
                 }}
                 variant="pill"
               >
-                <TabsList className="mb-3">
+                <TabsList className="mb-4">
                   <TabsTrigger value="all">All</TabsTrigger>
                   {availableTopics.map((topic) => (
                     <TabsTrigger key={topic} value={topic}>
@@ -91,69 +195,15 @@ export function ResearchSection() {
                 No papers under {activeTopic} in the current snapshot.
               </p>
             ) : (
-              <div className="d-flex flex-column gap-3">
-                {visiblePapers.map((paper) => (
-                  <article
-                    key={paper.id}
-                    className="Box p-3 border rounded-2 bg-subtle"
-                    style={{ textAlign: "left" }}
-                  >
-                    <div className="d-flex flex-items-baseline flex-wrap gap-2 mb-2">
-                      <h3 className="f4 fw-semibold lh-condensed mb-0">
-                        <a
-                          href={paper.fullTextUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="Link--primary"
-                        >
-                          {paper.title}
-                        </a>
-                      </h3>
-                    </div>
-
-                    <div className="text-gray f6 mb-2 d-flex flex-wrap gap-2 flex-items-center">
-                      <span className="fw-semibold">{paper.venue}</span>
-                      <span>•</span>
-                      <span>{paper.publicationDate}</span>
-                      <span>•</span>
-                      <div className="d-inline-flex gap-1">
-                        {paper.topics.map((t) => (
-                          <span
-                            key={t}
-                            className="Label Label--secondary Label--inline"
-                          >
-                            {t}
-                          </span>
-                        ))}
-                      </div>
-                      {paper.codeUrl && (
-                        <>
-                          <span>•</span>
-                          <a
-                            href={paper.codeUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="Link--secondary"
-                          >
-                            Code
-                          </a>
-                        </>
-                      )}
-                    </div>
-
-                    <div className="f5 mb-2">
-                      <p className="mb-1">{paper.summary}</p>
-                    </div>
-
-                    <div className="f6 text-small text-muted mb-2">
-                      <strong>Practical application:</strong>{" "}
-                      {paper.practicalUseCase}
-                    </div>
-
-                    <div className="f6 text-small color-fg-attention">
-                      <strong>Limitation:</strong> {paper.limitation}
-                    </div>
-                  </article>
+              <motion.div
+                key={activeTopic}
+                initial={{ opacity: 0, y: 6 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2 }}
+                className="d-flex flex-column gap-3"
+              >
+                {visiblePapers.map((paper, index) => (
+                  <ResearchCard key={paper.id} paper={paper} rank={index + 1} />
                 ))}
 
                 {filteredPapers.length > INITIAL_COUNT && (
@@ -166,7 +216,7 @@ export function ResearchSection() {
                     {expanded ? "Show less" : `Load ${hiddenCount} more`}
                   </button>
                 )}
-              </div>
+              </motion.div>
             )}
           </>
         )}
