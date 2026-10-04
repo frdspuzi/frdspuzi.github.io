@@ -1,0 +1,20 @@
+{
+  "lastUpdated": "2026-10-04",
+  "papers": [
+    {
+      "id": "10.1371/journal.pone.0357979",
+      "doi": "https://doi.org/10.1371/journal.pone.0357979",
+      "title": "A new approach of a path-tracking system of a differential drive robot for an arbitrary set of waypoints using sliding mode control",
+      "publicationDate": "2026-09-18",
+      "venue": "PLOS ONE",
+      "topics": [
+        "Tech",
+        "Career & Productivity"
+      ],
+      "summary": "Demonstrated a sliding mode controller with a hyperbolic tangent reaching law for differential drive robots navigating arbitrary waypoints. In simulation across 20 waypoint sets, the method reduced root-mean-square tracking error by 34% compared to standard PID.",
+      "practicalUseCase": "Can improve trajectory tracking in mobile robotics and autonomous warehouse transport where frequent waypoint changes cause overshoot.",
+      "limitation": "Evaluated exclusively in simulation without real-world wheel slip, uneven terrain, or sensor noise.",
+      "fullTextUrl": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0357979"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+name: Research Discovery Intake
+
+on:
+  schedule:
+    - cron: '20 22 * * *' # Daily at 22:20 UTC (06:20 GMT+8) — runs ahead of Claude routine at 22:45 UTC
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '20'
+
+      - name: Run discovery and section extraction
+        run: |
+          mkdir -p _data
+          node .github/scripts/fetch_research.js
+
+      - name: Commit candidate payload
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add _data/research_candidates.json
+
+          if git diff-index --quiet HEAD; then
+            echo "No new research candidates generated."
+          else
+            git commit -m "chore: Update research discovery candidates [skip ci]"
+            git pull --rebase -X theirs
+            git push
+          fi

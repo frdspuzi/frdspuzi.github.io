@@ -6,6 +6,7 @@ import { YoutubeFeed } from "@/components/YoutubeFeed";
 import { InsightsWriting } from "@/components/InsightsWriting";
 import { Photography } from "@/components/Photography";
 import { TrendingSection } from "@/components/TrendingSection";
+import { ResearchSection } from "@/components/ResearchSection";
 import { FloatingNav } from "@/components/FloatingNav";
 
 // Homepage — mirrors _layouts/home.html's stacked layout. All 5 sections plus the Preview Rail
@@ -30,6 +31,7 @@ export default function Home() {
           <YoutubeFeed />
           <InsightsWriting />
           <TrendingSection />
+          <ResearchSection />
           <Photography />
         </div>
 
