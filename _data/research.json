@@ -11,25 +11,11 @@
       "topics": [
         "Tech"
       ],
-      "summary": "Jev, a small decision model, cuts median decision time by 22.7-64.5% against the fastest large model. On a live path, Jev keeps 0.91-0.95 of requests exact and on time; large models fall below 0.1.",
-      "practicalUseCase": "Route edge requests with a small decision model when each request has few fixed fields.",
-      "limitation": "Wide requests with many fields are the limit. Jev also loses a few exact-match points on four-field requests.",
+      "problem": "Apps that ask a language model to read each request wait too long, so requests miss their time limit.",
+      "fix": "A small decision model cut median decision time by 22.7-64.5% against the fastest language model, across 33 test conditions.",
+      "practicalUseCase": "If speed matters more than flexibility, swap the big model for a decision model on fixed-format requests.",
+      "limitation": "It works for requests with a few fixed fields; wide formats mark the limit of the swap.",
       "fullTextUrl": "https://huggingface.co/papers/2609.22753"
-    },
-    {
-      "id": "hf:2609.36388",
-      "doi": "https://arxiv.org/abs/2609.36388",
-      "title": "Persona Dosing: Calibrated Activation Steering for Graded Trait Control",
-      "publicationDate": "2026-09-27",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Zehao Jin et al.",
-      "topics": [
-        "Tech"
-      ],
-      "summary": "PersonaDose sets how strongly a model shows a trait. It beats a standard method by 33.2, 18.3 and 17.8 points on three models.",
-      "practicalUseCase": "Set a persona strength for a chatbot with one calibrated number instead of guessing a steering value.",
-      "limitation": "Only 14-22 of 28 target strengths are reachable per model. Text stays coherent on held-out questions for some traits only.",
-      "fullTextUrl": "https://huggingface.co/papers/2609.36388"
     },
     {
       "id": "hf:2610.01092",
@@ -41,9 +27,10 @@
       "topics": [
         "Tech"
       ],
-      "summary": "Video models often skip or half-do steps in 110 daily tasks (2,640 videos). Later steps then lack the needed state, so the goal fails.",
-      "practicalUseCase": "Do not trust a video model as a robot planner for multi-step tasks without checking each step.",
-      "limitation": "The benchmark covers hand manipulation in first-person video only. The abstract gives no per-model scores.",
+      "problem": "Video generators claim to simulate the real world, but no test checked whether they finish multi-step tasks.",
+      "fix": "Tested on 2,640 videos, models often skip or half-do steps and fail at fine physical detail.",
+      "practicalUseCase": "Do not trust generated videos as a plan for real actions, because later steps often lack the needed setup.",
+      "limitation": "The benchmark covers 110 everyday hand tasks, so other kinds of tasks may behave differently.",
       "fullTextUrl": "https://huggingface.co/papers/2610.01092"
     },
     {
@@ -56,10 +43,27 @@
       "topics": [
         "Tech"
       ],
-      "summary": "MemFold packs a user's long history into a fixed number of vectors. It scores highest on PersonaMem-32K and PersonaMem-128K, and the lead grows with longer history.",
-      "practicalUseCase": "Give a long-running assistant a fixed-size memory so its input does not grow with each chat.",
-      "limitation": "Tests use three Qwen model families and a few memory benchmarks. The abstract gives no exact accuracy numbers.",
+      "problem": "Assistants that remember one user for long either keep growing text or squeeze memory in ways that ignore real use.",
+      "fix": "MemFold, a fixed-size memory trained on its own answers, scored highest on PersonaMem-32K and PersonaMem-128K, widening on longer histories.",
+      "practicalUseCase": "Train memory by how well answers come out, not by how well it copies text, and keep memory size fixed.",
+      "limitation": "Results come from three Qwen models and a few benchmarks, so other model families remain untested.",
       "fullTextUrl": "https://huggingface.co/papers/2609.36435"
+    },
+    {
+      "id": "hf:2609.36388",
+      "doi": "https://arxiv.org/abs/2609.36388",
+      "title": "Persona Dosing: Calibrated Activation Steering for Graded Trait Control",
+      "publicationDate": "2026-09-27",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Zehao Jin et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Steering a language model gives no dial for how strongly a persona trait shows up in answers.",
+      "fix": "PersonaDose raised trait strength by 33.2, 18.3, and 17.8 points over a common method, with 4.7-6.2 points target error.",
+      "practicalUseCase": "You can request a trait at a set strength, but only within the range the controller learned.",
+      "limitation": "Only 14-22 of 28 target strengths were reachable per model, and coherence dropped for some traits on new questions.",
+      "fullTextUrl": "https://huggingface.co/papers/2609.36388"
     },
     {
       "id": "https://openalex.org/W7204751468",
@@ -72,9 +76,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "summary": "Sustainability committees raise bank environmental scores. In Islamic banks, only overall and resource scores rise, which the authors call symbolic. Conventional banks improve in all four areas.",
-      "practicalUseCase": "Islamic banks that set up a sustainability committee should also track green product launches, not only the overall score.",
-      "limitation": "Panel regressions show links, not cause. The study covers emerging markets only.",
+      "problem": "Banks form sustainability committees, but nobody knew if those committees change environmental results at Islamic banks.",
+      "fix": "Committees link to better environmental scores, but at Islamic banks they lift only overall and resource-reduction scores, not products.",
+      "practicalUseCase": "A committee at an Islamic bank may signal intent more than real change, so check for green products.",
+      "limitation": "The study shows links in emerging markets, not proof of cause, and the Islamic bank group shows weaker effects.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
@@ -88,9 +93,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "summary": "Across 11,944 sukuk issues (2012-2022), sustainability sukuk stay tiny and sit mostly in Indonesia, Malaysia and Saudi Arabia. Equity-based contracts bring larger issues than sale-based ones.",
-      "practicalUseCase": "An issuer who wants a bigger sustainability sukuk should consider an equity-based contract and a USD or Euro denomination.",
-      "limitation": "The data ends in 2022. It shows links between traits and issue size, not cause.",
+      "problem": "Sustainability sukuk are growing fast, yet little was known about what drives how large each issue is.",
+      "fix": "In 11,944 sukuk issues from 2012 to 2022, equity-based contracts, better security, and longer debt terms link to larger issues.",
+      "practicalUseCase": "If you plan an issue, use equity-based contracts and keep second-party opinion costs low, since higher costs shrink issue size.",
+      "limitation": "Data end in 2022, and the results show links between factors and size, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -102,11 +108,13 @@
       "leadAuthor": "Ahmad Hisham Alnajjar et al.",
       "institution": "Petra University",
       "topics": [
-        "Islamic Studies & Finance"
+        "Islamic Studies & Finance",
+        "Tech"
       ],
-      "summary": "In 15 Jordanian Islamic banks (214 managers), AI, big data and data management raise competitiveness and sustainable development. Staff digital skill raises only competitiveness.",
-      "practicalUseCase": "A bank should fund AI tools and data management first. Staff digital training alone will not lift sustainability results.",
-      "limitation": "The survey is cross-sectional and covers Jordan only. It shows links, not cause.",
+      "problem": "Islamic banks in Jordan add AI and big data, but the effect on competitiveness and sustainability was unclear.",
+      "fix": "AI use, data analytics, and data management link positively to competitiveness and sustainability; staff digital skill helps only competitiveness.",
+      "practicalUseCase": "Spend on AI and data systems first, since staff digital training alone did not lift sustainable performance.",
+      "limitation": "The survey covers 214 managers at 15 Jordanian banks at one point in time, so it shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -118,11 +126,13 @@
       "leadAuthor": "Sulaeman Sulaeman et al.",
       "institution": "Airlangga University",
       "topics": [
-        "Islamic Studies & Finance"
+        "Islamic Studies & Finance",
+        "Tech"
       ],
-      "summary": "ICT adoption is the strongest driver of growth in 218 banks across 12 countries. High-tech exports help only when combined with ICT.",
-      "practicalUseCase": "Put digital infrastructure first when planning bank expansion. Strong governance supports the gain, mainly for Islamic banks.",
-      "limitation": "Only 12 countries are covered. Panel data shows links, not cause.",
+      "problem": "Nobody knew which factors drive growth for Islamic and conventional banks side by side.",
+      "fix": "In 218 banks across 12 countries, ICT adoption drives growth most, and high-tech exports help only alongside ICT.",
+      "practicalUseCase": "Digital investment pays off most where national innovation is strong, so invest in both together.",
+      "limitation": "The sample covers 12 countries, and Islamic banks depend more on governance quality than conventional banks.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -136,9 +146,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "summary": "In OIC countries, income, tertiary education, institutional quality and internet access drive financial inclusion. The data covers 35 OIC and OECD countries from 2005 to 2021.",
-      "practicalUseCase": "Policy makers in OIC countries should fund internet access, education and women and youth programs to widen inclusion.",
-      "limitation": "The study covers 35 countries and one estimator. It shows links, not cause.",
+      "problem": "Many Muslim-majority countries still exclude people from financial services, even though Islamic finance has grown for a decade.",
+      "fix": "In 35 countries from 2005 to 2021, income, schooling, institutions, and internet access drive financial inclusion in OIC countries.",
+      "practicalUseCase": "OIC countries must invest in digital networks, youth and women, and income to include more people.",
+      "limitation": "The data cover 35 countries and show links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
     },
     {
@@ -152,9 +163,10 @@
       "topics": [
         "Career & Productivity"
       ],
-      "summary": "Impostor feelings are frequent in medical students. Rates vary a lot by sampling method and region.",
-      "practicalUseCase": "If you feel like a fraud in a tough program, know that it is common. Share it with peers or mentors.",
-      "limitation": "The abstract gives no pooled rate. Differences between studies are large, so the pooled figure is shaky.",
+      "problem": "Medical students face constant exams and peer comparison, and nobody had pooled how often they feel like impostors.",
+      "fix": "Impostor feelings were frequent among pre-licensure medical students worldwide.",
+      "practicalUseCase": "If you feel like a fraud while training hard, know it is common, and seek support early.",
+      "limitation": "Results vary a lot between studies, and rates depend on how students were sampled and where.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
     },
     {
@@ -168,9 +180,10 @@
       "topics": [
         "Career & Productivity"
       ],
-      "summary": "The Arabic digital well-being scale shows three domains: emotional, social and cognitive. Scores rise with life satisfaction and fall with fear of missing out.",
-      "practicalUseCase": "Use this scale to check whether your phone use helps or hurts your mood, social life and focus.",
-      "limitation": "The sample came from social media in Riyadh. The design shows links, not cause.",
+      "problem": "Most phone-use research measures risk and addiction, so no Arabic tool measured how people judge their own digital life.",
+      "fix": "The Arabic scale showed a clear three-part structure, and higher scores matched more life satisfaction and less missing-out fear.",
+      "practicalUseCase": "You can now measure whether phone use helps or hurts Saudi young adults, instead of counting hours online.",
+      "limitation": "Participants were self-selected online volunteers aged 18-25 from Riyadh, and the design shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0354474"
     }
   ]
