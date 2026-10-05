@@ -96,12 +96,18 @@ function ResearchCard({ paper, rank }: { paper: ResearchPaper; rank: number }) {
           )}
         </div>
 
-        {/* Hook */}
+        {/* Problem / Fix */}
+        <p
+          className="trending-card-hook mb-1"
+          style={{ color: "var(--fg-muted)", lineHeight: 1.5 }}
+        >
+          <strong>Problem:</strong> {paper.problem}
+        </p>
         <p
           className="trending-card-hook mb-2"
           style={{ color: "var(--fg-muted)", lineHeight: 1.5 }}
         >
-          {paper.summary}
+          <strong>Fix:</strong> {paper.fix}
         </p>
 
         {/* Why it matters */}

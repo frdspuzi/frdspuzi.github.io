@@ -20,9 +20,11 @@ describe("research data seed", () => {
       expect(paper.title).toBeTruthy();
       expect(paper.publicationDate).toMatch(/^\d{4}-\d{2}-\d{2}$/);
       expect(paper.venue).toBeTruthy();
-      expect(paper.summary).toBeTruthy();
-      expect(paper.practicalUseCase).toBeTruthy();
-      expect(paper.limitation).toBeTruthy();
+      expect(paper).not.toHaveProperty("summary");
+      for (const field of ["problem", "fix", "practicalUseCase", "limitation"] as const) {
+        expect(paper[field]).toBeTruthy();
+        expect(paper[field]).not.toMatch(/\p{Extended_Pictographic}/u);
+      }
       expect(paper.fullTextUrl).toMatch(/^https?:\/\//);
       expect(paper.topics.length).toBeGreaterThan(0);
       for (const topic of paper.topics) {

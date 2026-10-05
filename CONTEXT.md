@@ -8,7 +8,7 @@ The site's research discovery feature helps its owner stay informed about new fi
 Keeping up with new research findings and discoveries relevant to the site owner's interests.
 
 **Research brief**:
-A short, source-grounded summary of a research paper paired with a practical use case and an important limitation.
+A short, source-grounded card for one research paper with four parts: the problem it addresses, the fix the authors built or found, why it matters, and a caveat.
 
 **Research relevance**:
 A finding's connection to the owner's selected research interests: technology, Islamic Studies and finance, and career/productivity. Relevant theoretical work can also merit an accessible brief.

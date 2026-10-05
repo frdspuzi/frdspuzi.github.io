@@ -9,7 +9,8 @@ export type ResearchPaper = {
   leadAuthor?: string;
   institution?: string;
   topics: ResearchTopic[];
-  summary: string;
+  problem: string;
+  fix: string;
   practicalUseCase: string;
   limitation: string;
   fullTextUrl: string;
