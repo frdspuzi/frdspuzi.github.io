@@ -1,101 +1,148 @@
 {
   "videos": [
     {
-      "title": "The State of AI in Software Development: Data from 400+ Orgs — Justin Reock, DX",
-      "url": "https://www.youtube.com/watch?v=Se8jHLliLXE",
-      "videoId": "Se8jHLliLXE",
+      "title": "Agents That Write Their Own Tools at Runtime — Sandhya Subramani, AWS",
+      "url": "https://www.youtube.com/watch?v=33Oct2hqGnk",
+      "videoId": "33Oct2hqGnk",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Despite pouring millions into AI coding assistants expecting 10x leaps, hard data across 200,000 developers reveals median velocity gains sit at just 7.7%—with nobody hitting even 2x. This talk exposes why AI-generated code is triggering bloated pull requests and dropping deployment confidence when applied to the wrong parts of the development lifecycle. If you want the unvarnished, data-backed truth on where AI actually drives engineering ROI versus where it creates friction, this presentation is essential viewing.",
-      "dateAdded": "2026-10-01T00:55:42.524Z",
+      "summary": "What if your AI agents didn't crash when encountering an edge case in production, but instead wrote their own custom tools, spawned specialized sub-agents, and self-healed on the fly? In this live-coded talk, AWS engineer Sandy reveals how just three basic tools and a clever system prompt can turn static LLMs into self-evolving, autonomous problem solvers. Watch this to discover how runtime meta-tooling works under the hood—and the critical sandboxing guardrails needed to deploy self-coding agents safely.",
+      "dateAdded": "2026-10-05T00:18:20.064Z",
       "timestamps": [
         {
-          "startTime": 360,
-          "endTime": 515,
-          "topic": "The AI Quality Paradox: Surging PR sizes and dropping change confidence"
+          "startTime": 80,
+          "endTime": 290,
+          "topic": "Live Demo: An agent dynamically authoring and executing new tools at runtime"
         },
         {
-          "startTime": 898,
-          "endTime": 985,
-          "topic": "The Bottleneck Fallacy: Why AI code generation yields modest overall gains"
+          "startTime": 340,
+          "endTime": 580,
+          "topic": "The Minimal Blueprint: Building meta-tooling with editor, shell, and load tools"
         },
         {
-          "startTime": 985,
-          "endTime": 1115,
-          "topic": "Real-World ROI: How Zapier, Morgan Stanley, and Spotify deploy AI across the SDLC"
+          "startTime": 710,
+          "endTime": 1130,
+          "topic": "Autonomous Sub-Agent Generation, Self-Healing, and Crucial Guardrails"
         }
       ]
     },
     {
-      "title": "The Death of the Code Review: What the Data Actually Says — Laurie Voss, Arize AI",
-      "url": "https://www.youtube.com/watch?v=_mi3alkqy4s",
-      "videoId": "_mi3alkqy4s",
+      "title": "AI Coding Agents Are Breaking Big Codebases — Dan Adler, Sourcegraph",
+      "url": "https://www.youtube.com/watch?v=Bdrs3uAX0_M",
+      "videoId": "Bdrs3uAX0_M",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "AI agents have unlocked a 740% surge in code generation, yet engineering teams are only shipping 30% more software because manual code review has become an impossible bottleneck. Blindly trusting green tests is a dangerous illusion, as AI code routinely passes automated test suites while introducing massive maintainability and security vulnerabilities under the hood. This talk delivers the roadmap for the next era of development: why you must stop reviewing individual pull requests and start engineering the automated rubrics, evaluation harnesses, and runtime observability systems that make AI code genuinely safe to ship.",
-      "dateAdded": "2026-10-01T00:55:42.524Z",
+      "summary": "While AI coding tools are supercharging development speed, they are quietly triggering widespread decay across the massive, legacy codebases that run our world. The real bottleneck in software engineering is no longer writing code, but providing agents with the cross-repository visibility needed to understand complex systems without introducing duplicate code and critical vulnerabilities. Watch this talk to discover why large-scale codebase comprehension infrastructure is essential to surviving the impending tidal wave of AI-generated technical debt.",
+      "dateAdded": "2026-10-05T00:18:20.064Z",
       "timestamps": [
         {
-          "startTime": 95,
-          "endTime": 155,
-          "topic": "The 741% Code Boom vs. 30% Ship Rate Bottleneck"
+          "startTime": 125,
+          "endTime": 255,
+          "topic": "The AI Code Flood: How Rapid Generation Accelerates Enterprise Codebase Decay"
         },
         {
-          "startTime": 958,
-          "endTime": 1048,
-          "topic": "The Illusion of Green Tests: How AI Passed Test Suites While Creating 13,000 Unsafe Blocks"
+          "startTime": 396,
+          "endTime": 500,
+          "topic": "The Context Barrier: Why Coding Agents Break Down Across Tens of Thousands of Repositories"
         },
         {
-          "startTime": 1365,
-          "endTime": 1450,
-          "topic": "Stop Reviewing PRs: Shifting from Line-by-Line Reviewer to Harness Engineer"
+          "startTime": 560,
+          "endTime": 672,
+          "topic": "Agentic Batch Changes: Automating Multi-Repository Refactoring and Security Fixes"
         }
       ]
     },
     {
-      "title": "How to stop a coworker talking you down",
-      "url": "https://www.youtube.com/shorts/YfuiVy9CwWM",
-      "videoId": "YfuiVy9CwWM",
+      "title": "Keyword Search Is Dying. Is Your Catalog Ready for AI Agents? — PayPal",
+      "url": "https://www.youtube.com/watch?v=YXb2Wx1r_Pk",
+      "videoId": "YXb2Wx1r_Pk",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Traditional SEO is rapidly becoming obsolete as AI shopping agents are projected to handle trillions in commerce with up to 4x higher conversion rates—yet standard product catalogs are virtually invisible to them. PayPal's Director of Agentic Commerce reveals eye-opening experimental data on how consumers are shifting from keyword search to intent-driven AI delegation. If you sell anything online, watching this breakdown is essential to learn how to structure and enrich your catalog for AI agents without falling into the trap of over-enrichment.",
+      "dateAdded": "2026-10-05T00:18:20.064Z",
+      "timestamps": [
+        {
+          "startTime": 160,
+          "endTime": 265,
+          "topic": "The Three Eras of Commerce: Transitioning from Search to Intent and Delegation"
+        },
+        {
+          "startTime": 555,
+          "endTime": 670,
+          "topic": "Keyword vs. Semantic Search: Why Legacy Catalogs Fail with AI Agents"
+        },
+        {
+          "startTime": 800,
+          "endTime": 940,
+          "topic": "PayPal's Catalog Enrichment Experiments: Boosting AI Recommendations Without Causing Hallucinations"
+        }
+      ]
+    },
+    {
+      "title": "\"Alfred gets abused because it's free to me as a manager\"",
+      "url": "https://www.youtube.com/shorts/P5slF8N-aS0",
+      "videoId": "P5slF8N-aS0",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Worried about sneaky coworkers secretly sabotaging your reputation behind your back? Learn the simple communication playbook to inoculate your manager against peer undermining before it even starts, turning your rivals' gossip directly against them without you ever looking petty. It’s a masterclass in workplace self-defense that guarantees your actual performance speaks louder than office politics.",
-      "dateAdded": "2026-10-02T01:10:15.603Z",
+      "summary": "Being the loyal, agreeable employee who never complains doesn't get you rewarded—it makes you the easiest person for managers to shortchange. This eye-opening clip breaks down the brutal calculus managers use to cater to demanding squeaky wheels while taking advantage of those who just suck it up. Watch this 40-second reality check to understand why being 'a little thorny' is the only way to protect your career.",
+      "dateAdded": "2026-10-05T00:18:20.064Z",
       "timestamps": [
         {
           "startTime": 0,
-          "endTime": 28,
-          "topic": "The exact script to prime your manager before peers start undermining you"
+          "endTime": 23,
+          "topic": "The hidden trap of being the agreeable employee"
         },
         {
-          "startTime": 28,
-          "endTime": 56,
-          "topic": "How planting the seed turns your coworkers' future attacks against them"
+          "startTime": 23,
+          "endTime": 43,
+          "topic": "Why you must be 'thorny' to protect yourself at work"
         }
       ]
     },
     {
-      "title": "\"Whoever goes to HR first usually wins\"",
-      "url": "https://www.youtube.com/shorts/alEe5HsnNGk",
-      "videoId": "alEe5HsnNGk",
+      "title": "How he'd speedrun to a VP in tech today",
+      "url": "https://www.youtube.com/shorts/DmpNhCXmZm0",
+      "videoId": "DmpNhCXmZm0",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Half the battle in workplace conflict isn't who is right—it's who goes to HR first to control the narrative. Discover the exact corporate playbook for protecting your career, framing management issues with factual precision, and securing the leverage you need to win internal disputes.",
-      "dateAdded": "2026-10-02T01:10:15.603Z",
+      "summary": "Playing it safe might keep you comfortable, but swinging for high-risk, massive wins is what actually accelerates your career trajectory. Discover why chasing home runs—even if you strike out along the way—is the ultimate strategy to get noticed and build a legendary reputation.",
+      "dateAdded": "2026-10-05T00:18:20.064Z",
       "timestamps": [
         {
           "startTime": 0,
-          "endTime": 26,
-          "topic": "The strategic power of reaching HR first to frame the narrative"
+          "endTime": 18,
+          "topic": "Why taking big swings accelerates career advancement"
         },
         {
-          "startTime": 26,
-          "endTime": 48,
-          "topic": "How employees should properly structure complaints using factual behaviors"
+          "startTime": 18,
+          "endTime": 41,
+          "topic": "The baseball analogy: home runs vs. playing it safe"
+        }
+      ]
+    },
+    {
+      "title": "If you're ambitious but feel stuck, please watch this",
+      "url": "https://www.youtube.com/watch?v=6-ZxPvpV8ec",
+      "videoId": "6-ZxPvpV8ec",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "Aiming for a modest 10% gain usually traps you in an endless operational grind, whereas aiming for a 10X leap forces you to redesign your entire business model for true leverage—making exponential growth mathematically far simpler than incremental gains. Through a transparent coaching session, Ali Abdaal illustrates how breaking down seemingly absurd targets into core levers eliminates limiting beliefs and turns overwhelming goals into realistic execution plans. If you feel stuck at an income or business plateau, this masterclass will fundamentally rewire how you structure your time, team, and pricing for scalable impact.",
+      "dateAdded": "2026-10-05T00:18:20.064Z",
+      "timestamps": [
+        {
+          "startTime": 1060,
+          "endTime": 1335,
+          "topic": "Demystifying the 10X Goal: Breaking massive revenue targets into simple unit economics"
         },
         {
-          "startTime": 48,
-          "endTime": 64,
-          "topic": "The two critical leverage points needed to win a workplace battle"
+          "startTime": 1390,
+          "endTime": 1540,
+          "topic": "The '3172' Growth Framework: Compounding small improvements across leads, conversion, and price"
+        },
+        {
+          "startTime": 2685,
+          "endTime": 2790,
+          "topic": "Championship Team vs. Family: Removing founder bottlenecks to scale effectively"
         }
       ]
     },
@@ -126,85 +173,59 @@
       ]
     },
     {
-      "title": "Berbaloi ke bayar PTPTN awal?",
-      "url": "https://www.youtube.com/shorts/I01vVU92GmE",
-      "videoId": "I01vVU92GmE",
+      "title": "Kereta Honda dah tak laku, apa PUNCA?",
+      "url": "https://www.youtube.com/watch?v=Odg_EmYI2qk",
+      "videoId": "Odg_EmYI2qk",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Think rushing to pay off your PTPTN loan early is a smart financial move? Discover why clearing that 1% ujrah (effective 1.9% rate) with a lump sum actually costs you thousands compared to compounding that cash in safe funds like ASB or KWSP. Watch this breakdown to see how simple math can help you maximize your net worth instead of locking it away in low-interest debt.",
-      "dateAdded": "2026-10-02T01:10:15.603Z",
+      "summary": "For the first time in 70 years, automotive giant Honda is bleeding billions in operating losses as aggressive Chinese competitors shatter its long-held reputation for unmatched resale value and prestige. Discover the critical missteps behind Honda's failed EV gamble and why massive dealer discounts are suddenly flooding the market as the legacy automaker fights for survival.",
+      "dateAdded": "2026-10-05T00:18:20.064Z",
       "timestamps": [
         {
-          "startTime": 10,
-          "endTime": 55,
-          "topic": "The Real Math: Converting PTPTN's 1% flat rate to an effective interest rate"
+          "startTime": 353,
+          "endTime": 480,
+          "topic": "The $10B EV Gamble and Collapsing Global Market Share"
         },
         {
-          "startTime": 55,
-          "endTime": 105,
-          "topic": "Why investing lump sum cash in ASB and KWSP beats early loan settlement"
+          "startTime": 530,
+          "endTime": 625,
+          "topic": "Slumping Sales Targets and Unprecedented Dealership Rebates"
         },
         {
-          "startTime": 105,
-          "endTime": 148,
-          "topic": "Capital protection and maximizing compound returns over debt repayment"
+          "startTime": 625,
+          "endTime": 705,
+          "topic": "Honda's Survival Strategy: Hybrid Pivot and the Nissan Partnership"
         }
       ]
     },
     {
-      "title": "Berhutang demi majlis kahwin?",
-      "url": "https://www.youtube.com/shorts/OEXlO-0KlFA",
-      "videoId": "OEXlO-0KlFA",
+      "title": "Majikan carum 16% gaji bawah RM5K?",
+      "url": "https://www.youtube.com/shorts/hG13B1VIyk8",
+      "videoId": "hG13B1VIyk8",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Taking out a ten-year personal loan just to fund a half-day wedding reception is one of the quickest ways to sabotage your financial future before your marriage even starts. This video breaks down why pleasing societal expectations leads to long-term regret and explains how financial alignment—being 'sekufu' in money mindset—is the true foundation of marital happiness. Watch this to avoid crippling debt and learn how to prioritize your actual life together over a fleeting event.",
-      "dateAdded": "2026-10-01T00:55:42.524Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 35,
-          "topic": "Why married life matters far more than the wedding day"
-        },
-        {
-          "startTime": 35,
-          "endTime": 75,
-          "topic": "The financial trap of taking personal loans for a wedding ceremony"
-        },
-        {
-          "startTime": 75,
-          "endTime": 140,
-          "topic": "Ignoring societal pressure and finding financial compatibility (sekufu)"
-        }
-      ]
-    },
-    {
-      "title": "Apa itu Dollar Cost Averaging?",
-      "url": "https://www.youtube.com/shorts/3MtE5rIkBOw",
-      "videoId": "3MtE5rIkBOw",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Trying to time the stock market is a guaranteed recipe for panic selling and costly mistakes. This video breaks down Dollar-Cost Averaging (DCA)—a simple, stress-free strategy that lets you invest consistently and smooth out market swings without guessing price tops or bottoms. Watch to discover how you can easily automate your stock investments and build wealth on autopilot.",
-      "dateAdded": "2026-09-30T00:51:35.852Z",
+      "summary": "Discover how a major proposed overhaul to EPF contributions could put extra money into your retirement account if you earn under RM5,000—while drastically slashing employer contributions for earners making over RM10,000. Watch this quick breakdown to see the exact math behind the proposal and uncover the severe risks it poses to small business owners and high-income earners.",
+      "dateAdded": "2026-10-05T00:18:20.064Z",
       "timestamps": [
         {
           "startTime": 0,
-          "endTime": 30,
-          "topic": "The danger and difficulty of trying to time the market"
+          "endTime": 51,
+          "topic": "The proposed progressive EPF contribution structure explained"
         },
         {
-          "startTime": 30,
-          "endTime": 72,
-          "topic": "How Dollar-Cost Averaging (DCA) works with a practical example"
+          "startTime": 51,
+          "endTime": 139,
+          "topic": "Math breakdown: Current vs. proposed EPF monthly contributions"
         },
         {
-          "startTime": 72,
-          "endTime": 105,
-          "topic": "Automating your investments using regular savings plans"
+          "startTime": 139,
+          "endTime": 179,
+          "topic": "The hidden downside: Impact on SME cash flow and high earners"
         }
       ]
     },
     {
-      "title": "[S02:E02] Malaysia tak mampu anjur F1? - Hezeri Samsuri",
+      "title": "[S02:E02] F1 GP Bahrain: Prestij negara atau beban kewangan?  - Hezeri Samsuri",
       "url": "https://www.youtube.com/watch?v=vpAY_TYdwKc",
       "videoId": "vpAY_TYdwKc",
       "channel": "Financial Faiz Podcast",
@@ -226,27 +247,6 @@
           "startTime": 3005,
           "endTime": 3150,
           "topic": "The hidden funding crisis behind local rally and grassroots motorsport"
-        }
-      ]
-    },
-    {
-      "title": "Solar boleh jejaskan TNB?",
-      "url": "https://www.youtube.com/shorts/wd8KoCq0Zx8",
-      "videoId": "wd8KoCq0Zx8",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "With electricity tariffs steadily climbing, is shelling out tens of thousands of ringgit for residential solar panels actually a smart investment? Discover why high solar installation costs should be dropping rapidly and how the rise of self-powered homes and EVs threatens the very business model of utility giants like TNB. Watch this quick breakdown to uncover whether switching to solar is truly worth your money right now.",
-      "dateAdded": "2026-09-30T00:51:35.852Z",
-      "timestamps": [
-        {
-          "startTime": 12,
-          "endTime": 50,
-          "topic": "Solar Panel ROI and High CAPEX in Malaysia"
-        },
-        {
-          "startTime": 50,
-          "endTime": 104,
-          "topic": "Why Solar and EV Adoption Threatens TNB's Revenue Model"
         }
       ]
     },
@@ -355,31 +355,31 @@
       ]
     },
     {
-      "title": "Is Atheism An Urban Phenomenon? | Sh. Mohammad Elshinawy",
-      "url": "https://www.youtube.com/shorts/tnEWZYoxJsM",
-      "videoId": "tnEWZYoxJsM",
+      "title": "Stop Saying “If Only” | Dr. Farah Islam",
+      "url": "https://www.youtube.com/shorts/1-ZKJndRtzw",
+      "videoId": "1-ZKJndRtzw",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Ever wondered why the Quran doesn’t spend chapters debating atheism head-on? This eye-opening reflection reveals the profound divine wisdom behind that silence, showing how innate belief in God (Fitrah) and human history render sustained atheism a fleeting anomaly. Watch this to gain a powerful perspective on the timeless precision of Quranic guidance.",
-      "dateAdded": "2026-10-02T01:10:15.603Z",
+      "summary": "Constantly torturing yourself with 'what ifs' and regret over missed opportunities is stealing your peace—what if your biggest setbacks and heartbreaks were actually divine protection and hidden blessings in disguise? This powerful reflection will radically shift how you view your past pain, offering profound clarity on why your struggles happened. Watch this to break free from the exhausting trap of 'if only' and discover the purpose behind your life's hardest trials.",
+      "dateAdded": "2026-10-05T00:18:20.065Z",
       "timestamps": [
         {
           "startTime": 0,
-          "endTime": 25,
-          "topic": "Why the Quran seemingly bypasses debating atheism directly"
+          "endTime": 23,
+          "topic": "Breaking free from the paralyzing 'if only' trap"
         },
         {
-          "startTime": 25,
-          "endTime": 40,
-          "topic": "The innate, hardwired belief in God inside every human"
+          "startTime": 23,
+          "endTime": 55,
+          "topic": "Uncovering the hidden divine gifts behind perceived defeat"
         },
         {
-          "startTime": 40,
-          "endTime": 58,
-          "topic": "The historical fragility of atheism and Quranic wisdom"
+          "startTime": 55,
+          "endTime": 71,
+          "topic": "Finding deeper meaning and healing through life's hardships"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-10-02T01:14:31.781Z"
+  "lastUpdated": "2026-10-05T00:22:48.021Z"
 }
