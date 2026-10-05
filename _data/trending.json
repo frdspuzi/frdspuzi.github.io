@@ -1,30 +1,12 @@
 {
   "repos": [
     {
-      "fullName": "anthropics/financial-services",
-      "url": "https://github.com/anthropics/financial-services",
-      "description": "",
-      "language": "Python",
-      "starsThisWeek": 2606,
-      "totalStars": 37858,
-      "ownerAvatarUrl": "https://github.com/anthropics.png",
-      "contributorAvatarUrls": [
-        "https://github.com/mihilmy.png",
-        "https://github.com/cxyback.png",
-        "https://github.com/manar-ant.png",
-        "https://github.com/tobinsouth.png",
-        "https://github.com/viveknair.png"
-      ],
-      "hook": "This repository provides Anthropic templates for financial services. It helps developers build AI agents for financial data analysis. Financial data means numbers and records about money.",
-      "personalization": "You can adapt these agent templates to build automated screening tools for Islamic finance compliance."
-    },
-    {
       "fullName": "paperclipai/paperclip",
       "url": "https://github.com/paperclipai/paperclip",
       "description": "The open-source app everyone uses to manage agents at work",
       "language": "TypeScript",
-      "starsThisWeek": 7364,
-      "totalStars": 89822,
+      "starsThisWeek": 8732,
+      "totalStars": 97184,
       "ownerAvatarUrl": "https://github.com/paperclipai.png",
       "contributorAvatarUrls": [
         "https://github.com/cryppadotta.png",
@@ -33,192 +15,104 @@
         "https://github.com/claude.png",
         "https://github.com/nickyleach.png"
       ],
-      "hook": "Paperclip is an open-source tool for managing AI agents at work. It helps teams run, monitor, and coordinate multiple agents together.",
-      "personalization": "This provides a fullstack control dashboard to orchestrate and test multi-agent setups across your projects."
+      "hook": "Paperclip helps you manage AI agents in one dashboard. An AI agent is a program that performs tasks on its own. You can track their tasks, view logs, and control access. The tool runs locally or on your servers.",
+      "personalization": "This gives you a fullstack TypeScript dashboard to monitor and evaluate autonomous coding agents in your workflow."
     },
     {
       "fullName": "vectorize-io/hindsight",
       "url": "https://github.com/vectorize-io/hindsight",
       "description": "Hindsight: Agent Memory That Learns",
       "language": "Python",
-      "starsThisWeek": 11089,
-      "totalStars": 37256,
+      "starsThisWeek": 10623,
+      "totalStars": 45493,
       "ownerAvatarUrl": "https://github.com/vectorize-io.png",
       "contributorAvatarUrls": [
         "https://github.com/nicoloboschi.png",
         "https://github.com/benfrank241.png",
         "https://github.com/claude.png",
-        "https://github.com/r266-tech.png",
-        "https://github.com/cdbartholomew.png"
+        "https://github.com/cdbartholomew.png",
+        "https://github.com/r266-tech.png"
       ],
-      "hook": "Hindsight is a memory system for AI agents. It stores past interactions so agents can learn and improve over time.",
-      "personalization": "Useful for evaluating how persistent memory layers affect prompt performance and response accuracy."
+      "hook": "Hindsight gives AI agents long-term memory. It lets an agent learn from past conversations and mistakes. The agent stores facts and updates its knowledge over time.",
+      "personalization": "Useful for your prompt evaluation workflows when testing how well agents retain context over multiple runs."
     },
     {
-      "fullName": "cloudflare/security-audit-skill",
-      "url": "https://github.com/cloudflare/security-audit-skill",
-      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "fullName": "pbakaus/impeccable",
+      "url": "https://github.com/pbakaus/impeccable",
+      "description": "The design language that makes your AI harness better at design.",
       "language": "JavaScript",
-      "starsThisWeek": 4805,
-      "totalStars": 22329,
-      "ownerAvatarUrl": "https://github.com/cloudflare.png",
-      "contributorAvatarUrls": [
-        "https://github.com/literally-dan.png",
-        "https://github.com/CooperSheroy.png",
-        "https://github.com/kennysarnoski-jarvis.png"
-      ],
-      "hook": "This project adds security audit skills to coding agents. It checks source code for security flaws and produces clear reports.",
-      "personalization": "A practical skill you can plug into your coding agents to verify code safety before pushing changes."
-    },
-    {
-      "fullName": "Tencent/WeKnora",
-      "url": "https://github.com/Tencent/WeKnora",
-      "description": "Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning agent, and a self-maintaining Wiki.",
-      "language": "Go",
-      "starsThisWeek": 2705,
-      "totalStars": 30600,
-      "ownerAvatarUrl": "https://github.com/Tencent.png",
-      "contributorAvatarUrls": [
-        "https://github.com/lyingbug.png",
-        "https://github.com/voidkey.png",
-        "https://github.com/begoniezhao.png",
-        "https://github.com/claude.png",
-        "https://github.com/dependabot.png"
-      ],
-      "hook": "WeKnora converts raw documents into a searchable knowledge base. It uses retrieval-augmented generation to answer questions from your data. Retrieval-augmented generation means finding relevant text before generating an answer.",
-      "personalization": "A strong architecture to study when building RAG systems for Islamic reference texts or ethical guidelines."
-    },
-    {
-      "fullName": "davila7/claude-code-templates",
-      "url": "https://github.com/davila7/claude-code-templates",
-      "description": "CLI tool for configuring and monitoring Claude Code",
-      "language": "Python",
-      "starsThisWeek": 1154,
-      "totalStars": 31991,
-      "ownerAvatarUrl": "https://github.com/davila7.png",
+      "starsThisWeek": 4242,
+      "totalStars": 76282,
+      "ownerAvatarUrl": "https://github.com/pbakaus.png",
       "contributorAvatarUrls": [
         "https://github.com/claude.png",
         "https://github.com/github-actions.png",
-        "https://github.com/claude.png",
-        "https://github.com/dependabot.png"
+        "https://github.com/abdulwahabone.png",
+        "https://github.com/cursoragent.png"
       ],
-      "hook": "This tool helps you configure and monitor Claude Code from your terminal. It lets you manage configuration templates and track token usage.",
-      "personalization": "Directly relevant for your daily workflow when benchmarking and standardizing Claude Code setups."
+      "hook": "Impeccable is a design system made for AI coding tools. It provides design rules and prompts for AI models. This helps the AI write cleaner frontend code with better user interfaces.",
+      "personalization": "Helps you prompt coding assistants to build cleaner, more polished UI components for your fullstack side projects."
     },
     {
-      "fullName": "stablyai/orca",
-      "url": "https://github.com/stablyai/orca",
-      "description": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "fullName": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "language": "Python",
+      "starsThisWeek": 14689,
+      "totalStars": 53160,
+      "ownerAvatarUrl": "https://github.com/debpalash.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/kevin9327.png",
+        "https://github.com/jaketame.png",
+        "https://github.com/velixio.png"
+      ],
+      "hook": "VoiceStudio creates speech from text on your own computer. It can clone voices and translate spoken audio across 646 languages. You do not need to send your audio data to cloud providers.",
+      "personalization": "A solid local tool if you want to add Malay voiceovers or audio processing to your Islamic apps."
+    },
+    {
+      "fullName": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "starsThisWeek": 6227,
-      "totalStars": 79571,
-      "ownerAvatarUrl": "https://github.com/stablyai.png",
+      "starsThisWeek": 3096,
+      "totalStars": 56763,
+      "ownerAvatarUrl": "https://github.com/heygen-com.png",
       "contributorAvatarUrls": [
-        "https://github.com/nwparker.png",
-        "https://github.com/AmethystLiang.png",
-        "https://github.com/orca-ide.png",
-        "https://github.com/brennanb2025.png",
-        "https://github.com/Jinwoo-H.png"
-      ],
-      "hook": "Orca is a development environment for running multiple coding agents in parallel. You can use your own model subscriptions across desktop, mobile, and remote servers.",
-      "personalization": "Great to evaluate when testing how parallel coding agents handle fullstack TypeScript and Python tasks."
-    },
-    {
-      "fullName": "vercel/next.js",
-      "url": "https://github.com/vercel/next.js",
-      "description": "The React Framework",
-      "language": "JavaScript",
-      "starsThisWeek": 496,
-      "totalStars": 142798,
-      "ownerAvatarUrl": "https://github.com/vercel.png",
-      "contributorAvatarUrls": [
-        "https://github.com/ijjk.png",
-        "https://github.com/timneutkens.png",
-        "https://github.com/sokra.png",
-        "https://github.com/vercel-release-bot.png",
-        "https://github.com/huozhi.png"
-      ],
-      "hook": "Next.js is a popular web framework for building React applications. It handles frontend user interfaces and backend server routes in one project.",
-      "personalization": "A core fullstack framework to keep updated on for your web applications and side projects."
-    },
-    {
-      "fullName": "HKUDS/CLI-Anything",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: <a href=\"https://clianything.cc/\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://clianything.cc/</a>",
-      "language": "Python",
-      "starsThisWeek": 1105,
-      "totalStars": 50748,
-      "ownerAvatarUrl": "https://github.com/HKUDS.png",
-      "contributorAvatarUrls": [
-        "https://github.com/yuh-yang.png",
+        "https://github.com/miguel-heygen.png",
+        "https://github.com/vanceingalls.png",
+        "https://github.com/jrusso1020.png",
         "https://github.com/claude.png",
-        "https://github.com/AiMiDi.png",
-        "https://github.com/omerarslan0.png",
-        "https://github.com/hito0512.png"
+        "https://github.com/ukimsanov.png"
       ],
-      "hook": "CLI-Anything converts command-line software into tools that AI agents can use. It creates structured commands so agents can execute software tasks reliably.",
-      "personalization": "Helpful when you need to expose custom command-line evaluation scripts directly to agentic coding tools."
-    },
-    {
-      "fullName": "pytorch/pytorch",
-      "url": "https://github.com/pytorch/pytorch",
-      "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
-      "language": "Python",
-      "starsThisWeek": 320,
-      "totalStars": 103420,
-      "ownerAvatarUrl": "https://github.com/pytorch.png",
-      "contributorAvatarUrls": [
-        "https://github.com/pytorchmergebot.png",
-        "https://github.com/ezyang.png",
-        "https://github.com/malfet.png",
-        "https://github.com/zou3519.png",
-        "https://github.com/cyyever.png"
-      ],
-      "hook": "PyTorch is an open-source framework for machine learning. It performs fast mathematical calculations on graphics processing units to train models.",
+      "hook": "Hyperframes turns standard HTML and CSS into video files. You write layout code, and the engine renders it as video frames. AI agents can use it to generate programmatic videos quickly.",
       "personalization": ""
     },
     {
-      "fullName": "anthropics/claude-code",
-      "url": "https://github.com/anthropics/claude-code",
-      "description": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands.",
+      "fullName": "Effect-TS/effect",
+      "url": "https://github.com/Effect-TS/effect",
+      "description": "Build production-ready applications in TypeScript",
       "language": "TypeScript",
-      "starsThisWeek": 1493,
-      "totalStars": 148347,
-      "ownerAvatarUrl": "https://github.com/anthropics.png",
+      "starsThisWeek": 702,
+      "totalStars": 16966,
+      "ownerAvatarUrl": "https://github.com/Effect-TS.png",
       "contributorAvatarUrls": [
-        "https://github.com/actions-user.png",
-        "https://github.com/poteat.png",
-        "https://github.com/bcherny.png",
-        "https://github.com/claude.png",
-        "https://github.com/ant-kurt.png"
+        "https://github.com/mikearnaldi.png",
+        "https://github.com/tim-smart.png",
+        "https://github.com/gcanti.png",
+        "https://github.com/github-actions.png",
+        "https://github.com/fubhy.png"
       ],
-      "hook": "Claude Code is an agentic coding assistant that runs in your terminal. It reads codebases, writes code, and executes git workflows through natural language.",
-      "personalization": "A prime target for your AI coding tool evaluations and your day-to-day engineering workflow."
-    },
-    {
-      "fullName": "affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "language": "JavaScript",
-      "starsThisWeek": 5175,
-      "totalStars": 268407,
-      "ownerAvatarUrl": "https://github.com/affaan-m.png",
-      "contributorAvatarUrls": [
-        "https://github.com/haelyra.png",
-        "https://github.com/claude.png",
-        "https://github.com/dependabot.png",
-        "https://github.com/pangerlkr.png"
-      ],
-      "hook": "ECC is an optimization harness for coding agents like Claude Code and Cursor. It provides skills, memory systems, and security rules to improve agent speed and accuracy.",
-      "personalization": "Directly matches your applied ML work on agent harness tuning and prompt optimization."
+      "hook": "Effect is a TypeScript library for building reliable software. It helps you manage errors, handle async code, and structure large applications. It uses functional programming principles to make code predictable.",
+      "personalization": "Great for leveling up your fullstack TypeScript skills with strict type safety and structured error handling."
     },
     {
       "fullName": "rohitg00/ai-engineering-from-scratch",
       "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
       "description": "Learn it. Build it. Ship it for others.",
       "language": "Python",
-      "starsThisWeek": 3850,
-      "totalStars": 59252,
+      "starsThisWeek": 4904,
+      "totalStars": 63914,
       "ownerAvatarUrl": "https://github.com/rohitg00.png",
       "contributorAvatarUrls": [
         "https://github.com/github-actions.png",
@@ -226,52 +120,68 @@
         "https://github.com/thereisnotime.png",
         "https://github.com/claude.png"
       ],
-      "hook": "This repository teaches practical AI engineering concepts step by step. It provides clear code examples to build AI applications without heavy frameworks.",
-      "personalization": "Fits your applied focus on mastering core AI engineering patterns without relying on academic theory."
+      "hook": "This repository teaches practical AI engineering. It contains step-by-step guides for building real AI applications. You learn how to work with models, build pipelines, and deploy systems.",
+      "personalization": "Directly aligns with your applied AI engineering work, covering hands-on implementation rather than pure academic theory."
     },
     {
-      "fullName": "alibaba/open-code-review",
-      "url": "https://github.com/alibaba/open-code-review",
-      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
-      "language": "Go",
-      "starsThisWeek": 3727,
-      "totalStars": 41921,
-      "ownerAvatarUrl": "https://github.com/alibaba.png",
+      "fullName": "Panniantong/Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "description": "Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu — one CLI, zero API fees.",
+      "language": "Python",
+      "starsThisWeek": 4789,
+      "totalStars": 90873,
+      "ownerAvatarUrl": "https://github.com/Panniantong.png",
       "contributorAvatarUrls": [
-        "https://github.com/lizhengfeng101.png",
-        "https://github.com/wu21-web.png",
-        "https://github.com/chethanuk.png",
-        "https://github.com/stay-foolish-forever.png",
-        "https://github.com/claude.png"
+        "https://github.com/claude.png",
+        "https://github.com/nyxst4ck.png",
+        "https://github.com/kadaliao.png",
+        "https://github.com/hymansun.png"
       ],
-      "hook": "Open Code Review uses static rules and AI agents to review pull requests. It detects bugs like SQL injection and writes line-level comments on your code.",
-      "personalization": "A solid tool to evaluate for automated quality and security checks on your fullstack repositories."
+      "hook": "Agent-Reach helps AI tools read content from social media platforms. It searches sites like Twitter, Reddit, and YouTube without paid API keys. Your agent receives clean text to use in prompts.",
+      "personalization": "Useful for gathering public sentiment or community discussions on Islamic finance and ethical tech topics."
     },
     {
-      "fullName": "cloudflare/quiche",
-      "url": "https://github.com/cloudflare/quiche",
-      "description": "🥧 Savoury implementation of the QUIC transport protocol and HTTP/3",
-      "language": "Rust",
-      "starsThisWeek": 521,
-      "totalStars": 12661,
-      "ownerAvatarUrl": "https://github.com/cloudflare.png",
+      "fullName": "alirezarezvani/claude-skills",
+      "url": "https://github.com/alirezarezvani/claude-skills",
+      "description": "380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, customizable references, scripts)for Claude Code, Codex, Gemini CLI, Cursor, and 8 more coding agents — engineering, marketing, product, compliance, C-level advisory, research, business operations, commercial & finance, and your daily productivity skills.",
+      "language": "Python",
+      "starsThisWeek": 1024,
+      "totalStars": 27601,
+      "ownerAvatarUrl": "https://github.com/alirezarezvani.png",
       "contributorAvatarUrls": [
-        "https://github.com/ghedo.png",
-        "https://github.com/github-actions.png",
-        "https://github.com/traviscibot.png",
-        "https://github.com/LPardue.png",
-        "https://github.com/antoniovicente.png"
+        "https://github.com/claude.png",
+        "https://github.com/olgasafonova.png",
+        "https://github.com/fernandezbaptiste.png",
+        "https://github.com/ikala-shawn.png"
       ],
-      "hook": "Quiche is a Rust library that implements the QUIC network protocol and HTTP/3. It helps developers create fast and secure network applications.",
-      "personalization": ""
+      "hook": "This repository provides over 380 plugins and prompt skills for AI coding tools. It includes ready-to-use workflows for Claude Code, Cursor, and other agent systems. You can add these skills to automate coding tasks.",
+      "personalization": "Directly relevant for evaluating and optimizing your Claude Code and Cursor developer setup."
+    },
+    {
+      "fullName": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "starsThisWeek": 1304,
+      "totalStars": 25159,
+      "ownerAvatarUrl": "https://github.com/pingdotgg.png",
+      "contributorAvatarUrls": [
+        "https://github.com/juliusmarminge.png",
+        "https://github.com/claude.png",
+        "https://github.com/t3dotgg.png",
+        "https://github.com/codex.png",
+        "https://github.com/maria-rcks.png"
+      ],
+      "hook": "T3 Code is a web-based code editor built for AI workflows. It lets developers collaborate with AI coding agents in a browser. The project is written in TypeScript.",
+      "personalization": "Worth evaluating as an open-source, fullstack TypeScript alternative to commercial AI coding environments."
     },
     {
       "fullName": "TencentCloud/Octop",
       "url": "https://github.com/TencentCloud/Octop",
       "description": "A smarter, self-hosted AI assistant — multi-user, multi-agent.",
       "language": "Python",
-      "starsThisWeek": 869,
-      "totalStars": 5262,
+      "starsThisWeek": 1496,
+      "totalStars": 6741,
       "ownerAvatarUrl": "https://github.com/TencentCloud.png",
       "contributorAvatarUrls": [
         "https://github.com/jubaoliang-tencent.png",
@@ -280,45 +190,143 @@
         "https://github.com/liukewia.png",
         "https://github.com/huangcheng.png"
       ],
-      "hook": "Octop is a self-hosted AI assistant platform that supports multiple users and agents. You can host it on your own server to keep your data private.",
-      "personalization": "An interesting self-hosted option if you need private multi-agent infrastructure for your personal projects."
+      "hook": "Octop is a self-hosted AI assistant platform. You run it on your own server to support multiple users and agents. It organizes conversations and coordinates tasks between different AI models.",
+      "personalization": ""
     },
     {
-      "fullName": "anthropics/knowledge-work-plugins",
-      "url": "https://github.com/anthropics/knowledge-work-plugins",
-      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "fullName": "tile-ai/tilelang",
+      "url": "https://github.com/tile-ai/tilelang",
+      "description": "Domain-specific language designed to streamline the development of high-performance GPU/CPU/Accelerators kernels",
       "language": "Python",
-      "starsThisWeek": 478,
-      "totalStars": 25756,
-      "ownerAvatarUrl": "https://github.com/anthropics.png",
+      "starsThisWeek": 839,
+      "totalStars": 8360,
+      "ownerAvatarUrl": "https://github.com/tile-ai.png",
       "contributorAvatarUrls": [
-        "https://github.com/github-actions.png",
-        "https://github.com/jordanecker-ant.png",
-        "https://github.com/bryan-anthropic.png",
-        "https://github.com/claude.png",
-        "https://github.com/mattpic-ant.png"
+        "https://github.com/LeiWang1999.png",
+        "https://github.com/chengyupku.png",
+        "https://github.com/SiriusNEO.png",
+        "https://github.com/Rachmanino.png",
+        "https://github.com/xwhzz.png"
       ],
-      "hook": "This repository provides open-source plugins for Anthropic Claude. These plugins help knowledge workers automate office tasks and document workflows.",
-      "personalization": "A useful reference for real-world prompt design and tool definitions from the Anthropic team."
+      "hook": "TileLang is a programming language for writing custom GPU code. A GPU is a processor that handles fast parallel calculations. The tool helps developers write fast hardware kernels with simple syntax.",
+      "personalization": ""
     },
     {
-      "fullName": "FxEmbed/FxEmbed",
-      "url": "https://github.com/FxEmbed/FxEmbed",
-      "description": "Fix X/Twitter and Bluesky embeds! Use multiple images, videos, polls, translations and more on Discord, Telegram and others",
-      "language": "TypeScript",
-      "starsThisWeek": 432,
-      "totalStars": 5499,
-      "ownerAvatarUrl": "https://github.com/FxEmbed.png",
+      "fullName": "harry0703/MoneyPrinterTurbo",
+      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
+      "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+      "language": "Python",
+      "starsThisWeek": 2291,
+      "totalStars": 128458,
+      "ownerAvatarUrl": "https://github.com/harry0703.png",
       "contributorAvatarUrls": [
-        "https://github.com/renovate.png",
-        "https://github.com/dangeredwolf.png",
-        "https://github.com/cursoragent.png",
-        "https://github.com/Wazbat.png",
-        "https://github.com/coderabbitai.png"
+        "https://github.com/rudycelekli.png",
+        "https://github.com/c020627.png",
+        "https://github.com/claude.png",
+        "https://github.com/yyhhyyyyyy.png"
       ],
-      "hook": "FxEmbed fixes social media link previews in chat applications. It extracts images, videos, and translations so posts display correctly in chat apps.",
+      "hook": "MoneyPrinterTurbo generates short video clips from a text topic automatically. It writes a script, creates voice audio, selects images, and stitches everything together. You can run the entire workflow locally.",
+      "personalization": ""
+    },
+    {
+      "fullName": "vercel/next.js",
+      "url": "https://github.com/vercel/next.js",
+      "description": "The React Framework",
+      "language": "JavaScript",
+      "starsThisWeek": 477,
+      "totalStars": 143172,
+      "ownerAvatarUrl": "https://github.com/vercel.png",
+      "contributorAvatarUrls": [
+        "https://github.com/ijjk.png",
+        "https://github.com/timneutkens.png",
+        "https://github.com/sokra.png",
+        "https://github.com/vercel-release-bot.png",
+        "https://github.com/huozhi.png"
+      ],
+      "hook": "Next.js is a popular framework for building fullstack web applications. It combines React frontend components with backend server routes. It handles page routing, server rendering, and asset optimization.",
+      "personalization": "A core framework for your fullstack web development and AI wrapper projects."
+    },
+    {
+      "fullName": "cs341-illinois/coursebook",
+      "url": "https://github.com/cs341-illinois/coursebook",
+      "description": "Open Source Introductory Systems Programming Textbook for the University of Illinois",
+      "language": "TeX",
+      "starsThisWeek": 1626,
+      "totalStars": 3687,
+      "ownerAvatarUrl": "https://github.com/cs341-illinois.png",
+      "contributorAvatarUrls": [
+        "https://github.com/bhuvy2.png",
+        "https://github.com/angrave.png",
+        "https://github.com/PradyumnaShome.png",
+        "https://github.com/ekcom.png",
+        "https://github.com/aneeshdurg.png"
+      ],
+      "hook": "This repository contains an open textbook for systems programming. Systems programming means writing software that interacts directly with the operating system and hardware. It covers C programming, memory management, and threads.",
+      "personalization": ""
+    },
+    {
+      "fullName": "NVIDIA/OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+      "language": "Rust",
+      "starsThisWeek": 5996,
+      "totalStars": 14863,
+      "ownerAvatarUrl": "https://github.com/NVIDIA.png",
+      "contributorAvatarUrls": [
+        "https://github.com/drew.png",
+        "https://github.com/johntmyers.png",
+        "https://github.com/pimlock.png",
+        "https://github.com/miyoungc.png",
+        "https://github.com/elezar.png"
+      ],
+      "hook": "OpenShell is a secure runtime environment for AI agents. A runtime is a system that executes programs. It isolates agent commands to keep your computer and private data safe during automated tasks.",
+      "personalization": "Essential to evaluate if you want safe, sandboxed execution when testing autonomous coding agents."
+    },
+    {
+      "fullName": "pablostanley/yoinks",
+      "url": "https://github.com/pablostanley/yoinks",
+      "description": "yoink any video from your terminal. no shady ads.",
+      "language": "TypeScript",
+      "starsThisWeek": 2361,
+      "totalStars": 4367,
+      "ownerAvatarUrl": "https://github.com/pablostanley.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png"
+      ],
+      "hook": "Yoinks is a terminal command-line tool for downloading online videos. You paste a video URL in your terminal, and the tool saves the file. It operates without web advertisements or popups.",
+      "personalization": ""
+    },
+    {
+      "fullName": "mvschwarz/openrig",
+      "url": "https://github.com/mvschwarz/openrig",
+      "description": "Build your own network of agents from Claude Code, Codex and Pi: persistent teams with roles, shared context and owned work.",
+      "language": "TypeScript",
+      "starsThisWeek": 4251,
+      "totalStars": 4976,
+      "ownerAvatarUrl": "https://github.com/mvschwarz.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/rudycelekli.png",
+        "https://github.com/dajiaohuang.png",
+        "https://github.com/Totopo27.png"
+      ],
+      "hook": "OpenRig coordinates teams of AI coding assistants like Claude Code. You assign specific roles and tasks to each agent. The agents share context and work together on software projects.",
+      "personalization": "Matches your workflow of testing multi-agent coordination with Claude Code and other coding assistants."
+    },
+    {
+      "fullName": "HunxByts/GhostTrack",
+      "url": "https://github.com/HunxByts/GhostTrack",
+      "description": "Useful tool to track location or mobile number",
+      "language": "Python",
+      "starsThisWeek": 1778,
+      "totalStars": 17011,
+      "ownerAvatarUrl": "https://github.com/HunxByts.png",
+      "contributorAvatarUrls": [
+        "https://github.com/bakaemon.png"
+      ],
+      "hook": "GhostTrack is a command-line tool that looks up basic phone number and IP address information. It queries public telecom records and internet registers. It shows network carriers and general country locations.",
       "personalization": ""
     }
   ],
-  "lastUpdated": "2026-09-28T00:17:30.708Z"
+  "lastUpdated": "2026-10-05T00:25:56.936Z"
 }
