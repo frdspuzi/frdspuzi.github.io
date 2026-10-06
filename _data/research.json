@@ -1,69 +1,85 @@
 {
-  "lastUpdated": "2026-10-05",
+  "lastUpdated": "2026-10-06",
   "papers": [
     {
-      "id": "hf:2609.22753",
-      "doi": "https://arxiv.org/abs/2609.22753",
-      "title": "Replacing Large Language Models with Jev Decision Models for Low-Latency Edge Service Orchestration",
-      "publicationDate": "2026-09-25",
+      "id": "hf:2610.04116",
+      "doi": "https://arxiv.org/abs/2610.04116",
+      "title": "CUAWright: A Minimal Unified Interface for Digital Agents",
+      "publicationDate": "2026-10-01",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Delong Li et al.",
+      "leadAuthor": "Yadong Lu et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Apps that ask a language model to read each request wait too long, so requests miss their time limit.",
-      "fix": "A small decision model cut median wait by 22.7-64.5% and kept 0.91-0.95 of requests exact and on time.",
-      "practicalUseCase": "Language models can be too slow for fixed time limits, so use a small decision model for simple requests.",
-      "limitation": "It works only for requests with few fields; wide requests are the limit.",
-      "fullTextUrl": "https://huggingface.co/papers/2609.22753"
+      "problem": "Computer-use agents rely on fixed screen tools, so they cannot build their own tools or run code directly.",
+      "fix": "A bash-only terminal agent gained 33.2% partial reward and cut cost 37.5% on OSWorld 2.0.",
+      "practicalUseCase": "Screen clicking may be the wrong way to drive a computer, so give your agent a terminal first.",
+      "limitation": "Gains come from benchmark tests, so daily real-world results may differ.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.04116"
     },
     {
-      "id": "hf:2610.01092",
-      "doi": "https://arxiv.org/abs/2610.01092",
-      "title": "Ego2Act: Evaluating Goal-Directed Manipulation in Egocentric Video Generation",
-      "publicationDate": "2026-09-30",
+      "id": "hf:2610.00722",
+      "doi": "https://arxiv.org/abs/2610.00722",
+      "title": "JEPA-TTT: Persistent Test-Time Training of Latent World Models for Planning under Dynamics Shifts",
+      "publicationDate": "2026-09-29",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Patrick Amadeus Irawan et al.",
+      "leadAuthor": "Zheyuan Zhang et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Video models are tested on single short actions, so nobody knows if they can plan many steps.",
-      "fix": "Tests on 2,640 videos showed models skip steps, leave later steps without needed states, and fail at fine physical motion.",
-      "practicalUseCase": "Do not trust video models to simulate multi-step tasks yet, so check each step by hand.",
-      "limitation": "The test covers only hand tasks in everyday scenes, seen from the first-person view.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.01092"
+      "problem": "Planning models give bad predictions when the world behaves differently at test time than in training.",
+      "fix": "Updating the model during use cut prediction error by 83% and raised planning performance by 153% after 500 episodes.",
+      "practicalUseCase": "A frozen model decays when conditions change, so let it keep learning from its own experience.",
+      "limitation": "Tests covered eight changes in four control environments, not messy real-world systems.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.00722"
     },
     {
-      "id": "hf:2609.36435",
-      "doi": "https://arxiv.org/abs/2609.36435",
-      "title": "MemFold: Learning Compact Soft Memory for Long-Context Personalization via On-Policy Optimization",
-      "publicationDate": "2026-09-28",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Jingxuan Wu et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Assistants that serve one user for a long time must track changing preferences, but long text history grows without limit.",
-      "fix": "MemFold packs memory into fixed-size vectors and scored highest on two long-history tests, winning by more at longer history.",
-      "practicalUseCase": "Fixed-size memory can beat a growing text history, so consider compact memory for long-running assistants.",
-      "limitation": "Results come from three Qwen models and benchmark tests, not from real users.",
-      "fullTextUrl": "https://huggingface.co/papers/2609.36435"
-    },
-    {
-      "id": "hf:2609.36388",
-      "doi": "https://arxiv.org/abs/2609.36388",
-      "title": "Persona Dosing: Calibrated Activation Steering for Graded Trait Control",
+      "id": "hf:2609.34826",
+      "doi": "https://arxiv.org/abs/2609.34826",
+      "title": "WM-VLM: Probing Internal World Models for Interleaved Visual-Textual Reasoning",
       "publicationDate": "2026-09-27",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Zehao Jin et al.",
+      "leadAuthor": "Yuheng Zha et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Steering a language model needs a strength setting, but that setting does not tell you how strongly a trait shows.",
-      "fix": "PersonaDose raised trait expression by 33.2, 18.3, and 17.8 points over the baseline on three models.",
-      "practicalUseCase": "You can request a trait level and get close, so test the real output before you ship.",
-      "limitation": "Calibrated requests reached only 14-22 of 28 targets per model, and coherence dropped for some traits.",
-      "fullTextUrl": "https://huggingface.co/papers/2609.36388"
+      "problem": "Vision-language models reason mostly in words, so they struggle with spatial puzzles that people solve by picturing shapes.",
+      "fix": "Letting the model draw its own intermediate pictures raised mental rotation scores by up to 39.25 percentage points.",
+      "practicalUseCase": "Models that picture each step solve spatial tasks better, so pick image-generating reasoning for spatial work.",
+      "limitation": "Tests used programmatically built rotation puzzles, so results may not carry to real photos.",
+      "fullTextUrl": "https://huggingface.co/papers/2609.34826"
+    },
+    {
+      "id": "hf:2610.02772",
+      "doi": "https://arxiv.org/abs/2610.02772",
+      "title": "Improving Atomic-Fact Recall via Focused Views in Unstructured Knowledge Editing",
+      "publicationDate": "2026-10-01",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Ding Wu et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Edited language models can repeat the new passage but fail to recall its separate facts without it.",
+      "fix": "Randomly shifting position values during editing improved fact recall across five editors, two models, and three benchmarks.",
+      "practicalUseCase": "Model updates can look successful but still lose facts, so test recall of each fact, not the whole passage.",
+      "limitation": "The method only covers two model families and edit methods that use rotary position encoding.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.02772"
+    },
+    {
+      "id": "hf:2610.02840",
+      "doi": "https://arxiv.org/abs/2610.02840",
+      "title": "PointWAM: 3D World Action Modeling for Dexterous Robotic Manipulation",
+      "publicationDate": "2026-10-01",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Chunghyun Park et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Robot models that predict flat images or joint angles miss the 3D shape and contact needed for hand tasks.",
+      "fix": "Predicting scene and hand motion as 3D points beat the prior best by 11.7 points on ten tasks.",
+      "practicalUseCase": "Human videos can teach robot hands, since pre-training on them added 56.9 points, so reuse that footage.",
+      "limitation": "Results come from the DexJoCo simulation tasks plus one real robot, so wider claims need more tests.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.02840"
     },
     {
       "id": "https://openalex.org/W7204751468",
@@ -76,10 +92,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks set up sustainability committees, but nobody knew if those committees improve environmental results in Islamic banks.",
-      "fix": "Committees raised overall environmental scores and resource reduction in Islamic banks, but not green products or innovation.",
-      "practicalUseCase": "Islamic bank committees may mostly give symbolic results, so check for real green products before you trust a bank.",
-      "limitation": "The study shows links in emerging markets, not proof that committees cause the changes.",
+      "problem": "Banks set up sustainability committees, but nobody knew whether they improve environmental results in Islamic and conventional banks.",
+      "fix": "Committees linked to better environmental scores, but in Islamic banks they did not link to green products or innovation.",
+      "practicalUseCase": "Committees may show symbolic effort in Islamic banks, so check for real green products before trusting a bank's claims.",
+      "limitation": "Panel regressions show links, not cause, and cover only emerging-market banks.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
@@ -93,10 +109,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Sustainability sukuk are growing, but nobody knew what drives the size of each issue.",
-      "fix": "Across 11,944 sukuk from 2012 to 2022, equity-based contracts, government issuers, and social purposes produced larger issues.",
-      "practicalUseCase": "Sustainability sukuk stay a tiny market share, so policy should push issuance beyond Indonesia, Malaysia, and Saudi Arabia.",
-      "limitation": "The data stops at 2022 and shows links, not cause.",
+      "problem": "Sustainability sukuk are growing, but nobody knew what drives how large each issue is.",
+      "fix": "Across 11,944 sukuk issues from 2012 to 2022, equity-based contracts, strong security, and USD or Euro currency gave larger issues.",
+      "practicalUseCase": "Issuers who want bigger sustainability sukuk should choose equity-based contracts and major currencies, and skip costly second-party opinions.",
+      "limitation": "Growth concentrates in Indonesia, Malaysia, and Saudi Arabia, so findings may not fit other Muslim-majority countries.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -108,13 +124,12 @@
       "leadAuthor": "Ahmad Hisham Alnajjar et al.",
       "institution": "Petra University",
       "topics": [
-        "Islamic Studies & Finance",
-        "Tech"
+        "Islamic Studies & Finance"
       ],
-      "problem": "Islamic banks in Jordan invest in AI and big data, but the effect on results was unclear.",
-      "fix": "AI use, data analysis skill, and data management all link to better competitiveness and sustainable development in 15 Islamic banks.",
-      "practicalUseCase": "Banks that want an edge should invest in AI and data practice, not only staff digital skills.",
-      "limitation": "A one-time survey of 214 managers in Jordan shows links, not cause.",
+      "problem": "Islamic banks in Jordan lacked evidence on whether artificial intelligence and big data raise competitiveness and sustainable growth.",
+      "fix": "AI use, big data skills, and data management all linked positively to competitiveness and sustainable performance in 214 surveyed managers.",
+      "practicalUseCase": "AI and data work links to stronger Islamic banks, so fund it, and do not rely on staff skills alone.",
+      "limitation": "It is a one-time survey of Jordanian managers, so it shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -126,13 +141,12 @@
       "leadAuthor": "Sulaeman Sulaeman et al.",
       "institution": "Airlangga University",
       "topics": [
-        "Islamic Studies & Finance",
-        "Tech"
+        "Islamic Studies & Finance"
       ],
-      "problem": "Banks need to know what drives their growth, and whether Islamic and conventional banks grow the same way.",
+      "problem": "Nobody knew which factors drive bank growth in countries that have both Islamic and conventional banks.",
       "fix": "Across 218 banks in 12 countries, ICT adoption drove growth most, and high-tech exports helped only when combined with ICT.",
-      "practicalUseCase": "Digital tools drive bank growth, so invest in digital infrastructure before anything else.",
-      "limitation": "Data covers 12 countries from 2010 to 2023, so other regions may differ.",
+      "practicalUseCase": "Digital infrastructure drives bank growth, so governments should build it before betting on tech exports alone.",
+      "limitation": "Data cover 12 countries from 2010 to 2023, so findings show patterns, not proof of cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -146,10 +160,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Many Muslim-majority countries have little financial inclusion, even though Islamic finance has grown fast.",
-      "fix": "In 35 countries, income, education, institutions, internet access, population, and age dependency drive inclusion in OIC countries.",
-      "practicalUseCase": "OIC countries gain most from digital infrastructure and from helping youth and women, so policy should start there.",
-      "limitation": "The data covers only 35 countries from 2005 to 2021 and shows links, not cause.",
+      "problem": "Financial inclusion stays low in Muslim-majority countries despite fast growth of Islamic finance.",
+      "fix": "In 35 OIC and OECD countries, OIC inclusion depends on income, tertiary education, institutions, internet access, population, and age dependency.",
+      "practicalUseCase": "OIC countries need more digital infrastructure and support for youth and women, so aim policy there.",
+      "limitation": "The study covers 35 countries from 2005 to 2021 and shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
     },
     {
@@ -163,28 +177,11 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Medical students face constant tests and peer comparison, but nobody had pooled how often they feel like frauds.",
-      "fix": "Impostor feelings were frequent among medical students worldwide, though results varied widely between studies.",
-      "practicalUseCase": "Many medical students feel like frauds, so schools should measure it and offer support.",
-      "limitation": "Study results differed a lot by sampling method and region, so the pooled number is uncertain.",
+      "problem": "Medical students face constant tests and comparison, but the global rate of impostor feelings was unknown.",
+      "fix": "Impostor feelings were common among medical students, though the pooled estimates varied a lot between studies.",
+      "practicalUseCase": "If many trainees feel like frauds, normalise it early and offer coping support in school.",
+      "limitation": "Results varied widely by sampling method and region, so treat the pooled figure with caution.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
-    },
-    {
-      "id": "https://openalex.org/W7171792253",
-      "doi": "https://doi.org/10.1371/journal.pone.0354474",
-      "title": "Psychometric properties of the Arabic Perceived Digital Well-Being Scale (PDWS) in Saudi young adults",
-      "publicationDate": "2026-07-30",
-      "venue": "PLoS ONE",
-      "leadAuthor": "Emadeldin M. Elsokkary",
-      "institution": "Imam Mohammad ibn Saud Islamic University",
-      "topics": [
-        "Career & Productivity"
-      ],
-      "problem": "Digital well-being studies focus on addiction and risk, and Arabic speakers had no tool to measure the positive side.",
-      "fix": "The Arabic digital well-being scale showed three clear parts: emotional, social, and cognitive, and linked to life satisfaction.",
-      "practicalUseCase": "Better feelings about phone use link to higher life satisfaction and less fear of missing out, so track it.",
-      "limitation": "Only young adults in Riyadh took part, and the design shows links, not cause.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0354474"
     }
   ]
 }
