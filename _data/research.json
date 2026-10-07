@@ -1,102 +1,69 @@
 {
-  "lastUpdated": "2026-10-06",
+  "lastUpdated": "2026-10-07",
   "papers": [
     {
-      "id": "hf:2610.04116",
-      "doi": "https://arxiv.org/abs/2610.04116",
-      "title": "CUAWright: A Minimal Unified Interface for Digital Agents",
+      "id": "hf:2610.04426",
+      "doi": "https://arxiv.org/abs/2610.04426",
+      "title": "UnAct: Gradient-Free Unlearning via Targeted Activation Intervention",
+      "publicationDate": "2026-10-02",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Saeed Abdul Muizz et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "A model must forget one class, but current methods break the model when only a few images are available.",
+      "fix": "UnAct forgets a class using only forward passes, stays within 2.5 points of retraining, and runs 19x faster than SSD.",
+      "practicalUseCase": "You can honor a deletion request with a few images, so try this before paying for full retraining.",
+      "limitation": "Tests used small image models on CIFAR data, and the transfer to a larger model is only preliminary.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.04426"
+    },
+    {
+      "id": "hf:2610.06647",
+      "doi": "https://arxiv.org/abs/2610.06647",
+      "title": "LoGRA: Scaling LLM Reinforcement Learning with Low-Rank Gradient Sketches",
+      "publicationDate": "2026-10-04",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Shaokun Zhang et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Reinforcement learning for language models needs so much memory that many teams cannot run it.",
+      "fix": "LoGRA cuts training memory by up to 45.7% without losing performance, and trains a 27B model on one node.",
+      "practicalUseCase": "Big-model reinforcement learning now fits on one machine, so try memory-saving gradient compression before renting a larger cluster.",
+      "limitation": "The excerpt reports results on reasoning tasks only, so other tasks may behave differently.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.06647"
+    },
+    {
+      "id": "hf:2610.06361",
+      "doi": "https://arxiv.org/abs/2610.06361",
+      "title": "Capability-Driven Self-Evolution of Agent Memory",
+      "publicationDate": "2026-10-04",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Yaoqi Chen et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Memory programs for AI agents improve by overall score, which hides gains in single skills and losses elsewhere.",
+      "fix": "PrisMem improves single skills separately, then merges them, and beats the best baselines by 10.54 and 7.83 points.",
+      "practicalUseCase": "Track each agent memory skill on its own, because one overall score can hide real gains and real regressions.",
+      "limitation": "The gains come from two long-history benchmarks, so real products may see smaller gains.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.06361"
+    },
+    {
+      "id": "hf:2610.04109",
+      "doi": "https://arxiv.org/abs/2610.04109",
+      "title": "SEER: Self-Evolving Event Reasoning and Retrieval for Time Series Forecasting",
       "publicationDate": "2026-10-01",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Yadong Lu et al.",
+      "leadAuthor": "Mingtian Tan et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Computer-use agents rely on fixed screen tools, so they cannot build their own tools or run code directly.",
-      "fix": "A bash-only terminal agent gained 33.2% partial reward and cut cost 37.5% on OSWorld 2.0.",
-      "practicalUseCase": "Screen clicking may be the wrong way to drive a computer, so give your agent a terminal first.",
-      "limitation": "Gains come from benchmark tests, so daily real-world results may differ.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.04116"
-    },
-    {
-      "id": "hf:2610.00722",
-      "doi": "https://arxiv.org/abs/2610.00722",
-      "title": "JEPA-TTT: Persistent Test-Time Training of Latent World Models for Planning under Dynamics Shifts",
-      "publicationDate": "2026-09-29",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Zheyuan Zhang et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Planning models give bad predictions when the world behaves differently at test time than in training.",
-      "fix": "Updating the model during use cut prediction error by 83% and raised planning performance by 153% after 500 episodes.",
-      "practicalUseCase": "A frozen model decays when conditions change, so let it keep learning from its own experience.",
-      "limitation": "Tests covered eight changes in four control environments, not messy real-world systems.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.00722"
-    },
-    {
-      "id": "hf:2609.34826",
-      "doi": "https://arxiv.org/abs/2609.34826",
-      "title": "WM-VLM: Probing Internal World Models for Interleaved Visual-Textual Reasoning",
-      "publicationDate": "2026-09-27",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Yuheng Zha et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Vision-language models reason mostly in words, so they struggle with spatial puzzles that people solve by picturing shapes.",
-      "fix": "Letting the model draw its own intermediate pictures raised mental rotation scores by up to 39.25 percentage points.",
-      "practicalUseCase": "Models that picture each step solve spatial tasks better, so pick image-generating reasoning for spatial work.",
-      "limitation": "Tests used programmatically built rotation puzzles, so results may not carry to real photos.",
-      "fullTextUrl": "https://huggingface.co/papers/2609.34826"
-    },
-    {
-      "id": "hf:2610.02772",
-      "doi": "https://arxiv.org/abs/2610.02772",
-      "title": "Improving Atomic-Fact Recall via Focused Views in Unstructured Knowledge Editing",
-      "publicationDate": "2026-10-01",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Ding Wu et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Edited language models can repeat the new passage but fail to recall its separate facts without it.",
-      "fix": "Randomly shifting position values during editing improved fact recall across five editors, two models, and three benchmarks.",
-      "practicalUseCase": "Model updates can look successful but still lose facts, so test recall of each fact, not the whole passage.",
-      "limitation": "The method only covers two model families and edit methods that use rotary position encoding.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.02772"
-    },
-    {
-      "id": "hf:2610.02840",
-      "doi": "https://arxiv.org/abs/2610.02840",
-      "title": "PointWAM: 3D World Action Modeling for Dexterous Robotic Manipulation",
-      "publicationDate": "2026-10-01",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Chunghyun Park et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Robot models that predict flat images or joint angles miss the 3D shape and contact needed for hand tasks.",
-      "fix": "Predicting scene and hand motion as 3D points beat the prior best by 11.7 points on ten tasks.",
-      "practicalUseCase": "Human videos can teach robot hands, since pre-training on them added 56.9 points, so reuse that footage.",
-      "limitation": "Results come from the DexJoCo simulation tasks plus one real robot, so wider claims need more tests.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.02840"
-    },
-    {
-      "id": "https://openalex.org/W7204751468",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
-      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Yunice Karina Tumewang et al.",
-      "institution": "Islamic University of Indonesia",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Banks set up sustainability committees, but nobody knew whether they improve environmental results in Islamic and conventional banks.",
-      "fix": "Committees linked to better environmental scores, but in Islamic banks they did not link to green products or innovation.",
-      "practicalUseCase": "Committees may show symbolic effort in Islamic banks, so check for real green products before trusting a bank's claims.",
-      "limitation": "Panel regressions show links, not cause, and cover only emerging-market banks.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
+      "problem": "Forecasts that use only past numbers miss shocks from outside events, and news retrieval adds noise and missing signals.",
+      "fix": "SEER learns from its forecast errors to improve news search, and it beats leading forecasting models on six volatile benchmarks.",
+      "practicalUseCase": "Feed event news into forecasts and learn from errors, but keep strict time limits so future data never leaks in.",
+      "limitation": "Results come from six benchmarks, and the excerpt gives no gain size, so real-world gains remain unclear.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.04109"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -109,28 +76,11 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Sustainability sukuk are growing, but nobody knew what drives how large each issue is.",
-      "fix": "Across 11,944 sukuk issues from 2012 to 2022, equity-based contracts, strong security, and USD or Euro currency gave larger issues.",
-      "practicalUseCase": "Issuers who want bigger sustainability sukuk should choose equity-based contracts and major currencies, and skip costly second-party opinions.",
-      "limitation": "Growth concentrates in Indonesia, Malaysia, and Saudi Arabia, so findings may not fit other Muslim-majority countries.",
+      "problem": "Few people know how sustainability sukuk issuance grew or what decides the size of each issue.",
+      "fix": "In 11,944 sukuk from 2012 to 2022, growth centers in Indonesia, Malaysia and Saudi Arabia, and equity-based contracts raise issue size.",
+      "practicalUseCase": "Issuers in other Muslim-majority countries should note that equity-based contracts, strong security and USD or Euro denomination help larger issues.",
+      "limitation": "The data ends in 2022 and shows links between features and size, not proof of cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
-    },
-    {
-      "id": "https://openalex.org/W7204766411",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.2651",
-      "title": "Artificial Intelligence and Big Data Strategies to Enhance Islamic Banks’ Competitiveness and Sustainable Development",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Ahmad Hisham Alnajjar et al.",
-      "institution": "Petra University",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Islamic banks in Jordan lacked evidence on whether artificial intelligence and big data raise competitiveness and sustainable growth.",
-      "fix": "AI use, big data skills, and data management all linked positively to competitiveness and sustainable performance in 214 surveyed managers.",
-      "practicalUseCase": "AI and data work links to stronger Islamic banks, so fund it, and do not rely on staff skills alone.",
-      "limitation": "It is a one-time survey of Jordanian managers, so it shows links, not cause.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
       "id": "https://openalex.org/W7204826719",
@@ -143,11 +93,28 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Nobody knew which factors drive bank growth in countries that have both Islamic and conventional banks.",
-      "fix": "Across 218 banks in 12 countries, ICT adoption drove growth most, and high-tech exports helped only when combined with ICT.",
-      "practicalUseCase": "Digital infrastructure drives bank growth, so governments should build it before betting on tech exports alone.",
-      "limitation": "Data cover 12 countries from 2010 to 2023, so findings show patterns, not proof of cause.",
+      "problem": "Banks lack clear evidence on which national factors drive growth in a dual banking system.",
+      "fix": "In 218 banks across 12 countries, ICT adoption drives bank growth most, and high-tech exports help only alongside ICT.",
+      "practicalUseCase": "Digital tools matter more than exports for bank growth, so invest in digital systems first and strengthen governance next.",
+      "limitation": "The study covers 12 countries and shows statistical links, so results may differ in other places.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
+    },
+    {
+      "id": "https://openalex.org/W7204766411",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.2651",
+      "title": "Artificial Intelligence and Big Data Strategies to Enhance Islamic Banks’ Competitiveness and Sustainable Development",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Ahmad Hisham Alnajjar et al.",
+      "institution": "Petra University",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Islamic banks in Jordan do not know whether AI and big data help them compete and grow sustainably.",
+      "fix": "AI use, big data skills and data management link to competitiveness and sustainability, but staff digital skill links only to competitiveness.",
+      "practicalUseCase": "Islamic banks should fund AI, big data and data management, and not expect staff digital skill alone to improve sustainability.",
+      "limitation": "The survey covers 214 managers at 15 Jordanian banks at one time, so it shows links, not cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
       "id": "https://openalex.org/W7204848949",
@@ -160,11 +127,28 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Financial inclusion stays low in Muslim-majority countries despite fast growth of Islamic finance.",
-      "fix": "In 35 OIC and OECD countries, OIC inclusion depends on income, tertiary education, institutions, internet access, population, and age dependency.",
-      "practicalUseCase": "OIC countries need more digital infrastructure and support for youth and women, so aim policy there.",
-      "limitation": "The study covers 35 countries from 2005 to 2021 and shows links, not cause.",
+      "problem": "Financial inclusion stays low in many Muslim-majority countries, even though Islamic finance has expanded.",
+      "fix": "In OIC countries, income, tertiary education, institutions, internet access, population and age dependency all shape financial inclusion.",
+      "practicalUseCase": "OIC governments should invest in digital infrastructure, youth and women empowerment, and income growth to widen financial inclusion.",
+      "limitation": "The study covers 35 countries and reports statistical links, so single countries may differ.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
+    },
+    {
+      "id": "https://openalex.org/W7204751468",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
+      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Yunice Karina Tumewang et al.",
+      "institution": "Islamic University of Indonesia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Banks set up sustainability committees, but nobody knows if these committees change real environmental results.",
+      "fix": "Committees improve all four environmental measures at conventional banks, but only overall scores and resource reduction at Islamic banks.",
+      "practicalUseCase": "Do not trust a sustainability committee alone at an Islamic bank, so check for real green products and innovation.",
+      "limitation": "The study shows statistical links in emerging markets, not proof that committees cause the results.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
       "id": "https://openalex.org/W7204259442",
@@ -177,11 +161,28 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Medical students face constant tests and comparison, but the global rate of impostor feelings was unknown.",
-      "fix": "Impostor feelings were common among medical students, though the pooled estimates varied a lot between studies.",
-      "practicalUseCase": "If many trainees feel like frauds, normalise it early and offer coping support in school.",
-      "limitation": "Results varied widely by sampling method and region, so treat the pooled figure with caution.",
+      "problem": "Medical students face constant testing and comparison, and nobody had pooled how often they feel like frauds.",
+      "fix": "A review of many studies finds impostor feelings are frequent among medical students, though results vary a lot between studies.",
+      "practicalUseCase": "If you feel like a fraud while training, know that many peers do too, so talk about it early.",
+      "limitation": "Studies differ widely in method and region, so the pooled estimate needs careful reading.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
+    },
+    {
+      "id": "https://openalex.org/W7106226611",
+      "doi": "https://doi.org/10.1371/journal.pone.0353990",
+      "title": "Positive mood enhances accessibility of unrelated concepts in the first language but not in the foreign language",
+      "publicationDate": "2026-08-12",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Piotr Żukowski et al.",
+      "institution": "Adam Mickiewicz University in Poznań",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "problem": "Researchers did not know how mood changes word meaning access in a first language versus a foreign one.",
+      "fix": "Positive mood makes distant ideas easier to reach in the first language, but not in the foreign language.",
+      "practicalUseCase": "Do your creative thinking and brainstorming in your first language when in a good mood.",
+      "limitation": "This brain-signal study tests word processing only, so it may not predict real workplace results.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0353990"
     }
   ]
 }
