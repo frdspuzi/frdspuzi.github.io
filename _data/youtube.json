@@ -1,252 +1,236 @@
 {
   "videos": [
     {
-      "title": "Agents That Write Their Own Tools at Runtime — Sandhya Subramani, AWS",
-      "url": "https://www.youtube.com/watch?v=33Oct2hqGnk",
-      "videoId": "33Oct2hqGnk",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "What if your AI agents didn't crash when encountering an edge case in production, but instead wrote their own custom tools, spawned specialized sub-agents, and self-healed on the fly? In this live-coded talk, AWS engineer Sandy reveals how just three basic tools and a clever system prompt can turn static LLMs into self-evolving, autonomous problem solvers. Watch this to discover how runtime meta-tooling works under the hood—and the critical sandboxing guardrails needed to deploy self-coding agents safely.",
-      "dateAdded": "2026-10-05T00:18:20.064Z",
-      "timestamps": [
-        {
-          "startTime": 80,
-          "endTime": 290,
-          "topic": "Live Demo: An agent dynamically authoring and executing new tools at runtime"
-        },
-        {
-          "startTime": 340,
-          "endTime": 580,
-          "topic": "The Minimal Blueprint: Building meta-tooling with editor, shell, and load tools"
-        },
-        {
-          "startTime": 710,
-          "endTime": 1130,
-          "topic": "Autonomous Sub-Agent Generation, Self-Healing, and Crucial Guardrails"
-        }
-      ]
-    },
-    {
-      "title": "AI Coding Agents Are Breaking Big Codebases — Dan Adler, Sourcegraph",
-      "url": "https://www.youtube.com/watch?v=Bdrs3uAX0_M",
-      "videoId": "Bdrs3uAX0_M",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "While AI coding tools are supercharging development speed, they are quietly triggering widespread decay across the massive, legacy codebases that run our world. The real bottleneck in software engineering is no longer writing code, but providing agents with the cross-repository visibility needed to understand complex systems without introducing duplicate code and critical vulnerabilities. Watch this talk to discover why large-scale codebase comprehension infrastructure is essential to surviving the impending tidal wave of AI-generated technical debt.",
-      "dateAdded": "2026-10-05T00:18:20.064Z",
-      "timestamps": [
-        {
-          "startTime": 125,
-          "endTime": 255,
-          "topic": "The AI Code Flood: How Rapid Generation Accelerates Enterprise Codebase Decay"
-        },
-        {
-          "startTime": 396,
-          "endTime": 500,
-          "topic": "The Context Barrier: Why Coding Agents Break Down Across Tens of Thousands of Repositories"
-        },
-        {
-          "startTime": 560,
-          "endTime": 672,
-          "topic": "Agentic Batch Changes: Automating Multi-Repository Refactoring and Security Fixes"
-        }
-      ]
-    },
-    {
-      "title": "Keyword Search Is Dying. Is Your Catalog Ready for AI Agents? — PayPal",
-      "url": "https://www.youtube.com/watch?v=YXb2Wx1r_Pk",
-      "videoId": "YXb2Wx1r_Pk",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Traditional SEO is rapidly becoming obsolete as AI shopping agents are projected to handle trillions in commerce with up to 4x higher conversion rates—yet standard product catalogs are virtually invisible to them. PayPal's Director of Agentic Commerce reveals eye-opening experimental data on how consumers are shifting from keyword search to intent-driven AI delegation. If you sell anything online, watching this breakdown is essential to learn how to structure and enrich your catalog for AI agents without falling into the trap of over-enrichment.",
-      "dateAdded": "2026-10-05T00:18:20.064Z",
-      "timestamps": [
-        {
-          "startTime": 160,
-          "endTime": 265,
-          "topic": "The Three Eras of Commerce: Transitioning from Search to Intent and Delegation"
-        },
-        {
-          "startTime": 555,
-          "endTime": 670,
-          "topic": "Keyword vs. Semantic Search: Why Legacy Catalogs Fail with AI Agents"
-        },
-        {
-          "startTime": 800,
-          "endTime": 940,
-          "topic": "PayPal's Catalog Enrichment Experiments: Boosting AI Recommendations Without Causing Hallucinations"
-        }
-      ]
-    },
-    {
-      "title": "\"Alfred gets abused because it's free to me as a manager\"",
-      "url": "https://www.youtube.com/shorts/P5slF8N-aS0",
-      "videoId": "P5slF8N-aS0",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Being the loyal, agreeable employee who never complains doesn't get you rewarded—it makes you the easiest person for managers to shortchange. This eye-opening clip breaks down the brutal calculus managers use to cater to demanding squeaky wheels while taking advantage of those who just suck it up. Watch this 40-second reality check to understand why being 'a little thorny' is the only way to protect your career.",
-      "dateAdded": "2026-10-05T00:18:20.064Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 23,
-          "topic": "The hidden trap of being the agreeable employee"
-        },
-        {
-          "startTime": 23,
-          "endTime": 43,
-          "topic": "Why you must be 'thorny' to protect yourself at work"
-        }
-      ]
-    },
-    {
-      "title": "How he'd speedrun to a VP in tech today",
-      "url": "https://www.youtube.com/shorts/DmpNhCXmZm0",
-      "videoId": "DmpNhCXmZm0",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Playing it safe might keep you comfortable, but swinging for high-risk, massive wins is what actually accelerates your career trajectory. Discover why chasing home runs—even if you strike out along the way—is the ultimate strategy to get noticed and build a legendary reputation.",
-      "dateAdded": "2026-10-05T00:18:20.064Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 18,
-          "topic": "Why taking big swings accelerates career advancement"
-        },
-        {
-          "startTime": 18,
-          "endTime": 41,
-          "topic": "The baseball analogy: home runs vs. playing it safe"
-        }
-      ]
-    },
-    {
-      "title": "If you're ambitious but feel stuck, please watch this",
-      "url": "https://www.youtube.com/watch?v=6-ZxPvpV8ec",
-      "videoId": "6-ZxPvpV8ec",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "Aiming for a modest 10% gain usually traps you in an endless operational grind, whereas aiming for a 10X leap forces you to redesign your entire business model for true leverage—making exponential growth mathematically far simpler than incremental gains. Through a transparent coaching session, Ali Abdaal illustrates how breaking down seemingly absurd targets into core levers eliminates limiting beliefs and turns overwhelming goals into realistic execution plans. If you feel stuck at an income or business plateau, this masterclass will fundamentally rewire how you structure your time, team, and pricing for scalable impact.",
-      "dateAdded": "2026-10-05T00:18:20.064Z",
-      "timestamps": [
-        {
-          "startTime": 1060,
-          "endTime": 1335,
-          "topic": "Demystifying the 10X Goal: Breaking massive revenue targets into simple unit economics"
-        },
-        {
-          "startTime": 1390,
-          "endTime": 1540,
-          "topic": "The '3172' Growth Framework: Compounding small improvements across leads, conversion, and price"
-        },
-        {
-          "startTime": 2685,
-          "endTime": 2790,
-          "topic": "Championship Team vs. Family: Removing founder bottlenecks to scale effectively"
-        }
-      ]
-    },
-    {
-      "title": "How to transform audio into physical prints using Gemini and Google AI Studio",
-      "url": "https://www.youtube.com/watch?v=Rnz9mOyxk0k",
-      "videoId": "Rnz9mOyxk0k",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Discover how you can turn quirky creative concepts into tangible physical hardware in record time using Gemini AI. This project reveals how a custom-built interactive lamp analyzes your emotional tone and spoken words to instantly generate physical, keepsake 'journal receipts.' Watch to see how modern AI models can eliminate technical friction and bring your most unconventional ideas to life.",
-      "dateAdded": "2026-10-02T01:10:15.603Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 18,
-          "topic": "Introducing 'Journal Receipts': A Gemini-powered talking lamp"
-        },
-        {
-          "startTime": 18,
-          "endTime": 46,
-          "topic": "How audio emotion analysis translates speech into printed artifacts"
-        },
-        {
-          "startTime": 46,
-          "endTime": 64,
-          "topic": "Overcoming technical barriers to build tangible AI prototypes"
-        }
-      ]
-    },
-    {
-      "title": "Kereta Honda dah tak laku, apa PUNCA?",
-      "url": "https://www.youtube.com/watch?v=Odg_EmYI2qk",
-      "videoId": "Odg_EmYI2qk",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "For the first time in 70 years, automotive giant Honda is bleeding billions in operating losses as aggressive Chinese competitors shatter its long-held reputation for unmatched resale value and prestige. Discover the critical missteps behind Honda's failed EV gamble and why massive dealer discounts are suddenly flooding the market as the legacy automaker fights for survival.",
-      "dateAdded": "2026-10-05T00:18:20.064Z",
-      "timestamps": [
-        {
-          "startTime": 353,
-          "endTime": 480,
-          "topic": "The $10B EV Gamble and Collapsing Global Market Share"
-        },
-        {
-          "startTime": 530,
-          "endTime": 625,
-          "topic": "Slumping Sales Targets and Unprecedented Dealership Rebates"
-        },
-        {
-          "startTime": 625,
-          "endTime": 705,
-          "topic": "Honda's Survival Strategy: Hybrid Pivot and the Nissan Partnership"
-        }
-      ]
-    },
-    {
-      "title": "Majikan carum 16% gaji bawah RM5K?",
-      "url": "https://www.youtube.com/shorts/hG13B1VIyk8",
-      "videoId": "hG13B1VIyk8",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Discover how a major proposed overhaul to EPF contributions could put extra money into your retirement account if you earn under RM5,000—while drastically slashing employer contributions for earners making over RM10,000. Watch this quick breakdown to see the exact math behind the proposal and uncover the severe risks it poses to small business owners and high-income earners.",
-      "dateAdded": "2026-10-05T00:18:20.064Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 51,
-          "topic": "The proposed progressive EPF contribution structure explained"
-        },
-        {
-          "startTime": 51,
-          "endTime": 139,
-          "topic": "Math breakdown: Current vs. proposed EPF monthly contributions"
-        },
-        {
-          "startTime": 139,
-          "endTime": 179,
-          "topic": "The hidden downside: Impact on SME cash flow and high earners"
-        }
-      ]
-    },
-    {
-      "title": "[S02:E02] F1 GP Bahrain: Prestij negara atau beban kewangan?  - Hezeri Samsuri",
-      "url": "https://www.youtube.com/watch?v=vpAY_TYdwKc",
-      "videoId": "vpAY_TYdwKc",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Think hosting Formula 1 brings massive direct profits to host nations? Automotive insider Hazri Samsuri pulls back the curtain on the brutal economics of motorsport, revealing why ticket sales can never cover hosting costs, why F1 is strictly an elite lifestyle business, and why Malaysia's resources are far better spent on MotoGP and grassroots racing. If you want to understand the high-stakes financial reality behind global sports mega-events, this deep dive is an absolute must-watch.",
-      "dateAdded": "2026-10-02T01:10:15.603Z",
+      "title": "#1 Principles of Islamic Finance - ACCA / CPA / SFM -By Saheb Academy",
+      "url": "https://www.youtube.com/watch?v=zo9X1c5z3Eg",
+      "videoId": "zo9X1c5z3Eg",
+      "channel": "Saheb Academy",
+      "category": "Discovery 🌍",
+      "summary": "Conventional banking shifts all financial risk onto the borrower, but Islamic finance fundamentally flips the script by requiring true equity partnerships, tangible asset backing, and shared profit and loss. By unpacking foundational Sharia principles—from why interest is banned as exploitative to why speculative derivatives are barred—this breakdown reveals how a multi-trillion-dollar ethical system creates wealth without predatory debt traps. If you are an accounting student or simply curious about an alternative to modern debt-fueled banking, this straightforward guide will change how you view finance forever.",
+      "dateAdded": "2026-10-08T01:26:17.381Z",
       "timestamps": [
         {
           "startTime": 150,
-          "endTime": 390,
-          "topic": "The brutal financial reality of F1: Why ticket sales never cover costs"
+          "endTime": 235,
+          "topic": "Why Interest (Riba) Is Prohibited and Exploitative"
         },
         {
-          "startTime": 1230,
-          "endTime": 1395,
-          "topic": "Why MotoGP delivers real results for Malaysia while F1 remains a money pit"
+          "startTime": 308,
+          "endTime": 500,
+          "topic": "Prohibitions on Speculation (Maisir), Derivatives, and Excessive Uncertainty (Gharar)"
         },
         {
-          "startTime": 3005,
-          "endTime": 3150,
-          "topic": "The hidden funding crisis behind local rally and grassroots motorsport"
+          "startTime": 500,
+          "endTime": 635,
+          "topic": "Equitable Risk-Sharing and Partnership-Based Wealth Creation"
+        }
+      ]
+    },
+    {
+      "title": "10 Timeless Money Principles from Hadith!",
+      "url": "https://www.youtube.com/watch?v=tZR9mJG7tgw",
+      "videoId": "tZR9mJG7tgw",
+      "channel": "Practical Islamic Finance",
+      "category": "Discovery 🌍",
+      "summary": "More money will never cure your financial anxiety—without the right mindset, accumulating more wealth only gives you more to lose and worry about. Grounded in timeless Hadith traditions, this video unpacks 10 transformative principles that dismantle scarcity mindsets and prove that what is destined for you will never miss you. If you want to replace constant financial stress and toxic comparison with unshakable peace and true abundance, this breakdown is an absolute must-watch.",
+      "dateAdded": "2026-10-08T01:26:17.381Z",
+      "timestamps": [
+        {
+          "startTime": 72,
+          "endTime": 135,
+          "topic": "Why wealth increases anxiety and where real financial security comes from"
+        },
+        {
+          "startTime": 308,
+          "endTime": 353,
+          "topic": "The decreed sustenance principle: Why compromising your ethics for money is pointless"
+        },
+        {
+          "startTime": 476,
+          "endTime": 520,
+          "topic": "Redefining true richness as peace of soul rather than material accumulation"
+        }
+      ]
+    },
+    {
+      "title": "Principles of Islamic Banking and Finance - Key Concepts & Applications | AIMS Education",
+      "url": "https://www.youtube.com/watch?v=VCiEwAy466A",
+      "videoId": "VCiEwAy466A",
+      "channel": "AIMS Education",
+      "category": "Discovery 🌍",
+      "summary": "Conventional banking often traps borrowers by placing the entire burden of debt on their shoulders, but Islamic finance flips the script by requiring financiers to become genuine risk-sharing partners. By eliminating exploitative interest (riba) and hidden ambiguity (gharar), this framework proves that financial growth can be both resilient and socially just. Watch this essential primer to discover how aligning your financial decisions with these core principles protects your wealth while serving the greater good.",
+      "dateAdded": "2026-10-08T01:26:17.381Z",
+      "timestamps": [
+        {
+          "startTime": 41,
+          "endTime": 81,
+          "topic": "Profit-and-loss sharing and collective risk distribution"
+        },
+        {
+          "startTime": 82,
+          "endTime": 128,
+          "topic": "The ethical prohibition of interest (riba) and ambiguity (gharar)"
+        },
+        {
+          "startTime": 179,
+          "endTime": 225,
+          "topic": "Balancing wealth distribution and social impact through zakat"
+        }
+      ]
+    },
+    {
+      "title": "Why Bigger Context Windows Won't Save Your Agent — Elizabeth Fuentes Leone, AWS",
+      "url": "https://www.youtube.com/watch?v=DrfyORO8RqA",
+      "videoId": "DrfyORO8RqA",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Think expanding context windows will magically fix your AI agent's memory? In reality, dumping raw logs and tool outputs directly into prompts triggers the 'attention U-curve,' blinding models to middle context and sparking costly hallucinations. This talk reveals practical context engineering architectures—such as offloading heavy data into persistent memory pointers and enforcing tool execution caps—that keep your autonomous agents focused, reliable, and cheap to run.",
+      "dateAdded": "2026-10-08T01:26:17.381Z",
+      "timestamps": [
+        {
+          "startTime": 35,
+          "endTime": 160,
+          "topic": "Why 'Infinite Context' Is a Myth and How Attention Degrades"
+        },
+        {
+          "startTime": 480,
+          "endTime": 580,
+          "topic": "Using Memory Pointers to Prevent Context Window Bloat"
+        },
+        {
+          "startTime": 645,
+          "endTime": 715,
+          "topic": "Eliminating Infinite Agent Loops with Hard Tool Call Caps"
+        }
+      ]
+    },
+    {
+      "title": "AI Hackers Are Faster Than Your Pen Test — Eli Cohen, Snyk",
+      "url": "https://www.youtube.com/watch?v=f3o0-9Dlw3E",
+      "videoId": "f3o0-9Dlw3E",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "AI coding assistants may be supercharging software delivery, but with over 60% of LLM-generated code harboring flaws and automated attackers breaching systems in as little as four minutes, traditional annual penetration testing is dangerously obsolete. In this eye-opening talk, Snyk Founding Field CTO Elie demonstrates why modern engineering teams must deploy autonomous offensive AI agents to continuously probe, validate, and fix business logic vulnerabilities on every single pull request. Watch this breakdown to discover how multi-agent security architectures can defend your production systems before frontier models weaponize your blind spots.",
+      "dateAdded": "2026-10-08T01:26:17.381Z",
+      "timestamps": [
+        {
+          "startTime": 110,
+          "endTime": 310,
+          "topic": "The AI Threat Surge: Insecure Generated Code vs. 4-Minute Automated Breaches"
+        },
+        {
+          "startTime": 334,
+          "endTime": 535,
+          "topic": "Why Static Scanners and Annual Pen Tests Fail to Catch Business Logic Flaws"
+        },
+        {
+          "startTime": 735,
+          "endTime": 875,
+          "topic": "The Multi-Agent AI Defense Architecture: Recon, Exploitation, and the Validation 'Judge'"
+        }
+      ]
+    },
+    {
+      "title": "The Software Factory: From Bug Report to Production Code — Davis Palmie, Factory",
+      "url": "https://www.youtube.com/watch?v=exiwa9QbQXI",
+      "videoId": "exiwa9QbQXI",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Writing code was never the real bottleneck in software development—the true time sink is stale documentation, manual PR reviews, and fragmented team communications. In this compelling talk, Factory's Davis Polmi reveals how engineering is evolving into an autonomous 'software factory' where AI agents transform incoming bug signals directly into production code while humans act as strategic governors. If you want to stop burning budgets on superficial AI autocomplete and learn the exact blueprint to make your codebase agent-ready, this video is an essential watch.",
+      "dateAdded": "2026-10-08T01:26:17.381Z",
+      "timestamps": [
+        {
+          "startTime": 300,
+          "endTime": 425,
+          "topic": "Why coding was never the bottleneck and what a Software Factory does"
+        },
+        {
+          "startTime": 810,
+          "endTime": 885,
+          "topic": "The 8 pillars of agent readiness: Preparing your codebase for AI"
+        },
+        {
+          "startTime": 985,
+          "endTime": 1055,
+          "topic": "The token vanity trap: Why Goodhart's Law breaks enterprise AI budgets"
+        }
+      ]
+    },
+    {
+      "title": "\"Clean Code\", Horrible Performance | Casey Muratori",
+      "url": "https://www.youtube.com/watch?v=czr1L3JocOI",
+      "videoId": "czr1L3JocOI",
+      "channel": "Ryan Peterman",
+      "category": "Tech & Engineering",
+      "summary": "Popular software dogma insists that microscopic functions and heavy abstraction make code maintainable, but veteran programmer Casey Muratori exposes the hidden trap: these rules blind compilers from vital optimizations like inlining and SIMD vectorization, cratering your program's performance. He dismantles the widespread misuse of 'premature optimization' as an excuse for architectural neglect, showing how ignoring trade-offs paints engineers into unfixable corners. If you want to write elegant software that doesn't crawl to a halt in production, this candid breakdown will permanently upgrade how you architect code.",
+      "dateAdded": "2026-10-08T01:26:17.381Z",
+      "timestamps": [
+        {
+          "startTime": 140,
+          "endTime": 265,
+          "topic": "How 'Clean Code' dogmas blind the compiler to performance optimizations"
+        },
+        {
+          "startTime": 365,
+          "endTime": 470,
+          "topic": "The danger of treating performance as an afterthought instead of a deliberate trade-off"
+        },
+        {
+          "startTime": 535,
+          "endTime": 673,
+          "topic": "Hardware awareness: The high-ROI skill that prevents costly rewrites"
+        }
+      ]
+    },
+    {
+      "title": "Rumah, kereta atau kahwin dulu",
+      "url": "https://www.youtube.com/shorts/58yLhFZRMsE",
+      "videoId": "58yLhFZRMsE",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Stuck deciding whether to buy a house, get a car, or get married first in your 20s? Blindly chasing conventional milestones can leave you trapped under heavy debt, an empty home, or a lost relationship. Watch this video to learn how to tailor your biggest life decisions to your real financial situation and why waiting for the 'perfect' time can completely backfire.",
+      "dateAdded": "2026-10-08T01:26:17.381Z",
+      "timestamps": [
+        {
+          "startTime": 11,
+          "endTime": 50,
+          "topic": "Assessing lifestyle needs over societal pressure for housing and transport"
+        },
+        {
+          "startTime": 70,
+          "endTime": 90,
+          "topic": "Choosing practical budget options instead of overleveraging"
+        },
+        {
+          "startTime": 90,
+          "endTime": 142,
+          "topic": "Financial compatibility in marriage and the risks of delaying commitment"
+        }
+      ]
+    },
+    {
+      "title": "Sewa rumah lebih baik dari beli?",
+      "url": "https://www.youtube.com/shorts/pxZeXfMCYI4",
+      "videoId": "pxZeXfMCYI4",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Think buying a home is always smarter than 'wasting money' on rent? This eye-opening breakdown reveals how rushing into homeownership early in your career can trap you as an accidental, cash-strapped landlord burdened by high mortgage payments and poor rental demand. Watch this before signing a 30-year commitment to discover why renting might actually protect your wealth and career flexibility.",
+      "dateAdded": "2026-10-08T01:26:17.381Z",
+      "timestamps": [
+        {
+          "startTime": 20,
+          "endTime": 75,
+          "topic": "The accidental landlord trap: buying before your career settles"
+        },
+        {
+          "startTime": 75,
+          "endTime": 103,
+          "topic": "Why a house meant for own stay makes a terrible investment"
+        },
+        {
+          "startTime": 103,
+          "endTime": 128,
+          "topic": "The harsh math: mortgage installments versus rental reality"
         }
       ]
     },
@@ -329,57 +313,83 @@
       ]
     },
     {
-      "title": "“We spend half a million to train one engineer” | In The Studio",
-      "url": "https://www.youtube.com/watch?v=4ntNKfYy5ow",
-      "videoId": "4ntNKfYy5ow",
-      "channel": "BFM 89.9",
-      "category": "General Ideas",
-      "summary": "Malaysia is quietly orchestrating a high-stakes leap from low-margin chip assembly to high-value semiconductor IC design, investing nearly half a million ringgit per engineer to build an elite tech workforce. Discover how Selangor is capitalizing on the US-China chip war to capture a lucrative neutral 'white supply chain' and using radical retention strategies to keep its top minds from being poached abroad. If you want to understand where Southeast Asia's next high-tech boom is truly heading, this insider breakdown is an essential watch.",
-      "dateAdded": "2026-09-26T23:59:59.715Z",
+      "title": "The Illusion of False Choices and How to See Through Them | Snapshots with Imam Tom Facchine",
+      "url": "https://www.youtube.com/watch?v=VeYYd-qed1M",
+      "videoId": "VeYYd-qed1M",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Ever feel cornered into choosing between being principled or practical, religious or rational? The most insidious trick of the powerful is trapping you inside a false binary so you defeat yourself before the conversation even begins. Watch this video to learn how Islamic tradition and integrative thinking shatter these rigged dilemmas, giving you the playbook to stop playing by your opponent's rules and define the terms yourself.",
+      "dateAdded": "2026-10-08T01:26:17.381Z",
       "timestamps": [
         {
-          "startTime": 510,
-          "endTime": 610,
-          "topic": "Training Malaysia's 'Top Gun' IC designers and breaking tech salary ceilings"
+          "startTime": 20,
+          "endTime": 50,
+          "topic": "How false binaries force you to defeat yourself before the debate starts"
         },
         {
-          "startTime": 940,
-          "endTime": 1040,
-          "topic": "Turning global chip war neutrality into the 'White Supply Chain' opportunity"
+          "startTime": 104,
+          "endTime": 140,
+          "topic": "Integrative thinking: Dismantling internal divides and holding dual truths"
         },
         {
-          "startTime": 1675,
-          "endTime": 1880,
-          "topic": "Combating the global brain drain with radical talent retention tactics"
+          "startTime": 157,
+          "endTime": 210,
+          "topic": "The Malcolm X approach: Flipping media traps and asserting your own framework"
         }
       ]
     },
     {
-      "title": "Stop Saying “If Only” | Dr. Farah Islam",
-      "url": "https://www.youtube.com/shorts/1-ZKJndRtzw",
-      "videoId": "1-ZKJndRtzw",
+      "title": "Does the Killer Know Why He Kills? | Signs of the Hour Ep. 20 | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=UaKcOYHEFvM",
+      "videoId": "UaKcOYHEFvM",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Constantly torturing yourself with 'what ifs' and regret over missed opportunities is stealing your peace—what if your biggest setbacks and heartbreaks were actually divine protection and hidden blessings in disguise? This powerful reflection will radically shift how you view your past pain, offering profound clarity on why your struggles happened. Watch this to break free from the exhausting trap of 'if only' and discover the purpose behind your life's hardest trials.",
-      "dateAdded": "2026-10-05T00:18:20.065Z",
+      "summary": "How could the Prophet ﷺ instruct believers to fight to the death to defend their property in one situation, yet command them to smash their swords and refuse to retaliate in another? Dr. Omar Suleiman resolves this striking prophetic paradox, revealing why standing firm against blatant tyranny prevents injustice from becoming normalized, while confusing factional strife (*fitnah*) demands total disarmament to protect your soul. In an age where automated warfare and desensitized news cycles have made human life feel expendable, this talk delivers an urgent moral compass for navigating global chaos with unwavering spiritual integrity.",
+      "dateAdded": "2026-10-08T01:26:17.382Z",
       "timestamps": [
         {
-          "startTime": 0,
-          "endTime": 23,
-          "topic": "Breaking free from the paralyzing 'if only' trap"
+          "startTime": 155,
+          "endTime": 315,
+          "topic": "The prophecy of blind killing (Harj) and modern desensitization to mass death"
         },
         {
-          "startTime": 23,
-          "endTime": 55,
-          "topic": "Uncovering the hidden divine gifts behind perceived defeat"
+          "startTime": 785,
+          "endTime": 1045,
+          "topic": "The paradox of resistance: Dying as a martyr vs. shattering your own weapons"
         },
         {
-          "startTime": 55,
-          "endTime": 71,
-          "topic": "Finding deeper meaning and healing through life's hardships"
+          "startTime": 1065,
+          "endTime": 1230,
+          "topic": "Resolving the contradiction: Resisting oppression vs. choosing disarmament in fitnah"
+        }
+      ]
+    },
+    {
+      "title": "Building resilient systems with Sam Newman",
+      "url": "https://www.youtube.com/watch?v=a0sZV0qIbI0",
+      "videoId": "a0sZV0qIbI0",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "The man who literally wrote the industry's defining guide to microservices reveals why they are actually an architecture of last resort—and how misusing them guarantees catastrophic distributed complexity for zero real payoff. Microservices pioneer Sam Newman unpacks the brutal ground truths of resilient engineering, from the three core physical laws behind almost every major production crash to the rising danger of 'cognitive surrender' when letting AI write your code. If you want to stop firefighting unpredictable outages and master how real-world systems actually survive failure, this conversation is essential viewing.",
+      "dateAdded": "2026-10-08T01:26:17.382Z",
+      "timestamps": [
+        {
+          "startTime": 1805,
+          "endTime": 1880,
+          "topic": "Why microservices are an architecture of last resort"
+        },
+        {
+          "startTime": 3155,
+          "endTime": 3375,
+          "topic": "The three unbreakable rules of distributed systems"
+        },
+        {
+          "startTime": 5990,
+          "endTime": 6195,
+          "topic": "Cognitive surrender and the pitfalls of AI in software delivery"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-10-05T00:22:48.021Z"
+  "lastUpdated": "2026-10-08T01:39:13.676Z"
 }
