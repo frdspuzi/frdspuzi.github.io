@@ -1,53 +1,85 @@
 {
-  "lastUpdated": "2026-10-08",
+  "lastUpdated": "2026-10-09",
   "papers": [
     {
-      "id": "hf:2610.10114",
-      "doi": "https://arxiv.org/abs/2610.10114",
-      "title": "Mechanics of Long-Context Hybrid Models Part 1.1: From Hybrid Attention to Hybrid Position",
-      "publicationDate": "2026-10-06",
+      "id": "hf:2610.11251",
+      "doi": "https://arxiv.org/abs/2610.11251",
+      "title": "V-CoLA: Vision Token Compression with Linear Attention",
+      "publicationDate": "2026-10-07",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Xiaoran Liu et al.",
+      "leadAuthor": "Hao Jiang et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Teams mixing full attention with cheaper attention types lacked a clear reason why some mixes handle long text better.",
-      "fix": "A new sliding-window linear attention design reaches 16 times longer input without retraining and keeps 100% accuracy at 64k tokens.",
-      "practicalUseCase": "Pick the hybrid type for your job: linear hybrids gain more from long training, sliding-window hybrids stretch better untrained.",
-      "limitation": "It covers only two hybrid types, sliding-window and gated linear attention, and is only the first part of a series.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.10114"
+      "problem": "Vision-language models waste compute on image tokens, and old compression tricks fail on the newer linear-attention models.",
+      "fix": "V-CoLA keeps 99.5% of original accuracy with half the image tokens and runs prefill 1.86 to 6.15 times faster.",
+      "practicalUseCase": "If you run image-heavy models, you can cut cost sharply, so test token compression before buying more hardware.",
+      "limitation": "The shown tests use benchmark sets, so real workloads may lose more accuracy at high compression.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.11251"
     },
     {
-      "id": "hf:2610.04299",
-      "doi": "https://arxiv.org/abs/2610.04299",
-      "title": "Questioning the Questions: Sustaining Self-Evolution in Reasoning Models",
-      "publicationDate": "2026-10-02",
+      "id": "hf:2610.08077",
+      "doi": "https://arxiv.org/abs/2610.08077",
+      "title": "Self-Retrospection Distillation: Turning Post-hoc Experiences into Prior Foresight",
+      "publicationDate": "2026-10-05",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Jinyuan Li et al.",
+      "leadAuthor": "Haoxiang Zhang et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Models that train on their own questions get worse each round because bad and repeated questions pile up.",
-      "fix": "R-Quest filters invalid questions and rewards new ones, and beat R-Zero by 17.32 points after ten rounds.",
-      "practicalUseCase": "Self-training can keep improving for ten rounds if you check question quality first, so filter bad questions before training.",
-      "limitation": "Tests covered math, general reasoning, and code on 12 benchmarks with two model families only.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.04299"
+      "problem": "Agents trained with reward-only learning get no signal when every attempt in a group earns the same reward.",
+      "fix": "Self-Retrospection Distillation lifted a 2B agent from 0.0% to 60.6% success where plain reward training stalled.",
+      "practicalUseCase": "If your agent fails every try, learning from finished attempts can still help, so add it before giving up.",
+      "limitation": "Gains reach 24.2 points on 10 tasks, so results on your own tasks may be smaller.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.08077"
     },
     {
-      "id": "hf:2610.03036",
-      "doi": "https://arxiv.org/abs/2610.03036",
-      "title": "WebFovea: When the Model Is Right but the Click Is Wrong -- Reliable Round Trips for Vision-Based Web Agents on Live Websites",
+      "id": "hf:2610.10845",
+      "doi": "https://arxiv.org/abs/2610.10845",
+      "title": "Real Long-Term Memory for AI: A 50-Million-Token Window That Is Faster and Cheaper Than Recompute",
       "publicationDate": "2026-10-06",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Jiangang Han",
+      "leadAuthor": "Sietse Schelpe",
       "topics": [
         "Tech"
       ],
-      "problem": "Web agents often fail on live sites because the code linking model and browser breaks, not the model.",
-      "fix": "Fixing that code, with the same model, raised the official score from 31.0 to 57.0 and won 2nd place.",
-      "practicalUseCase": "Before blaming the AI model, check your clicks and parsing; one bug put every click at three-quarters of its target.",
-      "limitation": "Scores come from live sites, so run-to-run variance can blur the gain, and some fixes depend on the model.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.03036"
+      "problem": "Language models forget text outside their context window and recompute stored state every time you send a prompt.",
+      "fix": "Loading saved blocks from disk ran 2.8 to 4.3 times faster and used 8.8 to 12.3 times less GPU energy.",
+      "practicalUseCase": "If this holds, long chat memory gets cheap, so consider disk-backed caching for apps that reread big documents.",
+      "limitation": "It reuses stored state rather than widening attention, and the store needs terabytes of local disk.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.10845"
+    },
+    {
+      "id": "hf:2610.12374",
+      "doi": "https://arxiv.org/abs/2610.12374",
+      "title": "AgentGarten: Code Worlds for Evolving Agents",
+      "publicationDate": "2026-10-07",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Jiawei Chi et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Agents learn only what their practice worlds teach, and faithful, realistic worlds are hard to build.",
+      "fix": "AgentGarten lets agents learn in 4 rounds, where a conventional reinforcement learning agent needs millions.",
+      "practicalUseCase": "If this holds, you can train agents in code-built worlds quickly, so try a simulator before collecting real data.",
+      "limitation": "The shown gain comes from the authors' own tests, not from outside replication.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.12374"
+    },
+    {
+      "id": "hf:2609.38562",
+      "doi": "https://arxiv.org/abs/2609.38562",
+      "title": "LongTake: Learning to Sustain Dynamics in Long-Horizon Video Generation",
+      "publicationDate": "2026-09-28",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Byoungwoo Park et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "AI video makers drift into near-static scenes and lose picture quality when clips run past a few seconds.",
+      "fix": "LongTake training gives more motion than short-clip training on 30-second videos at similar visual quality.",
+      "practicalUseCase": "If you build video tools, train on long real clips, because short clips teach the model too little about motion.",
+      "limitation": "The excerpt gives no exact scores, and results cover only 30-second and 60-second videos.",
+      "fullTextUrl": "https://huggingface.co/papers/2609.38562"
     },
     {
       "id": "https://openalex.org/W7204751468",
@@ -60,10 +92,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks set up sustainability committees, but nobody knew if they change environmental work in Islamic and conventional banks.",
-      "fix": "Committees link to higher scores in all four areas at conventional banks, but only two areas at Islamic banks.",
-      "practicalUseCase": "Islamic banks' committees may deliver symbolic results, so regulators should check for real green products, not just scores.",
-      "limitation": "Panel data shows links, not cause, and covers only emerging markets with both bank types.",
+      "problem": "Banks form sustainability committees, but it was unclear whether those committees change real environmental results in Islamic banks.",
+      "fix": "A sustainability committee lifts overall environmental scores and resource reduction in Islamic banks, but not green products or innovation.",
+      "practicalUseCase": "If you judge an Islamic bank's green claims, look past its committee and check for actual products.",
+      "limitation": "The study covers emerging markets with both bank types, so findings may not fit other regions.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
@@ -77,10 +109,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Nobody had mapped how sustainability sukuk issuance grew or what makes an issue bigger.",
-      "fix": "Across 11,944 sukuk issues, equity-based contracts, strong security, and social purposes each go with larger sustainability sukuk issues.",
-      "practicalUseCase": "Issuers who want bigger sukuk can pick equity-based contracts, but costly second-party opinions shrink issue size.",
-      "limitation": "Sustainability sukuk stay a tiny share of the market, and the data stops at 2022.",
+      "problem": "Sustainability sukuk are growing fast, but nobody had mapped how they are issued or what sets their size.",
+      "fix": "Across 11,944 issuances from 2012 to 2022, sukuk backed by equity-based contracts, strong security, and social goals came out larger.",
+      "practicalUseCase": "If you track green sukuk, expect growth mostly in Indonesia, Malaysia, and Saudi Arabia, so watch those markets first.",
+      "limitation": "Data end in 2022, and the study shows links between features and issue size, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -94,10 +126,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Islamic banks in Jordan lacked proof that AI and big data help them compete and grow sustainably.",
-      "fix": "In a survey of 214 managers, AI, big data analytics, and data management all link to better competitiveness and sustainability.",
-      "practicalUseCase": "Staff digital skill helps a bank compete but not its sustainability results, so fund tools and data practices too.",
-      "limitation": "It is a one-time survey of Jordanian Islamic banks, so it shows links, not cause.",
+      "problem": "Islamic banks in Jordan lacked clear evidence that AI and big data tools raise competitiveness and sustainable development.",
+      "fix": "AI use, big data skills, and data management all link positively to bank competitiveness and sustainable development performance.",
+      "practicalUseCase": "If you work in Islamic banking, invest in data skills and systems, because they link to better results.",
+      "limitation": "A one-time survey of 214 managers in Jordan shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -107,14 +139,14 @@
       "publicationDate": "2026-08-31",
       "venue": "Journal of Islamic Monetary Economics and Finance",
       "leadAuthor": "Sulaeman Sulaeman et al.",
-      "institution": "Airlangga University",
+      "institution": "Universitas Airlangga",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Leaders did not know which of ICT, high-tech exports, or institutions drives bank growth in dual banking systems.",
-      "fix": "Across 218 banks in 12 countries, ICT adoption drives growth most, and high-tech exports help only alongside ICT.",
-      "practicalUseCase": "Going digital helps both bank types grow, and strong governance supports Islamic banks especially.",
-      "limitation": "Data covers only 12 countries from 2010 to 2023, so results may not hold elsewhere.",
+      "problem": "Banks in dual systems lacked clear evidence on which national factors drive their growth.",
+      "fix": "Across 218 banks in 12 countries, ICT adoption is the strongest growth driver, and high-tech exports help only alongside ICT.",
+      "practicalUseCase": "If you plan bank growth, fund digital systems first, because exports and rules alone do little.",
+      "limitation": "The data cover 218 banks in 12 countries from 2010 to 2023, so other places may differ.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -128,11 +160,28 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Muslim-majority countries still exclude many people from banking, despite Islamic finance growing fast, and the causes were unclear.",
-      "fix": "In 35 countries from 2005 to 2021, income, tertiary education, institutions, and internet access shape inclusion in OIC states.",
-      "practicalUseCase": "Governments in OIC states should invest in digital infrastructure, youth and women, and income growth, unlike OECD peers.",
-      "limitation": "The estimates cover only 35 OIC and OECD countries, so single-country results may differ.",
+      "problem": "Many Muslim-majority countries still exclude people from finance, even though Islamic finance has grown for a decade.",
+      "fix": "In 35 OIC and OECD countries, income, tertiary education, institutions, internet access, and age mix drive inclusion in OIC states.",
+      "practicalUseCase": "If you shape OIC policy, spend on digital networks, youth, women, and income growth, because those move inclusion most.",
+      "limitation": "The study covers 35 countries from 2005 to 2021, so single countries may behave differently.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
+    },
+    {
+      "id": "https://openalex.org/W7204259442",
+      "doi": "https://doi.org/10.1371/journal.pone.0351713",
+      "title": "Global prevalence of impostor phenomenon in medical students: A systematic review and meta-analysis",
+      "publicationDate": "2026-08-26",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Víctor Juan Vera-Ponce et al.",
+      "institution": "National University Toribio Rodríguez de Mendoza",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "problem": "Medical students face constant exams and peer comparison, and nobody knew how often they feel like frauds.",
+      "fix": "Impostor feelings were frequent among medical students before licensing, with results varying by sampling method and region.",
+      "practicalUseCase": "If you train or study in a high-pressure field, expect impostor feelings and treat them as common, not personal failure.",
+      "limitation": "Pooled results vary a lot between studies, so treat any single figure with care.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
     },
     {
       "id": "https://openalex.org/W7171792253",
@@ -145,10 +194,10 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Research on young people's phones focused on risks, leaving no balanced tool to measure digital well-being in Arabic.",
-      "fix": "The Arabic scale shows three clear domains, and ties to higher life satisfaction and lower fear of missing out.",
-      "practicalUseCase": "Teams can now track phone well-being, not just addiction, among Arabic-speaking young adults.",
-      "limitation": "Online volunteers from Riyadh aged 18 to 25 took a one-time survey, so results show links, not cause.",
+      "problem": "Research on young adults and screens mostly tracks harm, with few tools to measure whether their digital life feels good.",
+      "fix": "The Arabic Perceived Digital Well-Being Scale proved a reliable and valid measure in Saudi young adults aged 18 to 25.",
+      "practicalUseCase": "To check your screen habits, ask how they affect your life, not only how long you scroll.",
+      "limitation": "Participants joined online in Riyadh, and the one-time design cannot show cause.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0354474"
     }
   ]
