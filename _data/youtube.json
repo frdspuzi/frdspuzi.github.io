@@ -1,6 +1,266 @@
 {
   "videos": [
     {
+      "title": "Why 80% Reliability Isn't Good Enough — Felipe Blanes, Amazon AGI Lab",
+      "url": "https://www.youtube.com/watch?v=Emo5FGGY-wM",
+      "videoId": "Emo5FGGY-wM",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "High benchmark scores mean nothing if your AI breaks the minute real users touch it: an 80% reliable agent actually creates more babysitting work than value, triggering a 'trust cliff' where customers completely abandon your tool. In this sharp, practical talk from Amazon AGI Lab, you'll discover why static evals are a trap and how a continuous feedback loop—powered by customer conversations and brutal transparency about edge cases—is the only path to real-world reliability. If you want to stop crossing your fingers at deployment and start shipping production agents that users genuinely trust, this breakdown is mandatory viewing.",
+      "dateAdded": "2026-10-09T01:34:23.809Z",
+      "timestamps": [
+        {
+          "startTime": 141,
+          "endTime": 270,
+          "topic": "The Benchmark Illusion: Why Static AI Tests Fail in Production"
+        },
+        {
+          "startTime": 574,
+          "endTime": 671,
+          "topic": "The Trust Cliff: Why 80% Reliability Destroys Customer Trust"
+        },
+        {
+          "startTime": 671,
+          "endTime": 762,
+          "topic": "Eval Transparency: Why Owning Limitations Beats High Scores"
+        }
+      ]
+    },
+    {
+      "title": "Brains vs Hands: How to Run AI Agents Safely in Production — Viren Baraiya",
+      "url": "https://www.youtube.com/watch?v=NaOkR3VSfR4",
+      "videoId": "NaOkR3VSfR4",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "The fatal flaw in most AI agent deployments is letting unpredictable LLMs directly touch production systems. By strictly separating the 'brain' (the LLM drafting a plan) from the 'hands' (a deterministic, durable harness executing it), you eliminate rogue hallucinations while unlocking self-healing automation. Watch this talk to master the architectural shift that turns fragile agent experiments into battle-tested production software.",
+      "dateAdded": "2026-10-09T01:34:23.810Z",
+      "timestamps": [
+        {
+          "startTime": 488,
+          "endTime": 615,
+          "topic": "Separating Brains from Hands: Why LLMs Must Plan, Not Execute"
+        },
+        {
+          "startTime": 620,
+          "endTime": 710,
+          "topic": "Agentic Harnesses as Late-Bound Sagas"
+        },
+        {
+          "startTime": 755,
+          "endTime": 885,
+          "topic": "Production SRE Demo: Compiling Agent Plans into Deterministic Workflows"
+        }
+      ]
+    },
+    {
+      "title": "#117 | Can Malaysia Afford AI? (Leon Jala)",
+      "url": "https://www.youtube.com/watch?v=_SDAgAtx0j4",
+      "videoId": "_SDAgAtx0j4",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "While the world celebrates the AI revolution, massive data center expansions are quietly threatening national power grids—with projections showing they could consume up to 31% of Malaysia's electricity by 2035. This breakdown reveals the counter-intuitive 'Jevons Paradox' behind AI energy demand and demonstrates how nations can turn an impending power crisis into a self-funding flywheel for renewable infrastructure. Watch this video to uncover the real physical bottleneck of the AI boom and see why smart energy stewardship will decide which economies truly win the tech race.",
+      "dateAdded": "2026-10-02T01:10:15.603Z",
+      "timestamps": [
+        {
+          "startTime": 101,
+          "endTime": 195,
+          "topic": "The Jevons Paradox: Why efficient AI models will actually spike aggregate energy demand"
+        },
+        {
+          "startTime": 380,
+          "endTime": 490,
+          "topic": "The CRES Framework: Turning massive corporate power demand into a renewable infrastructure flywheel"
+        },
+        {
+          "startTime": 735,
+          "endTime": 840,
+          "topic": "Strategic Stewardship: Measuring AI investment by lasting productive capacity, not just headline billions"
+        }
+      ]
+    },
+    {
+      "title": "#116 | Leadership Lessons from Shell's Country Chair (Siti Sulaiman)",
+      "url": "https://www.youtube.com/watch?v=gJKkedZa6G4",
+      "videoId": "gJKkedZa6G4",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "True leadership breakthrough doesn't come from projecting flawless authority—it begins when you treat tough feedback as a gift and build deep human trust before demanding big results. Shell Malaysia Country Chair Siti Sulaiman shares battle-tested frameworks like 'Me, Us, It' and reveals how vulnerability transforms resistance into unstoppable team momentum. If you want practical insights on navigating high-stakes change and elevating your leadership from technical mastery to strategic influence, this conversation is essential viewing.",
+      "dateAdded": "2026-09-22T00:20:43.515Z",
+      "timestamps": [
+        {
+          "startTime": 900,
+          "endTime": 1025,
+          "topic": "The value of outsider perspective and 'unturning stones'"
+        },
+        {
+          "startTime": 1380,
+          "endTime": 1540,
+          "topic": "Embracing critical feedback as a gift to lead with vulnerability"
+        },
+        {
+          "startTime": 1630,
+          "endTime": 1830,
+          "topic": "The 'Me, Us, It' framework for radical trust and accountability"
+        }
+      ]
+    },
+    {
+      "title": "#115 | Catherine Goh Chooses Accountability Over Title",
+      "url": "https://www.youtube.com/watch?v=xMmJVh_3e-g",
+      "videoId": "xMmJVh_3e-g",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "Discover how Catherine Goh rose from helping her family sell fruit at local night markets to becoming the CEO of Santan, AirAsia's renowned F&B brand. In this candid interview, she breaks down why Tony Fernandes hired her after a blunt three-minute conversation and reveals the operational mindset needed to scale businesses during severe crises. If you want actionable leadership wisdom on balancing raw data with gut consumer instinct and building radically accountable teams, this conversation is an essential watch.",
+      "dateAdded": "2026-09-10T23:30:51.705Z",
+      "timestamps": [
+        {
+          "startTime": 443,
+          "endTime": 555,
+          "topic": "The 3-Minute Interview with Tony Fernandes that Changed Everything"
+        },
+        {
+          "startTime": 888,
+          "endTime": 935,
+          "topic": "Balancing Data and Intuition: The 50/50 Rule for Consumer Products"
+        },
+        {
+          "startTime": 1314,
+          "endTime": 1390,
+          "topic": "Hiring for Integrity, Learning Speed, and Eliminating Blame Culture"
+        }
+      ]
+    },
+    {
+      "title": "Building resilient systems with Sam Newman",
+      "url": "https://www.youtube.com/watch?v=a0sZV0qIbI0",
+      "videoId": "a0sZV0qIbI0",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "The man who literally wrote the industry's defining guide to microservices reveals why they are actually an architecture of last resort—and how misusing them guarantees catastrophic distributed complexity for zero real payoff. Microservices pioneer Sam Newman unpacks the brutal ground truths of resilient engineering, from the three core physical laws behind almost every major production crash to the rising danger of 'cognitive surrender' when letting AI write your code. If you want to stop firefighting unpredictable outages and master how real-world systems actually survive failure, this conversation is essential viewing.",
+      "dateAdded": "2026-10-08T01:26:17.382Z",
+      "timestamps": [
+        {
+          "startTime": 1805,
+          "endTime": 1880,
+          "topic": "Why microservices are an architecture of last resort"
+        },
+        {
+          "startTime": 3155,
+          "endTime": 3375,
+          "topic": "The three unbreakable rules of distributed systems"
+        },
+        {
+          "startTime": 5990,
+          "endTime": 6195,
+          "topic": "Cognitive surrender and the pitfalls of AI in software delivery"
+        }
+      ]
+    },
+    {
+      "title": "The state of the tech industry in 2026 - LDX3 New York",
+      "url": "https://www.youtube.com/watch?v=Ru99FGJ_yuE",
+      "videoId": "Ru99FGJ_yuE",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "The dirty secret inside Silicon Valley's elite AI labs is that while autonomous agents now write nearly all production code, software development hasn't gotten simpler—it has completely broken peer code reviews, created overwhelming cognitive fatigue, and triggered an existential crisis for tech leaders. Drawing from behind-the-scenes reporting across OpenAI, Anthropic, and Linear, tech insider Gergely Orosz cuts through the marketing hype to expose the brutal operational realities reshaping the entire industry. Watch this talk to understand how work is actually evolving on the ground and learn the exact architectural shifts required to survive in an era of autonomous software factories.",
+      "dateAdded": "2026-10-09T01:34:23.810Z",
+      "timestamps": [
+        {
+          "startTime": 168,
+          "endTime": 260,
+          "topic": "Why traditional IDEs are dying and giving way to agentic harnesses"
+        },
+        {
+          "startTime": 1025,
+          "endTime": 1105,
+          "topic": "The collapse of code reviews and the epidemic of 'zombie approvals'"
+        },
+        {
+          "startTime": 1600,
+          "endTime": 1710,
+          "topic": "Why AI commoditizes coding intelligence and makes domain wisdom your real moat"
+        }
+      ]
+    },
+    {
+      "title": "What the Best Engineers Build for Their Coding Agents",
+      "url": "https://www.youtube.com/watch?v=NKvv5xHpxjE",
+      "videoId": "NKvv5xHpxjE",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "What if your AI coding agents didn't just generate isolated functions, but could map your entire enterprise architecture in real time and coordinate with each other so they never step on each other's code? Adyen staff engineer Matt Jones reveals how his team built 'Architect'—a powerhouse graph system ingesting 7 million spans per second with Apache Flink and Neo4j—alongside 'Atrium', a coordination layer allowing developers to safely multitask with five autonomous agents in parallel. If you want a masterclass on turning generative AI from a basic autocomplete tool into an autonomous, self-healing software engineering engine, this breakdown is essential viewing.",
+      "dateAdded": "2026-10-09T01:34:23.810Z",
+      "timestamps": [
+        {
+          "startTime": 50,
+          "endTime": 165,
+          "topic": "Scaling Multi-Agent Workflows: How 'Atrium' prevents AI agents from conflicting on shared code"
+        },
+        {
+          "startTime": 1015,
+          "endTime": 1225,
+          "topic": "Scaling to 7 Million Spans/Sec: Replacing Kafka Connect with Apache Flink to ingest production telemetry"
+        },
+        {
+          "startTime": 1605,
+          "endTime": 1765,
+          "topic": "Connecting Traces to Code: Linking runtime telemetry with method-level ASTs for automated release gating"
+        }
+      ]
+    },
+    {
+      "title": "New Skills! v1.3 brings /pr, /implement-spec, and /retro",
+      "url": "https://www.youtube.com/watch?v=BsJGo1wFTvQ",
+      "videoId": "BsJGo1wFTvQ",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Your AI coding agents are likely hiding sloppy mistakes, dropping context, and burning through expensive tokens without you ever knowing. In this breakdown, Matt Pocock reveals game-changing agent workflows—headlined by the viral 'Retro' skill that ruthlessly audits past sessions to expose silent failures, alongside autonomous multi-agent spec execution. If you want to stop babysitting your AI tools and transform chaotic prompts into a reliable, self-improving software engine, this video is essential viewing.",
+      "dateAdded": "2026-10-09T01:34:23.810Z",
+      "timestamps": [
+        {
+          "startTime": 148,
+          "endTime": 260,
+          "topic": "Orchestrating autonomous multi-agent coding with Implement Spec"
+        },
+        {
+          "startTime": 330,
+          "endTime": 465,
+          "topic": "Eliminating PR review bottlenecks with visual proof and blast radius"
+        },
+        {
+          "startTime": 580,
+          "endTime": 795,
+          "topic": "Auditing silent agent failures and token waste using the Retro skill"
+        }
+      ]
+    },
+    {
+      "title": "LIVE: Poteto (creator of pstack) on shipping 1,000's of PR's a month at SpaceX",
+      "url": "https://www.youtube.com/watch?v=MN9dGgmLyso",
+      "videoId": "MN9dGgmLyso",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Stop treating AI like a junior coder you have to micromanage—the real secret to shipping thousands of pull requests isn't writing better prompts, but building an environment where agents literally cannot make mistakes. In this masterclass, ex-Meta and Cursor engineer Potato reveals the exact 'Michelin kitchen' framework for transforming yourself from a bottleneck into an orchestrator with self-verifying, autonomous agent loops. If you want to move beyond toy prompts and build a reliable software factory where AI writes, tests, and safely merges code while you sleep, this conversation is an absolute must-watch.",
+      "dateAdded": "2026-10-09T01:34:23.810Z",
+      "timestamps": [
+        {
+          "startTime": 975,
+          "endTime": 1095,
+          "topic": "Why verification is the #1 skill that breaks you out of being an AI's 'meat proxy'"
+        },
+        {
+          "startTime": 1800,
+          "endTime": 1935,
+          "topic": "Constraining the codebase with rigid lint rules so agents cannot write bad code"
+        },
+        {
+          "startTime": 3115,
+          "endTime": 3265,
+          "topic": "Running an autonomous 'dark factory' where agents test, fuzz, and merge code overnight"
+        }
+      ]
+    },
+    {
       "title": "#1 Principles of Islamic Finance - ACCA / CPA / SFM -By Saheb Academy",
       "url": "https://www.youtube.com/watch?v=zo9X1c5z3Eg",
       "videoId": "zo9X1c5z3Eg",
@@ -129,267 +389,7 @@
           "topic": "The Multi-Agent AI Defense Architecture: Recon, Exploitation, and the Validation 'Judge'"
         }
       ]
-    },
-    {
-      "title": "The Software Factory: From Bug Report to Production Code — Davis Palmie, Factory",
-      "url": "https://www.youtube.com/watch?v=exiwa9QbQXI",
-      "videoId": "exiwa9QbQXI",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Writing code was never the real bottleneck in software development—the true time sink is stale documentation, manual PR reviews, and fragmented team communications. In this compelling talk, Factory's Davis Polmi reveals how engineering is evolving into an autonomous 'software factory' where AI agents transform incoming bug signals directly into production code while humans act as strategic governors. If you want to stop burning budgets on superficial AI autocomplete and learn the exact blueprint to make your codebase agent-ready, this video is an essential watch.",
-      "dateAdded": "2026-10-08T01:26:17.381Z",
-      "timestamps": [
-        {
-          "startTime": 300,
-          "endTime": 425,
-          "topic": "Why coding was never the bottleneck and what a Software Factory does"
-        },
-        {
-          "startTime": 810,
-          "endTime": 885,
-          "topic": "The 8 pillars of agent readiness: Preparing your codebase for AI"
-        },
-        {
-          "startTime": 985,
-          "endTime": 1055,
-          "topic": "The token vanity trap: Why Goodhart's Law breaks enterprise AI budgets"
-        }
-      ]
-    },
-    {
-      "title": "\"Clean Code\", Horrible Performance | Casey Muratori",
-      "url": "https://www.youtube.com/watch?v=czr1L3JocOI",
-      "videoId": "czr1L3JocOI",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Popular software dogma insists that microscopic functions and heavy abstraction make code maintainable, but veteran programmer Casey Muratori exposes the hidden trap: these rules blind compilers from vital optimizations like inlining and SIMD vectorization, cratering your program's performance. He dismantles the widespread misuse of 'premature optimization' as an excuse for architectural neglect, showing how ignoring trade-offs paints engineers into unfixable corners. If you want to write elegant software that doesn't crawl to a halt in production, this candid breakdown will permanently upgrade how you architect code.",
-      "dateAdded": "2026-10-08T01:26:17.381Z",
-      "timestamps": [
-        {
-          "startTime": 140,
-          "endTime": 265,
-          "topic": "How 'Clean Code' dogmas blind the compiler to performance optimizations"
-        },
-        {
-          "startTime": 365,
-          "endTime": 470,
-          "topic": "The danger of treating performance as an afterthought instead of a deliberate trade-off"
-        },
-        {
-          "startTime": 535,
-          "endTime": 673,
-          "topic": "Hardware awareness: The high-ROI skill that prevents costly rewrites"
-        }
-      ]
-    },
-    {
-      "title": "Rumah, kereta atau kahwin dulu",
-      "url": "https://www.youtube.com/shorts/58yLhFZRMsE",
-      "videoId": "58yLhFZRMsE",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Stuck deciding whether to buy a house, get a car, or get married first in your 20s? Blindly chasing conventional milestones can leave you trapped under heavy debt, an empty home, or a lost relationship. Watch this video to learn how to tailor your biggest life decisions to your real financial situation and why waiting for the 'perfect' time can completely backfire.",
-      "dateAdded": "2026-10-08T01:26:17.381Z",
-      "timestamps": [
-        {
-          "startTime": 11,
-          "endTime": 50,
-          "topic": "Assessing lifestyle needs over societal pressure for housing and transport"
-        },
-        {
-          "startTime": 70,
-          "endTime": 90,
-          "topic": "Choosing practical budget options instead of overleveraging"
-        },
-        {
-          "startTime": 90,
-          "endTime": 142,
-          "topic": "Financial compatibility in marriage and the risks of delaying commitment"
-        }
-      ]
-    },
-    {
-      "title": "Sewa rumah lebih baik dari beli?",
-      "url": "https://www.youtube.com/shorts/pxZeXfMCYI4",
-      "videoId": "pxZeXfMCYI4",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Think buying a home is always smarter than 'wasting money' on rent? This eye-opening breakdown reveals how rushing into homeownership early in your career can trap you as an accidental, cash-strapped landlord burdened by high mortgage payments and poor rental demand. Watch this before signing a 30-year commitment to discover why renting might actually protect your wealth and career flexibility.",
-      "dateAdded": "2026-10-08T01:26:17.381Z",
-      "timestamps": [
-        {
-          "startTime": 20,
-          "endTime": 75,
-          "topic": "The accidental landlord trap: buying before your career settles"
-        },
-        {
-          "startTime": 75,
-          "endTime": 103,
-          "topic": "Why a house meant for own stay makes a terrible investment"
-        },
-        {
-          "startTime": 103,
-          "endTime": 128,
-          "topic": "The harsh math: mortgage installments versus rental reality"
-        }
-      ]
-    },
-    {
-      "title": "#117 | Can Malaysia Afford AI? (Leon Jala)",
-      "url": "https://www.youtube.com/watch?v=_SDAgAtx0j4",
-      "videoId": "_SDAgAtx0j4",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "While the world celebrates the AI revolution, massive data center expansions are quietly threatening national power grids—with projections showing they could consume up to 31% of Malaysia's electricity by 2035. This breakdown reveals the counter-intuitive 'Jevons Paradox' behind AI energy demand and demonstrates how nations can turn an impending power crisis into a self-funding flywheel for renewable infrastructure. Watch this video to uncover the real physical bottleneck of the AI boom and see why smart energy stewardship will decide which economies truly win the tech race.",
-      "dateAdded": "2026-10-02T01:10:15.603Z",
-      "timestamps": [
-        {
-          "startTime": 101,
-          "endTime": 195,
-          "topic": "The Jevons Paradox: Why efficient AI models will actually spike aggregate energy demand"
-        },
-        {
-          "startTime": 380,
-          "endTime": 490,
-          "topic": "The CRES Framework: Turning massive corporate power demand into a renewable infrastructure flywheel"
-        },
-        {
-          "startTime": 735,
-          "endTime": 840,
-          "topic": "Strategic Stewardship: Measuring AI investment by lasting productive capacity, not just headline billions"
-        }
-      ]
-    },
-    {
-      "title": "#116 | Leadership Lessons from Shell's Country Chair (Siti Sulaiman)",
-      "url": "https://www.youtube.com/watch?v=gJKkedZa6G4",
-      "videoId": "gJKkedZa6G4",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "True leadership breakthrough doesn't come from projecting flawless authority—it begins when you treat tough feedback as a gift and build deep human trust before demanding big results. Shell Malaysia Country Chair Siti Sulaiman shares battle-tested frameworks like 'Me, Us, It' and reveals how vulnerability transforms resistance into unstoppable team momentum. If you want practical insights on navigating high-stakes change and elevating your leadership from technical mastery to strategic influence, this conversation is essential viewing.",
-      "dateAdded": "2026-09-22T00:20:43.515Z",
-      "timestamps": [
-        {
-          "startTime": 900,
-          "endTime": 1025,
-          "topic": "The value of outsider perspective and 'unturning stones'"
-        },
-        {
-          "startTime": 1380,
-          "endTime": 1540,
-          "topic": "Embracing critical feedback as a gift to lead with vulnerability"
-        },
-        {
-          "startTime": 1630,
-          "endTime": 1830,
-          "topic": "The 'Me, Us, It' framework for radical trust and accountability"
-        }
-      ]
-    },
-    {
-      "title": "#115 | Catherine Goh Chooses Accountability Over Title",
-      "url": "https://www.youtube.com/watch?v=xMmJVh_3e-g",
-      "videoId": "xMmJVh_3e-g",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "Discover how Catherine Goh rose from helping her family sell fruit at local night markets to becoming the CEO of Santan, AirAsia's renowned F&B brand. In this candid interview, she breaks down why Tony Fernandes hired her after a blunt three-minute conversation and reveals the operational mindset needed to scale businesses during severe crises. If you want actionable leadership wisdom on balancing raw data with gut consumer instinct and building radically accountable teams, this conversation is an essential watch.",
-      "dateAdded": "2026-09-10T23:30:51.705Z",
-      "timestamps": [
-        {
-          "startTime": 443,
-          "endTime": 555,
-          "topic": "The 3-Minute Interview with Tony Fernandes that Changed Everything"
-        },
-        {
-          "startTime": 888,
-          "endTime": 935,
-          "topic": "Balancing Data and Intuition: The 50/50 Rule for Consumer Products"
-        },
-        {
-          "startTime": 1314,
-          "endTime": 1390,
-          "topic": "Hiring for Integrity, Learning Speed, and Eliminating Blame Culture"
-        }
-      ]
-    },
-    {
-      "title": "The Illusion of False Choices and How to See Through Them | Snapshots with Imam Tom Facchine",
-      "url": "https://www.youtube.com/watch?v=VeYYd-qed1M",
-      "videoId": "VeYYd-qed1M",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Ever feel cornered into choosing between being principled or practical, religious or rational? The most insidious trick of the powerful is trapping you inside a false binary so you defeat yourself before the conversation even begins. Watch this video to learn how Islamic tradition and integrative thinking shatter these rigged dilemmas, giving you the playbook to stop playing by your opponent's rules and define the terms yourself.",
-      "dateAdded": "2026-10-08T01:26:17.381Z",
-      "timestamps": [
-        {
-          "startTime": 20,
-          "endTime": 50,
-          "topic": "How false binaries force you to defeat yourself before the debate starts"
-        },
-        {
-          "startTime": 104,
-          "endTime": 140,
-          "topic": "Integrative thinking: Dismantling internal divides and holding dual truths"
-        },
-        {
-          "startTime": 157,
-          "endTime": 210,
-          "topic": "The Malcolm X approach: Flipping media traps and asserting your own framework"
-        }
-      ]
-    },
-    {
-      "title": "Does the Killer Know Why He Kills? | Signs of the Hour Ep. 20 | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=UaKcOYHEFvM",
-      "videoId": "UaKcOYHEFvM",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "How could the Prophet ﷺ instruct believers to fight to the death to defend their property in one situation, yet command them to smash their swords and refuse to retaliate in another? Dr. Omar Suleiman resolves this striking prophetic paradox, revealing why standing firm against blatant tyranny prevents injustice from becoming normalized, while confusing factional strife (*fitnah*) demands total disarmament to protect your soul. In an age where automated warfare and desensitized news cycles have made human life feel expendable, this talk delivers an urgent moral compass for navigating global chaos with unwavering spiritual integrity.",
-      "dateAdded": "2026-10-08T01:26:17.382Z",
-      "timestamps": [
-        {
-          "startTime": 155,
-          "endTime": 315,
-          "topic": "The prophecy of blind killing (Harj) and modern desensitization to mass death"
-        },
-        {
-          "startTime": 785,
-          "endTime": 1045,
-          "topic": "The paradox of resistance: Dying as a martyr vs. shattering your own weapons"
-        },
-        {
-          "startTime": 1065,
-          "endTime": 1230,
-          "topic": "Resolving the contradiction: Resisting oppression vs. choosing disarmament in fitnah"
-        }
-      ]
-    },
-    {
-      "title": "Building resilient systems with Sam Newman",
-      "url": "https://www.youtube.com/watch?v=a0sZV0qIbI0",
-      "videoId": "a0sZV0qIbI0",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "The man who literally wrote the industry's defining guide to microservices reveals why they are actually an architecture of last resort—and how misusing them guarantees catastrophic distributed complexity for zero real payoff. Microservices pioneer Sam Newman unpacks the brutal ground truths of resilient engineering, from the three core physical laws behind almost every major production crash to the rising danger of 'cognitive surrender' when letting AI write your code. If you want to stop firefighting unpredictable outages and master how real-world systems actually survive failure, this conversation is essential viewing.",
-      "dateAdded": "2026-10-08T01:26:17.382Z",
-      "timestamps": [
-        {
-          "startTime": 1805,
-          "endTime": 1880,
-          "topic": "Why microservices are an architecture of last resort"
-        },
-        {
-          "startTime": 3155,
-          "endTime": 3375,
-          "topic": "The three unbreakable rules of distributed systems"
-        },
-        {
-          "startTime": 5990,
-          "endTime": 6195,
-          "topic": "Cognitive surrender and the pitfalls of AI in software delivery"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-10-08T01:39:13.676Z"
+  "lastUpdated": "2026-10-09T01:38:02.552Z"
 }
