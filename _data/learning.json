@@ -1,215 +1,215 @@
 {
   "learnings": [
     {
-      "question": "Which thinker, writing in 1971, first articulated the idea that in an information-rich world, attention — not information — becomes the scarce resource?",
+      "question": "Which 20th-century figure argued in 1971 that an abundance of information inevitably creates a scarcity of attention?",
       "options": [
-        "Richard Thaler",
         "Herbert Spencer",
+        "Cal Newport",
         "Herbert Simon",
         "Daniel Kahneman"
       ],
       "correctIndex": 2,
-      "learning": "Herbert Simon observed in 1971 that an information-rich world creates a scarcity of attention, since information consumes the attention of those who receive it.",
+      "learning": "Herbert Simon wrote in 1971 that \"the wealth of information means a dearth of... attention\" — in an information-rich world, attention itself becomes the scarce resource.",
       "articleTitle": "Everybody wants your attention, but not everything deserves it.",
       "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
       "category": "general"
     },
     {
-      "question": "Which of these is a commonly recommended way to protect your attention from algorithm-driven distraction?",
+      "question": "According to a hadith narrated by Abu Hurayrah found in the 40 Hadith an-Nawawi collection, what is part of the perfection of a person's Islam?",
       "options": [
-        "Setting a strict daily screen-time limit",
-        "Turning off non-human notifications, like promotions",
-        "Deleting all social media apps permanently",
-        "Reading every notification as soon as it arrives"
+        "Praying five times a day",
+        "Leaving that which does not concern him",
+        "Giving charity in secret",
+        "Fasting every Monday and Thursday"
       ],
       "correctIndex": 1,
-      "learning": "One practical way to reclaim focus is to turn off non-human notifications, such as promotional alerts, so your attention isn't hijacked by things that don't actually concern you.",
+      "learning": "Hadith 12 of 40 Hadith an-Nawawi states: \"Part of the perfection of one's Islam is his leaving that which does not concern him\" — a direct call to filter out what doesn't matter.",
       "articleTitle": "Everybody wants your attention, but not everything deserves it.",
       "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
       "category": "general"
     },
     {
-      "question": "Which 19th-century psychologist demonstrated that people forget roughly 80% of newly learned material within 24 hours unless they actively recall it?",
+      "question": "What term describes the psychological phenomenon where writing information down, or storing it digitally, causes the brain to deprioritize remembering it?",
       "options": [
-        "William James",
+        "Cognitive offloading (the Performance Paradox)",
+        "The Dunning-Kruger effect",
+        "Analysis paralysis",
+        "Confirmation bias"
+      ],
+      "correctIndex": 0,
+      "learning": "Psychologists call it the \"Performance Paradox\" of Cognitive Offloading — the moment we write something down or save it digitally, our brain treats that as permission to forget it.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "Which 19th-century researcher, working in the 1880s, demonstrated that people forget about 80% of newly learned information within 24 hours unless they actively work to recall it?",
+      "options": [
         "Ivan Pavlov",
+        "Hermann Ebbinghaus",
         "B.F. Skinner",
-        "Hermann Ebbinghaus"
+        "William James"
+      ],
+      "correctIndex": 1,
+      "learning": "Back in the 1880s, Hermann Ebbinghaus proved we forget about 80% of what we learn within 24 hours unless we actively force ourselves to recall it — simply re-reading doesn't work.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "In the Scrum framework, which artifact visually tracks the amount of work remaining in a sprint to show whether the team is on schedule?",
+      "options": [
+        "The Kanban Board",
+        "The Sprint Backlog",
+        "The Product Backlog",
+        "The Burndown Chart"
       ],
       "correctIndex": 3,
-      "learning": "In the 1880s, Hermann Ebbinghaus showed that we forget about 80% of what we learn within a day unless we actively force ourselves to recall it, which is why spaced repetition works better than re-reading.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "What term do researchers behind the 'Google Effect' paper use for the phenomenon of forgetting information once it's known to be stored and retrievable digitally?",
-      "options": [
-        "Tip-of-the-Tongue Syndrome",
-        "Digital Amnesia",
-        "Information Overload",
-        "Semantic Satiation"
-      ],
-      "correctIndex": 1,
-      "learning": "Researchers behind the 'Google Effect' paper call it Digital Amnesia: the moment we write something down or store it digitally, our brains treat that as permission to forget it.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In Scrum, which artifact visually tracks remaining work in a Sprint to show whether the team is on schedule?",
-      "options": [
-        "Product Backlog",
-        "Burndown Chart",
-        "Kanban Board",
-        "Sprint Backlog"
-      ],
-      "correctIndex": 1,
-      "learning": "The Burndown Chart is the Scrum artifact that visualizes a Sprint's progress, showing remaining work and whether the team is on track to finish on schedule.",
+      "learning": "The Burndown Chart is one of Scrum's three artifacts — it visualizes sprint progress, shows remaining work, and helps the team track whether they're on schedule.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "What is the primary reason Scrum breaks a project into short, iterative cycles called Sprints?",
+      "question": "In Scrum, which role is specifically responsible for protecting the development team from distractions and resolving blockers, rather than managing the project directly?",
       "options": [
-        "To reduce the number of team members needed",
-        "To increase the overall length of the project",
-        "To allow for more flexibility and quicker adjustments",
-        "To eliminate the need for upfront planning"
+        "The Developers",
+        "The Product Owner",
+        "The Scrum Master",
+        "The Project Manager"
       ],
       "correctIndex": 2,
-      "learning": "Scrum uses short, iterative Sprints specifically to allow for more flexibility and quicker adjustments compared to a single long development cycle.",
+      "learning": "The Scrum Master's job is to protect the team from distractions and facilitate the Scrum process — notably, \"Project Manager\" is explicitly not one of Scrum's three key roles.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "In Islamic theology, what term refers to humanity's role as stewards or caretakers of the Earth, entrusted to them by God?",
+      "question": "In Islamic teaching on the purpose of life, humanity's role centers on worship and serving as caretakers (khalifah) of the Earth — what is the third primary role?",
       "options": [
+        "Perfecting the Arabic language",
+        "Building political empires",
+        "Pursuing wealth and worldly success",
+        "Preparing for the eternal Hereafter through accountability"
+      ],
+      "correctIndex": 3,
+      "learning": "Life's purpose in Islam revolves around three roles: worshiping Allah, serving as khalifah (stewards) of the Earth, and preparing for the eternal Hereafter through conscious choices and accountability.",
+      "articleTitle": "Ever Wondered Why We're Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What Arabic term refers to a mindful awareness of God's presence that builds self-restraint and purifies a person's intentions?",
+      "options": [
+        "Sabr",
         "Khalifah",
-        "Shura",
-        "Ummah",
-        "Ijtihad"
-      ],
-      "correctIndex": 0,
-      "learning": "Khalifah is the term for humanity's role as caretakers of the Earth, a responsibility that includes preserving faith and fostering unity within the community.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which phrase is attributed to the Prophet Muhammad, recorded in Sahih Bukhari, as he modeled gratitude toward God?",
-      "options": [
-        "\"Shall I not seek knowledge always?\"",
-        "\"Shall I not forgive my enemies?\"",
-        "\"Shall I not be a grateful servant?\"",
-        "\"Shall I not strive for excellence?\""
+        "Taqwa",
+        "Shukr"
       ],
       "correctIndex": 2,
-      "learning": "The Prophet Muhammad modeled gratitude by asking, 'Shall I not be a grateful servant?' as recorded in Sahih Bukhari 1130.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
+      "learning": "Taqwa is the mindfulness or awareness of Allah's presence that worship fosters — it builds self-restraint, purifies intentions, and guides a person away from wrongdoing.",
+      "articleTitle": "Ever Wondered Why We're Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In a common Islamic framework for life's purpose, humanity's role centers on worship and stewardship of the Earth, plus what third element?",
+      "question": "What is the core lesson of the Quranic teaching that \"whoever does an atom's weight of good will see it, and whoever does an atom's weight of evil will see it\"?",
       "options": [
-        "Accumulating wealth to provide for one's family",
-        "Preparing for the Hereafter through accountability for one's actions",
-        "Seeking knowledge purely for its own sake",
-        "Building political power and influence"
+        "Intentions matter more than actions",
+        "Good deeds automatically cancel out bad ones",
+        "Only major sins are punished",
+        "No deed, no matter how small, goes unaccounted for"
       ],
-      "correctIndex": 1,
-      "learning": "Life's purpose is framed around three roles: worshiping God, serving as stewards of the Earth, and preparing for the Hereafter through a life of conscious choices and accountability.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
+      "correctIndex": 3,
+      "learning": "This verse (Quran 99:7-8) teaches that in Allah's divine justice, every deed — however tiny — is accounted for, reinforcing fairness and motivating righteous living.",
+      "articleTitle": "Ever Wondered Why We're Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "In PCIe power management, which state is the deepest power-saving state within the L1 class, with the longest wake-up delay among the L1 substates?",
+      "question": "In PCIe power management, which state has the device almost completely powered down, used for the longest periods of inactivity, with the highest power savings but the longest wake-up time?",
       "options": [
-        "L1.1",
-        "L1.0",
-        "L1.2",
-        "L0s"
-      ],
-      "correctIndex": 2,
-      "learning": "Among the L1 substates in PCIe power management, L1.2 powers down the most components, maximizing power savings at the cost of the longest wake-up delay within that class.",
-      "articleTitle": "Power Management States in the context of PCIe",
-      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
-      "category": "uncategorized"
-    },
-    {
-      "question": "Which PCIe power state is compared to a computer being completely shut down, offering the highest power savings but the longest time to resume activity?",
-      "options": [
-        "L0",
         "L2",
         "L0s",
+        "L0",
         "L1.2"
       ],
-      "correctIndex": 1,
-      "learning": "L2 is the deepest PCIe power state, comparable to a fully shut-down computer: it minimizes power use the most but takes the longest to restart.",
+      "correctIndex": 0,
+      "learning": "L2 is the deepest PCIe power state — the device is almost completely powered down, maximizing energy savings at the cost of the longest delay to resume activity.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "In Islamic theology, which term refers to Allah's complete, eternal, pre-written plan and knowledge of everything that will happen — distinct from the actual unfolding of events in a person's life?",
+      "question": "Which PCIe power state is designed specifically for very short durations of idleness, comparable to a computer screen turning off while the system can resume quickly?",
       "options": [
+        "L1.1",
+        "L0s",
+        "L1.0",
+        "L2"
+      ],
+      "correctIndex": 1,
+      "learning": "L0s is a very light sleep state designed for brief idle periods — the link can quickly \"wake up\" to resume full activity, similar to a computer screen turning off.",
+      "articleTitle": "Power Management States in the context of PCIe",
+      "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
+      "category": "uncategorized"
+    },
+    {
+      "question": "In Islamic theology, which term refers to the actual, unfolding occurrence of events in a person's life, as distinct from Allah's eternal, pre-written plan?",
+      "options": [
+        "Qada'",
         "Tawakkul",
         "Qadr",
-        "Qada'",
         "Taqwa"
       ],
-      "correctIndex": 1,
-      "learning": "Qadr is Allah's complete and eternal plan and knowledge of all events, while Qada' is the actual occurrence of those events as they unfold in a person's life.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "According to a well-known Quranic teaching, what must happen before the condition of a people actually changes?",
-      "options": [
-        "They must seek forgiveness every Friday",
-        "They must change what is within themselves",
-        "They must wait for divine intervention",
-        "They must perform additional daily prayers"
-      ],
-      "correctIndex": 1,
-      "learning": "Surah Ar-Ra'd (13:11) teaches that Allah does not change the condition of a people until they change what is within themselves, underscoring personal responsibility for change.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "A word-frequency analysis of the Quran found that its 20 most common words account for roughly what share of the total text — far short of the 80% the Pareto Principle might predict?",
-      "options": [
-        "About 20.83%",
-        "About 35%",
-        "About 50%",
-        "About 80%"
-      ],
       "correctIndex": 0,
-      "learning": "Despite the Pareto Principle's 80/20 pattern, the 20 most frequent words in the Quran accumulate to only about 20.83% of its total text, not 80%.",
+      "learning": "Qada' refers to the actual occurrence of events as they unfold, shaped by our actions and decisions — distinct from Qadr, which is Allah's complete, eternal plan.",
+      "articleTitle": "The Art of Qada' and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "According to a hadith narrated by Ubadah bin As-Samit, what happens when a Muslim sincerely supplicates (makes Dua) to Allah for something that isn't sinful and doesn't sever family ties?",
+      "options": [
+        "Allah always grants it immediately",
+        "Allah only responds during Ramadan",
+        "Allah grants it, or wards off an equivalent evil from them",
+        "Nothing happens unless it's done after Fajr prayer"
+      ],
+      "correctIndex": 2,
+      "learning": "Per Jami at-Tirmidhi 3573, when a Muslim calls upon Allah with any permissible supplication, Allah either grants it or turns away an equivalent amount of evil from them.",
+      "articleTitle": "The Art of Qada' and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "When a data analysis tested whether the Pareto Principle (80/20 rule) applies to word frequency in the Quran, what percentage of the Quran's text did the top 20 most frequent words actually account for?",
+      "options": [
+        "About 80%",
+        "About 50%",
+        "About 5%",
+        "About 20.83%"
+      ],
+      "correctIndex": 3,
+      "learning": "A Python word-frequency analysis found the top 20 most common words in the Quran accumulate to only about 20.83% of the text — the Pareto Principle's 80/20 split didn't hold.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "What is the term for the small diacritical marks placed above or below Arabic letters to indicate vowel sounds and pronunciation?",
+      "question": "What term refers to the small diacritical markings placed above or below Arabic letters to indicate vowel sounds and pronunciation?",
       "options": [
-        "Tafsir",
-        "Isnad",
         "Tashkeel",
-        "Tajweed"
+        "Isnad",
+        "Tajweed",
+        "Tafsir"
       ],
-      "correctIndex": 2,
-      "learning": "Tashkeel are the diacritical marks added above or below Arabic letters to indicate vowel sounds, similar to how vowels work in English spelling.",
+      "correctIndex": 0,
+      "learning": "Tashkeel are the small markings added above or below Arabic letters to indicate vowel sounds; without them, the same spelling can be read multiple ways.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     }
   ],
-  "fetchedAt": "2026-10-08T22:36:29.019Z"
+  "fetchedAt": "2026-10-09T22:37:17.120Z"
 }
