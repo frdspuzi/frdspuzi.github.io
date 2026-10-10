@@ -1,102 +1,53 @@
 {
-  "lastUpdated": "2026-10-09",
+  "lastUpdated": "2026-10-10",
   "papers": [
     {
-      "id": "hf:2610.11251",
-      "doi": "https://arxiv.org/abs/2610.11251",
-      "title": "V-CoLA: Vision Token Compression with Linear Attention",
+      "id": "hf:2609.33987",
+      "doi": "https://arxiv.org/abs/2609.33987",
+      "title": "Opera: A Verbal Critic Framework for Long-horizon Coding Agents",
       "publicationDate": "2026-10-07",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Hao Jiang et al.",
+      "leadAuthor": "Kai Mei et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Vision-language models waste compute on image tokens, and old compression tricks fail on the newer linear-attention models.",
-      "fix": "V-CoLA keeps 99.5% of original accuracy with half the image tokens and runs prefill 1.86 to 6.15 times faster.",
-      "practicalUseCase": "If you run image-heavy models, you can cut cost sharply, so test token compression before buying more hardware.",
-      "limitation": "The shown tests use benchmark sets, so real workloads may lose more accuracy at high compression.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.11251"
+      "problem": "Coding agents that run for long tasks get feedback that often misses the real problem or gets ignored.",
+      "fix": "Opera tracks each correction until the problem is fixed, and raises task success by up to 15.0 percentage points.",
+      "practicalUseCase": "A critic that follows up on its advice makes coding agents more reliable, so add follow-up checks.",
+      "limitation": "The gains come from three coding benchmarks and four models, so real projects may differ.",
+      "fullTextUrl": "https://huggingface.co/papers/2609.33987"
     },
     {
-      "id": "hf:2610.08077",
-      "doi": "https://arxiv.org/abs/2610.08077",
-      "title": "Self-Retrospection Distillation: Turning Post-hoc Experiences into Prior Foresight",
-      "publicationDate": "2026-10-05",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Haoxiang Zhang et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Agents trained with reward-only learning get no signal when every attempt in a group earns the same reward.",
-      "fix": "Self-Retrospection Distillation lifted a 2B agent from 0.0% to 60.6% success where plain reward training stalled.",
-      "practicalUseCase": "If your agent fails every try, learning from finished attempts can still help, so add it before giving up.",
-      "limitation": "Gains reach 24.2 points on 10 tasks, so results on your own tasks may be smaller.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.08077"
-    },
-    {
-      "id": "hf:2610.10845",
-      "doi": "https://arxiv.org/abs/2610.10845",
-      "title": "Real Long-Term Memory for AI: A 50-Million-Token Window That Is Faster and Cheaper Than Recompute",
-      "publicationDate": "2026-10-06",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Sietse Schelpe",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Language models forget text outside their context window and recompute stored state every time you send a prompt.",
-      "fix": "Loading saved blocks from disk ran 2.8 to 4.3 times faster and used 8.8 to 12.3 times less GPU energy.",
-      "practicalUseCase": "If this holds, long chat memory gets cheap, so consider disk-backed caching for apps that reread big documents.",
-      "limitation": "It reuses stored state rather than widening attention, and the store needs terabytes of local disk.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.10845"
-    },
-    {
-      "id": "hf:2610.12374",
-      "doi": "https://arxiv.org/abs/2610.12374",
-      "title": "AgentGarten: Code Worlds for Evolving Agents",
+      "id": "hf:2610.11169",
+      "doi": "https://arxiv.org/abs/2610.11169",
+      "title": "Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub",
       "publicationDate": "2026-10-07",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Jiawei Chi et al.",
+      "leadAuthor": "Fahd Seddik",
       "topics": [
         "Tech"
       ],
-      "problem": "Agents learn only what their practice worlds teach, and faithful, realistic worlds are hard to build.",
-      "fix": "AgentGarten lets agents learn in 4 rounds, where a conventional reinforcement learning agent needs millions.",
-      "practicalUseCase": "If this holds, you can train agents in code-built worlds quickly, so try a simulator before collecting real data.",
-      "limitation": "The shown gain comes from the authors' own tests, not from outside replication.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.12374"
+      "problem": "Developers copy agent skills between repositories with no registry, versions, or source record, so nobody knows who copied from whom.",
+      "fix": "Among 2,193,119 skill adoptions, a few repositories source most copies; auditing the top 100 stops 14.9% of risky adoptions.",
+      "practicalUseCase": "A fix at the source rarely reaches copies, so audit the few source repositories and pin skills by version.",
+      "limitation": "The ranking model predicts which repositories others copy from, so it may miss new sources.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.11169"
     },
     {
-      "id": "hf:2609.38562",
-      "doi": "https://arxiv.org/abs/2609.38562",
-      "title": "LongTake: Learning to Sustain Dynamics in Long-Horizon Video Generation",
-      "publicationDate": "2026-09-28",
+      "id": "hf:2610.11216",
+      "doi": "https://arxiv.org/abs/2610.11216",
+      "title": "The Lattice of Transition Laws",
+      "publicationDate": "2026-10-07",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Byoungwoo Park et al.",
+      "leadAuthor": "T. Y. Tsui et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "AI video makers drift into near-static scenes and lose picture quality when clips run past a few seconds.",
-      "fix": "LongTake training gives more motion than short-clip training on 30-second videos at similar visual quality.",
-      "practicalUseCase": "If you build video tools, train on long real clips, because short clips teach the model too little about motion.",
-      "limitation": "The excerpt gives no exact scores, and results cover only 30-second and 60-second videos.",
-      "fullTextUrl": "https://huggingface.co/papers/2609.38562"
-    },
-    {
-      "id": "https://openalex.org/W7204751468",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
-      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Yunice Karina Tumewang et al.",
-      "institution": "Islamic University of Indonesia",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Banks form sustainability committees, but it was unclear whether those committees change real environmental results in Islamic banks.",
-      "fix": "A sustainability committee lifts overall environmental scores and resource reduction in Islamic banks, but not green products or innovation.",
-      "practicalUseCase": "If you judge an Islamic bank's green claims, look past its committee and check for actual products.",
-      "limitation": "The study covers emerging markets with both bank types, so findings may not fit other regions.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
+      "problem": "Teams cannot predict how well a fast decoding schedule will work before they run it.",
+      "fix": "The data's shape sets the fewest lossless steps; fewer steps always cost quality, and the authors rank that cost beforehand.",
+      "practicalUseCase": "You can choose a decoding schedule for text, image, or video models without trial runs.",
+      "limitation": "The authors confirm most, not all, of their predicted rankings across text, image, and video tests.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.11216"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -109,11 +60,28 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Sustainability sukuk are growing fast, but nobody had mapped how they are issued or what sets their size.",
-      "fix": "Across 11,944 issuances from 2012 to 2022, sukuk backed by equity-based contracts, strong security, and social goals came out larger.",
-      "practicalUseCase": "If you track green sukuk, expect growth mostly in Indonesia, Malaysia, and Saudi Arabia, so watch those markets first.",
-      "limitation": "Data end in 2022, and the study shows links between features and issue size, not cause.",
+      "problem": "Few people know how sustainability sukuk issuance grew or what sets the size of each issue.",
+      "fix": "Of 11,944 issuances, most cluster in Indonesia, Malaysia, and Saudi Arabia; equity-based contracts give larger issues than sale-based ones.",
+      "practicalUseCase": "Issuers who want bigger sustainability sukuk should favor equity-based contracts, strong security, and USD or Euro denomination.",
+      "limitation": "The data covers 2012 to 2022 and shows links between features and issue size, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
+    },
+    {
+      "id": "https://openalex.org/W7204751468",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
+      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Yunice Karina Tumewang et al.",
+      "institution": "Islamic University of Indonesia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Banks set up sustainability committees, but it is unclear whether these committees lead to real environmental action.",
+      "fix": "Committees link to better environmental scores, but in Islamic banks only for overall and resource-reduction scores, not products.",
+      "practicalUseCase": "A committee alone may only change reports at Islamic banks, so regulators should check for real green products.",
+      "limitation": "The panel regressions show association, not cause, and cover only emerging markets with both bank types.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
       "id": "https://openalex.org/W7204766411",
@@ -126,10 +94,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Islamic banks in Jordan lacked clear evidence that AI and big data tools raise competitiveness and sustainable development.",
-      "fix": "AI use, big data skills, and data management all link positively to bank competitiveness and sustainable development performance.",
-      "practicalUseCase": "If you work in Islamic banking, invest in data skills and systems, because they link to better results.",
-      "limitation": "A one-time survey of 214 managers in Jordan shows links, not cause.",
+      "problem": "Islamic banks in Jordan lack clear evidence on whether AI and big data help them compete and stay sustainable.",
+      "fix": "AI use, big data skills, and data management all raise competitiveness and sustainability, while staff digital skill raises competitiveness only.",
+      "practicalUseCase": "Banks should invest in AI and data systems, since staff training alone does not improve sustainability.",
+      "limitation": "The survey covers 214 managers at 15 Jordanian Islamic banks at one time, so it cannot prove cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -143,10 +111,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks in dual systems lacked clear evidence on which national factors drive their growth.",
-      "fix": "Across 218 banks in 12 countries, ICT adoption is the strongest growth driver, and high-tech exports help only alongside ICT.",
-      "practicalUseCase": "If you plan bank growth, fund digital systems first, because exports and rules alone do little.",
-      "limitation": "The data cover 218 banks in 12 countries from 2010 to 2023, so other places may differ.",
+      "problem": "Banks lack clear evidence on which digital and institutional factors drive growth in dual banking systems.",
+      "fix": "In 218 banks across 12 countries, ICT adoption drives growth most; high-tech exports help only alongside ICT.",
+      "practicalUseCase": "Digital infrastructure pays off most, so policymakers should build it before expecting growth from exports alone.",
+      "limitation": "The study covers 12 countries from 2010 to 2023 and shows statistical links between factors and growth.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -160,10 +128,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Many Muslim-majority countries still exclude people from finance, even though Islamic finance has grown for a decade.",
-      "fix": "In 35 OIC and OECD countries, income, tertiary education, institutions, internet access, and age mix drive inclusion in OIC states.",
-      "practicalUseCase": "If you shape OIC policy, spend on digital networks, youth, women, and income growth, because those move inclusion most.",
-      "limitation": "The study covers 35 countries from 2005 to 2021, so single countries may behave differently.",
+      "problem": "Many Muslim-majority countries still exclude large groups from financial services, even as Islamic finance expands.",
+      "fix": "Across 35 countries, income, education, institution quality, and internet access drive financial inclusion in OIC countries.",
+      "practicalUseCase": "OIC countries should invest in digital infrastructure, youth and women empowerment, and income growth to widen financial access.",
+      "limitation": "The model covers 35 countries from 2005 to 2021 and shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
     },
     {
@@ -177,28 +145,11 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Medical students face constant exams and peer comparison, and nobody knew how often they feel like frauds.",
-      "fix": "Impostor feelings were frequent among medical students before licensing, with results varying by sampling method and region.",
-      "practicalUseCase": "If you train or study in a high-pressure field, expect impostor feelings and treat them as common, not personal failure.",
-      "limitation": "Pooled results vary a lot between studies, so treat any single figure with care.",
+      "problem": "Medical students face constant exams and peer comparison, which may make them feel like frauds despite their success.",
+      "fix": "Impostor feelings are frequent among medical students before they are licensed, though the estimates vary widely between studies.",
+      "practicalUseCase": "If you feel like a fraud in a high-pressure field, you are not alone, so talk about it early.",
+      "limitation": "Results differ a lot across studies and depend on sampling method and region, so the pooled rate is uncertain.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
-    },
-    {
-      "id": "https://openalex.org/W7171792253",
-      "doi": "https://doi.org/10.1371/journal.pone.0354474",
-      "title": "Psychometric properties of the Arabic Perceived Digital Well-Being Scale (PDWS) in Saudi young adults",
-      "publicationDate": "2026-07-30",
-      "venue": "PLoS ONE",
-      "leadAuthor": "Emadeldin M. Elsokkary",
-      "institution": "Imam Mohammad ibn Saud Islamic University",
-      "topics": [
-        "Career & Productivity"
-      ],
-      "problem": "Research on young adults and screens mostly tracks harm, with few tools to measure whether their digital life feels good.",
-      "fix": "The Arabic Perceived Digital Well-Being Scale proved a reliable and valid measure in Saudi young adults aged 18 to 25.",
-      "practicalUseCase": "To check your screen habits, ask how they affect your life, not only how long you scroll.",
-      "limitation": "Participants joined online in Riyadh, and the one-time design cannot show cause.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0354474"
     }
   ]
 }
