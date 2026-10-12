@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-10",
+  "lastUpdated": "2026-10-12",
   "papers": [
     {
       "id": "hf:2609.33987",
@@ -11,10 +11,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Coding agents that run for long tasks get feedback that often misses the real problem or gets ignored.",
-      "fix": "Opera tracks each correction until the problem is fixed, and raises task success by up to 15.0 percentage points.",
-      "practicalUseCase": "A critic that follows up on its advice makes coding agents more reliable, so add follow-up checks.",
-      "limitation": "The gains come from three coding benchmarks and four models, so real projects may differ.",
+      "problem": "Coding agents on long tasks get feedback that misses the real problem and nobody checks if it helped.",
+      "fix": "Opera tracks each correction until fixed and lifts task success by up to 15.0 percentage points on three coding tests.",
+      "practicalUseCase": "Better feedback loops make coding agents fix more bugs, so add follow-up checks after every correction you give one.",
+      "limitation": "Results come from three coding benchmarks and four policy models, so other tasks may differ.",
       "fullTextUrl": "https://huggingface.co/papers/2609.33987"
     },
     {
@@ -27,10 +27,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Developers copy agent skills between repositories with no registry, versions, or source record, so nobody knows who copied from whom.",
-      "fix": "Among 2,193,119 skill adoptions, a few repositories source most copies; auditing the top 100 stops 14.9% of risky adoptions.",
-      "practicalUseCase": "A fix at the source rarely reaches copies, so audit the few source repositories and pin skills by version.",
-      "limitation": "The ranking model predicts which repositories others copy from, so it may miss new sources.",
+      "problem": "Developers copy agent skills between repositories, so nobody knows where a skill came from or who must fix it.",
+      "fix": "Auditing the 100 top-ranked source repositories prevents 14.9% of risky skill adoptions, against 0.5% for the most starred.",
+      "practicalUseCase": "Stars do not show which skills are safe, so check the few source repositories before you copy any skill.",
+      "limitation": "The study covers skills found in GitHub history, and its ranking predicts copying, not proven harm.",
       "fullTextUrl": "https://huggingface.co/papers/2610.11169"
     },
     {
@@ -43,28 +43,27 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Teams cannot predict how well a fast decoding schedule will work before they run it.",
-      "fix": "The data's shape sets the fewest lossless steps; fewer steps always cost quality, and the authors rank that cost beforehand.",
-      "practicalUseCase": "You can choose a decoding schedule for text, image, or video models without trial runs.",
-      "limitation": "The authors confirm most, not all, of their predicted rankings across text, image, and video tests.",
+      "problem": "Teams cannot tell in advance which way of generating text or images in parallel steps will work best.",
+      "fix": "The data's shape sets the fewest safe steps, and most predicted rankings held on text, image, and video.",
+      "practicalUseCase": "You can pick a decoding plan before running it, so save compute by checking the data's structure first.",
+      "limitation": "The authors verified most predictions, not all, so some rankings did not hold.",
       "fullTextUrl": "https://huggingface.co/papers/2610.11216"
     },
     {
-      "id": "https://openalex.org/W7204756985",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3341",
-      "title": "Trends and Determinants of Sustainability Sukuk Issuance: Evidence from Global Markets",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Nazrul Hazizi Noordin",
-      "institution": "International Islamic University Malaysia",
+      "id": "hf:2609.38527",
+      "doi": "https://arxiv.org/abs/2609.38527",
+      "title": "Behavioral Persistence and Incomplete Functional Transfer of Co-evolved Communication in Evolutionary Robotics",
+      "publicationDate": "2026-09-28",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Fernando Montes-Gonzalez",
       "topics": [
-        "Islamic Studies & Finance"
+        "Tech"
       ],
-      "problem": "Few people know how sustainability sukuk issuance grew or what sets the size of each issue.",
-      "fix": "Of 11,944 issuances, most cluster in Indonesia, Malaysia, and Saudi Arabia; equity-based contracts give larger issues than sale-based ones.",
-      "practicalUseCase": "Issuers who want bigger sustainability sukuk should favor equity-based contracts, strong security, and USD or Euro denomination.",
-      "limitation": "The data covers 2012 to 2022 and shows links between features and issue size, not cause.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
+      "problem": "Robots that learned to signal each other in simulation may not keep that skill in the real world.",
+      "fix": "After three corrections, one robot reached the food in one of thirty tests and the other never did.",
+      "practicalUseCase": "Skills learned in simulation can break on real hardware, so test on real robots early and expect big losses.",
+      "limitation": "The test used two e-puck robots on one food task, so it shows partial transfer, not a general rule.",
+      "fullTextUrl": "https://huggingface.co/papers/2609.38527"
     },
     {
       "id": "https://openalex.org/W7204751468",
@@ -77,11 +76,28 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks set up sustainability committees, but it is unclear whether these committees lead to real environmental action.",
-      "fix": "Committees link to better environmental scores, but in Islamic banks only for overall and resource-reduction scores, not products.",
-      "practicalUseCase": "A committee alone may only change reports at Islamic banks, so regulators should check for real green products.",
-      "limitation": "The panel regressions show association, not cause, and cover only emerging markets with both bank types.",
+      "problem": "Banks set up sustainability committees, but nobody knew if Islamic and conventional banks gain the same environmental results.",
+      "fix": "Committees raise environmental scores, but at Islamic banks they lift only overall and resource scores, not green products.",
+      "practicalUseCase": "A committee may be mostly show at Islamic banks, so judge them by green products, not committees.",
+      "limitation": "Panel regressions show links, not cause, and cover banks in emerging markets only.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
+    },
+    {
+      "id": "https://openalex.org/W7204756985",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3341",
+      "title": "Trends and Determinants of Sustainability Sukuk Issuance: Evidence from Global Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Nazrul Hazizi Noordin",
+      "institution": "International Islamic University Malaysia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Sustainability sukuk are growing, but little is known about what drives how big each issue is.",
+      "fix": "Across 11,944 sukuk issues, stronger security, longer debt terms, and USD or Euro denomination give larger issues.",
+      "practicalUseCase": "Equity-based contracts raise bigger issues than sale-based ones, so issuers wanting size should pick equity-based structures.",
+      "limitation": "The data runs only to 2022 and shows links, not cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
       "id": "https://openalex.org/W7204766411",
@@ -94,10 +110,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Islamic banks in Jordan lack clear evidence on whether AI and big data help them compete and stay sustainable.",
-      "fix": "AI use, big data skills, and data management all raise competitiveness and sustainability, while staff digital skill raises competitiveness only.",
-      "practicalUseCase": "Banks should invest in AI and data systems, since staff training alone does not improve sustainability.",
-      "limitation": "The survey covers 214 managers at 15 Jordanian Islamic banks at one time, so it cannot prove cause.",
+      "problem": "Islamic banks in Jordan lacked clear evidence on whether AI and big data help them compete.",
+      "fix": "AI use, big data skills, and data management practices all link to higher competitiveness and better sustainable development results.",
+      "practicalUseCase": "Banks should invest in AI and data systems, but staff digital skill alone did not improve sustainable development.",
+      "limitation": "The survey covered 214 managers in Jordan at one point in time, so it shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -111,10 +127,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks lack clear evidence on which digital and institutional factors drive growth in dual banking systems.",
-      "fix": "In 218 banks across 12 countries, ICT adoption drives growth most; high-tech exports help only alongside ICT.",
-      "practicalUseCase": "Digital infrastructure pays off most, so policymakers should build it before expecting growth from exports alone.",
-      "limitation": "The study covers 12 countries from 2010 to 2023 and shows statistical links between factors and growth.",
+      "problem": "Banks in dual systems lacked clear evidence on which national factors drive their growth.",
+      "fix": "Across 218 banks, ICT adoption drives growth most, and high-tech exports help only when paired with ICT.",
+      "practicalUseCase": "Digital tools matter more than exports alone, so banks and regulators should fund digital systems first.",
+      "limitation": "The study covers 12 countries from 2010 to 2023 and shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -128,28 +144,11 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Many Muslim-majority countries still exclude large groups from financial services, even as Islamic finance expands.",
-      "fix": "Across 35 countries, income, education, institution quality, and internet access drive financial inclusion in OIC countries.",
-      "practicalUseCase": "OIC countries should invest in digital infrastructure, youth and women empowerment, and income growth to widen financial access.",
+      "problem": "Muslim-majority countries have many excluded people, even though Islamic finance grew fast over the last decade.",
+      "fix": "In OIC countries, income, university education, institutions, and internet access drive financial inclusion, and OECD countries show a different pattern.",
+      "practicalUseCase": "OIC countries gain most from digital infrastructure and from empowering youth and women, so banks there should target those groups.",
       "limitation": "The model covers 35 countries from 2005 to 2021 and shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
-    },
-    {
-      "id": "https://openalex.org/W7204259442",
-      "doi": "https://doi.org/10.1371/journal.pone.0351713",
-      "title": "Global prevalence of impostor phenomenon in medical students: A systematic review and meta-analysis",
-      "publicationDate": "2026-08-26",
-      "venue": "PLoS ONE",
-      "leadAuthor": "Víctor Juan Vera-Ponce et al.",
-      "institution": "National University Toribio Rodríguez de Mendoza",
-      "topics": [
-        "Career & Productivity"
-      ],
-      "problem": "Medical students face constant exams and peer comparison, which may make them feel like frauds despite their success.",
-      "fix": "Impostor feelings are frequent among medical students before they are licensed, though the estimates vary widely between studies.",
-      "practicalUseCase": "If you feel like a fraud in a high-pressure field, you are not alone, so talk about it early.",
-      "limitation": "Results differ a lot across studies and depend on sampling method and region, so the pooled rate is uncertain.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
     }
   ]
 }
