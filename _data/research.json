@@ -1,86 +1,85 @@
 {
-  "lastUpdated": "2026-10-12",
+  "lastUpdated": "2026-10-14",
   "papers": [
     {
-      "id": "hf:2609.33987",
-      "doi": "https://arxiv.org/abs/2609.33987",
-      "title": "Opera: A Verbal Critic Framework for Long-horizon Coding Agents",
-      "publicationDate": "2026-10-07",
+      "id": "hf:2609.35291",
+      "doi": "https://arxiv.org/abs/2609.35291",
+      "title": "Narrow Multimodal Fine-Tuning Can Induce Emergent Misalignment",
+      "publicationDate": "2026-09-27",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Kai Mei et al.",
+      "leadAuthor": "Shunchang Liu et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Coding agents on long tasks get feedback that misses the real problem and nobody checks if it helped.",
-      "fix": "Opera tracks each correction until fixed and lifts task success by up to 15.0 percentage points on three coding tests.",
-      "practicalUseCase": "Better feedback loops make coding agents fix more bugs, so add follow-up checks after every correction you give one.",
-      "limitation": "Results come from three coding benchmarks and four policy models, so other tasks may differ.",
-      "fullTextUrl": "https://huggingface.co/papers/2609.33987"
+      "problem": "Teams fine-tune vision-language models on narrow tasks, but nobody knew if that makes them misbehave elsewhere.",
+      "fix": "Narrow fine-tuning caused broad harmful behavior in fifteen vision-language models, including unsafe images, dishonesty, and risky agent actions.",
+      "practicalUseCase": "A model tuned for one small job can turn unsafe everywhere, so test it on unrelated tasks before shipping.",
+      "limitation": "Prompt tricks, extra benign training, and steering only partly reduced the harm.",
+      "fullTextUrl": "https://huggingface.co/papers/2609.35291"
     },
     {
-      "id": "hf:2610.11169",
-      "doi": "https://arxiv.org/abs/2610.11169",
-      "title": "Skill Constellations: Tracing the Supply Chain of Agent Skills on GitHub",
+      "id": "hf:2610.12417",
+      "doi": "https://arxiv.org/abs/2610.12417",
+      "title": "WOVEN: Weaving Visual World Modeling into Multimodal LLMs",
       "publicationDate": "2026-10-07",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Fahd Seddik",
+      "leadAuthor": "Zheyu Fan et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Developers copy agent skills between repositories, so nobody knows where a skill came from or who must fix it.",
-      "fix": "Auditing the 100 top-ranked source repositories prevents 14.9% of risky skill adoptions, against 0.5% for the most starred.",
-      "practicalUseCase": "Stars do not show which skills are safe, so check the few source repositories before you copy any skill.",
-      "limitation": "The study covers skills found in GitHub history, and its ranking predicts copying, not proven harm.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.11169"
+      "problem": "Vision-language models fail at spatial, physical, and time-based reasoning, and no shared training data targeted the cause.",
+      "fix": "A 36,076-example dataset called WOVEN lifted 22 of 26 outside tests, by up to 27.3 percentage points.",
+      "practicalUseCase": "If your model misjudges how scenes change, train it on state-change examples chosen by reasoning type.",
+      "limitation": "The authors tested this on benchmarks, and the strongest of 38 models still fell far below humans.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.12417"
     },
     {
-      "id": "hf:2610.11216",
-      "doi": "https://arxiv.org/abs/2610.11216",
-      "title": "The Lattice of Transition Laws",
-      "publicationDate": "2026-10-07",
+      "id": "hf:2610.03039",
+      "doi": "https://arxiv.org/abs/2610.03039",
+      "title": "HyperThink: Text-to-Parameter Hypernetworks for Efficient Reasoning",
+      "publicationDate": "2026-10-01",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "T. Y. Tsui et al.",
+      "leadAuthor": "Donggyun Kim et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Teams cannot tell in advance which way of generating text or images in parallel steps will work best.",
-      "fix": "The data's shape sets the fewest safe steps, and most predicted rankings held on text, image, and video.",
-      "practicalUseCase": "You can pick a decoding plan before running it, so save compute by checking the data's structure first.",
-      "limitation": "The authors verified most predictions, not all, so some rankings did not hold.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.11216"
+      "problem": "Long thinking traces make language models answer well but slowly, because the model writes every step one by one.",
+      "fix": "HyperThink predicts a small model update from the question, so the model skips thinking traces and uses far fewer tokens.",
+      "practicalUseCase": "If you need fast answers on math or logic, this trades long reasoning for lower delay with little accuracy loss.",
+      "limitation": "Gains were strongest when the model barely thinks, and the tests covered math and general reasoning only.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.03039"
     },
     {
-      "id": "hf:2609.38527",
-      "doi": "https://arxiv.org/abs/2609.38527",
-      "title": "Behavioral Persistence and Incomplete Functional Transfer of Co-evolved Communication in Evolutionary Robotics",
+      "id": "hf:2609.36642",
+      "doi": "https://arxiv.org/abs/2609.36642",
+      "title": "PR-OPD: Privileged Representation On-policy Self-Distillation for Agentic Reinforcement Learning",
       "publicationDate": "2026-09-28",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Fernando Montes-Gonzalez",
+      "leadAuthor": "Muyang Li et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Robots that learned to signal each other in simulation may not keep that skill in the real world.",
-      "fix": "After three corrections, one robot reached the food in one of thirty tests and the other never did.",
-      "practicalUseCase": "Skills learned in simulation can break on real hardware, so test on real robots early and expect big losses.",
-      "limitation": "The test used two e-puck robots on one food task, so it shows partial transfer, not a general rule.",
-      "fullTextUrl": "https://huggingface.co/papers/2609.38527"
+      "problem": "Agents trained with one reward per episode learn slowly, and token-level hints from a skill miss most of its effect.",
+      "fix": "PR-OPD aligns hidden states with a skill-aware teacher, beating GRPO by up to 4.7 (ALFWorld) and 14.0 (WebShop) points.",
+      "practicalUseCase": "If you train web or home agents, copy the skill's effect inside the model, not only in its word probabilities.",
+      "limitation": "Results come from two test environments and two model backbones, so other agent tasks remain untested.",
+      "fullTextUrl": "https://huggingface.co/papers/2609.36642"
     },
     {
-      "id": "https://openalex.org/W7204751468",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
-      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Yunice Karina Tumewang et al.",
-      "institution": "Islamic University of Indonesia",
+      "id": "hf:2610.12099",
+      "doi": "https://arxiv.org/abs/2610.12099",
+      "title": "UNITAS: A 3D-Native World Action Model for Embodied Manipulation",
+      "publicationDate": "2026-10-07",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Ruixiang Wang et al.",
       "topics": [
-        "Islamic Studies & Finance"
+        "Tech"
       ],
-      "problem": "Banks set up sustainability committees, but nobody knew if Islamic and conventional banks gain the same environmental results.",
-      "fix": "Committees raise environmental scores, but at Islamic banks they lift only overall and resource scores, not green products.",
-      "practicalUseCase": "A committee may be mostly show at Islamic banks, so judge them by green products, not committees.",
-      "limitation": "Panel regressions show links, not cause, and cover banks in emerging markets only.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
+      "problem": "Robot models built on image generators miss real distances, because images only show flat views of a 3D world.",
+      "fix": "UNITAS works in 3D space and reached 99.8% on LIBERO and 85% average across real-world tasks, with 1.7B parameters.",
+      "practicalUseCase": "If you build robot arms, plan motion in measured 3D space, not pixels, to cut errors by up to 49%.",
+      "limitation": "The 49% error cut compares only against selected methods on RoboTwin, not every robot model.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.12099"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -93,10 +92,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Sustainability sukuk are growing, but little is known about what drives how big each issue is.",
-      "fix": "Across 11,944 sukuk issues, stronger security, longer debt terms, and USD or Euro denomination give larger issues.",
-      "practicalUseCase": "Equity-based contracts raise bigger issues than sale-based ones, so issuers wanting size should pick equity-based structures.",
-      "limitation": "The data runs only to 2022 and shows links, not cause.",
+      "problem": "Sustainability sukuk grew fast, but nobody had mapped how it grew or what sets the size of each issue.",
+      "fix": "In 11,944 sukuk issues, equity-based contracts, strong security, longer debt, and USD or Euro denomination raised issue size.",
+      "practicalUseCase": "If you track green sukuk, expect big issues from Indonesia, Malaysia, and Saudi Arabia, and from equity-based deals.",
+      "limitation": "Sustainability sukuk stay a tiny share of all sukuk, and the data stops at 2022.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -110,10 +109,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Islamic banks in Jordan lacked clear evidence on whether AI and big data help them compete.",
-      "fix": "AI use, big data skills, and data management practices all link to higher competitiveness and better sustainable development results.",
-      "practicalUseCase": "Banks should invest in AI and data systems, but staff digital skill alone did not improve sustainable development.",
-      "limitation": "The survey covered 214 managers in Jordan at one point in time, so it shows links, not cause.",
+      "problem": "Islamic banks in Jordan lacked proof that artificial intelligence and big data actually improve their competitiveness and sustainability.",
+      "fix": "A survey of 214 managers linked AI, big data skills, and data management to higher competitiveness and sustainable development.",
+      "practicalUseCase": "If you run a bank, invest in AI and data systems, because staff digital skill alone did not help sustainability.",
+      "limitation": "The survey covers one country at one point in time, so it shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -127,10 +126,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks in dual systems lacked clear evidence on which national factors drive their growth.",
-      "fix": "Across 218 banks, ICT adoption drives growth most, and high-tech exports help only when paired with ICT.",
-      "practicalUseCase": "Digital tools matter more than exports alone, so banks and regulators should fund digital systems first.",
-      "limitation": "The study covers 12 countries from 2010 to 2023 and shows links, not cause.",
+      "problem": "Banks in dual systems lacked clear evidence on which digital and national factors drive their growth.",
+      "fix": "Across 218 banks in 12 countries from 2010 to 2023, technology adoption was the strongest driver of bank growth.",
+      "practicalUseCase": "If you plan bank growth, fund digital systems first, since high-tech exports only help when paired with technology adoption.",
+      "limitation": "The sample covers 12 countries, and institutional quality only helped growth indirectly.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -144,11 +143,62 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Muslim-majority countries have many excluded people, even though Islamic finance grew fast over the last decade.",
-      "fix": "In OIC countries, income, university education, institutions, and internet access drive financial inclusion, and OECD countries show a different pattern.",
-      "practicalUseCase": "OIC countries gain most from digital infrastructure and from empowering youth and women, so banks there should target those groups.",
-      "limitation": "The model covers 35 countries from 2005 to 2021 and shows links, not cause.",
+      "problem": "Financial inclusion stays low in many Muslim countries, even though Islamic finance expanded over the past decade.",
+      "fix": "Across 35 countries from 2005 to 2021, income, tertiary education, institution quality, and internet access drive inclusion in OIC countries.",
+      "practicalUseCase": "If you design inclusion policy for OIC countries, invest in digital infrastructure, youth and women, and income growth first.",
+      "limitation": "The study compares country-level averages, so it cannot show what works inside one bank or region.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
+    },
+    {
+      "id": "https://openalex.org/W7204751468",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
+      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Yunice Karina Tumewang et al.",
+      "institution": "Islamic University of Indonesia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Banks form sustainability committees, but it was unclear whether those committees produce real environmental action.",
+      "fix": "Committees raised environmental scores in all four areas at conventional banks, but Islamic banks improved only overall and resource scores.",
+      "practicalUseCase": "If you judge a bank's green claims, check for real products and innovations, not just committee presence.",
+      "limitation": "The data comes from emerging-market banks with both bank types, and shows links rather than cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
+    },
+    {
+      "id": "https://openalex.org/W7204259442",
+      "doi": "https://doi.org/10.1371/journal.pone.0351713",
+      "title": "Global prevalence of impostor phenomenon in medical students: A systematic review and meta-analysis",
+      "publicationDate": "2026-08-26",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Víctor Juan Vera-Ponce et al.",
+      "institution": "National University Toribio Rodríguez de Mendoza",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "problem": "Medical students face constant tests and peer comparison, which may make them feel like frauds despite real achievement.",
+      "fix": "Impostor phenomenon was frequent among medical students worldwide, though results varied a lot by sampling method and region.",
+      "practicalUseCase": "If you feel like a fraud while training, know that many peers do too, so talk about it.",
+      "limitation": "Studies differed widely, so the pooled rate is rough and the paper tested no fixes.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
+    },
+    {
+      "id": "https://openalex.org/W7197047502",
+      "doi": "https://doi.org/10.1371/journal.pone.0355186",
+      "title": "Exploring the influencing factors of academic doctoral students’ academic innovation behavior in the context of generative artificial intelligence: Self-determination theory and motivation-opportunity-ability perspectives",
+      "publicationDate": "2026-08-06",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Yanqin Liu et al.",
+      "institution": "Wuhan University",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "problem": "Doctoral students use generative AI heavily, but experts did not know what drives their new research ideas.",
+      "fix": "Both inner drive and outside rewards push doctoral students toward innovation, and they work together instead of competing.",
+      "practicalUseCase": "If you do research, keep your basic needs met, since long low motivation cuts your flexibility and willingness to explore.",
+      "limitation": "Data came from one-time self-reported surveys in chemistry, so bias is possible and change over time is unseen.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0355186"
     }
   ]
 }
