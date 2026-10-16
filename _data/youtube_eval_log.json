@@ -1,23 +1,443 @@
 [
   {
+    "videoId": "JoU_CZWOoo0",
+    "title": "How To Grow As a Junior Developer To Senior | 5 Tips",
+    "selected": true,
+    "reasoning": "Directly targets early-career software engineers looking to bridge the gap between junior execution and senior-level technical ownership.",
+    "summary": "Stepping out of the junior mindset requires more than just writing more code; it demands architectural awareness and proactive problem solving. This breakdown gives clear, actionable strategies you can apply immediately in your day job to accelerate your promotion trajectory."
+  },
+  {
+    "videoId": "vvzuWN_sFMQ",
+    "title": "4 things I’ve learned as a junior software engineer",
+    "selected": true,
+    "reasoning": "Authentic, relatable early-career software engineering reflections that provide practical productivity and workplace navigation advice.",
+    "summary": "Hear honest reflections from someone navigating the exact same career stage as you, focusing on the soft skills and daily habits that prevent burnout. It is a quick, grounding reality check on what actually matters during your first few years in production engineering."
+  },
+  {
+    "videoId": "D1y-CGDr92Y",
+    "title": "How To Land Your First Junior Dev Role",
+    "selected": false,
+    "reasoning": "Irrelevant because he is already employed as a junior fullstack software engineer.",
+    "summary": ""
+  },
+  {
+    "videoId": "jiUC6IUMdvc",
+    "title": "AI Engineer NYC: OpenAI, Blackstone, Ramp, Coinbase, Apollo, Citadel, Basis, Runway, Compute Trading",
+    "selected": false,
+    "reasoning": "An unwieldy 8-hour live conference recording focusing heavily on Wall Street financial trading infrastructure rather than focused engineering tooling.",
+    "summary": ""
+  },
+  {
+    "videoId": "0JZy5AuuQzc",
+    "title": "I Spent Two Years Building the Median — Hariprasad Sudharshan",
+    "selected": false,
+    "reasoning": "A niche solo-builder retrospective that is more philosophical reflection than actionable tooling or engineering practice.",
+    "summary": ""
+  },
+  {
+    "videoId": "tZycGA_Fbfo",
+    "title": "Paving the Road to Production: Governed Enterprise AI Agents — Harish Gaggar, Credit Karma",
+    "selected": true,
+    "reasoning": "Excellent practical engineering talk on moving autonomous AI agents into enterprise production with real-world infrastructure constraints.",
+    "summary": "Moving AI agents beyond simple prototypes requires robust handling of secrets, evaluations, memory, and containerized deployments. Credit Karma's paved path offers a practical blueprint for how modern backend engineers safely manage autonomous agents at scale."
+  },
+  {
+    "videoId": "4cWDNcfvjqM",
+    "title": "What happens when AI becomes superhuman in a domain",
+    "selected": false,
+    "reasoning": "Theoretical discussion about chess algorithms rather than applied software development or tooling.",
+    "summary": ""
+  },
+  {
+    "videoId": "sGCAW8TuwKI",
+    "title": "Great news: your AI written proof is garbage",
+    "selected": false,
+    "reasoning": "Academic math proofs and formal research discussion; falls squarely under excluded academic AI topics.",
+    "summary": ""
+  },
+  {
+    "videoId": "QBH-zvFrqgw",
+    "title": "What does AI need to do to be respected?",
+    "selected": false,
+    "reasoning": "High-level theoretical musing on benchmark problem sets and academic AI prestige.",
+    "summary": ""
+  },
+  {
+    "videoId": "kROxRHTYoL0",
+    "title": "Making money is basically a skills problem",
+    "selected": false,
+    "reasoning": "Superficial short serving primarily as a marketing funnel for a paid course.",
+    "summary": ""
+  },
+  {
+    "videoId": "9_l_xMvI7YY",
+    "title": "Planning feels productive, but it's not",
+    "selected": false,
+    "reasoning": "Generic productivity platitude in YouTube Shorts format.",
+    "summary": ""
+  },
+  {
+    "videoId": "i7G3bxEKut4",
+    "title": "What if your parents want a different life for you?",
+    "selected": false,
+    "reasoning": "Generic lifestyle advice short that does not align with core technical or professional goals.",
+    "summary": ""
+  },
+  {
+    "videoId": "qJplHFjyv2A",
+    "title": "📖 Explore custom voice narration with Gemini 3.8 Flash TTS",
+    "selected": false,
+    "reasoning": "Brief promotional teaser for a TTS demo rather than an educational engineering guide.",
+    "summary": ""
+  },
+  {
+    "videoId": "i3X7Fv0Z3Uc",
+    "title": "Turning raw hardware sensor data into music with Gemini",
+    "selected": false,
+    "reasoning": "A novelty hack project converting accelerometer data to audio, lacking practical fullstack relevance.",
+    "summary": ""
+  },
+  {
+    "videoId": "nSwmcs37Jd4",
+    "title": "Gemini 4 Argon in Antigravity",
+    "selected": true,
+    "reasoning": "Practical walkthrough of Google's agent-first software engineering platform, directly relevant to modern AI tooling.",
+    "summary": "See how frontier coding models are natively integrated into agentic IDEs to scaffold and build applications from prompt to execution. It provides a concrete look at how next-generation AI workflows are reshaping the developer environment."
+  },
+  {
+    "videoId": "2Ej3al5hT7w",
+    "title": "Perlu ke ambil special perils?",
+    "selected": false,
+    "reasoning": "Basic Malaysian car insurance tips; too narrow and consumer-focused rather than strategic finance or economics.",
+    "summary": ""
+  },
+  {
+    "videoId": "XSmvjdusV5g",
+    "title": "Nak modal tapi kena bagi saham?",
+    "selected": true,
+    "reasoning": "Explains equity dilution versus venture capital funding dynamics within the Malaysian startup and business landscape.",
+    "summary": "If you're curious about how tech ventures scale in Malaysia, understanding the tradeoff between equity dilution and venture capital is essential. Financial Faiz breaks down what founders actually give up when taking institutional funding."
+  },
+  {
+    "videoId": "1Ed8FIGdh8Y",
+    "title": "Emas pelaburan baik untuk anak?",
+    "selected": true,
+    "reasoning": "Directly touches Islamic finance and Malaysian wealth vehicles, contrasting physical gold against Tabung Haji, ASB, and SSPN.",
+    "summary": "Navigating long-term asset accumulation requires choosing between capital-growth vehicles like gold and structured Malaysian funds like Tabung Haji and ASB. This concise comparison clarifies risk and liquidity profiles for young Malaysian investors."
+  },
+  {
+    "videoId": "M_FNl5gNxHI",
+    "title": "Rahsia TikTok Live berkesan?",
+    "selected": false,
+    "reasoning": "Sponsored commercial short covering basic live-commerce seller tactics.",
+    "summary": ""
+  },
+  {
+    "videoId": "xQm3eFTvRDI",
+    "title": "Cabaran jual barang online",
+    "selected": false,
+    "reasoning": "Generic SME e-commerce return-logistics discussion sponsored by a telco.",
+    "summary": ""
+  },
+  {
+    "videoId": "0Hsjm1af8o8",
+    "title": "Taktik marketing berubah?",
+    "selected": false,
+    "reasoning": "Promotional short on basic digital marketing ad spend shifts.",
+    "summary": ""
+  },
+  {
+    "videoId": "RnbaL_XQ3ss",
+    "title": "#118 | The Responsibility of a Nepo Baby (Pierre Pang, Mamee CEO)",
+    "selected": true,
+    "reasoning": "In-depth corporate leadership interview exploring the operational transformation and generational stewardship of an iconic Malaysian brand.",
+    "summary": "Discover how Mamee-Double Decker navigated modern international expansion and supply chain modernization under current CEO Pierre Pang. It provides valuable corporate insights into how legacy Malaysian enterprises scale and adapt."
+  },
+  {
+    "videoId": "_SDAgAtx0j4",
+    "title": "#117 | Can Malaysia Afford AI? (Leon Jala)",
+    "selected": true,
+    "reasoning": "Perfect intersection of Malaysian macroeconomic policy, energy grid infrastructure, and national AI data center expansion.",
+    "summary": "Malaysia's race to become the region's AI data center hub places immense demand on national energy grids and water resources. This deep dive unpacks whether national energy initiatives can sustainably finance the physical reality of the AI boom."
+  },
+  {
+    "videoId": "gJKkedZa6G4",
+    "title": "#116 | Leadership Lessons from Shell's Country Chair (Siti Sulaiman)",
+    "selected": true,
+    "reasoning": "High-caliber executive career and leadership insights from one of Malaysia's prominent corporate energy leaders.",
+    "summary": "Follow the journey of Shell Malaysia’s Country Chair as she shares lessons on navigating international postings and leading capital-intensive organizations. It offers practical career perspectives on resilience and leadership inside major Malaysian industries."
+  },
+  {
+    "videoId": "q-odOrd130I",
+    "title": "Bank Malaysia Terkait Isu Jerebu",
+    "selected": false,
+    "reasoning": "Partisan parliamentary political soundbite concerning regional haze.",
+    "summary": ""
+  },
+  {
+    "videoId": "kkzKMC89jas",
+    "title": "\"People used to say Budget only focused on B40\" – Treasury Sec-gen Johan Merican | In The Studio",
+    "selected": true,
+    "reasoning": "Authoritative interview on Malaysian macroeconomic management, fiscal reform, tax policy, and GLC dependencies.",
+    "summary": "Get an insider's look into Malaysia's national fiscal framework directly from the Secretary-General of the Treasury. The discussion tackles tax restructuring, fuel subsidy targeting, and whether Malaysia relies too heavily on GLCs and GLICs to spur growth."
+  },
+  {
+    "videoId": "yqeg9RxhjX8",
+    "title": "Beli Matcha vs Lindung24",
+    "selected": false,
+    "reasoning": "Short explainer on SOCSO government insurance schemes; too basic for a developer's learning feed.",
+    "summary": ""
+  },
+  {
+    "videoId": "kS4KFOYoMRQ",
+    "title": "What Bad Bunny can teach us about investing | Marianna Meléndez Ruiz | TEDxHaverford College",
+    "selected": false,
+    "reasoning": "Generic TEDx talk; explicitly excluded by curation guidelines.",
+    "summary": ""
+  },
+  {
+    "videoId": "C7DJ8PqjGVE",
+    "title": "Getting Slower? It Might Not Be Aging. | J. Sawalla Guseh | TEDxBoston Salon",
+    "selected": false,
+    "reasoning": "Generic health TEDx talk; outside stated interests.",
+    "summary": ""
+  },
+  {
+    "videoId": "8ALp5AitM8k",
+    "title": "Synesthesia: How Seeing Sound in Color turned A Feeling into a Life | Corey Crossfield | TEDxUCLA",
+    "selected": false,
+    "reasoning": "Personal narrative TEDx talk; explicitly excluded.",
+    "summary": ""
+  },
+  {
+    "videoId": "iaJOGBZY0GM",
+    "title": "How Muslim Judges Responded to Domestic Abuse | Dr. Tesneem Alkiek",
+    "selected": false,
+    "reasoning": "Historical legal court review rather than a direct spiritual reminder or practical guidance.",
+    "summary": ""
+  },
+  {
+    "videoId": "YZF9KViKEl8",
+    "title": "How A Muslim Helps His Brother | Dr. Omar Suleiman",
+    "selected": true,
+    "reasoning": "Direct Islamic spiritual reminder linking the concept of rizq to professional support, referrals, and communal duty.",
+    "summary": "Dr. Omar Suleiman beautifully reframes the concept of tying your camel to include opening professional doors and sharing referrals for others seeking their rizq. It is an inspiring reminder of how faith and workplace networking intersect."
+  },
+  {
+    "videoId": "4A2CQn6YfJY",
+    "title": "Catch These Signs Before It’s Too Late | Imam Tom Facchine",
+    "selected": true,
+    "reasoning": "A concise, impactful Islamic reminder on guarding personal intentions, spiritual vigilance, and self-awareness.",
+    "summary": "Imam Tom Facchine breaks down the subtle rationalizations that gradually compromise personal integrity and spiritual focus. It offers a timely, introspective pause to recalibrate your mindset amid the daily hustle."
+  },
+  {
+    "videoId": "WfQyqt4w4pU",
+    "title": "What Loneliness Does to a Man's Heart",
+    "selected": false,
+    "reasoning": "Funnel content driving traffic to an aggressive private coaching sales page.",
+    "summary": ""
+  },
+  {
+    "videoId": "XypXrCuaG-4",
+    "title": "If You're Married and Still Fighting Lust, Watch This",
+    "selected": false,
+    "reasoning": "Promotional funnel video focused on relationship coaching calls.",
+    "summary": ""
+  },
+  {
+    "videoId": "Dyu3Ho10L5w",
+    "title": "Why Two People Who Love Each Other Still End Up Divorced",
+    "selected": false,
+    "reasoning": "Coaching funnel centered on marriage counseling and relationship coaching.",
+    "summary": ""
+  },
+  {
+    "videoId": "0PlOtbQIknk",
+    "title": "At Uber, 15% of PRs are from Minion",
+    "selected": false,
+    "reasoning": "Short teaser for a full podcast episode that is already included in full.",
+    "summary": ""
+  },
+  {
+    "videoId": "MDUYSMJmi8A",
+    "title": "Uber’s AI infra, from the inside",
+    "selected": true,
+    "reasoning": "Direct look at large-scale internal developer platforms, AI coding tools, and engineering infrastructure at Uber.",
+    "summary": "Take an engineering deep dive into the real internal developer tooling powering thousands of engineers at Uber, including custom AI dev assistants and ephemeral environments. For any fullstack developer, understanding how elite engineering organizations optimize developer velocity is gold."
+  },
+  {
+    "videoId": "19eqJQS1QfY",
+    "title": "\"The SLA is what you're going to get sued for on a breach\"",
+    "selected": false,
+    "reasoning": "A 30-second context-free podcast snippet on microservice SLAs.",
+    "summary": ""
+  },
+  {
+    "videoId": "mkN4uRZYPfs",
+    "title": "Lead Architect Reveals His Rules for Coding Agents",
+    "selected": true,
+    "reasoning": "In-depth, highly practical software architecture rules for collaborating effectively with autonomous coding agents.",
+    "summary": "Learn how a seasoned lead architect constructs project boundaries, rejects unreadable generated code, and scaffolds codebases for AI agents to succeed on the first pass. This will fundamentally elevate how you prompt and guide AI tools in your codebase."
+  },
+  {
+    "videoId": "CQMOwFIB2rw",
+    "title": "What happens when coding agents see your entire system",
+    "selected": false,
+    "reasoning": "A short promotional clip for a full episode that is already available.",
+    "summary": ""
+  },
+  {
+    "videoId": "NKvv5xHpxjE",
+    "title": "What the Best Engineers Built for Their Coding Agents",
+    "selected": true,
+    "reasoning": "Cutting-edge applied software engineering showing how Adyen connects coding agents to live traffic, git worktrees, and system observability.",
+    "summary": "Adyen’s engineering team demonstrates what happens when AI agents have visibility beyond isolated repositories into distributed system telemetry and live infrastructure. It is a masterclass in modern applied AI tooling and fullstack system design."
+  },
+  {
+    "videoId": "E_KNam3vrl8",
+    "title": "Visi AI Malaysia masih samar. Singapura sudah ada strategi dan peruntukan jelas.",
+    "selected": false,
+    "reasoning": "Bite-sized political short comparing Malaysia and Singapore AI roadmaps without deep technical substance.",
+    "summary": ""
+  },
+  {
+    "videoId": "enxd9p1tN9g",
+    "title": "EP215 | Analisis Belanjawan 2027",
+    "selected": true,
+    "reasoning": "Comprehensive Malaysian economic and policy analysis analyzing the national budget, fiscal priorities, and macro direction.",
+    "summary": "Khairy Jamaluddin and Shahril Hamdan dissect Malaysia's national budget, critiquing fiscal sustainability, targeted welfare, and national economic strategy. It provides high-context economic literacy tailored specifically to young Malaysian professionals."
+  },
+  {
+    "videoId": "IeXMLferiQM",
+    "title": "Bujang kena cukai, kahwin dapat pelepasan. Dah beranak tak reti jaga anak? Cukai Jantan Tak Guna! 💀",
+    "selected": false,
+    "reasoning": "Sensationalized comedy/political short complaining about tax brackets.",
+    "summary": ""
+  },
+  {
+    "videoId": "GAUWSmFmT3w",
+    "title": "WHY ARE YOU TYPING",
+    "selected": true,
+    "reasoning": "Actionable developer workflow productivity tip on using voice-to-text dictation with AI agents.",
+    "summary": "Typing complex instructions into AI coding tools creates an unnecessary cognitive bottleneck. Matt Pocock demonstrates how voice dictation and agent parsing dramatically accelerate your iteration speed and developer productivity."
+  },
+  {
+    "videoId": "fn3iRGgRuWU",
+    "title": "Give your agent a goal, and let it be creative",
+    "selected": true,
+    "reasoning": "Pragmatic engineering approach to agentic workflow design using test scorecards and verification loops.",
+    "summary": "Stop micromanaging every single code change by building autonomous verification scorecards that allow AI agents to iterate creatively toward defined objectives. It is a must-watch technique for engineers wanting to automate tedious implementation cycles."
+  },
+  {
+    "videoId": "djSbndoByr8",
+    "title": "Mutation testing is AWESOME",
+    "selected": true,
+    "reasoning": "Direct, practical fullstack testing technique using mutation testing in TypeScript to validate AI-generated test suites.",
+    "summary": "Writing tests with AI can give a false sense of security unless your test suite actually catches introduced bugs. This video introduces mutation testing with Stryker.js in TypeScript to stress-test your test coverage and build resilient software."
+  },
+  {
+    "videoId": "_hH7vnTWnq8",
+    "title": "Why the Aztecs Refused to Kill Cortés - Si Sheppard",
+    "selected": false,
+    "reasoning": "Historical trivia short; explicitly prohibited by the curation guidelines.",
+    "summary": ""
+  },
+  {
+    "videoId": "RUoY5GCdONY",
+    "title": "Nobody Knows Why the Plague Keeps Coming Back - Si Sheppard",
+    "selected": false,
+    "reasoning": "Historical trivia short; explicitly excluded.",
+    "summary": ""
+  },
+  {
+    "videoId": "Q3nhfMQLZdQ",
+    "title": "The Aztec Prince Who Helped Cortés Destroy His Own Empire - Si Sheppard",
+    "selected": false,
+    "reasoning": "Historical trivia short; explicitly excluded.",
+    "summary": ""
+  },
+  {
+    "videoId": "xn5RZKFgT84",
+    "title": "Israel vs. Palestine is actually a Narrative War",
+    "selected": false,
+    "reasoning": "Geopolitical commentary short; not aligned with direct spiritual reminders or software engineering.",
+    "summary": ""
+  },
+  {
+    "videoId": "ak-cmM84heQ",
+    "title": "\"Isr*el has already Lost the PR War\"",
+    "selected": false,
+    "reasoning": "Geopolitical soundbite short; not a fit for his core interests.",
+    "summary": ""
+  },
+  {
+    "videoId": "mYSdc3VGdOo",
+    "title": "\"I'm taking Isra*l to Supreme Court!\"",
+    "selected": false,
+    "reasoning": "Geopolitical legal activism short; outside defined scope.",
+    "summary": ""
+  },
+  {
+    "videoId": "Klcl8qEdMaw",
+    "title": "Alexandr Wang on what matters in an age of abundant intelligence",
+    "selected": false,
+    "reasoning": "Vague founder soundbite short without practical technical substance.",
+    "summary": ""
+  },
+  {
+    "videoId": "cp7mBZJkaCs",
+    "title": "What surprised PG about AI",
+    "selected": false,
+    "reasoning": "Short speculative musing from Paul Graham without technical application.",
+    "summary": ""
+  },
+  {
+    "videoId": "ofxAtQhV-xA",
+    "title": "How Jeetu Patel Runs Cisco Like the World’s Largest Startup",
+    "selected": false,
+    "reasoning": "Enterprise executive management conversation about corporate restructuring rather than junior developer tooling or career growth.",
+    "summary": ""
+  },
+  {
+    "videoId": "HdJxqW0-uZA",
+    "title": "The shock of doing nothing | Andrew Holecek",
+    "selected": false,
+    "reasoning": "Generic philosophical introspection video; outside target domains.",
+    "summary": ""
+  },
+  {
+    "videoId": "KtY6mDA1Ps4",
+    "title": "The hidden cost of ignoring your feelings | Lisa Damour",
+    "selected": false,
+    "reasoning": "Pop psychology short; generic self-help fluff.",
+    "summary": ""
+  },
+  {
     "videoId": "-nMXrAkhCm8",
     "title": "The 3 elements of stupidity | Jonny Thomson",
     "selected": false,
-    "reasoning": "A generic pop-philosophy YouTube Short that offers high-level musings rather than actionable career development, applied software engineering, or relevant Islamic content.",
+    "reasoning": "Generic pop philosophy short; irrelevant to core profile.",
     "summary": ""
   },
   {
-    "videoId": "1WHg1S4UV60",
-    "title": "How smart were T. Rex? | Steve Brusatte",
+    "videoId": "koNI5XO9a8M",
+    "title": "The Anti-Tech Bro on Who Gets to Decide AI’s Future | Vilas Dhar | Keris & Silicon EP06",
     "selected": false,
-    "reasoning": "Paleontology and dinosaur trivia that has no connection to software engineering, career growth, Malaysian economics, or Islamic finance.",
+    "reasoning": "High-level global philanthropic AI governance debate; lacks hands-on engineering applicability.",
     "summary": ""
   },
   {
-    "videoId": "9zJL0l99ejQ",
-    "title": "The theory that connects the origin of life to the rise of intelligence | Blaise Aguera y Arcas",
+    "videoId": "6VnoZCIawQM",
+    "title": "Confidence Without Scars: What AI Does to a Child Learning | Subtext x Keris & Silicon",
     "selected": false,
-    "reasoning": "Theoretical and speculative pop-science discussion on the origin of life and abstract intelligence, leaning heavily into academic and philosophical territory rather than practical AI tooling or applied software engineering.",
+    "reasoning": "Audio essay discussing child education and developmental psychology in the AI era.",
+    "summary": ""
+  },
+  {
+    "videoId": "Ms0tZaYK6h0",
+    "title": "Chinese tech is already cheaper. What if it gets better too?",
+    "selected": false,
+    "reasoning": "Short teaser on geopolitics and hardware pricing without technical analysis.",
     "summary": ""
   }
 ]
