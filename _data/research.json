@@ -44,7 +44,7 @@
         "Tech"
       ],
       "problem": "Small AI agents that run your computer fail often, and big models cost too much at every step.",
-      "fix": "LEASH calls the big model only if the small one seems unsure, matching Claude Opus 5 at 73.66% with 19.2% less cost.",
+      "fix": "LEASH calls the big model only when needed, matching Claude Opus 5 at 73.66% success with 19.2% less cost.",
       "practicalUseCase": "You can cut agent costs by calling the strong model only on risky steps.",
       "limitation": "Results come from one benchmark, OSWorld, so real tasks may behave differently.",
       "fullTextUrl": "https://huggingface.co/papers/2610.22280"
