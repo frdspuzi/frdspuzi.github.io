@@ -1,241 +1,215 @@
 {
   "videos": [
     {
-      "title": "Uber’s AI infra, from the inside",
-      "url": "https://www.youtube.com/watch?v=MDUYSMJmi8A",
-      "videoId": "MDUYSMJmi8A",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "While most teams assume adopting AI engineering is as simple as buying seats for an off-the-shelf coding assistant, Uber discovered that the model harness is trivial—the real secret to autonomous software agents shipping production code is a decade of battle-tested platform infrastructure. In this rare architectural breakdown, Uber's agentic AI lead pulls back the curtain on how they wired over 4,500 microservices directly into AI agents using internal MCP gateways, unified enterprise context graphs, and live production traffic replay. If you want a pragmatic, hype-free masterclass in how modern tech giants are actually operationalizing AI-native software engineering at scale, this interview is an essential watch.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
-      "timestamps": [
-        {
-          "startTime": 1770,
-          "endTime": 2050,
-          "topic": "MCP Gateway: Transforming Thousands of Microservices and APIs into LLM-Ready Tools"
-        },
-        {
-          "startTime": 2320,
-          "endTime": 2590,
-          "topic": "Uber Context Graph: Grounding Agents Across 100+ Enterprise Data and Asset Types"
-        },
-        {
-          "startTime": 3995,
-          "endTime": 4345,
-          "topic": "Capri: Replaying Real Production Traffic to Enable Autonomous Agent Bug Fixing"
-        }
-      ]
-    },
-    {
-      "title": "Your agent is a tactical tornado",
-      "url": "https://www.youtube.com/shorts/Vo33extKAeA",
-      "videoId": "Vo33extKAeA",
-      "channel": "Matt Pocock",
-      "category": "Tech & Engineering",
-      "summary": "AI coding assistants might feel like 10x developers because of how fast they churn out code, but left unchecked, they act as 'tactical tornadoes' that leave a trail of architectural destruction in your codebase. This breakdown reveals why AI agents are hardwired for short-term fixes rather than long-term health, and why your job must shift from typing code to acting as the long-term strategist. If you use AI to code and want to prevent catastrophic technical debt, this 85-second insight will fundamentally change how you prompt and manage your agents.",
-      "dateAdded": "2026-10-17T00:00:50.330Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 25,
-          "topic": "The 'tactical tornado' programmer archetype and why they are secretly dangerous"
-        },
-        {
-          "startTime": 25,
-          "endTime": 46,
-          "topic": "Tactical vs. strategic programming: Why working code is never enough"
-        },
-        {
-          "startTime": 46,
-          "endTime": 84,
-          "topic": "Why AI agents behave like tactical tornadoes and how you must act as the strategist"
-        }
-      ]
-    },
-    {
-      "title": "The secret to building robust frontend apps with agents",
-      "url": "https://www.youtube.com/shorts/r8FYE2ZOj0E",
-      "videoId": "r8FYE2ZOj0E",
-      "channel": "Matt Pocock",
-      "category": "Tech & Engineering",
-      "summary": "If AI coding agents keep breaking your React frontends, this 90-second workflow shift will completely transform your build process. Discover how switching to state reducers strips chaotic logic out of your UI, keeping components clean while making edge cases practically vanish. Watch to see the exact pattern that makes agent-generated code instantly more robust and lightning-fast to test.",
-      "dateAdded": "2026-10-17T00:00:50.330Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 41,
-          "topic": "The architecture of a reducer and how it handles UI actions"
-        },
-        {
-          "startTime": 41,
-          "endTime": 74,
-          "topic": "Separating state logic from React for painless, rapid testing"
-        },
-        {
-          "startTime": 74,
-          "endTime": 94,
-          "topic": "Why AI coding agents produce dramatically fewer bugs with reducers"
-        }
-      ]
-    },
-    {
-      "title": "How To Grow As a Junior Developer To Senior | 5 Tips",
-      "url": "https://www.youtube.com/watch?v=JoU_CZWOoo0",
-      "videoId": "JoU_CZWOoo0",
-      "channel": "Travis Media",
+      "title": "Best Software Engineering Career Advice of 2025",
+      "url": "https://www.youtube.com/watch?v=QCBoxmqijic",
+      "videoId": "QCBoxmqijic",
+      "channel": "Ryan Peterman",
       "category": "Discovery 🌍",
-      "summary": "Breaking out of the junior developer rut isn't about memorizing more coding syntax—it's mastering the communication, system-level breadth, and decisive problem-solving that get you trusted by leadership. This video delivers a practical, five-step roadmap to overcome imposter syndrome, stand out in team meetings, and systematically bridge the gap to senior engineering roles. Watch this to stop feeling stuck in the trenches and learn how to proactively position yourself for promotions and high-impact work.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
+      "summary": "Reaching the peak of your career early can be an unexpected trap that leads to burnout and existential crisis if you haven't defined what truly matters outside of work. In this eye-opening compilation, CTOs and distinguished engineers from tech giants like Meta, Google, and Amazon pull back the curtain on the counterintuitive lessons they wish they knew decades ago. Watching this masterclass in career wisdom will save you years of wasted grind by teaching you how to build real influence and ride high-growth waves without sacrificing your life along the way.",
+      "dateAdded": "2026-10-17T23:36:14.068Z",
       "timestamps": [
         {
-          "startTime": 20,
-          "endTime": 75,
-          "topic": "The Four Stages of Problem-Solving: From Junior to Senior"
+          "startTime": 75,
+          "endTime": 170,
+          "topic": "The 'Dog Catching the Car' Career Trap: Why Hitting Goals Early Can Lead to Crisis"
         },
         {
-          "startTime": 258,
-          "endTime": 360,
-          "topic": "Actionable Habits to Level Up Soft Skills and Communication"
+          "startTime": 535,
+          "endTime": 635,
+          "topic": "Don't Be the Best, Be the Only: Standing Out by Bridging Skillsets"
         },
         {
-          "startTime": 470,
-          "endTime": 535,
-          "topic": "Cultivating Decisiveness to Build Authority and Trust"
+          "startTime": 652,
+          "endTime": 745,
+          "topic": "The Career Escalator: Why Choosing High-Growth Companies Beats Climbing the Ladder"
         }
       ]
     },
     {
-      "title": "4 things I’ve learned as a junior software engineer",
-      "url": "https://www.youtube.com/watch?v=vvzuWN_sFMQ",
-      "videoId": "vvzuWN_sFMQ",
-      "channel": "joowee",
+      "title": "If I could give advice to myself when starting as a software engineer",
+      "url": "https://www.youtube.com/watch?v=QIyc6NKS5J0",
+      "videoId": "QIyc6NKS5J0",
+      "channel": "ThePrimeagen",
       "category": "Discovery 🌍",
-      "summary": "The biggest trap holding early-career developers back isn't weak coding skills—it is staying silent and stuck out of fear of looking incompetent. This candid guide reveals the exact communication frameworks and mental shifts needed to unblock yourself fast, turn brutal code reviews into career fuel, and conquer imposter syndrome. Watch this to stop sweating every production bug and start building a resilient, long-term software engineering career.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
+      "summary": "After nearly two decades in tech, veteran engineer ThePrimeagen reveals the single biggest mindset trap that quietly stalled his early career: dismissing powerful tools as obsolete simply because they felt uncomfortable and had a steep learning curve. From bombing an interview by handwriting an entire Java program on a whiteboard when a single terminal command would have solved the problem, he illustrates how avoiding friction keeps programmers permanently held back. Watching this brutally honest reality check will save you years of ego-driven stagnation and fundamentally reshape how you approach mastering new skills.",
+      "dateAdded": "2026-10-17T23:36:14.068Z",
       "timestamps": [
         {
-          "startTime": 72,
-          "endTime": 155,
-          "topic": "The formula for asking smart questions without annoying senior engineers"
+          "startTime": 110,
+          "endTime": 205,
+          "topic": "The ego trap: Dismissing unfamiliar tools and ignoring the long-term dividend of friction"
         },
         {
-          "startTime": 155,
-          "endTime": 245,
-          "topic": "Handling harsh pull request feedback and the reality of shipping bugs to production"
+          "startTime": 205,
+          "endTime": 275,
+          "topic": "The humbling whiteboard interview: Writing a custom Java crawler instead of using grep"
         },
         {
-          "startTime": 325,
-          "endTime": 425,
-          "topic": "Beating imposter syndrome and understanding junior developer job security"
+          "startTime": 275,
+          "endTime": 345,
+          "topic": "Why diverse problem-solving perspectives truly separate juniors from seniors"
         }
       ]
     },
     {
-      "title": "Paving the Road to Production: Governed Enterprise AI Agents — Harish Gaggar, Credit Karma",
-      "url": "https://www.youtube.com/watch?v=tZycGA_Fbfo",
-      "videoId": "tZycGA_Fbfo",
+      "title": "An AI Agent Got Its User Banned From Resy — Keycard, JPMorgan Chase & AAuth",
+      "url": "https://www.youtube.com/watch?v=IavxrdVnwXM",
+      "videoId": "IavxrdVnwXM",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Most AI agents fail in production not because of weak models, but because they lack the enterprise guardrails needed to survive real-world deployment. Intuit Senior Staff Engineer Sharish Goger reveals the architectural blueprint to bridge that gap—headlined by a context optimizer that slashes enterprise token consumption by up to 90% and a centralized MCP gateway that prevents unauthorized data access. If you are building autonomous agents and want to transition from fragile prototypes to secure, production-grade systems, this talk is essential viewing.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
+      "summary": "If you are giving AI agents access to real-world APIs and enterprise databases, standard protocols like OAuth are a catastrophic security mismatch waiting to wipe your production environment. In this panel, the co-creator of OAuth alongside leading enterprise architects reveal how 'intent-based runtime authorization' and isolating an agent's reasoning from its execution credentials solves the rogue-agent dilemma. Watch this to learn the exact architectural blueprint required to unlock true autonomous capability without falling into the trap of human consent fatigue.",
+      "dateAdded": "2026-10-17T23:36:14.068Z",
       "timestamps": [
         {
-          "startTime": 260,
-          "endTime": 495,
-          "topic": "Automating agent CI/CD and cloud infrastructure via an internal developer portal"
+          "startTime": 195,
+          "endTime": 270,
+          "topic": "Why OAuth and static scopes fail catastrophically for autonomous agents"
         },
         {
-          "startTime": 590,
-          "endTime": 720,
-          "topic": "Securing tool execution with an enterprise MCP gateway and token authentication"
+          "startTime": 1235,
+          "endTime": 1325,
+          "topic": "Why human-in-the-loop breaks at scale and the necessity of supervising agents"
         },
         {
-          "startTime": 1470,
-          "endTime": 1650,
-          "topic": "Context pruning and deduplication demo delivering 90% LLM token savings"
+          "startTime": 1655,
+          "endTime": 1835,
+          "topic": "The 'Brain vs. Hands' architecture: Enforcing bounds via egress proxies and dynamic tool removal"
         }
       ]
     },
     {
-      "title": "Gemini 4 Argon in Antigravity",
-      "url": "https://www.youtube.com/watch?v=nSwmcs37Jd4",
-      "videoId": "nSwmcs37Jd4",
-      "channel": "Google for Developers",
+      "title": "How to Know If Your AI Agent Is Any Good: Evals With Phoenix & Claude — Laurie Voss, Arize AI",
+      "url": "https://www.youtube.com/watch?v=SHMCGrNJJGc",
+      "videoId": "SHMCGrNJJGc",
+      "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "This video pitches an astonishing vision of agent-first development, demonstrating AI orchestrating subagents to sculpt intricate 3D worlds, design physical retro consoles, and turn a simple desk photo into a playable racing game. However, take these extraordinary claims with heavy skepticism: featuring fine-print disclaimers about simulated footage and references to fictional or unreleased tools like 'Gemini 4 Argon' and 'Nano Banana,' this presentation is a speculative concept reel rather than currently available software. It is worth watching to visualize where AI workflow design may be heading, provided you view its wild technical promises through a critical lens.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
+      "summary": "Shipping AI features on 'looks good to me' vibes is a ticking time bomb—a single prompt tweak can quietly break your entire agent without warning until a customer catches it. In this workshop, former npm executive Laurie Voss demystifies how to replace manual guesswork with automated evaluation pipelines using traces, deterministic code checks, and LLM judges. If you want to stop playing prompt whack-a-mole and confidently deploy regression-tested AI agents straight through CI/CD, this session gives you the exact blueprint.",
+      "dateAdded": "2026-10-17T23:36:14.068Z",
       "timestamps": [
         {
-          "startTime": 8,
-          "endTime": 23,
-          "topic": "Autonomous 3D pagoda generation using multi-agent critique loops"
+          "startTime": 300,
+          "endTime": 455,
+          "topic": "Why Traditional Unit Tests Fail for AI and the Role of Evals"
         },
         {
-          "startTime": 24,
-          "endTime": 36,
-          "topic": "Transforming a desk photo into a playable 3D racing game"
+          "startTime": 512,
+          "endTime": 685,
+          "topic": "Code vs. LLM vs. Human Evals: Picking the Right Tool for the Job"
         },
         {
-          "startTime": 36,
-          "endTime": 50,
-          "topic": "End-to-end retro console hardware and AI game engine design"
+          "startTime": 5090,
+          "endTime": 5355,
+          "topic": "Testing Your Tests: Auditing LLM Judges with Golden Datasets"
         }
       ]
     },
     {
-      "title": "Nak modal tapi kena bagi saham?",
-      "url": "https://www.youtube.com/shorts/XSmvjdusV5g",
-      "videoId": "XSmvjdusV5g",
+      "title": "Stop Chatting With Spreadsheets — Francesco Galletta & Felippe Felisola Caso, Monzo",
+      "url": "https://www.youtube.com/watch?v=e9-br9hveRI",
+      "videoId": "e9-br9hveRI",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Relying on raw AI prompts for high-stakes financial calculations is a dangerous trap, because stochastic models inevitably botch arithmetic and face zero real-world consequences when their numbers are wrong. In this masterclass, fintech engineers reveal how to move beyond fragile 'please make no mistakes' prompts by building an opinionated agent harness that combines LLM reasoning with deterministic code, verifiable audit receipts, and high-signal decision gates. If you want to stop babysitting AI chatbots and deploy automated financial analysts you can actually stake your reputation on, you cannot afford to miss this blueprint.",
+      "dateAdded": "2026-10-17T23:36:14.068Z",
+      "timestamps": [
+        {
+          "startTime": 2350,
+          "endTime": 2660,
+          "topic": "Why prompting LLMs for calculations fails and how harnesses enforce deterministic consistency"
+        },
+        {
+          "startTime": 4030,
+          "endTime": 4325,
+          "topic": "The accountability principle: Replacing micro-approvals with high-signal decision gates"
+        },
+        {
+          "startTime": 5620,
+          "endTime": 5820,
+          "topic": "Framework for deciding when to build a custom agent harness versus using off-the-shelf tools"
+        }
+      ]
+    },
+    {
+      "title": "Brutally Honest Advice About Productivity in 26 Minutes",
+      "url": "https://www.youtube.com/watch?v=BNRfzI6E1Es",
+      "videoId": "BNRfzI6E1Es",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "If you feel guilty for abandoning your color-coded calendars and to-do apps, stop blaming your lack of willpower—it turns out outlier performers aren't more disciplined, they simply structure their environment so they face fewer temptations. In this refreshingly honest breakdown, a best-selling productivity author pulls back the curtain on how elaborate systems are secretly just an emotional shield to avoid real work, and confesses why influencers are financially incentivized to keep you overcomplicating your life. Watch this video to strip away the digital clutter, cut through the noise with a single 'seasonal priority,' and learn how to get back on track effortlessly every time your routine falls apart.",
+      "dateAdded": "2026-10-17T23:36:14.068Z",
+      "timestamps": [
+        {
+          "startTime": 30,
+          "endTime": 85,
+          "topic": "Why procrastination is an emotional regulation problem, not a time management issue"
+        },
+        {
+          "startTime": 1140,
+          "endTime": 1170,
+          "topic": "The science of willpower: Why disciplined people actually rely on their environment"
+        },
+        {
+          "startTime": 1320,
+          "endTime": 1405,
+          "topic": "An influencer's confession: Why complex systems fail and simplicity scales"
+        }
+      ]
+    },
+    {
+      "title": "Kenapa loan rumah ada MRTT?",
+      "url": "https://www.youtube.com/shorts/TqS-2WbPP6s",
+      "videoId": "TqS-2WbPP6s",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Think giving up equity to venture capital is always the smartest path? This insider breakdown reveals the blunt truth: VCs aren't looking for steady, safe profits—they only back high-stakes disruptors engineered to scale massively within three to five years or crash to zero. Watch this to instantly determine whether your startup actually warrants VC money or if you should stick to bootstrapping and grants.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
+      "summary": "Did you know your banker or property agent might slash your MRTT coverage down to just 5 years on a 35-year home loan just to push your loan approval through and hit their sales quota? This video reveals how mortgage players tweak insurance tenures to serve their own closing targets, leaving your family dangerously exposed down the road. If you are buying a home or servicing a mortgage, watching this will ensure you don't blindly sign off on a policy that fails to protect you.",
+      "dateAdded": "2026-10-17T23:36:14.068Z",
       "timestamps": [
         {
-          "startTime": 12,
-          "endTime": 55,
-          "topic": "Bootstrapping vs. giving away equity: The fundamental founder dilemma"
+          "startTime": 28,
+          "endTime": 80,
+          "topic": "What MRTT actually is and how loan balance reduction works"
         },
         {
-          "startTime": 71,
-          "endTime": 130,
-          "topic": "How VCs evaluate disruptive technology and industry value chains"
+          "startTime": 89,
+          "endTime": 131,
+          "topic": "Why bankers quietly shorten your MRTT tenure to close deals"
         },
         {
-          "startTime": 135,
-          "endTime": 164,
-          "topic": "The high-risk, hyper-growth profile that venture capitalists actually fund"
+          "startTime": 131,
+          "endTime": 168,
+          "topic": "How upfront MRTT premium costs can catch homebuyers off guard"
         }
       ]
     },
     {
-      "title": "Emas pelaburan baik untuk anak?",
-      "url": "https://www.youtube.com/shorts/1Ed8FIGdh8Y",
-      "videoId": "1Ed8FIGdh8Y",
+      "title": "Perlu ke ambil special perils?",
+      "url": "https://www.youtube.com/shorts/2Ej3al5hT7w",
+      "videoId": "2Ej3al5hT7w",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Think gold or property is the ultimate foolproof investment for your child's future? Unchecked price swings and severe liquidity traps can easily lock up your capital or wipe out short-term value right when your family needs cash most. Watch this breakdown to understand the crucial trade-offs between gold, ASB, property, and EPF so you never gamble away your child's financial safety net.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
+      "summary": "Skipping flood coverage to save RM200 a year could leave you paying off tens of thousands in bank loans on a vehicle that's already sitting in a scrap heap. This video exposes why standard comprehensive auto insurance leaves you completely unprotected against natural disasters and breaks down the real financial danger of treating protection as wasted money. Watch this before renewing your road tax to discover why the 'special perils' add-on is the single most critical safeguard against sudden financial ruin.",
+      "dateAdded": "2026-10-17T23:36:14.068Z",
       "timestamps": [
         {
-          "startTime": 20,
-          "endTime": 58,
-          "topic": "Why ASB and Tabung Haji beat gold for absolute capital preservation"
+          "startTime": 26,
+          "endTime": 52,
+          "topic": "Why standard auto insurance ignores flood damage without the special perils rider"
         },
         {
-          "startTime": 90,
-          "endTime": 118,
-          "topic": "Buying rental property for your children: balancing returns against risk"
+          "startTime": 121,
+          "endTime": 213,
+          "topic": "The catastrophic financial cost of being penny-wise on flood protection"
         },
         {
-          "startTime": 118,
-          "endTime": 150,
-          "topic": "The severe liquidity trap of parking long-term savings in EPF (KWSP)"
+          "startTime": 214,
+          "endTime": 244,
+          "topic": "How insurance liberalization allows you to shop around for affordable coverage"
         }
       ]
     },
     {
-      "title": "#118 | The Responsibility of a Nepo Baby (Pierre Pang, Mamee CEO)",
+      "title": "#118 | Building A Global Snack and Wellness Platfrom (Pierre Pang, Mamee CEO)",
       "url": "https://www.youtube.com/watch?v=RnbaL_XQ3ss",
       "videoId": "RnbaL_XQ3ss",
       "channel": "The Game Of Impossible",
@@ -339,57 +313,83 @@
       ]
     },
     {
-      "title": "How A Muslim Helps His Brother | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/YZF9KViKEl8",
-      "videoId": "YZF9KViKEl8",
+      "title": "Umar (RA) was offered to pray in a church, he refused | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/uINXL4JxJK4",
+      "videoId": "uINXL4JxJK4",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Instead of merely 'tying your own camel,' true faith and communal strength lie in actively helping someone else tie theirs. If our communities can send dozens of idle messages in group chats every day, we can effortlessly redirect that energy into building powerful professional networks that connect people to jobs. Watch this punchy 28-second wake-up call to discover how playing a role in someone else's rizq transforms casual messaging into life-changing impact.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
+      "summary": "Think Muslims would seize and erase other faiths' holy sites if they held absolute power in Jerusalem? History already ran that exact experiment—and the historic truth completely shatters modern political talking points. Watch this powerful, fast-paced breakdown to see how Caliph Umar protected Christian and Jewish worship in 638, exposing the glaring double standard governing Al-Aqsa today.",
+      "dateAdded": "2026-10-17T23:36:14.068Z",
       "timestamps": [
         {
-          "startTime": 0,
-          "endTime": 10,
-          "topic": "Moving beyond individual survival to help others tie their camel"
-        },
-        {
-          "startTime": 10,
-          "endTime": 20,
-          "topic": "Turning idle WhatsApp chats into powerful job networks"
-        },
-        {
           "startTime": 20,
-          "endTime": 27,
-          "topic": "Our communal responsibility in facilitating rizq (provision)"
+          "endTime": 59,
+          "topic": "Why Caliph Umar deliberately refused to pray inside Christianity's holiest church"
+        },
+        {
+          "startTime": 59,
+          "endTime": 88,
+          "topic": "Safeguarding Christian holy sites and welcoming expelled Jewish families back to Jerusalem"
+        },
+        {
+          "startTime": 88,
+          "endTime": 105,
+          "topic": "The modern double standard behind armed access and forced 'sharing' at Al-Aqsa"
         }
       ]
     },
     {
-      "title": "Catch These Signs Before It’s Too Late | Imam Tom Facchine",
-      "url": "https://www.youtube.com/shorts/4A2CQn6YfJY",
-      "videoId": "4A2CQn6YfJY",
+      "title": "\"Take Your Payback.\" | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/c7-cwhvtYrE",
+      "videoId": "c7-cwhvtYrE",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Ever wonder how principled people slowly slip into destructive habits without even noticing? This eye-opening breakdown reveals the five insidious mental traps—from disguising harmful sins as 'just being authentic' to mistaking social approval for truth—that quietly erode your values. Watch this to arm yourself with the blueprint to catch rogue passing thoughts before they snowball into irreversible regret.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
+      "summary": "Minutes away from the most critical, outnumbered battle in Islamic history, a soldier demanded personal payback from the Prophet Muhammad (pbuh)—and what happened next completely redefines true leadership. Instead of pulling rank or brushing it aside during an existential crisis, the Prophet proved that absolute justice can never be compromised for convenience. Watch this video to uncover the profound moral standard that reveals why unwavering integrity is the real secret behind divine victory.",
+      "dateAdded": "2026-10-17T23:36:14.068Z",
       "timestamps": [
         {
           "startTime": 0,
           "endTime": 20,
-          "topic": "Redefining morality, shame around obedience, and the exception trap"
+          "topic": "A high-stakes demand for payback on the brink of battle"
         },
         {
           "startTime": 20,
-          "endTime": 38,
-          "topic": "Disguising sin as authenticity and relying on social validation"
+          "endTime": 48,
+          "topic": "How ordinary leaders excuse injustice versus prophetic humility"
         },
         {
-          "startTime": 38,
-          "endTime": 57,
-          "topic": "How unchecked passing thoughts snowball into destructive actions"
+          "startTime": 48,
+          "endTime": 69,
+          "topic": "Why unwavering justice is the prerequisite for victory"
+        }
+      ]
+    },
+    {
+      "title": "How the Prophet ﷺ Built Disciplined Men",
+      "url": "https://www.youtube.com/watch?v=cRvdqtIgAM8",
+      "videoId": "cRvdqtIgAM8",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "The reason most modern men struggle spiritually and emotionally isn't a lack of willpower—it's the fatal mistake of trying to carry life and faith in isolation. This video reveals the forgotten relational blueprint of the Prophet's companions, demonstrating why true brotherhood must be a deliberate, scheduled discipline rather than a passive feeling left to chance. If you want to move past superficial small talk and build an unbreakable circle of mentors, peers, and accountability partners, this breakdown is an essential watch.",
+      "dateAdded": "2026-10-17T23:36:14.068Z",
+      "timestamps": [
+        {
+          "startTime": 77,
+          "endTime": 190,
+          "topic": "Why authentic brotherhood requires deliberate structure rather than passive chemistry"
+        },
+        {
+          "startTime": 442,
+          "endTime": 645,
+          "topic": "The three-tier relationship model: mentors above, peers beside, and mentees below"
+        },
+        {
+          "startTime": 710,
+          "endTime": 965,
+          "topic": "Ditching 'image management' to create genuine spiritual vulnerability and accountability"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-10-17T00:01:31.593Z"
+  "lastUpdated": "2026-10-17T23:42:17.454Z"
 }
