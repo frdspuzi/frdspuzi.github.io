@@ -1,6 +1,84 @@
 {
   "videos": [
     {
+      "title": "Uber’s AI infra, from the inside",
+      "url": "https://www.youtube.com/watch?v=MDUYSMJmi8A",
+      "videoId": "MDUYSMJmi8A",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "While most teams assume adopting AI engineering is as simple as buying seats for an off-the-shelf coding assistant, Uber discovered that the model harness is trivial—the real secret to autonomous software agents shipping production code is a decade of battle-tested platform infrastructure. In this rare architectural breakdown, Uber's agentic AI lead pulls back the curtain on how they wired over 4,500 microservices directly into AI agents using internal MCP gateways, unified enterprise context graphs, and live production traffic replay. If you want a pragmatic, hype-free masterclass in how modern tech giants are actually operationalizing AI-native software engineering at scale, this interview is an essential watch.",
+      "dateAdded": "2026-10-16T00:00:01.933Z",
+      "timestamps": [
+        {
+          "startTime": 1770,
+          "endTime": 2050,
+          "topic": "MCP Gateway: Transforming Thousands of Microservices and APIs into LLM-Ready Tools"
+        },
+        {
+          "startTime": 2320,
+          "endTime": 2590,
+          "topic": "Uber Context Graph: Grounding Agents Across 100+ Enterprise Data and Asset Types"
+        },
+        {
+          "startTime": 3995,
+          "endTime": 4345,
+          "topic": "Capri: Replaying Real Production Traffic to Enable Autonomous Agent Bug Fixing"
+        }
+      ]
+    },
+    {
+      "title": "Your agent is a tactical tornado",
+      "url": "https://www.youtube.com/shorts/Vo33extKAeA",
+      "videoId": "Vo33extKAeA",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "AI coding assistants might feel like 10x developers because of how fast they churn out code, but left unchecked, they act as 'tactical tornadoes' that leave a trail of architectural destruction in your codebase. This breakdown reveals why AI agents are hardwired for short-term fixes rather than long-term health, and why your job must shift from typing code to acting as the long-term strategist. If you use AI to code and want to prevent catastrophic technical debt, this 85-second insight will fundamentally change how you prompt and manage your agents.",
+      "dateAdded": "2026-10-17T00:00:50.330Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 25,
+          "topic": "The 'tactical tornado' programmer archetype and why they are secretly dangerous"
+        },
+        {
+          "startTime": 25,
+          "endTime": 46,
+          "topic": "Tactical vs. strategic programming: Why working code is never enough"
+        },
+        {
+          "startTime": 46,
+          "endTime": 84,
+          "topic": "Why AI agents behave like tactical tornadoes and how you must act as the strategist"
+        }
+      ]
+    },
+    {
+      "title": "The secret to building robust frontend apps with agents",
+      "url": "https://www.youtube.com/shorts/r8FYE2ZOj0E",
+      "videoId": "r8FYE2ZOj0E",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "If AI coding agents keep breaking your React frontends, this 90-second workflow shift will completely transform your build process. Discover how switching to state reducers strips chaotic logic out of your UI, keeping components clean while making edge cases practically vanish. Watch to see the exact pattern that makes agent-generated code instantly more robust and lightning-fast to test.",
+      "dateAdded": "2026-10-17T00:00:50.330Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 41,
+          "topic": "The architecture of a reducer and how it handles UI actions"
+        },
+        {
+          "startTime": 41,
+          "endTime": 74,
+          "topic": "Separating state logic from React for painless, rapid testing"
+        },
+        {
+          "startTime": 74,
+          "endTime": 94,
+          "topic": "Why AI coding agents produce dramatically fewer bugs with reducers"
+        }
+      ]
+    },
+    {
       "title": "How To Grow As a Junior Developer To Senior | 5 Tips",
       "url": "https://www.youtube.com/watch?v=JoU_CZWOoo0",
       "videoId": "JoU_CZWOoo0",
@@ -311,85 +389,7 @@
           "topic": "How unchecked passing thoughts snowball into destructive actions"
         }
       ]
-    },
-    {
-      "title": "Uber’s AI infra, from the inside",
-      "url": "https://www.youtube.com/watch?v=MDUYSMJmi8A",
-      "videoId": "MDUYSMJmi8A",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "While most teams assume adopting AI engineering is as simple as buying seats for an off-the-shelf coding assistant, Uber discovered that the model harness is trivial—the real secret to autonomous software agents shipping production code is a decade of battle-tested platform infrastructure. In this rare architectural breakdown, Uber's agentic AI lead pulls back the curtain on how they wired over 4,500 microservices directly into AI agents using internal MCP gateways, unified enterprise context graphs, and live production traffic replay. If you want a pragmatic, hype-free masterclass in how modern tech giants are actually operationalizing AI-native software engineering at scale, this interview is an essential watch.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
-      "timestamps": [
-        {
-          "startTime": 1770,
-          "endTime": 2050,
-          "topic": "MCP Gateway: Transforming Thousands of Microservices and APIs into LLM-Ready Tools"
-        },
-        {
-          "startTime": 2320,
-          "endTime": 2590,
-          "topic": "Uber Context Graph: Grounding Agents Across 100+ Enterprise Data and Asset Types"
-        },
-        {
-          "startTime": 3995,
-          "endTime": 4345,
-          "topic": "Capri: Replaying Real Production Traffic to Enable Autonomous Agent Bug Fixing"
-        }
-      ]
-    },
-    {
-      "title": "Lead Architect Reveals His Rules for Coding Agents",
-      "url": "https://www.youtube.com/watch?v=mkN4uRZYPfs",
-      "videoId": "mkN4uRZYPfs",
-      "channel": "Beyond Coding",
-      "category": "Tech & Engineering",
-      "summary": "Most developers let AI agents brute-force code until their project inevitably hits a wall of hidden duplication and architecture rot—because while AI is great at spitting out code, it cannot engineer an application. Elite engineer Carlos Calbom reveals why true 100x agentic engineering requires doing manual architectural scaffolding upfront and strictly forbidding your primary agent from ever touching files. If you want to stop generating disposable AI slop and learn how top-tier engineers build complex, enduring systems with AI, this masterclass is an essential watch.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
-      "timestamps": [
-        {
-          "startTime": 725,
-          "endTime": 875,
-          "topic": "Why manual scaffolding makes agentic engineers 100x more effective"
-        },
-        {
-          "startTime": 3475,
-          "endTime": 3660,
-          "topic": "The architectural rule: why the primary agent must never write code"
-        },
-        {
-          "startTime": 4285,
-          "endTime": 4405,
-          "topic": "Treating AI like unsupervised juniors and why senior architecture is irreplaceable"
-        }
-      ]
-    },
-    {
-      "title": "What the Best Engineers Built for Their Coding Agents",
-      "url": "https://www.youtube.com/watch?v=NKvv5xHpxjE",
-      "videoId": "NKvv5xHpxjE",
-      "channel": "Beyond Coding",
-      "category": "Tech & Engineering",
-      "summary": "What if your AI coding agents didn't just generate isolated functions, but could map your entire enterprise architecture in real time and coordinate with each other so they never step on each other's code? Adyen staff engineer Matt Jones reveals how his team built 'Architect'—a powerhouse graph system ingesting 7 million spans per second with Apache Flink and Neo4j—alongside 'Atrium', a coordination layer allowing developers to safely multitask with five autonomous agents in parallel. If you want a masterclass on turning generative AI from a basic autocomplete tool into an autonomous, self-healing software engineering engine, this breakdown is essential viewing.",
-      "dateAdded": "2026-10-09T01:34:23.810Z",
-      "timestamps": [
-        {
-          "startTime": 50,
-          "endTime": 165,
-          "topic": "Scaling Multi-Agent Workflows: How 'Atrium' prevents AI agents from conflicting on shared code"
-        },
-        {
-          "startTime": 1015,
-          "endTime": 1225,
-          "topic": "Scaling to 7 Million Spans/Sec: Replacing Kafka Connect with Apache Flink to ingest production telemetry"
-        },
-        {
-          "startTime": 1605,
-          "endTime": 1765,
-          "topic": "Connecting Traces to Code: Linking runtime telemetry with method-level ASTs for automated release gating"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-10-16T00:06:07.335Z"
+  "lastUpdated": "2026-10-17T00:01:31.593Z"
 }
