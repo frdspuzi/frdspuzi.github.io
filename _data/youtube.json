@@ -1,132 +1,54 @@
 {
   "videos": [
     {
-      "title": "Best Software Engineering Career Advice of 2025",
-      "url": "https://www.youtube.com/watch?v=QCBoxmqijic",
-      "videoId": "QCBoxmqijic",
-      "channel": "Ryan Peterman",
-      "category": "Discovery 🌍",
-      "summary": "Reaching the peak of your career early can be an unexpected trap that leads to burnout and existential crisis if you haven't defined what truly matters outside of work. In this eye-opening compilation, CTOs and distinguished engineers from tech giants like Meta, Google, and Amazon pull back the curtain on the counterintuitive lessons they wish they knew decades ago. Watching this masterclass in career wisdom will save you years of wasted grind by teaching you how to build real influence and ride high-growth waves without sacrificing your life along the way.",
-      "dateAdded": "2026-10-17T23:36:14.068Z",
-      "timestamps": [
-        {
-          "startTime": 75,
-          "endTime": 170,
-          "topic": "The 'Dog Catching the Car' Career Trap: Why Hitting Goals Early Can Lead to Crisis"
-        },
-        {
-          "startTime": 535,
-          "endTime": 635,
-          "topic": "Don't Be the Best, Be the Only: Standing Out by Bridging Skillsets"
-        },
-        {
-          "startTime": 652,
-          "endTime": 745,
-          "topic": "The Career Escalator: Why Choosing High-Growth Companies Beats Climbing the Ladder"
-        }
-      ]
-    },
-    {
-      "title": "If I could give advice to myself when starting as a software engineer",
-      "url": "https://www.youtube.com/watch?v=QIyc6NKS5J0",
-      "videoId": "QIyc6NKS5J0",
-      "channel": "ThePrimeagen",
-      "category": "Discovery 🌍",
-      "summary": "After nearly two decades in tech, veteran engineer ThePrimeagen reveals the single biggest mindset trap that quietly stalled his early career: dismissing powerful tools as obsolete simply because they felt uncomfortable and had a steep learning curve. From bombing an interview by handwriting an entire Java program on a whiteboard when a single terminal command would have solved the problem, he illustrates how avoiding friction keeps programmers permanently held back. Watching this brutally honest reality check will save you years of ego-driven stagnation and fundamentally reshape how you approach mastering new skills.",
-      "dateAdded": "2026-10-17T23:36:14.068Z",
-      "timestamps": [
-        {
-          "startTime": 110,
-          "endTime": 205,
-          "topic": "The ego trap: Dismissing unfamiliar tools and ignoring the long-term dividend of friction"
-        },
-        {
-          "startTime": 205,
-          "endTime": 275,
-          "topic": "The humbling whiteboard interview: Writing a custom Java crawler instead of using grep"
-        },
-        {
-          "startTime": 275,
-          "endTime": 345,
-          "topic": "Why diverse problem-solving perspectives truly separate juniors from seniors"
-        }
-      ]
-    },
-    {
-      "title": "An AI Agent Got Its User Banned From Resy — Keycard, JPMorgan Chase & AAuth",
-      "url": "https://www.youtube.com/watch?v=IavxrdVnwXM",
-      "videoId": "IavxrdVnwXM",
+      "title": "Why AI Agents Still Won't Pay for Anything — Jan Curn, Apify",
+      "url": "https://www.youtube.com/watch?v=-AOxpwVeIWw",
+      "videoId": "-AOxpwVeIWw",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "If you are giving AI agents access to real-world APIs and enterprise databases, standard protocols like OAuth are a catastrophic security mismatch waiting to wipe your production environment. In this panel, the co-creator of OAuth alongside leading enterprise architects reveal how 'intent-based runtime authorization' and isolating an agent's reasoning from its execution credentials solves the rogue-agent dilemma. Watch this to learn the exact architectural blueprint required to unlock true autonomous capability without falling into the trap of human consent fatigue.",
-      "dateAdded": "2026-10-17T23:36:14.068Z",
+      "summary": "Despite Wall Street forecasting a multi-trillion-dollar autonomous AI economy, real transaction data reveals that hyped agentic payment protocols are currently ghost towns with virtually zero adoption. In this eye-opening breakdown, Apify's founder cuts through the fintech noise to expose why autonomous agents are losing to ordinary API keys and highlights the hidden billing and trust traps holding back the industry. If you are building or selling AI tools, watch this to understand the exact infrastructure unlocks required before machines can genuinely start spending money on their own.",
+      "dateAdded": "2026-10-18T23:48:08.977Z",
       "timestamps": [
         {
-          "startTime": 195,
-          "endTime": 270,
-          "topic": "Why OAuth and static scopes fail catastrophically for autonomous agents"
+          "startTime": 435,
+          "endTime": 515,
+          "topic": "The adoption reality check: Exposing near-zero transaction volume on leading agent protocols"
         },
         {
-          "startTime": 1235,
-          "endTime": 1325,
-          "topic": "Why human-in-the-loop breaks at scale and the necessity of supervising agents"
+          "startTime": 560,
+          "endTime": 640,
+          "topic": "Why autonomous agents are competing with simple API keys instead of credit cards"
         },
         {
-          "startTime": 1655,
-          "endTime": 1835,
-          "topic": "The 'Brain vs. Hands' architecture: Enforcing bounds via egress proxies and dynamic tool removal"
+          "startTime": 1105,
+          "endTime": 1195,
+          "topic": "The pay-per-use billing trap: Solving the agent double-spending problem"
         }
       ]
     },
     {
-      "title": "How to Know If Your AI Agent Is Any Good: Evals With Phoenix & Claude — Laurie Voss, Arize AI",
-      "url": "https://www.youtube.com/watch?v=SHMCGrNJJGc",
-      "videoId": "SHMCGrNJJGc",
+      "title": "Stop Telling Agents How — Dan Barrett, Raymond Weitekamp & Jose Montes de Oca, OpenProse",
+      "url": "https://www.youtube.com/watch?v=7T-gldvgfpo",
+      "videoId": "7T-gldvgfpo",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Shipping AI features on 'looks good to me' vibes is a ticking time bomb—a single prompt tweak can quietly break your entire agent without warning until a customer catches it. In this workshop, former npm executive Laurie Voss demystifies how to replace manual guesswork with automated evaluation pipelines using traces, deterministic code checks, and LLM judges. If you want to stop playing prompt whack-a-mole and confidently deploy regression-tested AI agents straight through CI/CD, this session gives you the exact blueprint.",
-      "dateAdded": "2026-10-17T23:36:14.068Z",
+      "summary": "Chatting with AI and wrestling with brittle prompt engineering is rapidly becoming obsolete—the real future of automation lies in declarative contracts. This presentation introduces Open Prose, a breakthrough paradigm that uses simple Markdown files to define end states, effectively turning LLMs into autonomous compilers that orchestrate complex, event-driven multi-agent workflows. If you want to stop babysitting conversational bots and start deploying self-correcting, enterprise-grade AI systems that run reliably in the background, you need to watch this video.",
+      "dateAdded": "2026-10-18T23:48:08.977Z",
       "timestamps": [
         {
-          "startTime": 300,
-          "endTime": 455,
-          "topic": "Why Traditional Unit Tests Fail for AI and the Role of Evals"
+          "startTime": 220,
+          "endTime": 340,
+          "topic": "Declarative Contracts: Shifting from Prompting 'How' to Declaring 'What'"
         },
         {
-          "startTime": 512,
-          "endTime": 685,
-          "topic": "Code vs. LLM vs. Human Evals: Picking the Right Tool for the Job"
+          "startTime": 360,
+          "endTime": 570,
+          "topic": "Why Scalable Agent Systems Must Be Event-Driven and Pure Markdown, Not Chat"
         },
         {
-          "startTime": 5090,
-          "endTime": 5355,
-          "topic": "Testing Your Tests: Auditing LLM Judges with Golden Datasets"
-        }
-      ]
-    },
-    {
-      "title": "Stop Chatting With Spreadsheets — Francesco Galletta & Felippe Felisola Caso, Monzo",
-      "url": "https://www.youtube.com/watch?v=e9-br9hveRI",
-      "videoId": "e9-br9hveRI",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Relying on raw AI prompts for high-stakes financial calculations is a dangerous trap, because stochastic models inevitably botch arithmetic and face zero real-world consequences when their numbers are wrong. In this masterclass, fintech engineers reveal how to move beyond fragile 'please make no mistakes' prompts by building an opinionated agent harness that combines LLM reasoning with deterministic code, verifiable audit receipts, and high-signal decision gates. If you want to stop babysitting AI chatbots and deploy automated financial analysts you can actually stake your reputation on, you cannot afford to miss this blueprint.",
-      "dateAdded": "2026-10-17T23:36:14.068Z",
-      "timestamps": [
-        {
-          "startTime": 2350,
-          "endTime": 2660,
-          "topic": "Why prompting LLMs for calculations fails and how harnesses enforce deterministic consistency"
-        },
-        {
-          "startTime": 4030,
-          "endTime": 4325,
-          "topic": "The accountability principle: Replacing micro-approvals with high-signal decision gates"
-        },
-        {
-          "startTime": 5620,
-          "endTime": 5820,
-          "topic": "Framework for deciding when to build a custom agent harness versus using off-the-shelf tools"
+          "startTime": 1330,
+          "endTime": 1515,
+          "topic": "Live Demo: Eliminating AI Self-Confirmation Bias with Adversarial Review Agents"
         }
       ]
     },
@@ -183,32 +105,6 @@
       ]
     },
     {
-      "title": "Perlu ke ambil special perils?",
-      "url": "https://www.youtube.com/shorts/2Ej3al5hT7w",
-      "videoId": "2Ej3al5hT7w",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Skipping flood coverage to save RM200 a year could leave you paying off tens of thousands in bank loans on a vehicle that's already sitting in a scrap heap. This video exposes why standard comprehensive auto insurance leaves you completely unprotected against natural disasters and breaks down the real financial danger of treating protection as wasted money. Watch this before renewing your road tax to discover why the 'special perils' add-on is the single most critical safeguard against sudden financial ruin.",
-      "dateAdded": "2026-10-17T23:36:14.068Z",
-      "timestamps": [
-        {
-          "startTime": 26,
-          "endTime": 52,
-          "topic": "Why standard auto insurance ignores flood damage without the special perils rider"
-        },
-        {
-          "startTime": 121,
-          "endTime": 213,
-          "topic": "The catastrophic financial cost of being penny-wise on flood protection"
-        },
-        {
-          "startTime": 214,
-          "endTime": 244,
-          "topic": "How insurance liberalization allows you to shop around for affordable coverage"
-        }
-      ]
-    },
-    {
       "title": "#118 | Building A Global Snack and Wellness Platfrom (Pierre Pang, Mamee CEO)",
       "url": "https://www.youtube.com/watch?v=RnbaL_XQ3ss",
       "videoId": "RnbaL_XQ3ss",
@@ -257,32 +153,6 @@
           "startTime": 735,
           "endTime": 840,
           "topic": "Strategic Stewardship: Measuring AI investment by lasting productive capacity, not just headline billions"
-        }
-      ]
-    },
-    {
-      "title": "#116 | Leadership Lessons from Shell's Country Chair (Siti Sulaiman)",
-      "url": "https://www.youtube.com/watch?v=gJKkedZa6G4",
-      "videoId": "gJKkedZa6G4",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "True leadership breakthrough doesn't come from projecting flawless authority—it begins when you treat tough feedback as a gift and build deep human trust before demanding big results. Shell Malaysia Country Chair Siti Sulaiman shares battle-tested frameworks like 'Me, Us, It' and reveals how vulnerability transforms resistance into unstoppable team momentum. If you want practical insights on navigating high-stakes change and elevating your leadership from technical mastery to strategic influence, this conversation is essential viewing.",
-      "dateAdded": "2026-09-22T00:20:43.515Z",
-      "timestamps": [
-        {
-          "startTime": 900,
-          "endTime": 1025,
-          "topic": "The value of outsider perspective and 'unturning stones'"
-        },
-        {
-          "startTime": 1380,
-          "endTime": 1540,
-          "topic": "Embracing critical feedback as a gift to lead with vulnerability"
-        },
-        {
-          "startTime": 1630,
-          "endTime": 1830,
-          "topic": "The 'Me, Us, It' framework for radical trust and accountability"
         }
       ]
     },
@@ -389,7 +259,137 @@
           "topic": "Ditching 'image management' to create genuine spiritual vulnerability and accountability"
         }
       ]
+    },
+    {
+      "title": "What Loneliness Does to a Man's Heart",
+      "url": "https://www.youtube.com/watch?v=WfQyqt4w4pU",
+      "videoId": "WfQyqt4w4pU",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "Many men believe retreating into their \"man cave\" keeps them grounded, but chronic isolation is actually blinding you to your own spiritual decline and emotional burnout. This video reveals why authentic brotherhood is a biological and spiritual necessity—acting as a vital mirror to keep your blind spots in check before you damage your marriage or snap at your children. If you find yourself withdrawing from community and carrying life's weight completely alone, watching this will fundamentally reframe how you protect your mental health and family.",
+      "dateAdded": "2026-10-18T23:48:08.978Z",
+      "timestamps": [
+        {
+          "startTime": 68,
+          "endTime": 205,
+          "topic": "The Mirror Effect: Why men drift spiritually without honest accountability"
+        },
+        {
+          "startTime": 340,
+          "endTime": 490,
+          "topic": "The Unguarded Heart: How isolation leaves you vulnerable to destructive habits"
+        },
+        {
+          "startTime": 502,
+          "endTime": 605,
+          "topic": "The Hidden Cost: Why bottling up stress damages your marriage and children"
+        }
+      ]
+    },
+    {
+      "title": "Uber’s AI infra, from the inside",
+      "url": "https://www.youtube.com/watch?v=MDUYSMJmi8A",
+      "videoId": "MDUYSMJmi8A",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Giving an AI model a prompt is easy, but getting autonomous agents to reliably write, test, and ship enterprise software without breaking production is the real engineering battleground. In this rare behind-the-scenes breakdown of Uber’s internal stack, you'll discover how 15% of their production code is already authored by AI agents powered by live traffic replays, enterprise context graphs, and self-healing sandboxes. If you want a pragmatic, hype-free blueprint for how modern tech giants are actually operationalizing AI-native software development, this conversation is an essential watch.",
+      "dateAdded": "2026-10-18T23:48:08.978Z",
+      "timestamps": [
+        {
+          "startTime": 2320,
+          "endTime": 2565,
+          "topic": "The Context Graph: Mapping Enterprise Knowledge So Agents Never Hallucinate Architecture"
+        },
+        {
+          "startTime": 3040,
+          "endTime": 3210,
+          "topic": "Minion: How Uber Automates 15% of Production PRs via Slack and Background Coding Agents"
+        },
+        {
+          "startTime": 4000,
+          "endTime": 4340,
+          "topic": "Capture & Replay (Capri): Giving AI Agents Live Production Traffic to Self-Validate Fixes"
+        }
+      ]
+    },
+    {
+      "title": "Lead Architect Reveals His Rules for Coding Agents",
+      "url": "https://www.youtube.com/watch?v=mkN4uRZYPfs",
+      "videoId": "mkN4uRZYPfs",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "If you are blindly letting AI write your code, you aren't building sustainable software—you are simply creating fragile applications doomed for architectural collapse. Veteran engineer Carlos Calbom breaks down the counterintuitive blueprint elite developers use to truly 100x their output: forbidding your primary agent from ever touching files directly, manually scaffolding project boundaries first, and treating LLMs like eager junior coders who need strict guardrails. Watch this masterclass before writing another prompt to stop wrestling with broken context and start building robust, production-grade software with agents.",
+      "dateAdded": "2026-10-18T23:48:08.978Z",
+      "timestamps": [
+        {
+          "startTime": 725,
+          "endTime": 875,
+          "topic": "Why brute-force AI fails and how architectural scaffolding creates 100x engineers"
+        },
+        {
+          "startTime": 3460,
+          "endTime": 3660,
+          "topic": "Why your primary AI agent should be strictly forbidden from touching code"
+        },
+        {
+          "startTime": 3675,
+          "endTime": 3860,
+          "topic": "Why AI excels at one-shot builds but collapses during iterative refactoring"
+        }
+      ]
+    },
+    {
+      "title": "EP215 | Analisis Belanjawan 2027",
+      "url": "https://www.youtube.com/watch?v=enxd9p1tN9g",
+      "videoId": "enxd9p1tN9g",
+      "channel": "Keluar Sekejap",
+      "category": "General Ideas",
+      "summary": "Think Malaysia's record-breaking national budget is an outright economic triumph? Former minister Khairy Jamaluddin and Shahril Hamdan blow the lid off the government's fiscal sleight of hand, revealing how a 'two-book' accounting maneuver quietly leans on public trust funds like EPF, KWAP, and Tabung Haji to keep the official deficit artificially low. If you want to cut through pre-election spin and discover what the minimum wage hikes, tax adjustments, and off-balance-sheet spending truly mean for your financial future, this insider critique is an absolute must-watch.",
+      "dateAdded": "2026-10-18T23:48:08.978Z",
+      "timestamps": [
+        {
+          "startTime": 1140,
+          "endTime": 1480,
+          "topic": "M40 Tax Relief & RM2,000 Minimum Wage: Real Relief or Election Optics?"
+        },
+        {
+          "startTime": 1970,
+          "endTime": 2250,
+          "topic": "The AI Policy Gap: Why Malaysia Risks Falling Far Behind Singapore"
+        },
+        {
+          "startTime": 3395,
+          "endTime": 3900,
+          "topic": "The 'Two Books' Illusion: Shifting National Expenditure onto Retirement and Sovereign Funds"
+        }
+      ]
+    },
+    {
+      "title": "Your agent is a tactical tornado",
+      "url": "https://www.youtube.com/shorts/Vo33extKAeA",
+      "videoId": "Vo33extKAeA",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "AI coding assistants aren't replacing software engineers—they're acting like hyperactive \"tactical tornadoes\" that churn out quick fixes while quietly leaving behind a trail of technical debt. If you don't actively step into the role of the strategic architect, relying on AI will slowly wreck your codebase's future. Watch this video to discover how treating AI as a tactical tool—while you own the high-level design—will make you an indispensable developer.",
+      "dateAdded": "2026-10-18T23:48:08.978Z",
+      "timestamps": [
+        {
+          "startTime": 11,
+          "endTime": 48,
+          "topic": "The 'tactical tornado' programmer vs. strategic code health"
+        },
+        {
+          "startTime": 48,
+          "endTime": 65,
+          "topic": "Why AI models are naturally trained to be tactical tornadoes"
+        },
+        {
+          "startTime": 65,
+          "endTime": 85,
+          "topic": "The engineer's true role: becoming the strategist guiding the agent"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-17T23:42:17.454Z"
+  "lastUpdated": "2026-10-18T23:51:39.803Z"
 }
