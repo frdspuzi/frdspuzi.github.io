@@ -1,27 +1,449 @@
 {
   "posts": [
     {
-      "name": "nestd.ai",
-      "tagline": "Turn property photos into listing descriptions with AI",
-      "url": "https://www.producthunt.com/products/nestd-ai?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "website": "https://www.producthunt.com/r/UR3KXNAYC7J6MK?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
-      "votesCount": 0,
-      "dailyRank": null,
-      "iconUrl": "https://ph-files.imgix.net/d0498a5f-1369-4688-be7c-330b44933a14.png?auto=format",
+      "name": "NitroStack",
+      "tagline": "Build, test, and deploy MCP servers in one place",
+      "url": "https://www.producthunt.com/products/nitrostack?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/NFV7LZ6PHSL5AT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 272,
+      "dailyRank": 1,
+      "iconUrl": "https://ph-files.imgix.net/435e7137-2641-4c1c-98eb-f5b3728fd0a8.jpeg?auto=format",
       "makerNames": [
-        "Robert Michalak"
+        "Abhishek Dutta",
+        "Hemant Jadhav",
+        "Satyam Soni",
+        "Sharvari Raut",
+        "Pallav Tripathi",
+        "Abhijit Tewari",
+        "Shubham Singh",
+        "Pablo Jimenez",
+        "Abhishek Pandit",
+        "Manish Sharma"
       ],
       "makerAvatarUrls": [
-        "https://ph-avatars.imgix.net/6801412/6a1a9625-9ad2-401c-8b54-5f2202d826b9.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+        "https://ph-avatars.imgix.net/9418690/0c3327d8-fdf2-4148-a3d9-9513e8517817.png?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/10302997/d2c203dc-f85d-4209-8509-394956f8cac0.png?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/3687569/a20bbf6b-bc91-4404-ac45-aa4281e4f7f7.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/4659793/32c101cc-cf96-4ae3-89ef-512b6fa609f0.png?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/10304845/25e37e0d-591d-4abd-9a23-4ce7bad48534.png?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/10305241/16748386-146f-4f38-b2d4-c3ab009e5017.png?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/10305338/3c6f564c-138a-4596-8458-bc323b5d7f79.png?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/10353032/d1365550-2c03-4873-ae98-2e5ed0701f58.png?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/9434867/4de001a4-ef40-48ae-820f-fdcc92cf7ea4.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original",
+        "https://ph-avatars.imgix.net/4386220/21251895-d4dd-4e46-9e9a-d04faee302bd.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
       ],
       "topics": [
-        "Writing",
-        "SaaS",
+        "Open Source",
+        "Developer Tools",
         "Artificial Intelligence"
       ],
-      "hook": "Nestd.ai generates written property descriptions from photos. You upload photos of a home or apartment. The tool reviews the pictures and writes clear marketing text. It is made for real estate agents and property managers.",
+      "hook": "NitroStack helps you create, test, and host MCP servers in one unified platform. MCP stands for Model Context Protocol. This standard protocol lets AI models connect safely to your private tools and databases. The platform gives you a single dashboard to inspect requests and monitor live traffic.",
+      "personalization": "This provides a clean testing ground if you build custom MCP tools for your applied AI workflows."
+    },
+    {
+      "name": "Caldera",
+      "tagline": "Your Obsidian vault as a living profile and linked garden",
+      "url": "https://www.producthunt.com/products/caldera?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/2JSRELYQXYA53W?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 175,
+      "dailyRank": 2,
+      "iconUrl": "https://ph-files.imgix.net/9ddfe38e-133a-4257-8d46-60ee70a63150.png?auto=format",
+      "makerNames": [
+        "Michael Jones"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/541465/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
+        "Notes",
+        "GitHub"
+      ],
+      "hook": "Caldera turns your Obsidian notes into a public website. Obsidian is a desktop application that stores your notes as plain markdown files. Caldera publishes these connected notes as an interactive digital garden. Readers can explore your linked thoughts and personal profile directly in a browser.",
+      "personalization": ""
+    },
+    {
+      "name": "Notion: Context for your agents",
+      "tagline": "Switch AI agents without re-explaining your work",
+      "url": "https://www.producthunt.com/products/notion?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/6JUMUPF3NCHFPT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 157,
+      "dailyRank": 3,
+      "iconUrl": "https://ph-files.imgix.net/ff3e2acf-884a-4f4c-a383-6edfe3de0d88.png?auto=format",
+      "makerNames": [
+        "Simon Last"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/731624/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
+        "Artificial Intelligence",
+        "Notion"
+      ],
+      "hook": "This feature connects your Notion workspace directly to external AI agents. An AI agent is software that performs tasks autonomously using language models. The integration gives agents read and write access to your team documentation. You do not need to copy and paste background information into every prompt.",
+      "personalization": "Useful to inspect if you benchmark how different coding agents handle shared project context."
+    },
+    {
+      "name": "Emochi",
+      "tagline": "Voice journal to understand yourself through art and science",
+      "url": "https://www.producthunt.com/products/emochi-2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/YAJULXSMGNIKDO?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 146,
+      "dailyRank": 4,
+      "iconUrl": "https://ph-files.imgix.net/9a76b94d-5022-4931-ac22-2e629f56fecd.gif?auto=format",
+      "makerNames": [
+        "Vanessa Tam"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10239550/original.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "iOS",
+        "Health & Fitness",
+        "Artificial Intelligence"
+      ],
+      "hook": "Emochi is an audio journaling application for your phone. You speak your thoughts aloud to record a journal entry. The app analyzes your voice tone and words to track your mood patterns over time. It then generates visual art to represent how you felt during the day.",
+      "personalization": ""
+    },
+    {
+      "name": "Train with Pasta",
+      "tagline": "A personal trainer powered by Apple Intelligence",
+      "url": "https://www.producthunt.com/products/train-with-pasta?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/RCYFVIP3UANWOT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 126,
+      "dailyRank": 5,
+      "iconUrl": "https://ph-files.imgix.net/5bc5e36c-9f15-48c4-9d90-c8a6f8f89879.png?auto=format",
+      "makerNames": [
+        "Tim Shim"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/14259/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "iOS",
+        "Health & Fitness",
+        "Artificial Intelligence"
+      ],
+      "hook": "Train with Pasta is an iOS fitness application that creates custom exercise plans. It uses on-device artificial intelligence to build workout routines for your schedule. The app tracks your completed sets and adjusts your target weights automatically. All health data stays on your personal device.",
+      "personalization": ""
+    },
+    {
+      "name": "LooGo",
+      "tagline": "Find public restrooms fast",
+      "url": "https://www.producthunt.com/products/loogo?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/6QTQ2YZVZFK4KE?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 111,
+      "dailyRank": 6,
+      "iconUrl": "https://ph-files.imgix.net/fcbf3f90-30cd-44f5-862c-04da334ed6b6.png?auto=format",
+      "makerNames": [
+        "Jakub Pavlů"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10339470/733e7b8c-3ba4-424b-a0e7-7388157c62f4.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Android",
+        "Travel",
+        "Maps"
+      ],
+      "hook": "LooGo helps people locate nearby public restrooms on a map. Users can filter results by cleanliness, wheelchair access, and baby changing stations. The community submits reviews and updates the operational hours of each stall. The app works on mobile devices to give fast walking directions.",
+      "personalization": ""
+    },
+    {
+      "name": "Craft Agents",
+      "tagline": "The world's most powerful agents, with the UX they deserve",
+      "url": "https://www.producthunt.com/products/craft-agents?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/ERP56R5DH2SM47?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 107,
+      "dailyRank": 7,
+      "iconUrl": "https://ph-files.imgix.net/d2dc3a33-894c-4ad6-ba3c-22994aa482fe.png?auto=format",
+      "makerNames": [
+        "Gyula Halmos"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10354981/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Open Source",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ],
+      "hook": "Craft Agents is an open-source desktop interface for interacting with autonomous software agents. It gives you a clean visual workspace to manage agent tasks, files, and permissions. You can pause an agent to approve its terminal commands before execution. It connects to multiple model providers through standard application programming interfaces.",
+      "personalization": "A helpful interface to test and inspect agent behavior when evaluating local developer workflows."
+    },
+    {
+      "name": "Ultracite v8",
+      "tagline": "The linter and formatter for agentic development",
+      "url": "https://www.producthunt.com/products/ultracite?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/E3YR3RCT4JCACA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 106,
+      "dailyRank": 8,
+      "iconUrl": "https://ph-files.imgix.net/54b6ab70-0eae-45f3-9020-762f6b00867f.png?auto=format",
+      "makerNames": [
+        "Hayden Bleasel"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/106725/ad5b7b41-fcaa-4e00-b1d0-4e84aeefef80.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Open Source",
+        "Developer Tools",
+        "GitHub"
+      ],
+      "hook": "Ultracite is a fast code linter and formatter designed for AI coding assistants. A linter checks your source code for programmatic errors and style bugs. This tool enforces strict code rules so that AI-generated pull requests do not break your repository standards. It runs quickly inside continuous integration pipelines.",
+      "personalization": "Directly relevant if you want automated guardrails to audit code produced by AI coding tools."
+    },
+    {
+      "name": "GPU Terminal by Context.dev",
+      "tagline": "Compare GPU rental prices across cloud providers",
+      "url": "https://www.producthunt.com/products/context-dev?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/DF6JU33ZTEEQI3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 99,
+      "dailyRank": 9,
+      "iconUrl": "https://ph-files.imgix.net/67d3c38f-e5ee-4be9-97b1-8eda63e24a80.png?auto=format",
+      "makerNames": [
+        "Beer van der Drift"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/1960777/fe18b9e3-2d65-46e7-9e78-08e103724eca.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Open Source",
+        "Developer Tools",
+        "Artificial Intelligence"
+      ],
+      "hook": "GPU Terminal compares on-demand rental prices for graphics processing units across many cloud providers. A GPU is specialized computer hardware required to run modern artificial intelligence models. The web tool displays live hourly rates, hardware availability, and memory sizes. Developers can pick the cheapest host for their workloads.",
+      "personalization": ""
+    },
+    {
+      "name": "Unfenced",
+      "tagline": "Land for sale that actually borders public land",
+      "url": "https://www.producthunt.com/products/unfenced?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/PXFKGSHHKBKW2P?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 89,
+      "dailyRank": 10,
+      "iconUrl": "https://ph-files.imgix.net/fed47e71-63f6-43ce-8616-c1a8aad8e2e7.png?auto=format",
+      "makerNames": [
+        "David Clayton"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10299929/397d052d-340e-44c8-8236-d3d82509ac9a.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Home",
+        "Maps",
+        "Outdoors"
+      ],
+      "hook": "Unfenced is a property search engine that finds private land bordering public parks and reserves. It combines real estate listings with government boundary data. Outdoor enthusiasts can browse acreage that offers direct backyard access to public wilderness. The platform highlights parcel sizes and zoning restrictions.",
+      "personalization": ""
+    },
+    {
+      "name": "Spiralens",
+      "tagline": "Golden ratio camera that tells you where to move your phone",
+      "url": "https://www.producthunt.com/products/spiralens?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/2O36K2KKQC6THL?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 87,
+      "dailyRank": 11,
+      "iconUrl": "https://ph-files.imgix.net/61ae0883-8052-4596-b6a3-299732ca4549.png?auto=format",
+      "makerNames": [
+        "Mehmet"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/10233955/a28401de-1cae-4659-b837-6cf8c20a466d.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Android",
+        "Photo editing"
+      ],
+      "hook": "Spiralens is a camera application that guides you to frame photos using the golden ratio. The golden ratio is a mathematical proportion that creates visually balanced images. On-screen arrows tell you how to rotate and position your phone in real time. The app captures the shot once your composition aligns.",
+      "personalization": ""
+    },
+    {
+      "name": "Draper",
+      "tagline": "Validate, plan, and launch a business, one step at a time.",
+      "url": "https://www.producthunt.com/products/draper?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/SLX5LIXCHR32E2?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 86,
+      "dailyRank": 12,
+      "iconUrl": "https://ph-files.imgix.net/82d12dea-a060-4c42-bc30-aaea2426e55d.png?auto=format",
+      "makerNames": [
+        "Tom Hill"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/9691339/158d1223-0551-4598-bf2f-a0b12b1aff99.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Branding",
+        "Maker Tools",
+        "Startup Lessons"
+      ],
+      "hook": "Draper is an interactive checklist for founders who want to start a company. It breaks startup creation into small practical steps such as customer interviews and market sizing. The software prompts you to test your core assumptions before you write code. It also tracks your launch milestones in a single dashboard.",
+      "personalization": ""
+    },
+    {
+      "name": "Earnote",
+      "tagline": "Lecture & meeting notes, written on your device",
+      "url": "https://www.producthunt.com/products/earnote?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/L7MNFYD4ZHX6E6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 82,
+      "dailyRank": 13,
+      "iconUrl": "https://ph-files.imgix.net/e7f89ef0-430b-494b-9cdd-be358ec5e0b0.png?auto=format",
+      "makerNames": [],
+      "makerAvatarUrls": [],
+      "topics": [
+        "Productivity",
+        "Open Source",
+        "Education"
+      ],
+      "hook": "Earnote transcribes spoken lectures and meetings directly on your computer. It uses a local speech recognition model to convert spoken audio into text. Because processing happens on your device, your private audio recordings never leave your machine. You can search your transcripts and export structured summaries.",
+      "personalization": ""
+    },
+    {
+      "name": "Step 5 Preview",
+      "tagline": "600B open weights, trained for long-running agents",
+      "url": "https://www.producthunt.com/products/step-3-5-flash?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/43SXMMGUSWZP6U?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 81,
+      "dailyRank": 14,
+      "iconUrl": "https://ph-files.imgix.net/87e367fb-62a8-4a12-a2b5-512820906ff7.svg?auto=format",
+      "makerNames": [],
+      "makerAvatarUrls": [],
+      "topics": [
+        "Open Source",
+        "Artificial Intelligence"
+      ],
+      "hook": "Step 5 Preview is a massive open-weight artificial intelligence model with 600 billion parameters. Parameters are the internal numerical weights that define how an AI model makes predictions. The creators trained this model specifically to handle complex multi-step tasks over long execution sessions. Developers can download and run the model weights on private clusters.",
+      "personalization": "Worth tracking if you evaluate how open-weight models handle structured prompts for autonomous tasks."
+    },
+    {
+      "name": "Salience",
+      "tagline": "See every request to your website and how it responds.",
+      "url": "https://www.producthunt.com/products/salience?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/7LLDB2DFOQWGAZ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 80,
+      "dailyRank": 15,
+      "iconUrl": "https://ph-files.imgix.net/9042a8e1-9fc2-4114-bb2f-3936890b6eea.png?auto=format",
+      "makerNames": [
+        "Carl Hendy"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/9580205/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Analytics",
+        "Marketing",
+        "Artificial Intelligence"
+      ],
+      "hook": "Salience records every incoming network request to your web application. It logs request headers, status codes, and server response times in real time. Fullstack developers can spot broken API endpoints and slow database queries quickly. The dashboard highlights sudden traffic spikes from automated bots.",
+      "personalization": ""
+    },
+    {
+      "name": "Korinotch",
+      "tagline": "Your MacBook notch, turned into a command center",
+      "url": "https://www.producthunt.com/products/korinotch?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/YQDXLXVWKZMVKW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 79,
+      "dailyRank": 16,
+      "iconUrl": "https://ph-files.imgix.net/2192e831-2401-47d6-9ca5-ae325f792eff.png?auto=format",
+      "makerNames": [],
+      "makerAvatarUrls": [],
+      "topics": [
+        "Mac",
+        "Productivity",
+        "Developer Tools"
+      ],
+      "hook": "Korinotch is a macOS utility that turns the MacBook screen notch into an interactive menu. You can hover your cursor over the notch to see active music players, system stats, and timers. The tool lets developers assign custom shortcut actions to the notch area. It hides automatically when not in use.",
+      "personalization": ""
+    },
+    {
+      "name": "Parrot",
+      "tagline": "Smart Meeting Assistant for Mac that helps during the call ",
+      "url": "https://www.producthunt.com/products/parrot-10?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/ZQX2QDSQ6XQ7QN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 77,
+      "dailyRank": 17,
+      "iconUrl": "https://ph-files.imgix.net/e7005282-756f-42dd-ae01-82c9c985e5ff.png?auto=format",
+      "makerNames": [
+        "Uygar Turantekin"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/1396423/45c65cf6-bfff-4b31-bb65-e74e63c95d4b.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Mac",
+        "Meetings",
+        "Artificial Intelligence"
+      ],
+      "hook": "Parrot is a Mac assistant that listens to your live video meetings. It takes structured meeting notes and flags agreed action items as people speak. The software runs locally on macOS to protect confidential client conversations. After the call finishes, it exports summaries to your project management tools.",
+      "personalization": ""
+    },
+    {
+      "name": "CrewTower Mod for Claude Code",
+      "tagline": "Talk to Claude Code right from your MacBook notch",
+      "url": "https://www.producthunt.com/products/crew-tower?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/NMSK3UAZW7HJX4?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 63,
+      "dailyRank": 18,
+      "iconUrl": "https://ph-files.imgix.net/7477b32b-92b8-48fc-ada5-ac5f374b5b16.png?auto=format",
+      "makerNames": [
+        "Said Altan"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/9584970/original.jpeg?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Developer Tools",
+        "Artificial Intelligence",
+        "Menu Bar Apps"
+      ],
+      "hook": "CrewTower Mod is a macOS menu bar app for Claude Code. Claude Code is a command-line developer tool made by Anthropic. This mod lets you check status updates, token consumption, and agent progress directly from your screen notch. You can approve file edits without switching terminal tabs.",
+      "personalization": "A neat utility to streamline your daily terminal workflow if you actively test Claude Code."
+    },
+    {
+      "name": "NEWCV.IO",
+      "tagline": "Stand out. Get interviews.",
+      "url": "https://www.producthunt.com/products/newcv?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/U3KKYF3ODKU6MB?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 19,
+      "dailyRank": 19,
+      "iconUrl": "https://ph-files.imgix.net/46760e48-d147-4d7f-9684-6005f360b9ec.png?auto=format",
+      "makerNames": [
+        "Simar Malhi"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/7864839/50c23a0a-6af6-4c05-bf58-bc8a43d4fe41.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
+        "Artificial Intelligence",
+        "Career"
+      ],
+      "hook": "NEWCV.IO is a web application that helps job applicants write and format their resumes. The platform scans job descriptions and suggests bullet points that match required technical skills. It produces clean PDF layouts that pass automated applicant tracking systems. Users can store multiple custom versions of their resume.",
+      "personalization": ""
+    },
+    {
+      "name": "Leepik",
+      "tagline": "Bank PDFs to Tally, with ledger mapping that learns",
+      "url": "https://www.producthunt.com/products/leepik?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "website": "https://www.producthunt.com/r/CBO6VMLHPHWZU3?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+frdspuzi.github.io+%28ID%3A+296655%29",
+      "votesCount": 18,
+      "dailyRank": 20,
+      "iconUrl": "https://ph-files.imgix.net/b0ce5cec-fd44-4fc7-9d23-b9d96096a4c2.svg?auto=format",
+      "makerNames": [
+        "Krunal Mangroliya"
+      ],
+      "makerAvatarUrls": [
+        "https://ph-avatars.imgix.net/7267665/646fb076-7e08-47e0-80bc-9da77d891e97.png?auto=format&crop=faces&fit=crop&h=original&w=original"
+      ],
+      "topics": [
+        "Productivity",
+        "Fintech",
+        "Accounting"
+      ],
+      "hook": "Leepik converts bank statement PDFs into accounting entries for Tally software. Tally is an enterprise accounting platform widely used by small businesses. Leepik reads unstructured financial documents and maps transactions to the correct general ledger accounts. Its machine learning model learns your manual corrections over time.",
       "personalization": ""
     }
   ],
-  "lastUpdated": "2026-10-13T03:00:41.989Z"
+  "lastUpdated": "2026-10-18T00:00:08.204Z"
 }
