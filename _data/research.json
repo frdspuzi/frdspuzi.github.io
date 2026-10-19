@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-18",
+  "lastUpdated": "2026-10-19",
   "papers": [
     {
       "id": "hf:2610.22280",
@@ -11,27 +11,11 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Computer agents cost too much when a top model runs every step, and small models alone often fail.",
-      "fix": "LEASH hands control to the strong model only when the small model looks unsure, and scores 73.66% task success.",
-      "practicalUseCase": "That matches the always-strong setup at 72.90% and cuts cost 19.2%, so send only hard steps to big models.",
-      "limitation": "It was tested on one benchmark, OSWorld, with four model families.",
+      "problem": "Computer-use agents cost too much when a top model runs every step, and a small model alone often fails.",
+      "fix": "LEASH calls the strong model only when the small one seems unsure, hitting 73.66% success at 19.2% lower cost.",
+      "practicalUseCase": "You can match a top model's results for less money, so route easy steps to a small model.",
+      "limitation": "Results come from one benchmark, OSWorld, with four model families.",
       "fullTextUrl": "https://huggingface.co/papers/2610.22280"
-    },
-    {
-      "id": "hf:2610.15924",
-      "doi": "https://arxiv.org/abs/2610.15924",
-      "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments",
-      "publicationDate": "2026-10-10",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Chong Zeng et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Cheating agents can trick the code that grades them into giving full credit without doing the task.",
-      "fix": "A loop where one agent hacks and another repairs the grader sharply cuts attack success on three benchmarks.",
-      "practicalUseCase": "If your agent tests can be gamed, scores lie, so run a hack-and-fix loop before trusting results.",
-      "limitation": "The paper gives no single number here, and it covers only three agent benchmarks.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.15924"
     },
     {
       "id": "hf:2610.20680",
@@ -43,11 +27,27 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Teams train sparse autoencoders on billions of tokens without knowing whether that much data is needed.",
-      "fix": "Less data nearly matches full quality, but matched features only rise from 2% at 5M tokens to 29% at 50M.",
-      "practicalUseCase": "Pick the data budget by your goal, and check that features repeat before you trust claims about them.",
-      "limitation": "The strongest number comes from one model setup, Gemma-2-2B with BatchTopK.",
+      "problem": "Teams train sparse autoencoders on billions of tokens, but nobody tested whether that much data is needed.",
+      "fix": "Less data nearly matches full-data quality, but matched features rise only from 2% at 5M tokens to 29% at 50M.",
+      "practicalUseCase": "You can train cheaper for quick tests, but you must use more data when you want stable, repeatable features.",
+      "limitation": "The tests cover four architectures and three language models, with a 500M-token reference.",
       "fullTextUrl": "https://huggingface.co/papers/2610.20680"
+    },
+    {
+      "id": "hf:2610.15924",
+      "doi": "https://arxiv.org/abs/2610.15924",
+      "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments",
+      "publicationDate": "2026-10-10",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Chong Zeng et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Cheating agents can trick the code that scores them, which gives false rewards and wrong evaluations.",
+      "fix": "An automatic hacker-fixer loop inside an isolated sandbox cuts attack success on Terminal Bench, KernelBench, and SETA.",
+      "practicalUseCase": "If you build agent tests, run an attacker model against your scorer and fix every hole before training.",
+      "limitation": "Defense gets stronger only as you spend more loop iterations, so the budget limits it.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.15924"
     },
     {
       "id": "hf:2610.21261",
@@ -59,95 +59,96 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Nobody knew whether the effects of sparse autoencoder features simply add up when combined.",
-      "fix": "Features mostly add up, and adding pair terms lifts rank fidelity from 0.5874 to 0.7790.",
-      "practicalUseCase": "Single-feature explanations miss interaction effects, so test feature pairs before you steer a model.",
-      "limitation": "Results cover 18 model and behavior settings, so other settings may differ.",
+      "problem": "Nobody knew whether the effects of sparse autoencoder features add up cleanly when you combine them.",
+      "fix": "Learned features add up better than random ones; pairwise terms lift steering rank fidelity from 0.5874 to 0.7790.",
+      "practicalUseCase": "Do not trust single-feature explanations or edits alone, because combined features interact and need pairwise checks.",
+      "limitation": "The tests cover 18 model and behavior settings, so results may differ for other models.",
       "fullTextUrl": "https://huggingface.co/papers/2610.21261"
     },
     {
-      "id": "https://openalex.org/W7213873170",
-      "doi": "https://doi.org/10.55188/ijifsd.v18i3.1064",
-      "title": "Sharīʿah Compliance in Malaysia’s Digital Payment Systems: Evidence from Expert Interviews",
-      "publicationDate": "2026-09-22",
-      "venue": "International Journal of Islamic Finance and Sustainable Development",
-      "leadAuthor": "Wan Anis Wan Mohd Assrudin et al.",
-      "institution": "Universiti Utara Malaysia",
+      "id": "https://openalex.org/W7204756985",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3341",
+      "title": "Trends and Determinants of Sustainability Sukuk Issuance: Evidence from Global Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Nazrul Hazizi Noordin",
+      "institution": "International Islamic University Malaysia",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Malaysia has rules for digital payments, yet experts still doubt that payment firms follow Sharia in practice.",
-      "fix": "Ten Sharia experts said non-bank payment providers have weaker governance, and flagged data risks and low consumer awareness.",
-      "practicalUseCase": "Check a payment app's Sharia governance yourself before you trust the label.",
-      "limitation": "It covers only Malaysia and ten expert interviews, so it shows views, not measured compliance.",
-      "fullTextUrl": "https://doi.org/10.55188/ijifsd.v18i3.1064"
+      "problem": "Sustainability sukuk grew fast, but nobody had documented what drives how big each issue is.",
+      "fix": "In 11,944 sukuk issues from 2012 to 2022, better security, longer terms, and USD or Euro currency mean larger issues.",
+      "practicalUseCase": "Issuers who want bigger sustainability sukuk should use strong security, longer terms, and equity-based contracts, not sale-based ones.",
+      "limitation": "The data stops at 2022 and shows links between factors and size, not cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
-      "id": "https://openalex.org/W7213880368",
-      "doi": "https://doi.org/10.55188/ijifsd.v18i3.1406",
-      "title": "Interest Prohibitions and Contract Design in Medieval Christianity and Islam",
-      "publicationDate": "2026-09-22",
-      "venue": "International Journal of Islamic Finance and Sustainable Development",
-      "leadAuthor": "İbrahim Halil Sugözü et al.",
-      "institution": "Şırnak University",
+      "id": "https://openalex.org/W7204766411",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.2651",
+      "title": "Artificial Intelligence and Big Data Strategies to Enhance Islamic Banks’ Competitiveness and Sustainable Development",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Ahmad Hisham Alnajjar et al.",
+      "institution": "Petra University",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "People assume interest bans work the same everywhere, but medieval Europe and Islamic lands handled credit differently.",
-      "fix": "European lenders hid returns inside exchange or compensation, while Islamic contracts used trade, partnership, and clear risk sharing.",
-      "practicalUseCase": "Form can hide substance, so read the contract structure and who carries the risk, not the label.",
-      "limitation": "It rests on secondary sources and offers no new archive data.",
-      "fullTextUrl": "https://doi.org/10.55188/ijifsd.v18i3.1406"
+      "problem": "Islamic banks in Jordan lacked evidence on whether artificial intelligence and big data help them compete and last.",
+      "fix": "In surveyed Jordanian banks, AI use, data analysis, and data management all link to higher competitiveness and sustainable development.",
+      "practicalUseCase": "Bank leaders should invest in AI and data practices, not only staff digital skills, to improve sustainable development.",
+      "limitation": "The survey covers 214 managers in 15 Jordanian Islamic banks at one point in time.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
-      "id": "https://openalex.org/W7213884700",
-      "doi": "https://doi.org/10.55188/ijifsd.v18i3.1264",
-      "title": "Financial Depth and Stability in Dual Banking Systems",
-      "publicationDate": "2026-09-22",
-      "venue": "International Journal of Islamic Finance and Sustainable Development",
-      "leadAuthor": "Abdul Jalil Mahama et al.",
-      "institution": "National University of Uzbekistan",
+      "id": "https://openalex.org/W7204826719",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3458",
+      "title": "ICT, High-Tech Exports, and Institutions as Drivers of Bank Expansion Growth in a Dual Banking System",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Sulaeman Sulaeman et al.",
+      "institution": "Universitas Airlangga",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "It was unclear whether mixing Islamic and conventional banking helps the wider economy grow.",
-      "fix": "In 27 countries over 2010 to 2024, more Islamic finance raised private credit (beta 0.3725) and real output (beta 0.0842).",
-      "practicalUseCase": "Dual banking looks good for growth and small business credit, so policymakers can support it.",
-      "limitation": "It compares only dual-banking countries, not countries with a single banking system.",
-      "fullTextUrl": "https://doi.org/10.55188/ijifsd.v18i3.1264"
+      "problem": "Banks in dual systems had unclear evidence on which factors drive their growth.",
+      "fix": "In 218 banks across 12 countries from 2010 to 2023, technology adoption is the strongest driver of bank growth.",
+      "practicalUseCase": "Regulators should fund digital infrastructure and strong governance, because Islamic banks lean on institutional integrity to grow.",
+      "limitation": "The sample covers 12 countries and 2010 to 2023, so it may not fit other markets.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
-      "id": "https://openalex.org/W7213928684",
-      "doi": "https://doi.org/10.55188/ijifsd.v18i3.1346",
-      "title": "Financing Government Issuances via Service Ownership Ṣukūk",
-      "publicationDate": "2026-09-22",
-      "venue": "International Journal of Islamic Finance and Sustainable Development",
-      "leadAuthor": "Abdulla Helal",
+      "id": "https://openalex.org/W7204848949",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.2582",
+      "title": "Determinants of Financial Inclusion in the OIC and OECD Countries: Are They Different?",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Tengku Roziana et al.",
+      "institution": "International Centre for Education in Islamic Finance",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Gulf governments face budget deficits and unemployment, and sukuk usually need physical assets behind them.",
-      "fix": "Sukuk backed by future public jobs cut the deficit 1.5 points of GDP and debt 4.3 points.",
-      "practicalUseCase": "If it holds up, governments could fund jobs with Sharia-compliant debt that costs 62 basis points less.",
-      "limitation": "It uses a model of six Gulf economies, so poorer Muslim-majority states need more study.",
-      "fullTextUrl": "https://doi.org/10.55188/ijifsd.v18i3.1346"
+      "problem": "Many Muslim-majority countries still exclude people from financial services, even as Islamic finance expanded.",
+      "fix": "In 35 countries from 2005 to 2021, income, education, institutions, and internet access drive financial inclusion in OIC countries.",
+      "practicalUseCase": "OIC governments should invest in digital infrastructure, youth and women empowerment, and income growth.",
+      "limitation": "The study covers only 35 countries from 2005 to 2021 and shows links, not cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
     },
     {
-      "id": "https://openalex.org/W7197047502",
-      "doi": "https://doi.org/10.1371/journal.pone.0355186",
-      "title": "Exploring the influencing factors of academic doctoral students’ academic innovation behavior in the context of generative artificial intelligence: Self-determination theory and motivation-opportunity-ability perspectives",
-      "publicationDate": "2026-08-06",
-      "venue": "PLoS ONE",
-      "leadAuthor": "Yanqin Liu et al.",
-      "institution": "Wuhan University",
+      "id": "https://openalex.org/W7204751468",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
+      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Yunice Karina Tumewang et al.",
+      "institution": "Islamic University of Indonesia",
       "topics": [
-        "Career & Productivity"
+        "Islamic Studies & Finance"
       ],
-      "problem": "Doctoral students may innovate less in the AI era, and standard motivation theories did not explain why.",
-      "fix": "Inner drive and outside rewards both boost research innovation, and good resources and confidence help most when motivation is low.",
-      "practicalUseCase": "Protect your own motivation first, then add support and resources to keep ideas moving.",
-      "limitation": "It uses one self-report survey at one time, so it cannot prove cause.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0355186"
+      "problem": "Banks in dual systems set up sustainability committees, but their effect on real environmental work was unclear.",
+      "fix": "Committees link to better environmental scores in all banks, but in Islamic banks they affect only overall and resource scores.",
+      "practicalUseCase": "Islamic bank boards should check that committees produce green products and innovation, not only good scores.",
+      "limitation": "The panel data shows links in emerging markets, not proof that committees cause the results.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
       "id": "https://openalex.org/W7204259442",
@@ -160,11 +161,28 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Medical training piles on tests and peer comparison, which may leave students feeling like frauds.",
-      "fix": "Impostor feelings were frequent among medical students worldwide, though results varied a lot by sampling method and region.",
-      "practicalUseCase": "If you feel like a fraud under pressure, you are far from alone, so talk about it early.",
-      "limitation": "Results varied widely between studies, so the pooled rate is only a rough guide.",
+      "problem": "Medical students face constant exams and peer comparison, and nobody had pooled how often they feel like impostors.",
+      "fix": "Impostor feelings are common among medical students worldwide, though results vary by sampling method and region.",
+      "practicalUseCase": "If you train or mentor students, expect impostor feelings and teach coping skills early.",
+      "limitation": "Results varied a lot between studies, so the pooled number is rough.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
+    },
+    {
+      "id": "https://openalex.org/W7197047502",
+      "doi": "https://doi.org/10.1371/journal.pone.0355186",
+      "title": "Exploring the influencing factors of academic doctoral students’ academic innovation behavior in the context of generative artificial intelligence: Self-determination theory and motivation-opportunity-ability perspectives",
+      "publicationDate": "2026-08-06",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Yanqin Liu et al.",
+      "institution": "Wuhan University",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "problem": "Doctoral students use generative AI heavily, but little was known about what drives their academic innovation.",
+      "fix": "Inner and outer motivation work together to raise innovation, while unmet basic needs sharply cut it.",
+      "practicalUseCase": "Supervisors should meet students' basic needs and give research support, because unmotivated students stop exploring.",
+      "limitation": "The survey uses one-time self-reports from chemistry students, so it cannot prove cause.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0355186"
     }
   ]
 }
