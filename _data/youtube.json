@@ -1,80 +1,80 @@
 {
   "videos": [
     {
-      "title": "Inside Arca's Long-Horizon Agents That Run the Business - Aman Singh, Arca",
-      "url": "https://www.youtube.com/watch?v=oP2WLFpMoDY",
-      "videoId": "oP2WLFpMoDY",
+      "title": "AI Writes the Code. So What's Left for Engineers? - Laurie Voss, Arize AI",
+      "url": "https://www.youtube.com/watch?v=kspZP5BgkEU",
+      "videoId": "kspZP5BgkEU",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "What if the future of work isn't a chatbot waiting for your prompt, but autonomous agents executing 90% of company operations and assigning tasks to human employees only when needed? Arca's Head of AI reveals the real-world blueprint behind 'long-horizon' agents that coordinate complex, multi-week client workflows by reacting to live signals and removing humans from the critical path. If you want to see what a genuinely AI-native company looks like—where leadership steers the business simply by steering its agents—this talk is an absolute must-watch.",
-      "dateAdded": "2026-10-24T00:09:09.219Z",
+      "summary": "While AI coding tools let developers churn out 700% more code, shipping speeds have barely budged because the real bottleneck has radically shifted from writing syntax to deciding what is actually worth building. In this razor-sharp keynote, npm co-founder Laurie Voss reveals why the traditional programmer is being replaced by the 'product engineer'—someone whose core value lies in extracting messy human requirements rather than writing code. If you want to future-proof your tech career and understand why entry-level engineering jobs are evaporating, this breakdown is essential viewing.",
+      "dateAdded": "2026-10-24T23:53:07.062Z",
       "timestamps": [
         {
-          "startTime": 65,
-          "endTime": 170,
-          "topic": "Why Real Business Problems Demand Long-Horizon Agents, Not Long-Running Prompts"
+          "startTime": 185,
+          "endTime": 275,
+          "topic": "The Code Review Bottleneck: Why 8x More Code Doesn't Mean Faster Shipping"
         },
         {
-          "startTime": 375,
-          "endTime": 465,
-          "topic": "The Event-Driven Signal System: Letting Agents Watch the World So Humans Don't Have To"
+          "startTime": 700,
+          "endTime": 895,
+          "topic": "The Unautomatable Bottleneck: Defining What 'Good' Software Actually Means"
         },
         {
-          "startTime": 620,
-          "endTime": 770,
-          "topic": "Inverting the Workplace: When Agents Prompt Humans and Run the Firm"
+          "startTime": 1185,
+          "endTime": 1365,
+          "topic": "The Junior Developer Crisis: Why Entry-Level Hiring Is Collapsing"
         }
       ]
     },
     {
-      "title": "Real AI Agent Attacks and What Would Have Stopped Them — Andrey Rybka, Bloomberg",
-      "url": "https://www.youtube.com/watch?v=5O6jLtoeKrg",
-      "videoId": "5O6jLtoeKrg",
+      "title": "Your Agent Fix Just Broke Something Else - Sofia Jakovcevic, Arize AI",
+      "url": "https://www.youtube.com/watch?v=v5tm5EAzsAs",
+      "videoId": "v5tm5EAzsAs",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Think your sandbox keeps autonomous AI agents safe? Real-world breaches prove rogue agents can easily bypass traditional guardrails to wipe databases and exfiltrate enterprise data using sneaky sleeper prompts, Morse code, and covert DNS tunneling. This essential talk delivers the deterministic playbook—highlighted by the game-changing 'Rule of Two'—that every developer must implement to stop runaway agents before they compromise production.",
-      "dateAdded": "2026-10-24T00:09:09.220Z",
+      "summary": "A single 'harmless' one-line prompt tweak can quietly sabotage your AI agent's performance in production without a single error ever appearing in your code diff. This talk breaks down why software teams must stop 'coding on vibes' and reveals the exact five-step regression loop needed to test non-deterministic agents against real runtime traces. Watch it to master automated CI/CD evaluations and discover how the next frontier of observability will allow AI agents to autonomously debug and fix themselves.",
+      "dateAdded": "2026-10-24T23:53:07.063Z",
       "timestamps": [
         {
-          "startTime": 352,
-          "endTime": 410,
-          "topic": "The 'Rule of Two' security framework for autonomous agent actions"
+          "startTime": 150,
+          "endTime": 365,
+          "topic": "Why agents fail at runtime instead of code: The diff vs. trace reality"
         },
         {
-          "startTime": 511,
-          "endTime": 575,
-          "topic": "Why standard sandboxes fail and how agents leak data via DNS tunneling"
-        },
-        {
-          "startTime": 808,
-          "endTime": 910,
-          "topic": "The defense-in-depth framework and three non-negotiable rules for production AI"
-        }
-      ]
-    },
-    {
-      "title": "New Grad (IC3) to Staff (IC6) at Meta in 3 Years | Simon Kindström",
-      "url": "https://www.youtube.com/watch?v=qICgdxQe7kA",
-      "videoId": "qICgdxQe7kA",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Even earning Meta’s rarest, top-tier performance rating won't get you promoted unless you master one counterintuitive truth: performance ratings reward what you delivered, but promotions demand proof of how you operate at the next level. In this candid breakdown, an engineer who rocketed from IC3 to Staff Engineer (IC6) in just three years reveals the exact playbooks, scope expansions, and leadership hard lessons—like why 'delegation is not abdication'—that unlocked hyper-speed career progression. If you want to demystify Big Tech promotion committees and learn how to multiply your engineering leverage, this insider roadmap is essential viewing.",
-      "dateAdded": "2026-10-24T00:09:09.220Z",
-      "timestamps": [
-        {
-          "startTime": 231,
-          "endTime": 282,
-          "topic": "Why top performance ratings don't guarantee a promotion"
-        },
-        {
-          "startTime": 525,
-          "endTime": 625,
-          "topic": "Proving Staff-level technical depth while managing large teams"
-        },
-        {
-          "startTime": 626,
+          "startTime": 470,
           "endTime": 685,
-          "topic": "The core leadership mindset: delegation is not abdication"
+          "topic": "Turning qualitative checks into automated CI/CD gates with LLM evaluators"
+        },
+        {
+          "startTime": 1055,
+          "endTime": 1155,
+          "topic": "The paradigm shift from manual debugging to autonomous self-healing agents"
+        }
+      ]
+    },
+    {
+      "title": "How Bridgewater Turned 100 Million Documents Into an Edge - Sam Green & Aaron Linsky, Bridgewater",
+      "url": "https://www.youtube.com/watch?v=CLve4Nx_RwI",
+      "videoId": "CLve4Nx_RwI",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Off-the-shelf AI agents inevitably fall short in high-stakes environments because generic web search relies on outdated data and lacks deep institutional context. Bridgewater Associates cracked this challenge with 'The Vault'—a purpose-built data platform that bridges the gap between human precision and high-throughput agent swarms while continuously compounding institutional memory. If you want an insider look at how the world's premier hedge fund successfully operationalizes AI agents from reactive chatbots into proactive investment partners, this masterclass is an essential watch.",
+      "dateAdded": "2026-10-24T23:53:07.063Z",
+      "timestamps": [
+        {
+          "startTime": 250,
+          "endTime": 385,
+          "topic": "Why Generic AI Search Fails High-Stakes Research"
+        },
+        {
+          "startTime": 571,
+          "endTime": 655,
+          "topic": "Solving the Vector Database Filtering Dilemma"
+        },
+        {
+          "startTime": 845,
+          "endTime": 970,
+          "topic": "Turning Reactive AI into Proactive Research Partners"
         }
       ]
     },
@@ -101,6 +101,32 @@
           "startTime": 550,
           "endTime": 760,
           "topic": "Generating an automated multi-speaker podcast with distinct personas via the API"
+        }
+      ]
+    },
+    {
+      "title": "Rumah pertama, duti setem percuma?",
+      "url": "https://www.youtube.com/shorts/RXr50bnqevo",
+      "videoId": "RXr50bnqevo",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "You could save up to RM9,000 in upfront property costs while unlocking expanded cash aid you might not even realize you qualify for. This essential breakdown reveals major updates to STR and SARA payouts—including automatic cash benefits for non-STR adults—and explains the exact stamp duty exemption formula for first-time homebuyers. Watch this now to ensure you don't leave thousands of ringgit in government assistance and property savings on the table.",
+      "dateAdded": "2026-10-24T23:53:07.063Z",
+      "timestamps": [
+        {
+          "startTime": 20,
+          "endTime": 72,
+          "topic": "Expanded SARA cash aid rules and grocery benefits for Malaysian adults"
+        },
+        {
+          "startTime": 72,
+          "endTime": 108,
+          "topic": "100% stamp duty exemption breakdown and MOT savings on RM500k homes"
+        },
+        {
+          "startTime": 108,
+          "endTime": 138,
+          "topic": "Tiered exemptions for homes up to RM750k and the 4-year buying window"
         }
       ]
     },
@@ -209,54 +235,28 @@
       ]
     },
     {
-      "title": "The Regrets You Can Still Avoid | LATEST Khutbah by Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=inX5GdP5H2g",
-      "videoId": "inX5GdP5H2g",
+      "title": "Why Your Du’a Isn’t Being Answered | Anchored Ep. 6 | Sh. Mohammad Elshinawy",
+      "url": "https://www.youtube.com/watch?v=lQ3Ikx1iazc",
+      "videoId": "lQ3Ikx1iazc",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "What if the secret to living with zero regrets isn't merely planning for old age, but reverse-engineering your daily choices backwards from the highest stations of Paradise? This khutbah takes a famous worldly strategy—the regret minimization framework—and elevates it into an urgent spiritual blueprint to resolve simmering grudges, protect your family ties, and tip the scales of eternity in your favor. Watching this will radically shift your perspective, pushing you to stop settling for the bare minimum and start purposefully building a life you won't regret on the Day of Judgment.",
-      "dateAdded": "2026-10-24T00:09:09.220Z",
+      "summary": "Ever feel like your prayers are hitting a ceiling no matter how desperately or frequently you plead? This eye-opening talk reveals how overlooked unlawful income can quietly blockade your supplications, thoroughly shattering the popular myth that charitable giving can wash away ill-gotten wealth. By learning how to hold wealth in your hands rather than your heart and tapping into genuine spiritual brokenness, you will discover the exact formula to ensure your prayers are genuinely heard and answered.",
+      "dateAdded": "2026-10-24T23:53:07.063Z",
       "timestamps": [
         {
-          "startTime": 155,
-          "endTime": 235,
-          "topic": "Adapting the Regret Minimization Framework for the Hereafter"
+          "startTime": 385,
+          "endTime": 615,
+          "topic": "The Robin Hood trap: Why charity cannot cleanse unlawful earnings"
         },
         {
-          "startTime": 555,
-          "endTime": 670,
-          "topic": "Reverse-engineering daily habits from the highest rank of Paradise"
+          "startTime": 880,
+          "endTime": 1020,
+          "topic": "Wealth in the hand vs. the heart: The Islamic framework for money"
         },
         {
-          "startTime": 1235,
-          "endTime": 1320,
-          "topic": "Mending broken relationships before regrets become permanent"
-        }
-      ]
-    },
-    {
-      "title": "How to FINALLY Live a Disciplined Life as a Muslim",
-      "url": "https://www.youtube.com/watch?v=JbZHffCcW24",
-      "videoId": "JbZHffCcW24",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "If you are trapped in an exhausting cycle of having a productive week only to collapse back into secret bad habits by 'Day Eight,' this video delivers a powerful reality check on why consuming more information and relying on solo willpower will never fix your discipline. Imam Abdullah Oduro exposes how the private loop of guilt, repentance, and isolation quietly erodes self-trust and damages your role as a leader in your home. Watch this to uncover why knowledge is rarely the real bottleneck and how structured accountability is the missing key to breaking out of chronic relapses for good.",
-      "dateAdded": "2026-10-24T00:09:09.220Z",
-      "timestamps": [
-        {
-          "startTime": 68,
-          "endTime": 175,
-          "topic": "The 'Day Eight' Loop: How private relapses destroy self-trust and family leadership"
-        },
-        {
-          "startTime": 176,
-          "endTime": 226,
-          "topic": "The Knowledge Trap: Why more lectures and going solo cannot fix discipline"
-        },
-        {
-          "startTime": 227,
-          "endTime": 315,
-          "topic": "The Power of Brotherhood: Rebuilding consistency and breaking isolation"
+          "startTime": 1485,
+          "endTime": 1635,
+          "topic": "The power of brokenness: Why humility unlocks answered prayers"
         }
       ]
     },
@@ -313,27 +313,6 @@
       ]
     },
     {
-      "title": "When should you NOT use /grill-me?",
-      "url": "https://www.youtube.com/shorts/k2zgcTDq4aQ",
-      "videoId": "k2zgcTDq4aQ",
-      "channel": "Matt Pocock",
-      "category": "Tech & Engineering",
-      "summary": "Stop wasting time over-planning tiny code tweaks with AI—or blindly diving into complex architectures that blow up in your face. This quick decision framework reveals the exact sweet spot between one-shot prompting, grilling your AI partner to align expectations, and mapping massive projects without derailment. Master this workflow, and you'll immediately slash wasted AI iterations while shipping clean, accurate code every time.",
-      "dateAdded": "2026-10-24T00:09:09.220Z",
-      "timestamps": [
-        {
-          "startTime": 16,
-          "endTime": 53,
-          "topic": "When to one-shot code vs. grill your AI agent"
-        },
-        {
-          "startTime": 54,
-          "endTime": 96,
-          "topic": "Scaling complex planning across multiple sessions with Wayfinder"
-        }
-      ]
-    },
-    {
       "title": "Your agent is a tactical tornado",
       "url": "https://www.youtube.com/shorts/Vo33extKAeA",
       "videoId": "Vo33extKAeA",
@@ -384,7 +363,33 @@
           "topic": "Why reducers make AI-generated code significantly more robust"
         }
       ]
+    },
+    {
+      "title": "How To Stand Out In A World Of AI Designs",
+      "url": "https://www.youtube.com/watch?v=2tZT2-pS_pI",
+      "videoId": "2tZT2-pS_pI",
+      "channel": "Y Combinator",
+      "category": "Tech & Engineering",
+      "summary": "Most AI-built startup sites look flashy at first glance, but they secretly kill conversion rates by falling into classic 'vibe-coded' traps like scroll-jacking, hidden call-to-actions, and generic buzzwords. In this masterclass breakdown, Magic Patterns co-founder Alex Stanilovich demonstrates how to harness AI prototyping tools properly while tearing down real startup websites to show what actually converts users versus what repels them. If you are building software or landing pages with AI agents today, watching this will save you from burning traffic on costly design mistakes.",
+      "dateAdded": "2026-10-24T23:53:07.063Z",
+      "timestamps": [
+        {
+          "startTime": 270,
+          "endTime": 490,
+          "topic": "Magic Patterns Demo: Context-driven rapid prototyping using Cursor and MCP"
+        },
+        {
+          "startTime": 1410,
+          "endTime": 1640,
+          "topic": "The 'Vibe-Coded' Trap: Why scroll-jacking and over-animation destroy conversion rates"
+        },
+        {
+          "startTime": 2600,
+          "endTime": 2770,
+          "topic": "Developing real design taste as an engineer and pushing past mediocre AI defaults"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-10-24T00:14:13.161Z"
+  "lastUpdated": "2026-10-24T23:55:52.405Z"
 }
