@@ -1,69 +1,86 @@
 {
-  "lastUpdated": "2026-10-19",
+  "lastUpdated": "2026-10-24",
   "papers": [
     {
-      "id": "hf:2610.22280",
-      "doi": "https://arxiv.org/abs/2610.22280",
-      "title": "LEASH: Uncertainty-Aware Weak-to-Strong Escalation and Oversight for Computer-Use Agents",
+      "id": "hf:2610.22722",
+      "doi": "https://arxiv.org/abs/2610.22722",
+      "title": "The LLM-Attacker: A Unified Red-Team Framework for Privacy Evaluation of Split and Distributed LLM Systems",
       "publicationDate": "2026-10-14",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Qingni Wang et al.",
+      "leadAuthor": "Georgios Politis et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Computer-use agents cost too much when a top model runs every step, and a small model alone often fails.",
-      "fix": "LEASH calls the strong model only when the small one seems unsure, hitting 73.66% success at 19.2% lower cost.",
-      "practicalUseCase": "You can match a top model's results for less money, so route easy steps to a small model.",
-      "limitation": "Results come from one benchmark, OSWorld, with four model families.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.22280"
+      "problem": "Teams cannot compare privacy tests for split language models because each test uses different attacker access, data, and scoring.",
+      "fix": "LLM-Attacker records every test choice; in one GPT-2 test, extra training gradients raised exact-document recovery from 13.71% to 37.77%.",
+      "practicalUseCase": "Privacy claims mean little without context, so name the attacker, data, and scoring rule in every claim.",
+      "limitation": "The main experiment uses GPT-2 only and is shared with a companion study.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.22722"
     },
     {
-      "id": "hf:2610.20680",
-      "doi": "https://arxiv.org/abs/2610.20680",
-      "title": "Diminishing Returns of Data in Sparse Autoencoders: Functional Behavior does not Guarantee Feature Reproducibility",
-      "publicationDate": "2026-10-13",
+      "id": "hf:2610.04184",
+      "doi": "https://arxiv.org/abs/2610.04184",
+      "title": "EvalResearchBench: Can AI Agents Build Their Own Feedback for Recursive Self-Improvement?",
+      "publicationDate": "2026-10-15",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Sambit Ghosh et al.",
+      "leadAuthor": "Yaolun Zhang et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Teams train sparse autoencoders on billions of tokens, but nobody tested whether that much data is needed.",
-      "fix": "Less data nearly matches full-data quality, but matched features rise only from 2% at 5M tokens to 29% at 50M.",
-      "practicalUseCase": "You can train cheaper for quick tests, but you must use more data when you want stable, repeatable features.",
-      "limitation": "The tests cover four architectures and three language models, with a 500M-token reference.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.20680"
+      "problem": "Rerunning full benchmarks costs too much, so experts hand-pick smaller test sets to save money.",
+      "fix": "The best AI-built test suites ranked about 75% of model pairs the same way the real benchmarks did.",
+      "practicalUseCase": "Agent-built tests are not yet reliable, so keep a human-picked sample of public tasks as your baseline.",
+      "limitation": "Agent-built tests can cut off answers, run out of budget, or let a few questions dominate a score.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.04184"
     },
     {
-      "id": "hf:2610.15924",
-      "doi": "https://arxiv.org/abs/2610.15924",
-      "title": "Scalable Weak-to-Strong Verifier Hardening for Agent Environments",
-      "publicationDate": "2026-10-10",
+      "id": "hf:2610.25835",
+      "doi": "https://arxiv.org/abs/2610.25835",
+      "title": "Diffusion Language Models Change Speed Across Tasks and Languages",
+      "publicationDate": "2026-10-19",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Chong Zeng et al.",
+      "leadAuthor": "Mohsen Fayyaz et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Cheating agents can trick the code that scores them, which gives false rewards and wrong evaluations.",
-      "fix": "An automatic hacker-fixer loop inside an isolated sandbox cuts attack success on Terminal Bench, KernelBench, and SETA.",
-      "practicalUseCase": "If you build agent tests, run an attacker model against your scorer and fix every hole before training.",
-      "limitation": "Defense gets stronger only as you spend more loop iterations, so the budget limits it.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.15924"
+      "problem": "Two diffusion model outputs of equal length can cost very different amounts, and the reasons were unclear.",
+      "fix": "Story writing took more than three times the passes per token that grammar correction took.",
+      "practicalUseCase": "Expect copy-and-edit jobs to run cheap; weighting answers by decoding speed beat majority voting by up to 4.2 points.",
+      "limitation": "The study covers only two diffusion models across 10 tasks.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.25835"
     },
     {
-      "id": "hf:2610.21261",
-      "doi": "https://arxiv.org/abs/2610.21261",
-      "title": "Behavioral Compositionality of Sparse Autoencoder Representations",
-      "publicationDate": "2026-10-14",
+      "id": "hf:2610.31198",
+      "doi": "https://arxiv.org/abs/2610.31198",
+      "title": "Different Tasks, Different Timesteps: Temporal Task-Aware Quantization for Diffusion Language Models",
+      "publicationDate": "2026-10-21",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Haotian Ma et al.",
+      "leadAuthor": "Ofek Avivi et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Nobody knew whether the effects of sparse autoencoder features add up cleanly when you combine them.",
-      "fix": "Learned features add up better than random ones; pairwise terms lift steering rank fidelity from 0.5874 to 0.7790.",
-      "practicalUseCase": "Do not trust single-feature explanations or edits alone, because combined features interact and need pairwise checks.",
-      "limitation": "The tests cover 18 model and behavior settings, so results may differ for other models.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.21261"
+      "problem": "Shrinking diffusion language models loses accuracy because each task needs different precision at different denoising steps.",
+      "fix": "T2Quant sets precision per step with a label-free signal, raising accuracy up to 6.7 percentage points at equal budget.",
+      "practicalUseCase": "When you compress these models, tune precision by task and step instead of using one setting everywhere.",
+      "limitation": "Tests covered three diffusion models and six benchmarks, so other models may behave differently.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.31198"
+    },
+    {
+      "id": "https://openalex.org/W7204751468",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
+      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Yunice Karina Tumewang et al.",
+      "institution": "Islamic University of Indonesia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Banks set up sustainability committees, but nobody knew whether they change environmental results in dual banking systems.",
+      "fix": "Committees raised all four environmental measures overall, but in Islamic banks they lifted only overall and resource scores.",
+      "practicalUseCase": "Islamic bank committees may show symbolic effort, so judge them on green products and innovations, not on their existence.",
+      "limitation": "Panel regressions show links between committees and scores, not proof of cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -76,10 +93,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Sustainability sukuk grew fast, but nobody had documented what drives how big each issue is.",
-      "fix": "In 11,944 sukuk issues from 2012 to 2022, better security, longer terms, and USD or Euro currency mean larger issues.",
-      "practicalUseCase": "Issuers who want bigger sustainability sukuk should use strong security, longer terms, and equity-based contracts, not sale-based ones.",
-      "limitation": "The data stops at 2022 and shows links between factors and size, not cause.",
+      "problem": "Little was known about how sustainability sukuk issuance grew or what sets the size of each issue.",
+      "fix": "Across 11,944 sukuk issues, sustainability sukuk stayed tiny, and equity-based contracts gave larger issues than sale-based ones.",
+      "practicalUseCase": "Issuers wanting bigger issues should favour equity-based contracts and watch second party opinion costs, which shrink issue size.",
+      "limitation": "The data end in 2022, and growth sits mostly in Indonesia, Malaysia, and Saudi Arabia.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -93,10 +110,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Islamic banks in Jordan lacked evidence on whether artificial intelligence and big data help them compete and last.",
-      "fix": "In surveyed Jordanian banks, AI use, data analysis, and data management all link to higher competitiveness and sustainable development.",
-      "practicalUseCase": "Bank leaders should invest in AI and data practices, not only staff digital skills, to improve sustainable development.",
-      "limitation": "The survey covers 214 managers in 15 Jordanian Islamic banks at one point in time.",
+      "problem": "Nobody had shown whether AI and big data help Islamic banks in Jordan compete and develop sustainably.",
+      "fix": "AI use, big data skills, and data management all raised competitiveness and sustainability; staff digital skill raised only competitiveness.",
+      "practicalUseCase": "Invest in AI, analytics, and data management first, because staff digital skill alone did not lift sustainability.",
+      "limitation": "One survey of 214 managers at Jordanian Islamic banks shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -110,10 +127,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks in dual systems had unclear evidence on which factors drive their growth.",
-      "fix": "In 218 banks across 12 countries from 2010 to 2023, technology adoption is the strongest driver of bank growth.",
-      "practicalUseCase": "Regulators should fund digital infrastructure and strong governance, because Islamic banks lean on institutional integrity to grow.",
-      "limitation": "The sample covers 12 countries and 2010 to 2023, so it may not fit other markets.",
+      "problem": "Little evidence showed what drives bank growth in countries that run both Islamic and conventional banks.",
+      "fix": "Across 218 banks in 12 countries, ICT adoption drove expansion most, and high-tech exports helped only when combined with ICT.",
+      "practicalUseCase": "Banks should put digital infrastructure first, and Islamic banks also need strong governance to grow.",
+      "limitation": "Data cover 218 banks in 12 countries from 2010 to 2023, so other markets may differ.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -127,45 +144,11 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Many Muslim-majority countries still exclude people from financial services, even as Islamic finance expanded.",
-      "fix": "In 35 countries from 2005 to 2021, income, education, institutions, and internet access drive financial inclusion in OIC countries.",
-      "practicalUseCase": "OIC governments should invest in digital infrastructure, youth and women empowerment, and income growth.",
-      "limitation": "The study covers only 35 countries from 2005 to 2021 and shows links, not cause.",
+      "problem": "Many people in Muslim-majority countries still lack financial services, even after a decade of Islamic finance growth.",
+      "fix": "Across 35 countries, income, education, institutional quality, and internet access drove financial inclusion in OIC states.",
+      "practicalUseCase": "OIC countries should invest in digital infrastructure, youth and women empowerment, and income growth, unlike OECD countries.",
+      "limitation": "Data cover only 35 OIC and OECD countries from 2005 to 2021.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
-    },
-    {
-      "id": "https://openalex.org/W7204751468",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
-      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Yunice Karina Tumewang et al.",
-      "institution": "Islamic University of Indonesia",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Banks in dual systems set up sustainability committees, but their effect on real environmental work was unclear.",
-      "fix": "Committees link to better environmental scores in all banks, but in Islamic banks they affect only overall and resource scores.",
-      "practicalUseCase": "Islamic bank boards should check that committees produce green products and innovation, not only good scores.",
-      "limitation": "The panel data shows links in emerging markets, not proof that committees cause the results.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
-    },
-    {
-      "id": "https://openalex.org/W7204259442",
-      "doi": "https://doi.org/10.1371/journal.pone.0351713",
-      "title": "Global prevalence of impostor phenomenon in medical students: A systematic review and meta-analysis",
-      "publicationDate": "2026-08-26",
-      "venue": "PLoS ONE",
-      "leadAuthor": "Víctor Juan Vera-Ponce et al.",
-      "institution": "National University Toribio Rodríguez de Mendoza",
-      "topics": [
-        "Career & Productivity"
-      ],
-      "problem": "Medical students face constant exams and peer comparison, and nobody had pooled how often they feel like impostors.",
-      "fix": "Impostor feelings are common among medical students worldwide, though results vary by sampling method and region.",
-      "practicalUseCase": "If you train or mentor students, expect impostor feelings and teach coping skills early.",
-      "limitation": "Results varied a lot between studies, so the pooled number is rough.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
     },
     {
       "id": "https://openalex.org/W7197047502",
@@ -178,10 +161,10 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Doctoral students use generative AI heavily, but little was known about what drives their academic innovation.",
-      "fix": "Inner and outer motivation work together to raise innovation, while unmet basic needs sharply cut it.",
-      "practicalUseCase": "Supervisors should meet students' basic needs and give research support, because unmotivated students stop exploring.",
-      "limitation": "The survey uses one-time self-reports from chemistry students, so it cannot prove cause.",
+      "problem": "Generative AI helps and harms doctoral students, so what drives their academic innovation was unclear.",
+      "fix": "Intrinsic and extrinsic motivation drive innovation together, and long-term unmet needs sharply cut flexibility and willingness to explore.",
+      "practicalUseCase": "Support doctoral students' basic needs, because strong resources can partly cover for weak motivation.",
+      "limitation": "One-time self-reported survey data cannot prove cause, and reverse causality is possible.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0355186"
     }
   ]
