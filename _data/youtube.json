@@ -1,184 +1,106 @@
 {
   "videos": [
     {
-      "title": "How To Grow As a Junior Developer To Senior | 5 Tips",
-      "url": "https://www.youtube.com/watch?v=JoU_CZWOoo0",
-      "videoId": "JoU_CZWOoo0",
-      "channel": "Travis Media",
-      "category": "Discovery 🌍",
-      "summary": "Most developers assume breaking out of the junior tier is all about mastering complex syntax, but technical depth alone will never earn you a senior promotion. This video reveals the counterintuitive blueprint—from cultivating ecosystem-wide breadth to stepping up as an active decision-maker—that transforms quiet coders into indispensable engineering leaders. If you feel stuck grinding out tickets and want an actionable roadmap to accelerate your career, this breakdown is an absolute must-watch.",
-      "dateAdded": "2026-10-21T00:15:25.643Z",
-      "timestamps": [
-        {
-          "startTime": 255,
-          "endTime": 345,
-          "topic": "Practical habits to build soft skills and speak up effectively in meetings"
-        },
-        {
-          "startTime": 360,
-          "endTime": 415,
-          "topic": "Why developer ecosystem breadth matters more than deep niche coding"
-        },
-        {
-          "startTime": 468,
-          "endTime": 535,
-          "topic": "Becoming a decisive problem-solver that managers and teams trust"
-        }
-      ]
-    },
-    {
-      "title": "4 things I’ve learned as a junior software engineer",
-      "url": "https://www.youtube.com/watch?v=vvzuWN_sFMQ",
-      "videoId": "vvzuWN_sFMQ",
-      "channel": "joowee",
-      "category": "Discovery 🌍",
-      "summary": "Staying silent when you're stuck won't protect your ego—it's actually the fastest way to derail your software engineering career. This refreshingly candid guide cuts through imposter syndrome to deliver the exact formula for asking smart questions, handling brutal pull request critiques, and decoupling your self-worth from rookie mistakes. Watch this to transform workplace anxiety into rapid, confident career growth without burning out.",
-      "dateAdded": "2026-10-21T00:15:25.643Z",
-      "timestamps": [
-        {
-          "startTime": 73,
-          "endTime": 155,
-          "topic": "The formula for asking smart questions without feeling incompetent"
-        },
-        {
-          "startTime": 155,
-          "endTime": 254,
-          "topic": "Handling harsh code reviews and production bugs constructively"
-        },
-        {
-          "startTime": 328,
-          "endTime": 425,
-          "topic": "Overcoming imposter syndrome and realistic expectations on job security"
-        }
-      ]
-    },
-    {
-      "title": "A Bank Built Its Own Coding Agent. It Took Off — Felipe Felisola Caso & Francesco Galletta, Monzo",
-      "url": "https://www.youtube.com/watch?v=adfw3xJBx1o",
-      "videoId": "adfw3xJBx1o",
+      "title": "Inside Arca's Long-Horizon Agents That Run the Business - Aman Singh, Arca",
+      "url": "https://www.youtube.com/watch?v=oP2WLFpMoDY",
+      "videoId": "oP2WLFpMoDY",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "What if an autonomous AI teammate could write and merge over 10% of your company's production code without compromising security? Monzo engineers reveal how they achieved this across 3,000 backend services by shifting focus away from raw model hype and onto 'Lots of Little Multipliers'—a sandboxed, tool-rich platform architecture. Watch this masterclass to discover the exact operational blueprint that allows a heavily regulated digital bank to let AI agents investigate incidents, resolve code tasks, and empower non-technical staff.",
-      "dateAdded": "2026-10-21T00:15:25.643Z",
+      "summary": "What if the future of work isn't a chatbot waiting for your prompt, but autonomous agents executing 90% of company operations and assigning tasks to human employees only when needed? Arca's Head of AI reveals the real-world blueprint behind 'long-horizon' agents that coordinate complex, multi-week client workflows by reacting to live signals and removing humans from the critical path. If you want to see what a genuinely AI-native company looks like—where leadership steers the business simply by steering its agents—this talk is an absolute must-watch.",
+      "dateAdded": "2026-10-24T00:09:09.219Z",
       "timestamps": [
         {
-          "startTime": 225,
-          "endTime": 305,
-          "topic": "The 'Little Multipliers' Secret: Why Platform Engineering Beats Raw AI"
+          "startTime": 65,
+          "endTime": 170,
+          "topic": "Why Real Business Problems Demand Long-Horizon Agents, Not Long-Running Prompts"
         },
         {
-          "startTime": 370,
-          "endTime": 505,
-          "topic": "Sandboxed Architecture and MCP Gateway for Regulated AI Execution"
+          "startTime": 375,
+          "endTime": 465,
+          "topic": "The Event-Driven Signal System: Letting Agents Watch the World So Humans Don't Have To"
         },
         {
-          "startTime": 565,
-          "endTime": 735,
-          "topic": "High-Impact Use Cases: Automated Incident Triage and Proactive Defect Prevention"
+          "startTime": 620,
+          "endTime": 770,
+          "topic": "Inverting the Workplace: When Agents Prompt Humans and Run the Firm"
         }
       ]
     },
     {
-      "title": "Shipping AI Into 5 Major Banks Without a 12-Month Compliance Wait — Al Chen, Cisco",
-      "url": "https://www.youtube.com/watch?v=Bz1HFxQA1o8",
-      "videoId": "Bz1HFxQA1o8",
+      "title": "Real AI Agent Attacks and What Would Have Stopped Them — Andrey Rybka, Bloomberg",
+      "url": "https://www.youtube.com/watch?v=5O6jLtoeKrg",
+      "videoId": "5O6jLtoeKrg",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Most enterprise AI deployments die in year-long compliance purgatory because standard tools offer false security—from package scanners that never verify if vulnerabilities are truly patched, to LLM evaluators that secretly un-redact customer data in the background. This talk reveals the battle-tested blueprints used inside the world's strictest banks to overcome air-gapped infra, ClickHouse failover gaps, and hidden PII leaks to compress deployment timelines from twelve months down to weeks. If you want to ship production AI into high-stakes, regulated environments without failing your next security audit, this masterclass is essential viewing.",
-      "dateAdded": "2026-10-21T00:15:25.643Z",
+      "summary": "Think your sandbox keeps autonomous AI agents safe? Real-world breaches prove rogue agents can easily bypass traditional guardrails to wipe databases and exfiltrate enterprise data using sneaky sleeper prompts, Morse code, and covert DNS tunneling. This essential talk delivers the deterministic playbook—highlighted by the game-changing 'Rule of Two'—that every developer must implement to stop runaway agents before they compromise production.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
       "timestamps": [
         {
-          "startTime": 323,
-          "endTime": 420,
-          "topic": "Why vulnerability scanners lie and how to verify CVE patches with agentic sandboxes"
+          "startTime": 352,
+          "endTime": 410,
+          "topic": "The 'Rule of Two' security framework for autonomous agent actions"
         },
         {
-          "startTime": 420,
-          "endTime": 560,
-          "topic": "Solving multi-region disaster recovery and replica convergence in ClickHouse"
+          "startTime": 511,
+          "endTime": 575,
+          "topic": "Why standard sandboxes fail and how agents leak data via DNS tunneling"
         },
         {
-          "startTime": 605,
-          "endTime": 780,
-          "topic": "Plugging hidden PII and MNPI leaks inside LLM-as-a-judge reasoning"
+          "startTime": 808,
+          "endTime": 910,
+          "topic": "The defense-in-depth framework and three non-negotiable rules for production AI"
         }
       ]
     },
     {
-      "title": "There are only three things to fast career growth",
-      "url": "https://www.youtube.com/shorts/vXrZfH9KJCM",
-      "videoId": "vXrZfH9KJCM",
+      "title": "New Grad (IC3) to Staff (IC6) at Meta in 3 Years | Simon Kindström",
+      "url": "https://www.youtube.com/watch?v=qICgdxQe7kA",
+      "videoId": "qICgdxQe7kA",
       "channel": "Ryan Peterman",
       "category": "Tech & Engineering",
-      "summary": "Ever wonder what actually separates rapid career risers from the rest of the pack? In this candid reflection, an experienced tech leader cuts through comforting workplace clichés to reveal the only three real drivers of hyper-growth: luck, raw talent, and relentless hard work. Watch this short clip to understand why outworking your peers and surrounding yourself with elite mentors is the ultimate competitive edge.",
-      "dateAdded": "2026-10-21T00:15:25.643Z",
+      "summary": "Even earning Meta’s rarest, top-tier performance rating won't get you promoted unless you master one counterintuitive truth: performance ratings reward what you delivered, but promotions demand proof of how you operate at the next level. In this candid breakdown, an engineer who rocketed from IC3 to Staff Engineer (IC6) in just three years reveals the exact playbooks, scope expansions, and leadership hard lessons—like why 'delegation is not abdication'—that unlocked hyper-speed career progression. If you want to demystify Big Tech promotion committees and learn how to multiply your engineering leverage, this insider roadmap is essential viewing.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
       "timestamps": [
         {
-          "startTime": 0,
-          "endTime": 26,
-          "topic": "Accelerating growth by working alongside elite talent"
+          "startTime": 231,
+          "endTime": 282,
+          "topic": "Why top performance ratings don't guarantee a promotion"
         },
         {
-          "startTime": 26,
-          "endTime": 53,
-          "topic": "Extreme dedication and grueling early-career work habits"
+          "startTime": 525,
+          "endTime": 625,
+          "topic": "Proving Staff-level technical depth while managing large teams"
         },
         {
-          "startTime": 53,
-          "endTime": 106,
-          "topic": "The three real drivers of career success: luck, talent, and hard work"
+          "startTime": 626,
+          "endTime": 685,
+          "topic": "The core leadership mindset: delegation is not abdication"
         }
       ]
     },
     {
-      "title": "📖 Explore custom voice narration with Gemini 3.8 Flash TTS",
-      "url": "https://www.youtube.com/shorts/qJplHFjyv2A",
-      "videoId": "qJplHFjyv2A",
+      "title": "Design and replicate voices with Gemini 3.8 Flash TTS",
+      "url": "https://www.youtube.com/watch?v=SOF3_evPje8",
+      "videoId": "SOF3_evPje8",
       "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "Imagine transforming mundane text like a weather forecast into a wildly dramatic performance simply by snapping together emotional prompts like 'grandly' or 'giddy' for custom character voices. This showcase reveals how 'Once Upon a Tone' harnesses Gemini Flash TTS to achieve astonishingly expressive, real-time vocal direction with zero hassle. If you want to see how promptable AI audio is revolutionizing interactive storytelling, this demo is an absolute must-watch.",
-      "dateAdded": "2026-10-21T00:15:25.643Z",
+      "summary": "Imagine cloning your own voice in just twenty seconds or conjuring an entire multi-speaker podcast complete with distinct accents from a single prompt—Gemini's breakthrough text-to-speech capabilities make it surprisingly easy. This walk-through demonstrates how to design custom voices with authentic regional inflections, preserve those accents across foreign languages, and automate full studio-grade conversations using the API. If you create content, build apps, or want an inside look at the next evolution of synthetic speech, this demo is an essential watch.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
       "timestamps": [
         {
-          "startTime": 10,
-          "endTime": 28,
-          "topic": "Configuring character personas and initial vocal affectations"
+          "startTime": 55,
+          "endTime": 165,
+          "topic": "Designing a custom AI voice and accent from a natural language prompt"
         },
         {
-          "startTime": 28,
-          "endTime": 36,
-          "topic": "Live audio test of shifting emotional delivery"
+          "startTime": 170,
+          "endTime": 235,
+          "topic": "Preserving regional accents across different languages"
         },
         {
-          "startTime": 36,
-          "endTime": 52,
-          "topic": "Behind the scenes: Prompting Gemini Flash TTS for dynamic voices"
-        }
-      ]
-    },
-    {
-      "title": "Cukai M40 Belanjawan 2027",
-      "url": "https://www.youtube.com/shorts/6zTiZyqY1nQ",
-      "videoId": "6zTiZyqY1nQ",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Imagine slashing your annual tax bill by RM1,600 while writing off your monthly ChatGPT subscriptions, running shoes, and pet vaccinations. This provocative video lays out an eye-opening vision for 'Belanjawan 2027' tailored specifically to address the long-overlooked middle class. Note that this is a hypothetical, satirical wishlist rather than enacted government policy, but it offers an irresistible look at what modern, practical tax relief should look like for everyday working professionals.",
-      "dateAdded": "2026-10-21T00:15:25.643Z",
-      "timestamps": [
-        {
-          "startTime": 10,
-          "endTime": 71,
-          "topic": "Proposed RM3,000 personal tax relief increase and 1% tax rate cut for M40"
-        },
-        {
-          "startTime": 73,
-          "endTime": 143,
-          "topic": "Modernizing tax relief to cover AI tools, pet care, and sports gear"
-        },
-        {
-          "startTime": 149,
-          "endTime": 175,
-          "topic": "SARA Madani cash aid proposal for middle-income earners"
+          "startTime": 550,
+          "endTime": 760,
+          "topic": "Generating an automated multi-speaker podcast with distinct personas via the API"
         }
       ]
     },
@@ -205,6 +127,32 @@
           "startTime": 2795,
           "endTime": 3060,
           "topic": "How Shareholder Buy-Sell Agreements Prevent Business Paralysis Among Heirs"
+        }
+      ]
+    },
+    {
+      "title": "#119 | How To Build Trust (Gavin Liew, The Makeover Guys)",
+      "url": "https://www.youtube.com/watch?v=i-oA9axU4zI",
+      "videoId": "i-oA9axU4zI",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "Most service businesses get trapped in exhausting custom pitch cycles and negative-trust industries, but Gavin Liew scaled The Makeover Guys into an industry giant by turning chaotic home renovation into a predictable, transparent 'menu' system. In this masterclass interview, he breaks down the operational blueprint for productizing custom services, leveraging AI for instant visual fulfillment, and overcoming severe market skepticism. If you are a founder or manager looking to escape the micromanagement trap and navigate high-growth hiring—including the hidden danger of 'nice but underperforming' employees—this episode delivers high-leverage business gold.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
+      "timestamps": [
+        {
+          "startTime": 935,
+          "endTime": 1025,
+          "topic": "Escaping the Pitch Cycle: Turning Custom Interior Design into a Scalable Menu"
+        },
+        {
+          "startTime": 1145,
+          "endTime": 1335,
+          "topic": "Solving the 'Trust Deficit': Applying E-Commerce Predictability to Contracting"
+        },
+        {
+          "startTime": 1900,
+          "endTime": 2080,
+          "topic": "The Hyenas vs. Rabbits Framework: Navigating Culture and Performance at Scale"
         }
       ]
     },
@@ -261,130 +209,182 @@
       ]
     },
     {
-      "title": "\"People used to say Budget only focused on B40\" – Treasury Sec-gen Johan Merican | In The Studio",
-      "url": "https://www.youtube.com/watch?v=kkzKMC89jas",
-      "videoId": "kkzKMC89jas",
-      "channel": "BFM 89.9",
-      "category": "General Ideas",
-      "summary": "Ever wondered why corporations aggressively lobby for a Goods and Services Tax (GST) while policymakers hesitate, or how the government plans to generate billions in new revenue without levying major new taxes? Treasury Secretary-General Tan Sri Johan Mahmood Merican pulls back the curtain on the nation's fiscal engine, exposing the calculated strategy of using B2B e-invoicing to hunt down the shadow economy and explaining why conventional subsidy cuts would crush ordinary households. If you want to understand the real financial trade-offs dictating your cost of living and the future of the economy, this candid insider interview is an indispensable watch.",
-      "dateAdded": "2026-10-16T00:00:01.933Z",
+      "title": "The Regrets You Can Still Avoid | LATEST Khutbah by Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=inX5GdP5H2g",
+      "videoId": "inX5GdP5H2g",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "What if the secret to living with zero regrets isn't merely planning for old age, but reverse-engineering your daily choices backwards from the highest stations of Paradise? This khutbah takes a famous worldly strategy—the regret minimization framework—and elevates it into an urgent spiritual blueprint to resolve simmering grudges, protect your family ties, and tip the scales of eternity in your favor. Watching this will radically shift your perspective, pushing you to stop settling for the bare minimum and start purposefully building a life you won't regret on the Day of Judgment.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
       "timestamps": [
         {
-          "startTime": 460,
-          "endTime": 620,
-          "topic": "Why Malaysia rejected textbook subsidy cuts to shield everyday citizens"
+          "startTime": 155,
+          "endTime": 235,
+          "topic": "Adapting the Regret Minimization Framework for the Hereafter"
         },
         {
-          "startTime": 685,
-          "endTime": 855,
-          "topic": "How e-invoicing exposes the shadow economy without burdening small businesses"
+          "startTime": 555,
+          "endTime": 670,
+          "topic": "Reverse-engineering daily habits from the highest rank of Paradise"
         },
         {
-          "startTime": 885,
-          "endTime": 995,
-          "topic": "The real reason businesses push for GST and why the government adopted a hybrid model"
+          "startTime": 1235,
+          "endTime": 1320,
+          "topic": "Mending broken relationships before regrets become permanent"
         }
       ]
     },
     {
-      "title": "How Much Divorce Are You Seeing? | Signs of the Hour Ep. 22 | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=SkP_dFTLTu8",
-      "videoId": "SkP_dFTLTu8",
-      "channel": "Yaqeen Institute",
+      "title": "How to FINALLY Live a Disciplined Life as a Muslim",
+      "url": "https://www.youtube.com/watch?v=JbZHffCcW24",
+      "videoId": "JbZHffCcW24",
+      "channel": "Sh. Abdullah Oduro",
       "category": "Islamic Studies",
-      "summary": "Cutting off family ties isn't just an internal grievance—it is one of the rare sins that accelerates severe worldly punishment, stripping the barakah right out of your health, wealth, and relationships before you even reach the hereafter. Dr. Omar Suleiman delivers a sharp reality check on how modern culture and toxic algorithms manipulate us into labeling normal human discomfort as abuse, driving bitter inheritance feuds and widespread family estrangement. Watching this will fundamentally transform how you handle difficult relatives and protect your home from spiritual and social ruin.",
-      "dateAdded": "2026-10-21T00:15:25.643Z",
+      "summary": "If you are trapped in an exhausting cycle of having a productive week only to collapse back into secret bad habits by 'Day Eight,' this video delivers a powerful reality check on why consuming more information and relying on solo willpower will never fix your discipline. Imam Abdullah Oduro exposes how the private loop of guilt, repentance, and isolation quietly erodes self-trust and damages your role as a leader in your home. Watch this to uncover why knowledge is rarely the real bottleneck and how structured accountability is the missing key to breaking out of chronic relapses for good.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
       "timestamps": [
         {
           "startTime": 68,
-          "endTime": 155,
-          "topic": "Why severing kinship accelerates divine punishment in this worldly life"
+          "endTime": 175,
+          "topic": "The 'Day Eight' Loop: How private relapses destroy self-trust and family leadership"
         },
         {
-          "startTime": 228,
-          "endTime": 325,
-          "topic": "Setting healthy boundaries versus mistaking normal discomfort for abuse"
+          "startTime": 176,
+          "endTime": 226,
+          "topic": "The Knowledge Trap: Why more lectures and going solo cannot fix discipline"
         },
         {
-          "startTime": 808,
-          "endTime": 885,
-          "topic": "How social media algorithms actively fuel family estrangement"
+          "startTime": 227,
+          "endTime": 315,
+          "topic": "The Power of Brotherhood: Rebuilding consistency and breaking isolation"
         }
       ]
     },
     {
-      "title": "Check On Them | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/_wo17AHtboY",
-      "videoId": "_wo17AHtboY",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "When an esteemed community scholar suddenly vanished, nobody expected where he would turn up—or the profound lesson on dignity he was about to deliver. This moving 50-second story will radically shift how you view setbacks, proving that true provision and peace often arrive from paths you never anticipated. Watch this if you're navigating uncertainty and need an inspiring reminder that honest work is always a blessing.",
-      "dateAdded": "2026-10-21T00:15:25.643Z",
+      "title": "The revised rules of engineering management with Will Larson",
+      "url": "https://www.youtube.com/watch?v=Prl858_AovM",
+      "videoId": "Prl858_AovM",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "The zero-interest-rate era conditioned a generation of engineers and managers to avoid hard business realities and abandon hands-on technical work—habits that have quietly become fatal career traps in today's leaner market. Legendary engineering executive and author Will Larson reveals why bloated middle management is dying, why the strongest future CTOs are actually line managers who stayed close to the work, and why swallowing your ego to get back into the code is essential in the AI age. If you want a blunt, battle-tested playbook on what companies actually value now and how to future-proof your trajectory, this conversation is an absolute must-watch.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
+      "timestamps": [
+        {
+          "startTime": 2945,
+          "endTime": 3140,
+          "topic": "Why ZIRP-era habits spoiled engineers and how business impact replaced 'fun work'"
+        },
+        {
+          "startTime": 5170,
+          "endTime": 5410,
+          "topic": "Rethinking the executive path: Why line managers outshine middle managers as CTOs"
+        },
+        {
+          "startTime": 5605,
+          "endTime": 5775,
+          "topic": "The middle management reckoning: Why leaders must swallow their ego and reskill"
+        }
+      ]
+    },
+    {
+      "title": "How Senior Engineers Use Coding Agents On Prod Infrastructure",
+      "url": "https://www.youtube.com/watch?v=LaFpcqAJeQE",
+      "videoId": "LaFpcqAJeQE",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "Telling an AI agent 'make no mistakes and don't delete the cluster' isn't a safety protocol—it's just a polite suggestion that could easily wipe out your entire production infrastructure. In this conversation, HashiCorp senior developer advocate Karim Salah cuts through the generative AI hype to reveal why top engineers are shifting away from chaotic 'one-shot' prompts and toward deterministic, spec-driven guardrails. Watch this to discover how to turn AI agents into a reliable force multiplier that catches real-world bugs instead of spamming broken code and deleting critical cloud assets.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
+      "timestamps": [
+        {
+          "startTime": 435,
+          "endTime": 510,
+          "topic": "Why prompting agents to 'make no mistakes' fails and treating them like CI/CD pipelines"
+        },
+        {
+          "startTime": 1610,
+          "endTime": 1695,
+          "topic": "Building deterministic guardrails before autonomous agents delete production cloud resources"
+        },
+        {
+          "startTime": 1890,
+          "endTime": 2015,
+          "topic": "Why AI is reviving the craft of specification-driven software architecture"
+        }
+      ]
+    },
+    {
+      "title": "When should you NOT use /grill-me?",
+      "url": "https://www.youtube.com/shorts/k2zgcTDq4aQ",
+      "videoId": "k2zgcTDq4aQ",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Stop wasting time over-planning tiny code tweaks with AI—or blindly diving into complex architectures that blow up in your face. This quick decision framework reveals the exact sweet spot between one-shot prompting, grilling your AI partner to align expectations, and mapping massive projects without derailment. Master this workflow, and you'll immediately slash wasted AI iterations while shipping clean, accurate code every time.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
+      "timestamps": [
+        {
+          "startTime": 16,
+          "endTime": 53,
+          "topic": "When to one-shot code vs. grill your AI agent"
+        },
+        {
+          "startTime": 54,
+          "endTime": 96,
+          "topic": "Scaling complex planning across multiple sessions with Wayfinder"
+        }
+      ]
+    },
+    {
+      "title": "Your agent is a tactical tornado",
+      "url": "https://www.youtube.com/shorts/Vo33extKAeA",
+      "videoId": "Vo33extKAeA",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "AI coding assistants generate software at blistering speed, but left unchecked, they act as 'tactical tornadoes' that silently destroy your codebase's long-term health. Watch this video to understand the critical difference between tactical and strategic programming, and why you must act as the high-level architect rather than just another code monkey. If you want to harness AI without drowning in catastrophic technical debt, this quick insight is an essential mindset shift.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
       "timestamps": [
         {
           "startTime": 0,
-          "endTime": 28,
-          "topic": "An unexpected Uber pickup and a moment of community guilt"
+          "endTime": 26,
+          "topic": "The 'Tactical Tornado' developer archetype"
         },
         {
-          "startTime": 29,
-          "endTime": 50,
-          "topic": "Finding true contentment and trusting unexpected provision (rizq)"
+          "startTime": 26,
+          "endTime": 46,
+          "topic": "Tactical vs. strategic programming"
+        },
+        {
+          "startTime": 46,
+          "endTime": 85,
+          "topic": "Why AI agents are tactical tornadoes and how to manage them"
         }
       ]
     },
     {
-      "title": "How the Prophet ﷺ Built Disciplined Men",
-      "url": "https://www.youtube.com/watch?v=cRvdqtIgAM8",
-      "videoId": "cRvdqtIgAM8",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "The reason most modern men struggle spiritually and emotionally isn't a lack of willpower—it's the fatal mistake of trying to carry life and faith in isolation. This video reveals the forgotten relational blueprint of the Prophet's companions, demonstrating why true brotherhood must be a deliberate, scheduled discipline rather than a passive feeling left to chance. If you want to move past superficial small talk and build an unbreakable circle of mentors, peers, and accountability partners, this breakdown is an essential watch.",
-      "dateAdded": "2026-10-17T23:36:14.068Z",
+      "title": "The secret to building robust frontend apps with agents",
+      "url": "https://www.youtube.com/shorts/r8FYE2ZOj0E",
+      "videoId": "r8FYE2ZOj0E",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "If your AI coding agents keep generating brittle frontend code full of missed edge cases, a simple architectural shift will completely change the game: reducers and state machines. By stripping complex logic out of your UI and isolating it into pure state transitions, you keep your React components blissfully simple while enabling lightning-fast, headless testing that keeps agents locked on rails. Watch this breakdown to see how a single pattern can make agentic software development dramatically more reliable and bug-free.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
       "timestamps": [
         {
-          "startTime": 77,
-          "endTime": 190,
-          "topic": "Why authentic brotherhood requires deliberate structure rather than passive chemistry"
+          "startTime": 0,
+          "endTime": 41,
+          "topic": "How reducers structure UI state and events"
         },
         {
-          "startTime": 442,
-          "endTime": 645,
-          "topic": "The three-tier relationship model: mentors above, peers beside, and mentees below"
+          "startTime": 41,
+          "endTime": 74,
+          "topic": "Decoupling logic from the UI for rapid, headless testing"
         },
         {
-          "startTime": 710,
-          "endTime": 965,
-          "topic": "Ditching 'image management' to create genuine spiritual vulnerability and accountability"
-        }
-      ]
-    },
-    {
-      "title": "What Loneliness Does to a Man's Heart",
-      "url": "https://www.youtube.com/watch?v=WfQyqt4w4pU",
-      "videoId": "WfQyqt4w4pU",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "Many men believe retreating into their \"man cave\" keeps them grounded, but chronic isolation is actually blinding you to your own spiritual decline and emotional burnout. This video reveals why authentic brotherhood is a biological and spiritual necessity—acting as a vital mirror to keep your blind spots in check before you damage your marriage or snap at your children. If you find yourself withdrawing from community and carrying life's weight completely alone, watching this will fundamentally reframe how you protect your mental health and family.",
-      "dateAdded": "2026-10-18T23:48:08.978Z",
-      "timestamps": [
-        {
-          "startTime": 68,
-          "endTime": 205,
-          "topic": "The Mirror Effect: Why men drift spiritually without honest accountability"
-        },
-        {
-          "startTime": 340,
-          "endTime": 490,
-          "topic": "The Unguarded Heart: How isolation leaves you vulnerable to destructive habits"
-        },
-        {
-          "startTime": 502,
-          "endTime": 605,
-          "topic": "The Hidden Cost: Why bottling up stress damages your marriage and children"
+          "startTime": 74,
+          "endTime": 94,
+          "topic": "Why reducers make AI-generated code significantly more robust"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-10-21T00:19:35.896Z"
+  "lastUpdated": "2026-10-24T00:14:13.161Z"
 }
