@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-24",
+  "lastUpdated": "2026-10-25",
   "papers": [
     {
       "id": "hf:2610.22722",
@@ -11,10 +11,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Teams cannot compare privacy tests for split language models because each test uses different attacker access, data, and scoring.",
-      "fix": "LLM-Attacker records every test choice; in one GPT-2 test, extra training gradients raised exact-document recovery from 13.71% to 37.77%.",
-      "practicalUseCase": "Privacy claims mean little without context, so name the attacker, data, and scoring rule in every claim.",
-      "limitation": "The main experiment uses GPT-2 only and is shared with a companion study.",
+      "problem": "Teams cannot compare privacy tests for split language models, because each test uses different attacker access, data, and scoring.",
+      "fix": "Added training gradients raised token recovery from 94.20% to 97.38% and whole-document recovery from 13.71% to 37.77%.",
+      "practicalUseCase": "Attacker access changes privacy results a lot, so state the attacker, data, and scoring rule in every privacy claim.",
+      "limitation": "The shown result comes from one controlled GPT-2 experiment, so other models may behave differently.",
       "fullTextUrl": "https://huggingface.co/papers/2610.22722"
     },
     {
@@ -27,10 +27,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Rerunning full benchmarks costs too much, so experts hand-pick smaller test sets to save money.",
-      "fix": "The best AI-built test suites ranked about 75% of model pairs the same way the real benchmarks did.",
-      "practicalUseCase": "Agent-built tests are not yet reliable, so keep a human-picked sample of public tasks as your baseline.",
-      "limitation": "Agent-built tests can cut off answers, run out of budget, or let a few questions dominate a score.",
+      "problem": "Running full AI benchmarks again and again costs too much, and cheaper agent-built tests were untested.",
+      "fix": "AI-built test suites ranked about 75% of model pairs the same way as real benchmarks, against a 91% ceiling.",
+      "practicalUseCase": "A cheap AI-built test can guide quick model checks, but a human-picked sample of public tasks still works well.",
+      "limitation": "Agent-built tests still cut off answers, run out of budget, or let a few questions dominate a score.",
       "fullTextUrl": "https://huggingface.co/papers/2610.04184"
     },
     {
@@ -43,9 +43,9 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Two diffusion model outputs of equal length can cost very different amounts, and the reasons were unclear.",
-      "fix": "Story writing took more than three times the passes per token that grammar correction took.",
-      "practicalUseCase": "Expect copy-and-edit jobs to run cheap; weighting answers by decoding speed beat majority voting by up to 4.2 points.",
+      "problem": "Diffusion language models spend very different amounts of work on outputs of the same length, and the cause was unclear.",
+      "fix": "Story writing needs over three times more passes per token than grammar fixes; speed-weighted answers beat voting by 4.2 points.",
+      "practicalUseCase": "Expect cheap runs on copy-and-edit jobs, costly runs on open writing, and treat slow decoding as a warning.",
       "limitation": "The study covers only two diffusion models across 10 tasks.",
       "fullTextUrl": "https://huggingface.co/papers/2610.25835"
     },
@@ -59,10 +59,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Shrinking diffusion language models loses accuracy because each task needs different precision at different denoising steps.",
-      "fix": "T2Quant sets precision per step with a label-free signal, raising accuracy up to 6.7 percentage points at equal budget.",
-      "practicalUseCase": "When you compress these models, tune precision by task and step instead of using one setting everywhere.",
-      "limitation": "Tests covered three diffusion models and six benchmarks, so other models may behave differently.",
+      "problem": "Compressing diffusion language models hurts accuracy, because each task needs different precision at different denoising steps.",
+      "fix": "T2Quant sets precision per step without labels and lifted accuracy by up to 6.7 points at equal budget.",
+      "practicalUseCase": "Match compression precision to the task and the step to keep accuracy while you shrink the model.",
+      "limitation": "Tests covered three diffusion models and six benchmarks, so other models may not gain as much.",
       "fullTextUrl": "https://huggingface.co/papers/2610.31198"
     },
     {
@@ -76,10 +76,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks set up sustainability committees, but nobody knew whether they change environmental results in dual banking systems.",
-      "fix": "Committees raised all four environmental measures overall, but in Islamic banks they lifted only overall and resource scores.",
-      "practicalUseCase": "Islamic bank committees may show symbolic effort, so judge them on green products and innovations, not on their existence.",
-      "limitation": "Panel regressions show links between committees and scores, not proof of cause.",
+      "problem": "Banks set up sustainability committees, but it was unclear whether they lead to real environmental action.",
+      "fix": "Committees raised environmental scores in emerging-market banks, but in Islamic banks they lifted only overall scores and resource reduction.",
+      "practicalUseCase": "A committee alone may give Islamic banks only symbolic gains, so check for real green products and innovations.",
+      "limitation": "The study uses panel regressions on banks in emerging markets, so it shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
@@ -93,10 +93,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Little was known about how sustainability sukuk issuance grew or what sets the size of each issue.",
+      "problem": "Little was known about how sustainability sukuk grew or what decides the size of each issue.",
       "fix": "Across 11,944 sukuk issues, sustainability sukuk stayed tiny, and equity-based contracts gave larger issues than sale-based ones.",
-      "practicalUseCase": "Issuers wanting bigger issues should favour equity-based contracts and watch second party opinion costs, which shrink issue size.",
-      "limitation": "The data end in 2022, and growth sits mostly in Indonesia, Malaysia, and Saudi Arabia.",
+      "practicalUseCase": "Issuers should pick equity-based contracts, and policymakers should offer incentives, because second party opinion costs shrink issue size.",
+      "limitation": "The data stops at 2022 and shows links between features and issue size, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -110,10 +110,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Nobody had shown whether AI and big data help Islamic banks in Jordan compete and develop sustainably.",
-      "fix": "AI use, big data skills, and data management all raised competitiveness and sustainability; staff digital skill raised only competitiveness.",
-      "practicalUseCase": "Invest in AI, analytics, and data management first, because staff digital skill alone did not lift sustainability.",
-      "limitation": "One survey of 214 managers at Jordanian Islamic banks shows links, not cause.",
+      "problem": "Islamic banks in Jordan did not know whether AI and big data actually improve competitiveness and sustainable development.",
+      "fix": "AI, big data analytics, and data management all raised competitiveness and sustainable development; staff digital skill raised only competitiveness.",
+      "practicalUseCase": "Invest in AI, analytics, and data management first, because staff digital skill alone will not lift sustainable development.",
+      "limitation": "The survey covers 214 managers at 15 Jordanian Islamic banks at one time, so it shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -127,10 +127,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Little evidence showed what drives bank growth in countries that run both Islamic and conventional banks.",
-      "fix": "Across 218 banks in 12 countries, ICT adoption drove expansion most, and high-tech exports helped only when combined with ICT.",
-      "practicalUseCase": "Banks should put digital infrastructure first, and Islamic banks also need strong governance to grow.",
-      "limitation": "Data cover 218 banks in 12 countries from 2010 to 2023, so other markets may differ.",
+      "problem": "Banks in dual banking systems lacked clear evidence on what drives their expansion.",
+      "fix": "Across 218 banks in 12 countries, ICT adoption drove expansion most, and high-tech exports helped only alongside ICT.",
+      "practicalUseCase": "Banks should invest in digital tools first, because high-tech exports alone give no clear growth gain.",
+      "limitation": "The sample covers 12 countries and 2010 to 2023 only, so other markets may differ.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -144,11 +144,28 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Many people in Muslim-majority countries still lack financial services, even after a decade of Islamic finance growth.",
-      "fix": "Across 35 countries, income, education, institutional quality, and internet access drove financial inclusion in OIC states.",
-      "practicalUseCase": "OIC countries should invest in digital infrastructure, youth and women empowerment, and income growth, unlike OECD countries.",
-      "limitation": "Data cover only 35 OIC and OECD countries from 2005 to 2021.",
+      "problem": "Many people in Muslim-majority countries still lack formal financial services, even as Islamic finance grew.",
+      "fix": "In 35 countries, OIC financial inclusion depends on income, schooling, institutions, internet access, population, and age dependency.",
+      "practicalUseCase": "OIC countries need more digital infrastructure, youth and women empowerment, and higher income to widen financial inclusion.",
+      "limitation": "The study covers 35 countries from 2005 to 2021 and shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
+    },
+    {
+      "id": "https://openalex.org/W7204259442",
+      "doi": "https://doi.org/10.1371/journal.pone.0351713",
+      "title": "Global prevalence of impostor phenomenon in medical students: A systematic review and meta-analysis",
+      "publicationDate": "2026-08-26",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Víctor Juan Vera-Ponce et al.",
+      "institution": "National University Toribio Rodríguez de Mendoza",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "problem": "Medical students face constant tests and comparison, and no one knew how often they feel like impostors.",
+      "fix": "Impostor feelings were frequent among medical students worldwide, though results varied a lot by sampling method and region.",
+      "practicalUseCase": "If impostor feelings are common, schools should measure them one standard way and test help for coping and training culture.",
+      "limitation": "Results differed widely between studies, so the pooled estimate needs careful reading.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
     },
     {
       "id": "https://openalex.org/W7197047502",
@@ -161,10 +178,10 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Generative AI helps and harms doctoral students, so what drives their academic innovation was unclear.",
-      "fix": "Intrinsic and extrinsic motivation drive innovation together, and long-term unmet needs sharply cut flexibility and willingness to explore.",
-      "practicalUseCase": "Support doctoral students' basic needs, because strong resources can partly cover for weak motivation.",
-      "limitation": "One-time self-reported survey data cannot prove cause, and reverse causality is possible.",
+      "problem": "Generative AI helps doctoral students, but it was unclear what makes them truly innovative with it.",
+      "fix": "Both inner and outer motivation drive innovation together, and strong AI literacy makes motivation turn into innovation more efficiently.",
+      "practicalUseCase": "Build AI literacy and good research support, because they help innovation even when motivation is low.",
+      "limitation": "The study uses one self-reported survey in chemistry, so it cannot prove cause and may show bias.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0355186"
     }
   ]
