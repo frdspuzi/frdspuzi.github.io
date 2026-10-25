@@ -1,6 +1,32 @@
 {
   "videos": [
     {
+      "title": "Design and replicate voices with Gemini 3.8 Flash TTS",
+      "url": "https://www.youtube.com/watch?v=SOF3_evPje8",
+      "videoId": "SOF3_evPje8",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "Imagine cloning your own voice in just twenty seconds or conjuring an entire multi-speaker podcast complete with distinct accents from a single prompt—Gemini's breakthrough text-to-speech capabilities make it surprisingly easy. This walk-through demonstrates how to design custom voices with authentic regional inflections, preserve those accents across foreign languages, and automate full studio-grade conversations using the API. If you create content, build apps, or want an inside look at the next evolution of synthetic speech, this demo is an essential watch.",
+      "dateAdded": "2026-10-24T00:09:09.220Z",
+      "timestamps": [
+        {
+          "startTime": 55,
+          "endTime": 165,
+          "topic": "Designing a custom AI voice and accent from a natural language prompt"
+        },
+        {
+          "startTime": 170,
+          "endTime": 235,
+          "topic": "Preserving regional accents across different languages"
+        },
+        {
+          "startTime": 550,
+          "endTime": 760,
+          "topic": "Generating an automated multi-speaker podcast with distinct personas via the API"
+        }
+      ]
+    },
+    {
       "title": "AI Writes the Code. So What's Left for Engineers? - Laurie Voss, Arize AI",
       "url": "https://www.youtube.com/watch?v=kspZP5BgkEU",
       "videoId": "kspZP5BgkEU",
@@ -75,32 +101,6 @@
           "startTime": 845,
           "endTime": 970,
           "topic": "Turning Reactive AI into Proactive Research Partners"
-        }
-      ]
-    },
-    {
-      "title": "Design and replicate voices with Gemini 3.8 Flash TTS",
-      "url": "https://www.youtube.com/watch?v=SOF3_evPje8",
-      "videoId": "SOF3_evPje8",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Imagine cloning your own voice in just twenty seconds or conjuring an entire multi-speaker podcast complete with distinct accents from a single prompt—Gemini's breakthrough text-to-speech capabilities make it surprisingly easy. This walk-through demonstrates how to design custom voices with authentic regional inflections, preserve those accents across foreign languages, and automate full studio-grade conversations using the API. If you create content, build apps, or want an inside look at the next evolution of synthetic speech, this demo is an essential watch.",
-      "dateAdded": "2026-10-24T00:09:09.220Z",
-      "timestamps": [
-        {
-          "startTime": 55,
-          "endTime": 165,
-          "topic": "Designing a custom AI voice and accent from a natural language prompt"
-        },
-        {
-          "startTime": 170,
-          "endTime": 235,
-          "topic": "Preserving regional accents across different languages"
-        },
-        {
-          "startTime": 550,
-          "endTime": 760,
-          "topic": "Generating an automated multi-speaker podcast with distinct personas via the API"
         }
       ]
     },
@@ -391,5 +391,5 @@
       ]
     }
   ],
-  "lastUpdated": "2026-10-24T23:55:52.405Z"
+  "lastUpdated": "2026-10-25T23:39:52.983Z"
 }
