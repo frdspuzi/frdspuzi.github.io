@@ -1,134 +1,98 @@
 {
   "repos": [
     {
-      "fullName": "morluto/rea",
-      "url": "https://github.com/morluto/rea",
-      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "fullName": "cloudflare/security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings",
+      "language": "JavaScript",
+      "starsThisWeek": 12680,
+      "totalStars": 46823,
+      "ownerAvatarUrl": "https://github.com/cloudflare.png",
+      "contributorAvatarUrls": [
+        "https://github.com/literally-dan.png",
+        "https://github.com/CooperSheroy.png",
+        "https://github.com/kennysarnoski-jarvis.png"
+      ],
+      "hook": "This tool adds a security auditing skill to your AI coding agents. A security audit checks your software code for safety flaws. The tool runs several checks in steps. It verifies every security flaw independently before it reports the result. It outputs findings in formats that computers can read easily.",
+      "personalization": "You can inspect how it structures multi-phase verification prompts to build safer review workflows for your fullstack web apps."
+    },
+    {
+      "fullName": "ruvnet/ruflo",
+      "url": "https://github.com/ruvnet/ruflo",
+      "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
       "language": "TypeScript",
-      "starsThisWeek": 239923,
-      "totalStars": 321908,
-      "ownerAvatarUrl": "https://github.com/morluto.png",
-      "contributorAvatarUrls": [
-        "https://github.com/N0zoM1z0.png",
-        "https://github.com/kaoru0822-kitauji.png",
-        "https://github.com/claude.png",
-        "https://github.com/rudycelekli.png"
-      ],
-      "hook": "This tool uses AI agents to inspect compiled software. It analyzes how an application works without access to the source code. It converts raw machine instructions into readable logic.",
-      "personalization": ""
-    },
-    {
-      "fullName": "storytold/artcraft",
-      "url": "https://github.com/storytold/artcraft",
-      "description": "ArtCraft is an intentional crafting engine for artists, designers, and filmmakers",
-      "language": "Rust",
-      "starsThisWeek": 18479,
-      "totalStars": 32698,
-      "ownerAvatarUrl": "https://github.com/storytold.png",
-      "contributorAvatarUrls": [
-        "https://github.com/echelon.png",
-        "https://github.com/bflatastic.png",
-        "https://github.com/ArEnSc.png",
-        "https://github.com/wilwong.png",
-        "https://github.com/Quicksticks-oss.png"
-      ],
-      "hook": "This software helps creators design visual assets for games and films. It gives artists fine control over digital media workflows.",
-      "personalization": ""
-    },
-    {
-      "fullName": "boykopovar/AnyPS5",
-      "url": "https://github.com/boykopovar/AnyPS5",
-      "description": "Tool for automatic PS5 executables porting to Linux and Windows",
-      "language": "C++",
-      "starsThisWeek": 16250,
-      "totalStars": 43179,
-      "ownerAvatarUrl": "https://github.com/boykopovar.png",
+      "starsThisWeek": 3241,
+      "totalStars": 79278,
+      "ownerAvatarUrl": "https://github.com/ruvnet.png",
       "contributorAvatarUrls": [
         "https://github.com/claude.png",
-        "https://github.com/adriadam10.png",
-        "https://github.com/oneandonlydean.png",
-        "https://github.com/MarcZX10.png"
+        "https://github.com/rudycelekli.png",
+        "https://github.com/proffesor-for-testing.png"
       ],
-      "hook": "This program converts PlayStation 5 game files so they run on Linux and Windows computers. It translates the original game code into instructions that standard PC hardware understands.",
-      "personalization": ""
+      "hook": "This project helps you manage teams of software agents. An agent is a program that uses an AI model to complete tasks on its own. You can link multiple agents together in an automated workflow. The system gives agents long-term memory. It also connects agents to your local files and databases.",
+      "personalization": "Useful if you want to benchmark whether multi-agent swarms outperform single-agent prompt chains for complex development tasks."
     },
     {
-      "fullName": "anthropics/claude-plugins-official",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "fullName": "anthropics/knowledge-work-plugins",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
       "language": "Python",
-      "starsThisWeek": 3581,
-      "totalStars": 42660,
+      "starsThisWeek": 2631,
+      "totalStars": 32972,
       "ownerAvatarUrl": "https://github.com/anthropics.png",
       "contributorAvatarUrls": [
         "https://github.com/github-actions.png",
         "https://github.com/jordanecker-ant.png",
         "https://github.com/bryan-anthropic.png",
         "https://github.com/claude.png",
-        "https://github.com/mhegazy.png"
+        "https://github.com/mattpic-ant.png"
       ],
-      "hook": "This repository contains official add-on tools for Claude Code. Plugins are modular scripts that give the coding assistant new capabilities. They let the AI connect to external databases and run local terminal commands.",
-      "personalization": "You can inspect how Anthropic structures official extensions to evaluate and customize Claude Code in your daily workflow."
+      "hook": "This repository contains open source add-on tools for Claude. An add-on tool lets an AI system interact with external office services. These tools help workers automate routine daily office tasks. They run within Claude workspace tools.",
+      "personalization": "Provides official Anthropic examples of tool definitions and system prompts that you can study for prompt optimization."
     },
     {
-      "fullName": "mksglu/context-mode",
-      "url": "https://github.com/mksglu/context-mode",
-      "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "fullName": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "description": "The open source coding agent.",
       "language": "TypeScript",
-      "starsThisWeek": 4438,
-      "totalStars": 30750,
-      "ownerAvatarUrl": "https://github.com/mksglu.png",
+      "starsThisWeek": 6857,
+      "totalStars": 221510,
+      "ownerAvatarUrl": "https://github.com/anomalyco.png",
       "contributorAvatarUrls": [
-        "https://github.com/github-actions.png",
-        "https://github.com/claude.png",
-        "https://github.com/ipedro.png",
-        "https://github.com/ousamabenyounes.png"
+        "https://github.com/thdxr.png",
+        "https://github.com/rekram1-node.png",
+        "https://github.com/adamdotdevin.png",
+        "https://github.com/opencode-agent.png",
+        "https://github.com/kitlangton.png"
       ],
-      "hook": "This tool reduces the amount of text sent to AI coding assistants. It compresses large tool outputs before the model reads them. This saves space in the model context window. The context window is the memory limit for an AI session.",
-      "personalization": "This directly aligns with your prompt optimization work by cutting token usage and managing agent context efficiently."
+      "hook": "Opencode is an open source coding assistant that runs in your terminal. A coding assistant writes and edits source code using an AI model. It can read your local files and execute system commands. You can inspect and modify all of its code freely.",
+      "personalization": "A prime target for your AI coding tool evaluations, especially since it is open source and built with TypeScript."
     },
     {
-      "fullName": "cathrynlavery/diagram-design",
-      "url": "https://github.com/cathrynlavery/diagram-design",
-      "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
-      "language": "HTML",
-      "starsThisWeek": 8382,
-      "totalStars": 57669,
-      "ownerAvatarUrl": "https://github.com/cathrynlavery.png",
+      "fullName": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "description": "Orca is the place for working with a fleet of agents (e.g. Grok Bot, Claude Code). Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "language": "TypeScript",
+      "starsThisWeek": 9828,
+      "totalStars": 105775,
+      "ownerAvatarUrl": "https://github.com/stablyai.png",
       "contributorAvatarUrls": [
-        "https://github.com/github-actions.png",
-        "https://github.com/rudycelekli.png",
-        "https://github.com/claude.png",
-        "https://github.com/parveen0029.png"
+        "https://github.com/nwparker.png",
+        "https://github.com/brennanb2025.png",
+        "https://github.com/Jinwoo-H.png",
+        "https://github.com/AmethystLiang.png",
+        "https://github.com/orca-ide.png"
       ],
-      "hook": "This project provides clean visual templates for technical diagrams. It includes 44 distinct diagram layouts built with standard web code. AI coding tools can generate these charts directly without extra software dependencies.",
-      "personalization": "You can use these prompt-friendly templates in Cursor or Claude Code to generate clean architecture diagrams for your fullstack projects."
-    },
-    {
-      "fullName": "NationalSecurityAgency/ghidra",
-      "url": "https://github.com/NationalSecurityAgency/ghidra",
-      "description": "Ghidra is a software reverse engineering (SRE) framework",
-      "language": "Java",
-      "starsThisWeek": 7608,
-      "totalStars": 90880,
-      "ownerAvatarUrl": "https://github.com/NationalSecurityAgency.png",
-      "contributorAvatarUrls": [
-        "https://github.com/ryanmkurtz.png",
-        "https://github.com/ghidra1.png",
-        "https://github.com/dragonmacher.png",
-        "https://github.com/nsadeveloper789.png",
-        "https://github.com/caheckman.png"
-      ],
-      "hook": "Ghidra is a program that breaks down compiled software into readable code. Security analysts use it to examine binary files for vulnerabilities or malicious routines. Binary files are raw executable files that computers run.",
-      "personalization": ""
+      "hook": "Orca gives you one interface to run multiple AI coding agents. An interface is a screen where you interact with software. You can connect your existing accounts and service keys. It runs agents on your desktop computer, phone, or remote server.",
+      "personalization": "Simplifies side-by-side evaluations across different coding models using your own subscriptions."
     },
     {
       "fullName": "heygen-com/hyperframes",
       "url": "https://github.com/heygen-com/hyperframes",
       "description": "Write HTML. Render video. Built for agents.",
       "language": "TypeScript",
-      "starsThisWeek": 5639,
-      "totalStars": 66720,
+      "starsThisWeek": 5633,
+      "totalStars": 72136,
       "ownerAvatarUrl": "https://github.com/heygen-com.png",
       "contributorAvatarUrls": [
         "https://github.com/miguel-heygen.png",
@@ -137,44 +101,152 @@
         "https://github.com/claude.png",
         "https://github.com/ukimsanov.png"
       ],
-      "hook": "Hyperframes turns standard web code into video files. You write HTML and CSS to create the visual frames. Then, an automated script records and renders the final motion clip.",
+      "hook": "This tool converts standard web code into video files. You write visual layouts using HTML and styling rules. The software records those web elements as frames of a video. It allows software agents to generate video files programmatically.",
+      "personalization": "Could help you programmatically generate short explainer videos for side projects in Islamic finance or ethics."
+    },
+    {
+      "fullName": "android/skills",
+      "url": "https://github.com/android/skills",
+      "description": "",
+      "language": "Kotlin",
+      "starsThisWeek": 1317,
+      "totalStars": 9713,
+      "ownerAvatarUrl": "https://github.com/android.png",
+      "contributorAvatarUrls": [
+        "https://github.com/android-devrel-github-bot.png",
+        "https://github.com/simona-anomis.png",
+        "https://github.com/JoseAlcerreca.png",
+        "https://github.com/bentrengrove.png",
+        "https://github.com/vinishavathwani.png"
+      ],
+      "hook": "This repository provides ready-made agent skills for Android development. An agent skill gives an AI assistant specific instructions to complete a task. It helps coding agents follow official Android development rules.",
       "personalization": ""
     },
     {
-      "fullName": "cursor/plugins",
-      "url": "https://github.com/cursor/plugins",
-      "description": "Cursor plugin specification and official plugins",
-      "language": "TypeScript",
-      "starsThisWeek": 1536,
-      "totalStars": 12729,
-      "ownerAvatarUrl": "https://github.com/cursor.png",
-      "contributorAvatarUrls": [
-        "https://github.com/cursoragent.png",
-        "https://github.com/poteto.png",
-        "https://github.com/minupalaniappan.png",
-        "https://github.com/ericzakariasson.png",
-        "https://github.com/roshansada.png"
-      ],
-      "hook": "This repository defines the official standard for Cursor editor plugins. It includes ready-to-use add-on modules written in TypeScript. Developers can build new tools that integrate directly into the Cursor coding workflow.",
-      "personalization": "As you evaluate AI coding assistants, this repo shows the official TypeScript standard for extending Cursor's capabilities."
-    },
-    {
-      "fullName": "MadsLorentzen/ai-job-search",
-      "url": "https://github.com/MadsLorentzen/ai-job-search",
-      "description": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
+      "fullName": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "description": "Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.",
       "language": "Python",
-      "starsThisWeek": 4200,
-      "totalStars": 53073,
-      "ownerAvatarUrl": "https://github.com/MadsLorentzen.png",
+      "starsThisWeek": 6868,
+      "totalStars": 135212,
+      "ownerAvatarUrl": "https://github.com/Graphify-Labs.png",
       "contributorAvatarUrls": [
         "https://github.com/claude.png",
-        "https://github.com/ayobamiseun.png",
-        "https://github.com/oscarbol09.png",
-        "https://github.com/jakob1379.png"
+        "https://github.com/safishamsi.png",
+        "https://github.com/ayushcodes10.png",
+        "https://github.com/rajatnagda45.png",
+        "https://github.com/abhay-codes07.png"
       ],
-      "hook": "This project uses Claude Code to manage your job search locally. It analyzes job descriptions against your experience. Then, it creates tailored resumes and interview preparation notes.",
-      "personalization": "As a junior engineer, you can inspect how it prompts Claude Code to analyze requirements and tailor technical resumes."
+      "hook": "Graphify turns your code and documents into a structured knowledge graph. A knowledge graph is a network that maps connections between data points. The tool parses your files without sending data to an external vector database. A vector database stores numbers that represent text meaning. It helps AI coding agents understand complete software projects accurately.",
+      "personalization": "Directly enhances codebase context for Claude Code and Cursor during your agent evaluation workflows."
+    },
+    {
+      "fullName": "akitaonrails/ai-memory",
+      "url": "https://github.com/akitaonrails/ai-memory",
+      "description": "Solution for long term memory for agent coding CLIs and to facilitate handoff between different agent vendors",
+      "language": "Rust",
+      "starsThisWeek": 3541,
+      "totalStars": 13511,
+      "ownerAvatarUrl": "https://github.com/akitaonrails.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/viniciusdsandrade.png",
+        "https://github.com/rudycelekli.png",
+        "https://github.com/djalmajr.png"
+      ],
+      "hook": "This software gives long-term memory to command-line AI coding tools. A command-line tool is a program that runs inside your text terminal. The tool stores project context on your machine. It also helps you switch between different AI assistants without losing your work history.",
+      "personalization": "Solves context loss when you switch between different coding CLIs while evaluating tools."
+    },
+    {
+      "fullName": "Comfy-Org/ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI",
+      "description": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world.",
+      "language": "Python",
+      "starsThisWeek": 4648,
+      "totalStars": 142927,
+      "ownerAvatarUrl": "https://github.com/Comfy-Org.png",
+      "contributorAvatarUrls": [
+        "https://github.com/comfyanonymous.png",
+        "https://github.com/bigcat88.png",
+        "https://github.com/pythongosssss.png",
+        "https://github.com/comfyui-wiki.png",
+        "https://github.com/rattus128.png"
+      ],
+      "hook": "ComfyUI lets you generate images using an interactive visual editor. An image generation model creates pictures from text descriptions. You connect functional blocks together on a canvas to build an image workflow. You can run the entire system locally on your own computer.",
+      "personalization": ""
+    },
+    {
+      "fullName": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "language": "Python",
+      "starsThisWeek": 3232,
+      "totalStars": 44558,
+      "ownerAvatarUrl": "https://github.com/anthropics.png",
+      "contributorAvatarUrls": [
+        "https://github.com/github-actions.png",
+        "https://github.com/jordanecker-ant.png",
+        "https://github.com/bryan-anthropic.png",
+        "https://github.com/mhegazy.png",
+        "https://github.com/claude.png"
+      ],
+      "hook": "This repository is Anthropic's official collection of plugins for Claude Code. A plugin is a software module that adds new capabilities to an existing program. These plugins allow Claude Code to interact with external developer tools. Anthropic tests and maintains each plugin in this list.",
+      "personalization": "Essential to review if you want to extend Claude Code with custom tools for your fullstack workflow."
+    },
+    {
+      "fullName": "vllm-project/vllm",
+      "url": "https://github.com/vllm-project/vllm",
+      "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+      "language": "Python",
+      "starsThisWeek": 1371,
+      "totalStars": 95485,
+      "ownerAvatarUrl": "https://github.com/vllm-project.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/DarkLight1337.png",
+        "https://github.com/mgoin.png",
+        "https://github.com/WoosukKwon.png",
+        "https://github.com/hmellor.png"
+      ],
+      "hook": "vLLM is an engine for serving large language models quickly. Serving means hosting a model so that web applications can query it over the network. It optimizes computer memory to answer many requests at the same time. Developers use it to run models at lower cost.",
+      "personalization": ""
+    },
+    {
+      "fullName": "multica-ai/andrej-karpathy-skills",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "language": "",
+      "starsThisWeek": 2981,
+      "totalStars": 223828,
+      "ownerAvatarUrl": "https://github.com/multica-ai.png",
+      "contributorAvatarUrls": [
+        "https://github.com/forrestchang.png",
+        "https://github.com/claude.png",
+        "https://github.com/back1ply.png",
+        "https://github.com/herobrine19.png",
+        "https://github.com/szkocot.png"
+      ],
+      "hook": "This project provides a setup guide for Claude Code based on advice from Andrej Karpathy. The guide lives in a single configuration file named CLAUDE.md. It contains system instructions that prevent common AI coding mistakes. It tells the agent how to test code and avoid unwanted edits.",
+      "personalization": "A practical template for testing whether specific system prompts reduce hallucinations during automated coding tasks."
+    },
+    {
+      "fullName": "pingdotgg/t3code",
+      "url": "https://github.com/pingdotgg/t3code",
+      "description": "",
+      "language": "TypeScript",
+      "starsThisWeek": 1778,
+      "totalStars": 30117,
+      "ownerAvatarUrl": "https://github.com/pingdotgg.png",
+      "contributorAvatarUrls": [
+        "https://github.com/juliusmarminge.png",
+        "https://github.com/claude.png",
+        "https://github.com/t3dotgg.png",
+        "https://github.com/codex.png",
+        "https://github.com/maria-rcks.png"
+      ],
+      "hook": "T3 Code is an open source coding assistant interface. An assistant interface lets developers review and approve AI code changes visually. It focuses on fullstack web development workflows. It is built with TypeScript and modern web technologies.",
+      "personalization": "Directly aligns with your fullstack TypeScript stack and gives you another tool to benchmark against Claude Code."
     }
   ],
-  "lastUpdated": "2026-10-18T23:54:18.272Z"
+  "lastUpdated": "2026-10-25T23:48:21.588Z"
 }
