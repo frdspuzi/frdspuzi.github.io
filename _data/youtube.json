@@ -1,6 +1,58 @@
 {
   "videos": [
     {
+      "title": "4 things I’ve learned as a junior software engineer",
+      "url": "https://www.youtube.com/watch?v=vvzuWN_sFMQ",
+      "videoId": "vvzuWN_sFMQ",
+      "channel": "joowee",
+      "category": "Discovery 🌍",
+      "summary": "If you are paralyzed by imposter syndrome or terrified that asking basic questions will expose you as a fraud, this refreshingly honest guide pulls back the curtain on how early-career engineers actually survive. Discover the exact formula for getting unblocked without looking incompetent, why shipping bugs to production won't get you fired, and why senior teams view you as a long-term investment rather than an instant expert. Watch this to ditch workplace paranoia and master the real-world communication habits that guarantee long-term growth.",
+      "dateAdded": "2026-10-27T00:58:20.829Z",
+      "timestamps": [
+        {
+          "startTime": 75,
+          "endTime": 150,
+          "topic": "The simple formula for asking questions without looking incompetent"
+        },
+        {
+          "startTime": 185,
+          "endTime": 250,
+          "topic": "Navigating brutal code reviews and why bugs in production won't get you fired"
+        },
+        {
+          "startTime": 328,
+          "endTime": 405,
+          "topic": "Beating imposter syndrome: understanding junior hiring economics and realistic expectations"
+        }
+      ]
+    },
+    {
+      "title": "How To Grow As a Junior Developer To Senior | 5 Tips",
+      "url": "https://www.youtube.com/watch?v=JoU_CZWOoo0",
+      "videoId": "JoU_CZWOoo0",
+      "channel": "Travis Media",
+      "category": "Discovery 🌍",
+      "summary": "Most junior developers waste years obsessing over deep syntax trivia, unaware that escaping the junior rut has far less to do with writing clever code and everything to do with communication, decision-making, and ecosystem breadth. This guide reveals the exact five-part shift required to transform you from a reactive task-doer into the proactive leader engineering managers fight to promote. If you want a clear, no-nonsense roadmap to accelerate your path to mid and senior developer, this video is an essential watch.",
+      "dateAdded": "2026-10-27T00:58:20.829Z",
+      "timestamps": [
+        {
+          "startTime": 23,
+          "endTime": 72,
+          "topic": "The 4 real-world stages from Junior to Senior developer"
+        },
+        {
+          "startTime": 255,
+          "endTime": 340,
+          "topic": "Actionable habits for building soft skills and speaking up"
+        },
+        {
+          "startTime": 470,
+          "endTime": 530,
+          "topic": "Why decisive leadership earns you senior recognition"
+        }
+      ]
+    },
+    {
       "title": "Design and replicate voices with Gemini 3.8 Flash TTS",
       "url": "https://www.youtube.com/watch?v=SOF3_evPje8",
       "videoId": "SOF3_evPje8",
@@ -337,59 +389,7 @@
           "topic": "Why AI agents are tactical tornadoes and how to manage them"
         }
       ]
-    },
-    {
-      "title": "The secret to building robust frontend apps with agents",
-      "url": "https://www.youtube.com/shorts/r8FYE2ZOj0E",
-      "videoId": "r8FYE2ZOj0E",
-      "channel": "Matt Pocock",
-      "category": "Tech & Engineering",
-      "summary": "If your AI coding agents keep generating brittle frontend code full of missed edge cases, a simple architectural shift will completely change the game: reducers and state machines. By stripping complex logic out of your UI and isolating it into pure state transitions, you keep your React components blissfully simple while enabling lightning-fast, headless testing that keeps agents locked on rails. Watch this breakdown to see how a single pattern can make agentic software development dramatically more reliable and bug-free.",
-      "dateAdded": "2026-10-24T00:09:09.220Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 41,
-          "topic": "How reducers structure UI state and events"
-        },
-        {
-          "startTime": 41,
-          "endTime": 74,
-          "topic": "Decoupling logic from the UI for rapid, headless testing"
-        },
-        {
-          "startTime": 74,
-          "endTime": 94,
-          "topic": "Why reducers make AI-generated code significantly more robust"
-        }
-      ]
-    },
-    {
-      "title": "How To Stand Out In A World Of AI Designs",
-      "url": "https://www.youtube.com/watch?v=2tZT2-pS_pI",
-      "videoId": "2tZT2-pS_pI",
-      "channel": "Y Combinator",
-      "category": "Tech & Engineering",
-      "summary": "Most AI-built startup sites look flashy at first glance, but they secretly kill conversion rates by falling into classic 'vibe-coded' traps like scroll-jacking, hidden call-to-actions, and generic buzzwords. In this masterclass breakdown, Magic Patterns co-founder Alex Stanilovich demonstrates how to harness AI prototyping tools properly while tearing down real startup websites to show what actually converts users versus what repels them. If you are building software or landing pages with AI agents today, watching this will save you from burning traffic on costly design mistakes.",
-      "dateAdded": "2026-10-24T23:53:07.063Z",
-      "timestamps": [
-        {
-          "startTime": 270,
-          "endTime": 490,
-          "topic": "Magic Patterns Demo: Context-driven rapid prototyping using Cursor and MCP"
-        },
-        {
-          "startTime": 1410,
-          "endTime": 1640,
-          "topic": "The 'Vibe-Coded' Trap: Why scroll-jacking and over-animation destroy conversion rates"
-        },
-        {
-          "startTime": 2600,
-          "endTime": 2770,
-          "topic": "Developing real design taste as an engineer and pushing past mediocre AI defaults"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-10-25T23:39:52.983Z"
+  "lastUpdated": "2026-10-27T00:59:19.426Z"
 }
