@@ -1,152 +1,156 @@
 {
-  "lastUpdated": "2026-10-27",
+  "lastUpdated": "2026-10-28",
   "papers": [
     {
-      "id": "hf:2610.32093",
-      "doi": "https://arxiv.org/abs/2610.32093",
-      "title": "DiscoDemo: Discovering Efficient and Diverse Robot Demonstrations for Imitation Learning",
+      "id": "hf:2610.33005",
+      "doi": "https://arxiv.org/abs/2610.33005",
+      "title": "OpenESM: Energy-Steered Models Are Scalable Foundation Learners",
+      "publicationDate": "2026-10-06",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Yuan Pu et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Text models that only guess the next word cannot search for better answers before they write.",
+      "fix": "Energy-steered models refine a hidden state first, then write words, and beat GPT models on most of 26 tasks.",
+      "practicalUseCase": "If this holds, a model can think before it writes; try the released weights before paying for a bigger model.",
+      "limitation": "The paper compares against GPT models only and gives no cost or speed numbers.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.33005"
+    },
+    {
+      "id": "hf:2610.36420",
+      "doi": "https://arxiv.org/abs/2610.36420",
+      "title": "SO-101 Bench: Accessible Spatial Manipulation",
+      "publicationDate": "2026-10-26",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Truman Hickok",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Cheap robot arms had no test that checks if they can follow spoken placement orders.",
+      "fix": "The best trained robot policies score near 61%, but an AI agent that writes code scores 83.2%.",
+      "practicalUseCase": "Your choice of agent wrapper and language model matters more than the robot policy, so tune those first.",
+      "limitation": "Simulation overstates success compared with the real arm, though it keeps the same ranking of policies.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.36420"
+    },
+    {
+      "id": "hf:2610.32177",
+      "doi": "https://arxiv.org/abs/2610.32177",
+      "title": "Ψ-0.6: Adaptive Streams of Thought in a Unified Vision-Language World Model",
       "publicationDate": "2026-10-22",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Minho Park et al.",
+      "leadAuthor": "Khai Loong Aw et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Robot learning from demonstrations fails when the demonstrations cover only one narrow way to do the task.",
-      "fix": "The authors used a reinforcement learning generator to make varied successful demonstrations, lifting real-robot success from 39% to 78%.",
-      "practicalUseCase": "Varied demonstrations beat repeated ones, so collect different ways to finish a task before you collect more of the same.",
-      "limitation": "The result covers four manipulation tasks and one pretrained robot model family.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.32093"
+      "problem": "AI models for physical scenes use separate tools for seeing, language and shape, so they work poorly together.",
+      "fix": "One model mixes images, text and shape data while reasoning, and beats leading open models on spatial questions.",
+      "practicalUseCase": "If this holds, one model can answer 'will this fit' questions, so test spatial tasks with intermediate shape steps.",
+      "limitation": "The excerpt gives no exact scores, so the size of the gain is unclear.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.32177"
     },
     {
-      "id": "hf:2610.19687",
-      "doi": "https://arxiv.org/abs/2610.19687",
-      "title": "Function-Space Temporal Self-Distillation for Policy Optimization",
-      "publicationDate": "2026-10-13",
+      "id": "hf:2610.34386",
+      "doi": "https://arxiv.org/abs/2610.34386",
+      "title": "ParetoRSI-Gym: Can AI Agents Improve Language Models Across Multiple Domains?",
+      "publicationDate": "2026-10-24",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Aryan Das et al.",
+      "leadAuthor": "Haojin Wang et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Training language models to reason with only pass-or-fail scores gives weak feedback, and self-teaching setups drift unstably.",
-      "fix": "FSPO beat the best baseline by about 4 points and cut peak memory from 70 GB to 56 GB.",
-      "practicalUseCase": "You can train a stronger reasoning model on less memory, so cheaper hardware may be enough for fine-tuning.",
-      "limitation": "The tests used one model family, Olmo3-7B-Instruct, under a 5-hour training budget.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.19687"
+      "problem": "Tests of self-improving AI agents check one score, so they miss losses in other subjects.",
+      "fix": "The best agent, Claude Code with Opus-5, raises scores 9.2% across five subjects, and up to 63% in one.",
+      "practicalUseCase": "Agent tooling matters as much as the model, so judge agents by gains across many domains, not one score.",
+      "limitation": "The best result came from one agent setup, and the test fixes the training method and tools.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.34386"
     },
     {
-      "id": "hf:2610.25118",
-      "doi": "https://arxiv.org/abs/2610.25118",
-      "title": "How Much Feedback Is Needed to Break Template Protection? The Geometric Vulnerability of Biometric Authentication",
-      "publicationDate": "2026-10-17",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Eliron Rahimi et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Biometric systems that reveal only accept or reject were thought to protect stored face templates from rebuilding.",
-      "fix": "Attackers rebuilt protected templates from accept or reject answers alone, and a face prior cut the queries needed 5 times.",
-      "practicalUseCase": "A hidden template is not safe if the login check leaks answers, so limit and monitor repeated failed attempts.",
-      "limitation": "The work shows the attack method, and it does not measure how well real deployed systems resist it.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.25118"
-    },
-    {
-      "id": "hf:2610.21109",
-      "doi": "https://arxiv.org/abs/2610.21109",
-      "title": "Kolab: Benchmarking Human-Agent Collaboration in Long-Horizon Workflows",
-      "publicationDate": "2026-10-14",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Shirley Anugrah Hayati et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Agent benchmarks test whether AI finishes a task alone, not whether experts accept its work during long projects.",
-      "fix": "Top AI models overestimated how well experts collaborate with them and could not tell good collaboration from bad.",
-      "practicalUseCase": "Do not trust an AI agent's own claim that the teamwork went well, so check its output yourself.",
-      "limitation": "The dataset has 50 professionals and over 115 hours of recordings, which is small.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.21109"
-    },
-    {
-      "id": "hf:2610.27597",
-      "doi": "https://arxiv.org/abs/2610.27597",
-      "title": "WORTH Benchmark: Evidence Discovery under Not-Fully-Cooperative Information -- A Two-Episode Pilot",
-      "publicationDate": "2026-10-19",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Bo Zou et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Reasoning tests give models the clues up front, so they never test how models find evidence on their own.",
-      "fix": "In 31 of 37 runs, models named the same wrong suspects, picking suspicion clues 25 times and exoneration clues never.",
-      "practicalUseCase": "Models can pick clues that support a wrong answer, so ask an AI for evidence against its own conclusion.",
-      "limitation": "This pilot covers two episodes only and does not rank models or show a general cause.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.27597"
-    },
-    {
-      "id": "https://openalex.org/W7213873170",
-      "doi": "https://doi.org/10.55188/ijifsd.v18i3.1064",
-      "title": "Sharīʿah Compliance in Malaysia’s Digital Payment Systems: Evidence from Expert Interviews",
-      "publicationDate": "2026-09-22",
-      "venue": "International Journal of Islamic Finance and Sustainable Development",
-      "leadAuthor": "Wan Anis Wan Mohd Assrudin et al.",
-      "institution": "Universiti Utara Malaysia",
+      "id": "https://openalex.org/W7204751468",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
+      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Yunice Karina Tumewang et al.",
+      "institution": "Islamic University of Indonesia",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Malaysian digital payment services face doubts about real Shariah compliance, mostly among providers that are not banks.",
-      "fix": "Ten Shariah experts said non-bank payment providers have weaker governance, and also raised data risks and low consumer awareness.",
-      "practicalUseCase": "Check who governs a payment app's Shariah rules before you trust the label, since non-bank apps have less oversight.",
-      "limitation": "The study covers Malaysia only and rests on interviews with ten experts.",
-      "fullTextUrl": "https://doi.org/10.55188/ijifsd.v18i3.1064"
+      "problem": "Banks set up sustainability committees, but no one knew if Islamic banks gain the same results as conventional banks.",
+      "fix": "Committees raise environmental scores in both bank types, but Islamic banks show gains mainly in overall scores and resource reduction.",
+      "practicalUseCase": "A committee alone may give Islamic banks symbolic gains, so check for real green products and innovations.",
+      "limitation": "The study shows links in emerging-market banks, not proof that committees cause the results.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
-      "id": "https://openalex.org/W7213880368",
-      "doi": "https://doi.org/10.55188/ijifsd.v18i3.1406",
-      "title": "Interest Prohibitions and Contract Design in Medieval Christianity and Islam",
-      "publicationDate": "2026-09-22",
-      "venue": "International Journal of Islamic Finance and Sustainable Development",
-      "leadAuthor": "İbrahim Halil Sugözü et al.",
-      "institution": "Şırnak University",
+      "id": "https://openalex.org/W7204756985",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3341",
+      "title": "Trends and Determinants of Sustainability Sukuk Issuance: Evidence from Global Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Nazrul Hazizi Noordin",
+      "institution": "International Islamic University Malaysia",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Medieval lenders in Europe and Islamic lands both faced interest bans, and how each side coped was unclear.",
-      "fix": "European lenders hid return inside indirect contracts, while Islamic traditions put return in trade and partnerships with shared risk.",
-      "practicalUseCase": "A contract's label matters less than who owns the asset and who carries the loss, so check those first.",
-      "limitation": "The paper reviews doctrine and secondary history, with no new archives and no prevalence figures.",
-      "fullTextUrl": "https://doi.org/10.55188/ijifsd.v18i3.1406"
+      "problem": "Little is known about how sustainability sukuk issuance grows or what sets the size of each issue.",
+      "fix": "Across 11,944 sukuk issues from 2012 to 2022, equity-based contracts, strong security and USD or Euro currency give larger issues.",
+      "practicalUseCase": "Issuers who want bigger sustainability sukuk should use equity-based contracts and strong security, and watch opinion costs.",
+      "limitation": "The data stops at 2022 and shows links between features and issue size, not cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
-      "id": "https://openalex.org/W7213884700",
-      "doi": "https://doi.org/10.55188/ijifsd.v18i3.1264",
-      "title": "Financial Depth and Stability in Dual Banking Systems",
-      "publicationDate": "2026-09-22",
-      "venue": "International Journal of Islamic Finance and Sustainable Development",
-      "leadAuthor": "Abdul Jalil Mahama et al.",
-      "institution": "National University of Uzbekistan",
+      "id": "https://openalex.org/W7204766411",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.2651",
+      "title": "Artificial Intelligence and Big Data Strategies to Enhance Islamic Banks’ Competitiveness and Sustainable Development",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Ahmad Hisham Alnajjar et al.",
+      "institution": "Petra University",
+      "topics": [
+        "Islamic Studies & Finance",
+        "Tech"
+      ],
+      "problem": "Islamic banks in Jordan lacked proof that AI and big data help them compete and grow sustainably.",
+      "fix": "AI, big data and data management link to better competitiveness and sustainability; staff digital skill links only to competitiveness.",
+      "practicalUseCase": "Invest in AI, data tools and data management first, not only staff training, if you want sustainable results.",
+      "limitation": "The survey covers 214 managers at Jordanian Islamic banks at one time, so it shows links, not cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
+    },
+    {
+      "id": "https://openalex.org/W7204826719",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3458",
+      "title": "ICT, High-Tech Exports, and Institutions as Drivers of Bank Expansion Growth in a Dual Banking System",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Sulaeman Sulaeman et al.",
+      "institution": "Universitas Airlangga",
+      "topics": [
+        "Islamic Studies & Finance",
+        "Tech"
+      ],
+      "problem": "Nobody had compared what drives growth in Islamic and conventional banks across countries.",
+      "fix": "Across 218 banks in 12 countries, ICT use drives growth most, and high-tech exports help only with ICT.",
+      "practicalUseCase": "If this holds, digital investment beats other levers for bank growth, so back digital tools before other bets.",
+      "limitation": "The study covers 12 countries from 2010 to 2023, so results may differ elsewhere.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
+    },
+    {
+      "id": "https://openalex.org/W7204848949",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.2582",
+      "title": "Determinants of Financial Inclusion in the OIC and OECD Countries: Are They Different?",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Tengku Roziana et al.",
+      "institution": "International Centre for Education in Islamic Finance",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Evidence was thin on whether adding Islamic banking beside conventional banks helps a country's economy grow.",
-      "fix": "Across 27 countries over 2010 to 2024, more Islamic finance raised private credit (0.3725) and yearly real output (0.0842).",
-      "practicalUseCase": "Islamic banking looks like a growth partner to conventional banks, so policymakers can back it without replacing existing banks.",
-      "limitation": "The study compares only dual-banking countries, so it cannot show how they differ from single-system countries.",
-      "fullTextUrl": "https://doi.org/10.55188/ijifsd.v18i3.1264"
-    },
-    {
-      "id": "https://openalex.org/W7213928684",
-      "doi": "https://doi.org/10.55188/ijifsd.v18i3.1346",
-      "title": "Financing Government Issuances via Service Ownership Ṣukūk",
-      "publicationDate": "2026-09-22",
-      "venue": "International Journal of Islamic Finance and Sustainable Development",
-      "leadAuthor": "Abdulla Helal",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Gulf governments with budget deficits and high unemployment lack a Shariah-compliant way to borrow against public jobs.",
-      "fix": "A Gulf simulation showed the new sukuk cut deficits by 1.5 GDP points and borrowing costs by 62 basis points.",
-      "practicalUseCase": "If the model holds, governments could fund jobs and cut deficits together, but the idea needs legal and market testing.",
-      "limitation": "The model treats households as identical and may not fit lower-income Muslim-majority countries.",
-      "fullTextUrl": "https://doi.org/10.55188/ijifsd.v18i3.1346"
+      "problem": "Many people in Muslim-majority countries still lack formal financial services despite fast growth in Islamic finance.",
+      "fix": "In OIC countries, income, tertiary education, institution quality, internet access, population and age dependency shape financial inclusion.",
+      "practicalUseCase": "OIC countries need to invest in digital networks, youth and women empowerment, and income to reach more people.",
+      "limitation": "The study covers 35 countries from 2005 to 2021 and shows links, not proof of cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
     },
     {
       "id": "https://openalex.org/W7204259442",
@@ -159,10 +163,10 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Medical students may feel like frauds despite their success, and nobody had pooled the worldwide figures.",
-      "fix": "Impostor feelings were common among medical students worldwide, though results varied a lot by sampling method and region.",
-      "practicalUseCase": "If you feel like a fraud, you are far from alone, so talk to peers before it hurts your work.",
-      "limitation": "The pooled numbers vary widely between studies, so treat any single prevalence figure with caution.",
+      "problem": "Medical students face constant exams and comparison, but no one knew how often they feel like frauds.",
+      "fix": "Feeling like a fraud is common among medical students before they qualify, but estimates vary a lot between studies.",
+      "practicalUseCase": "If you feel like a fraud in training, know it is common, and seek support early.",
+      "limitation": "Results differed greatly between studies, so the pooled rate is only a rough guide.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
     },
     {
@@ -174,12 +178,13 @@
       "leadAuthor": "Yanqin Liu et al.",
       "institution": "Wuhan University",
       "topics": [
-        "Career & Productivity"
+        "Career & Productivity",
+        "Tech"
       ],
-      "problem": "Doctoral students use generative AI very differently, and it was unclear what drives their new ideas.",
-      "fix": "Both inner drive and outside rewards raised doctoral students' innovative work, and long unmet psychological needs sharply cut it.",
-      "practicalUseCase": "Protect your motivation and basic needs first, because AI tools will not rescue a burnt-out researcher.",
-      "limitation": "The data are one-time self-reports from chemistry students, so they cannot prove cause.",
+      "problem": "Doctoral students use generative AI, but it was unclear what drives their new research ideas.",
+      "fix": "Inner drive and outside rewards both push doctoral students to innovate, while long unmet needs cut willingness to explore.",
+      "practicalUseCase": "Meet your basic needs and mix curiosity with outside goals, because unmet needs block new ideas.",
+      "limitation": "The data comes from one-time self-reports, so it cannot prove cause or direction.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0355186"
     }
   ]
