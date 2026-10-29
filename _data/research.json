@@ -1,86 +1,53 @@
 {
-  "lastUpdated": "2026-10-28",
+  "lastUpdated": "2026-10-29",
   "papers": [
     {
-      "id": "hf:2610.33005",
-      "doi": "https://arxiv.org/abs/2610.33005",
-      "title": "OpenESM: Energy-Steered Models Are Scalable Foundation Learners",
-      "publicationDate": "2026-10-06",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Yuan Pu et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Text models that only guess the next word cannot search for better answers before they write.",
-      "fix": "Energy-steered models refine a hidden state first, then write words, and beat GPT models on most of 26 tasks.",
-      "practicalUseCase": "If this holds, a model can think before it writes; try the released weights before paying for a bigger model.",
-      "limitation": "The paper compares against GPT models only and gives no cost or speed numbers.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.33005"
-    },
-    {
-      "id": "hf:2610.36420",
-      "doi": "https://arxiv.org/abs/2610.36420",
-      "title": "SO-101 Bench: Accessible Spatial Manipulation",
-      "publicationDate": "2026-10-26",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Truman Hickok",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Cheap robot arms had no test that checks if they can follow spoken placement orders.",
-      "fix": "The best trained robot policies score near 61%, but an AI agent that writes code scores 83.2%.",
-      "practicalUseCase": "Your choice of agent wrapper and language model matters more than the robot policy, so tune those first.",
-      "limitation": "Simulation overstates success compared with the real arm, though it keeps the same ranking of policies.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.36420"
-    },
-    {
-      "id": "hf:2610.32177",
-      "doi": "https://arxiv.org/abs/2610.32177",
-      "title": "Ψ-0.6: Adaptive Streams of Thought in a Unified Vision-Language World Model",
+      "id": "hf:2610.33245",
+      "doi": "https://arxiv.org/abs/2610.33245",
+      "title": "AdaPRA: Process Reward Agents with Adaptive Rubrics for Data Science",
       "publicationDate": "2026-10-22",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Khai Loong Aw et al.",
+      "leadAuthor": "Atharva Naik et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "AI models for physical scenes use separate tools for seeing, language and shape, so they work poorly together.",
-      "fix": "One model mixes images, text and shape data while reasoning, and beats leading open models on spatial questions.",
-      "practicalUseCase": "If this holds, one model can answer 'will this fit' questions, so test spatial tasks with intermediate shape steps.",
-      "limitation": "The excerpt gives no exact scores, so the size of the gain is unclear.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.32177"
+      "problem": "AI data science agents repeat the same checks every attempt, make coding mistakes, and waste their limited budget.",
+      "fix": "A supervisor agent raised an 80B model's leaderboard rank by 24.5 points on easy tasks and 14.8 on hard.",
+      "practicalUseCase": "If agents repeat work, a checker that remembers past attempts helps; add one to your own coding agent loops.",
+      "limitation": "The tests used one family of data science tasks, so other kinds of work may not improve as much.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.33245"
     },
     {
-      "id": "hf:2610.34386",
-      "doi": "https://arxiv.org/abs/2610.34386",
-      "title": "ParetoRSI-Gym: Can AI Agents Improve Language Models Across Multiple Domains?",
-      "publicationDate": "2026-10-24",
+      "id": "hf:2610.30435",
+      "doi": "https://arxiv.org/abs/2610.30435",
+      "title": "Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models",
+      "publicationDate": "2026-10-20",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Haojin Wang et al.",
+      "leadAuthor": "Taewhoo Lee et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Tests of self-improving AI agents check one score, so they miss losses in other subjects.",
-      "fix": "The best agent, Claude Code with Opus-5, raises scores 9.2% across five subjects, and up to 63% in one.",
-      "practicalUseCase": "Agent tooling matters as much as the model, so judge agents by gains across many domains, not one score.",
-      "limitation": "The best result came from one agent setup, and the test fixes the training method and tools.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.34386"
+      "problem": "AI search agents do not track what they already found, so they invent answers or stop searching too early.",
+      "fix": "Training agents to judge their own search progress beat the strongest baseline by 24.3 percent.",
+      "practicalUseCase": "If the agent knows what is missing, it searches better; prefer agents trained to track their own search progress.",
+      "limitation": "The gains come from benchmark tests, so real-world research tasks may behave differently.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.30435"
     },
     {
-      "id": "https://openalex.org/W7204751468",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
-      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Yunice Karina Tumewang et al.",
-      "institution": "Islamic University of Indonesia",
+      "id": "hf:2610.22684",
+      "doi": "https://arxiv.org/abs/2610.22684",
+      "title": "AlphaBet: Reinforcement Learning for LLM Event Forecasting Agents",
+      "publicationDate": "2026-10-14",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Liqin Ye et al.",
       "topics": [
-        "Islamic Studies & Finance"
+        "Tech"
       ],
-      "problem": "Banks set up sustainability committees, but no one knew if Islamic banks gain the same results as conventional banks.",
-      "fix": "Committees raise environmental scores in both bank types, but Islamic banks show gains mainly in overall scores and resource reduction.",
-      "practicalUseCase": "A committee alone may give Islamic banks symbolic gains, so check for real green products and innovations.",
-      "limitation": "The study shows links in emerging-market banks, not proof that committees cause the results.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
+      "problem": "AI forecasting models learn from evidence handed to them at one date, so they never practise finding evidence.",
+      "fix": "Training one model on many dates per event cut its Brier score from 0.731 to 0.626.",
+      "practicalUseCase": "If you build a forecasting agent, train it on several dates per event instead of one.",
+      "limitation": "The results come from one model, GLM-4.5-Air, on two forecasting benchmarks.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.22684"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -93,10 +60,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Little is known about how sustainability sukuk issuance grows or what sets the size of each issue.",
-      "fix": "Across 11,944 sukuk issues from 2012 to 2022, equity-based contracts, strong security and USD or Euro currency give larger issues.",
-      "practicalUseCase": "Issuers who want bigger sustainability sukuk should use equity-based contracts and strong security, and watch opinion costs.",
-      "limitation": "The data stops at 2022 and shows links between features and issue size, not cause.",
+      "problem": "Almost nobody knows how sustainability sukuk issuance grew or what decides the size of each issue.",
+      "fix": "Across 11,944 sukuk issues, equity-based contracts, strong security, and USD or Euro denomination bring larger issue sizes.",
+      "practicalUseCase": "If you want bigger green sukuk, use equity-based contracts and major currencies, and keep second party opinion costs low.",
+      "limitation": "The data stop at 2022 and show links between factors and issue size, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -108,13 +75,12 @@
       "leadAuthor": "Ahmad Hisham Alnajjar et al.",
       "institution": "Petra University",
       "topics": [
-        "Islamic Studies & Finance",
-        "Tech"
+        "Islamic Studies & Finance"
       ],
-      "problem": "Islamic banks in Jordan lacked proof that AI and big data help them compete and grow sustainably.",
-      "fix": "AI, big data and data management link to better competitiveness and sustainability; staff digital skill links only to competitiveness.",
-      "practicalUseCase": "Invest in AI, data tools and data management first, not only staff training, if you want sustainable results.",
-      "limitation": "The survey covers 214 managers at Jordanian Islamic banks at one time, so it shows links, not cause.",
+      "problem": "Islamic banks in Jordan do not know whether AI and big data actually improve competitiveness and sustainable development.",
+      "fix": "A survey of 214 managers links AI, big data analytics, and data management to higher competitiveness and sustainability.",
+      "practicalUseCase": "If you run an Islamic bank, invest in AI and data systems; staff digital skill alone did not help sustainability.",
+      "limitation": "The survey covers one country at one point in time, so it shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -126,13 +92,12 @@
       "leadAuthor": "Sulaeman Sulaeman et al.",
       "institution": "Universitas Airlangga",
       "topics": [
-        "Islamic Studies & Finance",
-        "Tech"
+        "Islamic Studies & Finance"
       ],
-      "problem": "Nobody had compared what drives growth in Islamic and conventional banks across countries.",
-      "fix": "Across 218 banks in 12 countries, ICT use drives growth most, and high-tech exports help only with ICT.",
-      "practicalUseCase": "If this holds, digital investment beats other levers for bank growth, so back digital tools before other bets.",
-      "limitation": "The study covers 12 countries from 2010 to 2023, so results may differ elsewhere.",
+      "problem": "Banks lack clear evidence on which national factors drive growth in a system with both Islamic and conventional banks.",
+      "fix": "Across 218 banks, ICT adoption drove growth most, and high-tech exports helped only when combined with ICT.",
+      "practicalUseCase": "If you plan a bank's growth, fund digital systems first and push for clean governance, especially for Islamic banks.",
+      "limitation": "The data cover 12 countries from 2010 to 2023, so other regions may differ.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -146,11 +111,45 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Many people in Muslim-majority countries still lack formal financial services despite fast growth in Islamic finance.",
-      "fix": "In OIC countries, income, tertiary education, institution quality, internet access, population and age dependency shape financial inclusion.",
-      "practicalUseCase": "OIC countries need to invest in digital networks, youth and women empowerment, and income to reach more people.",
-      "limitation": "The study covers 35 countries from 2005 to 2021 and shows links, not proof of cause.",
+      "problem": "Many people in Muslim-majority countries stay outside formal finance, even as Islamic finance expanded over the last decade.",
+      "fix": "In OIC states, income, tertiary education, institutions, internet access, population, and age dependency all shape financial inclusion.",
+      "practicalUseCase": "If you set inclusion policy in OIC states, spend on digital infrastructure, youth and women, and raising income.",
+      "limitation": "The study covers 35 countries from 2005 to 2021 and shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
+    },
+    {
+      "id": "https://openalex.org/W7204751468",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
+      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Yunice Karina Tumewang et al.",
+      "institution": "Islamic University of Indonesia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Banks form sustainability committees, but it is unclear whether those committees change real environmental work at Islamic banks.",
+      "fix": "Committees link to better environmental scores, but at Islamic banks only overall and resource reduction scores improve.",
+      "practicalUseCase": "If you judge an Islamic bank's green claims, check for real products and innovations, not just a committee.",
+      "limitation": "The study uses panel regressions, so it shows links between committees and scores, not cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
+    },
+    {
+      "id": "https://openalex.org/W7197047502",
+      "doi": "https://doi.org/10.1371/journal.pone.0355186",
+      "title": "Exploring the influencing factors of academic doctoral students’ academic innovation behavior in the context of generative artificial intelligence: Self-determination theory and motivation-opportunity-ability perspectives",
+      "publicationDate": "2026-08-06",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Yanqin Liu et al.",
+      "institution": "Wuhan University",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "problem": "PhD students struggle to turn research motivation into new ideas, and nobody knows how generative AI changes that.",
+      "fix": "Both inner and outer motivation drive doctoral innovation, and strong AI literacy makes that motivation turn into innovation more efficiently.",
+      "practicalUseCase": "If you do research, build your AI skills and protect your motivation; good resources only partly cover low drive.",
+      "limitation": "The study uses one self-reported survey at one time, so it cannot prove which factor causes which.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0355186"
     },
     {
       "id": "https://openalex.org/W7204259442",
@@ -163,29 +162,11 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Medical students face constant exams and comparison, but no one knew how often they feel like frauds.",
-      "fix": "Feeling like a fraud is common among medical students before they qualify, but estimates vary a lot between studies.",
-      "practicalUseCase": "If you feel like a fraud in training, know it is common, and seek support early.",
-      "limitation": "Results differed greatly between studies, so the pooled rate is only a rough guide.",
+      "problem": "Medical students face heavy testing and peer comparison, but nobody knew how often they feel like frauds.",
+      "fix": "Impostor feelings were frequent among medical students worldwide, though results varied a lot by sampling method and region.",
+      "practicalUseCase": "If you feel like a fraud in a tough program, know it is common, and seek support early.",
+      "limitation": "The studies differed widely, so the pooled rate is shaky and varies by sampling method and region.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
-    },
-    {
-      "id": "https://openalex.org/W7197047502",
-      "doi": "https://doi.org/10.1371/journal.pone.0355186",
-      "title": "Exploring the influencing factors of academic doctoral students’ academic innovation behavior in the context of generative artificial intelligence: Self-determination theory and motivation-opportunity-ability perspectives",
-      "publicationDate": "2026-08-06",
-      "venue": "PLoS ONE",
-      "leadAuthor": "Yanqin Liu et al.",
-      "institution": "Wuhan University",
-      "topics": [
-        "Career & Productivity",
-        "Tech"
-      ],
-      "problem": "Doctoral students use generative AI, but it was unclear what drives their new research ideas.",
-      "fix": "Inner drive and outside rewards both push doctoral students to innovate, while long unmet needs cut willingness to explore.",
-      "practicalUseCase": "Meet your basic needs and mix curiosity with outside goals, because unmet needs block new ideas.",
-      "limitation": "The data comes from one-time self-reports, so it cannot prove cause or direction.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0355186"
     }
   ]
 }
