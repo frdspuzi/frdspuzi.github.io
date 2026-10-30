@@ -1,53 +1,85 @@
 {
-  "lastUpdated": "2026-10-29",
+  "lastUpdated": "2026-10-30",
   "papers": [
     {
-      "id": "hf:2610.33245",
-      "doi": "https://arxiv.org/abs/2610.33245",
-      "title": "AdaPRA: Process Reward Agents with Adaptive Rubrics for Data Science",
-      "publicationDate": "2026-10-22",
+      "id": "hf:2610.33645",
+      "doi": "https://arxiv.org/abs/2610.33645",
+      "title": "PreView: Enhancing GUI Grounding with Preprocessed Views and Cues",
+      "publicationDate": "2026-10-23",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Atharva Naik et al.",
+      "leadAuthor": "Wenjun Hou et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "AI data science agents repeat the same checks every attempt, make coding mistakes, and waste their limited budget.",
-      "fix": "A supervisor agent raised an 80B model's leaderboard rank by 24.5 points on easy tasks and 14.8 on hard.",
-      "practicalUseCase": "If agents repeat work, a checker that remembers past attempts helps; add one to your own coding agent loops.",
-      "limitation": "The tests used one family of data science tasks, so other kinds of work may not improve as much.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.33245"
+      "problem": "Screen agents miss small buttons in cluttered screenshots and click the wrong control.",
+      "fix": "A small helper model crops and zooms the target area and adds a red circle plus a text hint.",
+      "practicalUseCase": "Frozen click models gain accuracy across five benchmarks without retraining, so add a zoom step before your agent clicks.",
+      "limitation": "The reported gains are average results on benchmarks, so your own screens may behave differently.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.33645"
     },
     {
-      "id": "hf:2610.30435",
-      "doi": "https://arxiv.org/abs/2610.30435",
-      "title": "Self-Assessment Reinforcement Learning for Search-State Awareness in Retrieval-Augmented Large Language Models",
-      "publicationDate": "2026-10-20",
+      "id": "hf:2610.22990",
+      "doi": "https://arxiv.org/abs/2610.22990",
+      "title": "PersonaCUABench: Benchmarking Computer-Use Agents Serving Diverse Personas",
+      "publicationDate": "2026-10-15",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Taewhoo Lee et al.",
+      "leadAuthor": "Haoming Li et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "AI search agents do not track what they already found, so they invent answers or stop searching too early.",
-      "fix": "Training agents to judge their own search progress beat the strongest baseline by 24.3 percent.",
-      "practicalUseCase": "If the agent knows what is missing, it searches better; prefer agents trained to track their own search progress.",
-      "limitation": "The gains come from benchmark tests, so real-world research tasks may behave differently.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.30435"
+      "problem": "Computer agents pass fixed benchmark tasks, but real users leave out details and add their own limits.",
+      "fix": "When 44 personas phrased the same 74 tasks, mean task completion fell by 36% across nine models.",
+      "practicalUseCase": "A high benchmark score overstates real use, so test your agent with vague, personal requests.",
+      "limitation": "The personas are simulated by another AI, not real people.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.22990"
     },
     {
-      "id": "hf:2610.22684",
-      "doi": "https://arxiv.org/abs/2610.22684",
-      "title": "AlphaBet: Reinforcement Learning for LLM Event Forecasting Agents",
-      "publicationDate": "2026-10-14",
+      "id": "hf:2610.27100",
+      "doi": "https://arxiv.org/abs/2610.27100",
+      "title": "LOB-Impact Benchmark: Emergent Market Impact in Generative Limit Order Book Models",
+      "publicationDate": "2026-10-18",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Liqin Ye et al.",
+      "leadAuthor": "George Nigmatulin et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "AI forecasting models learn from evidence handed to them at one date, so they never practise finding evidence.",
-      "fix": "Training one model on many dates per event cut its Brier score from 0.731 to 0.626.",
-      "practicalUseCase": "If you build a forecasting agent, train it on several dates per event instead of one.",
-      "limitation": "The results come from one model, GLM-4.5-Air, on two forecasting benchmarks.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.22684"
+      "problem": "Trading simulators built from AI models may misprice how an agent's own orders move the market.",
+      "fix": "Five AI market models showed price impact on their own, with exponents from 0.63 to 1.21.",
+      "practicalUseCase": "Simulated impact runs above the usual 0.5 rule, so test a simulator against real markets before training agents.",
+      "limitation": "The models showed no impact decay after trades, which the authors link to short context windows.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.27100"
+    },
+    {
+      "id": "hf:2610.37626",
+      "doi": "https://arxiv.org/abs/2610.37626",
+      "title": "Know, then Draw: A New Learning Paradigm for Visual Generation",
+      "publicationDate": "2026-10-26",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Yucheng Mao et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Image generators must learn both what things are and how to render fine pixel detail.",
+      "fix": "Learning meaning first with autoregression, then rendering with diffusion, trained a 3B model in 6,600 H100 GPU-hours.",
+      "practicalUseCase": "Strong image models can cost far less compute, so split meaning from rendering when you train your own.",
+      "limitation": "The scores come from two benchmarks, GenEval at 86 and DPG-Bench at 87, on one model size.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.37626"
+    },
+    {
+      "id": "hf:2610.36095",
+      "doi": "https://arxiv.org/abs/2610.36095",
+      "title": "Instruction Capacity: Behavior and Degradation of Language Models under Controlled Load",
+      "publicationDate": "2026-10-25",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Hennadii Kutomanov",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Nobody could state how many instructions a language model can follow before quality drops.",
+      "fix": "GPT-4o mini held about 37 to 38 rules at 0.95 correct, and about 18 to 19 at full density.",
+      "practicalUseCase": "Long prompts with many rules fail quietly, so keep your prompt rules well under that limit.",
+      "limitation": "The test used word-swap rules on one model, so real tasks and other models may differ.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.36095"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -60,45 +92,11 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Almost nobody knows how sustainability sukuk issuance grew or what decides the size of each issue.",
-      "fix": "Across 11,944 sukuk issues, equity-based contracts, strong security, and USD or Euro denomination bring larger issue sizes.",
-      "practicalUseCase": "If you want bigger green sukuk, use equity-based contracts and major currencies, and keep second party opinion costs low.",
-      "limitation": "The data stop at 2022 and show links between factors and issue size, not cause.",
+      "problem": "Little was known about how sustainability sukuk issuance grew or what drives issue size.",
+      "fix": "Across 11,944 sukuk from 2012 to 2022, equity-based contracts, stronger security and longer debt terms gave larger issues.",
+      "practicalUseCase": "Issuers who want bigger green or social sukuk should use equity-based contracts and strong security.",
+      "limitation": "The data shows links between factors and size, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
-    },
-    {
-      "id": "https://openalex.org/W7204766411",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.2651",
-      "title": "Artificial Intelligence and Big Data Strategies to Enhance Islamic Banks’ Competitiveness and Sustainable Development",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Ahmad Hisham Alnajjar et al.",
-      "institution": "Petra University",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Islamic banks in Jordan do not know whether AI and big data actually improve competitiveness and sustainable development.",
-      "fix": "A survey of 214 managers links AI, big data analytics, and data management to higher competitiveness and sustainability.",
-      "practicalUseCase": "If you run an Islamic bank, invest in AI and data systems; staff digital skill alone did not help sustainability.",
-      "limitation": "The survey covers one country at one point in time, so it shows links, not cause.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
-    },
-    {
-      "id": "https://openalex.org/W7204826719",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3458",
-      "title": "ICT, High-Tech Exports, and Institutions as Drivers of Bank Expansion Growth in a Dual Banking System",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Sulaeman Sulaeman et al.",
-      "institution": "Universitas Airlangga",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Banks lack clear evidence on which national factors drive growth in a system with both Islamic and conventional banks.",
-      "fix": "Across 218 banks, ICT adoption drove growth most, and high-tech exports helped only when combined with ICT.",
-      "practicalUseCase": "If you plan a bank's growth, fund digital systems first and push for clean governance, especially for Islamic banks.",
-      "limitation": "The data cover 12 countries from 2010 to 2023, so other regions may differ.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
       "id": "https://openalex.org/W7204848949",
@@ -111,11 +109,45 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Many people in Muslim-majority countries stay outside formal finance, even as Islamic finance expanded over the last decade.",
-      "fix": "In OIC states, income, tertiary education, institutions, internet access, population, and age dependency all shape financial inclusion.",
-      "practicalUseCase": "If you set inclusion policy in OIC states, spend on digital infrastructure, youth and women, and raising income.",
-      "limitation": "The study covers 35 countries from 2005 to 2021 and shows links, not cause.",
+      "problem": "Many people in Muslim-majority nations still lack formal financial services despite Islamic finance growth.",
+      "fix": "Across 35 countries from 2005 to 2021, income, education, institutions and internet access drive inclusion in OIC states.",
+      "practicalUseCase": "OIC countries should invest in digital infrastructure and in youth and women, because those levers raise inclusion.",
+      "limitation": "The panel regression shows links across countries, not proof of cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
+    },
+    {
+      "id": "https://openalex.org/W7204826719",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3458",
+      "title": "ICT, High-Tech Exports, and Institutions as Drivers of Bank Expansion Growth in a Dual Banking System",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Sulaeman Sulaeman et al.",
+      "institution": "Universitas Airlangga",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "It was unclear what drives bank growth in countries with both Islamic and conventional banks.",
+      "fix": "Across 218 banks in 12 countries, ICT adoption drove bank expansion most, and high-tech exports helped only alongside ICT.",
+      "practicalUseCase": "Banks and regulators should invest in digital systems first, because they pay off most for growth.",
+      "limitation": "The data covers 12 countries from 2010 to 2023, so other markets may differ.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
+    },
+    {
+      "id": "https://openalex.org/W7204766411",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.2651",
+      "title": "Artificial Intelligence and Big Data Strategies to Enhance Islamic Banks’ Competitiveness and Sustainable Development",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Ahmad Hisham Alnajjar et al.",
+      "institution": "Petra University",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Islamic banks in Jordan lacked evidence on whether AI and big data help them compete.",
+      "fix": "Survey answers from 214 managers link AI, big data analytics and data management to higher competitiveness and sustainable development.",
+      "practicalUseCase": "Islamic bank leaders should invest in AI and data practices, since managers tie them to better results.",
+      "limitation": "The survey covers 214 managers at 15 Jordanian banks at one time, so it shows links, not cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
       "id": "https://openalex.org/W7204751468",
@@ -128,10 +160,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks form sustainability committees, but it is unclear whether those committees change real environmental work at Islamic banks.",
-      "fix": "Committees link to better environmental scores, but at Islamic banks only overall and resource reduction scores improve.",
-      "practicalUseCase": "If you judge an Islamic bank's green claims, check for real products and innovations, not just a committee.",
-      "limitation": "The study uses panel regressions, so it shows links between committees and scores, not cause.",
+      "problem": "Banks set up sustainability committees, but their real effect on environmental work was unclear.",
+      "fix": "Committees raised environmental scores, products, innovation and resource cuts, yet in Islamic banks they mainly lifted overall and resource scores.",
+      "practicalUseCase": "Regulators should not assume a committee changes Islamic bank products, so check what the bank actually launches.",
+      "limitation": "The study covers emerging markets only and shows links through panel regression, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
@@ -145,28 +177,28 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "PhD students struggle to turn research motivation into new ideas, and nobody knows how generative AI changes that.",
-      "fix": "Both inner and outer motivation drive doctoral innovation, and strong AI literacy makes that motivation turn into innovation more efficiently.",
-      "practicalUseCase": "If you do research, build your AI skills and protect your motivation; good resources only partly cover low drive.",
-      "limitation": "The study uses one self-reported survey at one time, so it cannot prove which factor causes which.",
+      "problem": "Doctoral students feel pressure to innovate, and it was unclear what helps them do it with generative AI.",
+      "fix": "Both inner drive and outside rewards raise innovation, and AI literacy strengthens how much motivation turns into new ideas.",
+      "practicalUseCase": "Build AI skills and good research support, because they help even when your motivation is low.",
+      "limitation": "Self-reported survey data from one point in time cannot prove which factor causes the other.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0355186"
     },
     {
-      "id": "https://openalex.org/W7204259442",
-      "doi": "https://doi.org/10.1371/journal.pone.0351713",
-      "title": "Global prevalence of impostor phenomenon in medical students: A systematic review and meta-analysis",
-      "publicationDate": "2026-08-26",
+      "id": "https://openalex.org/W7106226611",
+      "doi": "https://doi.org/10.1371/journal.pone.0353990",
+      "title": "Positive mood enhances accessibility of unrelated concepts in the first language but not in the foreign language",
+      "publicationDate": "2026-08-12",
       "venue": "PLoS ONE",
-      "leadAuthor": "Víctor Juan Vera-Ponce et al.",
-      "institution": "National University Toribio Rodríguez de Mendoza",
+      "leadAuthor": "Piotr Żukowski et al.",
+      "institution": "Adam Mickiewicz University in Poznań",
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Medical students face heavy testing and peer comparison, but nobody knew how often they feel like frauds.",
-      "fix": "Impostor feelings were frequent among medical students worldwide, though results varied a lot by sampling method and region.",
-      "practicalUseCase": "If you feel like a fraud in a tough program, know it is common, and seek support early.",
-      "limitation": "The studies differed widely, so the pooled rate is shaky and varies by sampling method and region.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
+      "problem": "Bilingual people switch languages daily, but how mood changes their thinking in each language was unclear.",
+      "fix": "Positive mood widened word links in the first language, but left the foreign language unchanged.",
+      "practicalUseCase": "Mood may change how you think in your first language, so make big decisions in a steady mood.",
+      "limitation": "Brain recordings show this pattern in a lab setting, so everyday work may differ.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0353990"
     }
   ]
 }
