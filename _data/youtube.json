@@ -1,6 +1,110 @@
 {
   "videos": [
     {
+      "title": "25 Years in Tech, Now Laid Off: Honest Advice for Junior Engineers in a Brutal Job Market",
+      "url": "https://www.youtube.com/watch?v=E5VQ1nd-sIs",
+      "videoId": "E5VQ1nd-sIs",
+      "channel": "Asian Dad Energy",
+      "category": "Discovery 🌍",
+      "summary": "A computer science degree no longer guarantees a lucrative career—junior developers are now fighting an uphill battle against laid-off veterans, AI automation, and shrinking corporate headcounts. Drawing on 25 years of industry experience and a recent Big Tech layoff, this veteran engineer pulls back the curtain on why the junior pipeline broke and delivers the hard-hitting coping strategies you must adopt to survive it. If you are studying computer science or struggling to land your first tech role, this urgent reality check will save you months of misdirected effort.",
+      "dateAdded": "2026-10-31T01:08:44.481Z",
+      "timestamps": [
+        {
+          "startTime": 308,
+          "endTime": 445,
+          "topic": "The Brutal Shift: Why Entry-Level Tech Jobs Are Disappearing"
+        },
+        {
+          "startTime": 545,
+          "endTime": 590,
+          "topic": "Building Real Eminence Instead of Generic Portfolio Projects"
+        },
+        {
+          "startTime": 645,
+          "endTime": 725,
+          "topic": "The Backdoor Strategy: Breaking In via Adjacent Technical Roles"
+        }
+      ]
+    },
+    {
+      "title": "4 things I’ve learned as a junior software engineer",
+      "url": "https://www.youtube.com/watch?v=vvzuWN_sFMQ",
+      "videoId": "vvzuWN_sFMQ",
+      "channel": "joowee",
+      "category": "Discovery 🌍",
+      "summary": "If you are paralyzed by imposter syndrome or terrified that asking basic questions will expose you as a fraud, this refreshingly honest guide pulls back the curtain on how early-career engineers actually survive. Discover the exact formula for getting unblocked without looking incompetent, why shipping bugs to production won't get you fired, and why senior teams view you as a long-term investment rather than an instant expert. Watch this to ditch workplace paranoia and master the real-world communication habits that guarantee long-term growth.",
+      "dateAdded": "2026-10-27T00:58:20.829Z",
+      "timestamps": [
+        {
+          "startTime": 75,
+          "endTime": 150,
+          "topic": "The simple formula for asking questions without looking incompetent"
+        },
+        {
+          "startTime": 185,
+          "endTime": 250,
+          "topic": "Navigating brutal code reviews and why bugs in production won't get you fired"
+        },
+        {
+          "startTime": 328,
+          "endTime": 405,
+          "topic": "Beating imposter syndrome: understanding junior hiring economics and realistic expectations"
+        }
+      ]
+    },
+    {
+      "title": "How to Decide What Your AI Agent Should Remember - Wojciech Pluta, Oracle",
+      "url": "https://www.youtube.com/watch?v=qq2Hm4XNRgI",
+      "videoId": "qq2Hm4XNRgI",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "While most developers obsess over RAG, retrieval is only half the battle—it is merely a read path that leaves your AI agents with complete amnesia after every interaction. This presentation delivers the breakthrough paradigm of 'memory promotion,' revealing how to architect an intelligent write path that filters, validates, and stores critical context without poisoning your database or blowing your token budget. If you want to stop building stateless chatbots and start deploying resilient, self-improving enterprise agents, this talk is a must-watch blueprint.",
+      "dateAdded": "2026-10-31T01:08:44.481Z",
+      "timestamps": [
+        {
+          "startTime": 215,
+          "endTime": 302,
+          "topic": "Why RAG is only the read path and how memory promotion pipelines work"
+        },
+        {
+          "startTime": 588,
+          "endTime": 695,
+          "topic": "Live demo: Enforcing memory guardrails to prevent harmful commands and memory poisoning"
+        },
+        {
+          "startTime": 735,
+          "endTime": 825,
+          "topic": "The engineering dilemma: Deciding what to promote versus what to forget"
+        }
+      ]
+    },
+    {
+      "title": "Your AI Agent Starts Every Session Like a New Hire - Killian Carlsen-Phelan, Sonar",
+      "url": "https://www.youtube.com/watch?v=8vDzncmzxyg",
+      "videoId": "8vDzncmzxyg",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "While 96% of developers distrust AI-generated code, nearly half still push it to production without verifying it—creating an expensive security disaster waiting to happen. This presentation reveals how embedding deterministic verification directly into the agentic coding loop stops AI from blindly burning tokens and forces it to automatically catch and fix subtle vulnerabilities before a pull request is even opened. If you are building with autonomous coding agents and want to eliminate exhausting code reviews and production bugs, this actionable walkthrough is an essential watch.",
+      "dateAdded": "2026-10-31T01:08:44.481Z",
+      "timestamps": [
+        {
+          "startTime": 270,
+          "endTime": 395,
+          "topic": "Why coding agents waste tokens and how deterministic guardrails fix them"
+        },
+        {
+          "startTime": 650,
+          "endTime": 740,
+          "topic": "Steering agents upfront: Context injection as the greatest lever for code quality"
+        },
+        {
+          "startTime": 780,
+          "endTime": 955,
+          "topic": "Why AI shouldn't check AI: Catching hidden security flaws deterministically"
+        }
+      ]
+    },
+    {
       "title": "#118 | Building A Global Snack and Wellness Platfrom (Pierre Pang, Mamee CEO)",
       "url": "https://www.youtube.com/watch?v=RnbaL_XQ3ss",
       "videoId": "RnbaL_XQ3ss",
@@ -127,32 +231,6 @@
           "startTime": 3930,
           "endTime": 4115,
           "topic": "Why clinic medicines cost more than pharmacies: service versus product economics"
-        }
-      ]
-    },
-    {
-      "title": "4 things I’ve learned as a junior software engineer",
-      "url": "https://www.youtube.com/watch?v=vvzuWN_sFMQ",
-      "videoId": "vvzuWN_sFMQ",
-      "channel": "joowee",
-      "category": "Discovery 🌍",
-      "summary": "If you are paralyzed by imposter syndrome or terrified that asking basic questions will expose you as a fraud, this refreshingly honest guide pulls back the curtain on how early-career engineers actually survive. Discover the exact formula for getting unblocked without looking incompetent, why shipping bugs to production won't get you fired, and why senior teams view you as a long-term investment rather than an instant expert. Watch this to ditch workplace paranoia and master the real-world communication habits that guarantee long-term growth.",
-      "dateAdded": "2026-10-27T00:58:20.829Z",
-      "timestamps": [
-        {
-          "startTime": 75,
-          "endTime": 150,
-          "topic": "The simple formula for asking questions without looking incompetent"
-        },
-        {
-          "startTime": 185,
-          "endTime": 250,
-          "topic": "Navigating brutal code reviews and why bugs in production won't get you fired"
-        },
-        {
-          "startTime": 328,
-          "endTime": 405,
-          "topic": "Beating imposter syndrome: understanding junior hiring economics and realistic expectations"
         }
       ]
     },
@@ -311,85 +389,7 @@
           "topic": "Tiered exemptions for homes up to RM750k and the 4-year buying window"
         }
       ]
-    },
-    {
-      "title": "[S02:E04] Business owner meninggal, bisnes terus tutup? - Mohamed Ibrahim",
-      "url": "https://www.youtube.com/watch?v=gIj6idKC9y8",
-      "videoId": "gIj6idKC9y8",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Most entrepreneurs don't realize that running an enterprise means their business legally dies with them—bank accounts freeze overnight, licenses vanish, and families inherit liabilities directly. In this eye-opening masterclass, legal expert Tuan Muhammad Ibrahim reveals how simple structural safeguards, from converting to an Sdn Bhd to establishing proactive shareholder agreements, protect your life's work from devastating probate paralysis. If you have spent years building a business and want to ensure it becomes an enduring legacy rather than an emotional and financial trap for your loved ones, watching this breakdown is essential.",
-      "dateAdded": "2026-10-21T00:15:25.643Z",
-      "timestamps": [
-        {
-          "startTime": 230,
-          "endTime": 385,
-          "topic": "Why an Enterprise Dies with You vs. How an Sdn Bhd Preserves Continuity"
-        },
-        {
-          "startTime": 1440,
-          "endTime": 1710,
-          "topic": "Navigating Frozen Bank Accounts, Payroll, and Family Survival Post-Demise"
-        },
-        {
-          "startTime": 2795,
-          "endTime": 3060,
-          "topic": "How Shareholder Buy-Sell Agreements Prevent Business Paralysis Among Heirs"
-        }
-      ]
-    },
-    {
-      "title": "#119 | How To Build Trust (Gavin Liew, The Makeover Guys)",
-      "url": "https://www.youtube.com/watch?v=i-oA9axU4zI",
-      "videoId": "i-oA9axU4zI",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "Most service businesses get trapped in exhausting custom pitch cycles and negative-trust industries, but Gavin Liew scaled The Makeover Guys into an industry giant by turning chaotic home renovation into a predictable, transparent 'menu' system. In this masterclass interview, he breaks down the operational blueprint for productizing custom services, leveraging AI for instant visual fulfillment, and overcoming severe market skepticism. If you are a founder or manager looking to escape the micromanagement trap and navigate high-growth hiring—including the hidden danger of 'nice but underperforming' employees—this episode delivers high-leverage business gold.",
-      "dateAdded": "2026-10-24T00:09:09.220Z",
-      "timestamps": [
-        {
-          "startTime": 935,
-          "endTime": 1025,
-          "topic": "Escaping the Pitch Cycle: Turning Custom Interior Design into a Scalable Menu"
-        },
-        {
-          "startTime": 1145,
-          "endTime": 1335,
-          "topic": "Solving the 'Trust Deficit': Applying E-Commerce Predictability to Contracting"
-        },
-        {
-          "startTime": 1900,
-          "endTime": 2080,
-          "topic": "The Hyenas vs. Rabbits Framework: Navigating Culture and Performance at Scale"
-        }
-      ]
-    },
-    {
-      "title": "Why Your Du’a Isn’t Being Answered | Anchored Ep. 6 | Sh. Mohammad Elshinawy",
-      "url": "https://www.youtube.com/watch?v=lQ3Ikx1iazc",
-      "videoId": "lQ3Ikx1iazc",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Ever feel like your prayers are hitting a ceiling no matter how desperately or frequently you plead? This eye-opening talk reveals how overlooked unlawful income can quietly blockade your supplications, thoroughly shattering the popular myth that charitable giving can wash away ill-gotten wealth. By learning how to hold wealth in your hands rather than your heart and tapping into genuine spiritual brokenness, you will discover the exact formula to ensure your prayers are genuinely heard and answered.",
-      "dateAdded": "2026-10-24T23:53:07.063Z",
-      "timestamps": [
-        {
-          "startTime": 385,
-          "endTime": 615,
-          "topic": "The Robin Hood trap: Why charity cannot cleanse unlawful earnings"
-        },
-        {
-          "startTime": 880,
-          "endTime": 1020,
-          "topic": "Wealth in the hand vs. the heart: The Islamic framework for money"
-        },
-        {
-          "startTime": 1485,
-          "endTime": 1635,
-          "topic": "The power of brokenness: Why humility unlocks answered prayers"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-10-29T01:20:56.720Z"
+  "lastUpdated": "2026-10-31T01:10:06.292Z"
 }

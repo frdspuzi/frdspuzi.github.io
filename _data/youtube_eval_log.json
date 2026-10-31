@@ -1,23 +1,44 @@
 [
   {
-    "videoId": "rsOiZE19RVo",
-    "title": "Accelerate shipping to scale with Google Antigravity",
+    "videoId": "E5VQ1nd-sIs",
+    "title": "25 Years in Tech, Now Laid Off: Honest Advice for Junior Engineers in a Brutal Job Market",
+    "selected": true,
+    "reasoning": "Provides grounded, practical career guidance specifically targeted at junior engineers navigating today's challenging tech hiring climate.",
+    "summary": "A 25-year industry veteran offers unfiltered perspective on surviving tech downturns and building enduring career capital. It delivers practical mindset shifts that will help junior engineers stay resilient and protect their career trajectories."
+  },
+  {
+    "videoId": "vvzuWN_sFMQ",
+    "title": "4 things I’ve learned as a junior software engineer",
+    "selected": true,
+    "reasoning": "Directly relevant to his day-to-day experience and growth as an early-career junior developer.",
+    "summary": "Get a candid breakdown of early lessons learned in the trenches of junior software engineering, from asking better questions to managing imposter syndrome. It provides actionable takeaways to help you level up faster within your engineering team."
+  },
+  {
+    "videoId": "D1y-CGDr92Y",
+    "title": "How To Land Your First Junior Dev Role",
     "selected": false,
-    "reasoning": "This is essentially a promotional case study and marketing showcase for a proprietary Google platform rather than actionable, hands-on software engineering guidance.",
+    "reasoning": "He has already broken into the industry and landed a junior fullstack role, making basic job-hunting advice redundant.",
     "summary": ""
   },
   {
-    "videoId": "cv8tEbKtEvk",
-    "title": "🪴 Building an autonomous plant rover with Gemini Live",
-    "selected": false,
-    "reasoning": "This is a brief novelty YouTube Short highlighting a hardware robotics toy project, which lacks depth and practical relevance for a junior fullstack developer.",
-    "summary": ""
+    "videoId": "qq2Hm4XNRgI",
+    "title": "How to Decide What Your AI Agent Should Remember - Wojciech Pluta, Oracle",
+    "selected": true,
+    "reasoning": "Highly practical, applied AI architecture talk on implementing persistent memory in agentic systems without heavy academic math.",
+    "summary": "Moving beyond basic RAG, this talk breaks down how to design memory systems that let AI agents retain state and user preferences across sessions. It is essential viewing for fullstack developers looking to build robust, agentic backend workflows."
   },
   {
-    "videoId": "ID6vEy94j7c",
-    "title": "Building real-time vision & edge navigation with Gemini Live",
+    "videoId": "8vDzncmzxyg",
+    "title": "Your AI Agent Starts Every Session Like a New Hire - Killian Carlsen-Phelan, Sonar",
+    "selected": true,
+    "reasoning": "Directly tackles real-world developer productivity and AI tooling by exploring how to enforce codebase conventions on coding agents.",
+    "summary": "AI coding assistants often waste time and tokens because they don't know your repo's specific architectural patterns or lint rules. This talk demonstrates how to equip agents with deterministic codebase context so they generate production-ready code on the first try."
+  },
+  {
+    "videoId": "YU1uD_YkpjU",
+    "title": "Your Agent Just Paid for Nothing: 6 Attacks on x402 Payments - Ishween Kaur, SoFi",
     "selected": false,
-    "reasoning": "While technically interesting, this is a novelty edge robotics showcase and marketing demo for Gemini Live rather than practical software engineering or AI tooling relevant to fullstack development.",
+    "reasoning": "Focuses on security vulnerabilities within niche on-chain/crypto micropayment protocols (x402), which is too esoteric and unrelated to practical fullstack engineering or Islamic finance.",
     "summary": ""
   }
 ]
