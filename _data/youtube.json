@@ -1,6 +1,58 @@
 {
   "videos": [
     {
+      "title": "I Don't Fear AI Slop. I Fear Untold Stories - Zack Proser, WorkOS",
+      "url": "https://www.youtube.com/watch?v=1et3Lb_KLQo",
+      "videoId": "1et3Lb_KLQo",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "The biggest threat in the generative AI era isn't a flood of low-quality content, but the countless brilliant insights that die in people's heads because they don't think they're 'writers.' WorkOS engineer Zach Proser reveals how bottling your hard-earned taste into custom AI 'factories' gives others asymmetric leverage—letting colleagues and loved ones bypass tedious friction and produce 90%-finished drafts in seconds. Watch this talk to discover how automating your personal craft into simple, intuitive tools can fundamentally unlock the hidden creative potential of everyone around you.",
+      "dateAdded": "2026-11-02T01:05:49.177Z",
+      "timestamps": [
+        {
+          "startTime": 260,
+          "endTime": 345,
+          "topic": "Unlocking 'Asymmetric Leverage' with Automated Craft"
+        },
+        {
+          "startTime": 620,
+          "endTime": 715,
+          "topic": "The Blacksmith Framework: Spark, Bellows, and Quench"
+        },
+        {
+          "startTime": 850,
+          "endTime": 950,
+          "topic": "Building a 4-Hour Generative Bedtime Story Factory for Toddlers"
+        }
+      ]
+    },
+    {
+      "title": "Why We Rebuilt Microsoft Office From Scratch for AI Agents - Yijia Liang, Compound AI",
+      "url": "https://www.youtube.com/watch?v=v0UkV5qS9E4",
+      "videoId": "v0UkV5qS9E4",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "To truly automate institutional finance, standard plugins and chatbots fail miserably—which is why this former Coatue VP used AI agents to burn 1.5 trillion tokens and completely rewrite Microsoft Office from scratch in Rust. If you've ever wondered why existing LLMs choke on complex Excel workbooks and massive data rooms, this talk breaks down the breakthrough architecture turning AI from a fragile copilot into an autonomous deal team member. Watch this to see the real future of financial workflow automation before Wall Street catches on.",
+      "dateAdded": "2026-11-02T01:05:49.178Z",
+      "timestamps": [
+        {
+          "startTime": 340,
+          "endTime": 455,
+          "topic": "Why Compound Burned 1.5 Trillion Tokens to Rebuild Microsoft Office from Scratch"
+        },
+        {
+          "startTime": 455,
+          "endTime": 550,
+          "topic": "The Headless Engine Advantage: Speed, Parallel Execution, and Async Slide Building"
+        },
+        {
+          "startTime": 600,
+          "endTime": 710,
+          "topic": "Cracking Massive Data Rooms: Agent Swarms vs. Traditional Vector Databases"
+        }
+      ]
+    },
+    {
       "title": "NEW SERIES: How to Be a Productive Muslim | #1 The Muslim’s Guide to Getting More Out of Life #AMAU",
       "url": "https://www.youtube.com/watch?v=F_MtzSKyghg",
       "videoId": "F_MtzSKyghg",
@@ -337,59 +389,7 @@
           "topic": "Why decisive leadership earns you senior recognition"
         }
       ]
-    },
-    {
-      "title": "Design and replicate voices with Gemini 3.8 Flash TTS",
-      "url": "https://www.youtube.com/watch?v=SOF3_evPje8",
-      "videoId": "SOF3_evPje8",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "Imagine cloning your own voice in just twenty seconds or conjuring an entire multi-speaker podcast complete with distinct accents from a single prompt—Gemini's breakthrough text-to-speech capabilities make it surprisingly easy. This walk-through demonstrates how to design custom voices with authentic regional inflections, preserve those accents across foreign languages, and automate full studio-grade conversations using the API. If you create content, build apps, or want an inside look at the next evolution of synthetic speech, this demo is an essential watch.",
-      "dateAdded": "2026-10-24T00:09:09.220Z",
-      "timestamps": [
-        {
-          "startTime": 55,
-          "endTime": 165,
-          "topic": "Designing a custom AI voice and accent from a natural language prompt"
-        },
-        {
-          "startTime": 170,
-          "endTime": 235,
-          "topic": "Preserving regional accents across different languages"
-        },
-        {
-          "startTime": 550,
-          "endTime": 760,
-          "topic": "Generating an automated multi-speaker podcast with distinct personas via the API"
-        }
-      ]
-    },
-    {
-      "title": "AI Writes the Code. So What's Left for Engineers? - Laurie Voss, Arize AI",
-      "url": "https://www.youtube.com/watch?v=kspZP5BgkEU",
-      "videoId": "kspZP5BgkEU",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "While AI coding tools let developers churn out 700% more code, shipping speeds have barely budged because the real bottleneck has radically shifted from writing syntax to deciding what is actually worth building. In this razor-sharp keynote, npm co-founder Laurie Voss reveals why the traditional programmer is being replaced by the 'product engineer'—someone whose core value lies in extracting messy human requirements rather than writing code. If you want to future-proof your tech career and understand why entry-level engineering jobs are evaporating, this breakdown is essential viewing.",
-      "dateAdded": "2026-10-24T23:53:07.062Z",
-      "timestamps": [
-        {
-          "startTime": 185,
-          "endTime": 275,
-          "topic": "The Code Review Bottleneck: Why 8x More Code Doesn't Mean Faster Shipping"
-        },
-        {
-          "startTime": 700,
-          "endTime": 895,
-          "topic": "The Unautomatable Bottleneck: Defining What 'Good' Software Actually Means"
-        },
-        {
-          "startTime": 1185,
-          "endTime": 1365,
-          "topic": "The Junior Developer Crisis: Why Entry-Level Hiring Is Collapsing"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-11-01T00:33:22.590Z"
+  "lastUpdated": "2026-11-02T01:06:56.609Z"
 }
