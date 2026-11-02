@@ -1,22 +1,6 @@
 {
-  "lastUpdated": "2026-11-01",
+  "lastUpdated": "2026-11-02",
   "papers": [
-    {
-      "id": "hf:2610.38293",
-      "doi": "https://arxiv.org/abs/2610.38293",
-      "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
-      "publicationDate": "2026-10-28",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Yanbin Yin et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "AI agents that forecast company earnings had no fair test against analyst forecasts.",
-      "fix": "Three of six models matched analyst error, but their 80% ranges held the true answer only 37-70% of the time.",
-      "practicalUseCase": "If you trust an AI forecast range, expect misses; widen the range before you act on it.",
-      "limitation": "The test covers 149 quarters from 86 US companies, so results may not hold elsewhere.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.38293"
-    },
     {
       "id": "hf:2610.38681",
       "doi": "https://arxiv.org/abs/2610.38681",
@@ -27,10 +11,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Reasoning models cannot improve themselves well when only unlabeled prompts exist and no stronger teacher is available.",
-      "fix": "Training a model against a deliberately weakened copy of itself raised average accuracy by 4.0 to 5.5 points.",
-      "practicalUseCase": "If you train small reasoning models, a squeezed copy of your own model can act as a free teacher.",
-      "limitation": "The gains come from math and coding tests, so other tasks may behave differently.",
+      "problem": "Reasoning models cannot improve themselves without a stronger teacher or extra answer labels.",
+      "fix": "Training a model against a deliberately weakened copy raised average accuracy by 4.0 points (quantized) and 5.5 points (pruned).",
+      "practicalUseCase": "A model can teach itself without labels, so cheap self-training on your own prompts may lift reasoning accuracy.",
+      "limitation": "Tests covered math and coding benchmarks only.",
       "fullTextUrl": "https://huggingface.co/papers/2610.38681"
     },
     {
@@ -43,10 +27,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Image generators that draw in fixed order cannot fill in or edit parts of a picture.",
-      "fix": "A short retraining recipe gave them fill-in skills, beating MaskGIT on inpainting (FID 6.21 versus 10.44) for 13-33% extra compute.",
-      "practicalUseCase": "If you already run a pretrained image model, you can add editing without training a new model from scratch.",
-      "limitation": "Plain image quality gets slightly worse, with class-conditional FID rising by 1.2 to 1.9.",
+      "problem": "Image generators trained in one fixed pixel order cannot fill in or edit parts of an image.",
+      "fix": "A small retraining recipe gave inpainting a score of 6.21 versus 10.44 for MaskGIT, at 13-33% extra compute.",
+      "practicalUseCase": "You can add editing to an existing image model cheaply, so skip training a new one from scratch.",
+      "limitation": "Normal image quality gets slightly worse, with scores 1.2 to 1.9 higher.",
       "fullTextUrl": "https://huggingface.co/papers/2610.39293"
     },
     {
@@ -59,10 +43,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Agent builders assumed tool protocols and command lines behave the same when they offer the same actions.",
-      "fix": "Identical actions scored differently through MCP and CLI; a repair step lifted all six settings by up to 9.0 points.",
-      "practicalUseCase": "If you build agents, test both interfaces, because the way you show a tool changes what the agent does.",
-      "limitation": "The study covers six models and three environments, so other setups may differ.",
+      "problem": "The same agent tools shown as MCP or as command line can make agents behave very differently.",
+      "fix": "Matched MCP and CLI interfaces gave very different task scores, and paths diverged in 94.3% of 2,004 episodes.",
+      "practicalUseCase": "Interface design changes agent results, so test both forms of your tools before you blame the model.",
+      "limitation": "Tests used six models and three environments, so other setups may differ.",
       "fullTextUrl": "https://huggingface.co/papers/2610.34298"
     },
     {
@@ -75,11 +59,27 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Developers download small quantized models from public registries, and nobody tested whether the files actually work.",
-      "fix": "Seven of 305 official Ollama tags (2.3%) failed code tests, and adding an importance matrix fixed three rebuilt files.",
-      "practicalUseCase": "If you run low-bit models locally, run a quick code test first, because a valid download can still be useless.",
-      "limitation": "The broken files were all low-bit models with at most four billion parameters, and the screen only tested code skills.",
+      "problem": "Public model registries never test whether downloaded low-bit code models still work.",
+      "fix": "Seven of 305 official Ollama tags (2.3%) solved at most six of 164 tasks, all small low-bit models.",
+      "practicalUseCase": "Some small quantized models arrive broken, so run a quick code test before you trust a download.",
+      "limitation": "Only some official tags and 22 community files were checked, so other registries may differ.",
       "fullTextUrl": "https://huggingface.co/papers/2609.05881"
+    },
+    {
+      "id": "hf:2610.38293",
+      "doi": "https://arxiv.org/abs/2610.38293",
+      "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
+      "publicationDate": "2026-10-28",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Yanbin Yin et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "AI agents struggle to forecast company earnings from filings, call transcripts, and news.",
+      "fix": "Three of six models matched analyst consensus, but their 80% intervals held the true earnings only 37-70% of the time.",
+      "practicalUseCase": "Agent forecasts look sure but miss often, so do not trust their stated confidence ranges for money decisions.",
+      "limitation": "Results cover 149 firm-quarters from 86 US companies and six models.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.38293"
     },
     {
       "id": "https://openalex.org/W7204751468",
@@ -92,10 +92,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks in emerging markets set up sustainability committees, but nobody knew whether those committees change environmental results.",
-      "fix": "Committees link to better environmental scores, but in Islamic banks only overall scores and resource reduction improved.",
-      "practicalUseCase": "If you judge a bank's green claims, check its products and innovations, because a committee alone may be for show.",
-      "limitation": "Panel regressions show links, not cause.",
+      "problem": "Banks set up sustainability committees, but nobody knew if committees change environmental results in dual banking systems.",
+      "fix": "Committees raised overall environmental scores, but in Islamic banks they moved only overall and resource scores, not products or innovation.",
+      "practicalUseCase": "Committees in Islamic banks may be mostly for show, so check for real green products before you trust the label.",
+      "limitation": "Panel regressions show links between committees and scores, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
@@ -109,10 +109,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Sustainability sukuk are growing fast, yet nobody had mapped how they are issued or what drives their size.",
-      "fix": "Across 11,944 sukuk issues from 2012 to 2022, they stay a tiny share, clustered in Indonesia, Malaysia and Saudi Arabia.",
-      "practicalUseCase": "If you want bigger green sukuk deals, use equity-based contracts and strong security, and watch second-opinion costs.",
-      "limitation": "The data stops at 2022 and shows links between features and issue size, not cause.",
+      "problem": "Sustainability sukuk are growing fast, yet nobody had mapped what drives how big each issue is.",
+      "fix": "Across 11,944 issues, growth sits in Indonesia, Malaysia, and Saudi Arabia, and equity-based contracts give larger issues.",
+      "practicalUseCase": "Contract type and costly outside reviews shape issue size, so issuers should favor equity-based contracts and watch review costs.",
+      "limitation": "Data end in 2022 and show patterns, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -126,10 +126,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Islamic banks in Jordan did not know whether AI and big data help them compete and grow sustainably.",
-      "fix": "AI, big data and data management link to higher competitiveness and sustainability; staff digital skill helps only competitiveness.",
-      "practicalUseCase": "If you run an Islamic bank, put money into AI and data systems before staff digital training alone.",
-      "limitation": "It surveyed 214 managers in Jordan at one point in time, so it shows links, not cause.",
+      "problem": "Islamic banks in Jordan lacked proof that AI and big data actually help them compete.",
+      "fix": "AI use, big data skills, and data management all link positively to competitiveness and sustainable development in 214 surveyed managers.",
+      "practicalUseCase": "Data and AI investment goes with stronger banks, so Islamic banks should fund both before they chase other upgrades.",
+      "limitation": "A single-time survey of Jordanian managers shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -143,10 +143,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks in countries with both Islamic and conventional banking did not know which digital factors drive their growth.",
-      "fix": "Technology adoption was the strongest growth driver across 218 banks; high-tech exports helped only alongside it.",
-      "practicalUseCase": "If you plan bank growth, build digital infrastructure first, and pair it with strong governance for Islamic banks.",
-      "limitation": "The data covers 12 countries from 2010 to 2023, and the study shows links, not cause.",
+      "problem": "Nobody knew which national forces make banks grow in systems with both Islamic and conventional banks.",
+      "fix": "ICT adoption drove growth most across 218 banks in 12 countries, and high-tech exports helped only alongside ICT.",
+      "practicalUseCase": "Digital tools drive bank growth more than anything else tested, so invest in digital infrastructure first.",
+      "limitation": "Data cover 12 countries from 2010 to 2023 and show links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -160,11 +160,28 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Muslim-majority countries still have many people outside formal finance, despite Islamic finance growing for a decade.",
-      "fix": "In OIC countries, income, tertiary education, institutions, internet access, population and age dependency all shape financial inclusion.",
-      "practicalUseCase": "If you shape OIC policy, invest in digital infrastructure, youth, women and income, because OECD lessons do not copy over.",
-      "limitation": "The study covers only 35 countries from 2005 to 2021 and shows links, not cause.",
+      "problem": "Islamic finance grew fast, yet many people in Muslim-majority countries still lack financial services.",
+      "fix": "Income, tertiary education, institutions, internet access, population, and age dependency drive inclusion across 35 OIC and OECD countries.",
+      "practicalUseCase": "OIC countries need digital infrastructure and youth and women support, so these pay off more than copying OECD policy.",
+      "limitation": "Country-level data from 2005 to 2021 show links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
+    },
+    {
+      "id": "https://openalex.org/W7204259442",
+      "doi": "https://doi.org/10.1371/journal.pone.0351713",
+      "title": "Global prevalence of impostor phenomenon in medical students: A systematic review and meta-analysis",
+      "publicationDate": "2026-08-26",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Víctor Juan Vera-Ponce et al.",
+      "institution": "National University Toribio Rodríguez de Mendoza",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "problem": "Medical students face constant tests and comparison, but nobody had pooled how often they feel like frauds.",
+      "fix": "Impostor feelings were frequent among medical students worldwide, though results varied widely by sampling method and region.",
+      "practicalUseCase": "Many high achievers feel like frauds, so expect it in tough training and talk about it early.",
+      "limitation": "Studies differed a lot, so the pooled rate is uncertain.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
     },
     {
       "id": "https://openalex.org/W7214039307",
@@ -177,10 +194,10 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Studies on gig workers looked at inner and outer motivation separately and ignored how digital skills affect both.",
-      "fix": "Gig workers describe digital skills as the link that turns mixed inner and outer motivation into steady engagement.",
-      "practicalUseCase": "If you freelance online, build digital skills, because they help keep you motivated and engaged.",
-      "limitation": "It covers only Sri Lankan platform gig workers, mostly young part-timers, at one point in time.",
+      "problem": "Nobody knew how inner drive and pay pressure mix to keep gig workers engaged on digital platforms.",
+      "fix": "Gig workers show different motivation profiles, and digital skills link motivation to engagement.",
+      "practicalUseCase": "Digital skills turn motivation into steady work, so build platform skills along with chasing pay.",
+      "limitation": "Only Sri Lankan platform workers were studied, mostly young part-timers.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0345881"
     },
     {
@@ -194,10 +211,10 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Researchers did not know what drives doctoral students to produce new ideas when generative AI is everywhere.",
-      "fix": "Inner and outer motivation both drive new ideas in chemistry doctoral students, and good resources and support cushion low motivation.",
-      "practicalUseCase": "If you lead a PhD lab, meet students' basic needs and supply resources, because both keep ideas coming.",
-      "limitation": "Single-time self-reported surveys cannot prove cause, and the reverse direction is possible.",
+      "problem": "Doctoral students may use generative AI in research, but the drivers of their new ideas were unclear.",
+      "fix": "Inner and outer motivation both push new ideas together, but long unmet psychological needs sharply cut innovation.",
+      "practicalUseCase": "Unmet needs kill creative research, so protect autonomy and support before adding more AI tools.",
+      "limitation": "A single-time self-report survey of chemistry students cannot prove cause.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0355186"
     }
   ]
