@@ -1,102 +1,37 @@
 {
-  "lastUpdated": "2026-11-02",
+  "lastUpdated": "2026-11-03",
   "papers": [
     {
-      "id": "hf:2610.38681",
-      "doi": "https://arxiv.org/abs/2610.38681",
-      "title": "Weaken to Strengthen: Weakening-Induced On-Policy Self-Distillation for Large Reasoning Models",
+      "id": "hf:2610.39419",
+      "doi": "https://arxiv.org/abs/2610.39419",
+      "title": "Diagnosing the Reference Gap: What Visual Scaffolds Can and Cannot Fix in Multimodal Reasoning",
+      "publicationDate": "2026-10-29",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Guizhen Chen et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "AI models that see an image still lose track of items when they count or reason in steps.",
+      "fix": "Right numbered markers on the image raised accuracy by up to 25%; wrong markers helped little or hurt.",
+      "practicalUseCase": "Models fail at pointing, not seeing, so add task-matched markers to your image prompts before you retrain anything.",
+      "limitation": "The tests used five fixed visual reasoning tasks, so other tasks may behave differently.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.39419"
+    },
+    {
+      "id": "hf:2610.38637",
+      "doi": "https://arxiv.org/abs/2610.38637",
+      "title": "On-Policy Self-Distillation with Teacher Evolution",
       "publicationDate": "2026-10-27",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Yecheng Wu et al.",
+      "leadAuthor": "Shufan Shen et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Reasoning models cannot improve themselves without a stronger teacher or extra answer labels.",
-      "fix": "Training a model against a deliberately weakened copy raised average accuracy by 4.0 points (quantized) and 5.5 points (pruned).",
-      "practicalUseCase": "A model can teach itself without labels, so cheap self-training on your own prompts may lift reasoning accuracy.",
-      "limitation": "Tests covered math and coding benchmarks only.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.38681"
-    },
-    {
-      "id": "hf:2610.39293",
-      "doi": "https://arxiv.org/abs/2610.39293",
-      "title": "Unlocking Any-Order Generation in Pretrained Autoregressive Image Models",
-      "publicationDate": "2026-10-28",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Rishav Pramanik et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Image generators trained in one fixed pixel order cannot fill in or edit parts of an image.",
-      "fix": "A small retraining recipe gave inpainting a score of 6.21 versus 10.44 for MaskGIT, at 13-33% extra compute.",
-      "practicalUseCase": "You can add editing to an existing image model cheaply, so skip training a new one from scratch.",
-      "limitation": "Normal image quality gets slightly worse, with scores 1.2 to 1.9 higher.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.39293"
-    },
-    {
-      "id": "hf:2610.34298",
-      "doi": "https://arxiv.org/abs/2610.34298",
-      "title": "Matched Capabilities, Different Behaviors: A Controlled Study of MCP and CLI Interfaces for Language Agents",
-      "publicationDate": "2026-10-24",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Zhenning Shi et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "The same agent tools shown as MCP or as command line can make agents behave very differently.",
-      "fix": "Matched MCP and CLI interfaces gave very different task scores, and paths diverged in 94.3% of 2,004 episodes.",
-      "practicalUseCase": "Interface design changes agent results, so test both forms of your tools before you blame the model.",
-      "limitation": "Tests used six models and three environments, so other setups may differ.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.34298"
-    },
-    {
-      "id": "hf:2609.05881",
-      "doi": "https://arxiv.org/abs/2609.05881",
-      "title": "Broken on Arrival: Non-Functional Quantized LLM Artifacts in Public Model Registries and How to Catch Them",
-      "publicationDate": "2026-10-24",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Aditi Patodiya",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Public model registries never test whether downloaded low-bit code models still work.",
-      "fix": "Seven of 305 official Ollama tags (2.3%) solved at most six of 164 tasks, all small low-bit models.",
-      "practicalUseCase": "Some small quantized models arrive broken, so run a quick code test before you trust a download.",
-      "limitation": "Only some official tags and 22 community files were checked, so other registries may differ.",
-      "fullTextUrl": "https://huggingface.co/papers/2609.05881"
-    },
-    {
-      "id": "hf:2610.38293",
-      "doi": "https://arxiv.org/abs/2610.38293",
-      "title": "EPSBench: Benchmarking LLM Agents for Earnings Forecasting",
-      "publicationDate": "2026-10-28",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Yanbin Yin et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "AI agents struggle to forecast company earnings from filings, call transcripts, and news.",
-      "fix": "Three of six models matched analyst consensus, but their 80% intervals held the true earnings only 37-70% of the time.",
-      "practicalUseCase": "Agent forecasts look sure but miss often, so do not trust their stated confidence ranges for money decisions.",
-      "limitation": "Results cover 149 firm-quarters from 86 US companies and six models.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.38293"
-    },
-    {
-      "id": "https://openalex.org/W7204751468",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
-      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Yunice Karina Tumewang et al.",
-      "institution": "Islamic University of Indonesia",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Banks set up sustainability committees, but nobody knew if committees change environmental results in dual banking systems.",
-      "fix": "Committees raised overall environmental scores, but in Islamic banks they moved only overall and resource scores, not products or innovation.",
-      "practicalUseCase": "Committees in Islamic banks may be mostly for show, so check for real green products before you trust the label.",
-      "limitation": "Panel regressions show links between committees and scores, not cause.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
+      "problem": "Self-teaching training for language models often stops improving because the model gives bad guidance on some samples.",
+      "fix": "Teacher-Evolution Self-Distillation improves the teacher and ignores bad guidance, beating other methods across datasets and model sizes.",
+      "practicalUseCase": "Training quality depends on guidance quality, so check and filter the teacher signal before you scale up training.",
+      "limitation": "The abstract gives no exact gains, so the size of the improvement is unclear.",
+      "fullTextUrl": "https://huggingface.co/papers/2610.38637"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -109,10 +44,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Sustainability sukuk are growing fast, yet nobody had mapped what drives how big each issue is.",
-      "fix": "Across 11,944 issues, growth sits in Indonesia, Malaysia, and Saudi Arabia, and equity-based contracts give larger issues.",
-      "practicalUseCase": "Contract type and costly outside reviews shape issue size, so issuers should favor equity-based contracts and watch review costs.",
-      "limitation": "Data end in 2022 and show patterns, not cause.",
+      "problem": "Nobody knew how sustainability sukuk issuance grew or what makes an issue larger.",
+      "fix": "Across 11,944 sukuk, growth centred in Indonesia, Malaysia and Saudi Arabia, and equity-based contracts gave larger issues.",
+      "practicalUseCase": "Issuers who want bigger sustainability sukuk should use equity-based contracts, strong security and major currencies, and watch second-party opinion costs.",
+      "limitation": "The data stops at 2022 and shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -124,12 +59,13 @@
       "leadAuthor": "Ahmad Hisham Alnajjar et al.",
       "institution": "Petra University",
       "topics": [
-        "Islamic Studies & Finance"
+        "Islamic Studies & Finance",
+        "Tech"
       ],
-      "problem": "Islamic banks in Jordan lacked proof that AI and big data actually help them compete.",
-      "fix": "AI use, big data skills, and data management all link positively to competitiveness and sustainable development in 214 surveyed managers.",
-      "practicalUseCase": "Data and AI investment goes with stronger banks, so Islamic banks should fund both before they chase other upgrades.",
-      "limitation": "A single-time survey of Jordanian managers shows links, not cause.",
+      "problem": "Islamic banks in Jordan lacked proof that AI and big data improve their competitiveness and sustainability.",
+      "fix": "In a survey of 214 managers, AI, big data and data management all linked to better competitiveness and sustainability.",
+      "practicalUseCase": "Islamic banks that invest in AI and data management compete better, but staff digital skill did not lift sustainability.",
+      "limitation": "The survey covers one country at one time, so it shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -141,12 +77,13 @@
       "leadAuthor": "Sulaeman Sulaeman et al.",
       "institution": "Universitas Airlangga",
       "topics": [
-        "Islamic Studies & Finance"
+        "Islamic Studies & Finance",
+        "Tech"
       ],
-      "problem": "Nobody knew which national forces make banks grow in systems with both Islamic and conventional banks.",
-      "fix": "ICT adoption drove growth most across 218 banks in 12 countries, and high-tech exports helped only alongside ICT.",
-      "practicalUseCase": "Digital tools drive bank growth more than anything else tested, so invest in digital infrastructure first.",
-      "limitation": "Data cover 12 countries from 2010 to 2023 and show links, not cause.",
+      "problem": "Banks did not know which national factors drive expansion in countries with both Islamic and conventional banks.",
+      "fix": "In 218 banks, ICT adoption drove expansion most, and high-tech exports helped only when combined with ICT.",
+      "practicalUseCase": "Banks and regulators should put digital infrastructure first, because strong ICT boosts growth in both Islamic and conventional banks.",
+      "limitation": "The data covers 12 countries from 2010 to 2023, so results may differ elsewhere.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -160,62 +97,62 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Islamic finance grew fast, yet many people in Muslim-majority countries still lack financial services.",
-      "fix": "Income, tertiary education, institutions, internet access, population, and age dependency drive inclusion across 35 OIC and OECD countries.",
-      "practicalUseCase": "OIC countries need digital infrastructure and youth and women support, so these pay off more than copying OECD policy.",
-      "limitation": "Country-level data from 2005 to 2021 show links, not cause.",
+      "problem": "Many people in Muslim-majority countries still lack formal financial services, despite fast growth in Islamic finance.",
+      "fix": "Across 35 countries, income, education, institutions and internet access drive inclusion in OIC countries.",
+      "practicalUseCase": "OIC countries should invest in digital infrastructure, youth and women, and income growth to bring more people into banks.",
+      "limitation": "The data runs 2005 to 2021 and shows links between factors, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
     },
     {
-      "id": "https://openalex.org/W7204259442",
-      "doi": "https://doi.org/10.1371/journal.pone.0351713",
-      "title": "Global prevalence of impostor phenomenon in medical students: A systematic review and meta-analysis",
-      "publicationDate": "2026-08-26",
-      "venue": "PLoS ONE",
-      "leadAuthor": "Víctor Juan Vera-Ponce et al.",
-      "institution": "National University Toribio Rodríguez de Mendoza",
+      "id": "https://openalex.org/W7204751468",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
+      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Yunice Karina Tumewang et al.",
+      "institution": "Islamic University of Indonesia",
       "topics": [
-        "Career & Productivity"
+        "Islamic Studies & Finance"
       ],
-      "problem": "Medical students face constant tests and comparison, but nobody had pooled how often they feel like frauds.",
-      "fix": "Impostor feelings were frequent among medical students worldwide, though results varied widely by sampling method and region.",
-      "practicalUseCase": "Many high achievers feel like frauds, so expect it in tough training and talk about it early.",
-      "limitation": "Studies differed a lot, so the pooled rate is uncertain.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
+      "problem": "Banks set up sustainability committees, but nobody knew if they change environmental results in Islamic banks.",
+      "fix": "Committees raised all four green measures overall, but in Islamic banks they moved only overall and resource scores.",
+      "practicalUseCase": "Committees alone may give Islamic banks symbolic gains, so regulators should also check for real green products and innovation.",
+      "limitation": "The study shows links in emerging markets and cannot prove the committee caused the change.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
-      "id": "https://openalex.org/W7214039307",
-      "doi": "https://doi.org/10.1371/journal.pone.0345881",
-      "title": "What keeps gig workers motivated? A typology of the intrinsic-extrinsic motivation interplay in the digital gig economy",
-      "publicationDate": "2026-09-22",
+      "id": "https://openalex.org/W7202162994",
+      "doi": "https://doi.org/10.1371/journal.pone.0357714",
+      "title": "Procrastination among US college students: Prevalence and impact relative to common health and life issues",
+      "publicationDate": "2026-10-07",
       "venue": "PLoS ONE",
-      "leadAuthor": "Yuthara Subasinghe et al.",
-      "institution": "Sri Lanka Institute of Information Technology",
+      "leadAuthor": "Itamar Shatz",
+      "institution": "University of Cambridge",
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Nobody knew how inner drive and pay pressure mix to keep gig workers engaged on digital platforms.",
-      "fix": "Gig workers show different motivation profiles, and digital skills link motivation to engagement.",
-      "practicalUseCase": "Digital skills turn motivation into steady work, so build platform skills along with chasing pay.",
-      "limitation": "Only Sri Lankan platform workers were studied, mostly young part-timers.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0345881"
+      "problem": "Nobody knew how common student procrastination is next to other health and life problems.",
+      "fix": "Among 65,950 US students, 72.3% procrastinated, and 45.4% said it hurt grades, far more than finances or ADHD.",
+      "practicalUseCase": "Delay hurts grades more than most other problems, so fix your starting habits first.",
+      "limitation": "The data is self-reported by US college students, so it may not fit workers or other countries.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0357714"
     },
     {
-      "id": "https://openalex.org/W7197047502",
-      "doi": "https://doi.org/10.1371/journal.pone.0355186",
-      "title": "Exploring the influencing factors of academic doctoral students’ academic innovation behavior in the context of generative artificial intelligence: Self-determination theory and motivation-opportunity-ability perspectives",
-      "publicationDate": "2026-08-06",
+      "id": "https://openalex.org/W7127907742",
+      "doi": "https://doi.org/10.1371/journal.pone.0361208",
+      "title": "“The significance of context”: Fit, friction, and function in the work lives of early career academics with ADHD",
+      "publicationDate": "2026-10-29",
       "venue": "PLoS ONE",
-      "leadAuthor": "Yanqin Liu et al.",
-      "institution": "Wuhan University",
+      "leadAuthor": "Lorna Hamilton et al.",
+      "institution": "York St John University",
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Doctoral students may use generative AI in research, but the drivers of their new ideas were unclear.",
-      "fix": "Inner and outer motivation both push new ideas together, but long unmet psychological needs sharply cut innovation.",
-      "practicalUseCase": "Unmet needs kill creative research, so protect autonomy and support before adding more AI tools.",
-      "limitation": "A single-time self-report survey of chemistry students cannot prove cause.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0355186"
+      "problem": "Little is known about how ADHD affects early-career academics at work.",
+      "fix": "Interviews showed academia can reward ADHD traits, but social and institutional pressure often blocks that.",
+      "practicalUseCase": "Choose workplaces and managers that fit how you work, and ask for fit instead of forcing yourself to match.",
+      "limitation": "The study is interviews only, so it shows personal experience, not how common these views are.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0361208"
     }
   ]
 }
