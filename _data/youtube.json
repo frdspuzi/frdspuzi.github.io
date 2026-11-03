@@ -1,6 +1,110 @@
 {
   "videos": [
     {
+      "title": "When should you NOT use /grill-me?",
+      "url": "https://www.youtube.com/shorts/k2zgcTDq4aQ",
+      "videoId": "k2zgcTDq4aQ",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Stop wasting time over-planning simple AI prompts—or worse, letting your coding agent blindly generate massive, unwanted code changes on complex features. This video breaks down a simple decision tree showing exactly when to one-shot a task, when to let an agent interview you for alignment, and when to scale up to multi-session planning. Watch this 90-second guide to eliminate costly AI rewrites and pick the right workflow every time.",
+      "dateAdded": "2026-11-03T03:08:03.323Z",
+      "timestamps": [
+        {
+          "startTime": 14,
+          "endTime": 34,
+          "topic": "Why small code changes should be one-shotted without planning"
+        },
+        {
+          "startTime": 34,
+          "endTime": 52,
+          "topic": "Using the Grill Me skill to prevent massive, wasted diffs"
+        },
+        {
+          "startTime": 52,
+          "endTime": 95,
+          "topic": "Scaling massive, complex architectures using Wayfinder"
+        }
+      ]
+    },
+    {
+      "title": "Your agent is a tactical tornado",
+      "url": "https://www.youtube.com/shorts/Vo33extKAeA",
+      "videoId": "Vo33extKAeA",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "AI coding assistants may look like 10x engineering superheroes, but left unsupervised, they act like 'tactical tornadoes' that rapidly ship features while silently devastating your codebase's architectural health. This video reveals why modern AI models are fundamentally hardwired for short-term fixes rather than long-term code quality, and why your survival as a developer depends on shifting from coder to strategic director. Watch this to master the critical mental framework required to exploit AI velocity without inheriting a mountain of unmaintainable technical debt.",
+      "dateAdded": "2026-11-03T03:08:03.323Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 47,
+          "topic": "The 'Tactical Tornado' archetype: shipping fast vs. strategic design"
+        },
+        {
+          "startTime": 47,
+          "endTime": 64,
+          "topic": "Why AI coding agents are naturally biased toward short-term hacks"
+        },
+        {
+          "startTime": 64,
+          "endTime": 85,
+          "topic": "The developer's new mandate: stepping up as the long-term strategist"
+        }
+      ]
+    },
+    {
+      "title": "The secret to building robust frontend apps with agents",
+      "url": "https://www.youtube.com/shorts/r8FYE2ZOj0E",
+      "videoId": "r8FYE2ZOj0E",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "Tired of AI coding agents hallucinating bugs and tangling up your frontend code? Isolating your state into simple reducers strips the chaos out of your UI, giving AI agents a clean, isolated logic layer where edge cases are easily solved and tested outside the browser. Watch this breakdown to discover the simple architectural shift that will make your AI-generated apps dramatically more reliable and bug-free.",
+      "dateAdded": "2026-11-03T03:08:03.323Z",
+      "timestamps": [
+        {
+          "startTime": 7,
+          "endTime": 43,
+          "topic": "How reducers map front-end events to state changes"
+        },
+        {
+          "startTime": 43,
+          "endTime": 73,
+          "topic": "Separating UI from logic for lightning-fast testing"
+        },
+        {
+          "startTime": 73,
+          "endTime": 94,
+          "topic": "Why AI coding agents build far more robust code with reducers"
+        }
+      ]
+    },
+    {
+      "title": "What Happens When Everyone Can Build Software",
+      "url": "https://www.youtube.com/watch?v=vl7HiMdGfjo",
+      "videoId": "vl7HiMdGfjo",
+      "channel": "Y Combinator",
+      "category": "Tech & Engineering",
+      "summary": "While Silicon Valley long preached 'make something people want,' Supabase exploded to 50 million databases under management by embracing an urgent new reality: 'make something agents want.' CEO Paul Copplestone reveals the tactical blueprint behind this shift, showing how rewriting developer error messages so LLMs can auto-fix bugs and transitioning to code-first infrastructure is fundamentally redefining how products are built. Whether you're an engineer, founder, or non-technical creator, this episode offers an indispensable masterclass on surviving and capitalizing on the agentic software revolution.",
+      "dateAdded": "2026-11-03T03:08:03.323Z",
+      "timestamps": [
+        {
+          "startTime": 160,
+          "endTime": 270,
+          "topic": "The Three Eras of Supabase: Shifting from Dashboards to Code-First for Agents"
+        },
+        {
+          "startTime": 600,
+          "endTime": 765,
+          "topic": "Personal Control Towers: Replacing Entire SaaS Apps with Custom Databases and Agents"
+        },
+        {
+          "startTime": 1780,
+          "endTime": 1935,
+          "topic": "Self-Healing Errors: Re-engineering Developer Tooling and APIs for AI Agents"
+        }
+      ]
+    },
+    {
       "title": "I Don't Fear AI Slop. I Fear Untold Stories - Zack Proser, WorkOS",
       "url": "https://www.youtube.com/watch?v=1et3Lb_KLQo",
       "videoId": "1et3Lb_KLQo",
@@ -285,111 +389,7 @@
           "topic": "Beating imposter syndrome: understanding junior hiring economics and realistic expectations"
         }
       ]
-    },
-    {
-      "title": "How to Decide What Your AI Agent Should Remember - Wojciech Pluta, Oracle",
-      "url": "https://www.youtube.com/watch?v=qq2Hm4XNRgI",
-      "videoId": "qq2Hm4XNRgI",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "While most developers obsess over RAG, retrieval is only half the battle—it is merely a read path that leaves your AI agents with complete amnesia after every interaction. This presentation delivers the breakthrough paradigm of 'memory promotion,' revealing how to architect an intelligent write path that filters, validates, and stores critical context without poisoning your database or blowing your token budget. If you want to stop building stateless chatbots and start deploying resilient, self-improving enterprise agents, this talk is a must-watch blueprint.",
-      "dateAdded": "2026-10-31T01:08:44.481Z",
-      "timestamps": [
-        {
-          "startTime": 215,
-          "endTime": 302,
-          "topic": "Why RAG is only the read path and how memory promotion pipelines work"
-        },
-        {
-          "startTime": 588,
-          "endTime": 695,
-          "topic": "Live demo: Enforcing memory guardrails to prevent harmful commands and memory poisoning"
-        },
-        {
-          "startTime": 735,
-          "endTime": 825,
-          "topic": "The engineering dilemma: Deciding what to promote versus what to forget"
-        }
-      ]
-    },
-    {
-      "title": "Your AI Agent Starts Every Session Like a New Hire - Killian Carlsen-Phelan, Sonar",
-      "url": "https://www.youtube.com/watch?v=8vDzncmzxyg",
-      "videoId": "8vDzncmzxyg",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "While 96% of developers distrust AI-generated code, nearly half still push it to production without verifying it—creating an expensive security disaster waiting to happen. This presentation reveals how embedding deterministic verification directly into the agentic coding loop stops AI from blindly burning tokens and forces it to automatically catch and fix subtle vulnerabilities before a pull request is even opened. If you are building with autonomous coding agents and want to eliminate exhausting code reviews and production bugs, this actionable walkthrough is an essential watch.",
-      "dateAdded": "2026-10-31T01:08:44.481Z",
-      "timestamps": [
-        {
-          "startTime": 270,
-          "endTime": 395,
-          "topic": "Why coding agents waste tokens and how deterministic guardrails fix them"
-        },
-        {
-          "startTime": 650,
-          "endTime": 740,
-          "topic": "Steering agents upfront: Context injection as the greatest lever for code quality"
-        },
-        {
-          "startTime": 780,
-          "endTime": 955,
-          "topic": "Why AI shouldn't check AI: Catching hidden security flaws deterministically"
-        }
-      ]
-    },
-    {
-      "title": "[S02:E05] Ramai doktor nak buka KLINIK, tapi tak semua bertahan? - Dr. Habib Bakri",
-      "url": "https://www.youtube.com/watch?v=dxuLdTGYFbk",
-      "videoId": "dxuLdTGYFbk",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "Behind every RM100 private clinic bill, only 5% to 10% actually ends up as profit—shattering the widespread myth that running a private GP practice is an effortless goldmine. Dr. Habib Bakri pulls back the curtain on the brutal economics of healthcare entrepreneurship, detailing why a clinic demands up to RM600,000 in startup capital, how hidden compliance overheads drive medication pricing, and the ruinous mistakes of uncalculated expansion. If you are an aspiring doctorpreneur or simply want to understand where your healthcare money really goes, this eye-opening discussion delivers an indispensable reality check.",
-      "dateAdded": "2026-10-28T00:48:33.512Z",
-      "timestamps": [
-        {
-          "startTime": 1205,
-          "endTime": 1335,
-          "topic": "The real breakdown of a RM100 clinic bill and why net profit is only 5% to 10%"
-        },
-        {
-          "startTime": 1965,
-          "endTime": 2090,
-          "topic": "The costliest expansion mistake: why hyper-local demographics make or break a clinic"
-        },
-        {
-          "startTime": 3930,
-          "endTime": 4115,
-          "topic": "Why clinic medicines cost more than pharmacies: service versus product economics"
-        }
-      ]
-    },
-    {
-      "title": "How To Grow As a Junior Developer To Senior | 5 Tips",
-      "url": "https://www.youtube.com/watch?v=JoU_CZWOoo0",
-      "videoId": "JoU_CZWOoo0",
-      "channel": "Travis Media",
-      "category": "Discovery 🌍",
-      "summary": "Most junior developers waste years obsessing over deep syntax trivia, unaware that escaping the junior rut has far less to do with writing clever code and everything to do with communication, decision-making, and ecosystem breadth. This guide reveals the exact five-part shift required to transform you from a reactive task-doer into the proactive leader engineering managers fight to promote. If you want a clear, no-nonsense roadmap to accelerate your path to mid and senior developer, this video is an essential watch.",
-      "dateAdded": "2026-10-27T00:58:20.829Z",
-      "timestamps": [
-        {
-          "startTime": 23,
-          "endTime": 72,
-          "topic": "The 4 real-world stages from Junior to Senior developer"
-        },
-        {
-          "startTime": 255,
-          "endTime": 340,
-          "topic": "Actionable habits for building soft skills and speaking up"
-        },
-        {
-          "startTime": 470,
-          "endTime": 530,
-          "topic": "Why decisive leadership earns you senior recognition"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-11-02T01:06:56.609Z"
+  "lastUpdated": "2026-11-03T03:09:40.079Z"
 }
