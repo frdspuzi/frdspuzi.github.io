@@ -1,103 +1,190 @@
 {
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-06",
   "papers": [
     {
-      "id": "hf:2611.04166",
-      "doi": "https://arxiv.org/abs/2611.04166",
-      "title": "Say the Same, Act Differently: Diagnosing and Steering Text-Action Divergence in Reasoning VLAs",
-      "publicationDate": "2026-11-02",
+      "id": "hf:2611.06425",
+      "doi": "https://arxiv.org/abs/2611.06425",
+      "title": "D3D: Decoupled Diffusion Drafting for Asynchronous Speculative Decoding",
+      "publicationDate": "2026-11-03",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Zihao Feng et al.",
+      "leadAuthor": "Baoyou Chen et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Safety monitors read a robot's written reasoning, but an attacker can change the action and leave that text untouched.",
-      "fix": "Tiny image changes caused new crashes in 52.6% of driving scenes while the written reasoning stayed word-for-word identical.",
-      "practicalUseCase": "Matching reasoning text does not prove a safe action, so check the action output directly.",
-      "limitation": "Tests covered two models, one for driving and one for manipulation.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.04166"
+      "problem": "AI text drafters must wait for the main model before drafting again, so decoding stays slow.",
+      "fix": "D3D drafts ahead without waiting, reaching 5.00 times and 5.71 times faster decoding on two Qwen3 models.",
+      "practicalUseCase": "If this holds, you can serve large models much faster, so test asynchronous drafting in your serving stack.",
+      "limitation": "The tests cover Qwen3 models on seven benchmarks, so other model families remain unproven.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.06425"
     },
     {
-      "id": "hf:2611.01621",
-      "doi": "https://arxiv.org/abs/2611.01621",
-      "title": "FinForesight: A Diagnostic Backtesting Benchmark for Deep Research Systems in Financial Forecasting",
-      "publicationDate": "2026-10-31",
+      "id": "hf:2611.03768",
+      "doi": "https://arxiv.org/abs/2611.03768",
+      "title": "Multi-layer Indexer: Overlapping Selection and Attention in DeepSeek Sparse Attention",
+      "publicationDate": "2026-11-01",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Fengyuan Liu et al.",
+      "leadAuthor": "Serdarcan Dilbaz et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Tests of AI forecasters can reward memorized outcomes or evidence that appeared after the forecast date.",
-      "fix": "Old-period scores beat post-cutoff scores in most comparisons, and strict evidence limits narrowed the gap to live results.",
-      "practicalUseCase": "Old backtest scores overstate real forecasting skill, so block post-date evidence and trust live results more.",
-      "limitation": "Controlled backtests only approximate future performance; they do not replace live testing.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.01621"
+      "problem": "Long-context AI models spend most decode time scanning the cache to pick which tokens each layer reads.",
+      "fix": "Reusing the previous layer's picks lets the scan run alongside attention, giving up to 14.5% faster decoding with no retraining.",
+      "practicalUseCase": "If this holds, long prompts get cheaper to serve, so try it on DeepSeek-V3.2 or GLM-5.",
+      "limitation": "Gains were tested only on DeepSeek-V3.2 and GLM-5, and accuracy drops a few percentage points.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.03768"
     },
     {
-      "id": "hf:2610.35497",
-      "doi": "https://arxiv.org/abs/2610.35497",
-      "title": "When Fine-Grained Credit Assignment Helps and Hurts: Multimodal Agentic Reinforcement Learning through Video Editing",
-      "publicationDate": "2026-10-25",
+      "id": "hf:2611.03330",
+      "doi": "https://arxiv.org/abs/2611.03330",
+      "title": "The SIMPLE Law for Energy Cost of LLM Inference",
+      "publicationDate": "2026-11-01",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Lei Zhao et al.",
+      "leadAuthor": "Hiari Pizzini Cavagna et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Training AI agents on long editing tasks gives delayed feedback, and it was unclear when step-by-step rewards help.",
-      "fix": "Fading step rewards gave a 45.4% gain on tasks over 60 turns, but at most 10.4% on short ones.",
-      "practicalUseCase": "Use fading step rewards only for long tasks, because fixed rewards make agents game the score.",
-      "limitation": "Results come from movie-trailer editing tasks, so other domains may differ.",
-      "fullTextUrl": "https://huggingface.co/papers/2610.35497"
+      "problem": "No simple formula told people what each token costs in energy, so AI power bills were hard to predict.",
+      "fix": "A four-parameter law predicts LLM energy with 11.97% error, and agentic requests use 13.0 times more energy.",
+      "practicalUseCase": "If this holds, long agent loops are your biggest energy cost, so cut input length first.",
+      "limitation": "The model was fitted on 13 dense LLMs running on NVIDIA H100 GPUs only.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.03330"
     },
     {
-      "id": "hf:2611.04414",
-      "doi": "https://arxiv.org/abs/2611.04414",
-      "title": "SphereFlow: Missing Modality Imputation via Geometric Transport on Hypersphere",
-      "publicationDate": "2026-11-02",
+      "id": "hf:2611.03394",
+      "doi": "https://arxiv.org/abs/2611.03394",
+      "title": "TaoMate-HD: Progressive-Resolution Autoregressive Audio-Video Generation",
+      "publicationDate": "2026-11-01",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Huihan Wang et al.",
+      "leadAuthor": "Qijun Gan et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "When a medical scan type is missing, generators must make a long, unstructured jump between scan types.",
-      "fix": "Placing all scan types on one sphere gave top image quality and closed about 80% of the tumor-detection gap.",
-      "practicalUseCase": "Missing scans can be filled well enough to train tumor detectors almost as well as full data.",
-      "limitation": "Tests used brain MRI and CT-MRI data only.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.04414"
+      "problem": "Live talking digital humans render high-resolution video slowly, and new text can interrupt their speech.",
+      "fix": "TaoMate-HD sketches video at low resolution first, runs 1.6 times faster, and cuts speech errors by 11.18 points.",
+      "practicalUseCase": "If this holds, real-time avatars become cheaper to run, so use staged low-to-high resolution generation.",
+      "limitation": "The excerpt reports speed and speech accuracy only, with no human rating of video quality.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.03394"
     },
     {
-      "id": "https://openalex.org/W7221458572",
-      "doi": "https://doi.org/10.3389/fpsyg.2026.1794139",
-      "title": "The influence of transformational leadership on job satisfaction and employee performance: a moderated mediation analysis of intrinsic motivation and perceived calling in Sierra Leone",
+      "id": "https://openalex.org/W7204856806",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3063",
+      "title": "Islamic Social Financial Instruments and Sustainable Community Development: Evidence Synthesis on Community Resilience",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Abdallah Mambo Dallu",
+      "institution": "KCA University",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Research on zakat, waqf and sadaqah is scattered, so nobody knows how they build community resilience together.",
+      "fix": "Across 93 studies, zakat gives quick relief, waqf builds lasting assets, and sadaqah covers sudden emergencies.",
+      "practicalUseCase": "If this holds, combine all three tools in one programme, and back it with strong governance and digital systems.",
+      "limitation": "This is a review of past studies, so it shows patterns, not new proof of cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3063"
+    },
+    {
+      "id": "https://openalex.org/W7204756985",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3341",
+      "title": "Trends and Determinants of Sustainability Sukuk Issuance: Evidence from Global Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Nazrul Hazizi Noordin",
+      "institution": "International Islamic University Malaysia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Sustainability sukuk are growing fast, but nobody knew what makes one issue bigger than another.",
+      "fix": "Across 11,944 sukuk from 2012 to 2022, equity-based contracts, USD or Euro currency, and social purposes gave larger issues.",
+      "practicalUseCase": "If this holds, issuers should pick equity-based contracts and major currencies, and watch the cost of second party opinions.",
+      "limitation": "The data ends in 2022, and most growth sits in Indonesia, Malaysia and Saudi Arabia.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
+    },
+    {
+      "id": "https://openalex.org/W7204751468",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
+      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Yunice Karina Tumewang et al.",
+      "institution": "Islamic University of Indonesia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Banks form sustainability committees, but it was unclear whether they bring real environmental results in dual banking markets.",
+      "fix": "Committees raise environmental scores in all banks, yet in Islamic banks they mostly move symbolic scores, not green products.",
+      "practicalUseCase": "If this holds, regulators should check Islamic banks for real green products, not only committee scores.",
+      "limitation": "Panel regressions show links, not cause, and cover emerging markets with both bank types only.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
+    },
+    {
+      "id": "https://openalex.org/W7204766411",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.2651",
+      "title": "Artificial Intelligence and Big Data Strategies to Enhance Islamic Banks’ Competitiveness and Sustainable Development",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Ahmad Hisham Alnajjar et al.",
+      "institution": "Petra University",
+      "topics": [
+        "Islamic Studies & Finance",
+        "Tech"
+      ],
+      "problem": "Islamic banks in Jordan lacked proof that AI and big data actually improve competitiveness and sustainable development.",
+      "fix": "In a survey of 214 managers, AI, big data analytics and data management practices all raised competitiveness and sustainability.",
+      "practicalUseCase": "If this holds, invest in AI systems and data management, since staff digital skill alone did not lift sustainability.",
+      "limitation": "The survey covers Jordanian Islamic banks at one point in time, so it shows links, not cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
+    },
+    {
+      "id": "https://openalex.org/W7204826719",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3458",
+      "title": "ICT, High-Tech Exports, and Institutions as Drivers of Bank Expansion Growth in a Dual Banking System",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Sulaeman Sulaeman et al.",
+      "institution": "Universitas Airlangga",
+      "topics": [
+        "Islamic Studies & Finance",
+        "Tech"
+      ],
+      "problem": "It was unclear which technology and institution factors help Islamic and conventional banks expand.",
+      "fix": "Across 218 banks in 12 countries, ICT adoption drove bank growth most, while high-tech exports helped only alongside ICT.",
+      "practicalUseCase": "If this holds, banks should invest in digital infrastructure first, and regulators should keep governance strong, especially for Islamic banks.",
+      "limitation": "The data covers 2010 to 2023 in 12 countries, so other markets may differ.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
+    },
+    {
+      "id": "https://openalex.org/W7202162994",
+      "doi": "https://doi.org/10.1371/journal.pone.0357714",
+      "title": "Procrastination among US college students: Prevalence and impact relative to common health and life issues",
       "publicationDate": "2026-10-07",
-      "venue": "Frontiers in Psychology",
-      "leadAuthor": "Ibrahim Sallieu Jalloh et al.",
-      "institution": "China University of Geosciences",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Itamar Shatz",
+      "institution": "University of Cambridge",
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Public-sector managers in Sierra Leone lacked evidence on how leadership style affects staff satisfaction and performance.",
-      "fix": "Inspiring leadership raised satisfaction and performance by boosting inner motivation, most for staff with a strong sense of calling.",
-      "practicalUseCase": "If you lead a team, link tasks to purpose, because that costs little and lifts motivation.",
-      "limitation": "Single-time survey data shows links, not cause, and comes from one country.",
-      "fullTextUrl": "https://doi.org/10.3389/fpsyg.2026.1794139"
+      "problem": "Nobody knew how common student procrastination is, or how much it hurts compared with other life issues.",
+      "fix": "Procrastination hit 72.3% of 65,950 US students, and 45.4% said it harmed their grades.",
+      "practicalUseCase": "If this holds, procrastination is a bigger grade problem than money or ADHD, so fix it before other habits.",
+      "limitation": "The data comes from self-reported surveys of US students, so other countries and workers may differ.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0357714"
     },
     {
-      "id": "https://openalex.org/W7212244817",
-      "doi": "https://doi.org/10.3389/fpsyg.2026.1905037",
-      "title": "Are students dependent on AI in writing courses? Analyzing factors influencing dependence on generative AI through the I-PACE model",
-      "publicationDate": "2026-09-11",
-      "venue": "Frontiers in Psychology",
-      "leadAuthor": "Lili Liu et al.",
-      "institution": "Putian University",
+      "id": "https://openalex.org/W7127907742",
+      "doi": "https://doi.org/10.1371/journal.pone.0361208",
+      "title": "“The significance of context”: Fit, friction, and function in the work lives of early career academics with ADHD",
+      "publicationDate": "2026-10-29",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Lorna Hamilton et al.",
+      "institution": "York St John University",
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Students use AI to write more, but little was known about why some come to depend on it.",
-      "fix": "Academic stress, AI skill, and trust in AI all shaped how much students depended on AI for writing.",
-      "practicalUseCase": "Stress pushes people toward leaning on AI, so manage deadlines and check AI output yourself.",
-      "limitation": "Survey data from college students shows links, not cause.",
-      "fullTextUrl": "https://doi.org/10.3389/fpsyg.2026.1905037"
+      "problem": "Little was known about how ADHD shapes early-career academics' work lives, since most views treat ADHD as a medical problem.",
+      "fix": "Academia can reward ADHD minds, but social and institutional pressure often blocks that, and ADHD academics may help collective knowledge.",
+      "practicalUseCase": "If this holds, pick workplaces that fit how you work, and ask for flexibility to use your strengths.",
+      "limitation": "This interview study covers early-career academics only, so it shows experiences, not measured effects.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0361208"
     }
   ]
 }
