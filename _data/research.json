@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-07",
+  "lastUpdated": "2026-11-08",
   "papers": [
     {
       "id": "hf:2611.06500",
@@ -11,10 +11,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "AI agents paste long raw tool outputs into their context, which slows them down and hides the useful parts.",
-      "fix": "Coca-Cola squeezes tool outputs into compact hidden tokens, cutting token use 70.01%-89.24% and runtime 24.45%-55.97% while improving task scores.",
-      "practicalUseCase": "If agents can read compressed tool results, they run faster and cheaper, so test latent compression in search agents.",
-      "limitation": "Tests covered only web-search agents on four question-answering benchmarks and two model families.",
+      "problem": "AI agents paste raw tool output into their context, which slows them and hides the facts that matter.",
+      "fix": "A model that squeezes tool output into compact hidden tokens cuts token use by 70.01% to 89.24% and improves results.",
+      "practicalUseCase": "If this holds, agent runs get much cheaper and faster, so test context compression before buying a bigger model.",
+      "limitation": "Tests covered web-search agents on four question benchmarks and two model families only.",
       "fullTextUrl": "https://huggingface.co/papers/2611.06500"
     },
     {
@@ -27,27 +27,11 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Offline AI apps update through signed knowledge packs, but a signature does not prove the vectors match the text.",
-      "fix": "A loose vector check leaves up to 5.5% of queries exposed, and attacks cut correct answers from 0.75 to 0.39.",
-      "practicalUseCase": "A valid signature can still hide a hijacked search index, so verify quantisation codes instead of loose vector tolerances.",
-      "limitation": "Tests used five corpora, two embedding models, and a small Raspberry Pi 5 setup.",
+      "problem": "Offline AI search trusts signed update packs, but a signature does not prove the vectors match the text.",
+      "fix": "Tampered vectors can drop correct answers from 0.75 to 0.39, and verifying quantisation codes accepted every honest vector tested.",
+      "practicalUseCase": "If you ship signed knowledge packs, check the vectors against the text, because a signature alone leaves a gap.",
+      "limitation": "Results come from five corpora, two embedding models, and one Raspberry Pi 5 setup.",
       "fullTextUrl": "https://huggingface.co/papers/2611.06498"
-    },
-    {
-      "id": "hf:2611.04386",
-      "doi": "https://arxiv.org/abs/2611.04386",
-      "title": "StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models",
-      "publicationDate": "2026-11-02",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Chenru Wang et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Image models need many skills and few-step sampling, but building them in two stages loses quality and wastes time.",
-      "fix": "StepX-OPD trains both together, beats the forty-step Flow-OPD model with four steps, and uses about 37% fewer GPU-hours on SD3.5-Medium.",
-      "practicalUseCase": "If you train image models, merging skill training and step cutting can save compute, so try one combined stage.",
-      "limitation": "Authors tested two models, SD3.5-Medium and FLUX.1-dev, and saw unwanted prompt words appear inside images.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.04386"
     },
     {
       "id": "hf:2611.08483",
@@ -59,10 +43,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "AI-guided program search is slow because the model writes long text reasoning every round.",
-      "fix": "SwarmEvolve reaches in a median of 3 to 8 minutes the best scores that other methods reach in 60 minutes.",
-      "practicalUseCase": "Swarms that think without writing text can cut search cost, so try them for slow optimization jobs.",
-      "limitation": "Results come from 21 mathematical and scientific computing problems, so other tasks may differ.",
+      "problem": "AI-guided program search runs slowly because the model writes long text reasoning many times each round.",
+      "fix": "Cheap agent swarms that think in hidden vectors match rival results in 3 to 8 minutes, not 60.",
+      "practicalUseCase": "Small models can now search for science solutions fast, so try swarm search before paying for a frontier model.",
+      "limitation": "Tests covered 21 maths and scientific computing problems, so other kinds of tasks are unproven.",
       "fullTextUrl": "https://huggingface.co/papers/2611.08483"
     },
     {
@@ -75,45 +59,27 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Nobody had a large, graded set of open research problems to test whether AI can solve them.",
-      "fix": "Without web access, AI agents rediscovered at most 7 of 40 solved problems, and web wins mostly copied published answers.",
-      "practicalUseCase": "AI agents rarely solve fresh research problems alone, so treat their research claims with doubt and check the source.",
-      "limitation": "The agent test used only the 50-problem HQ-50 subset, all in mathematics.",
+      "problem": "No large collection of open research problems existed, so judging AI on real research-level work was hard.",
+      "fix": "Without web access, AI agents rediscovered at most 7 of 40 solved maths problems; web wins mostly meant lookup.",
+      "practicalUseCase": "If this holds, treat AI claims of new discoveries with caution, and check whether the answer was simply looked up.",
+      "limitation": "The benchmark covers maths problems only, and the agent test used a 50-problem high-quality subset.",
       "fullTextUrl": "https://huggingface.co/papers/2610.37739"
     },
     {
-      "id": "https://openalex.org/W7204856806",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3063",
-      "title": "Islamic Social Financial Instruments and Sustainable Community Development: Evidence Synthesis on Community Resilience",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Abdallah Mambo Dallu",
-      "institution": "KCA University",
+      "id": "hf:2611.04386",
+      "doi": "https://arxiv.org/abs/2611.04386",
+      "title": "StepX-OPD: Rethinking Multi-Teacher On-Policy Distillation in Diffusion Models",
+      "publicationDate": "2026-11-02",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Chenru Wang et al.",
       "topics": [
-        "Islamic Studies & Finance"
+        "Tech"
       ],
-      "problem": "Research on zakat, waqf, and sadaqah is scattered, so it is unclear how they build community resilience.",
-      "fix": "Across 93 studies, zakat gives short-term relief, waqf builds long-term assets, and sadaqah gives flexible emergency help.",
-      "practicalUseCase": "Combined ZISWAF models work best, so charities should join all three tools and add good governance and digital systems.",
-      "limitation": "This review pools published studies from 2010 to 2025, so it shows patterns, not proven cause.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3063"
-    },
-    {
-      "id": "https://openalex.org/W7204751468",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
-      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Yunice Karina Tumewang et al.",
-      "institution": "Islamic University of Indonesia",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Banks set up sustainability committees, but it is unclear whether they drive real environmental action.",
-      "fix": "In Islamic banks, committees lift overall scores but not green products, while conventional banks improve on all four areas.",
-      "practicalUseCase": "Islamic bank committees may mostly signal effort, so regulators should check products and innovation, not just scores.",
-      "limitation": "The data cover banks in emerging markets only and show links, not cause.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
+      "problem": "Image models trained in two stages, first capabilities then few-step speed, score lower once compressed and train slowly.",
+      "fix": "One merged training stage beats other four-step methods, tops the forty-step model, and uses about 37% fewer GPU-hours on SD3.5-Medium.",
+      "practicalUseCase": "If this holds, fast image models need fewer training runs, so merge the stages when you train one.",
+      "limitation": "Tests covered two model families, SD3.5-Medium and FLUX.1-dev, and the GPU saving was measured on SD3.5-Medium only.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.04386"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -126,11 +92,28 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Nobody had mapped how sustainability sukuk issuance grew or what sets its size.",
-      "fix": "Across 11,944 sukuk from 2012 to 2022, equity-based contracts give larger issues than sale-based ones.",
-      "practicalUseCase": "Issuers who want bigger sustainability sukuk should favour equity-based contracts, since costly second party opinions shrink issue size.",
-      "limitation": "Data end in 2022, and the study shows what links to issue size, not what causes it.",
+      "problem": "Sustainability sukuk are growing, but nobody had measured what drives how big each issue is.",
+      "fix": "In 11,944 sukuk issues, equity-based contracts and social purposes bring larger issues, while second party opinion costs shrink them.",
+      "practicalUseCase": "If you plan a sustainability sukuk, favour equity-based contracts and weigh second party opinion costs against issue size.",
+      "limitation": "The data stop at 2022, and the study shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
+    },
+    {
+      "id": "https://openalex.org/W7204751468",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3271",
+      "title": "Sustainability Committees and Environmental Initiatives: Insights from Dual Banking Systems in Emerging Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Yunice Karina Tumewang et al.",
+      "institution": "Islamic University of Indonesia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Banks set up sustainability committees, but it was unclear whether they lead to real green action.",
+      "fix": "Committees raise environmental scores in both bank types, but in Islamic banks the effect looks symbolic, not substantive.",
+      "practicalUseCase": "If you judge a bank's green claims, look for green products and innovation, not just a committee.",
+      "limitation": "The study covers emerging-market banks only and shows links, not cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
       "id": "https://openalex.org/W7204766411",
@@ -143,10 +126,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Islamic banks in Jordan lack evidence on whether AI and big data improve competitiveness and sustainable development.",
-      "fix": "AI use, big data skills, and data management link to better competitiveness and sustainability, but staff skills help only competitiveness.",
-      "practicalUseCase": "Banks that invest in AI and data management gain an edge, so fund these before only training staff.",
-      "limitation": "A one-time survey of 214 managers at 15 Jordanian Islamic banks shows links, not cause.",
+      "problem": "Islamic banks in Jordan lacked evidence on whether AI and big data improve competitiveness and sustainable development.",
+      "fix": "AI use, big data skills, and data management all link to better competitiveness and sustainable development in Jordanian Islamic banks.",
+      "practicalUseCase": "If this holds, banks should invest in AI and data practices, since staff digital skills did not lift sustainable development.",
+      "limitation": "The survey is cross-sectional, covers 214 managers in Jordan only, and shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -160,10 +143,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks lack clear evidence on whether ICT, high-tech exports, and institutions drive growth in dual banking systems.",
-      "fix": "ICT is the strongest driver of expansion across 218 banks in 12 countries, and high-tech exports help only alongside ICT.",
-      "practicalUseCase": "Banks and regulators should fund digital infrastructure first, because ICT drives growth and unlocks the value of national innovation.",
-      "limitation": "Data cover 2010 to 2023 in 12 countries, so results may not fit other markets.",
+      "problem": "It was unclear which factors drive bank growth in countries that run Islamic and conventional banks side by side.",
+      "fix": "ICT adoption drives growth most across 218 banks in 12 countries, and high-tech exports help only alongside ICT.",
+      "practicalUseCase": "If this holds, banks and regulators should fund digital infrastructure first, because high-tech exports alone did not help.",
+      "limitation": "Data cover 12 countries from 2010 to 2023, and the study shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
     },
     {
@@ -177,10 +160,10 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Nobody knew how common student procrastination is compared with other health and life issues.",
-      "fix": "Procrastination affects 72.3% of 65,950 US students, and hurts grades for 45.4%, about 2.8 times more than finances.",
-      "practicalUseCase": "Procrastination hurts more students than most health issues, so colleges should treat it as a top problem.",
-      "limitation": "Students self-reported in a US survey, so the data show how common it is, not why.",
+      "problem": "Nobody knew how common student procrastination is, or how it compares with other health and life problems.",
+      "fix": "Procrastination affected 72.3% of 65,950 US students, and hurt grades for 45.4%, which is 3.5 times more than ADHD.",
+      "practicalUseCase": "If this holds, treat procrastination as a top problem, because it harms performance more than money worries or ADHD.",
+      "limitation": "Students reported their own problems in one US survey, so the data show links, not cause.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0357714"
     },
     {
@@ -194,10 +177,10 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Little data shows how ADHD shapes work life for early-career academics.",
-      "fix": "Interviews show academia can reward ADHD, but social and institutional pressure often blocks it.",
-      "practicalUseCase": "Fit between your brain and your workplace matters, so universities should adjust environments, and you should seek supportive teams.",
-      "limitation": "This is an interview study with a small group, so it shows experiences, not rates.",
+      "problem": "Little was known about how early-career academics with ADHD experience building a career.",
+      "fix": "Academia can reward ADHD traits, but social and institutional pressure often blocks that, according to interviews with early-career academics.",
+      "practicalUseCase": "If you have ADHD, pick workplaces that fit your style, because fit decides whether your traits help or hurt.",
+      "limitation": "This interview study is qualitative, so it shows personal experience, not how common these patterns are.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0361208"
     }
   ]
