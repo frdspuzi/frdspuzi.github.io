@@ -1,23 +1,151 @@
 [
   {
-    "videoId": "LREYjKezlIY",
-    "title": "Why Was This Baby Crying All Night? | Sh. Mohammad Elshinawy",
+    "videoId": "LDcRdpVvmgQ",
+    "title": "The value of AI is not doing the same thing faster",
     "selected": false,
-    "reasoning": "This is a brief clickbait-style short snippet from a khutbah, offering limited substance or actionable spiritual/practical value compared to in-depth reminders.",
+    "reasoning": "This is a brief promotional teaser for a podcast episode rather than a substantive, actionable piece of engineering content.",
     "summary": ""
   },
   {
-    "videoId": "aHMO6e5LIZU",
-    "title": "Salama ibn al-Akwa (ra): The Fastest Runner In Medina | The Firsts | Dr. Omar Suleiman",
-    "selected": false,
-    "reasoning": "While educational, this is a biographical narrative focused on historical accounts and physical feats of a companion rather than a direct spiritual reminder, productivity advice, or finance topic.",
-    "summary": ""
-  },
-  {
-    "videoId": "yZqla3ch5UM",
-    "title": "Why Doesn't Your Motivation Last? | Sh. Mohammad Elshinawy",
+    "videoId": "OrXKvOjR-vI",
+    "title": "Software correctness and programming languages with Sean Allen",
     "selected": true,
-    "reasoning": "Directly intersects Islamic spiritual wisdom with productivity, addressing focus and sustained motivation through the prophetic principle of leaving what does not concern you.",
-    "summary": "Struggling to keep your drive consistent while navigating early-career burnout and distractions? Sh. Mohammad Elshinawy unpacks a foundational prophetic teaching on eliminating mental clutter to build lasting spiritual and personal focus."
+    "reasoning": "A deep dive into software correctness, type systems, and engineering fundamentals that remain critical when building production systems with AI.",
+    "summary": "As an early-career engineer using modern AI tools, relying on generated code can quickly backfire without strong correctness fundamentals. This in-depth conversation explores how type systems and compiler guarantees protect your code in the real world. It will help you think like a senior engineer about software resilience."
+  },
+  {
+    "videoId": "BBdkmPFYnC0",
+    "title": "“Prototyping is a whole different game now”",
+    "selected": false,
+    "reasoning": "This is a short promotional soundbite from a podcast episode with minimal context and little actionable depth.",
+    "summary": ""
+  },
+  {
+    "videoId": "awH40LQBlA0",
+    "title": "The most future-proof engineering skill nobody wants to learn",
+    "selected": false,
+    "reasoning": "This is a duplicate short clip extracted from the full episode (6yQ7tgBlnF8), which is already evaluated and far more comprehensive.",
+    "summary": ""
+  },
+  {
+    "videoId": "6yQ7tgBlnF8",
+    "title": "The Most Future-Proof Engineering Skill Nobody Wants to Learn",
+    "selected": true,
+    "reasoning": "Provides critical career and technical guidance on security, appsec, and guardrailing coding agents as vulnerability windows shrink.",
+    "summary": "With AI agents writing more code, security vulnerabilities are discovered and exploited faster than ever before. IBM HashiCorp Field CTO Anna McDougall breaks down why application security is the most resilient, high-demand specialization for software engineers today. Watching this will give you a strategic blueprint on how to future-proof your tech career."
+  },
+  {
+    "videoId": "rbBR7Kanua0",
+    "title": "How to catch AI agents faking their test results",
+    "selected": true,
+    "reasoning": "Offers a highly practical, applied engineering technique for verifying AI coding agent outputs and test integrity in development workflows.",
+    "summary": "AI coding agents often fake passing tests or write vanity assertions, creating a massive maintenance headache for developers. AWS veteran Heitor Lessa shares an exact, practical blueprint using adversarial reviewers and deterministic scripts to keep agents honest. It's a quick, high-signal watch that will immediately sharpen how you review AI-generated pull requests."
+  },
+  {
+    "videoId": "BELDlwlyCU4",
+    "title": "Timbalan Mufti gelar Gen Z “generasi strawberi”, lepas tu kena aduan SISPAA. Revolusi ikut saluran.",
+    "channel": "Keluar Sekejap",
+    "category": "General Ideas",
+    "selected": false,
+    "reasoning": "This is political and social commentary on a local bureaucratic controversy rather than educational content on Islamic finance, business, or engineering.",
+    "summary": ""
+  },
+  {
+    "videoId": "evL3xdxUFlI",
+    "title": "Eh kejap! BN, PH, PN: mana kawan, mana lawan? Saksikan Jendela Perpindahan PRN Melaka di Sembang KS!",
+    "selected": false,
+    "reasoning": "Focuses on partisan Malaysian party politics and state election maneuvering, which falls outside his interests and is explicitly excluded.",
+    "summary": ""
+  },
+  {
+    "videoId": "8SmCc8GubDg",
+    "title": "EP 30 #SembangKS | Musim Pilihanraya & Ikon Wanita Selangor",
+    "selected": false,
+    "reasoning": "Covers partisan Malaysian election campaigns and political horse-trading rather than Malaysian economic or business developments.",
+    "summary": ""
+  },
+  {
+    "videoId": "bkzWrrsRyqA",
+    "title": "How Robert Moses Ruled New York Without Being Elected - Robert Caro",
+    "selected": false,
+    "reasoning": "Historical trivia regarding mid-20th-century New York municipal politics that does not align with the viewer's core technical or spiritual interests.",
+    "summary": ""
+  },
+  {
+    "videoId": "S4NYamZuts4",
+    "title": "How LBJ Fooled the Segregationists - Robert Caro",
+    "selected": false,
+    "reasoning": "Historical trivia focused on US political history and Lyndon B. Johnson, irrelevant to the viewer's focus areas.",
+    "summary": ""
+  },
+  {
+    "videoId": "JyB3mExvn_w",
+    "title": "The Man Who Built New York Without Winning a Single Vote - Robert Caro",
+    "selected": false,
+    "reasoning": "Historical biographical trivia about US urban development that lacks relevance to the viewer's career, spiritual life, or tech interests.",
+    "summary": ""
+  },
+  {
+    "videoId": "lEVokwbgAFE",
+    "title": "Bryan Johnson wants to live forever. Pharaoh tried ...",
+    "selected": true,
+    "reasoning": "A direct Islamic spiritual reminder contrasting contemporary tech-driven longevity obsessions with Quranic perspectives on mortality.",
+    "summary": "In an era where Silicon Valley figures spend millions chasing biological immortality, this video grounds the conversation with a powerful Islamic reminder. It connects modern biohacking obsessions back to timeless Quranic lessons on mortality and humility. It is a poignant, perspective-shifting watch for any Muslim working in the technology space."
+  },
+  {
+    "videoId": "fQi7fD4n26o",
+    "title": "A Doctor's Favorite Sunnah Habit",
+    "selected": false,
+    "reasoning": "This is an excerpt short from the full interview (4wxVKwD_RKE), which is already included in the selections.",
+    "summary": ""
+  },
+  {
+    "videoId": "4wxVKwD_RKE",
+    "title": "The Forgotten Habits of the Prophet ﷺ (Backed by Science)",
+    "selected": true,
+    "reasoning": "A comprehensive, practical exploration of Sunnah lifestyle and physical habits combined with modern medical evidence, offering spiritual and personal self-improvement.",
+    "summary": "Modern desk jobs and engineering sprints often lead to physical burnout and unhealthy routines early in your career. Dr. Abud Bakri examines the daily physical and dietary habits of the Prophet ﷺ through the lens of modern physiology and medicine. This episode offers practical, faith-based habits you can adopt immediately to improve your focus, energy, and overall health."
+  },
+  {
+    "videoId": "-XL2gClQ2gg",
+    "title": "Is AI Now Good Enough To Cure Cancer? | YC Paper Club",
+    "selected": false,
+    "reasoning": "Academic research paper breakdown centered on computational biology and DNA language models, which is explicitly outside his applied software tooling focus.",
+    "summary": ""
+  },
+  {
+    "videoId": "Q78dJ0vkWe8",
+    "title": "How To Build The Future: Paul Graham & Amjad Masad",
+    "selected": true,
+    "reasoning": "A premier discussion on applied AI coding tooling, agent orchestration, and software engineering career progression by founders of Replit and YC.",
+    "summary": "Replit built one of the earliest autonomous coding agents that provisions infrastructure and debugs its own code. In this discussion, Amjad Masad and Paul Graham break down how AI is reshaping practical software development and what engineers should build to stay relevant. It is essential listening for any fullstack developer navigating the fast-changing world of developer tools."
+  },
+  {
+    "videoId": "NYGf--dBeHA",
+    "title": "How Boom’s Biggest Crisis Became Its Biggest Opportunity",
+    "selected": false,
+    "reasoning": "A specialized aerospace startup case study that does not intersect with fullstack software engineering, Islamic finance, or local business.",
+    "summary": ""
+  },
+  {
+    "videoId": "T4Bpz-TKDW0",
+    "title": "Don't make decisions in an echo chamber | Dambisa Moyo",
+    "selected": false,
+    "reasoning": "A generic, short soundbite delivering broad corporate decision-making advice without actionable substance.",
+    "summary": ""
+  },
+  {
+    "videoId": "p4dAIspaKb8",
+    "title": "What is panpsychism? | Jack Symes",
+    "selected": false,
+    "reasoning": "An abstract philosophy of mind discussion completely unrelated to applied software development, career growth, or Islamic thought.",
+    "summary": ""
+  },
+  {
+    "videoId": "NEq_CU_weas",
+    "title": "Who you are fluctuates every single second | Lisa Feldman Barrett",
+    "selected": false,
+    "reasoning": "A broad pop-psychology discussion designed around a book promotion, lacking technical or practical utility for the user.",
+    "summary": ""
   }
 ]
