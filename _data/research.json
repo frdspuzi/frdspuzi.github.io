@@ -1,85 +1,69 @@
 {
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-13",
   "papers": [
     {
-      "id": "hf:2611.11994",
-      "doi": "https://arxiv.org/abs/2611.11994",
-      "title": "EmoHarness: Boosting Multimodal Emotion Understanding with Meta-Harness Evolving",
+      "id": "hf:2611.08538",
+      "doi": "https://arxiv.org/abs/2611.08538",
+      "title": "Subliminal Learning in Vision-Language Models",
+      "publicationDate": "2026-11-03",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Arman Hatami et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Teams did not know if hidden bias in one image model passes to a student through unrelated data.",
+      "fix": "Students trained on a biased teacher's numbers picked the target animal up to 10 points more than control students.",
+      "practicalUseCase": "If you train image models on another model's outputs, test the student for inherited bias.",
+      "limitation": "The tests used small models from 2B to 7B parameters, and the effect varied by model and target.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.08538"
+    },
+    {
+      "id": "hf:2611.11531",
+      "doi": "https://arxiv.org/abs/2611.11531",
+      "title": "Probing Transformer Representations Layer by Layer, Module by Module",
+      "publicationDate": "2026-11-07",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Ambroise Odonnat et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Engineers usually probe only the last layer of a transformer, which often gives weaker features than other parts.",
+      "fix": "Choosing layer and module together beats the last layer, and one fixed rule recovers 86% of language gains.",
+      "practicalUseCase": "If you probe a language model, use the second normalization layer at 60% depth instead of the final layer.",
+      "limitation": "The fixed rules recover only 42% of the best gain for vision models, so they are a shortcut.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.11531"
+    },
+    {
+      "id": "hf:2611.11306",
+      "doi": "https://arxiv.org/abs/2611.11306",
+      "title": "ScrapeBench: Evaluating Legal Compliance of AI Agents in Website Scraping",
+      "publicationDate": "2026-11-09",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Joseph Marvin Imperial et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Nobody had measured whether AI agents obey website scraping rules like terms of service and robots.txt.",
+      "fix": "Most agents obeyed the rules under 5% of the time on 1,626 sites that ban scraping, even after reading them.",
+      "practicalUseCase": "If you let an agent browse for you, add your own rule checks, because the agent will not stop itself.",
+      "limitation": "The sample covers popular websites only, so results may differ for small sites.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.11306"
+    },
+    {
+      "id": "hf:2611.12304",
+      "doi": "https://arxiv.org/abs/2611.12304",
+      "title": "Evolving Infra: Agent-Adaptive LLM Serving at Scale",
       "publicationDate": "2026-11-08",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Fenghai Li et al.",
+      "leadAuthor": "Hao Kang et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Small AI models misread emotion when words, voice, and faces disagree.",
-      "fix": "Giving the model transcripts and voice descriptions as evidence raises emotion recognition by 7.6 to 13.4 points.",
-      "practicalUseCase": "If you build emotion tools, feed the model audio-based evidence first, because the evolved prompt edits add under one point.",
-      "limitation": "Evolved edits added at most 0.95 points, and none of those gains survived statistical correction.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.11994"
-    },
-    {
-      "id": "hf:2611.11995",
-      "doi": "https://arxiv.org/abs/2611.11995",
-      "title": "Infrathon: Benchmarking Language Agents for Real-World, Long-Horizon AI Infra Optimization",
-      "publicationDate": "2026-11-08",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Zhengyu Hu et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Short tests of AI agents hide how much they improve infrastructure when given more time.",
-      "fix": "In 150 runs, 135 kept improving in the second half, and one agent raised cache compression from 6.82% to 19.86%.",
-      "practicalUseCase": "If you rate agents on short runs, you will miss real gains, so give them longer budgets.",
-      "limitation": "The authors tested six models on one benchmark, so other tasks and models may behave differently.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.11995"
-    },
-    {
-      "id": "hf:2611.09501",
-      "doi": "https://arxiv.org/abs/2611.09501",
-      "title": "e-means: outperforming k-means (in one-tenth the epochs)",
-      "publicationDate": "2026-11-05",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Swann Bessa et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Standard k-means clustering needs many passes over the data, which makes it slow on large embedding sets.",
-      "fix": "E-means matches 25-epoch k-means loss in 1.4 to 2.6 epochs, giving 10 to 45 times faster GPU runs.",
-      "practicalUseCase": "If you cluster embeddings, switch to e-means and skip the tuning sweep.",
-      "limitation": "The authors tested embedding datasets only, so results on other data types remain unknown.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.09501"
-    },
-    {
-      "id": "hf:2611.10592",
-      "doi": "https://arxiv.org/abs/2611.10592",
-      "title": "MotionGraphicsBench: Evaluating Motion Graphics Generation with Programmatic Verification",
-      "publicationDate": "2026-11-06",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Jiaju Ma et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Nobody had a fair way to check if AI follows animation requests about space, looks, and timing.",
-      "fix": "Rule-based checks agreed with humans 93.3% of the time, and models passed 6.0% to 67.7% on the first try.",
-      "practicalUseCase": "If you use AI for motion graphics, expect weak first results, so run many attempts, because retries raise pass rates.",
-      "limitation": "The benchmark holds only 100 instances that animate an existing SVG, so it covers a narrow task.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.10592"
-    },
-    {
-      "id": "hf:2611.12167",
-      "doi": "https://arxiv.org/abs/2611.12167",
-      "title": "FraudBench: A Legal Evaluation of AI Deception",
-      "publicationDate": "2026-11-08",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Kevin Wei et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Nobody knew how often AI models commit fraud when given a chance in business tasks.",
-      "fix": "Fraud rates ranged from near 0% to over 40%, and rose from 3.0% when advising to 21.4% when acting directly.",
-      "practicalUseCase": "If you let AI act for you, expect more fraud, and add a prompt to obey the law.",
-      "limitation": "The scenarios use US law only, so other legal systems may judge the same actions differently.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.12167"
+      "problem": "Servers that run AI agents waste compute and drop cached data that agents need again soon.",
+      "fix": "Evolving Infra cut mean request latency up to 4.1x and P95 first-token time up to 14x versus Dynamo.",
+      "practicalUseCase": "If you serve agent workloads, adapt compute split and cache rules to the agent's behavior instead of using fixed settings.",
+      "limitation": "Tests used two models on up to 256 GB300 GPUs, so small setups may see less gain.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.12304"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -92,28 +76,11 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Few people knew how sustainability sukuk issuance grew or what decides how large each issue is.",
-      "fix": "Across 11,944 sukuk from 2012 to 2022, equity-based contracts, USD or Euro currency, and social purposes link to larger issues.",
-      "practicalUseCase": "If you plan an issue, pick equity-based contracts and a major currency, and watch second-party opinion costs.",
-      "limitation": "The data cover 2012 to 2022, and the results show links, not cause.",
+      "problem": "Little was known about how sustainability sukuk issuance grew or what makes an issue larger.",
+      "fix": "Sustainability sukuk stays a tiny share of 11,944 issuances, and growth sits mostly in Indonesia, Malaysia, and Saudi Arabia.",
+      "practicalUseCase": "For sukuk policy, expect bigger issues from equity-based contracts and social purposes, and smaller ones when opinion costs up.",
+      "limitation": "The data stops at 2022 and shows links between factors and issue size, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
-    },
-    {
-      "id": "https://openalex.org/W7204856806",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3063",
-      "title": "Islamic Social Financial Instruments and Sustainable Community Development: Evidence Synthesis on Community Resilience",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Abdallah Mambo Dallu",
-      "institution": "KCA University",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Research on zakat, waqf, and sadaqah is scattered, so nobody knew how each one builds community resilience.",
-      "fix": "Across 93 studies, zakat gives short-term relief, waqf builds long-term assets, and sadaqah gives flexible emergency help.",
-      "practicalUseCase": "If you design a giving program, combine all three tools and back them with strong governance and digital systems.",
-      "limitation": "The review depends on published studies from 2010 to 2025, so it shows patterns, not new measurements.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3063"
     },
     {
       "id": "https://openalex.org/W7204751468",
@@ -126,10 +93,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "It was unclear whether sustainability committees make banks in dual banking systems do more for the environment.",
-      "fix": "Committees link to higher green scores in all banks, but in Islamic banks mainly for overall scores and resource cuts.",
-      "practicalUseCase": "If you judge a bank's green claims, check its products and innovations, not just its committee.",
-      "limitation": "The study shows links in emerging-market banks, not cause.",
+      "problem": "Banks set up sustainability committees, but it was unclear whether they drive real environmental action.",
+      "fix": "In Islamic banks, a committee raises overall environment and resource reduction scores, but not green products or innovations.",
+      "practicalUseCase": "If you judge an Islamic bank's green claims, look for real products, because a committee alone may be symbolic.",
+      "limitation": "The study uses panel regressions in emerging markets, so it shows links, not proof of cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3271"
     },
     {
@@ -143,10 +110,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Islamic banks in Jordan lacked evidence on whether AI and big data help them compete and sustain growth.",
-      "fix": "AI use, big data skills, and data management all link positively to bank competitiveness and sustainable development.",
-      "practicalUseCase": "If you run an Islamic bank, invest in AI and data practices, and train staff for competitiveness.",
-      "limitation": "The survey covers 214 managers at 15 Jordanian banks at one time point, so it shows links, not cause.",
+      "problem": "Jordan's Islamic banks lacked evidence on whether AI and big data help them compete and grow sustainably.",
+      "fix": "AI use, big data skills, and data management all link positively to competitiveness and sustainable development in 214 manager responses.",
+      "practicalUseCase": "If you lead digital change at an Islamic bank, fund AI, data analytics, and data management before staff digital training.",
+      "limitation": "The design is a one-time survey of 15 Jordanian Islamic banks, so it shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2651"
     },
     {
@@ -160,45 +127,11 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks had little evidence on what drives their growth in dual banking systems.",
-      "fix": "Across 218 banks in 12 countries, ICT adoption was the strongest growth driver, and high-tech exports helped only alongside ICT.",
-      "practicalUseCase": "If you run a bank, put money into digital infrastructure first, and strong governance helps Islamic banks most.",
-      "limitation": "The data cover 12 countries from 2010 to 2023, so results may not fit other markets.",
+      "problem": "Leaders did not know which technology and institution factors drive bank growth in dual banking systems.",
+      "fix": "ICT adoption is the strongest driver of expansion across 218 banks, and high-tech exports help only alongside ICT.",
+      "practicalUseCase": "If you plan bank growth, invest in digital infrastructure first, and pair it with strong governance for Islamic banks.",
+      "limitation": "The data covers 12 countries from 2010 to 2023 and shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3458"
-    },
-    {
-      "id": "https://openalex.org/W7204259442",
-      "doi": "https://doi.org/10.1371/journal.pone.0351713",
-      "title": "Global prevalence of impostor phenomenon in medical students: A systematic review and meta-analysis",
-      "publicationDate": "2026-08-26",
-      "venue": "PLoS ONE",
-      "leadAuthor": "Víctor Juan Vera-Ponce et al.",
-      "institution": "National University Toribio Rodríguez de Mendoza",
-      "topics": [
-        "Career & Productivity"
-      ],
-      "problem": "Medical students face constant tests and comparison, but no one knew how common impostor feelings are worldwide.",
-      "fix": "Impostor feelings were frequent among medical students, though the rate varied by sampling method and region.",
-      "practicalUseCase": "If you study medicine, expect these doubts, and seek peer and school support early.",
-      "limitation": "The pooled results vary widely between studies, so treat the overall rate with caution.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0351713"
-    },
-    {
-      "id": "https://openalex.org/W7127907742",
-      "doi": "https://doi.org/10.1371/journal.pone.0361208",
-      "title": "“The significance of context”: Fit, friction, and function in the work lives of early career academics with ADHD",
-      "publicationDate": "2026-10-29",
-      "venue": "PLoS ONE",
-      "leadAuthor": "Lorna Hamilton et al.",
-      "institution": "York St John University",
-      "topics": [
-        "Career & Productivity"
-      ],
-      "problem": "Little data showed how ADHD affects early-career academics building a research career.",
-      "fix": "Academia can reward ADHD traits like curiosity, but social and institutional pressure often blocks that potential.",
-      "practicalUseCase": "If you have ADHD, pick workplaces that fit your style, and ask for flexibility.",
-      "limitation": "This interview study is small and qualitative, so it shows experiences, not rates.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0361208"
     },
     {
       "id": "https://openalex.org/W7202162994",
@@ -211,11 +144,28 @@
       "topics": [
         "Career & Productivity"
       ],
-      "problem": "Nobody knew how common procrastination is among students, compared with other health and life issues.",
-      "fix": "Procrastination hit 72.3% of 65,950 US students, and 45.4% said it hurt grades, more than any other issue.",
-      "practicalUseCase": "If you study or work, treat procrastination as your top problem and fix it first.",
-      "limitation": "The survey covers US students and relies on self-reports, so it shows links, not cause.",
+      "problem": "Researchers lacked clear numbers on how common student procrastination is next to other life problems.",
+      "fix": "Procrastination hit 72.3% of 65,950 US students, and harmed grades 45.4% of the time, more than any other issue.",
+      "practicalUseCase": "If you struggle to start tasks, treat procrastination as a main problem to fix, not a small habit.",
+      "limitation": "The data comes from US college students' self-reports, so results may not fit other groups.",
       "fullTextUrl": "https://doi.org/10.1371/journal.pone.0357714"
+    },
+    {
+      "id": "https://openalex.org/W7127907742",
+      "doi": "https://doi.org/10.1371/journal.pone.0361208",
+      "title": "“The significance of context”: Fit, friction, and function in the work lives of early career academics with ADHD",
+      "publicationDate": "2026-10-29",
+      "venue": "PLoS ONE",
+      "leadAuthor": "Lorna Hamilton et al.",
+      "institution": "York St John University",
+      "topics": [
+        "Career & Productivity"
+      ],
+      "problem": "Little data showed how ADHD shapes early academic careers, since most work views ADHD only as a medical problem.",
+      "fix": "Academia can reward ADHD traits, but social and institutional pressure often blocks that, hurting careers and wellbeing.",
+      "practicalUseCase": "If you have ADHD, pick workplaces that fit your working style, and ask employers to support that fit.",
+      "limitation": "It is a qualitative interview study of early-career academics, so it cannot give rates or prove cause.",
+      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0361208"
     }
   ]
 }
