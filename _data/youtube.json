@@ -1,6 +1,110 @@
 {
   "videos": [
     {
+      "title": "I love you so jevving much — Diogo Almeida, TypeSafe AI",
+      "url": "https://www.youtube.com/watch?v=Cyt3LU8TyNc",
+      "videoId": "Cyt3LU8TyNc",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "ChatGPT co-creator Diogo Almeida exposes the core reason trillion-dollar AI models can conquer Olympic-level math yet fail at basic business tasks: the entire industry optimized LLMs for conversational assistance via RLHF rather than reliable, autonomous code execution. He breaks down the fatal flaw keeping real automation stuck—the 'Einstein 95% of the time, Mr. Bean 5% of the time' dilemma, where even slight unreliability prevents software from making consequential decisions. If you want to look past the hype and learn how treating machine intelligence as a deterministic 'fourth semantic logic gate' unlocks the future of true software automation, this talk is essential viewing.",
+      "dateAdded": "2026-11-16T01:28:13.731Z",
+      "timestamps": [
+        {
+          "startTime": 190,
+          "endTime": 325,
+          "topic": "Why RLHF created an assistant trap instead of true automation"
+        },
+        {
+          "startTime": 570,
+          "endTime": 645,
+          "topic": "The 'Einstein vs. Mr. Bean' reliability crisis halting AI adoption"
+        },
+        {
+          "startTime": 740,
+          "endTime": 865,
+          "topic": "The Blue LED analogy: AI as computing's fourth semantic logic gate"
+        }
+      ]
+    },
+    {
+      "title": "All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI",
+      "url": "https://www.youtube.com/watch?v=O_zcc6Xl12g",
+      "videoId": "O_zcc6Xl12g",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "If you are tired of AI coding assistants generating unmaintainable 'code slop,' this talk reveals the counterintuitive engineering blueprint that allowed a team to ship over 11,000 autonomous pull requests in a month with a sub-1% revert rate. The game-changing insight is to stop fixing AI mistakes with longer prompts or markdown rules, and instead enforce deterministic architectural guardrails and linters so agents physically cannot write bad code. Watch this to learn how shifting your effort into automated verification turns AI from a chaotic code monkey into a dependable software factory.",
+      "dateAdded": "2026-11-16T01:28:13.731Z",
+      "timestamps": [
+        {
+          "startTime": 121,
+          "endTime": 210,
+          "topic": "The Inverse Pyramid: Why deterministic code constraints beat prompt rules"
+        },
+        {
+          "startTime": 418,
+          "endTime": 570,
+          "topic": "Why banning code comments stops AI agents from justifying tech debt"
+        },
+        {
+          "startTime": 581,
+          "endTime": 760,
+          "topic": "The Verification Shift: Replacing manual PR reviews with automated test artifacts"
+        }
+      ]
+    },
+    {
+      "title": "Software correctness and programming languages with Sean Allen",
+      "url": "https://www.youtube.com/watch?v=OrXKvOjR-vI",
+      "videoId": "OrXKvOjR-vI",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Most software teams waste endless hours maintaining brittle test suites and erecting false 'quality gates,' completely blind to the reality that testing is merely a late-stage band-aid for poorly constrained architecture. In this eye-opening masterclass, systems engineer Sean T. Allen reveals how to achieve genuine software correctness by making bugs mathematically unrepresentable before code is even written, while debunking conventional dogmas about technical debt and testing. If you want to stop firefighting production outages at 2:00 AM and learn how elite engineering teams build resilient systems with fearless velocity, this conversation is essential viewing.",
+      "dateAdded": "2026-11-16T01:28:13.731Z",
+      "timestamps": [
+        {
+          "startTime": 2970,
+          "endTime": 3150,
+          "topic": "The myth of quality gates: why testing cannot fix flawed architecture"
+        },
+        {
+          "startTime": 4480,
+          "endTime": 4655,
+          "topic": "Rethinking technical debt: why you only pay for debt you don't outgrow"
+        },
+        {
+          "startTime": 4820,
+          "endTime": 5025,
+          "topic": "Go slow to go fast: preventing catastrophic engineering miscommunication"
+        }
+      ]
+    },
+    {
+      "title": "The Home Repo: The effortless multi-repo agent setup",
+      "url": "https://www.youtube.com/watch?v=hWe-j78vNpc",
+      "videoId": "hWe-j78vNpc",
+      "channel": "Matt Pocock",
+      "category": "Tech & Engineering",
+      "summary": "If you manage AI coding agents across multiple repositories, duplicating custom skills, steering files, and local configs is quietly crippling your workflow. By shifting your agent into a dedicated 'Home Repo' that orchestrates your entire codebase from a single hub, you unlock the power to execute cross-repo tasks, version-control sensitive private skills, and keep team settings perfectly synchronized. Watch this video to master a deceptively simple architecture pattern that turns a chaotic multi-repo setup into an autonomous, powerhouse development engine.",
+      "dateAdded": "2026-11-16T01:28:13.731Z",
+      "timestamps": [
+        {
+          "startTime": 138,
+          "endTime": 205,
+          "topic": "The 'Home Repo' Solution: Eliminating Fragmented Agent Configs"
+        },
+        {
+          "startTime": 221,
+          "endTime": 285,
+          "topic": "How agents.md Maps Codebases, Auto-Clones Projects, and Manages Worktrees"
+        },
+        {
+          "startTime": 395,
+          "endTime": 475,
+          "topic": "Supercharging Agents with Centralized APIs, Custom Tooling, and LLM Wikis"
+        }
+      ]
+    },
+    {
       "title": "Why Malaysian Tech Startup Companies Failed (and What’s Changing Now)?",
       "url": "https://www.youtube.com/watch?v=0pxaf6EhpRM",
       "videoId": "0pxaf6EhpRM",
@@ -285,111 +389,7 @@
           "topic": "The ultimate black swan threat: Internal division over foreign invasion"
         }
       ]
-    },
-    {
-      "title": "How to 700x Your Good Deeds | Sh. Mohammad Elshinawy",
-      "url": "https://www.youtube.com/shorts/Pt6dot9L8_I",
-      "videoId": "Pt6dot9L8_I",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Just like elite airline tiers unlock exclusive VIP perks, achieving excellence in your faith unlocks an exponential reward system where every single good deed is multiplied from 10 to 700 times. This compelling breakdown reveals why spiritual consistency earns you access to an entirely different divine formula for your daily efforts. Watch this short video to see how disciplined focus elevates your spiritual status and compounds the impact of your actions.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 16,
-          "topic": "The airline loyalty tier analogy for spiritual status"
-        },
-        {
-          "startTime": 16,
-          "endTime": 29,
-          "topic": "The 10x to 700x good deed multiplier in authentic tradition"
-        },
-        {
-          "startTime": 29,
-          "endTime": 47,
-          "topic": "Why disciplined focus earns a completely different reward formula"
-        }
-      ]
-    },
-    {
-      "title": "I'm 48, Things I Wish I Would Have Told My Younger Self",
-      "url": "https://www.youtube.com/watch?v=SM3tFqhItXs",
-      "videoId": "SM3tFqhItXs",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "Most men mistakenly believe their prime is in their twenties, but your true peak begins in your forties—provided you spend your thirties forging disciplined skills, physical resilience, and spiritual grounding. This video lays out an actionable roadmap for men to build unshakeable character through combat sports, deliberate craft mastery, Quran memorization, and financial literacy. If you want to stop drifting and step up as a grounded, capable leader your family and community can depend on, this guide is essential viewing.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
-      "timestamps": [
-        {
-          "startTime": 100,
-          "endTime": 188,
-          "topic": "Why your prime is in your 40s and how to master core skills in your 30s"
-        },
-        {
-          "startTime": 235,
-          "endTime": 320,
-          "topic": "Quran memorization as the foundation for discipline and male leadership"
-        },
-        {
-          "startTime": 405,
-          "endTime": 575,
-          "topic": "Understanding consumer psychology and treating wealth as fuel, not the goal"
-        }
-      ]
-    },
-    {
-      "title": "Master Discipline as a Muslim With These Strategies (From The Sunnah)",
-      "url": "https://www.youtube.com/watch?v=iUAK8oxxGWA",
-      "videoId": "iUAK8oxxGWA",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "Most people burn out trying to build discipline through raw willpower and unsustainable routines, but true success comes from consistent micro-habits anchored around purpose. This video reveals how structuring your day around the five daily prayers and aiming for realistic 51% consistency—rather than paralyzing perfectionism—unlocks sustainable focus and barakah in your life. If you want a grounded, faith-centered blueprint to take command of your time, health, and family leadership, this is a must-watch.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
-      "timestamps": [
-        {
-          "startTime": 322,
-          "endTime": 435,
-          "topic": "Structuring your daily schedule around the five prayers as non-negotiable anchors"
-        },
-        {
-          "startTime": 575,
-          "endTime": 695,
-          "topic": "Establishing micro-habits and escaping the all-or-nothing trap"
-        },
-        {
-          "startTime": 765,
-          "endTime": 855,
-          "topic": "Leveraging peer accountability and weekly audits to stay consistent"
-        }
-      ]
-    },
-    {
-      "title": "The value of AI is not doing the same thing faster",
-      "url": "https://www.youtube.com/shorts/LDcRdpVvmgQ",
-      "videoId": "LDcRdpVvmgQ",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "If you think AI is merely about churning out code faster, you are measuring productivity completely wrong—and risking a massive spike in system outages. This eye-opening breakdown exposes why real AI leverage isn't about 10x speed, but tackling higher-value problems that traditional factory-style metrics fail to capture. Watch this to discover how to properly evaluate engineering output before vanity metrics derail your team.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 17,
-          "topic": "The myth of 10x productivity versus research-backed numbers"
-        },
-        {
-          "startTime": 17,
-          "endTime": 39,
-          "topic": "Why measuring AI output like a factory misses its true value"
-        },
-        {
-          "startTime": 39,
-          "endTime": 62,
-          "topic": "The hidden engineering trap: 70% more code and 30% more outages"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-11-12T02:45:47.581Z"
+  "lastUpdated": "2026-11-16T01:30:12.653Z"
 }
