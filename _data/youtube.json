@@ -1,7 +1,33 @@
 {
   "videos": [
     {
-      "title": "I love you so jevving much — Diogo Almeida, TypeSafe AI",
+      "title": "Let's Open Source the World — Brandon Thomas, ArtCraft",
+      "url": "https://www.youtube.com/watch?v=UCL4K36SHp0",
+      "videoId": "UCL4K36SHp0",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "What if autonomous AI agents could rebuild bloated, multi-billion-dollar software monopolies like Photoshop and Figma practically overnight? In this audacious presentation framed as a dispatch from the future (dated November 2026), Brandon Thomas reveals how autonomous code generation and Rust could dismantle closed SaaS ecosystems—though viewers must maintain healthy skepticism, as his sensational claims of overnight full-suite clones and millions of daily users serve as a speculative thought experiment rather than current reality. It is a must-watch blueprint for anyone seeking to understand how agentic factories could soon disrupt proprietary software and return digital ownership to creators.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "timestamps": [
+        {
+          "startTime": 270,
+          "endTime": 405,
+          "topic": "The 'enshittification' trap: How open protocols were replaced by extractive corporate platforms"
+        },
+        {
+          "startTime": 555,
+          "endTime": 670,
+          "topic": "Agentic reverse-engineering: Rebuilding Photoshop and desktop creative suites with AI"
+        },
+        {
+          "startTime": 1050,
+          "endTime": 1135,
+          "topic": "Autonomous software factories: Where AI agents excel versus where human design is required"
+        }
+      ]
+    },
+    {
+      "title": "\"Where is all the automation?\" — Diogo Almeida, TypeSafe AI",
       "url": "https://www.youtube.com/watch?v=Cyt3LU8TyNc",
       "videoId": "Cyt3LU8TyNc",
       "channel": "AI Engineer",
@@ -53,288 +79,80 @@
       ]
     },
     {
-      "title": "Software correctness and programming languages with Sean Allen",
-      "url": "https://www.youtube.com/watch?v=OrXKvOjR-vI",
-      "videoId": "OrXKvOjR-vI",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Most software teams waste endless hours maintaining brittle test suites and erecting false 'quality gates,' completely blind to the reality that testing is merely a late-stage band-aid for poorly constrained architecture. In this eye-opening masterclass, systems engineer Sean T. Allen reveals how to achieve genuine software correctness by making bugs mathematically unrepresentable before code is even written, while debunking conventional dogmas about technical debt and testing. If you want to stop firefighting production outages at 2:00 AM and learn how elite engineering teams build resilient systems with fearless velocity, this conversation is essential viewing.",
-      "dateAdded": "2026-11-16T01:28:13.731Z",
-      "timestamps": [
-        {
-          "startTime": 2970,
-          "endTime": 3150,
-          "topic": "The myth of quality gates: why testing cannot fix flawed architecture"
-        },
-        {
-          "startTime": 4480,
-          "endTime": 4655,
-          "topic": "Rethinking technical debt: why you only pay for debt you don't outgrow"
-        },
-        {
-          "startTime": 4820,
-          "endTime": 5025,
-          "topic": "Go slow to go fast: preventing catastrophic engineering miscommunication"
-        }
-      ]
-    },
-    {
-      "title": "The Home Repo: The effortless multi-repo agent setup",
-      "url": "https://www.youtube.com/watch?v=hWe-j78vNpc",
-      "videoId": "hWe-j78vNpc",
-      "channel": "Matt Pocock",
-      "category": "Tech & Engineering",
-      "summary": "If you manage AI coding agents across multiple repositories, duplicating custom skills, steering files, and local configs is quietly crippling your workflow. By shifting your agent into a dedicated 'Home Repo' that orchestrates your entire codebase from a single hub, you unlock the power to execute cross-repo tasks, version-control sensitive private skills, and keep team settings perfectly synchronized. Watch this video to master a deceptively simple architecture pattern that turns a chaotic multi-repo setup into an autonomous, powerhouse development engine.",
-      "dateAdded": "2026-11-16T01:28:13.731Z",
-      "timestamps": [
-        {
-          "startTime": 138,
-          "endTime": 205,
-          "topic": "The 'Home Repo' Solution: Eliminating Fragmented Agent Configs"
-        },
-        {
-          "startTime": 221,
-          "endTime": 285,
-          "topic": "How agents.md Maps Codebases, Auto-Clones Projects, and Manages Worktrees"
-        },
-        {
-          "startTime": 395,
-          "endTime": 475,
-          "topic": "Supercharging Agents with Centralized APIs, Custom Tooling, and LLM Wikis"
-        }
-      ]
-    },
-    {
-      "title": "Why Malaysian Tech Startup Companies Failed (and What’s Changing Now)?",
-      "url": "https://www.youtube.com/watch?v=0pxaf6EhpRM",
-      "videoId": "0pxaf6EhpRM",
-      "channel": "EDUCATION & TECHNOLOGY",
-      "category": "Discovery 🌍",
-      "summary": "Ever wonder why an ecosystem primed to be Southeast Asia's 'Silicon Valley of the East' saw its most hyped startups quietly collapse? This video exposes the fatal traps that doomed an entire generation of founders—from risk-averse copycat models and 'grantpreneur' vanity metrics to provincial, small-market thinking—and uncovers the exact turnaround strategy driving today's quiet comeback. If you want to understand the hard truth about what actually separates a subsidized failure from a scalable, cross-border powerhouse, this breakdown is essential viewing.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
-      "timestamps": [
-        {
-          "startTime": 142,
-          "endTime": 202,
-          "topic": "The 'grantpreneur' trap: How easy government funding killed customer-driven innovation"
-        },
-        {
-          "startTime": 312,
-          "endTime": 354,
-          "topic": "The danger of provincial thinking: Why building only for local markets caps growth"
-        },
-        {
-          "startTime": 355,
-          "endTime": 450,
-          "topic": "The second wave turnaround: How regional ambition and real-problem solving are revitalizing the ecosystem"
-        }
-      ]
-    },
-    {
-      "title": "Breaking Into Southeast Asia: Startup Lessons from Malaysia’s Tech Ecosystem",
-      "url": "https://www.youtube.com/watch?v=_ljaj2DZU7s",
-      "videoId": "_ljaj2DZU7s",
-      "channel": "TheDigitalEdge",
-      "category": "Discovery 🌍",
-      "summary": "Think you need millions in venture capital to dominate a cutthroat software market? This breakdown reveals how Malaysian startup Softinn captured the number-two spot against entrenched competitors on a modest $225,000 budget by targeting the exact operational bottlenecks draining boutique hotels. Watch this case study to unlock the actionable playbook for thriving in Southeast Asia's rapidly growing, hyper-fragmented digital economy without burning unnecessary cash.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
-      "timestamps": [
-        {
-          "startTime": 90,
-          "endTime": 170,
-          "topic": "The lean tech stack: how boutique hotels bypass OTA commission fees"
-        },
-        {
-          "startTime": 170,
-          "endTime": 239,
-          "topic": "Punching above their weight: outranking better-funded rivals"
-        },
-        {
-          "startTime": 295,
-          "endTime": 370,
-          "topic": "The Southeast Asia trap: why localization means far more than translation"
-        }
-      ]
-    },
-    {
-      "title": "AIE CODE: Google DeepMind, Anthropic, SpaceXSI, TypeSafe, Lovable, Ramp, etc (System One theme)",
-      "url": "https://www.youtube.com/watch?v=ZZ19zhYnDKY",
-      "videoId": "ZZ19zhYnDKY",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "As autonomous AI coding agents rapidly flood repositories, the single most critical breakthrough is realizing that producing more code faster is useless without spending the vast majority of compute on strict, automated verification to stop catastrophic 'code slop.' Featuring field-tested blueprints from leading engineers at SpaceX, Cloudflare, and cutting-edge AI labs, this summit reveals how top practitioners actually architect self-healing systems and harness ultra-low-latency models in production. If you want to build durable, real-world software factories rather than drowning in uncontrolled AI-generated technical debt, this event is mandatory viewing.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
-      "timestamps": [
-        {
-          "startTime": 700,
-          "endTime": 1700,
-          "topic": "What Will You Build When AI Is 10x Faster? (Natalie Serrino, Gimlet Labs)"
-        },
-        {
-          "startTime": 2400,
-          "endTime": 3590,
-          "topic": "Cloudflare as a Neolab: Primitives for the Agent Cloud (Michelle Chen, Cloudflare)"
-        },
-        {
-          "startTime": 3665,
-          "endTime": 4705,
-          "topic": "All Code Is Slop (Except Mine): Scaling Agents via Rigorous Verification (Lauren Tan, SpaceX)"
-        }
-      ]
-    },
-    {
-      "title": "Stop Shipping LLM Settings That Only Win on Paper - Rohan Pandey & Balaji Varadarajan, DigitalOcean",
-      "url": "https://www.youtube.com/watch?v=cWrYEBlWpcY",
-      "videoId": "cWrYEBlWpcY",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Tuning LLM serving configurations by hand is an exhausting guessing game, but this automated optimization agent can double your token throughput and slash latency in half with zero manual guesswork. By combining Bayesian optimization and Optuna, the tool autonomously tests and refines vLLM parameters in the background to extract maximum performance from your hardware. Watch this demo to see how simple it is to set up the tuner script and effortlessly unlock massive efficiency gains on models like DeepSeek and GPT-OSS.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
-      "timestamps": [
-        {
-          "startTime": 50,
-          "endTime": 128,
-          "topic": "How the agent uses Bayesian optimization and Optuna to find optimal configurations"
-        },
-        {
-          "startTime": 128,
-          "endTime": 235,
-          "topic": "Configuring the baseline serving recipe and launching the tuner script"
-        },
-        {
-          "startTime": 235,
-          "endTime": 320,
-          "topic": "Analyzing real-world benchmark reports that double throughput and cut latency"
-        }
-      ]
-    },
-    {
-      "title": "Your SKILL.md Is 70% Stuff the Model Already Knows - Nikolay Petrov, Intel",
-      "url": "https://www.youtube.com/watch?v=yzx4IuEh_tU",
-      "videoId": "yzx4IuEh_tU",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Most AI agent prompts and 'skills' are bloated with redundant filler, and shockingly, some instructions actually degrade model accuracy rather than helping it. By breaking agent skills into atomic test items and mapping them onto an impact matrix, this video reveals how to scientifically identify what a model genuinely lacks versus what it already knows. If you want to stop guessing your prompt engineering and start deterministically slashing token costs while boosting agent reliability, this talk provides the exact blueprint you need.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
-      "timestamps": [
-        {
-          "startTime": 250,
-          "endTime": 420,
-          "topic": "Decomposing agent skills into atomic tests and the 4-quadrant impact matrix"
-        },
-        {
-          "startTime": 560,
-          "endTime": 630,
-          "topic": "Latent vs. strict knowledge: why models grasp concepts but fail on exact parameters"
-        },
-        {
-          "startTime": 735,
-          "endTime": 785,
-          "topic": "Pruning redundant context to slash token costs without hurting performance"
-        }
-      ]
-    },
-    {
-      "title": "Uber Distinguished Eng: When Promo Committees Are Unfair | Joakim Recht",
-      "url": "https://www.youtube.com/watch?v=wAhGyWvfBqw",
-      "videoId": "wAhGyWvfBqw",
-      "channel": "Ryan Peterman",
-      "category": "Tech & Engineering",
-      "summary": "Think writing great code and working hard guarantees your next promotion? Inside tech promo committees, your career often hinges on whether your manager is an effective advocate and whether outside dependencies torpedoed your project, regardless of how flawless your code was. Watch this insider breakdown to uncover why top-performing engineers get blindsided by promotion rejections and how to align with what committees actually reward.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
-      "timestamps": [
-        {
-          "startTime": 25,
-          "endTime": 105,
-          "topic": "The chaotic reality of promo committee deliberations"
-        },
-        {
-          "startTime": 205,
-          "endTime": 275,
-          "topic": "Why canceled projects and bad dependencies derail promotions"
-        },
-        {
-          "startTime": 335,
-          "endTime": 410,
-          "topic": "The 'island trap' of overestimating your impact"
-        }
-      ]
-    },
-    {
-      "title": "5 kriteria penting medical card",
-      "url": "https://www.youtube.com/shorts/mWNoG0K_Qf4",
-      "videoId": "mWNoG0K_Qf4",
+      "title": "Risiko salah pilih MRTT",
+      "url": "https://www.youtube.com/shorts/Po6ts-vSK9c",
+      "videoId": "Po6ts-vSK9c",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Thinking a RM250,000 medical card is plenty could leave you stranded when medical inflation shrinks that coverage into pocket change down the road. This guide cuts through complex insurance jargon to expose the hidden traps behind annual limits, 'unlimited' lifetime caps, and investment-linked policies that get painfully expensive as you age. Watch this before signing your next policy to ensure your health coverage genuinely protects your future without draining your wallet.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
+      "summary": "Think taking a bare-minimum five-year MRTT on a 35-year mortgage saves you money? If tragedy strikes, underinsured mortgage takaful can leave your grieving family facing eviction and home auction to cover hundreds of thousands in unpaid loan balances. Watch this essential reality check to uncover why skimping on coverage just to shave off bank interest rates is a dangerous trap—and how to truly safeguard your family's home.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
       "timestamps": [
         {
-          "startTime": 33,
-          "endTime": 69,
-          "topic": "Why today's high annual limits will become obsolete over time"
+          "startTime": 10,
+          "endTime": 70,
+          "topic": "The danger of taking short MRTT coverage on a long-term loan"
         },
         {
-          "startTime": 69,
-          "endTime": 110,
-          "topic": "The hidden cost of choosing 'unlimited' lifetime limits"
+          "startTime": 70,
+          "endTime": 108,
+          "topic": "The bank rate trap: cutting insurance tenure just for a discount"
         },
         {
-          "startTime": 110,
-          "endTime": 162,
-          "topic": "How investment-linked cash value works (and why insurance is not for savings)"
+          "startTime": 108,
+          "endTime": 157,
+          "topic": "Protecting your family: why coverage must match your loan term"
         }
       ]
     },
     {
-      "title": "[S04:E05] Bil hospital makin naik, kita bayar apa sebenarnya? - Dr Ridhwan Hassan, Valiance Health",
-      "url": "https://www.youtube.com/watch?v=QGw8ikMwOB0",
-      "videoId": "QGw8ikMwOB0",
+      "title": "Inisiatif belia & gig worker [Part 1]",
+      "url": "https://www.youtube.com/shorts/6iufPuH_lec",
+      "videoId": "6iufPuH_lec",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Ever wonder why private hospitals can never tell you your bill upfront, or why healthcare costs keep relentlessly exploding? In this eye-opening breakdown, doctor-turned-healthtech-CTO Dr. Ridwan Hassan reveals how our current 'fee-for-service' system incentivizes hospitals to charge like an unchecked buffet, billing for every swab and procedure rather than rewarding how well you actually recover. Watch this episode to discover how data observability and outcome-based care can permanently fix runaway medical inflation and arm you with the critical questions every patient needs to ask.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
+      "summary": "Buying your first home often comes with crippling hidden closing fees, but you could legally save over RM11,000 in upfront cash right at the signing table through government stamp duty exemptions. This clear, no-nonsense breakdown walks step-by-step through the math behind loan agreement and Memorandum of Transfer (MOT) waivers for homes up to RM500,000. If you are a young buyer or gig worker planning to step onto the property ladder, this video ensures you avoid leaving thousands of ringgit on the table.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
       "timestamps": [
         {
-          "startTime": 1090,
-          "endTime": 1220,
-          "topic": "The 'Blind Buffet' Analogy: Fee-For-Service vs. Bundled Healthcare Payments"
+          "startTime": 14,
+          "endTime": 49,
+          "topic": "Stamp duty exemption rules for properties under RM500k and RM750k"
         },
         {
-          "startTime": 1810,
-          "endTime": 1910,
-          "topic": "Why Hospitals Cannot Give You an Upfront Price Quote"
+          "startTime": 49,
+          "endTime": 107,
+          "topic": "Step-by-step calculation showing RM11,250 in total upfront savings"
         },
         {
-          "startTime": 2180,
-          "endTime": 2355,
-          "topic": "The Trap of 'Doctor Influencers' and Why Incentivizing Outcomes Beats Chasing Patient Volume"
+          "startTime": 107,
+          "endTime": 125,
+          "topic": "Upfront cost relief purpose and qualifying eligibility dates"
         }
       ]
     },
     {
-      "title": "#118 | Building A Global Snack and Wellness Platfrom (Pierre Pang, Mamee CEO)",
-      "url": "https://www.youtube.com/watch?v=RnbaL_XQ3ss",
-      "videoId": "RnbaL_XQ3ss",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "Most third-generation family businesses crumble under entitlement, but Mamee’s Group CEO Pierre Pang shattered that curse by doubling company revenue to RM1.5 billion in five years and setting his sights on RM3 billion. In this masterclass, he reveals the proprietary 'IDEA' operating framework that collapsed traditional corporate innovation from 12 months down to 12-week agile sprints, while explaining why established giants must actively invest in their own disruptors. If you want the exact playbook on transforming a 55-year-old heritage brand into a nimble, multi-billion-dollar global halal and wellness platform, this conversation is an absolute must-watch.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
+      "title": "Inisiatif belia & gig worker [Part 2]",
+      "url": "https://www.youtube.com/shorts/gPdr3xFTirg",
+      "videoId": "gPdr3xFTirg",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "Think you can't buy your first home simply because you're a gig worker, freelancer, or lack a fixed payslip? This video breaks down how Malaysia's RM20 billion SJKP housing guarantee scheme can help unlock bank approval for your first property purchase. Watch this short guide to discover how to leverage this initiative properly—along with a critical reality check on what this guarantee actually means for your monthly finances.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
       "timestamps": [
         {
-          "startTime": 180,
-          "endTime": 245,
-          "topic": "Family Business vs. Generational Stewardship"
+          "startTime": 0,
+          "endTime": 22,
+          "topic": "How gig workers and freelancers qualify for home loans via SJKP"
         },
         {
-          "startTime": 2130,
-          "endTime": 2315,
-          "topic": "The 12-Week Innovation Sprint: Beating Multinationals with TikTok MVPs"
+          "startTime": 22,
+          "endTime": 45,
+          "topic": "The reality check: SJKP is a loan guarantee, not free money"
         },
         {
-          "startTime": 2895,
-          "endTime": 3190,
-          "topic": "Disrupt Yourself: Why Legacy Brands Must Fund Their Competitors"
+          "startTime": 45,
+          "endTime": 68,
+          "topic": "Smart home-buying advice and managing long-term debt"
         }
       ]
     },
@@ -365,31 +183,208 @@
       ]
     },
     {
-      "title": "Data Is The New Oil. What Is Threatening Malaysia Besides Waze | In The Studio",
-      "url": "https://www.youtube.com/watch?v=yaCrvSU98F4",
-      "videoId": "yaCrvSU98F4",
-      "channel": "BFM 89.9",
-      "category": "General Ideas",
-      "summary": "Think national security is just about borders and warships? In this candid briefing, Malaysia's National Security Council Director General reveals how everyday app data can be harvested into asymmetric intelligence and explains why attempting to build an impenetrable military fortress is a strategic trap. Most critically, he delivers an urgent reality check: the single greatest existential threat facing the nation isn't an invading foreign power, but internal ideological polarization.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
+      "title": "Is There Any Good In Sinning? | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/P3LVhUKq9GE",
+      "videoId": "P3LVhUKq9GE",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Your past sins and mistakes aren't just personal failures—they can actually be your greatest asset for cultivating true humility and empathy. When you remember your own vulnerability, you break free from spiritual arrogance and gain the ability to relate to struggling people without ever looking down on them. Watch this powerful reminder to discover how acknowledging your own past allows you to become a compassionate bridge back to mercy for others.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
       "timestamps": [
         {
-          "startTime": 265,
-          "endTime": 405,
-          "topic": "Why everyday data and navigation apps pose modern national security risks"
+          "startTime": 0,
+          "endTime": 13,
+          "topic": "How personal mistakes keep you humble and spiritually vigilant"
         },
         {
-          "startTime": 1395,
-          "endTime": 1575,
-          "topic": "The myth of 'Fortress Malaysia' and deterrence through global economic interdependence"
+          "startTime": 13,
+          "endTime": 28,
+          "topic": "Avoiding arrogance by remembering where you once stood"
         },
         {
-          "startTime": 1595,
-          "endTime": 1695,
-          "topic": "The ultimate black swan threat: Internal division over foreign invasion"
+          "startTime": 28,
+          "endTime": 43,
+          "topic": "Becoming a vehicle of empathy and mercy rather than judgment"
+        }
+      ]
+    },
+    {
+      "title": "Abu Qatada (ra): The Best Horseman in Medina | The Firsts | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=P4Rqf9Fq9zE",
+      "videoId": "P4Rqf9Fq9zE",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Ever wonder what happens when an unsung companion quietly guards the Prophet ﷺ through the dead of night without asking for recognition? Discover the breathtaking story of Abu Qatada, celebrated as the Knight of the Prophet ﷺ, whose discreet devotion earned him a life-altering prayer and a miracle that famously preserved his youth even at 70 years old. Packed with gripping battlefield heroics and tender lessons on lifting others' burdens, this video offers a masterclass in chivalry, loyalty, and quiet greatness.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "timestamps": [
+        {
+          "startTime": 205,
+          "endTime": 350,
+          "topic": "Silently Guarding the Prophet ﷺ in the Dead of Night"
+        },
+        {
+          "startTime": 485,
+          "endTime": 585,
+          "topic": "Compassion in Action: Relieving Debts and Hardships"
+        },
+        {
+          "startTime": 730,
+          "endTime": 825,
+          "topic": "The Battlefield Injury and the Miraculous Blessing of Youth"
+        }
+      ]
+    },
+    {
+      "title": "Is \"Being Real\" Ruining Us? | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/yRJTlFcCOqU",
+      "videoId": "yRJTlFcCOqU",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Social media algorithms have weaponized 'authenticity,' subtly tricking people into exposing their sins under the guise of being vulnerable. This sharp wake-up call reveals what genuine modesty (Haya) truly demands beyond just the clothes you wear. Watch this to understand a crucial truth for the digital age: while private mistakes damage the soul, broadcasting them publicly dismantles society.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 23,
+          "topic": "Redefining Haya beyond modest clothing"
+        },
+        {
+          "startTime": 24,
+          "endTime": 47,
+          "topic": "How social algorithms reward exposing personal sins"
+        },
+        {
+          "startTime": 48,
+          "endTime": 54,
+          "topic": "Why private sins corrupt the soul while public sins ruin society"
+        }
+      ]
+    },
+    {
+      "title": "I am (Politely) Begging You to To Take Your Deen Seriously Before It's Too Late",
+      "url": "https://www.youtube.com/watch?v=uV3FoPrpR8s",
+      "videoId": "uV3FoPrpR8s",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "The most dangerous form of procrastination isn't delaying your career or fitness—it's procrastinating on your soul while the clock quietly runs down on your life. This hard-hitting wake-up call cuts through the mindless routine of modern fatherhood and careerism, urging men to stop making excuses and confront whether they are truly prepared to meet Allah. If you've been feeling spiritually complacent or disconnected from your family, this video delivers the exact mindset shift and sense of urgency you need to step up before your time runs out.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "timestamps": [
+        {
+          "startTime": 222,
+          "endTime": 330,
+          "topic": "The danger of spiritual procrastination and the wake-up call of Surah Al-Hadid"
+        },
+        {
+          "startTime": 818,
+          "endTime": 935,
+          "topic": "Why wasting time is spiritually worse than death"
+        },
+        {
+          "startTime": 1605,
+          "endTime": 1705,
+          "topic": "Overcoming imposter syndrome and taking radical accountability with your family"
+        }
+      ]
+    },
+    {
+      "title": "I'm 48, Things I Wish I Would Have Told My Younger Self",
+      "url": "https://www.youtube.com/watch?v=SM3tFqhItXs",
+      "videoId": "SM3tFqhItXs",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "Most men mistakenly assume their twenties were their peak, but true maturity, capability, and mental clarity only ripen in your forties—provided you use your thirties to build the right foundation. This video delivers a powerful blueprint for mastering four critical pillars: martial discipline, skill monetization, Quran memorization, and financial psychology. If you want to stop drifting and forge the resilience, financial clarity, and spiritual grounding needed to lead your family, this is essential viewing.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "timestamps": [
+        {
+          "startTime": 100,
+          "endTime": 185,
+          "topic": "Why your prime begins at 40 and how to master core skills in your 30s"
+        },
+        {
+          "startTime": 231,
+          "endTime": 320,
+          "topic": "Anchoring leadership through Quran memorization and leading by example"
+        },
+        {
+          "startTime": 406,
+          "endTime": 490,
+          "topic": "Mastering financial literacy, consumer psychology, and pricing your true value"
+        }
+      ]
+    },
+    {
+      "title": "Software engineering after code becomes cheap with Satya Nadella",
+      "url": "https://www.youtube.com/watch?v=0NE89Nzfk20",
+      "videoId": "0NE89Nzfk20",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "When AI makes writing code virtually free, the entire value of software engineering flips from generation to verification—and tying your business to a single frontier AI model is a ticking time bomb. In this candid masterclass, Microsoft CEO Satya Nadella pulls back the curtain on how modern 'software factories' operate, why treating AI agents as untrusted insider risks is essential, and the truth behind Microsoft's controversial voluntary exit offers. If you want a battle-tested roadmap from the leader of Big Tech on how to stay indispensable in the post-IDE era rather than get displaced, this conversation is non-negotiable.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "timestamps": [
+        {
+          "startTime": 940,
+          "endTime": 1115,
+          "topic": "The Rise of the Software Factory: Why Verification Replaces Writing Code"
+        },
+        {
+          "startTime": 1780,
+          "endTime": 1995,
+          "topic": "The Truth Behind Microsoft's Voluntary Exits and Changing Dev Roles"
+        },
+        {
+          "startTime": 3015,
+          "endTime": 3170,
+          "topic": "Why Relying on a Single AI Model is a Strategic Trap"
+        }
+      ]
+    },
+    {
+      "title": "“AI has eaten tactical programming”",
+      "url": "https://www.youtube.com/shorts/BFI2iykN0Yc",
+      "videoId": "BFI2iykN0Yc",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "AI has officially eaten tactical programming—meaning if you're still spending your days wrestling with syntax and line-by-line mechanics, you're doing the exact work AI is now built to replace. This clip breaks down the watershed moment top engineers realized models are finally ready for delegation, freeing humans to focus entirely on high-level architecture and long-term vision. Watch this to understand the fundamental shift in developer workflows and learn how to position yourself as a strategic thinker rather than an obsolete code monkey.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 21,
+          "topic": "The turning point when AI proved it was ready for real delegation"
+        },
+        {
+          "startTime": 21,
+          "endTime": 54,
+          "topic": "Tactical vs. strategic programming: Why humans must elevate to system design"
+        }
+      ]
+    },
+    {
+      "title": "The value of AI is not doing the same thing faster",
+      "url": "https://www.youtube.com/shorts/LDcRdpVvmgQ",
+      "videoId": "LDcRdpVvmgQ",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "If you think AI is merely about doing everyday tasks faster, you are measuring its impact completely wrong. This clip breaks down why standard productivity metrics fail: AI's real value lies not in churning out routine work at 10x speed, but in tackling harder, far more valuable problems you otherwise wouldn't have attempted. Watch this to fundamentally rethink how to measure and harness the true ROI of AI.",
+      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 23,
+          "topic": "The paradox of AI productivity hype vs. its true value"
+        },
+        {
+          "startTime": 23,
+          "endTime": 43,
+          "topic": "Why measuring AI output like factory widgets fails"
+        },
+        {
+          "startTime": 43,
+          "endTime": 61,
+          "topic": "Senior engineers' reality check on code volume, outages, and feature value"
         }
       ]
     }
   ],
-  "lastUpdated": "2026-11-16T01:30:12.653Z"
+  "lastUpdated": "2026-11-17T04:27:07.615Z"
 }

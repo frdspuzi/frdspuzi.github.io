@@ -1,79 +1,422 @@
 [
   {
-    "videoId": "Cyt3LU8TyNc",
-    "title": "I love you so jevving much — Diogo Almeida, TypeSafe AI",
+    "videoId": "UCL4K36SHp0",
+    "title": "Let's Open Source the World — Brandon Thomas, ArtCraft",
     "selected": true,
-    "reasoning": "A solid, practical engineering talk on solving LLM unreliability, agent orchestration, and memory management when building software with AI.",
-    "summary": "Tired of AI coding agents hallucinating or breaking down mid-task? This talk unpacks how to transition from brittle LLM prompts to reliable, machine-native agent architectures with semantic types and shared memory."
+    "reasoning": "Directly tackles applied AI tooling, Rust, and building agentic workflows to ship real software fast.",
+    "summary": "Discover how modern AI coding agents and Rust are being used to rapidly build open-source alternatives to complex creative suites. It's a goldmine of practical architecture tips on CLI automation, Model Context Protocol (MCP), and managing CI bottlenecks when working alongside agents."
+  },
+  {
+    "videoId": "Cyt3LU8TyNc",
+    "title": "\"Where is all the automation?\" — Diogo Almeida, TypeSafe AI",
+    "selected": true,
+    "reasoning": "Focuses on engineering reliable coding agents, memory, and semantic type systems rather than academic theory.",
+    "summary": "Tired of AI coding assistants that act brilliant one minute and break your codebase the next? This talk dives into machine-native AI and semantic typing, showing how developers can build truly dependable autonomous agents."
   },
   {
     "videoId": "O_zcc6Xl12g",
     "title": "All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI",
     "selected": true,
-    "reasoning": "Directly tackles practical AI tooling in production software engineering, demonstrating how to harness tools like Cursor with robust testing and verification.",
-    "summary": "Learn how engineering teams are handling thousands of AI-generated pull requests without sacrificing code quality or stability. It provides a blueprint for pairing tools like Cursor with rigorous automated testing and type verification."
+    "reasoning": "Exceptional real-world software engineering talk on scaling AI coding agents responsibly with automated testing and linting.",
+    "summary": "Learn how an engineering team processed over 11,000 pull requests in a month with a minuscule 0.5% revert rate using AI coding agents. Lauren Tan breaks down the rigorous linting, testing, and runtime verification structures required to keep AI-generated code clean and robust."
   },
   {
-    "videoId": "y9JtCCZP2MQ",
-    "title": "AIE CODE: Google DeepMind, OpenAI, ArtCraft, Cognition, Exa, Anthropic, Amp, et al",
+    "videoId": "a-MydmNQBwo",
+    "title": "How he built a computer before the web",
     "selected": false,
-    "reasoning": "A sprawling 9-hour raw conference livestream that lacks focused, digestible takeaways compared to individual curated talks.",
+    "reasoning": "Historical computing trivia rather than practical fullstack engineering or AI tooling.",
     "summary": ""
+  },
+  {
+    "videoId": "4LzPGSh9-Ew",
+    "title": "How he designed the first ARM chip",
+    "selected": false,
+    "reasoning": "Hardware design history and retro computing trivia.",
+    "summary": ""
+  },
+  {
+    "videoId": "3K9L0dRRzOs",
+    "title": "How Two First-Timers Created the World’s Most Popular Processor | Steve Furber",
+    "selected": false,
+    "reasoning": "Historical hardware documentary interview that is off-topic for a junior fullstack developer.",
+    "summary": ""
+  },
+  {
+    "videoId": "ex3Vtitol6E",
+    "title": "One of the best ways to make your audience happy is by providing free resources... #ad",
+    "selected": false,
+    "reasoning": "Sponsored promotional ad for social media marketing software.",
+    "summary": ""
+  },
+  {
+    "videoId": "G2tBWRHif6Q",
+    "title": "How to Get Rich (My Talk at a Business School)",
+    "selected": false,
+    "reasoning": "Generic creator-economy business talk serving as a sales funnel for courses.",
+    "summary": ""
+  },
+  {
+    "videoId": "WXnioZZVXtA",
+    "title": "My top 5 productivity apps right now",
+    "selected": false,
+    "reasoning": "Generic productivity listicle designed to sell a personal productivity system.",
+    "summary": ""
+  },
+  {
+    "videoId": "vLAegkGGWrM",
+    "title": "Building with Gemini in Google Antigravity",
+    "selected": false,
+    "reasoning": "Corporate marketing demonstration for a proprietary platform rather than transferable engineering workflows.",
+    "summary": ""
+  },
+  {
+    "videoId": "rsOiZE19RVo",
+    "title": "Accelerate shipping to scale with Google Antigravity",
+    "selected": false,
+    "reasoning": "Promotional vendor case study with little technical depth.",
+    "summary": ""
+  },
+  {
+    "videoId": "cv8tEbKtEvk",
+    "title": "🪴 Building an autonomous plant rover with Gemini Live",
+    "selected": false,
+    "reasoning": "Gimmick IoT robotics demo with no direct application to fullstack engineering.",
+    "summary": ""
+  },
+  {
+    "videoId": "Po6ts-vSK9c",
+    "title": "Risiko salah pilih MRTT",
+    "selected": true,
+    "reasoning": "Directly relevant to Malaysian Islamic personal finance and property acquisition risks (MRTT Takaful).",
+    "summary": "Buying your first home in Malaysia? Financial Faiz unpacks the hidden pitfalls of choosing the wrong Mortgage Reducing Term Takaful (MRTT) and how an inadequate policy can leave your family stranded with debt."
+  },
+  {
+    "videoId": "6iufPuH_lec",
+    "title": "Inisiatif belia & gig worker [Part 1]",
+    "selected": true,
+    "reasoning": "Practical Malaysian personal finance guidance on youth homeownership schemes and stamp duty exemptions.",
+    "summary": "A concise breakdown of key Malaysian government initiatives aimed at helping youth secure their first property. Learn how stamp duty exemptions and financing schemes can save you over RM11,000 upfront."
+  },
+  {
+    "videoId": "gPdr3xFTirg",
+    "title": "Inisiatif belia & gig worker [Part 2]",
+    "selected": true,
+    "reasoning": "Continues actionable Malaysian finance advice regarding housing guarantees and credit options for young professionals.",
+    "summary": "The second part of the Malaysian youth homeownership guide explores how SJKP guarantees enable young earners to qualify for property financing. Essential knowledge for early-career professionals planning long-term wealth."
+  },
+  {
+    "videoId": "aH7RMAN3p_w",
+    "title": "Cara klinik simpan data pesakit",
+    "selected": false,
+    "reasoning": "Niche operational advice specifically for private medical clinic operators.",
+    "summary": ""
+  },
+  {
+    "videoId": "6hvb5CCry0U",
+    "title": "Kesilapan terbesar bila buka klinik?",
+    "selected": false,
+    "reasoning": "Focused purely on brick-and-mortar clinic location strategy.",
+    "summary": ""
+  },
+  {
+    "videoId": "K4gY4um9E_A",
+    "title": "Masa konsultasi tentukan caj doktor?",
+    "selected": false,
+    "reasoning": "Explains outpatient medical clinic billing structures; irrelevant to tech or finance.",
+    "summary": ""
+  },
+  {
+    "videoId": "i-oA9axU4zI",
+    "title": "#119 | How To Build Trust (Gavin Liew, The Makeover Guys)",
+    "selected": false,
+    "reasoning": "Centered on home renovation and interior design contracting businesses.",
+    "summary": ""
+  },
+  {
+    "videoId": "RnbaL_XQ3ss",
+    "title": "#118 | Building A Global Snack and Wellness Platfrom (Pierre Pang, Mamee CEO)",
+    "selected": false,
+    "reasoning": "Focuses on FMCG manufacturing and legacy family business succession.",
+    "summary": ""
+  },
+  {
+    "videoId": "_SDAgAtx0j4",
+    "title": "#117 | Can Malaysia Afford AI? (Leon Jala)",
+    "selected": true,
+    "reasoning": "Deep dive into Malaysian infrastructure, data centers, energy policy, and the economic reality of the regional AI race.",
+    "summary": "Get a grounded, macro perspective on what the AI boom actually means for Malaysia's power grids, water supply, and clean energy policies. It critically assesses whether the country can afford the data center race and what it means for local economic growth."
+  },
+  {
+    "videoId": "eY-A6Wj2rxw",
+    "title": "Najib Starts Serving House Arrest",
+    "selected": false,
+    "reasoning": "Partisan Malaysian political news snippet.",
+    "summary": ""
+  },
+  {
+    "videoId": "KwHTVB0GUZw",
+    "title": "Xiaomi: Smartphones, Smart Homes, EVs | In The Studio",
+    "selected": false,
+    "reasoning": "Promotional corporate PR interview regarding consumer electronics and gadgets.",
+    "summary": ""
+  },
+  {
+    "videoId": "yaCrvSU98F4",
+    "title": "Data Is The New Oil. What Is Threatening Malaysia Besides Waze | In The Studio",
+    "selected": false,
+    "reasoning": "Broad national security and diplomatic geopolitics talk without practical SWE or economic focus.",
+    "summary": ""
+  },
+  {
+    "videoId": "tIJGwg2bKT0",
+    "title": "It’s Not in Your Head - It’s in Your Blood | Dr. Dominika Repcikova | TEDxCoolhaven Women",
+    "selected": false,
+    "reasoning": "Generic TEDx talk on female biological health markers.",
+    "summary": ""
+  },
+  {
+    "videoId": "KyKZvxKoMFE",
+    "title": "Mom, Can I Download Tinder? | Katherine Gyolai | TEDxMinneapolis",
+    "selected": false,
+    "reasoning": "Generic TEDx talk about developmental disabilities and dating.",
+    "summary": ""
+  },
+  {
+    "videoId": "_JALQqdY4OI",
+    "title": "The Unheard Superpower: The Voice That Says “Not Yet” | Anil Panicker | TEDxKIT Coimbatore",
+    "selected": false,
+    "reasoning": "Generic motivational TEDx speech about perseverance.",
+    "summary": ""
+  },
+  {
+    "videoId": "P3LVhUKq9GE",
+    "title": "Is There Any Good In Sinning? | Dr. Omar Suleiman",
+    "selected": true,
+    "reasoning": "Direct Islamic spiritual reminder on repentance, spiritual humility, and turning back to Allah.",
+    "summary": "Dr. Omar Suleiman delivers a brief yet profound spiritual reminder on how stumbling into sin can shatter our arrogance and guide us toward genuine tawbah. A reassuring and uplifting perspective for anyone striving to maintain their spiritual anchor."
+  },
+  {
+    "videoId": "P4Rqf9Fq9zE",
+    "title": "Abu Qatada (ra): The Best Horseman in Medina | The Firsts | Dr. Omar Suleiman",
+    "selected": true,
+    "reasoning": "Inspiring Seerah and Sahabah biography offering direct Islamic values and spiritual character-building.",
+    "summary": "Explore the life and unwavering devotion of Abu Qatada al-Ansari (ra), praised by the Prophet ﷺ as the finest horseman of his time. An inspiring look into Islamic history that highlights loyalty, discipline, and steadfast character."
+  },
+  {
+    "videoId": "yRJTlFcCOqU",
+    "title": "Is \"Being Real\" Ruining Us? | Dr. Omar Suleiman",
+    "selected": true,
+    "reasoning": "High-impact spiritual reminder addressing modern online culture, modesty (haya), and personal integrity.",
+    "summary": "In an era of relentless oversharing and social media posturing, Dr. Omar Suleiman reflects on the vanishing virtue of haya (modesty). This short reminder will make you rethink what it truly means to be authentic without compromising Islamic values."
+  },
+  {
+    "videoId": "uV3FoPrpR8s",
+    "title": "I am (Politely) Begging You to To Take Your Deen Seriously Before It's Too Late",
+    "selected": true,
+    "reasoning": "Direct, heartfelt spiritual exhortation on overcoming inconsistency in religious practice.",
+    "summary": "Sh. Abdullah Oduro delivers an urgent, sincere call to break the cycle of spiritual procrastination and take your faith seriously. It offers grounded practical advice on building consistent habits before life slips away."
+  },
+  {
+    "videoId": "SM3tFqhItXs",
+    "title": "I'm 48, Things I Wish I Would Have Told My Younger Self",
+    "selected": true,
+    "reasoning": "Combines Islamic principles with practical life and early-career mentorship from a respected elder.",
+    "summary": "Gain invaluable perspective on navigating youth, career, and faith from Sh. Abdullah Oduro's reflections on what truly matters in hindsight. Perfect for an early-career professional seeking wisdom to avoid common life regrets."
+  },
+  {
+    "videoId": "9ARejZDQgt8",
+    "title": "3 Ways Muslim Husbands Ruin Their Own Marriage",
+    "selected": false,
+    "reasoning": "Specific marital relationship advice rather than core spiritual reminders or career growth.",
+    "summary": ""
+  },
+  {
+    "videoId": "0NE89Nzfk20",
+    "title": "Software engineering after code becomes cheap with Satya Nadella",
+    "selected": true,
+    "reasoning": "Essential strategic SWE discussion on how AI shifts developer value from writing syntax to verification and architecture.",
+    "summary": "Microsoft CEO Satya Nadella shares a rare engineer-to-engineer perspective on how software development is evolving inside tech giants as code generation becomes cheap. Essential viewing for junior engineers looking to understand where to invest their skills when verification matters more than syntax."
   },
   {
     "videoId": "BFI2iykN0Yc",
     "title": "“AI has eaten tactical programming”",
-    "selected": false,
-    "reasoning": "A superficial YouTube Short excerpt rather than a substantive, deep discussion.",
-    "summary": ""
+    "selected": true,
+    "reasoning": "Actionable career advice for junior developers navigating the obsolescence of boilerplate coding.",
+    "summary": "Educator Matt Pocock explains why raw coding speed is no longer your competitive edge and what higher-level engineering skills you need to cultivate instead. A quick, punchy reality check for junior developers entering the AI era."
   },
   {
     "videoId": "LDcRdpVvmgQ",
     "title": "The value of AI is not doing the same thing faster",
+    "selected": true,
+    "reasoning": "High-level software engineering philosophy from Google's engineering leadership on the true utility of AI.",
+    "summary": "Titus Winters, co-author of 'Software Engineering at Google', reframes AI tooling away from mere speedups toward fundamental improvements in software maintainability. A short, thought-provoking take on long-term engineering quality."
+  },
+  {
+    "videoId": "scNxKbDUHkE",
+    "title": "What coding agents need from engineers to be trusted",
+    "selected": true,
+    "reasoning": "Practical insights into AI code verification harnesses and automated guardrails.",
+    "summary": "Nobody has the time to read thousands of lines of AI-generated code line-by-line. This clip outlines the automated gates and testing harnesses engineers must build to safely trust and deploy coding agents."
+  },
+  {
+    "videoId": "pjdyNeccdpU",
+    "title": "What Coding Agents Need From Engineers to Be Trusted",
+    "selected": true,
+    "reasoning": "Full practical guide on architecting environments and feedback loops for autonomous AI coding agents.",
+    "summary": "A deep dive into the transition from prompt engineering to 'loop engineering' for production software. Learn how to set up repository states and automated validation frameworks so AI agents can write reliable code without babysitting."
+  },
+  {
+    "videoId": "awH40LQBlA0",
+    "title": "The most future-proof engineering skill nobody wants to learn",
+    "selected": true,
+    "reasoning": "Direct career guidance for junior developers on building durable skills in an AI-dominated hiring landscape.",
+    "summary": "HashiCorp Field CTO Anna McDougall explains how security, verification, and guardrails are becoming the ultimate competitive advantage for developers. An insightful career reminder on how to stand out when basic coding skills are commoditized."
+  },
+  {
+    "videoId": "wD97wS85jeE",
+    "title": "EP218 | Tahanan Rumah Najib, Skandal Jensen Huang, Hubungan Malaysia-Taiwan, Gibran Mundur",
     "selected": false,
-    "reasoning": "A brief YouTube Short clip from a podcast that lacks depth and actionable engineering takeaways.",
+    "reasoning": "Partisan domestic political commentary and electoral updates.",
     "summary": ""
   },
   {
-    "videoId": "OrXKvOjR-vI",
-    "title": "Software correctness and programming languages with Sean Allen",
+    "videoId": "ob9EN7jM1ko",
+    "title": "Can Malaysia Win the AI Race Without Owning the Tech? | Live at MooFest 2026",
     "selected": true,
-    "reasoning": "Essential foundational engineering discussion on correctness, system testing, and type safety, which is crucial for early-career developers working in an era of AI code generation.",
-    "summary": "As AI makes writing code effortless, understanding correctness, sound type systems, and deterministic testing matters more than ever. This conversation delivers timeless software fundamentals to help you build software that actually survives in production."
+    "reasoning": "Directly analyzes Malaysian business, investment, and tech strategy regarding the applied AI layer.",
+    "summary": "Industry leaders explore whether Malaysia should try building foundational AI models or dominate the application layer using existing infrastructure. A critical discussion on local venture capital, digital sovereignty, and high-value tech career opportunities in Malaysia."
+  },
+  {
+    "videoId": "9xJy_T-OTfc",
+    "title": "2022: Wanita tak dilahirkan untuk jadi pemimpin. 2026: Wanita Ikon Selangor. Tahniah, Nurul Zahid 👑",
+    "selected": false,
+    "reasoning": "Partisan political satire short.",
+    "summary": ""
+  },
+  {
+    "videoId": "ZBTegd8DUZM",
+    "title": "LIVE: Writing code that doesn't suck with the creators of Pi",
+    "selected": true,
+    "reasoning": "Masterclass on practical software engineering and writing clean code alongside autonomous agents.",
+    "summary": "Watch seasoned framework creators, including Armin Ronacher, demonstrate how to write clean, maintainable software with AI agents rather than generating unmaintainable slop. Packed with pragmatic coding patterns and architectural discipline."
   },
   {
     "videoId": "zyQxyNQZ8B4",
     "title": "The Home Repo Pattern",
-    "selected": false,
-    "reasoning": "A 60-second Short summary of the full walkthrough video published on the same day.",
-    "summary": ""
+    "selected": true,
+    "reasoning": "Actionable, applied productivity pattern for managing multi-repo AI agent tooling.",
+    "summary": "A clever, lightweight technique to centralize your agent steering prompts, custom skills, and tooling in a single repository. Learn how to point your coding agents across multiple codebases without duplicating configuration."
   },
   {
     "videoId": "hWe-j78vNpc",
     "title": "The Home Repo: The effortless multi-repo agent setup",
     "selected": true,
-    "reasoning": "Extremely actionable developer workflow setup showing how to manage AI steering files, custom tooling, and agent skills across codebases.",
-    "summary": "If you use AI coding assistants across multiple projects, this workflow tutorial shows you how to centralize your prompts, tooling, and skills in a single 'home repo'. It is an immediately useful setup to streamline your daily development workflow."
+    "reasoning": "Full practical tutorial on setting up a centralized developer tooling and prompt repository for AI agents.",
+    "summary": "Matt Pocock walks through the 'Home Repo' pattern, showing step-by-step how to organize steering files, documentation, and agent workflows across multiple projects. A major productivity upgrade for any fullstack engineer using tools like Claude and Cursor."
+  },
+  {
+    "videoId": "SyHM5hNPAEo",
+    "title": "We could be 12 months away from AIs that can overthrow the government",
+    "selected": false,
+    "reasoning": "Speculative existential AI risk discussion, lacking practical SWE or developer tooling relevance.",
+    "summary": ""
   },
   {
     "videoId": "7DO3mOl_OrI",
     "title": "AI’s math progress matters more for AI research than for math",
     "selected": false,
-    "reasoning": "A short focused on theoretical AI research and formal mathematics, which falls outside applied software engineering.",
+    "reasoning": "Academic AI research and formal mathematical theory.",
     "summary": ""
   },
   {
     "videoId": "SeGUXN8XIu8",
     "title": "The Next 4 Years of AI Will Look Nothing Like the Last 4",
     "selected": false,
-    "reasoning": "A high-level speculative YouTube Short offering generic AI industry prognostication without practical engineering value.",
+    "reasoning": "Vague macro forecasting without actionable engineering takeaways.",
     "summary": ""
   },
   {
-    "videoId": "CoSptp9tYpY",
-    "title": "I’ve changed my mind about continual learning",
+    "videoId": "4ZQ7mvFH5CI",
+    "title": "Give Me 54 Minutes, I’ll Show You How to Start a Halal Business in 2027",
+    "selected": true,
+    "reasoning": "Actionable blueprint on halal business principles, entrepreneurship, and ethical income generation for Muslims.",
+    "summary": "A comprehensive, practical roadmap for launching a service-based halal business with zero starting capital. It covers ethical client acquisition, skill positioning, and Islamic business principles designed to build independent income."
+  },
+  {
+    "videoId": "9357QuB8VNo",
+    "title": "The Prophet ﷺ Took Care of His Looks Too",
+    "selected": true,
+    "reasoning": "Simple, uplifting Sunnah reminder on personal presentation, dignity, and professional self-respect.",
+    "summary": "A brief reminder highlighting the Prophet's ﷺ sunnah of personal grooming, neatness, and presenting oneself with dignity. A helpful perspective on maintaining self-respect and professionalism as a Muslim in the workplace."
+  },
+  {
+    "videoId": "l1vazpMEc6Y",
+    "title": "Why Founders Get Depressed After They Sell",
     "selected": false,
-    "reasoning": "A conceptual YouTube Short touching on academic machine learning theory rather than hands-on tooling.",
+    "reasoning": "Focuses on the post-exit psychology of wealthy startup founders.",
     "summary": ""
+  },
+  {
+    "videoId": "y1-9yeYLJUo",
+    "title": "The Rise Of AI Coworkers",
+    "selected": true,
+    "reasoning": "Practical case study on integrating autonomous AI teammates directly into day-to-day engineering workflows.",
+    "summary": "Discover how the team behind Grok Bot integrated persistent AI coworkers into their Slack and CI/CD pipelines to build real features autonomously. It offers an eye-opening glimpse into how developer roles are shifting toward managing agentic teammates."
+  },
+  {
+    "videoId": "iXWSYlAX5Lg",
+    "title": "The Whistleblower Who Took on Theranos",
+    "selected": false,
+    "reasoning": "Startup scandal retrospective; not relevant to SWE, Islamic finance, or technical career growth.",
+    "summary": ""
+  },
+  {
+    "videoId": "-XL2gClQ2gg",
+    "title": "Is AI Now Good Enough To Cure Cancer? | YC Paper Club",
+    "selected": false,
+    "reasoning": "Academic research paper review focused on computational biology and DNA modeling.",
+    "summary": ""
+  },
+  {
+    "videoId": "zHVlBtlQ56Q",
+    "title": "How narcissistic are you? | Ramani Durvasula",
+    "selected": false,
+    "reasoning": "Pop psychology clip unrelated to core interests.",
+    "summary": ""
+  },
+  {
+    "videoId": "huoYKP3hn5U",
+    "title": "Why do whales make milk? | Steve Brusatte",
+    "selected": false,
+    "reasoning": "Paleontology trivia.",
+    "summary": ""
+  },
+  {
+    "videoId": "nXsSG6tnx_Y",
+    "title": "In the next 3 decades we’ll know if we’re alone in the universe | Adam Frank: Full Interview",
+    "selected": false,
+    "reasoning": "Astrophysics and search for extraterrestrial life; irrelevant to professional or personal goals.",
+    "summary": ""
+  },
+  {
+    "videoId": "X0JieuqG5zg",
+    "title": "Software isn’t dead. But the next winners will be built for AI agents, not pretty interfaces.",
+    "selected": true,
+    "reasoning": "Sharp, forward-looking software architecture concept relevant to fullstack engineers building modern APIs.",
+    "summary": "As AI agents increasingly consume APIs directly, software design is shifting from human UI to machine ergonomics. A quick, compelling argument on why your future backend architecture must cater to agents first."
+  },
+  {
+    "videoId": "0iZHAIn1G0k",
+    "title": "StoreHub's AI agents cut sales admin from 15 minutes per lead to 1. Meetings booked: up 25%",
+    "selected": true,
+    "reasoning": "Concrete case study of agentic automation driving measurable efficiency inside a prominent Malaysian tech company.",
+    "summary": "See tangible metrics on how one of Malaysia's leading tech companies deployed AI agents to slash sales admin time from 15 minutes down to 1. A clear demonstration of how automated agent workflows create real commercial value."
+  },
+  {
+    "videoId": "g4LYrAJU_18",
+    "title": "170 AI Agents, One Malaysian Company: Inside StoreHub | Fong Wai Hong | Keris & Silicon EP08",
+    "selected": true,
+    "reasoning": "Exceptional intersection of Malaysian tech business, applied AI agent architectures, and operational engineering.",
+    "summary": "StoreHub co-founder Fong Wai Hong pulls back the curtain on running a major Malaysian SaaS platform powered by 170 internal AI agents. This in-depth discussion covers practical implementation, agent oversight, and how engineering teams must adapt to build autonomous business systems."
   }
 ]
