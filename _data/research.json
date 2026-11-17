@@ -1,154 +1,137 @@
 {
-  "lastUpdated": "2026-11-16",
+  "lastUpdated": "2026-11-17",
   "papers": [
     {
-      "id": "hf:2611.10439",
-      "doi": "https://arxiv.org/abs/2611.10439",
-      "title": "Who Remembers What? Multi-Granularity Memory Extraction for Multi-User, Multi-Agent Interaction",
-      "publicationDate": "2026-11-06",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Yunzhe Wang et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Agents that share lessons across many users and agents can leak one person's private facts.",
-      "fix": "MixUA scopes each lesson, lifts pass rates up to 16 points, and leaks at most 0.02% of private probes.",
-      "practicalUseCase": "Shared agent memory can help everyone without leaking secrets, so label each stored lesson with who may read it.",
-      "limitation": "Tests used only five users and seven agents on a purpose-built benchmark.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.10439"
-    },
-    {
-      "id": "hf:2611.16728",
-      "doi": "https://arxiv.org/abs/2611.16728",
-      "title": "EgoX: Egocentric Cross-Embodiment Manipulation with Embodiment Dreaming",
+      "id": "hf:2611.16661",
+      "doi": "https://arxiv.org/abs/2611.16661",
+      "title": "Reducing Batch Makespan for LLM Agent Workloads through Inference-Environment Coordination",
       "publicationDate": "2026-11-11",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Yaru Niu et al.",
+      "leadAuthor": "Wei Feng et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Robots struggle to learn from human, robot, and simulated demonstrations because bodies, sensors, and controls differ.",
-      "fix": "EgoX pretraining on mixed demonstrations raises average task progress from 0.63 to 0.80 across 13 task-robot pairs.",
-      "practicalUseCase": "Robots can borrow skill from human and simulated data, so mix many data sources before training one robot.",
-      "limitation": "Results cover five tasks and six robot bodies, including five physical robots and one simulated humanoid.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.16728"
+      "problem": "Teams running big batches of LLM agent tasks wait long because the model and the task environment take turns idling.",
+      "fix": "Coordinating the model server and the task environment cut total batch time by 10.4% to 65.0% with scores unchanged.",
+      "practicalUseCase": "Batch jobs like benchmarks and training runs finish much sooner, so schedule model work and environment work together.",
+      "limitation": "The tests used two Ling model versions and four benchmarks, so results on other models may differ.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.16661"
     },
     {
-      "id": "hf:2611.17336",
-      "doi": "https://arxiv.org/abs/2611.17336",
-      "title": "Back to Pixels: Lifting Latent Video Diffusion into Pixel Space",
-      "publicationDate": "2026-11-11",
+      "id": "hf:2611.18550",
+      "doi": "https://arxiv.org/abs/2611.18550",
+      "title": "Restoring Diversity in Distilled Image and Video Generators by Probing Activations",
+      "publicationDate": "2026-11-12",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Yanke Song et al.",
+      "leadAuthor": "Furkan Horoz et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Video models compress frames into small codes, which limits resolution, frame-level control, and quick response to each action.",
-      "fix": "PixVid draws video in pixels, stays competitive with the latent baseline, and doubles resolution at equal token count.",
-      "practicalUseCase": "Pixel-space video can respond at the next frame, so watch for more interactive video tools.",
-      "limitation": "It tests one base model, Wan2.1-14B, fine-tuned on about 1.3M clips.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.17336"
+      "problem": "Fast few-step image and video generators give near-identical results for different random seeds, which kills variety.",
+      "fix": "Fast student models keep the teacher's total variation but squeeze it into fewer directions, and ReDiverse restores the variety.",
+      "practicalUseCase": "You can keep fast generation and get varied outputs back, so add a variety fix when you distill a model.",
+      "limitation": "The fix was tested on image and video distillation benchmarks plus a user study, not on every model type.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.18550"
     },
     {
-      "id": "hf:2611.17190",
-      "doi": "https://arxiv.org/abs/2611.17190",
-      "title": "Consensus Capture in Reference-Based UAV Video Stabilization: A Benchmark on Dynamic Urban Scenes",
-      "publicationDate": "2026-11-11",
+      "id": "hf:2611.14487",
+      "doi": "https://arxiv.org/abs/2611.14487",
+      "title": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
+      "publicationDate": "2026-11-09",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Robert Fonod et al.",
+      "leadAuthor": "Muhan Gao et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Drone video stabilizers are tested on scenes where only the camera moves, so moving traffic can pull them off.",
-      "fix": "Unmasked ORB followed moving vehicles on 28 of 304 real-time pairs, and masking removed this error for every method.",
-      "practicalUseCase": "Usual quality counts miss this error, so mask moving objects before stabilizing busy-street video.",
-      "limitation": "Tests cover hovering drones over urban intersections, so other scenes may behave differently.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.17190"
+      "problem": "Nobody knew why LLMs stall when they search for new research ideas, because tests only showed the final result.",
+      "fix": "Across six LLMs, nearly all progress comes in the first 30 of 100 questions, and models then plateau.",
+      "practicalUseCase": "Models can judge good ideas they cannot produce, so feed them ideas from outside instead of waiting for better self-generation.",
+      "limitation": "The game used 200 papers and yes-or-no answers, so real open-ended research may behave differently.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.14487"
     },
     {
-      "id": "https://openalex.org/W7213873170",
-      "doi": "https://doi.org/10.55188/ijifsd.v18i3.1064",
-      "title": "Sharīʿah Compliance in Malaysia’s Digital Payment Systems: Evidence from Expert Interviews",
-      "publicationDate": "2026-09-22",
-      "venue": "International Journal of Islamic Finance and Sustainable Development",
-      "leadAuthor": "Wan Anis Wan Mohd Assrudin et al.",
-      "institution": "Universiti Utara Malaysia",
+      "id": "hf:2611.16010",
+      "doi": "https://arxiv.org/abs/2611.16010",
+      "title": "Iris-Z: Scaling One Generative Model Past Specialist Geometry Models",
+      "publicationDate": "2026-11-10",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Alejandro Cañada et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Depth estimation stayed with narrow specialist models, while one general image generator was not good enough at it.",
+      "fix": "One image model, Iris-Z, makes images with depth, estimates depth from photos, and beats specialist models on depth benchmarks.",
+      "practicalUseCase": "One general model can replace several specialist models, so try a single generator before building a custom depth model.",
+      "limitation": "The win appears at large scale on established depth benchmarks, and the paper gives no cost comparison.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.16010"
+    },
+    {
+      "id": "https://openalex.org/W7204756985",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3341",
+      "title": "Trends and Determinants of Sustainability Sukuk Issuance: Evidence from Global Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Nazrul Hazizi Noordin",
+      "institution": "International Islamic University Malaysia",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Malaysia has digital payment rules, but experts still doubt that providers follow Islamic law in practice.",
-      "fix": "Ten Islamic law experts say doubts remain, mainly about non-bank payment providers with less established governance.",
-      "practicalUseCase": "Non-bank payment apps may carry more Islamic-law risk, so check who oversees their compliance before using one.",
-      "limitation": "It covers only Malaysia and ten interviewed experts, so it shows views, not measured compliance.",
-      "fullTextUrl": "https://doi.org/10.55188/ijifsd.v18i3.1064"
+      "problem": "Sustainability sukuk are growing fast, but nobody had mapped how they are issued or what sets their size.",
+      "fix": "Across 11,944 sukuk issues from 2012 to 2022, equity-based contracts and strong security give larger issues; review costs shrink them.",
+      "practicalUseCase": "Issuers should pick equity-based contracts and watch review costs, and regulators should add incentives so more Muslim-majority countries take part.",
+      "limitation": "Data stops at 2022 and shows links between features and issue size, not proof of cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
-      "id": "https://openalex.org/W7213880368",
-      "doi": "https://doi.org/10.55188/ijifsd.v18i3.1406",
-      "title": "Interest Prohibitions and Contract Design in Medieval Christianity and Islam",
-      "publicationDate": "2026-09-22",
-      "venue": "International Journal of Islamic Finance and Sustainable Development",
-      "leadAuthor": "İbrahim Halil Sugözü et al.",
-      "institution": "Şırnak University",
+      "id": "https://openalex.org/W7204818985",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3267",
+      "title": "Examining the Impact of Waqf Literacy on Waqf Behaviour",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Nashr Akbar",
+      "institution": "International Islamic University Malaysia",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Interest bans in medieval Europe and Islamic law left open how lenders could still earn a return.",
-      "fix": "European lenders built return into indirect contracts, while Islamic law tied return to trade, partnership, and shared risk.",
-      "practicalUseCase": "Contract form decides whether a deal counts as lawful return, so check ownership transfer, documents, and who bears loss.",
-      "limitation": "It reviews old texts and secondary history, with no new archive data or prevalence estimates.",
-      "fullTextUrl": "https://doi.org/10.55188/ijifsd.v18i3.1406"
+      "problem": "Waqf collection stays low, and it was unclear whether better waqf knowledge changes what Muslims actually give.",
+      "fix": "Among 642 Indonesian Muslims, waqf literacy raised attitude, social norms, control and past behaviour, which lifted intention to give.",
+      "practicalUseCase": "Waqf literacy drives giving, so waqf groups should teach how waqf works before they ask for donations.",
+      "limitation": "The sample covers only Indonesia and measures intention to give, not actual donations made.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3267"
     },
     {
-      "id": "https://openalex.org/W7213884700",
-      "doi": "https://doi.org/10.55188/ijifsd.v18i3.1264",
-      "title": "Financial Depth and Stability in Dual Banking Systems",
-      "publicationDate": "2026-09-22",
-      "venue": "International Journal of Islamic Finance and Sustainable Development",
-      "leadAuthor": "Abdul Jalil Mahama et al.",
-      "institution": "National University of Uzbekistan",
+      "id": "https://openalex.org/W7204848949",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.2582",
+      "title": "Determinants of Financial Inclusion in the OIC and OECD Countries: Are They Different?",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Tengku Roziana et al.",
+      "institution": "International Centre for Education in Islamic Finance",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Studies lacked multi-country evidence on whether Islamic finance alongside conventional banks helps a national economy grow.",
-      "fix": "In 27 countries over 2010 to 2024, higher Islamic finance share linked to more private credit and faster growth.",
-      "practicalUseCase": "If this holds, policymakers can back dual banking and add Islamic small-business credit lines beside conventional ones.",
-      "limitation": "It studies only dual-banking countries and omits countries with a single system, because global data are limited.",
-      "fullTextUrl": "https://doi.org/10.55188/ijifsd.v18i3.1264"
+      "problem": "Many Muslim-majority countries still exclude people from banking even as Islamic finance grew, and the causes were unclear.",
+      "fix": "Across 35 countries from 2005 to 2021, income, schooling, institutions and internet access drive financial inclusion in OIC countries.",
+      "practicalUseCase": "OIC countries need more spending on digital systems, youth, women and income, so Islamic banks should serve those gaps.",
+      "limitation": "The study covers 35 countries and a regression method, so it shows links and may miss country detail.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
     },
     {
-      "id": "https://openalex.org/W7127907742",
-      "doi": "https://doi.org/10.1371/journal.pone.0361208",
-      "title": "“The significance of context”: Fit, friction, and function in the work lives of early career academics with ADHD",
-      "publicationDate": "2026-10-29",
-      "venue": "PLoS ONE",
-      "leadAuthor": "Lorna Hamilton et al.",
-      "institution": "York St John University",
+      "id": "https://openalex.org/W7204856806",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3063",
+      "title": "Islamic Social Financial Instruments and Sustainable Community Development: Evidence Synthesis on Community Resilience",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Abdallah Mambo Dallu",
+      "institution": "KCA University",
       "topics": [
-        "Career & Productivity"
+        "Islamic Studies & Finance"
       ],
-      "problem": "Little data shows how adults with ADHD fare building a career in academia.",
-      "fix": "Early-career academics with ADHD say academia can reward them, but social and institutional pressure often blocks it.",
-      "practicalUseCase": "Work context shapes ADHD outcomes, so choose or shape workplaces that fit how you think.",
-      "limitation": "It is a qualitative interview study of early-career academics, so it shows experiences, not how common they are.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0361208"
-    },
-    {
-      "id": "https://openalex.org/W7202162994",
-      "doi": "https://doi.org/10.1371/journal.pone.0357714",
-      "title": "Procrastination among US college students: Prevalence and impact relative to common health and life issues",
-      "publicationDate": "2026-10-07",
-      "venue": "PLoS ONE",
-      "leadAuthor": "Itamar Shatz",
-      "institution": "University of Cambridge",
-      "topics": [
-        "Career & Productivity"
-      ],
-      "problem": "It was unclear how common student procrastination is and how it ranks against other student problems.",
-      "fix": "Of 65,950 US students, 72.3% reported procrastination, and 45.4% said it hurt grades, most among 36 issues.",
-      "practicalUseCase": "Procrastination hurts grades 2.8 to 3.5 times more often than money or ADHD issues, so tackle it first.",
-      "limitation": "It uses self-reports from US college students, so it shows links, not cause.",
-      "fullTextUrl": "https://doi.org/10.1371/journal.pone.0357714"
+      "problem": "Research on zakat, waqf and sadaqah is scattered, so nobody could see how each one helps community resilience.",
+      "fix": "A review of 93 studies shows zakat gives short-term relief, waqf builds long-term assets, and sadaqah covers flexible emergency needs.",
+      "practicalUseCase": "Combined zakat, waqf and sadaqah models work best, so charities should use all three with strong governance and digital tools.",
+      "limitation": "This is a literature review of studies from 2010 to 2025, so it inherits the gaps of those studies.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3063"
     }
   ]
 }
