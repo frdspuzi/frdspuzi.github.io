@@ -1,91 +1,72 @@
 [
   {
-    "videoId": "UCL4K36SHp0",
-    "title": "Let's Open Source the World — Brandon Thomas, ArtCraft",
+    "videoId": "9RKrSF9d2SE",
+    "title": "2026 in LLMs — Simon Willison, Datasette",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "Po6ts-vSK9c",
-    "title": "Risiko salah pilih MRTT",
+    "videoId": "IPh9YsWvDQk",
+    "title": "New Ways of Working with Codex — Dominik Kundel & Charlie Guo, OpenAI",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "6iufPuH_lec",
-    "title": "Inisiatif belia & gig worker [Part 1]",
+    "videoId": "L9GHmwO4-uw",
+    "title": "If You Have a Job, Start Selling Your Skills ASAP",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "gPdr3xFTirg",
-    "title": "Inisiatif belia & gig worker [Part 2]",
+    "videoId": "vLAegkGGWrM",
+    "title": "Building with Gemini in Google Antigravity",
+    "outcome": "success",
+    "errors": [
+      {
+        "attempt": 1,
+        "message": "Unexpected non-whitespace character after JSON at position 359"
+      }
+    ]
+  },
+  {
+    "videoId": "rsOiZE19RVo",
+    "title": "Accelerate shipping to scale with Google Antigravity",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "P3LVhUKq9GE",
-    "title": "Is There Any Good In Sinning? | Dr. Omar Suleiman",
+    "videoId": "5mbpMRVjl9s",
+    "title": "[S02:E06] Sanggup BERHUTANG untuk pergi Haji ? - Dr. Hadi",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "P4Rqf9Fq9zE",
-    "title": "Abu Qatada (ra): The Best Horseman in Medina | The Firsts | Dr. Omar Suleiman",
+    "videoId": "i-oA9axU4zI",
+    "title": "#119 | How To Build Trust (Gavin Liew, The Makeover Guys)",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "yRJTlFcCOqU",
-    "title": "Is \"Being Real\" Ruining Us? | Dr. Omar Suleiman",
+    "videoId": "RnbaL_XQ3ss",
+    "title": "#118 | Building A Global Snack and Wellness Platfrom (Pierre Pang, Mamee CEO)",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "uV3FoPrpR8s",
-    "title": "I am (Politely) Begging You to To Take Your Deen Seriously Before It's Too Late",
+    "videoId": "-OTWx3px85I",
+    "title": "When “Religious” People Become The Oppressors | Signs of the Hour Ep. 26 | Dr. Omar Suleiman",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "SM3tFqhItXs",
-    "title": "I'm 48, Things I Wish I Would Have Told My Younger Self",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "0NE89Nzfk20",
-    "title": "Software engineering after code becomes cheap with Satya Nadella",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "BFI2iykN0Yc",
-    "title": "“AI has eaten tactical programming”",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "LDcRdpVvmgQ",
-    "title": "The value of AI is not doing the same thing faster",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "scNxKbDUHkE",
-    "title": "What coding agents need from engineers to be trusted",
+    "videoId": "h2yjwbyep3k",
+    "title": "The 3-tier model setup that cuts your AI costs",
     "outcome": "success",
     "errors": []
   },
   {
     "videoId": "pjdyNeccdpU",
     "title": "What Coding Agents Need From Engineers to Be Trusted",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "awH40LQBlA0",
-    "title": "The most future-proof engineering skill nobody wants to learn",
     "outcome": "success",
     "errors": []
   },
@@ -98,38 +79,12 @@
   {
     "videoId": "ZBTegd8DUZM",
     "title": "LIVE: Writing code that doesn't suck with the creators of Pi",
-    "outcome": "failed",
-    "errors": [
-      {
-        "attempt": 1,
-        "message": "403 The caller does not have permission",
-        "status": 403
-      },
-      {
-        "attempt": 2,
-        "message": "403 The caller does not have permission",
-        "status": 403
-      },
-      {
-        "attempt": 3,
-        "message": "403 The caller does not have permission",
-        "status": 403
-      },
-      {
-        "attempt": 4,
-        "message": "403 The caller does not have permission",
-        "status": 403
-      },
-      {
-        "attempt": 5,
-        "message": "403 The caller does not have permission",
-        "status": 403
-      }
-    ]
+    "outcome": "success",
+    "errors": []
   },
   {
-    "videoId": "zyQxyNQZ8B4",
-    "title": "The Home Repo Pattern",
+    "videoId": "hWe-j78vNpc",
+    "title": "The Home Repo: The effortless multi-repo agent setup",
     "outcome": "success",
     "errors": []
   },
@@ -140,14 +95,14 @@
     "errors": []
   },
   {
-    "videoId": "9357QuB8VNo",
-    "title": "The Prophet ﷺ Took Care of His Looks Too",
+    "videoId": "y1-9yeYLJUo",
+    "title": "The Rise Of AI Coworkers",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "y1-9yeYLJUo",
-    "title": "The Rise Of AI Coworkers",
+    "videoId": "82LxxSO5HKY",
+    "title": "We may not build frontier AI models. But Malaysians could be the best at bringing AI to life.",
     "outcome": "success",
     "errors": []
   },
@@ -160,12 +115,6 @@
   {
     "videoId": "0iZHAIn1G0k",
     "title": "StoreHub's AI agents cut sales admin from 15 minutes per lead to 1. Meetings booked: up 25%",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "g4LYrAJU_18",
-    "title": "170 AI Agents, One Malaysian Company: Inside StoreHub | Fong Wai Hong | Keris & Silicon EP08",
     "outcome": "success",
     "errors": []
   }

@@ -1,6 +1,58 @@
 {
   "videos": [
     {
+      "title": "2026 in LLMs — Simon Willison, Datasette",
+      "url": "https://www.youtube.com/watch?v=9RKrSF9d2SE",
+      "videoId": "9RKrSF9d2SE",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Delivered as a brilliant, deadpan speculative keynote from late 2026, Simon Willison maps out the near future of agentic AI across three major inflection points—from autonomous brute-force problem solvers to AI-designed games. His core payoff reveals the developer's ultimate paradox: AI doesn't replace software engineers or make work easier, but by automating routine tasks in seconds, it forces us to tackle far more complex, ambitious problems at breakneck speed. Though framed through a playful sci-fi lens featuring fictional future models, this talk offers an indispensable reality check on where agentic technology is genuinely headed.",
+      "dateAdded": "2026-11-18T03:13:22.348Z",
+      "timestamps": [
+        {
+          "startTime": 475,
+          "endTime": 630,
+          "topic": "The 'Fable-class' model shift and brute-force real-world problem solving"
+        },
+        {
+          "startTime": 935,
+          "endTime": 1025,
+          "topic": "Testing whether autonomous AI can understand 'fun' and design games"
+        },
+        {
+          "startTime": 1055,
+          "endTime": 1125,
+          "topic": "The engineering paradox: why AI makes software development harder, not easier"
+        }
+      ]
+    },
+    {
+      "title": "New Ways of Working with Codex — Dominik Kundel & Charlie Guo, OpenAI",
+      "url": "https://www.youtube.com/watch?v=IPh9YsWvDQk",
+      "videoId": "IPh9YsWvDQk",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Imagine stepping into the near future where you stop micromanaging code and instead orchestrate a fleet of autonomous background agents using your voice like Tony Stark. Presented as a visionary dispatch framed from the year 2026, OpenAI developers showcase a radical leap in developer workflow—replacing tedious prompt engineering with self-configuring multi-repo cloud VMs, live interactive UI prototyping, and multi-agent delegation. It is an indispensable blueprint for anyone wanting to see the cutting edge of AI-native software engineering and harness long-running autonomous workflows today.",
+      "dateAdded": "2026-11-18T03:13:22.348Z",
+      "timestamps": [
+        {
+          "startTime": 1350,
+          "endTime": 1590,
+          "topic": "Rapid UI iteration and live interactive prototyping"
+        },
+        {
+          "startTime": 1820,
+          "endTime": 2030,
+          "topic": "Autonomous multi-repo cloud development environments"
+        },
+        {
+          "startTime": 2715,
+          "endTime": 2910,
+          "topic": "Using voice mode as an agentic control plane across apps"
+        }
+      ]
+    },
+    {
       "title": "Let's Open Source the World — Brandon Thomas, ArtCraft",
       "url": "https://www.youtube.com/watch?v=UCL4K36SHp0",
       "videoId": "UCL4K36SHp0",
@@ -27,54 +79,80 @@
       ]
     },
     {
-      "title": "\"Where is all the automation?\" — Diogo Almeida, TypeSafe AI",
-      "url": "https://www.youtube.com/watch?v=Cyt3LU8TyNc",
-      "videoId": "Cyt3LU8TyNc",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "ChatGPT co-creator Diogo Almeida exposes the core reason trillion-dollar AI models can conquer Olympic-level math yet fail at basic business tasks: the entire industry optimized LLMs for conversational assistance via RLHF rather than reliable, autonomous code execution. He breaks down the fatal flaw keeping real automation stuck—the 'Einstein 95% of the time, Mr. Bean 5% of the time' dilemma, where even slight unreliability prevents software from making consequential decisions. If you want to look past the hype and learn how treating machine intelligence as a deterministic 'fourth semantic logic gate' unlocks the future of true software automation, this talk is essential viewing.",
-      "dateAdded": "2026-11-16T01:28:13.731Z",
+      "title": "If You Have a Job, Start Selling Your Skills ASAP",
+      "url": "https://www.youtube.com/watch?v=L9GHmwO4-uw",
+      "videoId": "L9GHmwO4-uw",
+      "channel": "Ali Abdaal",
+      "category": "Productivity",
+      "summary": "No matter how talented you are, your salary will always hit a hard ceiling if you only focus on doing the work rather than learning how to win it. This video reveals the counterintuitive reality that clients never pay for technical skills—only the specific problems those skills solve—and breaks down the exact framework to multiply your earning power without dancing on social media or quitting your day job. Watch this to avoid the devastating trap of spending months creating courses or apps before climbing the proven 'leverage ladder.'",
+      "dateAdded": "2026-11-18T03:13:22.348Z",
       "timestamps": [
         {
-          "startTime": 190,
-          "endTime": 325,
-          "topic": "Why RLHF created an assistant trap instead of true automation"
+          "startTime": 35,
+          "endTime": 180,
+          "topic": "The Salary Ceiling: Why winning work pays dramatically more than doing it"
         },
         {
-          "startTime": 570,
-          "endTime": 645,
-          "topic": "The 'Einstein vs. Mr. Bean' reliability crisis halting AI adoption"
+          "startTime": 368,
+          "endTime": 492,
+          "topic": "The Value Shift: Why nobody pays for skills, only solved problems"
         },
         {
-          "startTime": 740,
-          "endTime": 865,
-          "topic": "The Blue LED analogy: AI as computing's fourth semantic logic gate"
+          "startTime": 975,
+          "endTime": 1145,
+          "topic": "The Leverage Ladder: Scaling your service and avoiding the passive income trap"
         }
       ]
     },
     {
-      "title": "All Code Is Slop (Except Mine) — Lauren Tan, SpaceXSI",
-      "url": "https://www.youtube.com/watch?v=O_zcc6Xl12g",
-      "videoId": "O_zcc6Xl12g",
-      "channel": "AI Engineer",
+      "title": "Building with Gemini in Google Antigravity",
+      "url": "https://www.youtube.com/watch?v=vLAegkGGWrM",
+      "videoId": "vLAegkGGWrM",
+      "channel": "Google for Developers",
       "category": "Tech & Engineering",
-      "summary": "If you are tired of AI coding assistants generating unmaintainable 'code slop,' this talk reveals the counterintuitive engineering blueprint that allowed a team to ship over 11,000 autonomous pull requests in a month with a sub-1% revert rate. The game-changing insight is to stop fixing AI mistakes with longer prompts or markdown rules, and instead enforce deterministic architectural guardrails and linters so agents physically cannot write bad code. Watch this to learn how shifting your effort into automated verification turns AI from a chaotic code monkey into a dependable software factory.",
-      "dateAdded": "2026-11-16T01:28:13.731Z",
+      "summary": "What if advanced AI could build entire animated films without any media files, write 3D ray-tracing engines from scratch, and modernize decades of legacy code in seconds? This showcase demonstrates experimental prototypes powered by Google Antigravity and Gemini, revealing how autonomous coding can replace heavy production pipelines with pure algorithmic generation. Watch this quick reel to see firsthand how AI-driven engineering is redefining software creation from first principles.",
+      "dateAdded": "2026-11-18T03:13:22.348Z",
       "timestamps": [
         {
-          "startTime": 121,
-          "endTime": 210,
-          "topic": "The Inverse Pyramid: Why deterministic code constraints beat prompt rules"
+          "startTime": 4,
+          "endTime": 24,
+          "topic": "Generating fully animated films and custom scores entirely through browser-based code"
         },
         {
-          "startTime": 418,
-          "endTime": 570,
-          "topic": "Why banning code comments stops AI agents from justifying tech debt"
+          "startTime": 24,
+          "endTime": 41,
+          "topic": "Synthesizing a complete 3D ray-tracing engine using 5,000 lines of pure Python"
         },
         {
-          "startTime": 581,
-          "endTime": 760,
-          "topic": "The Verification Shift: Replacing manual PR reviews with automated test artifacts"
+          "startTime": 41,
+          "endTime": 52,
+          "topic": "Autonomously refactoring legacy 1980s Fortran research into memory-safe Rust"
+        }
+      ]
+    },
+    {
+      "title": "Accelerate shipping to scale with Google Antigravity",
+      "url": "https://www.youtube.com/watch?v=rsOiZE19RVo",
+      "videoId": "rsOiZE19RVo",
+      "channel": "Google for Developers",
+      "category": "Tech & Engineering",
+      "summary": "What if an engineer could build and deploy three complete software features before their kids even wake up on a Saturday morning? Watch a 25-year tech veteran break down how autonomous AI agents have shattered the legacy benchmark of writing just 36 lines of code a day, empowering teams to ship thousands of fully tested, production-ready lines in hours. If you want a clear, tangible look at how modern AI workflows are transforming developers into high-level architects, this case study is an essential watch.",
+      "dateAdded": "2026-11-18T03:13:22.348Z",
+      "timestamps": [
+        {
+          "startTime": 56,
+          "endTime": 92,
+          "topic": "How autonomous AI agents build, test, and submit pull requests"
+        },
+        {
+          "startTime": 92,
+          "endTime": 123,
+          "topic": "The 36-line myth: shipping thousands of production-ready lines a day"
+        },
+        {
+          "startTime": 123,
+          "endTime": 152,
+          "topic": "Elevating junior engineers from boilerplate coders to system architects"
         }
       ]
     },
@@ -131,28 +209,80 @@
       ]
     },
     {
-      "title": "Inisiatif belia & gig worker [Part 2]",
-      "url": "https://www.youtube.com/shorts/gPdr3xFTirg",
-      "videoId": "gPdr3xFTirg",
-      "channel": "Financial Faiz",
+      "title": "[S02:E06] Sanggup BERHUTANG untuk pergi Haji ? - Dr. Hadi",
+      "url": "https://www.youtube.com/watch?v=5mbpMRVjl9s",
+      "videoId": "5mbpMRVjl9s",
+      "channel": "Financial Faiz Podcast",
       "category": "Finance",
-      "summary": "Think you can't buy your first home simply because you're a gig worker, freelancer, or lack a fixed payslip? This video breaks down how Malaysia's RM20 billion SJKP housing guarantee scheme can help unlock bank approval for your first property purchase. Watch this short guide to discover how to leverage this initiative properly—along with a critical reality check on what this guarantee actually means for your monthly finances.",
-      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "summary": "If you think taking out loans or relying on government subsidies to perform Hajj makes you pious, this masterclass on Islamic finance and spiritual priorities will completely dismantle your assumptions. Certified Shariah advisor Dr. Muhammad Hadi breaks down the uncomfortable truth about why delaying debt repayments to fund travel or Umrah is a grave injustice, and why true 'istita'ah' (capability) means achieving financial self-sufficiency rather than chasing religious status symbols. Watching this will permanently change how you manage your money, settle your debts, and approach the fifth pillar of Islam.",
+      "dateAdded": "2026-11-18T03:13:22.348Z",
       "timestamps": [
         {
-          "startTime": 0,
-          "endTime": 22,
-          "topic": "How gig workers and freelancers qualify for home loans via SJKP"
+          "startTime": 1425,
+          "endTime": 1615,
+          "topic": "Why Islam actively encourages building wealth and financial independence"
         },
         {
-          "startTime": 22,
-          "endTime": 45,
-          "topic": "The reality check: SJKP is a loan guarantee, not free money"
+          "startTime": 2615,
+          "endTime": 2775,
+          "topic": "The severe spiritual dangers of funding pilgrimages or leisure while ignoring unpaid debts"
         },
         {
-          "startTime": 45,
-          "endTime": 68,
-          "topic": "Smart home-buying advice and managing long-term debt"
+          "startTime": 5090,
+          "endTime": 5250,
+          "topic": "Debunking the 'B40 Pilgrim' paradox and redefining genuine capability (Istita'ah)"
+        }
+      ]
+    },
+    {
+      "title": "#119 | How To Build Trust (Gavin Liew, The Makeover Guys)",
+      "url": "https://www.youtube.com/watch?v=i-oA9axU4zI",
+      "videoId": "i-oA9axU4zI",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "What if the secret to dominating a cutthroat, low-trust service industry isn't offering bespoke customization, but productizing your business like a scalable restaurant menu? In this masterclass interview, The Makeover Guys co-founder Gavin Liu reveals how he escaped the soul-crushing cycle of unpaid pitching and built an interior renovation empire by applying the radical transparency of e-commerce. Whether you are struggling to scale a service business or navigating the growing pains of leading a team past 100 people, this episode delivers an actionable, no-fluff playbook you cannot afford to miss.",
+      "dateAdded": "2026-11-18T03:13:22.349Z",
+      "timestamps": [
+        {
+          "startTime": 905,
+          "endTime": 1025,
+          "topic": "Escaping the endless pitch cycle by turning custom services into a standardized menu"
+        },
+        {
+          "startTime": 1145,
+          "endTime": 1335,
+          "topic": "Overcoming the renovation 'trust deficit' using e-commerce transparency models"
+        },
+        {
+          "startTime": 1890,
+          "endTime": 2055,
+          "topic": "Scaling past 100 people: The hidden danger of 'rabbits' vs. 'hyenas' in your company"
+        }
+      ]
+    },
+    {
+      "title": "#118 | Building A Global Snack and Wellness Platfrom (Pierre Pang, Mamee CEO)",
+      "url": "https://www.youtube.com/watch?v=RnbaL_XQ3ss",
+      "videoId": "RnbaL_XQ3ss",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "Most third-generation family businesses crumble under entitlement, but Mamee CEO Pierre Pang doubled revenue to RM1.5 billion by doing the unthinkable: actively funding startups designed to disrupt his own iconic brand. In this candid masterclass, he breaks down the exact 'IDEA' operating blueprint that slashed product launch cycles from 12 months to 12 weeks and turned self-aware authenticity into an unbeatable marketing moat. If you want a proven, zero-fluff playbook on scaling legacy businesses against ruthless global competitors, this conversation is an absolute must-watch.",
+      "dateAdded": "2026-11-18T03:13:22.349Z",
+      "timestamps": [
+        {
+          "startTime": 1750,
+          "endTime": 1875,
+          "topic": "How embracing the 'nepo baby' label created an authentic, high-impact marketing hook"
+        },
+        {
+          "startTime": 2140,
+          "endTime": 2315,
+          "topic": "Compressing product launch cycles from 12 months to 12 weeks using AI and TikTok"
+        },
+        {
+          "startTime": 2900,
+          "endTime": 3100,
+          "topic": "Why legacy companies must actively fund and co-own the startups trying to disrupt them"
         }
       ]
     },
@@ -183,6 +313,32 @@
       ]
     },
     {
+      "title": "When “Religious” People Become The Oppressors | Signs of the Hour Ep. 26 | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=-OTWx3px85I",
+      "videoId": "-OTWx3px85I",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "The greatest danger to your faith isn't obvious evil—it is corruption cloaked in extreme religious devotion. In this piercing breakdown of Prophetic warnings, Dr. Omar Suleiman reveals how two mirrored extremes manipulate sacred texts to destroy the community: violent fanatics who slaughter in the name of 'justice' and subservient scholars who legitimize tyrants in the name of 'stability.' Watching this will completely reframe how you recognize spiritual manipulation, equipping you to see through false piety and anchor yourself in authentic faith during turbulent times.",
+      "dateAdded": "2026-11-18T03:13:22.349Z",
+      "timestamps": [
+        {
+          "startTime": 425,
+          "endTime": 535,
+          "topic": "The Prototype of Extremism: Intense Piety Divorced from True Faith"
+        },
+        {
+          "startTime": 830,
+          "endTime": 925,
+          "topic": "When Dogma Turns Deadly: The Cautionary Murder of Abdullah ibn Khabbab"
+        },
+        {
+          "startTime": 995,
+          "endTime": 1115,
+          "topic": "Two Sides of One Coin: Fanatical Vigilantes vs. Scholars Sanctifying Oppression"
+        }
+      ]
+    },
+    {
       "title": "Is There Any Good In Sinning? | Dr. Omar Suleiman",
       "url": "https://www.youtube.com/shorts/P3LVhUKq9GE",
       "videoId": "P3LVhUKq9GE",
@@ -205,58 +361,6 @@
           "startTime": 28,
           "endTime": 43,
           "topic": "Becoming a vehicle of empathy and mercy rather than judgment"
-        }
-      ]
-    },
-    {
-      "title": "Abu Qatada (ra): The Best Horseman in Medina | The Firsts | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=P4Rqf9Fq9zE",
-      "videoId": "P4Rqf9Fq9zE",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Ever wonder what happens when an unsung companion quietly guards the Prophet ﷺ through the dead of night without asking for recognition? Discover the breathtaking story of Abu Qatada, celebrated as the Knight of the Prophet ﷺ, whose discreet devotion earned him a life-altering prayer and a miracle that famously preserved his youth even at 70 years old. Packed with gripping battlefield heroics and tender lessons on lifting others' burdens, this video offers a masterclass in chivalry, loyalty, and quiet greatness.",
-      "dateAdded": "2026-11-17T04:17:03.643Z",
-      "timestamps": [
-        {
-          "startTime": 205,
-          "endTime": 350,
-          "topic": "Silently Guarding the Prophet ﷺ in the Dead of Night"
-        },
-        {
-          "startTime": 485,
-          "endTime": 585,
-          "topic": "Compassion in Action: Relieving Debts and Hardships"
-        },
-        {
-          "startTime": 730,
-          "endTime": 825,
-          "topic": "The Battlefield Injury and the Miraculous Blessing of Youth"
-        }
-      ]
-    },
-    {
-      "title": "Is \"Being Real\" Ruining Us? | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/yRJTlFcCOqU",
-      "videoId": "yRJTlFcCOqU",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Social media algorithms have weaponized 'authenticity,' subtly tricking people into exposing their sins under the guise of being vulnerable. This sharp wake-up call reveals what genuine modesty (Haya) truly demands beyond just the clothes you wear. Watch this to understand a crucial truth for the digital age: while private mistakes damage the soul, broadcasting them publicly dismantles society.",
-      "dateAdded": "2026-11-17T04:17:03.643Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 23,
-          "topic": "Redefining Haya beyond modest clothing"
-        },
-        {
-          "startTime": 24,
-          "endTime": 47,
-          "topic": "How social algorithms reward exposing personal sins"
-        },
-        {
-          "startTime": 48,
-          "endTime": 54,
-          "topic": "Why private sins corrupt the soul while public sins ruin society"
         }
       ]
     },
@@ -285,106 +389,7 @@
           "topic": "Overcoming imposter syndrome and taking radical accountability with your family"
         }
       ]
-    },
-    {
-      "title": "I'm 48, Things I Wish I Would Have Told My Younger Self",
-      "url": "https://www.youtube.com/watch?v=SM3tFqhItXs",
-      "videoId": "SM3tFqhItXs",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "Most men mistakenly assume their twenties were their peak, but true maturity, capability, and mental clarity only ripen in your forties—provided you use your thirties to build the right foundation. This video delivers a powerful blueprint for mastering four critical pillars: martial discipline, skill monetization, Quran memorization, and financial psychology. If you want to stop drifting and forge the resilience, financial clarity, and spiritual grounding needed to lead your family, this is essential viewing.",
-      "dateAdded": "2026-11-17T04:17:03.643Z",
-      "timestamps": [
-        {
-          "startTime": 100,
-          "endTime": 185,
-          "topic": "Why your prime begins at 40 and how to master core skills in your 30s"
-        },
-        {
-          "startTime": 231,
-          "endTime": 320,
-          "topic": "Anchoring leadership through Quran memorization and leading by example"
-        },
-        {
-          "startTime": 406,
-          "endTime": 490,
-          "topic": "Mastering financial literacy, consumer psychology, and pricing your true value"
-        }
-      ]
-    },
-    {
-      "title": "Software engineering after code becomes cheap with Satya Nadella",
-      "url": "https://www.youtube.com/watch?v=0NE89Nzfk20",
-      "videoId": "0NE89Nzfk20",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "When AI makes writing code virtually free, the entire value of software engineering flips from generation to verification—and tying your business to a single frontier AI model is a ticking time bomb. In this candid masterclass, Microsoft CEO Satya Nadella pulls back the curtain on how modern 'software factories' operate, why treating AI agents as untrusted insider risks is essential, and the truth behind Microsoft's controversial voluntary exit offers. If you want a battle-tested roadmap from the leader of Big Tech on how to stay indispensable in the post-IDE era rather than get displaced, this conversation is non-negotiable.",
-      "dateAdded": "2026-11-17T04:17:03.643Z",
-      "timestamps": [
-        {
-          "startTime": 940,
-          "endTime": 1115,
-          "topic": "The Rise of the Software Factory: Why Verification Replaces Writing Code"
-        },
-        {
-          "startTime": 1780,
-          "endTime": 1995,
-          "topic": "The Truth Behind Microsoft's Voluntary Exits and Changing Dev Roles"
-        },
-        {
-          "startTime": 3015,
-          "endTime": 3170,
-          "topic": "Why Relying on a Single AI Model is a Strategic Trap"
-        }
-      ]
-    },
-    {
-      "title": "“AI has eaten tactical programming”",
-      "url": "https://www.youtube.com/shorts/BFI2iykN0Yc",
-      "videoId": "BFI2iykN0Yc",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "AI has officially eaten tactical programming—meaning if you're still spending your days wrestling with syntax and line-by-line mechanics, you're doing the exact work AI is now built to replace. This clip breaks down the watershed moment top engineers realized models are finally ready for delegation, freeing humans to focus entirely on high-level architecture and long-term vision. Watch this to understand the fundamental shift in developer workflows and learn how to position yourself as a strategic thinker rather than an obsolete code monkey.",
-      "dateAdded": "2026-11-17T04:17:03.643Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 21,
-          "topic": "The turning point when AI proved it was ready for real delegation"
-        },
-        {
-          "startTime": 21,
-          "endTime": 54,
-          "topic": "Tactical vs. strategic programming: Why humans must elevate to system design"
-        }
-      ]
-    },
-    {
-      "title": "The value of AI is not doing the same thing faster",
-      "url": "https://www.youtube.com/shorts/LDcRdpVvmgQ",
-      "videoId": "LDcRdpVvmgQ",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "If you think AI is merely about doing everyday tasks faster, you are measuring its impact completely wrong. This clip breaks down why standard productivity metrics fail: AI's real value lies not in churning out routine work at 10x speed, but in tackling harder, far more valuable problems you otherwise wouldn't have attempted. Watch this to fundamentally rethink how to measure and harness the true ROI of AI.",
-      "dateAdded": "2026-11-17T04:17:03.643Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 23,
-          "topic": "The paradox of AI productivity hype vs. its true value"
-        },
-        {
-          "startTime": 23,
-          "endTime": 43,
-          "topic": "Why measuring AI output like factory widgets fails"
-        },
-        {
-          "startTime": 43,
-          "endTime": 61,
-          "topic": "Senior engineers' reality check on code volume, outages, and feature value"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-11-17T04:27:07.615Z"
+  "lastUpdated": "2026-11-18T03:24:48.867Z"
 }
