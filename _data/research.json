@@ -1,137 +1,69 @@
 {
-  "lastUpdated": "2026-11-17",
+  "lastUpdated": "2026-11-18",
   "papers": [
     {
-      "id": "hf:2611.16661",
-      "doi": "https://arxiv.org/abs/2611.16661",
-      "title": "Reducing Batch Makespan for LLM Agent Workloads through Inference-Environment Coordination",
-      "publicationDate": "2026-11-11",
+      "id": "hf:2611.19559",
+      "doi": "https://arxiv.org/abs/2611.19559",
+      "title": "ResWAM: Learning What Changes, Not What Stays, for World-Action Models",
+      "publicationDate": "2026-11-13",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Wei Feng et al.",
+      "leadAuthor": "Chongyu Fan et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Teams running big batches of LLM agent tasks wait long because the model and the task environment take turns idling.",
-      "fix": "Coordinating the model server and the task environment cut total batch time by 10.4% to 65.0% with scores unchanged.",
-      "practicalUseCase": "Batch jobs like benchmarks and training runs finish much sooner, so schedule model work and environment work together.",
-      "limitation": "The tests used two Ling model versions and four benchmarks, so results on other models may differ.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.16661"
+      "problem": "Robot models that predict future frames waste effort copying static background, and they need heavy compute.",
+      "fix": "A small model that learns only what changes between frames reached 81.1% on LIBERO-Plus and 93.8% on RoboTwin 2.0.",
+      "practicalUseCase": "If change-only training works, robot makers can cut compute; train on motion differences instead of full future frames.",
+      "limitation": "Tests ran without robot pretraining, and real-robot results cover only three tasks: Open, Put, and Stack.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.19559"
     },
     {
-      "id": "hf:2611.18550",
-      "doi": "https://arxiv.org/abs/2611.18550",
-      "title": "Restoring Diversity in Distilled Image and Video Generators by Probing Activations",
-      "publicationDate": "2026-11-12",
+      "id": "hf:2611.22055",
+      "doi": "https://arxiv.org/abs/2611.22055",
+      "title": "Weight-Space Programming Doesn't Need Transformers",
+      "publicationDate": "2026-11-16",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Furkan Horoz et al.",
+      "leadAuthor": "Hyunjong Ok et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Fast few-step image and video generators give near-identical results for different random seeds, which kills variety.",
-      "fix": "Fast student models keep the teacher's total variation but squeeze it into fewer directions, and ReDiverse restores the variety.",
-      "practicalUseCase": "You can keep fast generation and get varied outputs back, so add a variety fix when you distill a model.",
-      "limitation": "The fix was tested on image and video distillation benchmarks plus a user study, not on every model type.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.18550"
+      "problem": "People who let an AI write model weights by hand kept the Transformer design without asking if it fits.",
+      "fix": "Three AI models chose lookup tables, hitting up to 54.4% accuracy with about 1,800x fewer parameters than a Transformer.",
+      "practicalUseCase": "If you write weights by hand, use a table you can read and fix row by row, not a Transformer.",
+      "limitation": "Pretrained language models stay more accurate; the claim covers only which structure to build when writing weights.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.22055"
     },
     {
-      "id": "hf:2611.14487",
-      "doi": "https://arxiv.org/abs/2611.14487",
-      "title": "Re-Search: Dissecting LLM Ideation Through a Two-Player Questioning Game",
-      "publicationDate": "2026-11-09",
+      "id": "hf:2611.19800",
+      "doi": "https://arxiv.org/abs/2611.19800",
+      "title": "Multi-Branch Transformer",
+      "publicationDate": "2026-11-14",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Muhan Gao et al.",
+      "leadAuthor": "Gaotang Li et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Nobody knew why LLMs stall when they search for new research ideas, because tests only showed the final result.",
-      "fix": "Across six LLMs, nearly all progress comes in the first 30 of 100 questions, and models then plateau.",
-      "practicalUseCase": "Models can judge good ideas they cannot produce, so feed them ideas from outside instead of waiting for better self-generation.",
-      "limitation": "The game used 200 papers and yes-or-no answers, so real open-ended research may behave differently.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.14487"
+      "problem": "Language models grow only by getting wider or deeper, which raises training cost and slows long-text decoding.",
+      "fix": "Running blocks in parallel branches cut KV-cache storage by up to 34% and raised decoding speed by up to 51.4%.",
+      "practicalUseCase": "Standard Transformers need up to 1.26x more training compute to match branched models, so test branches before widening models.",
+      "limitation": "Tests used models of only 0.8B to 2.1B total parameters, so larger sizes remain unproven.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.19800"
     },
     {
-      "id": "hf:2611.16010",
-      "doi": "https://arxiv.org/abs/2611.16010",
-      "title": "Iris-Z: Scaling One Generative Model Past Specialist Geometry Models",
-      "publicationDate": "2026-11-10",
+      "id": "hf:2611.20992",
+      "doi": "https://arxiv.org/abs/2611.20992",
+      "title": "MedJev: A System One Vision-Language Decision Model for Fast and Effective Medical Image Understanding",
+      "publicationDate": "2026-11-15",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Alejandro Cañada et al.",
+      "leadAuthor": "Fan Zhang et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Depth estimation stayed with narrow specialist models, while one general image generator was not good enough at it.",
-      "fix": "One image model, Iris-Z, makes images with depth, estimates depth from photos, and beats specialist models on depth benchmarks.",
-      "practicalUseCase": "One general model can replace several specialist models, so try a single generator before building a custom depth model.",
-      "limitation": "The win appears at large scale on established depth benchmarks, and the paper gives no cost comparison.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.16010"
-    },
-    {
-      "id": "https://openalex.org/W7204756985",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3341",
-      "title": "Trends and Determinants of Sustainability Sukuk Issuance: Evidence from Global Markets",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Nazrul Hazizi Noordin",
-      "institution": "International Islamic University Malaysia",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Sustainability sukuk are growing fast, but nobody had mapped how they are issued or what sets their size.",
-      "fix": "Across 11,944 sukuk issues from 2012 to 2022, equity-based contracts and strong security give larger issues; review costs shrink them.",
-      "practicalUseCase": "Issuers should pick equity-based contracts and watch review costs, and regulators should add incentives so more Muslim-majority countries take part.",
-      "limitation": "Data stops at 2022 and shows links between features and issue size, not proof of cause.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
-    },
-    {
-      "id": "https://openalex.org/W7204818985",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3267",
-      "title": "Examining the Impact of Waqf Literacy on Waqf Behaviour",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Nashr Akbar",
-      "institution": "International Islamic University Malaysia",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Waqf collection stays low, and it was unclear whether better waqf knowledge changes what Muslims actually give.",
-      "fix": "Among 642 Indonesian Muslims, waqf literacy raised attitude, social norms, control and past behaviour, which lifted intention to give.",
-      "practicalUseCase": "Waqf literacy drives giving, so waqf groups should teach how waqf works before they ask for donations.",
-      "limitation": "The sample covers only Indonesia and measures intention to give, not actual donations made.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3267"
-    },
-    {
-      "id": "https://openalex.org/W7204848949",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.2582",
-      "title": "Determinants of Financial Inclusion in the OIC and OECD Countries: Are They Different?",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Tengku Roziana et al.",
-      "institution": "International Centre for Education in Islamic Finance",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Many Muslim-majority countries still exclude people from banking even as Islamic finance grew, and the causes were unclear.",
-      "fix": "Across 35 countries from 2005 to 2021, income, schooling, institutions and internet access drive financial inclusion in OIC countries.",
-      "practicalUseCase": "OIC countries need more spending on digital systems, youth, women and income, so Islamic banks should serve those gaps.",
-      "limitation": "The study covers 35 countries and a regression method, so it shows links and may miss country detail.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
-    },
-    {
-      "id": "https://openalex.org/W7204856806",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3063",
-      "title": "Islamic Social Financial Instruments and Sustainable Community Development: Evidence Synthesis on Community Resilience",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Abdallah Mambo Dallu",
-      "institution": "KCA University",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Research on zakat, waqf and sadaqah is scattered, so nobody could see how each one helps community resilience.",
-      "fix": "A review of 93 studies shows zakat gives short-term relief, waqf builds long-term assets, and sadaqah covers flexible emergency needs.",
-      "practicalUseCase": "Combined zakat, waqf and sadaqah models work best, so charities should use all three with strong governance and digital tools.",
-      "limitation": "This is a literature review of studies from 2010 to 2025, so it inherits the gaps of those studies.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3063"
+      "problem": "Medical image AI writes long reasoning text before answering, which adds delay and answer-parsing errors.",
+      "fix": "A model that picks the answer in one pass gained 7.93% accuracy and ran 6.04 times faster than the original.",
+      "practicalUseCase": "If direct answer scoring works, medical image tools reply much faster; skip text generation when choosing among set answers.",
+      "limitation": "Results come from four benchmarks and one 4B base model, with fixed candidate answers.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.20992"
     }
   ]
 }
