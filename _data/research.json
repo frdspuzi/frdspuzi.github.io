@@ -1,69 +1,69 @@
 {
-  "lastUpdated": "2026-11-18",
+  "lastUpdated": "2026-11-19",
   "papers": [
     {
-      "id": "hf:2611.19559",
-      "doi": "https://arxiv.org/abs/2611.19559",
-      "title": "ResWAM: Learning What Changes, Not What Stays, for World-Action Models",
-      "publicationDate": "2026-11-13",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Chongyu Fan et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Robot models that predict future frames waste effort copying static background, and they need heavy compute.",
-      "fix": "A small model that learns only what changes between frames reached 81.1% on LIBERO-Plus and 93.8% on RoboTwin 2.0.",
-      "practicalUseCase": "If change-only training works, robot makers can cut compute; train on motion differences instead of full future frames.",
-      "limitation": "Tests ran without robot pretraining, and real-robot results cover only three tasks: Open, Put, and Stack.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.19559"
-    },
-    {
-      "id": "hf:2611.22055",
-      "doi": "https://arxiv.org/abs/2611.22055",
-      "title": "Weight-Space Programming Doesn't Need Transformers",
+      "id": "hf:2611.22925",
+      "doi": "https://arxiv.org/abs/2611.22925",
+      "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation",
       "publicationDate": "2026-11-16",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Hyunjong Ok et al.",
+      "leadAuthor": "Ruoyu Wang et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "People who let an AI write model weights by hand kept the Transformer design without asking if it fits.",
-      "fix": "Three AI models chose lookup tables, hitting up to 54.4% accuracy with about 1,800x fewer parameters than a Transformer.",
-      "practicalUseCase": "If you write weights by hand, use a table you can read and fix row by row, not a Transformer.",
-      "limitation": "Pretrained language models stay more accurate; the claim covers only which structure to build when writing weights.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.22055"
+      "problem": "Live video generators must run in few steps, but errors pile up and the picture drifts over time.",
+      "fix": "A four-step streaming model trained with Progressive Forcing beat recent streaming baselines and stayed stable through 30-minute racing rollouts.",
+      "practicalUseCase": "Live video can follow simple shape inputs without drifting, so try it for interactive simulations.",
+      "limitation": "The test showed stable output for 30 minutes of racing video only, so other scenes remain unproven.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.22925"
     },
     {
-      "id": "hf:2611.19800",
-      "doi": "https://arxiv.org/abs/2611.19800",
-      "title": "Multi-Branch Transformer",
-      "publicationDate": "2026-11-14",
+      "id": "hf:2611.22668",
+      "doi": "https://arxiv.org/abs/2611.22668",
+      "title": "Let Samples Sing in Chorus: Mitigating Spurious Correlations via Cross-view Consensus",
+      "publicationDate": "2026-11-16",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Gaotang Li et al.",
+      "leadAuthor": "Weiwei Li et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Language models grow only by getting wider or deeper, which raises training cost and slows long-text decoding.",
-      "fix": "Running blocks in parallel branches cut KV-cache storage by up to 34% and raised decoding speed by up to 51.4%.",
-      "practicalUseCase": "Standard Transformers need up to 1.26x more training compute to match branched models, so test branches before widening models.",
-      "limitation": "Tests used models of only 0.8B to 2.1B total parameters, so larger sizes remain unproven.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.19800"
+      "problem": "AI models often copy shortcuts in the data, so they fail on small groups of examples.",
+      "fix": "CHORD compares several views of each example to remove shortcuts and improved weakest-group accuracy on seven benchmarks.",
+      "practicalUseCase": "Your model may look accurate overall yet fail on rare groups, so check group-level accuracy before you ship.",
+      "limitation": "The paper reports gains on seven benchmarks only, so results on other data and tasks are unknown.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.22668"
     },
     {
-      "id": "hf:2611.20992",
-      "doi": "https://arxiv.org/abs/2611.20992",
-      "title": "MedJev: A System One Vision-Language Decision Model for Fast and Effective Medical Image Understanding",
+      "id": "hf:2611.23068",
+      "doi": "https://arxiv.org/abs/2611.23068",
+      "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
+      "publicationDate": "2026-11-16",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Yuanhao Zeng et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Self-improving AI agents often stall, and methods trade wins across papers with no clear reason.",
+      "fix": "Across seven methods and six models, noisy scores picked good changes no better than random chance.",
+      "practicalUseCase": "Small score gaps between agent methods are often luck, so rerun each test before you trust a ranking.",
+      "limitation": "The study covers seven evolution methods and six models, so other setups may behave differently.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.23068"
+    },
+    {
+      "id": "hf:2611.21366",
+      "doi": "https://arxiv.org/abs/2611.21366",
+      "title": "ALIVE: Making Streaming Video Models Interactive",
       "publicationDate": "2026-11-15",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Fan Zhang et al.",
+      "leadAuthor": "Jinzhao Li et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Medical image AI writes long reasoning text before answering, which adds delay and answer-parsing errors.",
-      "fix": "A model that picks the answer in one pass gained 7.93% accuracy and ran 6.04 times faster than the original.",
-      "practicalUseCase": "If direct answer scoring works, medical image tools reply much faster; skip text generation when choosing among set answers.",
-      "limitation": "Results come from four benchmarks and one 4B base model, with fixed candidate answers.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.20992"
+      "problem": "Video AI that watches a live stream usually answers each user request alone, without acting on its own.",
+      "fix": "ALIVE learns when to speak, ask, or stay silent, and scored highest among compared models on four benchmarks and FSI-Bench.",
+      "practicalUseCase": "Video assistants can now watch, warn, and ask follow-up questions, so consider them for live monitoring tasks.",
+      "limitation": "It won only against the compared models, and the authors built one of the tests themselves.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.21366"
     }
   ]
 }
