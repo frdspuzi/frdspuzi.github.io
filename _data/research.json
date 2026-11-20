@@ -1,69 +1,154 @@
 {
-  "lastUpdated": "2026-11-19",
+  "lastUpdated": "2026-11-20",
   "papers": [
     {
-      "id": "hf:2611.22925",
-      "doi": "https://arxiv.org/abs/2611.22925",
-      "title": "Code World Model 2.0: Towards Infinite Controllable Video Generation",
-      "publicationDate": "2026-11-16",
+      "id": "hf:2611.17460",
+      "doi": "https://arxiv.org/abs/2611.17460",
+      "title": "Unfinished-Bench: Measuring Rule Violations by Persistent Agents in Realistic Work Environments",
+      "publicationDate": "2026-11-11",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Ruoyu Wang et al.",
+      "leadAuthor": "Seunghyun Lee et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Live video generators must run in few steps, but errors pile up and the picture drifts over time.",
-      "fix": "A four-step streaming model trained with Progressive Forcing beat recent streaming baselines and stayed stable through 30-minute racing rollouts.",
-      "practicalUseCase": "Live video can follow simple shape inputs without drifting, so try it for interactive simulations.",
-      "limitation": "The test showed stable output for 30 minutes of racing video only, so other scenes remain unproven.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.22925"
+      "problem": "AI agents that keep working alone break hidden workplace rules, and nobody measured how often.",
+      "fix": "Persistence raised rule breaking from 32.2% to 43.6% for rules in documents, versus 8.5% for rules the user stated.",
+      "practicalUseCase": "A rule buried in a file is much weaker than a rule you say; state key limits in the prompt.",
+      "limitation": "The test used 97 made-up work scenarios, so real workplaces may differ.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.17460"
     },
     {
-      "id": "hf:2611.22668",
-      "doi": "https://arxiv.org/abs/2611.22668",
-      "title": "Let Samples Sing in Chorus: Mitigating Spurious Correlations via Cross-view Consensus",
-      "publicationDate": "2026-11-16",
+      "id": "hf:2611.08136",
+      "doi": "https://arxiv.org/abs/2611.08136",
+      "title": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
+      "publicationDate": "2026-11-08",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Weiwei Li et al.",
+      "leadAuthor": "Hyojun Yi et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "AI models often copy shortcuts in the data, so they fail on small groups of examples.",
-      "fix": "CHORD compares several views of each example to remove shortcuts and improved weakest-group accuracy on seven benchmarks.",
-      "practicalUseCase": "Your model may look accurate overall yet fail on rare groups, so check group-level accuracy before you ship.",
-      "limitation": "The paper reports gains on seven benchmarks only, so results on other data and tasks are unknown.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.22668"
+      "problem": "Anomaly detection usually needs trained features, so nobody knew how well a model with no training does.",
+      "fix": "Fixed random features plus a simple distance score reached 86.4% mean AUROC on 47 tabular datasets, with no training.",
+      "practicalUseCase": "Try this cheap untrained baseline first; train a model only if it clearly beats it.",
+      "limitation": "It was tested on benchmark datasets only, not live production data.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.08136"
     },
     {
-      "id": "hf:2611.23068",
-      "doi": "https://arxiv.org/abs/2611.23068",
-      "title": "The Resolution Hypothesis: Agent Evolution's Key Is Identifying Improvements",
-      "publicationDate": "2026-11-16",
+      "id": "hf:2611.24844",
+      "doi": "https://arxiv.org/abs/2611.24844",
+      "title": "General progress substitutes for specific training data in language models",
+      "publicationDate": "2026-11-17",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Yuanhao Zeng et al.",
+      "leadAuthor": "Mark Marosi et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Self-improving AI agents often stall, and methods trade wins across papers with no clear reason.",
-      "fix": "Across seven methods and six models, noisy scores picked good changes no better than random chance.",
-      "practicalUseCase": "Small score gaps between agent methods are often luck, so rerun each test before you trust a ranking.",
-      "limitation": "The study covers seven evolution methods and six models, so other setups may behave differently.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.23068"
+      "problem": "Developers withhold data to block risky skills in language models, but nobody knew how long that delay lasts.",
+      "fix": "General progress on other data replaces withheld data, so models relearn the skill from a small fraction of the data.",
+      "practicalUseCase": "Data filtering only delays a risky skill, so do not rely on it alone for safety.",
+      "limitation": "Tests used chess, Othello, molecular strings, bracket languages, web text, and one programming language on a 7-billion-parameter model.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.24844"
     },
     {
-      "id": "hf:2611.21366",
-      "doi": "https://arxiv.org/abs/2611.21366",
-      "title": "ALIVE: Making Streaming Video Models Interactive",
-      "publicationDate": "2026-11-15",
+      "id": "hf:2611.24059",
+      "doi": "https://arxiv.org/abs/2611.24059",
+      "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
+      "publicationDate": "2026-11-17",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Jinzhao Li et al.",
+      "leadAuthor": "Zhenrui Yue et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Video AI that watches a live stream usually answers each user request alone, without acting on its own.",
-      "fix": "ALIVE learns when to speak, ask, or stay silent, and scored highest among compared models on four benchmarks and FSI-Bench.",
-      "practicalUseCase": "Video assistants can now watch, warn, and ask follow-up questions, so consider them for live monitoring tasks.",
-      "limitation": "It won only against the compared models, and the authors built one of the tests themselves.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.21366"
+      "problem": "Merging many expert models into one is costly, because the student must sample every environment again.",
+      "fix": "Replaying expert training logs in order beat the standard merge method, using about one seventh of training compute.",
+      "practicalUseCase": "If you train several experts, keep their logs and replay them in order instead of resampling.",
+      "limitation": "It was tested on three domains only: reasoning, search, and SQL.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.24059"
+    },
+    {
+      "id": "https://openalex.org/W7204856806",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3063",
+      "title": "Islamic Social Financial Instruments and Sustainable Community Development: Evidence Synthesis on Community Resilience",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Abdallah Mambo Dallu",
+      "institution": "KCA University",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Research on zakat, waqf, and sadaqah is scattered, so it is unclear how they help communities cope with shocks.",
+      "fix": "Across 93 studies, zakat gives short-term relief, waqf builds long-term assets, and sadaqah gives flexible emergency help.",
+      "practicalUseCase": "Combined zakat, waqf, and sadaqah models work best, so plan giving programs as one system with strong governance.",
+      "limitation": "It reviews past studies, so its conclusions are only as strong as those studies.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3063"
+    },
+    {
+      "id": "https://openalex.org/W7204756985",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3341",
+      "title": "Trends and Determinants of Sustainability Sukuk Issuance: Evidence from Global Markets",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Nazrul Hazizi Noordin",
+      "institution": "International Islamic University Malaysia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Sustainability sukuk are growing fast, but nobody had documented how they are issued or what drives issue size.",
+      "fix": "Across 11,944 sukuk issued from 2012 to 2022, equity-based contracts, social purposes, and government issuers produced larger issues.",
+      "practicalUseCase": "Costly second party opinions shrink issue size, so cutting that cost could help more issuers join.",
+      "limitation": "The data covers 2012 to 2022 only and shows links, not cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
+    },
+    {
+      "id": "https://openalex.org/W7236194377",
+      "doi": "https://doi.org/10.21098/jimf.v12i4.3350",
+      "title": "From Clicks to Credit: AI-Measured Halal Product Awareness and Halal Financing Depth across OIC Countries",
+      "publicationDate": "2026-11-18",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Ismail Aremu Muhammed et al.",
+      "institution": "Universiti Brunei Darussalam",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Nobody knew whether consumer interest in halal products moves the amount of Islamic financing banks provide.",
+      "fix": "Online halal search interest significantly raised total Islamic financing in 16 OIC countries, mainly through Murabaha and Ijarah contracts.",
+      "practicalUseCase": "Banks can read search trends to forecast demand, mostly for simple Murabaha and Ijarah products.",
+      "limitation": "It covers 16 countries from 2014 to 2023, and search volume only proxies awareness.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.3350"
+    },
+    {
+      "id": "https://openalex.org/W7236250750",
+      "doi": "https://doi.org/10.21098/jimf.v12i4.2644",
+      "title": "Islamic Banking Products Accessibility and SME Performance: Evaluating Shari’ah-Compliant Financial Solutions for Somali Enterprises",
+      "publicationDate": "2026-11-18",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Ali Yassin Sheikh Ali et al.",
+      "institution": "SIMAD University",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Somali small businesses lack clear evidence on which parts of Shari'ah-compliant banking actually improve their performance.",
+      "fix": "Affordability and ease of access drove business performance most, while awareness alone had little direct effect.",
+      "practicalUseCase": "Cheaper and easier Islamic banking helps small firms more than awareness campaigns, so banks should fix cost and process first.",
+      "limitation": "It surveyed business owners in one city, Baidoa, at one point in time.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.2644"
+    },
+    {
+      "id": "https://openalex.org/W7204818985",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3267",
+      "title": "Examining the Impact of Waqf Literacy on Waqf Behaviour",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Nashr Akbar et al.",
+      "institution": "International Islamic University Malaysia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Waqf collections stay low, and it was unclear whether better waqf knowledge changes what Muslims actually give.",
+      "fix": "Among 642 Indonesian respondents, waqf literacy raised attitude, social norms, and control, which indirectly raised waqf intention.",
+      "practicalUseCase": "Teaching people about waqf can raise giving, so waqf bodies should invest in education.",
+      "limitation": "It measures intention from a survey in Indonesia, not actual donations.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3267"
     }
   ]
 }
