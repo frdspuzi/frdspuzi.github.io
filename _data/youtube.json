@@ -1,366 +1,236 @@
 {
   "videos": [
     {
-      "title": "2026 in LLMs — Simon Willison, Datasette",
-      "url": "https://www.youtube.com/watch?v=9RKrSF9d2SE",
-      "videoId": "9RKrSF9d2SE",
+      "title": "How to build an agent that builds the culture — Zach Bruggeman, Ramp",
+      "url": "https://www.youtube.com/watch?v=MDI81OaZAD4",
+      "videoId": "MDI81OaZAD4",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Delivered as a brilliant, deadpan speculative keynote from late 2026, Simon Willison maps out the near future of agentic AI across three major inflection points—from autonomous brute-force problem solvers to AI-designed games. His core payoff reveals the developer's ultimate paradox: AI doesn't replace software engineers or make work easier, but by automating routine tasks in seconds, it forces us to tackle far more complex, ambitious problems at breakneck speed. Though framed through a playful sci-fi lens featuring fictional future models, this talk offers an indispensable reality check on where agentic technology is genuinely headed.",
-      "dateAdded": "2026-11-18T03:13:22.348Z",
+      "summary": "At fintech giant Ramp, an astonishing 75% of all production code is now written and shipped by their collaborative AI agent, Inspect—achieved without a single top-down mandate. This talk dismantles the prevailing hype around isolated 'lone wolf' developers, revealing the battle-tested playbook for embedding multiplayer AI directly into team workflows to eliminate information silos and build institutional trust. If you want a concrete, behind-the-scenes look at how engineering organizations will actually build and ship software in the agentic era, this masterclass is an indispensable watch.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
       "timestamps": [
         {
-          "startTime": 475,
-          "endTime": 630,
-          "topic": "The 'Fable-class' model shift and brute-force real-world problem solving"
+          "startTime": 187,
+          "endTime": 260,
+          "topic": "Lesson 1: Eliminating information silos through a shared agent baseline"
         },
         {
-          "startTime": 935,
-          "endTime": 1025,
-          "topic": "Testing whether autonomous AI can understand 'fun' and design games"
+          "startTime": 378,
+          "endTime": 430,
+          "topic": "Lesson 2: Cultivating trust via transparent, living work artifacts"
         },
         {
-          "startTime": 1055,
-          "endTime": 1125,
-          "topic": "The engineering paradox: why AI makes software development harder, not easier"
+          "startTime": 619,
+          "endTime": 705,
+          "topic": "Lesson 3: Rejecting the 'lone wolf' myth to think bigger together"
         }
       ]
     },
     {
-      "title": "New Ways of Working with Codex — Dominik Kundel & Charlie Guo, OpenAI",
-      "url": "https://www.youtube.com/watch?v=IPh9YsWvDQk",
-      "videoId": "IPh9YsWvDQk",
+      "title": "Engineer Your Coding Agents Like Any Other System — Zach Lloyd, Warp",
+      "url": "https://www.youtube.com/watch?v=0LeT996Hz3E",
+      "videoId": "0LeT996Hz3E",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "Imagine stepping into the near future where you stop micromanaging code and instead orchestrate a fleet of autonomous background agents using your voice like Tony Stark. Presented as a visionary dispatch framed from the year 2026, OpenAI developers showcase a radical leap in developer workflow—replacing tedious prompt engineering with self-configuring multi-repo cloud VMs, live interactive UI prototyping, and multi-agent delegation. It is an indispensable blueprint for anyone wanting to see the cutting edge of AI-native software engineering and harness long-running autonomous workflows today.",
-      "dateAdded": "2026-11-18T03:13:22.348Z",
+      "summary": "Prompting AI coding agents manually from your terminal is already obsolete—the real future of software engineering lies in autonomous, code-defined 'software factories.' In this visionary talk, Warp CEO Zach Lloyd reveals how treating agents as core engineering primitives allows entire systems to continuously measure performance and even submit pull requests to patch their own workflows. If you want to future-proof your engineering career and discover how modern software will actually be built at scale, this talk is an essential blueprint.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
       "timestamps": [
         {
-          "startTime": 1350,
-          "endTime": 1590,
-          "topic": "Rapid UI iteration and live interactive prototyping"
+          "startTime": 218,
+          "endTime": 345,
+          "topic": "Defining the Software Factory: Moving Beyond Local Coding Agents"
         },
         {
-          "startTime": 1820,
-          "endTime": 2030,
-          "topic": "Autonomous multi-repo cloud development environments"
+          "startTime": 488,
+          "endTime": 640,
+          "topic": "The 6-Layer Architecture Stack for Engineering Agentic Systems"
         },
         {
-          "startTime": 2715,
-          "endTime": 2910,
-          "topic": "Using voice mode as an agentic control plane across apps"
+          "startTime": 900,
+          "endTime": 1030,
+          "topic": "Autonomous Self-Improvement: How Agents Submit PRs to Fix Their Own Factory"
         }
       ]
     },
     {
-      "title": "Let's Open Source the World — Brandon Thomas, ArtCraft",
-      "url": "https://www.youtube.com/watch?v=UCL4K36SHp0",
-      "videoId": "UCL4K36SHp0",
+      "title": "The Sweet Side of the Bitter Lesson — Thariq Shihipar, Independent",
+      "url": "https://www.youtube.com/watch?v=xRJMiaUoD_8",
+      "videoId": "xRJMiaUoD_8",
       "channel": "AI Engineer",
       "category": "Tech & Engineering",
-      "summary": "What if autonomous AI agents could rebuild bloated, multi-billion-dollar software monopolies like Photoshop and Figma practically overnight? In this audacious presentation framed as a dispatch from the future (dated November 2026), Brandon Thomas reveals how autonomous code generation and Rust could dismantle closed SaaS ecosystems—though viewers must maintain healthy skepticism, as his sensational claims of overnight full-suite clones and millions of daily users serve as a speculative thought experiment rather than current reality. It is a must-watch blueprint for anyone seeking to understand how agentic factories could soon disrupt proprietary software and return digital ownership to creators.",
-      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "summary": "Mindless 'vibe coding' quickly turns into a frustrating trap where AI makes arbitrary architecture decisions and developers lose creative ownership of their own software. Former Anthropic engineer Tarek reveals that instead of surrendering to automated generation, the key to building high-craft software is creating human-centric abstraction layers that keep you firmly in control. If you want to avoid generating disposable AI slop and instead build enduring, high-quality projects, this talk offers the exact mental model and architecture you need.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
       "timestamps": [
         {
-          "startTime": 270,
-          "endTime": 405,
-          "topic": "The 'enshittification' trap: How open protocols were replaced by extractive corporate platforms"
+          "startTime": 350,
+          "endTime": 500,
+          "topic": "The Jagged Frontier vs. Smooth Interior of AI capabilities"
         },
         {
-          "startTime": 555,
-          "endTime": 670,
-          "topic": "Agentic reverse-engineering: Rebuilding Photoshop and desktop creative suites with AI"
+          "startTime": 640,
+          "endTime": 770,
+          "topic": "The hidden productivity trap of passive 'vibe coding'"
         },
         {
-          "startTime": 1050,
-          "endTime": 1135,
-          "topic": "Autonomous software factories: Where AI agents excel versus where human design is required"
+          "startTime": 780,
+          "endTime": 1000,
+          "topic": "Dual-layer code architecture: Retaining mastery through human-readable specs"
         }
       ]
     },
     {
-      "title": "If You Have a Job, Start Selling Your Skills ASAP",
-      "url": "https://www.youtube.com/watch?v=L9GHmwO4-uw",
-      "videoId": "L9GHmwO4-uw",
-      "channel": "Ali Abdaal",
-      "category": "Productivity",
-      "summary": "No matter how talented you are, your salary will always hit a hard ceiling if you only focus on doing the work rather than learning how to win it. This video reveals the counterintuitive reality that clients never pay for technical skills—only the specific problems those skills solve—and breaks down the exact framework to multiply your earning power without dancing on social media or quitting your day job. Watch this to avoid the devastating trap of spending months creating courses or apps before climbing the proven 'leverage ladder.'",
-      "dateAdded": "2026-11-18T03:13:22.348Z",
-      "timestamps": [
-        {
-          "startTime": 35,
-          "endTime": 180,
-          "topic": "The Salary Ceiling: Why winning work pays dramatically more than doing it"
-        },
-        {
-          "startTime": 368,
-          "endTime": 492,
-          "topic": "The Value Shift: Why nobody pays for skills, only solved problems"
-        },
-        {
-          "startTime": 975,
-          "endTime": 1145,
-          "topic": "The Leverage Ladder: Scaling your service and avoiding the passive income trap"
-        }
-      ]
-    },
-    {
-      "title": "Building with Gemini in Google Antigravity",
-      "url": "https://www.youtube.com/watch?v=vLAegkGGWrM",
-      "videoId": "vLAegkGGWrM",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "What if advanced AI could build entire animated films without any media files, write 3D ray-tracing engines from scratch, and modernize decades of legacy code in seconds? This showcase demonstrates experimental prototypes powered by Google Antigravity and Gemini, revealing how autonomous coding can replace heavy production pipelines with pure algorithmic generation. Watch this quick reel to see firsthand how AI-driven engineering is redefining software creation from first principles.",
-      "dateAdded": "2026-11-18T03:13:22.348Z",
-      "timestamps": [
-        {
-          "startTime": 4,
-          "endTime": 24,
-          "topic": "Generating fully animated films and custom scores entirely through browser-based code"
-        },
-        {
-          "startTime": 24,
-          "endTime": 41,
-          "topic": "Synthesizing a complete 3D ray-tracing engine using 5,000 lines of pure Python"
-        },
-        {
-          "startTime": 41,
-          "endTime": 52,
-          "topic": "Autonomously refactoring legacy 1980s Fortran research into memory-safe Rust"
-        }
-      ]
-    },
-    {
-      "title": "Accelerate shipping to scale with Google Antigravity",
-      "url": "https://www.youtube.com/watch?v=rsOiZE19RVo",
-      "videoId": "rsOiZE19RVo",
-      "channel": "Google for Developers",
-      "category": "Tech & Engineering",
-      "summary": "What if an engineer could build and deploy three complete software features before their kids even wake up on a Saturday morning? Watch a 25-year tech veteran break down how autonomous AI agents have shattered the legacy benchmark of writing just 36 lines of code a day, empowering teams to ship thousands of fully tested, production-ready lines in hours. If you want a clear, tangible look at how modern AI workflows are transforming developers into high-level architects, this case study is an essential watch.",
-      "dateAdded": "2026-11-18T03:13:22.348Z",
-      "timestamps": [
-        {
-          "startTime": 56,
-          "endTime": 92,
-          "topic": "How autonomous AI agents build, test, and submit pull requests"
-        },
-        {
-          "startTime": 92,
-          "endTime": 123,
-          "topic": "The 36-line myth: shipping thousands of production-ready lines a day"
-        },
-        {
-          "startTime": 123,
-          "endTime": 152,
-          "topic": "Elevating junior engineers from boilerplate coders to system architects"
-        }
-      ]
-    },
-    {
-      "title": "Risiko salah pilih MRTT",
-      "url": "https://www.youtube.com/shorts/Po6ts-vSK9c",
-      "videoId": "Po6ts-vSK9c",
+      "title": "Flat rate personal loan dimansuhkan?",
+      "url": "https://www.youtube.com/shorts/PtN1IvkaDS0",
+      "videoId": "PtN1IvkaDS0",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Think taking a bare-minimum five-year MRTT on a 35-year mortgage saves you money? If tragedy strikes, underinsured mortgage takaful can leave your grieving family facing eviction and home auction to cover hundreds of thousands in unpaid loan balances. Watch this essential reality check to uncover why skimping on coverage just to shave off bank interest rates is a dangerous trap—and how to truly safeguard your family's home.",
-      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "summary": "Think that 5% personal loan offer is a bargain? Because of traditional 'flat-rate' calculation methods, that advertised 5% rate actually costs you an effective interest rate of over 9%—nearly double what banks show upfront. Watch this video to see the hidden math draining your monthly cash flow and discover how Bank Negara's upcoming policy overhaul will finally change the game for borrowers.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
       "timestamps": [
         {
-          "startTime": 10,
-          "endTime": 70,
-          "topic": "The danger of taking short MRTT coverage on a long-term loan"
+          "startTime": 11,
+          "endTime": 45,
+          "topic": "The hidden reality behind advertised 5% loan interest rates"
         },
         {
-          "startTime": 70,
-          "endTime": 108,
-          "topic": "The bank rate trap: cutting insurance tenure just for a discount"
+          "startTime": 59,
+          "endTime": 124,
+          "topic": "How flat-rate loan calculations inflate your effective interest to over 9%"
         },
         {
-          "startTime": 108,
-          "endTime": 157,
-          "topic": "Protecting your family: why coverage must match your loan term"
+          "startTime": 138,
+          "endTime": 174,
+          "topic": "How to properly compare loans and Bank Negara's upcoming regulatory shift"
         }
       ]
     },
     {
-      "title": "Inisiatif belia & gig worker [Part 1]",
-      "url": "https://www.youtube.com/shorts/6iufPuH_lec",
-      "videoId": "6iufPuH_lec",
+      "title": "Perlu ke emergency fund?",
+      "url": "https://www.youtube.com/shorts/RpEgx6PI_H4",
+      "videoId": "RpEgx6PI_H4",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Buying your first home often comes with crippling hidden closing fees, but you could legally save over RM11,000 in upfront cash right at the signing table through government stamp duty exemptions. This clear, no-nonsense breakdown walks step-by-step through the math behind loan agreement and Memorandum of Transfer (MOT) waivers for homes up to RM500,000. If you are a young buyer or gig worker planning to step onto the property ladder, this video ensures you avoid leaving thousands of ringgit on the table.",
-      "dateAdded": "2026-11-17T04:17:03.643Z",
+      "summary": "Earning RM10,000 or more means nothing if an unexpected job loss leaves you in immediate panic within weeks. This video delivers a vital reality check on why building a 6-to-12-month emergency fund in safe, liquid vehicles like ASB is the ultimate financial life jacket. Watch this to understand how securing your safety net beforehand buys you total peace of mind and breathing room to rebuild when a crisis hits.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
       "timestamps": [
         {
-          "startTime": 14,
-          "endTime": 49,
-          "topic": "Stamp duty exemption rules for properties under RM500k and RM750k"
+          "startTime": 15,
+          "endTime": 48,
+          "topic": "Where to park your emergency fund for instant liquidity and stable returns"
         },
         {
           "startTime": 49,
-          "endTime": 107,
-          "topic": "Step-by-step calculation showing RM11,250 in total upfront savings"
+          "endTime": 82,
+          "topic": "The difference between crisis-driven panic and calm financial resilience"
+        },
+        {
+          "startTime": 82,
+          "endTime": 130,
+          "topic": "The high-income paycheck-to-paycheck trap and the duty of tying your camel first"
+        }
+      ]
+    },
+    {
+      "title": "Bayar zakat untuk dipuji?",
+      "url": "https://www.youtube.com/shorts/0u7uH0QM2qs",
+      "videoId": "0u7uH0QM2qs",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Is flaunting multi-million ringgit zakat payments an inspiring act of dakwah, or just thinly veiled riya' feeding an oversized ego? This eye-opening discussion exposes the dangerously thin line between encouraging others to give and demanding red carpets, mock checks, and royal recognition for fulfilling a basic Islamic obligation. Watch this to learn why treating your charitable dues like an investment for worldly prestige completely corrupts the spirit of giving.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
+      "timestamps": [
+        {
+          "startTime": 12,
+          "endTime": 44,
+          "topic": "Publicizing zakat payments and the unique tax rebate dynamics in Malaysia"
+        },
+        {
+          "startTime": 44,
+          "endTime": 65,
+          "topic": "The razor-thin line between inspiring charity (dakwah) and showing off (riya')"
+        },
+        {
+          "startTime": 66,
+          "endTime": 102,
+          "topic": "When giving turns toxic: Demanding stage ceremonies, mock checks, and worldly ROI"
+        }
+      ]
+    },
+    {
+      "title": "Berhutang untuk pergi haji?",
+      "url": "https://www.youtube.com/shorts/jPZQTvBaZv0",
+      "videoId": "jPZQTvBaZv0",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Think having debt automatically bars you from performing Hajj, or that taking a loan to go is forbidden? This eye-opening discussion reveals the crucial Islamic distinction between modern structured bank financing and immediate debt, showing how having manageable repayments can actually make your pilgrimage obligatory. Watch this to avoid the dangerous financial blunder with personal debts that could jeopardize your Hajj Mabrur.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
+      "timestamps": [
+        {
+          "startTime": 21,
+          "endTime": 71,
+          "topic": "Understanding modern structured debt versus immediate debt for Hajj"
+        },
+        {
+          "startTime": 71,
+          "endTime": 95,
+          "topic": "Why manageable financial capability can make Hajj obligatory"
+        },
+        {
+          "startTime": 95,
+          "endTime": 138,
+          "topic": "How unpaid personal debts to individuals can ruin your Hajj Mabrur"
+        }
+      ]
+    },
+    {
+      "title": "Siapa yang layak pergi haji?",
+      "url": "https://www.youtube.com/shorts/F8ltFjouXLg",
+      "videoId": "F8ltFjouXLg",
+      "channel": "Financial Faiz Podcast",
+      "category": "Finance",
+      "summary": "Did you know that categorizing pilgrims as 'B40' fundamentally contradicts the core Islamic requirement of istita'ah (financial capability)? This eye-opening discussion exposes why heavily subsidizing hajj for those without means is religiously paradoxical—analogous to a zakat recipient attempting to pay zakat. Watch this clip to understand the critical religious and economic shift forcing Tabung Haji toward actual-cost quotas and what it means for your pilgrimage timeline.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
+      "timestamps": [
+        {
+          "startTime": 32,
+          "endTime": 66,
+          "topic": "Why 'B40 Hajj Pilgrim' is a flawed religious concept"
+        },
+        {
+          "startTime": 67,
+          "endTime": 106,
+          "topic": "How Tabung Haji screens applicants and phases out subsidies"
         },
         {
           "startTime": 107,
-          "endTime": 125,
-          "topic": "Upfront cost relief purpose and qualifying eligibility dates"
+          "endTime": 140,
+          "topic": "The RCI recommendation and pushing pilgrims toward full actual cost"
         }
       ]
     },
     {
-      "title": "[S02:E06] Sanggup BERHUTANG untuk pergi Haji ? - Dr. Hadi",
-      "url": "https://www.youtube.com/watch?v=5mbpMRVjl9s",
-      "videoId": "5mbpMRVjl9s",
-      "channel": "Financial Faiz Podcast",
-      "category": "Finance",
-      "summary": "If you think taking out loans or relying on government subsidies to perform Hajj makes you pious, this masterclass on Islamic finance and spiritual priorities will completely dismantle your assumptions. Certified Shariah advisor Dr. Muhammad Hadi breaks down the uncomfortable truth about why delaying debt repayments to fund travel or Umrah is a grave injustice, and why true 'istita'ah' (capability) means achieving financial self-sufficiency rather than chasing religious status symbols. Watching this will permanently change how you manage your money, settle your debts, and approach the fifth pillar of Islam.",
-      "dateAdded": "2026-11-18T03:13:22.348Z",
-      "timestamps": [
-        {
-          "startTime": 1425,
-          "endTime": 1615,
-          "topic": "Why Islam actively encourages building wealth and financial independence"
-        },
-        {
-          "startTime": 2615,
-          "endTime": 2775,
-          "topic": "The severe spiritual dangers of funding pilgrimages or leisure while ignoring unpaid debts"
-        },
-        {
-          "startTime": 5090,
-          "endTime": 5250,
-          "topic": "Debunking the 'B40 Pilgrim' paradox and redefining genuine capability (Istita'ah)"
-        }
-      ]
-    },
-    {
-      "title": "#119 | How To Build Trust (Gavin Liew, The Makeover Guys)",
-      "url": "https://www.youtube.com/watch?v=i-oA9axU4zI",
-      "videoId": "i-oA9axU4zI",
+      "title": "#120 | Replace People or Develop Them? (Leon Jala)",
+      "url": "https://www.youtube.com/watch?v=e9-gkQaR6rk",
+      "videoId": "e9-gkQaR6rk",
       "channel": "The Game Of Impossible",
       "category": "General Ideas",
-      "summary": "What if the secret to dominating a cutthroat, low-trust service industry isn't offering bespoke customization, but productizing your business like a scalable restaurant menu? In this masterclass interview, The Makeover Guys co-founder Gavin Liu reveals how he escaped the soul-crushing cycle of unpaid pitching and built an interior renovation empire by applying the radical transparency of e-commerce. Whether you are struggling to scale a service business or navigating the growing pains of leading a team past 100 people, this episode delivers an actionable, no-fluff playbook you cannot afford to miss.",
-      "dateAdded": "2026-11-18T03:13:22.349Z",
+      "summary": "The real danger of the AI revolution isn't mass unemployment—it's that organizations will use breakthrough technology to produce faster task-executors rather than more capable decision-makers. This video delivers a powerful blueprint for shifting from mindless task completion to high-value problem-solving, showing how to unlock true human agency rather than just cutting costs. If you want to future-proof your career or lead a team that genuinely thrives alongside AI instead of fearing it, this talk is an essential watch.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
       "timestamps": [
         {
-          "startTime": 905,
-          "endTime": 1025,
-          "topic": "Escaping the endless pitch cycle by turning custom services into a standardized menu"
+          "startTime": 605,
+          "endTime": 688,
+          "topic": "The Two Futures of AI: Efficient Executors vs. Capable Decision-Makers"
         },
         {
-          "startTime": 1145,
-          "endTime": 1335,
-          "topic": "Overcoming the renovation 'trust deficit' using e-commerce transparency models"
+          "startTime": 690,
+          "endTime": 798,
+          "topic": "Diminishers vs. Multipliers: How Leaders Decide Whether AI Replaces or Elevates People"
         },
         {
-          "startTime": 1890,
-          "endTime": 2055,
-          "topic": "Scaling past 100 people: The hidden danger of 'rabbits' vs. 'hyenas' in your company"
-        }
-      ]
-    },
-    {
-      "title": "#118 | Building A Global Snack and Wellness Platfrom (Pierre Pang, Mamee CEO)",
-      "url": "https://www.youtube.com/watch?v=RnbaL_XQ3ss",
-      "videoId": "RnbaL_XQ3ss",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "Most third-generation family businesses crumble under entitlement, but Mamee CEO Pierre Pang doubled revenue to RM1.5 billion by doing the unthinkable: actively funding startups designed to disrupt his own iconic brand. In this candid masterclass, he breaks down the exact 'IDEA' operating blueprint that slashed product launch cycles from 12 months to 12 weeks and turned self-aware authenticity into an unbeatable marketing moat. If you want a proven, zero-fluff playbook on scaling legacy businesses against ruthless global competitors, this conversation is an absolute must-watch.",
-      "dateAdded": "2026-11-18T03:13:22.349Z",
-      "timestamps": [
-        {
-          "startTime": 1750,
-          "endTime": 1875,
-          "topic": "How embracing the 'nepo baby' label created an authentic, high-impact marketing hook"
-        },
-        {
-          "startTime": 2140,
-          "endTime": 2315,
-          "topic": "Compressing product launch cycles from 12 months to 12 weeks using AI and TikTok"
-        },
-        {
-          "startTime": 2900,
-          "endTime": 3100,
-          "topic": "Why legacy companies must actively fund and co-own the startups trying to disrupt them"
-        }
-      ]
-    },
-    {
-      "title": "#117 | Can Malaysia Afford AI? (Leon Jala)",
-      "url": "https://www.youtube.com/watch?v=_SDAgAtx0j4",
-      "videoId": "_SDAgAtx0j4",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "While Malaysia rushes to approve billions in data center investments, their insatiable power hunger could consume nearly a third of the nation's electricity—unless we flip the crisis into our greatest economic advantage. Discover how the counter-intuitive Jevons Paradox threatens the power grid, and how frameworks like CRESS can compel Big Tech hyperscalers to bankroll Malaysia's clean energy transition. Watch this masterclass to see how nations can turn the AI boom from an existential resource drain into a self-sustaining infrastructure flywheel.",
-      "dateAdded": "2026-11-12T02:36:29.058Z",
-      "timestamps": [
-        {
-          "startTime": 100,
-          "endTime": 195,
-          "topic": "The Jevons Paradox: Why hyper-efficient AI will actually spike aggregate energy demand"
-        },
-        {
-          "startTime": 400,
-          "endTime": 495,
-          "topic": "Decoding CRESS: How corporate renewable supply contracts shift power costs to Big Tech"
-        },
-        {
-          "startTime": 675,
-          "endTime": 795,
-          "topic": "Building the flywheel: Turning AI power needs into decades of national energy infrastructure"
-        }
-      ]
-    },
-    {
-      "title": "When “Religious” People Become The Oppressors | Signs of the Hour Ep. 26 | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/watch?v=-OTWx3px85I",
-      "videoId": "-OTWx3px85I",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "The greatest danger to your faith isn't obvious evil—it is corruption cloaked in extreme religious devotion. In this piercing breakdown of Prophetic warnings, Dr. Omar Suleiman reveals how two mirrored extremes manipulate sacred texts to destroy the community: violent fanatics who slaughter in the name of 'justice' and subservient scholars who legitimize tyrants in the name of 'stability.' Watching this will completely reframe how you recognize spiritual manipulation, equipping you to see through false piety and anchor yourself in authentic faith during turbulent times.",
-      "dateAdded": "2026-11-18T03:13:22.349Z",
-      "timestamps": [
-        {
-          "startTime": 425,
-          "endTime": 535,
-          "topic": "The Prototype of Extremism: Intense Piety Divorced from True Faith"
-        },
-        {
-          "startTime": 830,
+          "startTime": 801,
           "endTime": 925,
-          "topic": "When Dogma Turns Deadly: The Cautionary Murder of Abdullah ibn Khabbab"
-        },
-        {
-          "startTime": 995,
-          "endTime": 1115,
-          "topic": "Two Sides of One Coin: Fanatical Vigilantes vs. Scholars Sanctifying Oppression"
-        }
-      ]
-    },
-    {
-      "title": "Is There Any Good In Sinning? | Dr. Omar Suleiman",
-      "url": "https://www.youtube.com/shorts/P3LVhUKq9GE",
-      "videoId": "P3LVhUKq9GE",
-      "channel": "Yaqeen Institute",
-      "category": "Islamic Studies",
-      "summary": "Your past sins and mistakes aren't just personal failures—they can actually be your greatest asset for cultivating true humility and empathy. When you remember your own vulnerability, you break free from spiritual arrogance and gain the ability to relate to struggling people without ever looking down on them. Watch this powerful reminder to discover how acknowledging your own past allows you to become a compassionate bridge back to mercy for others.",
-      "dateAdded": "2026-11-17T04:17:03.643Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 13,
-          "topic": "How personal mistakes keep you humble and spiritually vigilant"
-        },
-        {
-          "startTime": 13,
-          "endTime": 28,
-          "topic": "Avoiding arrogance by remembering where you once stood"
-        },
-        {
-          "startTime": 28,
-          "endTime": 43,
-          "topic": "Becoming a vehicle of empathy and mercy rather than judgment"
+          "topic": "The Action Plan: How Employees and Leaders Must Redesign Work Around Outcomes"
         }
       ]
     },
@@ -389,7 +259,137 @@
           "topic": "Overcoming imposter syndrome and taking radical accountability with your family"
         }
       ]
+    },
+    {
+      "title": "I'm 48, Things I Wish I Would Have Told My Younger Self",
+      "url": "https://www.youtube.com/watch?v=SM3tFqhItXs",
+      "videoId": "SM3tFqhItXs",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "Most men mistakenly believe their prime happens in their twenties, but true personal, financial, and spiritual maturity only ripens as you approach your forties. This video delivers an actionable blueprint for navigating your thirties—combining the physical humility of combat sports, the focus of mastering a high-value skill, and the grounding anchor of memorizing the Quran. If you want to stop drifting, treat wealth as fuel for purpose rather than a trap, and step into resilient leadership for your family, this is mandatory viewing.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
+      "timestamps": [
+        {
+          "startTime": 100,
+          "endTime": 185,
+          "topic": "Why your prime is at 40 and the necessity of mastering one skill"
+        },
+        {
+          "startTime": 235,
+          "endTime": 325,
+          "topic": "Cultivating household leadership and humility by memorizing the Quran"
+        },
+        {
+          "startTime": 525,
+          "endTime": 595,
+          "topic": "Understanding market value and keeping money in your hand, not your heart"
+        }
+      ]
+    },
+    {
+      "title": "Software factories and code reviews with Harjot Gill",
+      "url": "https://www.youtube.com/watch?v=4Cjb7691GJ8",
+      "videoId": "4Cjb7691GJ8",
+      "channel": "The Pragmatic Engineer",
+      "category": "Tech & Engineering",
+      "summary": "What happens when a startup CEO merges 5,000 pull requests a month and runs an engineering team where agents write nearly all the code? CodeRabbit CEO Harjit Gill reveals the blueprint for the hyper-fast 'software factory' era, breaking down why traditional human code review is obsolete and how engineers lose their 'driver's license' to deploy if their AI code causes regressions. Whether you view his $250,000-a-month personal token spend and 3 a.m. agent-wrangling routine as an exhilarating preview of the future or an unsustainable extreme, this debate offers an indispensable look at the bleeding edge of AI development.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
+      "timestamps": [
+        {
+          "startTime": 1650,
+          "endTime": 1910,
+          "topic": "Why human PR review is obsolete and the 'driver's license' policy for shipping AI code"
+        },
+        {
+          "startTime": 3160,
+          "endTime": 3440,
+          "topic": "The economics of software factories and the controversial shift from developer salaries to token spend"
+        },
+        {
+          "startTime": 4125,
+          "endTime": 4330,
+          "topic": "Why the best AI-era engineers operate like Factorio and Civilization players"
+        }
+      ]
+    },
+    {
+      "title": "Platform Architect: What Engineers Need to Know About Kubernetes",
+      "url": "https://www.youtube.com/watch?v=J0zpb_mFGsc",
+      "videoId": "J0zpb_mFGsc",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "The convenience of standardizing on an engineering 'golden path' carries a silent, productivity-killing trap: excessive guardrails inevitably turn your paved road into an inflexible golden cage. In this conversation, Cloud Native Architect Thomas Schütz reveals the foundational mindset required to survive modern infrastructure, arguing that true cloud-native maturity requires locking humans out of Kubernetes API access entirely through ruthless automation. If you want to understand how developer experience is rapidly shifting toward autonomous AI agent workloads and what it takes to future-proof your engineering career, this masterclass is essential viewing.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
+      "timestamps": [
+        {
+          "startTime": 320,
+          "endTime": 405,
+          "topic": "The Cloud Native First Principle: Automate Everything and Eliminate Direct API Access"
+        },
+        {
+          "startTime": 775,
+          "endTime": 885,
+          "topic": "Demystifying Kubernetes: Why It's an Abstraction Layer, Not Rocket Science"
+        },
+        {
+          "startTime": 1225,
+          "endTime": 1315,
+          "topic": "The Golden Cage Dilemma: Balancing Platform Standards with Developer Freedom"
+        }
+      ]
+    },
+    {
+      "title": "The 3-tier model setup that cuts your AI costs",
+      "url": "https://www.youtube.com/shorts/h2yjwbyep3k",
+      "videoId": "h2yjwbyep3k",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "Relying exclusively on top-tier models like Claude Opus can quietly rack up thousands of dollars a month in bloated token costs per developer. This video breaks down a battle-tested three-tier strategy that uses flagship models strictly for planning, offloading coding and reviews to cheaper models. Watch it to master the context-clearing trick that keeps your engineering output high while slashing your AI bill to a fraction of the cost.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 13,
+          "topic": "The runaway cost problem of relying solely on flagship AI models"
+        },
+        {
+          "startTime": 13,
+          "endTime": 46,
+          "topic": "The 3-tier model strategy: State-of-the-art for planning, smaller models for execution"
+        },
+        {
+          "startTime": 46,
+          "endTime": 68,
+          "topic": "Clearing context and using external artifacts to stop token waste"
+        }
+      ]
+    },
+    {
+      "title": "What coding agents need from engineers to be trusted",
+      "url": "https://www.youtube.com/shorts/scNxKbDUHkE",
+      "videoId": "scNxKbDUHkE",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "Stop wasting time scrutinizing AI-generated code line by line—the future belongs to those who judge agents purely by what they achieve and align them with what truly matters. In this sharp teaser, former bartender turned AI consultant Fausto Albers reveals how surviving catastrophic early chatbot experiments taught him the real mechanics of autonomous agents. Tune in to discover why current AI bottlenecks are disappearing at an exponential pace and how you should adapt right now.",
+      "dateAdded": "2026-11-21T02:56:18.757Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 9,
+          "topic": "Why evaluating code output matters more than line-by-line review"
+        },
+        {
+          "startTime": 10,
+          "endTime": 27,
+          "topic": "Lessons learned from building one of the earliest GenAI chatbots"
+        },
+        {
+          "startTime": 27,
+          "endTime": 46,
+          "topic": "Aligning adaptive AI agents for exponential problem solving"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-18T03:24:48.867Z"
+  "lastUpdated": "2026-11-21T03:05:27.787Z"
 }
