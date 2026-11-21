@@ -1,86 +1,69 @@
 {
-  "lastUpdated": "2026-11-20",
+  "lastUpdated": "2026-11-21",
   "papers": [
     {
-      "id": "hf:2611.17460",
-      "doi": "https://arxiv.org/abs/2611.17460",
-      "title": "Unfinished-Bench: Measuring Rule Violations by Persistent Agents in Realistic Work Environments",
-      "publicationDate": "2026-11-11",
+      "id": "hf:2611.26232",
+      "doi": "https://arxiv.org/abs/2611.26232",
+      "title": "Time Series Structure Learning with Local Causal Parent Discovery",
+      "publicationDate": "2026-11-18",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Seunghyun Lee et al.",
+      "leadAuthor": "Jacqueline Maasch et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "AI agents that keep working alone break hidden workplace rules, and nobody measured how often.",
-      "fix": "Persistence raised rule breaking from 32.2% to 43.6% for rules in documents, versus 8.5% for rules the user stated.",
-      "practicalUseCase": "A rule buried in a file is much weaker than a rule you say; state key limits in the prompt.",
-      "limitation": "The test used 97 made-up work scenarios, so real workplaces may differ.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.17460"
+      "problem": "Tools that find cause and effect in time series run slowly because they need heavy statistical tests.",
+      "fix": "ITPD finds causes one variable at a time, running 2.3, 9.1 and 40.9 times faster than rivals on 2000 nodes.",
+      "practicalUseCase": "If this holds, big time-series cause analysis becomes practical, so try a local-first method before running a full-graph search.",
+      "limitation": "The speed results come from simulated benchmarks, not real-world data.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.26232"
     },
     {
-      "id": "hf:2611.08136",
-      "doi": "https://arxiv.org/abs/2611.08136",
-      "title": "How Far Can Untrained Neural Networks Go in Anomaly Detection? From Tables to Pixels",
-      "publicationDate": "2026-11-08",
+      "id": "hf:2611.26239",
+      "doi": "https://arxiv.org/abs/2611.26239",
+      "title": "Teaching Vision-Language-Action Models to Stop Safely",
+      "publicationDate": "2026-11-18",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Hyojun Yi et al.",
+      "leadAuthor": "Zheyuan Liu et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Anomaly detection usually needs trained features, so nobody knew how well a model with no training does.",
-      "fix": "Fixed random features plus a simple distance score reached 86.4% mean AUROC on 47 tabular datasets, with no training.",
-      "practicalUseCase": "Try this cheap untrained baseline first; train a model only if it clearly beats it.",
-      "limitation": "It was tested on benchmark datasets only, not live production data.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.08136"
+      "problem": "Robots that refuse a task at the start can still finish it after a midway takeover, or drop held objects.",
+      "fix": "SAFI teaches robots to hold still on banned tasks, cutting banned-task success after takeover to 1.3% with no physical incidents.",
+      "practicalUseCase": "If this holds, safe stopping can be trained in, so test mid-task stops, not only refusals at the start.",
+      "limitation": "Tests covered only LIBERO simulation tasks with one model, and only tasks where holding still is a safe response.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.26239"
     },
     {
-      "id": "hf:2611.24844",
-      "doi": "https://arxiv.org/abs/2611.24844",
-      "title": "General progress substitutes for specific training data in language models",
+      "id": "hf:2611.25604",
+      "doi": "https://arxiv.org/abs/2611.25604",
+      "title": "PAD: Policy-Aware Data Valuation for Autonomous Driving",
+      "publicationDate": "2026-11-18",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Chengkai Xu et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Adding more driving demonstrations does not guarantee better self-driving, because the same data can help one planner and hurt another.",
+      "fix": "PAD scores each demonstration for one planner, and lifted DiffusionDrive scores by 3.5 points on NavTest and 5.0 on NavHard.",
+      "practicalUseCase": "If this holds, picking data per model beats piling on more data, so rank data against your own model.",
+      "limitation": "Results come from driving benchmarks, and the data rankings differ for each planner family.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.25604"
+    },
+    {
+      "id": "hf:2611.25200",
+      "doi": "https://arxiv.org/abs/2611.25200",
+      "title": "Squoosh Bench: Evaluating UX-1 on 318 Historical Website A/B Tests",
       "publicationDate": "2026-11-17",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Mark Marosi et al.",
+      "leadAuthor": "Rohith Pasula et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Developers withhold data to block risky skills in language models, but nobody knew how long that delay lasts.",
-      "fix": "General progress on other data replaces withheld data, so models relearn the skill from a small fraction of the data.",
-      "practicalUseCase": "Data filtering only delays a risky skill, so do not rely on it alone for safety.",
-      "limitation": "Tests used chess, Othello, molecular strings, bracket languages, web text, and one programming language on a 7-billion-parameter model.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.24844"
-    },
-    {
-      "id": "hf:2611.24059",
-      "doi": "https://arxiv.org/abs/2611.24059",
-      "title": "Replay, Don't Resample: Off-Policy Consolidation of Long-Horizon RL Experts",
-      "publicationDate": "2026-11-17",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Zhenrui Yue et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Merging many expert models into one is costly, because the student must sample every environment again.",
-      "fix": "Replaying expert training logs in order beat the standard merge method, using about one seventh of training compute.",
-      "practicalUseCase": "If you train several experts, keep their logs and replay them in order instead of resampling.",
-      "limitation": "It was tested on three domains only: reasoning, search, and SQL.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.24059"
-    },
-    {
-      "id": "https://openalex.org/W7204856806",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3063",
-      "title": "Islamic Social Financial Instruments and Sustainable Community Development: Evidence Synthesis on Community Resilience",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Abdallah Mambo Dallu",
-      "institution": "KCA University",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Research on zakat, waqf, and sadaqah is scattered, so it is unclear how they help communities cope with shocks.",
-      "fix": "Across 93 studies, zakat gives short-term relief, waqf builds long-term assets, and sadaqah gives flexible emergency help.",
-      "practicalUseCase": "Combined zakat, waqf, and sadaqah models work best, so plan giving programs as one system with strong governance.",
-      "limitation": "It reviews past studies, so its conclusions are only as strong as those studies.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3063"
+      "problem": "Teams must pick which website changes to test on live traffic, and live tests cost time and visitors.",
+      "fix": "UX-1, using simulated shoppers, called 267 of 318 past A/B tests right (84.0%), versus 61.6% for the best general model.",
+      "practicalUseCase": "If this holds, screen weak website ideas with simulated shoppers first, then spend live traffic on the promising ones.",
+      "limitation": "It checked only 318 past tests that ran over 21 days, and the authors treated tests as independent.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.25200"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -93,10 +76,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Sustainability sukuk are growing fast, but nobody had documented how they are issued or what drives issue size.",
-      "fix": "Across 11,944 sukuk issued from 2012 to 2022, equity-based contracts, social purposes, and government issuers produced larger issues.",
-      "practicalUseCase": "Costly second party opinions shrink issue size, so cutting that cost could help more issuers join.",
-      "limitation": "The data covers 2012 to 2022 only and shows links, not cause.",
+      "problem": "Nobody knew how sustainability sukuk issuance grew or what makes one issue bigger than another.",
+      "fix": "Across 11,944 sukuk issues, equity-based contracts and social purposes produced larger issues than sale-based contracts and green projects.",
+      "practicalUseCase": "If this holds, issuers get bigger issues by using equity-based contracts, while costly second party opinions shrink issue size.",
+      "limitation": "It shows links across countries, not cause, and the data ends in 2022.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -110,10 +93,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Nobody knew whether consumer interest in halal products moves the amount of Islamic financing banks provide.",
-      "fix": "Online halal search interest significantly raised total Islamic financing in 16 OIC countries, mainly through Murabaha and Ijarah contracts.",
-      "practicalUseCase": "Banks can read search trends to forecast demand, mostly for simple Murabaha and Ijarah products.",
-      "limitation": "It covers 16 countries from 2014 to 2023, and search volume only proxies awareness.",
+      "problem": "Banks and regulators lacked proof that rising public interest in halal products pulls Islamic financing up.",
+      "fix": "In 16 OIC countries, more halal online searches raised total Islamic financing, mostly via Murabaha and Ijarah.",
+      "practicalUseCase": "If this holds, search trends can signal rising financing demand, so lenders should push simple Murabaha and Ijarah products first.",
+      "limitation": "Online search volume is only a rough stand-in for halal awareness, and the effect on Mudarabah and Musharakah is weak.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.3350"
     },
     {
@@ -127,10 +110,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Somali small businesses lack clear evidence on which parts of Shari'ah-compliant banking actually improve their performance.",
-      "fix": "Affordability and ease of access drove business performance most, while awareness alone had little direct effect.",
-      "practicalUseCase": "Cheaper and easier Islamic banking helps small firms more than awareness campaigns, so banks should fix cost and process first.",
-      "limitation": "It surveyed business owners in one city, Baidoa, at one point in time.",
+      "problem": "It was unclear which parts of Shari'ah-compliant banking help small businesses most in fragile economies.",
+      "fix": "In a Baidoa SME survey, affordability and ease of access drove performance most, while awareness had little direct effect.",
+      "practicalUseCase": "If this holds, banks should cut cost and simplify service before spending on awareness campaigns.",
+      "limitation": "It is a one-time survey from a single Somali city, so it cannot prove cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.2644"
     },
     {
@@ -144,10 +127,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Waqf collections stay low, and it was unclear whether better waqf knowledge changes what Muslims actually give.",
-      "fix": "Among 642 Indonesian respondents, waqf literacy raised attitude, social norms, and control, which indirectly raised waqf intention.",
-      "practicalUseCase": "Teaching people about waqf can raise giving, so waqf bodies should invest in education.",
-      "limitation": "It measures intention from a survey in Indonesia, not actual donations.",
+      "problem": "Waqf collection stays low, and it was unclear whether teaching people about waqf changes their giving.",
+      "fix": "Among 642 Indonesian Muslims, waqf literacy raised attitude, social norms, control and past behaviour, which then raised waqf intention.",
+      "practicalUseCase": "If this holds, waqf groups should invest in teaching people how waqf works to raise collection.",
+      "limitation": "It measures intention to give among Indonesian respondents, not actual donations.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3267"
     }
   ]
