@@ -38,7 +38,7 @@ I relate to that. Make the most of what you have, with good intentions: use it t
 
 **Reflection:** In the grave we're questioned about what was in our control. Some things go beyond it, and inshaAllah we won't have to answer for those. So I focus on what's on my plate, stay grateful for what I have, and trust that Allah will give more. Imagine if paradise only let in a fixed number of people. It would turn into a leaderboard, and friendly competition wouldn't stay friendly for long. Perhaps that's the reason it has no such limit. The dunya, though, is a leaderboard, and we're told to race each other in doing good:
 
-> <p dir="rtl" lang="ar" style="font-size:1.3em">وَلِكُلٍّ وِجْهَةٌ هُوَ مُوَلِّيهَا ۖ فَٱسْتَبِقُوا۟ ٱلْخَيْرَٰتِ ۚ أَيْنَ مَا تَكُونُوا۟ يَأْتِ بِكُمُ ٱللَّهُ جَمِيعًا ۚ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ ١٤٨</p>
+> <p dir="rtl" lang="ar">وَلِكُلٍّ وِجْهَةٌ هُوَ مُوَلِّيهَا ۖ فَٱسْتَبِقُوا۟ ٱلْخَيْرَٰتِ ۚ أَيْنَ مَا تَكُونُوا۟ يَأْتِ بِكُمُ ٱللَّهُ جَمِيعًا ۚ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ ١٤٨</p>
 >
 > For each [religious following] is a [prayer] direction toward which it faces. So race to [all that is] good. Wherever you may be, Allāh will bring you forth [for judgement] all together. Indeed, Allāh is over all things competent. — [Quran 2:148](https://quran.com/2/148)
 
@@ -72,7 +72,7 @@ Honestly, both. Doing your job well is one thing, and being able to work with yo
 
 **Reflection:** Chase the akhirah, and the dunya will chase you.
 
-> <p dir="rtl" lang="ar" style="font-size:1.3em">مَنْ كَانَتِ الدُّنْيَا هَمَّهُ فَرَّقَ اللَّهُ عَلَيْهِ أَمْرَهُ وَجَعَلَ فَقْرَهُ بَيْنَ عَيْنَيْهِ وَلَمْ يَأْتِهِ مِنَ الدُّنْيَا إِلاَّ مَا كُتِبَ لَهُ وَمَنْ كَانَتِ الآخِرَةُ نِيَّتَهُ جَمَعَ اللَّهُ لَهُ أَمْرَهُ وَجَعَلَ غِنَاهُ فِي قَلْبِهِ وَأَتَتْهُ الدُّنْيَا وَهِيَ رَاغِمَةٌ</p>
+> <p dir="rtl" lang="ar">مَنْ كَانَتِ الدُّنْيَا هَمَّهُ فَرَّقَ اللَّهُ عَلَيْهِ أَمْرَهُ وَجَعَلَ فَقْرَهُ بَيْنَ عَيْنَيْهِ وَلَمْ يَأْتِهِ مِنَ الدُّنْيَا إِلاَّ مَا كُتِبَ لَهُ وَمَنْ كَانَتِ الآخِرَةُ نِيَّتَهُ جَمَعَ اللَّهُ لَهُ أَمْرَهُ وَجَعَلَ غِنَاهُ فِي قَلْبِهِ وَأَتَتْهُ الدُّنْيَا وَهِيَ رَاغِمَةٌ</p>
 >
 > "Whoever is focused only on this world, Allah will confound his affairs and make him fear poverty constantly, and he will not get anything of this world except that which has been decreed for him. Whoever is focused on the Hereafter, Allah will settle his affairs for him and make him feel content with his lot, and his provision and worldly gains will undoubtedly come to him." — the Prophet ﷺ, [Sunan Ibn Majah 4105](https://sunnah.com/ibnmajah:4105) (Sahih)
 

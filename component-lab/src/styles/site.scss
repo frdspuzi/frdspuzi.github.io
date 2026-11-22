@@ -1191,6 +1191,25 @@ html.rail-pref-hidden #rail-handle {
   vertical-align: middle;
 }
 
+// Quran and hadith Arabic in book notes (<p lang="ar">). Amiri Quran (OFL), self-hosted like Fira
+// Sans, Arabic subset only. Quran.com's own KFGQPC Uthmanic HAFS font forbids redistribution, so
+// it can't live in this public repo. The browser fetches this file only when Arabic text renders.
+@font-face {
+  font-family: 'Amiri Quran';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/assets/fonts/amiri-quran-arabic.woff2') format('woff2');
+  unicode-range: U+0600-06FF, U+0750-077F, U+0870-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC;
+}
+
+.article [lang="ar"] {
+  font-family: 'Amiri Quran', serif;
+  font-size: 1.35em;
+  color: var(--fg);
+  line-height: 2;
+}
+
 .article {
 
   h1,
