@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState, useSyncExternalStore, type ReactNode } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { motion, useReducedMotion } from "motion/react";
 import { marked } from "marked";
@@ -13,6 +13,39 @@ import { bookStatus, coverUrl, findBook, type Book } from "@/data/books";
 type Page = { key: string; head?: string; body: ReactNode };
 
 const FLIP = { duration: 0.7, ease: [0.645, 0.045, 0.355, 1] as const };
+const GAP = 48; // column gap of the text flow; one column = one page
+
+// No scrolling, like a book: the take and all insights are one CSS multi-column flow with a
+// fixed height, so the browser breaks it into page-sized columns (splitting paragraphs too).
+// Each page shows the same flow shifted to its own column.
+function Flow({ html, col, innerRef }: { html: { __html: string }; col: number; innerRef?: React.Ref<HTMLDivElement> }) {
+  return (
+    <div
+      ref={innerRef}
+      className="article"
+      style={{
+        position: "relative",
+        height: "100%",
+        columnCount: 1,
+        columnGap: GAP,
+        columnFill: "auto",
+        transform: `translateX(calc(${-col} * (100% + ${GAP}px)))`,
+      }}
+      dangerouslySetInnerHTML={html}
+    />
+  );
+}
+
+function flowMarkdown(book: Book) {
+  let md = `## My take\n\n${book.take}\n\n`;
+  let chapter: string | undefined;
+  for (const insight of book.insights) {
+    if (insight.chapter && insight.chapter !== chapter) md += `## ${insight.chapter}\n\n`;
+    chapter = insight.chapter;
+    md += `### ${insight.pages}\n\n${insight.body}\n\n`;
+  }
+  return md;
+}
 
 function useMedia(query: string) {
   return useSyncExternalStore(
@@ -27,7 +60,7 @@ function useMedia(query: string) {
 
 const html = (md: string) => ({ __html: marked.parse(md, { async: false }) as string });
 
-function buildPages(book: Book): Page[] {
+function buildPages(book: Book, flow: { __html: string }, heads: (string | undefined)[]): Page[] {
   return [
     {
       key: "title",
@@ -39,17 +72,7 @@ function buildPages(book: Book): Page[] {
         </div>
       ),
     },
-    { key: "take", head: "My take", body: <div className="article" dangerouslySetInnerHTML={html(book.take)} /> },
-    ...book.insights.map((insight, i) => ({
-      key: `insight-${i}`,
-      head: insight.chapter,
-      body: (
-        <>
-          <div className="text-bold mb-2" style={{ color: "var(--fg)" }}>{insight.pages}</div>
-          <div className="article" dangerouslySetInnerHTML={html(insight.body)} />
-        </>
-      ),
-    })),
+    ...heads.map((head, col) => ({ key: `flow-${col}`, head, body: <Flow html={flow} col={col} /> })),
   ];
 }
 
@@ -82,7 +105,7 @@ function Paper({ page, num, side }: { page?: Page; num?: number; side: "left" | 
           <div className="f6 text-gray text-uppercase mb-3" style={{ letterSpacing: "0.04em", minHeight: 18 }}>
             {page.head}
           </div>
-          <div style={{ flex: 1, overflowY: "auto", minHeight: 0 }}>{page.body}</div>
+          <div style={{ flex: 1, overflow: "hidden", minHeight: 0 }}>{page.body}</div>
           {num !== undefined && num > 0 && (
             <div className="f6 text-gray text-center mt-2">{num}</div>
           )}
@@ -133,7 +156,37 @@ export default function BookReader() {
   const desktop = useMedia("(min-width: 768px)");
   const fromShelf = (location.state as { fromShelf?: boolean } | null)?.fromShelf === true;
 
-  const pages = useMemo(() => (book ? buildPages(book) : []), [book]);
+  const flowHtml = useMemo(() => (book ? html(flowMarkdown(book)) : null), [book]);
+  // A hidden page-sized copy of the flow tells us how many columns (pages) it breaks into and
+  // which chapter each page is in. Re-measured on resize and once web fonts settle.
+  const measureRef = useRef<HTMLDivElement>(null);
+  const [heads, setHeads] = useState<(string | undefined)[]>([]);
+  useLayoutEffect(() => {
+    const flow = measureRef.current;
+    if (!flow) return;
+    const measure = () => {
+      const pitch = flow.clientWidth + GAP;
+      if (pitch <= GAP) return;
+      const box = flow.getBoundingClientRect();
+      const count = Math.max(1, Math.round((flow.scrollWidth + GAP) / pitch));
+      const marks = [...flow.querySelectorAll("h2")].map((h) => {
+        const r = h.getBoundingClientRect();
+        // A chapter that starts at the very top of a page heads that page; one starting lower
+        // down heads the pages after it, like a book's running head.
+        const top = r.top - box.top < 40;
+        return { from: Math.floor((r.left - box.left + 1) / pitch) + (top ? 0 : 1), text: h.textContent ?? "" };
+      });
+      const next = Array.from({ length: count }, (_, c) => (marks.filter((m) => m.from <= c).at(-1) ?? marks[0])?.text);
+      setHeads((prev) => (JSON.stringify(prev) === JSON.stringify(next) ? prev : next));
+    };
+    measure();
+    const ro = new ResizeObserver(measure);
+    ro.observe(flow);
+    document.fonts?.ready.then(measure);
+    return () => ro.disconnect();
+  }, [flowHtml, desktop]);
+
+  const pages = useMemo(() => (book && flowHtml ? buildPages(book, flowHtml, heads) : []), [book, flowHtml, heads]);
   const per = desktop ? 2 : 1;
   const views = useMemo(() => {
     const out: (Page | undefined)[][] = [];
@@ -144,6 +197,7 @@ export default function BookReader() {
   const [view, setView] = useState(0);
   const [flip, setFlip] = useState<Flip | null>(() => (fromShelf && !reduce ? { kind: "open" } : null));
   useEffect(() => setView(0), [per]);
+  useEffect(() => setView((v) => Math.min(v, Math.max(0, views.length - 1))), [views.length]);
 
   const close = useCallback(() => {
     if (fromShelf) navigate(-1);
@@ -342,6 +396,14 @@ export default function BookReader() {
           )}
         </motion.div>
         {leaf}
+        {flowHtml && (
+          <div
+            aria-hidden="true"
+            style={{ position: "absolute", top: 0, bottom: 0, left: 0, width: desktop ? "50%" : "100%", visibility: "hidden", pointerEvents: "none" }}
+          >
+            <Paper page={{ key: "measure", head: " ", body: <Flow html={flowHtml} col={0} innerRef={measureRef} /> }} num={1} side="single" />
+          </div>
+        )}
       </motion.div>
 
       <div className="d-flex flex-items-center mt-3" style={{ gap: 12 }} onClick={(e) => e.stopPropagation()}>

@@ -14,6 +14,8 @@ A book for understanding that everyone has a different starting line, and that y
 
 ### pp. 5–7
 
+*What's an unfair advantage you have that you've never counted as one?*
+
 My unfair advantages: I was born into a practising Muslim family, with parents and siblings much older than me, so I got to learn from what they'd already learnt. We're financially stable, and looking back, I was raised with love and care. I grew up overseas and went to an international school as a kid, around people of different nationalities, religions and ways of living. That shaped how I think. I also had computers and game consoles early and spent most of my time on them. That's what pulled me towards software engineering, which I now make a living from and try to use to help others through [carimakanhalal.com](https://carimakanhalal.com).
 
 What I have today is the result of what was done every day, years back. That includes things I had no control over, like which family I was born into.
@@ -22,47 +24,75 @@ The one I actually use is empathy. I've moved from place to place and school to 
 
 On carimakanhalal it cuts both ways. I feel for business owners, because certifying a premise is costly. I also feel for customers who can't tell whether a place is certified. I'm not a regulator, so I only map certified places and leave the rest out, hoping customers come to prefer them. What I can do is remove friction: JAKIM's database needs a search to tell you if a place is certified, so I put it on a map for people to explore.
 
+**Reflection:** Success is attributed to Allah, and then to gratitude for everyone I've crossed paths with. Each of them played a major or minor role in shaping who I am.
+
 ## Ch. 1 — Life is unfair
 
 ### pp. 13–14
 
 > "It's not about working harder. It's about working the system." — Evan Spiegel, quoted in the book
 
+*Is "working the system" being smart about where you push, or gaming rules other people play straight?*
+
 I relate to that. Make the most of what you have, with good intentions: use it to help others and to lift yourself up without putting anyone else down.
 
-**Reflection:** In the grave we're questioned about what was in our control. Some things go beyond it, and inshaAllah we won't have to answer for those. So I focus on what's on my plate, stay grateful for what I have, and trust that Allah will give more. Imagine if paradise only let in a fixed number of people. It would turn into a leaderboard, and friendly competition wouldn't stay friendly for long. Perhaps that's the reason it has no such limit. The dunya, though, is a leaderboard, and we're told to race each other in doing good ([Quran 2:148](https://quran.com/2/148)). Carimakanhalal is my way of doing that. It doesn't put uncertified places down, it entices them to get certified: make certified places more accessible, so more owners certify and more people choose halal food over non-halal.
+**Reflection:** In the grave we're questioned about what was in our control. Some things go beyond it, and inshaAllah we won't have to answer for those. So I focus on what's on my plate, stay grateful for what I have, and trust that Allah will give more. Imagine if paradise only let in a fixed number of people. It would turn into a leaderboard, and friendly competition wouldn't stay friendly for long. Perhaps that's the reason it has no such limit. The dunya, though, is a leaderboard, and we're told to race each other in doing good:
+
+> <p dir="rtl" lang="ar" style="font-size:1.3em">وَلِكُلٍّ وِجْهَةٌ هُوَ مُوَلِّيهَا ۖ فَٱسْتَبِقُوا۟ ٱلْخَيْرَٰتِ ۚ أَيْنَ مَا تَكُونُوا۟ يَأْتِ بِكُمُ ٱللَّهُ جَمِيعًا ۚ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ ١٤٨</p>
+>
+> For each [religious following] is a [prayer] direction toward which it faces. So race to [all that is] good. Wherever you may be, Allāh will bring you forth [for judgement] all together. Indeed, Allāh is over all things competent. — [Quran 2:148](https://quran.com/2/148)
+
+Carimakanhalal is my way of doing that. It doesn't put uncertified places down, it entices them to get certified: make certified places more accessible, so more owners certify and more people choose halal food over non-halal.
 
 ### pp. 16–18
+
+*Is success down to hard work, or to luck? And if a product flops, how do you tell qadar from a product you should have fixed?*
 
 Why not both? You can have a perfect product, and if it's your qadar to have no users, then that's that. Hard work doesn't cause success. It correlates with it, because it widens your surface area for opportunity to meet you. So we shouldn't call hard work the sole cause of our success, or of our failure.
 
 I haven't decided when I'd stop. I'm one month into carimakanhalal (November 2026) and only getting started. I built it because I needed it myself, so if nobody else uses it, I will. That's what got me started and what keeps me going. If it stayed at zero users, the running costs would make me think twice, but it's sadaqah jariah for me, so I might keep it going anyway.
 
+**Reflection:** Everything is from Allah and goes back to Allah.
+
 ## Ch. 2 — Our entrepreneurial journeys
 
 ### pp. 20–21
 
-Earning from something without knowing it was haram: it's okay, because you didn't know. If it happened to me, I'd consult a scholar. Still, what we earn and what we put in our mouths is our responsibility, and so is knowing whether it's halal or haram. We're not here to race for the most wealth by the time we die. What we need in our lives is barakah.
+*If you earned money from something you didn't know was haram, is that on you? How much checking do you owe on where your rezeki comes from?*
+
+It's okay, because you didn't know. If it happened to me, I'd consult a scholar. Still, what we earn and what we put in our mouths is our responsibility, and so is knowing whether it's halal or haram. We're not here to race for the most wealth by the time we die. What we need in our lives is barakah.
 
 If checking is easy, "I didn't know" stops being an excuse, and I hope carimakanhalal does that. I hope more solutions come up that make the "right" thing easier to do. I put "right" in quotes because people of other religions won't see eating only halal food as right. From a Muslim's point of view, though, there's now a way to check with less friction, so it's easier. Let's make halal-certified places the standard for Muslims.
 
 ### pp. 23–25
 
-Who keeps their job in a crash: the ones who perform, or the ones with relationships? Honestly, both. Doing your job well is one thing, and being able to work with your teammates matters just as much. You have to excel at both. Build those relationships with sincerity, not for job security. If people know you're sincere and can do the job, there's a high chance they'll keep you anyway.
+*When layoffs come, who keeps their job: the ones who perform, or the ones with relationships?*
 
-**Reflection:** Chase the akhirah, and the dunya will chase you. Whoever is focused on the Hereafter, Allah settles his affairs and his provision comes to him ([Sunan Ibn Majah 4105](https://sunnah.com/ibnmajah:4105)).
+Honestly, both. Doing your job well is one thing, and being able to work with your teammates matters just as much. You have to excel at both. Build those relationships with sincerity, not for job security. If people know you're sincere and can do the job, there's a high chance they'll keep you anyway.
+
+**Reflection:** Chase the akhirah, and the dunya will chase you.
+
+> <p dir="rtl" lang="ar" style="font-size:1.3em">مَنْ كَانَتِ الدُّنْيَا هَمَّهُ فَرَّقَ اللَّهُ عَلَيْهِ أَمْرَهُ وَجَعَلَ فَقْرَهُ بَيْنَ عَيْنَيْهِ وَلَمْ يَأْتِهِ مِنَ الدُّنْيَا إِلاَّ مَا كُتِبَ لَهُ وَمَنْ كَانَتِ الآخِرَةُ نِيَّتَهُ جَمَعَ اللَّهُ لَهُ أَمْرَهُ وَجَعَلَ غِنَاهُ فِي قَلْبِهِ وَأَتَتْهُ الدُّنْيَا وَهِيَ رَاغِمَةٌ</p>
+>
+> "Whoever is focused only on this world, Allah will confound his affairs and make him fear poverty constantly, and he will not get anything of this world except that which has been decreed for him. Whoever is focused on the Hereafter, Allah will settle his affairs for him and make him feel content with his lot, and his provision and worldly gains will undoubtedly come to him." — the Prophet ﷺ, [Sunan Ibn Majah 4105](https://sunnah.com/ibnmajah:4105) (Sahih)
 
 ### pp. 27–29
+
+*Would you leave a stable salary for your own venture? And is calling it sadaqah jariah ever a comfortable reason not to take the risk?*
 
 Sadaqah jariah doesn't pay the bills, and we should acknowledge that. If investors came along to cover wages and the upkeep of servers and APIs, that's always welcome. Turning carimakanhalal into a business, though? I'm not sure. I'd be enticed, but that was never why I started, so it depends. If I did, I could use it to build another useful app for people. One thing's for sure: I'm not actively looking for a way out.
 
 ### pp. 30–31
 
-Like Hasan, I walked away from a path leading to medicine. At 18, a few months into matriculation college and after two years of biology in high school, I knew it wasn't for me. I enrolled in Computer Engineering at UTP instead, which led to the role I have today. I'm blessed with understanding, flexible parents, and I'd like to think I never had to disappoint them. If I did, they did a good job covering it. They're okay with whatever I choose, as long as I don't trade my akhirah away for the dunya.
+*Has your path ever gone against what your family expected? And are you a natural entrepreneur, or one who has to learn it?*
 
-Natural or unnatural entrepreneur? I don't think I'm an entrepreneur at all. I like to create and build things. I made stop-motion videos for YouTube at 9 and Minecraft tutorials at 13. Selling it, I'm not so sure about, but I like sharing what I make with others. When I put carimakanhalal out there, I'm sharing it. If people want to buy into the idea, they can. If they don't, that's okay. It's still there.
+Like Hasan, one of the authors, I walked away from a path leading to medicine. At 18, a few months into matriculation college and after two years of biology in high school, I knew it wasn't for me. I enrolled in Computer Engineering at UTP instead, which led to the role I have today. I'm blessed with understanding, flexible parents, and I'd like to think I never had to disappoint them. If I did, they did a good job covering it. They're okay with whatever I choose, as long as I don't trade my akhirah away for the dunya.
+
+As for being an entrepreneur, I don't think I'm one at all. I like to create and build things. I made stop-motion videos for YouTube at 9 and Minecraft tutorials at 13. Selling it, I'm not so sure about, but I like sharing what I make with others. When I put carimakanhalal out there, I'm sharing it. If people want to buy into the idea, they can. If they don't, that's okay. It's still there.
 
 ### pp. 32–33
+
+*If selling isn't your strength, do you train it yourself or find a partner who has it?*
 
 I honestly don't mind doing the selling. I want to upskill myself, which is why I had no issue booking a meeting with a potential partner on my own. A co-founder would be good for the long run, but it's manageable for now. I can do it alone, and scared.
 
@@ -70,19 +100,25 @@ Selling doesn't come naturally to me, and if I had the choice, I wouldn't. But I
 
 ### pp. 34–35
 
+*What happens when everything you've built depends on one thing you don't control?*
+
 Carimakanhalal's single point of failure is JAKIM's database. That's why I'm also working on getting a meeting with JAKIM, to push the initiative to them. If they decided to build a map of their own, maybe I'd bury the idea, but that isn't the case. I built it because it wasn't there in the first place and I needed it, and I assumed many people do too.
 
 So far the assumption is holding. After [Siakap Keli featured it](https://siakapkeli.my/articles/lelaki-bangunkan-aplikasi-khas-mudahkan-orang-ramai-cari-kedai-makan-ada-sijil-halal), many people said they appreciated the app, and it had 9k+ unique visitors in its first month, still growing. That's proof it's an idea worth keeping. I'll try to keep the traction going so the app stays up and benefits people. It's my sadaqah jariah, but others can chip in and make it theirs too. We shouldn't gatekeep ways of doing good deeds.
 
 ### pp. 36–37
 
-Was carimakanhalal's first month my work or luck? Think of it as a product of two: my work, and the qadar of Allah. They multiply each other. Work harder, but if Allah says no, then it's a no. I didn't ask to be featured in an article. The writer reached out because they saw my Threads post. Allah set that in motion, but I made it possible by sharing. Without Siakap Keli it would have been smaller, but I had users before that post and after it.
+*Was carimakanhalal's first month my work, or luck?*
+
+Think of it as a product of two: my work, and the qadar of Allah. They multiply each other. Work harder, but if Allah says no, then it's a no. I didn't ask to be featured in an article. The writer reached out because they saw my Threads post. Allah set that in motion, but I made it possible by sharing. Without Siakap Keli it would have been smaller, but I had users before that post and after it.
 
 It will never have zero users, because I use it. But if I were the only one, it wouldn't have served the bigger purpose. I built it to make halal-certified places more accessible for myself, and the bigger purpose is for other people to benefit from that too.
 
 ### pp. 38–39
 
-Who have I learnt from? I never met the Prophet ﷺ, yet I try to shape my decisions on his teachings from the hadith and the Quran, applied to today's day and age. He should be every Muslim's role model and teacher in how to live. In modern times, I honestly can't name anyone specific. I probably take the lessons in without noticing.
+*Who have you learnt the most from?*
+
+I never met the Prophet ﷺ, yet I try to shape my decisions on his teachings from the hadith and the Quran, applied to today's day and age. He should be every Muslim's role model and teacher in how to live. In modern times, I honestly can't name anyone specific. I probably take the lessons in without noticing.
 
 One lesson I do hold on to: you go into business to do what's right in that business, and wealth shouldn't be the main goal. If your goal is to get richer and richer, you'll go looking for loopholes that don't align with what the Quran and Sunnah teach. If your intention is to do right by people, with honesty in trade and the like, the wealth comes naturally as a byproduct.
 
@@ -90,9 +126,13 @@ One lesson I do hold on to: you go into business to do what's right in that busi
 
 ### pp. 43–44
 
+*Every disadvantage can have an upside, and every advantage a cost. What's the cost of yours?*
+
 The disadvantage of having family members much older than you is that you might not have as much time with them before they go. That's the trade-off. Hopefully, inshaAllah, that's not the case. Knowing it, I'm more mindful than my same-aged peers that the time is shorter, and I try to make time for my family.
 
 ### pp. 44–45
+
+*Is talent something you're born with, or something you build?*
 
 Skills can be learnt. I didn't know how to make stop-motions or play Minecraft. I learnt both from YouTube videos, because I was interested. I think what comes naturally is interest, not talent. If you're interested in something, you'll pour hours into it and eventually get good at it.
 
@@ -100,8 +140,6 @@ When the interest isn't there, purpose carries you until interest replaces it. I
 
 ### pp. 46–47
 
-I don't judge people for where they ended up. They were born into different circumstances and brought up in different ways of thinking, and that's why they think the way they do. We try our best to educate and change it if it's wrong, and welcome their thinking if it's right and challenges us.
+*Do you judge people by where they ended up?*
 
-**Reflection:** Everything is from Allah and goes back to Allah.
-
-**Reflection:** Success is attributed to Allah, and then to gratitude for everyone I've crossed paths with. Each of them played a major or minor role in shaping who I am.
+I don't. They were born into different circumstances and brought up in different ways of thinking, and that's why they think the way they do. We try our best to educate and change it if it's wrong, and welcome their thinking if it's right and challenges us.
