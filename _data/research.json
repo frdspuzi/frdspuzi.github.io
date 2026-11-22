@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-21",
+  "lastUpdated": "2026-11-22",
   "papers": [
     {
       "id": "hf:2611.26232",
@@ -12,9 +12,9 @@
         "Tech"
       ],
       "problem": "Tools that find cause and effect in time series run slowly because they need heavy statistical tests.",
-      "fix": "ITPD finds causes one variable at a time, running 2.3, 9.1 and 40.9 times faster than rivals on 2000 nodes.",
-      "practicalUseCase": "If this holds, big time-series cause analysis becomes practical, so try a local-first method before running a full-graph search.",
-      "limitation": "The speed results come from simulated benchmarks, not real-world data.",
+      "fix": "ITPD finds causes one variable at a time, running 2.3, 9.1 and 40.9 times faster than older tools.",
+      "practicalUseCase": "If you analyze large time series, a faster method lets you test cause links that were too slow before.",
+      "limitation": "The speed gain was shown in simulations on large graphs, not on real data.",
       "fullTextUrl": "https://huggingface.co/papers/2611.26232"
     },
     {
@@ -27,10 +27,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Robots that refuse a task at the start can still finish it after a midway takeover, or drop held objects.",
-      "fix": "SAFI teaches robots to hold still on banned tasks, cutting banned-task success after takeover to 1.3% with no physical incidents.",
-      "practicalUseCase": "If this holds, safe stopping can be trained in, so test mid-task stops, not only refusals at the start.",
-      "limitation": "Tests covered only LIBERO simulation tasks with one model, and only tasks where holding still is a safe response.",
+      "problem": "Robots can still finish a banned task when they take over halfway, and they may drop the object they hold.",
+      "fix": "SAFI teaches robots to hold still on banned tasks, cutting banned task success to 1.3% with no physical incidents.",
+      "practicalUseCase": "If you build robot policies, test stopping mid-task, and train a hold response, not only a refusal.",
+      "limitation": "Tests covered one robot model on LIBERO tasks where holding is a fitting response.",
       "fullTextUrl": "https://huggingface.co/papers/2611.26239"
     },
     {
@@ -43,10 +43,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Adding more driving demonstrations does not guarantee better self-driving, because the same data can help one planner and hurt another.",
-      "fix": "PAD scores each demonstration for one planner, and lifted DiffusionDrive scores by 3.5 points on NavTest and 5.0 on NavHard.",
-      "practicalUseCase": "If this holds, picking data per model beats piling on more data, so rank data against your own model.",
-      "limitation": "Results come from driving benchmarks, and the data rankings differ for each planner family.",
+      "problem": "Adding more driving demonstrations does not always help, because one planner may gain from data that harms another.",
+      "fix": "PAD scores each demonstration for the target planner, adding 3.5 points on NavTest and 5.0 points on NavHard.",
+      "practicalUseCase": "If you train driving models, score data per model and drop the weak samples instead of piling up more data.",
+      "limitation": "Results come from driving benchmarks, so real roads may behave differently.",
       "fullTextUrl": "https://huggingface.co/papers/2611.25604"
     },
     {
@@ -59,11 +59,28 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Teams must pick which website changes to test on live traffic, and live tests cost time and visitors.",
-      "fix": "UX-1, using simulated shoppers, called 267 of 318 past A/B tests right (84.0%), versus 61.6% for the best general model.",
-      "practicalUseCase": "If this holds, screen weak website ideas with simulated shoppers first, then spend live traffic on the promising ones.",
-      "limitation": "It checked only 318 past tests that ran over 21 days, and the authors treated tests as independent.",
+      "problem": "Teams must pick which website changes deserve a live A/B test, and bad picks waste traffic.",
+      "fix": "Simulated shoppers from UX-1 predicted 267 of 318 past test outcomes correctly (84.0%), and a general model scored 61.6%.",
+      "practicalUseCase": "If you run A/B tests, simulated shoppers can screen ideas first, so you test the likely winners live.",
+      "limitation": "The study used past tests only, and it did not prove the method works on new tests.",
       "fullTextUrl": "https://huggingface.co/papers/2611.25200"
+    },
+    {
+      "id": "https://openalex.org/W7204856806",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3063",
+      "title": "Islamic Social Financial Instruments and Sustainable Community Development: Evidence Synthesis on Community Resilience",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Abdallah Mambo Dallu",
+      "institution": "KCA University",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Research on zakat, waqf and sadaqah is scattered, so nobody knew how they help communities recover from shocks.",
+      "fix": "A review of 93 studies found zakat gives quick relief, waqf builds long-term assets, and sadaqah covers sudden needs.",
+      "practicalUseCase": "If you run a fund, combine all three tools, and back them with strong governance and digital systems.",
+      "limitation": "This is a review of past studies, so it shows patterns across papers and not new measured effects.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3063"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -76,10 +93,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Nobody knew how sustainability sukuk issuance grew or what makes one issue bigger than another.",
-      "fix": "Across 11,944 sukuk issues, equity-based contracts and social purposes produced larger issues than sale-based contracts and green projects.",
-      "practicalUseCase": "If this holds, issuers get bigger issues by using equity-based contracts, while costly second party opinions shrink issue size.",
-      "limitation": "It shows links across countries, not cause, and the data ends in 2022.",
+      "problem": "Sustainability sukuk have grown fast, but nobody had measured what drives how large each issue is.",
+      "fix": "In 11,944 issuances from 2012 to 2022, equity-based contracts, strong security, longer debt and USD or Euro raised issue size.",
+      "practicalUseCase": "If you issue sukuk, use equity-based contracts and major currencies, and expect high second party opinion costs to shrink issues.",
+      "limitation": "Growth is concentrated in Indonesia, Malaysia and Saudi Arabia, and the data ends in 2022.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -93,10 +110,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks and regulators lacked proof that rising public interest in halal products pulls Islamic financing up.",
-      "fix": "In 16 OIC countries, more halal online searches raised total Islamic financing, mostly via Murabaha and Ijarah.",
-      "practicalUseCase": "If this holds, search trends can signal rising financing demand, so lenders should push simple Murabaha and Ijarah products first.",
-      "limitation": "Online search volume is only a rough stand-in for halal awareness, and the effect on Mudarabah and Musharakah is weak.",
+      "problem": "Banks lack proof that online interest in halal products leads customers to Islamic financing.",
+      "fix": "Across 16 OIC countries from 2014 to 2023, more halal searches raised total Islamic financing, mainly Murabaha and Ijarah.",
+      "practicalUseCase": "If you offer Islamic finance, search trends can signal demand, so push simple products like Murabaha and Ijarah first.",
+      "limitation": "Search volume is a stand-in for awareness, and Mudarabah and Musharakah showed only weak effects.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.3350"
     },
     {
@@ -110,10 +127,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "It was unclear which parts of Shari'ah-compliant banking help small businesses most in fragile economies.",
-      "fix": "In a Baidoa SME survey, affordability and ease of access drove performance most, while awareness had little direct effect.",
-      "practicalUseCase": "If this holds, banks should cut cost and simplify service before spending on awareness campaigns.",
-      "limitation": "It is a one-time survey from a single Somali city, so it cannot prove cause.",
+      "problem": "Small businesses in Baidoa, Somalia struggle to benefit from Shari'ah-compliant banking, and the key barrier was unclear.",
+      "fix": "Affordability and ease of access drove business performance most, while general access helped less and awareness had little direct effect.",
+      "practicalUseCase": "If you design Islamic banking for small firms, cut costs and simplify service before spending on awareness campaigns.",
+      "limitation": "A one-time survey in one Somali city shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.2644"
     },
     {
@@ -127,10 +144,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Waqf collection stays low, and it was unclear whether teaching people about waqf changes their giving.",
+      "problem": "Waqf collection stays low, and it was unclear whether knowing about waqf makes Muslims give.",
       "fix": "Among 642 Indonesian Muslims, waqf literacy raised attitude, social norms, control and past behaviour, which then raised waqf intention.",
-      "practicalUseCase": "If this holds, waqf groups should invest in teaching people how waqf works to raise collection.",
-      "limitation": "It measures intention to give among Indonesian respondents, not actual donations.",
+      "practicalUseCase": "If you run a waqf, teach people how waqf works, because knowledge leads to more giving.",
+      "limitation": "The survey covered Indonesia only and measured intention, not actual donations.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3267"
     }
   ]
