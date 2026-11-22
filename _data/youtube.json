@@ -1,6 +1,32 @@
 {
   "videos": [
     {
+      "title": "What Runs Where? Local AI in Production — Ahmad Osman, Osmantic",
+      "url": "https://www.youtube.com/watch?v=GKSQYbELDzw",
+      "videoId": "GKSQYbELDzw",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "You don't need deep-pocketed cloud APIs to get frontier-level intelligence—specialized, highly optimized open-source models running on local hardware can now match closed giants at just 1% of the cost. In this eye-opening breakdown, systems engineer Ahmed Osman exposes why the cloud is simply someone else's basement and details how tailored inference engines crush commercial benchmarks under heavy agent workloads. If you want to stop bleeding cash on subscriptions, eliminate memory bloat, and take complete ownership of your AI stack, this masterclass is essential viewing.",
+      "dateAdded": "2026-11-22T01:46:25.340Z",
+      "timestamps": [
+        {
+          "startTime": 1350,
+          "endTime": 1520,
+          "topic": "Hardware shootout: Why concurrent agent workloads crush unified memory and demand dedicated GPU engines"
+        },
+        {
+          "startTime": 2210,
+          "endTime": 2305,
+          "topic": "Frontier intelligence at 1% cost: The playbook for small, specialized models and synthetic pipelines"
+        },
+        {
+          "startTime": 2890,
+          "endTime": 2975,
+          "topic": "The local AI endgame: Why true continual learning cannot survive in the cloud"
+        }
+      ]
+    },
+    {
       "title": "How to build an agent that builds the culture — Zach Bruggeman, Ramp",
       "url": "https://www.youtube.com/watch?v=MDI81OaZAD4",
       "videoId": "MDI81OaZAD4",
@@ -49,32 +75,6 @@
           "startTime": 900,
           "endTime": 1030,
           "topic": "Autonomous Self-Improvement: How Agents Submit PRs to Fix Their Own Factory"
-        }
-      ]
-    },
-    {
-      "title": "The Sweet Side of the Bitter Lesson — Thariq Shihipar, Independent",
-      "url": "https://www.youtube.com/watch?v=xRJMiaUoD_8",
-      "videoId": "xRJMiaUoD_8",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Mindless 'vibe coding' quickly turns into a frustrating trap where AI makes arbitrary architecture decisions and developers lose creative ownership of their own software. Former Anthropic engineer Tarek reveals that instead of surrendering to automated generation, the key to building high-craft software is creating human-centric abstraction layers that keep you firmly in control. If you want to avoid generating disposable AI slop and instead build enduring, high-quality projects, this talk offers the exact mental model and architecture you need.",
-      "dateAdded": "2026-11-21T02:56:18.757Z",
-      "timestamps": [
-        {
-          "startTime": 350,
-          "endTime": 500,
-          "topic": "The Jagged Frontier vs. Smooth Interior of AI capabilities"
-        },
-        {
-          "startTime": 640,
-          "endTime": 770,
-          "topic": "The hidden productivity trap of passive 'vibe coding'"
-        },
-        {
-          "startTime": 780,
-          "endTime": 1000,
-          "topic": "Dual-layer code architecture: Retaining mastery through human-readable specs"
         }
       ]
     },
@@ -235,6 +235,84 @@
       ]
     },
     {
+      "title": "#119 | How To Build Trust (Gavin Liew, The Makeover Guys)",
+      "url": "https://www.youtube.com/watch?v=i-oA9axU4zI",
+      "videoId": "i-oA9axU4zI",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "Most service businesses get crushed by endless pitching and hidden cultural rot, but serial entrepreneur Gavin Liew cracked the code by transforming the notoriously broken renovation sector into a predictable, platform-scale engine. Discover how productizing custom services into a standardized 'menu' eliminates proposal burnout—and why lovable, underperforming 'rabbits' pose a far greater threat to scaling past 100 employees than toxic high-performers.",
+      "dateAdded": "2026-11-22T01:46:25.340Z",
+      "timestamps": [
+        {
+          "startTime": 905,
+          "endTime": 1090,
+          "topic": "Breaking the endless pitch trap by productizing custom services into a menu"
+        },
+        {
+          "startTime": 1147,
+          "endTime": 1335,
+          "topic": "Overcoming the industry trust deficit through e-commerce-style transparency"
+        },
+        {
+          "startTime": 1910,
+          "endTime": 2075,
+          "topic": "Hyenas vs. Rabbits: Why lovable underperformers silently sabotage scaling"
+        }
+      ]
+    },
+    {
+      "title": "#118 | Building A Global Snack and Wellness Platfrom (Pierre Pang, Mamee CEO)",
+      "url": "https://www.youtube.com/watch?v=RnbaL_XQ3ss",
+      "videoId": "RnbaL_XQ3ss",
+      "channel": "The Game Of Impossible",
+      "category": "General Ideas",
+      "summary": "Most legacy businesses die by the third generation, but MAMEE Group CEO Pierre Pang shattered that curse by doubling the 55-year-old snack giant's revenue to RM1.5 billion in just five years. In this masterclass, he breaks down the battle-tested 'IDEA' operating system and the rapid 12-week product loop that transformed a traditional noodle manufacturer into an agile global powerhouse. If you want to know how to future-proof any brand against disruption—including why you should actively fund the startups trying to kill your flagship products—this interview is an absolute must-watch.",
+      "dateAdded": "2026-11-22T01:46:25.340Z",
+      "timestamps": [
+        {
+          "startTime": 760,
+          "endTime": 1005,
+          "topic": "The QVE Moat: Why Product Quality Alone Fails Without Emotional Value"
+        },
+        {
+          "startTime": 2140,
+          "endTime": 2315,
+          "topic": "The 12-Week Innovation Engine: Launching and Validating Viral MVPs on TikTok"
+        },
+        {
+          "startTime": 2920,
+          "endTime": 3105,
+          "topic": "Disrupting Yourself: Why Established Giants Must Fund Their Own Disruptors"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi: Smartphones, Smart Homes, EVs | In The Studio",
+      "url": "https://www.youtube.com/watch?v=KwHTVB0GUZw",
+      "videoId": "KwHTVB0GUZw",
+      "channel": "BFM 89.9",
+      "category": "General Ideas",
+      "summary": "Think Xiaomi is still just a budget smartphone maker? In this insider interview, Xiaomi Malaysia's Country Manager Xingyu Yang reveals how the tech titan is actively stealing loyal users away from Apple with bold hardware innovations, a deeply connected lifestyle ecosystem, and ambitions extending into electric vehicles. Watch this breakdown to discover how aggressive feature disruption and seamless ecosystem convenience are completely reshaping consumer tech.",
+      "dateAdded": "2026-11-22T01:46:25.341Z",
+      "timestamps": [
+        {
+          "startTime": 145,
+          "endTime": 270,
+          "topic": "How a functional rear display and dedicated AI button transform smartphone utility"
+        },
+        {
+          "startTime": 735,
+          "endTime": 845,
+          "topic": "The playbook for winning over Apple users and making switching painless"
+        },
+        {
+          "startTime": 1305,
+          "endTime": 1395,
+          "topic": "Addressing the rumors and reality of Xiaomi's electric vehicle expansion"
+        }
+      ]
+    },
+    {
       "title": "I am (Politely) Begging You to To Take Your Deen Seriously Before It's Too Late",
       "url": "https://www.youtube.com/watch?v=uV3FoPrpR8s",
       "videoId": "uV3FoPrpR8s",
@@ -311,85 +389,7 @@
           "topic": "Why the best AI-era engineers operate like Factorio and Civilization players"
         }
       ]
-    },
-    {
-      "title": "Platform Architect: What Engineers Need to Know About Kubernetes",
-      "url": "https://www.youtube.com/watch?v=J0zpb_mFGsc",
-      "videoId": "J0zpb_mFGsc",
-      "channel": "Beyond Coding",
-      "category": "Tech & Engineering",
-      "summary": "The convenience of standardizing on an engineering 'golden path' carries a silent, productivity-killing trap: excessive guardrails inevitably turn your paved road into an inflexible golden cage. In this conversation, Cloud Native Architect Thomas Schütz reveals the foundational mindset required to survive modern infrastructure, arguing that true cloud-native maturity requires locking humans out of Kubernetes API access entirely through ruthless automation. If you want to understand how developer experience is rapidly shifting toward autonomous AI agent workloads and what it takes to future-proof your engineering career, this masterclass is essential viewing.",
-      "dateAdded": "2026-11-21T02:56:18.757Z",
-      "timestamps": [
-        {
-          "startTime": 320,
-          "endTime": 405,
-          "topic": "The Cloud Native First Principle: Automate Everything and Eliminate Direct API Access"
-        },
-        {
-          "startTime": 775,
-          "endTime": 885,
-          "topic": "Demystifying Kubernetes: Why It's an Abstraction Layer, Not Rocket Science"
-        },
-        {
-          "startTime": 1225,
-          "endTime": 1315,
-          "topic": "The Golden Cage Dilemma: Balancing Platform Standards with Developer Freedom"
-        }
-      ]
-    },
-    {
-      "title": "The 3-tier model setup that cuts your AI costs",
-      "url": "https://www.youtube.com/shorts/h2yjwbyep3k",
-      "videoId": "h2yjwbyep3k",
-      "channel": "Beyond Coding",
-      "category": "Tech & Engineering",
-      "summary": "Relying exclusively on top-tier models like Claude Opus can quietly rack up thousands of dollars a month in bloated token costs per developer. This video breaks down a battle-tested three-tier strategy that uses flagship models strictly for planning, offloading coding and reviews to cheaper models. Watch it to master the context-clearing trick that keeps your engineering output high while slashing your AI bill to a fraction of the cost.",
-      "dateAdded": "2026-11-21T02:56:18.757Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 13,
-          "topic": "The runaway cost problem of relying solely on flagship AI models"
-        },
-        {
-          "startTime": 13,
-          "endTime": 46,
-          "topic": "The 3-tier model strategy: State-of-the-art for planning, smaller models for execution"
-        },
-        {
-          "startTime": 46,
-          "endTime": 68,
-          "topic": "Clearing context and using external artifacts to stop token waste"
-        }
-      ]
-    },
-    {
-      "title": "What coding agents need from engineers to be trusted",
-      "url": "https://www.youtube.com/shorts/scNxKbDUHkE",
-      "videoId": "scNxKbDUHkE",
-      "channel": "Beyond Coding",
-      "category": "Tech & Engineering",
-      "summary": "Stop wasting time scrutinizing AI-generated code line by line—the future belongs to those who judge agents purely by what they achieve and align them with what truly matters. In this sharp teaser, former bartender turned AI consultant Fausto Albers reveals how surviving catastrophic early chatbot experiments taught him the real mechanics of autonomous agents. Tune in to discover why current AI bottlenecks are disappearing at an exponential pace and how you should adapt right now.",
-      "dateAdded": "2026-11-21T02:56:18.757Z",
-      "timestamps": [
-        {
-          "startTime": 0,
-          "endTime": 9,
-          "topic": "Why evaluating code output matters more than line-by-line review"
-        },
-        {
-          "startTime": 10,
-          "endTime": 27,
-          "topic": "Lessons learned from building one of the earliest GenAI chatbots"
-        },
-        {
-          "startTime": 27,
-          "endTime": 46,
-          "topic": "Aligning adaptive AI agents for exponential problem solving"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-11-21T03:05:27.787Z"
+  "lastUpdated": "2026-11-22T01:50:29.652Z"
 }
