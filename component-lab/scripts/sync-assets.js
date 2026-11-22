@@ -18,7 +18,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT_ASSETS = join(__dirname, "..", "..", "assets");
 const PUBLIC_ASSETS = join(__dirname, "..", "public", "assets");
 
-const DIRS = ["photography", "youtube-thumbnails", "medium-images"];
+const DIRS = ["photography", "youtube-thumbnails", "medium-images", "book-covers"];
 
 for (const dir of DIRS) {
   const src = join(ROOT_ASSETS, dir);

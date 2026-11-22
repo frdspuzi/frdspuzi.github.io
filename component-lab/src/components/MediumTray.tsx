@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/motion/tabs";
 import { useHorizontalScrollFade } from "@/hooks/useHorizontalScrollFade";
 import { toSentenceCase } from "@/lib/utils";
@@ -150,11 +150,13 @@ export function MediumTray({
   categories,
   activeFilter,
   onFilterChange,
+  header,
 }: {
   items: MediumItem[];
   categories: string[];
   activeFilter: string;
   onFilterChange: (filter: string) => void;
+  header?: ReactNode; // InsightsWriting's Articles | Books switch
 }) {
   const [isMobile] = useState(() => window.matchMedia("(max-width: 767px)").matches);
   // Same fade-edge mechanism as the pill tabs (motion/tabs.tsx), shared via
@@ -174,6 +176,7 @@ export function MediumTray({
           without needing a percentage at all, avoiding the same circular-resolution issue that
           h-100 caused inside TriviaBoard's own layout (see that component's comments). */}
       <div className="right-column-content d-flex flex-column w-100 flex-auto">
+        {header}
         {categories.length > 0 && (
           // Real beui.dev pill tabs (motion/tabs), not the old plain .medium-filter-btn
           // buttons — used as a controlled filter (value/onValueChange), not for panel

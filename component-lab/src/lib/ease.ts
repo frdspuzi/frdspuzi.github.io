@@ -51,3 +51,5 @@ export const SPRING_GLIDE = {
   damping: 50,
   mass: 0.5,
 } as const;
+
+export const EASE_IN = [0.55, 0, 1, 0.45] as const;

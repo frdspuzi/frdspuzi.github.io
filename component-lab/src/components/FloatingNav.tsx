@@ -17,7 +17,7 @@ const SECTIONS: { id: string; label: string; desc: string }[] = [
   { id: "about", label: "About", desc: "Bio & background" },
   { id: "gratitude", label: "Gratitude", desc: "A mindful pause" },
   { id: "reclaiming-algo", label: "Reclaiming the Algo", desc: "Curated, mindful YouTube picks" },
-  { id: "my-writing", label: "Insights & Writing", desc: "Articles + AI trivia" },
+  { id: "my-writing", label: "Reading & Writing", desc: "Articles, book notes + AI trivia" },
   { id: "github-trending", label: "What the Internet's Building", desc: "Trending repos + Product Hunt launches" },
   { id: "research-discovery", label: "Research Discovery", desc: "Peer-reviewed briefs & practical takeaways" },
   { id: "photography", label: "Photography", desc: "Shots from Unsplash" },

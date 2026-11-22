@@ -8,6 +8,7 @@ import { Photography } from "@/components/Photography";
 import { TrendingSection } from "@/components/TrendingSection";
 import { ResearchSection } from "@/components/ResearchSection";
 import { FloatingNav } from "@/components/FloatingNav";
+import { Outlet } from "react-router-dom";
 
 // Homepage — mirrors _layouts/home.html's stacked layout. All 5 sections plus the Preview Rail
 // nav are built now, matching the approved plan's build order.
@@ -37,6 +38,9 @@ export default function Home() {
 
         <FloatingNav />
       </AccordionGroupProvider>
+
+      {/* /books/:slug/ - the reader overlay */}
+      <Outlet />
     </main>
   );
 }
