@@ -1,215 +1,215 @@
 {
   "learnings": [
     {
-      "question": "In 1971, which economist and political scientist stated that in an information-rich world, what information consumes is the attention of its recipients?",
+      "question": "Who, in 1971, argued that in an information-rich world, the growing wealth of information inevitably creates a scarcity of attention?",
       "options": [
-        "Nir Eyal",
-        "Herbert Simon",
         "Daniel Kahneman",
-        "Cal Newport"
+        "Cal Newport",
+        "Marshall McLuhan",
+        "Herbert Simon"
       ],
-      "correctIndex": 1,
-      "learning": "In 1971, Herbert Simon warned that in an information-rich world, the attention of recipients becomes the scarce resource that information consumes.",
+      "correctIndex": 3,
+      "learning": "Herbert Simon observed in 1971 that an information-rich world necessarily produces a scarcity of attention, since attention is what information consumes.",
       "articleTitle": "Everybody wants your attention, but not everything deserves it.",
       "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
       "category": "general"
     },
     {
-      "question": "Beyond muting low-value accounts, what personal habit is recommended as a way to protect your attention before opening any app?",
+      "question": "In one personal AI-curation workflow for filtering daily YouTube videos, what single screening question decides whether a video survives the cut?",
       "options": [
-        "Setting an appropriate intention first",
-        "Setting a screen-time countdown timer",
-        "Switching to airplane mode",
-        "Deleting the app entirely"
-      ],
-      "correctIndex": 0,
-      "learning": "Protecting your attention isn't just about muting noisy accounts — it also means setting an appropriate intention before opening any app, so you decide what you consume instead of letting algorithms decide for you.",
-      "articleTitle": "Everybody wants your attention, but not everything deserves it.",
-      "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
-      "category": "general"
-    },
-    {
-      "question": "A 19th-century researcher famous for studying memory proved that people forget roughly what percentage of newly learned material within just 24 hours unless they actively recall it?",
-      "options": [
-        "About 65%",
-        "About 50%",
-        "About 80%",
-        "About 95%"
+        "Whether the channel uploads every single day",
+        "Whether the video is under ten minutes long",
+        "Whether a specific intended viewer would actually benefit from watching it",
+        "Whether the video has over a million views"
       ],
       "correctIndex": 2,
-      "learning": "Hermann Ebbinghaus showed in the 1880s that we forget about 80% of what we learn within 24 hours unless we actively force ourselves to recall it — which is why re-reading notes doesn't work as well as being quizzed on them.",
+      "learning": "A daily automated script pulls new videos from hand-picked channels and keeps only the ones that pass a single filter: would a specific intended viewer actually benefit from watching it?",
+      "articleTitle": "Everybody wants your attention, but not everything deserves it.",
+      "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
+      "category": "general"
+    },
+    {
+      "question": "Which 19th-century psychologist demonstrated that people forget roughly 80% of newly learned material within 24 hours unless they actively work to recall it?",
+      "options": [
+        "Herbert Simon",
+        "Hermann Ebbinghaus",
+        "B.F. Skinner",
+        "William James"
+      ],
+      "correctIndex": 1,
+      "learning": "Back in the 1880s, Hermann Ebbinghaus showed that we forget about 80% of what we learn within 24 hours unless we actively force ourselves to recall it.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "What term, coined by researchers studying the 'Google Effect', describes the modern tendency to forget information instantly because we know a device will store it for us?",
+      "question": "What name did researchers give to the phenomenon in which people stop retaining facts, like phone numbers, simply because they know a device will remember them instead?",
       "options": [
-        "Information Overload",
         "Digital Amnesia",
-        "Cognitive Offloading",
-        "Spaced Repetition"
-      ],
-      "correctIndex": 1,
-      "learning": "Researchers behind the 'Google Effect' paper coined the term 'Digital Amnesia' for the way our brains treat writing something down, or storing it on a device, as permission to forget it.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "In the Scrum framework, which artifact is used to visualize a sprint's progress and show how much work remains?",
-      "options": [
-        "Product Backlog",
-        "Burndown Chart",
-        "Sprint Backlog",
-        "Kanban Board"
-      ],
-      "correctIndex": 1,
-      "learning": "In Scrum, the Burndown Chart is the artifact that visualizes a sprint's progress by showing how much work remains, helping the team track whether they're on schedule.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "Which of the following is notably absent from the three official roles defined in the Scrum framework?",
-      "options": [
-        "Project Manager",
-        "Scrum Master",
-        "Developers",
-        "Product Owner"
+        "Analysis Paralysis",
+        "The Forgetting Curve",
+        "Information Overload"
       ],
       "correctIndex": 0,
-      "learning": "Scrum defines exactly three roles — Product Owner, Scrum Master, and Developers — with no 'Project Manager' role at all.",
+      "learning": "Researchers behind the 'Google Effect' paper call the brain's tendency to offload memory to devices, like no longer remembering phone numbers, 'Digital Amnesia'.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "In the Scrum framework, which of the following is commonly mistaken for an official team role but is actually NOT one of Scrum's three defined roles?",
+      "options": [
+        "Developers",
+        "Project Manager",
+        "Scrum Master",
+        "Product Owner"
+      ],
+      "correctIndex": 1,
+      "learning": "Scrum defines exactly three roles: Product Owner, Scrum Master, and Developers. 'Project Manager' is not one of them.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "What Arabic term describes humanity's role as caretakers or stewards of the Earth, entrusted with preserving faith and unity?",
+      "question": "In Scrum, which artifact visually tracks the remaining work in a sprint to show whether the team is on schedule?",
+      "options": [
+        "Product Backlog",
+        "Kanban Board",
+        "Sprint Backlog",
+        "Burndown Chart"
+      ],
+      "correctIndex": 3,
+      "learning": "The Burndown Chart visualizes a sprint's progress, showing remaining work and helping the team track whether it is on schedule.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "In Islamic theology, a human being's purpose on Earth is often described through three primary roles. Which of these is considered one of them?",
+      "options": [
+        "Achieving worldly fame",
+        "Accumulating wealth for one's family",
+        "Worshipping Allah with sincere devotion",
+        "Mastering a trade or craft"
+      ],
+      "correctIndex": 2,
+      "learning": "A human being's purpose is framed around three primary roles: worshipping Allah, serving as a steward (khalifah) of the Earth, and preparing for the Hereafter through accountability.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What Arabic term, used in the Quran, refers to a human being's role as a caretaker or steward of the Earth?",
       "options": [
         "Taqwa",
         "Khalifah",
-        "Ummah",
-        "Shura"
+        "Shura",
+        "Ummah"
       ],
       "correctIndex": 1,
-      "learning": "Khalifah is the Arabic term for humanity's role as caretakers of the Earth, carrying responsibility for preserving faith and fostering unity within the community.",
+      "learning": "'Khalifah' is the Arabic term for humanity's role as caretaker or steward of the Earth, carrying responsibility for preserving faith and unity.",
       "articleTitle": "Ever Wondered Why We’re Here?",
       "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "One framing of life's purpose centers on three roles: worshiping Allah, serving as khalifah (steward) of the Earth, and a third role. What is it?",
-      "options": [
-        "Living life as a test of faith and conduct, preparing for the Hereafter",
-        "Pursuing wealth and worldly success",
-        "Seeking fame and recognition",
-        "Mastering religious rituals alone"
-      ],
-      "correctIndex": 0,
-      "learning": "One framing of life's purpose in Islam centers on three roles: worshiping Allah, serving as khalifah (steward) of the Earth, and living life as a test of faith and conduct in preparation for the Hereafter.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In PCIe power management, which state leaves a device almost completely powered down, giving it the greatest power savings but the longest wake-up time?",
+      "question": "In the PCIe power management specification, which link state represents a device that is almost completely powered down, used for the longest periods of inactivity, with the highest power savings and the longest wake-up time?",
       "options": [
         "L2",
-        "L1.2",
         "L0s",
-        "L1.0"
+        "L1.0",
+        "L1.2"
       ],
       "correctIndex": 0,
-      "learning": "In PCIe power management, the L2 state leaves a device almost completely powered down — it delivers the greatest power savings but takes the longest to wake up, unlike the lighter L0s and L1 substates.",
+      "learning": "L2 is the deepest PCIe power state: the device is almost completely powered down, giving the highest power savings but the longest wake-up time.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
     },
     {
-      "question": "In Islamic theology, which term describes the actual unfolding of events in a person's life — shaped by their own actions and decisions, and able to be influenced through sincere prayer?",
+      "question": "In Islamic theology, which term refers to the actual, real-time unfolding of events in a person's life, as distinct from Allah's eternal, pre-written decree?",
       "options": [
-        "Taqwa",
         "Qada'",
-        "Qadr",
-        "Rizq"
+        "Taqwa",
+        "Tawakkul",
+        "Qadr"
       ],
-      "correctIndex": 1,
-      "learning": "Qada' is the actual unfolding of events in a person's life, shaped by their decisions and actions, and it can be influenced through sincere Dua — unlike Qadr, which is Allah's complete, already-written plan.",
+      "correctIndex": 0,
+      "learning": "Qada' is the actual occurrence of events as they unfold in life, while Qadr is Allah's complete, eternal plan encompassing everything that will happen.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Which Quranic principle is invoked to argue that personal transformation must come before a change in one's outward circumstances?",
+      "question": "Which verse is cited to support the idea that sincere personal effort and supplication can change a person's circumstances?",
       "options": [
-        "Allah helps those who help themselves",
-        "To every soul its own burden",
-        "Verily, with hardship comes ease",
-        "Allah does not change the condition of a people until they change what is in themselves"
+        "\"Indeed, with hardship comes ease\"",
+        "\"Verily, My mercy prevails over My wrath\"",
+        "\"The strong believer is better than the weak believer\"",
+        "\"Allah does not change the condition of a people until they change what is in themselves\" (Surah Ar-Ra'd 13:11)"
       ],
       "correctIndex": 3,
-      "learning": "Surah Ar-Ra'd (13:11) — 'Allah does not change the condition of a people until they change what is in themselves' — is cited as the basis for believing personal change precedes a change in one's circumstances.",
+      "learning": "Surah Ar-Ra'd 13:11, 'Allah does not change the condition of a people until they change what is in themselves,' underpins the idea that sincere effort and dua can change one's Qada'.",
       "articleTitle": "The Art of Qada’ and Qadr",
       "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "When the Quran's Arabic text was analyzed word-by-word, what share of the entire text did the top 20 most frequent words account for?",
+      "question": "In a word-frequency data analysis applying the Pareto Principle (the 80/20 rule) to the Quran's text, what percentage of the Quran's total word count did the top 20 most frequent words actually account for?",
       "options": [
-        "About 20.83%",
-        "About 50%",
+        "About 65%",
         "About 80%",
-        "About 35%"
+        "About 20.83%",
+        "About 50%"
       ],
-      "correctIndex": 0,
-      "learning": "When the Quran's Arabic text was analyzed word-by-word, the top 20 most frequent words accounted for only about 20.83% of the whole text — far short of the 80% the Pareto Principle would predict.",
+      "correctIndex": 2,
+      "learning": "Applying the 80/20 rule to Quranic word frequency, the top 20 most repeated words accumulate to only about 20.83% of the Quran's total word count, not 80%.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "What term refers to the small diacritical marks placed above or below Arabic letters to indicate vowel sounds?",
+      "question": "What term describes the small diacritical markings placed above or below Arabic letters to indicate vowel sounds and pronunciation?",
       "options": [
         "Tashkeel",
-        "Isnad",
         "Tafsir",
-        "Tajwid"
+        "Tajweed",
+        "Isnad"
       ],
       "correctIndex": 0,
-      "learning": "Tashkeel are the small diacritical marks placed above or below Arabic letters to show vowel sounds; without them, the same spelling can be read multiple ways.",
+      "learning": "Tashkeel are small markings placed above or below Arabic letters to indicate vowel sounds; without them, the same spelling can represent different words.",
       "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
       "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
       "category": "islam"
     },
     {
-      "question": "Reflecting on his own list of 'unfair advantages' — a stable, practising Muslim upbringing, older siblings, and an international-school childhood — a software engineer named one specific trait as the one he actually relies on day to day, built from constantly moving between places and schools. What is it?",
+      "question": "Which entrepreneur is quoted as saying, \"It's not about working harder. It's about working the system\"?",
       "options": [
-        "Financial stability",
-        "Empathy",
-        "Discipline",
-        "Networking skill"
+        "Mark Zuckerberg",
+        "Jeff Bezos",
+        "Elon Musk",
+        "Evan Spiegel"
       ],
-      "correctIndex": 1,
-      "learning": "Reflecting on his own 'unfair advantages' — a stable, practising Muslim upbringing, older siblings, and an international-school childhood — the author says the one he actually uses is empathy, built from constantly moving between places and schools.",
+      "correctIndex": 3,
+      "learning": "Evan Spiegel's line, \"It's not about working harder. It's about working the system,\" is read as making the most of what you have, with good intentions, rather than gaming others.",
       "articleTitle": "The Unfair Advantage",
       "articleUrl": "/books/the-unfair-advantage/",
       "category": "Books"
     },
     {
-      "question": "After two years of biology in high school and just a few months into matriculation college, an entrepreneur walked away from a pre-medicine path and enrolled in Computer Engineering at which Malaysian university instead?",
+      "question": "In one view on entrepreneurial success, hard work is argued not to directly cause success. Instead, what does it do?",
       "options": [
-        "Universiti Sains Malaysia (USM)",
-        "Universiti Malaya (UM)",
-        "Universiti Teknologi PETRONAS (UTP)",
-        "Universiti Teknologi Malaysia (UTM)"
+        "Widens your surface area for opportunity to meet you",
+        "Shortens the time needed to succeed",
+        "Eliminates the role of luck entirely",
+        "Guarantees a specific financial outcome"
       ],
-      "correctIndex": 2,
-      "learning": "After two years of biology in high school and a few months into matriculation college, the author walked away from a pre-medicine path and enrolled in Computer Engineering at Universiti Teknologi PETRONAS (UTP) instead.",
+      "correctIndex": 0,
+      "learning": "Hard work doesn't cause success; it correlates with it by widening your surface area for opportunity to meet you, so it shouldn't be called the sole cause of success or failure.",
       "articleTitle": "The Unfair Advantage",
       "articleUrl": "/books/the-unfair-advantage/",
       "category": "Books"
     }
   ],
-  "fetchedAt": "2026-11-22T22:34:59.732Z"
+  "fetchedAt": "2026-11-23T22:33:47.968Z"
 }
