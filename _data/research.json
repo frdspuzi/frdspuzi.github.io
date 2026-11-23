@@ -1,6 +1,22 @@
 {
-  "lastUpdated": "2026-11-22",
+  "lastUpdated": "2026-11-23",
   "papers": [
+    {
+      "id": "hf:2611.22343",
+      "doi": "https://arxiv.org/abs/2611.22343",
+      "title": "PURE: A Diagnostic Benchmark for Multi-Granularity Multimodal Identity Matching",
+      "publicationDate": "2026-11-16",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Hengyu You et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Online shops cannot tell if two listings show the same product, and one accuracy score hides why models fail.",
+      "fix": "The PURE test scored ten AI models from 47.1% to 86.0%, and evidence-based judgment scored lowest.",
+      "practicalUseCase": "A high matching score can hide weak spots, so test models on each skill before you trust them.",
+      "limitation": "The test uses online shopping data only, so results may differ in other fields.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.22343"
+    },
     {
       "id": "hf:2611.26232",
       "doi": "https://arxiv.org/abs/2611.26232",
@@ -11,10 +27,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Tools that find cause and effect in time series run slowly because they need heavy statistical tests.",
-      "fix": "ITPD finds causes one variable at a time, running 2.3, 9.1 and 40.9 times faster than older tools.",
-      "practicalUseCase": "If you analyze large time series, a faster method lets you test cause links that were too slow before.",
-      "limitation": "The speed gain was shown in simulations on large graphs, not on real data.",
+      "problem": "Finding cause and effect in time data runs slowly because tests grow costly as the number of variables grows.",
+      "fix": "The ITPD method ran 2.3, 9.1, and 40.9 times faster than three rival methods on 2000-variable graphs.",
+      "practicalUseCase": "If your data has thousands of variables, this method finds causes far faster, so try it before older tools.",
+      "limitation": "The speed results come from simulated data, not real-world data.",
       "fullTextUrl": "https://huggingface.co/papers/2611.26232"
     },
     {
@@ -27,10 +43,10 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Robots can still finish a banned task when they take over halfway, and they may drop the object they hold.",
-      "fix": "SAFI teaches robots to hold still on banned tasks, cutting banned task success to 1.3% with no physical incidents.",
-      "practicalUseCase": "If you build robot policies, test stopping mid-task, and train a hold response, not only a refusal.",
-      "limitation": "Tests covered one robot model on LIBERO tasks where holding is a fitting response.",
+      "problem": "Robots told to stop a banned task midway often still finish it or drop the object they hold.",
+      "fix": "The SAFI method cut banned-task success after takeover to 1.3%, with no recorded physical incidents.",
+      "practicalUseCase": "A robot can learn to freeze safely mid-task, so train a hold response instead of only refusing at the start.",
+      "limitation": "Tests covered one robot model on LIBERO tasks, and only tasks where holding still is a safe response.",
       "fullTextUrl": "https://huggingface.co/papers/2611.26239"
     },
     {
@@ -43,27 +59,11 @@
       "topics": [
         "Tech"
       ],
-      "problem": "Adding more driving demonstrations does not always help, because one planner may gain from data that harms another.",
-      "fix": "PAD scores each demonstration for the target planner, adding 3.5 points on NavTest and 5.0 points on NavHard.",
-      "practicalUseCase": "If you train driving models, score data per model and drop the weak samples instead of piling up more data.",
-      "limitation": "Results come from driving benchmarks, so real roads may behave differently.",
+      "problem": "More driving demonstration data does not always help, because one planner gains from data that another planner wastes.",
+      "fix": "The PAD method improved the driving score by 3.5 points on NavTest and 5.0 points on NavHard.",
+      "practicalUseCase": "Choose training data for each target model instead of piling up more data, which also reduces scene-level regressions.",
+      "limitation": "Results come from one driving score on benchmark tests, not real roads.",
       "fullTextUrl": "https://huggingface.co/papers/2611.25604"
-    },
-    {
-      "id": "hf:2611.25200",
-      "doi": "https://arxiv.org/abs/2611.25200",
-      "title": "Squoosh Bench: Evaluating UX-1 on 318 Historical Website A/B Tests",
-      "publicationDate": "2026-11-17",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Rohith Pasula et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Teams must pick which website changes deserve a live A/B test, and bad picks waste traffic.",
-      "fix": "Simulated shoppers from UX-1 predicted 267 of 318 past test outcomes correctly (84.0%), and a general model scored 61.6%.",
-      "practicalUseCase": "If you run A/B tests, simulated shoppers can screen ideas first, so you test the likely winners live.",
-      "limitation": "The study used past tests only, and it did not prove the method works on new tests.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.25200"
     },
     {
       "id": "https://openalex.org/W7204856806",
@@ -76,10 +76,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Research on zakat, waqf and sadaqah is scattered, so nobody knew how they help communities recover from shocks.",
-      "fix": "A review of 93 studies found zakat gives quick relief, waqf builds long-term assets, and sadaqah covers sudden needs.",
-      "practicalUseCase": "If you run a fund, combine all three tools, and back them with strong governance and digital systems.",
-      "limitation": "This is a review of past studies, so it shows patterns across papers and not new measured effects.",
+      "problem": "Research on zakat, waqf, and sadaqah is scattered, so nobody knew how each one helps communities cope with hardship.",
+      "fix": "A review of 93 studies found zakat gives short-term relief, waqf builds long-term assets, and sadaqah gives flexible emergency help.",
+      "practicalUseCase": "Use zakat for crisis relief and waqf for lasting projects, and combine all three with strong governance.",
+      "limitation": "This review summarises past studies, so it shows patterns across papers but does not prove cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3063"
     },
     {
@@ -93,10 +93,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Sustainability sukuk have grown fast, but nobody had measured what drives how large each issue is.",
-      "fix": "In 11,944 issuances from 2012 to 2022, equity-based contracts, strong security, longer debt and USD or Euro raised issue size.",
-      "practicalUseCase": "If you issue sukuk, use equity-based contracts and major currencies, and expect high second party opinion costs to shrink issues.",
-      "limitation": "Growth is concentrated in Indonesia, Malaysia and Saudi Arabia, and the data ends in 2022.",
+      "problem": "Sustainability sukuk grew fast, but nobody had mapped who issues them or what makes an issue bigger.",
+      "fix": "In 11,944 sukuk issues from 2012 to 2022, growth centres in Indonesia, Malaysia, Saudi Arabia, and equity-based contracts give bigger issues.",
+      "practicalUseCase": "Issuers who want bigger sukuk should pick equity-based contracts and watch second party opinion costs, which shrink issue size.",
+      "limitation": "The data ends in 2022, so it may miss newer market changes.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -110,10 +110,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks lack proof that online interest in halal products leads customers to Islamic financing.",
-      "fix": "Across 16 OIC countries from 2014 to 2023, more halal searches raised total Islamic financing, mainly Murabaha and Ijarah.",
-      "practicalUseCase": "If you offer Islamic finance, search trends can signal demand, so push simple products like Murabaha and Ijarah first.",
-      "limitation": "Search volume is a stand-in for awareness, and Mudarabah and Musharakah showed only weak effects.",
+      "problem": "Banks lacked proof that consumer interest in halal products leads to more Islamic financing.",
+      "fix": "In 16 OIC countries from 2014 to 2023, more halal searches raised Islamic financing, mostly through Murabaha and Ijarah.",
+      "practicalUseCase": "Banks can read halal search trends as demand signals and offer simple Murabaha and Ijarah products first.",
+      "limitation": "Online search interest stands in for real awareness, and the effect on Mudarabah and Musharakah is weak.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.3350"
     },
     {
@@ -127,10 +127,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Small businesses in Baidoa, Somalia struggle to benefit from Shari'ah-compliant banking, and the key barrier was unclear.",
-      "fix": "Affordability and ease of access drove business performance most, while general access helped less and awareness had little direct effect.",
-      "practicalUseCase": "If you design Islamic banking for small firms, cut costs and simplify service before spending on awareness campaigns.",
-      "limitation": "A one-time survey in one Somali city shows links, not cause.",
+      "problem": "Small firms in Baidoa, Somalia, may not gain from Islamic banking, and nobody knew which barrier matters most.",
+      "fix": "Affordability and ease of access drove small business performance most, while awareness had little direct effect.",
+      "practicalUseCase": "Banks should cut costs and simplify service first, because telling owners about products alone changes little.",
+      "limitation": "The survey covers one Somali city at one point in time, so it shows links, not cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.2644"
     },
     {
@@ -145,9 +145,9 @@
         "Islamic Studies & Finance"
       ],
       "problem": "Waqf collection stays low, and it was unclear whether knowing about waqf makes Muslims give.",
-      "fix": "Among 642 Indonesian Muslims, waqf literacy raised attitude, social norms, control and past behaviour, which then raised waqf intention.",
-      "practicalUseCase": "If you run a waqf, teach people how waqf works, because knowledge leads to more giving.",
-      "limitation": "The survey covered Indonesia only and measured intention, not actual donations.",
+      "fix": "Among 642 Indonesian Muslims, waqf literacy raised attitude, social norms, and control, which then lifted the intention to donate.",
+      "practicalUseCase": "Teach people how waqf works to raise giving, because knowledge changes intention through those three factors.",
+      "limitation": "The survey covers Indonesia only, and it measures intention to give rather than actual donations.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3267"
     }
   ]
