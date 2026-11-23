@@ -1,12 +1,153 @@
 {
   "repos": [
     {
+      "fullName": "backnotprop/plannotator",
+      "url": "https://github.com/backnotprop/plannotator",
+      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
+      "language": "TypeScript",
+      "starsThisWeek": 2815,
+      "totalStars": 14455,
+      "ownerAvatarUrl": "https://github.com/backnotprop.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/rudycelekli.png",
+        "https://github.com/utpalsinghdev.png",
+        "https://github.com/leoreisdias.png"
+      ],
+      "hook": "This tool gives you a visual workspace to guide AI coding agents. Coding agents are programs that write software automatically. You can review their proposed plans, annotate code, and send feedback back to the agent with one click.",
+      "personalization": "It fits your workflow for evaluating coding agents and keeping human oversight on generated code."
+    },
+    {
+      "fullName": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+      "language": "TypeScript",
+      "starsThisWeek": 2683,
+      "totalStars": 11946,
+      "ownerAvatarUrl": "https://github.com/google-labs-code.png",
+      "contributorAvatarUrls": [
+        "https://github.com/JLXIA.png",
+        "https://github.com/davideast.png",
+        "https://github.com/rudycelekli.png",
+        "https://github.com/Emp1500.png",
+        "https://github.com/dalmaer.png"
+      ],
+      "hook": "This repository provides reusable skills for AI coding agents like Claude Code and Cursor. Skills are structured prompts and functions that teach an AI how to perform tasks. It connects these skills to tools using the Model Context Protocol. This protocol is an open standard that links models to external systems.",
+      "personalization": "You can analyze how Google Labs designs and structures these skill prompts to sharpen your own prompt evaluation work."
+    },
+    {
+      "fullName": "GoogleChrome/modern-web-guidance-src",
+      "url": "https://github.com/GoogleChrome/modern-web-guidance-src",
+      "description": "Keep your coding agent up to date with the latest web best practices",
+      "language": "TypeScript",
+      "starsThisWeek": 3575,
+      "totalStars": 10229,
+      "ownerAvatarUrl": "https://github.com/GoogleChrome.png",
+      "contributorAvatarUrls": [
+        "https://github.com/paulirish.png",
+        "https://github.com/rviscomi.png",
+        "https://github.com/micahjo7.png",
+        "https://github.com/github-actions.png",
+        "https://github.com/LeaVerou.png"
+      ],
+      "hook": "This project gives AI coding agents modern rules for web development. It supplies structured guides on current JavaScript, CSS, and HTML standards. Agents read these guides to avoid generating outdated web code.",
+      "personalization": "You can feed these prompt rules into Cursor or Claude Code to ensure they generate clean, modern fullstack code."
+    },
+    {
+      "fullName": "alibaba/open-code-review",
+      "url": "https://github.com/alibaba/open-code-review",
+      "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+      "language": "Go",
+      "starsThisWeek": 3700,
+      "totalStars": 55433,
+      "ownerAvatarUrl": "https://github.com/alibaba.png",
+      "contributorAvatarUrls": [
+        "https://github.com/lizhengfeng101.png",
+        "https://github.com/wu21-web.png",
+        "https://github.com/chethanuk.png",
+        "https://github.com/Qiyuanqiii.png",
+        "https://github.com/stay-foolish-forever.png"
+      ],
+      "hook": "This tool automates code reviews on your software projects. It pairs standard security checks with large language models to find bugs. Large language models are AI systems trained on vast amounts of text. The tool checks for vulnerabilities like SQL injection and cross-site scripting.",
+      "personalization": "It provides a clear architectural example of combining deterministic rule checks with LLM evaluations for automated code reviews."
+    },
+    {
+      "fullName": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "language": "Python",
+      "starsThisWeek": 4731,
+      "totalStars": 72785,
+      "ownerAvatarUrl": "https://github.com/mvanhorn.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/tmchow.png",
+        "https://github.com/iliaal.png",
+        "https://github.com/dependabot.png"
+      ],
+      "hook": "This tool enables an AI agent to research recent discussions across multiple websites. It collects data from social platforms and search engines from the past month. The agent then writes a grounded summary with links to original sources.",
+      "personalization": "You can adapt this research skill to track recent market developments and Shariah rulings in Islamic finance."
+    },
+    {
+      "fullName": "ChromeDevTools/chrome-devtools-mcp",
+      "url": "https://github.com/ChromeDevTools/chrome-devtools-mcp",
+      "description": "Chrome DevTools for coding agents",
+      "language": "TypeScript",
+      "starsThisWeek": 2268,
+      "totalStars": 58858,
+      "ownerAvatarUrl": "https://github.com/ChromeDevTools.png",
+      "contributorAvatarUrls": [
+        "https://github.com/OrKoN.png",
+        "https://github.com/dependabot.png",
+        "https://github.com/Lightning00Blade.png",
+        "https://github.com/browser-automation-bot.png",
+        "https://github.com/yulunz.png"
+      ],
+      "hook": "This project connects Google Chrome browser tools to AI coding agents. Coding agents are programs that can write and test software. The connection lets agents inspect live web pages and read console errors to fix bugs directly.",
+      "personalization": "You can plug this into your agent setup to let tools like Claude Code inspect and fix your fullstack web apps locally."
+    },
+    {
+      "fullName": "tradermonty/claude-trading-skills",
+      "url": "https://github.com/tradermonty/claude-trading-skills",
+      "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
+      "language": "Python",
+      "starsThisWeek": 2616,
+      "totalStars": 7802,
+      "ownerAvatarUrl": "https://github.com/tradermonty.png",
+      "contributorAvatarUrls": [
+        "https://github.com/claude.png",
+        "https://github.com/dependabot.png",
+        "https://github.com/raikkonenPotter.png",
+        "https://github.com/sx4im.png"
+      ],
+      "hook": "This repository adds stock trading and market analysis skills to Claude Code. It provides tools to generate technical charts and screen company shares. Users can test trading strategies directly from their command line.",
+      "personalization": "You could adapt its screener tools to build automated Shariah compliance and financial screening filters for equities."
+    },
+    {
+      "fullName": "ag-ui-protocol/ag-ui",
+      "url": "https://github.com/ag-ui-protocol/ag-ui",
+      "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+      "language": "TypeScript",
+      "starsThisWeek": 3620,
+      "totalStars": 21210,
+      "ownerAvatarUrl": "https://github.com/ag-ui-protocol.png",
+      "contributorAvatarUrls": [
+        "https://github.com/ranst91.png",
+        "https://github.com/contextablemark.png",
+        "https://github.com/mme.png",
+        "https://github.com/claude.png",
+        "https://github.com/jpr5.png"
+      ],
+      "hook": "This library provides an interaction protocol between AI agents and frontend web applications. A protocol is a set of formal rules for exchanging information. It helps developers render agent tasks and agent status directly inside user interfaces.",
+      "personalization": "It is directly useful if you want to build frontends for your own AI side projects that display agent actions in real time."
+    },
+    {
       "fullName": "meta/astryx",
       "url": "https://github.com/meta/astryx",
       "description": "An open source design system that's fully customizable and agent ready",
       "language": "TypeScript",
-      "starsThisWeek": 13501,
-      "totalStars": 28904,
+      "starsThisWeek": 3626,
+      "totalStars": 32254,
       "ownerAvatarUrl": "https://github.com/meta.png",
       "contributorAvatarUrls": [
         "https://github.com/github-actions.png",
@@ -15,104 +156,33 @@
         "https://github.com/rubyycheung.png",
         "https://github.com/vjeux.png"
       ],
-      "hook": "Meta built Astryx as an open-source design system. A design system is a set of reusable visual components for user interfaces. Astryx works directly with AI agents. Agents can read the component rules and build web layouts automatically.",
-      "personalization": "As a fullstack engineer using AI coding tools, you can test how accurately agents assemble frontend interfaces with these standardized components."
-    },
-    {
-      "fullName": "anthropics/skills",
-      "url": "https://github.com/anthropics/skills",
-      "description": "Public repository for Agent Skills",
-      "language": "Python",
-      "starsThisWeek": 6077,
-      "totalStars": 195383,
-      "ownerAvatarUrl": "https://github.com/anthropics.png",
-      "contributorAvatarUrls": [
-        "https://github.com/rlancemartin.png",
-        "https://github.com/klazuka.png",
-        "https://github.com/claude.png",
-        "https://github.com/cj-ant.png",
-        "https://github.com/ericharmeling.png"
-      ],
-      "hook": "Anthropic shares ready-made capabilities for AI agents in this repository. Agents use these skills to run code, search files, and complete computer tasks. You can add these skills directly into your automated workflows.",
-      "personalization": "This repository provides concrete prompt patterns and tool definitions that you can inspect and benchmark in your applied prompt evaluation work."
-    },
-    {
-      "fullName": "sherlock-project/sherlock",
-      "url": "https://github.com/sherlock-project/sherlock",
-      "description": "Hunt down social media accounts by username across social networks",
-      "language": "Python",
-      "starsThisWeek": 10412,
-      "totalStars": 112504,
-      "ownerAvatarUrl": "https://github.com/sherlock-project.png",
-      "contributorAvatarUrls": [
-        "https://github.com/sdushantha.png",
-        "https://github.com/hoadlck.png",
-        "https://github.com/ppfeister.png",
-        "https://github.com/TheYahya.png",
-        "https://github.com/Czechball.png"
-      ],
-      "hook": "Sherlock is an open-source tool that searches for user accounts across the web. You give it one username. It checks hundreds of social media platforms to find matching profiles.",
+      "hook": "Astryx is an open-source design system created by Meta. A design system is a collection of reusable visual components and interface guidelines. This system includes structured definitions so that AI agents can build interfaces accurately.",
       "personalization": ""
     },
     {
-      "fullName": "backnotprop/plannotator",
-      "url": "https://github.com/backnotprop/plannotator",
-      "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-      "language": "TypeScript",
-      "starsThisWeek": 1719,
-      "totalStars": 11866,
-      "ownerAvatarUrl": "https://github.com/backnotprop.png",
+      "fullName": "pookjw/HermesEnabler",
+      "url": "https://github.com/pookjw/HermesEnabler",
+      "description": "Enable Hermès Watch Faces on any Apple Watch devices",
+      "language": "Objective-C",
+      "starsThisWeek": 461,
+      "totalStars": 2407,
+      "ownerAvatarUrl": "https://github.com/pookjw.png",
       "contributorAvatarUrls": [
+        "https://github.com/metalnodeug.png",
         "https://github.com/claude.png",
-        "https://github.com/utpalsinghdev.png",
-        "https://github.com/leoreisdias.png",
-        "https://github.com/uvw.png"
+        "https://github.com/SamZong233.png",
+        "https://github.com/AVGThor.png"
       ],
-      "hook": "Plannotator gives developers a visual workspace to review AI agent work. AI agents write code and suggest plans inside the app. You can annotate their plans and send feedback in one click. An annotation is a written note or correction on text.",
-      "personalization": "It fits your workflow if you need a practical human-in-the-loop interface to inspect, evaluate, and steer AI coding agents."
-    },
-    {
-      "fullName": "vercel-labs/agent-browser",
-      "url": "https://github.com/vercel-labs/agent-browser",
-      "description": "Browser automation CLI for AI agents",
-      "language": "Rust",
-      "starsThisWeek": 4217,
-      "totalStars": 51642,
-      "ownerAvatarUrl": "https://github.com/vercel-labs.png",
-      "contributorAvatarUrls": [
-        "https://github.com/ctate.png",
-        "https://github.com/Railly.png",
-        "https://github.com/lahfir.png",
-        "https://github.com/github-actions.png",
-        "https://github.com/claude.png"
-      ],
-      "hook": "This tool lets AI agents control a web browser from the command line. The agent can open web pages, click buttons, and extract text. It uses Rust for fast execution.",
-      "personalization": "You can use this to build automated testing pipelines where AI agents verify your web applications end-to-end."
-    },
-    {
-      "fullName": "ZhuLinsen/daily_stock_analysis",
-      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
-      "description": "LLM 驱动的多市场股票智能分析系统：多源行情、实时新闻、决策看板与自动推送，支持零成本定时运行。 LLM-powered multi-market stock analysis system with multi-source market data, real-time news, decision dashboard, automated notifications, and cost-free scheduled runs.",
-      "language": "Python",
-      "starsThisWeek": 4548,
-      "totalStars": 72519,
-      "ownerAvatarUrl": "https://github.com/ZhuLinsen.png",
-      "contributorAvatarUrls": [
-        "https://github.com/massif-01.png",
-        "https://github.com/freesme.png",
-        "https://github.com/Activer007.png",
-        "https://github.com/birdxs.png"
-      ],
-      "hook": "This tool uses large language models to analyze stock markets every day. It collects market prices and financial news articles. Then, it creates a summary report and sends notifications to your chat apps.",
-      "personalization": "You could adapt its analysis prompts and data pipelines to screen Malaysian equities against Shariah-compliant financial criteria."
+      "hook": "This project unlocks Hermès luxury watch faces on regular Apple Watch devices. It modifies protected system files on modified watch hardware.",
+      "personalization": ""
     },
     {
       "fullName": "we-promise/sure",
       "url": "https://github.com/we-promise/sure",
       "description": "The personal finance app for everyone (by everyone)",
       "language": "Ruby",
-      "starsThisWeek": 4556,
-      "totalStars": 15722,
+      "starsThisWeek": 1771,
+      "totalStars": 17356,
       "ownerAvatarUrl": "https://github.com/we-promise.png",
       "contributorAvatarUrls": [
         "https://github.com/jjmata.png",
@@ -121,79 +191,44 @@
         "https://github.com/zachgoll.png",
         "https://github.com/Shpigford.png"
       ],
-      "hook": "Sure is an open-source personal finance application. It helps people track bank balances, record expenses, and organize budgets. Anyone can inspect or modify the code.",
-      "personalization": "This codebase offers a clean base if you want to build an ethical personal finance tool with custom Zakat calculations."
+      "hook": "Sure is an open-source application for personal finance management. It helps users track spending, organize financial budgets, and view net worth. It runs on the Ruby web framework.",
+      "personalization": "You could use its data models as a starting point to build an ethical, Zakat-compliant personal finance tracker."
     },
     {
-      "fullName": "milind-soni/OpenMausBot",
-      "url": "https://github.com/milind-soni/OpenMausBot",
-      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+      "fullName": "dream-num/univer",
+      "url": "https://github.com/dream-num/univer",
+      "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
       "language": "TypeScript",
-      "starsThisWeek": 5463,
-      "totalStars": 23439,
-      "ownerAvatarUrl": "https://github.com/milind-soni.png",
+      "starsThisWeek": 6436,
+      "totalStars": 31288,
+      "ownerAvatarUrl": "https://github.com/dream-num.png",
       "contributorAvatarUrls": [
-        "https://github.com/claude.png",
-        "https://github.com/aivsomkar.png",
-        "https://github.com/AdityaUmale.png",
-        "https://github.com/robinsonnblack.png"
+        "https://github.com/jikkai.png",
+        "https://github.com/DR-Univer.png",
+        "https://github.com/wpxp123456.png",
+        "https://github.com/wzhudev.png",
+        "https://github.com/Dushusir.png"
       ],
-      "hook": "OpenMausBot is an open-source automation bot. It connects an AI agent to a virtual machine. A virtual machine is an isolated software computer running inside your system. The AI can run programs safely inside this sandbox. A sandbox is a secure space where code cannot harm the host computer.",
+      "hook": "Univer is an open-source toolkit for building web-based spreadsheets and text documents. It allows developers to embed office editors into their web apps. Both human users and AI agents can manipulate the data tables.",
       "personalization": ""
     },
     {
-      "fullName": "google/elephant-goldfish-model",
-      "url": "https://github.com/google/elephant-goldfish-model",
-      "description": "Open-source plugin for designing and reviewing software with agents",
+      "fullName": "kajisho5/ffmpeg-skill",
+      "url": "https://github.com/kajisho5/ffmpeg-skill",
+      "description": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Code, Cursor and Codex. Cut, captions, reframe, loudness, platform exports. No cloud, no API keys.",
       "language": "Python",
-      "starsThisWeek": 5060,
-      "totalStars": 19796,
-      "ownerAvatarUrl": "https://github.com/google.png",
+      "starsThisWeek": 3748,
+      "totalStars": 9766,
+      "ownerAvatarUrl": "https://github.com/kajisho5.png",
       "contributorAvatarUrls": [
-        "https://github.com/n3wth.png",
-        "https://github.com/briansuchy.png",
-        "https://github.com/eewing314.png",
-        "https://github.com/dependabot.png",
-        "https://github.com/briansuchy-goog.png"
-      ],
-      "hook": "This project helps teams design and review software architecture with AI agents. Software architecture means the overall structure and organization of a software system. The agents inspect software designs before developers write code.",
-      "personalization": "It offers an interesting multi-agent prompt structure that you can evaluate for automated software design reviews."
-    },
-    {
-      "fullName": "google-deepmind/mujoco",
-      "url": "https://github.com/google-deepmind/mujoco",
-      "description": "Multi-Joint dynamics with Contact. A general purpose physics simulator.",
-      "language": "C++",
-      "starsThisWeek": 1922,
-      "totalStars": 18077,
-      "ownerAvatarUrl": "https://github.com/google-deepmind.png",
-      "contributorAvatarUrls": [
-        "https://github.com/yuvaltassa.png",
-        "https://github.com/quagla.png",
-        "https://github.com/haroonq.png",
-        "https://github.com/kbayes.png",
-        "https://github.com/thowell.png"
-      ],
-      "hook": "MuJoCo is a physics engine for robotics and biomechanics research. A physics engine simulates real-world physical forces like gravity and friction. It calculates how objects move and collide in three dimensions.",
-      "personalization": ""
-    },
-    {
-      "fullName": "addyosmani/agent-skills",
-      "url": "https://github.com/addyosmani/agent-skills",
-      "description": "Production-grade engineering skills for AI coding agents.",
-      "language": "JavaScript",
-      "starsThisWeek": 3889,
-      "totalStars": 117957,
-      "ownerAvatarUrl": "https://github.com/addyosmani.png",
-      "contributorAvatarUrls": [
-        "https://github.com/nucliweb.png",
-        "https://github.com/ayobamiseun.png",
         "https://github.com/claude.png",
-        "https://github.com/rudycelekli.png"
+        "https://github.com/github-actions.png",
+        "https://github.com/claude.png",
+        "https://github.com/dchaudhari7177.png"
       ],
-      "hook": "This repository contains practical instructions and scripts for AI coding assistants. These skills teach agents how to write cleaner code, run tests, and refactor files. Refactoring means improving code structure without changing how the software behaves.",
-      "personalization": "This is a direct source of production-ready prompts that you can test, evaluate, and adapt for your own AI coding stack."
+      "hook": "This project allows AI coding agents to edit video files on your local machine. It connects to FFmpeg, which is a software tool for processing multimedia files. Agents can cut clips, add captions, and adjust audio without cloud services.",
+      "personalization": ""
     }
   ],
-  "lastUpdated": "2026-11-16T01:34:23.441Z"
+  "lastUpdated": "2026-11-23T02:13:41.653Z"
 }
