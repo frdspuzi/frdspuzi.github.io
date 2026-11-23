@@ -1,6 +1,32 @@
 {
   "videos": [
     {
+      "title": "Build the Workshop Before the Software Factory — Armin Ronacher, Earendil",
+      "url": "https://www.youtube.com/watch?v=JNexz3Tbiu8",
+      "videoId": "JNexz3Tbiu8",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "While AI coding agents can now operate autonomously for 15 minutes at a stretch, Armin Ronacher reveals why churning out endless code is a trap: your finite human attention—not agent speed—is the real bottleneck in software engineering. Watch this video to discover why the future belongs to developers who operate as master craftsmen in an 'atelier' rather than a mindless feature factory, armed with empirical usage data and next-generation architectural patterns like Code Mode and durable agents.",
+      "dateAdded": "2026-11-23T02:05:09.041Z",
+      "timestamps": [
+        {
+          "startTime": 285,
+          "endTime": 435,
+          "topic": "Why human attention is the true bottleneck of AI-generated code"
+        },
+        {
+          "startTime": 545,
+          "endTime": 635,
+          "topic": "True engineering skill vs. agent skill: Avoiding architectural decay"
+        },
+        {
+          "startTime": 1040,
+          "endTime": 1150,
+          "topic": "Scaling harnesses with 'Code Mode' and lightweight classifier models"
+        }
+      ]
+    },
+    {
       "title": "What Runs Where? Local AI in Production — Ahmad Osman, Osmantic",
       "url": "https://www.youtube.com/watch?v=GKSQYbELDzw",
       "videoId": "GKSQYbELDzw",
@@ -49,32 +75,6 @@
           "startTime": 619,
           "endTime": 705,
           "topic": "Lesson 3: Rejecting the 'lone wolf' myth to think bigger together"
-        }
-      ]
-    },
-    {
-      "title": "Engineer Your Coding Agents Like Any Other System — Zach Lloyd, Warp",
-      "url": "https://www.youtube.com/watch?v=0LeT996Hz3E",
-      "videoId": "0LeT996Hz3E",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Prompting AI coding agents manually from your terminal is already obsolete—the real future of software engineering lies in autonomous, code-defined 'software factories.' In this visionary talk, Warp CEO Zach Lloyd reveals how treating agents as core engineering primitives allows entire systems to continuously measure performance and even submit pull requests to patch their own workflows. If you want to future-proof your engineering career and discover how modern software will actually be built at scale, this talk is an essential blueprint.",
-      "dateAdded": "2026-11-21T02:56:18.757Z",
-      "timestamps": [
-        {
-          "startTime": 218,
-          "endTime": 345,
-          "topic": "Defining the Software Factory: Moving Beyond Local Coding Agents"
-        },
-        {
-          "startTime": 488,
-          "endTime": 640,
-          "topic": "The 6-Layer Architecture Stack for Engineering Agentic Systems"
-        },
-        {
-          "startTime": 900,
-          "endTime": 1030,
-          "topic": "Autonomous Self-Improvement: How Agents Submit PRs to Fix Their Own Factory"
         }
       ]
     },
@@ -235,80 +235,28 @@
       ]
     },
     {
-      "title": "#119 | How To Build Trust (Gavin Liew, The Makeover Guys)",
-      "url": "https://www.youtube.com/watch?v=i-oA9axU4zI",
-      "videoId": "i-oA9axU4zI",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "Most service businesses get crushed by endless pitching and hidden cultural rot, but serial entrepreneur Gavin Liew cracked the code by transforming the notoriously broken renovation sector into a predictable, platform-scale engine. Discover how productizing custom services into a standardized 'menu' eliminates proposal burnout—and why lovable, underperforming 'rabbits' pose a far greater threat to scaling past 100 employees than toxic high-performers.",
-      "dateAdded": "2026-11-22T01:46:25.340Z",
+      "title": "When \"Religious\" People Become Oppressors | Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/shorts/eLcgsT_Vv74",
+      "videoId": "eLcgsT_Vv74",
+      "channel": "Yaqeen Institute",
+      "category": "Islamic Studies",
+      "summary": "Don't let outward piety blind you—some of the most destructive forces weaponize scripture either to justify violence or to rubber-stamp the tyranny of oppressive rulers. This eye-opening talk reveals how both violent extremists and corrupt court scholars represent two sides of the same coin, stripping religion of its true justice. Watch this essential reminder to discover how to protect your moral compass and keep your faith pure amidst widespread confusion.",
+      "dateAdded": "2026-11-23T02:05:09.041Z",
       "timestamps": [
         {
-          "startTime": 905,
-          "endTime": 1090,
-          "topic": "Breaking the endless pitch trap by productizing custom services into a menu"
+          "startTime": 0,
+          "endTime": 19,
+          "topic": "The deception of extreme outward piety hiding violent extremism"
         },
         {
-          "startTime": 1147,
-          "endTime": 1335,
-          "topic": "Overcoming the industry trust deficit through e-commerce-style transparency"
+          "startTime": 19,
+          "endTime": 39,
+          "topic": "How religious mouthpieces sanctify tyranny and oppression"
         },
         {
-          "startTime": 1910,
-          "endTime": 2075,
-          "topic": "Hyenas vs. Rabbits: Why lovable underperformers silently sabotage scaling"
-        }
-      ]
-    },
-    {
-      "title": "#118 | Building A Global Snack and Wellness Platfrom (Pierre Pang, Mamee CEO)",
-      "url": "https://www.youtube.com/watch?v=RnbaL_XQ3ss",
-      "videoId": "RnbaL_XQ3ss",
-      "channel": "The Game Of Impossible",
-      "category": "General Ideas",
-      "summary": "Most legacy businesses die by the third generation, but MAMEE Group CEO Pierre Pang shattered that curse by doubling the 55-year-old snack giant's revenue to RM1.5 billion in just five years. In this masterclass, he breaks down the battle-tested 'IDEA' operating system and the rapid 12-week product loop that transformed a traditional noodle manufacturer into an agile global powerhouse. If you want to know how to future-proof any brand against disruption—including why you should actively fund the startups trying to kill your flagship products—this interview is an absolute must-watch.",
-      "dateAdded": "2026-11-22T01:46:25.340Z",
-      "timestamps": [
-        {
-          "startTime": 760,
-          "endTime": 1005,
-          "topic": "The QVE Moat: Why Product Quality Alone Fails Without Emotional Value"
-        },
-        {
-          "startTime": 2140,
-          "endTime": 2315,
-          "topic": "The 12-Week Innovation Engine: Launching and Validating Viral MVPs on TikTok"
-        },
-        {
-          "startTime": 2920,
-          "endTime": 3105,
-          "topic": "Disrupting Yourself: Why Established Giants Must Fund Their Own Disruptors"
-        }
-      ]
-    },
-    {
-      "title": "Xiaomi: Smartphones, Smart Homes, EVs | In The Studio",
-      "url": "https://www.youtube.com/watch?v=KwHTVB0GUZw",
-      "videoId": "KwHTVB0GUZw",
-      "channel": "BFM 89.9",
-      "category": "General Ideas",
-      "summary": "Think Xiaomi is still just a budget smartphone maker? In this insider interview, Xiaomi Malaysia's Country Manager Xingyu Yang reveals how the tech titan is actively stealing loyal users away from Apple with bold hardware innovations, a deeply connected lifestyle ecosystem, and ambitions extending into electric vehicles. Watch this breakdown to discover how aggressive feature disruption and seamless ecosystem convenience are completely reshaping consumer tech.",
-      "dateAdded": "2026-11-22T01:46:25.341Z",
-      "timestamps": [
-        {
-          "startTime": 145,
-          "endTime": 270,
-          "topic": "How a functional rear display and dedicated AI button transform smartphone utility"
-        },
-        {
-          "startTime": 735,
-          "endTime": 845,
-          "topic": "The playbook for winning over Apple users and making switching painless"
-        },
-        {
-          "startTime": 1305,
-          "endTime": 1395,
-          "topic": "Addressing the rumors and reality of Xiaomi's electric vehicle expansion"
+          "startTime": 39,
+          "endTime": 56,
+          "topic": "Safeguarding authentic faith from both destructive extremes"
         }
       ]
     },
@@ -389,7 +337,59 @@
           "topic": "Why the best AI-era engineers operate like Factorio and Civilization players"
         }
       ]
+    },
+    {
+      "title": "Cloud Native Architect: What Software Engineers Need to Know About Platforms",
+      "url": "https://www.youtube.com/watch?v=J0zpb_mFGsc",
+      "videoId": "J0zpb_mFGsc",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "The most dangerous trap in modern infrastructure is watching your streamlined 'golden path' quietly morph into a suffocating 'golden cage' that kills developer velocity. Cloud native architect Thomas Schütz breaks down why eliminating manual API access is non-negotiable, how to balance opinionated defaults with engineering autonomy, and why autonomous AI coding agents make robust internal platforms more urgent than ever. If you want to design cloud infrastructure that scales effortlessly without becoming a bureaucratic bottleneck, this interview delivers the exact architectural blueprint you need.",
+      "dateAdded": "2026-11-23T02:05:09.042Z",
+      "timestamps": [
+        {
+          "startTime": 325,
+          "endTime": 405,
+          "topic": "The core cloud-native principle: full automation and eliminating manual API access"
+        },
+        {
+          "startTime": 1215,
+          "endTime": 1315,
+          "topic": "The 'golden cage' trap: balancing paved road convenience with developer flexibility"
+        },
+        {
+          "startTime": 1575,
+          "endTime": 1665,
+          "topic": "Why autonomous AI coding agents make platform engineering more vital than ever"
+        }
+      ]
+    },
+    {
+      "title": "The 3-tier model setup that cuts your AI costs",
+      "url": "https://www.youtube.com/shorts/h2yjwbyep3k",
+      "videoId": "h2yjwbyep3k",
+      "channel": "Beyond Coding",
+      "category": "Tech & Engineering",
+      "summary": "Burning through 200 million tokens on a single refactor can easily wreck your engineering budget—unless you adopt a smarter AI workflow. This video breaks down an actionable three-tier model strategy and a context-clearing hack that slashes API bills while keeping code quality high. If your team uses LLMs for development, this quick lesson will save you thousands of dollars in wasted spend.",
+      "dateAdded": "2026-11-23T02:05:09.042Z",
+      "timestamps": [
+        {
+          "startTime": 0,
+          "endTime": 15,
+          "topic": "The costly reality of runaway token usage in software engineering"
+        },
+        {
+          "startTime": 15,
+          "endTime": 48,
+          "topic": "The 3-tier model framework: SOTA for planning, mid-tier for coding, small models for review"
+        },
+        {
+          "startTime": 48,
+          "endTime": 69,
+          "topic": "The context-clearing trick to eliminate prompt baggage and save tokens"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-22T01:50:29.652Z"
+  "lastUpdated": "2026-11-23T02:09:06.582Z"
 }
