@@ -1,86 +1,103 @@
 {
-  "lastUpdated": "2026-11-23",
+  "lastUpdated": "2026-11-24",
   "papers": [
     {
-      "id": "hf:2611.22343",
-      "doi": "https://arxiv.org/abs/2611.22343",
-      "title": "PURE: A Diagnostic Benchmark for Multi-Granularity Multimodal Identity Matching",
-      "publicationDate": "2026-11-16",
+      "id": "hf:2611.23946",
+      "doi": "https://arxiv.org/abs/2611.23946",
+      "title": "How Complete Must an Environment Be to Train a Capable GUI Agent?",
+      "publicationDate": "2026-11-17",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Hengyu You et al.",
+      "leadAuthor": "Jingxing Wang et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Online shops cannot tell if two listings show the same product, and one accuracy score hides why models fail.",
-      "fix": "The PURE test scored ten AI models from 47.1% to 86.0%, and evidence-based judgment scored lowest.",
-      "practicalUseCase": "A high matching score can hide weak spots, so test models on each skill before you trust them.",
-      "limitation": "The test uses online shopping data only, so results may differ in other fields.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.22343"
+      "problem": "Teams building practice apps for phone agents do not know which parts they can safely cut.",
+      "fix": "Rewarding only one reference path cut success by 10.53 points, while pruning unused features raised success from 51.61% to 56.13%.",
+      "practicalUseCase": "Keep the reward rules and app data complete, and cut unused features, to build cheaper training setups that work better.",
+      "limitation": "It tests one small model family, so the result may not hold for other models.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.23946"
     },
     {
-      "id": "hf:2611.26232",
-      "doi": "https://arxiv.org/abs/2611.26232",
-      "title": "Time Series Structure Learning with Local Causal Parent Discovery",
-      "publicationDate": "2026-11-18",
+      "id": "hf:2611.30637",
+      "doi": "https://arxiv.org/abs/2611.30637",
+      "title": "SWEEP-Bench: Do Embodied Policies Act on the Speed They See?",
+      "publicationDate": "2026-11-22",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Jacqueline Maasch et al.",
+      "leadAuthor": "Hiroaki Honda et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Finding cause and effect in time data runs slowly because tests grow costly as the number of variables grows.",
-      "fix": "The ITPD method ran 2.3, 9.1, and 40.9 times faster than three rival methods on 2000-variable graphs.",
-      "practicalUseCase": "If your data has thousands of variables, this method finds causes far faster, so try it before older tools.",
-      "limitation": "The speed results come from simulated data, not real-world data.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.26232"
+      "problem": "Robot control models fail when objects move at different speeds, and few tests check this.",
+      "fix": "Six of eight models peaked at middle speeds, and adding past frames raised success by 10-40 points for three models.",
+      "practicalUseCase": "Feed your robot model recent past frames or a speed estimate, and test it at many speeds.",
+      "limitation": "The tests run in simulation on conveyor belts, so real robots may behave differently.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.30637"
     },
     {
-      "id": "hf:2611.26239",
-      "doi": "https://arxiv.org/abs/2611.26239",
-      "title": "Teaching Vision-Language-Action Models to Stop Safely",
-      "publicationDate": "2026-11-18",
+      "id": "hf:2611.28618",
+      "doi": "https://arxiv.org/abs/2611.28618",
+      "title": "Distilling Visual Agents from Limited Interaction Experience",
+      "publicationDate": "2026-11-20",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Zheyuan Liu et al.",
+      "leadAuthor": "Siyu Zhou et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Robots told to stop a banned task midway often still finish it or drop the object they hold.",
-      "fix": "The SAFI method cut banned-task success after takeover to 1.3%, with no recorded physical incidents.",
-      "practicalUseCase": "A robot can learn to freeze safely mid-task, so train a hold response instead of only refusing at the start.",
-      "limitation": "Tests covered one robot model on LIBERO tasks, and only tasks where holding still is a safe response.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.26239"
+      "problem": "Teaching a small visual agent usually needs many practice runs, and nobody knew how few would work.",
+      "fix": "Four recorded runs raised a 4B student's success from 49.17% to 82.08% on Navigation and 60.16% to 85.55% on Sokoban.",
+      "practicalUseCase": "Train small agents on a few well-chosen recorded runs before you pay for more practice.",
+      "limitation": "It covers three puzzle-style tasks only, so other task types may need more experience.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.28618"
     },
     {
-      "id": "hf:2611.25604",
-      "doi": "https://arxiv.org/abs/2611.25604",
-      "title": "PAD: Policy-Aware Data Valuation for Autonomous Driving",
-      "publicationDate": "2026-11-18",
+      "id": "hf:2611.27689",
+      "doi": "https://arxiv.org/abs/2611.27689",
+      "title": "Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation",
+      "publicationDate": "2026-11-22",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Chengkai Xu et al.",
+      "leadAuthor": "Zhenxuan Fan et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "More driving demonstration data does not always help, because one planner gains from data that another planner wastes.",
-      "fix": "The PAD method improved the driving score by 3.5 points on NavTest and 5.0 points on NavHard.",
-      "practicalUseCase": "Choose training data for each target model instead of piling up more data, which also reduces scene-level regressions.",
-      "limitation": "Results come from one driving score on benchmark tests, not real roads.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.25604"
+      "problem": "Robot agents built on language models forget past steps, misread why they failed, and waste what they learn.",
+      "fix": "A two-agent setup that rewrites its own guidance reached 82.4%, 76.7%, and 94.4% on benchmarks, and 96.7% in real tasks.",
+      "practicalUseCase": "Let a second agent turn failures into written guidance, so your robot improves without any retraining.",
+      "limitation": "The real-world test covers only three manipulation tasks.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.27689"
     },
     {
-      "id": "https://openalex.org/W7204856806",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3063",
-      "title": "Islamic Social Financial Instruments and Sustainable Community Development: Evidence Synthesis on Community Resilience",
+      "id": "https://openalex.org/W7204848949",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.2582",
+      "title": "Determinants of Financial Inclusion in the OIC and OECD Countries: Are They Different?",
       "publicationDate": "2026-08-31",
       "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Abdallah Mambo Dallu",
-      "institution": "KCA University",
+      "leadAuthor": "Tengku Roziana et al.",
+      "institution": "International Centre for Education in Islamic Finance",
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Research on zakat, waqf, and sadaqah is scattered, so nobody knew how each one helps communities cope with hardship.",
-      "fix": "A review of 93 studies found zakat gives short-term relief, waqf builds long-term assets, and sadaqah gives flexible emergency help.",
-      "practicalUseCase": "Use zakat for crisis relief and waqf for lasting projects, and combine all three with strong governance.",
-      "limitation": "This review summarises past studies, so it shows patterns across papers but does not prove cause.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3063"
+      "problem": "Many Muslim-majority countries still leave large groups out of formal finance, even as Islamic finance grows.",
+      "fix": "Across 35 countries from 2005 to 2021, income, tertiary education, institution quality, and internet access shaped inclusion in OIC states.",
+      "practicalUseCase": "Digital infrastructure, youth and female empowerment, and higher income matter most, so Islamic banks should aim products there.",
+      "limitation": "It shows links between country factors and inclusion, not proof of cause.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
+    },
+    {
+      "id": "https://openalex.org/W7204818985",
+      "doi": "https://doi.org/10.21098/jimf.v12i3.3267",
+      "title": "Examining the Impact of Waqf Literacy on Waqf Behaviour",
+      "publicationDate": "2026-08-31",
+      "venue": "Journal of Islamic Monetary Economics and Finance",
+      "leadAuthor": "Nashr Akbar et al.",
+      "institution": "International Islamic University Malaysia",
+      "topics": [
+        "Islamic Studies & Finance"
+      ],
+      "problem": "Waqf collection stays low, and it was unclear whether better waqf knowledge changes how Muslims give.",
+      "fix": "In 642 Indonesian Muslims, waqf literacy raised attitude, social norms, control, and past behaviour, which lifted giving intent.",
+      "practicalUseCase": "Teach people what waqf is, because knowledge pushes giving up, so waqf groups should fund literacy work.",
+      "limitation": "It uses a survey of Muslims in Indonesia only, so it shows intent, not actual donations.",
+      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3267"
     },
     {
       "id": "https://openalex.org/W7204756985",
@@ -93,10 +110,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Sustainability sukuk grew fast, but nobody had mapped who issues them or what makes an issue bigger.",
-      "fix": "In 11,944 sukuk issues (2012-2022), growth centres in Indonesia, Malaysia, Saudi Arabia; equity-based contracts give bigger issues.",
-      "practicalUseCase": "Issuers who want bigger sukuk should pick equity-based contracts and watch second party opinion costs, which shrink issue size.",
-      "limitation": "The data ends in 2022, so it may miss newer market changes.",
+      "problem": "Nobody had mapped how sustainability sukuk issuance grew or what makes an issue large.",
+      "fix": "Of 11,944 sukuk issues from 2012 to 2022, equity-based contracts, social purposes, and USD or Euro currency gave larger issues.",
+      "practicalUseCase": "Issuers should use equity-based contracts and major currencies, and keep second party opinion costs low to raise issue size.",
+      "limitation": "It covers 2012 to 2022 issues only, and growth sits mostly in Indonesia, Malaysia, and Saudi Arabia.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -110,45 +127,11 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks lacked proof that consumer interest in halal products leads to more Islamic financing.",
-      "fix": "In 16 OIC countries from 2014 to 2023, more halal searches raised Islamic financing, mostly through Murabaha and Ijarah.",
-      "practicalUseCase": "Banks can read halal search trends as demand signals and offer simple Murabaha and Ijarah products first.",
-      "limitation": "Online search interest stands in for real awareness, and the effect on Mudarabah and Musharakah is weak.",
+      "problem": "It was unclear whether online interest in halal products pulls Islamic financing up in Muslim countries.",
+      "fix": "Across 16 OIC countries from 2014 to 2023, halal search interest raised total financing, mainly through Murabaha and Ijarah.",
+      "practicalUseCase": "Banks should expect demand to lead supply, so push simple Murabaha and Ijarah products when halal interest rises.",
+      "limitation": "Search volume only proxies awareness, and the effect on Mudarabah and Musharakah is weak.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.3350"
-    },
-    {
-      "id": "https://openalex.org/W7236250750",
-      "doi": "https://doi.org/10.21098/jimf.v12i4.2644",
-      "title": "Islamic Banking Products Accessibility and SME Performance: Evaluating Shari’ah-Compliant Financial Solutions for Somali Enterprises",
-      "publicationDate": "2026-11-18",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Ali Yassin Sheikh Ali et al.",
-      "institution": "SIMAD University",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Small firms in Baidoa, Somalia, may not gain from Islamic banking, and nobody knew which barrier matters most.",
-      "fix": "Affordability and ease of access drove small business performance most, while awareness had little direct effect.",
-      "practicalUseCase": "Banks should cut costs and simplify service first, because telling owners about products alone changes little.",
-      "limitation": "The survey covers one Somali city at one point in time, so it shows links, not cause.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.2644"
-    },
-    {
-      "id": "https://openalex.org/W7204818985",
-      "doi": "https://doi.org/10.21098/jimf.v12i3.3267",
-      "title": "Examining the Impact of Waqf Literacy on Waqf Behaviour",
-      "publicationDate": "2026-08-31",
-      "venue": "Journal of Islamic Monetary Economics and Finance",
-      "leadAuthor": "Nashr Akbar et al.",
-      "institution": "International Islamic University Malaysia",
-      "topics": [
-        "Islamic Studies & Finance"
-      ],
-      "problem": "Waqf collection stays low, and it was unclear whether knowing about waqf makes Muslims give.",
-      "fix": "Among 642 Indonesian Muslims, waqf literacy raised attitude, social norms, and control, which then lifted the intention to donate.",
-      "practicalUseCase": "Teach people how waqf works to raise giving, because knowledge changes intention through those three factors.",
-      "limitation": "The survey covers Indonesia only, and it measures intention to give rather than actual donations.",
-      "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3267"
     }
   ]
 }
