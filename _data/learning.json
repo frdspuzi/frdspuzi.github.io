@@ -1,215 +1,215 @@
 {
   "learnings": [
     {
-      "question": "Who, in 1971, argued that in an information-rich world, the growing wealth of information inevitably creates a scarcity of attention?",
+      "question": "A one-person halal food-finder app for Malaysia got how many unique visitors in its first month, after being featured by a local publication?",
       "options": [
+        "90,000+",
+        "9,000+",
+        "90+",
+        "900+"
+      ],
+      "correctIndex": 1,
+      "learning": "After being featured by a local publication, the app had 9k+ unique visitors in its first month, still growing.",
+      "articleTitle": "The Unfair Advantage",
+      "articleUrl": "/books/the-unfair-advantage/",
+      "category": "Books"
+    },
+    {
+      "question": "What relationship between hard work and success is described in one reflection on entrepreneurship?",
+      "options": [
+        "Hard work correlates with success by widening the surface area for opportunity, rather than directly causing it",
+        "Hard work directly causes success in every case",
+        "Hard work has no bearing on success at all",
+        "Success causes people to work harder, not the other way around"
+      ],
+      "correctIndex": 0,
+      "learning": "Hard work doesn't cause success. It correlates with it, because it widens your surface area for opportunity to meet you.",
+      "articleTitle": "The Unfair Advantage",
+      "articleUrl": "/books/the-unfair-advantage/",
+      "category": "Books"
+    },
+    {
+      "question": "In Islamic theology, what Arabic term refers to humanity's role as a caretaker or steward of the Earth?",
+      "options": [
+        "Ihsan",
+        "Sunnah",
+        "Khalifah",
+        "Taqwa"
+      ],
+      "correctIndex": 2,
+      "learning": "Muslims are described as caretakers (khalifah) of Allah's creation, with a responsibility that goes beyond personal actions to preserving faith and unity within the community.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "According to one description of life's purpose, what two things were created specifically to test which of us performs the best deeds?",
+      "options": [
+        "Wealth and poverty",
+        "Heaven and hell",
+        "Day and night",
+        "Death and life"
+      ],
+      "correctIndex": 3,
+      "learning": "\"He who created death and life to test you [as to] which of you is best in deed\" (Quran 67:2) — life is described as a test where every action shapes the hereafter.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In a word-frequency analysis of the Quran's Arabic text, what share of the Quran's total word count did the top 20 most frequent words account for?",
+      "options": [
+        "~20.83%",
+        "~50%",
+        "~5%",
+        "~80%"
+      ],
+      "correctIndex": 0,
+      "learning": "Despite the 80/20 Pareto principle, the top 20 most frequent words in the Quran accumulate to only about 20.83% of its total word count.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What term describes the small diacritical marks placed above or below Arabic letters to indicate vowel sounds?",
+      "options": [
+        "Tajwid",
+        "Isnad",
+        "Tafsir",
+        "Tashkeel"
+      ],
+      "correctIndex": 3,
+      "learning": "Tashkeel are small markings placed above or below Arabic letters to indicate which vowel sound to use; without them, reading Arabic becomes trickier.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In Islamic theology, which term specifically refers to the actual unfolding of events in a person's life, as distinct from Allah's eternal, preordained knowledge of them?",
+      "options": [
+        "Qadr",
+        "Taqwa",
+        "Qada'",
+        "Khalifah"
+      ],
+      "correctIndex": 2,
+      "learning": "Qada' refers to the actual occurrence of events in our lives, shaped by our actions and decisions, while Qadr is Allah's complete and eternal knowledge of everything that will ever happen.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "When a person's sincere Dua changes their Qada', what does this reveal about Allah's Qadr?",
+      "options": [
+        "The change proves Qadr can be altered independently of Allah's will",
+        "The change shows Qadr and Qada' are actually the same concept",
+        "The change was always already known and included within Allah's Qadr",
+        "The change means Qadr only applies before a person is born"
+      ],
+      "correctIndex": 2,
+      "learning": "While Dua and our actions can alter Qada', that change was always already known to Allah and is encompassed within His Qadr, because He is Al-Alim (All-Knowing).",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which economist is credited with the 1971 observation that an information-rich world creates a 'scarcity of attention'?",
+      "options": [
+        "Milton Friedman",
         "Daniel Kahneman",
-        "Cal Newport",
-        "Marshall McLuhan",
+        "Herbert Spencer",
         "Herbert Simon"
       ],
       "correctIndex": 3,
-      "learning": "Herbert Simon observed in 1971 that an information-rich world necessarily produces a scarcity of attention, since attention is what information consumes.",
+      "learning": "\"In an information-rich world, the wealth of information means a dearth of something else: a scarcity of whatever it is that information consumes... the attention of its recipients.\" — Herbert Simon, 1971.",
       "articleTitle": "Everybody wants your attention, but not everything deserves it.",
       "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
       "category": "general"
     },
     {
-      "question": "In one personal AI-curation workflow for filtering daily YouTube videos, what single screening question decides whether a video survives the cut?",
+      "question": "In one approach to fighting algorithmic distraction, what single yes/no question does an automated daily script ask about each new video before deciding whether to keep it in a personal feed?",
       "options": [
-        "Whether the channel uploads every single day",
-        "Whether the video is under ten minutes long",
-        "Whether a specific intended viewer would actually benefit from watching it",
-        "Whether the video has over a million views"
-      ],
-      "correctIndex": 2,
-      "learning": "A daily automated script pulls new videos from hand-picked channels and keeps only the ones that pass a single filter: would a specific intended viewer actually benefit from watching it?",
-      "articleTitle": "Everybody wants your attention, but not everything deserves it.",
-      "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
-      "category": "general"
-    },
-    {
-      "question": "Which 19th-century psychologist demonstrated that people forget roughly 80% of newly learned material within 24 hours unless they actively work to recall it?",
-      "options": [
-        "Herbert Simon",
-        "Hermann Ebbinghaus",
-        "B.F. Skinner",
-        "William James"
-      ],
-      "correctIndex": 1,
-      "learning": "Back in the 1880s, Hermann Ebbinghaus showed that we forget about 80% of what we learn within 24 hours unless we actively force ourselves to recall it.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
-    },
-    {
-      "question": "What name did researchers give to the phenomenon in which people stop retaining facts, like phone numbers, simply because they know a device will remember them instead?",
-      "options": [
-        "Digital Amnesia",
-        "Analysis Paralysis",
-        "The Forgetting Curve",
-        "Information Overload"
+        "Would a Muslim, Malaysian software engineer early in his career actually benefit from watching this?",
+        "Is this video under 10 minutes long?",
+        "Does this video have more than 10,000 views?",
+        "Was this video uploaded in the last 24 hours?"
       ],
       "correctIndex": 0,
-      "learning": "Researchers behind the 'Google Effect' paper call the brain's tendency to offload memory to devices, like no longer remembering phone numbers, 'Digital Amnesia'.",
-      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
-      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
-      "category": "productivity"
+      "learning": "A daily script pulls the latest videos from hand-picked trusted channels and asks: \"Would a Muslim, Malaysian software engineer early in his career actually benefit from watching this?\" If the answer is no, it's filtered out.",
+      "articleTitle": "Everybody wants your attention, but not everything deserves it.",
+      "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
+      "category": "general"
     },
     {
-      "question": "In the Scrum framework, which of the following is commonly mistaken for an official team role but is actually NOT one of Scrum's three defined roles?",
-      "options": [
-        "Developers",
-        "Project Manager",
-        "Scrum Master",
-        "Product Owner"
-      ],
-      "correctIndex": 1,
-      "learning": "Scrum defines exactly three roles: Product Owner, Scrum Master, and Developers. 'Project Manager' is not one of them.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "In Scrum, which artifact visually tracks the remaining work in a sprint to show whether the team is on schedule?",
+      "question": "In the Scrum framework, which artifact visualizes a sprint's progress and shows how much work remains?",
       "options": [
         "Product Backlog",
-        "Kanban Board",
         "Sprint Backlog",
-        "Burndown Chart"
+        "Burndown Chart",
+        "Kanban Board"
       ],
-      "correctIndex": 3,
-      "learning": "The Burndown Chart visualizes a sprint's progress, showing remaining work and helping the team track whether it is on schedule.",
+      "correctIndex": 2,
+      "learning": "The Burndown Chart visualizes the progress of the Sprint, showing remaining work and helping track if the team is on schedule.",
       "articleTitle": "What is Scrum?",
       "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
       "category": "software"
     },
     {
-      "question": "In Islamic theology, a human being's purpose on Earth is often described through three primary roles. Which of these is considered one of them?",
+      "question": "In Scrum, during which ceremony does the team demonstrate completed work to the Product Owner and discuss improvements for future sprints?",
       "options": [
-        "Achieving worldly fame",
-        "Accumulating wealth for one's family",
-        "Worshipping Allah with sincere devotion",
-        "Mastering a trade or craft"
-      ],
-      "correctIndex": 2,
-      "learning": "A human being's purpose is framed around three primary roles: worshipping Allah, serving as a steward (khalifah) of the Earth, and preparing for the Hereafter through accountability.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What Arabic term, used in the Quran, refers to a human being's role as a caretaker or steward of the Earth?",
-      "options": [
-        "Taqwa",
-        "Khalifah",
-        "Shura",
-        "Ummah"
-      ],
-      "correctIndex": 1,
-      "learning": "'Khalifah' is the Arabic term for humanity's role as caretaker or steward of the Earth, carrying responsibility for preserving faith and unity.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In the PCIe power management specification, which link state represents a device that is almost completely powered down, used for the longest periods of inactivity, with the highest power savings and the longest wake-up time?",
-      "options": [
-        "L2",
-        "L0s",
-        "L1.0",
-        "L1.2"
+        "Sprint Review",
+        "Sprint Planning",
+        "Daily Scrum",
+        "Sprint Retrospective"
       ],
       "correctIndex": 0,
-      "learning": "L2 is the deepest PCIe power state: the device is almost completely powered down, giving the highest power savings but the longest wake-up time.",
+      "learning": "During the Sprint Review, the team demonstrates completed work to the Product Owner and reflects on the Sprint, discussing improvements for future Sprints.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "Which 19th-century psychologist demonstrated that people forget about 80% of newly learned information within 24 hours unless they actively recall it?",
+      "options": [
+        "William James",
+        "B.F. Skinner",
+        "Herbert Simon",
+        "Hermann Ebbinghaus"
+      ],
+      "correctIndex": 3,
+      "learning": "Back in the 1880s, Hermann Ebbinghaus proved that we forget about 80% of what we learn within 24 hours unless we actively force ourselves to recall it.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "What name is given to the psychological tendency to forget information more readily once it's known to be saved externally, such as on a phone or the internet?",
+      "options": [
+        "Confirmation bias",
+        "The Dunning-Kruger effect",
+        "The Google Effect (Digital Amnesia)",
+        "The Mandela Effect"
+      ],
+      "correctIndex": 2,
+      "learning": "Researchers behind the 'Google Effect' paper call it Digital Amnesia: the moment we write something down or put it in our phones, our brains take that as permission to forget it.",
+      "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
+      "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
+      "category": "productivity"
+    },
+    {
+      "question": "In PCIe power management, which state is described as the deepest power-saving substate within L1, powering down the most components at the cost of the longest wake-up delay short of a full shutdown?",
+      "options": [
+        "L1.2",
+        "L1.0",
+        "L0s",
+        "L2"
+      ],
+      "correctIndex": 0,
+      "learning": "L1.2 is the deepest power-saving state within L1, where even more components are turned off, maximizing power savings at the cost of the longest delay in resuming activity.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
-    },
-    {
-      "question": "In Islamic theology, which term refers to the actual, real-time unfolding of events in a person's life, as distinct from Allah's eternal, pre-written decree?",
-      "options": [
-        "Qada'",
-        "Taqwa",
-        "Tawakkul",
-        "Qadr"
-      ],
-      "correctIndex": 0,
-      "learning": "Qada' is the actual occurrence of events as they unfold in life, while Qadr is Allah's complete, eternal plan encompassing everything that will happen.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which verse is cited to support the idea that sincere personal effort and supplication can change a person's circumstances?",
-      "options": [
-        "\"Indeed, with hardship comes ease\"",
-        "\"Verily, My mercy prevails over My wrath\"",
-        "\"The strong believer is better than the weak believer\"",
-        "\"Allah does not change the condition of a people until they change what is in themselves\" (Surah Ar-Ra'd 13:11)"
-      ],
-      "correctIndex": 3,
-      "learning": "Surah Ar-Ra'd 13:11, 'Allah does not change the condition of a people until they change what is in themselves,' underpins the idea that sincere effort and dua can change one's Qada'.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In a word-frequency data analysis applying the Pareto Principle (the 80/20 rule) to the Quran's text, what percentage of the Quran's total word count did the top 20 most frequent words actually account for?",
-      "options": [
-        "About 65%",
-        "About 80%",
-        "About 20.83%",
-        "About 50%"
-      ],
-      "correctIndex": 2,
-      "learning": "Applying the 80/20 rule to Quranic word frequency, the top 20 most repeated words accumulate to only about 20.83% of the Quran's total word count, not 80%.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "What term describes the small diacritical markings placed above or below Arabic letters to indicate vowel sounds and pronunciation?",
-      "options": [
-        "Tashkeel",
-        "Tafsir",
-        "Tajweed",
-        "Isnad"
-      ],
-      "correctIndex": 0,
-      "learning": "Tashkeel are small markings placed above or below Arabic letters to indicate vowel sounds; without them, the same spelling can represent different words.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Which entrepreneur is quoted as saying, \"It's not about working harder. It's about working the system\"?",
-      "options": [
-        "Mark Zuckerberg",
-        "Jeff Bezos",
-        "Elon Musk",
-        "Evan Spiegel"
-      ],
-      "correctIndex": 3,
-      "learning": "Evan Spiegel's line, \"It's not about working harder. It's about working the system,\" is read as making the most of what you have, with good intentions, rather than gaming others.",
-      "articleTitle": "The Unfair Advantage",
-      "articleUrl": "/books/the-unfair-advantage/",
-      "category": "Books"
-    },
-    {
-      "question": "In one view on entrepreneurial success, hard work is argued not to directly cause success. Instead, what does it do?",
-      "options": [
-        "Widens your surface area for opportunity to meet you",
-        "Shortens the time needed to succeed",
-        "Eliminates the role of luck entirely",
-        "Guarantees a specific financial outcome"
-      ],
-      "correctIndex": 0,
-      "learning": "Hard work doesn't cause success; it correlates with it by widening your surface area for opportunity to meet you, so it shouldn't be called the sole cause of success or failure.",
-      "articleTitle": "The Unfair Advantage",
-      "articleUrl": "/books/the-unfair-advantage/",
-      "category": "Books"
     }
   ],
-  "fetchedAt": "2026-11-23T22:33:47.968Z"
+  "fetchedAt": "2026-11-24T22:33:47.637Z"
 }
