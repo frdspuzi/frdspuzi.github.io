@@ -1,69 +1,85 @@
 {
-  "lastUpdated": "2026-11-24",
+  "lastUpdated": "2026-11-25",
   "papers": [
     {
-      "id": "hf:2611.23946",
-      "doi": "https://arxiv.org/abs/2611.23946",
-      "title": "How Complete Must an Environment Be to Train a Capable GUI Agent?",
-      "publicationDate": "2026-11-17",
+      "id": "hf:2611.31974",
+      "doi": "https://arxiv.org/abs/2611.31974",
+      "title": "Coding4Games: Can Modern Coding Agents Play Modern Video Games?",
+      "publicationDate": "2026-11-23",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Jingxing Wang et al.",
+      "leadAuthor": "Shifang Zhao et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Teams building practice apps for phone agents do not know which parts they can safely cut.",
-      "fix": "Rewarding only one reference path cut success by 10.53 points, while pruning unused features raised success from 51.61% to 56.13%.",
-      "practicalUseCase": "Keep the reward rules and app data complete, and cut unused features, to build cheaper training setups that work better.",
-      "limitation": "It tests one small model family, so the result may not hold for other models.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.23946"
+      "problem": "Game-playing agents that ask a language model at every move cost a lot and react slowly in real-time games.",
+      "fix": "Coding agents wrote standalone game programs that beat the best screen-based agent on 13 of 15 games.",
+      "practicalUseCase": "If agents can write their own game bots, you skip a model call at every move, so test them.",
+      "limitation": "Humans still beat every agent on 10 of the 15 games.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.31974"
     },
     {
-      "id": "hf:2611.30637",
-      "doi": "https://arxiv.org/abs/2611.30637",
-      "title": "SWEEP-Bench: Do Embodied Policies Act on the Speed They See?",
-      "publicationDate": "2026-11-22",
+      "id": "hf:2611.29389",
+      "doi": "https://arxiv.org/abs/2611.29389",
+      "title": "PINE: Point, Instance and Normal Estimation in One-Step Diffusion Model",
+      "publicationDate": "2026-11-21",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Hiroaki Honda et al.",
+      "leadAuthor": "Zeyu Ren et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Robot control models fail when objects move at different speeds, and few tests check this.",
-      "fix": "Six of eight models peaked at middle speeds, and adding past frames raised success by 10-40 points for three models.",
-      "practicalUseCase": "Feed your robot model recent past frames or a speed estimate, and test it at many speeds.",
-      "limitation": "The tests run in simulation on conveyor belts, so real robots may behave differently.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.30637"
+      "problem": "Scene tools use separate models for shape and for objects, which wastes time and compute.",
+      "fix": "One model predicts 3D points, surface angles, and object masks in one pass, 5.7 times faster than the older pair.",
+      "practicalUseCase": "If one model does all three jobs, you can drop two models from your pipeline, so try it first.",
+      "limitation": "The model trained on synthetic images for geometry, so real-world results may differ.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.29389"
     },
     {
-      "id": "hf:2611.28618",
-      "doi": "https://arxiv.org/abs/2611.28618",
-      "title": "Distilling Visual Agents from Limited Interaction Experience",
-      "publicationDate": "2026-11-20",
+      "id": "hf:2611.32067",
+      "doi": "https://arxiv.org/abs/2611.32067",
+      "title": "LoopDVR: Looped Transformer for Efficient Dense Visual Recognition",
+      "publicationDate": "2026-11-23",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Siyu Zhou et al.",
+      "leadAuthor": "Sirui Liang et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Teaching a small visual agent usually needs many practice runs, and nobody knew how few would work.",
-      "fix": "Four recorded runs raised a 4B student's success from 49.17% to 82.08% on Navigation and 60.16% to 85.55% on Sokoban.",
-      "practicalUseCase": "Train small agents on a few well-chosen recorded runs before you pay for more practice.",
-      "limitation": "It covers three puzzle-style tasks only, so other task types may need more experience.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.28618"
+      "problem": "Vision models for detection and similar tasks carry too many parameters for small devices.",
+      "fix": "Reusing blocks across layers cut parameters by about 28% with close accuracy; a 7.0M model scored 50.9 box AP.",
+      "practicalUseCase": "If layer sharing keeps accuracy, vision models fit smaller hardware, so test it before you shrink models another way.",
+      "limitation": "The paper reports accuracy that is competitive, not better, than the original models.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.32067"
     },
     {
-      "id": "hf:2611.27689",
-      "doi": "https://arxiv.org/abs/2611.27689",
-      "title": "Embodied-Harness: Towards Recursive Self-Improvement for Robotic Manipulation",
-      "publicationDate": "2026-11-22",
+      "id": "hf:2611.32554",
+      "doi": "https://arxiv.org/abs/2611.32554",
+      "title": "PartAgent: Agentic 3D Part Segmentation via Expert Integration and Closed-Loop Refinement",
+      "publicationDate": "2026-11-23",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Zhenxuan Fan et al.",
+      "leadAuthor": "Yang Cao et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Robot agents built on language models forget past steps, misread why they failed, and waste what they learn.",
-      "fix": "A two-agent setup that rewrites its own guidance reached 82.4%, 76.7%, and 94.4% on benchmarks, and 96.7% in real tasks.",
-      "practicalUseCase": "Let a second agent turn failures into written guidance, so your robot improves without any retraining.",
-      "limitation": "The real-world test covers only three manipulation tasks.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.27689"
+      "problem": "Tools that cut 3D objects into parts struggle to combine shape cues with meaning cues.",
+      "fix": "A training-free agent that checks and fixes its own cuts averaged 69.36 mIoU, 7.28 points above the best rival.",
+      "practicalUseCase": "If a model can check and repair its own output, quality rises without retraining, so add a review loop.",
+      "limitation": "It relies on pretrained 3D and 2D expert models, so it inherits their limits.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.32554"
+    },
+    {
+      "id": "hf:2611.29547",
+      "doi": "https://arxiv.org/abs/2611.29547",
+      "title": "Align the Pair, Not the Sample: Representation Alignment for Faster and Better One-Step Generato",
+      "publicationDate": "2026-11-21",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Mingxiao Li et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Teams training one-step image generators did not know which training path should receive the alignment loss.",
+      "fix": "Aligning the paired reconstruction path helped in every test, while aligning the generation path dropped recall from 0.45 to 0.15-0.25.",
+      "practicalUseCase": "If you train one-step generators, put the alignment loss on the paired path; it needed 2 times fewer priming epochs.",
+      "limitation": "The evidence comes from ImageNet at 256 pixels, so other image sizes remain untested.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.29547"
     },
     {
       "id": "https://openalex.org/W7204848949",
@@ -76,10 +92,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Many Muslim-majority countries still leave large groups out of formal finance, even as Islamic finance grows.",
-      "fix": "Across 35 countries from 2005 to 2021, income, tertiary education, institution quality, and internet access shaped inclusion in OIC states.",
-      "practicalUseCase": "Digital infrastructure, youth and female empowerment, and higher income matter most, so Islamic banks should aim products there.",
-      "limitation": "It shows links between country factors and inclusion, not proof of cause.",
+      "problem": "Many Muslim-majority countries still have large groups outside formal banking, even as Islamic finance grew.",
+      "fix": "Across 35 countries from 2005 to 2021, income, schooling, institutions, and internet access shaped inclusion in OIC states.",
+      "practicalUseCase": "If internet access and schooling drive inclusion, banks and regulators should build digital tools and youth and women programs first.",
+      "limitation": "It shows links across 35 countries, so it does not prove cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
     },
     {
@@ -93,10 +109,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Waqf collection stays low, and it was unclear whether better waqf knowledge changes how Muslims give.",
-      "fix": "In 642 Indonesian Muslims, waqf literacy raised attitude, social norms, control, and past behaviour, which lifted giving intent.",
-      "practicalUseCase": "Teach people what waqf is, because knowledge pushes giving up, so waqf groups should fund literacy work.",
-      "limitation": "It uses a survey of Muslims in Indonesia only, so it shows intent, not actual donations.",
+      "problem": "Waqf collectors did not know whether better public knowledge of waqf leads Muslims to give more.",
+      "fix": "Among 642 Indonesian Muslims, waqf literacy raised attitude, social norms, and control, and so raised intention to give.",
+      "practicalUseCase": "If knowledge of waqf lifts giving, waqf groups should teach donors first, because understanding drives intention before the donation ask.",
+      "limitation": "It surveys Muslims in Indonesia only, so other countries may differ.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3267"
     },
     {
@@ -110,10 +126,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Nobody had mapped how sustainability sukuk issuance grew or what makes an issue large.",
-      "fix": "Of 11,944 sukuk issues from 2012 to 2022, equity-based contracts, social purposes, and USD or Euro currency gave larger issues.",
-      "practicalUseCase": "Issuers should use equity-based contracts and major currencies, and keep second party opinion costs low to raise issue size.",
-      "limitation": "It covers 2012 to 2022 issues only, and growth sits mostly in Indonesia, Malaysia, and Saudi Arabia.",
+      "problem": "Little was known about how sustainability sukuk grew or what decides the size of each issue.",
+      "fix": "Across 11,944 sukuk issues from 2012 to 2022, equity-based contracts and strong security grew issues; costly second-party opinions shrank them.",
+      "practicalUseCase": "If second-party opinions cost too much, small issuers stay out, so regulators should cut those costs and favor equity-based contracts.",
+      "limitation": "It covers 2012 to 2022, and growth sits mostly in Indonesia, Malaysia, and Saudi Arabia.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -127,10 +143,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "It was unclear whether online interest in halal products pulls Islamic financing up in Muslim countries.",
-      "fix": "Across 16 OIC countries from 2014 to 2023, halal search interest raised total financing, mainly through Murabaha and Ijarah.",
-      "practicalUseCase": "Banks should expect demand to lead supply, so push simple Murabaha and Ijarah products when halal interest rises.",
-      "limitation": "Search volume only proxies awareness, and the effect on Mudarabah and Musharakah is weak.",
+      "problem": "Lenders did not know whether public interest in halal products pushes Islamic financing higher.",
+      "fix": "In 16 OIC countries from 2014 to 2023, more halal searches raised total Islamic financing, mostly through Murabaha and Ijarah.",
+      "practicalUseCase": "If halal demand pulls financing up, banks should offer simple Murabaha and Ijarah products where halal searches are rising.",
+      "limitation": "Search volume only approximates awareness, and the effect on Mudarabah and Musharakah is weak.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.3350"
     }
   ]
