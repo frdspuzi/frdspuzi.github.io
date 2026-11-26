@@ -1,215 +1,215 @@
 {
   "learnings": [
     {
-      "question": "Economist Herbert Simon warned in 1971 that an information-rich world creates a scarcity of what?",
+      "question": "What personal business lesson holds that wealth should come as a natural byproduct of doing right by people, rather than being the main goal itself?",
       "options": [
-        "Creativity",
-        "Money",
-        "Time",
-        "Attention"
+        "Aggressively maximizing profit margins above all else",
+        "Acting with honesty in trade and doing right by people, without chasing wealth as the primary goal",
+        "Finding every legal loophole available to get richer faster",
+        "Focusing solely on investor returns before anything else"
       ],
-      "correctIndex": 3,
-      "learning": "Herbert Simon observed in 1971 that in an information-rich world, the abundance of information creates a scarcity of attention — the resource it consumes.",
-      "articleTitle": "Everybody wants your attention, but not everything deserves it.",
-      "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
-      "category": "general"
+      "correctIndex": 1,
+      "learning": "Going into business to do what's right by people, with honesty in trade, lets wealth come naturally as a byproduct, rather than treating wealth itself as the goal.",
+      "articleTitle": "The Unfair Advantage",
+      "articleUrl": "/books/the-unfair-advantage/",
+      "category": "Books"
     },
     {
-      "question": "In Surah Al-Mu'minoon, what Arabic term refers to the 'ill speech' — drama, gossip, and meaningless talk — that successful believers are described as turning away from?",
+      "question": "Which idea holds that hard work does not directly cause success, but instead widens a person's 'surface area' for opportunity to find them?",
       "options": [
-        "Dunya",
-        "Ghibah",
-        "Fitnah",
-        "Lagw"
+        "Hard work correlates with success rather than causing it",
+        "Hard work guarantees financial success eventually",
+        "Talent matters more than effort in determining outcomes",
+        "Success is entirely random and unrelated to effort"
       ],
-      "correctIndex": 3,
-      "learning": "Surah Al-Mu'minoon describes successful believers as those who turn away from 'Lagw' — ill speech such as drama, gossip, and meaningless talk.",
-      "articleTitle": "Everybody wants your attention, but not everything deserves it.",
-      "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
-      "category": "general"
+      "correctIndex": 0,
+      "learning": "Hard work doesn't cause success outright; it correlates with it by widening the surface area for opportunity to meet you, so it shouldn't be called the sole cause of success or failure.",
+      "articleTitle": "The Unfair Advantage",
+      "articleUrl": "/books/the-unfair-advantage/",
+      "category": "Books"
     },
     {
-      "question": "Which 19th-century psychologist demonstrated that people forget about 80% of what they learn within 24 hours unless they actively recall it?",
+      "question": "In Islamic theology, what term refers to humanity's role as steward or caretaker of the Earth?",
       "options": [
-        "William James",
+        "Shura",
+        "Khalifah",
+        "Taqwa",
+        "Ummah"
+      ],
+      "correctIndex": 1,
+      "learning": "Muslims are described as khalifah (caretakers) of the Earth, a role that carries responsibility beyond personal actions toward preserving faith and fostering unity.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which set of three roles is described as life's primary purposes in a framework drawn from the Quran and Hadith?",
+      "options": [
+        "Birth, trial, and final judgement",
+        "Worship, stewardship (khalifah) of the Earth, and living life as a test of faith and conduct",
+        "Prayer, fasting, and almsgiving",
+        "Seeking knowledge, wealth, and legacy"
+      ],
+      "correctIndex": 1,
+      "learning": "Life's purpose is framed around three roles: worshiping Allah, serving as khalifah (caretaker) of the Earth, and living as a test of faith and conduct that shapes one's eternal outcome.",
+      "articleTitle": "Ever Wondered Why We’re Here?",
+      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In a word-frequency analysis of the Quran's full Arabic text, what share of the Quran's total word count did the 20 most frequent words account for?",
+      "options": [
+        "About 20.83%",
+        "About 5%",
+        "About 50%",
+        "About 80%"
+      ],
+      "correctIndex": 0,
+      "learning": "A word-frequency analysis of the Quran found that the top 20 most frequent words accumulate to only about 20.83% of the text, so the 80/20 Pareto principle doesn't hold here.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What term describes the small diacritical markings placed above or below Arabic letters to indicate vowel sounds?",
+      "options": [
+        "Tanwin",
+        "Hijaiyah",
+        "Hamza",
+        "Tashkeel"
+      ],
+      "correctIndex": 3,
+      "learning": "Tashkeel are the small markings added above or below Arabic letters to show which vowel sound to use; without them, reading Arabic becomes trickier since the bare letters don't indicate pronunciation.",
+      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
+      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "In Islamic theology, which term refers to the actual unfolding of events in a person's life, as shaped by their actions and decisions?",
+      "options": [
+        "Qada'",
+        "Qadr",
+        "Taqwa",
+        "Tawakkul"
+      ],
+      "correctIndex": 0,
+      "learning": "Qada' refers to the actual occurrence of events in a person's life, shaped by their actions and decisions, while Qadr is Allah's complete, eternal plan encompassing all events.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "What's a common misconception about how supplication (dua) changes a person's circumstances?",
+      "options": [
+        "That dua has no real effect on daily circumstances",
+        "That dua can only affect the Hereafter, never this life",
+        "That dua only counts if recited after a prescribed prayer",
+        "That the change happens outside of, or unknown to, Allah's prior knowledge"
+      ],
+      "correctIndex": 3,
+      "learning": "Even though sincere dua can change one's Qada' (circumstances), that change was always already known to Allah and encompassed within His Qadr, since He is All-Knowing.",
+      "articleTitle": "The Art of Qada’ and Qadr",
+      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
+      "category": "islam"
+    },
+    {
+      "question": "Which thinker is credited with the 1971 observation that an information-rich world creates 'a scarcity of attention'?",
+      "options": [
         "Herbert Simon",
+        "Cal Newport",
+        "Nir Eyal",
+        "Daniel Kahneman"
+      ],
+      "correctIndex": 0,
+      "learning": "Herbert Simon observed in 1971 that in an information-rich world, the wealth of information creates a scarcity of attention, since information consumes the attention of whoever receives it.",
+      "articleTitle": "Everybody wants your attention, but not everything deserves it.",
+      "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
+      "category": "general"
+    },
+    {
+      "question": "What single screening question was used to automatically filter a personal YouTube content feed down to only worthwhile videos?",
+      "options": [
+        "Would a Muslim, Malaysian software engineer early in his career actually benefit from watching this?",
+        "Was this video uploaded in the last 24 hours?",
+        "Does this channel have over 100,000 subscribers?",
+        "Is this video under 10 minutes long?"
+      ],
+      "correctIndex": 0,
+      "learning": "A daily script pulls videos from hand-picked YouTube channels and uses AI to filter them with one question: would a Muslim, Malaysian software engineer early in his career actually benefit from watching this?",
+      "articleTitle": "Everybody wants your attention, but not everything deserves it.",
+      "articleUrl": "https://medium.com/@frdspuzi/everybody-wants-your-attention-but-not-everything-deserves-it-bc77dd20079b?source=rss-57690523ab0c------2",
+      "category": "general"
+    },
+    {
+      "question": "In the Scrum framework, which artifact visualizes a sprint's progress and shows how much work remains?",
+      "options": [
+        "Kanban Board",
+        "Product Backlog",
+        "Burndown Chart",
+        "Sprint Backlog"
+      ],
+      "correctIndex": 2,
+      "learning": "The Burndown Chart is a Scrum artifact that visualizes the progress of the sprint, showing remaining work and helping the team track whether they're on schedule.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "In Scrum, what is the primary focus of the Sprint Review ceremony?",
+      "options": [
+        "Assigning daily tasks to individual developers",
+        "Demonstrating completed work to the Product Owner and reflecting on improvements for future sprints",
+        "Planning the entire project timeline up front",
+        "Writing the initial product backlog from scratch"
+      ],
+      "correctIndex": 1,
+      "learning": "The Sprint Review is the ceremony where the team demonstrates completed work to the Product Owner and reflects on the sprint to discuss improvements for future sprints.",
+      "articleTitle": "What is Scrum?",
+      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
+      "category": "software"
+    },
+    {
+      "question": "Which 19th-century researcher showed that people forget roughly 80% of what they learn within 24 hours unless they actively recall it?",
+      "options": [
+        "Ivan Pavlov",
+        "William James",
         "B.F. Skinner",
         "Hermann Ebbinghaus"
       ],
       "correctIndex": 3,
-      "learning": "In the 1880s, Hermann Ebbinghaus showed that without active recall, we forget about 80% of what we learn within just 24 hours.",
+      "learning": "Back in the 1880s, Hermann Ebbinghaus proved that we forget about 80% of what we learn within 24 hours unless we actively force ourselves to recall it, which is why re-reading notes doesn't work as well as being quizzed.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "What term do researchers behind the 'Google Effect' paper use to describe our brains' habit of deleting information once it's written down or saved digitally?",
+      "question": "What personal problem motivated building an automated daily trivia quiz out of one's own old blog posts?",
       "options": [
-        "Performance Paradox",
-        "Information Fatigue",
-        "Cognitive Offloading",
-        "Digital Amnesia"
+        "Testing out a new AI model's capabilities",
+        "Needing content ideas for new blog posts",
+        "Wanting more pageviews on old articles",
+        "Forgetting the lessons from articles shortly after writing them"
       ],
       "correctIndex": 3,
-      "learning": "Researchers behind the 'Google Effect' paper coined the term 'Digital Amnesia' to describe how our brains stop retaining information once it's offloaded to a device.",
+      "learning": "The habit of writing something down, feeling enlightened, and then completely forgetting it by the next day led to building a script that quizzes on old articles every morning using spaced repetition.",
       "articleTitle": "Is Your Brain the Worst Place to Store Ideas? Why I Built a Second One",
       "articleUrl": "https://medium.com/@frdspuzi/is-your-brain-the-worst-place-to-store-ideas-why-i-built-a-second-one-82aba770b097?source=rss-57690523ab0c------2",
       "category": "productivity"
     },
     {
-      "question": "In Scrum, which artifact represents the team's committed list of user stories selected for the current Sprint?",
-      "options": [
-        "Definition of Done",
-        "Burndown Chart",
-        "Sprint Backlog",
-        "Product Backlog"
-      ],
-      "correctIndex": 2,
-      "learning": "The Sprint Backlog is the Scrum artifact representing the team's committed list of user stories selected for the current Sprint.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "What is the main purpose of breaking a project into the smaller, iterative cycles called Sprints in Scrum?",
-      "options": [
-        "To allow for more flexibility and quicker adjustments",
-        "To increase the overall length of the project",
-        "To reduce the number of team members needed",
-        "To eliminate the need for a Product Owner"
-      ],
-      "correctIndex": 0,
-      "learning": "Scrum breaks projects into short, iterative cycles called Sprints mainly to allow for more flexibility and quicker adjustments.",
-      "articleTitle": "What is Scrum?",
-      "articleUrl": "https://medium.com/@frdspuzi/what-is-scrum-b1a27cd34327?source=rss-57690523ab0c------2",
-      "category": "software"
-    },
-    {
-      "question": "In Islamic teaching, what term describes awareness of Allah's presence that builds self-restraint and purifies one's intentions?",
-      "options": [
-        "Taqwa",
-        "Ihsan",
-        "Khalifah",
-        "Sabr"
-      ],
-      "correctIndex": 0,
-      "learning": "Taqwa is the mindfulness and awareness of Allah's presence that builds self-restraint and purifies one's intentions.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In Islamic teaching, human existence centers on which three primary roles?",
-      "options": [
-        "Seeking wealth, raising a family, and building a legacy",
-        "Gaining knowledge, serving the community, and achieving personal success",
-        "Worshiping Allah, serving as stewards (khalifah) of the Earth, and preparing for the Hereafter through accountability",
-        "Following tradition, respecting elders, and preserving culture"
-      ],
-      "correctIndex": 2,
-      "learning": "Human existence is framed around three roles: worshiping Allah, serving as khalifah (steward) of the Earth, and living out a test of faith and accountability in preparation for the Hereafter.",
-      "articleTitle": "Ever Wondered Why We’re Here?",
-      "articleUrl": "https://medium.com/@frdspuzi/discovering-our-purpose-a-journey-through-worship-stewardship-and-self-discovery-in-islam-a57c4dc61184?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "In PCIe power management, which state is the deepest power-saving substate within L1, powering down the most components at the cost of the longest wake-up delay?",
+      "question": "In PCIe power management, which state represents the device being almost completely powered down, used for the longest periods of inactivity with the highest power savings?",
       "options": [
         "L1.0",
+        "L0s",
         "L1.2",
-        "L1.1",
         "L2"
       ],
-      "correctIndex": 1,
-      "learning": "Within PCIe's L1 power state, L1.2 is the deepest substate, powering down the most components for maximum energy savings at the cost of the longest wake-up delay.",
+      "correctIndex": 3,
+      "learning": "L2 is the deepest PCIe power management state, where the device is almost completely powered down, giving the highest power savings but also the longest wake-up time.",
       "articleTitle": "Power Management States in the context of PCIe",
       "articleUrl": "https://medium.com/@frdspuzi/power-management-states-in-the-context-of-pcie-b6af49e24856?source=rss-57690523ab0c------2",
       "category": "uncategorized"
-    },
-    {
-      "question": "In Islamic theology, what term refers to Allah's complete, eternal, and already-written plan encompassing all events, as distinct from their actual unfolding?",
-      "options": [
-        "Tawakkul",
-        "Taqwa",
-        "Qadr",
-        "Qada'"
-      ],
-      "correctIndex": 2,
-      "learning": "Qadr is Allah's complete, eternal, and already-written plan encompassing every event, as distinct from Qada', the actual unfolding of those events.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "Per a hadith in Jami at-Tirmidhi (3573), when does Allah withhold granting a sincere Dua made by a Muslim?",
-      "options": [
-        "Only if the person has unpaid debts",
-        "Only during the last third of the night",
-        "Only when the supplication is for something sinful, or for severing family ties",
-        "Only when fasting is broken intentionally"
-      ],
-      "correctIndex": 2,
-      "learning": "A hadith in Jami at-Tirmidhi (3573) states that Allah grants every sincere supplication unless it asks for something sinful or for severing family ties.",
-      "articleTitle": "The Art of Qada’ and Qadr",
-      "articleUrl": "https://medium.com/@frdspuzi/the-art-of-qada-and-qadr-9506a940017a?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "An analysis of the Quran's text found there are approximately how many Arabic words for every one word in the Oxford English Dictionary?",
-      "options": [
-        "35",
-        "100",
-        "12",
-        "71"
-      ],
-      "correctIndex": 3,
-      "learning": "There are roughly 12 million distinct Arabic words against about 170,000 in the Oxford English Dictionary — an approximate 71:1 ratio.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "When testing whether the Pareto Principle (80/20 rule) applies to word frequency in the Quran, what percentage of the total text did the top 20 most frequent words actually account for?",
-      "options": [
-        "About 5%",
-        "About 20.83%",
-        "About 80%",
-        "About 50%"
-      ],
-      "correctIndex": 1,
-      "learning": "Testing the Pareto Principle against Quranic word frequency showed the top 20 most-repeated words make up only about 20.83% of the text, not 80%.",
-      "articleTitle": "Top 20 Words to Understand the Quran: A Data Analysis using Python",
-      "articleUrl": "https://medium.com/@frdspuzi/top-20-words-to-understand-the-quran-a-data-analysis-using-python-b26dde967edd?source=rss-57690523ab0c------2",
-      "category": "islam"
-    },
-    {
-      "question": "After a Malaysian outlet featured his halal food-finder app, how many unique visitors did the owner report it had received in its first month?",
-      "options": [
-        "90,000+",
-        "900+",
-        "9,000+",
-        "900,000+"
-      ],
-      "correctIndex": 2,
-      "learning": "After a Malaysian outlet (Siakap Keli) featured the owner's halal food-finder app, it had attracted over 9,000 unique visitors within its first month.",
-      "articleTitle": "The Unfair Advantage",
-      "articleUrl": "/books/the-unfair-advantage/",
-      "category": "Books"
-    },
-    {
-      "question": "What field of study did the owner abandon after two years of high school biology and a few months into matriculation college, before enrolling in Computer Engineering at UTP instead?",
-      "options": [
-        "Biochemistry",
-        "Dentistry",
-        "Pharmacy",
-        "Medicine"
-      ],
-      "correctIndex": 3,
-      "learning": "The owner walked away from a path toward medicine after two years of biology in high school and a few months into matriculation college, choosing Computer Engineering at UTP instead.",
-      "articleTitle": "The Unfair Advantage",
-      "articleUrl": "/books/the-unfair-advantage/",
-      "category": "Books"
     }
   ],
-  "fetchedAt": "2026-11-25T22:35:05.696Z"
+  "fetchedAt": "2026-11-26T22:34:23.345Z"
 }
