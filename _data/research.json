@@ -1,69 +1,69 @@
 {
-  "lastUpdated": "2026-11-26",
+  "lastUpdated": "2026-11-27",
   "papers": [
     {
-      "id": "hf:2611.33915",
-      "doi": "https://arxiv.org/abs/2611.33915",
-      "title": "SEEK: Self-Evolution through Execution Knowledge for Agentic Robot Manipulation",
-      "publicationDate": "2026-11-24",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Zeyang Guan et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Robots forget what they learn when a task ends, so they repeat the same mistakes on the next try.",
-      "fix": "The SEEK system keeps working procedures and their measured results, which lifts success from 19.7% to 48.0% over ten attempts.",
-      "practicalUseCase": "A robot that keeps its lessons gets better each try, so store action results between runs instead of starting fresh.",
-      "limitation": "The tests ran on one benchmark, RoboDojo, so real-world results may differ.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.33915"
-    },
-    {
-      "id": "hf:2611.33144",
-      "doi": "https://arxiv.org/abs/2611.33144",
-      "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+      "id": "hf:2611.32238",
+      "doi": "https://arxiv.org/abs/2611.32238",
+      "title": "Boundary-Aware Policy Learning for Agent-Orchestrated Robot Manipulation",
       "publicationDate": "2026-11-23",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Feixiang Ruan et al.",
+      "leadAuthor": "Kaipeng Fang et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Robot hands need good human demonstrations to learn, but those demonstrations are scarce and hard to collect.",
-      "fix": "PyRUA-Dex lets coding agents write robot hand programs without demonstrations, and it reaches 81.0% success on DexJoCo.",
-      "practicalUseCase": "Coding agents can replace costly demonstration data, so try programmatic policies before you collect more demonstrations.",
-      "limitation": "The paper tests two simulated benchmarks and one bimanual robot platform, so other robots remain unproven.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.33144"
+      "problem": "Robot arms fail when an AI agent hands them a task from a start position they cannot handle.",
+      "fix": "Training the robot arm on varied start poses widened its safe zone, reaching 98.4% success and cutting API cost 41.3%.",
+      "practicalUseCase": "If robots handle more start positions, agents hand over sooner and cheaper, so train robot skills on varied start poses.",
+      "limitation": "Results come from two simulated benchmarks, not from real-world robot tests.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.32238"
     },
     {
-      "id": "hf:2611.33143",
-      "doi": "https://arxiv.org/abs/2611.33143",
-      "title": "ROAM-Bench: Evaluating Embodied Active Spatial Intelligence through Evidence Verification",
-      "publicationDate": "2026-11-23",
-      "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Xingjian Ran et al.",
-      "topics": [
-        "Tech"
-      ],
-      "problem": "Robot tests often score only the final answer, so a lucky answer looks the same as real spatial skill.",
-      "fix": "Seven top models show two failures: right answers with unmet task needs, and wrong answers despite passing strong checks.",
-      "practicalUseCase": "A correct final answer can hide weak skill, so check the steps a robot took, not only its result.",
-      "limitation": "The benchmark has 250 tasks in 27 indoor simulated rooms, so it does not cover real homes.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.33143"
-    },
-    {
-      "id": "hf:2611.30460",
-      "doi": "https://arxiv.org/abs/2611.30460",
-      "title": "CONCOR: Benchmarking Contrastive Decoding for Visual Hallucination Mitigation Beyond Final-Output Performance",
+      "id": "hf:2611.34719",
+      "doi": "https://arxiv.org/abs/2611.34719",
+      "title": "Reading, Not Adapting: Unlocking Frozen Visual Knowledge for AI-Generated Image Detection",
       "publicationDate": "2026-11-24",
       "venue": "Hugging Face Daily Papers",
-      "leadAuthor": "Ting Chen et al.",
+      "leadAuthor": "Yuncheng Guo et al.",
       "topics": [
         "Tech"
       ],
-      "problem": "Tests of image-describing AI score only final answers, so they hide how each fix really changes the model.",
-      "fix": "The CONCOR benchmark shows some fixes favor correct answers, while others correct strongly but add more errors.",
-      "practicalUseCase": "Raising fix strength helps some methods and hurts others, so test each method before you turn the setting up.",
-      "limitation": "The paper gives no numbers for the gap, so the size of each effect stays unknown.",
-      "fullTextUrl": "https://huggingface.co/papers/2611.30460"
+      "problem": "Fake-image detectors that retrain big vision models often get worse on images from new generators.",
+      "fix": "A small add-on reads the frozen model's existing knowledge and reaches 91.2% average accuracy with only 3,074 trainable parameters.",
+      "practicalUseCase": "If frozen models already hold detection clues, you can skip costly retraining, so try reading them first.",
+      "limitation": "The 91.2% score is an average across eight benchmark groups, so single generators may score lower.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.34719"
+    },
+    {
+      "id": "hf:2611.34232",
+      "doi": "https://arxiv.org/abs/2611.34232",
+      "title": "OS-Omni: Benchmarking Generalist Computer-Using Agents on Long-Horizon Workflows Across Platforms",
+      "publicationDate": "2026-11-24",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Hui Shen et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Computer-using AI agents get tested on one system at a time, not on long tasks across many.",
+      "fix": "The best agent scores 68.5% against 77.3% for humans, and trails humans by over 25 points on iOS.",
+      "practicalUseCase": "If agents lose track of state on long tasks, do not trust them with multi-step jobs on Apple systems yet.",
+      "limitation": "The result covers the first release of the benchmark, with 48 tasks per platform.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.34232"
+    },
+    {
+      "id": "hf:2611.34852",
+      "doi": "https://arxiv.org/abs/2611.34852",
+      "title": "DRBench Pro: A Knowledge-Centric Benchmark for Professional Deep Research Agents",
+      "publicationDate": "2026-11-24",
+      "venue": "Hugging Face Daily Papers",
+      "leadAuthor": "Han Huang et al.",
+      "topics": [
+        "Tech"
+      ],
+      "problem": "Deep research agents had no test that checks which topics a report covers and how deeply.",
+      "fix": "Across 16 agents on 144 cases, the best agent reached only 57.04% overall coverage.",
+      "practicalUseCase": "If even the best agent misses about 43% of expected knowledge, check its reports against a second source.",
+      "limitation": "Questions and answer rubrics come from Wikipedia knowledge trees, so coverage means Wikipedia coverage.",
+      "fullTextUrl": "https://huggingface.co/papers/2611.34852"
     },
     {
       "id": "https://openalex.org/W7204856806",
@@ -76,10 +76,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Research on zakat, waqf, and sadaqah is scattered, so nobody knows how they build community strength together.",
-      "fix": "A review of 93 studies shows zakat gives short-term relief, waqf builds lasting assets, and sadaqah gives flexible emergency help.",
-      "practicalUseCase": "Each tool has its own job, so combine zakat, waqf, and sadaqah in one plan with strong governance.",
-      "limitation": "The review pools past studies from 2010 to 2025, so it adds no new field data.",
+      "problem": "Research on Islamic social finance is scattered, so it is unclear which tool helps communities most.",
+      "fix": "In 93 studies, zakat gives quick crisis relief, waqf builds lasting assets, and sadaqah gives flexible emergency help.",
+      "practicalUseCase": "If the three tools do different jobs, combine them in one plan and back it with strong governance.",
+      "limitation": "This review only combines existing studies, so it adds no new field data.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3063"
     },
     {
@@ -93,10 +93,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Many people in Muslim-majority countries still lack formal financial services, even though Islamic finance has grown for ten years.",
-      "fix": "Across 35 countries, income, schooling, institution quality, and internet access drive financial inclusion in OIC countries.",
-      "practicalUseCase": "OIC countries need more spending on digital systems, youth, women, and income, so Islamic banks should target those groups.",
-      "limitation": "The data covers 35 countries from 2005 to 2021, so it shows links, not cause.",
+      "problem": "Muslim-majority countries still exclude many people from banks, even though Islamic finance has grown fast.",
+      "fix": "Across 35 countries, income, schooling, institution quality and internet access shaped financial inclusion in OIC countries.",
+      "practicalUseCase": "If internet access and income drive inclusion in OIC countries, invest in digital infrastructure and youth and women first.",
+      "limitation": "The study covers only 35 countries and shows links, not proof of cause.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.2582"
     },
     {
@@ -110,10 +110,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Waqf collection stays low, and it is unclear whether knowing about waqf makes Muslims give more.",
-      "fix": "Survey data from 642 Indonesian Muslims shows waqf knowledge raises attitude, social norms, and control, which then raises waqf intention.",
-      "practicalUseCase": "Teaching people about waqf raises giving indirectly, so waqf groups should fund education before they ask for money.",
-      "limitation": "The sample covers only Indonesian Muslims, so results may not hold in other countries.",
+      "problem": "Waqf collection stays low, and it is unclear whether public knowledge of waqf affects giving.",
+      "fix": "Among 642 Indonesian Muslims, more waqf knowledge improved attitude, social norms and control, which raised intent to give.",
+      "practicalUseCase": "If knowing waqf leads to giving, waqf groups should teach people how it works before asking for money.",
+      "limitation": "The data comes from Indonesia only, and the survey measures intent to give, not actual gifts.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3267"
     },
     {
@@ -127,10 +127,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Sustainability sukuk keep growing, yet nobody knew what drives the size of each issue.",
-      "fix": "Across 11,944 sukuk, equity-based contracts, longer debt terms, and USD or Euro pricing give larger issues.",
-      "practicalUseCase": "Costly second party opinions shrink issue size, so issuers should cut review costs to raise more money.",
-      "limitation": "The data ends in 2022, so newer market changes are not included.",
+      "problem": "Sustainability sukuk are growing, but nobody knew what decides how big each issue is.",
+      "fix": "Across 11,944 sukuk, equity-based contracts gave bigger issues, while paid second party opinions shrank them.",
+      "practicalUseCase": "If second party opinions cost money and shrink issues, issuers should weigh that cost against the benefit.",
+      "limitation": "Growth is concentrated in Indonesia, Malaysia and Saudi Arabia, so results may not fit other countries.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i3.3341"
     },
     {
@@ -144,10 +144,10 @@
       "topics": [
         "Islamic Studies & Finance"
       ],
-      "problem": "Banks do not know whether consumer interest in halal products leads to more Islamic financing.",
-      "fix": "In 16 OIC countries, halal search interest raises total Islamic financing, mostly through Murabaha and Ijarah.",
-      "practicalUseCase": "Online halal interest signals demand, so lenders should offer simple Murabaha and Ijarah products where search interest rises.",
-      "limitation": "The effect on Mudarabah and Musharakah is weak, and the study uses search volume as a stand-in for awareness.",
+      "problem": "It was unclear whether online interest in halal products pushes up Islamic financing.",
+      "fix": "In 16 OIC countries, more halal searches raised Islamic financing, mainly through Murabaha and Ijarah.",
+      "practicalUseCase": "If halal search interest leads financing, banks should watch search trends and offer simple Murabaha and Ijarah products.",
+      "limitation": "The study uses search volume as a stand-in for awareness, and the effect on Mudarabah and Musharakah is weak.",
       "fullTextUrl": "https://doi.org/10.21098/jimf.v12i4.3350"
     }
   ]
