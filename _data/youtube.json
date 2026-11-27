@@ -1,54 +1,132 @@
 {
   "videos": [
     {
-      "title": "How 21 People Built a $100M+ Agent Company — Quinn Slack, Amp",
-      "url": "https://www.youtube.com/watch?v=Xyb1Bn_L2U4",
-      "videoId": "Xyb1Bn_L2U4",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Traditional software development and bloated SaaS giants are staring down an existential collapse: autonomous AI agents now allow hyper-lean teams to out-build and out-iterate massive enterprise orgs overnight. Former Sourcegraph CEO Quinn Slack breaks down the radical playbook of running a 21-person company that scrapped Jira, PMs, and sales teams to build Amp entirely with agents—proving that lean, agent-driven operations can ship higher-quality software at a fraction of the cost. If you want a practical, eye-opening look at how software creation is permanently shifting and how to avoid being trapped in obsolete workflows, this talk is an essential watch.",
-      "dateAdded": "2026-11-26T03:52:21.958Z",
+      "title": "Junior Software Engineer's Survival Guide | My Mistakes + Advice",
+      "url": "https://www.youtube.com/watch?v=ZcgHBB4NqQw",
+      "videoId": "ZcgHBB4NqQw",
+      "channel": "Designed to Code",
+      "category": "Discovery 🌍",
+      "summary": "You don't get fired for lacking technical perfection—you get let go for staying quiet, shrinking back, and becoming invisible. In this candid breakdown, a software engineer reveals the costly mistakes that led to her early layoff and shares the exact mindset shifts needed to survive your first tech role. Watch this to turn imposter syndrome into rapid growth and discover how proactive communication makes you an indispensable junior developer.",
+      "dateAdded": "2026-11-27T03:53:27.752Z",
       "timestamps": [
         {
-          "startTime": 305,
-          "endTime": 420,
-          "topic": "The 21-person operating model: Eliminating PRs, Jira, and corporate bureaucracy"
+          "startTime": 53,
+          "endTime": 160,
+          "topic": "The costly mistakes that make junior engineers invisible and expendable"
         },
         {
-          "startTime": 575,
-          "endTime": 670,
-          "topic": "Autonomous bug fixing and proactive customer support powered entirely by AI"
+          "startTime": 247,
+          "endTime": 344,
+          "topic": "How to conquer imposter syndrome and ask questions effectively"
         },
         {
-          "startTime": 740,
-          "endTime": 835,
-          "topic": "Why legacy enterprise SaaS giants like Salesforce face massive disruption"
+          "startTime": 344,
+          "endTime": 435,
+          "topic": "Strategic visibility: Picking a focus area and mastering soft skills"
         }
       ]
     },
     {
-      "title": "How to Ship Millions of Lines of Agent-Written Code — Jarred Sumner, Anthropic",
-      "url": "https://www.youtube.com/watch?v=TvsF67C2F54",
-      "videoId": "TvsF67C2F54",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Instead of wasting months manually rewriting complex codebases in Rust, Bun creator Jared Sumner deployed swarms of AI agents to build an Ahead-of-Time compiler that slashed JavaScript memory usage by 4x and outpaced traditional JIT engines. This talk delivers a rare, behind-the-scenes masterclass on how to actually direct hundreds of autonomous coders, eliminate AI 'slop', and enforce ruthless testing constraints so millions of agent-written lines safely ship to production. If you want to know what elite, cutting-edge software engineering looks like in the age of AI agents, this is required viewing.",
-      "dateAdded": "2026-11-25T04:42:01.417Z",
+      "title": "4 things I’ve learned as a junior software engineer",
+      "url": "https://www.youtube.com/watch?v=vvzuWN_sFMQ",
+      "videoId": "vvzuWN_sFMQ",
+      "channel": "joowee",
+      "category": "Discovery 🌍",
+      "summary": "The fastest way to stall your tech career isn't writing bad code—it's staying quietly stuck out of fear of looking stupid. This candid guide breaks down the real survival playbook every junior developer needs, from the exact script for asking senior engineers for help to turning brutal code reviews into career fuel. If you're battling imposter syndrome or wondering how to actually thrive in your first engineering role, watching this will save you months of anxiety.",
+      "dateAdded": "2026-11-27T03:53:27.752Z",
+      "timestamps": [
+        {
+          "startTime": 72,
+          "endTime": 152,
+          "topic": "The exact formula for asking questions without feeling incompetent"
+        },
+        {
+          "startTime": 153,
+          "endTime": 245,
+          "topic": "Surviving harsh pull request feedback and production bugs"
+        },
+        {
+          "startTime": 246,
+          "endTime": 329,
+          "topic": "Mastering workplace soft skills and building team leverage"
+        }
+      ]
+    },
+    {
+      "title": "Software Developer Advice — Interns & Junior Engineers",
+      "url": "https://www.youtube.com/watch?v=nGehKzdZxe4",
+      "videoId": "nGehKzdZxe4",
+      "channel": "Destination Engineer (Formally Destination FAANG)",
+      "category": "Discovery 🌍",
+      "summary": "If you think advancing in tech requires an elite computer science degree and endless tutorial watching, this interview will completely shatter that illusion. Senior software engineer Apurva Patel breaks down the counterintuitive reality of the industry, revealing why hands-on personal projects beat formal credentials and why mastering a 70% thinking versus 30% coding rule separates average coders from top-tier engineers. Packed with battle-tested advice on breaking comfort zones, mentoring, and conquering complex bugs, this conversation is an indispensable blueprint for anyone looking to break in and rise fast in IT.",
+      "dateAdded": "2026-11-27T03:53:27.752Z",
       "timestamps": [
         {
           "startTime": 235,
-          "endTime": 330,
-          "topic": "Why Bun built an AOT compiler instead of rewriting in Rust to achieve 4x memory savings"
+          "endTime": 295,
+          "topic": "Why staying comfortable in your role kills career growth"
         },
         {
-          "startTime": 680,
-          "endTime": 775,
-          "topic": "Eliminating agent 'slop' and coordinating 140 parallel AI coders across full-scale rewrites"
+          "startTime": 870,
+          "endTime": 985,
+          "topic": "Why personal projects outrank formal degrees in software engineering"
         },
         {
-          "startTime": 1155,
-          "endTime": 1290,
-          "topic": "Tactical lessons in steering AI models: Why aggressive rewrites beat endless refactoring"
+          "startTime": 1010,
+          "endTime": 1110,
+          "topic": "The 70/30 rule for deconstructing complex features and hard bugs"
+        }
+      ]
+    },
+    {
+      "title": "Execution Is Free. How Ambitious Are You? — Jason Liu, OpenAI",
+      "url": "https://www.youtube.com/watch?v=bFcob2p6u3A",
+      "videoId": "bFcob2p6u3A",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "In an era where writing code is becoming virtually free, your technical edge is no longer your ability to build, but your ability to define what is genuinely worth building. OpenAI's Jason reveals why the biggest threat to engineers isn't AI replacement or 'slop,' but creative self-erasure—and how treating yourself as an artist and director rather than a mere coder unlocks unprecedented potential. Watch this talk to learn why cultivating refined taste and cross-pollinating your skills into other disciplines is the ultimate moat in the AI revolution.",
+      "dateAdded": "2026-11-27T03:53:27.752Z",
+      "timestamps": [
+        {
+          "startTime": 318,
+          "endTime": 405,
+          "topic": "Painter vs. Artist: Why the true risk of AI is self-erasure, not slop"
+        },
+        {
+          "startTime": 512,
+          "endTime": 605,
+          "topic": "The Generator-Discriminator Gap: Why developing refined taste is your real moat"
+        },
+        {
+          "startTime": 925,
+          "endTime": 1025,
+          "topic": "Becoming a modern polymath: Using AI to break into entirely new fields"
+        }
+      ]
+    },
+    {
+      "title": "Stop Building Software Factories — Justin McCarthy, Diffusion",
+      "url": "https://www.youtube.com/watch?v=1S4hx3wgvBE",
+      "videoId": "1S4hx3wgvBE",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Generating code with AI has become so effortless that engineering teams risk drowning in features nobody asked for. Diffusion CEO Justin McCarthy reveals why you should stop building AI software factories for unproven ideas and instead deploy autonomous, 24/7 loops on your existing 'brownfield' codebase to eliminate technical debt for free. More critically, he lays out why your next competitive moat isn't writing more software, but engineering an AI-driven 'demand factory' to rate-match customer appetite before competitors outpace you.",
+      "dateAdded": "2026-11-27T03:53:27.752Z",
+      "timestamps": [
+        {
+          "startTime": 142,
+          "endTime": 285,
+          "topic": "Why greenfield software factories fail and why brownfield systems are the real goldmine"
+        },
+        {
+          "startTime": 500,
+          "endTime": 635,
+          "topic": "The Raptor Engine principle: How autonomous AI factories simplify and gain performance over time"
+        },
+        {
+          "startTime": 750,
+          "endTime": 980,
+          "topic": "The software glut crisis and how to engineer an AI-powered 'demand factory'"
         }
       ]
     },
@@ -79,54 +157,28 @@
       ]
     },
     {
-      "title": "GST bakal dikembalikan?",
-      "url": "https://www.youtube.com/shorts/yIGwP9QePLI",
-      "videoId": "yIGwP9QePLI",
+      "title": "Kenapa startup sanggup rugi?",
+      "url": "https://www.youtube.com/shorts/OHpT8jiFKUI",
+      "videoId": "OHpT8jiFKUI",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Think SST is automatically gentler on your wallet than GST? You might actually be paying an invisible 'tax-on-tax' on everyday goods that businesses quietly roll into prices without it ever appearing on your receipt. This essential breakdown strips away political talking points to reveal the real trade-offs between SST, GST, and the upcoming hybrid tax so you know exactly where your hard-earned ringgit is going.",
-      "dateAdded": "2026-11-26T03:52:21.958Z",
+      "summary": "Think burning cash for hyper-growth is still the golden ticket to scoring venture capital? The startup playbook has radically flipped: the era of 'growth at all costs' is dead, and investors will leave you stranded in the brutal 'valley of death' unless you have a rock-solid roadmap to real profit. Watch Pandai's co-founder pull back the curtain on why tech giants like Grab bled cash for over a decade and how founders must pivot their financial strategy to survive today.",
+      "dateAdded": "2026-11-27T03:53:27.752Z",
       "timestamps": [
         {
-          "startTime": 32,
-          "endTime": 102,
-          "topic": "SST Breakdown: Single-Stage System and the Hidden 'Tax-on-Tax' Effect"
+          "startTime": 25,
+          "endTime": 43,
+          "topic": "Founder salary reality check: Balancing personal needs with company survival"
         },
         {
-          "startTime": 102,
-          "endTime": 153,
-          "topic": "GST Trade-offs: Transparent Input Tax Credits vs. SME Cash Flow Issues"
+          "startTime": 43,
+          "endTime": 88,
+          "topic": "The death of 'growth at all costs' and what modern VCs actually demand"
         },
         {
-          "startTime": 153,
-          "endTime": 168,
-          "topic": "The Hybrid SST Alternative: Merging SST Rates with GST Tax Credits"
-        }
-      ]
-    },
-    {
-      "title": "[S04:E06] Dari startup tempatan ke Y Combinator, ini kisah Pandai - CEO Pandai",
-      "url": "https://www.youtube.com/watch?v=1WdsWcgEF4c",
-      "videoId": "1WdsWcgEF4c",
-      "channel": "Financial Faiz",
-      "category": "Finance",
-      "summary": "Think fancy pitch decks and flashy networking events are how you build a world-class startup? In this masterclass, Pandai CEO Khairul Anwar reveals Silicon Valley's brutal Y Combinator playbook—where investor meetings and slide decks are banned in favor of relentless weekly growth and talking to actual users. Whether you're an entrepreneur looking to scale sustainably or a parent concerned by the alarming reality of modern learning crises, this conversation delivers an unfiltered blueprint for turning a genuine social problem into an internationally backed powerhouse.",
-      "dateAdded": "2026-11-25T04:42:01.417Z",
-      "timestamps": [
-        {
-          "startTime": 2320,
-          "endTime": 2470,
-          "topic": "The alarming reality behind falling PISA scores and the student engagement crisis"
-        },
-        {
-          "startTime": 2715,
-          "endTime": 2845,
-          "topic": "Why Pandai turned down lucrative bank sponsorships to protect student data"
-        },
-        {
-          "startTime": 4395,
-          "endTime": 4600,
-          "topic": "The Y Combinator blueprint: Why traction and weekly growth beat pitch decks"
+          "startTime": 88,
+          "endTime": 146,
+          "topic": "Surviving the 'Valley of Death' and why tech giants take over a decade to profit"
         }
       ]
     },
@@ -235,28 +287,54 @@
       ]
     },
     {
-      "title": "#118 | Building A Global Snack and Wellness Platfrom (Pierre Pang, Mamee CEO)",
-      "url": "https://www.youtube.com/watch?v=RnbaL_XQ3ss",
-      "videoId": "RnbaL_XQ3ss",
+      "title": "#119 | How To Build Trust (Gavin Liew, The Makeover Guys)",
+      "url": "https://www.youtube.com/watch?v=i-oA9axU4zI",
+      "videoId": "i-oA9axU4zI",
       "channel": "The Game Of Impossible",
       "category": "General Ideas",
-      "summary": "Most family businesses crumble under the infamous third-generation curse, but Mamee CEO Pierre Pang broke the mold by doubling revenue to RM1.5 billion through a counterintuitive blueprint: funding the very disruptors built to destroy him. By leveraging AI to compress new product launches from 12 months down to just 12 weeks and embracing an agile 'generational steward' mindset, he demonstrates how to reinvent a 55-year-old heritage brand into a modern global titan. If you want an unfiltered masterclass in out-maneuvering legacy inertia and building a disruption-proof enterprise, this interview is an absolute must-watch.",
-      "dateAdded": "2026-11-26T03:52:21.958Z",
+      "summary": "Ever wondered why traditional service businesses get trapped in exhausting pitch cycles while customers constantly fear getting burned? Serial entrepreneur Gavin Liew reveals how he cracked the code by productizing home renovations into an ultra-transparent, 'menu-driven' model—turning an industry plagued by deep trust deficits into a scalable, tech-backed empire. If you run a service business or want to turn chaotic, bespoke work into predictable and profitable systems, this interview delivers an indispensable playbook.",
+      "dateAdded": "2026-11-27T03:53:27.752Z",
       "timestamps": [
         {
-          "startTime": 175,
-          "endTime": 250,
-          "topic": "Family business vs. generational business: Escaping the third-generation curse"
+          "startTime": 860,
+          "endTime": 1025,
+          "topic": "Escaping the endless pitch trap by turning custom services into a menu"
         },
         {
-          "startTime": 2140,
-          "endTime": 2305,
-          "topic": "The 12-week innovation engine: Using AI and TikTok to outpace corporate multinationals"
+          "startTime": 1145,
+          "endTime": 1340,
+          "topic": "Overcoming the 'trust deficit' in service industries using e-commerce principles"
         },
         {
-          "startTime": 2900,
-          "endTime": 3100,
-          "topic": "Disrupting yourself: Why funding potential competitors is the ultimate survival strategy"
+          "startTime": 1905,
+          "endTime": 2075,
+          "topic": "Scaling beyond 100 employees: Managing toxic high-performers vs. likeable underperformers"
+        }
+      ]
+    },
+    {
+      "title": "Xiaomi: Smartphones, Smart Homes, EVs | In The Studio",
+      "url": "https://www.youtube.com/watch?v=KwHTVB0GUZw",
+      "videoId": "KwHTVB0GUZw",
+      "channel": "BFM 89.9",
+      "category": "General Ideas",
+      "summary": "If you still think Xiaomi is just a budget smartphone maker, this insider look will completely redefine how you view the global tech battle. Country Manager Xing Yu Yang reveals how Xiaomi is actively winning over long-time Apple loyalists with game-changing hardware innovations—from interactive rear smartphone displays to seamlessly automated smart-home ecosystems and electric vehicles. Watch this interview to see how the brand is playing the long game to out-engineer legacy giants and transform connected living.",
+      "dateAdded": "2026-11-27T03:53:27.752Z",
+      "timestamps": [
+        {
+          "startTime": 150,
+          "endTime": 310,
+          "topic": "Flagship innovations: Dual 200MP Leica optics and the interactive rear display"
+        },
+        {
+          "startTime": 735,
+          "endTime": 940,
+          "topic": "Winning over Apple loyalists through automated smart-home ecosystems"
+        },
+        {
+          "startTime": 1305,
+          "endTime": 1395,
+          "topic": "Beyond phones: Xiaomi's electric vehicle expansion and global strategy"
         }
       ]
     },
@@ -311,85 +389,7 @@
           "topic": "Rule 4: Why winning an argument destroys trust and how to initiate repair instead"
         }
       ]
-    },
-    {
-      "title": "I am (Politely) Begging You to To Take Your Deen Seriously Before It's Too Late",
-      "url": "https://www.youtube.com/watch?v=uV3FoPrpR8s",
-      "videoId": "uV3FoPrpR8s",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "Most men pour all their energy into career grinds and material comforts while quietly procrastinating on their soul, unaware that wasting time is far more dangerous than death itself. This powerful wake-up call shatters the illusion of 'someday' and reveals how the endless cycle of daily busyness blinds you to your true purpose and family legacy. If you have been feeling stuck in spiritual complacency, watch this to discover how to break past regret, reclaim purposeful discipline, and seize Allah’s boundless mercy before the clock runs out.",
-      "dateAdded": "2026-11-25T04:42:01.417Z",
-      "timestamps": [
-        {
-          "startTime": 226,
-          "endTime": 420,
-          "topic": "The danger of spiritual procrastination and asking 'Has the time not come?'"
-        },
-        {
-          "startTime": 815,
-          "endTime": 980,
-          "topic": "Why wasting time is worse than death and escaping empty distractions"
-        },
-        {
-          "startTime": 1765,
-          "endTime": 1880,
-          "topic": "Overcoming paralysis, humbling your ego, and returning to Allah's mercy"
-        }
-      ]
-    },
-    {
-      "title": "I'm 48, Things I Wish I Would Have Told My Younger Self",
-      "url": "https://www.youtube.com/watch?v=SM3tFqhItXs",
-      "videoId": "SM3tFqhItXs",
-      "channel": "Sh. Abdullah Oduro",
-      "category": "Islamic Studies",
-      "summary": "Most men mistakenly believe their prime peaks in their twenties, but true maturity, earning power, and leadership only ripen in your forties—provided you use your thirties to forge the right foundation. This video delivers an indispensable four-part blueprint covering combat sports, career mastery, Quranic grounding, and financial psychology designed to turn daily struggles into unbreakable character. If you are ready to stop drifting, lead your household with authority, and align your worldly drive with lasting spiritual purpose, this roadmap is an absolute must-watch.",
-      "dateAdded": "2026-11-25T04:42:01.417Z",
-      "timestamps": [
-        {
-          "startTime": 100,
-          "endTime": 175,
-          "topic": "Why your forties are your true prime and how to master one skill in your thirties"
-        },
-        {
-          "startTime": 235,
-          "endTime": 320,
-          "topic": "Why Quran memorization is the core pillar of masculine leadership and humility"
-        },
-        {
-          "startTime": 550,
-          "endTime": 595,
-          "topic": "Mastering money as fuel for your mission rather than the end goal"
-        }
-      ]
-    },
-    {
-      "title": "How Anthropic builds software in 2026 with Katelyn Lesse",
-      "url": "https://www.youtube.com/watch?v=9oNvKMd7xJo",
-      "videoId": "9oNvKMd7xJo",
-      "channel": "The Pragmatic Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Inside Anthropic, a small team rebuilt their entire core API layer in Rust in just five months—relying on AI agents to write code while engineers bypassed reviewing nearly 80% of the pull requests line by line. This rare behind-the-scenes breakdown reveals how software development is radically shifting at the frontier, from killing algorithmic coding interviews and human-mandated code reviews to using Claude for middle-of-the-night incident triage. If you want a concrete, eye-opening blueprint of what high-leverage software engineering actually looks like when hand-coding becomes obsolete, this conversation is an essential watch.",
-      "dateAdded": "2026-11-26T03:52:21.958Z",
-      "timestamps": [
-        {
-          "startTime": 1450,
-          "endTime": 1725,
-          "topic": "Rewriting Anthropic's core API in Rust using AI agents and shadow verification"
-        },
-        {
-          "startTime": 3890,
-          "endTime": 4010,
-          "topic": "Replacing mandatory human code reviews with an automated AI classifier"
-        },
-        {
-          "startTime": 5070,
-          "endTime": 5310,
-          "topic": "Why Anthropic phased out traditional algorithmic coding interviews"
-        }
-      ]
     }
   ],
-  "lastUpdated": "2026-11-26T03:58:47.570Z"
+  "lastUpdated": "2026-11-27T04:01:38.875Z"
 }
