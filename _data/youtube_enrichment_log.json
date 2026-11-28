@@ -1,49 +1,49 @@
 [
   {
-    "videoId": "ZcgHBB4NqQw",
-    "title": "Junior Software Engineer's Survival Guide | My Mistakes + Advice",
+    "videoId": "K5_ST-kMrvY",
+    "title": "Stop Paying LLM Prices for Yes-or-No Answers — Chinmay Goyal, Glean",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "vvzuWN_sFMQ",
-    "title": "4 things I’ve learned as a junior software engineer",
+    "videoId": "cYcYfM9Mvwo",
+    "title": "Why Cloudflare Became a Neolab — Michelle Chen, Cloudflare",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "nGehKzdZxe4",
-    "title": "Software Developer Advice — Interns & Junior Engineers",
+    "videoId": "eVADLq4jmjY",
+    "title": "5 perubahan KWSP mulai 2027",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "bFcob2p6u3A",
-    "title": "Execution Is Free. How Ambitious Are You? — Jason Liu, OpenAI",
+    "videoId": "EHn9s_wzXlk",
+    "title": "KLCI berubah dari 30 ke 50 saham",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "1S4hx3wgvBE",
-    "title": "Stop Building Software Factories — Justin McCarthy, Diffusion",
+    "videoId": "gYrru2A2-sc",
+    "title": "How to Handle Anxiety About the Future, After COVID, Gaza, and AI | NEW Lecture by Dr. Omar Suleiman",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "OHpT8jiFKUI",
-    "title": "Kenapa startup sanggup rugi?",
+    "videoId": "uV3FoPrpR8s",
+    "title": "I am (Politely) Begging You to To Take Your Deen Seriously Before It's Too Late",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "i-oA9axU4zI",
-    "title": "#119 | How To Build Trust (Gavin Liew, The Makeover Guys)",
+    "videoId": "SM3tFqhItXs",
+    "title": "I'm 48, Things I Wish I Would Have Told My Younger Self",
     "outcome": "success",
     "errors": []
   },
   {
-    "videoId": "KwHTVB0GUZw",
-    "title": "Xiaomi: Smartphones, Smart Homes, EVs | In The Studio",
+    "videoId": "9oNvKMd7xJo",
+    "title": "How Anthropic builds software in 2026 with Katelyn Lesse",
     "outcome": "success",
     "errors": []
   },
@@ -81,6 +81,12 @@
     "videoId": "DPAwhtYL5uQ",
     "title": "Uncomfortable Truths EVERY Muslim Should Understand Before Marriage",
     "outcome": "success",
+    "errors": []
+  },
+  {
+    "videoId": "JfX6Yem7EQ0",
+    "title": "Malaysia already has the fab talent and 50+ years of assembly know-how.",
+    "outcome": "success",
     "errors": [
       {
         "attempt": 1,
@@ -90,21 +96,35 @@
     ]
   },
   {
-    "videoId": "4ZQ7mvFH5CI",
-    "title": "Give Me 54 Minutes, I’ll Show You How to Start a Halal Business in 2027",
-    "outcome": "success",
-    "errors": []
-  },
-  {
-    "videoId": "JfX6Yem7EQ0",
-    "title": "Malaysia already has the fab talent and 50+ years of assembly know-how.",
-    "outcome": "success",
-    "errors": []
-  },
-  {
     "videoId": "QGpn6b0Ixe8",
     "title": "How do we get more out of tech FDI?",
-    "outcome": "success",
-    "errors": []
+    "outcome": "failed",
+    "errors": [
+      {
+        "attempt": 1,
+        "message": "429 Your project is temporarily rate-limited to prevent exceeding its monthly spending cap. Please raise your project spend cap or wait before retrying.",
+        "status": 429
+      },
+      {
+        "attempt": 2,
+        "message": "429 Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai.google.dev/gemini-api/docs/billing#project-spend-caps. ",
+        "status": 429
+      },
+      {
+        "attempt": 3,
+        "message": "429 Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai.google.dev/gemini-api/docs/billing#project-spend-caps. ",
+        "status": 429
+      },
+      {
+        "attempt": 4,
+        "message": "429 Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai.google.dev/gemini-api/docs/billing#project-spend-caps. ",
+        "status": 429
+      },
+      {
+        "attempt": 5,
+        "message": "429 Your project has exceeded its monthly spending cap. Please go to AI Studio at https://ai.studio/spend to manage your project spend cap. Learn more at https://ai.google.dev/gemini-api/docs/billing#project-spend-caps. ",
+        "status": 429
+      }
+    ]
   }
 ]

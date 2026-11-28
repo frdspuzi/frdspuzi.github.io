@@ -1,80 +1,54 @@
 {
   "videos": [
     {
-      "title": "Junior Software Engineer's Survival Guide | My Mistakes + Advice",
-      "url": "https://www.youtube.com/watch?v=ZcgHBB4NqQw",
-      "videoId": "ZcgHBB4NqQw",
-      "channel": "Designed to Code",
-      "category": "Discovery 🌍",
-      "summary": "You don't get fired for lacking technical perfection—you get let go for staying quiet, shrinking back, and becoming invisible. In this candid breakdown, a software engineer reveals the costly mistakes that led to her early layoff and shares the exact mindset shifts needed to survive your first tech role. Watch this to turn imposter syndrome into rapid growth and discover how proactive communication makes you an indispensable junior developer.",
-      "dateAdded": "2026-11-27T03:53:27.752Z",
+      "title": "Stop Paying LLM Prices for Yes-or-No Answers — Chinmay Goyal, Glean",
+      "url": "https://www.youtube.com/watch?v=K5_ST-kMrvY",
+      "videoId": "K5_ST-kMrvY",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Most AI product steps—such as query routing, search ranking, and citation checks—aren't text generation problems at all, yet teams needlessly burn compute budgets and endure punishing latency treating them as such. Glean engineer Chinmay Goyal reveals how ditching heavy LLMs for dedicated decision models slashed system latency by up to 8x, boosted safety recall from 31% to 90%, and eliminated hallucinated edge cases entirely. If you want to stop overpaying for bounded choices and build enterprise AI that is dramatically faster, cheaper, and more reliable, this talk provides the battle-tested blueprint.",
+      "dateAdded": "2026-11-28T03:38:55.035Z",
       "timestamps": [
         {
-          "startTime": 53,
-          "endTime": 160,
-          "topic": "The costly mistakes that make junior engineers invisible and expendable"
+          "startTime": 34,
+          "endTime": 125,
+          "topic": "Bounded Decisions vs. Text Generation: Why LLMs Are Overkill"
         },
         {
-          "startTime": 247,
-          "endTime": 344,
-          "topic": "How to conquer imposter syndrome and ask questions effectively"
+          "startTime": 400,
+          "endTime": 515,
+          "topic": "Eliminating Latency Bottlenecks and Output Failures in Production Rankers"
         },
         {
-          "startTime": 344,
-          "endTime": 435,
-          "topic": "Strategic visibility: Picking a focus area and mastering soft skills"
+          "startTime": 765,
+          "endTime": 870,
+          "topic": "Scaling Enterprise Guardrails: Boosting Recall from 31% to 90%"
         }
       ]
     },
     {
-      "title": "4 things I’ve learned as a junior software engineer",
-      "url": "https://www.youtube.com/watch?v=vvzuWN_sFMQ",
-      "videoId": "vvzuWN_sFMQ",
-      "channel": "joowee",
-      "category": "Discovery 🌍",
-      "summary": "The fastest way to stall your tech career isn't writing bad code—it's staying quietly stuck out of fear of looking stupid. This candid guide breaks down the real survival playbook every junior developer needs, from the exact script for asking senior engineers for help to turning brutal code reviews into career fuel. If you're battling imposter syndrome or wondering how to actually thrive in your first engineering role, watching this will save you months of anxiety.",
-      "dateAdded": "2026-11-27T03:53:27.752Z",
+      "title": "Why Cloudflare Became a Neolab — Michelle Chen, Cloudflare",
+      "url": "https://www.youtube.com/watch?v=cYcYfM9Mvwo",
+      "videoId": "cYcYfM9Mvwo",
+      "channel": "AI Engineer",
+      "category": "Tech & Engineering",
+      "summary": "Relying on massive LLMs to handle every simple agent decision and text extraction task is quietly draining your budget and choking your app's speed. In this compelling talk, Cloudflare product lead Michelle Chen reveals how pairing ultra-fast, single-pass 'System 1' models like Clef and Cleric with frontier LLMs slashes token consumption by 94% and cuts latency in half. If you are building autonomous agents or AI-powered features, this breakdown provides the exact blueprint for building faster, dramatically cheaper systems.",
+      "dateAdded": "2026-11-28T03:38:55.035Z",
       "timestamps": [
         {
-          "startTime": 72,
-          "endTime": 152,
-          "topic": "The exact formula for asking questions without feeling incompetent"
+          "startTime": 488,
+          "endTime": 665,
+          "topic": "Why single-pass System 1 models outperform giant LLMs for autonomous decisions"
         },
         {
-          "startTime": 153,
-          "endTime": 245,
-          "topic": "Surviving harsh pull request feedback and production bugs"
+          "startTime": 708,
+          "endTime": 800,
+          "topic": "Introducing Cleric: Converting messy, unstructured inputs into structured JSON"
         },
         {
-          "startTime": 246,
-          "endTime": 329,
-          "topic": "Mastering workplace soft skills and building team leverage"
-        }
-      ]
-    },
-    {
-      "title": "Software Developer Advice — Interns & Junior Engineers",
-      "url": "https://www.youtube.com/watch?v=nGehKzdZxe4",
-      "videoId": "nGehKzdZxe4",
-      "channel": "Destination Engineer (Formally Destination FAANG)",
-      "category": "Discovery 🌍",
-      "summary": "If you think advancing in tech requires an elite computer science degree and endless tutorial watching, this interview will completely shatter that illusion. Senior software engineer Apurva Patel breaks down the counterintuitive reality of the industry, revealing why hands-on personal projects beat formal credentials and why mastering a 70% thinking versus 30% coding rule separates average coders from top-tier engineers. Packed with battle-tested advice on breaking comfort zones, mentoring, and conquering complex bugs, this conversation is an indispensable blueprint for anyone looking to break in and rise fast in IT.",
-      "dateAdded": "2026-11-27T03:53:27.752Z",
-      "timestamps": [
-        {
-          "startTime": 235,
-          "endTime": 295,
-          "topic": "Why staying comfortable in your role kills career growth"
-        },
-        {
-          "startTime": 870,
-          "endTime": 985,
-          "topic": "Why personal projects outrank formal degrees in software engineering"
-        },
-        {
-          "startTime": 1010,
-          "endTime": 1110,
-          "topic": "The 70/30 rule for deconstructing complex features and hard bugs"
+          "startTime": 869,
+          "endTime": 1055,
+          "topic": "Live benchmark demo: Slashing tokens by 94% and cutting costs by 72%"
         }
       ]
     },
@@ -105,32 +79,6 @@
       ]
     },
     {
-      "title": "Stop Building Software Factories — Justin McCarthy, Diffusion",
-      "url": "https://www.youtube.com/watch?v=1S4hx3wgvBE",
-      "videoId": "1S4hx3wgvBE",
-      "channel": "AI Engineer",
-      "category": "Tech & Engineering",
-      "summary": "Generating code with AI has become so effortless that engineering teams risk drowning in features nobody asked for. Diffusion CEO Justin McCarthy reveals why you should stop building AI software factories for unproven ideas and instead deploy autonomous, 24/7 loops on your existing 'brownfield' codebase to eliminate technical debt for free. More critically, he lays out why your next competitive moat isn't writing more software, but engineering an AI-driven 'demand factory' to rate-match customer appetite before competitors outpace you.",
-      "dateAdded": "2026-11-27T03:53:27.752Z",
-      "timestamps": [
-        {
-          "startTime": 142,
-          "endTime": 285,
-          "topic": "Why greenfield software factories fail and why brownfield systems are the real goldmine"
-        },
-        {
-          "startTime": 500,
-          "endTime": 635,
-          "topic": "The Raptor Engine principle: How autonomous AI factories simplify and gain performance over time"
-        },
-        {
-          "startTime": 750,
-          "endTime": 980,
-          "topic": "The software glut crisis and how to engineer an AI-powered 'demand factory'"
-        }
-      ]
-    },
-    {
       "title": "5 developer tips for working with Gemini 4",
       "url": "https://www.youtube.com/watch?v=WN5O4vWCa54",
       "videoId": "WN5O4vWCa54",
@@ -157,28 +105,54 @@
       ]
     },
     {
-      "title": "Kenapa startup sanggup rugi?",
-      "url": "https://www.youtube.com/shorts/OHpT8jiFKUI",
-      "videoId": "OHpT8jiFKUI",
+      "title": "5 perubahan KWSP mulai 2027",
+      "url": "https://www.youtube.com/shorts/eVADLq4jmjY",
+      "videoId": "eVADLq4jmjY",
       "channel": "Financial Faiz",
       "category": "Finance",
-      "summary": "Think burning cash for hyper-growth is still the golden ticket to scoring venture capital? The startup playbook has radically flipped: the era of 'growth at all costs' is dead, and investors will leave you stranded in the brutal 'valley of death' unless you have a rock-solid roadmap to real profit. Watch Pandai's co-founder pull back the curtain on why tech giants like Grab bled cash for over a decade and how founders must pivot their financial strategy to survive today.",
-      "dateAdded": "2026-11-27T03:53:27.752Z",
+      "summary": "Major EPF policy shifts are rolling out that directly impact your retirement withdrawals, healthcare coverage, and monthly paycheck deductions. In under three minutes, discover the five vital KWSP updates you cannot afford to ignore—from tapping Akaun Sejahtera for medical insurance to the jump in mandatory minimum contributions. Watch this breakdown now to optimize your retirement strategy before these new thresholds catch your finances off guard.",
+      "dateAdded": "2026-11-28T03:38:55.035Z",
       "timestamps": [
         {
-          "startTime": 25,
-          "endTime": 43,
-          "topic": "Founder salary reality check: Balancing personal needs with company survival"
+          "startTime": 41,
+          "endTime": 73,
+          "topic": "How higher basic savings targets restrict i-Invest withdrawals"
         },
         {
-          "startTime": 43,
-          "endTime": 88,
-          "topic": "The death of 'growth at all costs' and what modern VCs actually demand"
+          "startTime": 73,
+          "endTime": 104,
+          "topic": "Using Akaun Sejahtera to fund MediAsas health coverage without cash"
         },
         {
-          "startTime": 88,
-          "endTime": 146,
-          "topic": "Surviving the 'Valley of Death' and why tech giants take over a decade to profit"
+          "startTime": 104,
+          "endTime": 144,
+          "topic": "The calculation behind the RM480 minimum monthly EPF contribution"
+        }
+      ]
+    },
+    {
+      "title": "KLCI berubah dari 30 ke 50 saham",
+      "url": "https://www.youtube.com/shorts/EHn9s_wzXlk",
+      "videoId": "EHn9s_wzXlk",
+      "channel": "Financial Faiz",
+      "category": "Finance",
+      "summary": "For the first time since 2009, Malaysia's benchmark index is expanding from 30 to 50 stocks—and the ripple effects on local share prices could be massive. Watch this breakdown to discover why the banking sector's monopoly on the index is fading and how 20 incoming companies could trigger a surge of automated buying from passive institutional funds. In under three minutes, you'll understand exactly how this historic shake-up works and what it means for your investments.",
+      "dateAdded": "2026-11-28T03:38:55.035Z",
+      "timestamps": [
+        {
+          "startTime": 33,
+          "endTime": 75,
+          "topic": "Why KLCI is expanding to break banking dominance and cover 70% of the market"
+        },
+        {
+          "startTime": 75,
+          "endTime": 125,
+          "topic": "How weightage dilution and passive fund inflows will impact stock liquidity"
+        },
+        {
+          "startTime": 125,
+          "endTime": 168,
+          "topic": "The domino effect on FBM Mid 70 and selection criteria for new entrants"
         }
       ]
     },
@@ -313,54 +287,28 @@
       ]
     },
     {
-      "title": "Xiaomi: Smartphones, Smart Homes, EVs | In The Studio",
-      "url": "https://www.youtube.com/watch?v=KwHTVB0GUZw",
-      "videoId": "KwHTVB0GUZw",
-      "channel": "BFM 89.9",
-      "category": "General Ideas",
-      "summary": "If you still think Xiaomi is just a budget smartphone maker, this insider look will completely redefine how you view the global tech battle. Country Manager Xing Yu Yang reveals how Xiaomi is actively winning over long-time Apple loyalists with game-changing hardware innovations—from interactive rear smartphone displays to seamlessly automated smart-home ecosystems and electric vehicles. Watch this interview to see how the brand is playing the long game to out-engineer legacy giants and transform connected living.",
-      "dateAdded": "2026-11-27T03:53:27.752Z",
-      "timestamps": [
-        {
-          "startTime": 150,
-          "endTime": 310,
-          "topic": "Flagship innovations: Dual 200MP Leica optics and the interactive rear display"
-        },
-        {
-          "startTime": 735,
-          "endTime": 940,
-          "topic": "Winning over Apple loyalists through automated smart-home ecosystems"
-        },
-        {
-          "startTime": 1305,
-          "endTime": 1395,
-          "topic": "Beyond phones: Xiaomi's electric vehicle expansion and global strategy"
-        }
-      ]
-    },
-    {
-      "title": "The 5-Step Playbook for Making Haram Feel Ordinary | Imam Tom Facchine",
-      "url": "https://www.youtube.com/shorts/8U0b2qTkiRM",
-      "videoId": "8U0b2qTkiRM",
+      "title": "How to Handle Anxiety About the Future, After COVID, Gaza, and AI | NEW Lecture by Dr. Omar Suleiman",
+      "url": "https://www.youtube.com/watch?v=gYrru2A2-sc",
+      "videoId": "gYrru2A2-sc",
       "channel": "Yaqeen Institute",
       "category": "Islamic Studies",
-      "summary": "Ever wonder why behaviors that once shocked society now barely raise an eyebrow? This video reveals the five subtle stages culture uses to systematically exhaust your moral conscience, transforming what was once unacceptable into something celebrated while framing resistance as extreme. Watch this to learn why losing your sensitivity to wrongdoing is the first casualty of a corrupt culture—and how to safeguard your heart's ability to recognize truth.",
-      "dateAdded": "2026-11-26T03:52:21.958Z",
+      "summary": "If modern crises and future uncertainty have left you feeling paralyzed, this talk delivers a game-changing perspective: anxiety is obsessing over the million ways things could go wrong, while true spiritual power lies in actively preparing the few ways things can go right. Dr. Omar Suleiman exposes why chronic pessimists achieve nothing despite being 'right' about disaster, showing how relinquishing the illusion of control unlocks real inner peace. Watch this to replace paralyzing dread with actionable purpose, grounding your mind in unwavering resilience and trust.",
+      "dateAdded": "2026-11-28T03:38:55.035Z",
       "timestamps": [
         {
-          "startTime": 43,
-          "endTime": 82,
-          "topic": "The 5 progressive stages society uses to normalize immorality"
+          "startTime": 835,
+          "endTime": 985,
+          "topic": "Shattering the illusion of control and finding peace in divine decree"
         },
         {
-          "startTime": 82,
-          "endTime": 108,
-          "topic": "How entertainment and institutions systematically exhaust moral attention"
+          "startTime": 1000,
+          "endTime": 1105,
+          "topic": "The trap of chronic pessimism: why cynics achieve nothing"
         },
         {
-          "startTime": 108,
-          "endTime": 152,
-          "topic": "Preserving the heart's sensitivity to distinguish truth from falsehood"
+          "startTime": 1190,
+          "endTime": 1335,
+          "topic": "Anxiety vs. preparation: shifting from fear to strategic action"
         }
       ]
     },
@@ -389,7 +337,59 @@
           "topic": "Rule 4: Why winning an argument destroys trust and how to initiate repair instead"
         }
       ]
+    },
+    {
+      "title": "I am (Politely) Begging You to To Take Your Deen Seriously Before It's Too Late",
+      "url": "https://www.youtube.com/watch?v=uV3FoPrpR8s",
+      "videoId": "uV3FoPrpR8s",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "Most men mistakenly wait for life to slow down before taking their faith and family seriously, ignoring the sobering reality that time is actively running out and death never negotiates. This powerful wake-up call dismantles the trap of spiritual procrastination, proving that you don't need to have your life perfectly together to return to God and hold yourself accountable. If you have been caught on the exhausting treadmill of worldly success while neglecting your soul and the people who depend on you, this talk will shake you out of passive complacency before regret sets in.",
+      "dateAdded": "2026-11-28T03:38:55.035Z",
+      "timestamps": [
+        {
+          "startTime": 225,
+          "endTime": 395,
+          "topic": "The trap of spiritual procrastination and why 'someday' never comes"
+        },
+        {
+          "startTime": 815,
+          "endTime": 935,
+          "topic": "Why wasting time is worse than death and the danger of modern distractions"
+        },
+        {
+          "startTime": 1630,
+          "endTime": 1820,
+          "topic": "Overcoming shame, repairing fractured family relationships, and trusting God's mercy"
+        }
+      ]
+    },
+    {
+      "title": "I'm 48, Things I Wish I Would Have Told My Younger Self",
+      "url": "https://www.youtube.com/watch?v=SM3tFqhItXs",
+      "videoId": "SM3tFqhItXs",
+      "channel": "Sh. Abdullah Oduro",
+      "category": "Islamic Studies",
+      "summary": "Most men mistakenly believe their prime peaks in their twenties, but your true season of influence and mastery begins in your forties—if you spend your thirties building the right foundation. This video breaks down an essential, faith-grounded blueprint covering why combat sports, financial literacy, and Quranic memorization are indispensable for masculine character and leadership. Watch this to stop drifting through your professional years and start forging the mental, spiritual, and practical resilience your family needs.",
+      "dateAdded": "2026-11-28T03:38:55.035Z",
+      "timestamps": [
+        {
+          "startTime": 100,
+          "endTime": 185,
+          "topic": "Mastering one high-value skill to hit your true prime in your 40s"
+        },
+        {
+          "startTime": 235,
+          "endTime": 365,
+          "topic": "Why building a daily Quran habit humbles and anchors a man's leadership"
+        },
+        {
+          "startTime": 410,
+          "endTime": 590,
+          "topic": "Understanding money and value so wealth stays in your hand, not your heart"
+        }
+      ]
     }
   ],
-  "lastUpdated": "2026-11-27T04:01:38.875Z"
+  "lastUpdated": "2026-11-28T03:50:05.158Z"
 }
