@@ -23,11 +23,17 @@ A subject label used to group and filter research briefs. The three topics are T
 The public collection of books the site owner has read or is reading, each shown by its cover.
 
 **Reading notes**:
-The content shown for one book, written by the owner in their own words: a short overall take first, followed by their insights in reading order. It is never a reproduction or summary of the book's own content, which the owner has no right to share.
+The content shown for one book, written by the owner in their own words: a short overall take first, followed by their insights in reading order. It is never a reproduction or summary of the book's own content, which the owner has no right to share. An insight's key idea states the book's idea briefly, with the owner's approval, which is allowed.
 
 **Insight**:
 The owner's own takeaway from one passage of a book, tagged with that passage's page range. It may quote at most one attributed sentence from the book and may carry the owner's own Islamic reflection. In this feature, "page" means only the book's own printed pages, never a unit of the reading notes.
 _Avoid_: Note, summary
+
+**Key idea**:
+The optional opening of an insight: one or two sentences on the idea the book makes in that passage, drafted by Claude and approved by the owner. Never the book's stories, case studies or wording (ADR 0002).
+
+**Reader question**:
+The optional closing of an insight: a question that turns the passage on the visitor, so they reflect on their own life. Nothing the visitor types is collected.
 
 **TLDR**:
 An AI-generated summary of one passage of a book, kept as a private reading aid for writing insights. TLDRs are never published and never feed trivia questions.
